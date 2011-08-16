@@ -1,0 +1,9 @@
+*.xml text
+*.java text
+*.mpr text
+*.mps text
+*.mpl text
+*.msd text
+debug.info text
+.dependencies text
+.generated text
