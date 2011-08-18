@@ -6,7 +6,8 @@ import jetbrains.mps.smodel.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import java.util.Set;
 import java.util.HashSet;
-import jetbrains.mps.lang.typesystem.runtime.HUtil;
+import jetbrains.mps.smodel.SModelUtil_new;
+import jetbrains.mps.project.GlobalScope;
 
 public class MqlLinkSelector_Behavior {
   public static void init(SNode thisNode) {
@@ -29,17 +30,10 @@ public class MqlLinkSelector_Behavior {
       Set<SNode> _parameterValues_129834374 = new HashSet<SNode>();
       SNode quotedNode_1 = null;
       {
-        quotedNode_1 = (SNode) parameter_3;
-        SNode quotedNode1_2;
-        if (_parameterValues_129834374.contains(quotedNode_1)) {
-          quotedNode1_2 = HUtil.copyIfNecessary(quotedNode_1);
-        } else {
-          _parameterValues_129834374.add(quotedNode_1);
-          quotedNode1_2 = quotedNode_1;
-        }
-        if (quotedNode1_2 != null) {
-          result = quotedNode1_2;
-        }
+        quotedNode_1 = SModelUtil_new.instantiateConceptDeclaration("jetbrains.mps.query.structure.MqlNodeType", null, GlobalScope.getInstance(), false);
+        SNode quotedNode1_2 = quotedNode_1;
+        quotedNode1_2.setReferent("concept", (SNode) parameter_3);
+        result = quotedNode1_2;
       }
       return result;
     }

@@ -16,23 +16,21 @@ import jetbrains.mps.smodel.runtime.ReferenceConstraintsContext;
 import java.util.List;
 import jetbrains.mps.smodel.SNode;
 import java.util.ArrayList;
-import jetbrains.mps.query.behavior.MqlSelector_Behavior;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.query.behavior.MqlExpression_Behavior;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 
-public class MqlPropertySelector_Constraints extends BaseConstraintsDescriptor {
-  private static SNodePointer breakingNode_qzbrjt_a0a1a0a0a1a0b0a1a0 = new SNodePointer("r:d2131fa8-9bff-49c9-a7e2-6972f9544c0a(jetbrains.mps.query.constraints)", "228266671027887307");
+public class MqlVarReference_Constraints extends BaseConstraintsDescriptor {
+  private static SNodePointer breakingNode_97d4g1_a0a1a0a0a1a0b0a1a0 = new SNodePointer("r:d2131fa8-9bff-49c9-a7e2-6972f9544c0a(jetbrains.mps.query.constraints)", "2059702675526025699");
 
-  public MqlPropertySelector_Constraints() {
-    super("jetbrains.mps.query.structure.MqlPropertySelector");
+  public MqlVarReference_Constraints() {
+    super("jetbrains.mps.query.structure.MqlVarReference");
   }
 
   @Override
   protected Map<String, ReferenceConstraintsDescriptor> getNotDefaultReferences() {
     Map<String, ReferenceConstraintsDescriptor> references = new HashMap();
-    references.put("property", new BaseReferenceConstraintsDescriptor("property", this) {
+    references.put("var", new BaseReferenceConstraintsDescriptor("var", this) {
       @Override
       public boolean hasOwnScopeProvider() {
         return true;
@@ -45,26 +43,26 @@ public class MqlPropertySelector_Constraints extends BaseConstraintsDescriptor {
           @Override
           public Object createSearchScopeOrListOfNodes(final IOperationContext operationContext, final ReferenceConstraintsContext _context) {
             List<SNode> result = new ArrayList<SNode>();
-            SNode type;
-            if ((_context.getReferenceNode() != null)) {
-              type = MqlSelector_Behavior.call_getContainerType_228266671027861723(_context.getReferenceNode());
-            } else if (SNodeOperations.isInstanceOf(_context.getEnclosingNode(), "jetbrains.mps.query.structure.MqlDotExpression")) {
-              type = MqlExpression_Behavior.call_getType_228266671027861783(SLinkOperations.getTarget(SNodeOperations.cast(_context.getEnclosingNode(), "jetbrains.mps.query.structure.MqlDotExpression"), "left", true));
-            } else {
-              type = null;
-            }
-            if (SNodeOperations.isInstanceOf(type, "jetbrains.mps.query.structure.MqlNodeType")) {
-              SNode decl = SLinkOperations.getTarget(SNodeOperations.cast(type, "jetbrains.mps.query.structure.MqlNodeType"), "concept", false);
-              if ((decl != null)) {
-                ListSequence.fromList(result).addSequence(ListSequence.fromList(SLinkOperations.getTargets(decl, "propertyDeclaration", true)));
+            SNode current = _context.getEnclosingNode();
+            while ((current != null)) {
+              if (SNodeOperations.isInstanceOf(SNodeOperations.getParent(current), "jetbrains.mps.query.structure.MqlComma")) {
+                for (SNode expr : SLinkOperations.getTargets(SNodeOperations.cast(SNodeOperations.getParent(current), "jetbrains.mps.query.structure.MqlComma"), "expressions", true)) {
+                  if (expr == current) {
+                    break;
+                  }
+                  if (SNodeOperations.isInstanceOf(expr, "jetbrains.mps.query.structure.MqlAssignment")) {
+                    ListSequence.fromList(result).addElement(SNodeOperations.cast(expr, "jetbrains.mps.query.structure.MqlAssignment"));
+                  }
+                }
               }
+              current = SNodeOperations.getParent(current);
             }
             return result;
           }
 
           @Override
           public SNodePointer getSearchScopeValidatorNode() {
-            return breakingNode_qzbrjt_a0a1a0a0a1a0b0a1a0;
+            return breakingNode_97d4g1_a0a1a0a0a1a0b0a1a0;
           }
         };
       }

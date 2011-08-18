@@ -4,20 +4,12 @@ package jetbrains.mps.query.behavior;
 
 import jetbrains.mps.smodel.SNode;
 
-public class MqlComma_BehaviorDescriptor extends MqlBinaryExpr_BehaviorDescriptor {
+public class MqlComma_BehaviorDescriptor extends MqlExpression_BehaviorDescriptor {
   public MqlComma_BehaviorDescriptor() {
-  }
-
-  public int virtual_getPriority_5322644393894740165(SNode thisNode) {
-    return MqlComma_Behavior.virtual_getPriority_5322644393894740165(thisNode);
   }
 
   public SNode virtual_getType_228266671027861783(SNode thisNode) {
     return MqlComma_Behavior.virtual_getType_228266671027861783(thisNode);
-  }
-
-  public int virtual_getAssociativity_5322644393894740267(SNode thisNode) {
-    return MqlComma_Behavior.virtual_getAssociativity_5322644393894740267(thisNode);
   }
 
   @Override

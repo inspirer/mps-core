@@ -10,6 +10,7 @@ import jetbrains.mps.nodeEditor.cells.EditorCell_Collection;
 import jetbrains.mps.nodeEditor.style.Style;
 import jetbrains.mps.nodeEditor.style.StyleAttributes;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
+import jetbrains.mps.nodeEditor.style.AttributeCalculator;
 import jetbrains.mps.nodeEditor.cellProviders.AbstractCellListHandler;
 import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Indent;
 import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
@@ -17,6 +18,8 @@ import jetbrains.mps.lang.editor.cellProviders.RefNodeCellProvider;
 import jetbrains.mps.smodel.IOperationContext;
 import jetbrains.mps.nodeEditor.EditorManager;
 import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.editor.cellProviders.RefNodeListHandler;
 import jetbrains.mps.smodel.action.NodeFactoryManager;
 import jetbrains.mps.nodeEditor.CellActionType;
@@ -39,6 +42,7 @@ public class MqlQuery_Editor extends DefaultNodeEditor {
     editorCell.addEditorCell(this.createConstant_fwnkly_d0(editorContext, node));
     editorCell.addEditorCell(this.createRefNode_fwnkly_e0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_fwnkly_f0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_fwnkly_g0(editorContext, node));
     return editorCell;
   }
 
@@ -91,6 +95,20 @@ public class MqlQuery_Editor extends DefaultNodeEditor {
   private EditorCell createConstant_fwnkly_d0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "=");
     editorCell.setCellId("Constant_fwnkly_d0");
+    {
+      Style style = editorCell.getStyle();
+      style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, new AttributeCalculator<Boolean>() {
+        public Boolean calculate(EditorCell cell) {
+          return MqlQuery_Editor._StyleParameter_QueryFunction_fwnkly_a0d0((cell == null ?
+            null :
+            cell.getSNode()
+          ), (cell == null ?
+            null :
+            cell.getEditorContext()
+          ));
+        }
+      });
+    }
     editorCell.setDefaultText("");
     return editorCell;
   }
@@ -101,7 +119,15 @@ public class MqlQuery_Editor extends DefaultNodeEditor {
     {
       Style style = editorCell.getStyle();
       style.set(StyleAttributes.PUNCTUATION_LEFT, true);
+      style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, true);
     }
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+
+  private EditorCell createConstant_fwnkly_g0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "");
+    editorCell.setCellId("Constant_fwnkly_g0");
     editorCell.setDefaultText("");
     return editorCell;
   }
@@ -147,6 +173,10 @@ public class MqlQuery_Editor extends DefaultNodeEditor {
       return manager.createRoleAttributeCell(editorContext, attributeConcept, attributeKind, editorCell);
     } else
     return editorCell;
+  }
+
+  private static boolean _StyleParameter_QueryFunction_fwnkly_a0d0(SNode node, EditorContext editorContext) {
+    return SNodeOperations.isInstanceOf(SLinkOperations.getTarget(node, "body", true), "jetbrains.mps.query.structure.MqlComma");
   }
 
   private static class parametersListHandler_fwnkly_b2a extends RefNodeListHandler {

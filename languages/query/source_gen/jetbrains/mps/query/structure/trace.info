@@ -1,7 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debugInfo>
   <unitInfo fileName="Query_Language.java" startLine="9" startPosition="0" endLine="16" endPosition="0" unitName="jetbrains.mps.query.structure.Query_Language" />
-  <unitInfo fileName="StructureAspectDescriptor.java" startLine="10" startPosition="0" endLine="85" endPosition="0" unitName="jetbrains.mps.query.structure.StructureAspectDescriptor" />
+  <unitInfo fileName="StructureAspectDescriptor.java" startLine="10" startPosition="0" endLine="89" endPosition="0" unitName="jetbrains.mps.query.structure.StructureAspectDescriptor" />
+  <root nodeId="2059702675525965924">
+    <nodeInfo nodeId="2059702675525965924" fileName="MqlNoContextQueryCall.java" startLine="12" startPosition="58" endLine="13" endPosition="93" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="concept" />
+    <nodeInfo nodeId="2059702675525965924" fileName="MqlNoContextQueryCall.java" startLine="13" startPosition="93" endLine="14" endPosition="45" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="QUERY" />
+    <nodeInfo nodeId="2059702675525965924" fileName="MqlNoContextQueryCall.java" startLine="14" startPosition="45" endLine="15" endPosition="53" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="ARGUMENTS" />
+    <nodeInfo nodeId="2059702675525965924" fileName="MqlNoContextQueryCall.java" startLine="17" startPosition="44" endLine="18" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+    <nodeInfo nodeId="2059702675525965924" fileName="MqlNoContextQueryCall.java" startLine="21" startPosition="30" endLine="22" endPosition="84" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2059702675525965924" fileName="MqlNoContextQueryCall.java" startLine="25" startPosition="39" endLine="26" endPosition="57" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2059702675525965924" fileName="MqlNoContextQueryCall.java" startLine="29" startPosition="36" endLine="30" endPosition="63" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2059702675525965924" fileName="MqlNoContextQueryCall.java" startLine="33" startPosition="48" endLine="34" endPosition="79" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2059702675525965924" fileName="MqlNoContextQueryCall.java" startLine="37" startPosition="47" endLine="38" endPosition="82" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2059702675525965924" fileName="MqlNoContextQueryCall.java" startLine="41" startPosition="48" endLine="42" endPosition="57" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2059702675525965924" fileName="MqlNoContextQueryCall.java" startLine="45" startPosition="71" endLine="46" endPosition="66" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2059702675525965924" fileName="MqlNoContextQueryCall.java" startLine="49" startPosition="76" endLine="50" endPosition="185" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2059702675525965924" fileName="MqlNoContextQueryCall.java" startLine="53" startPosition="62" endLine="54" endPosition="56" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2059702675525965924" fileName="MqlNoContextQueryCall.java" startLine="16" startPosition="0" endLine="19" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="MqlNoContextQueryCall#(Ljetbrains/mps/smodel/SNode;)V" />
+    <nodeInfo nodeId="2059702675525965924" fileName="MqlNoContextQueryCall.java" startLine="20" startPosition="0" endLine="24" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getQuery#()Ljetbrains/mps/smodel/INodeAdapter;" />
+    <nodeInfo nodeId="2059702675525965924" fileName="MqlNoContextQueryCall.java" startLine="24" startPosition="0" endLine="28" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setQuery#(Ljetbrains/mps/smodel/INodeAdapter;)V" />
+    <nodeInfo nodeId="2059702675525965924" fileName="MqlNoContextQueryCall.java" startLine="28" startPosition="0" endLine="32" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getArgumentsesCount#()I" />
+    <nodeInfo nodeId="2059702675525965924" fileName="MqlNoContextQueryCall.java" startLine="32" startPosition="0" endLine="36" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="argumentses#()Ljava/util/Iterator;" />
+    <nodeInfo nodeId="2059702675525965924" fileName="MqlNoContextQueryCall.java" startLine="36" startPosition="0" endLine="40" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getArgumentses#()Ljava/util/List;" />
+    <nodeInfo nodeId="2059702675525965924" fileName="MqlNoContextQueryCall.java" startLine="40" startPosition="0" endLine="44" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="addArguments#(Ljetbrains/mps/smodel/INodeAdapter;)V" />
+    <nodeInfo nodeId="2059702675525965924" fileName="MqlNoContextQueryCall.java" startLine="44" startPosition="0" endLine="48" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="insertArguments#(Ljetbrains/mps/smodel/INodeAdapter;Ljetbrains/mps/smodel/INodeAdapter;)V" />
+    <nodeInfo nodeId="2059702675525965924" fileName="MqlNoContextQueryCall.java" startLine="48" startPosition="0" endLine="52" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="newInstance#(Ljetbrains/mps/smodel/SModel;Z)Ljetbrains/mps/query/structure/MqlNoContextQueryCall;" />
+    <nodeInfo nodeId="2059702675525965924" fileName="MqlNoContextQueryCall.java" startLine="52" startPosition="0" endLine="56" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="newInstance#(Ljetbrains/mps/smodel/SModel;)Ljetbrains/mps/query/structure/MqlNoContextQueryCall;" />
+    <scopeInfo nodeId="2059702675525965924" fileName="MqlNoContextQueryCall.java" startLine="17" startPosition="44" endLine="18" endPosition="16" />
+    <scopeInfo nodeId="2059702675525965924" fileName="MqlNoContextQueryCall.java" startLine="21" startPosition="30" endLine="22" endPosition="84" />
+    <scopeInfo nodeId="2059702675525965924" fileName="MqlNoContextQueryCall.java" startLine="25" startPosition="39" endLine="26" endPosition="57" />
+    <scopeInfo nodeId="2059702675525965924" fileName="MqlNoContextQueryCall.java" startLine="29" startPosition="36" endLine="30" endPosition="63" />
+    <scopeInfo nodeId="2059702675525965924" fileName="MqlNoContextQueryCall.java" startLine="33" startPosition="48" endLine="34" endPosition="79" />
+    <scopeInfo nodeId="2059702675525965924" fileName="MqlNoContextQueryCall.java" startLine="37" startPosition="47" endLine="38" endPosition="82" />
+    <scopeInfo nodeId="2059702675525965924" fileName="MqlNoContextQueryCall.java" startLine="41" startPosition="48" endLine="42" endPosition="57" />
+    <scopeInfo nodeId="2059702675525965924" fileName="MqlNoContextQueryCall.java" startLine="45" startPosition="71" endLine="46" endPosition="66" />
+    <scopeInfo nodeId="2059702675525965924" fileName="MqlNoContextQueryCall.java" startLine="49" startPosition="76" endLine="50" endPosition="185" />
+    <scopeInfo nodeId="2059702675525965924" fileName="MqlNoContextQueryCall.java" startLine="53" startPosition="62" endLine="54" endPosition="56" />
+    <scopeInfo nodeId="2059702675525965924" fileName="MqlNoContextQueryCall.java" startLine="16" startPosition="0" endLine="19" endPosition="3" />
+    <scopeInfo nodeId="2059702675525965924" fileName="MqlNoContextQueryCall.java" startLine="20" startPosition="0" endLine="24" endPosition="0" />
+    <scopeInfo nodeId="2059702675525965924" fileName="MqlNoContextQueryCall.java" startLine="24" startPosition="0" endLine="28" endPosition="0" />
+    <scopeInfo nodeId="2059702675525965924" fileName="MqlNoContextQueryCall.java" startLine="28" startPosition="0" endLine="32" endPosition="0" />
+    <scopeInfo nodeId="2059702675525965924" fileName="MqlNoContextQueryCall.java" startLine="32" startPosition="0" endLine="36" endPosition="0" />
+    <scopeInfo nodeId="2059702675525965924" fileName="MqlNoContextQueryCall.java" startLine="36" startPosition="0" endLine="40" endPosition="0" />
+    <scopeInfo nodeId="2059702675525965924" fileName="MqlNoContextQueryCall.java" startLine="40" startPosition="0" endLine="44" endPosition="0" />
+    <scopeInfo nodeId="2059702675525965924" fileName="MqlNoContextQueryCall.java" startLine="44" startPosition="0" endLine="48" endPosition="0" />
+    <scopeInfo nodeId="2059702675525965924" fileName="MqlNoContextQueryCall.java" startLine="48" startPosition="0" endLine="52" endPosition="0" />
+    <scopeInfo nodeId="2059702675525965924" fileName="MqlNoContextQueryCall.java" startLine="52" startPosition="0" endLine="56" endPosition="0" />
+    <unitInfo nodeId="2059702675525965924" fileName="MqlNoContextQueryCall.java" startLine="12" startPosition="0" endLine="57" endPosition="0" unitName="jetbrains.mps.query.structure.MqlNoContextQueryCall" />
+  </root>
+  <root nodeId="2059702675526025628">
+    <nodeInfo nodeId="2059702675526025628" fileName="MqlVarReference.java" startLine="10" startPosition="52" endLine="11" endPosition="87" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="concept" />
+    <nodeInfo nodeId="2059702675526025628" fileName="MqlVarReference.java" startLine="11" startPosition="87" endLine="12" endPosition="41" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="VAR" />
+    <nodeInfo nodeId="2059702675526025628" fileName="MqlVarReference.java" startLine="14" startPosition="38" endLine="15" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+    <nodeInfo nodeId="2059702675526025628" fileName="MqlVarReference.java" startLine="18" startPosition="33" endLine="19" endPosition="86" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2059702675526025628" fileName="MqlVarReference.java" startLine="22" startPosition="42" endLine="23" endPosition="49" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2059702675526025628" fileName="MqlVarReference.java" startLine="26" startPosition="70" endLine="27" endPosition="173" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2059702675526025628" fileName="MqlVarReference.java" startLine="30" startPosition="56" endLine="31" endPosition="50" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2059702675526025628" fileName="MqlVarReference.java" startLine="13" startPosition="0" endLine="16" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="MqlVarReference#(Ljetbrains/mps/smodel/SNode;)V" />
+    <nodeInfo nodeId="2059702675526025628" fileName="MqlVarReference.java" startLine="17" startPosition="0" endLine="21" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getVar#()Ljetbrains/mps/smodel/INodeAdapter;" />
+    <nodeInfo nodeId="2059702675526025628" fileName="MqlVarReference.java" startLine="21" startPosition="0" endLine="25" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setVar#(Ljetbrains/mps/smodel/INodeAdapter;)V" />
+    <nodeInfo nodeId="2059702675526025628" fileName="MqlVarReference.java" startLine="25" startPosition="0" endLine="29" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="newInstance#(Ljetbrains/mps/smodel/SModel;Z)Ljetbrains/mps/query/structure/MqlVarReference;" />
+    <nodeInfo nodeId="2059702675526025628" fileName="MqlVarReference.java" startLine="29" startPosition="0" endLine="33" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="newInstance#(Ljetbrains/mps/smodel/SModel;)Ljetbrains/mps/query/structure/MqlVarReference;" />
+    <scopeInfo nodeId="2059702675526025628" fileName="MqlVarReference.java" startLine="14" startPosition="38" endLine="15" endPosition="16" />
+    <scopeInfo nodeId="2059702675526025628" fileName="MqlVarReference.java" startLine="18" startPosition="33" endLine="19" endPosition="86" />
+    <scopeInfo nodeId="2059702675526025628" fileName="MqlVarReference.java" startLine="22" startPosition="42" endLine="23" endPosition="49" />
+    <scopeInfo nodeId="2059702675526025628" fileName="MqlVarReference.java" startLine="26" startPosition="70" endLine="27" endPosition="173" />
+    <scopeInfo nodeId="2059702675526025628" fileName="MqlVarReference.java" startLine="30" startPosition="56" endLine="31" endPosition="50" />
+    <scopeInfo nodeId="2059702675526025628" fileName="MqlVarReference.java" startLine="13" startPosition="0" endLine="16" endPosition="3" />
+    <scopeInfo nodeId="2059702675526025628" fileName="MqlVarReference.java" startLine="17" startPosition="0" endLine="21" endPosition="0" />
+    <scopeInfo nodeId="2059702675526025628" fileName="MqlVarReference.java" startLine="21" startPosition="0" endLine="25" endPosition="0" />
+    <scopeInfo nodeId="2059702675526025628" fileName="MqlVarReference.java" startLine="25" startPosition="0" endLine="29" endPosition="0" />
+    <scopeInfo nodeId="2059702675526025628" fileName="MqlVarReference.java" startLine="29" startPosition="0" endLine="33" endPosition="0" />
+    <unitInfo nodeId="2059702675526025628" fileName="MqlVarReference.java" startLine="10" startPosition="0" endLine="34" endPosition="0" unitName="jetbrains.mps.query.structure.MqlVarReference" />
+  </root>
   <root nodeId="5322644393894740272">
     <nodeInfo nodeId="5322644393894740272" fileName="MqlAssignment.java" startLine="14" startPosition="75" endLine="15" endPosition="85" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="concept" />
     <nodeInfo nodeId="5322644393894740272" fileName="MqlAssignment.java" startLine="15" startPosition="85" endLine="16" endPosition="43" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="NAME" />
@@ -197,20 +268,41 @@
     <unitInfo nodeId="6762883159245048009" fileName="MqlQuery.java" startLine="15" startPosition="0" endLine="126" endPosition="0" unitName="jetbrains.mps.query.structure.MqlQuery" />
   </root>
   <root nodeId="6762883159245048011">
-    <nodeInfo nodeId="6762883159245048011" fileName="MqlComma.java" startLine="10" startPosition="45" endLine="11" endPosition="80" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="concept" />
-    <nodeInfo nodeId="6762883159245048011" fileName="MqlComma.java" startLine="13" startPosition="31" endLine="14" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
-    <nodeInfo nodeId="6762883159245048011" fileName="MqlComma.java" startLine="17" startPosition="63" endLine="18" endPosition="159" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="6762883159245048011" fileName="MqlComma.java" startLine="21" startPosition="49" endLine="22" endPosition="43" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="6762883159245048011" fileName="MqlComma.java" startLine="12" startPosition="0" endLine="15" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="MqlComma#(Ljetbrains/mps/smodel/SNode;)V" />
-    <nodeInfo nodeId="6762883159245048011" fileName="MqlComma.java" startLine="16" startPosition="0" endLine="20" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="newInstance#(Ljetbrains/mps/smodel/SModel;Z)Ljetbrains/mps/query/structure/MqlComma;" />
-    <nodeInfo nodeId="6762883159245048011" fileName="MqlComma.java" startLine="20" startPosition="0" endLine="24" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="newInstance#(Ljetbrains/mps/smodel/SModel;)Ljetbrains/mps/query/structure/MqlComma;" />
-    <scopeInfo nodeId="6762883159245048011" fileName="MqlComma.java" startLine="13" startPosition="31" endLine="14" endPosition="16" />
-    <scopeInfo nodeId="6762883159245048011" fileName="MqlComma.java" startLine="17" startPosition="63" endLine="18" endPosition="159" />
-    <scopeInfo nodeId="6762883159245048011" fileName="MqlComma.java" startLine="21" startPosition="49" endLine="22" endPosition="43" />
-    <scopeInfo nodeId="6762883159245048011" fileName="MqlComma.java" startLine="12" startPosition="0" endLine="15" endPosition="3" />
-    <scopeInfo nodeId="6762883159245048011" fileName="MqlComma.java" startLine="16" startPosition="0" endLine="20" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048011" fileName="MqlComma.java" startLine="20" startPosition="0" endLine="24" endPosition="0" />
-    <unitInfo nodeId="6762883159245048011" fileName="MqlComma.java" startLine="10" startPosition="0" endLine="25" endPosition="0" unitName="jetbrains.mps.query.structure.MqlComma" />
+    <nodeInfo nodeId="6762883159245048011" fileName="MqlComma.java" startLine="12" startPosition="45" endLine="13" endPosition="80" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="concept" />
+    <nodeInfo nodeId="6762883159245048011" fileName="MqlComma.java" startLine="13" startPosition="80" endLine="14" endPosition="57" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="EXPRESSIONS" />
+    <nodeInfo nodeId="6762883159245048011" fileName="MqlComma.java" startLine="16" startPosition="31" endLine="17" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+    <nodeInfo nodeId="6762883159245048011" fileName="MqlComma.java" startLine="20" startPosition="38" endLine="21" endPosition="52" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6762883159245048011" fileName="MqlComma.java" startLine="24" startPosition="50" endLine="25" endPosition="68" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6762883159245048011" fileName="MqlComma.java" startLine="28" startPosition="49" endLine="29" endPosition="71" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6762883159245048011" fileName="MqlComma.java" startLine="32" startPosition="50" endLine="33" endPosition="46" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6762883159245048011" fileName="MqlComma.java" startLine="36" startPosition="73" endLine="37" endPosition="55" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6762883159245048011" fileName="MqlComma.java" startLine="40" startPosition="63" endLine="41" endPosition="159" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6762883159245048011" fileName="MqlComma.java" startLine="44" startPosition="49" endLine="45" endPosition="43" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6762883159245048011" fileName="MqlComma.java" startLine="15" startPosition="0" endLine="18" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="MqlComma#(Ljetbrains/mps/smodel/SNode;)V" />
+    <nodeInfo nodeId="6762883159245048011" fileName="MqlComma.java" startLine="19" startPosition="0" endLine="23" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getExpressionsesCount#()I" />
+    <nodeInfo nodeId="6762883159245048011" fileName="MqlComma.java" startLine="23" startPosition="0" endLine="27" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="expressionses#()Ljava/util/Iterator;" />
+    <nodeInfo nodeId="6762883159245048011" fileName="MqlComma.java" startLine="27" startPosition="0" endLine="31" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getExpressionses#()Ljava/util/List;" />
+    <nodeInfo nodeId="6762883159245048011" fileName="MqlComma.java" startLine="31" startPosition="0" endLine="35" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="addExpressions#(Ljetbrains/mps/smodel/INodeAdapter;)V" />
+    <nodeInfo nodeId="6762883159245048011" fileName="MqlComma.java" startLine="35" startPosition="0" endLine="39" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="insertExpressions#(Ljetbrains/mps/smodel/INodeAdapter;Ljetbrains/mps/smodel/INodeAdapter;)V" />
+    <nodeInfo nodeId="6762883159245048011" fileName="MqlComma.java" startLine="39" startPosition="0" endLine="43" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="newInstance#(Ljetbrains/mps/smodel/SModel;Z)Ljetbrains/mps/query/structure/MqlComma;" />
+    <nodeInfo nodeId="6762883159245048011" fileName="MqlComma.java" startLine="43" startPosition="0" endLine="47" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="newInstance#(Ljetbrains/mps/smodel/SModel;)Ljetbrains/mps/query/structure/MqlComma;" />
+    <scopeInfo nodeId="6762883159245048011" fileName="MqlComma.java" startLine="16" startPosition="31" endLine="17" endPosition="16" />
+    <scopeInfo nodeId="6762883159245048011" fileName="MqlComma.java" startLine="20" startPosition="38" endLine="21" endPosition="52" />
+    <scopeInfo nodeId="6762883159245048011" fileName="MqlComma.java" startLine="24" startPosition="50" endLine="25" endPosition="68" />
+    <scopeInfo nodeId="6762883159245048011" fileName="MqlComma.java" startLine="28" startPosition="49" endLine="29" endPosition="71" />
+    <scopeInfo nodeId="6762883159245048011" fileName="MqlComma.java" startLine="32" startPosition="50" endLine="33" endPosition="46" />
+    <scopeInfo nodeId="6762883159245048011" fileName="MqlComma.java" startLine="36" startPosition="73" endLine="37" endPosition="55" />
+    <scopeInfo nodeId="6762883159245048011" fileName="MqlComma.java" startLine="40" startPosition="63" endLine="41" endPosition="159" />
+    <scopeInfo nodeId="6762883159245048011" fileName="MqlComma.java" startLine="44" startPosition="49" endLine="45" endPosition="43" />
+    <scopeInfo nodeId="6762883159245048011" fileName="MqlComma.java" startLine="15" startPosition="0" endLine="18" endPosition="3" />
+    <scopeInfo nodeId="6762883159245048011" fileName="MqlComma.java" startLine="19" startPosition="0" endLine="23" endPosition="0" />
+    <scopeInfo nodeId="6762883159245048011" fileName="MqlComma.java" startLine="23" startPosition="0" endLine="27" endPosition="0" />
+    <scopeInfo nodeId="6762883159245048011" fileName="MqlComma.java" startLine="27" startPosition="0" endLine="31" endPosition="0" />
+    <scopeInfo nodeId="6762883159245048011" fileName="MqlComma.java" startLine="31" startPosition="0" endLine="35" endPosition="0" />
+    <scopeInfo nodeId="6762883159245048011" fileName="MqlComma.java" startLine="35" startPosition="0" endLine="39" endPosition="0" />
+    <scopeInfo nodeId="6762883159245048011" fileName="MqlComma.java" startLine="39" startPosition="0" endLine="43" endPosition="0" />
+    <scopeInfo nodeId="6762883159245048011" fileName="MqlComma.java" startLine="43" startPosition="0" endLine="47" endPosition="0" />
+    <unitInfo nodeId="6762883159245048011" fileName="MqlComma.java" startLine="12" startPosition="0" endLine="48" endPosition="0" unitName="jetbrains.mps.query.structure.MqlComma" />
   </root>
   <root nodeId="6762883159245048012">
     <nodeInfo nodeId="6762883159245048012" fileName="MqlExpression.java" startLine="11" startPosition="48" endLine="12" endPosition="85" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="concept" />
