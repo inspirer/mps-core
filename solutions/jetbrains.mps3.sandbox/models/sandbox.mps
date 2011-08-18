@@ -114,9 +114,6 @@
         </node>
         <node role="expressions" roleId="bwy9.1981169195802367331" type="bwy9.MqlParentheses" typeId="bwy9.6762883159245048022" id="2059702675526025620">
           <node role="expr" roleId="bwy9.6762883159245048023" type="bwy9.MqlTriplex" typeId="bwy9.6762883159245048058" id="2059702675526025613">
-            <node role="thenexpr" roleId="bwy9.6762883159245048060" type="bwy9.MqlNoContextQueryCall" typeId="bwy9.2059702675525965924" id="2059702675526025619">
-              <link role="query" roleId="bwy9.2059702675525965925" targetNodeId="6601450967974208008" resolveInfo="getString" />
-            </node>
             <node role="condition" roleId="bwy9.6762883159245048059" type="bwy9.MqlVarReference" typeId="bwy9.2059702675526025628" id="1981169195802389986">
               <link role="var" roleId="bwy9.2059702675526025629" targetNodeId="1981169195802389983" resolveInfo="qqq" />
             </node>
@@ -129,7 +126,7 @@
               </node>
               <node role="expressions" roleId="bwy9.1981169195802367331" type="bwy9.MqlArithmetic" typeId="bwy9.6762883159245048040" id="1981169195802389994">
                 <property name="kind" nameId="bwy9.6762883159245048047" value="1" />
-                <node role="left" roleId="bwy9.6762883159245048020" type="bwy9.MqlVarReference" typeId="bwy9.2059702675526025628" id="1981169195802389997">
+                <node role="left" roleId="bwy9.6762883159245048020" type="bwy9.MqlVarReference" typeId="bwy9.2059702675526025628" id="1981169195802401089">
                   <link role="var" roleId="bwy9.2059702675526025629" targetNodeId="1981169195802389991" resolveInfo="pp" />
                 </node>
                 <node role="right" roleId="bwy9.6762883159245048021" type="bwy9.MqlIntLiteral" typeId="bwy9.6762883159245048052" id="1981169195802389998">
@@ -137,6 +134,74 @@
                 </node>
               </node>
             </node>
+            <node role="thenexpr" roleId="bwy9.6762883159245048060" type="bwy9.MqlParentheses" typeId="bwy9.6762883159245048022" id="1981169195802401078">
+              <node role="expr" roleId="bwy9.6762883159245048023" type="bwy9.MqlComma" typeId="bwy9.6762883159245048011" id="1981169195802401083">
+                <node role="expressions" roleId="bwy9.1981169195802367331" type="bwy9.MqlAssignment" typeId="bwy9.5322644393894740272" id="1981169195802401086">
+                  <property name="name" nameId="tpck.1169194664001" value="aaa" />
+                  <node role="value" roleId="bwy9.5322644393894740275" type="bwy9.MqlIntLiteral" typeId="bwy9.6762883159245048052" id="1981169195802401088">
+                    <property name="value" nameId="bwy9.6762883159245048053" value="2323" />
+                  </node>
+                </node>
+                <node role="expressions" roleId="bwy9.1981169195802367331" type="bwy9.MqlNoContextQueryCall" typeId="bwy9.2059702675525965924" id="2059702675526025619">
+                  <link role="query" roleId="bwy9.2059702675525965925" targetNodeId="6601450967974208008" resolveInfo="getString" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="queries" roleId="bwy9.6762883159245048633" type="bwy9.MqlQuery" typeId="bwy9.6762883159245048009" id="1981169195802401047">
+      <property name="name" nameId="tpck.1169194664001" value="about" />
+      <node role="body" roleId="bwy9.6762883159245048634" type="bwy9.MqlComma" typeId="bwy9.6762883159245048011" id="1981169195802401049">
+        <node role="expressions" roleId="bwy9.1981169195802367331" type="bwy9.MqlIntLiteral" typeId="bwy9.6762883159245048052" id="1981169195802401051">
+          <property name="value" nameId="bwy9.6762883159245048053" value="1" />
+        </node>
+        <node role="expressions" roleId="bwy9.1981169195802367331" type="bwy9.MqlIntLiteral" typeId="bwy9.6762883159245048052" id="1981169195802401053">
+          <property name="value" nameId="bwy9.6762883159245048053" value="2" />
+        </node>
+        <node role="expressions" roleId="bwy9.1981169195802367331" type="bwy9.MqlIntLiteral" typeId="bwy9.6762883159245048052" id="1981169195802401055">
+          <property name="value" nameId="bwy9.6762883159245048053" value="3" />
+        </node>
+        <node role="expressions" roleId="bwy9.1981169195802367331" type="bwy9.MqlParentheses" typeId="bwy9.6762883159245048022" id="1981169195802401057">
+          <node role="expr" roleId="bwy9.6762883159245048023" type="bwy9.MqlComma" typeId="bwy9.6762883159245048011" id="1981169195802401059">
+            <node role="expressions" roleId="bwy9.1981169195802367331" type="bwy9.MqlIntLiteral" typeId="bwy9.6762883159245048052" id="1981169195802401061">
+              <property name="value" nameId="bwy9.6762883159245048053" value="2" />
+            </node>
+            <node role="expressions" roleId="bwy9.1981169195802367331" type="bwy9.MqlIntLiteral" typeId="bwy9.6762883159245048052" id="1981169195802401063">
+              <property name="value" nameId="bwy9.6762883159245048053" value="3" />
+            </node>
+            <node role="expressions" roleId="bwy9.1981169195802367331" type="bwy9.MqlIntLiteral" typeId="bwy9.6762883159245048052" id="1981169195802401065">
+              <property name="value" nameId="bwy9.6762883159245048053" value="4" />
+            </node>
+          </node>
+        </node>
+        <node role="expressions" roleId="bwy9.1981169195802367331" type="bwy9.MqlIntLiteral" typeId="bwy9.6762883159245048052" id="1981169195802401067">
+          <property name="value" nameId="bwy9.6762883159245048053" value="5" />
+        </node>
+      </node>
+    </node>
+    <node role="queries" roleId="bwy9.6762883159245048633" type="bwy9.MqlQuery" typeId="bwy9.6762883159245048009" id="1981169195802401068">
+      <property name="name" nameId="tpck.1169194664001" value="q" />
+      <node role="body" roleId="bwy9.6762883159245048634" type="bwy9.MqlParentheses" typeId="bwy9.6762883159245048022" id="8205627927119755643">
+        <node role="expr" roleId="bwy9.6762883159245048023" type="bwy9.MqlComma" typeId="bwy9.6762883159245048011" id="8205627927119756716">
+          <node role="expressions" roleId="bwy9.1981169195802367331" type="bwy9.MqlArithmetic" typeId="bwy9.6762883159245048040" id="8205627927119755655">
+            <property name="kind" nameId="bwy9.6762883159245048047" value="1" />
+            <node role="right" roleId="bwy9.6762883159245048021" type="bwy9.MqlIntLiteral" typeId="bwy9.6762883159245048052" id="8205627927119755658">
+              <property name="value" nameId="bwy9.6762883159245048053" value="2" />
+            </node>
+            <node role="left" roleId="bwy9.6762883159245048020" type="bwy9.MqlNoContextQueryCall" typeId="bwy9.2059702675525965924" id="8205627927119755650">
+              <link role="query" roleId="bwy9.2059702675525965925" targetNodeId="228266671027811804" resolveInfo="getInt" />
+            </node>
+          </node>
+          <node role="expressions" roleId="bwy9.1981169195802367331" type="bwy9.MqlIntLiteral" typeId="bwy9.6762883159245048052" id="8205627927119756723">
+            <property name="value" nameId="bwy9.6762883159245048053" value="12" />
+          </node>
+          <node role="expressions" roleId="bwy9.1981169195802367331" type="bwy9.MqlIntLiteral" typeId="bwy9.6762883159245048052" id="8205627927119756725">
+            <property name="value" nameId="bwy9.6762883159245048053" value="13" />
+          </node>
+          <node role="expressions" roleId="bwy9.1981169195802367331" type="bwy9.MqlIntLiteral" typeId="bwy9.6762883159245048052" id="8205627927119756726">
+            <property name="value" nameId="bwy9.6762883159245048053" value="1" />
           </node>
         </node>
       </node>
