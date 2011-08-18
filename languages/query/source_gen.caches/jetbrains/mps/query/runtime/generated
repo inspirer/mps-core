@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependencies version="2" modelHash="6q3etyabbi1h2wx1f28o916wwwzuvgd">
+  <dep model="r:00000000-0000-4000-0000-011c895902cb(jetbrains.mps.baseLanguage.generator.java.closures@generator)" />
+  <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" />
+  <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" />
+  <common hash="7usf0ib4nueismz6mmk2rl9exc9skkn" />
+  <source id="6762883159245086419" name="EvaluationContext" hash="-dh7n2idqhm6yfwaqp2gz96npsj4bb9c">
+    <dep model="r:00000000-0000-4000-0000-011c895902cb(jetbrains.mps.baseLanguage.generator.java.closures@generator)" />
+    <file name="EvaluationContext.java" />
+  </source>
+  <source id="6762883159245086425" name="EvaluationException" hash="5gukc2c2dxadnft5zsp568un7pyqjph">
+    <dep model="r:00000000-0000-4000-0000-011c895902cb(jetbrains.mps.baseLanguage.generator.java.closures@generator)" />
+    <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" />
+    <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" />
+    <file name="EvaluationException.java" />
+  </source>
+</dependencies>
+

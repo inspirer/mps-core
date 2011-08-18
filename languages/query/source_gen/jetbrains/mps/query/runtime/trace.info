@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debugInfo>
+  <root nodeId="6762883159245086419">
+    <nodeInfo nodeId="6762883159245086421" fileName="EvaluationContext.java" startLine="6" startPosition="32" endLine="8" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="EvaluationContext#()V" />
+    <scopeInfo nodeId="6762883159245086424" fileName="EvaluationContext.java" startLine="7" startPosition="30" endLine="7" endPosition="30" />
+    <scopeInfo nodeId="6762883159245086421" fileName="EvaluationContext.java" startLine="6" startPosition="32" endLine="8" endPosition="3" />
+    <unitInfo nodeId="6762883159245086419" fileName="EvaluationContext.java" startLine="6" startPosition="0" endLine="10" endPosition="0" unitName="jetbrains.mps.query.runtime.EvaluationContext" />
+  </root>
+  <root nodeId="6762883159245086425">
+    <nodeInfo nodeId="6762883159245086436" fileName="EvaluationException.java" startLine="7" startPosition="46" endLine="8" endPosition="19" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+    <nodeInfo nodeId="6762883159245086427" fileName="EvaluationException.java" startLine="6" startPosition="52" endLine="9" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="EvaluationException#(Ljava/lang/String;)V" />
+    <scopeInfo nodeId="6762883159245086430" fileName="EvaluationException.java" startLine="7" startPosition="46" endLine="8" endPosition="19" />
+    <scopeInfo nodeId="6762883159245086427" fileName="EvaluationException.java" startLine="6" startPosition="52" endLine="9" endPosition="3">
+      <varInfo nodeId="6762883159245086432" varName="message" />
+    </scopeInfo>
+    <unitInfo nodeId="6762883159245086425" fileName="EvaluationException.java" startLine="6" startPosition="0" endLine="11" endPosition="0" unitName="jetbrains.mps.query.runtime.EvaluationException" />
+  </root>
+</debugInfo>
+
