@@ -7,7 +7,7 @@
   <component name="MPSProject">
     <projectModules>
       <modulePath path="${project}/languages/query/query.mpl" />
-      <modulePath path="${project}/solutions/jetbrains.mpsex.sandbox/jetbrains.mpsex.sandbox.msd" />
+      <modulePath path="${project}/solutions/jetbrains.mps3.sandbox/jetbrains.mps3.sandbox.msd" />
       <modulePath path="${project}/languages/syntax/syntax.mpl" folder="" />
       <modulePath path="${project}/languages/template/template.mpl" folder="" />
     </projectModules>
