@@ -43,6 +43,7 @@ public class MqlFunctionType_Editor extends DefaultNodeEditor {
   private EditorCell createConstant_2l09kp_a0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "{");
     editorCell.setCellId("Constant_2l09kp_a0");
+    MqlSS_StyleSheet.getPunctuation(editorCell).apply(editorCell);
     {
       Style style = editorCell.getStyle();
       style.set(StyleAttributes.MATCHING_LABEL, "body-paren");
@@ -55,6 +56,7 @@ public class MqlFunctionType_Editor extends DefaultNodeEditor {
   private EditorCell createConstant_2l09kp_c0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "->");
     editorCell.setCellId("Constant_2l09kp_c0");
+    MqlSS_StyleSheet.getPunctuation(editorCell).apply(editorCell);
     {
       Style style = editorCell.getStyle();
       style.set(StyleAttributes.PUNCTUATION_LEFT, true);
@@ -67,6 +69,7 @@ public class MqlFunctionType_Editor extends DefaultNodeEditor {
   private EditorCell createConstant_2l09kp_e0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "}");
     editorCell.setCellId("Constant_2l09kp_e0");
+    MqlSS_StyleSheet.getPunctuation(editorCell).apply(editorCell);
     {
       Style style = editorCell.getStyle();
       style.set(StyleAttributes.PUNCTUATION_LEFT, true);

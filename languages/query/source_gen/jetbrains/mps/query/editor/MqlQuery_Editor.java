@@ -66,6 +66,7 @@ public class MqlQuery_Editor extends DefaultNodeEditor {
   private EditorCell createConstant_fwnkly_a2a(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "(");
     editorCell.setCellId("Constant_fwnkly_a2a");
+    MqlSS_StyleSheet.getPunctuation(editorCell).apply(editorCell);
     {
       Style style = editorCell.getStyle();
       style.set(StyleAttributes.PUNCTUATION_LEFT, true);
@@ -78,6 +79,7 @@ public class MqlQuery_Editor extends DefaultNodeEditor {
   private EditorCell createConstant_fwnkly_c2a(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ")");
     editorCell.setCellId("Constant_fwnkly_c2a");
+    MqlSS_StyleSheet.getPunctuation(editorCell).apply(editorCell);
     {
       Style style = editorCell.getStyle();
       style.set(StyleAttributes.PUNCTUATION_LEFT, true);

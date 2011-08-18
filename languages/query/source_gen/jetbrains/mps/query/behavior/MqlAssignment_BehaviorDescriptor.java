@@ -10,6 +10,10 @@ public class MqlAssignment_BehaviorDescriptor extends MqlExpression_BehaviorDesc
   public MqlAssignment_BehaviorDescriptor() {
   }
 
+  public SNode virtual_getType_228266671027861783(SNode thisNode) {
+    return MqlAssignment_Behavior.virtual_getType_228266671027861783(thisNode);
+  }
+
   public String virtual_getFqName_1213877404258(SNode thisNode) {
     return INamedConcept_Behavior.virtual_getFqName_1213877404258(thisNode);
   }

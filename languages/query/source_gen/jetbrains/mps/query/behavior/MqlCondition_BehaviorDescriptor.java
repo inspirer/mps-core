@@ -12,6 +12,10 @@ public class MqlCondition_BehaviorDescriptor extends MqlBinaryExpr_BehaviorDescr
     return MqlCondition_Behavior.virtual_getPriority_5322644393894740165(thisNode);
   }
 
+  public SNode virtual_getType_228266671027861783(SNode thisNode) {
+    return MqlCondition_Behavior.virtual_getType_228266671027861783(thisNode);
+  }
+
   public int virtual_getAssociativity_5322644393894740267(SNode thisNode) {
     return MqlCondition_Behavior.virtual_getAssociativity_5322644393894740267(thisNode);
   }

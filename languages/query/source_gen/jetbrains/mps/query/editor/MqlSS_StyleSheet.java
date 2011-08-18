@@ -27,4 +27,10 @@ public class MqlSS_StyleSheet {
     style.set(StyleAttributes.TEXT_COLOR, MPSColors.blue);
     return style;
   }
+
+  public static Style getPunctuation(final EditorCell cell) {
+    Style style = new Style(cell);
+    style.set(StyleAttributes.FONT_STYLE, MPSFonts.PLAIN);
+    return style;
+  }
 }

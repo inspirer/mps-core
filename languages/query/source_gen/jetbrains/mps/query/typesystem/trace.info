@@ -1,3 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<debugInfo />
+<debugInfo>
+  <unitInfo fileName="TypesystemDescriptor.java" startLine="8" startPosition="0" endLine="16" endPosition="0" unitName="jetbrains.mps.query.typesystem.TypesystemDescriptor" />
+  <root nodeId="228266671027905045">
+    <nodeInfo nodeId="228266671027905055" fileName="typeof_MqlExpression_InferenceRule.java" startLine="19" startPosition="5" endLine="20" endPosition="55" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="228266671027905055" fileName="typeof_MqlExpression_InferenceRule.java" startLine="20" startPosition="55" endLine="21" endPosition="195" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="228266671027905055" fileName="typeof_MqlExpression_InferenceRule.java" startLine="21" startPosition="195" endLine="22" endPosition="305" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="228266671027905045" fileName="typeof_MqlExpression_InferenceRule.java" startLine="26" startPosition="46" endLine="27" endPosition="57" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="228266671027905045" fileName="typeof_MqlExpression_InferenceRule.java" startLine="31" startPosition="5" endLine="32" endPosition="117" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="228266671027905045" fileName="typeof_MqlExpression_InferenceRule.java" startLine="32" startPosition="117" endLine="33" endPosition="45" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="228266671027905045" fileName="typeof_MqlExpression_InferenceRule.java" startLine="37" startPosition="30" endLine="38" endPosition="17" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="228266671027905045" fileName="typeof_MqlExpression_InferenceRule.java" startLine="14" startPosition="120" endLine="16" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="typeof_MqlExpression_InferenceRule#()V" />
+    <nodeInfo nodeId="228266671027905045" fileName="typeof_MqlExpression_InferenceRule.java" startLine="25" startPosition="0" endLine="29" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getApplicableConceptFQName#()Ljava/lang/String;" />
+    <nodeInfo nodeId="228266671027905045" fileName="typeof_MqlExpression_InferenceRule.java" startLine="30" startPosition="68" endLine="34" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="228266671027905045" fileName="typeof_MqlExpression_InferenceRule.java" startLine="36" startPosition="0" endLine="40" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="overrides#()Z" />
+    <nodeInfo nodeId="228266671027905055" fileName="typeof_MqlExpression_InferenceRule.java" startLine="18" startPosition="126" endLine="23" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="228266671027905045" fileName="typeof_MqlExpression_InferenceRule.java" startLine="29" startPosition="0" endLine="36" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="isApplicableAndPattern#(Ljetbrains/mps/smodel/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+    <nodeInfo nodeId="228266671027905045" fileName="typeof_MqlExpression_InferenceRule.java" startLine="17" startPosition="0" endLine="25" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="applyRule#(Ljetbrains/mps/smodel/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+    <scopeInfo nodeId="228266671027905045" fileName="typeof_MqlExpression_InferenceRule.java" startLine="15" startPosition="47" endLine="15" endPosition="47" />
+    <scopeInfo nodeId="228266671027905045" fileName="typeof_MqlExpression_InferenceRule.java" startLine="26" startPosition="46" endLine="27" endPosition="57" />
+    <scopeInfo nodeId="228266671027905045" fileName="typeof_MqlExpression_InferenceRule.java" startLine="37" startPosition="30" endLine="38" endPosition="17" />
+    <scopeInfo nodeId="228266671027905045" fileName="typeof_MqlExpression_InferenceRule.java" startLine="14" startPosition="120" endLine="16" endPosition="3" />
+    <scopeInfo nodeId="228266671027905045" fileName="typeof_MqlExpression_InferenceRule.java" startLine="31" startPosition="5" endLine="33" endPosition="45" />
+    <scopeInfo nodeId="228266671027905055" fileName="typeof_MqlExpression_InferenceRule.java" startLine="19" startPosition="5" endLine="22" endPosition="305" />
+    <scopeInfo nodeId="228266671027905045" fileName="typeof_MqlExpression_InferenceRule.java" startLine="25" startPosition="0" endLine="29" endPosition="0" />
+    <scopeInfo nodeId="228266671027905045" fileName="typeof_MqlExpression_InferenceRule.java" startLine="30" startPosition="68" endLine="34" endPosition="5" />
+    <scopeInfo nodeId="228266671027905045" fileName="typeof_MqlExpression_InferenceRule.java" startLine="36" startPosition="0" endLine="40" endPosition="0" />
+    <scopeInfo nodeId="228266671027905046" fileName="typeof_MqlExpression_InferenceRule.java" startLine="18" startPosition="126" endLine="23" endPosition="5" />
+    <scopeInfo nodeId="228266671027905045" fileName="typeof_MqlExpression_InferenceRule.java" startLine="29" startPosition="0" endLine="36" endPosition="0" />
+    <scopeInfo nodeId="228266671027905045" fileName="typeof_MqlExpression_InferenceRule.java" startLine="17" startPosition="0" endLine="25" endPosition="0" />
+    <unitInfo nodeId="228266671027905045" fileName="typeof_MqlExpression_InferenceRule.java" startLine="14" startPosition="0" endLine="41" endPosition="0" unitName="jetbrains.mps.query.typesystem.typeof_MqlExpression_InferenceRule" />
+  </root>
+</debugInfo>
 
