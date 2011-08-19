@@ -362,9 +362,10 @@ public class QueriesGenerated {
           public SNode doSubstitute(String pattern) {
             SNode result = SNodeFactoryOperations.createNewNode(_context.getModel(), "jetbrains.mps.query.structure.MqlArithmetic", _context.getSourceNode());
             SPropertyOperations.set(result, "kind", "" + SEnumOperations.getEnumMemberValue((item)));
-            SNodeOperations.replaceWithAnother(_context.getSourceNode(), result);
-            SLinkOperations.setTarget(result, "left", _context.getSourceNode(), true);
-            return result;
+            SNode nodeToProcess = PrecedenceUtil.getTargetForRightTransform(_context.getSourceNode(), result);
+            SNodeOperations.replaceWithAnother(nodeToProcess, result);
+            SLinkOperations.setTarget(result, "left", nodeToProcess, true);
+            return PrecedenceUtil.parenthesiseIfNecessary(result);
           }
 
           public String getMatchingText(String text) {
@@ -381,6 +382,48 @@ public class QueriesGenerated {
 
           public String getDescriptionText(String text) {
             return SEnumOperations.getEnumMemberName((item)).toLowerCase() + " operator";
+          }
+        });
+      }
+    }
+    {
+      final SNode concept = SConceptOperations.findConceptDeclaration("jetbrains.mps.query.structure.MqlCondition");
+      Calculable calculable = new Calculable() {
+        public Object calculate() {
+          return SEnumOperations.getEnumMembers(SEnumOperations.getEnum("r:f9198ffd-e084-425c-aa82-f2db8289f5eb(jetbrains.mps.query.structure)", "MqlConditionKind"));
+        }
+      };
+      Iterable<SNode> parameterObjects = (Iterable<SNode>) calculable.calculate();
+      assert parameterObjects != null;
+      for (final SNode item : parameterObjects) {
+        ListSequence.fromList(result).addElement(new AbstractSideTransformHintSubstituteAction(concept, item, _context.getSourceNode()) {
+          public SNode doSubstitute(String pattern) {
+            SNode result = SNodeFactoryOperations.createNewNode(_context.getModel(), "jetbrains.mps.query.structure.MqlCondition", _context.getSourceNode());
+            SPropertyOperations.set(result, "kind", "" + SEnumOperations.getEnumMemberValue((item)));
+            SNode nodeToProcess = PrecedenceUtil.getTargetForRightTransform(_context.getSourceNode(), result);
+            SNodeOperations.replaceWithAnother(nodeToProcess, result);
+            SLinkOperations.setTarget(result, "left", nodeToProcess, true);
+            return PrecedenceUtil.parenthesiseIfNecessary(result);
+          }
+
+          public String getMatchingText(String text) {
+            return SPropertyOperations.getString(ListSequence.fromList(SLinkOperations.getTargets(SNodeOperations.getNode("r:f9198ffd-e084-425c-aa82-f2db8289f5eb(jetbrains.mps.query.structure)", "6762883159245048026"), "member", true)).findFirst(new IWhereFilter<SNode>() {
+              public boolean accept(SNode it) {
+                return SPropertyOperations.getString(it, "internalValue").equals(SEnumOperations.getEnumMemberValue((item)));
+              }
+            }), "externalValue");
+          }
+
+          public String getVisibleMatchingText(String text) {
+            return this.getMatchingText(text);
+          }
+
+          public String getDescriptionText(String text) {
+            return SPropertyOperations.getString(ListSequence.fromList(SLinkOperations.getTargets(SNodeOperations.getNode("r:f9198ffd-e084-425c-aa82-f2db8289f5eb(jetbrains.mps.query.structure)", "6762883159245048026"), "member", true)).findFirst(new IWhereFilter<SNode>() {
+              public boolean accept(SNode it) {
+                return SPropertyOperations.getString(it, "internalValue").equals(SEnumOperations.getEnumMemberValue((item)));
+              }
+            }), "externalValue") + " operator";
           }
         });
       }
@@ -404,9 +447,10 @@ public class QueriesGenerated {
           public SNode doSubstitute(String pattern) {
             SNode result = SNodeFactoryOperations.createNewNode(_context.getModel(), "jetbrains.mps.query.structure.MqlArithmetic", _context.getSourceNode());
             SPropertyOperations.set(result, "kind", "" + SEnumOperations.getEnumMemberValue((item)));
-            SNodeOperations.replaceWithAnother(_context.getSourceNode(), result);
-            SLinkOperations.setTarget(result, "right", _context.getSourceNode(), true);
-            return result;
+            SNode nodeToProcess = PrecedenceUtil.getTargetForLeftTransform(_context.getSourceNode(), result);
+            SNodeOperations.replaceWithAnother(nodeToProcess, result);
+            SLinkOperations.setTarget(result, "right", nodeToProcess, true);
+            return PrecedenceUtil.parenthesiseIfNecessary(result);
           }
 
           public String getMatchingText(String text) {
@@ -423,6 +467,48 @@ public class QueriesGenerated {
 
           public String getDescriptionText(String text) {
             return SEnumOperations.getEnumMemberName((item)).toLowerCase() + " operator";
+          }
+        });
+      }
+    }
+    {
+      final SNode concept = SConceptOperations.findConceptDeclaration("jetbrains.mps.query.structure.MqlCondition");
+      Calculable calculable = new Calculable() {
+        public Object calculate() {
+          return SEnumOperations.getEnumMembers(SEnumOperations.getEnum("r:f9198ffd-e084-425c-aa82-f2db8289f5eb(jetbrains.mps.query.structure)", "MqlConditionKind"));
+        }
+      };
+      Iterable<SNode> parameterObjects = (Iterable<SNode>) calculable.calculate();
+      assert parameterObjects != null;
+      for (final SNode item : parameterObjects) {
+        ListSequence.fromList(result).addElement(new AbstractSideTransformHintSubstituteAction(concept, item, _context.getSourceNode()) {
+          public SNode doSubstitute(String pattern) {
+            SNode result = SNodeFactoryOperations.createNewNode(_context.getModel(), "jetbrains.mps.query.structure.MqlCondition", _context.getSourceNode());
+            SPropertyOperations.set(result, "kind", "" + SEnumOperations.getEnumMemberValue((item)));
+            SNode nodeToProcess = PrecedenceUtil.getTargetForLeftTransform(_context.getSourceNode(), result);
+            SNodeOperations.replaceWithAnother(nodeToProcess, result);
+            SLinkOperations.setTarget(result, "right", nodeToProcess, true);
+            return PrecedenceUtil.parenthesiseIfNecessary(result);
+          }
+
+          public String getMatchingText(String text) {
+            return SPropertyOperations.getString(ListSequence.fromList(SLinkOperations.getTargets(SNodeOperations.getNode("r:f9198ffd-e084-425c-aa82-f2db8289f5eb(jetbrains.mps.query.structure)", "6762883159245048026"), "member", true)).findFirst(new IWhereFilter<SNode>() {
+              public boolean accept(SNode it) {
+                return SPropertyOperations.getString(it, "internalValue").equals(SEnumOperations.getEnumMemberValue((item)));
+              }
+            }), "externalValue");
+          }
+
+          public String getVisibleMatchingText(String text) {
+            return this.getMatchingText(text);
+          }
+
+          public String getDescriptionText(String text) {
+            return SPropertyOperations.getString(ListSequence.fromList(SLinkOperations.getTargets(SNodeOperations.getNode("r:f9198ffd-e084-425c-aa82-f2db8289f5eb(jetbrains.mps.query.structure)", "6762883159245048026"), "member", true)).findFirst(new IWhereFilter<SNode>() {
+              public boolean accept(SNode it) {
+                return SPropertyOperations.getString(it, "internalValue").equals(SEnumOperations.getEnumMemberValue((item)));
+              }
+            }), "externalValue") + " operator";
           }
         });
       }

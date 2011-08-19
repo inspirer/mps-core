@@ -10,6 +10,7 @@
       <modulePath path="${project}/solutions/jetbrains.mps3.sandbox/jetbrains.mps3.sandbox.msd" />
       <modulePath path="${project}/languages/syntax/syntax.mpl" folder="" />
       <modulePath path="${project}/languages/template/template.mpl" folder="" />
+      <modulePath path="${mps_home}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar!/META-INF/module.xml" />
     </projectModules>
     <genConfs />
   </component>

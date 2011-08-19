@@ -108,6 +108,7 @@ public class MqlNoContextQueryCall_Editor extends DefaultNodeEditor {
       CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
       provider.setRole("name");
       provider.setNoTargetText("<no name>");
+      provider.setReadOnly(true);
       EditorCell editorCell;
       editorCell = provider.createEditorCell(editorContext);
       editorCell.setCellId("property_name");
@@ -165,6 +166,10 @@ public class MqlNoContextQueryCall_Editor extends DefaultNodeEditor {
     private EditorCell createConstant_f4edg6_a2a(EditorContext editorContext, SNode node) {
       EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "");
       editorCell.setCellId("Constant_f4edg6_a2a");
+      {
+        Style style = editorCell.getStyle();
+        style.set(StyleAttributes.EDITABLE, true);
+      }
       editorCell.setDefaultText("");
       return editorCell;
     }

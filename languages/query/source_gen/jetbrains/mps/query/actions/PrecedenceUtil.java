@@ -7,7 +7,6 @@ import jetbrains.mps.query.behavior.MqlExpression_Behavior;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import org.jetbrains.annotations.NotNull;
-import jetbrains.mps.smodel.action.SNodeFactoryOperations;
 
 /*package*/ class PrecedenceUtil {
   public PrecedenceUtil() {
@@ -31,9 +30,10 @@ import jetbrains.mps.smodel.action.SNodeFactoryOperations;
     return targetNode;
   }
 
-  /*package*/ static SNode getTargetForRightTransform(@NotNull SNode contextNode) {
+  /*package*/ static SNode getTargetForRightTransform(@NotNull SNode contextNode, SNode result) {
+    int prio = MqlExpression_Behavior.call_getPriority_7352592509980890960(result);
     SNode targetNode = contextNode;
-    for (SNode parentNode = SNodeOperations.getParent(targetNode); parentNode != null && SNodeOperations.isInstanceOf(parentNode, "jetbrains.mps.query.structure.MqlExpression"); parentNode = SNodeOperations.getParent(targetNode)) {
+    for (SNode parentNode = SNodeOperations.getParent(targetNode); parentNode != null && SNodeOperations.isInstanceOf(parentNode, "jetbrains.mps.query.structure.MqlExpression") && MqlExpression_Behavior.call_getPriority_7352592509980890960(SNodeOperations.cast(parentNode, "jetbrains.mps.query.structure.MqlExpression")) < prio; parentNode = SNodeOperations.getParent(targetNode)) {
       if (MqlExpression_Behavior.call_getPriority_7352592509980890960(SNodeOperations.cast(parentNode, "jetbrains.mps.query.structure.MqlExpression")) == -1) {
         // we do not go through expressions like parentheses or calls 
         break;
@@ -53,11 +53,18 @@ import jetbrains.mps.smodel.action.SNodeFactoryOperations;
     return targetNode;
   }
 
-  public static SNode parenthesiseIfNecessary(@NotNull SNode contextNode) {
+  /*package*/ static SNode parenthesiseIfNecessary(@NotNull SNode contextNode) {
     if (SNodeOperations.isInstanceOf(SNodeOperations.getParent(contextNode), "jetbrains.mps.query.structure.MqlBinaryExpr")) {
       SNode parentBinaryOperation = SNodeOperations.cast(SNodeOperations.getParent(contextNode), "jetbrains.mps.query.structure.MqlBinaryExpr");
-      if (SNodeOperations.getContainingLinkDeclaration(contextNode) == SLinkOperations.findLinkDeclaration("jetbrains.mps.query.structure.MqlBinaryExpr", "right") && MqlExpression_Behavior.call_getPriority_7352592509980890960(parentBinaryOperation) < MqlExpression_Behavior.call_getPriority_7352592509980890960(contextNode)) {
-        SNode result = SNodeFactoryOperations.replaceWithNewChild(contextNode, "jetbrains.mps.query.structure.MqlParentheses");
+      if (MqlExpression_Behavior.call_getPriority_7352592509980890960(parentBinaryOperation) < MqlExpression_Behavior.call_getPriority_7352592509980890960(contextNode)) {
+        SNode result = SNodeOperations.replaceWithNewChild(contextNode, "jetbrains.mps.query.structure.MqlParentheses");
+        SLinkOperations.setTarget(result, "expr", contextNode, true);
+        return result;
+      }
+    }
+    if (SNodeOperations.isInstanceOf(SNodeOperations.getParent(contextNode), "jetbrains.mps.query.structure.MqlDotExpression")) {
+      if (MqlExpression_Behavior.call_getPriority_7352592509980890960(SNodeOperations.getParent(contextNode)) < MqlExpression_Behavior.call_getPriority_7352592509980890960(contextNode)) {
+        SNode result = SNodeOperations.replaceWithNewChild(contextNode, "jetbrains.mps.query.structure.MqlParentheses");
         SLinkOperations.setTarget(result, "expr", contextNode, true);
         return result;
       }
