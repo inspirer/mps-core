@@ -23,7 +23,7 @@
   <dep model="r:2eb00686-cf12-445a-b169-a375a4c25909(jetbrains.mps.query.behavior)" hash="-651aecqilvz9718ppc2qp1w5fwlo23x" />
   <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" />
   <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" />
-  <dep model="r:f9198ffd-e084-425c-aa82-f2db8289f5eb(jetbrains.mps.query.structure)" hash="citcgpipt627u3gdlt7gdwbiid0x3b6" />
+  <dep model="r:f9198ffd-e084-425c-aa82-f2db8289f5eb(jetbrains.mps.query.structure)" hash="-5c3uwhjbpvc5mkz5ztgwg4r20ku2lqg" />
   <common hash="3aq1watvauuwb4ny78on7onh0fdq2lc" dependsOnNodes="true">
     <dep root="2059702675526025697" />
     <dep root="228266671027861702" />

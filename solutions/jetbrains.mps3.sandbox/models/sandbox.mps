@@ -212,6 +212,18 @@
         </node>
       </node>
     </node>
+    <node role="queries" roleId="bwy9.6762883159245048633" type="bwy9.MqlQuery" typeId="bwy9.6762883159245048009" id="8595827001410537409">
+      <property name="name" nameId="tpck.1169194664001" value="pp" />
+      <node role="body" roleId="bwy9.6762883159245048634" type="bwy9.MqlArithmetic" typeId="bwy9.6762883159245048040" id="8595827001410539483">
+        <property name="kind" nameId="bwy9.6762883159245048047" value="3" />
+        <node role="right" roleId="bwy9.6762883159245048021" type="bwy9.MqlIntLiteral" typeId="bwy9.6762883159245048052" id="8595827001410539487">
+          <property name="value" nameId="bwy9.6762883159245048053" value="12" />
+        </node>
+        <node role="left" roleId="bwy9.6762883159245048020" type="bwy9.MqlIntLiteral" typeId="bwy9.6762883159245048052" id="8595827001410539469">
+          <property name="value" nameId="bwy9.6762883159245048053" value="1" />
+        </node>
+      </node>
+    </node>
   </root>
 </model>
 

@@ -33,6 +33,7 @@ public class MqlArithmetic_Editor extends DefaultNodeEditor {
     provider.setNoTargetText("<no left>");
     EditorCell editorCell;
     editorCell = provider.createEditorCell(editorContext);
+    remove_binaryLeft.setCellActions(editorCell, node, editorContext);
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
     Class attributeKind = provider.getRoleAttributeClass();
@@ -50,6 +51,7 @@ public class MqlArithmetic_Editor extends DefaultNodeEditor {
     provider.setNoTargetText("<no right>");
     EditorCell editorCell;
     editorCell = provider.createEditorCell(editorContext);
+    remove_binaryRight.setCellActions(editorCell, node, editorContext);
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
     Class attributeKind = provider.getRoleAttributeClass();

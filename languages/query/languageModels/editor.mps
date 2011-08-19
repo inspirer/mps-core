@@ -155,6 +155,16 @@
       <property name="name" nameId="tpck.1169194664001" value="remove_queryContext" />
       <link role="applicableConcept" roleId="tpc2.1139535219968" targetNodeId="bwy9.6762883159245048009" resolveInfo="MqlQuery" />
     </node>
+    <node type="tpc2.CellActionMapDeclaration" typeId="tpc2.1139535219966" id="8595827001410573526">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="expr" />
+      <property name="name" nameId="tpck.1169194664001" value="remove_binaryRight" />
+      <link role="applicableConcept" roleId="tpc2.1139535219968" targetNodeId="bwy9.6762883159245048014" resolveInfo="MqlBinaryExpr" />
+    </node>
+    <node type="tpc2.CellActionMapDeclaration" typeId="tpc2.1139535219966" id="8595827001410588570">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="expr" />
+      <property name="name" nameId="tpck.1169194664001" value="remove_binaryLeft" />
+      <link role="applicableConcept" roleId="tpc2.1139535219968" targetNodeId="bwy9.6762883159245048014" resolveInfo="MqlBinaryExpr" />
+    </node>
   </roots>
   <root id="6601450967974097002">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="6601450967974097004">
@@ -576,12 +586,14 @@
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="228266671027841826" />
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="228266671027841827">
         <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="bwy9.6762883159245048020" />
+        <link role="actionMap" roleId="tpc2.1139959269582" targetNodeId="8595827001410588570" resolveInfo="remove_binaryLeft" />
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="228266671027841830">
         <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="bwy9.6762883159245048047" resolveInfo="kind" />
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="228266671027841832">
         <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="bwy9.6762883159245048021" />
+        <link role="actionMap" roleId="tpc2.1139959269582" targetNodeId="8595827001410573526" resolveInfo="remove_binaryRight" />
       </node>
     </node>
   </root>
@@ -1055,6 +1067,50 @@
               </node>
               <node role="operation" roleId="tpee.1197027833540" type="tp25.Link_SetTargetOperation" typeId="tp25.1140725362528" id="1016170791824079502">
                 <node role="linkTarget" roleId="tp25.1140725362529" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="1016170791824079505" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </root>
+  <root id="8595827001410573526">
+    <node role="item" roleId="tpc2.1139535219969" type="tpc2.CellActionMapItem" typeId="tpc2.1139535280617" id="8595827001410573527">
+      <property name="actionId" nameId="tpc2.1139535298778" value="delete_action_id" />
+      <node role="executeFunction" roleId="tpc2.1139535280620" type="tpc2.CellActionMap_ExecuteFunction" typeId="tpc2.1139535439104" id="8595827001410573528">
+        <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="8595827001410573529">
+          <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="8595827001410573530">
+            <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8595827001410573532">
+              <node role="operand" roleId="tpee.1197027771414" type="tpc2.CellActionMap_FunctionParm_selectedNode" typeId="tpc2.1139535439112" id="8595827001410573531" />
+              <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ReplaceWithAnotherOperation" typeId="tp25.1140131837776" id="8595827001410573536">
+                <node role="replacementNode" roleId="tp25.1140131861877" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8595827001410573539">
+                  <node role="operand" roleId="tpee.1197027771414" type="tpc2.CellActionMap_FunctionParm_selectedNode" typeId="tpc2.1139535439112" id="8595827001410573538" />
+                  <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="8595827001410573543">
+                    <link role="link" roleId="tp25.1138056516764" targetNodeId="bwy9.6762883159245048020" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </root>
+  <root id="8595827001410588570">
+    <node role="item" roleId="tpc2.1139535219969" type="tpc2.CellActionMapItem" typeId="tpc2.1139535280617" id="8595827001410588571">
+      <property name="actionId" nameId="tpc2.1139535298778" value="delete_action_id" />
+      <node role="executeFunction" roleId="tpc2.1139535280620" type="tpc2.CellActionMap_ExecuteFunction" typeId="tpc2.1139535439104" id="8595827001410588572">
+        <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="8595827001410588573">
+          <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="8595827001410588574">
+            <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8595827001410588576">
+              <node role="operand" roleId="tpee.1197027771414" type="tpc2.CellActionMap_FunctionParm_selectedNode" typeId="tpc2.1139535439112" id="8595827001410588575" />
+              <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ReplaceWithAnotherOperation" typeId="tp25.1140131837776" id="8595827001410588580">
+                <node role="replacementNode" roleId="tp25.1140131861877" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8595827001410588583">
+                  <node role="operand" roleId="tpee.1197027771414" type="tpc2.CellActionMap_FunctionParm_selectedNode" typeId="tpc2.1139535439112" id="8595827001410588582" />
+                  <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="8595827001410588588">
+                    <link role="link" roleId="tp25.1138056516764" targetNodeId="bwy9.6762883159245048021" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>

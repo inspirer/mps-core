@@ -344,6 +344,9 @@
       <property name="name" nameId="tpck.1169194664001" value="kind" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="6762883159245048041" resolveInfo="MqlArithmeticKind" />
     </node>
+    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.BooleanConceptProperty" typeId="tpce.1105725574259" id="8595827001410559935">
+      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473994950" resolveInfo="dontSubstituteByDefault" />
+    </node>
   </root>
   <root id="6762883159245048041">
     <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="6762883159245048042">
