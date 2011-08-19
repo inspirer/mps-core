@@ -7,11 +7,13 @@ import jetbrains.mps.nodeEditor.cells.EditorCell;
 import jetbrains.mps.nodeEditor.EditorContext;
 import jetbrains.mps.smodel.SNode;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Collection;
-import jetbrains.mps.nodeEditor.cellProviders.AbstractCellListHandler;
-import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Indent;
 import jetbrains.mps.nodeEditor.style.Style;
 import jetbrains.mps.nodeEditor.style.StyleAttributes;
 import jetbrains.mps.nodeEditor.style.AttributeCalculator;
+import jetbrains.mps.nodeEditor.cellProviders.AbstractCellListHandler;
+import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Indent;
+import jetbrains.mps.internal.collections.runtime.ListSequence;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.editor.cellProviders.RefNodeListHandler;
 import jetbrains.mps.smodel.action.NodeFactoryManager;
@@ -30,6 +32,20 @@ public class MqlComma_Editor extends DefaultNodeEditor {
   private EditorCell createCollection_j2e473_a(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
     editorCell.setCellId("Collection_j2e473_a");
+    {
+      Style style = editorCell.getStyle();
+      style.set(StyleAttributes.SELECTABLE, new AttributeCalculator<Boolean>() {
+        public Boolean calculate(EditorCell cell) {
+          return MqlComma_Editor._StyleParameter_QueryFunction_j2e473_a0a((cell == null ?
+            null :
+            cell.getSNode()
+          ), (cell == null ?
+            null :
+            cell.getEditorContext()
+          ));
+        }
+      });
+    }
     editorCell.addEditorCell(this.createRefNodeList_j2e473_a0(editorContext, node));
     return editorCell;
   }
@@ -55,6 +71,10 @@ public class MqlComma_Editor extends DefaultNodeEditor {
     }
     editorCell.setRole(handler.getElementRole());
     return editorCell;
+  }
+
+  private static boolean _StyleParameter_QueryFunction_j2e473_a0a(SNode node, EditorContext editorContext) {
+    return ListSequence.fromList(SLinkOperations.getTargets(node, "expressions", true)).count() > 1;
   }
 
   private static boolean _StyleParameter_QueryFunction_j2e473_a1a0(SNode node, EditorContext editorContext) {

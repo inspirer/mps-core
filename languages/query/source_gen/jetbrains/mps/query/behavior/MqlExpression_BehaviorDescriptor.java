@@ -9,6 +9,10 @@ public abstract class MqlExpression_BehaviorDescriptor extends BaseConcept_Behav
   public MqlExpression_BehaviorDescriptor() {
   }
 
+  public int virtual_getPriority_7352592509980890960(SNode thisNode) {
+    return MqlExpression_Behavior.virtual_getPriority_7352592509980890960(thisNode);
+  }
+
   public SNode virtual_getType_228266671027861783(SNode thisNode) {
     return MqlExpression_Behavior.virtual_getType_228266671027861783(thisNode);
   }

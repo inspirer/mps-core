@@ -8,12 +8,12 @@ public abstract class MqlBinaryExpr_BehaviorDescriptor extends MqlExpression_Beh
   public MqlBinaryExpr_BehaviorDescriptor() {
   }
 
+  public int virtual_getAssociativity_5322644393894740267(SNode thisNode) {
+    return MqlBinaryExpr_Behavior.virtual_getAssociativity_5322644393894740267(thisNode);
+  }
+
   @Override
   public String getConceptFqName() {
     return "jetbrains.mps.query.structure.MqlBinaryExpr";
   }
-
-  public abstract int virtual_getPriority_5322644393894740165(SNode thisNode);
-
-  public abstract int virtual_getAssociativity_5322644393894740267(SNode thisNode);
 }

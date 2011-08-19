@@ -2,6 +2,7 @@
 <model modelUID="r:d2131fa8-9bff-49c9-a7e2-6972f9544c0a(jetbrains.mps.query.constraints)">
   <persistence version="7" />
   <language namespace="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1(jetbrains.mps.lang.constraints)" />
+  <language namespace="daafa647-f1f7-4b0b-b096-69cd7c8408c0(jetbrains.mps.baseLanguage.regexp)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   <import index="bwy9" modelUID="r:f9198ffd-e084-425c-aa82-f2db8289f5eb(jetbrains.mps.query.structure)" version="-1" />
   <import index="tpce" modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" />
@@ -11,6 +12,7 @@
   <import index="tp1t" modelUID="r:00000000-0000-4000-0000-011c8959030d(jetbrains.mps.lang.constraints.structure)" version="8" implicit="yes" />
   <import index="iizk" modelUID="r:2eb00686-cf12-445a-b169-a375a4c25909(jetbrains.mps.query.behavior)" version="-1" implicit="yes" />
   <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" implicit="yes" />
+  <import index="tpfo" modelUID="r:00000000-0000-4000-0000-011c89590518(jetbrains.mps.baseLanguage.regexp.structure)" version="0" implicit="yes" />
   <roots>
     <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="228266671027861702">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="smodel" />
@@ -23,6 +25,9 @@
     <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="2059702675526025697">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="vars" />
       <link role="concept" roleId="tp1t.1213093996982" targetNodeId="bwy9.2059702675526025628" resolveInfo="MqlVarReference" />
+    </node>
+    <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="7352592509980958085">
+      <link role="concept" roleId="tp1t.1213093996982" targetNodeId="bwy9.6762883159245048009" resolveInfo="MqlQuery" />
     </node>
   </roots>
   <root id="228266671027861702">
@@ -487,6 +492,58 @@
           <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="2059702675526025715">
             <node role="expression" roleId="tpee.1068580123156" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="2059702675526025716">
               <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2059702675526025702" resolveInfo="result" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </root>
+  <root id="7352592509980958085">
+    <node role="property" roleId="tp1t.1213098023997" type="tp1t.NodePropertyConstraint" typeId="tp1t.1147467115080" id="7352592509980958086">
+      <link role="applicableProperty" roleId="tp1t.1147467295099" targetNodeId="tpck.1169194664001" resolveInfo="name" />
+      <node role="propertyValidator" roleId="tp1t.1212097481299" type="tp1t.ConstraintFunction_PropertyValidator" typeId="tp1t.1212096972063" id="7352592509980958087">
+        <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="7352592509980958088">
+          <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="7352592509980958091">
+            <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="7352592509980958618">
+              <node role="operand" roleId="tpee.1197027771414" type="tp1t.ConstraintsFunctionParameter_propertyValue" typeId="tp1t.1153138554286" id="7352592509980958092" />
+              <node role="operation" roleId="tpee.1197027833540" type="tpfo.MatchRegexpOperation" typeId="tpfo.1222260469397" id="7352592509980959313">
+                <node role="regexp" roleId="tpfo.1174653387388" type="tpfo.InlineRegexpExpression" typeId="tpfo.1174510540317" id="7352592509980959314">
+                  <node role="regexp" roleId="tpfo.1174510571016" type="tpfo.SeqRegexp" typeId="tpfo.1174484562151" id="7352592509980959326">
+                    <node role="left" roleId="tpfo.1174485176897" type="tpfo.PositiveSymbolClassRegexp" typeId="tpfo.1174554211468" id="7352592509980959316">
+                      <node role="part" roleId="tpfo.1174557628217" type="tpfo.IntervalSymbolClassPart" typeId="tpfo.1174558301835" id="7352592509980959318">
+                        <property name="start" nameId="tpfo.1174558315290" value="a" />
+                        <property name="end" nameId="tpfo.1174558317822" value="z" />
+                      </node>
+                      <node role="part" roleId="tpfo.1174557628217" type="tpfo.IntervalSymbolClassPart" typeId="tpfo.1174558301835" id="7352592509980959321">
+                        <property name="start" nameId="tpfo.1174558315290" value="A" />
+                        <property name="end" nameId="tpfo.1174558317822" value="Z" />
+                      </node>
+                      <node role="part" roleId="tpfo.1174557628217" type="tpfo.CharacterSymbolClassPart" typeId="tpfo.1174557878319" id="7352592509980959323">
+                        <property name="character" nameId="tpfo.1174557887320" value="_" />
+                      </node>
+                    </node>
+                    <node role="right" roleId="tpfo.1174485181039" type="tpfo.StarRegexp" typeId="tpfo.1174482808826" id="7352592509980959344">
+                      <node role="regexp" roleId="tpfo.1174485243418" type="tpfo.PositiveSymbolClassRegexp" typeId="tpfo.1174554211468" id="7352592509980959329">
+                        <node role="part" roleId="tpfo.1174557628217" type="tpfo.IntervalSymbolClassPart" typeId="tpfo.1174558301835" id="7352592509980959331">
+                          <property name="start" nameId="tpfo.1174558315290" value="a" />
+                          <property name="end" nameId="tpfo.1174558317822" value="z" />
+                        </node>
+                        <node role="part" roleId="tpfo.1174557628217" type="tpfo.IntervalSymbolClassPart" typeId="tpfo.1174558301835" id="7352592509980959338">
+                          <property name="start" nameId="tpfo.1174558315290" value="A" />
+                          <property name="end" nameId="tpfo.1174558317822" value="Z" />
+                        </node>
+                        <node role="part" roleId="tpfo.1174557628217" type="tpfo.CharacterSymbolClassPart" typeId="tpfo.1174557878319" id="7352592509980959340">
+                          <property name="character" nameId="tpfo.1174557887320" value="_" />
+                        </node>
+                        <node role="part" roleId="tpfo.1174557628217" type="tpfo.IntervalSymbolClassPart" typeId="tpfo.1174558301835" id="7352592509980959343">
+                          <property name="start" nameId="tpfo.1174558315290" value="0" />
+                          <property name="end" nameId="tpfo.1174558317822" value="9" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>

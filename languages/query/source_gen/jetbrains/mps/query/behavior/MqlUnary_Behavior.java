@@ -21,6 +21,10 @@ public class MqlUnary_Behavior {
     }
   }
 
+  public static int virtual_getPriority_7352592509980890960(SNode thisNode) {
+    return 2;
+  }
+
   public static class QuotationClass_aad9ph_a0a0a0b {
     public QuotationClass_aad9ph_a0a0a0b() {
     }

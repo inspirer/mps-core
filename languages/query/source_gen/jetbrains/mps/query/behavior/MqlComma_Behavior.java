@@ -13,4 +13,8 @@ public class MqlComma_Behavior {
   public static SNode virtual_getType_228266671027861783(SNode thisNode) {
     return MqlExpression_Behavior.call_getType_228266671027861783(ListSequence.fromList(SLinkOperations.getTargets(thisNode, "expressions", true)).last());
   }
+
+  public static int virtual_getPriority_7352592509980890960(SNode thisNode) {
+    return 15;
+  }
 }

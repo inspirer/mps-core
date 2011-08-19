@@ -21,7 +21,7 @@ public class MqlArithmetic_Behavior {
     return -1;
   }
 
-  public static int virtual_getPriority_5322644393894740165(SNode thisNode) {
+  public static int virtual_getPriority_7352592509980890960(SNode thisNode) {
     if (SPropertyOperations.hasValue(thisNode, "kind", "5", null) || SPropertyOperations.hasValue(thisNode, "kind", "3", null) || SPropertyOperations.hasValue(thisNode, "kind", "4", null)) {
       return 3;
     } else {
