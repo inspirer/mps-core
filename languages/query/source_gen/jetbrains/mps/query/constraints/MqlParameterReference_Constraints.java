@@ -17,20 +17,20 @@ import java.util.List;
 import jetbrains.mps.smodel.SNode;
 import java.util.ArrayList;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 
-public class MqlVarReference_Constraints extends BaseConstraintsDescriptor {
-  private static SNodePointer breakingNode_97d4g1_a0a1a0a0a1a0b0a1a0 = new SNodePointer("r:d2131fa8-9bff-49c9-a7e2-6972f9544c0a(jetbrains.mps.query.constraints)", "2059702675526025699");
+public class MqlParameterReference_Constraints extends BaseConstraintsDescriptor {
+  private static SNodePointer breakingNode_ny604g_a0a1a0a0a1a0b0a1a0 = new SNodePointer("r:d2131fa8-9bff-49c9-a7e2-6972f9544c0a(jetbrains.mps.query.constraints)", "1992172484410364113");
 
-  public MqlVarReference_Constraints() {
-    super("jetbrains.mps.query.structure.MqlVarReference");
+  public MqlParameterReference_Constraints() {
+    super("jetbrains.mps.query.structure.MqlParameterReference");
   }
 
   @Override
   protected Map<String, ReferenceConstraintsDescriptor> getNotDefaultReferences() {
     Map<String, ReferenceConstraintsDescriptor> references = new HashMap();
-    references.put("var", new BaseReferenceConstraintsDescriptor("var", this) {
+    references.put("parameter", new BaseReferenceConstraintsDescriptor("parameter", this) {
       @Override
       public boolean hasOwnScopeProvider() {
         return true;
@@ -44,18 +44,9 @@ public class MqlVarReference_Constraints extends BaseConstraintsDescriptor {
           public Object createSearchScopeOrListOfNodes(final IOperationContext operationContext, final ReferenceConstraintsContext _context) {
             List<SNode> result = new ArrayList<SNode>();
             SNode current = _context.getEnclosingNode();
-            if (SNodeOperations.isInstanceOf(_context.getEnclosingNode(), "jetbrains.mps.query.structure.MqlComma")) {
-              SNode left = SLinkOperations.getTarget(SNodeOperations.cast(_context.getEnclosingNode(), "jetbrains.mps.query.structure.MqlComma"), "left", true);
-              if (SNodeOperations.isInstanceOf(left, "jetbrains.mps.query.structure.MqlAssignment")) {
-                ListSequence.fromList(result).addElement(SNodeOperations.cast(left, "jetbrains.mps.query.structure.MqlAssignment"));
-              }
-            }
             while ((current != null)) {
-              if (SNodeOperations.isInstanceOf(SNodeOperations.getParent(current), "jetbrains.mps.query.structure.MqlComma")) {
-                SNode left = SLinkOperations.getTarget(SNodeOperations.cast(SNodeOperations.getParent(current), "jetbrains.mps.query.structure.MqlComma"), "left", true);
-                if (left != current && SNodeOperations.isInstanceOf(left, "jetbrains.mps.query.structure.MqlAssignment")) {
-                  ListSequence.fromList(result).addElement(SNodeOperations.cast(left, "jetbrains.mps.query.structure.MqlAssignment"));
-                }
+              if (SNodeOperations.isInstanceOf(current, "jetbrains.mps.query.structure.MqlParametersContainer")) {
+                ListSequence.fromList(result).addSequence(ListSequence.fromList(SLinkOperations.getTargets(SNodeOperations.cast(current, "jetbrains.mps.query.structure.MqlParametersContainer"), "parameters", true)));
               }
               current = SNodeOperations.getParent(current);
             }
@@ -64,7 +55,7 @@ public class MqlVarReference_Constraints extends BaseConstraintsDescriptor {
 
           @Override
           public SNodePointer getSearchScopeValidatorNode() {
-            return breakingNode_97d4g1_a0a1a0a0a1a0b0a1a0;
+            return breakingNode_ny604g_a0a1a0a0a1a0b0a1a0;
           }
         };
       }

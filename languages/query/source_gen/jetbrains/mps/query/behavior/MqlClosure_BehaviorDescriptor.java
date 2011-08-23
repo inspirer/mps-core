@@ -4,7 +4,7 @@ package jetbrains.mps.query.behavior;
 
 import jetbrains.mps.smodel.SNode;
 
-public class MqlClosure_BehaviorDescriptor extends MqlExpression_BehaviorDescriptor {
+public class MqlClosure_BehaviorDescriptor extends MqlExpression_BehaviorDescriptor implements MqlParametersContainer_BehaviorDescriptor {
   public MqlClosure_BehaviorDescriptor() {
   }
 

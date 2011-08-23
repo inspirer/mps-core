@@ -122,11 +122,12 @@
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="jetbrains.mps.query.behavior.MqlClosure_Behavior" />
     <classNode dependClassName="jetbrains.mps.query.behavior.MqlExpression_BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.query.behavior.MqlParametersContainer_BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.SNode" />
+    <classNode extendsClassName="java.lang.Cloneable" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="jetbrains.mps.query.behavior.MqlComma_Behavior" file="MqlComma_Behavior.java">
-    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
     <classNode dependClassName="jetbrains.mps.query.behavior.MqlExpression_Behavior" />
     <classNode dependClassName="jetbrains.mps.smodel.SNode" />
@@ -134,8 +135,8 @@
   <dependency className="jetbrains.mps.query.behavior.MqlComma_BehaviorDescriptor" file="MqlComma_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.query.behavior.MqlBinaryExpr_BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.query.behavior.MqlComma_Behavior" />
-    <classNode dependClassName="jetbrains.mps.query.behavior.MqlExpression_BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.SNode" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
@@ -310,6 +311,7 @@
     <classNode extendsClassName="java.lang.Cloneable" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
+  <dependency className="jetbrains.mps.query.behavior.MqlParametersContainer_BehaviorDescriptor" file="MqlParametersContainer_BehaviorDescriptor.java" />
   <dependency className="jetbrains.mps.query.behavior.MqlParentheses_Behavior" file="MqlParentheses_Behavior.java">
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
     <classNode dependClassName="jetbrains.mps.query.behavior.MqlExpression_Behavior" />
@@ -352,6 +354,7 @@
     <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.lang.core.behavior.INamedConcept_Behavior" />
     <classNode dependClassName="jetbrains.mps.lang.core.behavior.INamedConcept_BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.query.behavior.MqlParametersContainer_BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.SNode" />
     <classNode extendsClassName="java.lang.Cloneable" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />

@@ -5,26 +5,28 @@ package jetbrains.mps.query.actions;
 import java.util.regex.Pattern;
 import jetbrains.mps.smodel.IOperationContext;
 import jetbrains.mps.smodel.action.SideTransformPreconditionContext;
-import jetbrains.mps.smodel.SNode;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.query.behavior.MqlExpression_Behavior;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.smodel.action.NodeSetupContext;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import java.util.List;
 import jetbrains.mps.smodel.action.INodeSubstituteAction;
 import jetbrains.mps.smodel.action.NodeSubstituteActionsFactoryContext;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import java.util.ArrayList;
+import jetbrains.mps.smodel.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.util.NameUtil;
 import jetbrains.mps.smodel.action.DefaultSimpleSubstituteAction;
 import jetbrains.mps.smodel.SModel;
 import jetbrains.mps.smodel.action.SNodeFactoryOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import org.apache.commons.lang.StringUtils;
 import jetbrains.mps.smodel.action.IChildNodeSetter;
 import jetbrains.mps.smodel.action.AbstractChildNodeSetter;
 import jetbrains.mps.smodel.IScope;
 import jetbrains.mps.smodel.action.ModelActions;
+import java.util.regex.Matcher;
 import jetbrains.mps.smodel.action.SideTransformActionsBuilderContext;
 import jetbrains.mps.smodel.action.AbstractSideTransformHintSubstituteAction;
 import jetbrains.mps.util.Calculable;
@@ -33,16 +35,10 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SEnumOperations;
 import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 
 public class QueriesGenerated {
-  private static Pattern REGEXP_x583g4_a0a0a0a2a0a0a0a2a0a1a4 = Pattern.compile("-?\\d+", 0);
-  private static Pattern REGEXP_x583g4_a0a0a0a0c0a0a0a0c0a0b0e = Pattern.compile("-?\\d*", 0);
-
-  public static boolean sideTransformHintSubstituteActionsBuilder_Precondition_MqlExpression_8205627927119749823(final IOperationContext operationContext, final SideTransformPreconditionContext _context) {
-    SNode current = _context.getSourceNode();
-    while (SNodeOperations.isInstanceOf(SNodeOperations.getParent(current), "jetbrains.mps.query.structure.MqlBinaryExpr") && SLinkOperations.getTarget(SNodeOperations.cast(SNodeOperations.getParent(current), "jetbrains.mps.query.structure.MqlBinaryExpr"), "right", true) == current) {
-      current = SNodeOperations.cast(SNodeOperations.getParent(current), "jetbrains.mps.query.structure.MqlExpression");
-    }
-    return !(SNodeOperations.isInstanceOf(current, "jetbrains.mps.query.structure.MqlComma"));
-  }
+  private static Pattern REGEXP_x583g4_a0a0a0a2a0a0a0a2a0a1a3 = Pattern.compile("-?\\d+", 0);
+  private static Pattern REGEXP_x583g4_a0a0a0a0c0a0a0a0c0a0b0d = Pattern.compile("-?\\d*", 0);
+  private static Pattern REGEXP_x583g4_a0a0a2a0a0a0a0a2a0a1a6 = Pattern.compile("([a-zA-Z_]\\w*)\\s*=?", 0);
+  private static Pattern REGEXP_x583g4_a0a0a2a0a0a0a2a0a1a6 = Pattern.compile("(?:[a-zA-Z_]\\w*)\\s*=", 0);
 
   public static boolean sideTransformHintSubstituteActionsBuilder_Precondition_MqlExpression_2059702675525956873(final IOperationContext operationContext, final SideTransformPreconditionContext _context) {
     return (MqlExpression_Behavior.call_getType_228266671027861783(_context.getSourceNode()) != null);
@@ -81,9 +77,9 @@ public class QueriesGenerated {
 
           public boolean canSubstitute_internal(String pattern, boolean strictly) {
             if (strictly) {
-              return REGEXP_x583g4_a0a0a0a2a0a0a0a2a0a1a4.matcher(pattern).matches();
+              return REGEXP_x583g4_a0a0a0a2a0a0a0a2a0a1a3.matcher(pattern).matches();
             } else {
-              return REGEXP_x583g4_a0a0a0a0c0a0a0a0c0a0b0e.matcher(pattern).matches();
+              return REGEXP_x583g4_a0a0a0a0c0a0a0a0c0a0b0d.matcher(pattern).matches();
             }
           }
 
@@ -92,7 +88,10 @@ public class QueriesGenerated {
           }
 
           public String getMatchingText(String pattern) {
-            return pattern;
+            return (StringUtils.isEmpty(pattern) ?
+              "0" :
+              pattern
+            );
           }
 
           public String getVisibleMatchingText(String pattern) {
@@ -239,6 +238,102 @@ public class QueriesGenerated {
     return result;
   }
 
+  public static List<INodeSubstituteAction> nodeSubstituteActionsBuilder_ActionsFactory_MqlExpression_1992172484410604549(final IOperationContext operationContext, final NodeSubstituteActionsFactoryContext _context) {
+    List<INodeSubstituteAction> result = ListSequence.fromList(new ArrayList<INodeSubstituteAction>());
+    {
+      SNode outputConcept = SConceptOperations.findConceptDeclaration("jetbrains.mps.query.structure.MqlAssignment");
+      SNode childConcept = (SNode) _context.getChildConcept();
+      if (outputConcept == null || SConceptOperations.isSuperConceptOf(childConcept, NameUtil.nodeFQName(outputConcept))) {
+        ListSequence.fromList(result).addElement(new DefaultSimpleSubstituteAction(outputConcept, _context.getParentNode(), _context.getCurrentTargetNode(), _context.getChildSetter(), operationContext.getScope()) {
+          public SNode createChildNode(Object parameterObject, SModel model, String pattern) {
+            Matcher _matcher_x583g4_a1a0a0a0a0a2a0a1a6;
+            SNode result = SConceptOperations.createNewNode("jetbrains.mps.query.structure.MqlAssignment", null);
+            if ((_matcher_x583g4_a1a0a0a0a0a2a0a1a6 = REGEXP_x583g4_a0a0a2a0a0a0a0a2a0a1a6.matcher(pattern)).find()) {
+              SPropertyOperations.set(result, "name", _matcher_x583g4_a1a0a0a0a0a2a0a1a6.group(1));
+            }
+            return result;
+          }
+
+          public boolean hasSubstitute() {
+            return true;
+          }
+
+          public boolean canSubstitute_internal(String pattern, boolean strictly) {
+            return REGEXP_x583g4_a0a0a2a0a0a0a2a0a1a6.matcher(pattern).matches();
+          }
+
+          public String getDescriptionText(String pattern) {
+            return "create variable";
+          }
+
+          public String getMatchingText(String pattern) {
+            return pattern;
+          }
+
+          public String getVisibleMatchingText(String pattern) {
+            return this.getMatchingText(pattern);
+          }
+        });
+      }
+    }
+    {
+      SNode outputConcept = SConceptOperations.findConceptDeclaration("jetbrains.mps.query.structure.MqlAssignment");
+      SNode childConcept = (SNode) _context.getChildConcept();
+      if (outputConcept == null || SConceptOperations.isSuperConceptOf(childConcept, NameUtil.nodeFQName(outputConcept))) {
+        ListSequence.fromList(result).addElement(new DefaultSimpleSubstituteAction(outputConcept, _context.getParentNode(), _context.getCurrentTargetNode(), _context.getChildSetter(), operationContext.getScope()) {
+          public SNode createChildNode(Object parameterObject, SModel model, String pattern) {
+            SNode result = SConceptOperations.createNewNode("jetbrains.mps.query.structure.MqlAssignment", null);
+            return result;
+          }
+
+          public String getDescriptionText(String pattern) {
+            return "create variable";
+          }
+
+          public String getMatchingText(String pattern) {
+            return "=";
+          }
+
+          public String getVisibleMatchingText(String pattern) {
+            return this.getMatchingText(pattern);
+          }
+        });
+      }
+    }
+    return result;
+  }
+
+  public static List<INodeSubstituteAction> sideTransform_ActionsFactory_MqlExpression_2268293679705627817(final IOperationContext operationContext, final SideTransformActionsBuilderContext _context) {
+    List<INodeSubstituteAction> result = ListSequence.fromList(new ArrayList<INodeSubstituteAction>());
+    {
+      SNode concept = SConceptOperations.findConceptDeclaration("jetbrains.mps.query.structure.MqlComma");
+      ListSequence.fromList(result).addElement(new AbstractSideTransformHintSubstituteAction(concept, _context.getSourceNode()) {
+        public SNode doSubstitute(String pattern) {
+          SNode to = SNodeFactoryOperations.createNewNode(_context.getModel(), "jetbrains.mps.query.structure.MqlComma", null);
+          SNode current = _context.getSourceNode();
+          current = PrecedenceUtil.getTargetForLeftTransform(current, to);
+          SNodeOperations.replaceWithAnother(current, to);
+          SLinkOperations.setTarget(to, "right", current, true);
+          PrecedenceUtil.parenthesiseAndRotateIfNecessary(to);
+          return SLinkOperations.getTarget(to, "left", true);
+        }
+
+        public String getMatchingText(String pattern) {
+          return ",";
+        }
+
+        public String getVisibleMatchingText(String pattern) {
+          return this.getMatchingText(pattern);
+        }
+
+        public String getDescriptionText(String pattern) {
+          return "comma expression";
+        }
+      });
+    }
+    return result;
+  }
+
   public static List<INodeSubstituteAction> sideTransform_ActionsFactory_MqlExpression_8205627927119749822(final IOperationContext operationContext, final SideTransformActionsBuilderContext _context) {
     List<INodeSubstituteAction> result = ListSequence.fromList(new ArrayList<INodeSubstituteAction>());
     {
@@ -247,13 +342,11 @@ public class QueriesGenerated {
         public SNode doSubstitute(String pattern) {
           SNode to = SNodeFactoryOperations.createNewNode(_context.getModel(), "jetbrains.mps.query.structure.MqlComma", null);
           SNode current = _context.getSourceNode();
-          while (SNodeOperations.isInstanceOf(SNodeOperations.getParent(current), "jetbrains.mps.query.structure.MqlBinaryExpr") && SLinkOperations.getTarget(SNodeOperations.cast(SNodeOperations.getParent(current), "jetbrains.mps.query.structure.MqlBinaryExpr"), "right", true) == current) {
-            current = SNodeOperations.cast(SNodeOperations.getParent(current), "jetbrains.mps.query.structure.MqlExpression");
-          }
+          current = PrecedenceUtil.getTargetForRightTransform(current, to);
           SNodeOperations.replaceWithAnother(current, to);
-          ListSequence.fromList(SLinkOperations.getTargets(to, "expressions", true)).insertElement(0, current);
-          return ListSequence.fromList(SLinkOperations.getTargets(to, "expressions", true)).getElement(1);
-
+          SLinkOperations.setTarget(to, "left", current, true);
+          PrecedenceUtil.parenthesiseAndRotateIfNecessary(to);
+          return SLinkOperations.getTarget(to, "right", true);
         }
 
         public String getMatchingText(String pattern) {
@@ -280,12 +373,10 @@ public class QueriesGenerated {
         public SNode doSubstitute(String pattern) {
           SNode to = SNodeFactoryOperations.createNewNode(_context.getModel(), "jetbrains.mps.query.structure.MqlTriplex", null);
           SNode current = _context.getSourceNode();
-          while (SNodeOperations.isInstanceOf(SNodeOperations.getParent(current), "jetbrains.mps.query.structure.MqlBinaryExpr") && SLinkOperations.getTarget(SNodeOperations.cast(SNodeOperations.getParent(current), "jetbrains.mps.query.structure.MqlBinaryExpr"), "right", true) == current) {
-            current = SNodeOperations.cast(SNodeOperations.getParent(current), "jetbrains.mps.query.structure.MqlExpression");
-          }
+          current = PrecedenceUtil.getTargetForRightTransform(current, to);
           SNodeOperations.replaceWithAnother(current, to);
           SLinkOperations.setTarget(to, "condition", current, true);
-          return to;
+          return PrecedenceUtil.parenthesiseAndRotateIfNecessary(to);
         }
 
         public String getMatchingText(String pattern) {
@@ -365,7 +456,7 @@ public class QueriesGenerated {
             SNode nodeToProcess = PrecedenceUtil.getTargetForRightTransform(_context.getSourceNode(), result);
             SNodeOperations.replaceWithAnother(nodeToProcess, result);
             SLinkOperations.setTarget(result, "left", nodeToProcess, true);
-            return PrecedenceUtil.parenthesiseIfNecessary(result);
+            return PrecedenceUtil.parenthesiseAndRotateIfNecessary(result);
           }
 
           public String getMatchingText(String text) {
@@ -403,7 +494,7 @@ public class QueriesGenerated {
             SNode nodeToProcess = PrecedenceUtil.getTargetForRightTransform(_context.getSourceNode(), result);
             SNodeOperations.replaceWithAnother(nodeToProcess, result);
             SLinkOperations.setTarget(result, "left", nodeToProcess, true);
-            return PrecedenceUtil.parenthesiseIfNecessary(result);
+            return PrecedenceUtil.parenthesiseAndRotateIfNecessary(result);
           }
 
           public String getMatchingText(String text) {
@@ -450,7 +541,7 @@ public class QueriesGenerated {
             SNode nodeToProcess = PrecedenceUtil.getTargetForLeftTransform(_context.getSourceNode(), result);
             SNodeOperations.replaceWithAnother(nodeToProcess, result);
             SLinkOperations.setTarget(result, "right", nodeToProcess, true);
-            return PrecedenceUtil.parenthesiseIfNecessary(result);
+            return PrecedenceUtil.parenthesiseAndRotateIfNecessary(result);
           }
 
           public String getMatchingText(String text) {
@@ -488,7 +579,7 @@ public class QueriesGenerated {
             SNode nodeToProcess = PrecedenceUtil.getTargetForLeftTransform(_context.getSourceNode(), result);
             SNodeOperations.replaceWithAnother(nodeToProcess, result);
             SLinkOperations.setTarget(result, "right", nodeToProcess, true);
-            return PrecedenceUtil.parenthesiseIfNecessary(result);
+            return PrecedenceUtil.parenthesiseAndRotateIfNecessary(result);
           }
 
           public String getMatchingText(String text) {

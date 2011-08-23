@@ -67,9 +67,11 @@
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.Iterator" />
     <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="jetbrains.mps.lang.core.structure.Attribute" />
     <classNode dependClassName="jetbrains.mps.project.GlobalScope" />
     <classNode dependClassName="jetbrains.mps.query.structure.MqlExpression" />
     <classNode dependClassName="jetbrains.mps.query.structure.MqlParameter" />
+    <classNode dependClassName="jetbrains.mps.query.structure.MqlParametersContainer" />
     <classNode dependClassName="jetbrains.mps.smodel.SModel" />
     <classNode dependClassName="jetbrains.mps.smodel.SModelUtil_new" />
     <classNode dependClassName="jetbrains.mps.smodel.SNode" />
@@ -77,10 +79,8 @@
   </dependency>
   <dependency className="jetbrains.mps.query.structure.MqlComma" file="MqlComma.java">
     <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="java.util.Iterator" />
-    <classNode dependClassName="java.util.List" />
     <classNode dependClassName="jetbrains.mps.project.GlobalScope" />
-    <classNode dependClassName="jetbrains.mps.query.structure.MqlExpression" />
+    <classNode dependClassName="jetbrains.mps.query.structure.MqlBinaryExpr" />
     <classNode dependClassName="jetbrains.mps.smodel.SModel" />
     <classNode dependClassName="jetbrains.mps.smodel.SModelUtil_new" />
     <classNode dependClassName="jetbrains.mps.smodel.SNode" />
@@ -251,6 +251,13 @@
     <classNode dependClassName="jetbrains.mps.smodel.SNode" />
     <classNode extendsClassName="jetbrains.mps.lang.core.structure.BaseConcept" />
   </dependency>
+  <dependency className="jetbrains.mps.query.structure.MqlParametersContainer" file="MqlParametersContainer.java">
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.Iterator" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="jetbrains.mps.query.structure.MqlParameter" />
+    <classNode extendsClassName="jetbrains.mps.smodel.INodeAdapter" />
+  </dependency>
   <dependency className="jetbrains.mps.query.structure.MqlParentheses" file="MqlParentheses.java">
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="jetbrains.mps.project.GlobalScope" />
@@ -280,6 +287,7 @@
     <classNode dependClassName="jetbrains.mps.query.structure.MqlExpression" />
     <classNode dependClassName="jetbrains.mps.query.structure.MqlNodeType" />
     <classNode dependClassName="jetbrains.mps.query.structure.MqlParameter" />
+    <classNode dependClassName="jetbrains.mps.query.structure.MqlParametersContainer" />
     <classNode dependClassName="jetbrains.mps.smodel.SModel" />
     <classNode dependClassName="jetbrains.mps.smodel.SModelUtil_new" />
     <classNode dependClassName="jetbrains.mps.smodel.SNode" />

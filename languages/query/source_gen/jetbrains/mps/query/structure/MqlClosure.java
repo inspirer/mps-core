@@ -5,17 +5,46 @@ package jetbrains.mps.query.structure;
 import jetbrains.mps.smodel.SNode;
 import java.util.Iterator;
 import java.util.List;
+import jetbrains.mps.lang.core.structure.Attribute;
 import jetbrains.mps.smodel.SModel;
 import jetbrains.mps.smodel.SModelUtil_new;
 import jetbrains.mps.project.GlobalScope;
 
-public class MqlClosure extends MqlExpression {
+public class MqlClosure extends MqlExpression implements MqlParametersContainer {
   public static final String concept = "jetbrains.mps.query.structure.MqlClosure";
+  public static final String SHORT_DESCRIPTION = "shortDescription";
+  public static final String ALIAS = "alias";
+  public static final String VIRTUAL_PACKAGE = "virtualPackage";
   public static final String BODY = "body";
   public static final String PARAMETERS = "parameters";
+  public static final String SMODEL_ATTRIBUTE = "smodelAttribute";
 
   public MqlClosure(SNode node) {
     super(node);
+  }
+
+  public String getShortDescription() {
+    return this.getProperty(MqlClosure.SHORT_DESCRIPTION);
+  }
+
+  public void setShortDescription(String value) {
+    this.setProperty(MqlClosure.SHORT_DESCRIPTION, value);
+  }
+
+  public String getAlias() {
+    return this.getProperty(MqlClosure.ALIAS);
+  }
+
+  public void setAlias(String value) {
+    this.setProperty(MqlClosure.ALIAS, value);
+  }
+
+  public String getVirtualPackage() {
+    return this.getProperty(MqlClosure.VIRTUAL_PACKAGE);
+  }
+
+  public void setVirtualPackage(String value) {
+    this.setProperty(MqlClosure.VIRTUAL_PACKAGE, value);
   }
 
   public MqlExpression getBody() {
@@ -44,6 +73,26 @@ public class MqlClosure extends MqlExpression {
 
   public void insertParameters(MqlParameter prev, MqlParameter node) {
     this.insertChild(prev, MqlClosure.PARAMETERS, node);
+  }
+
+  public int getSmodelAttributesCount() {
+    return this.getChildCount(MqlClosure.SMODEL_ATTRIBUTE);
+  }
+
+  public Iterator<Attribute> smodelAttributes() {
+    return this.children(Attribute.class, MqlClosure.SMODEL_ATTRIBUTE);
+  }
+
+  public List<Attribute> getSmodelAttributes() {
+    return this.getChildren(Attribute.class, MqlClosure.SMODEL_ATTRIBUTE);
+  }
+
+  public void addSmodelAttribute(Attribute node) {
+    this.addChild(MqlClosure.SMODEL_ATTRIBUTE, node);
+  }
+
+  public void insertSmodelAttribute(Attribute prev, Attribute node) {
+    this.insertChild(prev, MqlClosure.SMODEL_ATTRIBUTE, node);
   }
 
   public static MqlClosure newInstance(SModel sm, boolean init) {

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debugInfo>
+  <unitInfo fileName="MqlParametersContainer_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="8" endPosition="0" unitName="jetbrains.mps.query.behavior.MqlParametersContainer_BehaviorDescriptor" />
   <unitInfo fileName="MqlNodeType_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="jetbrains.mps.query.behavior.MqlNodeType_BehaviorDescriptor" />
   <unitInfo fileName="MqlNullType_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="jetbrains.mps.query.behavior.MqlNullType_BehaviorDescriptor" />
   <unitInfo fileName="MqlFunctionType_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="jetbrains.mps.query.behavior.MqlFunctionType_BehaviorDescriptor" />
@@ -28,10 +29,10 @@
   <unitInfo fileName="MqlDotExpression_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="24" endPosition="0" unitName="jetbrains.mps.query.behavior.MqlDotExpression_BehaviorDescriptor" />
   <unitInfo fileName="MqlTriplex_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="24" endPosition="0" unitName="jetbrains.mps.query.behavior.MqlTriplex_BehaviorDescriptor" />
   <unitInfo fileName="MqlUnary_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="24" endPosition="0" unitName="jetbrains.mps.query.behavior.MqlUnary_BehaviorDescriptor" />
-  <unitInfo fileName="MqlComma_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="24" endPosition="0" unitName="jetbrains.mps.query.behavior.MqlComma_BehaviorDescriptor" />
   <unitInfo fileName="MqlExpression_BehaviorDescriptor.java" startLine="8" startPosition="0" endLine="25" endPosition="0" unitName="jetbrains.mps.query.behavior.MqlExpression_BehaviorDescriptor" />
   <unitInfo fileName="MqlArithmetic_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="28" endPosition="0" unitName="jetbrains.mps.query.behavior.MqlArithmetic_BehaviorDescriptor" />
   <unitInfo fileName="MqlCondition_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="28" endPosition="0" unitName="jetbrains.mps.query.behavior.MqlCondition_BehaviorDescriptor" />
+  <unitInfo fileName="MqlComma_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="28" endPosition="0" unitName="jetbrains.mps.query.behavior.MqlComma_BehaviorDescriptor" />
   <unitInfo fileName="MqlAssignment_BehaviorDescriptor.java" startLine="9" startPosition="0" endLine="30" endPosition="0" unitName="jetbrains.mps.query.behavior.MqlAssignment_BehaviorDescriptor" />
   <unitInfo fileName="BehaviorAspectDescriptor.java" startLine="9" startPosition="0" endLine="80" endPosition="0" unitName="jetbrains.mps.query.behavior.BehaviorAspectDescriptor" />
   <root nodeId="2059702675525965903">
@@ -584,18 +585,22 @@
     <unitInfo nodeId="6601450967974124772" fileName="MqlArithmetic_Behavior.java" startLine="12" startPosition="0" endLine="49" endPosition="0" unitName="jetbrains.mps.query.behavior.MqlArithmetic_Behavior" />
   </root>
   <root nodeId="6601450967974124775">
-    <nodeInfo nodeId="1981169195802367338" fileName="MqlComma_Behavior.java" startLine="13" startPosition="74" endLine="14" endPosition="155" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="7352592509980891001" fileName="MqlComma_Behavior.java" startLine="17" startPosition="77" endLine="18" endPosition="14" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="6601450967974124775" fileName="MqlComma_Behavior.java" startLine="9" startPosition="32" endLine="12" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="init#(Ljetbrains/mps/smodel/SNode;)V" />
-    <nodeInfo nodeId="6601450967974124775" fileName="MqlComma_Behavior.java" startLine="12" startPosition="0" endLine="16" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="virtual_getType_228266671027861783#(Ljetbrains/mps/smodel/SNode;)Ljetbrains/mps/smodel/SNode;" />
-    <nodeInfo nodeId="6601450967974124775" fileName="MqlComma_Behavior.java" startLine="16" startPosition="0" endLine="20" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="virtual_getPriority_7352592509980890960#(Ljetbrains/mps/smodel/SNode;)I" />
-    <scopeInfo nodeId="6601450967974124777" fileName="MqlComma_Behavior.java" startLine="10" startPosition="43" endLine="10" endPosition="43" />
-    <scopeInfo nodeId="228266671027861833" fileName="MqlComma_Behavior.java" startLine="13" startPosition="74" endLine="14" endPosition="155" />
-    <scopeInfo nodeId="7352592509980890999" fileName="MqlComma_Behavior.java" startLine="17" startPosition="77" endLine="18" endPosition="14" />
-    <scopeInfo nodeId="6601450967974124775" fileName="MqlComma_Behavior.java" startLine="9" startPosition="32" endLine="12" endPosition="0" />
-    <scopeInfo nodeId="6601450967974124775" fileName="MqlComma_Behavior.java" startLine="12" startPosition="0" endLine="16" endPosition="0" />
-    <scopeInfo nodeId="6601450967974124775" fileName="MqlComma_Behavior.java" startLine="16" startPosition="0" endLine="20" endPosition="0" />
-    <unitInfo nodeId="6601450967974124775" fileName="MqlComma_Behavior.java" startLine="9" startPosition="0" endLine="21" endPosition="0" unitName="jetbrains.mps.query.behavior.MqlComma_Behavior" />
+    <nodeInfo nodeId="1981169195802367338" fileName="MqlComma_Behavior.java" startLine="12" startPosition="74" endLine="13" endPosition="118" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="7352592509980891001" fileName="MqlComma_Behavior.java" startLine="16" startPosition="77" endLine="17" endPosition="14" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1992172484410778513" fileName="MqlComma_Behavior.java" startLine="20" startPosition="82" endLine="21" endPosition="13" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6601450967974124775" fileName="MqlComma_Behavior.java" startLine="8" startPosition="32" endLine="11" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="init#(Ljetbrains/mps/smodel/SNode;)V" />
+    <nodeInfo nodeId="6601450967974124775" fileName="MqlComma_Behavior.java" startLine="11" startPosition="0" endLine="15" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="virtual_getType_228266671027861783#(Ljetbrains/mps/smodel/SNode;)Ljetbrains/mps/smodel/SNode;" />
+    <nodeInfo nodeId="6601450967974124775" fileName="MqlComma_Behavior.java" startLine="15" startPosition="0" endLine="19" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="virtual_getPriority_7352592509980890960#(Ljetbrains/mps/smodel/SNode;)I" />
+    <nodeInfo nodeId="6601450967974124775" fileName="MqlComma_Behavior.java" startLine="19" startPosition="0" endLine="23" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="virtual_getAssociativity_5322644393894740267#(Ljetbrains/mps/smodel/SNode;)I" />
+    <scopeInfo nodeId="6601450967974124777" fileName="MqlComma_Behavior.java" startLine="9" startPosition="43" endLine="9" endPosition="43" />
+    <scopeInfo nodeId="228266671027861833" fileName="MqlComma_Behavior.java" startLine="12" startPosition="74" endLine="13" endPosition="118" />
+    <scopeInfo nodeId="7352592509980890999" fileName="MqlComma_Behavior.java" startLine="16" startPosition="77" endLine="17" endPosition="14" />
+    <scopeInfo nodeId="1992172484410778511" fileName="MqlComma_Behavior.java" startLine="20" startPosition="82" endLine="21" endPosition="13" />
+    <scopeInfo nodeId="6601450967974124775" fileName="MqlComma_Behavior.java" startLine="8" startPosition="32" endLine="11" endPosition="0" />
+    <scopeInfo nodeId="6601450967974124775" fileName="MqlComma_Behavior.java" startLine="11" startPosition="0" endLine="15" endPosition="0" />
+    <scopeInfo nodeId="6601450967974124775" fileName="MqlComma_Behavior.java" startLine="15" startPosition="0" endLine="19" endPosition="0" />
+    <scopeInfo nodeId="6601450967974124775" fileName="MqlComma_Behavior.java" startLine="19" startPosition="0" endLine="23" endPosition="0" />
+    <unitInfo nodeId="6601450967974124775" fileName="MqlComma_Behavior.java" startLine="8" startPosition="0" endLine="24" endPosition="0" unitName="jetbrains.mps.query.behavior.MqlComma_Behavior" />
   </root>
   <root nodeId="6601450967974124778">
     <nodeInfo nodeId="228266671027861851" fileName="MqlCondition_Behavior.java" startLine="16" startPosition="74" endLine="17" endPosition="80" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />

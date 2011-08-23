@@ -6,13 +6,13 @@ import jetbrains.mps.lang.core.structure.BaseConcept;
 import jetbrains.mps.lang.core.structure.INamedConcept;
 import jetbrains.mps.smodel.SNode;
 import java.util.Iterator;
-import java.util.List;
 import jetbrains.mps.lang.core.structure.Attribute;
+import java.util.List;
 import jetbrains.mps.smodel.SModel;
 import jetbrains.mps.smodel.SModelUtil_new;
 import jetbrains.mps.project.GlobalScope;
 
-public class MqlQuery extends BaseConcept implements INamedConcept {
+public class MqlQuery extends BaseConcept implements INamedConcept, MqlParametersContainer {
   public static final String concept = "jetbrains.mps.query.structure.MqlQuery";
   public static final String NAME = "name";
   public static final String SHORT_DESCRIPTION = "shortDescription";
@@ -20,8 +20,8 @@ public class MqlQuery extends BaseConcept implements INamedConcept {
   public static final String VIRTUAL_PACKAGE = "virtualPackage";
   public static final String CONTEXT_NODE = "contextNode";
   public static final String BODY = "body";
-  public static final String PARAMETERS = "parameters";
   public static final String SMODEL_ATTRIBUTE = "smodelAttribute";
+  public static final String PARAMETERS = "parameters";
 
   public MqlQuery(SNode node) {
     super(node);
@@ -75,26 +75,6 @@ public class MqlQuery extends BaseConcept implements INamedConcept {
     super.setChild(MqlQuery.BODY, node);
   }
 
-  public int getParametersesCount() {
-    return this.getChildCount(MqlQuery.PARAMETERS);
-  }
-
-  public Iterator<MqlParameter> parameterses() {
-    return this.children(MqlParameter.class, MqlQuery.PARAMETERS);
-  }
-
-  public List<MqlParameter> getParameterses() {
-    return this.getChildren(MqlParameter.class, MqlQuery.PARAMETERS);
-  }
-
-  public void addParameters(MqlParameter node) {
-    this.addChild(MqlQuery.PARAMETERS, node);
-  }
-
-  public void insertParameters(MqlParameter prev, MqlParameter node) {
-    this.insertChild(prev, MqlQuery.PARAMETERS, node);
-  }
-
   public int getSmodelAttributesCount() {
     return this.getChildCount(MqlQuery.SMODEL_ATTRIBUTE);
   }
@@ -113,6 +93,26 @@ public class MqlQuery extends BaseConcept implements INamedConcept {
 
   public void insertSmodelAttribute(Attribute prev, Attribute node) {
     this.insertChild(prev, MqlQuery.SMODEL_ATTRIBUTE, node);
+  }
+
+  public int getParametersesCount() {
+    return this.getChildCount(MqlQuery.PARAMETERS);
+  }
+
+  public Iterator<MqlParameter> parameterses() {
+    return this.children(MqlParameter.class, MqlQuery.PARAMETERS);
+  }
+
+  public List<MqlParameter> getParameterses() {
+    return this.getChildren(MqlParameter.class, MqlQuery.PARAMETERS);
+  }
+
+  public void addParameters(MqlParameter node) {
+    this.addChild(MqlQuery.PARAMETERS, node);
+  }
+
+  public void insertParameters(MqlParameter prev, MqlParameter node) {
+    this.insertChild(prev, MqlQuery.PARAMETERS, node);
   }
 
   public static MqlQuery newInstance(SModel sm, boolean init) {
