@@ -9,6 +9,7 @@ import jetbrains.mps.nodeEditor.CellActionType;
 import jetbrains.mps.nodeEditor.EditorCellAction;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.query.actions.PrecedenceUtil;
 
 public class delete_parentheses {
   public static void setCellActions(EditorCell editorCell, SNode node, EditorContext context) {
@@ -27,7 +28,10 @@ public class delete_parentheses {
     }
 
     public void execute_internal(EditorContext editorContext, SNode node) {
-      SNodeOperations.replaceWithAnother(node, SLinkOperations.getTarget(node, "expr", true));
+      SNode expression = SNodeOperations.replaceWithAnother(node, SLinkOperations.getTarget(node, "expr", true));
+      if (SNodeOperations.isInstanceOf(SNodeOperations.getParent(expression), "jetbrains.mps.query.structure.MqlBinaryExpr")) {
+        PrecedenceUtil.rotateIfNecessary(SNodeOperations.cast(SNodeOperations.getParent(expression), "jetbrains.mps.query.structure.MqlBinaryExpr"));
+      }
     }
   }
 }

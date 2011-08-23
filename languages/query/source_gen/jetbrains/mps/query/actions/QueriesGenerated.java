@@ -365,6 +365,36 @@ public class QueriesGenerated {
     return result;
   }
 
+  public static List<INodeSubstituteAction> sideTransform_ActionsFactory_MqlComma_2852142168179409687(final IOperationContext operationContext, final SideTransformActionsBuilderContext _context) {
+    List<INodeSubstituteAction> result = ListSequence.fromList(new ArrayList<INodeSubstituteAction>());
+    {
+      SNode concept = SConceptOperations.findConceptDeclaration("jetbrains.mps.query.structure.MqlComma");
+      ListSequence.fromList(result).addElement(new AbstractSideTransformHintSubstituteAction(concept, _context.getSourceNode()) {
+        public SNode doSubstitute(String pattern) {
+          SNode to = SNodeFactoryOperations.createNewNode(_context.getModel(), "jetbrains.mps.query.structure.MqlComma", null);
+          SNode current = SLinkOperations.getTarget(_context.getSourceNode(), "left", true);
+          SNodeOperations.replaceWithAnother(current, to);
+          SLinkOperations.setTarget(to, "left", current, true);
+          PrecedenceUtil.parenthesiseAndRotateIfNecessary(_context.getSourceNode());
+          return SLinkOperations.getTarget(to, "right", true);
+        }
+
+        public String getMatchingText(String pattern) {
+          return ",";
+        }
+
+        public String getVisibleMatchingText(String pattern) {
+          return this.getMatchingText(pattern);
+        }
+
+        public String getDescriptionText(String pattern) {
+          return "comma expression";
+        }
+      });
+    }
+    return result;
+  }
+
   public static List<INodeSubstituteAction> sideTransform_ActionsFactory_MqlExpression_2059702675525956854(final IOperationContext operationContext, final SideTransformActionsBuilderContext _context) {
     List<INodeSubstituteAction> result = ListSequence.fromList(new ArrayList<INodeSubstituteAction>());
     {

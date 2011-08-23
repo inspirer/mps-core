@@ -8,7 +8,7 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 
 public class paste_handlers_PastePostProcessor_0 implements PastePostProcessor {
   public SNode getApplicableConcept() {
-    return SConceptOperations.findConceptDeclaration("jetbrains.mps.query.structure.MqlArithmetic");
+    return SConceptOperations.findConceptDeclaration("jetbrains.mps.query.structure.MqlExpression");
   }
 
   public void postProcesNode(SNode pastedNode) {

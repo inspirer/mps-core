@@ -273,72 +273,6 @@
     <unitInfo nodeId="2059702675526025630" fileName="MqlVarReference_Editor.java" startLine="47" startPosition="0" endLine="79" endPosition="0" unitName="jetbrains.mps.query.editor.MqlVarReference_Editor$_Inline_lg4nb4_a0a" />
     <unitInfo nodeId="2059702675526025630" fileName="MqlVarReference_Editor.java" startLine="17" startPosition="0" endLine="80" endPosition="0" unitName="jetbrains.mps.query.editor.MqlVarReference_Editor" />
   </root>
-  <root nodeId="2268293679705666618">
-    <nodeInfo nodeId="2268293679705666618" fileName="comma_keys.java" startLine="18" startPosition="23" endLine="19" endPosition="42" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="2268293679705666618" fileName="comma_keys.java" startLine="19" startPosition="42" endLine="20" endPosition="34" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="2268293679705666618" fileName="comma_keys.java" startLine="20" startPosition="34" endLine="21" endPosition="49" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="2268293679705666618" fileName="comma_keys.java" startLine="21" startPosition="49" endLine="22" endPosition="46" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="2268293679705666618" fileName="comma_keys.java" startLine="22" startPosition="46" endLine="23" endPosition="47" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="2268293679705666618" fileName="comma_keys.java" startLine="27" startPosition="33" endLine="28" endPosition="82" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="2268293679705666618" fileName="comma_keys.java" startLine="28" startPosition="82" endLine="29" endPosition="38" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="2268293679705666618" fileName="comma_keys.java" startLine="32" startPosition="40" endLine="33" endPosition="30" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="2268293679705666618" fileName="comma_keys.java" startLine="36" startPosition="40" endLine="37" endPosition="19" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="2268293679705666618" fileName="comma_keys.java" startLine="40" startPosition="91" endLine="41" endPosition="62" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="2268293679705666618" fileName="comma_keys.java" startLine="42" startPosition="34" endLine="43" endPosition="21" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="2268293679705666618" fileName="comma_keys.java" startLine="44" startPosition="7" endLine="45" endPosition="49" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="2268293679705666618" fileName="comma_keys.java" startLine="46" startPosition="32" endLine="47" endPosition="21" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="2268293679705666618" fileName="comma_keys.java" startLine="49" startPosition="86" endLine="50" endPosition="20" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="2268293679705666618" fileName="comma_keys.java" startLine="51" startPosition="7" endLine="52" endPosition="19" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="2268293679705666618" fileName="comma_keys.java" startLine="55" startPosition="85" endLine="56" endPosition="62" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="2268293679705666618" fileName="comma_keys.java" startLine="56" startPosition="62" endLine="57" endPosition="115" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="2268293679705627825" fileName="comma_keys.java" startLine="60" startPosition="146" endLine="61" endPosition="134" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="2268293679705627831" fileName="comma_keys.java" startLine="61" startPosition="134" endLine="62" endPosition="68" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="2268293679705627841" fileName="comma_keys.java" startLine="62" startPosition="68" endLine="63" endPosition="54" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="2268293679705627846" fileName="comma_keys.java" startLine="63" startPosition="54" endLine="64" endPosition="59" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="2268293679705627853" fileName="comma_keys.java" startLine="64" startPosition="59" endLine="65" endPosition="60" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="2268293679705666649" fileName="comma_keys.java" startLine="65" startPosition="60" endLine="66" endPosition="40" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="2852142168179370963" fileName="comma_keys.java" startLine="66" startPosition="40" endLine="67" endPosition="25" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="2268293679705666618" fileName="comma_keys.java" startLine="70" startPosition="34" endLine="71" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="2268293679705666618" fileName="comma_keys.java" startLine="20" startPosition="34" endLine="23" endPosition="47" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
-    <nodeInfo nodeId="2268293679705666618" fileName="comma_keys.java" startLine="41" startPosition="62" endLine="44" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="2268293679705666618" fileName="comma_keys.java" startLine="45" startPosition="49" endLine="48" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="2268293679705666618" fileName="comma_keys.java" startLine="48" startPosition="7" endLine="51" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="2268293679705666618" fileName="comma_keys.java" startLine="26" startPosition="73" endLine="30" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="comma_keys_Action0#()V" />
-    <nodeInfo nodeId="2268293679705666618" fileName="comma_keys.java" startLine="31" startPosition="0" endLine="35" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getDescriptionText#()Ljava/lang/String;" />
-    <nodeInfo nodeId="2268293679705666618" fileName="comma_keys.java" startLine="35" startPosition="0" endLine="39" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="isMenuAlwaysShown#()Z" />
-    <nodeInfo nodeId="2268293679705666618" fileName="comma_keys.java" startLine="48" startPosition="7" endLine="52" endPosition="19" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
-    <nodeInfo nodeId="2268293679705666618" fileName="comma_keys.java" startLine="69" startPosition="0" endLine="73" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getKeyStroke#()Ljava/lang/String;" />
-    <nodeInfo nodeId="2268293679705666618" fileName="comma_keys.java" startLine="54" startPosition="0" endLine="59" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="execute#(Ljava/awt/event/KeyEvent;Ljetbrains/mps/nodeEditor/EditorContext;)V" />
-    <nodeInfo nodeId="2268293679705666618" fileName="comma_keys.java" startLine="17" startPosition="50" endLine="24" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="comma_keys#()V" />
-    <nodeInfo nodeId="2268293679705666618" fileName="comma_keys.java" startLine="59" startPosition="0" endLine="69" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="execute_internal#(Ljava/awt/event/KeyEvent;Ljetbrains/mps/nodeEditor/EditorContext;Ljetbrains/mps/smodel/SNode;Ljava/util/List;)V" />
-    <nodeInfo nodeId="2268293679705666618" fileName="comma_keys.java" startLine="39" startPosition="0" endLine="54" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="canExecute#(Ljava/awt/event/KeyEvent;Ljetbrains/mps/nodeEditor/EditorContext;)Z" />
-    <scopeInfo nodeId="2268293679705666618" fileName="comma_keys.java" startLine="32" startPosition="40" endLine="33" endPosition="30" />
-    <scopeInfo nodeId="2268293679705666618" fileName="comma_keys.java" startLine="36" startPosition="40" endLine="37" endPosition="19" />
-    <scopeInfo nodeId="2268293679705666618" fileName="comma_keys.java" startLine="42" startPosition="34" endLine="43" endPosition="21" />
-    <scopeInfo nodeId="2268293679705666618" fileName="comma_keys.java" startLine="46" startPosition="32" endLine="47" endPosition="21" />
-    <scopeInfo nodeId="2268293679705666618" fileName="comma_keys.java" startLine="49" startPosition="86" endLine="50" endPosition="20" />
-    <scopeInfo nodeId="2268293679705666618" fileName="comma_keys.java" startLine="70" startPosition="34" endLine="71" endPosition="22" />
-    <scopeInfo nodeId="2268293679705666618" fileName="comma_keys.java" startLine="27" startPosition="33" endLine="29" endPosition="38" />
-    <scopeInfo nodeId="2268293679705666618" fileName="comma_keys.java" startLine="55" startPosition="85" endLine="57" endPosition="115" />
-    <scopeInfo nodeId="2268293679705666618" fileName="comma_keys.java" startLine="20" startPosition="34" endLine="23" endPosition="47" />
-    <scopeInfo nodeId="2268293679705666618" fileName="comma_keys.java" startLine="26" startPosition="73" endLine="30" endPosition="5" />
-    <scopeInfo nodeId="2268293679705666618" fileName="comma_keys.java" startLine="31" startPosition="0" endLine="35" endPosition="0" />
-    <scopeInfo nodeId="2268293679705666618" fileName="comma_keys.java" startLine="35" startPosition="0" endLine="39" endPosition="0" />
-    <scopeInfo nodeId="2268293679705666618" fileName="comma_keys.java" startLine="48" startPosition="7" endLine="52" endPosition="19" />
-    <scopeInfo nodeId="2268293679705666618" fileName="comma_keys.java" startLine="69" startPosition="0" endLine="73" endPosition="0" />
-    <scopeInfo nodeId="2268293679705666618" fileName="comma_keys.java" startLine="18" startPosition="23" endLine="23" endPosition="47" />
-    <scopeInfo nodeId="2268293679705666618" fileName="comma_keys.java" startLine="54" startPosition="0" endLine="59" endPosition="0" />
-    <scopeInfo nodeId="2268293679705666618" fileName="comma_keys.java" startLine="17" startPosition="50" endLine="24" endPosition="3" />
-    <scopeInfo nodeId="2268293679705666622" fileName="comma_keys.java" startLine="60" startPosition="146" endLine="67" endPosition="25">
-      <varInfo nodeId="2268293679705627826" varName="to" />
-      <varInfo nodeId="2268293679705627832" varName="current" />
-    </scopeInfo>
-    <scopeInfo nodeId="2268293679705666618" fileName="comma_keys.java" startLine="59" startPosition="0" endLine="69" endPosition="0" />
-    <scopeInfo nodeId="2268293679705666618" fileName="comma_keys.java" startLine="40" startPosition="91" endLine="52" endPosition="19" />
-    <scopeInfo nodeId="2268293679705666618" fileName="comma_keys.java" startLine="39" startPosition="0" endLine="54" endPosition="0" />
-    <unitInfo nodeId="2268293679705666618" fileName="comma_keys.java" startLine="26" startPosition="0" endLine="74" endPosition="0" unitName="jetbrains.mps.query.editor.comma_keys$comma_keys_Action0" />
-    <unitInfo nodeId="2268293679705666618" fileName="comma_keys.java" startLine="17" startPosition="0" endLine="75" endPosition="0" unitName="jetbrains.mps.query.editor.comma_keys" />
-  </root>
   <root nodeId="228266671027818559">
     <nodeInfo nodeId="228266671027818559" fileName="MqlClosure_Editor.java" startLine="88" startPosition="58" endLine="88" endPosition="58" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
     <nodeInfo nodeId="228266671027818559" fileName="MqlClosure_Editor.java" startLine="28" startPosition="79" endLine="29" endPosition="63" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
@@ -1041,8 +975,8 @@
     <nodeInfo nodeId="228266671027841872" fileName="MqlComma_Editor.java" startLine="71" startPosition="5" endLine="72" endPosition="42" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
     <nodeInfo nodeId="228266671027841872" fileName="MqlComma_Editor.java" startLine="72" startPosition="42" endLine="73" endPosition="62" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
     <nodeInfo nodeId="228266671027841872" fileName="MqlComma_Editor.java" startLine="73" startPosition="62" endLine="74" endPosition="56" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="228266671027841872" fileName="MqlComma_Editor.java" startLine="75" startPosition="5" endLine="76" endPosition="43" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="228266671027841872" fileName="MqlComma_Editor.java" startLine="76" startPosition="43" endLine="77" endPosition="34" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="228266671027841872" fileName="MqlComma_Editor.java" startLine="74" startPosition="56" endLine="75" endPosition="67" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="228266671027841872" fileName="MqlComma_Editor.java" startLine="76" startPosition="5" endLine="77" endPosition="34" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
     <nodeInfo nodeId="228266671027841872" fileName="MqlComma_Editor.java" startLine="77" startPosition="34" endLine="78" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="228266671027841872" fileName="MqlComma_Editor.java" startLine="81" startPosition="88" endLine="82" endPosition="81" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
     <nodeInfo nodeId="228266671027841872" fileName="MqlComma_Editor.java" startLine="82" startPosition="81" endLine="83" endPosition="29" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
@@ -1079,13 +1013,13 @@
     <nodeInfo nodeId="228266671027841872" fileName="MqlComma_Editor.java" startLine="20" startPosition="56" endLine="24" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createEditorCell#(Ljetbrains/mps/nodeEditor/EditorContext;Ljetbrains/mps/smodel/SNode;)Ljetbrains/mps/nodeEditor/cells/EditorCell;" />
     <nodeInfo nodeId="228266671027841872" fileName="MqlComma_Editor.java" startLine="116" startPosition="0" endLine="120" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="_StyleParameter_QueryFunction_j2e473_a1a0#(Ljetbrains/mps/smodel/SNode;Ljetbrains/mps/nodeEditor/EditorContext;)Z" />
     <nodeInfo nodeId="228266671027841872" fileName="MqlComma_Editor.java" startLine="120" startPosition="0" endLine="124" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="_StyleParameter_QueryFunction_j2e473_a2a0#(Ljetbrains/mps/smodel/SNode;Ljetbrains/mps/nodeEditor/EditorContext;)Z" />
-    <nodeInfo nodeId="228266671027841872" fileName="MqlComma_Editor.java" startLine="70" startPosition="66" endLine="75" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="228266671027841872" fileName="MqlComma_Editor.java" startLine="70" startPosition="66" endLine="76" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
     <nodeInfo nodeId="228266671027841872" fileName="MqlComma_Editor.java" startLine="90" startPosition="59" endLine="96" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
     <nodeInfo nodeId="228266671027841872" fileName="MqlComma_Editor.java" startLine="108" startPosition="59" endLine="114" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
     <nodeInfo nodeId="228266671027841872" fileName="MqlComma_Editor.java" startLine="24" startPosition="0" endLine="31" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createCollection_j2e473_a#(Ljetbrains/mps/nodeEditor/EditorContext;Ljetbrains/mps/smodel/SNode;)Ljetbrains/mps/nodeEditor/cells/EditorCell;" />
     <nodeInfo nodeId="228266671027841872" fileName="MqlComma_Editor.java" startLine="39" startPosition="51" endLine="46" endPosition="13" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="228266671027841872" fileName="MqlComma_Editor.java" startLine="50" startPosition="51" endLine="57" endPosition="13" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="228266671027841872" fileName="MqlComma_Editor.java" startLine="68" startPosition="87" endLine="76" endPosition="43" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="228266671027841872" fileName="MqlComma_Editor.java" startLine="68" startPosition="87" endLine="76" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
     <nodeInfo nodeId="228266671027841872" fileName="MqlComma_Editor.java" startLine="38" startPosition="90" endLine="48" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="calculate#(Ljetbrains/mps/nodeEditor/cells/EditorCell;)Ljava/lang/Boolean;" />
     <nodeInfo nodeId="228266671027841872" fileName="MqlComma_Editor.java" startLine="49" startPosition="95" endLine="59" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="calculate#(Ljetbrains/mps/nodeEditor/cells/EditorCell;)Ljava/lang/Boolean;" />
     <nodeInfo nodeId="228266671027841872" fileName="MqlComma_Editor.java" startLine="37" startPosition="51" endLine="48" endPosition="9" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
@@ -1106,19 +1040,19 @@
     <scopeInfo nodeId="228266671027841872" fileName="MqlComma_Editor.java" startLine="104" startPosition="58" endLine="105" endPosition="71" />
     <scopeInfo nodeId="1992172484410778535" fileName="MqlComma_Editor.java" startLine="117" startPosition="109" endLine="118" endPosition="118" />
     <scopeInfo nodeId="8205627927119529854" fileName="MqlComma_Editor.java" startLine="121" startPosition="109" endLine="122" endPosition="234" />
-    <scopeInfo nodeId="228266671027841872" fileName="MqlComma_Editor.java" startLine="71" startPosition="5" endLine="74" endPosition="56" />
     <scopeInfo nodeId="228266671027841872" fileName="MqlComma_Editor.java" startLine="85" startPosition="26" endLine="88" endPosition="73" />
     <scopeInfo nodeId="228266671027841872" fileName="MqlComma_Editor.java" startLine="91" startPosition="35" endLine="94" endPosition="105" />
     <scopeInfo nodeId="228266671027841872" fileName="MqlComma_Editor.java" startLine="103" startPosition="26" endLine="106" endPosition="73" />
     <scopeInfo nodeId="228266671027841872" fileName="MqlComma_Editor.java" startLine="109" startPosition="35" endLine="112" endPosition="105" />
     <scopeInfo nodeId="228266671027841872" fileName="MqlComma_Editor.java" startLine="20" startPosition="56" endLine="24" endPosition="0" />
     <scopeInfo nodeId="228266671027841872" fileName="MqlComma_Editor.java" startLine="25" startPosition="89" endLine="29" endPosition="22" />
+    <scopeInfo nodeId="228266671027841872" fileName="MqlComma_Editor.java" startLine="71" startPosition="5" endLine="75" endPosition="67" />
     <scopeInfo nodeId="228266671027841872" fileName="MqlComma_Editor.java" startLine="116" startPosition="0" endLine="120" endPosition="0" />
     <scopeInfo nodeId="228266671027841872" fileName="MqlComma_Editor.java" startLine="120" startPosition="0" endLine="124" endPosition="0" />
     <scopeInfo nodeId="228266671027841872" fileName="MqlComma_Editor.java" startLine="24" startPosition="0" endLine="31" endPosition="0" />
     <scopeInfo nodeId="228266671027841872" fileName="MqlComma_Editor.java" startLine="39" startPosition="51" endLine="46" endPosition="13" />
     <scopeInfo nodeId="228266671027841872" fileName="MqlComma_Editor.java" startLine="50" startPosition="51" endLine="57" endPosition="13" />
-    <scopeInfo nodeId="228266671027841872" fileName="MqlComma_Editor.java" startLine="68" startPosition="87" endLine="76" endPosition="43" />
+    <scopeInfo nodeId="228266671027841872" fileName="MqlComma_Editor.java" startLine="68" startPosition="87" endLine="76" endPosition="5" />
     <scopeInfo nodeId="228266671027841872" fileName="MqlComma_Editor.java" startLine="38" startPosition="90" endLine="48" endPosition="0" />
     <scopeInfo nodeId="228266671027841872" fileName="MqlComma_Editor.java" startLine="49" startPosition="95" endLine="59" endPosition="0" />
     <scopeInfo nodeId="228266671027841872" fileName="MqlComma_Editor.java" startLine="67" startPosition="89" endLine="78" endPosition="22" />
@@ -2724,25 +2658,30 @@
     <unitInfo nodeId="7352592509980944292" fileName="delete_dot.java" startLine="13" startPosition="0" endLine="34" endPosition="0" unitName="jetbrains.mps.query.editor.delete_dot" />
   </root>
   <root nodeId="7352592509980944310">
-    <nodeInfo nodeId="7352592509980944310" fileName="delete_parentheses.java" startLine="14" startPosition="95" endLine="15" endPosition="104" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="7352592509980944310" fileName="delete_parentheses.java" startLine="18" startPosition="74" endLine="19" endPosition="29" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="myNode" />
-    <nodeInfo nodeId="7352592509980944310" fileName="delete_parentheses.java" startLine="21" startPosition="50" endLine="22" endPosition="25" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="7352592509980944310" fileName="delete_parentheses.java" startLine="25" startPosition="54" endLine="26" endPosition="56" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="7352592509980944314" fileName="delete_parentheses.java" startLine="29" startPosition="75" endLine="30" endPosition="94" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="7352592509980944310" fileName="delete_parentheses.java" startLine="20" startPosition="0" endLine="23" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="delete_parentheses_DELETE#(Ljetbrains/mps/smodel/SNode;)V" />
-    <nodeInfo nodeId="7352592509980944310" fileName="delete_parentheses.java" startLine="13" startPosition="33" endLine="17" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="setCellActions#(Ljetbrains/mps/nodeEditor/cells/EditorCell;Ljetbrains/mps/smodel/SNode;Ljetbrains/mps/nodeEditor/EditorContext;)V" />
-    <nodeInfo nodeId="7352592509980944310" fileName="delete_parentheses.java" startLine="24" startPosition="0" endLine="28" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="execute#(Ljetbrains/mps/nodeEditor/EditorContext;)V" />
-    <nodeInfo nodeId="7352592509980944310" fileName="delete_parentheses.java" startLine="28" startPosition="0" endLine="32" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="execute_internal#(Ljetbrains/mps/nodeEditor/EditorContext;Ljetbrains/mps/smodel/SNode;)V" />
-    <scopeInfo nodeId="7352592509980944310" fileName="delete_parentheses.java" startLine="14" startPosition="95" endLine="15" endPosition="104" />
-    <scopeInfo nodeId="7352592509980944310" fileName="delete_parentheses.java" startLine="21" startPosition="50" endLine="22" endPosition="25" />
-    <scopeInfo nodeId="7352592509980944310" fileName="delete_parentheses.java" startLine="25" startPosition="54" endLine="26" endPosition="56" />
-    <scopeInfo nodeId="7352592509980944313" fileName="delete_parentheses.java" startLine="29" startPosition="75" endLine="30" endPosition="94" />
-    <scopeInfo nodeId="7352592509980944310" fileName="delete_parentheses.java" startLine="20" startPosition="0" endLine="23" endPosition="5" />
-    <scopeInfo nodeId="7352592509980944310" fileName="delete_parentheses.java" startLine="13" startPosition="33" endLine="17" endPosition="0" />
-    <scopeInfo nodeId="7352592509980944310" fileName="delete_parentheses.java" startLine="24" startPosition="0" endLine="28" endPosition="0" />
-    <scopeInfo nodeId="7352592509980944310" fileName="delete_parentheses.java" startLine="28" startPosition="0" endLine="32" endPosition="0" />
-    <unitInfo nodeId="7352592509980944310" fileName="delete_parentheses.java" startLine="18" startPosition="0" endLine="33" endPosition="0" unitName="jetbrains.mps.query.editor.delete_parentheses$delete_parentheses_DELETE" />
-    <unitInfo nodeId="7352592509980944310" fileName="delete_parentheses.java" startLine="13" startPosition="0" endLine="34" endPosition="0" unitName="jetbrains.mps.query.editor.delete_parentheses" />
+    <nodeInfo nodeId="7352592509980944310" fileName="delete_parentheses.java" startLine="15" startPosition="95" endLine="16" endPosition="104" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7352592509980944310" fileName="delete_parentheses.java" startLine="19" startPosition="74" endLine="20" endPosition="29" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="myNode" />
+    <nodeInfo nodeId="7352592509980944310" fileName="delete_parentheses.java" startLine="22" startPosition="50" endLine="23" endPosition="25" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7352592509980944310" fileName="delete_parentheses.java" startLine="26" startPosition="54" endLine="27" endPosition="56" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2852142168179422966" fileName="delete_parentheses.java" startLine="30" startPosition="75" endLine="31" endPosition="113" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="2852142168179422975" fileName="delete_parentheses.java" startLine="32" startPosition="127" endLine="33" endPosition="149" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7352592509980944310" fileName="delete_parentheses.java" startLine="21" startPosition="0" endLine="24" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="delete_parentheses_DELETE#(Ljetbrains/mps/smodel/SNode;)V" />
+    <nodeInfo nodeId="2852142168179472511" fileName="delete_parentheses.java" startLine="31" startPosition="113" endLine="34" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="7352592509980944310" fileName="delete_parentheses.java" startLine="14" startPosition="33" endLine="18" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="setCellActions#(Ljetbrains/mps/nodeEditor/cells/EditorCell;Ljetbrains/mps/smodel/SNode;Ljetbrains/mps/nodeEditor/EditorContext;)V" />
+    <nodeInfo nodeId="7352592509980944310" fileName="delete_parentheses.java" startLine="25" startPosition="0" endLine="29" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="execute#(Ljetbrains/mps/nodeEditor/EditorContext;)V" />
+    <nodeInfo nodeId="7352592509980944310" fileName="delete_parentheses.java" startLine="29" startPosition="0" endLine="36" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="execute_internal#(Ljetbrains/mps/nodeEditor/EditorContext;Ljetbrains/mps/smodel/SNode;)V" />
+    <scopeInfo nodeId="7352592509980944310" fileName="delete_parentheses.java" startLine="15" startPosition="95" endLine="16" endPosition="104" />
+    <scopeInfo nodeId="7352592509980944310" fileName="delete_parentheses.java" startLine="22" startPosition="50" endLine="23" endPosition="25" />
+    <scopeInfo nodeId="7352592509980944310" fileName="delete_parentheses.java" startLine="26" startPosition="54" endLine="27" endPosition="56" />
+    <scopeInfo nodeId="2852142168179472512" fileName="delete_parentheses.java" startLine="32" startPosition="127" endLine="33" endPosition="149" />
+    <scopeInfo nodeId="7352592509980944310" fileName="delete_parentheses.java" startLine="21" startPosition="0" endLine="24" endPosition="5" />
+    <scopeInfo nodeId="7352592509980944310" fileName="delete_parentheses.java" startLine="14" startPosition="33" endLine="18" endPosition="0" />
+    <scopeInfo nodeId="7352592509980944310" fileName="delete_parentheses.java" startLine="25" startPosition="0" endLine="29" endPosition="0" />
+    <scopeInfo nodeId="7352592509980944313" fileName="delete_parentheses.java" startLine="30" startPosition="75" endLine="34" endPosition="7">
+      <varInfo nodeId="2852142168179422967" varName="expression" />
+    </scopeInfo>
+    <scopeInfo nodeId="7352592509980944310" fileName="delete_parentheses.java" startLine="29" startPosition="0" endLine="36" endPosition="0" />
+    <unitInfo nodeId="7352592509980944310" fileName="delete_parentheses.java" startLine="19" startPosition="0" endLine="37" endPosition="0" unitName="jetbrains.mps.query.editor.delete_parentheses$delete_parentheses_DELETE" />
+    <unitInfo nodeId="7352592509980944310" fileName="delete_parentheses.java" startLine="14" startPosition="0" endLine="38" endPosition="0" unitName="jetbrains.mps.query.editor.delete_parentheses" />
   </root>
   <root nodeId="8595827001410573526">
     <nodeInfo nodeId="8595827001410573526" fileName="remove_binaryRight.java" startLine="14" startPosition="95" endLine="15" endPosition="104" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />

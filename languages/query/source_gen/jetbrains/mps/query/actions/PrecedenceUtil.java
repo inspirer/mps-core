@@ -35,7 +35,7 @@ public class PrecedenceUtil {
     return targetNode;
   }
 
-  public static SNode getTargetForRightTransform(@NotNull SNode contextNode, SNode result) {
+  /*package*/ static SNode getTargetForRightTransform(@NotNull SNode contextNode, SNode result) {
     int prio = MqlExpression_Behavior.call_getPriority_7352592509980890960(result);
     SNode targetNode = contextNode;
     for (SNode parentNode = SNodeOperations.getParent(targetNode); parentNode != null && SNodeOperations.isInstanceOf(parentNode, "jetbrains.mps.query.structure.MqlExpression") && MqlExpression_Behavior.call_getPriority_7352592509980890960(SNodeOperations.cast(parentNode, "jetbrains.mps.query.structure.MqlExpression")) < prio; parentNode = SNodeOperations.getParent(targetNode)) {
@@ -77,7 +77,7 @@ public class PrecedenceUtil {
         SLinkOperations.setTarget(result, "expr", contextNode, true);
         return result;
       } else if (SNodeOperations.isInstanceOf(contextNode, "jetbrains.mps.query.structure.MqlBinaryExpr")) {
-        PrecedenceUtil.checkOperationWRTPriority(SNodeOperations.cast(contextNode, "jetbrains.mps.query.structure.MqlBinaryExpr"));
+        PrecedenceUtil.rotateIfNecessary(SNodeOperations.cast(contextNode, "jetbrains.mps.query.structure.MqlBinaryExpr"));
       }
     }
     return contextNode;
@@ -114,40 +114,40 @@ public class PrecedenceUtil {
     return childPrio > opPrio;
   }
 
-  private static void checkOperationWRTPriority(SNode expr) {
-    checkOperationChildWRTPriority(expr, false);
-    checkOperationChildWRTPriority(expr, true);
-    checkOperationParentWRTPriority(expr);
+  public static void rotateIfNecessary(SNode expr) {
+    rotateParentsIfNecessary(rotateChildrenIfNecessary(expr));
   }
 
-  private static void checkOperationChildWRTPriority(SNode node, boolean isRight) {
-    if (!(SNodeOperations.isInstanceOf(node, "jetbrains.mps.query.structure.MqlBinaryExpr"))) {
-      return;
-    }
-    SNode expr = SNodeOperations.cast(node, "jetbrains.mps.query.structure.MqlBinaryExpr");
-    SNode childexpr = (isRight ?
-      SLinkOperations.getTarget(expr, "right", true) :
-      SLinkOperations.getTarget(expr, "left", true)
-    );
-    if (SNodeOperations.isInstanceOf(childexpr, "jetbrains.mps.query.structure.MqlBinaryExpr")) {
-      SNode child = SNodeOperations.cast(childexpr, "jetbrains.mps.query.structure.MqlBinaryExpr");
-      if (needsRotate(expr, child)) {
-        rotate(expr, child);
-        checkOperationWRTPriority(SNodeOperations.cast(node, "jetbrains.mps.query.structure.MqlBinaryExpr"));
+  private static SNode rotateChildrenIfNecessary(SNode node) {
+    SNode expr = node;
+    boolean checkMore = true;
+    while (checkMore) {
+      checkMore = false;
+      while (SNodeOperations.isInstanceOf(SLinkOperations.getTarget(expr, "left", true), "jetbrains.mps.query.structure.MqlBinaryExpr") && needsRotate(expr, SNodeOperations.cast(SLinkOperations.getTarget(expr, "left", true), "jetbrains.mps.query.structure.MqlBinaryExpr"))) {
+        SNode left = SNodeOperations.cast(SLinkOperations.getTarget(expr, "left", true), "jetbrains.mps.query.structure.MqlBinaryExpr");
+        rotate(expr, left);
+        rotateChildrenIfNecessary(expr);
+        expr = left;
+      }
+      while (SNodeOperations.isInstanceOf(SLinkOperations.getTarget(expr, "right", true), "jetbrains.mps.query.structure.MqlBinaryExpr") && needsRotate(expr, SNodeOperations.cast(SLinkOperations.getTarget(expr, "right", true), "jetbrains.mps.query.structure.MqlBinaryExpr"))) {
+        SNode right = SNodeOperations.cast(SLinkOperations.getTarget(expr, "right", true), "jetbrains.mps.query.structure.MqlBinaryExpr");
+        rotate(expr, right);
+        rotateChildrenIfNecessary(expr);
+        expr = right;
+        checkMore = true;
       }
     }
+    return expr;
   }
 
-  private static void checkOperationParentWRTPriority(SNode expr) {
-    if (SNodeOperations.getParent(expr) == null) {
-      return;
-    }
-    if (SNodeOperations.isInstanceOf(SNodeOperations.getParent(expr), "jetbrains.mps.query.structure.MqlBinaryExpr")) {
+  private static void rotateParentsIfNecessary(SNode expr) {
+    while (SNodeOperations.isInstanceOf(SNodeOperations.getParent(expr), "jetbrains.mps.query.structure.MqlBinaryExpr")) {
       SNode parent = SNodeOperations.cast(SNodeOperations.getParent(expr), "jetbrains.mps.query.structure.MqlBinaryExpr");
-      if (needsRotate(parent, expr)) {
-        rotate(parent, expr);
-        checkOperationParentWRTPriority(expr);
+      SNode newtop = rotateChildrenIfNecessary(parent);
+      if (newtop == parent) {
+        break;
       }
+      expr = parent;
     }
     if (SNodeOperations.isInstanceOf(SNodeOperations.getParent(expr), "jetbrains.mps.query.structure.MqlUnary")) {
       SNode parent = SNodeOperations.cast(SNodeOperations.getParent(expr), "jetbrains.mps.query.structure.MqlUnary");

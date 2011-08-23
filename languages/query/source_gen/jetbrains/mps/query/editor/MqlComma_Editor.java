@@ -72,8 +72,8 @@ public class MqlComma_Editor extends DefaultNodeEditor {
       Style style = editorCell.getStyle();
       style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, true);
       style.set(StyleAttributes.PUNCTUATION_LEFT, true);
+      style.set(StyleAttributes.RT_ANCHOR_TAG, "ext_1_RTransform");
     }
-    editorCell.addKeyMap(new comma_keys());
     editorCell.setDefaultText("");
     return editorCell;
   }
