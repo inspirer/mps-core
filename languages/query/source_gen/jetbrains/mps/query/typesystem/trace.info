@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debugInfo>
-  <unitInfo fileName="TypesystemDescriptor.java" startLine="9" startPosition="0" endLine="37" endPosition="0" unitName="jetbrains.mps.query.typesystem.TypesystemDescriptor" />
+  <unitInfo fileName="TypesystemDescriptor.java" startLine="9" startPosition="0" endLine="41" endPosition="0" unitName="jetbrains.mps.query.typesystem.TypesystemDescriptor" />
   <root nodeId="228266671027905045">
     <nodeInfo nodeId="228266671027905055" fileName="typeof_MqlExpression_InferenceRule.java" startLine="19" startPosition="5" endLine="20" endPosition="55" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
     <nodeInfo nodeId="228266671027905055" fileName="typeof_MqlExpression_InferenceRule.java" startLine="20" startPosition="55" endLine="21" endPosition="195" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
@@ -29,6 +29,53 @@
     <scopeInfo nodeId="228266671027905045" fileName="typeof_MqlExpression_InferenceRule.java" startLine="29" startPosition="0" endLine="36" endPosition="0" />
     <scopeInfo nodeId="228266671027905045" fileName="typeof_MqlExpression_InferenceRule.java" startLine="17" startPosition="0" endLine="25" endPosition="0" />
     <unitInfo nodeId="228266671027905045" fileName="typeof_MqlExpression_InferenceRule.java" startLine="14" startPosition="0" endLine="41" endPosition="0" unitName="jetbrains.mps.query.typesystem.typeof_MqlExpression_InferenceRule" />
+  </root>
+  <root nodeId="2852142168179589858">
+    <nodeInfo nodeId="2852142168179589893" fileName="check_NoContextCall_NonTypesystemRule.java" startLine="25" startPosition="7" endLine="26" endPosition="60" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="2852142168179589893" fileName="check_NoContextCall_NonTypesystemRule.java" startLine="26" startPosition="60" endLine="27" endPosition="250" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="2852142168179589899" fileName="check_NoContextCall_NonTypesystemRule.java" startLine="28" startPosition="7" endLine="29" endPosition="13" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2852142168179589933" fileName="check_NoContextCall_NonTypesystemRule.java" startLine="31" startPosition="131" endLine="32" endPosition="129" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="2852142168179589946" fileName="check_NoContextCall_NonTypesystemRule.java" startLine="32" startPosition="129" endLine="33" endPosition="170" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="2852142168179589986" fileName="check_NoContextCall_NonTypesystemRule.java" startLine="35" startPosition="9" endLine="36" endPosition="62" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="2852142168179589986" fileName="check_NoContextCall_NonTypesystemRule.java" startLine="36" startPosition="62" endLine="37" endPosition="236" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="2852142168179589858" fileName="check_NoContextCall_NonTypesystemRule.java" startLine="43" startPosition="46" endLine="44" endPosition="65" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2852142168179589858" fileName="check_NoContextCall_NonTypesystemRule.java" startLine="48" startPosition="5" endLine="49" endPosition="117" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="2852142168179589858" fileName="check_NoContextCall_NonTypesystemRule.java" startLine="49" startPosition="117" endLine="50" endPosition="45" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2852142168179589858" fileName="check_NoContextCall_NonTypesystemRule.java" startLine="54" startPosition="30" endLine="55" endPosition="17" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2852142168179589858" fileName="check_NoContextCall_NonTypesystemRule.java" startLine="19" startPosition="131" endLine="21" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="check_NoContextCall_NonTypesystemRule#()V" />
+    <nodeInfo nodeId="2852142168179589893" fileName="check_NoContextCall_NonTypesystemRule.java" startLine="24" startPosition="257" endLine="28" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="2852142168179589986" fileName="check_NoContextCall_NonTypesystemRule.java" startLine="34" startPosition="183" endLine="38" endPosition="9" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="2852142168179589858" fileName="check_NoContextCall_NonTypesystemRule.java" startLine="42" startPosition="0" endLine="46" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getApplicableConceptFQName#()Ljava/lang/String;" />
+    <nodeInfo nodeId="2852142168179589858" fileName="check_NoContextCall_NonTypesystemRule.java" startLine="47" startPosition="68" endLine="51" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="2852142168179589858" fileName="check_NoContextCall_NonTypesystemRule.java" startLine="53" startPosition="0" endLine="57" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="overrides#()Z" />
+    <nodeInfo nodeId="2852142168179589959" fileName="check_NoContextCall_NonTypesystemRule.java" startLine="33" startPosition="170" endLine="39" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="2852142168179589862" fileName="check_NoContextCall_NonTypesystemRule.java" startLine="23" startPosition="134" endLine="30" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="2852142168179589858" fileName="check_NoContextCall_NonTypesystemRule.java" startLine="46" startPosition="0" endLine="53" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="isApplicableAndPattern#(Ljetbrains/mps/smodel/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+    <nodeInfo nodeId="2852142168179589907" fileName="check_NoContextCall_NonTypesystemRule.java" startLine="30" startPosition="5" endLine="40" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.ForStatement" />
+    <nodeInfo nodeId="2852142168179589858" fileName="check_NoContextCall_NonTypesystemRule.java" startLine="22" startPosition="0" endLine="42" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="applyRule#(Ljetbrains/mps/smodel/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+    <scopeInfo nodeId="2852142168179589858" fileName="check_NoContextCall_NonTypesystemRule.java" startLine="20" startPosition="50" endLine="20" endPosition="50" />
+    <scopeInfo nodeId="2852142168179589858" fileName="check_NoContextCall_NonTypesystemRule.java" startLine="43" startPosition="46" endLine="44" endPosition="65" />
+    <scopeInfo nodeId="2852142168179589858" fileName="check_NoContextCall_NonTypesystemRule.java" startLine="54" startPosition="30" endLine="55" endPosition="17" />
+    <scopeInfo nodeId="2852142168179589858" fileName="check_NoContextCall_NonTypesystemRule.java" startLine="19" startPosition="131" endLine="21" endPosition="3" />
+    <scopeInfo nodeId="2852142168179589893" fileName="check_NoContextCall_NonTypesystemRule.java" startLine="25" startPosition="7" endLine="27" endPosition="250" />
+    <scopeInfo nodeId="2852142168179589986" fileName="check_NoContextCall_NonTypesystemRule.java" startLine="35" startPosition="9" endLine="37" endPosition="236" />
+    <scopeInfo nodeId="2852142168179589858" fileName="check_NoContextCall_NonTypesystemRule.java" startLine="48" startPosition="5" endLine="50" endPosition="45" />
+    <scopeInfo nodeId="2852142168179589960" fileName="check_NoContextCall_NonTypesystemRule.java" startLine="34" startPosition="183" endLine="38" endPosition="9" />
+    <scopeInfo nodeId="2852142168179589858" fileName="check_NoContextCall_NonTypesystemRule.java" startLine="42" startPosition="0" endLine="46" endPosition="0" />
+    <scopeInfo nodeId="2852142168179589858" fileName="check_NoContextCall_NonTypesystemRule.java" startLine="47" startPosition="68" endLine="51" endPosition="5" />
+    <scopeInfo nodeId="2852142168179589858" fileName="check_NoContextCall_NonTypesystemRule.java" startLine="53" startPosition="0" endLine="57" endPosition="0" />
+    <scopeInfo nodeId="2852142168179589864" fileName="check_NoContextCall_NonTypesystemRule.java" startLine="24" startPosition="257" endLine="29" endPosition="13" />
+    <scopeInfo nodeId="2852142168179589858" fileName="check_NoContextCall_NonTypesystemRule.java" startLine="46" startPosition="0" endLine="53" endPosition="0" />
+    <scopeInfo nodeId="2852142168179589908" fileName="check_NoContextCall_NonTypesystemRule.java" startLine="31" startPosition="131" endLine="39" endPosition="7">
+      <varInfo nodeId="2852142168179589934" varName="argument" />
+      <varInfo nodeId="2852142168179589947" varName="param" />
+    </scopeInfo>
+    <scopeInfo nodeId="2852142168179589907" fileName="check_NoContextCall_NonTypesystemRule.java" startLine="30" startPosition="5" endLine="40" endPosition="5">
+      <varInfo nodeId="2852142168179589910" varName="i" />
+    </scopeInfo>
+    <scopeInfo nodeId="2852142168179589859" fileName="check_NoContextCall_NonTypesystemRule.java" startLine="23" startPosition="134" endLine="40" endPosition="5" />
+    <scopeInfo nodeId="2852142168179589858" fileName="check_NoContextCall_NonTypesystemRule.java" startLine="22" startPosition="0" endLine="42" endPosition="0" />
+    <unitInfo nodeId="2852142168179589858" fileName="check_NoContextCall_NonTypesystemRule.java" startLine="19" startPosition="0" endLine="58" endPosition="0" unitName="jetbrains.mps.query.typesystem.check_NoContextCall_NonTypesystemRule" />
   </root>
   <root nodeId="5804859299351488467">
     <nodeInfo nodeId="5804859299351493530" fileName="check_Dot_NonTypesystemRule.java" startLine="23" startPosition="7" endLine="24" endPosition="60" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
