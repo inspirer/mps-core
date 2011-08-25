@@ -8,9 +8,9 @@
     <projectModules>
       <modulePath path="${project}/languages/query/query.mpl" />
       <modulePath path="${project}/solutions/jetbrains.smartmps.sandbox/jetbrains.smartmps.sandbox.msd" />
-      <modulePath path="${project}/languages/syntax/syntax.mpl" folder="" />
       <modulePath path="${project}/languages/template/template.mpl" folder="" />
       <modulePath path="${mps_home}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar!/META-INF/module.xml" />
+      <modulePath path="${project}/languages/workflow/workflow.mpl" folder="" />
     </projectModules>
     <genConfs />
   </component>

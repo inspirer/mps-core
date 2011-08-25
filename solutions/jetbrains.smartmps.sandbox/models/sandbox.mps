@@ -5,17 +5,22 @@
   <language namespace="2e142477-d221-495b-aa6c-7bd7c349e904(jetbrains.mps.template)" />
   <language namespace="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" />
   <language namespace="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" />
+  <language namespace="78c70cc5-3e2a-478b-9524-f2d47690ac85(jetbrains.mps.workflow)" />
   <import index="tpce" modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" />
   <import index="bwy9" modelUID="r:f9198ffd-e084-425c-aa82-f2db8289f5eb(jetbrains.mps.query.structure)" version="-1" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="h0os" modelUID="r:d290b86d-8b61-4a2f-a17f-263226953ecc(jetbrains.mps.template.structure)" version="-1" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="3" implicit="yes" />
+  <import index="e5td" modelUID="r:ebf59dd9-04f3-4209-8dd7-dca3f04cac82(jetbrains.mps.workflow.structure)" version="-1" implicit="yes" />
   <roots>
     <node type="bwy9.MqlPackage" typeId="bwy9.6762883159245048630" id="6601450967974137522">
       <property name="name" nameId="tpck.1169194664001" value="default" />
     </node>
     <node type="h0os.MtlLibrary" typeId="h0os.212212067811886747" id="212212067812146067">
       <property name="name" nameId="tpck.1169194664001" value="toString" />
+    </node>
+    <node type="e5td.WflowExecutable" typeId="e5td.3373821274546687033" id="3373821274546690914">
+      <property name="name" nameId="tpck.1169194664001" value="runMe" />
     </node>
   </roots>
   <root id="6601450967974137522">
@@ -301,6 +306,25 @@
             <property name="value" nameId="bwy9.6762883159245048053" value="6" />
           </node>
         </node>
+      </node>
+    </node>
+  </root>
+  <root id="3373821274546690914">
+    <node role="statements" roleId="e5td.3373821274546687039" type="e5td.WflowExpressionStatement" typeId="e5td.3373821274546687071" id="3373821274546694998">
+      <property name="varname" nameId="e5td.3373821274546692990" value="asd" />
+      <node role="expression" roleId="e5td.3373821274546687072" type="bwy9.MqlComma" typeId="bwy9.6762883159245048011" id="3373821274546695007">
+        <node role="right" roleId="bwy9.6762883159245048021" type="bwy9.MqlIntLiteral" typeId="bwy9.6762883159245048052" id="3373821274546695010">
+          <property name="value" nameId="bwy9.6762883159245048053" value="234" />
+        </node>
+        <node role="left" roleId="bwy9.6762883159245048020" type="bwy9.MqlIntLiteral" typeId="bwy9.6762883159245048052" id="3373821274546695002">
+          <property name="value" nameId="bwy9.6762883159245048053" value="123" />
+        </node>
+      </node>
+    </node>
+    <node role="statements" roleId="e5td.3373821274546687039" type="e5td.WflowExpressionStatement" typeId="e5td.3373821274546687071" id="3373821274546695005">
+      <property name="varname" nameId="e5td.3373821274546692990" value="er" />
+      <node role="expression" roleId="e5td.3373821274546687072" type="bwy9.MqlNoContextQueryCall" typeId="bwy9.2059702675525965924" id="3373821274546695011">
+        <link role="query" roleId="bwy9.2059702675525965925" targetNodeId="228266671027692241" resolveInfo="getBoolean" />
       </node>
     </node>
   </root>

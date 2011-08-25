@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debugInfo>
+  <unitInfo fileName="WflowExpressionStatement_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="jetbrains.mps.workflow.behavior.WflowExpressionStatement_BehaviorDescriptor" />
+  <unitInfo fileName="WflowStatement_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="jetbrains.mps.workflow.behavior.WflowStatement_BehaviorDescriptor" />
+  <unitInfo fileName="WflowExecutable_BehaviorDescriptor.java" startLine="10" startPosition="0" endLine="23" endPosition="0" unitName="jetbrains.mps.workflow.behavior.WflowExecutable_BehaviorDescriptor" />
+  <unitInfo fileName="BehaviorAspectDescriptor.java" startLine="9" startPosition="0" endLine="26" endPosition="0" unitName="jetbrains.mps.workflow.behavior.BehaviorAspectDescriptor" />
+</debugInfo>
+
