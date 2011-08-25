@@ -4,6 +4,10 @@ package jetbrains.mps.query.behavior;
 
 import jetbrains.mps.smodel.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import jetbrains.mps.query.runtime.EvaluationEnvironment;
+import jetbrains.mps.query.runtime.EvaluationContext;
+import jetbrains.mps.query.runtime.EvaluationException;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import java.util.Set;
 import java.util.HashSet;
 import jetbrains.mps.smodel.SModelUtil_new;
@@ -27,6 +31,34 @@ public class MqlArithmetic_Behavior {
     } else {
       return 4;
     }
+  }
+
+  public static Object virtual_evaluate_1671449901154581105(SNode thisNode, EvaluationEnvironment env, EvaluationContext context) {
+    int left = MqlArithmetic_Behavior.call_evaluateAsInt_1671449901154581993(thisNode, true, env, context);
+    int right = MqlArithmetic_Behavior.call_evaluateAsInt_1671449901154581993(thisNode, false, env, context);
+    if (SPropertyOperations.hasValue(thisNode, "kind", "1", null)) {
+      return left + right;
+    } else if (SPropertyOperations.hasValue(thisNode, "kind", "2", null)) {
+      return left - right;
+    } else if (SPropertyOperations.hasValue(thisNode, "kind", "3", null)) {
+      return left * right;
+    } else if (SPropertyOperations.hasValue(thisNode, "kind", "4", null)) {
+      return left / right;
+    } else if (SPropertyOperations.hasValue(thisNode, "kind", "5", null)) {
+      return left % right;
+    }
+    throw new EvaluationException("bad query: unknown arithmetic kind", thisNode, context);
+  }
+
+  public static int call_evaluateAsInt_1671449901154581993(SNode thisNode, boolean left, EvaluationEnvironment env, EvaluationContext context) {
+    Object result = MqlExpression_Behavior.call_evaluate_1671449901154581105(((left ?
+      SLinkOperations.getTarget(thisNode, "left", true) :
+      SLinkOperations.getTarget(thisNode, "right", true)
+    )), env, context);
+    if (result instanceof Integer) {
+      return (Integer) result;
+    }
+    throw new EvaluationException("arithmetic expression can handle integers only, not " + env.objectType(result), thisNode, context);
   }
 
   public static class QuotationClass_yuyu4v_a0a0b {

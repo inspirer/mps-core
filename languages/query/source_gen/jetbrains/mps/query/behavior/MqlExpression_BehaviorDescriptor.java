@@ -4,6 +4,8 @@ package jetbrains.mps.query.behavior;
 
 import jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor;
 import jetbrains.mps.smodel.SNode;
+import jetbrains.mps.query.runtime.EvaluationEnvironment;
+import jetbrains.mps.query.runtime.EvaluationContext;
 
 public abstract class MqlExpression_BehaviorDescriptor extends BaseConcept_BehaviorDescriptor {
   public MqlExpression_BehaviorDescriptor() {
@@ -15,6 +17,10 @@ public abstract class MqlExpression_BehaviorDescriptor extends BaseConcept_Behav
 
   public SNode virtual_getType_228266671027861783(SNode thisNode) {
     return MqlExpression_Behavior.virtual_getType_228266671027861783(thisNode);
+  }
+
+  public Object virtual_evaluate_1671449901154581105(SNode thisNode, EvaluationEnvironment env, EvaluationContext context) {
+    return MqlExpression_Behavior.virtual_evaluate_1671449901154581105(thisNode, env, context);
   }
 
   @Override

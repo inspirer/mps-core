@@ -5,10 +5,16 @@ package jetbrains.mps.query.behavior;
 import jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor;
 import jetbrains.mps.lang.core.behavior.INamedConcept_BehaviorDescriptor;
 import jetbrains.mps.smodel.SNode;
+import jetbrains.mps.query.runtime.EvaluationEnvironment;
+import jetbrains.mps.query.runtime.EvaluationContext;
 import jetbrains.mps.lang.core.behavior.INamedConcept_Behavior;
 
 public class MqlQuery_BehaviorDescriptor extends BaseConcept_BehaviorDescriptor implements INamedConcept_BehaviorDescriptor, MqlParametersContainer_BehaviorDescriptor {
   public MqlQuery_BehaviorDescriptor() {
+  }
+
+  public Object virtual_evaluate_1671449901154581077(SNode thisNode, EvaluationEnvironment env, EvaluationContext context, Object[] arguments) {
+    return MqlQuery_Behavior.virtual_evaluate_1671449901154581077(thisNode, env, context, arguments);
   }
 
   public String virtual_getFqName_1213877404258(SNode thisNode) {

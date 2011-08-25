@@ -80,6 +80,7 @@ public class MtlBuilder_Editor extends DefaultNodeEditor {
       style.set(StyleAttributes.PUNCTUATION_RIGHT, true);
       style.set(StyleAttributes.PUNCTUATION_LEFT, true);
     }
+    remove_builderContext.setCellActions(editorCell, node, editorContext);
     editorCell.setDefaultText("");
     return editorCell;
   }
@@ -165,6 +166,7 @@ public class MtlBuilder_Editor extends DefaultNodeEditor {
     provider.setNoTargetText("<no contextNode>");
     EditorCell editorCell;
     editorCell = provider.createEditorCell(editorContext);
+    remove_builderContext.setCellActions(editorCell, node, editorContext);
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
     Class attributeKind = provider.getRoleAttributeClass();
@@ -200,6 +202,10 @@ public class MtlBuilder_Editor extends DefaultNodeEditor {
     EditorCell editorCell;
     editorCell = provider.createEditorCell(editorContext);
     editorCell.setCellId("property_name");
+    {
+      Style style = editorCell.getStyle();
+      style.set(StyleAttributes.RT_ANCHOR_TAG, "ext_1_RTransform");
+    }
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
     Class attributeKind = provider.getRoleAttributeClass();

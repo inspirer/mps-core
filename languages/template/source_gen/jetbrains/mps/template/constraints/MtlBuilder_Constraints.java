@@ -12,11 +12,11 @@ import jetbrains.mps.smodel.SNode;
 import jetbrains.mps.smodel.IScope;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 
-public class MtlTemplate_Constraints extends BaseConstraintsDescriptor {
-  private static Pattern REGEXP_8mtjzv_a0a0a1a1a0b0a1a0 = Pattern.compile("[a-zA-Z_][a-zA-Z_0-9]*", 0);
+public class MtlBuilder_Constraints extends BaseConstraintsDescriptor {
+  private static Pattern REGEXP_adav9y_a0a0a1a1a0b0a1a0 = Pattern.compile("[a-zA-Z_][a-zA-Z_0-9]*", 0);
 
-  public MtlTemplate_Constraints() {
-    super("jetbrains.mps.template.structure.MtlTemplate");
+  public MtlBuilder_Constraints() {
+    super("jetbrains.mps.template.structure.MtlBuilder");
   }
 
   @Override
@@ -31,7 +31,7 @@ public class MtlTemplate_Constraints extends BaseConstraintsDescriptor {
       @Override
       public boolean validateValue(SNode node, String propertyValue, IScope scope) {
         String propertyName = "name";
-        return REGEXP_8mtjzv_a0a0a1a1a0b0a1a0.matcher((SPropertyOperations.getString(propertyValue))).matches();
+        return REGEXP_adav9y_a0a0a1a1a0b0a1a0.matcher((SPropertyOperations.getString(propertyValue))).matches();
       }
     });
     return properties;

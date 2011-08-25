@@ -5,6 +5,8 @@ package jetbrains.mps.query.behavior;
 import jetbrains.mps.smodel.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.query.runtime.EvaluationEnvironment;
+import jetbrains.mps.query.runtime.EvaluationContext;
 
 public class MqlThis_Behavior {
   public static void init(SNode thisNode) {
@@ -17,5 +19,9 @@ public class MqlThis_Behavior {
       }
     }
     return null;
+  }
+
+  public static Object virtual_evaluate_1671449901154581105(SNode thisNode, EvaluationEnvironment env, EvaluationContext context) {
+    return context.getThis();
   }
 }

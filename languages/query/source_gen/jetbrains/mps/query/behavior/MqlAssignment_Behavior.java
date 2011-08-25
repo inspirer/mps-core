@@ -4,6 +4,9 @@ package jetbrains.mps.query.behavior;
 
 import jetbrains.mps.smodel.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.query.runtime.EvaluationEnvironment;
+import jetbrains.mps.query.runtime.EvaluationContext;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 
 public class MqlAssignment_Behavior {
   public static void init(SNode thisNode) {
@@ -15,5 +18,11 @@ public class MqlAssignment_Behavior {
 
   public static int virtual_getPriority_7352592509980890960(SNode thisNode) {
     return 14;
+  }
+
+  public static Object virtual_evaluate_1671449901154581105(SNode thisNode, EvaluationEnvironment env, EvaluationContext context) {
+    Object result = MqlExpression_Behavior.call_evaluate_1671449901154581105(SLinkOperations.getTarget(thisNode, "value", true), env, context);
+    context.setValue(SPropertyOperations.getString(thisNode, "name"), result);
+    return result;
   }
 }

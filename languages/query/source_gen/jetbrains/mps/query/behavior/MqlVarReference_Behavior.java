@@ -4,6 +4,9 @@ package jetbrains.mps.query.behavior;
 
 import jetbrains.mps.smodel.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.query.runtime.EvaluationEnvironment;
+import jetbrains.mps.query.runtime.EvaluationContext;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 
 public class MqlVarReference_Behavior {
   public static void init(SNode thisNode) {
@@ -14,5 +17,9 @@ public class MqlVarReference_Behavior {
       return MqlExpression_Behavior.call_getType_228266671027861783(SLinkOperations.getTarget(thisNode, "var", false));
     }
     return null;
+  }
+
+  public static Object virtual_evaluate_1671449901154581105(SNode thisNode, EvaluationEnvironment env, EvaluationContext context) {
+    return context.getValue(SPropertyOperations.getString(SLinkOperations.getTarget(thisNode, "var", false), "name"));
   }
 }

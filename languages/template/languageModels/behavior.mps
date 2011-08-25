@@ -12,6 +12,7 @@
   <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" implicit="yes" />
   <roots>
     <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="3373821274546492153">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="entities" />
       <link role="concept" roleId="1i04.1225194240799" targetNodeId="h0os.212212067811886751" resolveInfo="MtlTemplate" />
     </node>
   </roots>

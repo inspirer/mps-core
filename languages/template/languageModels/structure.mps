@@ -16,17 +16,21 @@
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="212212067811886750">
       <property name="name" nameId="tpck.1169194664001" value="MtlBuilder" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="entities" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="212212067811886751">
       <property name="name" nameId="tpck.1169194664001" value="MtlTemplate" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="entities" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     </node>
     <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="212212067812118741">
       <property name="name" nameId="tpck.1169194664001" value="MtlEntity" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="entities" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="212212067812118743">
       <property name="name" nameId="tpck.1169194664001" value="MtlQuery" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="entities" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="bwy9.6762883159245048009" resolveInfo="MqlQuery" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="9160962589444214864">
@@ -74,6 +78,7 @@
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="212212067812118810">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
       <property name="role" nameId="tpce.1071599776563" value="contextNode" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="bwy9.6762883159245048091" resolveInfo="MqlNodeType" />
     </node>
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="212212067812118824">

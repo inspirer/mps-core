@@ -4,6 +4,8 @@ package jetbrains.mps.query.behavior;
 
 import jetbrains.mps.lang.core.behavior.INamedConcept_BehaviorDescriptor;
 import jetbrains.mps.smodel.SNode;
+import jetbrains.mps.query.runtime.EvaluationEnvironment;
+import jetbrains.mps.query.runtime.EvaluationContext;
 import jetbrains.mps.lang.core.behavior.INamedConcept_Behavior;
 
 public class MqlAssignment_BehaviorDescriptor extends MqlExpression_BehaviorDescriptor implements INamedConcept_BehaviorDescriptor {
@@ -16,6 +18,10 @@ public class MqlAssignment_BehaviorDescriptor extends MqlExpression_BehaviorDesc
 
   public SNode virtual_getType_228266671027861783(SNode thisNode) {
     return MqlAssignment_Behavior.virtual_getType_228266671027861783(thisNode);
+  }
+
+  public Object virtual_evaluate_1671449901154581105(SNode thisNode, EvaluationEnvironment env, EvaluationContext context) {
+    return MqlAssignment_Behavior.virtual_evaluate_1671449901154581105(thisNode, env, context);
   }
 
   public String virtual_getFqName_1213877404258(SNode thisNode) {

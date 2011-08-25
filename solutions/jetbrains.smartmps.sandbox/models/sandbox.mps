@@ -7,8 +7,8 @@
   <language namespace="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" />
   <language namespace="78c70cc5-3e2a-478b-9524-f2d47690ac85(jetbrains.mps.workflow)" />
   <import index="tpce" modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" />
+  <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" />
   <import index="bwy9" modelUID="r:f9198ffd-e084-425c-aa82-f2db8289f5eb(jetbrains.mps.query.structure)" version="-1" implicit="yes" />
-  <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="h0os" modelUID="r:d290b86d-8b61-4a2f-a17f-263226953ecc(jetbrains.mps.template.structure)" version="-1" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="3" implicit="yes" />
   <import index="e5td" modelUID="r:ebf59dd9-04f3-4209-8dd7-dca3f04cac82(jetbrains.mps.workflow.structure)" version="-1" implicit="yes" />
@@ -245,6 +245,24 @@
           </node>
         </node>
       </node>
+      <node role="contextNode" roleId="h0os.212212067812118810" type="bwy9.MqlNodeType" typeId="bwy9.6762883159245048091" id="1163325315882438927">
+        <link role="concept" roleId="bwy9.6762883159245048093" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+      </node>
+    </node>
+    <node role="entities" roleId="h0os.212212067812118757" type="h0os.MtlTemplate" typeId="h0os.212212067811886751" id="1163325315882442994">
+      <property name="name" nameId="tpck.1169194664001" value="asd" />
+      <node role="contextNode" roleId="h0os.212212067812118810" type="bwy9.MqlNodeType" typeId="bwy9.6762883159245048091" id="1163325315882442997">
+        <link role="concept" roleId="bwy9.6762883159245048093" targetNodeId="tpce.1105741535888" resolveInfo="AggregationConceptLinkDeclaration" />
+      </node>
+      <node role="template" roleId="h0os.212212067812118827" type="bwy9.MqlArithmetic" typeId="bwy9.6762883159245048040" id="1163325315882442999">
+        <property name="kind" nameId="bwy9.6762883159245048047" value="1" />
+        <node role="left" roleId="bwy9.6762883159245048020" type="bwy9.MqlIntLiteral" typeId="bwy9.6762883159245048052" id="1163325315882443002">
+          <property name="value" nameId="bwy9.6762883159245048053" value="12" />
+        </node>
+        <node role="right" roleId="bwy9.6762883159245048021" type="bwy9.MqlIntLiteral" typeId="bwy9.6762883159245048052" id="1163325315882443003">
+          <property name="value" nameId="bwy9.6762883159245048053" value="12" />
+        </node>
+      </node>
     </node>
     <node role="entities" roleId="h0os.212212067812118757" type="h0os.MtlTemplate" typeId="h0os.212212067811886751" id="3373821274546515014">
       <property name="name" nameId="tpck.1169194664001" value="aa" />
@@ -252,6 +270,12 @@
         <property name="name" nameId="tpck.1169194664001" value="a" />
         <node role="value" roleId="bwy9.5322644393894740275" type="bwy9.MqlIntLiteral" typeId="bwy9.6762883159245048052" id="3373821274546515025">
           <property name="value" nameId="bwy9.6762883159245048053" value="4" />
+        </node>
+      </node>
+      <node role="vars" roleId="h0os.212212067812118824" type="bwy9.MqlAssignment" typeId="bwy9.5322644393894740272" id="1163325315882438938">
+        <property name="name" nameId="tpck.1169194664001" value="b" />
+        <node role="value" roleId="bwy9.5322644393894740275" type="bwy9.MqlIntLiteral" typeId="bwy9.6762883159245048052" id="1163325315882438940">
+          <property name="value" nameId="bwy9.6762883159245048053" value="5" />
         </node>
       </node>
       <node role="template" roleId="h0os.212212067812118827" type="tpee.ClassConcept" typeId="tpee.1068390468198" id="3373821274546684862">
@@ -272,7 +296,7 @@
               </node>
             </node>
           </node>
-          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="h0os.MtlTemplateRoot" typeId="h0os.9160962589444214864" id="3373821274546684879" />
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="h0os.MtlTemplateRoot" typeId="h0os.9160962589444214864" id="1163325315882442992" />
         </node>
         <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="3373821274546684863" />
         <node role="constructor" roleId="tpee.1068390468201" type="tpee.ConstructorDeclaration" typeId="tpee.1068580123140" id="3373821274546684864">
@@ -281,11 +305,26 @@
           <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="3373821274546684867" />
         </node>
       </node>
+      <node role="contextNode" roleId="h0os.212212067812118810" type="bwy9.MqlNodeType" typeId="bwy9.6762883159245048091" id="1163325315882438928">
+        <link role="concept" roleId="bwy9.6762883159245048093" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+      </node>
+    </node>
+    <node role="entities" roleId="h0os.212212067812118757" type="h0os.MtlTemplate" typeId="h0os.212212067811886751" id="1163325315882432874">
+      <property name="name" nameId="tpck.1169194664001" value="dsa" />
+      <node role="template" roleId="h0os.212212067812118827" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="1163325315882438943">
+        <property name="value" nameId="tpee.1068580320021" value="123" />
+      </node>
+      <node role="contextNode" roleId="h0os.212212067812118810" type="bwy9.MqlNodeType" typeId="bwy9.6762883159245048091" id="1163325315882438929">
+        <link role="concept" roleId="bwy9.6762883159245048093" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+      </node>
     </node>
     <node role="entities" roleId="h0os.212212067812118757" type="h0os.MtlBuilder" typeId="h0os.212212067811886750" id="212212067812146069">
       <property name="name" nameId="tpck.1169194664001" value="build1" />
       <node role="body" roleId="h0os.6762883159245048634" type="bwy9.MqlIntLiteral" typeId="bwy9.6762883159245048052" id="212212067812147796">
         <property name="value" nameId="bwy9.6762883159245048053" value="1" />
+      </node>
+      <node role="contextNode" roleId="h0os.6762883159245086410" type="bwy9.MqlNodeType" typeId="bwy9.6762883159245048091" id="1163325315882422093">
+        <link role="concept" roleId="bwy9.6762883159245048093" targetNodeId="tpce.1105736889287" resolveInfo="AggregationConceptLink" />
       </node>
     </node>
     <node role="entities" roleId="h0os.212212067812118757" type="h0os.MtlQuery" typeId="h0os.212212067812118743" id="212212067812146075">

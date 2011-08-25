@@ -4,6 +4,10 @@ package jetbrains.mps.query.behavior;
 
 import jetbrains.mps.smodel.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import jetbrains.mps.query.runtime.EvaluationEnvironment;
+import jetbrains.mps.query.runtime.EvaluationContext;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.query.runtime.EvaluationException;
 import java.util.Set;
 import java.util.HashSet;
 import jetbrains.mps.smodel.SModelUtil_new;
@@ -23,6 +27,23 @@ public class MqlUnary_Behavior {
 
   public static int virtual_getPriority_7352592509980890960(SNode thisNode) {
     return 2;
+  }
+
+  public static Object virtual_evaluate_1671449901154581105(SNode thisNode, EvaluationEnvironment env, EvaluationContext context) {
+    Object value = MqlExpression_Behavior.call_evaluate_1671449901154581105(SLinkOperations.getTarget(thisNode, "expr", true), env, context);
+    if (SPropertyOperations.hasValue(thisNode, "kind", "2", null)) {
+      if (value instanceof Integer) {
+        return -((Integer) value);
+      }
+      throw new EvaluationException("unary minus is not applicable to " + env.objectType(value), thisNode, context);
+
+    } else if (SPropertyOperations.hasValue(thisNode, "kind", "1", null)) {
+      if (value instanceof Boolean) {
+        return !((Boolean) value);
+      }
+      throw new EvaluationException("negation operator is not applicable to " + env.objectType(value), thisNode, context);
+    }
+    throw new EvaluationException("bad query: unknown unary kind", thisNode, context);
   }
 
   public static class QuotationClass_aad9ph_a0a0a0b {

@@ -4,6 +4,8 @@ package jetbrains.mps.query.behavior;
 
 import jetbrains.mps.smodel.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.query.runtime.EvaluationEnvironment;
+import jetbrains.mps.query.runtime.EvaluationContext;
 
 public class MqlComma_Behavior {
   public static void init(SNode thisNode) {
@@ -19,5 +21,10 @@ public class MqlComma_Behavior {
 
   public static int virtual_getAssociativity_5322644393894740267(SNode thisNode) {
     return 1;
+  }
+
+  public static Object virtual_evaluate_1671449901154581105(SNode thisNode, EvaluationEnvironment env, EvaluationContext context) {
+    MqlExpression_Behavior.call_evaluate_1671449901154581105(SLinkOperations.getTarget(thisNode, "left", true), env, context);
+    return MqlExpression_Behavior.call_evaluate_1671449901154581105(SLinkOperations.getTarget(thisNode, "right", true), env, context);
   }
 }
