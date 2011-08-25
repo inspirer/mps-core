@@ -3390,6 +3390,39 @@
     </node>
   </root>
   <root id="1016170791824030638">
+    <node role="actionsBuilder" roleId="tpdg.1138079416599" type="tpdg.SideTransformHintSubstituteActionsBuilder" typeId="tpdg.1138079221458" id="212212067812029567">
+      <property name="transformTag" nameId="tpdg.1140829165817" value="ext_2_RTransform" />
+      <property name="side" nameId="tpdg.1215605257730" value="left" />
+      <link role="applicableConcept" roleId="tpdg.1138079221462" targetNodeId="bwy9.6762883159245048009" resolveInfo="MqlQuery" />
+      <node role="part" roleId="tpdg.1177442283389" type="tpdg.AddMenuPart" typeId="tpdg.1177323996388" id="212212067812029569">
+        <link role="concept" roleId="tpdg.1177333551023" targetNodeId="bwy9.6762883159245048009" resolveInfo="MqlQuery" />
+        <node role="part" roleId="tpdg.1177333559040" type="tpdg.SimpleSideTransformMenuPart" typeId="tpdg.1177498013932" id="212212067812029570">
+          <node role="handler" roleId="tpdg.1177498207384" type="tpdg.QueryFunction_SideTransform_Handler" typeId="tpdg.1177498227294" id="212212067812029571">
+            <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="212212067812029572">
+              <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="212212067812029574">
+                <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="212212067812029581">
+                  <node role="lValue" roleId="tpee.1068498886295" type="tpee.DotExpression" typeId="tpee.1197027756228" id="212212067812029576">
+                    <node role="operand" roleId="tpee.1197027771414" type="tpdg.ConceptFunctionParameter_sourceNode" typeId="tpdg.1177497140107" id="212212067812029575" />
+                    <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="212212067812029580">
+                      <link role="property" roleId="tp25.1138056395725" targetNodeId="bwy9.212212067811886758" resolveInfo="isCached" />
+                    </node>
+                  </node>
+                  <node role="rValue" roleId="tpee.1068498886297" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="212212067812029584">
+                    <property name="value" nameId="tpee.1068580123138" value="true" />
+                  </node>
+                </node>
+              </node>
+              <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="212212067812029681">
+                <node role="expression" roleId="tpee.1068580123156" type="tpdg.ConceptFunctionParameter_sourceNode" typeId="tpdg.1177497140107" id="212212067812029682" />
+              </node>
+            </node>
+          </node>
+          <node role="matchingText" roleId="tpdg.1177498166690" type="tpdg.SideTransform_SimpleString" typeId="tpdg.1196433923911" id="212212067812029573">
+            <property name="text" nameId="tpdg.1196433942569" value="cached" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node role="actionsBuilder" roleId="tpdg.1138079416599" type="tpdg.SideTransformHintSubstituteActionsBuilder" typeId="tpdg.1138079221458" id="1016170791824030639">
       <property name="side" nameId="tpdg.1215605257730" value="left" />
       <property name="transformTag" nameId="tpdg.1140829165817" value="ext_1_RTransform" />

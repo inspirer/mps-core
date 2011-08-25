@@ -684,6 +684,28 @@ public class QueriesGenerated {
     return result;
   }
 
+  public static List<INodeSubstituteAction> sideTransform_ActionsFactory_MqlQuery_212212067812029567(final IOperationContext operationContext, final SideTransformActionsBuilderContext _context) {
+    List<INodeSubstituteAction> result = ListSequence.fromList(new ArrayList<INodeSubstituteAction>());
+    {
+      SNode concept = SConceptOperations.findConceptDeclaration("jetbrains.mps.query.structure.MqlQuery");
+      ListSequence.fromList(result).addElement(new AbstractSideTransformHintSubstituteAction(concept, _context.getSourceNode()) {
+        public SNode doSubstitute(String pattern) {
+          SPropertyOperations.set(_context.getSourceNode(), "isCached", "" + true);
+          return _context.getSourceNode();
+        }
+
+        public String getMatchingText(String pattern) {
+          return "cached";
+        }
+
+        public String getVisibleMatchingText(String pattern) {
+          return this.getMatchingText(pattern);
+        }
+      });
+    }
+    return result;
+  }
+
   public static List<INodeSubstituteAction> sideTransform_ActionsFactory_MqlQuery_1016170791824030639(final IOperationContext operationContext, final SideTransformActionsBuilderContext _context) {
     List<INodeSubstituteAction> result = ListSequence.fromList(new ArrayList<INodeSubstituteAction>());
     {

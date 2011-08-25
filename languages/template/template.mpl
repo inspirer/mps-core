@@ -9,6 +9,8 @@
   <usedDevKits>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
   </usedDevKits>
-  <extendedLanguages />
+  <extendedLanguages>
+    <extendedLanguage>c898d4a2-ef8e-481f-aff5-15e46db05e03(jetbrains.mps.query)</extendedLanguage>
+  </extendedLanguages>
 </language>
 

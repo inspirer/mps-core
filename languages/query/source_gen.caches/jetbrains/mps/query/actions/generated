@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="d7bmbljcl7p7c8u0xgs8ynnf4dn3z13">
+<dependencies version="2" modelHash="-2no2ucxlh4oueuc4fyj438o0ffbbxq5">
   <dep model="f:java_stub#37a3367b-1fb2-44d8-aa6b-18075e74e003#jetbrains.mps.lang.smodel.generator.smodelAdapter(MPS.Classpath/jetbrains.mps.lang.smodel.generator.smodelAdapter@java_stub)" />
   <dep model="f:java_stub#37a3367b-1fb2-44d8-aa6b-18075e74e003#jetbrains.mps.nodeEditor(MPS.Classpath/jetbrains.mps.nodeEditor@java_stub)" />
   <dep model="f:java_stub#37a3367b-1fb2-44d8-aa6b-18075e74e003#jetbrains.mps.smodel(MPS.Classpath/jetbrains.mps.smodel@java_stub)" />
@@ -40,7 +40,7 @@
   <dep model="r:c8f09818-27d0-4e31-9cdf-dedd92fee7ef(jetbrains.mps.baseLanguage.closures.util)" />
   <dep model="r:dfdf3542-dbcf-43df-870a-3c3504b3c840(jetbrains.mps.baseLanguage.collections.custom)" />
   <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" />
-  <dep model="r:f9198ffd-e084-425c-aa82-f2db8289f5eb(jetbrains.mps.query.structure)" hash="85k23rqxe9an7pnfbskkxxq6stx593b" />
+  <dep model="r:f9198ffd-e084-425c-aa82-f2db8289f5eb(jetbrains.mps.query.structure)" hash="-a0iuvx29s4z8dazjndyjlfqjr4mfipw" />
   <dep model="r:fc76aa36-3cff-41c7-b94b-eee0e8341932(jetbrains.mps.internal.collections.runtime)" />
   <common hash="b7ofbfbjfmfb8kkkop517ie05b26los" dependsOnNodes="true">
     <dep root="1016170791824030638" />
@@ -147,7 +147,7 @@
   <source id="7352592509980950438" name="factories" hash="-96cjjarxto7x1qhgqspz7u8fpwkorle">
     <dep model="r:00000000-0000-4000-0000-011c895902a9(jetbrains.mps.lang.actions.generator.baseLanguage.template.main@generator)" />
   </source>
-  <source id="1016170791824030638" name="query" hash="-2p9u4jmy1qxdikxubtbzjna0og46q8">
+  <source id="1016170791824030638" name="query" hash="-e4sdq74gtv5bijgt3s3rba8hrzuwzd7">
     <dep model="r:00000000-0000-4000-0000-011c895902a9(jetbrains.mps.lang.actions.generator.baseLanguage.template.main@generator)" />
     <dep model="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
   </source>

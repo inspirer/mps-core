@@ -66,7 +66,7 @@ public class StructureAspectDescriptor implements jetbrains.mps.smodel.runtime.S
       case 24:
         return new CompiledConceptDescriptor("jetbrains.mps.query.structure.MqlPropertySelector", "jetbrains.mps.query.structure.MqlSelector", false, new String[]{"jetbrains.mps.query.structure.MqlSelector"}, new String[]{}, new String[]{"property"});
       case 25:
-        return new CompiledConceptDescriptor("jetbrains.mps.query.structure.MqlQuery", "jetbrains.mps.lang.core.structure.BaseConcept", false, new String[]{"jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept", "jetbrains.mps.query.structure.MqlParametersContainer"}, new String[]{}, new String[]{});
+        return new CompiledConceptDescriptor("jetbrains.mps.query.structure.MqlQuery", "jetbrains.mps.lang.core.structure.BaseConcept", false, new String[]{"jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept", "jetbrains.mps.query.structure.MqlParametersContainer"}, new String[]{"isCached"}, new String[]{});
       case 26:
         return new CompiledConceptDescriptor("jetbrains.mps.query.structure.MqlSelector", "jetbrains.mps.lang.core.structure.BaseConcept", false, new String[]{"jetbrains.mps.lang.core.structure.BaseConcept"}, new String[]{}, new String[]{});
       case 27:

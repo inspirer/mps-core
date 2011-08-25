@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debugInfo>
+  <unitInfo fileName="ConstraintsAspectDescriptor.java" startLine="9" startPosition="0" endLine="25" endPosition="0" unitName="jetbrains.mps.template.constraints.ConstraintsAspectDescriptor" />
+  <root nodeId="3373821274546483536">
+    <nodeInfo nodeId="3373821274546483536" fileName="MtlTemplate_Constraints.java" startLine="8" startPosition="36" endLine="9" endPosition="58" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+    <nodeInfo nodeId="3373821274546483536" fileName="MtlTemplate_Constraints.java" startLine="7" startPosition="72" endLine="10" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="MtlTemplate_Constraints#()V" />
+    <scopeInfo nodeId="3373821274546483536" fileName="MtlTemplate_Constraints.java" startLine="8" startPosition="36" endLine="9" endPosition="58" />
+    <scopeInfo nodeId="3373821274546483536" fileName="MtlTemplate_Constraints.java" startLine="7" startPosition="72" endLine="10" endPosition="3" />
+    <unitInfo nodeId="3373821274546483536" fileName="MtlTemplate_Constraints.java" startLine="7" startPosition="0" endLine="12" endPosition="0" unitName="jetbrains.mps.template.constraints.MtlTemplate_Constraints" />
+  </root>
+</debugInfo>
+

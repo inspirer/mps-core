@@ -2,12 +2,20 @@
 <model modelUID="r:fc8cebf1-3657-45a2-ae1b-3a6557f438b7(jetbrains.mps3.sandbox.sandbox)" doNotGenerate="true">
   <persistence version="7" />
   <language namespace="c898d4a2-ef8e-481f-aff5-15e46db05e03(jetbrains.mps.query)" />
+  <language namespace="2e142477-d221-495b-aa6c-7bd7c349e904(jetbrains.mps.template)" />
+  <language namespace="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" />
+  <language namespace="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" />
   <import index="tpce" modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" />
   <import index="bwy9" modelUID="r:f9198ffd-e084-425c-aa82-f2db8289f5eb(jetbrains.mps.query.structure)" version="-1" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
+  <import index="h0os" modelUID="r:d290b86d-8b61-4a2f-a17f-263226953ecc(jetbrains.mps.template.structure)" version="-1" implicit="yes" />
+  <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="3" implicit="yes" />
   <roots>
     <node type="bwy9.MqlPackage" typeId="bwy9.6762883159245048630" id="6601450967974137522">
       <property name="name" nameId="tpck.1169194664001" value="default" />
+    </node>
+    <node type="h0os.MtlLibrary" typeId="h0os.212212067811886747" id="212212067812146067">
+      <property name="name" nameId="tpck.1169194664001" value="toString" />
     </node>
   </roots>
   <root id="6601450967974137522">
@@ -27,6 +35,7 @@
     </node>
     <node role="queries" roleId="bwy9.6762883159245048633" type="bwy9.MqlQuery" typeId="bwy9.6762883159245048009" id="6601450967974208008">
       <property name="name" nameId="tpck.1169194664001" value="getString" />
+      <property name="isCached" nameId="bwy9.212212067811886758" value="false" />
       <node role="body" roleId="bwy9.6762883159245048634" type="bwy9.MqlStringLiteral" typeId="bwy9.6762883159245048054" id="6601450967974208011">
         <property name="value" nameId="bwy9.6762883159245048055" value="sdgsf" />
       </node>
@@ -43,6 +52,7 @@
     </node>
     <node role="queries" roleId="bwy9.6762883159245048633" type="bwy9.MqlQuery" typeId="bwy9.6762883159245048009" id="228266671027811804">
       <property name="name" nameId="tpck.1169194664001" value="getInt" />
+      <property name="isCached" nameId="bwy9.212212067811886758" value="true" />
       <node role="body" roleId="bwy9.6762883159245048634" type="bwy9.MqlIntLiteral" typeId="bwy9.6762883159245048052" id="228266671027811806">
         <property name="value" nameId="bwy9.6762883159245048053" value="123" />
       </node>
@@ -202,6 +212,93 @@
           <property name="name" nameId="tpck.1169194664001" value="a" />
           <node role="value" roleId="bwy9.5322644393894740275" type="bwy9.MqlIntLiteral" typeId="bwy9.6762883159245048052" id="2268293679705627787">
             <property name="value" nameId="bwy9.6762883159245048053" value="2" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </root>
+  <root id="212212067812146067">
+    <node role="entities" roleId="h0os.212212067812118757" type="h0os.MtlTemplate" typeId="h0os.212212067811886751" id="212212067812146072">
+      <property name="name" nameId="tpck.1169194664001" value="template" />
+      <node role="template" roleId="h0os.212212067812118827" type="h0os.MtlLibrary" typeId="h0os.212212067811886747" id="9160962589444181886">
+        <property name="name" nameId="tpck.1169194664001" value="asd" />
+        <node role="entities" roleId="h0os.212212067812118757" type="h0os.MtlQuery" typeId="h0os.212212067812118743" id="9160962589444181888">
+          <property name="name" nameId="tpck.1169194664001" value="a" />
+          <node role="body" roleId="bwy9.6762883159245048634" type="bwy9.MqlIntLiteral" typeId="bwy9.6762883159245048052" id="9160962589444199058">
+            <property name="value" nameId="bwy9.6762883159245048053" value="123" />
+          </node>
+        </node>
+        <node role="entities" roleId="h0os.212212067812118757" type="h0os.MtlQuery" typeId="h0os.212212067812118743" id="9160962589444181895">
+          <property name="name" nameId="tpck.1169194664001" value="b" />
+          <node role="body" roleId="bwy9.6762883159245048634" type="bwy9.MqlComma" typeId="bwy9.6762883159245048011" id="9160962589444199060">
+            <node role="right" roleId="bwy9.6762883159245048021" type="bwy9.MqlIntLiteral" typeId="bwy9.6762883159245048052" id="9160962589444199063">
+              <property name="value" nameId="bwy9.6762883159245048053" value="44" />
+            </node>
+            <node role="left" roleId="bwy9.6762883159245048020" type="bwy9.MqlIntLiteral" typeId="bwy9.6762883159245048052" id="9160962589444199059">
+              <property name="value" nameId="bwy9.6762883159245048053" value="2" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="entities" roleId="h0os.212212067812118757" type="h0os.MtlTemplate" typeId="h0os.212212067811886751" id="3373821274546515014">
+      <property name="name" nameId="tpck.1169194664001" value="aa" />
+      <node role="vars" roleId="h0os.212212067812118824" type="bwy9.MqlAssignment" typeId="bwy9.5322644393894740272" id="3373821274546515023">
+        <property name="name" nameId="tpck.1169194664001" value="a" />
+        <node role="value" roleId="bwy9.5322644393894740275" type="bwy9.MqlIntLiteral" typeId="bwy9.6762883159245048052" id="3373821274546515025">
+          <property name="value" nameId="bwy9.6762883159245048053" value="4" />
+        </node>
+      </node>
+      <node role="template" roleId="h0os.212212067812118827" type="tpee.ClassConcept" typeId="tpee.1068390468198" id="3373821274546684862">
+        <property name="nonStatic" nameId="tpee.521412098689998745" value="true" />
+        <property name="name" nameId="tpck.1169194664001" value="assad" />
+        <node role="staticMethod" roleId="tpee.1070462273904" type="tpee.StaticMethodDeclaration" typeId="tpee.1081236700938" id="3373821274546684869">
+          <property name="name" nameId="tpck.1169194664001" value="main" />
+          <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="3373821274546684870" />
+          <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="3373821274546684871" />
+          <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="3373821274546684872">
+            <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="3373821274546684874">
+              <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="3373821274546684875">
+                <property name="name" nameId="tpck.1169194664001" value="i" />
+                <node role="type" roleId="tpee.5680397130376446158" type="tpee.IntegerType" typeId="tpee.1070534370425" id="3373821274546684876" />
+                <node role="initializer" roleId="tpee.1068431790190" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="3373821274546684878">
+                  <property name="value" nameId="tpee.1068580320021" value="0" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="h0os.MtlTemplateRoot" typeId="h0os.9160962589444214864" id="3373821274546684879" />
+        </node>
+        <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="3373821274546684863" />
+        <node role="constructor" roleId="tpee.1068390468201" type="tpee.ConstructorDeclaration" typeId="tpee.1068580123140" id="3373821274546684864">
+          <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="3373821274546684865" />
+          <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="3373821274546684866" />
+          <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="3373821274546684867" />
+        </node>
+      </node>
+    </node>
+    <node role="entities" roleId="h0os.212212067812118757" type="h0os.MtlBuilder" typeId="h0os.212212067811886750" id="212212067812146069">
+      <property name="name" nameId="tpck.1169194664001" value="build1" />
+      <node role="body" roleId="h0os.6762883159245048634" type="bwy9.MqlIntLiteral" typeId="bwy9.6762883159245048052" id="212212067812147796">
+        <property name="value" nameId="bwy9.6762883159245048053" value="1" />
+      </node>
+    </node>
+    <node role="entities" roleId="h0os.212212067812118757" type="h0os.MtlQuery" typeId="h0os.212212067812118743" id="212212067812146075">
+      <property name="name" nameId="tpck.1169194664001" value="getZero" />
+      <node role="body" roleId="bwy9.6762883159245048634" type="bwy9.MqlComma" typeId="bwy9.6762883159245048011" id="212212067812147807">
+        <node role="right" roleId="bwy9.6762883159245048021" type="bwy9.MqlArithmetic" typeId="bwy9.6762883159245048040" id="212212067812147811">
+          <property name="kind" nameId="bwy9.6762883159245048047" value="2" />
+          <node role="right" roleId="bwy9.6762883159245048021" type="bwy9.MqlIntLiteral" typeId="bwy9.6762883159245048052" id="212212067812147814">
+            <property name="value" nameId="bwy9.6762883159245048053" value="6" />
+          </node>
+          <node role="left" roleId="bwy9.6762883159245048020" type="bwy9.MqlVarReference" typeId="bwy9.2059702675526025628" id="212212067812147810">
+            <link role="var" roleId="bwy9.2059702675526025629" targetNodeId="212212067812147797" resolveInfo="a" />
+          </node>
+        </node>
+        <node role="left" roleId="bwy9.6762883159245048020" type="bwy9.MqlAssignment" typeId="bwy9.5322644393894740272" id="212212067812147797">
+          <property name="name" nameId="tpck.1169194664001" value="a" />
+          <node role="value" roleId="bwy9.5322644393894740275" type="bwy9.MqlIntLiteral" typeId="bwy9.6762883159245048052" id="212212067812147798">
+            <property name="value" nameId="bwy9.6762883159245048053" value="6" />
           </node>
         </node>
       </node>

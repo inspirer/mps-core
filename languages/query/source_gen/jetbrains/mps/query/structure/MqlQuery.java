@@ -18,6 +18,7 @@ public class MqlQuery extends BaseConcept implements INamedConcept, MqlParameter
   public static final String SHORT_DESCRIPTION = "shortDescription";
   public static final String ALIAS = "alias";
   public static final String VIRTUAL_PACKAGE = "virtualPackage";
+  public static final String IS_CACHED = "isCached";
   public static final String CONTEXT_NODE = "contextNode";
   public static final String BODY = "body";
   public static final String SMODEL_ATTRIBUTE = "smodelAttribute";
@@ -57,6 +58,14 @@ public class MqlQuery extends BaseConcept implements INamedConcept, MqlParameter
 
   public void setVirtualPackage(String value) {
     this.setProperty(MqlQuery.VIRTUAL_PACKAGE, value);
+  }
+
+  public boolean getIsCached() {
+    return this.getBooleanProperty(MqlQuery.IS_CACHED);
+  }
+
+  public void setIsCached(boolean value) {
+    this.setBooleanProperty(MqlQuery.IS_CACHED, value);
   }
 
   public MqlNodeType getContextNode() {
