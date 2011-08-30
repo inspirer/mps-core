@@ -8,6 +8,10 @@
     <classNode dependClassName="jetbrains.mps.query.behavior.MqlBoolLiteral_BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.query.behavior.MqlBoolType_BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.query.behavior.MqlClosure_BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.query.behavior.MqlCollectionProperty_BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.query.behavior.MqlCollectionSelectorVarRef_BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.query.behavior.MqlCollectionSelectorVar_BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.query.behavior.MqlCollectionSelector_BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.query.behavior.MqlComma_BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.query.behavior.MqlCondition_BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.query.behavior.MqlDotExpression_BehaviorDescriptor" />
@@ -156,6 +160,76 @@
     <classNode dependClassName="jetbrains.mps.query.behavior.MqlParametersContainer_BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.SNode" />
     <classNode extendsClassName="java.lang.Cloneable" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="jetbrains.mps.query.behavior.MqlCollectionProperty_Behavior" file="MqlCollectionProperty_Behavior.java">
+    <classNode dependClassName="java.util.HashSet" />
+    <classNode dependClassName="java.util.Set" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
+    <classNode dependClassName="jetbrains.mps.project.GlobalScope" />
+    <classNode dependClassName="jetbrains.mps.query.behavior.MqlSelector_Behavior" />
+    <classNode dependClassName="jetbrains.mps.smodel.SModelUtil_new" />
+    <classNode dependClassName="jetbrains.mps.smodel.SNode" />
+  </dependency>
+  <dependency className="jetbrains.mps.query.behavior.MqlCollectionProperty_BehaviorDescriptor" file="MqlCollectionProperty_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.query.behavior.MqlCollectionProperty_Behavior" />
+    <classNode dependClassName="jetbrains.mps.query.behavior.MqlSelector_BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.smodel.SNode" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="jetbrains.mps.query.behavior.MqlCollectionSelectorVarRef_Behavior" file="MqlCollectionSelectorVarRef_Behavior.java">
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.query.behavior.MqlCollectionSelectorVar_Behavior" />
+    <classNode dependClassName="jetbrains.mps.smodel.SNode" />
+  </dependency>
+  <dependency className="jetbrains.mps.query.behavior.MqlCollectionSelectorVarRef_BehaviorDescriptor" file="MqlCollectionSelectorVarRef_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.query.behavior.MqlCollectionSelectorVarRef_Behavior" />
+    <classNode dependClassName="jetbrains.mps.query.behavior.MqlExpression_BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.smodel.SNode" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="jetbrains.mps.query.behavior.MqlCollectionSelectorVar_Behavior" file="MqlCollectionSelectorVar_Behavior.java">
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+    <classNode dependClassName="jetbrains.mps.query.behavior.MqlSelector_Behavior" />
+    <classNode dependClassName="jetbrains.mps.smodel.SNode" />
+  </dependency>
+  <dependency className="jetbrains.mps.query.behavior.MqlCollectionSelectorVar_BehaviorDescriptor" file="MqlCollectionSelectorVar_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.INamedConcept_Behavior" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.INamedConcept_BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.smodel.SNode" />
+    <classNode extendsClassName="java.lang.Cloneable" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="jetbrains.mps.query.behavior.MqlCollectionSelector_Behavior" file="MqlCollectionSelector_Behavior.java">
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="java.util.HashSet" />
+    <classNode dependClassName="java.util.Set" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.typesystem.runtime.HUtil" />
+    <classNode dependClassName="jetbrains.mps.project.GlobalScope" />
+    <classNode dependClassName="jetbrains.mps.query.behavior.MqlExpression_Behavior" />
+    <classNode dependClassName="jetbrains.mps.query.behavior.MqlSelector_Behavior" />
+    <classNode dependClassName="jetbrains.mps.smodel.SModelUtil_new" />
+    <classNode dependClassName="jetbrains.mps.smodel.SNode" />
+  </dependency>
+  <dependency className="jetbrains.mps.query.behavior.MqlCollectionSelector_BehaviorDescriptor" file="MqlCollectionSelector_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.query.behavior.MqlCollectionSelector_Behavior" />
+    <classNode dependClassName="jetbrains.mps.query.behavior.MqlSelector_BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.smodel.SNode" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="jetbrains.mps.query.behavior.MqlComma_Behavior" file="MqlComma_Behavior.java">

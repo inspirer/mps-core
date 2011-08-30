@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="9xsn8brvu75nhfeb2ky1g5n3yt1qd3f">
+<dependencies version="2" modelHash="87xv276un05gtrotwq4mz3s8qurdy03">
   <dep model="f:java_stub#37a3367b-1fb2-44d8-aa6b-18075e74e003#jetbrains.mps.smodel(MPS.Classpath/jetbrains.mps.smodel@java_stub)" />
   <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" />
   <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
@@ -20,6 +20,10 @@
     <dep root="1992172484410508056" />
     <dep root="2059702675525965924" />
     <dep root="2059702675526025628" />
+    <dep root="5280308256730467462" />
+    <dep root="5280308256730478252" />
+    <dep root="5280308256730662793" />
+    <dep root="5280308256730768480" />
     <dep root="5322644393894740272" />
     <dep root="6762883159245048009" />
     <dep root="6762883159245048011" />
@@ -109,46 +113,11 @@
     <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" />
     <file name="MqlExpression.java" />
   </source>
-  <source id="6762883159245048013" name="MqlCondition" hash="cjmq4catplctxljcc5ags2h7um33vqn" dependsOnCreated="true" dependsOnNodes="true">
-    <dep root="1992172484410508056" />
-    <dep root="2059702675525965924" />
-    <dep root="2059702675526025628" />
-    <dep root="5322644393894740272" />
-    <dep root="6762883159245048009" />
-    <dep root="6762883159245048011" />
-    <dep root="6762883159245048012" />
+  <source id="6762883159245048013" name="MqlCondition" hash="cjmq4catplctxljcc5ags2h7um33vqn">
     <dep root="6762883159245048014" />
-    <dep root="6762883159245048022" />
     <dep root="6762883159245048026" />
-    <dep root="6762883159245048034" />
-    <dep root="6762883159245048035" />
-    <dep root="6762883159245048040" />
-    <dep root="6762883159245048041" />
-    <dep root="6762883159245048051" />
-    <dep root="6762883159245048052" />
-    <dep root="6762883159245048054" />
-    <dep root="6762883159245048056" />
-    <dep root="6762883159245048058" />
-    <dep root="6762883159245048062" />
-    <dep root="6762883159245048067" />
-    <dep root="6762883159245048068" />
-    <dep root="6762883159245048069" />
-    <dep root="6762883159245048070" />
-    <dep root="6762883159245048072" />
-    <dep root="6762883159245048080" />
-    <dep root="6762883159245048082" />
-    <dep root="6762883159245048084" />
-    <dep root="6762883159245048085" />
-    <dep root="6762883159245048087" />
-    <dep root="6762883159245048091" />
-    <dep root="6762883159245048630" />
-    <dep root="6762883159245048635" />
-    <dep root="6762883159245086407" />
-    <dep root="6762883159245086411" />
-    <dep root="6762883159245086414" />
     <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" />
     <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
-    <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
     <dep model="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <dep model="r:00000000-0000-4000-0000-011c895902cb(jetbrains.mps.baseLanguage.generator.java.closures@generator)" />
@@ -198,7 +167,6 @@
     <dep model="r:00000000-0000-4000-0000-011c895902cb(jetbrains.mps.baseLanguage.generator.java.closures@generator)" />
     <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" />
     <dep model="r:00000000-0000-4000-0000-011c895902e8(jetbrains.mps.lang.generator.structure)" />
-    <dep model="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" />
     <dep model="r:00000000-0000-4000-0000-011c8959032f(jetbrains.mps.baseLanguage.collections.generator.baseLanguage.template.main@generator)" />
     <dep model="r:00000000-0000-4000-0000-011c8959033a(jetbrains.mps.baseLanguage.closures.generator.baseLanguage.template.main@generator)" />
     <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" />
@@ -648,6 +616,143 @@
     <dep model="r:00000000-0000-4000-0000-011c8959033a(jetbrains.mps.baseLanguage.closures.generator.baseLanguage.template.main@generator)" />
     <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" />
     <file name="MqlParametersContainer.java" />
+  </source>
+  <source id="5280308256730467462" name="MqlCollectionSelector" hash="e8kih2agcasvttkii98m80rkzitoc68" dependsOnCreated="true" dependsOnNodes="true">
+    <dep root="1992172484410508056" />
+    <dep root="2059702675525965924" />
+    <dep root="2059702675526025628" />
+    <dep root="5280308256730467483" />
+    <dep root="5280308256730478252" />
+    <dep root="5280308256730609807" />
+    <dep root="5280308256730662793" />
+    <dep root="5280308256730768480" />
+    <dep root="5322644393894740272" />
+    <dep root="6762883159245048009" />
+    <dep root="6762883159245048011" />
+    <dep root="6762883159245048012" />
+    <dep root="6762883159245048013" />
+    <dep root="6762883159245048014" />
+    <dep root="6762883159245048022" />
+    <dep root="6762883159245048026" />
+    <dep root="6762883159245048034" />
+    <dep root="6762883159245048035" />
+    <dep root="6762883159245048040" />
+    <dep root="6762883159245048041" />
+    <dep root="6762883159245048051" />
+    <dep root="6762883159245048052" />
+    <dep root="6762883159245048054" />
+    <dep root="6762883159245048056" />
+    <dep root="6762883159245048058" />
+    <dep root="6762883159245048062" />
+    <dep root="6762883159245048067" />
+    <dep root="6762883159245048068" />
+    <dep root="6762883159245048069" />
+    <dep root="6762883159245048070" />
+    <dep root="6762883159245048072" />
+    <dep root="6762883159245048080" />
+    <dep root="6762883159245048082" />
+    <dep root="6762883159245048084" />
+    <dep root="6762883159245048085" />
+    <dep root="6762883159245048087" />
+    <dep root="6762883159245048091" />
+    <dep root="6762883159245048630" />
+    <dep root="6762883159245048635" />
+    <dep root="6762883159245086407" />
+    <dep root="6762883159245086411" />
+    <dep root="6762883159245086414" />
+    <dep model="f:java_stub#37a3367b-1fb2-44d8-aa6b-18075e74e003#jetbrains.mps.smodel(MPS.Classpath/jetbrains.mps.smodel@java_stub)" />
+    <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" />
+    <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
+    <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902cb(jetbrains.mps.baseLanguage.generator.java.closures@generator)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902e8(jetbrains.mps.lang.generator.structure)" />
+    <dep model="r:00000000-0000-4000-0000-011c8959032f(jetbrains.mps.baseLanguage.collections.generator.baseLanguage.template.main@generator)" />
+    <dep model="r:00000000-0000-4000-0000-011c8959033a(jetbrains.mps.baseLanguage.closures.generator.baseLanguage.template.main@generator)" />
+    <dep model="r:00000000-0000-4000-0000-011c895903ac(jetbrains.mps.baseLanguageInternal.structure)" />
+    <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" />
+    <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" />
+    <file name="MqlCollectionSelector.java" />
+  </source>
+  <source id="5280308256730467483" name="MqlCollectionSelectorKind" hash="-8eh6rr1ruch8a5ngq8ag7ckqybthlk5">
+    <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
+    <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902cb(jetbrains.mps.baseLanguage.generator.java.closures@generator)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902e8(jetbrains.mps.lang.generator.structure)" />
+    <dep model="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" />
+    <dep model="r:00000000-0000-4000-0000-011c8959032f(jetbrains.mps.baseLanguage.collections.generator.baseLanguage.template.main@generator)" />
+    <dep model="r:00000000-0000-4000-0000-011c8959033a(jetbrains.mps.baseLanguage.closures.generator.baseLanguage.template.main@generator)" />
+    <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" />
+    <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" />
+    <file name="MqlCollectionSelectorKind.java" />
+    <file name="MqlCollectionSelectorKind_PropertySupport.java" />
+  </source>
+  <source id="5280308256730478252" name="MqlCollectionProperty" hash="-i57yuwsxszrzi9hxxvimycporz45ih">
+    <dep root="5280308256730609807" />
+    <dep root="6762883159245048087" />
+    <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" />
+    <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
+    <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902cb(jetbrains.mps.baseLanguage.generator.java.closures@generator)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902e8(jetbrains.mps.lang.generator.structure)" />
+    <dep model="r:00000000-0000-4000-0000-011c8959032f(jetbrains.mps.baseLanguage.collections.generator.baseLanguage.template.main@generator)" />
+    <dep model="r:00000000-0000-4000-0000-011c8959033a(jetbrains.mps.baseLanguage.closures.generator.baseLanguage.template.main@generator)" />
+    <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" />
+    <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" />
+    <file name="MqlCollectionProperty.java" />
+  </source>
+  <source id="5280308256730609807" name="MqlCollectionPropertyKind" hash="clk2r82r4tctgrunwxpj8ymzvfctynb">
+    <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
+    <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902cb(jetbrains.mps.baseLanguage.generator.java.closures@generator)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902e8(jetbrains.mps.lang.generator.structure)" />
+    <dep model="r:00000000-0000-4000-0000-011c8959032f(jetbrains.mps.baseLanguage.collections.generator.baseLanguage.template.main@generator)" />
+    <dep model="r:00000000-0000-4000-0000-011c8959033a(jetbrains.mps.baseLanguage.closures.generator.baseLanguage.template.main@generator)" />
+    <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" />
+    <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" />
+    <file name="MqlCollectionPropertyKind.java" />
+    <file name="MqlCollectionPropertyKind_PropertySupport.java" />
+  </source>
+  <source id="5280308256730662793" name="MqlCollectionSelectorVar" hash="7dkrdhkvs1eoxlywfshk3dbsxwz7vy0">
+    <dep root="6762883159245048635" />
+    <dep root="6762883159245086414" />
+    <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902cb(jetbrains.mps.baseLanguage.generator.java.closures@generator)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" />
+    <dep model="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" />
+    <dep model="r:00000000-0000-4000-0000-011c8959032f(jetbrains.mps.baseLanguage.collections.generator.baseLanguage.template.main@generator)" />
+    <dep model="r:00000000-0000-4000-0000-011c8959033a(jetbrains.mps.baseLanguage.closures.generator.baseLanguage.template.main@generator)" />
+    <dep model="r:00000000-0000-4000-0000-011c895903ac(jetbrains.mps.baseLanguageInternal.structure)" />
+    <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" />
+    <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" />
+    <file name="MqlCollectionSelectorVar.java" />
+  </source>
+  <source id="5280308256730768480" name="MqlCollectionSelectorVarRef" hash="92kal8yw9ftdjcoqim48ppjxxqcet1e">
+    <dep root="5280308256730662793" />
+    <dep root="6762883159245048012" />
+    <dep model="f:java_stub#37a3367b-1fb2-44d8-aa6b-18075e74e003#jetbrains.mps.smodel(MPS.Classpath/jetbrains.mps.smodel@java_stub)" />
+    <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
+    <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902cb(jetbrains.mps.baseLanguage.generator.java.closures@generator)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" />
+    <dep model="r:00000000-0000-4000-0000-011c8959032f(jetbrains.mps.baseLanguage.collections.generator.baseLanguage.template.main@generator)" />
+    <dep model="r:00000000-0000-4000-0000-011c8959033a(jetbrains.mps.baseLanguage.closures.generator.baseLanguage.template.main@generator)" />
+    <dep model="r:00000000-0000-4000-0000-011c895903ac(jetbrains.mps.baseLanguageInternal.structure)" />
+    <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" />
+    <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" />
+    <file name="MqlCollectionSelectorVarRef.java" />
   </source>
 </dependencies>
 

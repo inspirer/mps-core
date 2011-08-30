@@ -25,7 +25,7 @@
     <nodeInfo nodeId="1671449901154580778" fileName="EvaluationEnvironment.java" startLine="16" startPosition="0" endLine="18" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="EvaluationEnvironment#()V" />
     <nodeInfo nodeId="1671449901154580997" fileName="EvaluationEnvironment.java" startLine="26" startPosition="56" endLine="29" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
     <nodeInfo nodeId="1671449901154581600" fileName="EvaluationEnvironment.java" startLine="36" startPosition="43" endLine="39" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="1671449901154581092" fileName="EvaluationEnvironment.java" startLine="55" startPosition="0" endLine="58" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="report#()V" />
+    <nodeInfo nodeId="1671449901154581092" fileName="EvaluationEnvironment.java" startLine="55" startPosition="0" endLine="58" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="reportError#(Ljava/lang/String;)V" />
     <nodeInfo nodeId="1671449901154580815" fileName="EvaluationEnvironment.java" startLine="61" startPosition="0" endLine="64" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="Key#([Ljava/lang/Object;)V" />
     <nodeInfo nodeId="1671449901154580884" fileName="EvaluationEnvironment.java" startLine="67" startPosition="42" endLine="70" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
     <nodeInfo nodeId="1671449901154580782" fileName="EvaluationEnvironment.java" startLine="19" startPosition="0" endLine="23" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="cache#(Ljava/lang/Object;null)V" />
@@ -36,7 +36,7 @@
     <nodeInfo nodeId="1671449901154581505" fileName="EvaluationEnvironment.java" startLine="40" startPosition="0" endLine="52" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
     <nodeInfo nodeId="1671449901154581498" fileName="EvaluationEnvironment.java" startLine="35" startPosition="0" endLine="55" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="objectType#(Ljava/lang/Object;)Ljava/lang/String;" />
     <scopeInfo nodeId="1671449901154580781" fileName="EvaluationEnvironment.java" startLine="17" startPosition="34" endLine="17" endPosition="34" />
-    <scopeInfo nodeId="1671449901154581095" fileName="EvaluationEnvironment.java" startLine="56" startPosition="24" endLine="56" endPosition="24" />
+    <scopeInfo nodeId="1671449901154581095" fileName="EvaluationEnvironment.java" startLine="56" startPosition="43" endLine="56" endPosition="43" />
     <scopeInfo nodeId="1671449901154580785" fileName="EvaluationEnvironment.java" startLine="20" startPosition="51" endLine="21" endPosition="79" />
     <scopeInfo nodeId="1671449901154580998" fileName="EvaluationEnvironment.java" startLine="27" startPosition="25" endLine="28" endPosition="20" />
     <scopeInfo nodeId="1671449901154581601" fileName="EvaluationEnvironment.java" startLine="37" startPosition="25" endLine="38" endPosition="22" />
@@ -51,7 +51,9 @@
     <scopeInfo nodeId="1671449901154581546" fileName="EvaluationEnvironment.java" startLine="47" startPosition="41" endLine="49" endPosition="33">
       <varInfo nodeId="1671449901154581560" varName="concept" />
     </scopeInfo>
-    <scopeInfo nodeId="1671449901154581092" fileName="EvaluationEnvironment.java" startLine="55" startPosition="0" endLine="58" endPosition="0" />
+    <scopeInfo nodeId="1671449901154581092" fileName="EvaluationEnvironment.java" startLine="55" startPosition="0" endLine="58" endPosition="0">
+      <varInfo nodeId="1310998557965184774" varName="message" />
+    </scopeInfo>
     <scopeInfo nodeId="1671449901154580815" fileName="EvaluationEnvironment.java" startLine="61" startPosition="0" endLine="64" endPosition="5">
       <varInfo nodeId="1671449901154580827" varName="keys" />
     </scopeInfo>

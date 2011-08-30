@@ -25,6 +25,13 @@ public class MqlSelector_Behavior {
     return null;
   }
 
+  public static SNode call_getContainer_5280308256730689747(SNode thisNode) {
+    if (SNodeOperations.isInstanceOf(SNodeOperations.getParent(thisNode), "jetbrains.mps.query.structure.MqlDotExpression")) {
+      return SLinkOperations.getTarget(SNodeOperations.cast(SNodeOperations.getParent(thisNode), "jetbrains.mps.query.structure.MqlDotExpression"), "left", true);
+    }
+    return null;
+  }
+
   public static SNode virtual_getType_228266671027867010(SNode thisNode) {
     return null;
   }

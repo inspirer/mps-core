@@ -53,7 +53,7 @@ public class EvaluationEnvironment {
     return "[unknown]";
   }
 
-  public void report() {
+  public void reportError(String message) {
   }
 
   private class Key {
