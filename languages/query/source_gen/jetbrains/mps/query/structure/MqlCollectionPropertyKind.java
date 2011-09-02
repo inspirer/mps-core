@@ -34,12 +34,12 @@ public enum MqlCollectionPropertyKind {
   }
 
   public static List<MqlCollectionPropertyKind> getConstants() {
-    List<MqlCollectionPropertyKind> list = ListSequence.fromList(new LinkedList<MqlCollectionPropertyKind>());
-    ListSequence.fromList(list).addElement(MqlCollectionPropertyKind.SIZE);
-    ListSequence.fromList(list).addElement(MqlCollectionPropertyKind.FIRST);
-    ListSequence.fromList(list).addElement(MqlCollectionPropertyKind.LAST);
-    ListSequence.fromList(list).addElement(MqlCollectionPropertyKind.IS_EMPTY);
-    ListSequence.fromList(list).addElement(MqlCollectionPropertyKind.IS_NOT_EMPTY);
+    List<MqlCollectionPropertyKind> list = ListSequence.<MqlCollectionPropertyKind>fromList(new LinkedList<MqlCollectionPropertyKind>());
+    ListSequence.<MqlCollectionPropertyKind>fromList(list).addElement(MqlCollectionPropertyKind.SIZE);
+    ListSequence.<MqlCollectionPropertyKind>fromList(list).addElement(MqlCollectionPropertyKind.FIRST);
+    ListSequence.<MqlCollectionPropertyKind>fromList(list).addElement(MqlCollectionPropertyKind.LAST);
+    ListSequence.<MqlCollectionPropertyKind>fromList(list).addElement(MqlCollectionPropertyKind.IS_EMPTY);
+    ListSequence.<MqlCollectionPropertyKind>fromList(list).addElement(MqlCollectionPropertyKind.IS_NOT_EMPTY);
     return list;
   }
 

@@ -11,7 +11,7 @@ public class MqlCollectionSelectorKind_PropertySupport extends PropertySupport {
     if (value == null) {
       return true;
     }
-    Iterator<MqlCollectionSelectorKind> constants = ListSequence.fromList(MqlCollectionSelectorKind.getConstants()).iterator();
+    Iterator<MqlCollectionSelectorKind> constants = ListSequence.<MqlCollectionSelectorKind>fromList(MqlCollectionSelectorKind.getConstants()).iterator();
     while (constants.hasNext()) {
       MqlCollectionSelectorKind constant = constants.next();
       if (value.equals(constant.getName())) {
@@ -25,7 +25,7 @@ public class MqlCollectionSelectorKind_PropertySupport extends PropertySupport {
     if (value == null) {
       return null;
     }
-    Iterator<MqlCollectionSelectorKind> constants = ListSequence.fromList(MqlCollectionSelectorKind.getConstants()).iterator();
+    Iterator<MqlCollectionSelectorKind> constants = ListSequence.<MqlCollectionSelectorKind>fromList(MqlCollectionSelectorKind.getConstants()).iterator();
     while (constants.hasNext()) {
       MqlCollectionSelectorKind constant = constants.next();
       if (value.equals(constant.getName())) {

@@ -6,6 +6,12 @@ import jetbrains.mps.smodel.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import jetbrains.mps.query.runtime.EvaluationEnvironment;
+import jetbrains.mps.query.runtime.EvaluationContext;
+import jetbrains.mps.query.runtime.EvaluationException;
+import java.util.Collection;
+import java.util.LinkedHashSet;
+import java.util.ArrayList;
 import java.util.Set;
 import java.util.HashSet;
 import jetbrains.mps.smodel.SModelUtil_new;
@@ -29,6 +35,59 @@ public class MqlCollectionSelector_Behavior {
       return new MqlCollectionSelector_Behavior.QuotationClass_6kvg7a_a0c0b0a1().createNode(node);
     }
     return MqlSelector_Behavior.call_getContainerType_228266671027861723(thisNode);
+  }
+
+  public static Object virtual_evaluate_7862448911997337721(SNode thisNode, Object object, EvaluationEnvironment env, EvaluationContext context) {
+    Iterable<Object> input = (Iterable<Object>) object;
+
+    if (SPropertyOperations.hasValue(thisNode, "kind", "1", null) || SPropertyOperations.hasValue(thisNode, "kind", "2", null)) {
+      return MqlCollectionSelector_Behavior.call_collect_7862448911997425406(thisNode, SPropertyOperations.hasValue(thisNode, "kind", "2", null), input, env, context);
+    } else if (SPropertyOperations.hasValue(thisNode, "kind", "3", null) || SPropertyOperations.hasValue(thisNode, "kind", "4", null)) {
+      return MqlCollectionSelector_Behavior.call_select_7862448911997425442(thisNode, SPropertyOperations.hasValue(thisNode, "kind", "3", null), input, env, context);
+    }
+
+    throw new EvaluationException("bad query: unsupported kind", thisNode, context);
+  }
+
+  public static Collection<Object> call_collect_7862448911997425406(SNode thisNode, boolean unique, Iterable<Object> input, EvaluationEnvironment env, EvaluationContext context) {
+    String varname = SPropertyOperations.getString(SLinkOperations.getTarget(thisNode, "var", true), "name");
+    Collection<Object> result = (unique ?
+      new LinkedHashSet<Object>() :
+      new ArrayList<Object>()
+    );
+    for (Object o : input) {
+      EvaluationContext innerContext = new EvaluationContext(context.getThis(), context);
+      innerContext.setValue(varname, o);
+      Object val = env.evaluate(SLinkOperations.getTarget(thisNode, "expr", true), innerContext, true);
+      if (val instanceof Iterable) {
+        for (Object innerVal : ((Iterable) val)) {
+          if (innerVal != null) {
+            result.add(innerVal);
+          }
+        }
+      } else if (val != null) {
+        result.add(val);
+      }
+    }
+    return result;
+  }
+
+  public static Collection<Object> call_select_7862448911997425442(SNode thisNode, boolean isReject, Iterable<Object> input, EvaluationEnvironment env, EvaluationContext context) {
+    String varname = SPropertyOperations.getString(SLinkOperations.getTarget(thisNode, "var", true), "name");
+    Collection<Object> result = new ArrayList<Object>();
+    for (Object o : input) {
+      EvaluationContext innerContext = new EvaluationContext(context.getThis(), context);
+      innerContext.setValue(varname, o);
+      Object val = env.evaluate(SLinkOperations.getTarget(thisNode, "expr", true), innerContext, true);
+      boolean boolVal = ((val instanceof Boolean) ?
+        (Boolean) val :
+        val != null
+      );
+      if (boolVal ^ isReject) {
+        result.add(o);
+      }
+    }
+    return result;
   }
 
   public static class QuotationClass_6kvg7a_a0a0a0b {

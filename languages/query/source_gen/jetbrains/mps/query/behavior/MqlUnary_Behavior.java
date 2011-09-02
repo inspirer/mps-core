@@ -30,18 +30,18 @@ public class MqlUnary_Behavior {
   }
 
   public static Object virtual_evaluate_1671449901154581105(SNode thisNode, EvaluationEnvironment env, EvaluationContext context) {
-    Object value = MqlExpression_Behavior.call_evaluate_1671449901154581105(SLinkOperations.getTarget(thisNode, "expr", true), env, context);
+    Object value = env.evaluate(SLinkOperations.getTarget(thisNode, "expr", true), context, false);
     if (SPropertyOperations.hasValue(thisNode, "kind", "2", null)) {
       if (value instanceof Integer) {
         return -((Integer) value);
       }
-      throw new EvaluationException("unary minus is not applicable to " + env.objectType(value), thisNode, context);
+      throw new EvaluationException("unary minus is not applicable to " + env.getRuntime().objectType(value), thisNode, context);
 
     } else if (SPropertyOperations.hasValue(thisNode, "kind", "1", null)) {
       if (value instanceof Boolean) {
         return !((Boolean) value);
       }
-      throw new EvaluationException("negation operator is not applicable to " + env.objectType(value), thisNode, context);
+      throw new EvaluationException("negation operator is not applicable to " + env.getRuntime().objectType(value), thisNode, context);
     }
     throw new EvaluationException("bad query: unknown unary kind", thisNode, context);
   }

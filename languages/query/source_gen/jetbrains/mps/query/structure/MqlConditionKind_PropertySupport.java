@@ -11,7 +11,7 @@ public class MqlConditionKind_PropertySupport extends PropertySupport {
     if (value == null) {
       return true;
     }
-    Iterator<MqlConditionKind> constants = ListSequence.fromList(MqlConditionKind.getConstants()).iterator();
+    Iterator<MqlConditionKind> constants = ListSequence.<MqlConditionKind>fromList(MqlConditionKind.getConstants()).iterator();
     while (constants.hasNext()) {
       MqlConditionKind constant = constants.next();
       if (value.equals(constant.getName())) {
@@ -25,7 +25,7 @@ public class MqlConditionKind_PropertySupport extends PropertySupport {
     if (value == null) {
       return null;
     }
-    Iterator<MqlConditionKind> constants = ListSequence.fromList(MqlConditionKind.getConstants()).iterator();
+    Iterator<MqlConditionKind> constants = ListSequence.<MqlConditionKind>fromList(MqlConditionKind.getConstants()).iterator();
     while (constants.hasNext()) {
       MqlConditionKind constant = constants.next();
       if (value.equals(constant.getName())) {

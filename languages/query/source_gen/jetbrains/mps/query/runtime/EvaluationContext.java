@@ -25,15 +25,15 @@ public class EvaluationContext {
       return parent.getValue(varname);
     }
     return (vars != null ?
-      MapSequence.fromMap(vars).get(varname) :
+      MapSequence.<String,Object>fromMap(vars).get(varname) :
       null
     );
   }
 
   public void setValue(String varname, Object value) {
     if (vars == null) {
-      vars = MapSequence.fromMap(new HashMap<String, Object>());
+      vars = MapSequence.<String,Object>fromMap(new HashMap<String, Object>());
     }
-    MapSequence.fromMap(vars).put(varname, value);
+    MapSequence.<String,Object>fromMap(vars).put(varname, value);
   }
 }

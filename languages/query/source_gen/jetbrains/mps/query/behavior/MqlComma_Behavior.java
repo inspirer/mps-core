@@ -24,7 +24,7 @@ public class MqlComma_Behavior {
   }
 
   public static Object virtual_evaluate_1671449901154581105(SNode thisNode, EvaluationEnvironment env, EvaluationContext context) {
-    MqlExpression_Behavior.call_evaluate_1671449901154581105(SLinkOperations.getTarget(thisNode, "left", true), env, context);
-    return MqlExpression_Behavior.call_evaluate_1671449901154581105(SLinkOperations.getTarget(thisNode, "right", true), env, context);
+    env.evaluate(SLinkOperations.getTarget(thisNode, "left", true), context, true);
+    return env.evaluate(SLinkOperations.getTarget(thisNode, "right", true), context, true);
   }
 }

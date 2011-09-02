@@ -56,7 +56,7 @@ public class MqlPropertySelector_Constraints extends BaseConstraintsDescriptor {
             if (SNodeOperations.isInstanceOf(type, "jetbrains.mps.query.structure.MqlNodeType")) {
               SNode decl = SLinkOperations.getTarget(SNodeOperations.cast(type, "jetbrains.mps.query.structure.MqlNodeType"), "concept", false);
               if ((decl != null)) {
-                ListSequence.fromList(result).addSequence(ListSequence.fromList(SLinkOperations.getTargets(decl, "propertyDeclaration", true)));
+                ListSequence.<SNode>fromList(result).addSequence(ListSequence.<SNode>fromList(SLinkOperations.getTargets(decl, "propertyDeclaration", true)));
               }
             }
             return result;

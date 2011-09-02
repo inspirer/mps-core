@@ -48,21 +48,21 @@ public class RunWorkflow_Action extends GeneratedAction {
           node = null;
         }
       }
-      MapSequence.fromMap(_params).put("workflow", node);
+      MapSequence.<String,Object>fromMap(_params).put("workflow", node);
     }
-    if (MapSequence.fromMap(_params).get("workflow") == null) {
+    if (MapSequence.<String,Object>fromMap(_params).get("workflow") == null) {
       return false;
     }
-    MapSequence.fromMap(_params).put("context", event.getData(MPSDataKeys.OPERATION_CONTEXT));
-    if (MapSequence.fromMap(_params).get("context") == null) {
+    MapSequence.<String,Object>fromMap(_params).put("context", event.getData(MPSDataKeys.OPERATION_CONTEXT));
+    if (MapSequence.<String,Object>fromMap(_params).get("context") == null) {
       return false;
     }
-    MapSequence.fromMap(_params).put("langModule", event.getData(MPSDataKeys.MODULE));
-    if (MapSequence.fromMap(_params).get("langModule") == null) {
+    MapSequence.<String,Object>fromMap(_params).put("langModule", event.getData(MPSDataKeys.MODULE));
+    if (MapSequence.<String,Object>fromMap(_params).get("langModule") == null) {
       return false;
     }
-    MapSequence.fromMap(_params).put("project", event.getData(MPSDataKeys.PROJECT));
-    if (MapSequence.fromMap(_params).get("project") == null) {
+    MapSequence.<String,Object>fromMap(_params).put("project", event.getData(MPSDataKeys.PROJECT));
+    if (MapSequence.<String,Object>fromMap(_params).get("project") == null) {
       return false;
     }
     return true;
@@ -70,7 +70,7 @@ public class RunWorkflow_Action extends GeneratedAction {
 
   public void doExecute(@NotNull final AnActionEvent event, final Map<String, Object> _params) {
     try {
-      final MessagesViewTool tool = ((Project) MapSequence.fromMap(_params).get("project")).getComponent(MessagesViewTool.class);
+      final MessagesViewTool tool = ((Project) MapSequence.<String,Object>fromMap(_params).get("project")).getComponent(MessagesViewTool.class);
       if (tool != null) {
         new WorkflowRunner(new IMessageHandler() {
           public void handle(IMessage p0) {
@@ -80,7 +80,7 @@ public class RunWorkflow_Action extends GeneratedAction {
           public void clear() {
             tool.clear("Workflow");
           }
-        }, ((IModule) MapSequence.fromMap(_params).get("langModule"))).run(((SNode) MapSequence.fromMap(_params).get("workflow")));
+        }, ((IModule) MapSequence.<String,Object>fromMap(_params).get("langModule"))).run(((SNode) MapSequence.<String,Object>fromMap(_params).get("workflow")));
       }
     } catch (Throwable t) {
       LOG.error("User's action execute method failed. Action:" + "RunWorkflow", t);

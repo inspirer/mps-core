@@ -12,7 +12,9 @@ import jetbrains.mps.query.runtime.EvaluationContext;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.query.behavior.MqlExpression_Behavior;
+import jetbrains.mps.query.runtime.EvaluationException;
 import jetbrains.mps.messages.Message;
+import java.lang.reflect.InvocationTargetException;
 
 public class WorkflowRunner {
   private IMessageHandler handler;
@@ -25,11 +27,14 @@ public class WorkflowRunner {
   }
 
   public void run(SNode executable) {
-    report(MessageKind.INFORMATION, "started: " + SPropertyOperations.getString(executable, "name"));
+    report(MessageKind.INFORMATION, "started: " + SPropertyOperations.getString(executable, "name"), null);
     EvaluationEnvironment env = new EvaluationEnvironment() {
       @Override
-      public void reportError(String message) {
-        WorkflowRunner.this.report(MessageKind.ERROR, message);
+      public void report(int kind, String message, SNode hintNode) {
+        WorkflowRunner.this.report((kind == KIND_ERR ?
+          MessageKind.ERROR :
+          MessageKind.WARNING
+        ), message, hintNode);
       }
     };
     EvaluationContext rootContext = new EvaluationContext(null, null);
@@ -38,20 +43,45 @@ public class WorkflowRunner {
         try {
           SNode exprst = SNodeOperations.cast(st, "jetbrains.mps.workflow.structure.WflowExpressionStatement");
           Object result = MqlExpression_Behavior.call_evaluate_1671449901154581105(SLinkOperations.getTarget(exprst, "expression", true), env, rootContext);
-          String asString = (result == null ?
-            "null" :
-            result.toString()
-          );
-          report(MessageKind.INFORMATION, SPropertyOperations.getString(exprst, "varname") + "=" + asString);
+          String asString = env.getRuntime().objectDebugText(result);
+          report(MessageKind.INFORMATION, SPropertyOperations.getString(exprst, "varname") + " = " + asString, null);
 
         } catch (Exception ex) {
-          report(MessageKind.ERROR, ex.toString());
+          Throwable thr = unwrap(ex);
+          report(MessageKind.ERROR, thr.toString(), (thr instanceof EvaluationException ?
+            ((EvaluationException) thr).getQuery() :
+            null
+          ));
         }
       }
     }
   }
 
-  public void report(MessageKind kind, String message) {
-    handler.handle(new Message(kind, message));
+  public void report(MessageKind kind, String text, SNode hintNode) {
+    Message message = new Message(kind, text);
+    if ((hintNode != null)) {
+      message.setHintObject(hintNode);
+    }
+    handler.handle(message);
+  }
+
+  public Throwable unwrap(Throwable ex) {
+    Throwable last = ex;
+    Throwable next = unwrap_internal(ex);
+    int counter = 0;
+    while (next != null && next != last && counter++ < 100) {
+      last = next;
+      next = unwrap_internal(next);
+    }
+    return last;
+  }
+
+  private Throwable unwrap_internal(Throwable ex) {
+    if (ex instanceof InvocationTargetException) {
+      return ((InvocationTargetException) ex).getCause();
+    } else if (ex instanceof RuntimeException) {
+      return ((RuntimeException) ex).getCause();
+    }
+    return null;
   }
 }

@@ -47,14 +47,14 @@ public class MqlVarReference_Constraints extends BaseConstraintsDescriptor {
             if (SNodeOperations.isInstanceOf(_context.getEnclosingNode(), "jetbrains.mps.query.structure.MqlComma")) {
               SNode left = SLinkOperations.getTarget(SNodeOperations.cast(_context.getEnclosingNode(), "jetbrains.mps.query.structure.MqlComma"), "left", true);
               if (SNodeOperations.isInstanceOf(left, "jetbrains.mps.query.structure.MqlAssignment")) {
-                ListSequence.fromList(result).addElement(SNodeOperations.cast(left, "jetbrains.mps.query.structure.MqlAssignment"));
+                ListSequence.<SNode>fromList(result).addElement(SNodeOperations.cast(left, "jetbrains.mps.query.structure.MqlAssignment"));
               }
             }
             while ((current != null)) {
               if (SNodeOperations.isInstanceOf(SNodeOperations.getParent(current), "jetbrains.mps.query.structure.MqlComma")) {
                 SNode left = SLinkOperations.getTarget(SNodeOperations.cast(SNodeOperations.getParent(current), "jetbrains.mps.query.structure.MqlComma"), "left", true);
                 if (left != current && SNodeOperations.isInstanceOf(left, "jetbrains.mps.query.structure.MqlAssignment")) {
-                  ListSequence.fromList(result).addElement(SNodeOperations.cast(left, "jetbrains.mps.query.structure.MqlAssignment"));
+                  ListSequence.<SNode>fromList(result).addElement(SNodeOperations.cast(left, "jetbrains.mps.query.structure.MqlAssignment"));
                 }
               }
               current = SNodeOperations.getParent(current);

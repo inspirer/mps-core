@@ -21,7 +21,7 @@ public class MqlAssignment_Behavior {
   }
 
   public static Object virtual_evaluate_1671449901154581105(SNode thisNode, EvaluationEnvironment env, EvaluationContext context) {
-    Object result = MqlExpression_Behavior.call_evaluate_1671449901154581105(SLinkOperations.getTarget(thisNode, "value", true), env, context);
+    Object result = env.evaluate(SLinkOperations.getTarget(thisNode, "value", true), context, true);
     context.setValue(SPropertyOperations.getString(thisNode, "name"), result);
     return result;
   }

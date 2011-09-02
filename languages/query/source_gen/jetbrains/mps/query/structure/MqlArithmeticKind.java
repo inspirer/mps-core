@@ -34,12 +34,12 @@ public enum MqlArithmeticKind {
   }
 
   public static List<MqlArithmeticKind> getConstants() {
-    List<MqlArithmeticKind> list = ListSequence.fromList(new LinkedList<MqlArithmeticKind>());
-    ListSequence.fromList(list).addElement(MqlArithmeticKind.PLUS);
-    ListSequence.fromList(list).addElement(MqlArithmeticKind.MINUS);
-    ListSequence.fromList(list).addElement(MqlArithmeticKind.MULT);
-    ListSequence.fromList(list).addElement(MqlArithmeticKind.DIV);
-    ListSequence.fromList(list).addElement(MqlArithmeticKind.REM);
+    List<MqlArithmeticKind> list = ListSequence.<MqlArithmeticKind>fromList(new LinkedList<MqlArithmeticKind>());
+    ListSequence.<MqlArithmeticKind>fromList(list).addElement(MqlArithmeticKind.PLUS);
+    ListSequence.<MqlArithmeticKind>fromList(list).addElement(MqlArithmeticKind.MINUS);
+    ListSequence.<MqlArithmeticKind>fromList(list).addElement(MqlArithmeticKind.MULT);
+    ListSequence.<MqlArithmeticKind>fromList(list).addElement(MqlArithmeticKind.DIV);
+    ListSequence.<MqlArithmeticKind>fromList(list).addElement(MqlArithmeticKind.REM);
     return list;
   }
 

@@ -31,9 +31,9 @@ public enum MqlUnaryKind {
   }
 
   public static List<MqlUnaryKind> getConstants() {
-    List<MqlUnaryKind> list = ListSequence.fromList(new LinkedList<MqlUnaryKind>());
-    ListSequence.fromList(list).addElement(MqlUnaryKind.NOT);
-    ListSequence.fromList(list).addElement(MqlUnaryKind.MINUS);
+    List<MqlUnaryKind> list = ListSequence.<MqlUnaryKind>fromList(new LinkedList<MqlUnaryKind>());
+    ListSequence.<MqlUnaryKind>fromList(list).addElement(MqlUnaryKind.NOT);
+    ListSequence.<MqlUnaryKind>fromList(list).addElement(MqlUnaryKind.MINUS);
     return list;
   }
 

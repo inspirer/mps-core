@@ -37,15 +37,15 @@ public enum MqlCollectionSelectorKind {
   }
 
   public static List<MqlCollectionSelectorKind> getConstants() {
-    List<MqlCollectionSelectorKind> list = ListSequence.fromList(new LinkedList<MqlCollectionSelectorKind>());
-    ListSequence.fromList(list).addElement(MqlCollectionSelectorKind.COLLECT);
-    ListSequence.fromList(list).addElement(MqlCollectionSelectorKind.COLLECT_UNIQUE);
-    ListSequence.fromList(list).addElement(MqlCollectionSelectorKind.REJECT);
-    ListSequence.fromList(list).addElement(MqlCollectionSelectorKind.SELECT);
-    ListSequence.fromList(list).addElement(MqlCollectionSelectorKind.FORALL);
-    ListSequence.fromList(list).addElement(MqlCollectionSelectorKind.EXISTS);
-    ListSequence.fromList(list).addElement(MqlCollectionSelectorKind.SORT);
-    ListSequence.fromList(list).addElement(MqlCollectionSelectorKind.GROUPBY);
+    List<MqlCollectionSelectorKind> list = ListSequence.<MqlCollectionSelectorKind>fromList(new LinkedList<MqlCollectionSelectorKind>());
+    ListSequence.<MqlCollectionSelectorKind>fromList(list).addElement(MqlCollectionSelectorKind.COLLECT);
+    ListSequence.<MqlCollectionSelectorKind>fromList(list).addElement(MqlCollectionSelectorKind.COLLECT_UNIQUE);
+    ListSequence.<MqlCollectionSelectorKind>fromList(list).addElement(MqlCollectionSelectorKind.REJECT);
+    ListSequence.<MqlCollectionSelectorKind>fromList(list).addElement(MqlCollectionSelectorKind.SELECT);
+    ListSequence.<MqlCollectionSelectorKind>fromList(list).addElement(MqlCollectionSelectorKind.FORALL);
+    ListSequence.<MqlCollectionSelectorKind>fromList(list).addElement(MqlCollectionSelectorKind.EXISTS);
+    ListSequence.<MqlCollectionSelectorKind>fromList(list).addElement(MqlCollectionSelectorKind.SORT);
+    ListSequence.<MqlCollectionSelectorKind>fromList(list).addElement(MqlCollectionSelectorKind.GROUPBY);
     return list;
   }
 

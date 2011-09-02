@@ -46,7 +46,7 @@ public class MqlParameterReference_Constraints extends BaseConstraintsDescriptor
             SNode current = _context.getEnclosingNode();
             while ((current != null)) {
               if (SNodeOperations.isInstanceOf(current, "jetbrains.mps.query.structure.MqlParametersContainer")) {
-                ListSequence.fromList(result).addSequence(ListSequence.fromList(SLinkOperations.getTargets(SNodeOperations.cast(current, "jetbrains.mps.query.structure.MqlParametersContainer"), "parameters", true)));
+                ListSequence.<SNode>fromList(result).addSequence(ListSequence.<SNode>fromList(SLinkOperations.getTargets(SNodeOperations.cast(current, "jetbrains.mps.query.structure.MqlParametersContainer"), "parameters", true)));
               }
               current = SNodeOperations.getParent(current);
             }

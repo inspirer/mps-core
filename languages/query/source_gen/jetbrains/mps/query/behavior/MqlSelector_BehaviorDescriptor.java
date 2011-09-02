@@ -4,9 +4,15 @@ package jetbrains.mps.query.behavior;
 
 import jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor;
 import jetbrains.mps.smodel.SNode;
+import jetbrains.mps.query.runtime.EvaluationEnvironment;
+import jetbrains.mps.query.runtime.EvaluationContext;
 
 public abstract class MqlSelector_BehaviorDescriptor extends BaseConcept_BehaviorDescriptor {
   public MqlSelector_BehaviorDescriptor() {
+  }
+
+  public Object virtual_evaluate_7862448911997337721(SNode thisNode, Object object, EvaluationEnvironment env, EvaluationContext context) {
+    return MqlSelector_Behavior.virtual_evaluate_7862448911997337721(thisNode, object, env, context);
   }
 
   public SNode virtual_getType_228266671027867010(SNode thisNode) {

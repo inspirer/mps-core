@@ -11,7 +11,7 @@ public class MqlArithmeticKind_PropertySupport extends PropertySupport {
     if (value == null) {
       return true;
     }
-    Iterator<MqlArithmeticKind> constants = ListSequence.fromList(MqlArithmeticKind.getConstants()).iterator();
+    Iterator<MqlArithmeticKind> constants = ListSequence.<MqlArithmeticKind>fromList(MqlArithmeticKind.getConstants()).iterator();
     while (constants.hasNext()) {
       MqlArithmeticKind constant = constants.next();
       if (value.equals(constant.getName())) {
@@ -25,7 +25,7 @@ public class MqlArithmeticKind_PropertySupport extends PropertySupport {
     if (value == null) {
       return null;
     }
-    Iterator<MqlArithmeticKind> constants = ListSequence.fromList(MqlArithmeticKind.getConstants()).iterator();
+    Iterator<MqlArithmeticKind> constants = ListSequence.<MqlArithmeticKind>fromList(MqlArithmeticKind.getConstants()).iterator();
     while (constants.hasNext()) {
       MqlArithmeticKind constant = constants.next();
       if (value.equals(constant.getName())) {

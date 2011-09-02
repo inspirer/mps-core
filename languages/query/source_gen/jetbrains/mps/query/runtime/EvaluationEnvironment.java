@@ -6,24 +6,28 @@ import java.util.Map;
 import jetbrains.mps.internal.collections.runtime.MapSequence;
 import java.util.HashMap;
 import jetbrains.mps.smodel.SNode;
-import java.util.Collection;
+import jetbrains.mps.query.behavior.MqlExpression_Behavior;
 import java.util.Arrays;
 
 public class EvaluationEnvironment {
   private static final Object MISSED = new Object();
+  public static final int KIND_ERR = 1;
+  public static final int KIND_WARN = 2;
 
-  private Map<EvaluationEnvironment.Key, Object> cache = MapSequence.fromMap(new HashMap<EvaluationEnvironment.Key, Object>());
+  private final EvaluationRuntime runtime;
+  private final Map<EvaluationEnvironment.Key, Object> cache = MapSequence.<EvaluationEnvironment.Key,Object>fromMap(new HashMap<EvaluationEnvironment.Key, Object>());
 
   public EvaluationEnvironment() {
+    runtime = new EvaluationRuntime();
   }
 
   public void cache(Object value, Object... keys) {
-    MapSequence.fromMap(cache).put(new EvaluationEnvironment.Key(keys), value);
+    MapSequence.<EvaluationEnvironment.Key,Object>fromMap(cache).put(new EvaluationEnvironment.Key(keys), value);
   }
 
   public Object lookup(Object... keys) {
     EvaluationEnvironment.Key key = new EvaluationEnvironment.Key(keys);
-    Object result = MapSequence.fromMap(cache).get(key);
+    Object result = MapSequence.<EvaluationEnvironment.Key,Object>fromMap(cache).get(key);
     if (result != null) {
       return result;
     }
@@ -33,27 +37,43 @@ public class EvaluationEnvironment {
     );
   }
 
-  public String objectType(Object object) {
-    if (object == null) {
-      return "[null]";
-    }
-
-    if (object instanceof Integer) {
-      return "[int]";
-    } else if (object instanceof Long) {
-      return "[long]";
-    } else if (object instanceof Boolean) {
-      return "[bool]";
-    } else if (object instanceof SNode) {
-      String concept = ((SNode) object).getConceptFqName();
-      return "[" + concept + "]";
-    } else if (object instanceof Collection) {
-      return "[list]";
-    }
-    return "[unknown]";
+  public EvaluationRuntime getRuntime() {
+    return runtime;
   }
 
-  public void reportError(String message) {
+  private void reportInput(EvaluationContext context) {
+    if (context == null) {
+      return;
+    }
+    Object input = context.getThis();
+    if (input instanceof SNode) {
+      SNode inputNode = (SNode) input;
+      report(KIND_ERR, " -- context node: " + inputNode.getDebugText(), inputNode);
+    } else if (input != null) {
+      report(KIND_ERR, " -- context: " + getRuntime().objectType(input), null);
+    }
+  }
+
+  public Object evaluate(SNode expr, EvaluationContext context, boolean permitNull) {
+    try {
+      Object result = MqlExpression_Behavior.call_evaluate_1671449901154581105(expr, this, context);
+      if (result == null && !(permitNull)) {
+        String message = "Evaluation failed: null";
+        report(KIND_ERR, message, expr);
+        reportInput(context);
+        throw new EvaluationEnvironment.HandledEvaluationException(message, expr, context);
+      }
+      return result;
+    } catch (EvaluationEnvironment.HandledEvaluationException e) {
+      throw e;
+    } catch (EvaluationException e) {
+      report(KIND_ERR, "Evaluation failed: " + e.getMessage(), e.getQuery());
+      reportInput(e.getContext());
+      throw new EvaluationEnvironment.HandledEvaluationException(e);
+    }
+  }
+
+  public void report(int kind, String message, SNode hintNode) {
   }
 
   private class Key {
@@ -75,6 +95,16 @@ public class EvaluationEnvironment {
     @Override
     public int hashCode() {
       return Arrays.hashCode(keys);
+    }
+  }
+
+  public class HandledEvaluationException extends EvaluationException {
+    public HandledEvaluationException(EvaluationException cause) {
+      super(cause);
+    }
+
+    public HandledEvaluationException(String message, SNode query, EvaluationContext context) {
+      super(message, query, context);
     }
   }
 }

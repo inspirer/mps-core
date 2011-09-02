@@ -22,12 +22,13 @@ public class MqlTriplex_Behavior {
   }
 
   public static Object virtual_evaluate_1671449901154581105(SNode thisNode, EvaluationEnvironment env, EvaluationContext context) {
-    boolean conditionValue = MqlTriplex_Behavior.call_isTrue_1671449901154581765(thisNode, MqlExpression_Behavior.call_evaluate_1671449901154581105(SLinkOperations.getTarget(thisNode, "condition", true), env, context), env, context);
+
+    boolean conditionValue = MqlTriplex_Behavior.call_isTrue_1671449901154581765(thisNode, env.evaluate(SLinkOperations.getTarget(thisNode, "condition", true), context, true), env, context);
     SNode consequence = (conditionValue ?
       SLinkOperations.getTarget(thisNode, "thenexpr", true) :
       SLinkOperations.getTarget(thisNode, "elseexpr", true)
     );
-    return MqlExpression_Behavior.call_evaluate_1671449901154581105(consequence, env, context);
+    return env.evaluate(consequence, context, true);
   }
 
   public static boolean call_isTrue_1671449901154581765(SNode thisNode, Object value, EvaluationEnvironment env, EvaluationContext context) {
@@ -39,6 +40,6 @@ public class MqlTriplex_Behavior {
       return false;
     }
 
-    throw new EvaluationException("cannot interpret condition `" + env.objectType(value) + "'", thisNode, context);
+    throw new EvaluationException("cannot interpret condition `" + env.getRuntime().objectType(value) + "'", thisNode, context);
   }
 }

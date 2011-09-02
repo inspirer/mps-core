@@ -61,21 +61,21 @@ public class MqlCondition_Behavior {
   }
 
   public static int call_evaluateAsInt_1671449901154582343(SNode thisNode, boolean left, EvaluationEnvironment env, EvaluationContext context) {
-    Object result = MqlExpression_Behavior.call_evaluate_1671449901154581105(((left ?
+    Object result = env.evaluate((left ?
       SLinkOperations.getTarget(thisNode, "left", true) :
       SLinkOperations.getTarget(thisNode, "right", true)
-    )), env, context);
+    ), context, false);
     if (result instanceof Integer) {
       return (Integer) result;
     }
-    throw new EvaluationException("condition expression can handle integers only, not " + env.objectType(result), thisNode, context);
+    throw new EvaluationException("condition expression can handle integers only, not " + env.getRuntime().objectType(result), thisNode, context);
   }
 
   public static boolean call_evaluateAsBoolean_1671449901154582389(SNode thisNode, boolean left, EvaluationEnvironment env, EvaluationContext context) {
-    Object result = MqlExpression_Behavior.call_evaluate_1671449901154581105(((left ?
+    Object result = env.evaluate((left ?
       SLinkOperations.getTarget(thisNode, "left", true) :
       SLinkOperations.getTarget(thisNode, "right", true)
-    )), env, context);
+    ), context, true);
     if (result instanceof Boolean) {
       return (Boolean) result;
     } else if (result == null) {
@@ -83,7 +83,7 @@ public class MqlCondition_Behavior {
     } else if (result instanceof SNode) {
       return true;
     }
-    throw new EvaluationException("condition expression can handle booleans only, not " + env.objectType(result), thisNode, context);
+    throw new EvaluationException("condition expression can handle booleans only, not " + env.getRuntime().objectType(result), thisNode, context);
   }
 
   public static class QuotationClass_12su27_a0a0b {

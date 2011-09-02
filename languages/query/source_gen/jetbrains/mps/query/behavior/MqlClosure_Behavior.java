@@ -16,7 +16,7 @@ public class MqlClosure_Behavior {
 
   public static SNode virtual_getType_228266671027861783(SNode thisNode) {
     SNode ftype = SConceptOperations.createNewNode("jetbrains.mps.query.structure.MqlFunctionType", null);
-    for (SNode type : ListSequence.fromList(SLinkOperations.getTargets(thisNode, "parameters", true)).where(new IWhereFilter<SNode>() {
+    for (SNode type : ListSequence.<SNode>fromList(SLinkOperations.getTargets(thisNode, "parameters", true)).where(new IWhereFilter<SNode>() {
       public boolean accept(SNode it) {
         return (SLinkOperations.getTarget(it, "type", true) != null);
       }
@@ -25,7 +25,7 @@ public class MqlClosure_Behavior {
         return SLinkOperations.getTarget(it, "type", true);
       }
     })) {
-      ListSequence.fromList(SLinkOperations.getTargets(ftype, "parameterTypes", true)).addElement(SNodeOperations.copyNode(type));
+      ListSequence.<SNode>fromList(SLinkOperations.getTargets(ftype, "parameterTypes", true)).addElement(SNodeOperations.copyNode(type));
     }
     SLinkOperations.setTarget(ftype, "returnType", MqlExpression_Behavior.call_getType_228266671027861783(SLinkOperations.getTarget(thisNode, "body", true)), true);
     return ftype;

@@ -16,6 +16,6 @@ public class MqlParentheses_Behavior {
   }
 
   public static Object virtual_evaluate_1671449901154581105(SNode thisNode, EvaluationEnvironment env, EvaluationContext context) {
-    return MqlExpression_Behavior.call_evaluate_1671449901154581105(SLinkOperations.getTarget(thisNode, "expr", true), env, context);
+    return env.evaluate(SLinkOperations.getTarget(thisNode, "expr", true), context, true);
   }
 }

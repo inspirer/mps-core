@@ -14,7 +14,7 @@ public class MqlFunctionType_Behavior {
   public static boolean virtual_isSubtypeOf_2852142168179579064(SNode thisNode, SNode type) {
     if (SNodeOperations.isInstanceOf(type, "jetbrains.mps.query.structure.MqlFunctionType")) {
       SNode ftype = SNodeOperations.cast(type, "jetbrains.mps.query.structure.MqlFunctionType");
-      if (ListSequence.fromList(SLinkOperations.getTargets(ftype, "parameterTypes", true)).count() != ListSequence.fromList(SLinkOperations.getTargets(thisNode, "parameterTypes", true)).count()) {
+      if (ListSequence.<SNode>fromList(SLinkOperations.getTargets(ftype, "parameterTypes", true)).count() != ListSequence.<SNode>fromList(SLinkOperations.getTargets(thisNode, "parameterTypes", true)).count()) {
         return false;
       }
       // TODO check parameter types 

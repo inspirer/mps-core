@@ -14,6 +14,13 @@ public class EvaluationException extends RuntimeException {
     this.context = context;
   }
 
+  public EvaluationException(EvaluationException cause) {
+    super(cause.getMessage(), cause);
+    this.query = cause.getQuery();
+    this.context = cause.getContext();
+
+  }
+
   public SNode getQuery() {
     return query;
   }

@@ -49,7 +49,7 @@ public class MqlCollectionSelectorVarRef_Constraints extends BaseConstraintsDesc
             List<SNode> vars = new ArrayList<SNode>();
             while (SNodeOperations.isInstanceOf(current, "jetbrains.mps.query.structure.MqlExpression") || SNodeOperations.isInstanceOf(current, "jetbrains.mps.query.structure.MqlSelector")) {
               if (SNodeOperations.isInstanceOf(current, "jetbrains.mps.query.structure.MqlCollectionSelector")) {
-                ListSequence.fromList(vars).addElement(SLinkOperations.getTarget(SNodeOperations.cast(current, "jetbrains.mps.query.structure.MqlCollectionSelector"), "var", true));
+                ListSequence.<SNode>fromList(vars).addElement(SLinkOperations.getTarget(SNodeOperations.cast(current, "jetbrains.mps.query.structure.MqlCollectionSelector"), "var", true));
               }
               current = SNodeOperations.getParent(current);
             }

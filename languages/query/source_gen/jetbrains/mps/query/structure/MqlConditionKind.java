@@ -37,15 +37,15 @@ public enum MqlConditionKind {
   }
 
   public static List<MqlConditionKind> getConstants() {
-    List<MqlConditionKind> list = ListSequence.fromList(new LinkedList<MqlConditionKind>());
-    ListSequence.fromList(list).addElement(MqlConditionKind.LT);
-    ListSequence.fromList(list).addElement(MqlConditionKind.GT);
-    ListSequence.fromList(list).addElement(MqlConditionKind.LE);
-    ListSequence.fromList(list).addElement(MqlConditionKind.GE);
-    ListSequence.fromList(list).addElement(MqlConditionKind.EQ);
-    ListSequence.fromList(list).addElement(MqlConditionKind.NE);
-    ListSequence.fromList(list).addElement(MqlConditionKind.AND);
-    ListSequence.fromList(list).addElement(MqlConditionKind.OR);
+    List<MqlConditionKind> list = ListSequence.<MqlConditionKind>fromList(new LinkedList<MqlConditionKind>());
+    ListSequence.<MqlConditionKind>fromList(list).addElement(MqlConditionKind.LT);
+    ListSequence.<MqlConditionKind>fromList(list).addElement(MqlConditionKind.GT);
+    ListSequence.<MqlConditionKind>fromList(list).addElement(MqlConditionKind.LE);
+    ListSequence.<MqlConditionKind>fromList(list).addElement(MqlConditionKind.GE);
+    ListSequence.<MqlConditionKind>fromList(list).addElement(MqlConditionKind.EQ);
+    ListSequence.<MqlConditionKind>fromList(list).addElement(MqlConditionKind.NE);
+    ListSequence.<MqlConditionKind>fromList(list).addElement(MqlConditionKind.AND);
+    ListSequence.<MqlConditionKind>fromList(list).addElement(MqlConditionKind.OR);
     return list;
   }
 

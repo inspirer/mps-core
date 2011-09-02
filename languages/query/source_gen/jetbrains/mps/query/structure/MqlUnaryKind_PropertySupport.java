@@ -11,7 +11,7 @@ public class MqlUnaryKind_PropertySupport extends PropertySupport {
     if (value == null) {
       return true;
     }
-    Iterator<MqlUnaryKind> constants = ListSequence.fromList(MqlUnaryKind.getConstants()).iterator();
+    Iterator<MqlUnaryKind> constants = ListSequence.<MqlUnaryKind>fromList(MqlUnaryKind.getConstants()).iterator();
     while (constants.hasNext()) {
       MqlUnaryKind constant = constants.next();
       if (value.equals(constant.getName())) {
@@ -25,7 +25,7 @@ public class MqlUnaryKind_PropertySupport extends PropertySupport {
     if (value == null) {
       return null;
     }
-    Iterator<MqlUnaryKind> constants = ListSequence.fromList(MqlUnaryKind.getConstants()).iterator();
+    Iterator<MqlUnaryKind> constants = ListSequence.<MqlUnaryKind>fromList(MqlUnaryKind.getConstants()).iterator();
     while (constants.hasNext()) {
       MqlUnaryKind constant = constants.next();
       if (value.equals(constant.getName())) {
