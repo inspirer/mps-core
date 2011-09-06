@@ -12,10 +12,10 @@ import java.util.List;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.internal.collections.runtime.IWhereFilter;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.smodel.action.SNodeFactoryOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.IAttributeDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.AttributeOperations;
 
 public class attributes extends EditorCellKeyMap {
   public attributes() {
@@ -23,6 +23,10 @@ public class attributes extends EditorCellKeyMap {
     EditorCellKeyMapAction action;
     action = new attributes.attributes_Action0();
     this.putAction("ctrl+shift", "VK_F", action);
+    action = new attributes.attributes_Action1();
+    this.putAction("ctrl+shift", "VK_M", action);
+    action = new attributes.attributes_Action2();
+    this.putAction("ctrl+shift", "VK_M", action);
   }
 
   public static class attributes_Action0 extends EditorCellKeyMapAction {
@@ -56,21 +60,10 @@ public class attributes extends EditorCellKeyMap {
     }
 
     private boolean canExecute_internal(final KeyEvent keyEvent, final EditorContext editorContext, final SNode node, final List<SNode> selectedNodes) {
-      if (ListSequence.fromList(selectedNodes).count() != 1) {
+      if (ListSequence.<SNode>fromList(selectedNodes).count() != 1) {
         return false;
       }
-      if (SNodeOperations.getAncestor(node, "jetbrains.mps.template.structure.MtlTemplate", false, false) == null) {
-        return false;
-      }
-      if (ListSequence.fromList(SNodeOperations.getAncestors(node, null, false)).where(new IWhereFilter<SNode>() {
-        public boolean accept(SNode it) {
-          return SNodeOperations.isAttribute(it);
-        }
-      }).isNotEmpty()) {
-        return false;
-      }
-      SNode outermost = ListSequence.fromList(SNodeOperations.getAncestors(node, "jetbrains.mps.template.structure.MtlTemplate", false)).last();
-      if (!(ListSequence.fromList(SNodeOperations.getAncestors(node, null, true)).contains(SLinkOperations.getTarget(outermost, "template", true)))) {
+      if (!(Queries.isInsideTemplate(node))) {
         return false;
       }
 
@@ -78,7 +71,7 @@ public class attributes extends EditorCellKeyMap {
     }
 
     private void execute_internal(final KeyEvent keyEvent, final EditorContext editorContext, final SNode node, final List<SNode> selectedNodes) {
-      SNode applyToNode = ListSequence.fromList(SNodeOperations.getAncestors(node, null, true)).where(new IWhereFilter<SNode>() {
+      SNode applyToNode = ListSequence.<SNode>fromList(SNodeOperations.getAncestors(node, null, true)).where(new IWhereFilter<SNode>() {
         public boolean accept(SNode it) {
           return !(SNodeOperations.isAttribute(it));
         }
@@ -88,6 +81,129 @@ public class attributes extends EditorCellKeyMap {
 
     public String getKeyStroke() {
       return "ctrl shift F";
+    }
+  }
+
+  public static class attributes_Action1 extends EditorCellKeyMapAction {
+    public attributes_Action1() {
+      this.setShownInPopupMenu(true);
+    }
+
+    public String getDescriptionText() {
+      return "add property macro";
+    }
+
+    public boolean isMenuAlwaysShown() {
+      return false;
+    }
+
+    public boolean canExecute(final KeyEvent keyEvent, final EditorContext editorContext) {
+      EditorCell contextCell = editorContext.getContextCell();
+      if ((contextCell == null)) {
+        return false;
+      }
+      SNode contextNode = contextCell.getSNode();
+      if (contextNode == null) {
+        return false;
+      }
+      return this.canExecute_internal(keyEvent, editorContext, contextNode, this.getSelectedNodes(editorContext));
+    }
+
+    public void execute(final KeyEvent keyEvent, final EditorContext editorContext) {
+      EditorCell contextCell = editorContext.getContextCell();
+      this.execute_internal(keyEvent, editorContext, contextCell.getSNode(), this.getSelectedNodes(editorContext));
+    }
+
+    private boolean canExecute_internal(final KeyEvent keyEvent, final EditorContext editorContext, final SNode node, final List<SNode> selectedNodes) {
+      if (ListSequence.<SNode>fromList(selectedNodes).count() != 1) {
+        return false;
+      }
+      if (!(Queries.isInsideTemplate(node))) {
+        return false;
+      }
+      EditorCell cell = editorContext.getSelectedCell();
+      String linkRole = Queries.getEditedLinkRole(cell);
+      if (linkRole != null) {
+        return false;
+      }
+      String propertyName = Queries.getEditedPropertyName(cell);
+      if (propertyName == null) {
+        return false;
+      }
+      return AttributeOperations.getAttribute(node, new IAttributeDescriptor.PropertyAttribute(SConceptOperations.findConceptDeclaration("jetbrains.mps.template.structure.MtlPropertyMacro"), propertyName)) == null;
+
+    }
+
+    private void execute_internal(final KeyEvent keyEvent, final EditorContext editorContext, final SNode node, final List<SNode> selectedNodes) {
+      String propertyName = Queries.getEditedPropertyName(editorContext.getSelectedCell());
+      SNode propertyMacro = SNodeFactoryOperations.setNewAttribute(node, new IAttributeDescriptor.PropertyAttribute(SConceptOperations.findConceptDeclaration("jetbrains.mps.template.structure.MtlPropertyMacro"), propertyName), "jetbrains.mps.template.structure.MtlPropertyMacro");
+
+      editorContext.selectAndSetCaret(propertyMacro, 0);
+    }
+
+    public String getKeyStroke() {
+      return "ctrl shift M";
+    }
+  }
+
+  public static class attributes_Action2 extends EditorCellKeyMapAction {
+    public attributes_Action2() {
+      this.setShownInPopupMenu(true);
+    }
+
+    public String getDescriptionText() {
+      return "add reference macro";
+    }
+
+    public boolean isMenuAlwaysShown() {
+      return false;
+    }
+
+    public boolean canExecute(final KeyEvent keyEvent, final EditorContext editorContext) {
+      EditorCell contextCell = editorContext.getContextCell();
+      if ((contextCell == null)) {
+        return false;
+      }
+      SNode contextNode = contextCell.getSNode();
+      if (contextNode == null) {
+        return false;
+      }
+      return this.canExecute_internal(keyEvent, editorContext, contextNode, this.getSelectedNodes(editorContext));
+    }
+
+    public void execute(final KeyEvent keyEvent, final EditorContext editorContext) {
+      EditorCell contextCell = editorContext.getContextCell();
+      this.execute_internal(keyEvent, editorContext, contextCell.getSNode(), this.getSelectedNodes(editorContext));
+    }
+
+    private boolean canExecute_internal(final KeyEvent keyEvent, final EditorContext editorContext, final SNode node, final List<SNode> selectedNodes) {
+      if (ListSequence.<SNode>fromList(selectedNodes).count() != 1) {
+        return false;
+      }
+      if (!(Queries.isInsideTemplate(node))) {
+        return false;
+      }
+      EditorCell cell = editorContext.getSelectedCell();
+      if (cell == null) {
+        return false;
+      }
+      String linkRole = Queries.getEditedLinkRole(cell);
+      if (linkRole == null) {
+        return false;
+      }
+      SNode referentNode = Queries.getEditedLinkReferentNode(cell);
+      return AttributeOperations.getAttribute(referentNode, new IAttributeDescriptor.LinkAttribute(SConceptOperations.findConceptDeclaration("jetbrains.mps.template.structure.MtlReferenceMacro"), linkRole)) == null;
+    }
+
+    private void execute_internal(final KeyEvent keyEvent, final EditorContext editorContext, final SNode node, final List<SNode> selectedNodes) {
+      EditorCell cell = editorContext.getSelectedCell();
+      String linkRole = Queries.getEditedLinkRole(cell);
+      SNode referentNode = Queries.getEditedLinkReferentNode(cell);
+      SNodeFactoryOperations.setNewAttribute(referentNode, new IAttributeDescriptor.LinkAttribute(SConceptOperations.findConceptDeclaration("jetbrains.mps.template.structure.MtlReferenceMacro"), linkRole), "jetbrains.mps.template.structure.MtlReferenceMacro");
+    }
+
+    public String getKeyStroke() {
+      return "ctrl shift M";
     }
   }
 }

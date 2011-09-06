@@ -12,6 +12,7 @@
   <import index="h0os" modelUID="r:d290b86d-8b61-4a2f-a17f-263226953ecc(jetbrains.mps.template.structure)" version="-1" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="3" implicit="yes" />
   <import index="e5td" modelUID="r:ebf59dd9-04f3-4209-8dd7-dca3f04cac82(jetbrains.mps.workflow.structure)" version="-1" implicit="yes" />
+  <import index="e2lb" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" version="-1" implicit="yes" />
   <roots>
     <node type="bwy9.MqlPackage" typeId="bwy9.6762883159245048630" id="6601450967974137522">
       <property name="name" nameId="tpck.1169194664001" value="default" />
@@ -294,6 +295,12 @@
           <node role="body" roleId="bwy9.6762883159245048634" type="bwy9.MqlComma" typeId="bwy9.6762883159245048011" id="9160962589444199060">
             <node role="right" roleId="bwy9.6762883159245048021" type="bwy9.MqlIntLiteral" typeId="bwy9.6762883159245048052" id="9160962589444199063">
               <property name="value" nameId="bwy9.6762883159245048053" value="44" />
+              <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="h0os.MtlPropertyMacro" typeId="h0os.4273915927700364672" id="4273915927700610021">
+                <property name="propertyName" nameId="tpck.1757699476691236117" value="value" />
+                <node role="query" roleId="h0os.4273915927700364674" type="bwy9.MqlIntLiteral" typeId="bwy9.6762883159245048052" id="4273915927700610023">
+                  <property name="value" nameId="bwy9.6762883159245048053" value="123" />
+                </node>
+              </node>
             </node>
             <node role="left" roleId="bwy9.6762883159245048020" type="bwy9.MqlIntLiteral" typeId="bwy9.6762883159245048052" id="9160962589444199059">
               <property name="value" nameId="bwy9.6762883159245048053" value="2" />
@@ -322,6 +329,10 @@
     </node>
     <node role="entities" roleId="h0os.212212067812118757" type="h0os.MtlTemplate" typeId="h0os.212212067811886751" id="3373821274546515014">
       <property name="name" nameId="tpck.1169194664001" value="aa" />
+      <node role="parameters" roleId="bwy9.1992172484410518817" type="bwy9.MqlParameter" typeId="bwy9.6762883159245048635" id="4273915927700610040">
+        <property name="name" nameId="tpck.1169194664001" value="name" />
+        <node role="type" roleId="bwy9.6762883159245086405" type="bwy9.MqlStringType" typeId="bwy9.6762883159245048070" id="4273915927700610042" />
+      </node>
       <node role="vars" roleId="h0os.212212067812118824" type="bwy9.MqlAssignment" typeId="bwy9.5322644393894740272" id="3373821274546515023">
         <property name="name" nameId="tpck.1169194664001" value="a" />
         <node role="value" roleId="bwy9.5322644393894740275" type="bwy9.MqlIntLiteral" typeId="bwy9.6762883159245048052" id="3373821274546515025">
@@ -339,7 +350,7 @@
         <property name="name" nameId="tpck.1169194664001" value="assad" />
         <node role="staticMethod" roleId="tpee.1070462273904" type="tpee.StaticMethodDeclaration" typeId="tpee.1081236700938" id="3373821274546684869">
           <property name="name" nameId="tpck.1169194664001" value="main" />
-          <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="3373821274546684870" />
+          <node role="returnType" roleId="tpee.1068580123133" type="tpee.IntegerType" typeId="tpee.1070534370425" id="4273915927700610072" />
           <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="3373821274546684871" />
           <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="3373821274546684872">
             <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="3373821274546684874">
@@ -351,8 +362,63 @@
                 </node>
               </node>
             </node>
+            <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="4273915927700610025">
+              <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="4273915927700610026">
+                <property name="name" nameId="tpck.1169194664001" value="s" />
+                <node role="type" roleId="tpee.5680397130376446158" type="tpee.StringType" typeId="tpee.1225271177708" id="4273915927700610027" />
+                <node role="initializer" roleId="tpee.1068431790190" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="4273915927700610029">
+                  <property name="value" nameId="tpee.1070475926801" value="dsfsdf" />
+                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="h0os.MtlPropertyMacro" typeId="h0os.4273915927700364672" id="4273915927700610030">
+                    <property name="propertyName" nameId="tpck.1757699476691236117" value="value" />
+                    <node role="query" roleId="h0os.4273915927700364674" type="bwy9.MqlNoContextQueryCall" typeId="bwy9.2059702675525965924" id="4273915927700610047">
+                      <link role="query" roleId="bwy9.2059702675525965925" targetNodeId="6601450967974208008" resolveInfo="getString" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="4273915927700610049">
+              <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="4273915927700610051">
+                <node role="rValue" roleId="tpee.1068498886297" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="4273915927700610055">
+                  <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="4273915927700610058">
+                    <property name="value" nameId="tpee.1068580320021" value="1" />
+                  </node>
+                  <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="4273915927700610054">
+                    <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3373821274546684875" resolveInfo="i" />
+                  </node>
+                </node>
+                <node role="lValue" roleId="tpee.1068498886295" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="4273915927700610050">
+                  <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3373821274546684875" resolveInfo="i" />
+                </node>
+              </node>
+            </node>
+            <node role="statement" roleId="tpee.1068581517665" type="tpee.ReturnStatement" typeId="tpee.1068581242878" id="4273915927700610074">
+              <node role="expression" roleId="tpee.1068581517676" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="4273915927700610067">
+                <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="4273915927700610066">
+                  <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3373821274546684875" resolveInfo="i" />
+                </node>
+                <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4273915927700610081">
+                  <node role="operand" roleId="tpee.1197027771414" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="4273915927700610080">
+                    <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4273915927700610026" resolveInfo="s" />
+                  </node>
+                  <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="4273915927700610085">
+                    <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="e2lb.~String%dlength()%cint" resolveInfo="length" />
+                    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="h0os.MtlReferenceMacro" typeId="h0os.4273915927700610087" id="1612120574534056858">
+                      <property name="linkRole" nameId="tpck.1757699476691236116" value="baseMethodDeclaration" />
+                      <node role="query" roleId="h0os.4273915927700610088" type="bwy9.MqlNullLiteral" typeId="bwy9.6762883159245048062" id="1612120574534056861" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
           <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="h0os.MtlTemplateRoot" typeId="h0os.9160962589444214864" id="1163325315882442992" />
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="h0os.MtlPropertyMacro" typeId="h0os.4273915927700364672" id="4273915927700610033">
+            <property name="propertyName" nameId="tpck.1757699476691236117" value="name" />
+            <node role="query" roleId="h0os.4273915927700364674" type="bwy9.MqlParameterReference" typeId="bwy9.6762883159245086407" id="4273915927700610046">
+              <link role="parameter" roleId="bwy9.6762883159245086408" targetNodeId="4273915927700610040" resolveInfo="name" />
+            </node>
+          </node>
         </node>
         <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="3373821274546684863" />
         <node role="constructor" roleId="tpee.1068390468201" type="tpee.ConstructorDeclaration" typeId="tpee.1068580123140" id="3373821274546684864">
@@ -503,13 +569,21 @@
             <node role="var" roleId="bwy9.5280308256730662799" type="bwy9.MqlCollectionSelectorVar" typeId="bwy9.5280308256730662793" id="7862448911997425351">
               <property name="name" nameId="tpck.1169194664001" value="it" />
             </node>
-            <node role="expr" roleId="bwy9.5280308256730467464" type="bwy9.MqlCondition" typeId="bwy9.6762883159245048013" id="7862448911997425354">
-              <property name="kind" nameId="bwy9.6762883159245048033" value="2" />
-              <node role="left" roleId="bwy9.6762883159245048020" type="bwy9.MqlCollectionSelectorVarRef" typeId="bwy9.5280308256730768480" id="7862448911997425353">
-                <link role="var" roleId="bwy9.5280308256730768481" targetNodeId="7862448911997425351" resolveInfo="it" />
+            <node role="expr" roleId="bwy9.5280308256730467464" type="bwy9.MqlComma" typeId="bwy9.6762883159245048011" id="4273915927700364563">
+              <node role="left" roleId="bwy9.6762883159245048020" type="bwy9.MqlAssignment" typeId="bwy9.5322644393894740272" id="4273915927700364567">
+                <property name="name" nameId="tpck.1169194664001" value="a" />
+                <node role="value" roleId="bwy9.5322644393894740275" type="bwy9.MqlIntLiteral" typeId="bwy9.6762883159245048052" id="4273915927700364569">
+                  <property name="value" nameId="bwy9.6762883159245048053" value="100" />
+                </node>
               </node>
-              <node role="right" roleId="bwy9.6762883159245048021" type="bwy9.MqlIntLiteral" typeId="bwy9.6762883159245048052" id="7862448911997425357">
-                <property name="value" nameId="bwy9.6762883159245048053" value="100" />
+              <node role="right" roleId="bwy9.6762883159245048021" type="bwy9.MqlCondition" typeId="bwy9.6762883159245048013" id="7862448911997425354">
+                <property name="kind" nameId="bwy9.6762883159245048033" value="2" />
+                <node role="left" roleId="bwy9.6762883159245048020" type="bwy9.MqlCollectionSelectorVarRef" typeId="bwy9.5280308256730768480" id="7862448911997425353">
+                  <link role="var" roleId="bwy9.5280308256730768481" targetNodeId="7862448911997425351" resolveInfo="it" />
+                </node>
+                <node role="right" roleId="bwy9.6762883159245048021" type="bwy9.MqlVarReference" typeId="bwy9.2059702675526025628" id="4273915927700364667">
+                  <link role="var" roleId="bwy9.2059702675526025629" targetNodeId="4273915927700364567" resolveInfo="a" />
+                </node>
               </node>
             </node>
           </node>

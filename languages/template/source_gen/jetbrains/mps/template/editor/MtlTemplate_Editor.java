@@ -306,11 +306,11 @@ public class MtlTemplate_Editor extends DefaultNodeEditor {
   }
 
   private static boolean _StyleParameter_QueryFunction_c4w2e_a0k0(SNode node, EditorContext editorContext) {
-    return ListSequence.fromList(SLinkOperations.getTargets(SNodeOperations.cast(SNodeOperations.cast(node, "jetbrains.mps.lang.core.structure.BaseConcept"), "jetbrains.mps.template.structure.MtlTemplate"), "vars", true)).isNotEmpty();
+    return ListSequence.<SNode>fromList(SLinkOperations.getTargets(SNodeOperations.cast(SNodeOperations.cast(node, "jetbrains.mps.lang.core.structure.BaseConcept"), "jetbrains.mps.template.structure.MtlTemplate"), "vars", true)).isNotEmpty();
   }
 
   private static boolean _StyleParameter_QueryFunction_c4w2e_a1k0(SNode node, EditorContext editorContext) {
-    return ListSequence.fromList(SLinkOperations.getTargets(SNodeOperations.cast(SNodeOperations.cast(node, "jetbrains.mps.lang.core.structure.BaseConcept"), "jetbrains.mps.template.structure.MtlTemplate"), "vars", true)).isNotEmpty();
+    return ListSequence.<SNode>fromList(SLinkOperations.getTargets(SNodeOperations.cast(SNodeOperations.cast(node, "jetbrains.mps.lang.core.structure.BaseConcept"), "jetbrains.mps.template.structure.MtlTemplate"), "vars", true)).isNotEmpty();
   }
 
   private static class parametersListHandler_c4w2e_f0 extends RefNodeListHandler {
