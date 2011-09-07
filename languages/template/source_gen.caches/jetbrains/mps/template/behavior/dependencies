@@ -7,6 +7,7 @@
     <classNode dependClassName="jetbrains.mps.smodel.runtime.interpreted.BehaviorAspectInterpreted" />
     <classNode dependClassName="jetbrains.mps.template.behavior.MtlBuilder_BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.template.behavior.MtlForeachMacro_BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.template.behavior.MtlForeachVar_BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.template.behavior.MtlIfMacro_BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.template.behavior.MtlLibrary_BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.template.behavior.MtlNewNodeType_BehaviorDescriptor" />
@@ -37,6 +38,16 @@
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="jetbrains.mps.template.behavior.MtlNodeMacro_BehaviorDescriptor" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="jetbrains.mps.template.behavior.MtlForeachVar_BehaviorDescriptor" file="MtlForeachVar_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.INamedConcept_Behavior" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.INamedConcept_BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.smodel.SNode" />
+    <classNode extendsClassName="java.lang.Cloneable" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="jetbrains.mps.template.behavior.MtlIfMacro_BehaviorDescriptor" file="MtlIfMacro_BehaviorDescriptor.java">

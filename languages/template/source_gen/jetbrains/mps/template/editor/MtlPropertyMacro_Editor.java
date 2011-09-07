@@ -62,6 +62,7 @@ public class MtlPropertyMacro_Editor extends DefaultNodeEditor {
       style.set(StyleAttributes.TEXT_COLOR, MPSColors.DARK_MAGENTA);
       style.set(StyleAttributes.FONT_STYLE, MPSFonts.BOLD);
       style.set(StyleAttributes.PUNCTUATION_RIGHT, true);
+      style.set(StyleAttributes.BACKGROUND_COLOR, MPSColors.WHITE);
     }
     delete_propMacro.setCellActions(editorCell, node, editorContext);
     editorCell.setDefaultText("");
@@ -76,6 +77,7 @@ public class MtlPropertyMacro_Editor extends DefaultNodeEditor {
       style.set(StyleAttributes.TEXT_COLOR, MPSColors.DARK_MAGENTA);
       style.set(StyleAttributes.FONT_STYLE, MPSFonts.BOLD);
       style.set(StyleAttributes.PUNCTUATION_LEFT, true);
+      style.set(StyleAttributes.BACKGROUND_COLOR, MPSColors.WHITE);
     }
     delete_propMacro.setCellActions(editorCell, node, editorContext);
     editorCell.setDefaultText("");
@@ -102,6 +104,10 @@ public class MtlPropertyMacro_Editor extends DefaultNodeEditor {
     provider.setNoTargetText("<no query>");
     EditorCell editorCell;
     editorCell = provider.createEditorCell(editorContext);
+    {
+      Style style = editorCell.getStyle();
+      style.set(StyleAttributes.BACKGROUND_COLOR, MPSColors.WHITE);
+    }
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
     Class attributeKind = provider.getRoleAttributeClass();

@@ -12,8 +12,9 @@
   <unitInfo fileName="MtlNewNodeType_BehaviorDescriptor.java" startLine="8" startPosition="0" endLine="21" endPosition="0" unitName="jetbrains.mps.template.behavior.MtlNewNodeType_BehaviorDescriptor" />
   <unitInfo fileName="MtlTemplate_BehaviorDescriptor.java" startLine="9" startPosition="0" endLine="22" endPosition="0" unitName="jetbrains.mps.template.behavior.MtlTemplate_BehaviorDescriptor" />
   <unitInfo fileName="MtlBuilder_BehaviorDescriptor.java" startLine="9" startPosition="0" endLine="22" endPosition="0" unitName="jetbrains.mps.template.behavior.MtlBuilder_BehaviorDescriptor" />
+  <unitInfo fileName="MtlForeachVar_BehaviorDescriptor.java" startLine="10" startPosition="0" endLine="23" endPosition="0" unitName="jetbrains.mps.template.behavior.MtlForeachVar_BehaviorDescriptor" />
   <unitInfo fileName="MtlLibrary_BehaviorDescriptor.java" startLine="10" startPosition="0" endLine="23" endPosition="0" unitName="jetbrains.mps.template.behavior.MtlLibrary_BehaviorDescriptor" />
-  <unitInfo fileName="BehaviorAspectDescriptor.java" startLine="9" startPosition="0" endLine="44" endPosition="0" unitName="jetbrains.mps.template.behavior.BehaviorAspectDescriptor" />
+  <unitInfo fileName="BehaviorAspectDescriptor.java" startLine="9" startPosition="0" endLine="46" endPosition="0" unitName="jetbrains.mps.template.behavior.BehaviorAspectDescriptor" />
   <root nodeId="3373821274546492153">
     <nodeInfo nodeId="3373821274546492164" fileName="MtlTemplate_Behavior.java" startLine="15" startPosition="80" endLine="16" endPosition="191" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
     <nodeInfo nodeId="3373821274546514745" fileName="MtlTemplate_Behavior.java" startLine="17" startPosition="65" endLine="18" endPosition="69" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />

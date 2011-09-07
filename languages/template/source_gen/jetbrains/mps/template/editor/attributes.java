@@ -27,6 +27,8 @@ public class attributes extends EditorCellKeyMap {
     this.putAction("ctrl+shift", "VK_M", action);
     action = new attributes.attributes_Action2();
     this.putAction("ctrl+shift", "VK_M", action);
+    action = new attributes.attributes_Action3();
+    this.putAction("ctrl+shift", "VK_M", action);
   }
 
   public static class attributes_Action0 extends EditorCellKeyMapAction {
@@ -63,7 +65,7 @@ public class attributes extends EditorCellKeyMap {
       if (ListSequence.<SNode>fromList(selectedNodes).count() != 1) {
         return false;
       }
-      if (!(Queries.isInsideTemplate(node))) {
+      if (!(MacroQueries.isTemplateNode(node))) {
         return false;
       }
 
@@ -86,6 +88,55 @@ public class attributes extends EditorCellKeyMap {
 
   public static class attributes_Action1 extends EditorCellKeyMapAction {
     public attributes_Action1() {
+      this.setShownInPopupMenu(true);
+    }
+
+    public String getDescriptionText() {
+      return "add node macro";
+    }
+
+    public boolean isMenuAlwaysShown() {
+      return false;
+    }
+
+    public boolean canExecute(final KeyEvent keyEvent, final EditorContext editorContext) {
+      EditorCell contextCell = editorContext.getContextCell();
+      if ((contextCell == null)) {
+        return false;
+      }
+      SNode contextNode = contextCell.getSNode();
+      if (contextNode == null) {
+        return false;
+      }
+      return this.canExecute_internal(keyEvent, editorContext, contextNode, this.getSelectedNodes(editorContext));
+    }
+
+    public void execute(final KeyEvent keyEvent, final EditorContext editorContext) {
+      EditorCell contextCell = editorContext.getContextCell();
+      this.execute_internal(keyEvent, editorContext, contextCell.getSNode(), this.getSelectedNodes(editorContext));
+    }
+
+    private boolean canExecute_internal(final KeyEvent keyEvent, final EditorContext editorContext, final SNode node, final List<SNode> selectedNodes) {
+      if (ListSequence.<SNode>fromList(selectedNodes).count() != 1) {
+        return false;
+      }
+      if (!(MacroQueries.isTemplateNode(node))) {
+        return false;
+      }
+      return true;
+    }
+
+    private void execute_internal(final KeyEvent keyEvent, final EditorContext editorContext, final SNode node, final List<SNode> selectedNodes) {
+      MacroQueries.addNodeMacro(node);
+    }
+
+    public String getKeyStroke() {
+      return "ctrl shift M";
+    }
+  }
+
+  public static class attributes_Action2 extends EditorCellKeyMapAction {
+    public attributes_Action2() {
       this.setShownInPopupMenu(true);
     }
 
@@ -118,15 +169,15 @@ public class attributes extends EditorCellKeyMap {
       if (ListSequence.<SNode>fromList(selectedNodes).count() != 1) {
         return false;
       }
-      if (!(Queries.isInsideTemplate(node))) {
+      if (!(MacroQueries.isTemplateNode(node))) {
         return false;
       }
       EditorCell cell = editorContext.getSelectedCell();
-      String linkRole = Queries.getEditedLinkRole(cell);
+      String linkRole = MacroQueries.getEditedLinkRole(cell);
       if (linkRole != null) {
         return false;
       }
-      String propertyName = Queries.getEditedPropertyName(cell);
+      String propertyName = MacroQueries.getEditedPropertyName(cell);
       if (propertyName == null) {
         return false;
       }
@@ -135,7 +186,7 @@ public class attributes extends EditorCellKeyMap {
     }
 
     private void execute_internal(final KeyEvent keyEvent, final EditorContext editorContext, final SNode node, final List<SNode> selectedNodes) {
-      String propertyName = Queries.getEditedPropertyName(editorContext.getSelectedCell());
+      String propertyName = MacroQueries.getEditedPropertyName(editorContext.getSelectedCell());
       SNode propertyMacro = SNodeFactoryOperations.setNewAttribute(node, new IAttributeDescriptor.PropertyAttribute(SConceptOperations.findConceptDeclaration("jetbrains.mps.template.structure.MtlPropertyMacro"), propertyName), "jetbrains.mps.template.structure.MtlPropertyMacro");
 
       editorContext.selectAndSetCaret(propertyMacro, 0);
@@ -146,8 +197,8 @@ public class attributes extends EditorCellKeyMap {
     }
   }
 
-  public static class attributes_Action2 extends EditorCellKeyMapAction {
-    public attributes_Action2() {
+  public static class attributes_Action3 extends EditorCellKeyMapAction {
+    public attributes_Action3() {
       this.setShownInPopupMenu(true);
     }
 
@@ -180,25 +231,25 @@ public class attributes extends EditorCellKeyMap {
       if (ListSequence.<SNode>fromList(selectedNodes).count() != 1) {
         return false;
       }
-      if (!(Queries.isInsideTemplate(node))) {
+      if (!(MacroQueries.isTemplateNode(node))) {
         return false;
       }
       EditorCell cell = editorContext.getSelectedCell();
       if (cell == null) {
         return false;
       }
-      String linkRole = Queries.getEditedLinkRole(cell);
+      String linkRole = MacroQueries.getEditedLinkRole(cell);
       if (linkRole == null) {
         return false;
       }
-      SNode referentNode = Queries.getEditedLinkReferentNode(cell);
+      SNode referentNode = MacroQueries.getEditedLinkReferentNode(cell);
       return AttributeOperations.getAttribute(referentNode, new IAttributeDescriptor.LinkAttribute(SConceptOperations.findConceptDeclaration("jetbrains.mps.template.structure.MtlReferenceMacro"), linkRole)) == null;
     }
 
     private void execute_internal(final KeyEvent keyEvent, final EditorContext editorContext, final SNode node, final List<SNode> selectedNodes) {
       EditorCell cell = editorContext.getSelectedCell();
-      String linkRole = Queries.getEditedLinkRole(cell);
-      SNode referentNode = Queries.getEditedLinkReferentNode(cell);
+      String linkRole = MacroQueries.getEditedLinkRole(cell);
+      SNode referentNode = MacroQueries.getEditedLinkReferentNode(cell);
       SNodeFactoryOperations.setNewAttribute(referentNode, new IAttributeDescriptor.LinkAttribute(SConceptOperations.findConceptDeclaration("jetbrains.mps.template.structure.MtlReferenceMacro"), linkRole), "jetbrains.mps.template.structure.MtlReferenceMacro");
     }
 
