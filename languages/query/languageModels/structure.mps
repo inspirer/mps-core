@@ -235,6 +235,9 @@
       <property name="name" nameId="tpck.1169194664001" value="MqlListLiteral" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="6762883159245048012" resolveInfo="MqlExpression" />
     </node>
+    <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="5433095484313879184">
+      <property name="name" nameId="tpck.1169194664001" value="MqlScopeProvider" />
+    </node>
   </roots>
   <root id="6762883159245048009">
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="212212067812118826">
@@ -261,6 +264,9 @@
     </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="1992172484410518820">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="1992172484410508056" resolveInfo="MqlParametersContainer" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5433095484313947202">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="5433095484313879184" resolveInfo="MqlScopeProvider" />
     </node>
   </root>
   <root id="6762883159245048011">
@@ -593,6 +599,9 @@
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="6762883159245048632">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.1169194658468" resolveInfo="INamedConcept" />
     </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5433095484313947517">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="5433095484313879184" resolveInfo="MqlScopeProvider" />
+    </node>
   </root>
   <root id="6762883159245048635">
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="6762883159245086405">
@@ -634,6 +643,9 @@
     </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="1992172484410518821">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="1992172484410508056" resolveInfo="MqlParametersContainer" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7934151313360407975">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="5433095484313879184" resolveInfo="MqlScopeProvider" />
     </node>
   </root>
   <root id="5322644393894740272">
@@ -804,5 +816,6 @@
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
     </node>
   </root>
+  <root id="5433095484313879184" />
 </model>
 

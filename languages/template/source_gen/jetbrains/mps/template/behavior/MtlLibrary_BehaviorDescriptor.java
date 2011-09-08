@@ -4,11 +4,17 @@ package jetbrains.mps.template.behavior;
 
 import jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor;
 import jetbrains.mps.lang.core.behavior.INamedConcept_BehaviorDescriptor;
+import jetbrains.mps.query.behavior.MqlScopeProvider_BehaviorDescriptor;
+import jetbrains.mps.query.runtime.QueryScope;
 import jetbrains.mps.smodel.SNode;
 import jetbrains.mps.lang.core.behavior.INamedConcept_Behavior;
 
-public class MtlLibrary_BehaviorDescriptor extends BaseConcept_BehaviorDescriptor implements INamedConcept_BehaviorDescriptor {
+public class MtlLibrary_BehaviorDescriptor extends BaseConcept_BehaviorDescriptor implements INamedConcept_BehaviorDescriptor, MqlScopeProvider_BehaviorDescriptor {
   public MtlLibrary_BehaviorDescriptor() {
+  }
+
+  public QueryScope virtual_getScope_5433095484313879207(SNode thisNode, SNode kind, String childRole) {
+    return MtlLibrary_Behavior.virtual_getScope_5433095484313879207(thisNode, kind, childRole);
   }
 
   public String virtual_getFqName_1213877404258(SNode thisNode) {

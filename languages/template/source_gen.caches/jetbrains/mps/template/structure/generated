@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="-6mkppk8bcxdnb51v23djijyckk5a9er">
+<dependencies version="2" modelHash="827pvmjy4e9aok3dwbc4e23r1z2ptxg">
   <dep model="f:java_stub#37a3367b-1fb2-44d8-aa6b-18075e74e003#jetbrains.mps.smodel(MPS.Classpath/jetbrains.mps.smodel@java_stub)" />
   <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
   <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
@@ -15,7 +15,7 @@
   <dep model="r:00000000-0000-4000-0000-011c895903ac(jetbrains.mps.baseLanguageInternal.structure)" />
   <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" />
   <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" />
-  <dep model="r:f9198ffd-e084-425c-aa82-f2db8289f5eb(jetbrains.mps.query.structure)" hash="af1l17b0e1b6ro8j9ho709kv73bfb5u" />
+  <dep model="r:f9198ffd-e084-425c-aa82-f2db8289f5eb(jetbrains.mps.query.structure)" hash="90jbaelfcmeomvum1y3h9yc85bdb1s0" />
   <common hash="-545kw2sbvc4uevp4qp0kclq9gl8rdv5" dependsOnNodes="true">
     <dep root="212212067811886747" />
     <dep root="212212067811886750" />
@@ -45,7 +45,7 @@
     <file name="StructureAspectDescriptor.java" />
     <file name="Template_Language.java" />
   </common>
-  <source id="212212067811886747" name="MtlLibrary" hash="-4s4a4a0unzkps007fu1ih2yehlm6hk9">
+  <source id="212212067811886747" name="MtlLibrary" hash="-7291e5mzgm9ezz4l7vbbsxh3qi35f2e">
     <dep root="212212067812118741" />
     <dep root="8585534596770839433" />
     <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
@@ -59,9 +59,10 @@
     <dep model="r:00000000-0000-4000-0000-011c895903ac(jetbrains.mps.baseLanguageInternal.structure)" />
     <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" />
     <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" />
+    <dep model="r:f9198ffd-e084-425c-aa82-f2db8289f5eb(jetbrains.mps.query.structure)" />
     <file name="MtlLibrary.java" />
   </source>
-  <source id="212212067811886750" name="MtlBuilder" hash="-4zd7ziigq7xi5m1qy23vwa8hj2hh3h4">
+  <source id="212212067811886750" name="MtlBuilder" hash="-6o6bdti8nctopzyviy74bd138z9jfju">
     <dep root="212212067812118741" />
     <dep root="212212067812118743" />
     <dep root="8585534596770839433" />
@@ -81,7 +82,7 @@
     <dep model="r:f9198ffd-e084-425c-aa82-f2db8289f5eb(jetbrains.mps.query.structure)" />
     <file name="MtlBuilder.java" />
   </source>
-  <source id="212212067811886751" name="MtlTemplate" hash="-4slbsc2zpjdpn51pgstcn8yrqzc8xk5">
+  <source id="212212067811886751" name="MtlTemplate" hash="-8o8f9haa6td4l5fj7t6adn4d2cl9eck">
     <dep root="212212067812118741" />
     <dep root="212212067812118743" />
     <dep root="8585534596770839433" />

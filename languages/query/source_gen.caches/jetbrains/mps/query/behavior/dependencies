@@ -143,13 +143,18 @@
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="jetbrains.mps.query.behavior.MqlClosure_Behavior" file="MqlClosure_Behavior.java">
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ISelector" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.IWhereFilter" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
     <classNode dependClassName="jetbrains.mps.query.behavior.MqlExpression_Behavior" />
+    <classNode dependClassName="jetbrains.mps.query.runtime.QueryScope" />
+    <classNode dependClassName="jetbrains.mps.query.runtime.SimpleRoleScope" />
     <classNode dependClassName="jetbrains.mps.smodel.SNode" />
   </dependency>
   <dependency className="jetbrains.mps.query.behavior.MqlClosure_BehaviorDescriptor" file="MqlClosure_BehaviorDescriptor.java">
@@ -158,6 +163,8 @@
     <classNode dependClassName="jetbrains.mps.query.behavior.MqlClosure_Behavior" />
     <classNode dependClassName="jetbrains.mps.query.behavior.MqlExpression_BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.query.behavior.MqlParametersContainer_BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.query.behavior.MqlScopeProvider_BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.query.runtime.QueryScope" />
     <classNode dependClassName="jetbrains.mps.smodel.SNode" />
     <classNode extendsClassName="java.lang.Cloneable" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
@@ -509,12 +516,26 @@
     <classNode dependClassName="jetbrains.mps.smodel.SNode" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
+  <dependency className="jetbrains.mps.query.behavior.MqlPackage_Behavior" file="MqlPackage_Behavior.java">
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
+    <classNode dependClassName="jetbrains.mps.query.runtime.QueryScope" />
+    <classNode dependClassName="jetbrains.mps.query.runtime.SimpleRoleScope" />
+    <classNode dependClassName="jetbrains.mps.smodel.SNode" />
+  </dependency>
   <dependency className="jetbrains.mps.query.behavior.MqlPackage_BehaviorDescriptor" file="MqlPackage_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.lang.core.behavior.INamedConcept_Behavior" />
     <classNode dependClassName="jetbrains.mps.lang.core.behavior.INamedConcept_BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.query.behavior.MqlPackage_Behavior" />
+    <classNode dependClassName="jetbrains.mps.query.behavior.MqlScopeProvider_BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.query.runtime.QueryScope" />
     <classNode dependClassName="jetbrains.mps.smodel.SNode" />
     <classNode extendsClassName="java.lang.Cloneable" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
@@ -592,11 +613,16 @@
     <classNode dependClassName="java.lang.Class" />
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
     <classNode dependClassName="jetbrains.mps.query.behavior.MqlExpression_Behavior" />
     <classNode dependClassName="jetbrains.mps.query.runtime.EvaluationContext" />
     <classNode dependClassName="jetbrains.mps.query.runtime.EvaluationEnvironment" />
+    <classNode dependClassName="jetbrains.mps.query.runtime.QueryScope" />
+    <classNode dependClassName="jetbrains.mps.query.runtime.SimpleRoleScope" />
     <classNode dependClassName="jetbrains.mps.smodel.SNode" />
     <classNode dependClassName="jetbrains.mps.smodel.behaviour.BehaviorManager" />
     <classNode dependClassName="jetbrains.mps.smodel.structure.BehaviorDescriptor" />
@@ -611,11 +637,29 @@
     <classNode dependClassName="jetbrains.mps.lang.core.behavior.INamedConcept_BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.query.behavior.MqlParametersContainer_BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.query.behavior.MqlQuery_Behavior" />
+    <classNode dependClassName="jetbrains.mps.query.behavior.MqlScopeProvider_BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.query.runtime.EvaluationContext" />
     <classNode dependClassName="jetbrains.mps.query.runtime.EvaluationEnvironment" />
+    <classNode dependClassName="jetbrains.mps.query.runtime.QueryScope" />
     <classNode dependClassName="jetbrains.mps.smodel.SNode" />
     <classNode extendsClassName="java.lang.Cloneable" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="jetbrains.mps.query.behavior.MqlScopeProvider_Behavior" file="MqlScopeProvider_Behavior.java">
+    <classNode dependClassName="java.lang.Class" />
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+    <classNode dependClassName="jetbrains.mps.query.runtime.QueryScope" />
+    <classNode dependClassName="jetbrains.mps.smodel.SNode" />
+    <classNode dependClassName="jetbrains.mps.smodel.behaviour.BehaviorManager" />
+    <classNode dependClassName="jetbrains.mps.smodel.structure.BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.smodel.structure.ConceptRegistry" />
+  </dependency>
+  <dependency className="jetbrains.mps.query.behavior.MqlScopeProvider_BehaviorDescriptor" file="MqlScopeProvider_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.query.runtime.QueryScope" />
+    <classNode dependClassName="jetbrains.mps.smodel.SNode" />
   </dependency>
   <dependency className="jetbrains.mps.query.behavior.MqlSelector_Behavior" file="MqlSelector_Behavior.java">
     <classNode dependClassName="java.lang.Class" />

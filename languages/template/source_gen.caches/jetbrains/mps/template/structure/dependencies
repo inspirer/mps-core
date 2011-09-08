@@ -9,6 +9,7 @@
     <classNode dependClassName="jetbrains.mps.query.structure.MqlExpression" />
     <classNode dependClassName="jetbrains.mps.query.structure.MqlNodeType" />
     <classNode dependClassName="jetbrains.mps.query.structure.MqlParameter" />
+    <classNode dependClassName="jetbrains.mps.query.structure.MqlScopeProvider" />
     <classNode dependClassName="jetbrains.mps.smodel.SModel" />
     <classNode dependClassName="jetbrains.mps.smodel.SModelUtil_new" />
     <classNode dependClassName="jetbrains.mps.smodel.SNode" />
@@ -61,6 +62,7 @@
     <classNode dependClassName="jetbrains.mps.lang.core.structure.Attribute" />
     <classNode dependClassName="jetbrains.mps.lang.core.structure.INamedConcept" />
     <classNode dependClassName="jetbrains.mps.project.GlobalScope" />
+    <classNode dependClassName="jetbrains.mps.query.structure.MqlScopeProvider" />
     <classNode dependClassName="jetbrains.mps.smodel.SModel" />
     <classNode dependClassName="jetbrains.mps.smodel.SModelUtil_new" />
     <classNode dependClassName="jetbrains.mps.smodel.SNode" />
@@ -139,6 +141,7 @@
     <classNode dependClassName="jetbrains.mps.query.structure.MqlAssignment" />
     <classNode dependClassName="jetbrains.mps.query.structure.MqlNodeType" />
     <classNode dependClassName="jetbrains.mps.query.structure.MqlParameter" />
+    <classNode dependClassName="jetbrains.mps.query.structure.MqlScopeProvider" />
     <classNode dependClassName="jetbrains.mps.smodel.SModel" />
     <classNode dependClassName="jetbrains.mps.smodel.SModelUtil_new" />
     <classNode dependClassName="jetbrains.mps.smodel.SNode" />

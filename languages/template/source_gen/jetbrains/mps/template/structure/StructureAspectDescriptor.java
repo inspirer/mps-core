@@ -16,7 +16,7 @@ public class StructureAspectDescriptor implements jetbrains.mps.smodel.runtime.S
   public ConceptDescriptor getDescriptor(String conceptFqName) {
     switch (Arrays.binarySearch(stringSwitchCases_1htk8d_a0a0a, conceptFqName)) {
       case 0:
-        return new CompiledConceptDescriptor("jetbrains.mps.template.structure.MtlBuilder", "jetbrains.mps.lang.core.structure.BaseConcept", false, new String[]{"jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.template.structure.MtlEntity"}, new String[]{}, new String[]{});
+        return new CompiledConceptDescriptor("jetbrains.mps.template.structure.MtlBuilder", "jetbrains.mps.lang.core.structure.BaseConcept", false, new String[]{"jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.template.structure.MtlEntity", "jetbrains.mps.query.structure.MqlScopeProvider"}, new String[]{}, new String[]{});
       case 1:
         return new CompiledConceptDescriptor("jetbrains.mps.template.structure.MtlEntity", null, true, new String[]{"jetbrains.mps.lang.core.structure.INamedConcept", "jetbrains.mps.query.structure.MqlParametersContainer"}, new String[]{}, new String[]{});
       case 2:
@@ -26,7 +26,7 @@ public class StructureAspectDescriptor implements jetbrains.mps.smodel.runtime.S
       case 4:
         return new CompiledConceptDescriptor("jetbrains.mps.template.structure.MtlIfMacro", "jetbrains.mps.template.structure.MtlNodeMacro", false, new String[]{"jetbrains.mps.template.structure.MtlNodeMacro"}, new String[]{"multiline"}, new String[]{});
       case 5:
-        return new CompiledConceptDescriptor("jetbrains.mps.template.structure.MtlLibrary", "jetbrains.mps.lang.core.structure.BaseConcept", false, new String[]{"jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept"}, new String[]{}, new String[]{});
+        return new CompiledConceptDescriptor("jetbrains.mps.template.structure.MtlLibrary", "jetbrains.mps.lang.core.structure.BaseConcept", false, new String[]{"jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept", "jetbrains.mps.query.structure.MqlScopeProvider"}, new String[]{}, new String[]{});
       case 6:
         return new CompiledConceptDescriptor("jetbrains.mps.template.structure.MtlNewNodeType", "jetbrains.mps.query.structure.MqlType", false, new String[]{"jetbrains.mps.query.structure.MqlType"}, new String[]{}, new String[]{"concept"});
       case 7:
@@ -40,7 +40,7 @@ public class StructureAspectDescriptor implements jetbrains.mps.smodel.runtime.S
       case 11:
         return new CompiledConceptDescriptor("jetbrains.mps.template.structure.MtlReferenceMacro", "jetbrains.mps.lang.core.structure.LinkAttribute", false, new String[]{"jetbrains.mps.lang.core.structure.LinkAttribute"}, new String[]{}, new String[]{});
       case 12:
-        return new CompiledConceptDescriptor("jetbrains.mps.template.structure.MtlTemplate", "jetbrains.mps.lang.core.structure.BaseConcept", false, new String[]{"jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.template.structure.MtlEntity"}, new String[]{}, new String[]{});
+        return new CompiledConceptDescriptor("jetbrains.mps.template.structure.MtlTemplate", "jetbrains.mps.lang.core.structure.BaseConcept", false, new String[]{"jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.template.structure.MtlEntity", "jetbrains.mps.query.structure.MqlScopeProvider"}, new String[]{}, new String[]{});
       case 13:
         return new CompiledConceptDescriptor("jetbrains.mps.template.structure.MtlTemplateRoot", "jetbrains.mps.lang.core.structure.NodeAttribute", false, new String[]{"jetbrains.mps.lang.core.structure.NodeAttribute"}, new String[]{}, new String[]{});
       default:

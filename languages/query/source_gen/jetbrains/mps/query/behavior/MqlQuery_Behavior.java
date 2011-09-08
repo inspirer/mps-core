@@ -7,9 +7,14 @@ import jetbrains.mps.query.runtime.EvaluationEnvironment;
 import jetbrains.mps.query.runtime.EvaluationContext;
 import java.io.Serializable;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.query.runtime.QueryScope;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
+import jetbrains.mps.query.runtime.SimpleRoleScope;
+import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.smodel.structure.BehaviorDescriptor;
 import jetbrains.mps.smodel.structure.ConceptRegistry;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.smodel.behaviour.BehaviorManager;
 
 public class MqlQuery_Behavior {
@@ -25,6 +30,17 @@ public class MqlQuery_Behavior {
   public static Object virtual_evaluate_1671449901154581077(SNode thisNode, EvaluationEnvironment env, EvaluationContext context, Object[] arguments) {
 
 
+    return null;
+  }
+
+  public static QueryScope virtual_getScope_5433095484313879207(SNode thisNode, SNode kind, String childRole) {
+    if (kind == SConceptOperations.findConceptDeclaration("jetbrains.mps.query.structure.MqlParameter")) {
+      return new SimpleRoleScope(thisNode, SLinkOperations.findLinkDeclaration("jetbrains.mps.query.structure.MqlParametersContainer", "parameters"), new _FunctionTypes._return_P1_E0<String, SNode>() {
+        public String invoke(SNode n) {
+          return SPropertyOperations.getString(SNodeOperations.cast(n, "jetbrains.mps.lang.core.structure.INamedConcept"), "name");
+        }
+      });
+    }
     return null;
   }
 

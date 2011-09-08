@@ -9,6 +9,10 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import jetbrains.mps.internal.collections.runtime.ISelector;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import jetbrains.mps.query.runtime.QueryScope;
+import jetbrains.mps.query.runtime.SimpleRoleScope;
+import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 
 public class MqlClosure_Behavior {
   public static void init(SNode thisNode) {
@@ -29,5 +33,16 @@ public class MqlClosure_Behavior {
     }
     SLinkOperations.setTarget(ftype, "returnType", MqlExpression_Behavior.call_getType_228266671027861783(SLinkOperations.getTarget(thisNode, "body", true)), true);
     return ftype;
+  }
+
+  public static QueryScope virtual_getScope_5433095484313879207(SNode thisNode, SNode kind, String childRole) {
+    if (kind == SConceptOperations.findConceptDeclaration("jetbrains.mps.query.structure.MqlParameter")) {
+      return new SimpleRoleScope(thisNode, SLinkOperations.findLinkDeclaration("jetbrains.mps.query.structure.MqlParametersContainer", "parameters"), new _FunctionTypes._return_P1_E0<String, SNode>() {
+        public String invoke(SNode n) {
+          return SPropertyOperations.getString(SNodeOperations.cast(n, "jetbrains.mps.lang.core.structure.INamedConcept"), "name");
+        }
+      });
+    }
+    return null;
   }
 }

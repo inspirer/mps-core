@@ -89,6 +89,9 @@
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="212212067811886748">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.1169194658468" resolveInfo="INamedConcept" />
     </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5433095484313962443">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="bwy9.5433095484313879184" resolveInfo="MqlScopeProvider" />
+    </node>
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="212212067811886749">
       <property name="value" nameId="tpce.1105725733873" value="Templates library" />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
@@ -108,6 +111,9 @@
     </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="212212067812118744">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="212212067812118741" resolveInfo="MtlEntity" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7934151313360422972">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="bwy9.5433095484313879184" resolveInfo="MqlScopeProvider" />
     </node>
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="212212067812118761">
       <property name="value" nameId="tpce.1105725733873" value="builder" />
@@ -135,6 +141,9 @@
     </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="212212067812118748">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="212212067812118741" resolveInfo="MtlEntity" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7934151313360422970">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="bwy9.5433095484313879184" resolveInfo="MqlScopeProvider" />
     </node>
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="212212067812118760">
       <property name="value" nameId="tpce.1105725733873" value="template" />

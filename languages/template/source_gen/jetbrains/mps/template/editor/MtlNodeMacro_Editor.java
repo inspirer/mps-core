@@ -15,6 +15,8 @@ import jetbrains.mps.nodeEditor.MPSFonts;
 import jetbrains.mps.nodeEditor.cellMenu.CompositeSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.BasicCellContext;
 import jetbrains.mps.nodeEditor.cellMenu.SubstituteInfoPart;
+import jetbrains.mps.smodel.IOperationContext;
+import jetbrains.mps.nodeEditor.EditorManager;
 import java.util.List;
 import jetbrains.mps.smodel.action.INodeSubstituteAction;
 import jetbrains.mps.nodeEditor.cellMenu.CellContext;
@@ -28,7 +30,8 @@ public class MtlNodeMacro_Editor extends DefaultNodeEditor {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
     editorCell.setCellId("Collection_cthfdf_a");
     editorCell.addEditorCell(this.createConstant_cthfdf_a0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_cthfdf_b0(editorContext, node));
+    editorCell.addEditorCell(this.createAttributedNodeCell_cthfdf_b0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_cthfdf_c0(editorContext, node));
     return editorCell;
   }
 
@@ -47,15 +50,26 @@ public class MtlNodeMacro_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private EditorCell createConstant_cthfdf_b0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_cthfdf_c0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "\u00bb");
-    editorCell.setCellId("Constant_cthfdf_b0");
+    editorCell.setCellId("Constant_cthfdf_c0");
     {
       Style style = editorCell.getStyle();
       style.set(StyleAttributes.TEXT_COLOR, MPSColors.red);
       style.set(StyleAttributes.FONT_STYLE, MPSFonts.BOLD);
     }
     editorCell.setDefaultText("");
+    return editorCell;
+  }
+
+  private EditorCell createAttributedNodeCell_cthfdf_b0(EditorContext editorContext, SNode node) {
+    IOperationContext opContext = editorContext.getOperationContext();
+    EditorManager manager = EditorManager.getInstanceFromContext(opContext);
+    EditorCell editorCell = manager.getCurrentAttributedNodeCell();
+    {
+      Style style = editorCell.getStyle();
+      style.set(StyleAttributes.DRAW_BRACKETS, true);
+    }
     return editorCell;
   }
 

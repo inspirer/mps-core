@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debugInfo>
   <unitInfo fileName="Query_Language.java" startLine="9" startPosition="0" endLine="16" endPosition="0" unitName="jetbrains.mps.query.structure.Query_Language" />
-  <unitInfo fileName="StructureAspectDescriptor.java" startLine="10" startPosition="0" endLine="101" endPosition="0" unitName="jetbrains.mps.query.structure.StructureAspectDescriptor" />
+  <unitInfo fileName="StructureAspectDescriptor.java" startLine="10" startPosition="0" endLine="103" endPosition="0" unitName="jetbrains.mps.query.structure.StructureAspectDescriptor" />
   <root nodeId="1992172484410508056">
     <nodeInfo nodeId="1992172484410508056" fileName="MqlParametersContainer.java" startLine="9" startPosition="62" endLine="10" endPosition="94" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="concept" />
     <nodeInfo nodeId="1992172484410508056" fileName="MqlParametersContainer.java" startLine="10" startPosition="94" endLine="11" endPosition="55" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="PARAMETERS" />
@@ -540,8 +540,12 @@
     <scopeInfo nodeId="5322644393894740272" fileName="MqlAssignment.java" startLine="90" startPosition="0" endLine="94" endPosition="0" />
     <unitInfo nodeId="5322644393894740272" fileName="MqlAssignment.java" startLine="14" startPosition="0" endLine="95" endPosition="0" unitName="jetbrains.mps.query.structure.MqlAssignment" />
   </root>
+  <root nodeId="5433095484313879184">
+    <nodeInfo nodeId="5433095484313879184" fileName="MqlScopeProvider.java" startLine="7" startPosition="56" endLine="8" endPosition="88" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="concept" />
+    <unitInfo nodeId="5433095484313879184" fileName="MqlScopeProvider.java" startLine="7" startPosition="0" endLine="10" endPosition="0" unitName="jetbrains.mps.query.structure.MqlScopeProvider" />
+  </root>
   <root nodeId="6762883159245048009">
-    <nodeInfo nodeId="6762883159245048009" fileName="MqlQuery.java" startLine="15" startPosition="92" endLine="16" endPosition="80" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="concept" />
+    <nodeInfo nodeId="6762883159245048009" fileName="MqlQuery.java" startLine="15" startPosition="110" endLine="16" endPosition="80" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="concept" />
     <nodeInfo nodeId="6762883159245048009" fileName="MqlQuery.java" startLine="16" startPosition="80" endLine="17" endPosition="43" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="NAME" />
     <nodeInfo nodeId="6762883159245048009" fileName="MqlQuery.java" startLine="17" startPosition="43" endLine="18" endPosition="68" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="SHORT_DESCRIPTION" />
     <nodeInfo nodeId="6762883159245048009" fileName="MqlQuery.java" startLine="18" startPosition="68" endLine="19" endPosition="45" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="ALIAS" />
@@ -1526,7 +1530,7 @@
     <unitInfo nodeId="6762883159245048091" fileName="MqlNodeType.java" startLine="11" startPosition="0" endLine="35" endPosition="0" unitName="jetbrains.mps.query.structure.MqlNodeType" />
   </root>
   <root nodeId="6762883159245048630">
-    <nodeInfo nodeId="6762883159245048630" fileName="MqlPackage.java" startLine="15" startPosition="70" endLine="16" endPosition="82" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="concept" />
+    <nodeInfo nodeId="6762883159245048630" fileName="MqlPackage.java" startLine="15" startPosition="88" endLine="16" endPosition="82" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="concept" />
     <nodeInfo nodeId="6762883159245048630" fileName="MqlPackage.java" startLine="16" startPosition="82" endLine="17" endPosition="43" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="NAME" />
     <nodeInfo nodeId="6762883159245048630" fileName="MqlPackage.java" startLine="17" startPosition="43" endLine="18" endPosition="68" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="SHORT_DESCRIPTION" />
     <nodeInfo nodeId="6762883159245048630" fileName="MqlPackage.java" startLine="18" startPosition="68" endLine="19" endPosition="45" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="ALIAS" />
@@ -1752,7 +1756,7 @@
     <unitInfo nodeId="6762883159245086411" fileName="MqlLinkSelector.java" startLine="11" startPosition="0" endLine="35" endPosition="0" unitName="jetbrains.mps.query.structure.MqlLinkSelector" />
   </root>
   <root nodeId="6762883159245086414">
-    <nodeInfo nodeId="6762883159245086414" fileName="MqlClosure.java" startLine="13" startPosition="81" endLine="14" endPosition="82" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="concept" />
+    <nodeInfo nodeId="6762883159245086414" fileName="MqlClosure.java" startLine="13" startPosition="99" endLine="14" endPosition="82" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="concept" />
     <nodeInfo nodeId="6762883159245086414" fileName="MqlClosure.java" startLine="14" startPosition="82" endLine="15" endPosition="68" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="SHORT_DESCRIPTION" />
     <nodeInfo nodeId="6762883159245086414" fileName="MqlClosure.java" startLine="15" startPosition="68" endLine="16" endPosition="45" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="ALIAS" />
     <nodeInfo nodeId="6762883159245086414" fileName="MqlClosure.java" startLine="16" startPosition="45" endLine="17" endPosition="64" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="VIRTUAL_PACKAGE" />

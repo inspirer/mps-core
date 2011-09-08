@@ -4,13 +4,18 @@ package jetbrains.mps.query.behavior;
 
 import jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor;
 import jetbrains.mps.lang.core.behavior.INamedConcept_BehaviorDescriptor;
+import jetbrains.mps.query.runtime.QueryScope;
 import jetbrains.mps.smodel.SNode;
 import jetbrains.mps.query.runtime.EvaluationEnvironment;
 import jetbrains.mps.query.runtime.EvaluationContext;
 import jetbrains.mps.lang.core.behavior.INamedConcept_Behavior;
 
-public class MqlQuery_BehaviorDescriptor extends BaseConcept_BehaviorDescriptor implements INamedConcept_BehaviorDescriptor, MqlParametersContainer_BehaviorDescriptor {
+public class MqlQuery_BehaviorDescriptor extends BaseConcept_BehaviorDescriptor implements INamedConcept_BehaviorDescriptor, MqlParametersContainer_BehaviorDescriptor, MqlScopeProvider_BehaviorDescriptor {
   public MqlQuery_BehaviorDescriptor() {
+  }
+
+  public QueryScope virtual_getScope_5433095484313879207(SNode thisNode, SNode kind, String childRole) {
+    return MqlQuery_Behavior.virtual_getScope_5433095484313879207(thisNode, kind, childRole);
   }
 
   public Object virtual_evaluate_1671449901154581077(SNode thisNode, EvaluationEnvironment env, EvaluationContext context, Object[] arguments) {

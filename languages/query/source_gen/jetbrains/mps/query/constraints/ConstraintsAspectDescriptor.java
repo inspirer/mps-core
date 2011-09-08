@@ -7,7 +7,7 @@ import java.util.Arrays;
 import jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor;
 
 public class ConstraintsAspectDescriptor implements jetbrains.mps.smodel.runtime.ConstraintsAspectDescriptor {
-  private static String[] stringSwitchCases_2qnle6_a0a0a = new String[]{"jetbrains.mps.query.structure.MqlAssignment", "jetbrains.mps.query.structure.MqlCollectionSelectorVar", "jetbrains.mps.query.structure.MqlCollectionSelectorVarRef", "jetbrains.mps.query.structure.MqlLinkSelector", "jetbrains.mps.query.structure.MqlParameter", "jetbrains.mps.query.structure.MqlParameterReference", "jetbrains.mps.query.structure.MqlPropertySelector", "jetbrains.mps.query.structure.MqlQuery", "jetbrains.mps.query.structure.MqlVarReference"};
+  private static String[] stringSwitchCases_2qnle6_a0a0a = new String[]{"jetbrains.mps.query.structure.MqlAssignment", "jetbrains.mps.query.structure.MqlCollectionSelectorVar", "jetbrains.mps.query.structure.MqlCollectionSelectorVarRef", "jetbrains.mps.query.structure.MqlLinkSelector", "jetbrains.mps.query.structure.MqlNoContextQueryCall", "jetbrains.mps.query.structure.MqlParameter", "jetbrains.mps.query.structure.MqlParameterReference", "jetbrains.mps.query.structure.MqlPropertySelector", "jetbrains.mps.query.structure.MqlQuery", "jetbrains.mps.query.structure.MqlVarReference"};
 
   public ConstraintsAspectDescriptor() {
   }
@@ -16,22 +16,24 @@ public class ConstraintsAspectDescriptor implements jetbrains.mps.smodel.runtime
     switch (Arrays.binarySearch(stringSwitchCases_2qnle6_a0a0a, fqName)) {
       case 3:
         return new MqlLinkSelector_Constraints();
-      case 6:
-        return new MqlPropertySelector_Constraints();
-      case 8:
-        return new MqlVarReference_Constraints();
       case 7:
+        return new MqlPropertySelector_Constraints();
+      case 9:
+        return new MqlVarReference_Constraints();
+      case 8:
         return new MqlQuery_Constraints();
-      case 5:
+      case 6:
         return new MqlParameterReference_Constraints();
       case 0:
         return new MqlAssignment_Constraints();
-      case 4:
+      case 5:
         return new MqlParameter_Constraints();
       case 2:
         return new MqlCollectionSelectorVarRef_Constraints();
       case 1:
         return new MqlCollectionSelectorVar_Constraints();
+      case 4:
+        return new MqlNoContextQueryCall_Constraints();
       default:
         // todo: illegal in some cases? 
         return new BaseConstraintsDescriptor(fqName);

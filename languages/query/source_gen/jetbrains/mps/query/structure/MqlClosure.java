@@ -10,7 +10,7 @@ import jetbrains.mps.smodel.SModel;
 import jetbrains.mps.smodel.SModelUtil_new;
 import jetbrains.mps.project.GlobalScope;
 
-public class MqlClosure extends MqlExpression implements MqlParametersContainer {
+public class MqlClosure extends MqlExpression implements MqlParametersContainer, MqlScopeProvider {
   public static final String concept = "jetbrains.mps.query.structure.MqlClosure";
   public static final String SHORT_DESCRIPTION = "shortDescription";
   public static final String ALIAS = "alias";
