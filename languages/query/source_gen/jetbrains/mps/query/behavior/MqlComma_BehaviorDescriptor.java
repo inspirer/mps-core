@@ -5,8 +5,9 @@ package jetbrains.mps.query.behavior;
 import jetbrains.mps.smodel.SNode;
 import jetbrains.mps.query.runtime.EvaluationEnvironment;
 import jetbrains.mps.query.runtime.EvaluationContext;
+import jetbrains.mps.query.runtime.QueryScope;
 
-public class MqlComma_BehaviorDescriptor extends MqlBinaryExpr_BehaviorDescriptor {
+public class MqlComma_BehaviorDescriptor extends MqlBinaryExpr_BehaviorDescriptor implements MqlScopeProvider_BehaviorDescriptor {
   public MqlComma_BehaviorDescriptor() {
   }
 
@@ -20,6 +21,10 @@ public class MqlComma_BehaviorDescriptor extends MqlBinaryExpr_BehaviorDescripto
 
   public Object virtual_evaluate_1671449901154581105(SNode thisNode, EvaluationEnvironment env, EvaluationContext context) {
     return MqlComma_Behavior.virtual_evaluate_1671449901154581105(thisNode, env, context);
+  }
+
+  public QueryScope virtual_getScope_5433095484313879207(SNode thisNode, SNode kind, SNode child) {
+    return MqlComma_Behavior.virtual_getScope_5433095484313879207(thisNode, kind, child);
   }
 
   public int virtual_getAssociativity_5322644393894740267(SNode thisNode) {

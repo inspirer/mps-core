@@ -13,8 +13,8 @@ public class MtlLibrary_BehaviorDescriptor extends BaseConcept_BehaviorDescripto
   public MtlLibrary_BehaviorDescriptor() {
   }
 
-  public QueryScope virtual_getScope_5433095484313879207(SNode thisNode, SNode kind, String childRole) {
-    return MtlLibrary_Behavior.virtual_getScope_5433095484313879207(thisNode, kind, childRole);
+  public QueryScope virtual_getScope_5433095484313879207(SNode thisNode, SNode kind, SNode child) {
+    return MtlLibrary_Behavior.virtual_getScope_5433095484313879207(thisNode, kind, child);
   }
 
   public String virtual_getFqName_1213877404258(SNode thisNode) {

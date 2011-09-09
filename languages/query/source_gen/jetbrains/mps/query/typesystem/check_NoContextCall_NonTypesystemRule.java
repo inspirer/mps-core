@@ -21,16 +21,16 @@ public class check_NoContextCall_NonTypesystemRule extends AbstractNonTypesystem
   }
 
   public void applyRule(final SNode mqlNoContextQueryCall, final TypeCheckingContext typeCheckingContext, IsApplicableStatus status) {
-    if (ListSequence.fromList(SLinkOperations.getTargets(mqlNoContextQueryCall, "arguments", true)).count() != ListSequence.fromList(SLinkOperations.getTargets(SLinkOperations.getTarget(mqlNoContextQueryCall, "query", false), "parameters", true)).count()) {
+    if (ListSequence.<SNode>fromList(SLinkOperations.getTargets(mqlNoContextQueryCall, "arguments", true)).count() != ListSequence.<SNode>fromList(SLinkOperations.getTargets(SLinkOperations.getTarget(mqlNoContextQueryCall, "query", false), "parameters", true)).count()) {
       {
         MessageTarget errorTarget = new NodeMessageTarget();
         IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(mqlNoContextQueryCall, "wrong number of arguments", "r:efe0605f-fbe2-49dd-8c71-c87a67c06b2c(jetbrains.mps.query.typesystem)", "2852142168179589893", null, errorTarget);
       }
       return;
     }
-    for (int i = 0; i < ListSequence.fromList(SLinkOperations.getTargets(mqlNoContextQueryCall, "arguments", true)).count(); i++) {
-      SNode argument = ListSequence.fromList(SLinkOperations.getTargets(mqlNoContextQueryCall, "arguments", true)).getElement(i);
-      SNode param = ListSequence.fromList(SLinkOperations.getTargets(SLinkOperations.getTarget(mqlNoContextQueryCall, "query", false), "parameters", true)).getElement(i);
+    for (int i = 0; i < ListSequence.<SNode>fromList(SLinkOperations.getTargets(mqlNoContextQueryCall, "arguments", true)).count(); i++) {
+      SNode argument = ListSequence.<SNode>fromList(SLinkOperations.getTargets(mqlNoContextQueryCall, "arguments", true)).getElement(i);
+      SNode param = ListSequence.<SNode>fromList(SLinkOperations.getTargets(SLinkOperations.getTarget(mqlNoContextQueryCall, "query", false), "parameters", true)).getElement(i);
       if (!(MqlType_Behavior.call_isSubtypeOf_2852142168179579064(MqlExpression_Behavior.call_getType_228266671027861783(argument), SLinkOperations.getTarget(param, "type", true)))) {
         {
           MessageTarget errorTarget = new NodeMessageTarget();

@@ -6,6 +6,12 @@ import jetbrains.mps.smodel.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.query.runtime.EvaluationEnvironment;
 import jetbrains.mps.query.runtime.EvaluationContext;
+import jetbrains.mps.query.runtime.QueryScope;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import jetbrains.mps.query.runtime.SingleElementScope;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import jetbrains.mps.query.runtime.CompositeScope;
 
 public class MqlComma_Behavior {
   public static void init(SNode thisNode) {
@@ -26,5 +32,18 @@ public class MqlComma_Behavior {
   public static Object virtual_evaluate_1671449901154581105(SNode thisNode, EvaluationEnvironment env, EvaluationContext context) {
     env.evaluate(SLinkOperations.getTarget(thisNode, "left", true), context, true);
     return env.evaluate(SLinkOperations.getTarget(thisNode, "right", true), context, true);
+  }
+
+  public static QueryScope virtual_getScope_5433095484313879207(SNode thisNode, SNode kind, SNode child) {
+    if (kind == SConceptOperations.findConceptDeclaration("jetbrains.mps.query.structure.MqlVariable")) {
+      if (child == SLinkOperations.getTarget(thisNode, "right", true) && SNodeOperations.isInstanceOf(SLinkOperations.getTarget(thisNode, "left", true), "jetbrains.mps.query.structure.MqlAssignment")) {
+        SNode var = SLinkOperations.getTarget(SNodeOperations.cast(SLinkOperations.getTarget(thisNode, "left", true), "jetbrains.mps.query.structure.MqlAssignment"), "var", true);
+        if ((var != null)) {
+          QueryScope scope = new SingleElementScope(var, SPropertyOperations.getString(var, "name"));
+          return CompositeScope.createComposite(scope, QueryScope.getScope(SNodeOperations.getParent(thisNode), thisNode, kind));
+        }
+      }
+    }
+    return null;
   }
 }

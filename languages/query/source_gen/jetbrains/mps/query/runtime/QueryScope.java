@@ -18,23 +18,31 @@ public abstract class QueryScope {
 
   public abstract List<SNode> getAvailableElements(String prefix);
 
-  public static QueryScope getScope(SNode node, String role, SNode kind) {
+  /**
+   * * 
+   */
+  public static QueryScope getScope(SNode node, SNode fromChild, SNode kind) {
     SNode curr = node;
-    String currentRole = role;
+    SNode prev = fromChild;
     while (curr != null) {
       if (SNodeOperations.isInstanceOf(curr, "jetbrains.mps.query.structure.MqlScopeProvider")) {
-        QueryScope scope = MqlScopeProvider_Behavior.call_getScope_5433095484313879207(SNodeOperations.cast(curr, "jetbrains.mps.query.structure.MqlScopeProvider"), kind, currentRole);
+        QueryScope scope = MqlScopeProvider_Behavior.call_getScope_5433095484313879207(SNodeOperations.cast(curr, "jetbrains.mps.query.structure.MqlScopeProvider"), kind, prev);
         if (scope != null) {
           return scope;
         }
       }
-      currentRole = (SNodeOperations.isAttribute(curr) ?
-        SNodeOperations.getParent(curr).getRole_() :
-        curr.getRole_()
-      );
+      prev = curr;
       curr = parent(curr);
     }
     return null;
+  }
+
+  /**
+   * * get scope for smart reference, when node doesn't exist yet
+   */
+  public static QueryScope getScope(SNode node, String role, int index, SNode kind) {
+    // TODO 
+    return getScope(node, null, kind);
   }
 
   private static SNode parent(SNode n) {

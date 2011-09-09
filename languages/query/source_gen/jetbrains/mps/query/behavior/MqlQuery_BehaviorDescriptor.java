@@ -14,8 +14,8 @@ public class MqlQuery_BehaviorDescriptor extends BaseConcept_BehaviorDescriptor 
   public MqlQuery_BehaviorDescriptor() {
   }
 
-  public QueryScope virtual_getScope_5433095484313879207(SNode thisNode, SNode kind, String childRole) {
-    return MqlQuery_Behavior.virtual_getScope_5433095484313879207(thisNode, kind, childRole);
+  public QueryScope virtual_getScope_5433095484313879207(SNode thisNode, SNode kind, SNode child) {
+    return MqlQuery_Behavior.virtual_getScope_5433095484313879207(thisNode, kind, child);
   }
 
   public Object virtual_evaluate_1671449901154581077(SNode thisNode, EvaluationEnvironment env, EvaluationContext context, Object[] arguments) {

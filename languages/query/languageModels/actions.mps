@@ -3489,11 +3489,10 @@
                   <node role="type" roleId="tpee.5680397130376446158" type="tp25.SNodeType" typeId="tp25.1138055754698" id="1992172484410604647">
                     <link role="concept" roleId="tp25.1138405853777" targetNodeId="bwy9.5322644393894740272" resolveInfo="MqlAssignment" />
                   </node>
-                  <node role="initializer" roleId="tpee.1068431790190" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="1992172484410604649">
-                    <node role="creator" roleId="tpee.1145553007750" type="tp25.SNodeCreator" typeId="tp25.1180636770613" id="1992172484410604651">
-                      <node role="createdType" roleId="tp25.1180636770616" type="tp25.SNodeType" typeId="tp25.1138055754698" id="1992172484410604652">
-                        <link role="concept" roleId="tp25.1138405853777" targetNodeId="bwy9.5322644393894740272" resolveInfo="MqlAssignment" />
-                      </node>
+                  <node role="initializer" roleId="tpee.1068431790190" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3435983127247168068">
+                    <node role="operand" roleId="tpee.1197027771414" type="tpcw.ConceptFunctionParameter_model" typeId="tpcw.1161622665029" id="3435983127247168067" />
+                    <node role="operation" roleId="tpee.1197027833540" type="tpdg.NF_Model_CreateNewNodeOperation" typeId="tpdg.5480835971642155304" id="3435983127247168072">
+                      <link role="concept" roleId="tp25.1143235391024" targetNodeId="bwy9.5322644393894740272" resolveInfo="MqlAssignment" />
                     </node>
                   </node>
                 </node>
@@ -3502,11 +3501,16 @@
                 <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="1992172484410604665">
                   <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="1992172484410609716">
                     <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="1992172484410609727">
-                      <node role="lValue" roleId="tpee.1068498886295" type="tpee.DotExpression" typeId="tpee.1197027756228" id="1992172484410609718">
-                        <node role="operand" roleId="tpee.1197027771414" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="1992172484410609717">
-                          <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="1992172484410604646" resolveInfo="result" />
+                      <node role="lValue" roleId="tpee.1068498886295" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3435983127247168074">
+                        <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="1992172484410609718">
+                          <node role="operand" roleId="tpee.1197027771414" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="1992172484410609717">
+                            <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="1992172484410604646" resolveInfo="result" />
+                          </node>
+                          <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="3435983127247168073">
+                            <link role="link" roleId="tp25.1138056516764" targetNodeId="bwy9.3435983127247056179" />
+                          </node>
                         </node>
-                        <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="1992172484410609723">
+                        <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="3435983127247168078">
                           <link role="property" roleId="tp25.1138056395725" targetNodeId="tpck.1169194664001" resolveInfo="name" />
                         </node>
                       </node>

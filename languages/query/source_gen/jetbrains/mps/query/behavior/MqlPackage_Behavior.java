@@ -15,7 +15,7 @@ public class MqlPackage_Behavior {
   public static void init(SNode thisNode) {
   }
 
-  public static QueryScope virtual_getScope_5433095484313879207(SNode thisNode, SNode kind, String childRole) {
+  public static QueryScope virtual_getScope_5433095484313879207(SNode thisNode, SNode kind, SNode child) {
     if (kind == SConceptOperations.findConceptDeclaration("jetbrains.mps.query.structure.MqlQuery")) {
       return new SimpleRoleScope(thisNode, SLinkOperations.findLinkDeclaration("jetbrains.mps.query.structure.MqlPackage", "queries"), new _FunctionTypes._return_P1_E0<String, SNode>() {
         public String invoke(SNode n) {

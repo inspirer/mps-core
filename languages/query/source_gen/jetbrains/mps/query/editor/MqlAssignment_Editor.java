@@ -12,7 +12,6 @@ import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
 import jetbrains.mps.lang.editor.cellProviders.RefNodeCellProvider;
 import jetbrains.mps.smodel.IOperationContext;
 import jetbrains.mps.nodeEditor.EditorManager;
-import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
 
 public class MqlAssignment_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
@@ -22,7 +21,7 @@ public class MqlAssignment_Editor extends DefaultNodeEditor {
   private EditorCell createCollection_4rhh8b_a(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
     editorCell.setCellId("Collection_4rhh8b_a");
-    editorCell.addEditorCell(this.createProperty_4rhh8b_a0(editorContext, node));
+    editorCell.addEditorCell(this.createRefNode_4rhh8b_a0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_4rhh8b_b0(editorContext, node));
     editorCell.addEditorCell(this.createRefNode_4rhh8b_c0(editorContext, node));
     return editorCell;
@@ -36,10 +35,10 @@ public class MqlAssignment_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private EditorCell createRefNode_4rhh8b_c0(EditorContext editorContext, SNode node) {
+  private EditorCell createRefNode_4rhh8b_a0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new RefNodeCellProvider(node, editorContext);
-    provider.setRole("value");
-    provider.setNoTargetText("<no value>");
+    provider.setRole("var");
+    provider.setNoTargetText("<no var>");
     EditorCell editorCell;
     editorCell = provider.createEditorCell(editorContext);
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
@@ -53,13 +52,12 @@ public class MqlAssignment_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private EditorCell createProperty_4rhh8b_a0(EditorContext editorContext, SNode node) {
-    CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
-    provider.setRole("name");
-    provider.setNoTargetText("<no name>");
+  private EditorCell createRefNode_4rhh8b_c0(EditorContext editorContext, SNode node) {
+    CellProviderWithRole provider = new RefNodeCellProvider(node, editorContext);
+    provider.setRole("value");
+    provider.setNoTargetText("<no value>");
     EditorCell editorCell;
     editorCell = provider.createEditorCell(editorContext);
-    editorCell.setCellId("property_name");
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
     Class attributeKind = provider.getRoleAttributeClass();

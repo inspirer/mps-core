@@ -171,9 +171,9 @@
         <property name="name" nameId="tpck.1169194664001" value="kind" />
         <node role="type" roleId="tpee.5680397130376446158" type="tp25.SConceptType" typeId="tp25.1172420572800" id="7934151313360408040" />
       </node>
-      <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="7934151313360408041">
-        <property name="name" nameId="tpck.1169194664001" value="childRole" />
-        <node role="type" roleId="tpee.5680397130376446158" type="tpee.StringType" typeId="tpee.1225271177708" id="7934151313360408042" />
+      <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="3435983127247139191">
+        <property name="name" nameId="tpck.1169194664001" value="child" />
+        <node role="type" roleId="tpee.5680397130376446158" type="tp25.SNodeType" typeId="tp25.1138055754698" id="3435983127247139192" />
       </node>
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="7934151313360408043">
         <link role="classifier" roleId="tpee.1107535924139" targetNodeId="tcfh.5433095484313879188" resolveInfo="QueryScope" />
@@ -420,8 +420,8 @@
         <node role="type" roleId="tpee.5680397130376446158" type="tp25.SConceptType" typeId="tp25.1172420572800" id="5433095484313962451" />
       </node>
       <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="7934151313360314495">
-        <property name="name" nameId="tpck.1169194664001" value="childRole" />
-        <node role="type" roleId="tpee.5680397130376446158" type="tpee.StringType" typeId="tpee.1225271177708" id="7934151313360314497" />
+        <property name="name" nameId="tpck.1169194664001" value="child" />
+        <node role="type" roleId="tpee.5680397130376446158" type="tp25.SNodeType" typeId="tp25.1138055754698" id="3435983127247139190" />
       </node>
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="5433095484313962452">
         <link role="classifier" roleId="tpee.1107535924139" targetNodeId="tcfh.5433095484313879188" resolveInfo="QueryScope" />
@@ -491,9 +491,9 @@
         <property name="name" nameId="tpck.1169194664001" value="kind" />
         <node role="type" roleId="tpee.5680397130376446158" type="tp25.SConceptType" typeId="tp25.1172420572800" id="7934151313360407981" />
       </node>
-      <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="7934151313360407982">
-        <property name="name" nameId="tpck.1169194664001" value="childRole" />
-        <node role="type" roleId="tpee.5680397130376446158" type="tpee.StringType" typeId="tpee.1225271177708" id="7934151313360407983" />
+      <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="3435983127247139189">
+        <property name="name" nameId="tpck.1169194664001" value="child" />
+        <node role="type" roleId="tpee.5680397130376446158" type="tp25.SNodeType" typeId="tp25.1138055754698" id="3435983127247139179" />
       </node>
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="7934151313360407984">
         <link role="classifier" roleId="tpee.1107535924139" targetNodeId="tcfh.5433095484313879188" resolveInfo="QueryScope" />

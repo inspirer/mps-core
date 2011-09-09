@@ -81,5 +81,13 @@
     <classNode dependClassName="jetbrains.mps.smodel.SNode" />
     <classNode extendsClassName="jetbrains.mps.query.runtime.QueryScope" />
   </dependency>
+  <dependency className="jetbrains.mps.query.runtime.SingleElementScope" file="SingleElementScope.java">
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.ArrayList" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
+    <classNode dependClassName="jetbrains.mps.smodel.SNode" />
+    <classNode extendsClassName="jetbrains.mps.query.runtime.QueryScope" />
+  </dependency>
 </dependenciesRoot>
 

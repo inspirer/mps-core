@@ -77,12 +77,12 @@ public class QueriesGenerated {
   }
 
   public static List<INodeSubstituteAction> nodeSubstituteActionsBuilder_ActionsFactory_MqlExpression_228266671027634830(final IOperationContext operationContext, final NodeSubstituteActionsFactoryContext _context) {
-    List<INodeSubstituteAction> result = ListSequence.fromList(new ArrayList<INodeSubstituteAction>());
+    List<INodeSubstituteAction> result = ListSequence.<INodeSubstituteAction>fromList(new ArrayList<INodeSubstituteAction>());
     {
       SNode outputConcept = SConceptOperations.findConceptDeclaration("jetbrains.mps.query.structure.MqlIntLiteral");
       SNode childConcept = (SNode) _context.getChildConcept();
       if (outputConcept == null || SConceptOperations.isSuperConceptOf(childConcept, NameUtil.nodeFQName(outputConcept))) {
-        ListSequence.fromList(result).addElement(new DefaultSimpleSubstituteAction(outputConcept, _context.getParentNode(), _context.getCurrentTargetNode(), _context.getChildSetter(), operationContext.getScope()) {
+        ListSequence.<INodeSubstituteAction>fromList(result).addElement(new DefaultSimpleSubstituteAction(outputConcept, _context.getParentNode(), _context.getCurrentTargetNode(), _context.getChildSetter(), operationContext.getScope()) {
           public SNode createChildNode(Object parameterObject, SModel model, String pattern) {
             SNode intConst = SNodeFactoryOperations.createNewNode(model, "jetbrains.mps.query.structure.MqlIntLiteral", null);
             try {
@@ -126,7 +126,7 @@ public class QueriesGenerated {
       SNode outputConcept = SConceptOperations.findConceptDeclaration("jetbrains.mps.query.structure.MqlBoolLiteral");
       SNode childConcept = (SNode) _context.getChildConcept();
       if (outputConcept == null || SConceptOperations.isSuperConceptOf(childConcept, NameUtil.nodeFQName(outputConcept))) {
-        ListSequence.fromList(result).addElement(new DefaultSimpleSubstituteAction(outputConcept, _context.getParentNode(), _context.getCurrentTargetNode(), _context.getChildSetter(), operationContext.getScope()) {
+        ListSequence.<INodeSubstituteAction>fromList(result).addElement(new DefaultSimpleSubstituteAction(outputConcept, _context.getParentNode(), _context.getCurrentTargetNode(), _context.getChildSetter(), operationContext.getScope()) {
           public SNode createChildNode(Object parameterObject, SModel model, String pattern) {
             SNode result = SNodeFactoryOperations.createNewNode(model, "jetbrains.mps.query.structure.MqlBoolLiteral", null);
             SPropertyOperations.set(result, "value", "" + (true));
@@ -151,7 +151,7 @@ public class QueriesGenerated {
       SNode outputConcept = SConceptOperations.findConceptDeclaration("jetbrains.mps.query.structure.MqlBoolLiteral");
       SNode childConcept = (SNode) _context.getChildConcept();
       if (outputConcept == null || SConceptOperations.isSuperConceptOf(childConcept, NameUtil.nodeFQName(outputConcept))) {
-        ListSequence.fromList(result).addElement(new DefaultSimpleSubstituteAction(outputConcept, _context.getParentNode(), _context.getCurrentTargetNode(), _context.getChildSetter(), operationContext.getScope()) {
+        ListSequence.<INodeSubstituteAction>fromList(result).addElement(new DefaultSimpleSubstituteAction(outputConcept, _context.getParentNode(), _context.getCurrentTargetNode(), _context.getChildSetter(), operationContext.getScope()) {
           public SNode createChildNode(Object parameterObject, SModel model, String pattern) {
             SNode result = SNodeFactoryOperations.createNewNode(model, "jetbrains.mps.query.structure.MqlBoolLiteral", null);
             SPropertyOperations.set(result, "value", "" + (false));
@@ -176,7 +176,7 @@ public class QueriesGenerated {
   }
 
   public static List<INodeSubstituteAction> nodeSubstituteActionsBuilder_ActionsFactory_MqlParameter_228266671027817939(final IOperationContext operationContext, final NodeSubstituteActionsFactoryContext _context) {
-    List<INodeSubstituteAction> result = ListSequence.fromList(new ArrayList<INodeSubstituteAction>());
+    List<INodeSubstituteAction> result = ListSequence.<INodeSubstituteAction>fromList(new ArrayList<INodeSubstituteAction>());
     {
       SNode wrappedConcept = SConceptOperations.findConceptDeclaration("jetbrains.mps.query.structure.MqlType");
       IChildNodeSetter setter = new AbstractChildNodeSetter() {
@@ -200,18 +200,18 @@ public class QueriesGenerated {
           }
         }
       };
-      ListSequence.fromList(result).addSequence(ListSequence.fromList(ModelActions.createChildSubstituteActions(_context.getParentNode(), _context.getCurrentTargetNode(), wrappedConcept, setter, operationContext)));
+      ListSequence.<INodeSubstituteAction>fromList(result).addSequence(ListSequence.<INodeSubstituteAction>fromList(ModelActions.createChildSubstituteActions(_context.getParentNode(), _context.getCurrentTargetNode(), wrappedConcept, setter, operationContext)));
     }
     return result;
   }
 
   public static List<INodeSubstituteAction> nodeSubstituteActionsBuilder_ActionsFactory_MqlExpression_7352592509980791678(final IOperationContext operationContext, final NodeSubstituteActionsFactoryContext _context) {
-    List<INodeSubstituteAction> result = ListSequence.fromList(new ArrayList<INodeSubstituteAction>());
+    List<INodeSubstituteAction> result = ListSequence.<INodeSubstituteAction>fromList(new ArrayList<INodeSubstituteAction>());
     {
       SNode outputConcept = SConceptOperations.findConceptDeclaration("jetbrains.mps.query.structure.MqlUnary");
       SNode childConcept = (SNode) _context.getChildConcept();
       if (outputConcept == null || SConceptOperations.isSuperConceptOf(childConcept, NameUtil.nodeFQName(outputConcept))) {
-        ListSequence.fromList(result).addElement(new DefaultSimpleSubstituteAction(outputConcept, _context.getParentNode(), _context.getCurrentTargetNode(), _context.getChildSetter(), operationContext.getScope()) {
+        ListSequence.<INodeSubstituteAction>fromList(result).addElement(new DefaultSimpleSubstituteAction(outputConcept, _context.getParentNode(), _context.getCurrentTargetNode(), _context.getChildSetter(), operationContext.getScope()) {
           public SNode createChildNode(Object parameterObject, SModel model, String pattern) {
             SNode mqlUnary = SNodeFactoryOperations.createNewNode(model, "jetbrains.mps.query.structure.MqlUnary", null);
             SPropertyOperations.set(mqlUnary, "kind", "2");
@@ -236,7 +236,7 @@ public class QueriesGenerated {
       SNode outputConcept = SConceptOperations.findConceptDeclaration("jetbrains.mps.query.structure.MqlUnary");
       SNode childConcept = (SNode) _context.getChildConcept();
       if (outputConcept == null || SConceptOperations.isSuperConceptOf(childConcept, NameUtil.nodeFQName(outputConcept))) {
-        ListSequence.fromList(result).addElement(new DefaultSimpleSubstituteAction(outputConcept, _context.getParentNode(), _context.getCurrentTargetNode(), _context.getChildSetter(), operationContext.getScope()) {
+        ListSequence.<INodeSubstituteAction>fromList(result).addElement(new DefaultSimpleSubstituteAction(outputConcept, _context.getParentNode(), _context.getCurrentTargetNode(), _context.getChildSetter(), operationContext.getScope()) {
           public SNode createChildNode(Object parameterObject, SModel model, String pattern) {
             SNode mqlUnary = SNodeFactoryOperations.createNewNode(model, "jetbrains.mps.query.structure.MqlUnary", null);
             SPropertyOperations.set(mqlUnary, "kind", "1");
@@ -261,17 +261,17 @@ public class QueriesGenerated {
   }
 
   public static List<INodeSubstituteAction> nodeSubstituteActionsBuilder_ActionsFactory_MqlExpression_1992172484410604549(final IOperationContext operationContext, final NodeSubstituteActionsFactoryContext _context) {
-    List<INodeSubstituteAction> result = ListSequence.fromList(new ArrayList<INodeSubstituteAction>());
+    List<INodeSubstituteAction> result = ListSequence.<INodeSubstituteAction>fromList(new ArrayList<INodeSubstituteAction>());
     {
       SNode outputConcept = SConceptOperations.findConceptDeclaration("jetbrains.mps.query.structure.MqlAssignment");
       SNode childConcept = (SNode) _context.getChildConcept();
       if (outputConcept == null || SConceptOperations.isSuperConceptOf(childConcept, NameUtil.nodeFQName(outputConcept))) {
-        ListSequence.fromList(result).addElement(new DefaultSimpleSubstituteAction(outputConcept, _context.getParentNode(), _context.getCurrentTargetNode(), _context.getChildSetter(), operationContext.getScope()) {
+        ListSequence.<INodeSubstituteAction>fromList(result).addElement(new DefaultSimpleSubstituteAction(outputConcept, _context.getParentNode(), _context.getCurrentTargetNode(), _context.getChildSetter(), operationContext.getScope()) {
           public SNode createChildNode(Object parameterObject, SModel model, String pattern) {
             Matcher _matcher_x583g4_a1a0a0a0a0a2a0a1a01;
-            SNode result = SConceptOperations.createNewNode("jetbrains.mps.query.structure.MqlAssignment", null);
+            SNode result = SNodeFactoryOperations.createNewNode(model, "jetbrains.mps.query.structure.MqlAssignment", null);
             if ((_matcher_x583g4_a1a0a0a0a0a2a0a1a01 = REGEXP_x583g4_a0a0a2a0a0a0a0a2a0a1a01.matcher(pattern)).find()) {
-              SPropertyOperations.set(result, "name", _matcher_x583g4_a1a0a0a0a0a2a0a1a01.group(1));
+              SPropertyOperations.set(SLinkOperations.getTarget(result, "var", true), "name", _matcher_x583g4_a1a0a0a0a0a2a0a1a01.group(1));
             }
             return result;
           }
@@ -302,7 +302,7 @@ public class QueriesGenerated {
       SNode outputConcept = SConceptOperations.findConceptDeclaration("jetbrains.mps.query.structure.MqlAssignment");
       SNode childConcept = (SNode) _context.getChildConcept();
       if (outputConcept == null || SConceptOperations.isSuperConceptOf(childConcept, NameUtil.nodeFQName(outputConcept))) {
-        ListSequence.fromList(result).addElement(new DefaultSimpleSubstituteAction(outputConcept, _context.getParentNode(), _context.getCurrentTargetNode(), _context.getChildSetter(), operationContext.getScope()) {
+        ListSequence.<INodeSubstituteAction>fromList(result).addElement(new DefaultSimpleSubstituteAction(outputConcept, _context.getParentNode(), _context.getCurrentTargetNode(), _context.getChildSetter(), operationContext.getScope()) {
           public SNode createChildNode(Object parameterObject, SModel model, String pattern) {
             SNode result = SConceptOperations.createNewNode("jetbrains.mps.query.structure.MqlAssignment", null);
             return result;
@@ -326,7 +326,7 @@ public class QueriesGenerated {
   }
 
   public static List<INodeSubstituteAction> nodeSubstituteActionsBuilder_ActionsFactory_MqlSelector_5280308256730689786(final IOperationContext operationContext, final NodeSubstituteActionsFactoryContext _context) {
-    List<INodeSubstituteAction> result = ListSequence.fromList(new ArrayList<INodeSubstituteAction>());
+    List<INodeSubstituteAction> result = ListSequence.<INodeSubstituteAction>fromList(new ArrayList<INodeSubstituteAction>());
     {
       SNode outputConcept = SConceptOperations.findConceptDeclaration("jetbrains.mps.query.structure.MqlCollectionSelector");
       SNode childConcept = (SNode) _context.getChildConcept();
@@ -339,7 +339,7 @@ public class QueriesGenerated {
         Iterable<SNode> queryResult = (Iterable) calc.calculate();
         if (queryResult != null) {
           for (final SNode item : queryResult) {
-            ListSequence.fromList(result).addElement(new DefaultChildNodeSubstituteAction(outputConcept, item, _context.getParentNode(), _context.getCurrentTargetNode(), _context.getChildSetter(), operationContext.getScope()) {
+            ListSequence.<INodeSubstituteAction>fromList(result).addElement(new DefaultChildNodeSubstituteAction(outputConcept, item, _context.getParentNode(), _context.getCurrentTargetNode(), _context.getChildSetter(), operationContext.getScope()) {
               public SNode createChildNode(Object parameterObject, SModel model, String pattern) {
                 SNode nn = SNodeFactoryOperations.createNewNode(model, "jetbrains.mps.query.structure.MqlCollectionSelector", null);
                 SPropertyOperations.set(nn, "kind", "" + SEnumOperations.getEnumMemberValue((item)));
@@ -348,7 +348,7 @@ public class QueriesGenerated {
               }
 
               public String getMatchingText(String pattern) {
-                return SPropertyOperations.getString(ListSequence.fromList(SLinkOperations.getTargets(SNodeOperations.getNode("r:f9198ffd-e084-425c-aa82-f2db8289f5eb(jetbrains.mps.query.structure)", "5280308256730467483"), "member", true)).findFirst(new IWhereFilter<SNode>() {
+                return SPropertyOperations.getString(ListSequence.<SNode>fromList(SLinkOperations.getTargets(SNodeOperations.getNode("r:f9198ffd-e084-425c-aa82-f2db8289f5eb(jetbrains.mps.query.structure)", "5280308256730467483"), "member", true)).findFirst(new IWhereFilter<SNode>() {
                   public boolean accept(SNode it) {
                     return SPropertyOperations.getString(it, "internalValue").equals(SEnumOperations.getEnumMemberValue((item)));
                   }
@@ -375,7 +375,7 @@ public class QueriesGenerated {
         Iterable<SNode> queryResult = (Iterable) calc.calculate();
         if (queryResult != null) {
           for (final SNode item : queryResult) {
-            ListSequence.fromList(result).addElement(new DefaultChildNodeSubstituteAction(outputConcept, item, _context.getParentNode(), _context.getCurrentTargetNode(), _context.getChildSetter(), operationContext.getScope()) {
+            ListSequence.<INodeSubstituteAction>fromList(result).addElement(new DefaultChildNodeSubstituteAction(outputConcept, item, _context.getParentNode(), _context.getCurrentTargetNode(), _context.getChildSetter(), operationContext.getScope()) {
               public SNode createChildNode(Object parameterObject, SModel model, String pattern) {
                 SNode nn = SNodeFactoryOperations.createNewNode(model, "jetbrains.mps.query.structure.MqlCollectionProperty", null);
                 SPropertyOperations.set(nn, "kind", "" + SEnumOperations.getEnumMemberValue((item)));
@@ -383,7 +383,7 @@ public class QueriesGenerated {
               }
 
               public String getMatchingText(String pattern) {
-                return SPropertyOperations.getString(ListSequence.fromList(SLinkOperations.getTargets(SNodeOperations.getNode("r:f9198ffd-e084-425c-aa82-f2db8289f5eb(jetbrains.mps.query.structure)", "5280308256730609807"), "member", true)).findFirst(new IWhereFilter<SNode>() {
+                return SPropertyOperations.getString(ListSequence.<SNode>fromList(SLinkOperations.getTargets(SNodeOperations.getNode("r:f9198ffd-e084-425c-aa82-f2db8289f5eb(jetbrains.mps.query.structure)", "5280308256730609807"), "member", true)).findFirst(new IWhereFilter<SNode>() {
                   public boolean accept(SNode it) {
                     return SPropertyOperations.getString(it, "internalValue").equals(SEnumOperations.getEnumMemberValue((item)));
                   }
@@ -402,10 +402,10 @@ public class QueriesGenerated {
   }
 
   public static List<INodeSubstituteAction> sideTransform_ActionsFactory_MqlExpression_2268293679705627817(final IOperationContext operationContext, final SideTransformActionsBuilderContext _context) {
-    List<INodeSubstituteAction> result = ListSequence.fromList(new ArrayList<INodeSubstituteAction>());
+    List<INodeSubstituteAction> result = ListSequence.<INodeSubstituteAction>fromList(new ArrayList<INodeSubstituteAction>());
     {
       SNode concept = SConceptOperations.findConceptDeclaration("jetbrains.mps.query.structure.MqlComma");
-      ListSequence.fromList(result).addElement(new AbstractSideTransformHintSubstituteAction(concept, _context.getSourceNode()) {
+      ListSequence.<INodeSubstituteAction>fromList(result).addElement(new AbstractSideTransformHintSubstituteAction(concept, _context.getSourceNode()) {
         public SNode doSubstitute(String pattern) {
           SNode to = SNodeFactoryOperations.createNewNode(_context.getModel(), "jetbrains.mps.query.structure.MqlComma", null);
           SNode current = _context.getSourceNode();
@@ -433,10 +433,10 @@ public class QueriesGenerated {
   }
 
   public static List<INodeSubstituteAction> sideTransform_ActionsFactory_MqlExpression_8205627927119749822(final IOperationContext operationContext, final SideTransformActionsBuilderContext _context) {
-    List<INodeSubstituteAction> result = ListSequence.fromList(new ArrayList<INodeSubstituteAction>());
+    List<INodeSubstituteAction> result = ListSequence.<INodeSubstituteAction>fromList(new ArrayList<INodeSubstituteAction>());
     {
       SNode concept = SConceptOperations.findConceptDeclaration("jetbrains.mps.query.structure.MqlComma");
-      ListSequence.fromList(result).addElement(new AbstractSideTransformHintSubstituteAction(concept, _context.getSourceNode()) {
+      ListSequence.<INodeSubstituteAction>fromList(result).addElement(new AbstractSideTransformHintSubstituteAction(concept, _context.getSourceNode()) {
         public SNode doSubstitute(String pattern) {
           SNode to = SNodeFactoryOperations.createNewNode(_context.getModel(), "jetbrains.mps.query.structure.MqlComma", null);
           SNode current = _context.getSourceNode();
@@ -464,10 +464,10 @@ public class QueriesGenerated {
   }
 
   public static List<INodeSubstituteAction> sideTransform_ActionsFactory_MqlComma_2852142168179409687(final IOperationContext operationContext, final SideTransformActionsBuilderContext _context) {
-    List<INodeSubstituteAction> result = ListSequence.fromList(new ArrayList<INodeSubstituteAction>());
+    List<INodeSubstituteAction> result = ListSequence.<INodeSubstituteAction>fromList(new ArrayList<INodeSubstituteAction>());
     {
       SNode concept = SConceptOperations.findConceptDeclaration("jetbrains.mps.query.structure.MqlComma");
-      ListSequence.fromList(result).addElement(new AbstractSideTransformHintSubstituteAction(concept, _context.getSourceNode()) {
+      ListSequence.<INodeSubstituteAction>fromList(result).addElement(new AbstractSideTransformHintSubstituteAction(concept, _context.getSourceNode()) {
         public SNode doSubstitute(String pattern) {
           SNode to = SNodeFactoryOperations.createNewNode(_context.getModel(), "jetbrains.mps.query.structure.MqlComma", null);
           SNode current = SLinkOperations.getTarget(_context.getSourceNode(), "left", true);
@@ -494,10 +494,10 @@ public class QueriesGenerated {
   }
 
   public static List<INodeSubstituteAction> sideTransform_ActionsFactory_MqlExpression_2059702675525956854(final IOperationContext operationContext, final SideTransformActionsBuilderContext _context) {
-    List<INodeSubstituteAction> result = ListSequence.fromList(new ArrayList<INodeSubstituteAction>());
+    List<INodeSubstituteAction> result = ListSequence.<INodeSubstituteAction>fromList(new ArrayList<INodeSubstituteAction>());
     {
       SNode concept = SConceptOperations.findConceptDeclaration("jetbrains.mps.query.structure.MqlTriplex");
-      ListSequence.fromList(result).addElement(new AbstractSideTransformHintSubstituteAction(concept, _context.getSourceNode()) {
+      ListSequence.<INodeSubstituteAction>fromList(result).addElement(new AbstractSideTransformHintSubstituteAction(concept, _context.getSourceNode()) {
         public SNode doSubstitute(String pattern) {
           SNode to = SNodeFactoryOperations.createNewNode(_context.getModel(), "jetbrains.mps.query.structure.MqlTriplex", null);
           SNode current = _context.getSourceNode();
@@ -524,10 +524,10 @@ public class QueriesGenerated {
   }
 
   public static List<INodeSubstituteAction> sideTransform_ActionsFactory_MqlExpression_2059702675525956872(final IOperationContext operationContext, final SideTransformActionsBuilderContext _context) {
-    List<INodeSubstituteAction> result = ListSequence.fromList(new ArrayList<INodeSubstituteAction>());
+    List<INodeSubstituteAction> result = ListSequence.<INodeSubstituteAction>fromList(new ArrayList<INodeSubstituteAction>());
     {
       SNode concept = SConceptOperations.findConceptDeclaration("jetbrains.mps.query.structure.MqlDotExpression");
-      ListSequence.fromList(result).addElement(new AbstractSideTransformHintSubstituteAction(concept, _context.getSourceNode()) {
+      ListSequence.<INodeSubstituteAction>fromList(result).addElement(new AbstractSideTransformHintSubstituteAction(concept, _context.getSourceNode()) {
         public SNode doSubstitute(String pattern) {
           SNode dotexpr = SNodeOperations.replaceWithAnother(_context.getSourceNode(), SNodeFactoryOperations.createNewNode(_context.getModel(), "jetbrains.mps.query.structure.MqlDotExpression", null));
           SLinkOperations.setTarget(dotexpr, "left", _context.getSourceNode(), true);
@@ -552,7 +552,7 @@ public class QueriesGenerated {
   }
 
   public static List<INodeSubstituteAction> sideTransform_ActionsFactory_MqlSelector_1197032086774(final IOperationContext operationContext, final SideTransformActionsBuilderContext _context) {
-    List<INodeSubstituteAction> result = ListSequence.fromList(new ArrayList<INodeSubstituteAction>());
+    List<INodeSubstituteAction> result = ListSequence.<INodeSubstituteAction>fromList(new ArrayList<INodeSubstituteAction>());
     {
       Calculable calc = new Calculable() {
         public Object calculate() {
@@ -560,13 +560,13 @@ public class QueriesGenerated {
         }
       };
       SNode node = (SNode) calc.calculate();
-      ListSequence.fromList(result).addSequence(ListSequence.fromList(ModelActions.createRightTransformHintSubstituteActions(node, CellSide.RIGHT, _context.getTransformationTag(), operationContext)));
+      ListSequence.<INodeSubstituteAction>fromList(result).addSequence(ListSequence.<INodeSubstituteAction>fromList(ModelActions.createRightTransformHintSubstituteActions(node, CellSide.RIGHT, _context.getTransformationTag(), operationContext)));
     }
     return result;
   }
 
   public static List<INodeSubstituteAction> sideTransform_ActionsFactory_MqlExpression_7352592509980787934(final IOperationContext operationContext, final SideTransformActionsBuilderContext _context) {
-    List<INodeSubstituteAction> result = ListSequence.fromList(new ArrayList<INodeSubstituteAction>());
+    List<INodeSubstituteAction> result = ListSequence.<INodeSubstituteAction>fromList(new ArrayList<INodeSubstituteAction>());
     {
       final SNode concept = SConceptOperations.findConceptDeclaration("jetbrains.mps.query.structure.MqlArithmetic");
       Calculable calculable = new Calculable() {
@@ -577,7 +577,7 @@ public class QueriesGenerated {
       Iterable<SNode> parameterObjects = (Iterable<SNode>) calculable.calculate();
       assert parameterObjects != null;
       for (final SNode item : parameterObjects) {
-        ListSequence.fromList(result).addElement(new AbstractSideTransformHintSubstituteAction(concept, item, _context.getSourceNode()) {
+        ListSequence.<INodeSubstituteAction>fromList(result).addElement(new AbstractSideTransformHintSubstituteAction(concept, item, _context.getSourceNode()) {
           public SNode doSubstitute(String pattern) {
             SNode result = SNodeFactoryOperations.createNewNode(_context.getModel(), "jetbrains.mps.query.structure.MqlArithmetic", _context.getSourceNode());
             SPropertyOperations.set(result, "kind", "" + SEnumOperations.getEnumMemberValue((item)));
@@ -588,7 +588,7 @@ public class QueriesGenerated {
           }
 
           public String getMatchingText(String text) {
-            return SPropertyOperations.getString(ListSequence.fromList(SLinkOperations.getTargets(SNodeOperations.getNode("r:f9198ffd-e084-425c-aa82-f2db8289f5eb(jetbrains.mps.query.structure)", "6762883159245048041"), "member", true)).findFirst(new IWhereFilter<SNode>() {
+            return SPropertyOperations.getString(ListSequence.<SNode>fromList(SLinkOperations.getTargets(SNodeOperations.getNode("r:f9198ffd-e084-425c-aa82-f2db8289f5eb(jetbrains.mps.query.structure)", "6762883159245048041"), "member", true)).findFirst(new IWhereFilter<SNode>() {
               public boolean accept(SNode it) {
                 return SPropertyOperations.getString(it, "internalValue").equals(SEnumOperations.getEnumMemberValue((item)));
               }
@@ -615,7 +615,7 @@ public class QueriesGenerated {
       Iterable<SNode> parameterObjects = (Iterable<SNode>) calculable.calculate();
       assert parameterObjects != null;
       for (final SNode item : parameterObjects) {
-        ListSequence.fromList(result).addElement(new AbstractSideTransformHintSubstituteAction(concept, item, _context.getSourceNode()) {
+        ListSequence.<INodeSubstituteAction>fromList(result).addElement(new AbstractSideTransformHintSubstituteAction(concept, item, _context.getSourceNode()) {
           public SNode doSubstitute(String pattern) {
             SNode result = SNodeFactoryOperations.createNewNode(_context.getModel(), "jetbrains.mps.query.structure.MqlCondition", _context.getSourceNode());
             SPropertyOperations.set(result, "kind", "" + SEnumOperations.getEnumMemberValue((item)));
@@ -626,7 +626,7 @@ public class QueriesGenerated {
           }
 
           public String getMatchingText(String text) {
-            return SPropertyOperations.getString(ListSequence.fromList(SLinkOperations.getTargets(SNodeOperations.getNode("r:f9198ffd-e084-425c-aa82-f2db8289f5eb(jetbrains.mps.query.structure)", "6762883159245048026"), "member", true)).findFirst(new IWhereFilter<SNode>() {
+            return SPropertyOperations.getString(ListSequence.<SNode>fromList(SLinkOperations.getTargets(SNodeOperations.getNode("r:f9198ffd-e084-425c-aa82-f2db8289f5eb(jetbrains.mps.query.structure)", "6762883159245048026"), "member", true)).findFirst(new IWhereFilter<SNode>() {
               public boolean accept(SNode it) {
                 return SPropertyOperations.getString(it, "internalValue").equals(SEnumOperations.getEnumMemberValue((item)));
               }
@@ -638,7 +638,7 @@ public class QueriesGenerated {
           }
 
           public String getDescriptionText(String text) {
-            return SPropertyOperations.getString(ListSequence.fromList(SLinkOperations.getTargets(SNodeOperations.getNode("r:f9198ffd-e084-425c-aa82-f2db8289f5eb(jetbrains.mps.query.structure)", "6762883159245048026"), "member", true)).findFirst(new IWhereFilter<SNode>() {
+            return SPropertyOperations.getString(ListSequence.<SNode>fromList(SLinkOperations.getTargets(SNodeOperations.getNode("r:f9198ffd-e084-425c-aa82-f2db8289f5eb(jetbrains.mps.query.structure)", "6762883159245048026"), "member", true)).findFirst(new IWhereFilter<SNode>() {
               public boolean accept(SNode it) {
                 return SPropertyOperations.getString(it, "internalValue").equals(SEnumOperations.getEnumMemberValue((item)));
               }
@@ -651,7 +651,7 @@ public class QueriesGenerated {
   }
 
   public static List<INodeSubstituteAction> sideTransform_ActionsFactory_MqlExpression_8595827001410586465(final IOperationContext operationContext, final SideTransformActionsBuilderContext _context) {
-    List<INodeSubstituteAction> result = ListSequence.fromList(new ArrayList<INodeSubstituteAction>());
+    List<INodeSubstituteAction> result = ListSequence.<INodeSubstituteAction>fromList(new ArrayList<INodeSubstituteAction>());
     {
       final SNode concept = SConceptOperations.findConceptDeclaration("jetbrains.mps.query.structure.MqlArithmetic");
       Calculable calculable = new Calculable() {
@@ -662,7 +662,7 @@ public class QueriesGenerated {
       Iterable<SNode> parameterObjects = (Iterable<SNode>) calculable.calculate();
       assert parameterObjects != null;
       for (final SNode item : parameterObjects) {
-        ListSequence.fromList(result).addElement(new AbstractSideTransformHintSubstituteAction(concept, item, _context.getSourceNode()) {
+        ListSequence.<INodeSubstituteAction>fromList(result).addElement(new AbstractSideTransformHintSubstituteAction(concept, item, _context.getSourceNode()) {
           public SNode doSubstitute(String pattern) {
             SNode result = SNodeFactoryOperations.createNewNode(_context.getModel(), "jetbrains.mps.query.structure.MqlArithmetic", _context.getSourceNode());
             SPropertyOperations.set(result, "kind", "" + SEnumOperations.getEnumMemberValue((item)));
@@ -673,7 +673,7 @@ public class QueriesGenerated {
           }
 
           public String getMatchingText(String text) {
-            return SPropertyOperations.getString(ListSequence.fromList(SLinkOperations.getTargets(SNodeOperations.getNode("r:f9198ffd-e084-425c-aa82-f2db8289f5eb(jetbrains.mps.query.structure)", "6762883159245048041"), "member", true)).findFirst(new IWhereFilter<SNode>() {
+            return SPropertyOperations.getString(ListSequence.<SNode>fromList(SLinkOperations.getTargets(SNodeOperations.getNode("r:f9198ffd-e084-425c-aa82-f2db8289f5eb(jetbrains.mps.query.structure)", "6762883159245048041"), "member", true)).findFirst(new IWhereFilter<SNode>() {
               public boolean accept(SNode it) {
                 return SPropertyOperations.getString(it, "internalValue").equals(SEnumOperations.getEnumMemberValue((item)));
               }
@@ -700,7 +700,7 @@ public class QueriesGenerated {
       Iterable<SNode> parameterObjects = (Iterable<SNode>) calculable.calculate();
       assert parameterObjects != null;
       for (final SNode item : parameterObjects) {
-        ListSequence.fromList(result).addElement(new AbstractSideTransformHintSubstituteAction(concept, item, _context.getSourceNode()) {
+        ListSequence.<INodeSubstituteAction>fromList(result).addElement(new AbstractSideTransformHintSubstituteAction(concept, item, _context.getSourceNode()) {
           public SNode doSubstitute(String pattern) {
             SNode result = SNodeFactoryOperations.createNewNode(_context.getModel(), "jetbrains.mps.query.structure.MqlCondition", _context.getSourceNode());
             SPropertyOperations.set(result, "kind", "" + SEnumOperations.getEnumMemberValue((item)));
@@ -711,7 +711,7 @@ public class QueriesGenerated {
           }
 
           public String getMatchingText(String text) {
-            return SPropertyOperations.getString(ListSequence.fromList(SLinkOperations.getTargets(SNodeOperations.getNode("r:f9198ffd-e084-425c-aa82-f2db8289f5eb(jetbrains.mps.query.structure)", "6762883159245048026"), "member", true)).findFirst(new IWhereFilter<SNode>() {
+            return SPropertyOperations.getString(ListSequence.<SNode>fromList(SLinkOperations.getTargets(SNodeOperations.getNode("r:f9198ffd-e084-425c-aa82-f2db8289f5eb(jetbrains.mps.query.structure)", "6762883159245048026"), "member", true)).findFirst(new IWhereFilter<SNode>() {
               public boolean accept(SNode it) {
                 return SPropertyOperations.getString(it, "internalValue").equals(SEnumOperations.getEnumMemberValue((item)));
               }
@@ -723,7 +723,7 @@ public class QueriesGenerated {
           }
 
           public String getDescriptionText(String text) {
-            return SPropertyOperations.getString(ListSequence.fromList(SLinkOperations.getTargets(SNodeOperations.getNode("r:f9198ffd-e084-425c-aa82-f2db8289f5eb(jetbrains.mps.query.structure)", "6762883159245048026"), "member", true)).findFirst(new IWhereFilter<SNode>() {
+            return SPropertyOperations.getString(ListSequence.<SNode>fromList(SLinkOperations.getTargets(SNodeOperations.getNode("r:f9198ffd-e084-425c-aa82-f2db8289f5eb(jetbrains.mps.query.structure)", "6762883159245048026"), "member", true)).findFirst(new IWhereFilter<SNode>() {
               public boolean accept(SNode it) {
                 return SPropertyOperations.getString(it, "internalValue").equals(SEnumOperations.getEnumMemberValue((item)));
               }
@@ -736,10 +736,10 @@ public class QueriesGenerated {
   }
 
   public static List<INodeSubstituteAction> sideTransform_ActionsFactory_MqlExpression_7352592509980890728(final IOperationContext operationContext, final SideTransformActionsBuilderContext _context) {
-    List<INodeSubstituteAction> result = ListSequence.fromList(new ArrayList<INodeSubstituteAction>());
+    List<INodeSubstituteAction> result = ListSequence.<INodeSubstituteAction>fromList(new ArrayList<INodeSubstituteAction>());
     {
       SNode concept = SConceptOperations.findConceptDeclaration("jetbrains.mps.query.structure.MqlUnary");
-      ListSequence.fromList(result).addElement(new AbstractSideTransformHintSubstituteAction(concept, _context.getSourceNode()) {
+      ListSequence.<INodeSubstituteAction>fromList(result).addElement(new AbstractSideTransformHintSubstituteAction(concept, _context.getSourceNode()) {
         public SNode doSubstitute(String pattern) {
           SNode result = SNodeFactoryOperations.createNewNode("jetbrains.mps.query.structure.MqlUnary", null);
           SPropertyOperations.set(result, "kind", "2");
@@ -766,10 +766,10 @@ public class QueriesGenerated {
   }
 
   public static List<INodeSubstituteAction> sideTransform_ActionsFactory_MqlQuery_212212067812029567(final IOperationContext operationContext, final SideTransformActionsBuilderContext _context) {
-    List<INodeSubstituteAction> result = ListSequence.fromList(new ArrayList<INodeSubstituteAction>());
+    List<INodeSubstituteAction> result = ListSequence.<INodeSubstituteAction>fromList(new ArrayList<INodeSubstituteAction>());
     {
       SNode concept = SConceptOperations.findConceptDeclaration("jetbrains.mps.query.structure.MqlQuery");
-      ListSequence.fromList(result).addElement(new AbstractSideTransformHintSubstituteAction(concept, _context.getSourceNode()) {
+      ListSequence.<INodeSubstituteAction>fromList(result).addElement(new AbstractSideTransformHintSubstituteAction(concept, _context.getSourceNode()) {
         public SNode doSubstitute(String pattern) {
           SPropertyOperations.set(_context.getSourceNode(), "isCached", "" + true);
           return _context.getSourceNode();
@@ -788,10 +788,10 @@ public class QueriesGenerated {
   }
 
   public static List<INodeSubstituteAction> sideTransform_ActionsFactory_MqlQuery_1016170791824030639(final IOperationContext operationContext, final SideTransformActionsBuilderContext _context) {
-    List<INodeSubstituteAction> result = ListSequence.fromList(new ArrayList<INodeSubstituteAction>());
+    List<INodeSubstituteAction> result = ListSequence.<INodeSubstituteAction>fromList(new ArrayList<INodeSubstituteAction>());
     {
       SNode concept = SConceptOperations.findConceptDeclaration("jetbrains.mps.query.structure.MqlQuery");
-      ListSequence.fromList(result).addElement(new AbstractSideTransformHintSubstituteAction(concept, _context.getSourceNode()) {
+      ListSequence.<INodeSubstituteAction>fromList(result).addElement(new AbstractSideTransformHintSubstituteAction(concept, _context.getSourceNode()) {
         public SNode doSubstitute(String pattern) {
           return SNodeFactoryOperations.setNewChild(_context.getSourceNode(), "contextNode", "jetbrains.mps.query.structure.MqlNodeType");
         }

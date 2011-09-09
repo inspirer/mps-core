@@ -6,20 +6,20 @@ import jetbrains.mps.smodel.SNode;
 import jetbrains.mps.query.runtime.EvaluationEnvironment;
 import jetbrains.mps.query.runtime.EvaluationContext;
 
-public class MqlVarReference_BehaviorDescriptor extends MqlExpression_BehaviorDescriptor {
-  public MqlVarReference_BehaviorDescriptor() {
+public class MqlVariableReference_BehaviorDescriptor extends MqlExpression_BehaviorDescriptor {
+  public MqlVariableReference_BehaviorDescriptor() {
   }
 
   public SNode virtual_getType_228266671027861783(SNode thisNode) {
-    return MqlVarReference_Behavior.virtual_getType_228266671027861783(thisNode);
+    return MqlVariableReference_Behavior.virtual_getType_228266671027861783(thisNode);
   }
 
   public Object virtual_evaluate_1671449901154581105(SNode thisNode, EvaluationEnvironment env, EvaluationContext context) {
-    return MqlVarReference_Behavior.virtual_evaluate_1671449901154581105(thisNode, env, context);
+    return MqlVariableReference_Behavior.virtual_evaluate_1671449901154581105(thisNode, env, context);
   }
 
   @Override
   public String getConceptFqName() {
-    return "jetbrains.mps.query.structure.MqlVarReference";
+    return "jetbrains.mps.query.structure.MqlVariableReference";
   }
 }

@@ -7,7 +7,7 @@ import java.util.Arrays;
 import jetbrains.mps.smodel.runtime.interpreted.BehaviorAspectInterpreted;
 
 public class BehaviorAspectDescriptor implements jetbrains.mps.smodel.runtime.BehaviorAspectDescriptor {
-  private static String[] stringSwitchCases_846f5o_a0a0a = new String[]{"jetbrains.mps.query.structure.MqlArithmetic", "jetbrains.mps.query.structure.MqlAssignment", "jetbrains.mps.query.structure.MqlBoolLiteral", "jetbrains.mps.query.structure.MqlBoolType", "jetbrains.mps.query.structure.MqlClosure", "jetbrains.mps.query.structure.MqlCollectionProperty", "jetbrains.mps.query.structure.MqlCollectionSelector", "jetbrains.mps.query.structure.MqlCollectionSelectorVar", "jetbrains.mps.query.structure.MqlCollectionSelectorVarRef", "jetbrains.mps.query.structure.MqlComma", "jetbrains.mps.query.structure.MqlCondition", "jetbrains.mps.query.structure.MqlDotExpression", "jetbrains.mps.query.structure.MqlFunctionType", "jetbrains.mps.query.structure.MqlIntLiteral", "jetbrains.mps.query.structure.MqlIntType", "jetbrains.mps.query.structure.MqlLinkSelector", "jetbrains.mps.query.structure.MqlListLiteral", "jetbrains.mps.query.structure.MqlListType", "jetbrains.mps.query.structure.MqlNoContextQueryCall", "jetbrains.mps.query.structure.MqlNodeType", "jetbrains.mps.query.structure.MqlNullLiteral", "jetbrains.mps.query.structure.MqlNullType", "jetbrains.mps.query.structure.MqlPackage", "jetbrains.mps.query.structure.MqlParameter", "jetbrains.mps.query.structure.MqlParameterReference", "jetbrains.mps.query.structure.MqlParentheses", "jetbrains.mps.query.structure.MqlPropertySelector", "jetbrains.mps.query.structure.MqlQuery", "jetbrains.mps.query.structure.MqlStringLiteral", "jetbrains.mps.query.structure.MqlStringType", "jetbrains.mps.query.structure.MqlThis", "jetbrains.mps.query.structure.MqlTriplex", "jetbrains.mps.query.structure.MqlUnary", "jetbrains.mps.query.structure.MqlVarReference"};
+  private static String[] stringSwitchCases_846f5o_a0a0a = new String[]{"jetbrains.mps.query.structure.MqlArithmetic", "jetbrains.mps.query.structure.MqlAssignment", "jetbrains.mps.query.structure.MqlBoolLiteral", "jetbrains.mps.query.structure.MqlBoolType", "jetbrains.mps.query.structure.MqlClosure", "jetbrains.mps.query.structure.MqlCollectionProperty", "jetbrains.mps.query.structure.MqlCollectionSelector", "jetbrains.mps.query.structure.MqlCollectionSelectorVar", "jetbrains.mps.query.structure.MqlCollectionSelectorVarRef", "jetbrains.mps.query.structure.MqlComma", "jetbrains.mps.query.structure.MqlCondition", "jetbrains.mps.query.structure.MqlDotExpression", "jetbrains.mps.query.structure.MqlFunctionType", "jetbrains.mps.query.structure.MqlIntLiteral", "jetbrains.mps.query.structure.MqlIntType", "jetbrains.mps.query.structure.MqlLinkSelector", "jetbrains.mps.query.structure.MqlListLiteral", "jetbrains.mps.query.structure.MqlListType", "jetbrains.mps.query.structure.MqlNoContextQueryCall", "jetbrains.mps.query.structure.MqlNodeType", "jetbrains.mps.query.structure.MqlNullLiteral", "jetbrains.mps.query.structure.MqlNullType", "jetbrains.mps.query.structure.MqlPackage", "jetbrains.mps.query.structure.MqlParameter", "jetbrains.mps.query.structure.MqlParameterReference", "jetbrains.mps.query.structure.MqlParentheses", "jetbrains.mps.query.structure.MqlPropertySelector", "jetbrains.mps.query.structure.MqlQuery", "jetbrains.mps.query.structure.MqlStringLiteral", "jetbrains.mps.query.structure.MqlStringType", "jetbrains.mps.query.structure.MqlThis", "jetbrains.mps.query.structure.MqlTriplex", "jetbrains.mps.query.structure.MqlUnary", "jetbrains.mps.query.structure.MqlVariable", "jetbrains.mps.query.structure.MqlVariableReference"};
 
   public BehaviorAspectDescriptor() {
   }
@@ -70,8 +70,6 @@ public class BehaviorAspectDescriptor implements jetbrains.mps.smodel.runtime.Be
         return new MqlAssignment_BehaviorDescriptor();
       case 18:
         return new MqlNoContextQueryCall_BehaviorDescriptor();
-      case 33:
-        return new MqlVarReference_BehaviorDescriptor();
       case 6:
         return new MqlCollectionSelector_BehaviorDescriptor();
       case 5:
@@ -82,6 +80,10 @@ public class BehaviorAspectDescriptor implements jetbrains.mps.smodel.runtime.Be
         return new MqlCollectionSelectorVarRef_BehaviorDescriptor();
       case 16:
         return new MqlListLiteral_BehaviorDescriptor();
+      case 33:
+        return new MqlVariable_BehaviorDescriptor();
+      case 34:
+        return new MqlVariableReference_BehaviorDescriptor();
       default:
         return BehaviorAspectInterpreted.getInstance().getDescriptor(fqName);
     }

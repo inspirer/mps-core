@@ -14,24 +14,24 @@ import jetbrains.mps.nodeEditor.EditorManager;
 import jetbrains.mps.nodeEditor.InlineCellProvider;
 import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
 
-public class MqlVarReference_Editor extends DefaultNodeEditor {
+public class MqlVariableReference_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return this.createCollection_lg4nb4_a(editorContext, node);
+    return this.createCollection_a3qb1u_a(editorContext, node);
   }
 
-  private EditorCell createCollection_lg4nb4_a(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_a3qb1u_a(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
-    editorCell.setCellId("Collection_lg4nb4_a");
-    editorCell.addEditorCell(this.createRefCell_lg4nb4_a0(editorContext, node));
+    editorCell.setCellId("Collection_a3qb1u_a");
+    editorCell.addEditorCell(this.createRefCell_a3qb1u_a0(editorContext, node));
     return editorCell;
   }
 
-  private EditorCell createRefCell_lg4nb4_a0(EditorContext editorContext, SNode node) {
+  private EditorCell createRefCell_a3qb1u_a0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new RefCellCellProvider(node, editorContext);
     provider.setRole("var");
     provider.setNoTargetText("<no var>");
     EditorCell editorCell;
-    provider.setAuxiliaryCellProvider(new MqlVarReference_Editor._Inline_lg4nb4_a0a());
+    provider.setAuxiliaryCellProvider(new MqlVariableReference_Editor._Inline_a3qb1u_a0a());
     editorCell = provider.createEditorCell(editorContext);
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
@@ -44,8 +44,8 @@ public class MqlVarReference_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  public static class _Inline_lg4nb4_a0a extends InlineCellProvider {
-    public _Inline_lg4nb4_a0a() {
+  public static class _Inline_a3qb1u_a0a extends InlineCellProvider {
+    public _Inline_a3qb1u_a0a() {
       super();
     }
 
@@ -54,10 +54,10 @@ public class MqlVarReference_Editor extends DefaultNodeEditor {
     }
 
     public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-      return this.createProperty_lg4nb4_a0a0(editorContext, node);
+      return this.createProperty_a3qb1u_a0a0(editorContext, node);
     }
 
-    private EditorCell createProperty_lg4nb4_a0a0(EditorContext editorContext, SNode node) {
+    private EditorCell createProperty_a3qb1u_a0a0(EditorContext editorContext, SNode node) {
       CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
       provider.setRole("name");
       provider.setNoTargetText("<no name>");

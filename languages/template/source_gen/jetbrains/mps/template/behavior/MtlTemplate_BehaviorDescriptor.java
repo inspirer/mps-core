@@ -12,8 +12,8 @@ public class MtlTemplate_BehaviorDescriptor extends BaseConcept_BehaviorDescript
   public MtlTemplate_BehaviorDescriptor() {
   }
 
-  public QueryScope virtual_getScope_5433095484313879207(SNode thisNode, SNode kind, String childRole) {
-    return MtlTemplate_Behavior.virtual_getScope_5433095484313879207(thisNode, kind, childRole);
+  public QueryScope virtual_getScope_5433095484313879207(SNode thisNode, SNode kind, SNode child) {
+    return MtlTemplate_Behavior.virtual_getScope_5433095484313879207(thisNode, kind, child);
   }
 
   public String virtual_getFqName_1213877404258(SNode thisNode) {

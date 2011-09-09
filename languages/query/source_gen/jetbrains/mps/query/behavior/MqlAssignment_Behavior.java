@@ -22,7 +22,11 @@ public class MqlAssignment_Behavior {
 
   public static Object virtual_evaluate_1671449901154581105(SNode thisNode, EvaluationEnvironment env, EvaluationContext context) {
     Object result = env.evaluate(SLinkOperations.getTarget(thisNode, "value", true), context, true);
-    context.setValue(SPropertyOperations.getString(thisNode, "name"), result);
+    context.setValue(SPropertyOperations.getString(SLinkOperations.getTarget(thisNode, "var", true), "name"), result);
     return result;
+  }
+
+  public static SNode virtual_getContainedVariableType_3435983127247055569(SNode thisNode, String role) {
+    return MqlExpression_Behavior.call_getType_228266671027861783(SLinkOperations.getTarget(thisNode, "value", true));
   }
 }

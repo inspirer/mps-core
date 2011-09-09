@@ -10,21 +10,21 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.smodel.behaviour.BehaviorManager;
 
 public class MqlScopeProvider_Behavior {
-  private static Class[] PARAMETERS_5433095484313879207 = {SNode.class, SNode.class, String.class};
+  private static Class[] PARAMETERS_5433095484313879207 = {SNode.class, SNode.class, SNode.class};
 
   public static void init(SNode thisNode) {
   }
 
-  public static QueryScope virtual_getScope_5433095484313879207(SNode thisNode, SNode kind, String childRole) {
+  public static QueryScope virtual_getScope_5433095484313879207(SNode thisNode, SNode kind, SNode child) {
     return null;
   }
 
-  public static QueryScope call_getScope_5433095484313879207(SNode thisNode, SNode kind, String childRole) {
+  public static QueryScope call_getScope_5433095484313879207(SNode thisNode, SNode kind, SNode child) {
     BehaviorDescriptor descriptor = ConceptRegistry.getInstance().getBehaviorDescriptorForInstanceNode(thisNode);
-    return (QueryScope) descriptor.invoke(Object.class, SNodeOperations.cast(thisNode, "jetbrains.mps.query.structure.MqlScopeProvider"), "virtual_getScope_5433095484313879207", PARAMETERS_5433095484313879207, kind, childRole);
+    return (QueryScope) descriptor.invoke(Object.class, SNodeOperations.cast(thisNode, "jetbrains.mps.query.structure.MqlScopeProvider"), "virtual_getScope_5433095484313879207", PARAMETERS_5433095484313879207, kind, child);
   }
 
-  public static QueryScope callSuper_getScope_5433095484313879207(SNode thisNode, String callerConceptFqName, SNode kind, String childRole) {
-    return (QueryScope) BehaviorManager.getInstance().invokeSuper(Object.class, SNodeOperations.cast(thisNode, "jetbrains.mps.query.structure.MqlScopeProvider"), callerConceptFqName, "virtual_getScope_5433095484313879207", PARAMETERS_5433095484313879207, kind, childRole);
+  public static QueryScope callSuper_getScope_5433095484313879207(SNode thisNode, String callerConceptFqName, SNode kind, SNode child) {
+    return (QueryScope) BehaviorManager.getInstance().invokeSuper(Object.class, SNodeOperations.cast(thisNode, "jetbrains.mps.query.structure.MqlScopeProvider"), callerConceptFqName, "virtual_getScope_5433095484313879207", PARAMETERS_5433095484313879207, kind, child);
   }
 }

@@ -33,7 +33,7 @@ public class MqlQuery_Behavior {
     return null;
   }
 
-  public static QueryScope virtual_getScope_5433095484313879207(SNode thisNode, SNode kind, String childRole) {
+  public static QueryScope virtual_getScope_5433095484313879207(SNode thisNode, SNode kind, SNode child) {
     if (kind == SConceptOperations.findConceptDeclaration("jetbrains.mps.query.structure.MqlParameter")) {
       return new SimpleRoleScope(thisNode, SLinkOperations.findLinkDeclaration("jetbrains.mps.query.structure.MqlParametersContainer", "parameters"), new _FunctionTypes._return_P1_E0<String, SNode>() {
         public String invoke(SNode n) {

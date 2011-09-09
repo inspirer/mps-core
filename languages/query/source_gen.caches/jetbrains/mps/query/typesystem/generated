@@ -11,10 +11,10 @@
   <dep model="r:00000000-0000-4000-0000-011c8959032f(jetbrains.mps.baseLanguage.collections.generator.baseLanguage.template.main@generator)" />
   <dep model="r:00000000-0000-4000-0000-011c8959033a(jetbrains.mps.baseLanguage.closures.generator.baseLanguage.template.main@generator)" />
   <dep model="r:00000000-0000-4000-0000-011c895903ac(jetbrains.mps.baseLanguageInternal.structure)" />
-  <dep model="r:2eb00686-cf12-445a-b169-a375a4c25909(jetbrains.mps.query.behavior)" hash="-1kawy6wn3xjeg9mrfwfs9sitpbda4ik" />
+  <dep model="r:2eb00686-cf12-445a-b169-a375a4c25909(jetbrains.mps.query.behavior)" hash="8bo8f1krgzsdgru3xckzp5an7j8ex7j" />
   <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" />
   <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" />
-  <dep model="r:f9198ffd-e084-425c-aa82-f2db8289f5eb(jetbrains.mps.query.structure)" hash="b8akss6dg6lsx2gp77fv2uv27wouduy" />
+  <dep model="r:f9198ffd-e084-425c-aa82-f2db8289f5eb(jetbrains.mps.query.structure)" hash="8j4ae2ja50dtpee7e9vrtgpbdzcsa9m" />
   <common hash="3ucp8wihustbk2jel8vsrxkfbkcouuc" dependsOnNodes="true">
     <dep root="228266671027905045" />
     <dep root="2852142168179589858" />

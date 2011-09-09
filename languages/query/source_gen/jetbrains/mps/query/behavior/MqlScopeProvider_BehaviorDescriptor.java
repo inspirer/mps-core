@@ -6,5 +6,5 @@ import jetbrains.mps.query.runtime.QueryScope;
 import jetbrains.mps.smodel.SNode;
 
 public interface MqlScopeProvider_BehaviorDescriptor {
-  public QueryScope virtual_getScope_5433095484313879207(SNode thisNode, SNode kind, String childRole);
+  public QueryScope virtual_getScope_5433095484313879207(SNode thisNode, SNode kind, SNode child);
 }

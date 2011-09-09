@@ -13,8 +13,8 @@ public class MqlClosure_BehaviorDescriptor extends MqlExpression_BehaviorDescrip
     return MqlClosure_Behavior.virtual_getType_228266671027861783(thisNode);
   }
 
-  public QueryScope virtual_getScope_5433095484313879207(SNode thisNode, SNode kind, String childRole) {
-    return MqlClosure_Behavior.virtual_getScope_5433095484313879207(thisNode, kind, childRole);
+  public QueryScope virtual_getScope_5433095484313879207(SNode thisNode, SNode kind, SNode child) {
+    return MqlClosure_Behavior.virtual_getScope_5433095484313879207(thisNode, kind, child);
   }
 
   @Override
