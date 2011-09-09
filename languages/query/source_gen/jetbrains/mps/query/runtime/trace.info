@@ -493,6 +493,65 @@
     <unitInfo nodeId="5433095484313948572" fileName="QueryScopeAdapter.java" startLine="23" startPosition="15" endLine="27" endPosition="5" unitName="jetbrains.mps.query.runtime.QueryScopeAdapter$1" />
     <unitInfo nodeId="5433095484313948349" fileName="QueryScopeAdapter.java" startLine="15" startPosition="0" endLine="54" endPosition="0" unitName="jetbrains.mps.query.runtime.QueryScopeAdapter" />
   </root>
+  <root nodeId="6711176417918013834">
+    <nodeInfo nodeId="6711176417918017666" fileName="MultipleElementsScope.java" startLine="11" startPosition="55" endLine="12" endPosition="28" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="nodes" />
+    <nodeInfo nodeId="6711176417918017498" fileName="MultipleElementsScope.java" startLine="12" startPosition="28" endLine="13" endPosition="84" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="resolveInfo" />
+    <nodeInfo nodeId="6711176417918017669" fileName="MultipleElementsScope.java" startLine="15" startPosition="126" endLine="16" endPosition="23" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6711176417918017522" fileName="MultipleElementsScope.java" startLine="16" startPosition="23" endLine="17" endPosition="35" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6711176417918017542" fileName="MultipleElementsScope.java" startLine="20" startPosition="58" endLine="21" endPosition="48" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="6711176417918017574" fileName="MultipleElementsScope.java" startLine="22" startPosition="27" endLine="23" endPosition="42" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="6711176417918017591" fileName="MultipleElementsScope.java" startLine="24" startPosition="54" endLine="25" endPosition="59" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6711176417918017596" fileName="MultipleElementsScope.java" startLine="27" startPosition="5" endLine="28" endPosition="18" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6711176417918017606" fileName="MultipleElementsScope.java" startLine="31" startPosition="50" endLine="32" endPosition="24" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="6711176417918017636" fileName="MultipleElementsScope.java" startLine="33" startPosition="27" endLine="34" endPosition="42" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="6711176417918017654" fileName="MultipleElementsScope.java" startLine="36" startPosition="29" endLine="37" endPosition="21" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6711176417918017660" fileName="MultipleElementsScope.java" startLine="38" startPosition="16" endLine="39" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6711176417918017662" fileName="MultipleElementsScope.java" startLine="42" startPosition="5" endLine="43" endPosition="18" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6711176417918017658" fileName="MultipleElementsScope.java" startLine="38" startPosition="14" endLine="40" endPosition="9" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="6711176417918017581" fileName="MultipleElementsScope.java" startLine="23" startPosition="42" endLine="26" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="6711176417918017506" fileName="MultipleElementsScope.java" startLine="14" startPosition="0" endLine="18" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="MultipleElementsScope#(Ljava/util/List;Ljetbrains/mps/baseLanguage/closures/runtime/_FunctionTypes/_return_P1_E0;)V" />
+    <nodeInfo nodeId="6711176417918017649" fileName="MultipleElementsScope.java" startLine="35" startPosition="29" endLine="40" endPosition="9" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="6711176417918017548" fileName="MultipleElementsScope.java" startLine="21" startPosition="48" endLine="27" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+    <nodeInfo nodeId="6711176417918017643" fileName="MultipleElementsScope.java" startLine="34" startPosition="42" endLine="41" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="6711176417918017610" fileName="MultipleElementsScope.java" startLine="32" startPosition="24" endLine="42" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+    <nodeInfo nodeId="6711176417918017536" fileName="MultipleElementsScope.java" startLine="19" startPosition="0" endLine="30" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getAvailableElements#(Ljava/lang/String;)Ljava/util/List;" />
+    <nodeInfo nodeId="6711176417918017598" fileName="MultipleElementsScope.java" startLine="30" startPosition="0" endLine="45" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="resolve#(Ljetbrains/mps/smodel/SNode;Ljava/lang/String;)Ljetbrains/mps/smodel/SNode;" />
+    <scopeInfo nodeId="6711176417918017590" fileName="MultipleElementsScope.java" startLine="24" startPosition="54" endLine="25" endPosition="59" />
+    <scopeInfo nodeId="6711176417918017653" fileName="MultipleElementsScope.java" startLine="36" startPosition="29" endLine="37" endPosition="21" />
+    <scopeInfo nodeId="6711176417918017659" fileName="MultipleElementsScope.java" startLine="38" startPosition="16" endLine="39" endPosition="22" />
+    <scopeInfo nodeId="6711176417918017509" fileName="MultipleElementsScope.java" startLine="15" startPosition="126" endLine="17" endPosition="35" />
+    <scopeInfo nodeId="6711176417918017506" fileName="MultipleElementsScope.java" startLine="14" startPosition="0" endLine="18" endPosition="3">
+      <varInfo nodeId="6711176417918017532" varName="resolveInfo" />
+      <varInfo nodeId="6711176417918017528" varName="nodes" />
+    </scopeInfo>
+    <scopeInfo nodeId="6711176417918017557" fileName="MultipleElementsScope.java" startLine="22" startPosition="27" endLine="26" endPosition="7">
+      <varInfo nodeId="6711176417918017575" varName="name" />
+    </scopeInfo>
+    <scopeInfo nodeId="6711176417918017648" fileName="MultipleElementsScope.java" startLine="35" startPosition="29" endLine="40" endPosition="9" />
+    <scopeInfo nodeId="6711176417918017548" fileName="MultipleElementsScope.java" startLine="21" startPosition="48" endLine="27" endPosition="5">
+      <varInfo nodeId="6711176417918017549" varName="n" />
+    </scopeInfo>
+    <scopeInfo nodeId="6711176417918017541" fileName="MultipleElementsScope.java" startLine="20" startPosition="58" endLine="28" endPosition="18">
+      <varInfo nodeId="6711176417918017543" varName="result" />
+    </scopeInfo>
+    <scopeInfo nodeId="6711176417918017619" fileName="MultipleElementsScope.java" startLine="33" startPosition="27" endLine="41" endPosition="7">
+      <varInfo nodeId="6711176417918017637" varName="name" />
+    </scopeInfo>
+    <scopeInfo nodeId="6711176417918017610" fileName="MultipleElementsScope.java" startLine="32" startPosition="24" endLine="42" endPosition="5">
+      <varInfo nodeId="6711176417918017611" varName="n" />
+    </scopeInfo>
+    <scopeInfo nodeId="6711176417918017536" fileName="MultipleElementsScope.java" startLine="19" startPosition="0" endLine="30" endPosition="0">
+      <varInfo nodeId="6711176417918017539" varName="prefix" />
+    </scopeInfo>
+    <scopeInfo nodeId="6711176417918017605" fileName="MultipleElementsScope.java" startLine="31" startPosition="50" endLine="43" endPosition="18">
+      <varInfo nodeId="6711176417918017607" varName="result" />
+    </scopeInfo>
+    <scopeInfo nodeId="6711176417918017598" fileName="MultipleElementsScope.java" startLine="30" startPosition="0" endLine="45" endPosition="0">
+      <varInfo nodeId="6711176417918017603" varName="str" />
+      <varInfo nodeId="6711176417918017601" varName="anchor" />
+    </scopeInfo>
+    <unitInfo nodeId="6711176417918013834" fileName="MultipleElementsScope.java" startLine="11" startPosition="0" endLine="46" endPosition="0" unitName="jetbrains.mps.query.runtime.MultipleElementsScope" />
+  </root>
   <root nodeId="6762883159245086419">
     <nodeInfo nodeId="1671449901154580620" fileName="EvaluationContext.java" startLine="9" startPosition="32" endLine="10" endPosition="28" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="self" />
     <nodeInfo nodeId="1671449901154580611" fileName="EvaluationContext.java" startLine="10" startPosition="28" endLine="11" endPosition="41" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="parent" />
@@ -503,16 +562,19 @@
     <nodeInfo nodeId="1671449901154580698" fileName="EvaluationContext.java" startLine="24" startPosition="96" endLine="25" endPosition="38" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="1671449901154580744" fileName="EvaluationContext.java" startLine="34" startPosition="23" endLine="35" endPosition="79" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
     <nodeInfo nodeId="1671449901154580757" fileName="EvaluationContext.java" startLine="36" startPosition="5" endLine="37" endPosition="65" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6711176417918083315" fileName="EvaluationContext.java" startLine="40" startPosition="41" endLine="41" endPosition="55" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="1671449901154580660" fileName="EvaluationContext.java" startLine="23" startPosition="42" endLine="26" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
     <nodeInfo nodeId="1671449901154580736" fileName="EvaluationContext.java" startLine="33" startPosition="54" endLine="36" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
     <nodeInfo nodeId="6762883159245086421" fileName="EvaluationContext.java" startLine="13" startPosition="0" endLine="17" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="EvaluationContext#(Ljava/lang/Object;Ljetbrains/mps/query/runtime/EvaluationContext;)V" />
     <nodeInfo nodeId="1671449901154580629" fileName="EvaluationContext.java" startLine="18" startPosition="0" endLine="22" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getThis#()Ljava/lang/Object;" />
     <nodeInfo nodeId="1671449901154580708" fileName="EvaluationContext.java" startLine="26" startPosition="5" endLine="30" endPosition="6" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6711176417918083310" fileName="EvaluationContext.java" startLine="39" startPosition="0" endLine="43" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="subContext#()Ljetbrains/mps/query/runtime/EvaluationContext;" />
     <nodeInfo nodeId="1671449901154580730" fileName="EvaluationContext.java" startLine="32" startPosition="0" endLine="39" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setValue#(Ljava/lang/String;Ljava/lang/Object;)V" />
     <nodeInfo nodeId="1671449901154580643" fileName="EvaluationContext.java" startLine="22" startPosition="0" endLine="32" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getValue#(Ljava/lang/String;)Ljava/lang/Object;" />
     <scopeInfo nodeId="1671449901154580632" fileName="EvaluationContext.java" startLine="19" startPosition="27" endLine="20" endPosition="16" />
     <scopeInfo nodeId="1671449901154580661" fileName="EvaluationContext.java" startLine="24" startPosition="96" endLine="25" endPosition="38" />
     <scopeInfo nodeId="1671449901154580738" fileName="EvaluationContext.java" startLine="34" startPosition="23" endLine="35" endPosition="79" />
+    <scopeInfo nodeId="6711176417918083313" fileName="EvaluationContext.java" startLine="40" startPosition="41" endLine="41" endPosition="55" />
     <scopeInfo nodeId="6762883159245086424" fileName="EvaluationContext.java" startLine="14" startPosition="68" endLine="16" endPosition="25" />
     <scopeInfo nodeId="6762883159245086421" fileName="EvaluationContext.java" startLine="13" startPosition="0" endLine="17" endPosition="3">
       <varInfo nodeId="1671449901154580605" varName="this_" />
@@ -520,6 +582,7 @@
     </scopeInfo>
     <scopeInfo nodeId="1671449901154580629" fileName="EvaluationContext.java" startLine="18" startPosition="0" endLine="22" endPosition="0" />
     <scopeInfo nodeId="1671449901154580733" fileName="EvaluationContext.java" startLine="33" startPosition="54" endLine="37" endPosition="65" />
+    <scopeInfo nodeId="6711176417918083310" fileName="EvaluationContext.java" startLine="39" startPosition="0" endLine="43" endPosition="0" />
     <scopeInfo nodeId="1671449901154580646" fileName="EvaluationContext.java" startLine="23" startPosition="42" endLine="30" endPosition="6" />
     <scopeInfo nodeId="1671449901154580730" fileName="EvaluationContext.java" startLine="32" startPosition="0" endLine="39" endPosition="0">
       <varInfo nodeId="1671449901154580769" varName="value" />
@@ -528,7 +591,7 @@
     <scopeInfo nodeId="1671449901154580643" fileName="EvaluationContext.java" startLine="22" startPosition="0" endLine="32" endPosition="0">
       <varInfo nodeId="1671449901154580648" varName="varname" />
     </scopeInfo>
-    <unitInfo nodeId="6762883159245086419" fileName="EvaluationContext.java" startLine="9" startPosition="0" endLine="40" endPosition="0" unitName="jetbrains.mps.query.runtime.EvaluationContext" />
+    <unitInfo nodeId="6762883159245086419" fileName="EvaluationContext.java" startLine="9" startPosition="0" endLine="44" endPosition="0" unitName="jetbrains.mps.query.runtime.EvaluationContext" />
   </root>
   <root nodeId="6762883159245086425">
     <nodeInfo nodeId="1671449901154581432" fileName="EvaluationException.java" startLine="7" startPosition="59" endLine="8" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="query" />

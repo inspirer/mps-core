@@ -233,8 +233,8 @@
   </root>
   <root id="3373821274546687073">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="3373821274546687077">
-      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="3373821274546692992">
-        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="e5td.3373821274546692990" resolveInfo="varname" />
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="6711176417917943683">
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="e5td.6711176417917933772" />
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="3373821274546692994">
         <property name="text" nameId="tpc2.1073389577007" value="=" />

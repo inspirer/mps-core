@@ -4,11 +4,17 @@ package jetbrains.mps.workflow.behavior;
 
 import jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor;
 import jetbrains.mps.lang.core.behavior.INamedConcept_BehaviorDescriptor;
+import jetbrains.mps.query.behavior.MqlScopeProvider_BehaviorDescriptor;
+import jetbrains.mps.query.runtime.QueryScope;
 import jetbrains.mps.smodel.SNode;
 import jetbrains.mps.lang.core.behavior.INamedConcept_Behavior;
 
-public class WflowExecutable_BehaviorDescriptor extends BaseConcept_BehaviorDescriptor implements INamedConcept_BehaviorDescriptor {
+public class WflowExecutable_BehaviorDescriptor extends BaseConcept_BehaviorDescriptor implements INamedConcept_BehaviorDescriptor, MqlScopeProvider_BehaviorDescriptor {
   public WflowExecutable_BehaviorDescriptor() {
+  }
+
+  public QueryScope virtual_getScope_5433095484313879207(SNode thisNode, SNode kind, SNode child) {
+    return WflowExecutable_Behavior.virtual_getScope_5433095484313879207(thisNode, kind, child);
   }
 
   public String virtual_getFqName_1213877404258(SNode thisNode) {

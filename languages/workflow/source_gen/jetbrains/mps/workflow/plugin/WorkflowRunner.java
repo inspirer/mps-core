@@ -42,9 +42,10 @@ public class WorkflowRunner {
       if (SNodeOperations.isInstanceOf(st, "jetbrains.mps.workflow.structure.WflowExpressionStatement")) {
         try {
           SNode exprst = SNodeOperations.cast(st, "jetbrains.mps.workflow.structure.WflowExpressionStatement");
-          Object result = MqlExpression_Behavior.call_evaluate_1671449901154581105(SLinkOperations.getTarget(exprst, "expression", true), env, rootContext);
+          Object result = MqlExpression_Behavior.call_evaluate_1671449901154581105(SLinkOperations.getTarget(exprst, "expression", true), env, rootContext.subContext());
+          rootContext.setValue(SPropertyOperations.getString(SLinkOperations.getTarget(exprst, "var", true), "name"), result);
           String asString = env.getRuntime().objectDebugText(result);
-          report(MessageKind.INFORMATION, SPropertyOperations.getString(exprst, "varname") + " = " + asString, null);
+          report(MessageKind.INFORMATION, SPropertyOperations.getString(SLinkOperations.getTarget(exprst, "var", true), "name") + " = " + asString, null);
 
         } catch (Exception ex) {
           Throwable thr = unwrap(ex);

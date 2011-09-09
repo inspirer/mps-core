@@ -36,4 +36,8 @@ public class EvaluationContext {
     }
     MapSequence.<String,Object>fromMap(vars).put(varname, value);
   }
+
+  public EvaluationContext subContext() {
+    return new EvaluationContext(this.getThis(), this);
+  }
 }

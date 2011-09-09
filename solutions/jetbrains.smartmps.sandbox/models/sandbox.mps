@@ -603,7 +603,6 @@
   </root>
   <root id="3373821274546690914">
     <node role="statements" roleId="e5td.3373821274546687039" type="e5td.WflowExpressionStatement" typeId="e5td.3373821274546687071" id="3373821274546694998">
-      <property name="varname" nameId="e5td.3373821274546692990" value="asd" />
       <node role="expression" roleId="e5td.3373821274546687072" type="bwy9.MqlComma" typeId="bwy9.6762883159245048011" id="3373821274546695007">
         <node role="right" roleId="bwy9.6762883159245048021" type="bwy9.MqlArithmetic" typeId="bwy9.6762883159245048040" id="1310998557965186557">
           <property name="kind" nameId="bwy9.6762883159245048047" value="3" />
@@ -618,9 +617,11 @@
           <property name="value" nameId="bwy9.6762883159245048053" value="123" />
         </node>
       </node>
+      <node role="var" roleId="e5td.6711176417917933772" type="bwy9.MqlVariable" typeId="bwy9.3435983127247044629" id="6711176417918050293">
+        <property name="name" nameId="tpck.1169194664001" value="a" />
+      </node>
     </node>
     <node role="statements" roleId="e5td.3373821274546687039" type="e5td.WflowExpressionStatement" typeId="e5td.3373821274546687071" id="3373821274546695005">
-      <property name="varname" nameId="e5td.3373821274546692990" value="er" />
       <node role="expression" roleId="e5td.3373821274546687072" type="bwy9.MqlParentheses" typeId="bwy9.6762883159245048022" id="1310998557965186570">
         <node role="expr" roleId="bwy9.6762883159245048023" type="bwy9.MqlComma" typeId="bwy9.6762883159245048011" id="1310998557965186581">
           <node role="right" roleId="bwy9.6762883159245048021" type="bwy9.MqlArithmetic" typeId="bwy9.6762883159245048040" id="1310998557965186586">
@@ -628,7 +629,7 @@
             <node role="right" roleId="bwy9.6762883159245048021" type="bwy9.MqlIntLiteral" typeId="bwy9.6762883159245048052" id="1310998557965186589">
               <property name="value" nameId="bwy9.6762883159245048053" value="2" />
             </node>
-            <node role="left" roleId="bwy9.6762883159245048020" type="bwy9.MqlVariableReference" typeId="bwy9.3435983127247055506" id="3435983127247184281">
+            <node role="left" roleId="bwy9.6762883159245048020" type="bwy9.MqlVariableReference" typeId="bwy9.3435983127247055506" id="6711176417918083304">
               <link role="var" roleId="bwy9.3435983127247055512" targetNodeId="3435983127247184279" resolveInfo="a" />
             </node>
           </node>
@@ -660,21 +661,45 @@
           </node>
         </node>
       </node>
+      <node role="var" roleId="e5td.6711176417917933772" type="bwy9.MqlVariable" typeId="bwy9.3435983127247044629" id="6711176417918050294">
+        <property name="name" nameId="tpck.1169194664001" value="b" />
+      </node>
+    </node>
+    <node role="statements" roleId="e5td.3373821274546687039" type="e5td.WflowExpressionStatement" typeId="e5td.3373821274546687071" id="6711176417918083306">
+      <node role="var" roleId="e5td.6711176417917933772" type="bwy9.MqlVariable" typeId="bwy9.3435983127247044629" id="6711176417918083307">
+        <property name="name" nameId="tpck.1169194664001" value="a2" />
+      </node>
+      <node role="expression" roleId="e5td.3373821274546687072" type="bwy9.MqlVariableReference" typeId="bwy9.3435983127247055506" id="6711176417918083309">
+        <link role="var" roleId="bwy9.3435983127247055512" targetNodeId="6711176417918050293" resolveInfo="a" />
+      </node>
     </node>
     <node role="statements" roleId="e5td.3373821274546687039" type="e5td.WflowExpressionStatement" typeId="e5td.3373821274546687071" id="1310998557965186563">
-      <property name="varname" nameId="e5td.3373821274546692990" value="werwe" />
-      <node role="expression" roleId="e5td.3373821274546687072" type="bwy9.MqlCondition" typeId="bwy9.6762883159245048013" id="1310998557965186565">
+      <node role="expression" roleId="e5td.3373821274546687072" type="bwy9.MqlCondition" typeId="bwy9.6762883159245048013" id="6711176417918050298">
         <property name="kind" nameId="bwy9.6762883159245048033" value="7" />
-        <node role="right" roleId="bwy9.6762883159245048021" type="bwy9.MqlBoolLiteral" typeId="bwy9.6762883159245048056" id="1310998557965186568">
-          <property name="value" nameId="bwy9.6762883159245048057" value="false" />
+        <node role="right" roleId="bwy9.6762883159245048021" type="bwy9.MqlCondition" typeId="bwy9.6762883159245048013" id="6711176417918050302">
+          <property name="kind" nameId="bwy9.6762883159245048033" value="2" />
+          <node role="left" roleId="bwy9.6762883159245048020" type="bwy9.MqlVariableReference" typeId="bwy9.3435983127247055506" id="6711176417918050301">
+            <link role="var" roleId="bwy9.3435983127247055512" targetNodeId="6711176417918050293" resolveInfo="a" />
+          </node>
+          <node role="right" roleId="bwy9.6762883159245048021" type="bwy9.MqlVariableReference" typeId="bwy9.3435983127247055506" id="6711176417918050305">
+            <link role="var" roleId="bwy9.3435983127247055512" targetNodeId="6711176417918050294" resolveInfo="b" />
+          </node>
         </node>
-        <node role="left" roleId="bwy9.6762883159245048020" type="bwy9.MqlBoolLiteral" typeId="bwy9.6762883159245048056" id="1310998557965186564">
-          <property name="value" nameId="bwy9.6762883159245048057" value="true" />
+        <node role="left" roleId="bwy9.6762883159245048020" type="bwy9.MqlCondition" typeId="bwy9.6762883159245048013" id="1310998557965186565">
+          <property name="kind" nameId="bwy9.6762883159245048033" value="7" />
+          <node role="left" roleId="bwy9.6762883159245048020" type="bwy9.MqlBoolLiteral" typeId="bwy9.6762883159245048056" id="1310998557965186564">
+            <property name="value" nameId="bwy9.6762883159245048057" value="true" />
+          </node>
+          <node role="right" roleId="bwy9.6762883159245048021" type="bwy9.MqlBoolLiteral" typeId="bwy9.6762883159245048056" id="1310998557965186568">
+            <property name="value" nameId="bwy9.6762883159245048057" value="false" />
+          </node>
         </node>
+      </node>
+      <node role="var" roleId="e5td.6711176417917933772" type="bwy9.MqlVariable" typeId="bwy9.3435983127247044629" id="6711176417918050295">
+        <property name="name" nameId="tpck.1169194664001" value="c" />
       </node>
     </node>
     <node role="statements" roleId="e5td.3373821274546687039" type="e5td.WflowExpressionStatement" typeId="e5td.3373821274546687071" id="7862448911997407958">
-      <property name="varname" nameId="e5td.3373821274546692990" value="eee" />
       <node role="expression" roleId="e5td.3373821274546687072" type="bwy9.MqlDotExpression" typeId="bwy9.6762883159245048085" id="7862448911997425373">
         <node role="left" roleId="bwy9.6762883159245048086" type="bwy9.MqlDotExpression" typeId="bwy9.6762883159245048085" id="7862448911997425346">
           <node role="left" roleId="bwy9.6762883159245048086" type="bwy9.MqlListLiteral" typeId="bwy9.7862448911997365751" id="7862448911997407960">
@@ -739,9 +764,19 @@
           </node>
         </node>
       </node>
+      <node role="var" roleId="e5td.6711176417917933772" type="bwy9.MqlVariable" typeId="bwy9.3435983127247044629" id="6711176417918050296">
+        <property name="name" nameId="tpck.1169194664001" value="d" />
+      </node>
+    </node>
+    <node role="statements" roleId="e5td.3373821274546687039" type="e5td.WflowExpressionStatement" typeId="e5td.3373821274546687071" id="6711176417918050307">
+      <node role="expression" roleId="e5td.3373821274546687072" type="bwy9.MqlVariableReference" typeId="bwy9.3435983127247055506" id="6711176417918050308">
+        <link role="var" roleId="bwy9.3435983127247055512" targetNodeId="6711176417918050296" resolveInfo="d" />
+      </node>
+      <node role="var" roleId="e5td.6711176417917933772" type="bwy9.MqlVariable" typeId="bwy9.3435983127247044629" id="6711176417918050309">
+        <property name="name" nameId="tpck.1169194664001" value="qwe" />
+      </node>
     </node>
     <node role="statements" roleId="e5td.3373821274546687039" type="e5td.WflowExpressionStatement" typeId="e5td.3373821274546687071" id="7862448911997444563">
-      <property name="varname" nameId="e5td.3373821274546692990" value="odd" />
       <node role="expression" roleId="e5td.3373821274546687072" type="bwy9.MqlDotExpression" typeId="bwy9.6762883159245048085" id="7862448911997444580">
         <node role="left" roleId="bwy9.6762883159245048086" type="bwy9.MqlListLiteral" typeId="bwy9.7862448911997365751" id="7862448911997444564">
           <node role="elements" roleId="bwy9.7862448911997365752" type="bwy9.MqlIntLiteral" typeId="bwy9.6762883159245048052" id="7862448911997444565">
@@ -790,6 +825,9 @@
             </node>
           </node>
         </node>
+      </node>
+      <node role="var" roleId="e5td.6711176417917933772" type="bwy9.MqlVariable" typeId="bwy9.3435983127247044629" id="6711176417918050297">
+        <property name="name" nameId="tpck.1169194664001" value="e" />
       </node>
     </node>
   </root>

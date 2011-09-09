@@ -47,6 +47,15 @@
     <classNode dependClassName="java.util.Iterator" />
     <classNode dependClassName="jetbrains.mps.smodel.SNode" />
   </dependency>
+  <dependency className="jetbrains.mps.query.runtime.MultipleElementsScope" file="MultipleElementsScope.java">
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.ArrayList" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
+    <classNode dependClassName="jetbrains.mps.smodel.SNode" />
+    <classNode extendsClassName="jetbrains.mps.query.runtime.QueryScope" />
+  </dependency>
   <dependency className="jetbrains.mps.query.runtime.QueryScope" file="QueryScope.java">
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.List" />
