@@ -23,7 +23,7 @@ public class RunWorkflow_Action extends GeneratedAction {
   private static Logger LOG = Logger.getLogger(RunWorkflow_Action.class);
 
   public RunWorkflow_Action() {
-    super("Run workflow", "", ICON);
+    super("Run Workflow", "", ICON);
     this.setIsAlwaysVisible(false);
     this.setExecuteOutsideCommand(false);
   }

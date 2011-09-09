@@ -25,7 +25,7 @@
   <roots>
     <node type="tp4k.ActionDeclaration" typeId="tp4k.1203071646776" id="1163325315882442989">
       <property name="name" nameId="tpck.1169194664001" value="RunWorkflow" />
-      <property name="caption" nameId="tp4k.1205250923097" value="Run workflow" />
+      <property name="caption" nameId="tp4k.1205250923097" value="Run Workflow" />
     </node>
     <node type="tp4k.ActionGroupDeclaration" typeId="tp4k.1203087890642" id="1671449901154510504">
       <property name="name" nameId="tpck.1169194664001" value="WorkflowGroup" />
