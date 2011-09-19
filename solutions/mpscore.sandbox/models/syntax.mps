@@ -8,9 +8,6 @@
     <node type="q5nm.SSource" typeId="q5nm.5073985075242991059" id="5073985075243222320">
       <property name="name" nameId="tpck.1169194664001" value="types" />
     </node>
-    <node type="q5nm.SSource" typeId="q5nm.5073985075242991059" id="2481283025450212832">
-      <property name="name" nameId="tpck.1169194664001" value="asas" />
-    </node>
   </roots>
   <root id="5073985075243222320">
     <node role="input" roleId="q5nm.5073985075243149403" type="q5nm.SInputRef" typeId="q5nm.5073985075243144347" id="3135327435335338953">
@@ -305,41 +302,6 @@
       </node>
     </node>
     <node role="grammarParts" roleId="q5nm.5073985075243002173" type="q5nm.SGrammarPart" typeId="q5nm.3135327435335338954" id="3135327435335358682" />
-  </root>
-  <root id="2481283025450212832">
-    <node role="input" roleId="q5nm.5073985075243149403" type="q5nm.SInputRef" typeId="q5nm.5073985075243144347" id="2481283025450212842">
-      <link role="symbol" roleId="q5nm.5073985075243144348" targetNodeId="2481283025450212838" resolveInfo="zas" />
-    </node>
-    <node role="lexerParts" roleId="q5nm.5073985075243002164" type="q5nm.SLexem" typeId="q5nm.5073985075243001587" id="2481283025450212837">
-      <node role="sym" roleId="q5nm.5073985075243001591" type="q5nm.SSymbol" typeId="q5nm.5073985075243001589" id="2481283025450212838">
-        <property name="name" nameId="tpck.1169194664001" value="zas" />
-      </node>
-      <node role="regexp" roleId="q5nm.5073985075243002162" type="q5nm.SRegex" typeId="q5nm.5073985075243001601" id="2481283025450238485">
-        <property name="regexp" nameId="q5nm.5073985075243001602" value="[b-a]" />
-      </node>
-    </node>
-    <node role="lexerParts" roleId="q5nm.5073985075243002164" type="q5nm.SLexerPart" typeId="q5nm.5073985075243238823" id="2481283025450238491" />
-    <node role="lexerParts" roleId="q5nm.5073985075243002164" type="q5nm.SNamedPattern" typeId="q5nm.5073985075243002170" id="2481283025450238489">
-      <property name="name" nameId="tpck.1169194664001" value="asd" />
-      <node role="regex" roleId="q5nm.5073985075243144273" type="q5nm.SRegex" typeId="q5nm.5073985075243001601" id="2481283025450238490">
-        <property name="regexp" nameId="q5nm.5073985075243001602" value="xxx" />
-      </node>
-    </node>
-    <node role="lexerParts" roleId="q5nm.5073985075243002164" type="q5nm.SNamedPattern" typeId="q5nm.5073985075243002170" id="2481283025450253547">
-      <property name="name" nameId="tpck.1169194664001" value="asdsa" />
-      <node role="regex" roleId="q5nm.5073985075243144273" type="q5nm.SRegex" typeId="q5nm.5073985075243001601" id="2481283025450253548">
-        <property name="regexp" nameId="q5nm.5073985075243001602" value="asd" />
-      </node>
-    </node>
-    <node role="lexerParts" roleId="q5nm.5073985075243002164" type="q5nm.SLexem" typeId="q5nm.5073985075243001587" id="2481283025450248418">
-      <node role="sym" roleId="q5nm.5073985075243001591" type="q5nm.SSymbol" typeId="q5nm.5073985075243001589" id="2481283025450248419">
-        <property name="name" nameId="tpck.1169194664001" value="temp" />
-      </node>
-      <node role="regexp" roleId="q5nm.5073985075243002162" type="q5nm.SRegex" typeId="q5nm.5073985075243001601" id="2481283025450248421">
-        <property name="regexp" nameId="q5nm.5073985075243001602" value="a-z${asds}" />
-      </node>
-    </node>
-    <node role="lexerParts" roleId="q5nm.5073985075243002164" type="q5nm.SLexerPart" typeId="q5nm.5073985075243238823" id="2481283025450248412" />
   </root>
 </model>
 
