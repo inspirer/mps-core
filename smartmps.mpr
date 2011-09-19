@@ -11,6 +11,7 @@
       <modulePath path="${project}/languages/template/template.mpl" folder="" />
       <modulePath path="${mps_home}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar!/META-INF/module.xml" />
       <modulePath path="${project}/languages/workflow/workflow.mpl" folder="" />
+      <modulePath path="${project}/languages/syntax/syntax.mpl" folder="" />
     </projectModules>
     <genConfs />
   </component>

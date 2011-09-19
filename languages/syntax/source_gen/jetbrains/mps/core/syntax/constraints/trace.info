@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debugInfo>
+  <unitInfo fileName="ConstraintsAspectDescriptor.java" startLine="9" startPosition="0" endLine="31" endPosition="0" unitName="jetbrains.mps.core.syntax.constraints.ConstraintsAspectDescriptor" />
+  <root nodeId="2481283025450046201">
+    <nodeInfo nodeId="2481283025450046201" fileName="SLexerPart_Constraints.java" startLine="8" startPosition="35" endLine="9" endPosition="60" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+    <nodeInfo nodeId="2481283025450046201" fileName="SLexerPart_Constraints.java" startLine="7" startPosition="71" endLine="10" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="SLexerPart_Constraints#()V" />
+    <scopeInfo nodeId="2481283025450046201" fileName="SLexerPart_Constraints.java" startLine="8" startPosition="35" endLine="9" endPosition="60" />
+    <scopeInfo nodeId="2481283025450046201" fileName="SLexerPart_Constraints.java" startLine="7" startPosition="71" endLine="10" endPosition="3" />
+    <unitInfo nodeId="2481283025450046201" fileName="SLexerPart_Constraints.java" startLine="7" startPosition="0" endLine="12" endPosition="0" unitName="jetbrains.mps.core.syntax.constraints.SLexerPart_Constraints" />
+  </root>
+  <root nodeId="2481283025450253549">
+    <nodeInfo nodeId="2481283025450253549" fileName="SSymbol_Constraints.java" startLine="15" startPosition="68" endLine="16" endPosition="100" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="REGEXP_ef4amp_a0a0a0b0b0a1a0b0a" />
+    <nodeInfo nodeId="2481283025450253549" fileName="SSymbol_Constraints.java" startLine="16" startPosition="100" endLine="17" endPosition="111" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="REGEXP_ef4amp_a0a0a0b0b0a1a0b0a_0" />
+    <nodeInfo nodeId="2481283025450253549" fileName="SSymbol_Constraints.java" startLine="19" startPosition="32" endLine="20" endPosition="57" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+    <nodeInfo nodeId="2481283025450253549" fileName="SSymbol_Constraints.java" startLine="24" startPosition="82" endLine="25" endPosition="74" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="2481283025450253549" fileName="SSymbol_Constraints.java" startLine="28" startPosition="40" endLine="29" endPosition="20" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2481283025450253549" fileName="SSymbol_Constraints.java" startLine="33" startPosition="84" endLine="34" endPosition="37" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="2481283025450253549" fileName="SSymbol_Constraints.java" startLine="34" startPosition="37" endLine="35" endPosition="216" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="2481283025450253553" fileName="SSymbol_Constraints.java" startLine="34" startPosition="37" endLine="35" endPosition="216" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2481283025450253549" fileName="SSymbol_Constraints.java" startLine="37" startPosition="7" endLine="38" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2481283025450253549" fileName="SSymbol_Constraints.java" startLine="18" startPosition="0" endLine="21" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="SSymbol_Constraints#()V" />
+    <nodeInfo nodeId="2481283025450253549" fileName="SSymbol_Constraints.java" startLine="26" startPosition="80" endLine="31" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="hasOwnValidator#()Z" />
+    <nodeInfo nodeId="2481283025450253549" fileName="SSymbol_Constraints.java" startLine="31" startPosition="0" endLine="37" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="validateValue#(Ljetbrains/mps/smodel/SNode;Ljava/lang/String;Ljetbrains/mps/smodel/IScope;)Z" />
+    <nodeInfo nodeId="2481283025450253549" fileName="SSymbol_Constraints.java" startLine="25" startPosition="74" endLine="37" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2481283025450253549" fileName="SSymbol_Constraints.java" startLine="22" startPosition="0" endLine="40" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getNotDefaultProperties#()Ljava/util/Map;" />
+    <scopeInfo nodeId="2481283025450253549" fileName="SSymbol_Constraints.java" startLine="19" startPosition="32" endLine="20" endPosition="57" />
+    <scopeInfo nodeId="2481283025450253549" fileName="SSymbol_Constraints.java" startLine="28" startPosition="40" endLine="29" endPosition="20" />
+    <scopeInfo nodeId="2481283025450253552" fileName="SSymbol_Constraints.java" startLine="34" startPosition="37" endLine="35" endPosition="216" />
+    <scopeInfo nodeId="2481283025450253549" fileName="SSymbol_Constraints.java" startLine="33" startPosition="84" endLine="35" endPosition="216" />
+    <scopeInfo nodeId="2481283025450253549" fileName="SSymbol_Constraints.java" startLine="18" startPosition="0" endLine="21" endPosition="3" />
+    <scopeInfo nodeId="2481283025450253549" fileName="SSymbol_Constraints.java" startLine="26" startPosition="80" endLine="31" endPosition="0" />
+    <scopeInfo nodeId="2481283025450253549" fileName="SSymbol_Constraints.java" startLine="31" startPosition="0" endLine="37" endPosition="0" />
+    <scopeInfo nodeId="2481283025450253549" fileName="SSymbol_Constraints.java" startLine="24" startPosition="82" endLine="38" endPosition="22" />
+    <scopeInfo nodeId="2481283025450253549" fileName="SSymbol_Constraints.java" startLine="22" startPosition="0" endLine="40" endPosition="0" />
+    <unitInfo nodeId="2481283025450253549" fileName="SSymbol_Constraints.java" startLine="26" startPosition="31" endLine="37" endPosition="5" unitName="jetbrains.mps.core.syntax.constraints.SSymbol_Constraints$1" />
+    <unitInfo nodeId="2481283025450253549" fileName="SSymbol_Constraints.java" startLine="15" startPosition="0" endLine="41" endPosition="0" unitName="jetbrains.mps.core.syntax.constraints.SSymbol_Constraints" />
+  </root>
+  <root nodeId="5073985075243251709">
+    <nodeInfo nodeId="5073985075243251709" fileName="SRegex_Constraints.java" startLine="17" startPosition="31" endLine="18" endPosition="56" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+    <nodeInfo nodeId="5073985075243251709" fileName="SRegex_Constraints.java" startLine="22" startPosition="82" endLine="23" endPosition="74" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="5073985075243251709" fileName="SRegex_Constraints.java" startLine="26" startPosition="40" endLine="27" endPosition="20" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="5073985075243251709" fileName="SRegex_Constraints.java" startLine="31" startPosition="84" endLine="32" endPosition="39" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="5073985075243252483" fileName="SRegex_Constraints.java" startLine="33" startPosition="13" endLine="34" endPosition="86" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="5073985075243253627" fileName="SRegex_Constraints.java" startLine="34" startPosition="86" endLine="35" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="5073985075243253623" fileName="SRegex_Constraints.java" startLine="36" startPosition="43" endLine="37" endPosition="23" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="5073985075243251709" fileName="SRegex_Constraints.java" startLine="40" startPosition="7" endLine="41" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="5073985075243251709" fileName="SRegex_Constraints.java" startLine="16" startPosition="67" endLine="19" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="SRegex_Constraints#()V" />
+    <nodeInfo nodeId="5073985075243251709" fileName="SRegex_Constraints.java" startLine="24" startPosition="84" endLine="29" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="hasOwnValidator#()Z" />
+    <nodeInfo nodeId="5073985075243251709" fileName="SRegex_Constraints.java" startLine="32" startPosition="39" endLine="38" endPosition="9" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="5073985075243253615" fileName="SRegex_Constraints.java" startLine="32" startPosition="39" endLine="38" endPosition="9" conceptFqName="jetbrains.mps.baseLanguage.structure.TryCatchStatement" />
+    <nodeInfo nodeId="5073985075243251709" fileName="SRegex_Constraints.java" startLine="29" startPosition="0" endLine="40" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="validateValue#(Ljetbrains/mps/smodel/SNode;Ljava/lang/String;Ljetbrains/mps/smodel/IScope;)Z" />
+    <nodeInfo nodeId="5073985075243251709" fileName="SRegex_Constraints.java" startLine="23" startPosition="74" endLine="40" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="5073985075243251709" fileName="SRegex_Constraints.java" startLine="20" startPosition="0" endLine="43" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getNotDefaultProperties#()Ljava/util/Map;" />
+    <scopeInfo nodeId="5073985075243251709" fileName="SRegex_Constraints.java" startLine="17" startPosition="31" endLine="18" endPosition="56" />
+    <scopeInfo nodeId="5073985075243251709" fileName="SRegex_Constraints.java" startLine="26" startPosition="40" endLine="27" endPosition="20" />
+    <scopeInfo nodeId="5073985075243253618" fileName="SRegex_Constraints.java" startLine="36" startPosition="0" endLine="37" endPosition="23">
+      <varInfo nodeId="5073985075243253619" varName="ex" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243253621" fileName="SRegex_Constraints.java" startLine="36" startPosition="43" endLine="37" endPosition="23" />
+    <scopeInfo nodeId="5073985075243253616" fileName="SRegex_Constraints.java" startLine="33" startPosition="13" endLine="35" endPosition="22" />
+    <scopeInfo nodeId="5073985075243251709" fileName="SRegex_Constraints.java" startLine="16" startPosition="67" endLine="19" endPosition="3" />
+    <scopeInfo nodeId="5073985075243251709" fileName="SRegex_Constraints.java" startLine="24" startPosition="84" endLine="29" endPosition="0" />
+    <scopeInfo nodeId="5073985075243251712" fileName="SRegex_Constraints.java" startLine="32" startPosition="39" endLine="38" endPosition="9" />
+    <scopeInfo nodeId="5073985075243251709" fileName="SRegex_Constraints.java" startLine="31" startPosition="84" endLine="38" endPosition="9" />
+    <scopeInfo nodeId="5073985075243251709" fileName="SRegex_Constraints.java" startLine="29" startPosition="0" endLine="40" endPosition="0" />
+    <scopeInfo nodeId="5073985075243251709" fileName="SRegex_Constraints.java" startLine="22" startPosition="82" endLine="41" endPosition="22" />
+    <scopeInfo nodeId="5073985075243251709" fileName="SRegex_Constraints.java" startLine="20" startPosition="0" endLine="43" endPosition="0" />
+    <unitInfo nodeId="5073985075243251709" fileName="SRegex_Constraints.java" startLine="24" startPosition="33" endLine="40" endPosition="5" unitName="jetbrains.mps.core.syntax.constraints.SRegex_Constraints$1" />
+    <unitInfo nodeId="5073985075243251709" fileName="SRegex_Constraints.java" startLine="16" startPosition="0" endLine="44" endPosition="0" unitName="jetbrains.mps.core.syntax.constraints.SRegex_Constraints" />
+  </root>
+  <root nodeId="5073985075243262172">
+    <nodeInfo nodeId="5073985075243262172" fileName="SNonTerm_Constraints.java" startLine="8" startPosition="33" endLine="9" endPosition="58" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+    <nodeInfo nodeId="5073985075243262172" fileName="SNonTerm_Constraints.java" startLine="7" startPosition="69" endLine="10" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="SNonTerm_Constraints#()V" />
+    <scopeInfo nodeId="5073985075243262172" fileName="SNonTerm_Constraints.java" startLine="8" startPosition="33" endLine="9" endPosition="58" />
+    <scopeInfo nodeId="5073985075243262172" fileName="SNonTerm_Constraints.java" startLine="7" startPosition="69" endLine="10" endPosition="3" />
+    <unitInfo nodeId="5073985075243262172" fileName="SNonTerm_Constraints.java" startLine="7" startPosition="0" endLine="12" endPosition="0" unitName="jetbrains.mps.core.syntax.constraints.SNonTerm_Constraints" />
+  </root>
+</debugInfo>
+

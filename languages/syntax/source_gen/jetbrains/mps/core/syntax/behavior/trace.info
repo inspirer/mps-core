@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debugInfo>
+  <unitInfo fileName="SRulePart_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="8" endPosition="0" unitName="jetbrains.mps.core.syntax.behavior.SRulePart_BehaviorDescriptor" />
+  <unitInfo fileName="SLineComment_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="jetbrains.mps.core.syntax.behavior.SLineComment_BehaviorDescriptor" />
+  <unitInfo fileName="SPrio_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="jetbrains.mps.core.syntax.behavior.SPrio_BehaviorDescriptor" />
+  <unitInfo fileName="SNonTerm_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="jetbrains.mps.core.syntax.behavior.SNonTerm_BehaviorDescriptor" />
+  <unitInfo fileName="SLexem_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="jetbrains.mps.core.syntax.behavior.SLexem_BehaviorDescriptor" />
+  <unitInfo fileName="SGrammarPart_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="jetbrains.mps.core.syntax.behavior.SGrammarPart_BehaviorDescriptor" />
+  <unitInfo fileName="SLexerPart_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="jetbrains.mps.core.syntax.behavior.SLexerPart_BehaviorDescriptor" />
+  <unitInfo fileName="SInputRef_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="jetbrains.mps.core.syntax.behavior.SInputRef_BehaviorDescriptor" />
+  <unitInfo fileName="SReference_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="jetbrains.mps.core.syntax.behavior.SReference_BehaviorDescriptor" />
+  <unitInfo fileName="SType_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="jetbrains.mps.core.syntax.behavior.SType_BehaviorDescriptor" />
+  <unitInfo fileName="SAction_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="jetbrains.mps.core.syntax.behavior.SAction_BehaviorDescriptor" />
+  <unitInfo fileName="SRegex_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="jetbrains.mps.core.syntax.behavior.SRegex_BehaviorDescriptor" />
+  <unitInfo fileName="SSymbolRef_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="jetbrains.mps.core.syntax.behavior.SSymbolRef_BehaviorDescriptor" />
+  <unitInfo fileName="SRule_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="jetbrains.mps.core.syntax.behavior.SRule_BehaviorDescriptor" />
+  <unitInfo fileName="SNamedPattern_BehaviorDescriptor.java" startLine="9" startPosition="0" endLine="22" endPosition="0" unitName="jetbrains.mps.core.syntax.behavior.SNamedPattern_BehaviorDescriptor" />
+  <unitInfo fileName="SSymbol_BehaviorDescriptor.java" startLine="10" startPosition="0" endLine="23" endPosition="0" unitName="jetbrains.mps.core.syntax.behavior.SSymbol_BehaviorDescriptor" />
+  <unitInfo fileName="SSource_BehaviorDescriptor.java" startLine="10" startPosition="0" endLine="23" endPosition="0" unitName="jetbrains.mps.core.syntax.behavior.SSource_BehaviorDescriptor" />
+  <unitInfo fileName="BehaviorAspectDescriptor.java" startLine="9" startPosition="0" endLine="50" endPosition="0" unitName="jetbrains.mps.core.syntax.behavior.BehaviorAspectDescriptor" />
+</debugInfo>
+
