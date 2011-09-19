@@ -1302,9 +1302,6 @@
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="5280308256730467478">
         <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="bwy9.5280308256730467464" />
-        <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.PunctuationRightStyleClassItem" typeId="tpc2.1233759184865" id="5280308256730467479">
-          <property name="flag" nameId="tpc2.1186414551515" value="true" />
-        </node>
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="5280308256730467480">
         <property name="text" nameId="tpc2.1073389577007" value=")" />

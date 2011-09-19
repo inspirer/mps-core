@@ -10,7 +10,7 @@ public class MqlCollectionSelector_BehaviorDescriptor extends MqlSelector_Behavi
   public MqlCollectionSelector_BehaviorDescriptor() {
   }
 
-  public Object virtual_evaluate_7862448911997337721(SNode thisNode, Object object, EvaluationEnvironment env, EvaluationContext context) {
+  public Object virtual_evaluate_7862448911997337721(SNode thisNode, Object object, final EvaluationEnvironment env, final EvaluationContext context) {
     return MqlCollectionSelector_Behavior.virtual_evaluate_7862448911997337721(thisNode, object, env, context);
   }
 

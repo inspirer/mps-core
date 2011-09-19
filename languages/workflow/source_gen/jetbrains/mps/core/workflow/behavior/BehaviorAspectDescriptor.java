@@ -7,17 +7,21 @@ import java.util.Arrays;
 import jetbrains.mps.smodel.runtime.interpreted.BehaviorAspectInterpreted;
 
 public class BehaviorAspectDescriptor implements jetbrains.mps.smodel.runtime.BehaviorAspectDescriptor {
-  private static String[] stringSwitchCases_846f5o_a0a0a = new String[]{"jetbrains.mps.core.workflow.structure.WflowExecutable", "jetbrains.mps.core.workflow.structure.WflowExpressionStatement"};
+  private static String[] stringSwitchCases_846f5o_a0a0a = new String[]{"jetbrains.mps.core.workflow.structure.WflowAssert", "jetbrains.mps.core.workflow.structure.WflowExecutable", "jetbrains.mps.core.workflow.structure.WflowExpressionStatement", "jetbrains.mps.core.workflow.structure.WflowStatement"};
 
   public BehaviorAspectDescriptor() {
   }
 
   public BehaviorDescriptor getDescriptor(String fqName) {
     switch (Arrays.binarySearch(stringSwitchCases_846f5o_a0a0a, fqName)) {
-      case 0:
-        return new WflowExecutable_BehaviorDescriptor();
       case 1:
+        return new WflowExecutable_BehaviorDescriptor();
+      case 3:
+        return new WflowStatement_BehaviorDescriptor();
+      case 2:
         return new WflowExpressionStatement_BehaviorDescriptor();
+      case 0:
+        return new WflowAssert_BehaviorDescriptor();
       default:
         return BehaviorAspectInterpreted.getInstance().getDescriptor(fqName);
     }

@@ -3,11 +3,19 @@
   <dependency className="jetbrains.mps.core.workflow.behavior.BehaviorAspectDescriptor" file="BehaviorAspectDescriptor.java">
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.Arrays" />
+    <classNode dependClassName="jetbrains.mps.core.workflow.behavior.WflowAssert_BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.core.workflow.behavior.WflowExecutable_BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.core.workflow.behavior.WflowExpressionStatement_BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.core.workflow.behavior.WflowStatement_BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.interpreted.BehaviorAspectInterpreted" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.BehaviorAspectDescriptor" />
+  </dependency>
+  <dependency className="jetbrains.mps.core.workflow.behavior.WflowAssert_BehaviorDescriptor" file="WflowAssert_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.core.workflow.behavior.WflowStatement_BehaviorDescriptor" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="jetbrains.mps.core.workflow.behavior.WflowExecutable_Behavior" file="WflowExecutable_Behavior.java">
     <classNode dependClassName="java.lang.String" />
@@ -51,6 +59,9 @@
     <classNode dependClassName="jetbrains.mps.smodel.SNode" />
     <classNode extendsClassName="java.lang.Cloneable" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="jetbrains.mps.core.workflow.behavior.WflowStatement_Behavior" file="WflowStatement_Behavior.java">
+    <classNode dependClassName="jetbrains.mps.smodel.SNode" />
   </dependency>
   <dependency className="jetbrains.mps.core.workflow.behavior.WflowStatement_BehaviorDescriptor" file="WflowStatement_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Override" />

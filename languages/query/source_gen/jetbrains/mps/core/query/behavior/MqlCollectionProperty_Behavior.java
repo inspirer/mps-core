@@ -6,6 +6,13 @@ import jetbrains.mps.smodel.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.core.query.runtime.EvaluationEnvironment;
+import jetbrains.mps.core.query.runtime.EvaluationContext;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Collection;
+import jetbrains.mps.core.query.runtime.EvaluationException;
+import java.util.Collections;
 import java.util.Set;
 import java.util.HashSet;
 import jetbrains.mps.smodel.SModelUtil_new;
@@ -27,6 +34,58 @@ public class MqlCollectionProperty_Behavior {
       return new MqlCollectionProperty_Behavior.QuotationClass_tz2cyz_a0a0b0a1().createNode();
     }
     return null;
+  }
+
+  public static Object virtual_evaluate_7862448911997337721(SNode thisNode, Object object, EvaluationEnvironment env, EvaluationContext context) {
+    if (SPropertyOperations.hasValue(thisNode, "kind", "2", null)) {
+      Iterator iterator = ((Iterable) object).iterator();
+      return (iterator.hasNext() ?
+        iterator.next() :
+        null
+      );
+    } else if (SPropertyOperations.hasValue(thisNode, "kind", "4", null)) {
+      Iterator iterator = ((Iterable) object).iterator();
+      return !(iterator.hasNext());
+    } else if (SPropertyOperations.hasValue(thisNode, "kind", "5", null)) {
+      Iterator iterator = ((Iterable) object).iterator();
+      return iterator.hasNext();
+    } else if (SPropertyOperations.hasValue(thisNode, "kind", "3", null)) {
+      if (object instanceof List) {
+        List list = (List) object;
+        return list.get(list.size() - 1);
+      } else {
+        Iterator iterator = ((Iterable) object).iterator();
+        Object last = null;
+        while (iterator.hasNext()) {
+          last = iterator.next();
+        }
+        return last;
+      }
+    } else if (SPropertyOperations.hasValue(thisNode, "kind", "1", null)) {
+      if (object instanceof Collection) {
+        return ((Collection) object).size();
+      } else {
+        Iterator iterator = ((Iterable) object).iterator();
+        int size = 0;
+        while (iterator.hasNext()) {
+          size++;
+          iterator.next();
+        }
+        return size;
+      }
+    }
+
+    throw new EvaluationException("bad query: unsupported kind", thisNode, context);
+  }
+
+  public static Iterator call_asIterator_1495482807929814621(SNode thisNode, Object object, EvaluationEnvironment env, EvaluationContext context) {
+    if (object == null) {
+      return Collections.emptySet().iterator();
+    }
+    if (object instanceof Iterable) {
+      return ((Iterable) object).iterator();
+    }
+    throw new EvaluationException("object is not a collection `" + env.getRuntime().objectDebugText(object) + "'", thisNode, context);
   }
 
   public static class QuotationClass_tz2cyz_a0a0a0a1 {

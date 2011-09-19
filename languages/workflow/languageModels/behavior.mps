@@ -22,6 +22,10 @@
     <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="6711176417918004929">
       <link role="concept" roleId="1i04.1225194240799" targetNodeId="e5td.3373821274546687033" resolveInfo="WflowExecutable" />
     </node>
+    <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="4188390566614790289">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="statements" />
+      <link role="concept" roleId="1i04.1225194240799" targetNodeId="e5td.3373821274546687034" resolveInfo="WflowStatement" />
+    </node>
   </roots>
   <root id="6711176417917954530">
     <node role="constructor" roleId="1i04.1225194240801" type="1i04.ConceptConstructorDeclaration" typeId="1i04.1225194413805" id="6711176417917954531">
@@ -245,6 +249,11 @@
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="6711176417918004939">
         <link role="classifier" roleId="tpee.1107535924139" targetNodeId="tcfh.5433095484313879188" resolveInfo="QueryScope" />
       </node>
+    </node>
+  </root>
+  <root id="4188390566614790289">
+    <node role="constructor" roleId="1i04.1225194240801" type="1i04.ConceptConstructorDeclaration" typeId="1i04.1225194413805" id="4188390566614790290">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="4188390566614790291" />
     </node>
   </root>
 </model>

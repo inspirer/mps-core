@@ -171,9 +171,18 @@
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="jetbrains.mps.core.query.behavior.MqlCollectionProperty_Behavior" file="MqlCollectionProperty_Behavior.java">
+    <classNode dependClassName="java.lang.Iterable" />
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="java.util.Collection" />
+    <classNode dependClassName="java.util.Collections" />
     <classNode dependClassName="java.util.HashSet" />
+    <classNode dependClassName="java.util.Iterator" />
+    <classNode dependClassName="java.util.List" />
     <classNode dependClassName="java.util.Set" />
     <classNode dependClassName="jetbrains.mps.core.query.behavior.MqlSelector_Behavior" />
+    <classNode dependClassName="jetbrains.mps.core.query.runtime.EvaluationContext" />
+    <classNode dependClassName="jetbrains.mps.core.query.runtime.EvaluationEnvironment" />
+    <classNode dependClassName="jetbrains.mps.core.query.runtime.EvaluationException" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
@@ -182,10 +191,13 @@
     <classNode dependClassName="jetbrains.mps.smodel.SNode" />
   </dependency>
   <dependency className="jetbrains.mps.core.query.behavior.MqlCollectionProperty_BehaviorDescriptor" file="MqlCollectionProperty_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="jetbrains.mps.core.query.behavior.MqlCollectionProperty_Behavior" />
     <classNode dependClassName="jetbrains.mps.core.query.behavior.MqlSelector_BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.core.query.runtime.EvaluationContext" />
+    <classNode dependClassName="jetbrains.mps.core.query.runtime.EvaluationEnvironment" />
     <classNode dependClassName="jetbrains.mps.smodel.SNode" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
@@ -227,13 +239,20 @@
   </dependency>
   <dependency className="jetbrains.mps.core.query.behavior.MqlCollectionSelector_Behavior" file="MqlCollectionSelector_Behavior.java">
     <classNode dependClassName="java.lang.Boolean" />
+    <classNode dependClassName="java.lang.Class" />
+    <classNode dependClassName="java.lang.Comparable" />
     <classNode dependClassName="java.lang.Iterable" />
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.ArrayList" />
     <classNode dependClassName="java.util.Collection" />
+    <classNode dependClassName="java.util.Collections" />
+    <classNode dependClassName="java.util.Comparator" />
+    <classNode dependClassName="java.util.HashMap" />
     <classNode dependClassName="java.util.HashSet" />
     <classNode dependClassName="java.util.LinkedHashSet" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="java.util.Map" />
     <classNode dependClassName="java.util.Set" />
     <classNode dependClassName="jetbrains.mps.core.query.behavior.MqlExpression_Behavior" />
     <classNode dependClassName="jetbrains.mps.core.query.behavior.MqlSelector_Behavior" />
@@ -247,6 +266,9 @@
     <classNode dependClassName="jetbrains.mps.project.GlobalScope" />
     <classNode dependClassName="jetbrains.mps.smodel.SModelUtil_new" />
     <classNode dependClassName="jetbrains.mps.smodel.SNode" />
+    <classNode dependClassName="jetbrains.mps.smodel.behaviour.BehaviorManager" />
+    <classNode dependClassName="jetbrains.mps.smodel.structure.BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.smodel.structure.ConceptRegistry" />
   </dependency>
   <dependency className="jetbrains.mps.core.query.behavior.MqlCollectionSelector_BehaviorDescriptor" file="MqlCollectionSelector_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Object" />

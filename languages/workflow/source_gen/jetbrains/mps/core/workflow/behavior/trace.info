@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debugInfo>
+  <unitInfo fileName="WflowAssert_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="jetbrains.mps.core.workflow.behavior.WflowAssert_BehaviorDescriptor" />
   <unitInfo fileName="WflowStatement_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="jetbrains.mps.core.workflow.behavior.WflowStatement_BehaviorDescriptor" />
   <unitInfo fileName="WflowExpressionStatement_BehaviorDescriptor.java" startLine="8" startPosition="0" endLine="21" endPosition="0" unitName="jetbrains.mps.core.workflow.behavior.WflowExpressionStatement_BehaviorDescriptor" />
-  <unitInfo fileName="BehaviorAspectDescriptor.java" startLine="9" startPosition="0" endLine="26" endPosition="0" unitName="jetbrains.mps.core.workflow.behavior.BehaviorAspectDescriptor" />
   <unitInfo fileName="WflowExecutable_BehaviorDescriptor.java" startLine="12" startPosition="0" endLine="29" endPosition="0" unitName="jetbrains.mps.core.workflow.behavior.WflowExecutable_BehaviorDescriptor" />
+  <unitInfo fileName="BehaviorAspectDescriptor.java" startLine="9" startPosition="0" endLine="30" endPosition="0" unitName="jetbrains.mps.core.workflow.behavior.BehaviorAspectDescriptor" />
+  <root nodeId="4188390566614790289">
+    <nodeInfo nodeId="4188390566614790289" fileName="WflowStatement_Behavior.java" startLine="7" startPosition="38" endLine="10" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="init#(Ljetbrains/mps/smodel/SNode;)V" />
+    <scopeInfo nodeId="4188390566614790291" fileName="WflowStatement_Behavior.java" startLine="8" startPosition="43" endLine="8" endPosition="43" />
+    <scopeInfo nodeId="4188390566614790289" fileName="WflowStatement_Behavior.java" startLine="7" startPosition="38" endLine="10" endPosition="0" />
+    <unitInfo nodeId="4188390566614790289" fileName="WflowStatement_Behavior.java" startLine="7" startPosition="0" endLine="11" endPosition="0" unitName="jetbrains.mps.core.workflow.behavior.WflowStatement_Behavior" />
+  </root>
   <root nodeId="6711176417917954530">
     <nodeInfo nodeId="6711176417918004915" fileName="WflowExpressionStatement_Behavior.java" startLine="13" startPosition="105" endLine="14" endPosition="123" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="6711176417917954530" fileName="WflowExpressionStatement_Behavior.java" startLine="9" startPosition="48" endLine="12" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="init#(Ljetbrains/mps/smodel/SNode;)V" />

@@ -4,7 +4,7 @@ package jetbrains.mps.core.workflow.behavior;
 
 import jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor;
 
-public abstract class WflowStatement_BehaviorDescriptor extends BaseConcept_BehaviorDescriptor {
+public class WflowStatement_BehaviorDescriptor extends BaseConcept_BehaviorDescriptor {
   public WflowStatement_BehaviorDescriptor() {
   }
 

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debugInfo>
   <unitInfo fileName="Workflow_Language.java" startLine="9" startPosition="0" endLine="16" endPosition="0" unitName="jetbrains.mps.core.workflow.structure.Workflow_Language" />
-  <unitInfo fileName="StructureAspectDescriptor.java" startLine="10" startPosition="0" endLine="29" endPosition="0" unitName="jetbrains.mps.core.workflow.structure.StructureAspectDescriptor" />
+  <unitInfo fileName="StructureAspectDescriptor.java" startLine="10" startPosition="0" endLine="31" endPosition="0" unitName="jetbrains.mps.core.workflow.structure.StructureAspectDescriptor" />
   <root nodeId="3373821274546687033">
     <nodeInfo nodeId="3373821274546687033" fileName="WflowExecutable.java" startLine="16" startPosition="93" endLine="17" endPosition="95" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="concept" />
     <nodeInfo nodeId="3373821274546687033" fileName="WflowExecutable.java" startLine="17" startPosition="95" endLine="18" endPosition="43" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="NAME" />
@@ -193,6 +193,40 @@
     <scopeInfo nodeId="3373821274546687071" fileName="WflowExpressionStatement.java" startLine="88" startPosition="0" endLine="92" endPosition="0" />
     <scopeInfo nodeId="3373821274546687071" fileName="WflowExpressionStatement.java" startLine="92" startPosition="0" endLine="96" endPosition="0" />
     <unitInfo nodeId="3373821274546687071" fileName="WflowExpressionStatement.java" startLine="16" startPosition="0" endLine="97" endPosition="0" unitName="jetbrains.mps.core.workflow.structure.WflowExpressionStatement" />
+  </root>
+  <root nodeId="4188390566614790269">
+    <nodeInfo nodeId="4188390566614790269" fileName="WflowAssert.java" startLine="11" startPosition="49" endLine="12" endPosition="91" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="concept" />
+    <nodeInfo nodeId="4188390566614790269" fileName="WflowAssert.java" startLine="12" startPosition="91" endLine="13" endPosition="47" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="ACTUAL" />
+    <nodeInfo nodeId="4188390566614790269" fileName="WflowAssert.java" startLine="13" startPosition="47" endLine="14" endPosition="51" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="EXPECTED" />
+    <nodeInfo nodeId="4188390566614790269" fileName="WflowAssert.java" startLine="16" startPosition="34" endLine="17" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+    <nodeInfo nodeId="4188390566614790269" fileName="WflowAssert.java" startLine="20" startPosition="36" endLine="21" endPosition="82" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="4188390566614790269" fileName="WflowAssert.java" startLine="24" startPosition="45" endLine="25" endPosition="45" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="4188390566614790269" fileName="WflowAssert.java" startLine="28" startPosition="38" endLine="29" endPosition="84" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="4188390566614790269" fileName="WflowAssert.java" startLine="32" startPosition="47" endLine="33" endPosition="47" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="4188390566614790269" fileName="WflowAssert.java" startLine="36" startPosition="66" endLine="37" endPosition="173" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="4188390566614790269" fileName="WflowAssert.java" startLine="40" startPosition="52" endLine="41" endPosition="46" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="4188390566614790269" fileName="WflowAssert.java" startLine="15" startPosition="0" endLine="18" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="WflowAssert#(Ljetbrains/mps/smodel/SNode;)V" />
+    <nodeInfo nodeId="4188390566614790269" fileName="WflowAssert.java" startLine="19" startPosition="0" endLine="23" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getActual#()Ljetbrains/mps/smodel/INodeAdapter;" />
+    <nodeInfo nodeId="4188390566614790269" fileName="WflowAssert.java" startLine="23" startPosition="0" endLine="27" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setActual#(Ljetbrains/mps/smodel/INodeAdapter;)V" />
+    <nodeInfo nodeId="4188390566614790269" fileName="WflowAssert.java" startLine="27" startPosition="0" endLine="31" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getExpected#()Ljetbrains/mps/smodel/INodeAdapter;" />
+    <nodeInfo nodeId="4188390566614790269" fileName="WflowAssert.java" startLine="31" startPosition="0" endLine="35" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setExpected#(Ljetbrains/mps/smodel/INodeAdapter;)V" />
+    <nodeInfo nodeId="4188390566614790269" fileName="WflowAssert.java" startLine="35" startPosition="0" endLine="39" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="newInstance#(Ljetbrains/mps/smodel/SModel;Z)Ljetbrains/mps/core/workflow/structure/WflowAssert;" />
+    <nodeInfo nodeId="4188390566614790269" fileName="WflowAssert.java" startLine="39" startPosition="0" endLine="43" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="newInstance#(Ljetbrains/mps/smodel/SModel;)Ljetbrains/mps/core/workflow/structure/WflowAssert;" />
+    <scopeInfo nodeId="4188390566614790269" fileName="WflowAssert.java" startLine="16" startPosition="34" endLine="17" endPosition="16" />
+    <scopeInfo nodeId="4188390566614790269" fileName="WflowAssert.java" startLine="20" startPosition="36" endLine="21" endPosition="82" />
+    <scopeInfo nodeId="4188390566614790269" fileName="WflowAssert.java" startLine="24" startPosition="45" endLine="25" endPosition="45" />
+    <scopeInfo nodeId="4188390566614790269" fileName="WflowAssert.java" startLine="28" startPosition="38" endLine="29" endPosition="84" />
+    <scopeInfo nodeId="4188390566614790269" fileName="WflowAssert.java" startLine="32" startPosition="47" endLine="33" endPosition="47" />
+    <scopeInfo nodeId="4188390566614790269" fileName="WflowAssert.java" startLine="36" startPosition="66" endLine="37" endPosition="173" />
+    <scopeInfo nodeId="4188390566614790269" fileName="WflowAssert.java" startLine="40" startPosition="52" endLine="41" endPosition="46" />
+    <scopeInfo nodeId="4188390566614790269" fileName="WflowAssert.java" startLine="15" startPosition="0" endLine="18" endPosition="3" />
+    <scopeInfo nodeId="4188390566614790269" fileName="WflowAssert.java" startLine="19" startPosition="0" endLine="23" endPosition="0" />
+    <scopeInfo nodeId="4188390566614790269" fileName="WflowAssert.java" startLine="23" startPosition="0" endLine="27" endPosition="0" />
+    <scopeInfo nodeId="4188390566614790269" fileName="WflowAssert.java" startLine="27" startPosition="0" endLine="31" endPosition="0" />
+    <scopeInfo nodeId="4188390566614790269" fileName="WflowAssert.java" startLine="31" startPosition="0" endLine="35" endPosition="0" />
+    <scopeInfo nodeId="4188390566614790269" fileName="WflowAssert.java" startLine="35" startPosition="0" endLine="39" endPosition="0" />
+    <scopeInfo nodeId="4188390566614790269" fileName="WflowAssert.java" startLine="39" startPosition="0" endLine="43" endPosition="0" />
+    <unitInfo nodeId="4188390566614790269" fileName="WflowAssert.java" startLine="11" startPosition="0" endLine="44" endPosition="0" unitName="jetbrains.mps.core.workflow.structure.WflowAssert" />
   </root>
 </debugInfo>
 

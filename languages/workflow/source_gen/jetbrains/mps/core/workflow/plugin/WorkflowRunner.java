@@ -54,6 +54,24 @@ public class WorkflowRunner {
             null
           ));
         }
+      } else if (SNodeOperations.isInstanceOf(st, "jetbrains.mps.core.workflow.structure.WflowAssert")) {
+        try {
+          SNode exprst = SNodeOperations.cast(st, "jetbrains.mps.core.workflow.structure.WflowAssert");
+          Object expected = MqlExpression_Behavior.call_evaluate_1671449901154581105(SLinkOperations.getTarget(exprst, "expected", true), env, rootContext.subContext());
+          Object actual = MqlExpression_Behavior.call_evaluate_1671449901154581105(SLinkOperations.getTarget(exprst, "actual", true), env, rootContext.subContext());
+          boolean result = env.getRuntime().objectEquals(expected, actual);
+
+          if (!(result)) {
+            report(MessageKind.ERROR, "fail: got " + actual + " instead of " + expected, st);
+          }
+
+        } catch (Exception ex) {
+          Throwable thr = unwrap(ex);
+          report(MessageKind.ERROR, thr.toString(), (thr instanceof EvaluationException ?
+            ((EvaluationException) thr).getQuery() :
+            null
+          ));
+        }
       }
     }
   }
