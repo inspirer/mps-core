@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="-b4bmmi5y45dpl2bz5wol3bimj1b16h">
+<dependencies version="2" modelHash="73peinpd05iq3wvjlmnrs2ggkwrddkh">
   <dep model="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
   <dep model="r:00000000-0000-4000-0000-011c895902cb(jetbrains.mps.baseLanguage.generator.java.closures@generator)" />
   <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" />
-  <dep model="r:8b619df7-d3f8-4ee2-9b4f-a637de362660(jetbrains.mps.template.typesystem)" hash="-11z9xglu00anryt8ftqzxqnxap3agam" />
+  <dep model="r:8b619df7-d3f8-4ee2-9b4f-a637de362660(jetbrains.mps.core.template.typesystem)" hash="9xecvsa7oogxpx0ms1bg235cwimybif" />
+  <dep model="r:aa31e43e-9240-4f4d-b6db-5c1c9a86c59e(jetbrains.mps.lang.project.structure)" />
   <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" />
   <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" />
   <common>
     <dep model="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <dep model="r:00000000-0000-4000-0000-011c895902cb(jetbrains.mps.baseLanguage.generator.java.closures@generator)" />
     <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" />
-    <dep model="r:8b619df7-d3f8-4ee2-9b4f-a637de362660(jetbrains.mps.template.typesystem)" />
+    <dep model="r:8b619df7-d3f8-4ee2-9b4f-a637de362660(jetbrains.mps.core.template.typesystem)" />
+    <dep model="r:aa31e43e-9240-4f4d-b6db-5c1c9a86c59e(jetbrains.mps.lang.project.structure)" />
     <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" />
     <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" />
     <file name="Language.java" />

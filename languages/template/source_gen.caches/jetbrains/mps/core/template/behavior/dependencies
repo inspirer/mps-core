@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependenciesRoot>
+  <dependency className="jetbrains.mps.core.template.behavior.BehaviorAspectDescriptor" file="BehaviorAspectDescriptor.java">
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.Arrays" />
+    <classNode dependClassName="jetbrains.mps.core.template.behavior.MtlBuilder_BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.core.template.behavior.MtlForeachMacro_BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.core.template.behavior.MtlForeachVar_BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.core.template.behavior.MtlIfMacro_BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.core.template.behavior.MtlLibrary_BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.core.template.behavior.MtlNewNodeType_BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.core.template.behavior.MtlNodeQueryMacro_BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.core.template.behavior.MtlPropertyMacro_BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.core.template.behavior.MtlQuery_BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.core.template.behavior.MtlReferenceMacro_BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.core.template.behavior.MtlTemplateRoot_BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.core.template.behavior.MtlTemplate_BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.smodel.runtime.BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.smodel.runtime.interpreted.BehaviorAspectInterpreted" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.BehaviorAspectDescriptor" />
+  </dependency>
+  <dependency className="jetbrains.mps.core.template.behavior.MtlBuilder_Behavior" file="MtlBuilder_Behavior.java">
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes" />
+    <classNode dependClassName="jetbrains.mps.core.query.runtime.QueryScope" />
+    <classNode dependClassName="jetbrains.mps.core.query.runtime.SimpleRoleScope" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.SNode" />
+  </dependency>
+  <dependency className="jetbrains.mps.core.template.behavior.MtlBuilder_BehaviorDescriptor" file="MtlBuilder_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.core.query.behavior.MqlScopeProvider_BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.core.query.runtime.QueryScope" />
+    <classNode dependClassName="jetbrains.mps.core.template.behavior.MtlBuilder_Behavior" />
+    <classNode dependClassName="jetbrains.mps.core.template.behavior.MtlEntity_BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.INamedConcept_Behavior" />
+    <classNode dependClassName="jetbrains.mps.smodel.SNode" />
+    <classNode extendsClassName="java.lang.Cloneable" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="jetbrains.mps.core.template.behavior.MtlEntity_BehaviorDescriptor" file="MtlEntity_BehaviorDescriptor.java">
+    <classNode dependClassName="jetbrains.mps.core.query.behavior.MqlParametersContainer_BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.INamedConcept_BehaviorDescriptor" />
+    <classNode extendsClassName="java.lang.Cloneable" />
+  </dependency>
+  <dependency className="jetbrains.mps.core.template.behavior.MtlForeachMacro_BehaviorDescriptor" file="MtlForeachMacro_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.core.template.behavior.MtlNodeMacro_BehaviorDescriptor" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="jetbrains.mps.core.template.behavior.MtlForeachVar_BehaviorDescriptor" file="MtlForeachVar_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.INamedConcept_Behavior" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.INamedConcept_BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.smodel.SNode" />
+    <classNode extendsClassName="java.lang.Cloneable" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="jetbrains.mps.core.template.behavior.MtlIfMacro_BehaviorDescriptor" file="MtlIfMacro_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.core.template.behavior.MtlNodeMacro_BehaviorDescriptor" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="jetbrains.mps.core.template.behavior.MtlLibrary_Behavior" file="MtlLibrary_Behavior.java">
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes" />
+    <classNode dependClassName="jetbrains.mps.core.query.runtime.QueryScope" />
+    <classNode dependClassName="jetbrains.mps.core.query.runtime.SimpleRoleScope" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.SNode" />
+  </dependency>
+  <dependency className="jetbrains.mps.core.template.behavior.MtlLibrary_BehaviorDescriptor" file="MtlLibrary_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.core.query.behavior.MqlScopeProvider_BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.core.query.runtime.QueryScope" />
+    <classNode dependClassName="jetbrains.mps.core.template.behavior.MtlLibrary_Behavior" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.INamedConcept_Behavior" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.INamedConcept_BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.smodel.SNode" />
+    <classNode extendsClassName="java.lang.Cloneable" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="jetbrains.mps.core.template.behavior.MtlNewNodeType_Behavior" file="MtlNewNodeType_Behavior.java">
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.SNode" />
+    <classNode dependClassName="jetbrains.mps.util.NameUtil" />
+  </dependency>
+  <dependency className="jetbrains.mps.core.template.behavior.MtlNewNodeType_BehaviorDescriptor" file="MtlNewNodeType_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.core.query.behavior.MqlType_BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.core.template.behavior.MtlNewNodeType_Behavior" />
+    <classNode dependClassName="jetbrains.mps.smodel.SNode" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="jetbrains.mps.core.template.behavior.MtlNodeMacro_BehaviorDescriptor" file="MtlNodeMacro_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.NodeAttribute_BehaviorDescriptor" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="jetbrains.mps.core.template.behavior.MtlNodeQueryMacro_BehaviorDescriptor" file="MtlNodeQueryMacro_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.core.template.behavior.MtlNodeMacro_BehaviorDescriptor" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="jetbrains.mps.core.template.behavior.MtlPropertyMacro_BehaviorDescriptor" file="MtlPropertyMacro_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.PropertyAttribute_BehaviorDescriptor" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="jetbrains.mps.core.template.behavior.MtlQuery_BehaviorDescriptor" file="MtlQuery_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.core.query.behavior.MqlQuery_BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.core.template.behavior.MtlEntity_BehaviorDescriptor" />
+    <classNode extendsClassName="java.lang.Cloneable" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="jetbrains.mps.core.template.behavior.MtlReferenceMacro_BehaviorDescriptor" file="MtlReferenceMacro_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.LinkAttribute_BehaviorDescriptor" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="jetbrains.mps.core.template.behavior.MtlTemplateRoot_BehaviorDescriptor" file="MtlTemplateRoot_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.NodeAttribute_BehaviorDescriptor" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="jetbrains.mps.core.template.behavior.MtlTemplate_Behavior" file="MtlTemplate_Behavior.java">
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes" />
+    <classNode dependClassName="jetbrains.mps.core.query.runtime.QueryScope" />
+    <classNode dependClassName="jetbrains.mps.core.query.runtime.SimpleRoleScope" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.SNode" />
+  </dependency>
+  <dependency className="jetbrains.mps.core.template.behavior.MtlTemplate_BehaviorDescriptor" file="MtlTemplate_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.core.query.behavior.MqlScopeProvider_BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.core.query.runtime.QueryScope" />
+    <classNode dependClassName="jetbrains.mps.core.template.behavior.MtlEntity_BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.core.template.behavior.MtlTemplate_Behavior" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.INamedConcept_Behavior" />
+    <classNode dependClassName="jetbrains.mps.smodel.SNode" />
+    <classNode extendsClassName="java.lang.Cloneable" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+</dependenciesRoot>
+

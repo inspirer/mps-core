@@ -10,14 +10,14 @@ import java.util.Collection;
 import jetbrains.mps.generator.runtime.TemplateModule;
 
 public class Language extends LanguageRuntime {
-  public static ModuleReference MODULE_REFERENCE = ModuleReference.fromString("2e142477-d221-495b-aa6c-7bd7c349e904(jetbrains.mps.template)");
+  public static ModuleReference MODULE_REFERENCE = ModuleReference.fromString("2e142477-d221-495b-aa6c-7bd7c349e904(jetbrains.mps.core.template)");
 
   public Language() {
 
   }
 
   public String getNamespace() {
-    return "jetbrains.mps.template";
+    return "jetbrains.mps.core.template";
   }
 
   @Override

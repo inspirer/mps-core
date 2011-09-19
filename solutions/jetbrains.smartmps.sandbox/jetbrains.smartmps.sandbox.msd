@@ -11,7 +11,7 @@
   <usedLanguages>
     <usedLanguage>f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)</usedLanguage>
     <usedLanguage>c898d4a2-ef8e-481f-aff5-15e46db05e03(jetbrains.mps.core.query)</usedLanguage>
-    <usedLanguage>2e142477-d221-495b-aa6c-7bd7c349e904(jetbrains.mps.template)</usedLanguage>
+    <usedLanguage>2e142477-d221-495b-aa6c-7bd7c349e904(jetbrains.mps.core.template)</usedLanguage>
     <usedLanguage>78c70cc5-3e2a-478b-9524-f2d47690ac85(jetbrains.mps.workflow)</usedLanguage>
     <usedLanguage>92bc763c-568d-4252-b8a3-a157f8320a67(jetbrains.mps.core.syntax)</usedLanguage>
   </usedLanguages>
