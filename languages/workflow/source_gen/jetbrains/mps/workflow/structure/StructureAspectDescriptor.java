@@ -16,9 +16,9 @@ public class StructureAspectDescriptor implements jetbrains.mps.smodel.runtime.S
   public ConceptDescriptor getDescriptor(String conceptFqName) {
     switch (Arrays.binarySearch(stringSwitchCases_1htk8d_a0a0a, conceptFqName)) {
       case 0:
-        return new CompiledConceptDescriptor("jetbrains.mps.workflow.structure.WflowExecutable", "jetbrains.mps.lang.core.structure.BaseConcept", false, new String[]{"jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept", "jetbrains.mps.query.structure.MqlScopeProvider"}, new String[]{}, new String[]{});
+        return new CompiledConceptDescriptor("jetbrains.mps.workflow.structure.WflowExecutable", "jetbrains.mps.lang.core.structure.BaseConcept", false, new String[]{"jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept", "jetbrains.mps.core.query.structure.MqlScopeProvider"}, new String[]{}, new String[]{});
       case 1:
-        return new CompiledConceptDescriptor("jetbrains.mps.workflow.structure.WflowExpressionStatement", "jetbrains.mps.workflow.structure.WflowStatement", false, new String[]{"jetbrains.mps.workflow.structure.WflowStatement", "jetbrains.mps.query.structure.MqlVariableContainer"}, new String[]{}, new String[]{});
+        return new CompiledConceptDescriptor("jetbrains.mps.workflow.structure.WflowExpressionStatement", "jetbrains.mps.workflow.structure.WflowStatement", false, new String[]{"jetbrains.mps.workflow.structure.WflowStatement", "jetbrains.mps.core.query.structure.MqlVariableContainer"}, new String[]{}, new String[]{});
       case 2:
         return new CompiledConceptDescriptor("jetbrains.mps.workflow.structure.WflowStatement", "jetbrains.mps.lang.core.structure.BaseConcept", false, new String[]{"jetbrains.mps.lang.core.structure.BaseConcept"}, new String[]{}, new String[]{});
       default:

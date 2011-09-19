@@ -29,7 +29,7 @@ public class replace_nodeMacro extends AbstractCellMenuComponent {
     }
 
     public List<?> createParameterObjects(SNode node, IScope scope, IOperationContext operationContext) {
-      return ListSequence.<SNode>fromList(SConceptOperations.getAllSubConcepts(SConceptOperations.findConceptDeclaration("jetbrains.mps.template.structure.MtlNodeMacro"), SNodeOperations.getModel(node), scope)).where(new IWhereFilter<SNode>() {
+      return ListSequence.fromList(SConceptOperations.getAllSubConcepts(SConceptOperations.findConceptDeclaration("jetbrains.mps.template.structure.MtlNodeMacro"), SNodeOperations.getModel(node), scope)).where(new IWhereFilter<SNode>() {
         public boolean accept(SNode it) {
           return !(SConceptPropertyOperations.getBoolean(it, "abstract"));
         }

@@ -7,12 +7,12 @@ import jetbrains.mps.project.IModule;
 import jetbrains.mps.smodel.SNode;
 import jetbrains.mps.messages.MessageKind;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.query.runtime.EvaluationEnvironment;
-import jetbrains.mps.query.runtime.EvaluationContext;
+import jetbrains.mps.core.query.runtime.EvaluationEnvironment;
+import jetbrains.mps.core.query.runtime.EvaluationContext;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.query.behavior.MqlExpression_Behavior;
-import jetbrains.mps.query.runtime.EvaluationException;
+import jetbrains.mps.core.query.behavior.MqlExpression_Behavior;
+import jetbrains.mps.core.query.runtime.EvaluationException;
 import jetbrains.mps.messages.Message;
 import java.lang.reflect.InvocationTargetException;
 

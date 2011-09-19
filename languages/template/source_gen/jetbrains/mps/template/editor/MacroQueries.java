@@ -23,16 +23,16 @@ public class MacroQueries {
 
   public static SNode addNodeMacro(SNode node) {
     // do not hang $$ on other attributes 
-    SNode applyToNode = ListSequence.<SNode>fromList(SNodeOperations.getAncestors(node, null, true)).where(new IWhereFilter<SNode>() {
+    SNode applyToNode = ListSequence.fromList(SNodeOperations.getAncestors(node, null, true)).where(new IWhereFilter<SNode>() {
       public boolean accept(SNode it) {
         return !(SNodeOperations.isAttribute(it));
       }
     }).first();
     SNode nodeMacro = SNodeFactoryOperations.createNewNode("jetbrains.mps.template.structure.MtlNodeMacro", null);
-    if (SNodeOperations.isInstanceOf(node, "jetbrains.mps.template.structure.MtlNodeMacro") && ListSequence.<SNode>fromList(SNodeOperations.getChildren(applyToNode)).contains(node)) {
+    if (SNodeOperations.isInstanceOf(node, "jetbrains.mps.template.structure.MtlNodeMacro") && ListSequence.fromList(SNodeOperations.getChildren(applyToNode)).contains(node)) {
       SNodeOperations.insertPrevSiblingChild(node, nodeMacro);
     } else {
-      ListSequence.<SNode>fromList(AttributeOperations.getAttributeList(applyToNode, new IAttributeDescriptor.NodeAttribute(SConceptOperations.findConceptDeclaration("jetbrains.mps.template.structure.MtlNodeMacro")))).addElement(nodeMacro);
+      ListSequence.fromList(AttributeOperations.getAttributeList(applyToNode, new IAttributeDescriptor.NodeAttribute(SConceptOperations.findConceptDeclaration("jetbrains.mps.template.structure.MtlNodeMacro")))).addElement(nodeMacro);
     }
     return nodeMacro;
   }

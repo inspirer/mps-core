@@ -4,7 +4,7 @@ package jetbrains.mps.template.structure;
 
 import jetbrains.mps.lang.core.structure.PropertyAttribute;
 import jetbrains.mps.smodel.SNode;
-import jetbrains.mps.query.structure.MqlExpression;
+import jetbrains.mps.core.query.structure.MqlExpression;
 import jetbrains.mps.smodel.SModel;
 import jetbrains.mps.smodel.SModelUtil_new;
 import jetbrains.mps.project.GlobalScope;

@@ -62,7 +62,7 @@ public class attributes extends EditorCellKeyMap {
     }
 
     private boolean canExecute_internal(final KeyEvent keyEvent, final EditorContext editorContext, final SNode node, final List<SNode> selectedNodes) {
-      if (ListSequence.<SNode>fromList(selectedNodes).count() != 1) {
+      if (ListSequence.fromList(selectedNodes).count() != 1) {
         return false;
       }
       if (!(MacroQueries.isTemplateNode(node))) {
@@ -73,7 +73,7 @@ public class attributes extends EditorCellKeyMap {
     }
 
     private void execute_internal(final KeyEvent keyEvent, final EditorContext editorContext, final SNode node, final List<SNode> selectedNodes) {
-      SNode applyToNode = ListSequence.<SNode>fromList(SNodeOperations.getAncestors(node, null, true)).where(new IWhereFilter<SNode>() {
+      SNode applyToNode = ListSequence.fromList(SNodeOperations.getAncestors(node, null, true)).where(new IWhereFilter<SNode>() {
         public boolean accept(SNode it) {
           return !(SNodeOperations.isAttribute(it));
         }
@@ -117,7 +117,7 @@ public class attributes extends EditorCellKeyMap {
     }
 
     private boolean canExecute_internal(final KeyEvent keyEvent, final EditorContext editorContext, final SNode node, final List<SNode> selectedNodes) {
-      if (ListSequence.<SNode>fromList(selectedNodes).count() != 1) {
+      if (ListSequence.fromList(selectedNodes).count() != 1) {
         return false;
       }
       if (!(MacroQueries.isTemplateNode(node))) {
@@ -166,7 +166,7 @@ public class attributes extends EditorCellKeyMap {
     }
 
     private boolean canExecute_internal(final KeyEvent keyEvent, final EditorContext editorContext, final SNode node, final List<SNode> selectedNodes) {
-      if (ListSequence.<SNode>fromList(selectedNodes).count() != 1) {
+      if (ListSequence.fromList(selectedNodes).count() != 1) {
         return false;
       }
       if (!(MacroQueries.isTemplateNode(node))) {
@@ -228,7 +228,7 @@ public class attributes extends EditorCellKeyMap {
     }
 
     private boolean canExecute_internal(final KeyEvent keyEvent, final EditorContext editorContext, final SNode node, final List<SNode> selectedNodes) {
-      if (ListSequence.<SNode>fromList(selectedNodes).count() != 1) {
+      if (ListSequence.fromList(selectedNodes).count() != 1) {
         return false;
       }
       if (!(MacroQueries.isTemplateNode(node))) {

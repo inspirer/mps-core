@@ -26,7 +26,7 @@ public class QueriesGenerated {
       SNode concept = SConceptOperations.findConceptDeclaration("jetbrains.mps.template.structure.MtlBuilder");
       ListSequence.fromList(result).addElement(new AbstractSideTransformHintSubstituteAction(concept, _context.getSourceNode()) {
         public SNode doSubstitute(String pattern) {
-          return SNodeFactoryOperations.setNewChild(_context.getSourceNode(), "contextNode", "jetbrains.mps.query.structure.MqlNodeType");
+          return SNodeFactoryOperations.setNewChild(_context.getSourceNode(), "contextNode", "jetbrains.mps.core.query.structure.MqlNodeType");
         }
 
         public String getMatchingText(String pattern) {

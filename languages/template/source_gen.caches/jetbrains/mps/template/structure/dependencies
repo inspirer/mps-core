@@ -4,12 +4,12 @@
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.Iterator" />
     <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="jetbrains.mps.core.query.structure.MqlExpression" />
+    <classNode dependClassName="jetbrains.mps.core.query.structure.MqlNodeType" />
+    <classNode dependClassName="jetbrains.mps.core.query.structure.MqlParameter" />
+    <classNode dependClassName="jetbrains.mps.core.query.structure.MqlScopeProvider" />
     <classNode dependClassName="jetbrains.mps.lang.core.structure.Attribute" />
     <classNode dependClassName="jetbrains.mps.project.GlobalScope" />
-    <classNode dependClassName="jetbrains.mps.query.structure.MqlExpression" />
-    <classNode dependClassName="jetbrains.mps.query.structure.MqlNodeType" />
-    <classNode dependClassName="jetbrains.mps.query.structure.MqlParameter" />
-    <classNode dependClassName="jetbrains.mps.query.structure.MqlScopeProvider" />
     <classNode dependClassName="jetbrains.mps.smodel.SModel" />
     <classNode dependClassName="jetbrains.mps.smodel.SModelUtil_new" />
     <classNode dependClassName="jetbrains.mps.smodel.SNode" />
@@ -18,14 +18,14 @@
   </dependency>
   <dependency className="jetbrains.mps.template.structure.MtlEntity" file="MtlEntity.java">
     <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.core.query.structure.MqlParametersContainer" />
     <classNode dependClassName="jetbrains.mps.lang.core.structure.INamedConcept" />
-    <classNode dependClassName="jetbrains.mps.query.structure.MqlParametersContainer" />
     <classNode extendsClassName="jetbrains.mps.smodel.INodeAdapter" />
   </dependency>
   <dependency className="jetbrains.mps.template.structure.MtlForeachMacro" file="MtlForeachMacro.java">
     <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.core.query.structure.MqlExpression" />
     <classNode dependClassName="jetbrains.mps.project.GlobalScope" />
-    <classNode dependClassName="jetbrains.mps.query.structure.MqlExpression" />
     <classNode dependClassName="jetbrains.mps.smodel.SModel" />
     <classNode dependClassName="jetbrains.mps.smodel.SModelUtil_new" />
     <classNode dependClassName="jetbrains.mps.smodel.SNode" />
@@ -47,8 +47,8 @@
   </dependency>
   <dependency className="jetbrains.mps.template.structure.MtlIfMacro" file="MtlIfMacro.java">
     <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.core.query.structure.MqlExpression" />
     <classNode dependClassName="jetbrains.mps.project.GlobalScope" />
-    <classNode dependClassName="jetbrains.mps.query.structure.MqlExpression" />
     <classNode dependClassName="jetbrains.mps.smodel.SModel" />
     <classNode dependClassName="jetbrains.mps.smodel.SModelUtil_new" />
     <classNode dependClassName="jetbrains.mps.smodel.SNode" />
@@ -59,10 +59,10 @@
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.Iterator" />
     <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="jetbrains.mps.core.query.structure.MqlScopeProvider" />
     <classNode dependClassName="jetbrains.mps.lang.core.structure.Attribute" />
     <classNode dependClassName="jetbrains.mps.lang.core.structure.INamedConcept" />
     <classNode dependClassName="jetbrains.mps.project.GlobalScope" />
-    <classNode dependClassName="jetbrains.mps.query.structure.MqlScopeProvider" />
     <classNode dependClassName="jetbrains.mps.smodel.SModel" />
     <classNode dependClassName="jetbrains.mps.smodel.SModelUtil_new" />
     <classNode dependClassName="jetbrains.mps.smodel.SNode" />
@@ -71,9 +71,9 @@
   </dependency>
   <dependency className="jetbrains.mps.template.structure.MtlNewNodeType" file="MtlNewNodeType.java">
     <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.core.query.structure.MqlType" />
     <classNode dependClassName="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" />
     <classNode dependClassName="jetbrains.mps.project.GlobalScope" />
-    <classNode dependClassName="jetbrains.mps.query.structure.MqlType" />
     <classNode dependClassName="jetbrains.mps.smodel.SModel" />
     <classNode dependClassName="jetbrains.mps.smodel.SModelUtil_new" />
     <classNode dependClassName="jetbrains.mps.smodel.SNode" />
@@ -90,8 +90,8 @@
   </dependency>
   <dependency className="jetbrains.mps.template.structure.MtlNodeQueryMacro" file="MtlNodeQueryMacro.java">
     <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.core.query.structure.MqlExpression" />
     <classNode dependClassName="jetbrains.mps.project.GlobalScope" />
-    <classNode dependClassName="jetbrains.mps.query.structure.MqlExpression" />
     <classNode dependClassName="jetbrains.mps.smodel.SModel" />
     <classNode dependClassName="jetbrains.mps.smodel.SModelUtil_new" />
     <classNode dependClassName="jetbrains.mps.smodel.SNode" />
@@ -100,9 +100,9 @@
   </dependency>
   <dependency className="jetbrains.mps.template.structure.MtlPropertyMacro" file="MtlPropertyMacro.java">
     <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.core.query.structure.MqlExpression" />
     <classNode dependClassName="jetbrains.mps.lang.core.structure.PropertyAttribute" />
     <classNode dependClassName="jetbrains.mps.project.GlobalScope" />
-    <classNode dependClassName="jetbrains.mps.query.structure.MqlExpression" />
     <classNode dependClassName="jetbrains.mps.smodel.SModel" />
     <classNode dependClassName="jetbrains.mps.smodel.SModelUtil_new" />
     <classNode dependClassName="jetbrains.mps.smodel.SNode" />
@@ -112,10 +112,10 @@
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.Iterator" />
     <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="jetbrains.mps.core.query.structure.MqlParameter" />
+    <classNode dependClassName="jetbrains.mps.core.query.structure.MqlQuery" />
     <classNode dependClassName="jetbrains.mps.lang.core.structure.Attribute" />
     <classNode dependClassName="jetbrains.mps.project.GlobalScope" />
-    <classNode dependClassName="jetbrains.mps.query.structure.MqlParameter" />
-    <classNode dependClassName="jetbrains.mps.query.structure.MqlQuery" />
     <classNode dependClassName="jetbrains.mps.smodel.SModel" />
     <classNode dependClassName="jetbrains.mps.smodel.SModelUtil_new" />
     <classNode dependClassName="jetbrains.mps.smodel.SNode" />
@@ -124,9 +124,9 @@
   </dependency>
   <dependency className="jetbrains.mps.template.structure.MtlReferenceMacro" file="MtlReferenceMacro.java">
     <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.core.query.structure.MqlExpression" />
     <classNode dependClassName="jetbrains.mps.lang.core.structure.LinkAttribute" />
     <classNode dependClassName="jetbrains.mps.project.GlobalScope" />
-    <classNode dependClassName="jetbrains.mps.query.structure.MqlExpression" />
     <classNode dependClassName="jetbrains.mps.smodel.SModel" />
     <classNode dependClassName="jetbrains.mps.smodel.SModelUtil_new" />
     <classNode dependClassName="jetbrains.mps.smodel.SNode" />
@@ -136,12 +136,12 @@
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.Iterator" />
     <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="jetbrains.mps.core.query.structure.MqlAssignment" />
+    <classNode dependClassName="jetbrains.mps.core.query.structure.MqlNodeType" />
+    <classNode dependClassName="jetbrains.mps.core.query.structure.MqlParameter" />
+    <classNode dependClassName="jetbrains.mps.core.query.structure.MqlScopeProvider" />
     <classNode dependClassName="jetbrains.mps.lang.core.structure.Attribute" />
     <classNode dependClassName="jetbrains.mps.project.GlobalScope" />
-    <classNode dependClassName="jetbrains.mps.query.structure.MqlAssignment" />
-    <classNode dependClassName="jetbrains.mps.query.structure.MqlNodeType" />
-    <classNode dependClassName="jetbrains.mps.query.structure.MqlParameter" />
-    <classNode dependClassName="jetbrains.mps.query.structure.MqlScopeProvider" />
     <classNode dependClassName="jetbrains.mps.smodel.SModel" />
     <classNode dependClassName="jetbrains.mps.smodel.SModelUtil_new" />
     <classNode dependClassName="jetbrains.mps.smodel.SNode" />

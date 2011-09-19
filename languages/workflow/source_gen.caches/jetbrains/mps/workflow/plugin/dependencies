@@ -35,6 +35,10 @@
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.lang.Throwable" />
     <classNode dependClassName="java.lang.reflect.InvocationTargetException" />
+    <classNode dependClassName="jetbrains.mps.core.query.behavior.MqlExpression_Behavior" />
+    <classNode dependClassName="jetbrains.mps.core.query.runtime.EvaluationContext" />
+    <classNode dependClassName="jetbrains.mps.core.query.runtime.EvaluationEnvironment" />
+    <classNode dependClassName="jetbrains.mps.core.query.runtime.EvaluationException" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
@@ -42,10 +46,6 @@
     <classNode dependClassName="jetbrains.mps.messages.Message" />
     <classNode dependClassName="jetbrains.mps.messages.MessageKind" />
     <classNode dependClassName="jetbrains.mps.project.IModule" />
-    <classNode dependClassName="jetbrains.mps.query.behavior.MqlExpression_Behavior" />
-    <classNode dependClassName="jetbrains.mps.query.runtime.EvaluationContext" />
-    <classNode dependClassName="jetbrains.mps.query.runtime.EvaluationEnvironment" />
-    <classNode dependClassName="jetbrains.mps.query.runtime.EvaluationException" />
     <classNode dependClassName="jetbrains.mps.smodel.SNode" />
   </dependency>
   <dependency className="jetbrains.mps.workflow.plugin.Workflow_ApplicationPlugin" file="Workflow_ApplicationPlugin.java">

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debugInfo>
-  <unitInfo fileName="QueriesGenerated.java" startLine="69" startPosition="76" endLine="86" endPosition="9" unitName="jetbrains.mps.workflow.actions.QueriesGenerated$2" />
-  <unitInfo fileName="QueriesGenerated.java" startLine="33" startPosition="76" endLine="62" endPosition="9" unitName="jetbrains.mps.workflow.actions.QueriesGenerated$1" />
+  <unitInfo fileName="QueriesGenerated.java" startLine="69" startPosition="53" endLine="86" endPosition="9" unitName="jetbrains.mps.workflow.actions.QueriesGenerated$2" />
+  <unitInfo fileName="QueriesGenerated.java" startLine="33" startPosition="53" endLine="62" endPosition="9" unitName="jetbrains.mps.workflow.actions.QueriesGenerated$1" />
   <unitInfo fileName="QueriesGenerated.java" startLine="23" startPosition="0" endLine="92" endPosition="0" unitName="jetbrains.mps.workflow.actions.QueriesGenerated" />
   <root nodeId="3373821274546693026">
     <nodeInfo nodeId="1992172484410604556" fileName="QueriesGenerated.java" startLine="34" startPosition="94" endLine="35" endPosition="55" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />

@@ -4,8 +4,8 @@ package jetbrains.mps.template.behavior;
 
 import jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor;
 import jetbrains.mps.lang.core.behavior.INamedConcept_BehaviorDescriptor;
-import jetbrains.mps.query.behavior.MqlScopeProvider_BehaviorDescriptor;
-import jetbrains.mps.query.runtime.QueryScope;
+import jetbrains.mps.core.query.behavior.MqlScopeProvider_BehaviorDescriptor;
+import jetbrains.mps.core.query.runtime.QueryScope;
 import jetbrains.mps.smodel.SNode;
 import jetbrains.mps.lang.core.behavior.INamedConcept_Behavior;
 
