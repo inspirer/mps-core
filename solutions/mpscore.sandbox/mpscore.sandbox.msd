@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="jetbrains.smartmps.sandbox" uuid="38ac8ada-ed48-4ce9-af9d-d5c73c02dfb8" compileInMPS="true">
+<solution name="jetbrains.mps.core.sandbox" uuid="38ac8ada-ed48-4ce9-af9d-d5c73c02dfb8" compileInMPS="true">
   <models>
-    <modelRoot path="${solution_descriptor}/" namespacePrefix="" />
-    <modelRoot path="${solution_descriptor}/models" namespacePrefix="jetbrains.smartmps.sandbox" />
+    <modelRoot path="${solution_descriptor}/models" namespacePrefix="jetbrains.mps.core.sandbox" />
   </models>
   <sourcePath />
   <dependencies>
