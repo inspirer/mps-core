@@ -44,10 +44,9 @@ public class MtlBuilder_Editor extends DefaultNodeEditor {
     editorCell.addEditorCell(this.createRefNodeList_vcqcp7_e0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_vcqcp7_f0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_vcqcp7_g0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_vcqcp7_h0(editorContext, node));
-    editorCell.addEditorCell(this.createRefNode_vcqcp7_i0(editorContext, node));
+    editorCell.addEditorCell(this.createRefNode_vcqcp7_h0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_vcqcp7_i0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_vcqcp7_j0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_vcqcp7_k0(editorContext, node));
     return editorCell;
   }
 
@@ -102,39 +101,26 @@ public class MtlBuilder_Editor extends DefaultNodeEditor {
   private EditorCell createConstant_vcqcp7_f0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ")");
     editorCell.setCellId("Constant_vcqcp7_f0");
+    MqlSS_StyleSheet.getPunctuation(editorCell).apply(editorCell);
     {
       Style style = editorCell.getStyle();
       style.set(StyleAttributes.PUNCTUATION_LEFT, true);
       style.set(StyleAttributes.MATCHING_LABEL, "paren-parameters");
-      style.set(StyleAttributes.PUNCTUATION_RIGHT, true);
     }
     editorCell.setDefaultText("");
     return editorCell;
   }
 
   private EditorCell createConstant_vcqcp7_g0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ")");
-    editorCell.setCellId("Constant_vcqcp7_g0");
-    MqlSS_StyleSheet.getPunctuation(editorCell).apply(editorCell);
-    {
-      Style style = editorCell.getStyle();
-      style.set(StyleAttributes.PUNCTUATION_LEFT, true);
-      style.set(StyleAttributes.MATCHING_LABEL, "body-paren");
-    }
-    editorCell.setDefaultText("");
-    return editorCell;
-  }
-
-  private EditorCell createConstant_vcqcp7_h0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "=");
-    editorCell.setCellId("Constant_vcqcp7_h0");
+    editorCell.setCellId("Constant_vcqcp7_g0");
     editorCell.setDefaultText("");
     return editorCell;
   }
 
-  private EditorCell createConstant_vcqcp7_j0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_vcqcp7_i0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ";");
-    editorCell.setCellId("Constant_vcqcp7_j0");
+    editorCell.setCellId("Constant_vcqcp7_i0");
     MqlSS_StyleSheet.getPunctuation(editorCell).apply(editorCell);
     {
       Style style = editorCell.getStyle();
@@ -145,9 +131,9 @@ public class MtlBuilder_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private EditorCell createConstant_vcqcp7_k0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_vcqcp7_j0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "");
-    editorCell.setCellId("Constant_vcqcp7_k0");
+    editorCell.setCellId("Constant_vcqcp7_j0");
     editorCell.setDefaultText("");
     return editorCell;
   }
@@ -178,7 +164,7 @@ public class MtlBuilder_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private EditorCell createRefNode_vcqcp7_i0(EditorContext editorContext, SNode node) {
+  private EditorCell createRefNode_vcqcp7_h0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new RefNodeCellProvider(node, editorContext);
     provider.setRole("body");
     provider.setNoTargetText("<no body>");

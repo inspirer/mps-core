@@ -20,7 +20,7 @@ public class StructureAspectDescriptor implements jetbrains.mps.smodel.runtime.S
       case 1:
         return new CompiledConceptDescriptor("jetbrains.mps.core.template.structure.MtlEntity", null, true, new String[]{"jetbrains.mps.lang.core.structure.INamedConcept", "jetbrains.mps.core.query.structure.MqlParametersContainer"}, new String[]{}, new String[]{});
       case 2:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.template.structure.MtlForeachMacro", "jetbrains.mps.core.template.structure.MtlNodeMacro", false, new String[]{"jetbrains.mps.core.template.structure.MtlNodeMacro"}, new String[]{"multiline"}, new String[]{});
+        return new CompiledConceptDescriptor("jetbrains.mps.core.template.structure.MtlForeachMacro", "jetbrains.mps.core.template.structure.MtlNodeMacro", false, new String[]{"jetbrains.mps.core.template.structure.MtlNodeMacro", "jetbrains.mps.core.query.structure.MqlScopeProvider", "jetbrains.mps.core.query.structure.MqlVariableContainer"}, new String[]{"multiline"}, new String[]{});
       case 3:
         return new CompiledConceptDescriptor("jetbrains.mps.core.template.structure.MtlForeachVar", "jetbrains.mps.lang.core.structure.BaseConcept", false, new String[]{"jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept"}, new String[]{}, new String[]{});
       case 4:

@@ -8,8 +8,12 @@ import jetbrains.mps.core.query.runtime.QueryScope;
 import jetbrains.mps.smodel.SNode;
 import jetbrains.mps.lang.core.behavior.INamedConcept_Behavior;
 
-public class MqlPackage_BehaviorDescriptor extends BaseConcept_BehaviorDescriptor implements INamedConcept_BehaviorDescriptor, MqlScopeProvider_BehaviorDescriptor {
+public class MqlPackage_BehaviorDescriptor extends BaseConcept_BehaviorDescriptor implements INamedConcept_BehaviorDescriptor, MqlScopeProvider_BehaviorDescriptor, MqlScopeExporter_BehaviorDescriptor {
   public MqlPackage_BehaviorDescriptor() {
+  }
+
+  public QueryScope virtual_getExportedScope_5109194352282852190(SNode thisNode) {
+    return MqlPackage_Behavior.virtual_getExportedScope_5109194352282852190(thisNode);
   }
 
   public QueryScope virtual_getScope_5433095484313879207(SNode thisNode, SNode kind, SNode child) {

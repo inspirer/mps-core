@@ -12,12 +12,13 @@ import jetbrains.mps.smodel.SModel;
 import jetbrains.mps.smodel.SModelUtil_new;
 import jetbrains.mps.project.GlobalScope;
 
-public class MqlPackage extends BaseConcept implements INamedConcept, MqlScopeProvider {
+public class MqlPackage extends BaseConcept implements INamedConcept, MqlScopeProvider, MqlScopeExporter {
   public static final String concept = "jetbrains.mps.core.query.structure.MqlPackage";
   public static final String NAME = "name";
   public static final String SHORT_DESCRIPTION = "shortDescription";
   public static final String ALIAS = "alias";
   public static final String VIRTUAL_PACKAGE = "virtualPackage";
+  public static final String IMPORTS = "imports";
   public static final String QUERIES = "queries";
   public static final String SMODEL_ATTRIBUTE = "smodelAttribute";
 
@@ -55,6 +56,26 @@ public class MqlPackage extends BaseConcept implements INamedConcept, MqlScopePr
 
   public void setVirtualPackage(String value) {
     this.setProperty(MqlPackage.VIRTUAL_PACKAGE, value);
+  }
+
+  public int getImportsesCount() {
+    return this.getChildCount(MqlPackage.IMPORTS);
+  }
+
+  public Iterator<MqlImport> importses() {
+    return this.children(MqlImport.class, MqlPackage.IMPORTS);
+  }
+
+  public List<MqlImport> getImportses() {
+    return this.getChildren(MqlImport.class, MqlPackage.IMPORTS);
+  }
+
+  public void addImports(MqlImport node) {
+    this.addChild(MqlPackage.IMPORTS, node);
+  }
+
+  public void insertImports(MqlImport prev, MqlImport node) {
+    this.insertChild(prev, MqlPackage.IMPORTS, node);
   }
 
   public int getQueriesesCount() {

@@ -4,9 +4,13 @@ package jetbrains.mps.core.query.behavior;
 
 import jetbrains.mps.smodel.SNode;
 import jetbrains.mps.core.query.runtime.QueryScope;
+import jetbrains.mps.core.query.runtime.CompositeScope;
+import jetbrains.mps.internal.collections.runtime.ListSequence;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.internal.collections.runtime.IWhereFilter;
+import jetbrains.mps.internal.collections.runtime.ISelector;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.core.query.runtime.SimpleRoleScope;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
@@ -16,13 +20,35 @@ public class MqlPackage_Behavior {
   }
 
   public static QueryScope virtual_getScope_5433095484313879207(SNode thisNode, SNode kind, SNode child) {
+    QueryScope outer = CompositeScope.createComposite(ListSequence.fromList(SLinkOperations.getTargets(thisNode, "imports", true)).where(new IWhereFilter<SNode>() {
+      public boolean accept(SNode it) {
+        return (SLinkOperations.getTarget(it, "target", false) != null);
+      }
+    }).select(new ISelector<SNode, SNode>() {
+      public SNode select(SNode it) {
+        return SLinkOperations.getTarget(it, "target", false);
+      }
+    }).select(new ISelector<SNode, QueryScope>() {
+      public QueryScope select(SNode it) {
+        return MqlScopeExporter_Behavior.call_getExportedScope_5109194352282852190(it);
+      }
+    }).toGenericArray(QueryScope.class));
+
     if (kind == SConceptOperations.findConceptDeclaration("jetbrains.mps.core.query.structure.MqlQuery")) {
-      return new SimpleRoleScope(thisNode, SLinkOperations.findLinkDeclaration("jetbrains.mps.core.query.structure.MqlPackage", "queries"), new _FunctionTypes._return_P1_E0<String, SNode>() {
+      return CompositeScope.createComposite(outer, new SimpleRoleScope(thisNode, SLinkOperations.findLinkDeclaration("jetbrains.mps.core.query.structure.MqlPackage", "queries"), new _FunctionTypes._return_P1_E0<String, SNode>() {
         public String invoke(SNode n) {
           return SPropertyOperations.getString(SNodeOperations.cast(n, "jetbrains.mps.lang.core.structure.INamedConcept"), "name");
         }
-      });
+      }));
     }
-    return null;
+    return outer;
+  }
+
+  public static QueryScope virtual_getExportedScope_5109194352282852190(SNode thisNode) {
+    return new SimpleRoleScope(thisNode, SLinkOperations.findLinkDeclaration("jetbrains.mps.core.query.structure.MqlPackage", "queries"), new _FunctionTypes._return_P1_E0<String, SNode>() {
+      public String invoke(SNode n) {
+        return SPropertyOperations.getString(SNodeOperations.cast(n, "jetbrains.mps.lang.core.structure.INamedConcept"), "name");
+      }
+    });
   }
 }

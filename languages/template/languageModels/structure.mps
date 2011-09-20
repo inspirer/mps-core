@@ -271,13 +271,19 @@
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
       <property name="role" nameId="tpce.1071599776563" value="var" />
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="8585534596770839433" resolveInfo="MtlForeachVar" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="bwy9.3435983127247044629" resolveInfo="MqlVariable" />
     </node>
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="8585534596770839432">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
       <property name="role" nameId="tpce.1071599776563" value="collection" />
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="bwy9.6762883159245048012" resolveInfo="MqlExpression" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5109194352282780045">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="bwy9.5433095484313879184" resolveInfo="MqlScopeProvider" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5109194352282815900">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="bwy9.3435983127247055565" resolveInfo="MqlVariableContainer" />
     </node>
   </root>
   <root id="4273915927700610189">
