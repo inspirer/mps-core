@@ -7,6 +7,7 @@
     <classNode dependClassName="jetbrains.mps.core.template.behavior.MtlForeachMacro_BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.core.template.behavior.MtlForeachVar_BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.core.template.behavior.MtlIfMacro_BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.core.template.behavior.MtlLabelNodeMacro_BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.core.template.behavior.MtlLibrary_BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.core.template.behavior.MtlNewNodeType_BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.core.template.behavior.MtlNodeQueryMacro_BehaviorDescriptor" />
@@ -85,6 +86,25 @@
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="jetbrains.mps.core.template.behavior.MtlNodeMacro_BehaviorDescriptor" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="jetbrains.mps.core.template.behavior.MtlLabelNodeMacro_Behavior" file="MtlLabelNodeMacro_Behavior.java">
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.HashSet" />
+    <classNode dependClassName="java.util.Set" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.typesystem.runtime.HUtil" />
+    <classNode dependClassName="jetbrains.mps.smodel.SNode" />
+  </dependency>
+  <dependency className="jetbrains.mps.core.template.behavior.MtlLabelNodeMacro_BehaviorDescriptor" file="MtlLabelNodeMacro_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.core.query.behavior.MqlVariableContainer_BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.core.template.behavior.MtlLabelNodeMacro_Behavior" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.NodeAttribute_BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.smodel.SNode" />
+    <classNode extendsClassName="java.lang.Cloneable" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="jetbrains.mps.core.template.behavior.MtlLibrary_Behavior" file="MtlLibrary_Behavior.java">

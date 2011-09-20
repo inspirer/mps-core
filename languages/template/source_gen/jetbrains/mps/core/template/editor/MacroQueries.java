@@ -37,6 +37,22 @@ public class MacroQueries {
     return nodeMacro;
   }
 
+  public static SNode addNodeLabel(SNode node) {
+    // do not hang $$ on other attributes 
+    SNode applyToNode = ListSequence.fromList(SNodeOperations.getAncestors(node, null, true)).where(new IWhereFilter<SNode>() {
+      public boolean accept(SNode it) {
+        return !(SNodeOperations.isAttribute(it));
+      }
+    }).first();
+    SNode labelMacro = SNodeFactoryOperations.createNewNode("jetbrains.mps.core.template.structure.MtlLabelNodeMacro", null);
+    if (SNodeOperations.isInstanceOf(node, "jetbrains.mps.core.template.structure.MtlNodeMacro") && ListSequence.fromList(SNodeOperations.getChildren(applyToNode)).contains(node)) {
+      SNodeOperations.insertPrevSiblingChild(node, labelMacro);
+    } else {
+      AttributeOperations.setAttribute(applyToNode, new IAttributeDescriptor.NodeAttribute(SConceptOperations.findConceptDeclaration("jetbrains.mps.core.template.structure.MtlLabelNodeMacro")), labelMacro);
+    }
+    return labelMacro;
+  }
+
   public static boolean isTemplateNode(SNode node) {
     if (SNodeOperations.getAncestor(node, "jetbrains.mps.core.template.structure.MtlTemplate", false, false) == null) {
       return false;

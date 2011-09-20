@@ -29,6 +29,8 @@ public class attributes extends EditorCellKeyMap {
     this.putAction("ctrl+shift", "VK_M", action);
     action = new attributes.attributes_Action3();
     this.putAction("ctrl+shift", "VK_M", action);
+    action = new attributes.attributes_Action4();
+    this.putAction("ctrl+shift", "VK_M", action);
   }
 
   public static class attributes_Action0 extends EditorCellKeyMapAction {
@@ -251,6 +253,55 @@ public class attributes extends EditorCellKeyMap {
       String linkRole = MacroQueries.getEditedLinkRole(cell);
       SNode referentNode = MacroQueries.getEditedLinkReferentNode(cell);
       SNodeFactoryOperations.setNewAttribute(referentNode, new IAttributeDescriptor.LinkAttribute(SConceptOperations.findConceptDeclaration("jetbrains.mps.core.template.structure.MtlReferenceMacro"), linkRole), "jetbrains.mps.core.template.structure.MtlReferenceMacro");
+    }
+
+    public String getKeyStroke() {
+      return "ctrl shift M";
+    }
+  }
+
+  public static class attributes_Action4 extends EditorCellKeyMapAction {
+    public attributes_Action4() {
+      this.setShownInPopupMenu(true);
+    }
+
+    public String getDescriptionText() {
+      return "add label";
+    }
+
+    public boolean isMenuAlwaysShown() {
+      return false;
+    }
+
+    public boolean canExecute(final KeyEvent keyEvent, final EditorContext editorContext) {
+      EditorCell contextCell = editorContext.getContextCell();
+      if ((contextCell == null)) {
+        return false;
+      }
+      SNode contextNode = contextCell.getSNode();
+      if (contextNode == null) {
+        return false;
+      }
+      return this.canExecute_internal(keyEvent, editorContext, contextNode, this.getSelectedNodes(editorContext));
+    }
+
+    public void execute(final KeyEvent keyEvent, final EditorContext editorContext) {
+      EditorCell contextCell = editorContext.getContextCell();
+      this.execute_internal(keyEvent, editorContext, contextCell.getSNode(), this.getSelectedNodes(editorContext));
+    }
+
+    private boolean canExecute_internal(final KeyEvent keyEvent, final EditorContext editorContext, final SNode node, final List<SNode> selectedNodes) {
+      if (ListSequence.fromList(selectedNodes).count() != 1) {
+        return false;
+      }
+      if (!(MacroQueries.isTemplateNode(node))) {
+        return false;
+      }
+      return true;
+    }
+
+    private void execute_internal(final KeyEvent keyEvent, final EditorContext editorContext, final SNode node, final List<SNode> selectedNodes) {
+      MacroQueries.addNodeLabel(node);
     }
 
     public String getKeyStroke() {
