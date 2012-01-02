@@ -17,7 +17,6 @@ import jetbrains.mps.nodeEditor.EditorManager;
 import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
 import jetbrains.mps.nodeEditor.MPSFonts;
 import jetbrains.mps.smodel.IScope;
-import org.apache.commons.lang.StringUtils;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.nodeEditor.InlineCellProvider;
 import jetbrains.mps.nodeEditor.style.AttributeCalculator;
@@ -55,6 +54,11 @@ public class SSymbolRef_Editor extends DefaultNodeEditor {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "=");
     editorCell.setCellId("Constant_mdkd4i_b0a");
     SyntaxSS_StyleSheet.getPunctuation(editorCell).apply(editorCell);
+    {
+      Style style = editorCell.getStyle();
+      style.set(StyleAttributes.PUNCTUATION_LEFT, true);
+      style.set(StyleAttributes.PUNCTUATION_RIGHT, true);
+    }
     editorCell.setDefaultText("");
     return editorCell;
   }
@@ -80,7 +84,7 @@ public class SSymbolRef_Editor extends DefaultNodeEditor {
   private EditorCell createProperty_mdkd4i_a0a(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
     provider.setRole("refalias");
-    provider.setNoTargetText("<no refalias>");
+    provider.setNoTargetText("<no ref>");
     EditorCell editorCell;
     editorCell = provider.createEditorCell(editorContext);
     editorCell.setCellId("property_refalias");
@@ -100,7 +104,7 @@ public class SSymbolRef_Editor extends DefaultNodeEditor {
   }
 
   private static boolean renderingCondition_mdkd4i_a0a(SNode node, EditorContext editorContext, IScope scope) {
-    return StringUtils.isNotEmpty(SPropertyOperations.getString(node, "refalias"));
+    return SPropertyOperations.getString(node, "refalias") != null;
   }
 
   public static class _Inline_mdkd4i_a1a extends InlineCellProvider {

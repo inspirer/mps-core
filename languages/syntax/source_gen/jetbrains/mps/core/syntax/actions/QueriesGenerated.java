@@ -22,6 +22,9 @@ import jetbrains.mps.smodel.action.SNodeFactoryOperations;
 import org.apache.commons.lang.StringUtils;
 import jetbrains.mps.smodel.action.SideTransformActionsBuilderContext;
 import jetbrains.mps.smodel.action.AbstractSideTransformHintSubstituteAction;
+import jetbrains.mps.util.Calculable;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 
 public class QueriesGenerated {
   private static Pattern REGEXP_x583g4_a0a0a2a0a0a0a0a2a0a1a3 = Pattern.compile("^([a-zA-Z_][\\w\\-]*|'(?:[^'\\n\\\\]|\\\\.)+')\\s*:?$", 0);
@@ -186,6 +189,96 @@ public class QueriesGenerated {
           return "add action";
         }
       });
+    }
+    return result;
+  }
+
+  public static List<INodeSubstituteAction> sideTransform_ActionsFactory_SSymbolRef_6627258180876560931(final IOperationContext operationContext, final SideTransformActionsBuilderContext _context) {
+    List<INodeSubstituteAction> result = ListSequence.fromList(new ArrayList<INodeSubstituteAction>());
+    {
+      SNode concept = SConceptOperations.findConceptDeclaration("jetbrains.mps.core.syntax.structure.SSymbolRef");
+      ListSequence.fromList(result).addElement(new AbstractSideTransformHintSubstituteAction(concept, _context.getSourceNode()) {
+        public SNode doSubstitute(String pattern) {
+          SPropertyOperations.set(_context.getSourceNode(), "refalias", "");
+          return _context.getSourceNode();
+        }
+
+        public String getMatchingText(String pattern) {
+          return "=";
+        }
+
+        public String getVisibleMatchingText(String pattern) {
+          return this.getMatchingText(pattern);
+        }
+      });
+    }
+    return result;
+  }
+
+  public static List<INodeSubstituteAction> sideTransform_ActionsFactory_SRulePart_6627258180876523205(final IOperationContext operationContext, final SideTransformActionsBuilderContext _context) {
+    List<INodeSubstituteAction> result = ListSequence.fromList(new ArrayList<INodeSubstituteAction>());
+    {
+      final SNode concept = SConceptOperations.findConceptDeclaration("jetbrains.mps.core.syntax.structure.SSymbolRef");
+      Calculable calculable = new Calculable() {
+        public Object calculate() {
+          return SModelOperations.getNodes(SNodeOperations.getModel(_context.getSourceNode()), "jetbrains.mps.core.syntax.structure.SSymbol");
+        }
+      };
+      Iterable<SNode> parameterObjects = (Iterable<SNode>) calculable.calculate();
+      assert parameterObjects != null;
+      for (final SNode item : parameterObjects) {
+        ListSequence.fromList(result).addElement(new AbstractSideTransformHintSubstituteAction(concept, item, _context.getSourceNode()) {
+          public SNode doSubstitute(String pattern) {
+            SNode p = SNodeFactoryOperations.createNewNode(_context.getModel(), "jetbrains.mps.core.syntax.structure.SSymbolRef", null);
+            SLinkOperations.setTarget(p, "ref", (item), false);
+            int anchorIndex = SNodeOperations.getParent(_context.getSourceNode()).getIndexOfChild(_context.getSourceNode());
+            ListSequence.fromList(SLinkOperations.getTargets(SNodeOperations.cast(SNodeOperations.getParent(_context.getSourceNode()), "jetbrains.mps.core.syntax.structure.SRule"), "parts", true)).insertElement(anchorIndex, p);
+            return p;
+          }
+
+          public String getMatchingText(String text) {
+            return SPropertyOperations.getString((item), "name");
+          }
+
+          public String getVisibleMatchingText(String text) {
+            return this.getMatchingText(text);
+          }
+        });
+      }
+    }
+    return result;
+  }
+
+  public static List<INodeSubstituteAction> sideTransform_ActionsFactory_SRulePart_6627258180876485481(final IOperationContext operationContext, final SideTransformActionsBuilderContext _context) {
+    List<INodeSubstituteAction> result = ListSequence.fromList(new ArrayList<INodeSubstituteAction>());
+    {
+      final SNode concept = SConceptOperations.findConceptDeclaration("jetbrains.mps.core.syntax.structure.SSymbolRef");
+      Calculable calculable = new Calculable() {
+        public Object calculate() {
+          return SModelOperations.getNodes(SNodeOperations.getModel(_context.getSourceNode()), "jetbrains.mps.core.syntax.structure.SSymbol");
+        }
+      };
+      Iterable<SNode> parameterObjects = (Iterable<SNode>) calculable.calculate();
+      assert parameterObjects != null;
+      for (final SNode item : parameterObjects) {
+        ListSequence.fromList(result).addElement(new AbstractSideTransformHintSubstituteAction(concept, item, _context.getSourceNode()) {
+          public SNode doSubstitute(String pattern) {
+            SNode p = SNodeFactoryOperations.createNewNode(_context.getModel(), "jetbrains.mps.core.syntax.structure.SSymbolRef", null);
+            SLinkOperations.setTarget(p, "ref", (item), false);
+            int anchorIndex = SNodeOperations.getParent(_context.getSourceNode()).getIndexOfChild(_context.getSourceNode());
+            ListSequence.fromList(SLinkOperations.getTargets(SNodeOperations.cast(SNodeOperations.getParent(_context.getSourceNode()), "jetbrains.mps.core.syntax.structure.SRule"), "parts", true)).insertElement(anchorIndex + 1, p);
+            return p;
+          }
+
+          public String getMatchingText(String text) {
+            return SPropertyOperations.getString((item), "name");
+          }
+
+          public String getVisibleMatchingText(String text) {
+            return this.getMatchingText(text);
+          }
+        });
+      }
     }
     return result;
   }

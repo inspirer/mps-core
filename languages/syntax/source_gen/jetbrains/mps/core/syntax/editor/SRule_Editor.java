@@ -85,7 +85,7 @@ public class SRule_Editor extends DefaultNodeEditor {
         Style style = editorCell.getStyle();
         style.set(StyleAttributes.EDITABLE, true);
       }
-      editorCell.setDefaultText("");
+      editorCell.setDefaultText("<empty>");
       return editorCell;
     }
   }

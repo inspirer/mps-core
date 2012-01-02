@@ -6,12 +6,12 @@
   <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false" />
   <component name="MPSProject">
     <projectModules>
-      <modulePath path="${project}/languages/query/query.mpl" />
-      <modulePath path="${project}/solutions/mpscore.sandbox/mpscore.sandbox.msd" />
-      <modulePath path="${project}/languages/template/template.mpl" folder="" />
       <modulePath path="${mps_home}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar!/META-INF/module.xml" />
-      <modulePath path="${project}/languages/workflow/workflow.mpl" folder="" />
+      <modulePath path="${project}/languages/query/query.mpl" />
       <modulePath path="${project}/languages/syntax/syntax.mpl" folder="" />
+      <modulePath path="${project}/languages/template/template.mpl" folder="" />
+      <modulePath path="${project}/languages/workflow/workflow.mpl" folder="" />
+      <modulePath path="${project}/solutions/mpscore.sandbox/mpscore.sandbox.msd" />
     </projectModules>
     <genConfs />
   </component>
