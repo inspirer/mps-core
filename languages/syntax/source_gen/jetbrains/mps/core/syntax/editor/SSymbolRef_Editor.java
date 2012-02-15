@@ -12,16 +12,18 @@ import jetbrains.mps.nodeEditor.style.StyleAttributes;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
 import jetbrains.mps.lang.editor.cellProviders.RefCellCellProvider;
+import jetbrains.mps.nodeEditor.cellMenu.CompositeSubstituteInfo;
+import jetbrains.mps.nodeEditor.cellMenu.SubstituteInfoPart;
 import jetbrains.mps.smodel.IOperationContext;
 import jetbrains.mps.nodeEditor.EditorManager;
 import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
 import jetbrains.mps.nodeEditor.MPSFonts;
 import jetbrains.mps.smodel.IScope;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import jetbrains.mps.lang.editor.generator.internal.AbstractCellMenuPart_ReplaceNode_CustomNodeConcept;
 import jetbrains.mps.nodeEditor.InlineCellProvider;
-import jetbrains.mps.nodeEditor.style.AttributeCalculator;
-import java.awt.Color;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import jetbrains.mps.nodeEditor.cells.EditorCell_Property;
+import jetbrains.mps.nodeEditor.cells.EditorCell_RefPresentation;
 
 public class SSymbolRef_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
@@ -70,7 +72,7 @@ public class SSymbolRef_Editor extends DefaultNodeEditor {
     EditorCell editorCell;
     provider.setAuxiliaryCellProvider(new SSymbolRef_Editor._Inline_mdkd4i_a1a());
     editorCell = provider.createEditorCell(editorContext);
-    editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
+    editorCell.setSubstituteInfo(new CompositeSubstituteInfo(editorContext, provider.getCellContext(), new SubstituteInfoPart[]{new SSymbolRef_Editor.ReplaceWith_SSymbolRef_cellMenu_a0b0()}));
     SNode attributeConcept = provider.getRoleAttribute();
     Class attributeKind = provider.getRoleAttributeClass();
     if (attributeConcept != null) {
@@ -107,6 +109,15 @@ public class SSymbolRef_Editor extends DefaultNodeEditor {
     return SPropertyOperations.getString(node, "refalias") != null;
   }
 
+  public static class ReplaceWith_SSymbolRef_cellMenu_a0b0 extends AbstractCellMenuPart_ReplaceNode_CustomNodeConcept {
+    public ReplaceWith_SSymbolRef_cellMenu_a0b0() {
+    }
+
+    public String getReplacementConceptName() {
+      return "jetbrains.mps.core.syntax.structure.SSymbolRef";
+    }
+  }
+
   public static class _Inline_mdkd4i_a1a extends InlineCellProvider {
     public _Inline_mdkd4i_a1a() {
       super();
@@ -117,47 +128,13 @@ public class SSymbolRef_Editor extends DefaultNodeEditor {
     }
 
     public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-      return this.createProperty_mdkd4i_a0b0(editorContext, node);
+      return this.createReferencePresentation_mdkd4i_a0b0(editorContext, node);
     }
 
-    private EditorCell createProperty_mdkd4i_a0b0(EditorContext editorContext, SNode node) {
-      CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
-      provider.setRole("name");
-      provider.setNoTargetText("<no name>");
-      provider.setReadOnly(true);
-      EditorCell editorCell;
-      editorCell = provider.createEditorCell(editorContext);
-      editorCell.setCellId("property_name");
-      {
-        Style style = editorCell.getStyle();
-        style.set(StyleAttributes.TEXT_COLOR, new AttributeCalculator<Color>() {
-          public Color calculate(EditorCell cell) {
-            return SSymbolRef_Editor._Inline_mdkd4i_a1a._StyleParameter_QueryFunction_mdkd4i_a0a0b0((cell == null ?
-              null :
-              cell.getSNode()
-            ), (cell == null ?
-              null :
-              cell.getEditorContext()
-            ));
-          }
-        });
-      }
-      editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
-      SNode attributeConcept = provider.getRoleAttribute();
-      Class attributeKind = provider.getRoleAttributeClass();
-      if (attributeConcept != null) {
-        IOperationContext opContext = editorContext.getOperationContext();
-        EditorManager manager = EditorManager.getInstanceFromContext(opContext);
-        return manager.createRoleAttributeCell(editorContext, attributeConcept, attributeKind, editorCell);
-      } else
+    private EditorCell createReferencePresentation_mdkd4i_a0b0(EditorContext editorContext, SNode node) {
+      EditorCell_Property editorCell = EditorCell_RefPresentation.create(editorContext, node, this.getRefNode(), this.getLinkDeclaration());
+      editorCell.setCellId("ReferencePresentation_mdkd4i_a0b0");
       return editorCell;
-    }
-
-    private static Color _StyleParameter_QueryFunction_mdkd4i_a0a0b0(SNode node, EditorContext editorContext) {
-      return (SNodeOperations.isInstanceOf(SNodeOperations.getParent(node), "jetbrains.mps.core.syntax.structure.SLexem") ?
-        Color.BLUE :
-        Color.BLACK
-      );
     }
   }
 }

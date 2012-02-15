@@ -17,6 +17,7 @@ public class SSymbolRef extends BaseConcept implements SRulePart {
   public static final String SHORT_DESCRIPTION = "shortDescription";
   public static final String ALIAS = "alias";
   public static final String VIRTUAL_PACKAGE = "virtualPackage";
+  public static final String IS_OPTIONAL = "isOptional";
   public static final String REF = "ref";
   public static final String SMODEL_ATTRIBUTE = "smodelAttribute";
 
@@ -54,6 +55,14 @@ public class SSymbolRef extends BaseConcept implements SRulePart {
 
   public void setVirtualPackage(String value) {
     this.setProperty(SSymbolRef.VIRTUAL_PACKAGE, value);
+  }
+
+  public boolean getIsOptional() {
+    return this.getBooleanProperty(SSymbolRef.IS_OPTIONAL);
+  }
+
+  public void setIsOptional(boolean value) {
+    this.setBooleanProperty(SSymbolRef.IS_OPTIONAL, value);
   }
 
   public SSymbol getRef() {

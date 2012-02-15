@@ -13,8 +13,8 @@ import jetbrains.mps.smodel.IScope;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 
 public class SSymbol_Constraints extends BaseConstraintsDescriptor {
-  private static Pattern REGEXP_ef4amp_a0a0a0b0b0a1a0b0a = Pattern.compile("[a-zA-Z_][\\w\\-]*", 0);
-  private static Pattern REGEXP_ef4amp_a0a0a0b0b0a1a0b0a_0 = Pattern.compile("'(?:[^'\\n\\\\\\s]|\\\\.)+'", 0);
+  private static Pattern REGEXP_ef4amp_a0a0a0b0b0a1a0b0a = Pattern.compile("'(?:[^'\\n\\\\\\s]|\\\\.)+'", 0);
+  private static Pattern REGEXP_ef4amp_a0a0a0a1a1a0b0a1a0 = Pattern.compile("[a-zA-Z_][\\w\\-]*", 0);
 
   public SSymbol_Constraints() {
     super("jetbrains.mps.core.syntax.structure.SSymbol");
@@ -32,7 +32,7 @@ public class SSymbol_Constraints extends BaseConstraintsDescriptor {
       @Override
       public boolean validateValue(SNode node, String propertyValue, IScope scope) {
         String propertyName = "name";
-        return REGEXP_ef4amp_a0a0a0b0b0a1a0b0a_0.matcher((SPropertyOperations.getString(propertyValue))).matches() || REGEXP_ef4amp_a0a0a0b0b0a1a0b0a.matcher((SPropertyOperations.getString(propertyValue))).matches();
+        return REGEXP_ef4amp_a0a0a0b0b0a1a0b0a.matcher((SPropertyOperations.getString(propertyValue))).matches() || REGEXP_ef4amp_a0a0a0a1a1a0b0a1a0.matcher((SPropertyOperations.getString(propertyValue))).matches() && !((SPropertyOperations.getString(propertyValue)).endsWith("opt"));
       }
     });
     return properties;

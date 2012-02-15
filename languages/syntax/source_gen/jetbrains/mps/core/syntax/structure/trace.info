@@ -384,81 +384,90 @@
     <nodeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="16" startPosition="51" endLine="17" endPosition="68" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="SHORT_DESCRIPTION" />
     <nodeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="17" startPosition="68" endLine="18" endPosition="45" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="ALIAS" />
     <nodeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="18" startPosition="45" endLine="19" endPosition="64" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="VIRTUAL_PACKAGE" />
-    <nodeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="19" startPosition="64" endLine="20" endPosition="41" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="REF" />
-    <nodeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="20" startPosition="41" endLine="21" endPosition="66" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="SMODEL_ATTRIBUTE" />
-    <nodeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="23" startPosition="33" endLine="24" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
-    <nodeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="27" startPosition="31" endLine="28" endPosition="49" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="31" startPosition="41" endLine="32" endPosition="49" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="35" startPosition="39" endLine="36" endPosition="58" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="39" startPosition="49" endLine="40" endPosition="58" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="43" startPosition="28" endLine="44" endPosition="46" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="47" startPosition="38" endLine="48" endPosition="46" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="51" startPosition="37" endLine="52" endPosition="56" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="55" startPosition="47" endLine="56" endPosition="56" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="59" startPosition="27" endLine="60" endPosition="69" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="63" startPosition="36" endLine="64" endPosition="44" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="67" startPosition="41" endLine="68" endPosition="59" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="71" startPosition="49" endLine="72" endPosition="71" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="75" startPosition="48" endLine="76" endPosition="74" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="79" startPosition="50" endLine="80" endPosition="53" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="83" startPosition="69" endLine="84" endPosition="62" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="87" startPosition="65" endLine="88" endPosition="169" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="91" startPosition="51" endLine="92" endPosition="45" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="22" startPosition="0" endLine="25" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="SSymbolRef#(Ljetbrains/mps/smodel/SNode;)V" />
-    <nodeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="26" startPosition="0" endLine="30" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getRefalias#()Ljava/lang/String;" />
-    <nodeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="30" startPosition="0" endLine="34" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setRefalias#(Ljava/lang/String;)V" />
-    <nodeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="34" startPosition="0" endLine="38" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getShortDescription#()Ljava/lang/String;" />
-    <nodeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="38" startPosition="0" endLine="42" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setShortDescription#(Ljava/lang/String;)V" />
-    <nodeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="42" startPosition="0" endLine="46" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getAlias#()Ljava/lang/String;" />
-    <nodeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="46" startPosition="0" endLine="50" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setAlias#(Ljava/lang/String;)V" />
-    <nodeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="50" startPosition="0" endLine="54" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getVirtualPackage#()Ljava/lang/String;" />
-    <nodeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="54" startPosition="0" endLine="58" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setVirtualPackage#(Ljava/lang/String;)V" />
-    <nodeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="58" startPosition="0" endLine="62" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getRef#()Ljetbrains/mps/smodel/INodeAdapter;" />
-    <nodeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="62" startPosition="0" endLine="66" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setRef#(Ljetbrains/mps/smodel/INodeAdapter;)V" />
-    <nodeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="66" startPosition="0" endLine="70" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getSmodelAttributesCount#()I" />
-    <nodeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="70" startPosition="0" endLine="74" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="smodelAttributes#()Ljava/util/Iterator;" />
-    <nodeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="74" startPosition="0" endLine="78" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getSmodelAttributes#()Ljava/util/List;" />
-    <nodeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="78" startPosition="0" endLine="82" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="addSmodelAttribute#(Ljetbrains/mps/smodel/INodeAdapter;)V" />
-    <nodeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="82" startPosition="0" endLine="86" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="insertSmodelAttribute#(Ljetbrains/mps/smodel/INodeAdapter;Ljetbrains/mps/smodel/INodeAdapter;)V" />
-    <nodeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="86" startPosition="0" endLine="90" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="newInstance#(Ljetbrains/mps/smodel/SModel;Z)Ljetbrains/mps/core/syntax/structure/SSymbolRef;" />
-    <nodeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="90" startPosition="0" endLine="94" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="newInstance#(Ljetbrains/mps/smodel/SModel;)Ljetbrains/mps/core/syntax/structure/SSymbolRef;" />
-    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="23" startPosition="33" endLine="24" endPosition="16" />
-    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="27" startPosition="31" endLine="28" endPosition="49" />
-    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="31" startPosition="41" endLine="32" endPosition="49" />
-    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="35" startPosition="39" endLine="36" endPosition="58" />
-    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="39" startPosition="49" endLine="40" endPosition="58" />
-    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="43" startPosition="28" endLine="44" endPosition="46" />
-    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="47" startPosition="38" endLine="48" endPosition="46" />
-    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="51" startPosition="37" endLine="52" endPosition="56" />
-    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="55" startPosition="47" endLine="56" endPosition="56" />
-    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="59" startPosition="27" endLine="60" endPosition="69" />
-    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="63" startPosition="36" endLine="64" endPosition="44" />
-    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="67" startPosition="41" endLine="68" endPosition="59" />
-    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="71" startPosition="49" endLine="72" endPosition="71" />
-    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="75" startPosition="48" endLine="76" endPosition="74" />
-    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="79" startPosition="50" endLine="80" endPosition="53" />
-    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="83" startPosition="69" endLine="84" endPosition="62" />
-    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="87" startPosition="65" endLine="88" endPosition="169" />
-    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="91" startPosition="51" endLine="92" endPosition="45" />
-    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="22" startPosition="0" endLine="25" endPosition="3" />
-    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="26" startPosition="0" endLine="30" endPosition="0" />
-    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="30" startPosition="0" endLine="34" endPosition="0" />
-    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="34" startPosition="0" endLine="38" endPosition="0" />
-    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="38" startPosition="0" endLine="42" endPosition="0" />
-    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="42" startPosition="0" endLine="46" endPosition="0" />
-    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="46" startPosition="0" endLine="50" endPosition="0" />
-    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="50" startPosition="0" endLine="54" endPosition="0" />
-    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="54" startPosition="0" endLine="58" endPosition="0" />
-    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="58" startPosition="0" endLine="62" endPosition="0" />
-    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="62" startPosition="0" endLine="66" endPosition="0" />
-    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="66" startPosition="0" endLine="70" endPosition="0" />
-    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="70" startPosition="0" endLine="74" endPosition="0" />
-    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="74" startPosition="0" endLine="78" endPosition="0" />
-    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="78" startPosition="0" endLine="82" endPosition="0" />
-    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="82" startPosition="0" endLine="86" endPosition="0" />
-    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="86" startPosition="0" endLine="90" endPosition="0" />
-    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="90" startPosition="0" endLine="94" endPosition="0" />
-    <unitInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="14" startPosition="0" endLine="95" endPosition="0" unitName="jetbrains.mps.core.syntax.structure.SSymbolRef" />
+    <nodeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="19" startPosition="64" endLine="20" endPosition="56" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="IS_OPTIONAL" />
+    <nodeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="20" startPosition="56" endLine="21" endPosition="41" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="REF" />
+    <nodeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="21" startPosition="41" endLine="22" endPosition="66" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="SMODEL_ATTRIBUTE" />
+    <nodeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="24" startPosition="33" endLine="25" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+    <nodeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="28" startPosition="31" endLine="29" endPosition="49" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="32" startPosition="41" endLine="33" endPosition="49" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="36" startPosition="39" endLine="37" endPosition="58" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="40" startPosition="49" endLine="41" endPosition="58" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="44" startPosition="28" endLine="45" endPosition="46" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="48" startPosition="38" endLine="49" endPosition="46" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="52" startPosition="37" endLine="53" endPosition="56" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="56" startPosition="47" endLine="57" endPosition="56" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="60" startPosition="34" endLine="61" endPosition="59" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="64" startPosition="44" endLine="65" endPosition="59" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="68" startPosition="27" endLine="69" endPosition="69" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="72" startPosition="36" endLine="73" endPosition="44" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="76" startPosition="41" endLine="77" endPosition="59" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="80" startPosition="49" endLine="81" endPosition="71" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="84" startPosition="48" endLine="85" endPosition="74" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="88" startPosition="50" endLine="89" endPosition="53" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="92" startPosition="69" endLine="93" endPosition="62" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="96" startPosition="65" endLine="97" endPosition="169" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="100" startPosition="51" endLine="101" endPosition="45" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="23" startPosition="0" endLine="26" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="SSymbolRef#(Ljetbrains/mps/smodel/SNode;)V" />
+    <nodeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="27" startPosition="0" endLine="31" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getRefalias#()Ljava/lang/String;" />
+    <nodeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="31" startPosition="0" endLine="35" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setRefalias#(Ljava/lang/String;)V" />
+    <nodeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="35" startPosition="0" endLine="39" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getShortDescription#()Ljava/lang/String;" />
+    <nodeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="39" startPosition="0" endLine="43" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setShortDescription#(Ljava/lang/String;)V" />
+    <nodeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="43" startPosition="0" endLine="47" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getAlias#()Ljava/lang/String;" />
+    <nodeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="47" startPosition="0" endLine="51" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setAlias#(Ljava/lang/String;)V" />
+    <nodeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="51" startPosition="0" endLine="55" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getVirtualPackage#()Ljava/lang/String;" />
+    <nodeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="55" startPosition="0" endLine="59" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setVirtualPackage#(Ljava/lang/String;)V" />
+    <nodeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="59" startPosition="0" endLine="63" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getIsOptional#()Z" />
+    <nodeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="63" startPosition="0" endLine="67" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setIsOptional#(Z)V" />
+    <nodeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="67" startPosition="0" endLine="71" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getRef#()Ljetbrains/mps/smodel/INodeAdapter;" />
+    <nodeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="71" startPosition="0" endLine="75" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setRef#(Ljetbrains/mps/smodel/INodeAdapter;)V" />
+    <nodeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="75" startPosition="0" endLine="79" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getSmodelAttributesCount#()I" />
+    <nodeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="79" startPosition="0" endLine="83" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="smodelAttributes#()Ljava/util/Iterator;" />
+    <nodeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="83" startPosition="0" endLine="87" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getSmodelAttributes#()Ljava/util/List;" />
+    <nodeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="87" startPosition="0" endLine="91" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="addSmodelAttribute#(Ljetbrains/mps/smodel/INodeAdapter;)V" />
+    <nodeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="91" startPosition="0" endLine="95" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="insertSmodelAttribute#(Ljetbrains/mps/smodel/INodeAdapter;Ljetbrains/mps/smodel/INodeAdapter;)V" />
+    <nodeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="95" startPosition="0" endLine="99" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="newInstance#(Ljetbrains/mps/smodel/SModel;Z)Ljetbrains/mps/core/syntax/structure/SSymbolRef;" />
+    <nodeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="99" startPosition="0" endLine="103" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="newInstance#(Ljetbrains/mps/smodel/SModel;)Ljetbrains/mps/core/syntax/structure/SSymbolRef;" />
+    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="24" startPosition="33" endLine="25" endPosition="16" />
+    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="28" startPosition="31" endLine="29" endPosition="49" />
+    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="32" startPosition="41" endLine="33" endPosition="49" />
+    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="36" startPosition="39" endLine="37" endPosition="58" />
+    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="40" startPosition="49" endLine="41" endPosition="58" />
+    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="44" startPosition="28" endLine="45" endPosition="46" />
+    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="48" startPosition="38" endLine="49" endPosition="46" />
+    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="52" startPosition="37" endLine="53" endPosition="56" />
+    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="56" startPosition="47" endLine="57" endPosition="56" />
+    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="60" startPosition="34" endLine="61" endPosition="59" />
+    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="64" startPosition="44" endLine="65" endPosition="59" />
+    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="68" startPosition="27" endLine="69" endPosition="69" />
+    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="72" startPosition="36" endLine="73" endPosition="44" />
+    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="76" startPosition="41" endLine="77" endPosition="59" />
+    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="80" startPosition="49" endLine="81" endPosition="71" />
+    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="84" startPosition="48" endLine="85" endPosition="74" />
+    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="88" startPosition="50" endLine="89" endPosition="53" />
+    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="92" startPosition="69" endLine="93" endPosition="62" />
+    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="96" startPosition="65" endLine="97" endPosition="169" />
+    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="100" startPosition="51" endLine="101" endPosition="45" />
+    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="23" startPosition="0" endLine="26" endPosition="3" />
+    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="27" startPosition="0" endLine="31" endPosition="0" />
+    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="31" startPosition="0" endLine="35" endPosition="0" />
+    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="35" startPosition="0" endLine="39" endPosition="0" />
+    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="39" startPosition="0" endLine="43" endPosition="0" />
+    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="43" startPosition="0" endLine="47" endPosition="0" />
+    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="47" startPosition="0" endLine="51" endPosition="0" />
+    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="51" startPosition="0" endLine="55" endPosition="0" />
+    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="55" startPosition="0" endLine="59" endPosition="0" />
+    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="59" startPosition="0" endLine="63" endPosition="0" />
+    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="63" startPosition="0" endLine="67" endPosition="0" />
+    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="67" startPosition="0" endLine="71" endPosition="0" />
+    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="71" startPosition="0" endLine="75" endPosition="0" />
+    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="75" startPosition="0" endLine="79" endPosition="0" />
+    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="79" startPosition="0" endLine="83" endPosition="0" />
+    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="83" startPosition="0" endLine="87" endPosition="0" />
+    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="87" startPosition="0" endLine="91" endPosition="0" />
+    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="91" startPosition="0" endLine="95" endPosition="0" />
+    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="95" startPosition="0" endLine="99" endPosition="0" />
+    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="99" startPosition="0" endLine="103" endPosition="0" />
+    <unitInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="14" startPosition="0" endLine="104" endPosition="0" unitName="jetbrains.mps.core.syntax.structure.SSymbolRef" />
   </root>
   <root nodeId="5073985075243001601">
     <nodeInfo nodeId="5073985075243001601" fileName="SRegex.java" startLine="11" startPosition="41" endLine="12" endPosition="84" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="concept" />

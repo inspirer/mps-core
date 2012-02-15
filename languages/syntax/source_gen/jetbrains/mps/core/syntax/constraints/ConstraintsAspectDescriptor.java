@@ -7,7 +7,7 @@ import java.util.Arrays;
 import jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor;
 
 public class ConstraintsAspectDescriptor implements jetbrains.mps.smodel.runtime.ConstraintsAspectDescriptor {
-  private static String[] stringSwitchCases_2qnle6_a0a0a = new String[]{"jetbrains.mps.core.syntax.structure.SLexerPart", "jetbrains.mps.core.syntax.structure.SNonTerm", "jetbrains.mps.core.syntax.structure.SRegex", "jetbrains.mps.core.syntax.structure.SSymbol"};
+  private static String[] stringSwitchCases_2qnle6_a0a0a = new String[]{"jetbrains.mps.core.syntax.structure.SLexerPart", "jetbrains.mps.core.syntax.structure.SNonTerm", "jetbrains.mps.core.syntax.structure.SRegex", "jetbrains.mps.core.syntax.structure.SSymbol", "jetbrains.mps.core.syntax.structure.SSymbolRef"};
 
   public ConstraintsAspectDescriptor() {
   }
@@ -22,6 +22,8 @@ public class ConstraintsAspectDescriptor implements jetbrains.mps.smodel.runtime
         return new SLexerPart_Constraints();
       case 3:
         return new SSymbol_Constraints();
+      case 4:
+        return new SSymbolRef_Constraints();
       default:
         // todo: illegal in some cases? 
         return new BaseConstraintsDescriptor(fqName);

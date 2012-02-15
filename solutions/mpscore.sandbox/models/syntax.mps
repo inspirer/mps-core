@@ -238,94 +238,159 @@
         <property name="regexp" nameId="q5nm.5073985075243001602" value="choice" />
       </node>
     </node>
-    <node role="lexerParts" roleId="q5nm.5073985075243002164" type="q5nm.SLexerPart" typeId="q5nm.5073985075243238823" id="3135327435335338927" />
-    <node role="lexerParts" roleId="q5nm.5073985075243002164" type="q5nm.SLineComment" typeId="q5nm.2481283025450046972" id="2481283025450207934">
-      <property name="content" nameId="q5nm.2481283025450046973" value="Grammar" />
-    </node>
-    <node role="grammarParts" roleId="q5nm.5073985075243002173" type="q5nm.SNonTerm" typeId="q5nm.5073985075243001593" id="3135327435335351432">
-      <node role="rules" roleId="q5nm.5073985075243001596" type="q5nm.SRule" typeId="q5nm.5073985075243001592" id="3135327435335351434" />
-      <node role="sym" roleId="q5nm.5073985075243001595" type="q5nm.SSymbol" typeId="q5nm.5073985075243001589" id="3135327435335351443">
-        <property name="name" nameId="tpck.1169194664001" value="'aaa'" />
+    <node role="grammarParts" roleId="q5nm.5073985075243002173" type="q5nm.SNonTerm" typeId="q5nm.5073985075243001593" id="1030525575875839352">
+      <node role="sym" roleId="q5nm.5073985075243001595" type="q5nm.SSymbol" typeId="q5nm.5073985075243001589" id="1030525575875839353">
+        <property name="name" nameId="tpck.1169194664001" value="input" />
       </node>
-    </node>
-    <node role="grammarParts" roleId="q5nm.5073985075243002173" type="q5nm.SGrammarPart" typeId="q5nm.3135327435335338954" id="3135327435335351435" />
-    <node role="grammarParts" roleId="q5nm.5073985075243002173" type="q5nm.SNonTerm" typeId="q5nm.5073985075243001593" id="831208648099863709">
-      <node role="sym" roleId="q5nm.5073985075243001595" type="q5nm.SSymbol" typeId="q5nm.5073985075243001589" id="831208648099863710">
-        <property name="name" nameId="tpck.1169194664001" value="asda" />
-      </node>
-      <node role="rules" roleId="q5nm.5073985075243001596" type="q5nm.SRule" typeId="q5nm.5073985075243001592" id="831208648099863711">
-        <node role="parts" roleId="q5nm.5073985075243001599" type="q5nm.SSymbolRef" typeId="q5nm.5073985075243001597" id="831208648099863713">
-          <link role="ref" roleId="q5nm.5073985075243001598" targetNodeId="3135327435335351443" resolveInfo="'aaa'" />
+      <node role="rules" roleId="q5nm.5073985075243001596" type="q5nm.SRule" typeId="q5nm.5073985075243001592" id="1030525575875839354">
+        <node role="parts" roleId="q5nm.5073985075243001599" type="q5nm.SSymbolRef" typeId="q5nm.5073985075243001597" id="1030525575875900715">
+          <link role="ref" roleId="q5nm.5073985075243001598" targetNodeId="1030525575875839358" resolveInfo="declarations" />
         </node>
       </node>
     </node>
-    <node role="grammarParts" roleId="q5nm.5073985075243002173" type="q5nm.SGrammarPart" typeId="q5nm.3135327435335338954" id="831208648099863703" />
-    <node role="grammarParts" roleId="q5nm.5073985075243002173" type="q5nm.SPrio" typeId="q5nm.5073985075243144313" id="831208648099881436">
-      <property name="kind" nameId="q5nm.5073985075243144319" value="1" />
-      <node role="references" roleId="q5nm.5073985075243144331" type="q5nm.SReference" typeId="q5nm.5073985075243144320" id="831208648099885054">
-        <link role="symbol" roleId="q5nm.5073985075243144321" targetNodeId="3135327435335338884" resolveInfo="'{'" />
+    <node role="grammarParts" roleId="q5nm.5073985075243002173" type="q5nm.SGrammarPart" typeId="q5nm.3135327435335338954" id="1030525575875839355" />
+    <node role="grammarParts" roleId="q5nm.5073985075243002173" type="q5nm.SNonTerm" typeId="q5nm.5073985075243001593" id="1030525575875839357">
+      <node role="sym" roleId="q5nm.5073985075243001595" type="q5nm.SSymbol" typeId="q5nm.5073985075243001589" id="1030525575875839358">
+        <property name="name" nameId="tpck.1169194664001" value="declarations" />
       </node>
-      <node role="references" roleId="q5nm.5073985075243144331" type="q5nm.SReference" typeId="q5nm.5073985075243144320" id="831208648099885056">
-        <link role="symbol" roleId="q5nm.5073985075243144321" targetNodeId="3135327435335338887" resolveInfo="'}'" />
-      </node>
-    </node>
-    <node role="grammarParts" roleId="q5nm.5073985075243002173" type="q5nm.SPrio" typeId="q5nm.5073985075243144313" id="831208648099885058">
-      <node role="references" roleId="q5nm.5073985075243144331" type="q5nm.SReference" typeId="q5nm.5073985075243144320" id="831208648099890879">
-        <link role="symbol" roleId="q5nm.5073985075243144321" targetNodeId="3135327435335338866" resolveInfo="'*'" />
-      </node>
-    </node>
-    <node role="grammarParts" roleId="q5nm.5073985075243002173" type="q5nm.SGrammarPart" typeId="q5nm.3135327435335338954" id="831208648099881435" />
-    <node role="grammarParts" roleId="q5nm.5073985075243002173" type="q5nm.SNonTerm" typeId="q5nm.5073985075243001593" id="7384592777050096949">
-      <node role="sym" roleId="q5nm.5073985075243001595" type="q5nm.SSymbol" typeId="q5nm.5073985075243001589" id="7384592777050096950">
-        <property name="name" nameId="tpck.1169194664001" value="asda" />
-      </node>
-      <node role="rules" roleId="q5nm.5073985075243001596" type="q5nm.SRule" typeId="q5nm.5073985075243001592" id="7384592777050096951">
-        <node role="parts" roleId="q5nm.5073985075243001599" type="q5nm.SSymbolRef" typeId="q5nm.5073985075243001597" id="7384592777050096953">
-          <link role="ref" roleId="q5nm.5073985075243001598" targetNodeId="5073985075243222324" resolveInfo="identifier" />
+      <node role="rules" roleId="q5nm.5073985075243001596" type="q5nm.SRule" typeId="q5nm.5073985075243001592" id="1030525575875839359">
+        <node role="parts" roleId="q5nm.5073985075243001599" type="q5nm.SSymbolRef" typeId="q5nm.5073985075243001597" id="1030525575875900717">
+          <link role="ref" roleId="q5nm.5073985075243001598" targetNodeId="1030525575875839358" resolveInfo="declarations" />
         </node>
-        <node role="parts" roleId="q5nm.5073985075243001599" type="q5nm.SSymbolRef" typeId="q5nm.5073985075243001597" id="7384592777050096955">
+        <node role="parts" roleId="q5nm.5073985075243001599" type="q5nm.SSymbolRef" typeId="q5nm.5073985075243001597" id="1030525575875839367">
+          <link role="ref" roleId="q5nm.5073985075243001598" targetNodeId="1030525575875839364" resolveInfo="type_declaration" />
+        </node>
+      </node>
+      <node role="rules" roleId="q5nm.5073985075243001596" type="q5nm.SRule" typeId="q5nm.5073985075243001592" id="1030525575875839368">
+        <node role="parts" roleId="q5nm.5073985075243001599" type="q5nm.SSymbolRef" typeId="q5nm.5073985075243001597" id="1030525575875902454">
+          <property name="isOptional" nameId="q5nm.1030525575875869591" value="true" />
+          <property name="refalias" nameId="q5nm.5073985075243002163" value="eee" />
+          <link role="ref" roleId="q5nm.5073985075243001598" targetNodeId="1030525575875839364" resolveInfo="type_declaration" />
+        </node>
+        <node role="parts" roleId="q5nm.5073985075243001599" type="q5nm.SSymbolRef" typeId="q5nm.5073985075243001597" id="1030525575875904561">
+          <property name="isOptional" nameId="q5nm.1030525575875869591" value="true" />
           <link role="ref" roleId="q5nm.5073985075243001598" targetNodeId="3135327435335338890" resolveInfo="'('" />
         </node>
       </node>
-      <node role="rules" roleId="q5nm.5073985075243001596" type="q5nm.SRule" typeId="q5nm.5073985075243001592" id="7384592777050096954" />
     </node>
-    <node role="grammarParts" roleId="q5nm.5073985075243002173" type="q5nm.SGrammarPart" typeId="q5nm.3135327435335338954" id="3135327435335358682" />
-    <node role="grammarParts" roleId="q5nm.5073985075243002173" type="q5nm.SNonTerm" typeId="q5nm.5073985075243001593" id="6627258180876309611">
-      <node role="rules" roleId="q5nm.5073985075243001596" type="q5nm.SRule" typeId="q5nm.5073985075243001592" id="7384592777050055760" />
-      <node role="rules" roleId="q5nm.5073985075243001596" type="q5nm.SRule" typeId="q5nm.5073985075243001592" id="7384592777050050459" />
-      <node role="rules" roleId="q5nm.5073985075243001596" type="q5nm.SRule" typeId="q5nm.5073985075243001592" id="6627258180876529539">
-        <node role="parts" roleId="q5nm.5073985075243001599" type="q5nm.SSymbolRef" typeId="q5nm.5073985075243001597" id="6627258180876529542">
-          <link role="ref" roleId="q5nm.5073985075243001598" targetNodeId="3135327435335338890" resolveInfo="'('" />
-        </node>
-        <node role="parts" roleId="q5nm.5073985075243001599" type="q5nm.SSymbolRef" typeId="q5nm.5073985075243001597" id="6627258180876529543">
-          <link role="ref" roleId="q5nm.5073985075243001598" targetNodeId="3135327435335338861" resolveInfo="'.'" />
-        </node>
-        <node role="parts" roleId="q5nm.5073985075243001599" type="q5nm.SSymbolRef" typeId="q5nm.5073985075243001597" id="6627258180876529560">
-          <link role="ref" roleId="q5nm.5073985075243001598" targetNodeId="3135327435335338897" resolveInfo="')'" />
-        </node>
+    <node role="grammarParts" roleId="q5nm.5073985075243002173" type="q5nm.SGrammarPart" typeId="q5nm.3135327435335338954" id="1030525575875839361" />
+    <node role="grammarParts" roleId="q5nm.5073985075243002173" type="q5nm.SNonTerm" typeId="q5nm.5073985075243001593" id="1030525575875839363">
+      <node role="sym" roleId="q5nm.5073985075243001595" type="q5nm.SSymbol" typeId="q5nm.5073985075243001589" id="1030525575875839364">
+        <property name="name" nameId="tpck.1169194664001" value="type_declaration" />
       </node>
-      <node role="rules" roleId="q5nm.5073985075243001596" type="q5nm.SRule" typeId="q5nm.5073985075243001592" id="6627258180876529546">
-        <node role="parts" roleId="q5nm.5073985075243001599" type="q5nm.SSymbolRef" typeId="q5nm.5073985075243001597" id="6627258180876534544">
-          <link role="ref" roleId="q5nm.5073985075243001598" targetNodeId="3135327435335338861" resolveInfo="'.'" />
+      <node role="rules" roleId="q5nm.5073985075243001596" type="q5nm.SRule" typeId="q5nm.5073985075243001592" id="1030525575875839365">
+        <node role="parts" roleId="q5nm.5073985075243001599" type="q5nm.SSymbolRef" typeId="q5nm.5073985075243001597" id="1030525575875839370">
+          <link role="ref" roleId="q5nm.5073985075243001598" targetNodeId="3135327435335338906" resolveInfo="Lclass" />
         </node>
-      </node>
-      <node role="rules" roleId="q5nm.5073985075243001596" type="q5nm.SRule" typeId="q5nm.5073985075243001592" id="6627258180876529554">
-        <node role="parts" roleId="q5nm.5073985075243001599" type="q5nm.SSymbolRef" typeId="q5nm.5073985075243001597" id="6627258180876529557">
+        <node role="parts" roleId="q5nm.5073985075243001599" type="q5nm.SSymbolRef" typeId="q5nm.5073985075243001597" id="1030525575875839371">
+          <property name="refalias" nameId="q5nm.5073985075243002163" value="name" />
           <link role="ref" roleId="q5nm.5073985075243001598" targetNodeId="5073985075243222324" resolveInfo="identifier" />
         </node>
-        <node role="parts" roleId="q5nm.5073985075243001599" type="q5nm.SSymbolRef" typeId="q5nm.5073985075243001597" id="6627258180876529558">
-          <property name="refalias" nameId="q5nm.5073985075243002163" value="closep" />
-          <link role="ref" roleId="q5nm.5073985075243001598" targetNodeId="3135327435335338897" resolveInfo="')'" />
+        <node role="parts" roleId="q5nm.5073985075243001599" type="q5nm.SSymbolRef" typeId="q5nm.5073985075243001597" id="1030525575875925269">
+          <property name="isOptional" nameId="q5nm.1030525575875869591" value="true" />
+          <property name="refalias" nameId="q5nm.5073985075243002163" value="extends" />
+          <link role="ref" roleId="q5nm.5073985075243001598" targetNodeId="1030525575875839377" resolveInfo="extends_clause" />
         </node>
-        <node role="parts" roleId="q5nm.5073985075243001599" type="q5nm.SSymbolRef" typeId="q5nm.5073985075243001597" id="6627258180876529559">
-          <link role="ref" roleId="q5nm.5073985075243001598" targetNodeId="3135327435335351443" resolveInfo="'aaa'" />
+        <node role="parts" roleId="q5nm.5073985075243001599" type="q5nm.SSymbolRef" typeId="q5nm.5073985075243001597" id="1030525575875839382">
+          <link role="ref" roleId="q5nm.5073985075243001598" targetNodeId="3135327435335338884" resolveInfo="'{'" />
         </node>
-      </node>
-      <node role="sym" roleId="q5nm.5073985075243001595" type="q5nm.SSymbol" typeId="q5nm.5073985075243001589" id="6627258180876309612">
-        <property name="name" nameId="tpck.1169194664001" value="'aaab'" />
+        <node role="parts" roleId="q5nm.5073985075243001599" type="q5nm.SSymbolRef" typeId="q5nm.5073985075243001597" id="1030525575875925268">
+          <property name="isOptional" nameId="q5nm.1030525575875869591" value="true" />
+          <link role="ref" roleId="q5nm.5073985075243001598" targetNodeId="1030525575875839391" resolveInfo="member_declarations" />
+        </node>
+        <node role="parts" roleId="q5nm.5073985075243001599" type="q5nm.SSymbolRef" typeId="q5nm.5073985075243001597" id="1030525575875839383">
+          <link role="ref" roleId="q5nm.5073985075243001598" targetNodeId="3135327435335338887" resolveInfo="'}'" />
+        </node>
       </node>
     </node>
-    <node role="grammarParts" roleId="q5nm.5073985075243002173" type="q5nm.SGrammarPart" typeId="q5nm.3135327435335338954" id="6627258180876309614" />
+    <node role="grammarParts" roleId="q5nm.5073985075243002173" type="q5nm.SGrammarPart" typeId="q5nm.3135327435335338954" id="1030525575875839373" />
+    <node role="grammarParts" roleId="q5nm.5073985075243002173" type="q5nm.SNonTerm" typeId="q5nm.5073985075243001593" id="1030525575875839376">
+      <node role="sym" roleId="q5nm.5073985075243001595" type="q5nm.SSymbol" typeId="q5nm.5073985075243001589" id="1030525575875839377">
+        <property name="name" nameId="tpck.1169194664001" value="extends_clause" />
+      </node>
+      <node role="rules" roleId="q5nm.5073985075243001596" type="q5nm.SRule" typeId="q5nm.5073985075243001592" id="1030525575875839378">
+        <node role="parts" roleId="q5nm.5073985075243001599" type="q5nm.SSymbolRef" typeId="q5nm.5073985075243001597" id="1030525575875839379">
+          <link role="ref" roleId="q5nm.5073985075243001598" targetNodeId="3135327435335338909" resolveInfo="Lextends" />
+        </node>
+        <node role="parts" roleId="q5nm.5073985075243001599" type="q5nm.SSymbolRef" typeId="q5nm.5073985075243001597" id="1030525575875839431">
+          <link role="ref" roleId="q5nm.5073985075243001598" targetNodeId="1030525575875839409" resolveInfo="name_list" />
+        </node>
+      </node>
+    </node>
+    <node role="grammarParts" roleId="q5nm.5073985075243002173" type="q5nm.SGrammarPart" typeId="q5nm.3135327435335338954" id="1030525575875839393" />
+    <node role="grammarParts" roleId="q5nm.5073985075243002173" type="q5nm.SGrammarPart" typeId="q5nm.3135327435335338954" id="1030525575875863842" />
+    <node role="grammarParts" roleId="q5nm.5073985075243002173" type="q5nm.SGrammarPart" typeId="q5nm.3135327435335338954" id="1030525575875839394" />
+    <node role="grammarParts" roleId="q5nm.5073985075243002173" type="q5nm.SNonTerm" typeId="q5nm.5073985075243001593" id="1030525575875839390">
+      <node role="sym" roleId="q5nm.5073985075243001595" type="q5nm.SSymbol" typeId="q5nm.5073985075243001589" id="1030525575875839391">
+        <property name="name" nameId="tpck.1169194664001" value="member_declarations" />
+      </node>
+      <node role="rules" roleId="q5nm.5073985075243001596" type="q5nm.SRule" typeId="q5nm.5073985075243001592" id="1030525575875839392">
+        <node role="parts" roleId="q5nm.5073985075243001599" type="q5nm.SSymbolRef" typeId="q5nm.5073985075243001597" id="1030525575875839395">
+          <link role="ref" roleId="q5nm.5073985075243001598" targetNodeId="1030525575875839391" resolveInfo="member_declarations" />
+        </node>
+        <node role="parts" roleId="q5nm.5073985075243001599" type="q5nm.SSymbolRef" typeId="q5nm.5073985075243001597" id="1030525575875839402">
+          <link role="ref" roleId="q5nm.5073985075243001598" targetNodeId="1030525575875839399" resolveInfo="member_declaration" />
+        </node>
+      </node>
+      <node role="rules" roleId="q5nm.5073985075243001596" type="q5nm.SRule" typeId="q5nm.5073985075243001592" id="1030525575875839403">
+        <node role="parts" roleId="q5nm.5073985075243001599" type="q5nm.SSymbolRef" typeId="q5nm.5073985075243001597" id="1030525575875839405">
+          <link role="ref" roleId="q5nm.5073985075243001598" targetNodeId="1030525575875839399" resolveInfo="member_declaration" />
+        </node>
+      </node>
+    </node>
+    <node role="grammarParts" roleId="q5nm.5073985075243002173" type="q5nm.SGrammarPart" typeId="q5nm.3135327435335338954" id="1030525575875839396" />
+    <node role="grammarParts" roleId="q5nm.5073985075243002173" type="q5nm.SNonTerm" typeId="q5nm.5073985075243001593" id="1030525575875839398">
+      <node role="rules" roleId="q5nm.5073985075243001596" type="q5nm.SRule" typeId="q5nm.5073985075243001592" id="1030525575875866065" />
+      <node role="sym" roleId="q5nm.5073985075243001595" type="q5nm.SSymbol" typeId="q5nm.5073985075243001589" id="1030525575875839399">
+        <property name="name" nameId="tpck.1169194664001" value="member_declaration" />
+      </node>
+    </node>
+    <node role="grammarParts" roleId="q5nm.5073985075243002173" type="q5nm.SGrammarPart" typeId="q5nm.3135327435335338954" id="1030525575875839428" />
+    <node role="grammarParts" roleId="q5nm.5073985075243002173" type="q5nm.SGrammarPart" typeId="q5nm.3135327435335338954" id="1030525575875839429" />
+    <node role="grammarParts" roleId="q5nm.5073985075243002173" type="q5nm.SNonTerm" typeId="q5nm.5073985075243001593" id="1030525575875839414">
+      <node role="sym" roleId="q5nm.5073985075243001595" type="q5nm.SSymbol" typeId="q5nm.5073985075243001589" id="1030525575875839415">
+        <property name="name" nameId="tpck.1169194664001" value="name" />
+      </node>
+      <node role="rules" roleId="q5nm.5073985075243001596" type="q5nm.SRule" typeId="q5nm.5073985075243001592" id="1030525575875839416">
+        <node role="parts" roleId="q5nm.5073985075243001599" type="q5nm.SSymbolRef" typeId="q5nm.5073985075243001597" id="1030525575875839417">
+          <link role="ref" roleId="q5nm.5073985075243001598" targetNodeId="5073985075243222324" resolveInfo="identifier" />
+        </node>
+      </node>
+      <node role="rules" roleId="q5nm.5073985075243001596" type="q5nm.SRule" typeId="q5nm.5073985075243001592" id="1030525575875839418">
+        <node role="parts" roleId="q5nm.5073985075243001599" type="q5nm.SSymbolRef" typeId="q5nm.5073985075243001597" id="1030525575875839420">
+          <link role="ref" roleId="q5nm.5073985075243001598" targetNodeId="1030525575875839415" resolveInfo="name" />
+        </node>
+        <node role="parts" roleId="q5nm.5073985075243001599" type="q5nm.SSymbolRef" typeId="q5nm.5073985075243001597" id="1030525575875839421">
+          <link role="ref" roleId="q5nm.5073985075243001598" targetNodeId="3135327435335338861" resolveInfo="'.'" />
+        </node>
+        <node role="parts" roleId="q5nm.5073985075243001599" type="q5nm.SSymbolRef" typeId="q5nm.5073985075243001597" id="1030525575875839422">
+          <link role="ref" roleId="q5nm.5073985075243001598" targetNodeId="5073985075243222324" resolveInfo="identifier" />
+        </node>
+      </node>
+    </node>
+    <node role="grammarParts" roleId="q5nm.5073985075243002173" type="q5nm.SGrammarPart" typeId="q5nm.3135327435335338954" id="1030525575875839413" />
+    <node role="grammarParts" roleId="q5nm.5073985075243002173" type="q5nm.SNonTerm" typeId="q5nm.5073985075243001593" id="1030525575875839408">
+      <node role="sym" roleId="q5nm.5073985075243001595" type="q5nm.SSymbol" typeId="q5nm.5073985075243001589" id="1030525575875839409">
+        <property name="name" nameId="tpck.1169194664001" value="name_list" />
+      </node>
+      <node role="rules" roleId="q5nm.5073985075243001596" type="q5nm.SRule" typeId="q5nm.5073985075243001592" id="1030525575875839410">
+        <node role="parts" roleId="q5nm.5073985075243001599" type="q5nm.SSymbolRef" typeId="q5nm.5073985075243001597" id="1030525575875839423">
+          <link role="ref" roleId="q5nm.5073985075243001598" targetNodeId="1030525575875839415" resolveInfo="name" />
+        </node>
+      </node>
+      <node role="rules" roleId="q5nm.5073985075243001596" type="q5nm.SRule" typeId="q5nm.5073985075243001592" id="1030525575875839424">
+        <node role="parts" roleId="q5nm.5073985075243001599" type="q5nm.SSymbolRef" typeId="q5nm.5073985075243001597" id="1030525575875839425">
+          <link role="ref" roleId="q5nm.5073985075243001598" targetNodeId="1030525575875839409" resolveInfo="name_list" />
+        </node>
+        <node role="parts" roleId="q5nm.5073985075243001599" type="q5nm.SSymbolRef" typeId="q5nm.5073985075243001597" id="1030525575875839426">
+          <link role="ref" roleId="q5nm.5073985075243001598" targetNodeId="3135327435335338872" resolveInfo="','" />
+        </node>
+        <node role="parts" roleId="q5nm.5073985075243001599" type="q5nm.SSymbolRef" typeId="q5nm.5073985075243001597" id="1030525575875839427">
+          <link role="ref" roleId="q5nm.5073985075243001598" targetNodeId="1030525575875839415" resolveInfo="name" />
+        </node>
+      </node>
+    </node>
+    <node role="grammarParts" roleId="q5nm.5073985075243002173" type="q5nm.SGrammarPart" typeId="q5nm.3135327435335338954" id="1030525575875839411" />
   </root>
 </model>
 

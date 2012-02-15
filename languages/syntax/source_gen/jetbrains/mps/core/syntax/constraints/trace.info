@@ -1,6 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debugInfo>
-  <unitInfo fileName="ConstraintsAspectDescriptor.java" startLine="9" startPosition="0" endLine="31" endPosition="0" unitName="jetbrains.mps.core.syntax.constraints.ConstraintsAspectDescriptor" />
+  <unitInfo fileName="ConstraintsAspectDescriptor.java" startLine="9" startPosition="0" endLine="33" endPosition="0" unitName="jetbrains.mps.core.syntax.constraints.ConstraintsAspectDescriptor" />
+  <root nodeId="1030525575875885954">
+    <nodeInfo nodeId="1030525575875885954" fileName="SSymbolRef_Constraints.java" startLine="18" startPosition="35" endLine="19" endPosition="60" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+    <nodeInfo nodeId="1030525575875885954" fileName="SSymbolRef_Constraints.java" startLine="23" startPosition="83" endLine="24" endPosition="75" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="1030525575875885954" fileName="SSymbolRef_Constraints.java" startLine="31" startPosition="44" endLine="32" endPosition="24" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1030525575875885996" fileName="SSymbolRef_Constraints.java" startLine="37" startPosition="159" endLine="38" endPosition="96" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1030525575875885961" fileName="SSymbolRef_Constraints.java" startLine="39" startPosition="13" endLine="40" endPosition="86" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1030525575875885954" fileName="SSymbolRef_Constraints.java" startLine="44" startPosition="7" endLine="45" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1030525575875885954" fileName="SSymbolRef_Constraints.java" startLine="17" startPosition="71" endLine="20" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="SSymbolRef_Constraints#()V" />
+    <nodeInfo nodeId="1030525575875885970" fileName="SSymbolRef_Constraints.java" startLine="36" startPosition="128" endLine="39" endPosition="13" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="1030525575875885954" fileName="SSymbolRef_Constraints.java" startLine="29" startPosition="49" endLine="34" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="hasPresentation#()Z" />
+    <nodeInfo nodeId="1030525575875885954" fileName="SSymbolRef_Constraints.java" startLine="34" startPosition="0" endLine="42" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getPresentation#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/runtime/ReferencePresentationContext;)Ljava/lang/String;" />
+    <nodeInfo nodeId="1030525575875885954" fileName="SSymbolRef_Constraints.java" startLine="28" startPosition="56" endLine="42" endPosition="10" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1030525575875885954" fileName="SSymbolRef_Constraints.java" startLine="25" startPosition="79" endLine="44" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+    <nodeInfo nodeId="1030525575875885954" fileName="SSymbolRef_Constraints.java" startLine="24" startPosition="75" endLine="44" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1030525575875885954" fileName="SSymbolRef_Constraints.java" startLine="21" startPosition="0" endLine="47" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getNotDefaultReferences#()Ljava/util/Map;" />
+    <scopeInfo nodeId="1030525575875885954" fileName="SSymbolRef_Constraints.java" startLine="18" startPosition="35" endLine="19" endPosition="60" />
+    <scopeInfo nodeId="1030525575875885954" fileName="SSymbolRef_Constraints.java" startLine="31" startPosition="44" endLine="32" endPosition="24" />
+    <scopeInfo nodeId="1030525575875885971" fileName="SSymbolRef_Constraints.java" startLine="37" startPosition="159" endLine="38" endPosition="96" />
+    <scopeInfo nodeId="1030525575875885954" fileName="SSymbolRef_Constraints.java" startLine="17" startPosition="71" endLine="20" endPosition="3" />
+    <scopeInfo nodeId="1030525575875885957" fileName="SSymbolRef_Constraints.java" startLine="36" startPosition="128" endLine="40" endPosition="86" />
+    <scopeInfo nodeId="1030525575875885954" fileName="SSymbolRef_Constraints.java" startLine="29" startPosition="49" endLine="34" endPosition="0" />
+    <scopeInfo nodeId="1030525575875885954" fileName="SSymbolRef_Constraints.java" startLine="34" startPosition="0" endLine="42" endPosition="0" />
+    <scopeInfo nodeId="1030525575875885954" fileName="SSymbolRef_Constraints.java" startLine="28" startPosition="56" endLine="42" endPosition="10" />
+    <scopeInfo nodeId="1030525575875885954" fileName="SSymbolRef_Constraints.java" startLine="25" startPosition="79" endLine="44" endPosition="0" />
+    <scopeInfo nodeId="1030525575875885954" fileName="SSymbolRef_Constraints.java" startLine="23" startPosition="83" endLine="45" endPosition="22" />
+    <scopeInfo nodeId="1030525575875885954" fileName="SSymbolRef_Constraints.java" startLine="21" startPosition="0" endLine="47" endPosition="0" />
+    <unitInfo nodeId="1030525575875885954" fileName="SSymbolRef_Constraints.java" startLine="29" startPosition="19" endLine="42" endPosition="9" unitName="jetbrains.mps.core.syntax.constraints.SSymbolRef_Constraints$2" />
+    <unitInfo nodeId="1030525575875885954" fileName="SSymbolRef_Constraints.java" startLine="25" startPosition="30" endLine="44" endPosition="5" unitName="jetbrains.mps.core.syntax.constraints.SSymbolRef_Constraints$1" />
+    <unitInfo nodeId="1030525575875885954" fileName="SSymbolRef_Constraints.java" startLine="17" startPosition="0" endLine="48" endPosition="0" unitName="jetbrains.mps.core.syntax.constraints.SSymbolRef_Constraints" />
+  </root>
   <root nodeId="2481283025450046201">
     <nodeInfo nodeId="2481283025450046201" fileName="SLexerPart_Constraints.java" startLine="8" startPosition="35" endLine="9" endPosition="60" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
     <nodeInfo nodeId="2481283025450046201" fileName="SLexerPart_Constraints.java" startLine="7" startPosition="71" endLine="10" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="SLexerPart_Constraints#()V" />
@@ -9,14 +39,14 @@
     <unitInfo nodeId="2481283025450046201" fileName="SLexerPart_Constraints.java" startLine="7" startPosition="0" endLine="12" endPosition="0" unitName="jetbrains.mps.core.syntax.constraints.SLexerPart_Constraints" />
   </root>
   <root nodeId="2481283025450253549">
-    <nodeInfo nodeId="2481283025450253549" fileName="SSymbol_Constraints.java" startLine="15" startPosition="68" endLine="16" endPosition="100" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="REGEXP_ef4amp_a0a0a0b0b0a1a0b0a" />
-    <nodeInfo nodeId="2481283025450253549" fileName="SSymbol_Constraints.java" startLine="16" startPosition="100" endLine="17" endPosition="111" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="REGEXP_ef4amp_a0a0a0b0b0a1a0b0a_0" />
+    <nodeInfo nodeId="3135327435335333338" fileName="SSymbol_Constraints.java" startLine="15" startPosition="68" endLine="16" endPosition="109" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="REGEXP_ef4amp_a0a0a0b0b0a1a0b0a" />
+    <nodeInfo nodeId="2481283025450253560" fileName="SSymbol_Constraints.java" startLine="16" startPosition="109" endLine="17" endPosition="101" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="REGEXP_ef4amp_a0a0a0a1a1a0b0a1a0" />
     <nodeInfo nodeId="2481283025450253549" fileName="SSymbol_Constraints.java" startLine="19" startPosition="32" endLine="20" endPosition="57" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
     <nodeInfo nodeId="2481283025450253549" fileName="SSymbol_Constraints.java" startLine="24" startPosition="82" endLine="25" endPosition="74" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
     <nodeInfo nodeId="2481283025450253549" fileName="SSymbol_Constraints.java" startLine="28" startPosition="40" endLine="29" endPosition="20" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="2481283025450253549" fileName="SSymbol_Constraints.java" startLine="33" startPosition="84" endLine="34" endPosition="37" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="2481283025450253549" fileName="SSymbol_Constraints.java" startLine="34" startPosition="37" endLine="35" endPosition="216" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
-    <nodeInfo nodeId="2481283025450253553" fileName="SSymbol_Constraints.java" startLine="34" startPosition="37" endLine="35" endPosition="216" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2481283025450253549" fileName="SSymbol_Constraints.java" startLine="34" startPosition="37" endLine="35" endPosition="284" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="2481283025450253553" fileName="SSymbol_Constraints.java" startLine="34" startPosition="37" endLine="35" endPosition="284" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="2481283025450253549" fileName="SSymbol_Constraints.java" startLine="37" startPosition="7" endLine="38" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="2481283025450253549" fileName="SSymbol_Constraints.java" startLine="18" startPosition="0" endLine="21" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="SSymbol_Constraints#()V" />
     <nodeInfo nodeId="2481283025450253549" fileName="SSymbol_Constraints.java" startLine="26" startPosition="80" endLine="31" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="hasOwnValidator#()Z" />
@@ -25,8 +55,8 @@
     <nodeInfo nodeId="2481283025450253549" fileName="SSymbol_Constraints.java" startLine="22" startPosition="0" endLine="40" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getNotDefaultProperties#()Ljava/util/Map;" />
     <scopeInfo nodeId="2481283025450253549" fileName="SSymbol_Constraints.java" startLine="19" startPosition="32" endLine="20" endPosition="57" />
     <scopeInfo nodeId="2481283025450253549" fileName="SSymbol_Constraints.java" startLine="28" startPosition="40" endLine="29" endPosition="20" />
-    <scopeInfo nodeId="2481283025450253552" fileName="SSymbol_Constraints.java" startLine="34" startPosition="37" endLine="35" endPosition="216" />
-    <scopeInfo nodeId="2481283025450253549" fileName="SSymbol_Constraints.java" startLine="33" startPosition="84" endLine="35" endPosition="216" />
+    <scopeInfo nodeId="2481283025450253552" fileName="SSymbol_Constraints.java" startLine="34" startPosition="37" endLine="35" endPosition="284" />
+    <scopeInfo nodeId="2481283025450253549" fileName="SSymbol_Constraints.java" startLine="33" startPosition="84" endLine="35" endPosition="284" />
     <scopeInfo nodeId="2481283025450253549" fileName="SSymbol_Constraints.java" startLine="18" startPosition="0" endLine="21" endPosition="3" />
     <scopeInfo nodeId="2481283025450253549" fileName="SSymbol_Constraints.java" startLine="26" startPosition="80" endLine="31" endPosition="0" />
     <scopeInfo nodeId="2481283025450253549" fileName="SSymbol_Constraints.java" startLine="31" startPosition="0" endLine="37" endPosition="0" />

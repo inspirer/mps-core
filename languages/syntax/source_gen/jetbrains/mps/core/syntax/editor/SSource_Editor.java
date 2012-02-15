@@ -41,7 +41,9 @@ public class SSource_Editor extends DefaultNodeEditor {
     editorCell.addEditorCell(this.createConstant_5svtcf_h0(editorContext, node));
     editorCell.addEditorCell(this.createRefNodeList_5svtcf_i0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_5svtcf_j0(editorContext, node));
-    editorCell.addEditorCell(this.createRefNodeList_5svtcf_k0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_5svtcf_k0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_5svtcf_l0(editorContext, node));
+    editorCell.addEditorCell(this.createRefNodeList_5svtcf_m0(editorContext, node));
     return editorCell;
   }
 
@@ -119,6 +121,29 @@ public class SSource_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
+  private EditorCell createConstant_5svtcf_k0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "grammar");
+    editorCell.setCellId("Constant_5svtcf_k0");
+    SyntaxSS_StyleSheet.getKeyword(editorCell).apply(editorCell);
+    {
+      Style style = editorCell.getStyle();
+      style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, true);
+    }
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+
+  private EditorCell createConstant_5svtcf_l0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "");
+    editorCell.setCellId("Constant_5svtcf_l0");
+    {
+      Style style = editorCell.getStyle();
+      style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, true);
+    }
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+
   private EditorCell createRefNodeList_5svtcf_f0(EditorContext editorContext, SNode node) {
     AbstractCellListHandler handler = new SSource_Editor.inputListHandler_5svtcf_f0(node, "input", editorContext);
     EditorCell_Collection editorCell = handler.createCells(editorContext, new CellLayout_Indent(), false);
@@ -140,8 +165,8 @@ public class SSource_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private EditorCell createRefNodeList_5svtcf_k0(EditorContext editorContext, SNode node) {
-    AbstractCellListHandler handler = new SSource_Editor.grammarPartsListHandler_5svtcf_k0(node, "grammarParts", editorContext);
+  private EditorCell createRefNodeList_5svtcf_m0(EditorContext editorContext, SNode node) {
+    AbstractCellListHandler handler = new SSource_Editor.grammarPartsListHandler_5svtcf_m0(node, "grammarParts", editorContext);
     EditorCell_Collection editorCell = handler.createCells(editorContext, new CellLayout_Indent(), false);
     editorCell.setCellId("refNodeList_grammarParts");
     {
@@ -255,8 +280,8 @@ public class SSource_Editor extends DefaultNodeEditor {
     }
   }
 
-  private static class grammarPartsListHandler_5svtcf_k0 extends RefNodeListHandler {
-    public grammarPartsListHandler_5svtcf_k0(SNode ownerNode, String childRole, EditorContext context) {
+  private static class grammarPartsListHandler_5svtcf_m0 extends RefNodeListHandler {
+    public grammarPartsListHandler_5svtcf_m0(SNode ownerNode, String childRole, EditorContext context) {
       super(ownerNode, childRole, context, false);
     }
 
@@ -279,7 +304,7 @@ public class SSource_Editor extends DefaultNodeEditor {
     }
 
     public EditorCell createEmptyCell_internal(EditorContext editorContext, SNode node) {
-      return this.createConstant_5svtcf_a01a(editorContext, node);
+      return this.createConstant_5svtcf_a21a(editorContext, node);
     }
 
     public void installElementCellActions(SNode listOwner, SNode elementNode, EditorCell elementCell, EditorContext editorContext) {
@@ -294,9 +319,9 @@ public class SSource_Editor extends DefaultNodeEditor {
       }
     }
 
-    private EditorCell createConstant_5svtcf_a01a(EditorContext editorContext, SNode node) {
+    private EditorCell createConstant_5svtcf_a21a(EditorContext editorContext, SNode node) {
       EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "<< grammar definition >>");
-      editorCell.setCellId("Constant_5svtcf_a01a");
+      editorCell.setCellId("Constant_5svtcf_a21a");
       SyntaxSS_StyleSheet.getEmptyCollection(editorCell).apply(editorCell);
       editorCell.setDefaultText("");
       return editorCell;
