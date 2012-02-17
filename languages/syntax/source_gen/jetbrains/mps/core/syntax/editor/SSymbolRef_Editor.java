@@ -24,6 +24,9 @@ import jetbrains.mps.lang.editor.generator.internal.AbstractCellMenuPart_Replace
 import jetbrains.mps.nodeEditor.InlineCellProvider;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Property;
 import jetbrains.mps.nodeEditor.cells.EditorCell_RefPresentation;
+import jetbrains.mps.nodeEditor.style.AttributeCalculator;
+import java.awt.Color;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 
 public class SSymbolRef_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
@@ -134,7 +137,28 @@ public class SSymbolRef_Editor extends DefaultNodeEditor {
     private EditorCell createReferencePresentation_mdkd4i_a0b0(EditorContext editorContext, SNode node) {
       EditorCell_Property editorCell = EditorCell_RefPresentation.create(editorContext, node, this.getRefNode(), this.getLinkDeclaration());
       editorCell.setCellId("ReferencePresentation_mdkd4i_a0b0");
+      {
+        Style style = editorCell.getStyle();
+        style.set(StyleAttributes.TEXT_COLOR, new AttributeCalculator<Color>() {
+          public Color calculate(EditorCell cell) {
+            return SSymbolRef_Editor._Inline_mdkd4i_a1a._StyleParameter_QueryFunction_mdkd4i_a0a0b0((cell == null ?
+              null :
+              cell.getSNode()
+            ), (cell == null ?
+              null :
+              cell.getEditorContext()
+            ));
+          }
+        });
+      }
       return editorCell;
+    }
+
+    private static Color _StyleParameter_QueryFunction_mdkd4i_a0a0b0(SNode node, EditorContext editorContext) {
+      return (SNodeOperations.isInstanceOf(SNodeOperations.getParent(node), "jetbrains.mps.core.syntax.structure.SLexem") ?
+        Color.BLUE :
+        Color.BLACK
+      );
     }
   }
 }
