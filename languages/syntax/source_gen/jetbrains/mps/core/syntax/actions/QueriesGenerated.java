@@ -186,6 +186,7 @@ public class QueriesGenerated {
               public SNode createChildNode(Object parameterObject, SModel model, String pattern) {
                 SNode p = SNodeFactoryOperations.createNewNode(model, "jetbrains.mps.core.syntax.structure.SSymbolRef", null);
                 SLinkOperations.setTarget(p, "ref", (item), false);
+                SPropertyOperations.set(p, "isOptional", "" + (SPropertyOperations.getString((item), "name") + "opt").equals(pattern));
                 if (SNodeOperations.isInstanceOf(_context.getCurrentTargetNode(), "jetbrains.mps.core.syntax.structure.SSymbolRef")) {
                   SPropertyOperations.set(p, "refalias", SPropertyOperations.getString(SNodeOperations.cast(_context.getCurrentTargetNode(), "jetbrains.mps.core.syntax.structure.SSymbolRef"), "refalias"));
                 }
@@ -193,42 +194,10 @@ public class QueriesGenerated {
               }
 
               public String getMatchingText(String pattern) {
+                if (pattern.startsWith(SPropertyOperations.getString((item), "name") + "o")) {
+                  return SPropertyOperations.getString((item), "name") + "opt";
+                }
                 return SPropertyOperations.getString((item), "name");
-              }
-
-              public String getVisibleMatchingText(String pattern) {
-                return this.getMatchingText(pattern);
-              }
-            });
-          }
-        }
-      }
-    }
-    {
-      SNode outputConcept = SConceptOperations.findConceptDeclaration("jetbrains.mps.core.syntax.structure.SSymbolRef");
-      SNode childConcept = (SNode) _context.getChildConcept();
-      if (SConceptOperations.isSuperConceptOf(childConcept, NameUtil.nodeFQName(outputConcept))) {
-        Calculable calc = new Calculable() {
-          public Object calculate() {
-            return SNodeOperations.getDescendants(SNodeOperations.getContainingRoot(_context.getParentNode()), "jetbrains.mps.core.syntax.structure.SSymbol", false, new String[]{});
-          }
-        };
-        Iterable<SNode> queryResult = (Iterable) calc.calculate();
-        if (queryResult != null) {
-          for (final SNode item : queryResult) {
-            ListSequence.fromList(result).addElement(new DefaultChildNodeSubstituteAction(outputConcept, item, _context.getParentNode(), _context.getCurrentTargetNode(), _context.getChildSetter(), operationContext.getScope()) {
-              public SNode createChildNode(Object parameterObject, SModel model, String pattern) {
-                SNode p = SNodeFactoryOperations.createNewNode(model, "jetbrains.mps.core.syntax.structure.SSymbolRef", null);
-                SLinkOperations.setTarget(p, "ref", (item), false);
-                SPropertyOperations.set(p, "isOptional", "" + true);
-                if (SNodeOperations.isInstanceOf(_context.getCurrentTargetNode(), "jetbrains.mps.core.syntax.structure.SSymbolRef")) {
-                  SPropertyOperations.set(p, "refalias", SPropertyOperations.getString(SNodeOperations.cast(_context.getCurrentTargetNode(), "jetbrains.mps.core.syntax.structure.SSymbolRef"), "refalias"));
-                }
-                return p;
-              }
-
-              public String getMatchingText(String pattern) {
-                return SPropertyOperations.getString((item), "name") + "opt";
               }
 
               public String getVisibleMatchingText(String pattern) {
@@ -354,47 +323,21 @@ public class QueriesGenerated {
           public SNode doSubstitute(String pattern) {
             SNode p = SNodeFactoryOperations.createNewNode(_context.getModel(), "jetbrains.mps.core.syntax.structure.SSymbolRef", null);
             SLinkOperations.setTarget(p, "ref", (item), false);
+            SPropertyOperations.set(p, "isOptional", "" + (SPropertyOperations.getString((item), "name") + "opt").equals(pattern));
             int anchorIndex = SNodeOperations.getParent(_context.getSourceNode()).getIndexOfChild(_context.getSourceNode());
             ListSequence.fromList(SLinkOperations.getTargets(SNodeOperations.cast(SNodeOperations.getParent(_context.getSourceNode()), "jetbrains.mps.core.syntax.structure.SRule"), "parts", true)).insertElement(anchorIndex, p);
             return p;
           }
 
-          public String getMatchingText(String text) {
+          public String getMatchingText(String pattern) {
+            if (pattern.startsWith(SPropertyOperations.getString((item), "name") + "o")) {
+              return SPropertyOperations.getString((item), "name") + "opt";
+            }
             return SPropertyOperations.getString((item), "name");
           }
 
-          public String getVisibleMatchingText(String text) {
-            return this.getMatchingText(text);
-          }
-        });
-      }
-    }
-    {
-      final SNode concept = SConceptOperations.findConceptDeclaration("jetbrains.mps.core.syntax.structure.SSymbolRef");
-      Calculable calculable = new Calculable() {
-        public Object calculate() {
-          return SNodeOperations.getDescendants(SNodeOperations.getContainingRoot(_context.getSourceNode()), "jetbrains.mps.core.syntax.structure.SSymbol", false, new String[]{});
-        }
-      };
-      Iterable<SNode> parameterObjects = (Iterable<SNode>) calculable.calculate();
-      assert parameterObjects != null;
-      for (final SNode item : parameterObjects) {
-        ListSequence.fromList(result).addElement(new AbstractSideTransformHintSubstituteAction(concept, item, _context.getSourceNode()) {
-          public SNode doSubstitute(String pattern) {
-            SNode p = SNodeFactoryOperations.createNewNode(_context.getModel(), "jetbrains.mps.core.syntax.structure.SSymbolRef", null);
-            SLinkOperations.setTarget(p, "ref", (item), false);
-            SPropertyOperations.set(p, "isOptional", "" + true);
-            int anchorIndex = SNodeOperations.getParent(_context.getSourceNode()).getIndexOfChild(_context.getSourceNode());
-            ListSequence.fromList(SLinkOperations.getTargets(SNodeOperations.cast(SNodeOperations.getParent(_context.getSourceNode()), "jetbrains.mps.core.syntax.structure.SRule"), "parts", true)).insertElement(anchorIndex, p);
-            return p;
-          }
-
-          public String getMatchingText(String text) {
-            return SPropertyOperations.getString((item), "name") + "opt";
-          }
-
-          public String getVisibleMatchingText(String text) {
-            return this.getMatchingText(text);
+          public String getVisibleMatchingText(String pattern) {
+            return this.getMatchingText(pattern);
           }
         });
       }
@@ -418,47 +361,21 @@ public class QueriesGenerated {
           public SNode doSubstitute(String pattern) {
             SNode p = SNodeFactoryOperations.createNewNode(_context.getModel(), "jetbrains.mps.core.syntax.structure.SSymbolRef", null);
             SLinkOperations.setTarget(p, "ref", (item), false);
+            SPropertyOperations.set(p, "isOptional", "" + (SPropertyOperations.getString((item), "name") + "opt").equals(pattern));
             int anchorIndex = SNodeOperations.getParent(_context.getSourceNode()).getIndexOfChild(_context.getSourceNode());
             ListSequence.fromList(SLinkOperations.getTargets(SNodeOperations.cast(SNodeOperations.getParent(_context.getSourceNode()), "jetbrains.mps.core.syntax.structure.SRule"), "parts", true)).insertElement(anchorIndex + 1, p);
             return p;
           }
 
-          public String getMatchingText(String text) {
+          public String getMatchingText(String pattern) {
+            if (pattern.startsWith(SPropertyOperations.getString((item), "name") + "o")) {
+              return SPropertyOperations.getString((item), "name") + "opt";
+            }
             return SPropertyOperations.getString((item), "name");
           }
 
-          public String getVisibleMatchingText(String text) {
-            return this.getMatchingText(text);
-          }
-        });
-      }
-    }
-    {
-      final SNode concept = SConceptOperations.findConceptDeclaration("jetbrains.mps.core.syntax.structure.SSymbolRef");
-      Calculable calculable = new Calculable() {
-        public Object calculate() {
-          return SNodeOperations.getDescendants(SNodeOperations.getContainingRoot(_context.getSourceNode()), "jetbrains.mps.core.syntax.structure.SSymbol", false, new String[]{});
-        }
-      };
-      Iterable<SNode> parameterObjects = (Iterable<SNode>) calculable.calculate();
-      assert parameterObjects != null;
-      for (final SNode item : parameterObjects) {
-        ListSequence.fromList(result).addElement(new AbstractSideTransformHintSubstituteAction(concept, item, _context.getSourceNode()) {
-          public SNode doSubstitute(String pattern) {
-            SNode p = SNodeFactoryOperations.createNewNode(_context.getModel(), "jetbrains.mps.core.syntax.structure.SSymbolRef", null);
-            SLinkOperations.setTarget(p, "ref", (item), false);
-            SPropertyOperations.set(p, "isOptional", "" + true);
-            int anchorIndex = SNodeOperations.getParent(_context.getSourceNode()).getIndexOfChild(_context.getSourceNode());
-            ListSequence.fromList(SLinkOperations.getTargets(SNodeOperations.cast(SNodeOperations.getParent(_context.getSourceNode()), "jetbrains.mps.core.syntax.structure.SRule"), "parts", true)).insertElement(anchorIndex + 1, p);
-            return p;
-          }
-
-          public String getMatchingText(String text) {
-            return SPropertyOperations.getString((item), "name") + "opt";
-          }
-
-          public String getVisibleMatchingText(String text) {
-            return this.getMatchingText(text);
+          public String getVisibleMatchingText(String pattern) {
+            return this.getMatchingText(pattern);
           }
         });
       }
