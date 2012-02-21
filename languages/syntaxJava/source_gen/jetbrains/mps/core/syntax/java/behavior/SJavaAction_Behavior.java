@@ -6,6 +6,7 @@ import jetbrains.mps.smodel.SNode;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import java.util.List;
 
 public class SJavaAction_Behavior {
   public static void init(SNode thisNode) {
@@ -23,5 +24,9 @@ public class SJavaAction_Behavior {
       return true;
     }
     return ListSequence.fromList(SLinkOperations.getTargets(thisNode, "statements", true)).count() < 2;
+  }
+
+  public static List<SNode> virtual_getLocalVariableElements_1238805763253(SNode thisNode) {
+    return SLinkOperations.getTargets(thisNode, "statements", true);
   }
 }

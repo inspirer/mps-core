@@ -35,6 +35,8 @@ public class QueriesGenerated {
   private static Pattern REGEXP_x583g4_a0a0a1a2a0a0a0a2a0a2a6 = Pattern.compile("^(?:[a-zA-Z_][\\w\\-]*)\\s*=?$", 0);
   private static Pattern REGEXP_x583g4_a0a0a2a0a0a0a0a2a0a1a7 = Pattern.compile("^([a-zA-Z_][\\w\\-]*|'(?:[^'\\n\\\\]|\\\\.)+')\\s*(?::(?::=?)?)?$", 0);
   private static Pattern REGEXP_x583g4_a0a0a1a2a0a0a0a2a0a1a7 = Pattern.compile("^([a-zA-Z_][\\w\\-]*|'(?:[^'\\n\\\\]|\\\\.)+')\\s*(?::(?::=?)?)?$", 0);
+  private static Pattern REGEXP_x583g4_a0a0a1a0a0a0a1a0a1a21 = Pattern.compile("^([\\w]+)=?$", 0);
+  private static Pattern REGEXP_x583g4_a0a0a2a1a0a0a1a0a1a21 = Pattern.compile("^([\\w]+)=?$", 0);
 
   public static boolean sideTransformHintSubstituteActionsBuilder_Precondition_SInputRef_5073985075243238808(final IOperationContext operationContext, final SideTransformPreconditionContext _context) {
     return !(SPropertyOperations.getBoolean(_context.getSourceNode(), "noEoi"));
@@ -300,12 +302,27 @@ public class QueriesGenerated {
       SNode concept = SConceptOperations.findConceptDeclaration("jetbrains.mps.core.syntax.structure.SSymbolRef");
       ListSequence.fromList(result).addElement(new AbstractSideTransformHintSubstituteAction(concept, _context.getSourceNode()) {
         public SNode doSubstitute(String pattern) {
-          SPropertyOperations.set(_context.getSourceNode(), "refalias", "");
+          Matcher _matcher_x583g4_a0a0a0a0a1a0a1a21;
+          if ((_matcher_x583g4_a0a0a0a0a1a0a1a21 = REGEXP_x583g4_a0a0a1a0a0a0a1a0a1a21.matcher(pattern)).find()) {
+            SPropertyOperations.set(_context.getSourceNode(), "refalias", _matcher_x583g4_a0a0a0a0a1a0a1a21.group(1));
+          } else {
+            SPropertyOperations.set(_context.getSourceNode(), "refalias", "");
+          }
           return _context.getSourceNode();
         }
 
         public String getMatchingText(String pattern) {
-          return "=";
+          Matcher _matcher_x583g4_a1a1a0a0a1a0a1a21;
+          if (pattern.equals("=")) {
+            return "=";
+          }
+          if ((_matcher_x583g4_a1a1a0a0a1a0a1a21 = REGEXP_x583g4_a0a0a2a1a0a0a1a0a1a21.matcher(pattern)).find()) {
+            return (pattern.endsWith("=") ?
+              pattern :
+              pattern + "="
+            );
+          }
+          return "alias=";
         }
 
         public String getVisibleMatchingText(String pattern) {

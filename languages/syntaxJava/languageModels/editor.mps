@@ -9,6 +9,7 @@
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="3" implicit="yes" />
   <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="-1" implicit="yes" />
   <import index="zvqu" modelUID="r:d0dfddbb-a939-4a44-b1d9-0b2ff7fa1ba6(jetbrains.mps.core.syntax.java.behavior)" version="-1" implicit="yes" />
+  <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <roots>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="4242261035235111173">
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="7dda.4242261035235111171" resolveInfo="SJavaType" />
@@ -18,6 +19,12 @@
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="4242261035235347639">
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="7dda.4242261035235347638" resolveInfo="STargetJava" />
+    </node>
+    <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="5989029785192113718">
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="7dda.5989029785192113714" resolveInfo="SSymbolRefExpression" />
+    </node>
+    <node type="tpc2.StyleSheet" typeId="tpc2.1186402211651" id="5989029785192122025">
+      <property name="name" nameId="tpck.1169194664001" value="SyntaxJavaSS" />
     </node>
   </roots>
   <root id="4242261035235111173">
@@ -131,6 +138,27 @@
         <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.FontStyleStyleClassItem" typeId="tpc2.1186403751766" id="4242261035235360380" />
       </node>
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="4242261035235347643" />
+    </node>
+  </root>
+  <root id="5989029785192113718">
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="5989029785192113720">
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefCell" typeId="tpc2.1088013125922" id="5989029785192113725">
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="7dda.5989029785192113715" />
+        <node role="editorComponent" roleId="tpc2.1088186146602" type="tpc2.InlineEditorComponent" typeId="tpc2.1088185857835" id="5989029785192113726">
+          <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_ReferencePresentation" typeId="tpc2.625126330682908270" id="5989029785192113728">
+            <link role="styleClass" roleId="tpc2.1186406756722" targetNodeId="5989029785192122170" resolveInfo="SymRef" />
+          </node>
+        </node>
+      </node>
+      <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="5989029785192113722" />
+    </node>
+  </root>
+  <root id="5989029785192122025">
+    <node role="styleClass" roleId="tpc2.1186402402630" type="tpc2.StyleSheetClass" typeId="tpc2.1186402373407" id="5989029785192122170">
+      <property name="name" nameId="tpck.1169194664001" value="SymRef" />
+      <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.FontStyleStyleClassItem" typeId="tpc2.1186403751766" id="5989029785192122171">
+        <property name="style" nameId="tpc2.1186403771423" value="ITALIC" />
+      </node>
     </node>
   </root>
 </model>

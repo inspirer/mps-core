@@ -7,7 +7,7 @@ import java.util.Arrays;
 import jetbrains.mps.smodel.runtime.interpreted.BehaviorAspectInterpreted;
 
 public class BehaviorAspectDescriptor implements jetbrains.mps.smodel.runtime.BehaviorAspectDescriptor {
-  private static String[] stringSwitchCases_846f5o_a0a0a = new String[]{"jetbrains.mps.core.syntax.java.structure.SJavaAction", "jetbrains.mps.core.syntax.java.structure.SJavaType", "jetbrains.mps.core.syntax.java.structure.STargetJava"};
+  private static String[] stringSwitchCases_846f5o_a0a0a = new String[]{"jetbrains.mps.core.syntax.java.structure.SJavaAction", "jetbrains.mps.core.syntax.java.structure.SJavaType", "jetbrains.mps.core.syntax.java.structure.SSymbolRefExpression", "jetbrains.mps.core.syntax.java.structure.STargetJava"};
 
   public BehaviorAspectDescriptor() {
   }
@@ -18,8 +18,10 @@ public class BehaviorAspectDescriptor implements jetbrains.mps.smodel.runtime.Be
         return new SJavaType_BehaviorDescriptor();
       case 0:
         return new SJavaAction_BehaviorDescriptor();
-      case 2:
+      case 3:
         return new STargetJava_BehaviorDescriptor();
+      case 2:
+        return new SSymbolRefExpression_BehaviorDescriptor();
       default:
         return BehaviorAspectInterpreted.getInstance().getDescriptor(fqName);
     }

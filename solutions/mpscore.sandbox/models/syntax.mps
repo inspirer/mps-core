@@ -196,6 +196,11 @@
     <node role="lexerParts" roleId="q5nm.5073985075243002164" type="q5nm.SLexem" typeId="q5nm.5073985075243001587" id="3135327435335338908">
       <node role="sym" roleId="q5nm.5073985075243001591" type="q5nm.SSymbol" typeId="q5nm.5073985075243001589" id="3135327435335338909">
         <property name="name" nameId="tpck.1169194664001" value="Lextends" />
+        <node role="type" roleId="q5nm.5989029785191985488" type="7dda.SJavaType" typeId="7dda.4242261035235111171" id="5989029785192124076">
+          <node role="type" roleId="7dda.4242261035235111172" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="5989029785192124079">
+            <link role="classifier" roleId="tpee.1107535924139" targetNodeId="e2lb.~Integer" resolveInfo="Integer" />
+          </node>
+        </node>
       </node>
       <node role="regexp" roleId="q5nm.5073985075243002162" type="q5nm.SRegex" typeId="q5nm.5073985075243001601" id="3135327435335338935">
         <property name="regexp" nameId="q5nm.5073985075243001602" value="extends" />
@@ -405,6 +410,7 @@
       <node role="rules" roleId="q5nm.5073985075243001596" type="q5nm.SRule" typeId="q5nm.5073985075243001592" id="5989029785192085566">
         <node role="parts" roleId="q5nm.5073985075243001599" type="q5nm.SSymbolRef" typeId="q5nm.5073985075243001597" id="5989029785192085567">
           <property name="isOptional" nameId="q5nm.1030525575875869591" value="false" />
+          <property name="refalias" nameId="q5nm.5073985075243002163" value="asd" />
           <link role="ref" roleId="q5nm.5073985075243001598" targetNodeId="3135327435335338909" resolveInfo="Lextends" />
         </node>
         <node role="parts" roleId="q5nm.5073985075243001599" type="q5nm.SSymbolRef" typeId="q5nm.5073985075243001597" id="5989029785192085568">
@@ -425,6 +431,9 @@
             <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="5989029785192085595">
               <property name="name" nameId="tpck.1169194664001" value="e" />
               <node role="type" roleId="tpee.5680397130376446158" type="tpee.IntegerType" typeId="tpee.1070534370425" id="5989029785192085596" />
+              <node role="initializer" roleId="tpee.1068431790190" type="7dda.SSymbolRefExpression" typeId="7dda.5989029785192113714" id="5989029785192124531">
+                <link role="ref" roleId="7dda.5989029785192113715" targetNodeId="5989029785192085567" />
+              </node>
             </node>
           </node>
         </node>
