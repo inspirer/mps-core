@@ -8,7 +8,7 @@ import jetbrains.mps.smodel.runtime.impl.CompiledConceptDescriptor;
 import jetbrains.mps.smodel.runtime.interpreted.StructureAspectInterpreted;
 
 public class StructureAspectDescriptor implements jetbrains.mps.smodel.runtime.StructureAspectDescriptor {
-  private static String[] stringSwitchCases_1htk8d_a0a0a = new String[]{"jetbrains.mps.core.syntax.structure.SAction", "jetbrains.mps.core.syntax.structure.SGrammarPart", "jetbrains.mps.core.syntax.structure.SInputRef", "jetbrains.mps.core.syntax.structure.SLexem", "jetbrains.mps.core.syntax.structure.SLexerPart", "jetbrains.mps.core.syntax.structure.SLineComment", "jetbrains.mps.core.syntax.structure.SNamedPattern", "jetbrains.mps.core.syntax.structure.SNonTerm", "jetbrains.mps.core.syntax.structure.SPrio", "jetbrains.mps.core.syntax.structure.SReference", "jetbrains.mps.core.syntax.structure.SRegex", "jetbrains.mps.core.syntax.structure.SRule", "jetbrains.mps.core.syntax.structure.SRulePart", "jetbrains.mps.core.syntax.structure.SSource", "jetbrains.mps.core.syntax.structure.SSymbol", "jetbrains.mps.core.syntax.structure.SSymbolRef", "jetbrains.mps.core.syntax.structure.SType"};
+  private static String[] stringSwitchCases_1htk8d_a0a0a = new String[]{"jetbrains.mps.core.syntax.structure.SAction", "jetbrains.mps.core.syntax.structure.SGrammarPart", "jetbrains.mps.core.syntax.structure.SInputRef", "jetbrains.mps.core.syntax.structure.SLexem", "jetbrains.mps.core.syntax.structure.SLexerPart", "jetbrains.mps.core.syntax.structure.SLineComment", "jetbrains.mps.core.syntax.structure.SNamedPattern", "jetbrains.mps.core.syntax.structure.SNonTerm", "jetbrains.mps.core.syntax.structure.SPrio", "jetbrains.mps.core.syntax.structure.SReference", "jetbrains.mps.core.syntax.structure.SRegex", "jetbrains.mps.core.syntax.structure.SRule", "jetbrains.mps.core.syntax.structure.SRulePart", "jetbrains.mps.core.syntax.structure.SSource", "jetbrains.mps.core.syntax.structure.SSymbol", "jetbrains.mps.core.syntax.structure.SSymbolRef", "jetbrains.mps.core.syntax.structure.STargetLanguage", "jetbrains.mps.core.syntax.structure.SType"};
 
   public StructureAspectDescriptor() {
   }
@@ -16,7 +16,7 @@ public class StructureAspectDescriptor implements jetbrains.mps.smodel.runtime.S
   public ConceptDescriptor getDescriptor(String conceptFqName) {
     switch (Arrays.binarySearch(stringSwitchCases_1htk8d_a0a0a, conceptFqName)) {
       case 0:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.syntax.structure.SAction", "jetbrains.mps.lang.core.structure.BaseConcept", false, new String[]{"jetbrains.mps.lang.core.structure.BaseConcept"}, new String[]{}, new String[]{});
+        return new CompiledConceptDescriptor("jetbrains.mps.core.syntax.structure.SAction", "jetbrains.mps.lang.core.structure.BaseConcept", false, new String[]{"jetbrains.mps.core.syntax.structure.SRulePart", "jetbrains.mps.lang.core.structure.BaseConcept"}, new String[]{}, new String[]{});
       case 1:
         return new CompiledConceptDescriptor("jetbrains.mps.core.syntax.structure.SGrammarPart", "jetbrains.mps.lang.core.structure.BaseConcept", false, new String[]{"jetbrains.mps.lang.core.structure.BaseConcept"}, new String[]{}, new String[]{});
       case 2:
@@ -48,6 +48,8 @@ public class StructureAspectDescriptor implements jetbrains.mps.smodel.runtime.S
       case 15:
         return new CompiledConceptDescriptor("jetbrains.mps.core.syntax.structure.SSymbolRef", "jetbrains.mps.lang.core.structure.BaseConcept", false, new String[]{"jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.core.syntax.structure.SRulePart"}, new String[]{"refalias", "isOptional"}, new String[]{"ref"});
       case 16:
+        return new CompiledConceptDescriptor("jetbrains.mps.core.syntax.structure.STargetLanguage", "jetbrains.mps.lang.core.structure.BaseConcept", false, new String[]{"jetbrains.mps.lang.core.structure.BaseConcept"}, new String[]{}, new String[]{});
+      case 17:
         return new CompiledConceptDescriptor("jetbrains.mps.core.syntax.structure.SType", "jetbrains.mps.lang.core.structure.BaseConcept", false, new String[]{"jetbrains.mps.lang.core.structure.BaseConcept"}, new String[]{}, new String[]{});
       default:
         return StructureAspectInterpreted.getInstance().getDescriptor(conceptFqName);

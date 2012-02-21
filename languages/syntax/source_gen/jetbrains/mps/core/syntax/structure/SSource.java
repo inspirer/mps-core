@@ -18,6 +18,7 @@ public class SSource extends BaseConcept implements INamedConcept {
   public static final String SHORT_DESCRIPTION = "shortDescription";
   public static final String ALIAS = "alias";
   public static final String VIRTUAL_PACKAGE = "virtualPackage";
+  public static final String TARGET_LANGUAGE = "targetLanguage";
   public static final String INPUT = "input";
   public static final String LEXER_PARTS = "lexerParts";
   public static final String GRAMMAR_PARTS = "grammarParts";
@@ -57,6 +58,14 @@ public class SSource extends BaseConcept implements INamedConcept {
 
   public void setVirtualPackage(String value) {
     this.setProperty(SSource.VIRTUAL_PACKAGE, value);
+  }
+
+  public STargetLanguage getTargetLanguage() {
+    return (STargetLanguage) this.getChild(STargetLanguage.class, SSource.TARGET_LANGUAGE);
+  }
+
+  public void setTargetLanguage(STargetLanguage node) {
+    super.setChild(SSource.TARGET_LANGUAGE, node);
   }
 
   public int getInputsCount() {

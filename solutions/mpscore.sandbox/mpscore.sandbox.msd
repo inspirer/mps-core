@@ -13,6 +13,7 @@
     <usedLanguage>2e142477-d221-495b-aa6c-7bd7c349e904(jetbrains.mps.core.template)</usedLanguage>
     <usedLanguage>78c70cc5-3e2a-478b-9524-f2d47690ac85(jetbrains.mps.core.workflow)</usedLanguage>
     <usedLanguage>92bc763c-568d-4252-b8a3-a157f8320a67(jetbrains.mps.core.syntax)</usedLanguage>
+    <usedLanguage>8c8bb0f3-d2fc-4936-a0c9-4ad947acc012(jetbrains.mps.core.syntax.java)</usedLanguage>
   </usedLanguages>
 </solution>
 

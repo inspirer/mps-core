@@ -18,6 +18,7 @@ public class SSymbol extends BaseConcept implements INamedConcept {
   public static final String SHORT_DESCRIPTION = "shortDescription";
   public static final String ALIAS = "alias";
   public static final String VIRTUAL_PACKAGE = "virtualPackage";
+  public static final String TYPE = "type";
   public static final String SMODEL_ATTRIBUTE = "smodelAttribute";
 
   public SSymbol(SNode node) {
@@ -54,6 +55,14 @@ public class SSymbol extends BaseConcept implements INamedConcept {
 
   public void setVirtualPackage(String value) {
     this.setProperty(SSymbol.VIRTUAL_PACKAGE, value);
+  }
+
+  public SType getType() {
+    return (SType) this.getChild(SType.class, SSymbol.TYPE);
+  }
+
+  public void setType(SType node) {
+    super.setChild(SSymbol.TYPE, node);
   }
 
   public int getSmodelAttributesCount() {

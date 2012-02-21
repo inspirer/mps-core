@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debugInfo>
+  <unitInfo fileName="QueriesGenerated.java" startLine="26" startPosition="36" endLine="46" endPosition="7" unitName="jetbrains.mps.core.syntax.java.actions.QueriesGenerated$1" />
+  <unitInfo fileName="QueriesGenerated.java" startLine="21" startPosition="0" endLine="52" endPosition="0" unitName="jetbrains.mps.core.syntax.java.actions.QueriesGenerated" />
+  <root nodeId="5989029785192045725">
+    <nodeInfo nodeId="5989029785192045731" fileName="QueriesGenerated.java" startLine="27" startPosition="63" endLine="28" endPosition="118" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="5989029785192054500" fileName="QueriesGenerated.java" startLine="28" startPosition="118" endLine="29" endPosition="66" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="5989029785192054496" fileName="QueriesGenerated.java" startLine="29" startPosition="66" endLine="30" endPosition="20" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <scopeInfo nodeId="5989029785192045730" fileName="QueriesGenerated.java" startLine="27" startPosition="63" endLine="30" endPosition="20">
+      <varInfo nodeId="5989029785192045732" varName="jt" />
+    </scopeInfo>
+  </root>
+</debugInfo>
+

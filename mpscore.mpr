@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="CodeStyleSettings">
+    <option name="fieldPrefix" value="" />
+    <option name="fieldSuffix" value="" />
+    <option name="localVariablePrefix" value="" />
+    <option name="localVariableSuffix" value="" />
+    <option name="parameterPrefix" value="" />
+    <option name="parameterSuffix" value="" />
+    <option name="staticFieldPrefix" value="" />
+    <option name="staticFieldSuffix" value="" />
+  </component>
   <component name="DependencyValidationManager">
     <option name="SKIP_IMPORT_STATEMENTS" value="false" />
   </component>
@@ -9,6 +19,7 @@
       <modulePath path="${mps_home}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar!/META-INF/module.xml" />
       <modulePath path="${project}/languages/query/query.mpl" />
       <modulePath path="${project}/languages/syntax/syntax.mpl" folder="" />
+      <modulePath path="${project}/languages/syntaxJava/java.mpl" folder="" />
       <modulePath path="${project}/languages/template/template.mpl" folder="" />
       <modulePath path="${project}/languages/workflow/workflow.mpl" folder="" />
       <modulePath path="${project}/solutions/mpscore.sandbox/mpscore.sandbox.msd" />

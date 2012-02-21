@@ -16,18 +16,23 @@
   <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="-1" implicit="yes" />
   <roots>
     <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="5073985075243251709">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="Lexer" />
       <link role="concept" roleId="tp1t.1213093996982" targetNodeId="q5nm.5073985075243001601" resolveInfo="SRegex" />
     </node>
     <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="5073985075243262172">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="Grammar" />
       <link role="concept" roleId="tp1t.1213093996982" targetNodeId="q5nm.5073985075243001593" resolveInfo="SNonTerm" />
     </node>
     <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="2481283025450046201">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="Lexer" />
       <link role="concept" roleId="tp1t.1213093996982" targetNodeId="q5nm.5073985075243238823" resolveInfo="SLexerPart" />
     </node>
     <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="2481283025450253549">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="Grammar" />
       <link role="concept" roleId="tp1t.1213093996982" targetNodeId="q5nm.5073985075243001589" resolveInfo="SSymbol" />
     </node>
     <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="1030525575875885954">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="Grammar" />
       <link role="concept" roleId="tp1t.1213093996982" targetNodeId="q5nm.5073985075243001597" resolveInfo="SSymbolRef" />
     </node>
   </roots>

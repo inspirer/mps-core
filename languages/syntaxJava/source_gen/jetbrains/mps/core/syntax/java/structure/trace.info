@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debugInfo>
+  <unitInfo fileName="Java_Language.java" startLine="9" startPosition="0" endLine="16" endPosition="0" unitName="jetbrains.mps.core.syntax.java.structure.Java_Language" />
+  <unitInfo fileName="STargetJava.java" startLine="11" startPosition="0" endLine="26" endPosition="0" unitName="jetbrains.mps.core.syntax.java.structure.STargetJava" />
+  <unitInfo fileName="StructureAspectDescriptor.java" startLine="10" startPosition="0" endLine="29" endPosition="0" unitName="jetbrains.mps.core.syntax.java.structure.StructureAspectDescriptor" />
+  <unitInfo fileName="SJavaType.java" startLine="12" startPosition="0" endLine="36" endPosition="0" unitName="jetbrains.mps.core.syntax.java.structure.SJavaType" />
+  <root nodeId="4242261035235111171">
+    <nodeInfo nodeId="4242261035235111171" fileName="SJavaType.java" startLine="12" startPosition="38" endLine="13" endPosition="92" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="concept" />
+    <nodeInfo nodeId="4242261035235111171" fileName="SJavaType.java" startLine="13" startPosition="92" endLine="14" endPosition="43" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="TYPE" />
+    <nodeInfo nodeId="4242261035235111171" fileName="SJavaType.java" startLine="16" startPosition="32" endLine="17" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+    <nodeInfo nodeId="4242261035235111171" fileName="SJavaType.java" startLine="20" startPosition="25" endLine="21" endPosition="60" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="4242261035235111171" fileName="SJavaType.java" startLine="24" startPosition="34" endLine="25" endPosition="41" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="4242261035235111171" fileName="SJavaType.java" startLine="28" startPosition="64" endLine="29" endPosition="172" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="4242261035235111171" fileName="SJavaType.java" startLine="32" startPosition="50" endLine="33" endPosition="44" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="4242261035235111171" fileName="SJavaType.java" startLine="15" startPosition="0" endLine="18" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="SJavaType#(Ljetbrains/mps/smodel/SNode;)V" />
+    <nodeInfo nodeId="4242261035235111171" fileName="SJavaType.java" startLine="19" startPosition="0" endLine="23" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getType#()Ljetbrains/mps/smodel/INodeAdapter;" />
+    <nodeInfo nodeId="4242261035235111171" fileName="SJavaType.java" startLine="23" startPosition="0" endLine="27" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setType#(Ljetbrains/mps/smodel/INodeAdapter;)V" />
+    <nodeInfo nodeId="4242261035235111171" fileName="SJavaType.java" startLine="27" startPosition="0" endLine="31" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="newInstance#(Ljetbrains/mps/smodel/SModel;Z)Ljetbrains/mps/core/syntax/java/structure/SJavaType;" />
+    <nodeInfo nodeId="4242261035235111171" fileName="SJavaType.java" startLine="31" startPosition="0" endLine="35" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="newInstance#(Ljetbrains/mps/smodel/SModel;)Ljetbrains/mps/core/syntax/java/structure/SJavaType;" />
+    <scopeInfo nodeId="4242261035235111171" fileName="SJavaType.java" startLine="16" startPosition="32" endLine="17" endPosition="16" />
+    <scopeInfo nodeId="4242261035235111171" fileName="SJavaType.java" startLine="20" startPosition="25" endLine="21" endPosition="60" />
+    <scopeInfo nodeId="4242261035235111171" fileName="SJavaType.java" startLine="24" startPosition="34" endLine="25" endPosition="41" />
+    <scopeInfo nodeId="4242261035235111171" fileName="SJavaType.java" startLine="28" startPosition="64" endLine="29" endPosition="172" />
+    <scopeInfo nodeId="4242261035235111171" fileName="SJavaType.java" startLine="32" startPosition="50" endLine="33" endPosition="44" />
+    <scopeInfo nodeId="4242261035235111171" fileName="SJavaType.java" startLine="15" startPosition="0" endLine="18" endPosition="3" />
+    <scopeInfo nodeId="4242261035235111171" fileName="SJavaType.java" startLine="19" startPosition="0" endLine="23" endPosition="0" />
+    <scopeInfo nodeId="4242261035235111171" fileName="SJavaType.java" startLine="23" startPosition="0" endLine="27" endPosition="0" />
+    <scopeInfo nodeId="4242261035235111171" fileName="SJavaType.java" startLine="27" startPosition="0" endLine="31" endPosition="0" />
+    <scopeInfo nodeId="4242261035235111171" fileName="SJavaType.java" startLine="31" startPosition="0" endLine="35" endPosition="0" />
+    <unitInfo nodeId="4242261035235111171" fileName="SJavaType.java" startLine="12" startPosition="0" endLine="36" endPosition="0" unitName="jetbrains.mps.core.syntax.java.structure.SJavaType" />
+  </root>
+  <root nodeId="4242261035235142529">
+    <nodeInfo nodeId="4242261035235142529" fileName="SJavaAction.java" startLine="14" startPosition="42" endLine="15" endPosition="94" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="concept" />
+    <nodeInfo nodeId="4242261035235142529" fileName="SJavaAction.java" startLine="15" startPosition="94" endLine="16" endPosition="55" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="STATEMENTS" />
+    <nodeInfo nodeId="4242261035235142529" fileName="SJavaAction.java" startLine="18" startPosition="34" endLine="19" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+    <nodeInfo nodeId="4242261035235142529" fileName="SJavaAction.java" startLine="22" startPosition="37" endLine="23" endPosition="54" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="4242261035235142529" fileName="SJavaAction.java" startLine="26" startPosition="45" endLine="27" endPosition="66" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="4242261035235142529" fileName="SJavaAction.java" startLine="30" startPosition="44" endLine="31" endPosition="69" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="4242261035235142529" fileName="SJavaAction.java" startLine="34" startPosition="45" endLine="35" endPosition="48" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="4242261035235142529" fileName="SJavaAction.java" startLine="38" startPosition="64" endLine="39" endPosition="57" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="4242261035235142529" fileName="SJavaAction.java" startLine="42" startPosition="66" endLine="43" endPosition="176" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="4242261035235142529" fileName="SJavaAction.java" startLine="46" startPosition="52" endLine="47" endPosition="46" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="4242261035235142529" fileName="SJavaAction.java" startLine="17" startPosition="0" endLine="20" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="SJavaAction#(Ljetbrains/mps/smodel/SNode;)V" />
+    <nodeInfo nodeId="4242261035235142529" fileName="SJavaAction.java" startLine="21" startPosition="0" endLine="25" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getStatementsesCount#()I" />
+    <nodeInfo nodeId="4242261035235142529" fileName="SJavaAction.java" startLine="25" startPosition="0" endLine="29" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="statementses#()Ljava/util/Iterator;" />
+    <nodeInfo nodeId="4242261035235142529" fileName="SJavaAction.java" startLine="29" startPosition="0" endLine="33" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getStatementses#()Ljava/util/List;" />
+    <nodeInfo nodeId="4242261035235142529" fileName="SJavaAction.java" startLine="33" startPosition="0" endLine="37" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="addStatements#(Ljetbrains/mps/smodel/INodeAdapter;)V" />
+    <nodeInfo nodeId="4242261035235142529" fileName="SJavaAction.java" startLine="37" startPosition="0" endLine="41" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="insertStatements#(Ljetbrains/mps/smodel/INodeAdapter;Ljetbrains/mps/smodel/INodeAdapter;)V" />
+    <nodeInfo nodeId="4242261035235142529" fileName="SJavaAction.java" startLine="41" startPosition="0" endLine="45" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="newInstance#(Ljetbrains/mps/smodel/SModel;Z)Ljetbrains/mps/core/syntax/java/structure/SJavaAction;" />
+    <nodeInfo nodeId="4242261035235142529" fileName="SJavaAction.java" startLine="45" startPosition="0" endLine="49" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="newInstance#(Ljetbrains/mps/smodel/SModel;)Ljetbrains/mps/core/syntax/java/structure/SJavaAction;" />
+    <scopeInfo nodeId="4242261035235142529" fileName="SJavaAction.java" startLine="18" startPosition="34" endLine="19" endPosition="16" />
+    <scopeInfo nodeId="4242261035235142529" fileName="SJavaAction.java" startLine="22" startPosition="37" endLine="23" endPosition="54" />
+    <scopeInfo nodeId="4242261035235142529" fileName="SJavaAction.java" startLine="26" startPosition="45" endLine="27" endPosition="66" />
+    <scopeInfo nodeId="4242261035235142529" fileName="SJavaAction.java" startLine="30" startPosition="44" endLine="31" endPosition="69" />
+    <scopeInfo nodeId="4242261035235142529" fileName="SJavaAction.java" startLine="34" startPosition="45" endLine="35" endPosition="48" />
+    <scopeInfo nodeId="4242261035235142529" fileName="SJavaAction.java" startLine="38" startPosition="64" endLine="39" endPosition="57" />
+    <scopeInfo nodeId="4242261035235142529" fileName="SJavaAction.java" startLine="42" startPosition="66" endLine="43" endPosition="176" />
+    <scopeInfo nodeId="4242261035235142529" fileName="SJavaAction.java" startLine="46" startPosition="52" endLine="47" endPosition="46" />
+    <scopeInfo nodeId="4242261035235142529" fileName="SJavaAction.java" startLine="17" startPosition="0" endLine="20" endPosition="3" />
+    <scopeInfo nodeId="4242261035235142529" fileName="SJavaAction.java" startLine="21" startPosition="0" endLine="25" endPosition="0" />
+    <scopeInfo nodeId="4242261035235142529" fileName="SJavaAction.java" startLine="25" startPosition="0" endLine="29" endPosition="0" />
+    <scopeInfo nodeId="4242261035235142529" fileName="SJavaAction.java" startLine="29" startPosition="0" endLine="33" endPosition="0" />
+    <scopeInfo nodeId="4242261035235142529" fileName="SJavaAction.java" startLine="33" startPosition="0" endLine="37" endPosition="0" />
+    <scopeInfo nodeId="4242261035235142529" fileName="SJavaAction.java" startLine="37" startPosition="0" endLine="41" endPosition="0" />
+    <scopeInfo nodeId="4242261035235142529" fileName="SJavaAction.java" startLine="41" startPosition="0" endLine="45" endPosition="0" />
+    <scopeInfo nodeId="4242261035235142529" fileName="SJavaAction.java" startLine="45" startPosition="0" endLine="49" endPosition="0" />
+    <unitInfo nodeId="4242261035235142529" fileName="SJavaAction.java" startLine="14" startPosition="0" endLine="50" endPosition="0" unitName="jetbrains.mps.core.syntax.java.structure.SJavaAction" />
+  </root>
+  <root nodeId="4242261035235347638">
+    <nodeInfo nodeId="4242261035235347638" fileName="STargetJava.java" startLine="11" startPosition="50" endLine="12" endPosition="94" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="concept" />
+    <nodeInfo nodeId="4242261035235347638" fileName="STargetJava.java" startLine="14" startPosition="34" endLine="15" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+    <nodeInfo nodeId="4242261035235347638" fileName="STargetJava.java" startLine="18" startPosition="66" endLine="19" endPosition="176" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="4242261035235347638" fileName="STargetJava.java" startLine="22" startPosition="52" endLine="23" endPosition="46" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="4242261035235347638" fileName="STargetJava.java" startLine="13" startPosition="0" endLine="16" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="STargetJava#(Ljetbrains/mps/smodel/SNode;)V" />
+    <nodeInfo nodeId="4242261035235347638" fileName="STargetJava.java" startLine="17" startPosition="0" endLine="21" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="newInstance#(Ljetbrains/mps/smodel/SModel;Z)Ljetbrains/mps/core/syntax/java/structure/STargetJava;" />
+    <nodeInfo nodeId="4242261035235347638" fileName="STargetJava.java" startLine="21" startPosition="0" endLine="25" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="newInstance#(Ljetbrains/mps/smodel/SModel;)Ljetbrains/mps/core/syntax/java/structure/STargetJava;" />
+    <scopeInfo nodeId="4242261035235347638" fileName="STargetJava.java" startLine="14" startPosition="34" endLine="15" endPosition="16" />
+    <scopeInfo nodeId="4242261035235347638" fileName="STargetJava.java" startLine="18" startPosition="66" endLine="19" endPosition="176" />
+    <scopeInfo nodeId="4242261035235347638" fileName="STargetJava.java" startLine="22" startPosition="52" endLine="23" endPosition="46" />
+    <scopeInfo nodeId="4242261035235347638" fileName="STargetJava.java" startLine="13" startPosition="0" endLine="16" endPosition="3" />
+    <scopeInfo nodeId="4242261035235347638" fileName="STargetJava.java" startLine="17" startPosition="0" endLine="21" endPosition="0" />
+    <scopeInfo nodeId="4242261035235347638" fileName="STargetJava.java" startLine="21" startPosition="0" endLine="25" endPosition="0" />
+    <unitInfo nodeId="4242261035235347638" fileName="STargetJava.java" startLine="11" startPosition="0" endLine="26" endPosition="0" unitName="jetbrains.mps.core.syntax.java.structure.STargetJava" />
+  </root>
+</debugInfo>
+
