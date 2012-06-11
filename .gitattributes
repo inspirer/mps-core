@@ -1,9 +1,13 @@
 *.xml text
 *.java text
-*.mpr text
-*.mps text
-*.mpl text
-*.msd text
+*.mpr text merge=mps
+*.mps text merge=mps
+*.mpl text merge=mps
+*.msd text merge=mps
 debug.info text
 .dependencies text
 .generated text
+*.devkit merge=mps
+trace.info merge=mps
+dependencies merge=mps
+generated merge=mps
