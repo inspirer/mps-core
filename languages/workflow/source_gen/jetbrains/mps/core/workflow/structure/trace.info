@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debugInfo>
-  <unitInfo fileName="Workflow_Language.java" startLine="9" startPosition="0" endLine="16" endPosition="0" unitName="jetbrains.mps.core.workflow.structure.Workflow_Language" />
   <unitInfo fileName="StructureAspectDescriptor.java" startLine="10" startPosition="0" endLine="31" endPosition="0" unitName="jetbrains.mps.core.workflow.structure.StructureAspectDescriptor" />
+  <unitInfo fileName="Workflow_Language.java" startLine="9" startPosition="0" endLine="16" endPosition="0" unitName="jetbrains.mps.core.workflow.structure.Workflow_Language" />
   <root nodeId="3373821274546687033">
     <nodeInfo nodeId="3373821274546687033" fileName="WflowExecutable.java" startLine="16" startPosition="93" endLine="17" endPosition="95" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="concept" />
     <nodeInfo nodeId="3373821274546687033" fileName="WflowExecutable.java" startLine="17" startPosition="95" endLine="18" endPosition="43" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="NAME" />
@@ -73,27 +73,52 @@
     <scopeInfo nodeId="3373821274546687033" fileName="WflowExecutable.java" startLine="97" startPosition="69" endLine="98" endPosition="67" />
     <scopeInfo nodeId="3373821274546687033" fileName="WflowExecutable.java" startLine="101" startPosition="70" endLine="102" endPosition="181" />
     <scopeInfo nodeId="3373821274546687033" fileName="WflowExecutable.java" startLine="105" startPosition="56" endLine="106" endPosition="50" />
-    <scopeInfo nodeId="3373821274546687033" fileName="WflowExecutable.java" startLine="24" startPosition="0" endLine="27" endPosition="3" />
+    <scopeInfo nodeId="3373821274546687033" fileName="WflowExecutable.java" startLine="24" startPosition="0" endLine="27" endPosition="3">
+      <varInfo nodeId="3373821274546687033" varName="node" />
+    </scopeInfo>
     <scopeInfo nodeId="3373821274546687033" fileName="WflowExecutable.java" startLine="28" startPosition="0" endLine="32" endPosition="0" />
-    <scopeInfo nodeId="3373821274546687033" fileName="WflowExecutable.java" startLine="32" startPosition="0" endLine="36" endPosition="0" />
+    <scopeInfo nodeId="3373821274546687033" fileName="WflowExecutable.java" startLine="32" startPosition="0" endLine="36" endPosition="0">
+      <varInfo nodeId="3373821274546687033" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="3373821274546687033" fileName="WflowExecutable.java" startLine="36" startPosition="0" endLine="40" endPosition="0" />
-    <scopeInfo nodeId="3373821274546687033" fileName="WflowExecutable.java" startLine="40" startPosition="0" endLine="44" endPosition="0" />
+    <scopeInfo nodeId="3373821274546687033" fileName="WflowExecutable.java" startLine="40" startPosition="0" endLine="44" endPosition="0">
+      <varInfo nodeId="3373821274546687033" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="3373821274546687033" fileName="WflowExecutable.java" startLine="44" startPosition="0" endLine="48" endPosition="0" />
-    <scopeInfo nodeId="3373821274546687033" fileName="WflowExecutable.java" startLine="48" startPosition="0" endLine="52" endPosition="0" />
+    <scopeInfo nodeId="3373821274546687033" fileName="WflowExecutable.java" startLine="48" startPosition="0" endLine="52" endPosition="0">
+      <varInfo nodeId="3373821274546687033" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="3373821274546687033" fileName="WflowExecutable.java" startLine="52" startPosition="0" endLine="56" endPosition="0" />
-    <scopeInfo nodeId="3373821274546687033" fileName="WflowExecutable.java" startLine="56" startPosition="0" endLine="60" endPosition="0" />
+    <scopeInfo nodeId="3373821274546687033" fileName="WflowExecutable.java" startLine="56" startPosition="0" endLine="60" endPosition="0">
+      <varInfo nodeId="3373821274546687033" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="3373821274546687033" fileName="WflowExecutable.java" startLine="60" startPosition="0" endLine="64" endPosition="0" />
     <scopeInfo nodeId="3373821274546687033" fileName="WflowExecutable.java" startLine="64" startPosition="0" endLine="68" endPosition="0" />
     <scopeInfo nodeId="3373821274546687033" fileName="WflowExecutable.java" startLine="68" startPosition="0" endLine="72" endPosition="0" />
-    <scopeInfo nodeId="3373821274546687033" fileName="WflowExecutable.java" startLine="72" startPosition="0" endLine="76" endPosition="0" />
-    <scopeInfo nodeId="3373821274546687033" fileName="WflowExecutable.java" startLine="76" startPosition="0" endLine="80" endPosition="0" />
+    <scopeInfo nodeId="3373821274546687033" fileName="WflowExecutable.java" startLine="72" startPosition="0" endLine="76" endPosition="0">
+      <varInfo nodeId="3373821274546687033" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="3373821274546687033" fileName="WflowExecutable.java" startLine="76" startPosition="0" endLine="80" endPosition="0">
+      <varInfo nodeId="3373821274546687033" varName="node" />
+      <varInfo nodeId="3373821274546687033" varName="prev" />
+    </scopeInfo>
     <scopeInfo nodeId="3373821274546687033" fileName="WflowExecutable.java" startLine="80" startPosition="0" endLine="84" endPosition="0" />
     <scopeInfo nodeId="3373821274546687033" fileName="WflowExecutable.java" startLine="84" startPosition="0" endLine="88" endPosition="0" />
     <scopeInfo nodeId="3373821274546687033" fileName="WflowExecutable.java" startLine="88" startPosition="0" endLine="92" endPosition="0" />
-    <scopeInfo nodeId="3373821274546687033" fileName="WflowExecutable.java" startLine="92" startPosition="0" endLine="96" endPosition="0" />
-    <scopeInfo nodeId="3373821274546687033" fileName="WflowExecutable.java" startLine="96" startPosition="0" endLine="100" endPosition="0" />
-    <scopeInfo nodeId="3373821274546687033" fileName="WflowExecutable.java" startLine="100" startPosition="0" endLine="104" endPosition="0" />
-    <scopeInfo nodeId="3373821274546687033" fileName="WflowExecutable.java" startLine="104" startPosition="0" endLine="108" endPosition="0" />
+    <scopeInfo nodeId="3373821274546687033" fileName="WflowExecutable.java" startLine="92" startPosition="0" endLine="96" endPosition="0">
+      <varInfo nodeId="3373821274546687033" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="3373821274546687033" fileName="WflowExecutable.java" startLine="96" startPosition="0" endLine="100" endPosition="0">
+      <varInfo nodeId="3373821274546687033" varName="node" />
+      <varInfo nodeId="3373821274546687033" varName="prev" />
+    </scopeInfo>
+    <scopeInfo nodeId="3373821274546687033" fileName="WflowExecutable.java" startLine="100" startPosition="0" endLine="104" endPosition="0">
+      <varInfo nodeId="3373821274546687033" varName="init" />
+      <varInfo nodeId="3373821274546687033" varName="sm" />
+    </scopeInfo>
+    <scopeInfo nodeId="3373821274546687033" fileName="WflowExecutable.java" startLine="104" startPosition="0" endLine="108" endPosition="0">
+      <varInfo nodeId="3373821274546687033" varName="sm" />
+    </scopeInfo>
     <unitInfo nodeId="3373821274546687033" fileName="WflowExecutable.java" startLine="16" startPosition="0" endLine="109" endPosition="0" unitName="jetbrains.mps.core.workflow.structure.WflowExecutable" />
   </root>
   <root nodeId="3373821274546687034">
@@ -107,9 +132,16 @@
     <scopeInfo nodeId="3373821274546687034" fileName="WflowStatement.java" startLine="14" startPosition="37" endLine="15" endPosition="16" />
     <scopeInfo nodeId="3373821274546687034" fileName="WflowStatement.java" startLine="18" startPosition="69" endLine="19" endPosition="179" />
     <scopeInfo nodeId="3373821274546687034" fileName="WflowStatement.java" startLine="22" startPosition="55" endLine="23" endPosition="49" />
-    <scopeInfo nodeId="3373821274546687034" fileName="WflowStatement.java" startLine="13" startPosition="0" endLine="16" endPosition="3" />
-    <scopeInfo nodeId="3373821274546687034" fileName="WflowStatement.java" startLine="17" startPosition="0" endLine="21" endPosition="0" />
-    <scopeInfo nodeId="3373821274546687034" fileName="WflowStatement.java" startLine="21" startPosition="0" endLine="25" endPosition="0" />
+    <scopeInfo nodeId="3373821274546687034" fileName="WflowStatement.java" startLine="13" startPosition="0" endLine="16" endPosition="3">
+      <varInfo nodeId="3373821274546687034" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="3373821274546687034" fileName="WflowStatement.java" startLine="17" startPosition="0" endLine="21" endPosition="0">
+      <varInfo nodeId="3373821274546687034" varName="init" />
+      <varInfo nodeId="3373821274546687034" varName="sm" />
+    </scopeInfo>
+    <scopeInfo nodeId="3373821274546687034" fileName="WflowStatement.java" startLine="21" startPosition="0" endLine="25" endPosition="0">
+      <varInfo nodeId="3373821274546687034" varName="sm" />
+    </scopeInfo>
     <unitInfo nodeId="3373821274546687034" fileName="WflowStatement.java" startLine="11" startPosition="0" endLine="26" endPosition="0" unitName="jetbrains.mps.core.workflow.structure.WflowStatement" />
   </root>
   <root nodeId="3373821274546687071">
@@ -174,24 +206,46 @@
     <scopeInfo nodeId="3373821274546687071" fileName="WflowExpressionStatement.java" startLine="85" startPosition="69" endLine="86" endPosition="76" />
     <scopeInfo nodeId="3373821274546687071" fileName="WflowExpressionStatement.java" startLine="89" startPosition="79" endLine="90" endPosition="199" />
     <scopeInfo nodeId="3373821274546687071" fileName="WflowExpressionStatement.java" startLine="93" startPosition="65" endLine="94" endPosition="59" />
-    <scopeInfo nodeId="3373821274546687071" fileName="WflowExpressionStatement.java" startLine="24" startPosition="0" endLine="27" endPosition="3" />
+    <scopeInfo nodeId="3373821274546687071" fileName="WflowExpressionStatement.java" startLine="24" startPosition="0" endLine="27" endPosition="3">
+      <varInfo nodeId="3373821274546687071" varName="node" />
+    </scopeInfo>
     <scopeInfo nodeId="3373821274546687071" fileName="WflowExpressionStatement.java" startLine="28" startPosition="0" endLine="32" endPosition="0" />
-    <scopeInfo nodeId="3373821274546687071" fileName="WflowExpressionStatement.java" startLine="32" startPosition="0" endLine="36" endPosition="0" />
+    <scopeInfo nodeId="3373821274546687071" fileName="WflowExpressionStatement.java" startLine="32" startPosition="0" endLine="36" endPosition="0">
+      <varInfo nodeId="3373821274546687071" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="3373821274546687071" fileName="WflowExpressionStatement.java" startLine="36" startPosition="0" endLine="40" endPosition="0" />
-    <scopeInfo nodeId="3373821274546687071" fileName="WflowExpressionStatement.java" startLine="40" startPosition="0" endLine="44" endPosition="0" />
+    <scopeInfo nodeId="3373821274546687071" fileName="WflowExpressionStatement.java" startLine="40" startPosition="0" endLine="44" endPosition="0">
+      <varInfo nodeId="3373821274546687071" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="3373821274546687071" fileName="WflowExpressionStatement.java" startLine="44" startPosition="0" endLine="48" endPosition="0" />
-    <scopeInfo nodeId="3373821274546687071" fileName="WflowExpressionStatement.java" startLine="48" startPosition="0" endLine="52" endPosition="0" />
+    <scopeInfo nodeId="3373821274546687071" fileName="WflowExpressionStatement.java" startLine="48" startPosition="0" endLine="52" endPosition="0">
+      <varInfo nodeId="3373821274546687071" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="3373821274546687071" fileName="WflowExpressionStatement.java" startLine="52" startPosition="0" endLine="56" endPosition="0" />
-    <scopeInfo nodeId="3373821274546687071" fileName="WflowExpressionStatement.java" startLine="56" startPosition="0" endLine="60" endPosition="0" />
+    <scopeInfo nodeId="3373821274546687071" fileName="WflowExpressionStatement.java" startLine="56" startPosition="0" endLine="60" endPosition="0">
+      <varInfo nodeId="3373821274546687071" varName="node" />
+    </scopeInfo>
     <scopeInfo nodeId="3373821274546687071" fileName="WflowExpressionStatement.java" startLine="60" startPosition="0" endLine="64" endPosition="0" />
-    <scopeInfo nodeId="3373821274546687071" fileName="WflowExpressionStatement.java" startLine="64" startPosition="0" endLine="68" endPosition="0" />
+    <scopeInfo nodeId="3373821274546687071" fileName="WflowExpressionStatement.java" startLine="64" startPosition="0" endLine="68" endPosition="0">
+      <varInfo nodeId="3373821274546687071" varName="node" />
+    </scopeInfo>
     <scopeInfo nodeId="3373821274546687071" fileName="WflowExpressionStatement.java" startLine="68" startPosition="0" endLine="72" endPosition="0" />
     <scopeInfo nodeId="3373821274546687071" fileName="WflowExpressionStatement.java" startLine="72" startPosition="0" endLine="76" endPosition="0" />
     <scopeInfo nodeId="3373821274546687071" fileName="WflowExpressionStatement.java" startLine="76" startPosition="0" endLine="80" endPosition="0" />
-    <scopeInfo nodeId="3373821274546687071" fileName="WflowExpressionStatement.java" startLine="80" startPosition="0" endLine="84" endPosition="0" />
-    <scopeInfo nodeId="3373821274546687071" fileName="WflowExpressionStatement.java" startLine="84" startPosition="0" endLine="88" endPosition="0" />
-    <scopeInfo nodeId="3373821274546687071" fileName="WflowExpressionStatement.java" startLine="88" startPosition="0" endLine="92" endPosition="0" />
-    <scopeInfo nodeId="3373821274546687071" fileName="WflowExpressionStatement.java" startLine="92" startPosition="0" endLine="96" endPosition="0" />
+    <scopeInfo nodeId="3373821274546687071" fileName="WflowExpressionStatement.java" startLine="80" startPosition="0" endLine="84" endPosition="0">
+      <varInfo nodeId="3373821274546687071" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="3373821274546687071" fileName="WflowExpressionStatement.java" startLine="84" startPosition="0" endLine="88" endPosition="0">
+      <varInfo nodeId="3373821274546687071" varName="node" />
+      <varInfo nodeId="3373821274546687071" varName="prev" />
+    </scopeInfo>
+    <scopeInfo nodeId="3373821274546687071" fileName="WflowExpressionStatement.java" startLine="88" startPosition="0" endLine="92" endPosition="0">
+      <varInfo nodeId="3373821274546687071" varName="init" />
+      <varInfo nodeId="3373821274546687071" varName="sm" />
+    </scopeInfo>
+    <scopeInfo nodeId="3373821274546687071" fileName="WflowExpressionStatement.java" startLine="92" startPosition="0" endLine="96" endPosition="0">
+      <varInfo nodeId="3373821274546687071" varName="sm" />
+    </scopeInfo>
     <unitInfo nodeId="3373821274546687071" fileName="WflowExpressionStatement.java" startLine="16" startPosition="0" endLine="97" endPosition="0" unitName="jetbrains.mps.core.workflow.structure.WflowExpressionStatement" />
   </root>
   <root nodeId="4188390566614790269">
@@ -219,13 +273,24 @@
     <scopeInfo nodeId="4188390566614790269" fileName="WflowAssert.java" startLine="32" startPosition="47" endLine="33" endPosition="47" />
     <scopeInfo nodeId="4188390566614790269" fileName="WflowAssert.java" startLine="36" startPosition="66" endLine="37" endPosition="173" />
     <scopeInfo nodeId="4188390566614790269" fileName="WflowAssert.java" startLine="40" startPosition="52" endLine="41" endPosition="46" />
-    <scopeInfo nodeId="4188390566614790269" fileName="WflowAssert.java" startLine="15" startPosition="0" endLine="18" endPosition="3" />
+    <scopeInfo nodeId="4188390566614790269" fileName="WflowAssert.java" startLine="15" startPosition="0" endLine="18" endPosition="3">
+      <varInfo nodeId="4188390566614790269" varName="node" />
+    </scopeInfo>
     <scopeInfo nodeId="4188390566614790269" fileName="WflowAssert.java" startLine="19" startPosition="0" endLine="23" endPosition="0" />
-    <scopeInfo nodeId="4188390566614790269" fileName="WflowAssert.java" startLine="23" startPosition="0" endLine="27" endPosition="0" />
+    <scopeInfo nodeId="4188390566614790269" fileName="WflowAssert.java" startLine="23" startPosition="0" endLine="27" endPosition="0">
+      <varInfo nodeId="4188390566614790269" varName="node" />
+    </scopeInfo>
     <scopeInfo nodeId="4188390566614790269" fileName="WflowAssert.java" startLine="27" startPosition="0" endLine="31" endPosition="0" />
-    <scopeInfo nodeId="4188390566614790269" fileName="WflowAssert.java" startLine="31" startPosition="0" endLine="35" endPosition="0" />
-    <scopeInfo nodeId="4188390566614790269" fileName="WflowAssert.java" startLine="35" startPosition="0" endLine="39" endPosition="0" />
-    <scopeInfo nodeId="4188390566614790269" fileName="WflowAssert.java" startLine="39" startPosition="0" endLine="43" endPosition="0" />
+    <scopeInfo nodeId="4188390566614790269" fileName="WflowAssert.java" startLine="31" startPosition="0" endLine="35" endPosition="0">
+      <varInfo nodeId="4188390566614790269" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="4188390566614790269" fileName="WflowAssert.java" startLine="35" startPosition="0" endLine="39" endPosition="0">
+      <varInfo nodeId="4188390566614790269" varName="init" />
+      <varInfo nodeId="4188390566614790269" varName="sm" />
+    </scopeInfo>
+    <scopeInfo nodeId="4188390566614790269" fileName="WflowAssert.java" startLine="39" startPosition="0" endLine="43" endPosition="0">
+      <varInfo nodeId="4188390566614790269" varName="sm" />
+    </scopeInfo>
     <unitInfo nodeId="4188390566614790269" fileName="WflowAssert.java" startLine="11" startPosition="0" endLine="44" endPosition="0" unitName="jetbrains.mps.core.workflow.structure.WflowAssert" />
   </root>
 </debugInfo>

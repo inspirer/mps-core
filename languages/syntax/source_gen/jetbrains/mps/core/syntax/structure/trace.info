@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debugInfo>
-  <unitInfo fileName="Syntax_Language.java" startLine="9" startPosition="0" endLine="16" endPosition="0" unitName="jetbrains.mps.core.syntax.structure.Syntax_Language" />
   <unitInfo fileName="StructureAspectDescriptor.java" startLine="10" startPosition="0" endLine="59" endPosition="0" unitName="jetbrains.mps.core.syntax.structure.StructureAspectDescriptor" />
+  <unitInfo fileName="Syntax_Language.java" startLine="9" startPosition="0" endLine="16" endPosition="0" unitName="jetbrains.mps.core.syntax.structure.Syntax_Language" />
   <root nodeId="2481283025450046972">
     <nodeInfo nodeId="2481283025450046972" fileName="SLineComment.java" startLine="10" startPosition="46" endLine="11" endPosition="90" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="concept" />
     <nodeInfo nodeId="2481283025450046972" fileName="SLineComment.java" startLine="11" startPosition="90" endLine="12" endPosition="49" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="CONTENT" />
@@ -20,11 +20,20 @@
     <scopeInfo nodeId="2481283025450046972" fileName="SLineComment.java" startLine="22" startPosition="40" endLine="23" endPosition="50" />
     <scopeInfo nodeId="2481283025450046972" fileName="SLineComment.java" startLine="26" startPosition="67" endLine="27" endPosition="173" />
     <scopeInfo nodeId="2481283025450046972" fileName="SLineComment.java" startLine="30" startPosition="53" endLine="31" endPosition="47" />
-    <scopeInfo nodeId="2481283025450046972" fileName="SLineComment.java" startLine="13" startPosition="0" endLine="16" endPosition="3" />
+    <scopeInfo nodeId="2481283025450046972" fileName="SLineComment.java" startLine="13" startPosition="0" endLine="16" endPosition="3">
+      <varInfo nodeId="2481283025450046972" varName="node" />
+    </scopeInfo>
     <scopeInfo nodeId="2481283025450046972" fileName="SLineComment.java" startLine="17" startPosition="0" endLine="21" endPosition="0" />
-    <scopeInfo nodeId="2481283025450046972" fileName="SLineComment.java" startLine="21" startPosition="0" endLine="25" endPosition="0" />
-    <scopeInfo nodeId="2481283025450046972" fileName="SLineComment.java" startLine="25" startPosition="0" endLine="29" endPosition="0" />
-    <scopeInfo nodeId="2481283025450046972" fileName="SLineComment.java" startLine="29" startPosition="0" endLine="33" endPosition="0" />
+    <scopeInfo nodeId="2481283025450046972" fileName="SLineComment.java" startLine="21" startPosition="0" endLine="25" endPosition="0">
+      <varInfo nodeId="2481283025450046972" varName="value" />
+    </scopeInfo>
+    <scopeInfo nodeId="2481283025450046972" fileName="SLineComment.java" startLine="25" startPosition="0" endLine="29" endPosition="0">
+      <varInfo nodeId="2481283025450046972" varName="init" />
+      <varInfo nodeId="2481283025450046972" varName="sm" />
+    </scopeInfo>
+    <scopeInfo nodeId="2481283025450046972" fileName="SLineComment.java" startLine="29" startPosition="0" endLine="33" endPosition="0">
+      <varInfo nodeId="2481283025450046972" varName="sm" />
+    </scopeInfo>
     <unitInfo nodeId="2481283025450046972" fileName="SLineComment.java" startLine="10" startPosition="0" endLine="34" endPosition="0" unitName="jetbrains.mps.core.syntax.structure.SLineComment" />
   </root>
   <root nodeId="3135327435335338954">
@@ -38,9 +47,16 @@
     <scopeInfo nodeId="3135327435335338954" fileName="SGrammarPart.java" startLine="14" startPosition="35" endLine="15" endPosition="16" />
     <scopeInfo nodeId="3135327435335338954" fileName="SGrammarPart.java" startLine="18" startPosition="67" endLine="19" endPosition="173" />
     <scopeInfo nodeId="3135327435335338954" fileName="SGrammarPart.java" startLine="22" startPosition="53" endLine="23" endPosition="47" />
-    <scopeInfo nodeId="3135327435335338954" fileName="SGrammarPart.java" startLine="13" startPosition="0" endLine="16" endPosition="3" />
-    <scopeInfo nodeId="3135327435335338954" fileName="SGrammarPart.java" startLine="17" startPosition="0" endLine="21" endPosition="0" />
-    <scopeInfo nodeId="3135327435335338954" fileName="SGrammarPart.java" startLine="21" startPosition="0" endLine="25" endPosition="0" />
+    <scopeInfo nodeId="3135327435335338954" fileName="SGrammarPart.java" startLine="13" startPosition="0" endLine="16" endPosition="3">
+      <varInfo nodeId="3135327435335338954" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="3135327435335338954" fileName="SGrammarPart.java" startLine="17" startPosition="0" endLine="21" endPosition="0">
+      <varInfo nodeId="3135327435335338954" varName="init" />
+      <varInfo nodeId="3135327435335338954" varName="sm" />
+    </scopeInfo>
+    <scopeInfo nodeId="3135327435335338954" fileName="SGrammarPart.java" startLine="21" startPosition="0" endLine="25" endPosition="0">
+      <varInfo nodeId="3135327435335338954" varName="sm" />
+    </scopeInfo>
     <unitInfo nodeId="3135327435335338954" fileName="SGrammarPart.java" startLine="11" startPosition="0" endLine="26" endPosition="0" unitName="jetbrains.mps.core.syntax.structure.SGrammarPart" />
   </root>
   <root nodeId="4242261035235310866">
@@ -54,9 +70,16 @@
     <scopeInfo nodeId="4242261035235310866" fileName="STargetLanguage.java" startLine="14" startPosition="38" endLine="15" endPosition="16" />
     <scopeInfo nodeId="4242261035235310866" fileName="STargetLanguage.java" startLine="18" startPosition="70" endLine="19" endPosition="179" />
     <scopeInfo nodeId="4242261035235310866" fileName="STargetLanguage.java" startLine="22" startPosition="56" endLine="23" endPosition="50" />
-    <scopeInfo nodeId="4242261035235310866" fileName="STargetLanguage.java" startLine="13" startPosition="0" endLine="16" endPosition="3" />
-    <scopeInfo nodeId="4242261035235310866" fileName="STargetLanguage.java" startLine="17" startPosition="0" endLine="21" endPosition="0" />
-    <scopeInfo nodeId="4242261035235310866" fileName="STargetLanguage.java" startLine="21" startPosition="0" endLine="25" endPosition="0" />
+    <scopeInfo nodeId="4242261035235310866" fileName="STargetLanguage.java" startLine="13" startPosition="0" endLine="16" endPosition="3">
+      <varInfo nodeId="4242261035235310866" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="4242261035235310866" fileName="STargetLanguage.java" startLine="17" startPosition="0" endLine="21" endPosition="0">
+      <varInfo nodeId="4242261035235310866" varName="init" />
+      <varInfo nodeId="4242261035235310866" varName="sm" />
+    </scopeInfo>
+    <scopeInfo nodeId="4242261035235310866" fileName="STargetLanguage.java" startLine="21" startPosition="0" endLine="25" endPosition="0">
+      <varInfo nodeId="4242261035235310866" varName="sm" />
+    </scopeInfo>
     <unitInfo nodeId="4242261035235310866" fileName="STargetLanguage.java" startLine="11" startPosition="0" endLine="26" endPosition="0" unitName="jetbrains.mps.core.syntax.structure.STargetLanguage" />
   </root>
   <root nodeId="5073985075242991059">
@@ -169,39 +192,76 @@
     <scopeInfo nodeId="5073985075242991059" fileName="SSource.java" startLine="147" startPosition="69" endLine="148" endPosition="59" />
     <scopeInfo nodeId="5073985075242991059" fileName="SSource.java" startLine="151" startPosition="62" endLine="152" endPosition="163" />
     <scopeInfo nodeId="5073985075242991059" fileName="SSource.java" startLine="155" startPosition="48" endLine="156" endPosition="42" />
-    <scopeInfo nodeId="5073985075242991059" fileName="SSource.java" startLine="26" startPosition="0" endLine="29" endPosition="3" />
+    <scopeInfo nodeId="5073985075242991059" fileName="SSource.java" startLine="26" startPosition="0" endLine="29" endPosition="3">
+      <varInfo nodeId="5073985075242991059" varName="node" />
+    </scopeInfo>
     <scopeInfo nodeId="5073985075242991059" fileName="SSource.java" startLine="30" startPosition="0" endLine="34" endPosition="0" />
-    <scopeInfo nodeId="5073985075242991059" fileName="SSource.java" startLine="34" startPosition="0" endLine="38" endPosition="0" />
+    <scopeInfo nodeId="5073985075242991059" fileName="SSource.java" startLine="34" startPosition="0" endLine="38" endPosition="0">
+      <varInfo nodeId="5073985075242991059" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="5073985075242991059" fileName="SSource.java" startLine="38" startPosition="0" endLine="42" endPosition="0" />
-    <scopeInfo nodeId="5073985075242991059" fileName="SSource.java" startLine="42" startPosition="0" endLine="46" endPosition="0" />
+    <scopeInfo nodeId="5073985075242991059" fileName="SSource.java" startLine="42" startPosition="0" endLine="46" endPosition="0">
+      <varInfo nodeId="5073985075242991059" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="5073985075242991059" fileName="SSource.java" startLine="46" startPosition="0" endLine="50" endPosition="0" />
-    <scopeInfo nodeId="5073985075242991059" fileName="SSource.java" startLine="50" startPosition="0" endLine="54" endPosition="0" />
+    <scopeInfo nodeId="5073985075242991059" fileName="SSource.java" startLine="50" startPosition="0" endLine="54" endPosition="0">
+      <varInfo nodeId="5073985075242991059" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="5073985075242991059" fileName="SSource.java" startLine="54" startPosition="0" endLine="58" endPosition="0" />
-    <scopeInfo nodeId="5073985075242991059" fileName="SSource.java" startLine="58" startPosition="0" endLine="62" endPosition="0" />
+    <scopeInfo nodeId="5073985075242991059" fileName="SSource.java" startLine="58" startPosition="0" endLine="62" endPosition="0">
+      <varInfo nodeId="5073985075242991059" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="5073985075242991059" fileName="SSource.java" startLine="62" startPosition="0" endLine="66" endPosition="0" />
-    <scopeInfo nodeId="5073985075242991059" fileName="SSource.java" startLine="66" startPosition="0" endLine="70" endPosition="0" />
+    <scopeInfo nodeId="5073985075242991059" fileName="SSource.java" startLine="66" startPosition="0" endLine="70" endPosition="0">
+      <varInfo nodeId="5073985075242991059" varName="node" />
+    </scopeInfo>
     <scopeInfo nodeId="5073985075242991059" fileName="SSource.java" startLine="70" startPosition="0" endLine="74" endPosition="0" />
     <scopeInfo nodeId="5073985075242991059" fileName="SSource.java" startLine="74" startPosition="0" endLine="78" endPosition="0" />
     <scopeInfo nodeId="5073985075242991059" fileName="SSource.java" startLine="78" startPosition="0" endLine="82" endPosition="0" />
-    <scopeInfo nodeId="5073985075242991059" fileName="SSource.java" startLine="82" startPosition="0" endLine="86" endPosition="0" />
-    <scopeInfo nodeId="5073985075242991059" fileName="SSource.java" startLine="86" startPosition="0" endLine="90" endPosition="0" />
+    <scopeInfo nodeId="5073985075242991059" fileName="SSource.java" startLine="82" startPosition="0" endLine="86" endPosition="0">
+      <varInfo nodeId="5073985075242991059" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075242991059" fileName="SSource.java" startLine="86" startPosition="0" endLine="90" endPosition="0">
+      <varInfo nodeId="5073985075242991059" varName="node" />
+      <varInfo nodeId="5073985075242991059" varName="prev" />
+    </scopeInfo>
     <scopeInfo nodeId="5073985075242991059" fileName="SSource.java" startLine="90" startPosition="0" endLine="94" endPosition="0" />
     <scopeInfo nodeId="5073985075242991059" fileName="SSource.java" startLine="94" startPosition="0" endLine="98" endPosition="0" />
     <scopeInfo nodeId="5073985075242991059" fileName="SSource.java" startLine="98" startPosition="0" endLine="102" endPosition="0" />
-    <scopeInfo nodeId="5073985075242991059" fileName="SSource.java" startLine="102" startPosition="0" endLine="106" endPosition="0" />
-    <scopeInfo nodeId="5073985075242991059" fileName="SSource.java" startLine="106" startPosition="0" endLine="110" endPosition="0" />
+    <scopeInfo nodeId="5073985075242991059" fileName="SSource.java" startLine="102" startPosition="0" endLine="106" endPosition="0">
+      <varInfo nodeId="5073985075242991059" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075242991059" fileName="SSource.java" startLine="106" startPosition="0" endLine="110" endPosition="0">
+      <varInfo nodeId="5073985075242991059" varName="node" />
+      <varInfo nodeId="5073985075242991059" varName="prev" />
+    </scopeInfo>
     <scopeInfo nodeId="5073985075242991059" fileName="SSource.java" startLine="110" startPosition="0" endLine="114" endPosition="0" />
     <scopeInfo nodeId="5073985075242991059" fileName="SSource.java" startLine="114" startPosition="0" endLine="118" endPosition="0" />
     <scopeInfo nodeId="5073985075242991059" fileName="SSource.java" startLine="118" startPosition="0" endLine="122" endPosition="0" />
-    <scopeInfo nodeId="5073985075242991059" fileName="SSource.java" startLine="122" startPosition="0" endLine="126" endPosition="0" />
-    <scopeInfo nodeId="5073985075242991059" fileName="SSource.java" startLine="126" startPosition="0" endLine="130" endPosition="0" />
+    <scopeInfo nodeId="5073985075242991059" fileName="SSource.java" startLine="122" startPosition="0" endLine="126" endPosition="0">
+      <varInfo nodeId="5073985075242991059" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075242991059" fileName="SSource.java" startLine="126" startPosition="0" endLine="130" endPosition="0">
+      <varInfo nodeId="5073985075242991059" varName="node" />
+      <varInfo nodeId="5073985075242991059" varName="prev" />
+    </scopeInfo>
     <scopeInfo nodeId="5073985075242991059" fileName="SSource.java" startLine="130" startPosition="0" endLine="134" endPosition="0" />
     <scopeInfo nodeId="5073985075242991059" fileName="SSource.java" startLine="134" startPosition="0" endLine="138" endPosition="0" />
     <scopeInfo nodeId="5073985075242991059" fileName="SSource.java" startLine="138" startPosition="0" endLine="142" endPosition="0" />
-    <scopeInfo nodeId="5073985075242991059" fileName="SSource.java" startLine="142" startPosition="0" endLine="146" endPosition="0" />
-    <scopeInfo nodeId="5073985075242991059" fileName="SSource.java" startLine="146" startPosition="0" endLine="150" endPosition="0" />
-    <scopeInfo nodeId="5073985075242991059" fileName="SSource.java" startLine="150" startPosition="0" endLine="154" endPosition="0" />
-    <scopeInfo nodeId="5073985075242991059" fileName="SSource.java" startLine="154" startPosition="0" endLine="158" endPosition="0" />
+    <scopeInfo nodeId="5073985075242991059" fileName="SSource.java" startLine="142" startPosition="0" endLine="146" endPosition="0">
+      <varInfo nodeId="5073985075242991059" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075242991059" fileName="SSource.java" startLine="146" startPosition="0" endLine="150" endPosition="0">
+      <varInfo nodeId="5073985075242991059" varName="node" />
+      <varInfo nodeId="5073985075242991059" varName="prev" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075242991059" fileName="SSource.java" startLine="150" startPosition="0" endLine="154" endPosition="0">
+      <varInfo nodeId="5073985075242991059" varName="init" />
+      <varInfo nodeId="5073985075242991059" varName="sm" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075242991059" fileName="SSource.java" startLine="154" startPosition="0" endLine="158" endPosition="0">
+      <varInfo nodeId="5073985075242991059" varName="sm" />
+    </scopeInfo>
     <unitInfo nodeId="5073985075242991059" fileName="SSource.java" startLine="15" startPosition="0" endLine="159" endPosition="0" unitName="jetbrains.mps.core.syntax.structure.SSource" />
   </root>
   <root nodeId="5073985075243001587">
@@ -236,15 +296,28 @@
     <scopeInfo nodeId="5073985075243001587" fileName="SLexem.java" startLine="40" startPosition="39" endLine="41" endPosition="40" />
     <scopeInfo nodeId="5073985075243001587" fileName="SLexem.java" startLine="44" startPosition="61" endLine="45" endPosition="161" />
     <scopeInfo nodeId="5073985075243001587" fileName="SLexem.java" startLine="48" startPosition="47" endLine="49" endPosition="41" />
-    <scopeInfo nodeId="5073985075243001587" fileName="SLexem.java" startLine="15" startPosition="0" endLine="18" endPosition="3" />
+    <scopeInfo nodeId="5073985075243001587" fileName="SLexem.java" startLine="15" startPosition="0" endLine="18" endPosition="3">
+      <varInfo nodeId="5073985075243001587" varName="node" />
+    </scopeInfo>
     <scopeInfo nodeId="5073985075243001587" fileName="SLexem.java" startLine="19" startPosition="0" endLine="23" endPosition="0" />
-    <scopeInfo nodeId="5073985075243001587" fileName="SLexem.java" startLine="23" startPosition="0" endLine="27" endPosition="0" />
+    <scopeInfo nodeId="5073985075243001587" fileName="SLexem.java" startLine="23" startPosition="0" endLine="27" endPosition="0">
+      <varInfo nodeId="5073985075243001587" varName="node" />
+    </scopeInfo>
     <scopeInfo nodeId="5073985075243001587" fileName="SLexem.java" startLine="27" startPosition="0" endLine="31" endPosition="0" />
-    <scopeInfo nodeId="5073985075243001587" fileName="SLexem.java" startLine="31" startPosition="0" endLine="35" endPosition="0" />
+    <scopeInfo nodeId="5073985075243001587" fileName="SLexem.java" startLine="31" startPosition="0" endLine="35" endPosition="0">
+      <varInfo nodeId="5073985075243001587" varName="node" />
+    </scopeInfo>
     <scopeInfo nodeId="5073985075243001587" fileName="SLexem.java" startLine="35" startPosition="0" endLine="39" endPosition="0" />
-    <scopeInfo nodeId="5073985075243001587" fileName="SLexem.java" startLine="39" startPosition="0" endLine="43" endPosition="0" />
-    <scopeInfo nodeId="5073985075243001587" fileName="SLexem.java" startLine="43" startPosition="0" endLine="47" endPosition="0" />
-    <scopeInfo nodeId="5073985075243001587" fileName="SLexem.java" startLine="47" startPosition="0" endLine="51" endPosition="0" />
+    <scopeInfo nodeId="5073985075243001587" fileName="SLexem.java" startLine="39" startPosition="0" endLine="43" endPosition="0">
+      <varInfo nodeId="5073985075243001587" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243001587" fileName="SLexem.java" startLine="43" startPosition="0" endLine="47" endPosition="0">
+      <varInfo nodeId="5073985075243001587" varName="init" />
+      <varInfo nodeId="5073985075243001587" varName="sm" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243001587" fileName="SLexem.java" startLine="47" startPosition="0" endLine="51" endPosition="0">
+      <varInfo nodeId="5073985075243001587" varName="sm" />
+    </scopeInfo>
     <unitInfo nodeId="5073985075243001587" fileName="SLexem.java" startLine="10" startPosition="0" endLine="52" endPosition="0" unitName="jetbrains.mps.core.syntax.structure.SLexem" />
   </root>
   <root nodeId="5073985075243001589">
@@ -309,24 +382,46 @@
     <scopeInfo nodeId="5073985075243001589" fileName="SSymbol.java" startLine="84" startPosition="69" endLine="85" endPosition="59" />
     <scopeInfo nodeId="5073985075243001589" fileName="SSymbol.java" startLine="88" startPosition="62" endLine="89" endPosition="163" />
     <scopeInfo nodeId="5073985075243001589" fileName="SSymbol.java" startLine="92" startPosition="48" endLine="93" endPosition="42" />
-    <scopeInfo nodeId="5073985075243001589" fileName="SSymbol.java" startLine="23" startPosition="0" endLine="26" endPosition="3" />
+    <scopeInfo nodeId="5073985075243001589" fileName="SSymbol.java" startLine="23" startPosition="0" endLine="26" endPosition="3">
+      <varInfo nodeId="5073985075243001589" varName="node" />
+    </scopeInfo>
     <scopeInfo nodeId="5073985075243001589" fileName="SSymbol.java" startLine="27" startPosition="0" endLine="31" endPosition="0" />
-    <scopeInfo nodeId="5073985075243001589" fileName="SSymbol.java" startLine="31" startPosition="0" endLine="35" endPosition="0" />
+    <scopeInfo nodeId="5073985075243001589" fileName="SSymbol.java" startLine="31" startPosition="0" endLine="35" endPosition="0">
+      <varInfo nodeId="5073985075243001589" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="5073985075243001589" fileName="SSymbol.java" startLine="35" startPosition="0" endLine="39" endPosition="0" />
-    <scopeInfo nodeId="5073985075243001589" fileName="SSymbol.java" startLine="39" startPosition="0" endLine="43" endPosition="0" />
+    <scopeInfo nodeId="5073985075243001589" fileName="SSymbol.java" startLine="39" startPosition="0" endLine="43" endPosition="0">
+      <varInfo nodeId="5073985075243001589" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="5073985075243001589" fileName="SSymbol.java" startLine="43" startPosition="0" endLine="47" endPosition="0" />
-    <scopeInfo nodeId="5073985075243001589" fileName="SSymbol.java" startLine="47" startPosition="0" endLine="51" endPosition="0" />
+    <scopeInfo nodeId="5073985075243001589" fileName="SSymbol.java" startLine="47" startPosition="0" endLine="51" endPosition="0">
+      <varInfo nodeId="5073985075243001589" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="5073985075243001589" fileName="SSymbol.java" startLine="51" startPosition="0" endLine="55" endPosition="0" />
-    <scopeInfo nodeId="5073985075243001589" fileName="SSymbol.java" startLine="55" startPosition="0" endLine="59" endPosition="0" />
+    <scopeInfo nodeId="5073985075243001589" fileName="SSymbol.java" startLine="55" startPosition="0" endLine="59" endPosition="0">
+      <varInfo nodeId="5073985075243001589" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="5073985075243001589" fileName="SSymbol.java" startLine="59" startPosition="0" endLine="63" endPosition="0" />
-    <scopeInfo nodeId="5073985075243001589" fileName="SSymbol.java" startLine="63" startPosition="0" endLine="67" endPosition="0" />
+    <scopeInfo nodeId="5073985075243001589" fileName="SSymbol.java" startLine="63" startPosition="0" endLine="67" endPosition="0">
+      <varInfo nodeId="5073985075243001589" varName="node" />
+    </scopeInfo>
     <scopeInfo nodeId="5073985075243001589" fileName="SSymbol.java" startLine="67" startPosition="0" endLine="71" endPosition="0" />
     <scopeInfo nodeId="5073985075243001589" fileName="SSymbol.java" startLine="71" startPosition="0" endLine="75" endPosition="0" />
     <scopeInfo nodeId="5073985075243001589" fileName="SSymbol.java" startLine="75" startPosition="0" endLine="79" endPosition="0" />
-    <scopeInfo nodeId="5073985075243001589" fileName="SSymbol.java" startLine="79" startPosition="0" endLine="83" endPosition="0" />
-    <scopeInfo nodeId="5073985075243001589" fileName="SSymbol.java" startLine="83" startPosition="0" endLine="87" endPosition="0" />
-    <scopeInfo nodeId="5073985075243001589" fileName="SSymbol.java" startLine="87" startPosition="0" endLine="91" endPosition="0" />
-    <scopeInfo nodeId="5073985075243001589" fileName="SSymbol.java" startLine="91" startPosition="0" endLine="95" endPosition="0" />
+    <scopeInfo nodeId="5073985075243001589" fileName="SSymbol.java" startLine="79" startPosition="0" endLine="83" endPosition="0">
+      <varInfo nodeId="5073985075243001589" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243001589" fileName="SSymbol.java" startLine="83" startPosition="0" endLine="87" endPosition="0">
+      <varInfo nodeId="5073985075243001589" varName="node" />
+      <varInfo nodeId="5073985075243001589" varName="prev" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243001589" fileName="SSymbol.java" startLine="87" startPosition="0" endLine="91" endPosition="0">
+      <varInfo nodeId="5073985075243001589" varName="init" />
+      <varInfo nodeId="5073985075243001589" varName="sm" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243001589" fileName="SSymbol.java" startLine="91" startPosition="0" endLine="95" endPosition="0">
+      <varInfo nodeId="5073985075243001589" varName="sm" />
+    </scopeInfo>
     <unitInfo nodeId="5073985075243001589" fileName="SSymbol.java" startLine="15" startPosition="0" endLine="96" endPosition="0" unitName="jetbrains.mps.core.syntax.structure.SSymbol" />
   </root>
   <root nodeId="5073985075243001592">
@@ -356,14 +451,26 @@
     <scopeInfo nodeId="5073985075243001592" fileName="SRule.java" startLine="37" startPosition="59" endLine="38" endPosition="46" />
     <scopeInfo nodeId="5073985075243001592" fileName="SRule.java" startLine="41" startPosition="60" endLine="42" endPosition="159" />
     <scopeInfo nodeId="5073985075243001592" fileName="SRule.java" startLine="45" startPosition="46" endLine="46" endPosition="40" />
-    <scopeInfo nodeId="5073985075243001592" fileName="SRule.java" startLine="16" startPosition="0" endLine="19" endPosition="3" />
+    <scopeInfo nodeId="5073985075243001592" fileName="SRule.java" startLine="16" startPosition="0" endLine="19" endPosition="3">
+      <varInfo nodeId="5073985075243001592" varName="node" />
+    </scopeInfo>
     <scopeInfo nodeId="5073985075243001592" fileName="SRule.java" startLine="20" startPosition="0" endLine="24" endPosition="0" />
     <scopeInfo nodeId="5073985075243001592" fileName="SRule.java" startLine="24" startPosition="0" endLine="28" endPosition="0" />
     <scopeInfo nodeId="5073985075243001592" fileName="SRule.java" startLine="28" startPosition="0" endLine="32" endPosition="0" />
-    <scopeInfo nodeId="5073985075243001592" fileName="SRule.java" startLine="32" startPosition="0" endLine="36" endPosition="0" />
-    <scopeInfo nodeId="5073985075243001592" fileName="SRule.java" startLine="36" startPosition="0" endLine="40" endPosition="0" />
-    <scopeInfo nodeId="5073985075243001592" fileName="SRule.java" startLine="40" startPosition="0" endLine="44" endPosition="0" />
-    <scopeInfo nodeId="5073985075243001592" fileName="SRule.java" startLine="44" startPosition="0" endLine="48" endPosition="0" />
+    <scopeInfo nodeId="5073985075243001592" fileName="SRule.java" startLine="32" startPosition="0" endLine="36" endPosition="0">
+      <varInfo nodeId="5073985075243001592" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243001592" fileName="SRule.java" startLine="36" startPosition="0" endLine="40" endPosition="0">
+      <varInfo nodeId="5073985075243001592" varName="node" />
+      <varInfo nodeId="5073985075243001592" varName="prev" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243001592" fileName="SRule.java" startLine="40" startPosition="0" endLine="44" endPosition="0">
+      <varInfo nodeId="5073985075243001592" varName="init" />
+      <varInfo nodeId="5073985075243001592" varName="sm" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243001592" fileName="SRule.java" startLine="44" startPosition="0" endLine="48" endPosition="0">
+      <varInfo nodeId="5073985075243001592" varName="sm" />
+    </scopeInfo>
     <unitInfo nodeId="5073985075243001592" fileName="SRule.java" startLine="13" startPosition="0" endLine="49" endPosition="0" unitName="jetbrains.mps.core.syntax.structure.SRule" />
   </root>
   <root nodeId="5073985075243001593">
@@ -400,16 +507,30 @@
     <scopeInfo nodeId="5073985075243001593" fileName="SNonTerm.java" startLine="45" startPosition="51" endLine="46" endPosition="49" />
     <scopeInfo nodeId="5073985075243001593" fileName="SNonTerm.java" startLine="49" startPosition="63" endLine="50" endPosition="165" />
     <scopeInfo nodeId="5073985075243001593" fileName="SNonTerm.java" startLine="53" startPosition="49" endLine="54" endPosition="43" />
-    <scopeInfo nodeId="5073985075243001593" fileName="SNonTerm.java" startLine="16" startPosition="0" endLine="19" endPosition="3" />
+    <scopeInfo nodeId="5073985075243001593" fileName="SNonTerm.java" startLine="16" startPosition="0" endLine="19" endPosition="3">
+      <varInfo nodeId="5073985075243001593" varName="node" />
+    </scopeInfo>
     <scopeInfo nodeId="5073985075243001593" fileName="SNonTerm.java" startLine="20" startPosition="0" endLine="24" endPosition="0" />
-    <scopeInfo nodeId="5073985075243001593" fileName="SNonTerm.java" startLine="24" startPosition="0" endLine="28" endPosition="0" />
+    <scopeInfo nodeId="5073985075243001593" fileName="SNonTerm.java" startLine="24" startPosition="0" endLine="28" endPosition="0">
+      <varInfo nodeId="5073985075243001593" varName="node" />
+    </scopeInfo>
     <scopeInfo nodeId="5073985075243001593" fileName="SNonTerm.java" startLine="28" startPosition="0" endLine="32" endPosition="0" />
     <scopeInfo nodeId="5073985075243001593" fileName="SNonTerm.java" startLine="32" startPosition="0" endLine="36" endPosition="0" />
     <scopeInfo nodeId="5073985075243001593" fileName="SNonTerm.java" startLine="36" startPosition="0" endLine="40" endPosition="0" />
-    <scopeInfo nodeId="5073985075243001593" fileName="SNonTerm.java" startLine="40" startPosition="0" endLine="44" endPosition="0" />
-    <scopeInfo nodeId="5073985075243001593" fileName="SNonTerm.java" startLine="44" startPosition="0" endLine="48" endPosition="0" />
-    <scopeInfo nodeId="5073985075243001593" fileName="SNonTerm.java" startLine="48" startPosition="0" endLine="52" endPosition="0" />
-    <scopeInfo nodeId="5073985075243001593" fileName="SNonTerm.java" startLine="52" startPosition="0" endLine="56" endPosition="0" />
+    <scopeInfo nodeId="5073985075243001593" fileName="SNonTerm.java" startLine="40" startPosition="0" endLine="44" endPosition="0">
+      <varInfo nodeId="5073985075243001593" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243001593" fileName="SNonTerm.java" startLine="44" startPosition="0" endLine="48" endPosition="0">
+      <varInfo nodeId="5073985075243001593" varName="node" />
+      <varInfo nodeId="5073985075243001593" varName="prev" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243001593" fileName="SNonTerm.java" startLine="48" startPosition="0" endLine="52" endPosition="0">
+      <varInfo nodeId="5073985075243001593" varName="init" />
+      <varInfo nodeId="5073985075243001593" varName="sm" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243001593" fileName="SNonTerm.java" startLine="52" startPosition="0" endLine="56" endPosition="0">
+      <varInfo nodeId="5073985075243001593" varName="sm" />
+    </scopeInfo>
     <unitInfo nodeId="5073985075243001593" fileName="SNonTerm.java" startLine="12" startPosition="0" endLine="57" endPosition="0" unitName="jetbrains.mps.core.syntax.structure.SNonTerm" />
   </root>
   <root nodeId="5073985075243001597">
@@ -481,26 +602,50 @@
     <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="92" startPosition="69" endLine="93" endPosition="62" />
     <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="96" startPosition="65" endLine="97" endPosition="169" />
     <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="100" startPosition="51" endLine="101" endPosition="45" />
-    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="23" startPosition="0" endLine="26" endPosition="3" />
+    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="23" startPosition="0" endLine="26" endPosition="3">
+      <varInfo nodeId="5073985075243001597" varName="node" />
+    </scopeInfo>
     <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="27" startPosition="0" endLine="31" endPosition="0" />
-    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="31" startPosition="0" endLine="35" endPosition="0" />
+    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="31" startPosition="0" endLine="35" endPosition="0">
+      <varInfo nodeId="5073985075243001597" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="35" startPosition="0" endLine="39" endPosition="0" />
-    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="39" startPosition="0" endLine="43" endPosition="0" />
+    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="39" startPosition="0" endLine="43" endPosition="0">
+      <varInfo nodeId="5073985075243001597" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="43" startPosition="0" endLine="47" endPosition="0" />
-    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="47" startPosition="0" endLine="51" endPosition="0" />
+    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="47" startPosition="0" endLine="51" endPosition="0">
+      <varInfo nodeId="5073985075243001597" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="51" startPosition="0" endLine="55" endPosition="0" />
-    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="55" startPosition="0" endLine="59" endPosition="0" />
+    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="55" startPosition="0" endLine="59" endPosition="0">
+      <varInfo nodeId="5073985075243001597" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="59" startPosition="0" endLine="63" endPosition="0" />
-    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="63" startPosition="0" endLine="67" endPosition="0" />
+    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="63" startPosition="0" endLine="67" endPosition="0">
+      <varInfo nodeId="5073985075243001597" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="67" startPosition="0" endLine="71" endPosition="0" />
-    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="71" startPosition="0" endLine="75" endPosition="0" />
+    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="71" startPosition="0" endLine="75" endPosition="0">
+      <varInfo nodeId="5073985075243001597" varName="node" />
+    </scopeInfo>
     <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="75" startPosition="0" endLine="79" endPosition="0" />
     <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="79" startPosition="0" endLine="83" endPosition="0" />
     <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="83" startPosition="0" endLine="87" endPosition="0" />
-    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="87" startPosition="0" endLine="91" endPosition="0" />
-    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="91" startPosition="0" endLine="95" endPosition="0" />
-    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="95" startPosition="0" endLine="99" endPosition="0" />
-    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="99" startPosition="0" endLine="103" endPosition="0" />
+    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="87" startPosition="0" endLine="91" endPosition="0">
+      <varInfo nodeId="5073985075243001597" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="91" startPosition="0" endLine="95" endPosition="0">
+      <varInfo nodeId="5073985075243001597" varName="node" />
+      <varInfo nodeId="5073985075243001597" varName="prev" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="95" startPosition="0" endLine="99" endPosition="0">
+      <varInfo nodeId="5073985075243001597" varName="init" />
+      <varInfo nodeId="5073985075243001597" varName="sm" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="99" startPosition="0" endLine="103" endPosition="0">
+      <varInfo nodeId="5073985075243001597" varName="sm" />
+    </scopeInfo>
     <unitInfo nodeId="5073985075243001597" fileName="SSymbolRef.java" startLine="14" startPosition="0" endLine="104" endPosition="0" unitName="jetbrains.mps.core.syntax.structure.SSymbolRef" />
   </root>
   <root nodeId="5073985075243001601">
@@ -521,11 +666,20 @@
     <scopeInfo nodeId="5073985075243001601" fileName="SRegex.java" startLine="23" startPosition="39" endLine="24" endPosition="43" />
     <scopeInfo nodeId="5073985075243001601" fileName="SRegex.java" startLine="27" startPosition="61" endLine="28" endPosition="161" />
     <scopeInfo nodeId="5073985075243001601" fileName="SRegex.java" startLine="31" startPosition="47" endLine="32" endPosition="41" />
-    <scopeInfo nodeId="5073985075243001601" fileName="SRegex.java" startLine="14" startPosition="0" endLine="17" endPosition="3" />
+    <scopeInfo nodeId="5073985075243001601" fileName="SRegex.java" startLine="14" startPosition="0" endLine="17" endPosition="3">
+      <varInfo nodeId="5073985075243001601" varName="node" />
+    </scopeInfo>
     <scopeInfo nodeId="5073985075243001601" fileName="SRegex.java" startLine="18" startPosition="0" endLine="22" endPosition="0" />
-    <scopeInfo nodeId="5073985075243001601" fileName="SRegex.java" startLine="22" startPosition="0" endLine="26" endPosition="0" />
-    <scopeInfo nodeId="5073985075243001601" fileName="SRegex.java" startLine="26" startPosition="0" endLine="30" endPosition="0" />
-    <scopeInfo nodeId="5073985075243001601" fileName="SRegex.java" startLine="30" startPosition="0" endLine="34" endPosition="0" />
+    <scopeInfo nodeId="5073985075243001601" fileName="SRegex.java" startLine="22" startPosition="0" endLine="26" endPosition="0">
+      <varInfo nodeId="5073985075243001601" varName="value" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243001601" fileName="SRegex.java" startLine="26" startPosition="0" endLine="30" endPosition="0">
+      <varInfo nodeId="5073985075243001601" varName="init" />
+      <varInfo nodeId="5073985075243001601" varName="sm" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243001601" fileName="SRegex.java" startLine="30" startPosition="0" endLine="34" endPosition="0">
+      <varInfo nodeId="5073985075243001601" varName="sm" />
+    </scopeInfo>
     <unitInfo nodeId="5073985075243001601" fileName="SRegex.java" startLine="11" startPosition="0" endLine="35" endPosition="0" unitName="jetbrains.mps.core.syntax.structure.SRegex" />
   </root>
   <root nodeId="5073985075243002170">
@@ -590,24 +744,46 @@
     <scopeInfo nodeId="5073985075243002170" fileName="SNamedPattern.java" startLine="83" startPosition="69" endLine="84" endPosition="65" />
     <scopeInfo nodeId="5073985075243002170" fileName="SNamedPattern.java" startLine="87" startPosition="68" endLine="88" endPosition="175" />
     <scopeInfo nodeId="5073985075243002170" fileName="SNamedPattern.java" startLine="91" startPosition="54" endLine="92" endPosition="48" />
-    <scopeInfo nodeId="5073985075243002170" fileName="SNamedPattern.java" startLine="22" startPosition="0" endLine="25" endPosition="3" />
+    <scopeInfo nodeId="5073985075243002170" fileName="SNamedPattern.java" startLine="22" startPosition="0" endLine="25" endPosition="3">
+      <varInfo nodeId="5073985075243002170" varName="node" />
+    </scopeInfo>
     <scopeInfo nodeId="5073985075243002170" fileName="SNamedPattern.java" startLine="26" startPosition="0" endLine="30" endPosition="0" />
-    <scopeInfo nodeId="5073985075243002170" fileName="SNamedPattern.java" startLine="30" startPosition="0" endLine="34" endPosition="0" />
+    <scopeInfo nodeId="5073985075243002170" fileName="SNamedPattern.java" startLine="30" startPosition="0" endLine="34" endPosition="0">
+      <varInfo nodeId="5073985075243002170" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="5073985075243002170" fileName="SNamedPattern.java" startLine="34" startPosition="0" endLine="38" endPosition="0" />
-    <scopeInfo nodeId="5073985075243002170" fileName="SNamedPattern.java" startLine="38" startPosition="0" endLine="42" endPosition="0" />
+    <scopeInfo nodeId="5073985075243002170" fileName="SNamedPattern.java" startLine="38" startPosition="0" endLine="42" endPosition="0">
+      <varInfo nodeId="5073985075243002170" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="5073985075243002170" fileName="SNamedPattern.java" startLine="42" startPosition="0" endLine="46" endPosition="0" />
-    <scopeInfo nodeId="5073985075243002170" fileName="SNamedPattern.java" startLine="46" startPosition="0" endLine="50" endPosition="0" />
+    <scopeInfo nodeId="5073985075243002170" fileName="SNamedPattern.java" startLine="46" startPosition="0" endLine="50" endPosition="0">
+      <varInfo nodeId="5073985075243002170" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="5073985075243002170" fileName="SNamedPattern.java" startLine="50" startPosition="0" endLine="54" endPosition="0" />
-    <scopeInfo nodeId="5073985075243002170" fileName="SNamedPattern.java" startLine="54" startPosition="0" endLine="58" endPosition="0" />
+    <scopeInfo nodeId="5073985075243002170" fileName="SNamedPattern.java" startLine="54" startPosition="0" endLine="58" endPosition="0">
+      <varInfo nodeId="5073985075243002170" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="5073985075243002170" fileName="SNamedPattern.java" startLine="58" startPosition="0" endLine="62" endPosition="0" />
-    <scopeInfo nodeId="5073985075243002170" fileName="SNamedPattern.java" startLine="62" startPosition="0" endLine="66" endPosition="0" />
+    <scopeInfo nodeId="5073985075243002170" fileName="SNamedPattern.java" startLine="62" startPosition="0" endLine="66" endPosition="0">
+      <varInfo nodeId="5073985075243002170" varName="node" />
+    </scopeInfo>
     <scopeInfo nodeId="5073985075243002170" fileName="SNamedPattern.java" startLine="66" startPosition="0" endLine="70" endPosition="0" />
     <scopeInfo nodeId="5073985075243002170" fileName="SNamedPattern.java" startLine="70" startPosition="0" endLine="74" endPosition="0" />
     <scopeInfo nodeId="5073985075243002170" fileName="SNamedPattern.java" startLine="74" startPosition="0" endLine="78" endPosition="0" />
-    <scopeInfo nodeId="5073985075243002170" fileName="SNamedPattern.java" startLine="78" startPosition="0" endLine="82" endPosition="0" />
-    <scopeInfo nodeId="5073985075243002170" fileName="SNamedPattern.java" startLine="82" startPosition="0" endLine="86" endPosition="0" />
-    <scopeInfo nodeId="5073985075243002170" fileName="SNamedPattern.java" startLine="86" startPosition="0" endLine="90" endPosition="0" />
-    <scopeInfo nodeId="5073985075243002170" fileName="SNamedPattern.java" startLine="90" startPosition="0" endLine="94" endPosition="0" />
+    <scopeInfo nodeId="5073985075243002170" fileName="SNamedPattern.java" startLine="78" startPosition="0" endLine="82" endPosition="0">
+      <varInfo nodeId="5073985075243002170" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243002170" fileName="SNamedPattern.java" startLine="82" startPosition="0" endLine="86" endPosition="0">
+      <varInfo nodeId="5073985075243002170" varName="node" />
+      <varInfo nodeId="5073985075243002170" varName="prev" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243002170" fileName="SNamedPattern.java" startLine="86" startPosition="0" endLine="90" endPosition="0">
+      <varInfo nodeId="5073985075243002170" varName="init" />
+      <varInfo nodeId="5073985075243002170" varName="sm" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243002170" fileName="SNamedPattern.java" startLine="90" startPosition="0" endLine="94" endPosition="0">
+      <varInfo nodeId="5073985075243002170" varName="sm" />
+    </scopeInfo>
     <unitInfo nodeId="5073985075243002170" fileName="SNamedPattern.java" startLine="14" startPosition="0" endLine="95" endPosition="0" unitName="jetbrains.mps.core.syntax.structure.SNamedPattern" />
   </root>
   <root nodeId="5073985075243002176">
@@ -658,20 +834,38 @@
     <scopeInfo nodeId="5073985075243002176" fileName="SAction.java" startLine="65" startPosition="69" endLine="66" endPosition="59" />
     <scopeInfo nodeId="5073985075243002176" fileName="SAction.java" startLine="69" startPosition="62" endLine="70" endPosition="163" />
     <scopeInfo nodeId="5073985075243002176" fileName="SAction.java" startLine="73" startPosition="48" endLine="74" endPosition="42" />
-    <scopeInfo nodeId="5073985075243002176" fileName="SAction.java" startLine="20" startPosition="0" endLine="23" endPosition="3" />
+    <scopeInfo nodeId="5073985075243002176" fileName="SAction.java" startLine="20" startPosition="0" endLine="23" endPosition="3">
+      <varInfo nodeId="5073985075243002176" varName="node" />
+    </scopeInfo>
     <scopeInfo nodeId="5073985075243002176" fileName="SAction.java" startLine="24" startPosition="0" endLine="28" endPosition="0" />
-    <scopeInfo nodeId="5073985075243002176" fileName="SAction.java" startLine="28" startPosition="0" endLine="32" endPosition="0" />
+    <scopeInfo nodeId="5073985075243002176" fileName="SAction.java" startLine="28" startPosition="0" endLine="32" endPosition="0">
+      <varInfo nodeId="5073985075243002176" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="5073985075243002176" fileName="SAction.java" startLine="32" startPosition="0" endLine="36" endPosition="0" />
-    <scopeInfo nodeId="5073985075243002176" fileName="SAction.java" startLine="36" startPosition="0" endLine="40" endPosition="0" />
+    <scopeInfo nodeId="5073985075243002176" fileName="SAction.java" startLine="36" startPosition="0" endLine="40" endPosition="0">
+      <varInfo nodeId="5073985075243002176" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="5073985075243002176" fileName="SAction.java" startLine="40" startPosition="0" endLine="44" endPosition="0" />
-    <scopeInfo nodeId="5073985075243002176" fileName="SAction.java" startLine="44" startPosition="0" endLine="48" endPosition="0" />
+    <scopeInfo nodeId="5073985075243002176" fileName="SAction.java" startLine="44" startPosition="0" endLine="48" endPosition="0">
+      <varInfo nodeId="5073985075243002176" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="5073985075243002176" fileName="SAction.java" startLine="48" startPosition="0" endLine="52" endPosition="0" />
     <scopeInfo nodeId="5073985075243002176" fileName="SAction.java" startLine="52" startPosition="0" endLine="56" endPosition="0" />
     <scopeInfo nodeId="5073985075243002176" fileName="SAction.java" startLine="56" startPosition="0" endLine="60" endPosition="0" />
-    <scopeInfo nodeId="5073985075243002176" fileName="SAction.java" startLine="60" startPosition="0" endLine="64" endPosition="0" />
-    <scopeInfo nodeId="5073985075243002176" fileName="SAction.java" startLine="64" startPosition="0" endLine="68" endPosition="0" />
-    <scopeInfo nodeId="5073985075243002176" fileName="SAction.java" startLine="68" startPosition="0" endLine="72" endPosition="0" />
-    <scopeInfo nodeId="5073985075243002176" fileName="SAction.java" startLine="72" startPosition="0" endLine="76" endPosition="0" />
+    <scopeInfo nodeId="5073985075243002176" fileName="SAction.java" startLine="60" startPosition="0" endLine="64" endPosition="0">
+      <varInfo nodeId="5073985075243002176" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243002176" fileName="SAction.java" startLine="64" startPosition="0" endLine="68" endPosition="0">
+      <varInfo nodeId="5073985075243002176" varName="node" />
+      <varInfo nodeId="5073985075243002176" varName="prev" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243002176" fileName="SAction.java" startLine="68" startPosition="0" endLine="72" endPosition="0">
+      <varInfo nodeId="5073985075243002176" varName="init" />
+      <varInfo nodeId="5073985075243002176" varName="sm" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243002176" fileName="SAction.java" startLine="72" startPosition="0" endLine="76" endPosition="0">
+      <varInfo nodeId="5073985075243002176" varName="sm" />
+    </scopeInfo>
     <unitInfo nodeId="5073985075243002176" fileName="SAction.java" startLine="14" startPosition="0" endLine="77" endPosition="0" unitName="jetbrains.mps.core.syntax.structure.SAction" />
   </root>
   <root nodeId="5073985075243002178">
@@ -689,9 +883,16 @@
     <scopeInfo nodeId="5073985075243144311" fileName="SType.java" startLine="14" startPosition="28" endLine="15" endPosition="16" />
     <scopeInfo nodeId="5073985075243144311" fileName="SType.java" startLine="18" startPosition="60" endLine="19" endPosition="159" />
     <scopeInfo nodeId="5073985075243144311" fileName="SType.java" startLine="22" startPosition="46" endLine="23" endPosition="40" />
-    <scopeInfo nodeId="5073985075243144311" fileName="SType.java" startLine="13" startPosition="0" endLine="16" endPosition="3" />
-    <scopeInfo nodeId="5073985075243144311" fileName="SType.java" startLine="17" startPosition="0" endLine="21" endPosition="0" />
-    <scopeInfo nodeId="5073985075243144311" fileName="SType.java" startLine="21" startPosition="0" endLine="25" endPosition="0" />
+    <scopeInfo nodeId="5073985075243144311" fileName="SType.java" startLine="13" startPosition="0" endLine="16" endPosition="3">
+      <varInfo nodeId="5073985075243144311" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144311" fileName="SType.java" startLine="17" startPosition="0" endLine="21" endPosition="0">
+      <varInfo nodeId="5073985075243144311" varName="init" />
+      <varInfo nodeId="5073985075243144311" varName="sm" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144311" fileName="SType.java" startLine="21" startPosition="0" endLine="25" endPosition="0">
+      <varInfo nodeId="5073985075243144311" varName="sm" />
+    </scopeInfo>
     <unitInfo nodeId="5073985075243144311" fileName="SType.java" startLine="11" startPosition="0" endLine="26" endPosition="0" unitName="jetbrains.mps.core.syntax.structure.SType" />
   </root>
   <root nodeId="5073985075243144313">
@@ -710,7 +911,7 @@
     <nodeInfo nodeId="5073985075243144313" fileName="SPrio.java" startLine="50" startPosition="60" endLine="51" endPosition="159" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="5073985075243144313" fileName="SPrio.java" startLine="54" startPosition="46" endLine="55" endPosition="40" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="5073985075243144313" fileName="SPrio.java" startLine="16" startPosition="0" endLine="19" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="SPrio#(Ljetbrains/mps/smodel/SNode;)V" />
-    <nodeInfo nodeId="5073985075243144313" fileName="SPrio.java" startLine="25" startPosition="0" endLine="29" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setKind#(Ljetbrains/mps/core/syntax/structure/SPrioKind;)V" />
+    <nodeInfo nodeId="5073985075243144313" fileName="SPrio.java" startLine="25" startPosition="0" endLine="29" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setKind#(Ljava/lang/Object;)V" />
     <nodeInfo nodeId="5073985075243144313" fileName="SPrio.java" startLine="29" startPosition="0" endLine="33" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getReferencesesCount#()I" />
     <nodeInfo nodeId="5073985075243144313" fileName="SPrio.java" startLine="33" startPosition="0" endLine="37" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="referenceses#()Ljava/util/Iterator;" />
     <nodeInfo nodeId="5073985075243144313" fileName="SPrio.java" startLine="37" startPosition="0" endLine="41" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getReferenceses#()Ljava/util/List;" />
@@ -718,7 +919,7 @@
     <nodeInfo nodeId="5073985075243144313" fileName="SPrio.java" startLine="45" startPosition="0" endLine="49" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="insertReferences#(Ljetbrains/mps/smodel/INodeAdapter;Ljetbrains/mps/smodel/INodeAdapter;)V" />
     <nodeInfo nodeId="5073985075243144313" fileName="SPrio.java" startLine="49" startPosition="0" endLine="53" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="newInstance#(Ljetbrains/mps/smodel/SModel;Z)Ljetbrains/mps/core/syntax/structure/SPrio;" />
     <nodeInfo nodeId="5073985075243144313" fileName="SPrio.java" startLine="53" startPosition="0" endLine="57" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="newInstance#(Ljetbrains/mps/smodel/SModel;)Ljetbrains/mps/core/syntax/structure/SPrio;" />
-    <nodeInfo nodeId="5073985075243144313" fileName="SPrio.java" startLine="20" startPosition="0" endLine="25" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getKind#()Ljetbrains/mps/core/syntax/structure/SPrioKind;" />
+    <nodeInfo nodeId="5073985075243144313" fileName="SPrio.java" startLine="20" startPosition="0" endLine="25" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getKind#()Ljava/lang/Object;" />
     <scopeInfo nodeId="5073985075243144313" fileName="SPrio.java" startLine="17" startPosition="28" endLine="18" endPosition="16" />
     <scopeInfo nodeId="5073985075243144313" fileName="SPrio.java" startLine="26" startPosition="40" endLine="27" endPosition="60" />
     <scopeInfo nodeId="5073985075243144313" fileName="SPrio.java" startLine="30" startPosition="37" endLine="31" endPosition="48" />
@@ -728,16 +929,32 @@
     <scopeInfo nodeId="5073985075243144313" fileName="SPrio.java" startLine="46" startPosition="66" endLine="47" endPosition="51" />
     <scopeInfo nodeId="5073985075243144313" fileName="SPrio.java" startLine="50" startPosition="60" endLine="51" endPosition="159" />
     <scopeInfo nodeId="5073985075243144313" fileName="SPrio.java" startLine="54" startPosition="46" endLine="55" endPosition="40" />
-    <scopeInfo nodeId="5073985075243144313" fileName="SPrio.java" startLine="21" startPosition="30" endLine="23" endPosition="39" />
-    <scopeInfo nodeId="5073985075243144313" fileName="SPrio.java" startLine="16" startPosition="0" endLine="19" endPosition="3" />
-    <scopeInfo nodeId="5073985075243144313" fileName="SPrio.java" startLine="25" startPosition="0" endLine="29" endPosition="0" />
+    <scopeInfo nodeId="5073985075243144313" fileName="SPrio.java" startLine="21" startPosition="30" endLine="23" endPosition="39">
+      <varInfo nodeId="5073985075243144313" varName="value" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144313" fileName="SPrio.java" startLine="16" startPosition="0" endLine="19" endPosition="3">
+      <varInfo nodeId="5073985075243144313" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144313" fileName="SPrio.java" startLine="25" startPosition="0" endLine="29" endPosition="0">
+      <varInfo nodeId="5073985075243144313" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="5073985075243144313" fileName="SPrio.java" startLine="29" startPosition="0" endLine="33" endPosition="0" />
     <scopeInfo nodeId="5073985075243144313" fileName="SPrio.java" startLine="33" startPosition="0" endLine="37" endPosition="0" />
     <scopeInfo nodeId="5073985075243144313" fileName="SPrio.java" startLine="37" startPosition="0" endLine="41" endPosition="0" />
-    <scopeInfo nodeId="5073985075243144313" fileName="SPrio.java" startLine="41" startPosition="0" endLine="45" endPosition="0" />
-    <scopeInfo nodeId="5073985075243144313" fileName="SPrio.java" startLine="45" startPosition="0" endLine="49" endPosition="0" />
-    <scopeInfo nodeId="5073985075243144313" fileName="SPrio.java" startLine="49" startPosition="0" endLine="53" endPosition="0" />
-    <scopeInfo nodeId="5073985075243144313" fileName="SPrio.java" startLine="53" startPosition="0" endLine="57" endPosition="0" />
+    <scopeInfo nodeId="5073985075243144313" fileName="SPrio.java" startLine="41" startPosition="0" endLine="45" endPosition="0">
+      <varInfo nodeId="5073985075243144313" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144313" fileName="SPrio.java" startLine="45" startPosition="0" endLine="49" endPosition="0">
+      <varInfo nodeId="5073985075243144313" varName="node" />
+      <varInfo nodeId="5073985075243144313" varName="prev" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144313" fileName="SPrio.java" startLine="49" startPosition="0" endLine="53" endPosition="0">
+      <varInfo nodeId="5073985075243144313" varName="init" />
+      <varInfo nodeId="5073985075243144313" varName="sm" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144313" fileName="SPrio.java" startLine="53" startPosition="0" endLine="57" endPosition="0">
+      <varInfo nodeId="5073985075243144313" varName="sm" />
+    </scopeInfo>
     <scopeInfo nodeId="5073985075243144313" fileName="SPrio.java" startLine="20" startPosition="0" endLine="25" endPosition="0" />
     <unitInfo nodeId="5073985075243144313" fileName="SPrio.java" startLine="12" startPosition="0" endLine="58" endPosition="0" unitName="jetbrains.mps.core.syntax.structure.SPrio" />
   </root>
@@ -808,25 +1025,48 @@
     <scopeInfo nodeId="5073985075243144315" fileName="SPrioKind.java" startLine="53" startPosition="59" endLine="54" endPosition="29" />
     <scopeInfo nodeId="5073985075243144315" fileName="SPrioKind.java" startLine="56" startPosition="62" endLine="57" endPosition="32" />
     <scopeInfo nodeId="5073985075243144315" fileName="SPrioKind.java" startLine="17" startPosition="37" endLine="19" endPosition="25" />
-    <scopeInfo nodeId="5073985075243144315" fileName="SPrioKind_PropertySupport.java" startLine="15" startPosition="33" endLine="19" endPosition="7" />
-    <scopeInfo nodeId="5073985075243144315" fileName="SPrioKind.java" startLine="16" startPosition="0" endLine="20" endPosition="3" />
+    <scopeInfo nodeId="5073985075243144315" fileName="SPrioKind_PropertySupport.java" startLine="15" startPosition="33" endLine="19" endPosition="7">
+      <varInfo nodeId="5073985075243144315" varName="constant" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144315" fileName="SPrioKind.java" startLine="16" startPosition="0" endLine="20" endPosition="3">
+      <varInfo nodeId="5073985075243144315" varName="name" />
+      <varInfo nodeId="5073985075243144315" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="5073985075243144315" fileName="SPrioKind.java" startLine="21" startPosition="0" endLine="25" endPosition="0" />
     <scopeInfo nodeId="5073985075243144315" fileName="SPrioKind.java" startLine="25" startPosition="0" endLine="29" endPosition="0" />
     <scopeInfo nodeId="5073985075243144315" fileName="SPrioKind.java" startLine="29" startPosition="0" endLine="33" endPosition="0" />
-    <scopeInfo nodeId="5073985075243144315" fileName="SPrioKind_PropertySupport.java" startLine="29" startPosition="33" endLine="33" endPosition="7" />
+    <scopeInfo nodeId="5073985075243144315" fileName="SPrioKind_PropertySupport.java" startLine="29" startPosition="33" endLine="33" endPosition="7">
+      <varInfo nodeId="5073985075243144315" varName="constant" />
+    </scopeInfo>
     <scopeInfo nodeId="5073985075243144315" fileName="SPrioKind.java" startLine="41" startPosition="0" endLine="45" endPosition="0" />
-    <scopeInfo nodeId="5073985075243144315" fileName="SPrioKind.java" startLine="34" startPosition="48" endLine="39" endPosition="16" />
-    <scopeInfo nodeId="5073985075243144315" fileName="SPrioKind_PropertySupport.java" startLine="38" startPosition="49" endLine="43" endPosition="14" />
+    <scopeInfo nodeId="5073985075243144315" fileName="SPrioKind.java" startLine="34" startPosition="48" endLine="39" endPosition="16">
+      <varInfo nodeId="5073985075243144315" varName="list" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144315" fileName="SPrioKind_PropertySupport.java" startLine="38" startPosition="49" endLine="43" endPosition="14">
+      <varInfo nodeId="5073985075243144315" varName="constant" />
+    </scopeInfo>
     <scopeInfo nodeId="5073985075243144315" fileName="SPrioKind.java" startLine="33" startPosition="0" endLine="41" endPosition="0" />
-    <scopeInfo nodeId="5073985075243144315" fileName="SPrioKind_PropertySupport.java" startLine="37" startPosition="0" endLine="45" endPosition="0" />
-    <scopeInfo nodeId="5073985075243144315" fileName="SPrioKind_PropertySupport.java" startLine="10" startPosition="44" endLine="21" endPosition="17" />
-    <scopeInfo nodeId="5073985075243144315" fileName="SPrioKind_PropertySupport.java" startLine="24" startPosition="47" endLine="35" endPosition="16" />
+    <scopeInfo nodeId="5073985075243144315" fileName="SPrioKind_PropertySupport.java" startLine="37" startPosition="0" endLine="45" endPosition="0">
+      <varInfo nodeId="5073985075243144315" varName="value" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144315" fileName="SPrioKind_PropertySupport.java" startLine="10" startPosition="44" endLine="21" endPosition="17">
+      <varInfo nodeId="5073985075243144315" varName="constants" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144315" fileName="SPrioKind_PropertySupport.java" startLine="24" startPosition="47" endLine="35" endPosition="16">
+      <varInfo nodeId="5073985075243144315" varName="constants" />
+    </scopeInfo>
     <scopeInfo nodeId="5073985075243144315" fileName="SPrioKind.java" startLine="46" startPosition="52" endLine="59" endPosition="34" />
-    <scopeInfo nodeId="5073985075243144315" fileName="SPrioKind_PropertySupport.java" startLine="9" startPosition="64" endLine="23" endPosition="0" />
-    <scopeInfo nodeId="5073985075243144315" fileName="SPrioKind_PropertySupport.java" startLine="23" startPosition="0" endLine="37" endPosition="0" />
-    <scopeInfo nodeId="5073985075243144315" fileName="SPrioKind.java" startLine="45" startPosition="0" endLine="61" endPosition="0" />
-    <unitInfo nodeId="5073985075243144315" fileName="SPrioKind_PropertySupport.java" startLine="9" startPosition="0" endLine="46" endPosition="0" unitName="jetbrains.mps.core.syntax.structure.SPrioKind_PropertySupport" />
+    <scopeInfo nodeId="5073985075243144315" fileName="SPrioKind_PropertySupport.java" startLine="9" startPosition="64" endLine="23" endPosition="0">
+      <varInfo nodeId="5073985075243144315" varName="value" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144315" fileName="SPrioKind_PropertySupport.java" startLine="23" startPosition="0" endLine="37" endPosition="0">
+      <varInfo nodeId="5073985075243144315" varName="value" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144315" fileName="SPrioKind.java" startLine="45" startPosition="0" endLine="61" endPosition="0">
+      <varInfo nodeId="5073985075243144315" varName="value" />
+    </scopeInfo>
     <unitInfo nodeId="5073985075243144315" fileName="SPrioKind.java" startLine="9" startPosition="0" endLine="62" endPosition="0" unitName="jetbrains.mps.core.syntax.structure.SPrioKind" />
+    <unitInfo nodeId="5073985075243144315" fileName="SPrioKind_PropertySupport.java" startLine="9" startPosition="0" endLine="46" endPosition="0" unitName="jetbrains.mps.core.syntax.structure.SPrioKind_PropertySupport" />
   </root>
   <root nodeId="5073985075243144320">
     <nodeInfo nodeId="5073985075243144320" fileName="SReference.java" startLine="11" startPosition="45" endLine="12" endPosition="88" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="concept" />
@@ -846,11 +1086,20 @@
     <scopeInfo nodeId="5073985075243144320" fileName="SReference.java" startLine="23" startPosition="39" endLine="24" endPosition="47" />
     <scopeInfo nodeId="5073985075243144320" fileName="SReference.java" startLine="27" startPosition="65" endLine="28" endPosition="169" />
     <scopeInfo nodeId="5073985075243144320" fileName="SReference.java" startLine="31" startPosition="51" endLine="32" endPosition="45" />
-    <scopeInfo nodeId="5073985075243144320" fileName="SReference.java" startLine="14" startPosition="0" endLine="17" endPosition="3" />
+    <scopeInfo nodeId="5073985075243144320" fileName="SReference.java" startLine="14" startPosition="0" endLine="17" endPosition="3">
+      <varInfo nodeId="5073985075243144320" varName="node" />
+    </scopeInfo>
     <scopeInfo nodeId="5073985075243144320" fileName="SReference.java" startLine="18" startPosition="0" endLine="22" endPosition="0" />
-    <scopeInfo nodeId="5073985075243144320" fileName="SReference.java" startLine="22" startPosition="0" endLine="26" endPosition="0" />
-    <scopeInfo nodeId="5073985075243144320" fileName="SReference.java" startLine="26" startPosition="0" endLine="30" endPosition="0" />
-    <scopeInfo nodeId="5073985075243144320" fileName="SReference.java" startLine="30" startPosition="0" endLine="34" endPosition="0" />
+    <scopeInfo nodeId="5073985075243144320" fileName="SReference.java" startLine="22" startPosition="0" endLine="26" endPosition="0">
+      <varInfo nodeId="5073985075243144320" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144320" fileName="SReference.java" startLine="26" startPosition="0" endLine="30" endPosition="0">
+      <varInfo nodeId="5073985075243144320" varName="init" />
+      <varInfo nodeId="5073985075243144320" varName="sm" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144320" fileName="SReference.java" startLine="30" startPosition="0" endLine="34" endPosition="0">
+      <varInfo nodeId="5073985075243144320" varName="sm" />
+    </scopeInfo>
     <unitInfo nodeId="5073985075243144320" fileName="SReference.java" startLine="11" startPosition="0" endLine="35" endPosition="0" unitName="jetbrains.mps.core.syntax.structure.SReference" />
   </root>
   <root nodeId="5073985075243144347">
@@ -878,13 +1127,24 @@
     <scopeInfo nodeId="5073985075243144347" fileName="SInputRef.java" startLine="32" startPosition="39" endLine="33" endPosition="46" />
     <scopeInfo nodeId="5073985075243144347" fileName="SInputRef.java" startLine="36" startPosition="64" endLine="37" endPosition="167" />
     <scopeInfo nodeId="5073985075243144347" fileName="SInputRef.java" startLine="40" startPosition="50" endLine="41" endPosition="44" />
-    <scopeInfo nodeId="5073985075243144347" fileName="SInputRef.java" startLine="15" startPosition="0" endLine="18" endPosition="3" />
+    <scopeInfo nodeId="5073985075243144347" fileName="SInputRef.java" startLine="15" startPosition="0" endLine="18" endPosition="3">
+      <varInfo nodeId="5073985075243144347" varName="node" />
+    </scopeInfo>
     <scopeInfo nodeId="5073985075243144347" fileName="SInputRef.java" startLine="19" startPosition="0" endLine="23" endPosition="0" />
-    <scopeInfo nodeId="5073985075243144347" fileName="SInputRef.java" startLine="23" startPosition="0" endLine="27" endPosition="0" />
+    <scopeInfo nodeId="5073985075243144347" fileName="SInputRef.java" startLine="23" startPosition="0" endLine="27" endPosition="0">
+      <varInfo nodeId="5073985075243144347" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="5073985075243144347" fileName="SInputRef.java" startLine="27" startPosition="0" endLine="31" endPosition="0" />
-    <scopeInfo nodeId="5073985075243144347" fileName="SInputRef.java" startLine="31" startPosition="0" endLine="35" endPosition="0" />
-    <scopeInfo nodeId="5073985075243144347" fileName="SInputRef.java" startLine="35" startPosition="0" endLine="39" endPosition="0" />
-    <scopeInfo nodeId="5073985075243144347" fileName="SInputRef.java" startLine="39" startPosition="0" endLine="43" endPosition="0" />
+    <scopeInfo nodeId="5073985075243144347" fileName="SInputRef.java" startLine="31" startPosition="0" endLine="35" endPosition="0">
+      <varInfo nodeId="5073985075243144347" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144347" fileName="SInputRef.java" startLine="35" startPosition="0" endLine="39" endPosition="0">
+      <varInfo nodeId="5073985075243144347" varName="init" />
+      <varInfo nodeId="5073985075243144347" varName="sm" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144347" fileName="SInputRef.java" startLine="39" startPosition="0" endLine="43" endPosition="0">
+      <varInfo nodeId="5073985075243144347" varName="sm" />
+    </scopeInfo>
     <unitInfo nodeId="5073985075243144347" fileName="SInputRef.java" startLine="11" startPosition="0" endLine="44" endPosition="0" unitName="jetbrains.mps.core.syntax.structure.SInputRef" />
   </root>
   <root nodeId="5073985075243238823">
@@ -898,9 +1158,16 @@
     <scopeInfo nodeId="5073985075243238823" fileName="SLexerPart.java" startLine="14" startPosition="33" endLine="15" endPosition="16" />
     <scopeInfo nodeId="5073985075243238823" fileName="SLexerPart.java" startLine="18" startPosition="65" endLine="19" endPosition="169" />
     <scopeInfo nodeId="5073985075243238823" fileName="SLexerPart.java" startLine="22" startPosition="51" endLine="23" endPosition="45" />
-    <scopeInfo nodeId="5073985075243238823" fileName="SLexerPart.java" startLine="13" startPosition="0" endLine="16" endPosition="3" />
-    <scopeInfo nodeId="5073985075243238823" fileName="SLexerPart.java" startLine="17" startPosition="0" endLine="21" endPosition="0" />
-    <scopeInfo nodeId="5073985075243238823" fileName="SLexerPart.java" startLine="21" startPosition="0" endLine="25" endPosition="0" />
+    <scopeInfo nodeId="5073985075243238823" fileName="SLexerPart.java" startLine="13" startPosition="0" endLine="16" endPosition="3">
+      <varInfo nodeId="5073985075243238823" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243238823" fileName="SLexerPart.java" startLine="17" startPosition="0" endLine="21" endPosition="0">
+      <varInfo nodeId="5073985075243238823" varName="init" />
+      <varInfo nodeId="5073985075243238823" varName="sm" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243238823" fileName="SLexerPart.java" startLine="21" startPosition="0" endLine="25" endPosition="0">
+      <varInfo nodeId="5073985075243238823" varName="sm" />
+    </scopeInfo>
     <unitInfo nodeId="5073985075243238823" fileName="SLexerPart.java" startLine="11" startPosition="0" endLine="26" endPosition="0" unitName="jetbrains.mps.core.syntax.structure.SLexerPart" />
   </root>
 </debugInfo>

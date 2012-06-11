@@ -13,8 +13,13 @@
     <scopeInfo nodeId="1992172484410508056" fileName="MqlParametersContainer.java" startLine="12" startPosition="0" endLine="13" endPosition="36" />
     <scopeInfo nodeId="1992172484410508056" fileName="MqlParametersContainer.java" startLine="13" startPosition="36" endLine="14" endPosition="47" />
     <scopeInfo nodeId="1992172484410508056" fileName="MqlParametersContainer.java" startLine="14" startPosition="47" endLine="15" endPosition="46" />
-    <scopeInfo nodeId="1992172484410508056" fileName="MqlParametersContainer.java" startLine="15" startPosition="46" endLine="16" endPosition="47" />
-    <scopeInfo nodeId="1992172484410508056" fileName="MqlParametersContainer.java" startLine="16" startPosition="47" endLine="17" endPosition="69" />
+    <scopeInfo nodeId="1992172484410508056" fileName="MqlParametersContainer.java" startLine="15" startPosition="46" endLine="16" endPosition="47">
+      <varInfo nodeId="1992172484410508056" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="1992172484410508056" fileName="MqlParametersContainer.java" startLine="16" startPosition="47" endLine="17" endPosition="69">
+      <varInfo nodeId="1992172484410508056" varName="node" />
+      <varInfo nodeId="1992172484410508056" varName="prev" />
+    </scopeInfo>
     <unitInfo nodeId="1992172484410508056" fileName="MqlParametersContainer.java" startLine="9" startPosition="0" endLine="19" endPosition="0" unitName="jetbrains.mps.core.query.structure.MqlParametersContainer" />
   </root>
   <root nodeId="2059702675525965924">
@@ -51,16 +56,30 @@
     <scopeInfo nodeId="2059702675525965924" fileName="MqlNoContextQueryCall.java" startLine="45" startPosition="71" endLine="46" endPosition="66" />
     <scopeInfo nodeId="2059702675525965924" fileName="MqlNoContextQueryCall.java" startLine="49" startPosition="76" endLine="50" endPosition="190" />
     <scopeInfo nodeId="2059702675525965924" fileName="MqlNoContextQueryCall.java" startLine="53" startPosition="62" endLine="54" endPosition="56" />
-    <scopeInfo nodeId="2059702675525965924" fileName="MqlNoContextQueryCall.java" startLine="16" startPosition="0" endLine="19" endPosition="3" />
+    <scopeInfo nodeId="2059702675525965924" fileName="MqlNoContextQueryCall.java" startLine="16" startPosition="0" endLine="19" endPosition="3">
+      <varInfo nodeId="2059702675525965924" varName="node" />
+    </scopeInfo>
     <scopeInfo nodeId="2059702675525965924" fileName="MqlNoContextQueryCall.java" startLine="20" startPosition="0" endLine="24" endPosition="0" />
-    <scopeInfo nodeId="2059702675525965924" fileName="MqlNoContextQueryCall.java" startLine="24" startPosition="0" endLine="28" endPosition="0" />
+    <scopeInfo nodeId="2059702675525965924" fileName="MqlNoContextQueryCall.java" startLine="24" startPosition="0" endLine="28" endPosition="0">
+      <varInfo nodeId="2059702675525965924" varName="node" />
+    </scopeInfo>
     <scopeInfo nodeId="2059702675525965924" fileName="MqlNoContextQueryCall.java" startLine="28" startPosition="0" endLine="32" endPosition="0" />
     <scopeInfo nodeId="2059702675525965924" fileName="MqlNoContextQueryCall.java" startLine="32" startPosition="0" endLine="36" endPosition="0" />
     <scopeInfo nodeId="2059702675525965924" fileName="MqlNoContextQueryCall.java" startLine="36" startPosition="0" endLine="40" endPosition="0" />
-    <scopeInfo nodeId="2059702675525965924" fileName="MqlNoContextQueryCall.java" startLine="40" startPosition="0" endLine="44" endPosition="0" />
-    <scopeInfo nodeId="2059702675525965924" fileName="MqlNoContextQueryCall.java" startLine="44" startPosition="0" endLine="48" endPosition="0" />
-    <scopeInfo nodeId="2059702675525965924" fileName="MqlNoContextQueryCall.java" startLine="48" startPosition="0" endLine="52" endPosition="0" />
-    <scopeInfo nodeId="2059702675525965924" fileName="MqlNoContextQueryCall.java" startLine="52" startPosition="0" endLine="56" endPosition="0" />
+    <scopeInfo nodeId="2059702675525965924" fileName="MqlNoContextQueryCall.java" startLine="40" startPosition="0" endLine="44" endPosition="0">
+      <varInfo nodeId="2059702675525965924" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="2059702675525965924" fileName="MqlNoContextQueryCall.java" startLine="44" startPosition="0" endLine="48" endPosition="0">
+      <varInfo nodeId="2059702675525965924" varName="node" />
+      <varInfo nodeId="2059702675525965924" varName="prev" />
+    </scopeInfo>
+    <scopeInfo nodeId="2059702675525965924" fileName="MqlNoContextQueryCall.java" startLine="48" startPosition="0" endLine="52" endPosition="0">
+      <varInfo nodeId="2059702675525965924" varName="init" />
+      <varInfo nodeId="2059702675525965924" varName="sm" />
+    </scopeInfo>
+    <scopeInfo nodeId="2059702675525965924" fileName="MqlNoContextQueryCall.java" startLine="52" startPosition="0" endLine="56" endPosition="0">
+      <varInfo nodeId="2059702675525965924" varName="sm" />
+    </scopeInfo>
     <unitInfo nodeId="2059702675525965924" fileName="MqlNoContextQueryCall.java" startLine="12" startPosition="0" endLine="57" endPosition="0" unitName="jetbrains.mps.core.query.structure.MqlNoContextQueryCall" />
   </root>
   <root nodeId="3435983127247044629">
@@ -118,22 +137,42 @@
     <scopeInfo nodeId="3435983127247044629" fileName="MqlVariable.java" startLine="75" startPosition="69" endLine="76" endPosition="63" />
     <scopeInfo nodeId="3435983127247044629" fileName="MqlVariable.java" startLine="79" startPosition="66" endLine="80" endPosition="170" />
     <scopeInfo nodeId="3435983127247044629" fileName="MqlVariable.java" startLine="83" startPosition="52" endLine="84" endPosition="46" />
-    <scopeInfo nodeId="3435983127247044629" fileName="MqlVariable.java" startLine="22" startPosition="0" endLine="25" endPosition="3" />
+    <scopeInfo nodeId="3435983127247044629" fileName="MqlVariable.java" startLine="22" startPosition="0" endLine="25" endPosition="3">
+      <varInfo nodeId="3435983127247044629" varName="node" />
+    </scopeInfo>
     <scopeInfo nodeId="3435983127247044629" fileName="MqlVariable.java" startLine="26" startPosition="0" endLine="30" endPosition="0" />
-    <scopeInfo nodeId="3435983127247044629" fileName="MqlVariable.java" startLine="30" startPosition="0" endLine="34" endPosition="0" />
+    <scopeInfo nodeId="3435983127247044629" fileName="MqlVariable.java" startLine="30" startPosition="0" endLine="34" endPosition="0">
+      <varInfo nodeId="3435983127247044629" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="3435983127247044629" fileName="MqlVariable.java" startLine="34" startPosition="0" endLine="38" endPosition="0" />
-    <scopeInfo nodeId="3435983127247044629" fileName="MqlVariable.java" startLine="38" startPosition="0" endLine="42" endPosition="0" />
+    <scopeInfo nodeId="3435983127247044629" fileName="MqlVariable.java" startLine="38" startPosition="0" endLine="42" endPosition="0">
+      <varInfo nodeId="3435983127247044629" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="3435983127247044629" fileName="MqlVariable.java" startLine="42" startPosition="0" endLine="46" endPosition="0" />
-    <scopeInfo nodeId="3435983127247044629" fileName="MqlVariable.java" startLine="46" startPosition="0" endLine="50" endPosition="0" />
+    <scopeInfo nodeId="3435983127247044629" fileName="MqlVariable.java" startLine="46" startPosition="0" endLine="50" endPosition="0">
+      <varInfo nodeId="3435983127247044629" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="3435983127247044629" fileName="MqlVariable.java" startLine="50" startPosition="0" endLine="54" endPosition="0" />
-    <scopeInfo nodeId="3435983127247044629" fileName="MqlVariable.java" startLine="54" startPosition="0" endLine="58" endPosition="0" />
+    <scopeInfo nodeId="3435983127247044629" fileName="MqlVariable.java" startLine="54" startPosition="0" endLine="58" endPosition="0">
+      <varInfo nodeId="3435983127247044629" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="3435983127247044629" fileName="MqlVariable.java" startLine="58" startPosition="0" endLine="62" endPosition="0" />
     <scopeInfo nodeId="3435983127247044629" fileName="MqlVariable.java" startLine="62" startPosition="0" endLine="66" endPosition="0" />
     <scopeInfo nodeId="3435983127247044629" fileName="MqlVariable.java" startLine="66" startPosition="0" endLine="70" endPosition="0" />
-    <scopeInfo nodeId="3435983127247044629" fileName="MqlVariable.java" startLine="70" startPosition="0" endLine="74" endPosition="0" />
-    <scopeInfo nodeId="3435983127247044629" fileName="MqlVariable.java" startLine="74" startPosition="0" endLine="78" endPosition="0" />
-    <scopeInfo nodeId="3435983127247044629" fileName="MqlVariable.java" startLine="78" startPosition="0" endLine="82" endPosition="0" />
-    <scopeInfo nodeId="3435983127247044629" fileName="MqlVariable.java" startLine="82" startPosition="0" endLine="86" endPosition="0" />
+    <scopeInfo nodeId="3435983127247044629" fileName="MqlVariable.java" startLine="70" startPosition="0" endLine="74" endPosition="0">
+      <varInfo nodeId="3435983127247044629" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="3435983127247044629" fileName="MqlVariable.java" startLine="74" startPosition="0" endLine="78" endPosition="0">
+      <varInfo nodeId="3435983127247044629" varName="node" />
+      <varInfo nodeId="3435983127247044629" varName="prev" />
+    </scopeInfo>
+    <scopeInfo nodeId="3435983127247044629" fileName="MqlVariable.java" startLine="78" startPosition="0" endLine="82" endPosition="0">
+      <varInfo nodeId="3435983127247044629" varName="init" />
+      <varInfo nodeId="3435983127247044629" varName="sm" />
+    </scopeInfo>
+    <scopeInfo nodeId="3435983127247044629" fileName="MqlVariable.java" startLine="82" startPosition="0" endLine="86" endPosition="0">
+      <varInfo nodeId="3435983127247044629" varName="sm" />
+    </scopeInfo>
     <unitInfo nodeId="3435983127247044629" fileName="MqlVariable.java" startLine="15" startPosition="0" endLine="87" endPosition="0" unitName="jetbrains.mps.core.query.structure.MqlVariable" />
   </root>
   <root nodeId="3435983127247055506">
@@ -154,11 +193,20 @@
     <scopeInfo nodeId="3435983127247055506" fileName="MqlVariableReference.java" startLine="22" startPosition="40" endLine="23" endPosition="54" />
     <scopeInfo nodeId="3435983127247055506" fileName="MqlVariableReference.java" startLine="26" startPosition="75" endLine="27" endPosition="188" />
     <scopeInfo nodeId="3435983127247055506" fileName="MqlVariableReference.java" startLine="30" startPosition="61" endLine="31" endPosition="55" />
-    <scopeInfo nodeId="3435983127247055506" fileName="MqlVariableReference.java" startLine="13" startPosition="0" endLine="16" endPosition="3" />
+    <scopeInfo nodeId="3435983127247055506" fileName="MqlVariableReference.java" startLine="13" startPosition="0" endLine="16" endPosition="3">
+      <varInfo nodeId="3435983127247055506" varName="node" />
+    </scopeInfo>
     <scopeInfo nodeId="3435983127247055506" fileName="MqlVariableReference.java" startLine="17" startPosition="0" endLine="21" endPosition="0" />
-    <scopeInfo nodeId="3435983127247055506" fileName="MqlVariableReference.java" startLine="21" startPosition="0" endLine="25" endPosition="0" />
-    <scopeInfo nodeId="3435983127247055506" fileName="MqlVariableReference.java" startLine="25" startPosition="0" endLine="29" endPosition="0" />
-    <scopeInfo nodeId="3435983127247055506" fileName="MqlVariableReference.java" startLine="29" startPosition="0" endLine="33" endPosition="0" />
+    <scopeInfo nodeId="3435983127247055506" fileName="MqlVariableReference.java" startLine="21" startPosition="0" endLine="25" endPosition="0">
+      <varInfo nodeId="3435983127247055506" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="3435983127247055506" fileName="MqlVariableReference.java" startLine="25" startPosition="0" endLine="29" endPosition="0">
+      <varInfo nodeId="3435983127247055506" varName="init" />
+      <varInfo nodeId="3435983127247055506" varName="sm" />
+    </scopeInfo>
+    <scopeInfo nodeId="3435983127247055506" fileName="MqlVariableReference.java" startLine="29" startPosition="0" endLine="33" endPosition="0">
+      <varInfo nodeId="3435983127247055506" varName="sm" />
+    </scopeInfo>
     <unitInfo nodeId="3435983127247055506" fileName="MqlVariableReference.java" startLine="10" startPosition="0" endLine="34" endPosition="0" unitName="jetbrains.mps.core.query.structure.MqlVariableReference" />
   </root>
   <root nodeId="3435983127247055565">
@@ -183,11 +231,20 @@
     <scopeInfo nodeId="5109194352282839186" fileName="MqlImport.java" startLine="23" startPosition="48" endLine="24" endPosition="46" />
     <scopeInfo nodeId="5109194352282839186" fileName="MqlImport.java" startLine="27" startPosition="64" endLine="28" endPosition="166" />
     <scopeInfo nodeId="5109194352282839186" fileName="MqlImport.java" startLine="31" startPosition="50" endLine="32" endPosition="44" />
-    <scopeInfo nodeId="5109194352282839186" fileName="MqlImport.java" startLine="14" startPosition="0" endLine="17" endPosition="3" />
+    <scopeInfo nodeId="5109194352282839186" fileName="MqlImport.java" startLine="14" startPosition="0" endLine="17" endPosition="3">
+      <varInfo nodeId="5109194352282839186" varName="node" />
+    </scopeInfo>
     <scopeInfo nodeId="5109194352282839186" fileName="MqlImport.java" startLine="18" startPosition="0" endLine="22" endPosition="0" />
-    <scopeInfo nodeId="5109194352282839186" fileName="MqlImport.java" startLine="22" startPosition="0" endLine="26" endPosition="0" />
-    <scopeInfo nodeId="5109194352282839186" fileName="MqlImport.java" startLine="26" startPosition="0" endLine="30" endPosition="0" />
-    <scopeInfo nodeId="5109194352282839186" fileName="MqlImport.java" startLine="30" startPosition="0" endLine="34" endPosition="0" />
+    <scopeInfo nodeId="5109194352282839186" fileName="MqlImport.java" startLine="22" startPosition="0" endLine="26" endPosition="0">
+      <varInfo nodeId="5109194352282839186" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="5109194352282839186" fileName="MqlImport.java" startLine="26" startPosition="0" endLine="30" endPosition="0">
+      <varInfo nodeId="5109194352282839186" varName="init" />
+      <varInfo nodeId="5109194352282839186" varName="sm" />
+    </scopeInfo>
+    <scopeInfo nodeId="5109194352282839186" fileName="MqlImport.java" startLine="30" startPosition="0" endLine="34" endPosition="0">
+      <varInfo nodeId="5109194352282839186" varName="sm" />
+    </scopeInfo>
     <unitInfo nodeId="5109194352282839186" fileName="MqlImport.java" startLine="11" startPosition="0" endLine="35" endPosition="0" unitName="jetbrains.mps.core.query.structure.MqlImport" />
   </root>
   <root nodeId="5109194352282839187">
@@ -210,14 +267,14 @@
     <nodeInfo nodeId="5280308256730467462" fileName="MqlCollectionSelector.java" startLine="45" startPosition="76" endLine="46" endPosition="190" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="5280308256730467462" fileName="MqlCollectionSelector.java" startLine="49" startPosition="62" endLine="50" endPosition="56" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="5280308256730467462" fileName="MqlCollectionSelector.java" startLine="15" startPosition="0" endLine="18" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="MqlCollectionSelector#(Ljetbrains/mps/smodel/SNode;)V" />
-    <nodeInfo nodeId="5280308256730467462" fileName="MqlCollectionSelector.java" startLine="24" startPosition="0" endLine="28" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setKind#(Ljetbrains/mps/core/query/structure/MqlCollectionSelectorKind;)V" />
+    <nodeInfo nodeId="5280308256730467462" fileName="MqlCollectionSelector.java" startLine="24" startPosition="0" endLine="28" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setKind#(Ljava/lang/Object;)V" />
     <nodeInfo nodeId="5280308256730467462" fileName="MqlCollectionSelector.java" startLine="28" startPosition="0" endLine="32" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getVar#()Ljetbrains/mps/smodel/INodeAdapter;" />
     <nodeInfo nodeId="5280308256730467462" fileName="MqlCollectionSelector.java" startLine="32" startPosition="0" endLine="36" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setVar#(Ljetbrains/mps/smodel/INodeAdapter;)V" />
     <nodeInfo nodeId="5280308256730467462" fileName="MqlCollectionSelector.java" startLine="36" startPosition="0" endLine="40" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getExpr#()Ljetbrains/mps/smodel/INodeAdapter;" />
     <nodeInfo nodeId="5280308256730467462" fileName="MqlCollectionSelector.java" startLine="40" startPosition="0" endLine="44" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setExpr#(Ljetbrains/mps/smodel/INodeAdapter;)V" />
     <nodeInfo nodeId="5280308256730467462" fileName="MqlCollectionSelector.java" startLine="44" startPosition="0" endLine="48" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="newInstance#(Ljetbrains/mps/smodel/SModel;Z)Ljetbrains/mps/core/query/structure/MqlCollectionSelector;" />
     <nodeInfo nodeId="5280308256730467462" fileName="MqlCollectionSelector.java" startLine="48" startPosition="0" endLine="52" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="newInstance#(Ljetbrains/mps/smodel/SModel;)Ljetbrains/mps/core/query/structure/MqlCollectionSelector;" />
-    <nodeInfo nodeId="5280308256730467462" fileName="MqlCollectionSelector.java" startLine="19" startPosition="0" endLine="24" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getKind#()Ljetbrains/mps/core/query/structure/MqlCollectionSelectorKind;" />
+    <nodeInfo nodeId="5280308256730467462" fileName="MqlCollectionSelector.java" startLine="19" startPosition="0" endLine="24" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getKind#()Ljava/lang/Object;" />
     <scopeInfo nodeId="5280308256730467462" fileName="MqlCollectionSelector.java" startLine="16" startPosition="44" endLine="17" endPosition="16" />
     <scopeInfo nodeId="5280308256730467462" fileName="MqlCollectionSelector.java" startLine="25" startPosition="56" endLine="26" endPosition="76" />
     <scopeInfo nodeId="5280308256730467462" fileName="MqlCollectionSelector.java" startLine="29" startPosition="44" endLine="30" endPosition="111" />
@@ -226,15 +283,30 @@
     <scopeInfo nodeId="5280308256730467462" fileName="MqlCollectionSelector.java" startLine="41" startPosition="43" endLine="42" endPosition="53" />
     <scopeInfo nodeId="5280308256730467462" fileName="MqlCollectionSelector.java" startLine="45" startPosition="76" endLine="46" endPosition="190" />
     <scopeInfo nodeId="5280308256730467462" fileName="MqlCollectionSelector.java" startLine="49" startPosition="62" endLine="50" endPosition="56" />
-    <scopeInfo nodeId="5280308256730467462" fileName="MqlCollectionSelector.java" startLine="20" startPosition="46" endLine="22" endPosition="55" />
-    <scopeInfo nodeId="5280308256730467462" fileName="MqlCollectionSelector.java" startLine="15" startPosition="0" endLine="18" endPosition="3" />
-    <scopeInfo nodeId="5280308256730467462" fileName="MqlCollectionSelector.java" startLine="24" startPosition="0" endLine="28" endPosition="0" />
+    <scopeInfo nodeId="5280308256730467462" fileName="MqlCollectionSelector.java" startLine="20" startPosition="46" endLine="22" endPosition="55">
+      <varInfo nodeId="5280308256730467462" varName="value" />
+    </scopeInfo>
+    <scopeInfo nodeId="5280308256730467462" fileName="MqlCollectionSelector.java" startLine="15" startPosition="0" endLine="18" endPosition="3">
+      <varInfo nodeId="5280308256730467462" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="5280308256730467462" fileName="MqlCollectionSelector.java" startLine="24" startPosition="0" endLine="28" endPosition="0">
+      <varInfo nodeId="5280308256730467462" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="5280308256730467462" fileName="MqlCollectionSelector.java" startLine="28" startPosition="0" endLine="32" endPosition="0" />
-    <scopeInfo nodeId="5280308256730467462" fileName="MqlCollectionSelector.java" startLine="32" startPosition="0" endLine="36" endPosition="0" />
+    <scopeInfo nodeId="5280308256730467462" fileName="MqlCollectionSelector.java" startLine="32" startPosition="0" endLine="36" endPosition="0">
+      <varInfo nodeId="5280308256730467462" varName="node" />
+    </scopeInfo>
     <scopeInfo nodeId="5280308256730467462" fileName="MqlCollectionSelector.java" startLine="36" startPosition="0" endLine="40" endPosition="0" />
-    <scopeInfo nodeId="5280308256730467462" fileName="MqlCollectionSelector.java" startLine="40" startPosition="0" endLine="44" endPosition="0" />
-    <scopeInfo nodeId="5280308256730467462" fileName="MqlCollectionSelector.java" startLine="44" startPosition="0" endLine="48" endPosition="0" />
-    <scopeInfo nodeId="5280308256730467462" fileName="MqlCollectionSelector.java" startLine="48" startPosition="0" endLine="52" endPosition="0" />
+    <scopeInfo nodeId="5280308256730467462" fileName="MqlCollectionSelector.java" startLine="40" startPosition="0" endLine="44" endPosition="0">
+      <varInfo nodeId="5280308256730467462" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="5280308256730467462" fileName="MqlCollectionSelector.java" startLine="44" startPosition="0" endLine="48" endPosition="0">
+      <varInfo nodeId="5280308256730467462" varName="init" />
+      <varInfo nodeId="5280308256730467462" varName="sm" />
+    </scopeInfo>
+    <scopeInfo nodeId="5280308256730467462" fileName="MqlCollectionSelector.java" startLine="48" startPosition="0" endLine="52" endPosition="0">
+      <varInfo nodeId="5280308256730467462" varName="sm" />
+    </scopeInfo>
     <scopeInfo nodeId="5280308256730467462" fileName="MqlCollectionSelector.java" startLine="19" startPosition="0" endLine="24" endPosition="0" />
     <unitInfo nodeId="5280308256730467462" fileName="MqlCollectionSelector.java" startLine="10" startPosition="0" endLine="53" endPosition="0" unitName="jetbrains.mps.core.query.structure.MqlCollectionSelector" />
   </root>
@@ -325,25 +397,48 @@
     <scopeInfo nodeId="5280308256730467483" fileName="MqlCollectionSelectorKind.java" startLine="78" startPosition="74" endLine="79" endPosition="44" />
     <scopeInfo nodeId="5280308256730467483" fileName="MqlCollectionSelectorKind.java" startLine="81" startPosition="77" endLine="82" endPosition="47" />
     <scopeInfo nodeId="5280308256730467483" fileName="MqlCollectionSelectorKind.java" startLine="22" startPosition="53" endLine="24" endPosition="25" />
-    <scopeInfo nodeId="5280308256730467483" fileName="MqlCollectionSelectorKind_PropertySupport.java" startLine="15" startPosition="33" endLine="19" endPosition="7" />
-    <scopeInfo nodeId="5280308256730467483" fileName="MqlCollectionSelectorKind.java" startLine="21" startPosition="0" endLine="25" endPosition="3" />
+    <scopeInfo nodeId="5280308256730467483" fileName="MqlCollectionSelectorKind_PropertySupport.java" startLine="15" startPosition="33" endLine="19" endPosition="7">
+      <varInfo nodeId="5280308256730467483" varName="constant" />
+    </scopeInfo>
+    <scopeInfo nodeId="5280308256730467483" fileName="MqlCollectionSelectorKind.java" startLine="21" startPosition="0" endLine="25" endPosition="3">
+      <varInfo nodeId="5280308256730467483" varName="name" />
+      <varInfo nodeId="5280308256730467483" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="5280308256730467483" fileName="MqlCollectionSelectorKind.java" startLine="26" startPosition="0" endLine="30" endPosition="0" />
-    <scopeInfo nodeId="5280308256730467483" fileName="MqlCollectionSelectorKind_PropertySupport.java" startLine="29" startPosition="33" endLine="33" endPosition="7" />
+    <scopeInfo nodeId="5280308256730467483" fileName="MqlCollectionSelectorKind_PropertySupport.java" startLine="29" startPosition="33" endLine="33" endPosition="7">
+      <varInfo nodeId="5280308256730467483" varName="constant" />
+    </scopeInfo>
     <scopeInfo nodeId="5280308256730467483" fileName="MqlCollectionSelectorKind.java" startLine="30" startPosition="0" endLine="34" endPosition="0" />
     <scopeInfo nodeId="5280308256730467483" fileName="MqlCollectionSelectorKind.java" startLine="34" startPosition="0" endLine="38" endPosition="0" />
     <scopeInfo nodeId="5280308256730467483" fileName="MqlCollectionSelectorKind.java" startLine="51" startPosition="0" endLine="55" endPosition="0" />
-    <scopeInfo nodeId="5280308256730467483" fileName="MqlCollectionSelectorKind_PropertySupport.java" startLine="38" startPosition="49" endLine="43" endPosition="14" />
-    <scopeInfo nodeId="5280308256730467483" fileName="MqlCollectionSelectorKind_PropertySupport.java" startLine="37" startPosition="0" endLine="45" endPosition="0" />
-    <scopeInfo nodeId="5280308256730467483" fileName="MqlCollectionSelectorKind.java" startLine="39" startPosition="64" endLine="49" endPosition="16" />
-    <scopeInfo nodeId="5280308256730467483" fileName="MqlCollectionSelectorKind_PropertySupport.java" startLine="10" startPosition="44" endLine="21" endPosition="17" />
-    <scopeInfo nodeId="5280308256730467483" fileName="MqlCollectionSelectorKind_PropertySupport.java" startLine="24" startPosition="47" endLine="35" endPosition="16" />
+    <scopeInfo nodeId="5280308256730467483" fileName="MqlCollectionSelectorKind_PropertySupport.java" startLine="38" startPosition="49" endLine="43" endPosition="14">
+      <varInfo nodeId="5280308256730467483" varName="constant" />
+    </scopeInfo>
+    <scopeInfo nodeId="5280308256730467483" fileName="MqlCollectionSelectorKind_PropertySupport.java" startLine="37" startPosition="0" endLine="45" endPosition="0">
+      <varInfo nodeId="5280308256730467483" varName="value" />
+    </scopeInfo>
+    <scopeInfo nodeId="5280308256730467483" fileName="MqlCollectionSelectorKind.java" startLine="39" startPosition="64" endLine="49" endPosition="16">
+      <varInfo nodeId="5280308256730467483" varName="list" />
+    </scopeInfo>
+    <scopeInfo nodeId="5280308256730467483" fileName="MqlCollectionSelectorKind_PropertySupport.java" startLine="10" startPosition="44" endLine="21" endPosition="17">
+      <varInfo nodeId="5280308256730467483" varName="constants" />
+    </scopeInfo>
+    <scopeInfo nodeId="5280308256730467483" fileName="MqlCollectionSelectorKind_PropertySupport.java" startLine="24" startPosition="47" endLine="35" endPosition="16">
+      <varInfo nodeId="5280308256730467483" varName="constants" />
+    </scopeInfo>
     <scopeInfo nodeId="5280308256730467483" fileName="MqlCollectionSelectorKind.java" startLine="38" startPosition="0" endLine="51" endPosition="0" />
-    <scopeInfo nodeId="5280308256730467483" fileName="MqlCollectionSelectorKind_PropertySupport.java" startLine="9" startPosition="80" endLine="23" endPosition="0" />
-    <scopeInfo nodeId="5280308256730467483" fileName="MqlCollectionSelectorKind_PropertySupport.java" startLine="23" startPosition="0" endLine="37" endPosition="0" />
+    <scopeInfo nodeId="5280308256730467483" fileName="MqlCollectionSelectorKind_PropertySupport.java" startLine="9" startPosition="80" endLine="23" endPosition="0">
+      <varInfo nodeId="5280308256730467483" varName="value" />
+    </scopeInfo>
+    <scopeInfo nodeId="5280308256730467483" fileName="MqlCollectionSelectorKind_PropertySupport.java" startLine="23" startPosition="0" endLine="37" endPosition="0">
+      <varInfo nodeId="5280308256730467483" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="5280308256730467483" fileName="MqlCollectionSelectorKind.java" startLine="56" startPosition="68" endLine="84" endPosition="50" />
-    <scopeInfo nodeId="5280308256730467483" fileName="MqlCollectionSelectorKind.java" startLine="55" startPosition="0" endLine="86" endPosition="0" />
-    <unitInfo nodeId="5280308256730467483" fileName="MqlCollectionSelectorKind_PropertySupport.java" startLine="9" startPosition="0" endLine="46" endPosition="0" unitName="jetbrains.mps.core.query.structure.MqlCollectionSelectorKind_PropertySupport" />
+    <scopeInfo nodeId="5280308256730467483" fileName="MqlCollectionSelectorKind.java" startLine="55" startPosition="0" endLine="86" endPosition="0">
+      <varInfo nodeId="5280308256730467483" varName="value" />
+    </scopeInfo>
     <unitInfo nodeId="5280308256730467483" fileName="MqlCollectionSelectorKind.java" startLine="9" startPosition="0" endLine="87" endPosition="0" unitName="jetbrains.mps.core.query.structure.MqlCollectionSelectorKind" />
+    <unitInfo nodeId="5280308256730467483" fileName="MqlCollectionSelectorKind_PropertySupport.java" startLine="9" startPosition="0" endLine="46" endPosition="0" unitName="jetbrains.mps.core.query.structure.MqlCollectionSelectorKind_PropertySupport" />
   </root>
   <root nodeId="5280308256730478252">
     <nodeInfo nodeId="5280308256730478252" fileName="MqlCollectionProperty.java" startLine="10" startPosition="56" endLine="11" endPosition="98" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="concept" />
@@ -355,19 +450,30 @@
     <nodeInfo nodeId="5280308256730478252" fileName="MqlCollectionProperty.java" startLine="27" startPosition="76" endLine="28" endPosition="190" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="5280308256730478252" fileName="MqlCollectionProperty.java" startLine="31" startPosition="62" endLine="32" endPosition="56" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="5280308256730478252" fileName="MqlCollectionProperty.java" startLine="13" startPosition="0" endLine="16" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="MqlCollectionProperty#(Ljetbrains/mps/smodel/SNode;)V" />
-    <nodeInfo nodeId="5280308256730478252" fileName="MqlCollectionProperty.java" startLine="22" startPosition="0" endLine="26" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setKind#(Ljetbrains/mps/core/query/structure/MqlCollectionPropertyKind;)V" />
+    <nodeInfo nodeId="5280308256730478252" fileName="MqlCollectionProperty.java" startLine="22" startPosition="0" endLine="26" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setKind#(Ljava/lang/Object;)V" />
     <nodeInfo nodeId="5280308256730478252" fileName="MqlCollectionProperty.java" startLine="26" startPosition="0" endLine="30" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="newInstance#(Ljetbrains/mps/smodel/SModel;Z)Ljetbrains/mps/core/query/structure/MqlCollectionProperty;" />
     <nodeInfo nodeId="5280308256730478252" fileName="MqlCollectionProperty.java" startLine="30" startPosition="0" endLine="34" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="newInstance#(Ljetbrains/mps/smodel/SModel;)Ljetbrains/mps/core/query/structure/MqlCollectionProperty;" />
-    <nodeInfo nodeId="5280308256730478252" fileName="MqlCollectionProperty.java" startLine="17" startPosition="0" endLine="22" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getKind#()Ljetbrains/mps/core/query/structure/MqlCollectionPropertyKind;" />
+    <nodeInfo nodeId="5280308256730478252" fileName="MqlCollectionProperty.java" startLine="17" startPosition="0" endLine="22" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getKind#()Ljava/lang/Object;" />
     <scopeInfo nodeId="5280308256730478252" fileName="MqlCollectionProperty.java" startLine="14" startPosition="44" endLine="15" endPosition="16" />
     <scopeInfo nodeId="5280308256730478252" fileName="MqlCollectionProperty.java" startLine="23" startPosition="56" endLine="24" endPosition="76" />
     <scopeInfo nodeId="5280308256730478252" fileName="MqlCollectionProperty.java" startLine="27" startPosition="76" endLine="28" endPosition="190" />
     <scopeInfo nodeId="5280308256730478252" fileName="MqlCollectionProperty.java" startLine="31" startPosition="62" endLine="32" endPosition="56" />
-    <scopeInfo nodeId="5280308256730478252" fileName="MqlCollectionProperty.java" startLine="18" startPosition="46" endLine="20" endPosition="55" />
-    <scopeInfo nodeId="5280308256730478252" fileName="MqlCollectionProperty.java" startLine="13" startPosition="0" endLine="16" endPosition="3" />
-    <scopeInfo nodeId="5280308256730478252" fileName="MqlCollectionProperty.java" startLine="22" startPosition="0" endLine="26" endPosition="0" />
-    <scopeInfo nodeId="5280308256730478252" fileName="MqlCollectionProperty.java" startLine="26" startPosition="0" endLine="30" endPosition="0" />
-    <scopeInfo nodeId="5280308256730478252" fileName="MqlCollectionProperty.java" startLine="30" startPosition="0" endLine="34" endPosition="0" />
+    <scopeInfo nodeId="5280308256730478252" fileName="MqlCollectionProperty.java" startLine="18" startPosition="46" endLine="20" endPosition="55">
+      <varInfo nodeId="5280308256730478252" varName="value" />
+    </scopeInfo>
+    <scopeInfo nodeId="5280308256730478252" fileName="MqlCollectionProperty.java" startLine="13" startPosition="0" endLine="16" endPosition="3">
+      <varInfo nodeId="5280308256730478252" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="5280308256730478252" fileName="MqlCollectionProperty.java" startLine="22" startPosition="0" endLine="26" endPosition="0">
+      <varInfo nodeId="5280308256730478252" varName="value" />
+    </scopeInfo>
+    <scopeInfo nodeId="5280308256730478252" fileName="MqlCollectionProperty.java" startLine="26" startPosition="0" endLine="30" endPosition="0">
+      <varInfo nodeId="5280308256730478252" varName="init" />
+      <varInfo nodeId="5280308256730478252" varName="sm" />
+    </scopeInfo>
+    <scopeInfo nodeId="5280308256730478252" fileName="MqlCollectionProperty.java" startLine="30" startPosition="0" endLine="34" endPosition="0">
+      <varInfo nodeId="5280308256730478252" varName="sm" />
+    </scopeInfo>
     <scopeInfo nodeId="5280308256730478252" fileName="MqlCollectionProperty.java" startLine="17" startPosition="0" endLine="22" endPosition="0" />
     <unitInfo nodeId="5280308256730478252" fileName="MqlCollectionProperty.java" startLine="10" startPosition="0" endLine="35" endPosition="0" unitName="jetbrains.mps.core.query.structure.MqlCollectionProperty" />
   </root>
@@ -446,25 +552,48 @@
     <scopeInfo nodeId="5280308256730609807" fileName="MqlCollectionPropertyKind.java" startLine="63" startPosition="78" endLine="64" endPosition="48" />
     <scopeInfo nodeId="5280308256730609807" fileName="MqlCollectionPropertyKind.java" startLine="66" startPosition="82" endLine="67" endPosition="52" />
     <scopeInfo nodeId="5280308256730609807" fileName="MqlCollectionPropertyKind.java" startLine="19" startPosition="53" endLine="21" endPosition="25" />
-    <scopeInfo nodeId="5280308256730609807" fileName="MqlCollectionPropertyKind_PropertySupport.java" startLine="15" startPosition="33" endLine="19" endPosition="7" />
-    <scopeInfo nodeId="5280308256730609807" fileName="MqlCollectionPropertyKind.java" startLine="18" startPosition="0" endLine="22" endPosition="3" />
+    <scopeInfo nodeId="5280308256730609807" fileName="MqlCollectionPropertyKind_PropertySupport.java" startLine="15" startPosition="33" endLine="19" endPosition="7">
+      <varInfo nodeId="5280308256730609807" varName="constant" />
+    </scopeInfo>
+    <scopeInfo nodeId="5280308256730609807" fileName="MqlCollectionPropertyKind.java" startLine="18" startPosition="0" endLine="22" endPosition="3">
+      <varInfo nodeId="5280308256730609807" varName="name" />
+      <varInfo nodeId="5280308256730609807" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="5280308256730609807" fileName="MqlCollectionPropertyKind.java" startLine="23" startPosition="0" endLine="27" endPosition="0" />
     <scopeInfo nodeId="5280308256730609807" fileName="MqlCollectionPropertyKind.java" startLine="27" startPosition="0" endLine="31" endPosition="0" />
-    <scopeInfo nodeId="5280308256730609807" fileName="MqlCollectionPropertyKind_PropertySupport.java" startLine="29" startPosition="33" endLine="33" endPosition="7" />
+    <scopeInfo nodeId="5280308256730609807" fileName="MqlCollectionPropertyKind_PropertySupport.java" startLine="29" startPosition="33" endLine="33" endPosition="7">
+      <varInfo nodeId="5280308256730609807" varName="constant" />
+    </scopeInfo>
     <scopeInfo nodeId="5280308256730609807" fileName="MqlCollectionPropertyKind.java" startLine="31" startPosition="0" endLine="35" endPosition="0" />
     <scopeInfo nodeId="5280308256730609807" fileName="MqlCollectionPropertyKind.java" startLine="45" startPosition="0" endLine="49" endPosition="0" />
-    <scopeInfo nodeId="5280308256730609807" fileName="MqlCollectionPropertyKind_PropertySupport.java" startLine="38" startPosition="49" endLine="43" endPosition="14" />
-    <scopeInfo nodeId="5280308256730609807" fileName="MqlCollectionPropertyKind.java" startLine="36" startPosition="64" endLine="43" endPosition="16" />
-    <scopeInfo nodeId="5280308256730609807" fileName="MqlCollectionPropertyKind_PropertySupport.java" startLine="37" startPosition="0" endLine="45" endPosition="0" />
+    <scopeInfo nodeId="5280308256730609807" fileName="MqlCollectionPropertyKind_PropertySupport.java" startLine="38" startPosition="49" endLine="43" endPosition="14">
+      <varInfo nodeId="5280308256730609807" varName="constant" />
+    </scopeInfo>
+    <scopeInfo nodeId="5280308256730609807" fileName="MqlCollectionPropertyKind.java" startLine="36" startPosition="64" endLine="43" endPosition="16">
+      <varInfo nodeId="5280308256730609807" varName="list" />
+    </scopeInfo>
+    <scopeInfo nodeId="5280308256730609807" fileName="MqlCollectionPropertyKind_PropertySupport.java" startLine="37" startPosition="0" endLine="45" endPosition="0">
+      <varInfo nodeId="5280308256730609807" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="5280308256730609807" fileName="MqlCollectionPropertyKind.java" startLine="35" startPosition="0" endLine="45" endPosition="0" />
-    <scopeInfo nodeId="5280308256730609807" fileName="MqlCollectionPropertyKind_PropertySupport.java" startLine="10" startPosition="44" endLine="21" endPosition="17" />
-    <scopeInfo nodeId="5280308256730609807" fileName="MqlCollectionPropertyKind_PropertySupport.java" startLine="24" startPosition="47" endLine="35" endPosition="16" />
-    <scopeInfo nodeId="5280308256730609807" fileName="MqlCollectionPropertyKind_PropertySupport.java" startLine="9" startPosition="80" endLine="23" endPosition="0" />
-    <scopeInfo nodeId="5280308256730609807" fileName="MqlCollectionPropertyKind_PropertySupport.java" startLine="23" startPosition="0" endLine="37" endPosition="0" />
+    <scopeInfo nodeId="5280308256730609807" fileName="MqlCollectionPropertyKind_PropertySupport.java" startLine="10" startPosition="44" endLine="21" endPosition="17">
+      <varInfo nodeId="5280308256730609807" varName="constants" />
+    </scopeInfo>
+    <scopeInfo nodeId="5280308256730609807" fileName="MqlCollectionPropertyKind_PropertySupport.java" startLine="24" startPosition="47" endLine="35" endPosition="16">
+      <varInfo nodeId="5280308256730609807" varName="constants" />
+    </scopeInfo>
+    <scopeInfo nodeId="5280308256730609807" fileName="MqlCollectionPropertyKind_PropertySupport.java" startLine="9" startPosition="80" endLine="23" endPosition="0">
+      <varInfo nodeId="5280308256730609807" varName="value" />
+    </scopeInfo>
+    <scopeInfo nodeId="5280308256730609807" fileName="MqlCollectionPropertyKind_PropertySupport.java" startLine="23" startPosition="0" endLine="37" endPosition="0">
+      <varInfo nodeId="5280308256730609807" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="5280308256730609807" fileName="MqlCollectionPropertyKind.java" startLine="50" startPosition="68" endLine="69" endPosition="50" />
-    <scopeInfo nodeId="5280308256730609807" fileName="MqlCollectionPropertyKind.java" startLine="49" startPosition="0" endLine="71" endPosition="0" />
-    <unitInfo nodeId="5280308256730609807" fileName="MqlCollectionPropertyKind_PropertySupport.java" startLine="9" startPosition="0" endLine="46" endPosition="0" unitName="jetbrains.mps.core.query.structure.MqlCollectionPropertyKind_PropertySupport" />
+    <scopeInfo nodeId="5280308256730609807" fileName="MqlCollectionPropertyKind.java" startLine="49" startPosition="0" endLine="71" endPosition="0">
+      <varInfo nodeId="5280308256730609807" varName="value" />
+    </scopeInfo>
     <unitInfo nodeId="5280308256730609807" fileName="MqlCollectionPropertyKind.java" startLine="9" startPosition="0" endLine="72" endPosition="0" unitName="jetbrains.mps.core.query.structure.MqlCollectionPropertyKind" />
+    <unitInfo nodeId="5280308256730609807" fileName="MqlCollectionPropertyKind_PropertySupport.java" startLine="9" startPosition="0" endLine="46" endPosition="0" unitName="jetbrains.mps.core.query.structure.MqlCollectionPropertyKind_PropertySupport" />
   </root>
   <root nodeId="5280308256730662793">
     <nodeInfo nodeId="5280308256730662793" fileName="MqlCollectionSelectorVar.java" startLine="15" startPosition="84" endLine="16" endPosition="101" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="concept" />
@@ -521,22 +650,42 @@
     <scopeInfo nodeId="5280308256730662793" fileName="MqlCollectionSelectorVar.java" startLine="75" startPosition="69" endLine="76" endPosition="76" />
     <scopeInfo nodeId="5280308256730662793" fileName="MqlCollectionSelectorVar.java" startLine="79" startPosition="79" endLine="80" endPosition="196" />
     <scopeInfo nodeId="5280308256730662793" fileName="MqlCollectionSelectorVar.java" startLine="83" startPosition="65" endLine="84" endPosition="59" />
-    <scopeInfo nodeId="5280308256730662793" fileName="MqlCollectionSelectorVar.java" startLine="22" startPosition="0" endLine="25" endPosition="3" />
+    <scopeInfo nodeId="5280308256730662793" fileName="MqlCollectionSelectorVar.java" startLine="22" startPosition="0" endLine="25" endPosition="3">
+      <varInfo nodeId="5280308256730662793" varName="node" />
+    </scopeInfo>
     <scopeInfo nodeId="5280308256730662793" fileName="MqlCollectionSelectorVar.java" startLine="26" startPosition="0" endLine="30" endPosition="0" />
-    <scopeInfo nodeId="5280308256730662793" fileName="MqlCollectionSelectorVar.java" startLine="30" startPosition="0" endLine="34" endPosition="0" />
+    <scopeInfo nodeId="5280308256730662793" fileName="MqlCollectionSelectorVar.java" startLine="30" startPosition="0" endLine="34" endPosition="0">
+      <varInfo nodeId="5280308256730662793" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="5280308256730662793" fileName="MqlCollectionSelectorVar.java" startLine="34" startPosition="0" endLine="38" endPosition="0" />
-    <scopeInfo nodeId="5280308256730662793" fileName="MqlCollectionSelectorVar.java" startLine="38" startPosition="0" endLine="42" endPosition="0" />
+    <scopeInfo nodeId="5280308256730662793" fileName="MqlCollectionSelectorVar.java" startLine="38" startPosition="0" endLine="42" endPosition="0">
+      <varInfo nodeId="5280308256730662793" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="5280308256730662793" fileName="MqlCollectionSelectorVar.java" startLine="42" startPosition="0" endLine="46" endPosition="0" />
-    <scopeInfo nodeId="5280308256730662793" fileName="MqlCollectionSelectorVar.java" startLine="46" startPosition="0" endLine="50" endPosition="0" />
+    <scopeInfo nodeId="5280308256730662793" fileName="MqlCollectionSelectorVar.java" startLine="46" startPosition="0" endLine="50" endPosition="0">
+      <varInfo nodeId="5280308256730662793" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="5280308256730662793" fileName="MqlCollectionSelectorVar.java" startLine="50" startPosition="0" endLine="54" endPosition="0" />
-    <scopeInfo nodeId="5280308256730662793" fileName="MqlCollectionSelectorVar.java" startLine="54" startPosition="0" endLine="58" endPosition="0" />
+    <scopeInfo nodeId="5280308256730662793" fileName="MqlCollectionSelectorVar.java" startLine="54" startPosition="0" endLine="58" endPosition="0">
+      <varInfo nodeId="5280308256730662793" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="5280308256730662793" fileName="MqlCollectionSelectorVar.java" startLine="58" startPosition="0" endLine="62" endPosition="0" />
     <scopeInfo nodeId="5280308256730662793" fileName="MqlCollectionSelectorVar.java" startLine="62" startPosition="0" endLine="66" endPosition="0" />
     <scopeInfo nodeId="5280308256730662793" fileName="MqlCollectionSelectorVar.java" startLine="66" startPosition="0" endLine="70" endPosition="0" />
-    <scopeInfo nodeId="5280308256730662793" fileName="MqlCollectionSelectorVar.java" startLine="70" startPosition="0" endLine="74" endPosition="0" />
-    <scopeInfo nodeId="5280308256730662793" fileName="MqlCollectionSelectorVar.java" startLine="74" startPosition="0" endLine="78" endPosition="0" />
-    <scopeInfo nodeId="5280308256730662793" fileName="MqlCollectionSelectorVar.java" startLine="78" startPosition="0" endLine="82" endPosition="0" />
-    <scopeInfo nodeId="5280308256730662793" fileName="MqlCollectionSelectorVar.java" startLine="82" startPosition="0" endLine="86" endPosition="0" />
+    <scopeInfo nodeId="5280308256730662793" fileName="MqlCollectionSelectorVar.java" startLine="70" startPosition="0" endLine="74" endPosition="0">
+      <varInfo nodeId="5280308256730662793" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="5280308256730662793" fileName="MqlCollectionSelectorVar.java" startLine="74" startPosition="0" endLine="78" endPosition="0">
+      <varInfo nodeId="5280308256730662793" varName="node" />
+      <varInfo nodeId="5280308256730662793" varName="prev" />
+    </scopeInfo>
+    <scopeInfo nodeId="5280308256730662793" fileName="MqlCollectionSelectorVar.java" startLine="78" startPosition="0" endLine="82" endPosition="0">
+      <varInfo nodeId="5280308256730662793" varName="init" />
+      <varInfo nodeId="5280308256730662793" varName="sm" />
+    </scopeInfo>
+    <scopeInfo nodeId="5280308256730662793" fileName="MqlCollectionSelectorVar.java" startLine="82" startPosition="0" endLine="86" endPosition="0">
+      <varInfo nodeId="5280308256730662793" varName="sm" />
+    </scopeInfo>
     <unitInfo nodeId="5280308256730662793" fileName="MqlCollectionSelectorVar.java" startLine="15" startPosition="0" endLine="87" endPosition="0" unitName="jetbrains.mps.core.query.structure.MqlCollectionSelectorVar" />
   </root>
   <root nodeId="5280308256730768480">
@@ -557,11 +706,20 @@
     <scopeInfo nodeId="5280308256730768480" fileName="MqlCollectionSelectorVarRef.java" startLine="22" startPosition="53" endLine="23" endPosition="61" />
     <scopeInfo nodeId="5280308256730768480" fileName="MqlCollectionSelectorVarRef.java" startLine="26" startPosition="82" endLine="27" endPosition="202" />
     <scopeInfo nodeId="5280308256730768480" fileName="MqlCollectionSelectorVarRef.java" startLine="30" startPosition="68" endLine="31" endPosition="62" />
-    <scopeInfo nodeId="5280308256730768480" fileName="MqlCollectionSelectorVarRef.java" startLine="13" startPosition="0" endLine="16" endPosition="3" />
+    <scopeInfo nodeId="5280308256730768480" fileName="MqlCollectionSelectorVarRef.java" startLine="13" startPosition="0" endLine="16" endPosition="3">
+      <varInfo nodeId="5280308256730768480" varName="node" />
+    </scopeInfo>
     <scopeInfo nodeId="5280308256730768480" fileName="MqlCollectionSelectorVarRef.java" startLine="17" startPosition="0" endLine="21" endPosition="0" />
-    <scopeInfo nodeId="5280308256730768480" fileName="MqlCollectionSelectorVarRef.java" startLine="21" startPosition="0" endLine="25" endPosition="0" />
-    <scopeInfo nodeId="5280308256730768480" fileName="MqlCollectionSelectorVarRef.java" startLine="25" startPosition="0" endLine="29" endPosition="0" />
-    <scopeInfo nodeId="5280308256730768480" fileName="MqlCollectionSelectorVarRef.java" startLine="29" startPosition="0" endLine="33" endPosition="0" />
+    <scopeInfo nodeId="5280308256730768480" fileName="MqlCollectionSelectorVarRef.java" startLine="21" startPosition="0" endLine="25" endPosition="0">
+      <varInfo nodeId="5280308256730768480" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="5280308256730768480" fileName="MqlCollectionSelectorVarRef.java" startLine="25" startPosition="0" endLine="29" endPosition="0">
+      <varInfo nodeId="5280308256730768480" varName="init" />
+      <varInfo nodeId="5280308256730768480" varName="sm" />
+    </scopeInfo>
+    <scopeInfo nodeId="5280308256730768480" fileName="MqlCollectionSelectorVarRef.java" startLine="29" startPosition="0" endLine="33" endPosition="0">
+      <varInfo nodeId="5280308256730768480" varName="sm" />
+    </scopeInfo>
     <unitInfo nodeId="5280308256730768480" fileName="MqlCollectionSelectorVarRef.java" startLine="10" startPosition="0" endLine="34" endPosition="0" unitName="jetbrains.mps.core.query.structure.MqlCollectionSelectorVarRef" />
   </root>
   <root nodeId="5322644393894740272">
@@ -626,24 +784,46 @@
     <scopeInfo nodeId="5322644393894740272" fileName="MqlAssignment.java" startLine="82" startPosition="69" endLine="83" endPosition="65" />
     <scopeInfo nodeId="5322644393894740272" fileName="MqlAssignment.java" startLine="86" startPosition="68" endLine="87" endPosition="174" />
     <scopeInfo nodeId="5322644393894740272" fileName="MqlAssignment.java" startLine="90" startPosition="54" endLine="91" endPosition="48" />
-    <scopeInfo nodeId="5322644393894740272" fileName="MqlAssignment.java" startLine="21" startPosition="0" endLine="24" endPosition="3" />
+    <scopeInfo nodeId="5322644393894740272" fileName="MqlAssignment.java" startLine="21" startPosition="0" endLine="24" endPosition="3">
+      <varInfo nodeId="5322644393894740272" varName="node" />
+    </scopeInfo>
     <scopeInfo nodeId="5322644393894740272" fileName="MqlAssignment.java" startLine="25" startPosition="0" endLine="29" endPosition="0" />
-    <scopeInfo nodeId="5322644393894740272" fileName="MqlAssignment.java" startLine="29" startPosition="0" endLine="33" endPosition="0" />
+    <scopeInfo nodeId="5322644393894740272" fileName="MqlAssignment.java" startLine="29" startPosition="0" endLine="33" endPosition="0">
+      <varInfo nodeId="5322644393894740272" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="5322644393894740272" fileName="MqlAssignment.java" startLine="33" startPosition="0" endLine="37" endPosition="0" />
-    <scopeInfo nodeId="5322644393894740272" fileName="MqlAssignment.java" startLine="37" startPosition="0" endLine="41" endPosition="0" />
+    <scopeInfo nodeId="5322644393894740272" fileName="MqlAssignment.java" startLine="37" startPosition="0" endLine="41" endPosition="0">
+      <varInfo nodeId="5322644393894740272" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="5322644393894740272" fileName="MqlAssignment.java" startLine="41" startPosition="0" endLine="45" endPosition="0" />
-    <scopeInfo nodeId="5322644393894740272" fileName="MqlAssignment.java" startLine="45" startPosition="0" endLine="49" endPosition="0" />
+    <scopeInfo nodeId="5322644393894740272" fileName="MqlAssignment.java" startLine="45" startPosition="0" endLine="49" endPosition="0">
+      <varInfo nodeId="5322644393894740272" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="5322644393894740272" fileName="MqlAssignment.java" startLine="49" startPosition="0" endLine="53" endPosition="0" />
-    <scopeInfo nodeId="5322644393894740272" fileName="MqlAssignment.java" startLine="53" startPosition="0" endLine="57" endPosition="0" />
+    <scopeInfo nodeId="5322644393894740272" fileName="MqlAssignment.java" startLine="53" startPosition="0" endLine="57" endPosition="0">
+      <varInfo nodeId="5322644393894740272" varName="node" />
+    </scopeInfo>
     <scopeInfo nodeId="5322644393894740272" fileName="MqlAssignment.java" startLine="57" startPosition="0" endLine="61" endPosition="0" />
-    <scopeInfo nodeId="5322644393894740272" fileName="MqlAssignment.java" startLine="61" startPosition="0" endLine="65" endPosition="0" />
+    <scopeInfo nodeId="5322644393894740272" fileName="MqlAssignment.java" startLine="61" startPosition="0" endLine="65" endPosition="0">
+      <varInfo nodeId="5322644393894740272" varName="node" />
+    </scopeInfo>
     <scopeInfo nodeId="5322644393894740272" fileName="MqlAssignment.java" startLine="65" startPosition="0" endLine="69" endPosition="0" />
     <scopeInfo nodeId="5322644393894740272" fileName="MqlAssignment.java" startLine="69" startPosition="0" endLine="73" endPosition="0" />
     <scopeInfo nodeId="5322644393894740272" fileName="MqlAssignment.java" startLine="73" startPosition="0" endLine="77" endPosition="0" />
-    <scopeInfo nodeId="5322644393894740272" fileName="MqlAssignment.java" startLine="77" startPosition="0" endLine="81" endPosition="0" />
-    <scopeInfo nodeId="5322644393894740272" fileName="MqlAssignment.java" startLine="81" startPosition="0" endLine="85" endPosition="0" />
-    <scopeInfo nodeId="5322644393894740272" fileName="MqlAssignment.java" startLine="85" startPosition="0" endLine="89" endPosition="0" />
-    <scopeInfo nodeId="5322644393894740272" fileName="MqlAssignment.java" startLine="89" startPosition="0" endLine="93" endPosition="0" />
+    <scopeInfo nodeId="5322644393894740272" fileName="MqlAssignment.java" startLine="77" startPosition="0" endLine="81" endPosition="0">
+      <varInfo nodeId="5322644393894740272" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="5322644393894740272" fileName="MqlAssignment.java" startLine="81" startPosition="0" endLine="85" endPosition="0">
+      <varInfo nodeId="5322644393894740272" varName="node" />
+      <varInfo nodeId="5322644393894740272" varName="prev" />
+    </scopeInfo>
+    <scopeInfo nodeId="5322644393894740272" fileName="MqlAssignment.java" startLine="85" startPosition="0" endLine="89" endPosition="0">
+      <varInfo nodeId="5322644393894740272" varName="init" />
+      <varInfo nodeId="5322644393894740272" varName="sm" />
+    </scopeInfo>
+    <scopeInfo nodeId="5322644393894740272" fileName="MqlAssignment.java" startLine="89" startPosition="0" endLine="93" endPosition="0">
+      <varInfo nodeId="5322644393894740272" varName="sm" />
+    </scopeInfo>
     <unitInfo nodeId="5322644393894740272" fileName="MqlAssignment.java" startLine="13" startPosition="0" endLine="94" endPosition="0" unitName="jetbrains.mps.core.query.structure.MqlAssignment" />
   </root>
   <root nodeId="5433095484313879184">
@@ -742,33 +922,64 @@
     <scopeInfo nodeId="6762883159245048009" fileName="MqlQuery.java" startLine="123" startPosition="70" endLine="124" endPosition="54" />
     <scopeInfo nodeId="6762883159245048009" fileName="MqlQuery.java" startLine="127" startPosition="63" endLine="128" endPosition="164" />
     <scopeInfo nodeId="6762883159245048009" fileName="MqlQuery.java" startLine="131" startPosition="49" endLine="132" endPosition="43" />
-    <scopeInfo nodeId="6762883159245048009" fileName="MqlQuery.java" startLine="26" startPosition="0" endLine="29" endPosition="3" />
+    <scopeInfo nodeId="6762883159245048009" fileName="MqlQuery.java" startLine="26" startPosition="0" endLine="29" endPosition="3">
+      <varInfo nodeId="6762883159245048009" varName="node" />
+    </scopeInfo>
     <scopeInfo nodeId="6762883159245048009" fileName="MqlQuery.java" startLine="30" startPosition="0" endLine="34" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048009" fileName="MqlQuery.java" startLine="34" startPosition="0" endLine="38" endPosition="0" />
+    <scopeInfo nodeId="6762883159245048009" fileName="MqlQuery.java" startLine="34" startPosition="0" endLine="38" endPosition="0">
+      <varInfo nodeId="6762883159245048009" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="6762883159245048009" fileName="MqlQuery.java" startLine="38" startPosition="0" endLine="42" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048009" fileName="MqlQuery.java" startLine="42" startPosition="0" endLine="46" endPosition="0" />
+    <scopeInfo nodeId="6762883159245048009" fileName="MqlQuery.java" startLine="42" startPosition="0" endLine="46" endPosition="0">
+      <varInfo nodeId="6762883159245048009" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="6762883159245048009" fileName="MqlQuery.java" startLine="46" startPosition="0" endLine="50" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048009" fileName="MqlQuery.java" startLine="50" startPosition="0" endLine="54" endPosition="0" />
+    <scopeInfo nodeId="6762883159245048009" fileName="MqlQuery.java" startLine="50" startPosition="0" endLine="54" endPosition="0">
+      <varInfo nodeId="6762883159245048009" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="6762883159245048009" fileName="MqlQuery.java" startLine="54" startPosition="0" endLine="58" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048009" fileName="MqlQuery.java" startLine="58" startPosition="0" endLine="62" endPosition="0" />
+    <scopeInfo nodeId="6762883159245048009" fileName="MqlQuery.java" startLine="58" startPosition="0" endLine="62" endPosition="0">
+      <varInfo nodeId="6762883159245048009" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="6762883159245048009" fileName="MqlQuery.java" startLine="62" startPosition="0" endLine="66" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048009" fileName="MqlQuery.java" startLine="66" startPosition="0" endLine="70" endPosition="0" />
+    <scopeInfo nodeId="6762883159245048009" fileName="MqlQuery.java" startLine="66" startPosition="0" endLine="70" endPosition="0">
+      <varInfo nodeId="6762883159245048009" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="6762883159245048009" fileName="MqlQuery.java" startLine="70" startPosition="0" endLine="74" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048009" fileName="MqlQuery.java" startLine="74" startPosition="0" endLine="78" endPosition="0" />
+    <scopeInfo nodeId="6762883159245048009" fileName="MqlQuery.java" startLine="74" startPosition="0" endLine="78" endPosition="0">
+      <varInfo nodeId="6762883159245048009" varName="node" />
+    </scopeInfo>
     <scopeInfo nodeId="6762883159245048009" fileName="MqlQuery.java" startLine="78" startPosition="0" endLine="82" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048009" fileName="MqlQuery.java" startLine="82" startPosition="0" endLine="86" endPosition="0" />
+    <scopeInfo nodeId="6762883159245048009" fileName="MqlQuery.java" startLine="82" startPosition="0" endLine="86" endPosition="0">
+      <varInfo nodeId="6762883159245048009" varName="node" />
+    </scopeInfo>
     <scopeInfo nodeId="6762883159245048009" fileName="MqlQuery.java" startLine="86" startPosition="0" endLine="90" endPosition="0" />
     <scopeInfo nodeId="6762883159245048009" fileName="MqlQuery.java" startLine="90" startPosition="0" endLine="94" endPosition="0" />
     <scopeInfo nodeId="6762883159245048009" fileName="MqlQuery.java" startLine="94" startPosition="0" endLine="98" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048009" fileName="MqlQuery.java" startLine="98" startPosition="0" endLine="102" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048009" fileName="MqlQuery.java" startLine="102" startPosition="0" endLine="106" endPosition="0" />
+    <scopeInfo nodeId="6762883159245048009" fileName="MqlQuery.java" startLine="98" startPosition="0" endLine="102" endPosition="0">
+      <varInfo nodeId="6762883159245048009" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="6762883159245048009" fileName="MqlQuery.java" startLine="102" startPosition="0" endLine="106" endPosition="0">
+      <varInfo nodeId="6762883159245048009" varName="node" />
+      <varInfo nodeId="6762883159245048009" varName="prev" />
+    </scopeInfo>
     <scopeInfo nodeId="6762883159245048009" fileName="MqlQuery.java" startLine="106" startPosition="0" endLine="110" endPosition="0" />
     <scopeInfo nodeId="6762883159245048009" fileName="MqlQuery.java" startLine="110" startPosition="0" endLine="114" endPosition="0" />
     <scopeInfo nodeId="6762883159245048009" fileName="MqlQuery.java" startLine="114" startPosition="0" endLine="118" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048009" fileName="MqlQuery.java" startLine="118" startPosition="0" endLine="122" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048009" fileName="MqlQuery.java" startLine="122" startPosition="0" endLine="126" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048009" fileName="MqlQuery.java" startLine="126" startPosition="0" endLine="130" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048009" fileName="MqlQuery.java" startLine="130" startPosition="0" endLine="134" endPosition="0" />
+    <scopeInfo nodeId="6762883159245048009" fileName="MqlQuery.java" startLine="118" startPosition="0" endLine="122" endPosition="0">
+      <varInfo nodeId="6762883159245048009" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="6762883159245048009" fileName="MqlQuery.java" startLine="122" startPosition="0" endLine="126" endPosition="0">
+      <varInfo nodeId="6762883159245048009" varName="node" />
+      <varInfo nodeId="6762883159245048009" varName="prev" />
+    </scopeInfo>
+    <scopeInfo nodeId="6762883159245048009" fileName="MqlQuery.java" startLine="126" startPosition="0" endLine="130" endPosition="0">
+      <varInfo nodeId="6762883159245048009" varName="init" />
+      <varInfo nodeId="6762883159245048009" varName="sm" />
+    </scopeInfo>
+    <scopeInfo nodeId="6762883159245048009" fileName="MqlQuery.java" startLine="130" startPosition="0" endLine="134" endPosition="0">
+      <varInfo nodeId="6762883159245048009" varName="sm" />
+    </scopeInfo>
     <unitInfo nodeId="6762883159245048009" fileName="MqlQuery.java" startLine="15" startPosition="0" endLine="135" endPosition="0" unitName="jetbrains.mps.core.query.structure.MqlQuery" />
   </root>
   <root nodeId="6762883159245048011">
@@ -819,20 +1030,38 @@
     <scopeInfo nodeId="6762883159245048011" fileName="MqlComma.java" startLine="64" startPosition="69" endLine="65" endPosition="60" />
     <scopeInfo nodeId="6762883159245048011" fileName="MqlComma.java" startLine="68" startPosition="63" endLine="69" endPosition="164" />
     <scopeInfo nodeId="6762883159245048011" fileName="MqlComma.java" startLine="72" startPosition="49" endLine="73" endPosition="43" />
-    <scopeInfo nodeId="6762883159245048011" fileName="MqlComma.java" startLine="19" startPosition="0" endLine="22" endPosition="3" />
+    <scopeInfo nodeId="6762883159245048011" fileName="MqlComma.java" startLine="19" startPosition="0" endLine="22" endPosition="3">
+      <varInfo nodeId="6762883159245048011" varName="node" />
+    </scopeInfo>
     <scopeInfo nodeId="6762883159245048011" fileName="MqlComma.java" startLine="23" startPosition="0" endLine="27" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048011" fileName="MqlComma.java" startLine="27" startPosition="0" endLine="31" endPosition="0" />
+    <scopeInfo nodeId="6762883159245048011" fileName="MqlComma.java" startLine="27" startPosition="0" endLine="31" endPosition="0">
+      <varInfo nodeId="6762883159245048011" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="6762883159245048011" fileName="MqlComma.java" startLine="31" startPosition="0" endLine="35" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048011" fileName="MqlComma.java" startLine="35" startPosition="0" endLine="39" endPosition="0" />
+    <scopeInfo nodeId="6762883159245048011" fileName="MqlComma.java" startLine="35" startPosition="0" endLine="39" endPosition="0">
+      <varInfo nodeId="6762883159245048011" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="6762883159245048011" fileName="MqlComma.java" startLine="39" startPosition="0" endLine="43" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048011" fileName="MqlComma.java" startLine="43" startPosition="0" endLine="47" endPosition="0" />
+    <scopeInfo nodeId="6762883159245048011" fileName="MqlComma.java" startLine="43" startPosition="0" endLine="47" endPosition="0">
+      <varInfo nodeId="6762883159245048011" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="6762883159245048011" fileName="MqlComma.java" startLine="47" startPosition="0" endLine="51" endPosition="0" />
     <scopeInfo nodeId="6762883159245048011" fileName="MqlComma.java" startLine="51" startPosition="0" endLine="55" endPosition="0" />
     <scopeInfo nodeId="6762883159245048011" fileName="MqlComma.java" startLine="55" startPosition="0" endLine="59" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048011" fileName="MqlComma.java" startLine="59" startPosition="0" endLine="63" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048011" fileName="MqlComma.java" startLine="63" startPosition="0" endLine="67" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048011" fileName="MqlComma.java" startLine="67" startPosition="0" endLine="71" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048011" fileName="MqlComma.java" startLine="71" startPosition="0" endLine="75" endPosition="0" />
+    <scopeInfo nodeId="6762883159245048011" fileName="MqlComma.java" startLine="59" startPosition="0" endLine="63" endPosition="0">
+      <varInfo nodeId="6762883159245048011" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="6762883159245048011" fileName="MqlComma.java" startLine="63" startPosition="0" endLine="67" endPosition="0">
+      <varInfo nodeId="6762883159245048011" varName="node" />
+      <varInfo nodeId="6762883159245048011" varName="prev" />
+    </scopeInfo>
+    <scopeInfo nodeId="6762883159245048011" fileName="MqlComma.java" startLine="67" startPosition="0" endLine="71" endPosition="0">
+      <varInfo nodeId="6762883159245048011" varName="init" />
+      <varInfo nodeId="6762883159245048011" varName="sm" />
+    </scopeInfo>
+    <scopeInfo nodeId="6762883159245048011" fileName="MqlComma.java" startLine="71" startPosition="0" endLine="75" endPosition="0">
+      <varInfo nodeId="6762883159245048011" varName="sm" />
+    </scopeInfo>
     <unitInfo nodeId="6762883159245048011" fileName="MqlComma.java" startLine="13" startPosition="0" endLine="76" endPosition="0" unitName="jetbrains.mps.core.query.structure.MqlComma" />
   </root>
   <root nodeId="6762883159245048012">
@@ -846,9 +1075,16 @@
     <scopeInfo nodeId="6762883159245048012" fileName="MqlExpression.java" startLine="14" startPosition="36" endLine="15" endPosition="16" />
     <scopeInfo nodeId="6762883159245048012" fileName="MqlExpression.java" startLine="18" startPosition="68" endLine="19" endPosition="174" />
     <scopeInfo nodeId="6762883159245048012" fileName="MqlExpression.java" startLine="22" startPosition="54" endLine="23" endPosition="48" />
-    <scopeInfo nodeId="6762883159245048012" fileName="MqlExpression.java" startLine="13" startPosition="0" endLine="16" endPosition="3" />
-    <scopeInfo nodeId="6762883159245048012" fileName="MqlExpression.java" startLine="17" startPosition="0" endLine="21" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048012" fileName="MqlExpression.java" startLine="21" startPosition="0" endLine="25" endPosition="0" />
+    <scopeInfo nodeId="6762883159245048012" fileName="MqlExpression.java" startLine="13" startPosition="0" endLine="16" endPosition="3">
+      <varInfo nodeId="6762883159245048012" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="6762883159245048012" fileName="MqlExpression.java" startLine="17" startPosition="0" endLine="21" endPosition="0">
+      <varInfo nodeId="6762883159245048012" varName="init" />
+      <varInfo nodeId="6762883159245048012" varName="sm" />
+    </scopeInfo>
+    <scopeInfo nodeId="6762883159245048012" fileName="MqlExpression.java" startLine="21" startPosition="0" endLine="25" endPosition="0">
+      <varInfo nodeId="6762883159245048012" varName="sm" />
+    </scopeInfo>
     <unitInfo nodeId="6762883159245048012" fileName="MqlExpression.java" startLine="11" startPosition="0" endLine="26" endPosition="0" unitName="jetbrains.mps.core.query.structure.MqlExpression" />
   </root>
   <root nodeId="6762883159245048013">
@@ -861,19 +1097,30 @@
     <nodeInfo nodeId="6762883159245048013" fileName="MqlCondition.java" startLine="27" startPosition="67" endLine="28" endPosition="172" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="6762883159245048013" fileName="MqlCondition.java" startLine="31" startPosition="53" endLine="32" endPosition="47" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="6762883159245048013" fileName="MqlCondition.java" startLine="13" startPosition="0" endLine="16" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="MqlCondition#(Ljetbrains/mps/smodel/SNode;)V" />
-    <nodeInfo nodeId="6762883159245048013" fileName="MqlCondition.java" startLine="22" startPosition="0" endLine="26" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setKind#(Ljetbrains/mps/core/query/structure/MqlConditionKind;)V" />
+    <nodeInfo nodeId="6762883159245048013" fileName="MqlCondition.java" startLine="22" startPosition="0" endLine="26" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setKind#(Ljava/lang/Object;)V" />
     <nodeInfo nodeId="6762883159245048013" fileName="MqlCondition.java" startLine="26" startPosition="0" endLine="30" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="newInstance#(Ljetbrains/mps/smodel/SModel;Z)Ljetbrains/mps/core/query/structure/MqlCondition;" />
     <nodeInfo nodeId="6762883159245048013" fileName="MqlCondition.java" startLine="30" startPosition="0" endLine="34" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="newInstance#(Ljetbrains/mps/smodel/SModel;)Ljetbrains/mps/core/query/structure/MqlCondition;" />
-    <nodeInfo nodeId="6762883159245048013" fileName="MqlCondition.java" startLine="17" startPosition="0" endLine="22" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getKind#()Ljetbrains/mps/core/query/structure/MqlConditionKind;" />
+    <nodeInfo nodeId="6762883159245048013" fileName="MqlCondition.java" startLine="17" startPosition="0" endLine="22" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getKind#()Ljava/lang/Object;" />
     <scopeInfo nodeId="6762883159245048013" fileName="MqlCondition.java" startLine="14" startPosition="35" endLine="15" endPosition="16" />
     <scopeInfo nodeId="6762883159245048013" fileName="MqlCondition.java" startLine="23" startPosition="47" endLine="24" endPosition="67" />
     <scopeInfo nodeId="6762883159245048013" fileName="MqlCondition.java" startLine="27" startPosition="67" endLine="28" endPosition="172" />
     <scopeInfo nodeId="6762883159245048013" fileName="MqlCondition.java" startLine="31" startPosition="53" endLine="32" endPosition="47" />
-    <scopeInfo nodeId="6762883159245048013" fileName="MqlCondition.java" startLine="18" startPosition="37" endLine="20" endPosition="46" />
-    <scopeInfo nodeId="6762883159245048013" fileName="MqlCondition.java" startLine="13" startPosition="0" endLine="16" endPosition="3" />
-    <scopeInfo nodeId="6762883159245048013" fileName="MqlCondition.java" startLine="22" startPosition="0" endLine="26" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048013" fileName="MqlCondition.java" startLine="26" startPosition="0" endLine="30" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048013" fileName="MqlCondition.java" startLine="30" startPosition="0" endLine="34" endPosition="0" />
+    <scopeInfo nodeId="6762883159245048013" fileName="MqlCondition.java" startLine="18" startPosition="37" endLine="20" endPosition="46">
+      <varInfo nodeId="6762883159245048013" varName="value" />
+    </scopeInfo>
+    <scopeInfo nodeId="6762883159245048013" fileName="MqlCondition.java" startLine="13" startPosition="0" endLine="16" endPosition="3">
+      <varInfo nodeId="6762883159245048013" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="6762883159245048013" fileName="MqlCondition.java" startLine="22" startPosition="0" endLine="26" endPosition="0">
+      <varInfo nodeId="6762883159245048013" varName="value" />
+    </scopeInfo>
+    <scopeInfo nodeId="6762883159245048013" fileName="MqlCondition.java" startLine="26" startPosition="0" endLine="30" endPosition="0">
+      <varInfo nodeId="6762883159245048013" varName="init" />
+      <varInfo nodeId="6762883159245048013" varName="sm" />
+    </scopeInfo>
+    <scopeInfo nodeId="6762883159245048013" fileName="MqlCondition.java" startLine="30" startPosition="0" endLine="34" endPosition="0">
+      <varInfo nodeId="6762883159245048013" varName="sm" />
+    </scopeInfo>
     <scopeInfo nodeId="6762883159245048013" fileName="MqlCondition.java" startLine="17" startPosition="0" endLine="22" endPosition="0" />
     <unitInfo nodeId="6762883159245048013" fileName="MqlCondition.java" startLine="10" startPosition="0" endLine="35" endPosition="0" unitName="jetbrains.mps.core.query.structure.MqlCondition" />
   </root>
@@ -902,13 +1149,24 @@
     <scopeInfo nodeId="6762883159245048014" fileName="MqlBinaryExpr.java" startLine="31" startPosition="44" endLine="32" endPosition="46" />
     <scopeInfo nodeId="6762883159245048014" fileName="MqlBinaryExpr.java" startLine="35" startPosition="68" endLine="36" endPosition="174" />
     <scopeInfo nodeId="6762883159245048014" fileName="MqlBinaryExpr.java" startLine="39" startPosition="54" endLine="40" endPosition="48" />
-    <scopeInfo nodeId="6762883159245048014" fileName="MqlBinaryExpr.java" startLine="14" startPosition="0" endLine="17" endPosition="3" />
+    <scopeInfo nodeId="6762883159245048014" fileName="MqlBinaryExpr.java" startLine="14" startPosition="0" endLine="17" endPosition="3">
+      <varInfo nodeId="6762883159245048014" varName="node" />
+    </scopeInfo>
     <scopeInfo nodeId="6762883159245048014" fileName="MqlBinaryExpr.java" startLine="18" startPosition="0" endLine="22" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048014" fileName="MqlBinaryExpr.java" startLine="22" startPosition="0" endLine="26" endPosition="0" />
+    <scopeInfo nodeId="6762883159245048014" fileName="MqlBinaryExpr.java" startLine="22" startPosition="0" endLine="26" endPosition="0">
+      <varInfo nodeId="6762883159245048014" varName="node" />
+    </scopeInfo>
     <scopeInfo nodeId="6762883159245048014" fileName="MqlBinaryExpr.java" startLine="26" startPosition="0" endLine="30" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048014" fileName="MqlBinaryExpr.java" startLine="30" startPosition="0" endLine="34" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048014" fileName="MqlBinaryExpr.java" startLine="34" startPosition="0" endLine="38" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048014" fileName="MqlBinaryExpr.java" startLine="38" startPosition="0" endLine="42" endPosition="0" />
+    <scopeInfo nodeId="6762883159245048014" fileName="MqlBinaryExpr.java" startLine="30" startPosition="0" endLine="34" endPosition="0">
+      <varInfo nodeId="6762883159245048014" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="6762883159245048014" fileName="MqlBinaryExpr.java" startLine="34" startPosition="0" endLine="38" endPosition="0">
+      <varInfo nodeId="6762883159245048014" varName="init" />
+      <varInfo nodeId="6762883159245048014" varName="sm" />
+    </scopeInfo>
+    <scopeInfo nodeId="6762883159245048014" fileName="MqlBinaryExpr.java" startLine="38" startPosition="0" endLine="42" endPosition="0">
+      <varInfo nodeId="6762883159245048014" varName="sm" />
+    </scopeInfo>
     <unitInfo nodeId="6762883159245048014" fileName="MqlBinaryExpr.java" startLine="10" startPosition="0" endLine="43" endPosition="0" unitName="jetbrains.mps.core.query.structure.MqlBinaryExpr" />
   </root>
   <root nodeId="6762883159245048022">
@@ -929,11 +1187,20 @@
     <scopeInfo nodeId="6762883159245048022" fileName="MqlParentheses.java" startLine="22" startPosition="43" endLine="23" endPosition="46" />
     <scopeInfo nodeId="6762883159245048022" fileName="MqlParentheses.java" startLine="26" startPosition="69" endLine="27" endPosition="176" />
     <scopeInfo nodeId="6762883159245048022" fileName="MqlParentheses.java" startLine="30" startPosition="55" endLine="31" endPosition="49" />
-    <scopeInfo nodeId="6762883159245048022" fileName="MqlParentheses.java" startLine="13" startPosition="0" endLine="16" endPosition="3" />
+    <scopeInfo nodeId="6762883159245048022" fileName="MqlParentheses.java" startLine="13" startPosition="0" endLine="16" endPosition="3">
+      <varInfo nodeId="6762883159245048022" varName="node" />
+    </scopeInfo>
     <scopeInfo nodeId="6762883159245048022" fileName="MqlParentheses.java" startLine="17" startPosition="0" endLine="21" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048022" fileName="MqlParentheses.java" startLine="21" startPosition="0" endLine="25" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048022" fileName="MqlParentheses.java" startLine="25" startPosition="0" endLine="29" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048022" fileName="MqlParentheses.java" startLine="29" startPosition="0" endLine="33" endPosition="0" />
+    <scopeInfo nodeId="6762883159245048022" fileName="MqlParentheses.java" startLine="21" startPosition="0" endLine="25" endPosition="0">
+      <varInfo nodeId="6762883159245048022" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="6762883159245048022" fileName="MqlParentheses.java" startLine="25" startPosition="0" endLine="29" endPosition="0">
+      <varInfo nodeId="6762883159245048022" varName="init" />
+      <varInfo nodeId="6762883159245048022" varName="sm" />
+    </scopeInfo>
+    <scopeInfo nodeId="6762883159245048022" fileName="MqlParentheses.java" startLine="29" startPosition="0" endLine="33" endPosition="0">
+      <varInfo nodeId="6762883159245048022" varName="sm" />
+    </scopeInfo>
     <unitInfo nodeId="6762883159245048022" fileName="MqlParentheses.java" startLine="10" startPosition="0" endLine="34" endPosition="0" unitName="jetbrains.mps.core.query.structure.MqlParentheses" />
   </root>
   <root nodeId="6762883159245048026">
@@ -1023,25 +1290,48 @@
     <scopeInfo nodeId="6762883159245048026" fileName="MqlConditionKind.java" startLine="78" startPosition="64" endLine="79" endPosition="34" />
     <scopeInfo nodeId="6762883159245048026" fileName="MqlConditionKind.java" startLine="81" startPosition="63" endLine="82" endPosition="33" />
     <scopeInfo nodeId="6762883159245048026" fileName="MqlConditionKind.java" startLine="22" startPosition="44" endLine="24" endPosition="25" />
-    <scopeInfo nodeId="6762883159245048026" fileName="MqlConditionKind_PropertySupport.java" startLine="15" startPosition="33" endLine="19" endPosition="7" />
-    <scopeInfo nodeId="6762883159245048026" fileName="MqlConditionKind.java" startLine="21" startPosition="0" endLine="25" endPosition="3" />
+    <scopeInfo nodeId="6762883159245048026" fileName="MqlConditionKind_PropertySupport.java" startLine="15" startPosition="33" endLine="19" endPosition="7">
+      <varInfo nodeId="6762883159245048026" varName="constant" />
+    </scopeInfo>
+    <scopeInfo nodeId="6762883159245048026" fileName="MqlConditionKind.java" startLine="21" startPosition="0" endLine="25" endPosition="3">
+      <varInfo nodeId="6762883159245048026" varName="name" />
+      <varInfo nodeId="6762883159245048026" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="6762883159245048026" fileName="MqlConditionKind.java" startLine="26" startPosition="0" endLine="30" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048026" fileName="MqlConditionKind_PropertySupport.java" startLine="29" startPosition="33" endLine="33" endPosition="7" />
+    <scopeInfo nodeId="6762883159245048026" fileName="MqlConditionKind_PropertySupport.java" startLine="29" startPosition="33" endLine="33" endPosition="7">
+      <varInfo nodeId="6762883159245048026" varName="constant" />
+    </scopeInfo>
     <scopeInfo nodeId="6762883159245048026" fileName="MqlConditionKind.java" startLine="30" startPosition="0" endLine="34" endPosition="0" />
     <scopeInfo nodeId="6762883159245048026" fileName="MqlConditionKind.java" startLine="34" startPosition="0" endLine="38" endPosition="0" />
     <scopeInfo nodeId="6762883159245048026" fileName="MqlConditionKind.java" startLine="51" startPosition="0" endLine="55" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048026" fileName="MqlConditionKind_PropertySupport.java" startLine="38" startPosition="49" endLine="43" endPosition="14" />
-    <scopeInfo nodeId="6762883159245048026" fileName="MqlConditionKind_PropertySupport.java" startLine="37" startPosition="0" endLine="45" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048026" fileName="MqlConditionKind.java" startLine="39" startPosition="55" endLine="49" endPosition="16" />
-    <scopeInfo nodeId="6762883159245048026" fileName="MqlConditionKind_PropertySupport.java" startLine="10" startPosition="44" endLine="21" endPosition="17" />
-    <scopeInfo nodeId="6762883159245048026" fileName="MqlConditionKind_PropertySupport.java" startLine="24" startPosition="47" endLine="35" endPosition="16" />
+    <scopeInfo nodeId="6762883159245048026" fileName="MqlConditionKind_PropertySupport.java" startLine="38" startPosition="49" endLine="43" endPosition="14">
+      <varInfo nodeId="6762883159245048026" varName="constant" />
+    </scopeInfo>
+    <scopeInfo nodeId="6762883159245048026" fileName="MqlConditionKind_PropertySupport.java" startLine="37" startPosition="0" endLine="45" endPosition="0">
+      <varInfo nodeId="6762883159245048026" varName="value" />
+    </scopeInfo>
+    <scopeInfo nodeId="6762883159245048026" fileName="MqlConditionKind.java" startLine="39" startPosition="55" endLine="49" endPosition="16">
+      <varInfo nodeId="6762883159245048026" varName="list" />
+    </scopeInfo>
+    <scopeInfo nodeId="6762883159245048026" fileName="MqlConditionKind_PropertySupport.java" startLine="10" startPosition="44" endLine="21" endPosition="17">
+      <varInfo nodeId="6762883159245048026" varName="constants" />
+    </scopeInfo>
+    <scopeInfo nodeId="6762883159245048026" fileName="MqlConditionKind_PropertySupport.java" startLine="24" startPosition="47" endLine="35" endPosition="16">
+      <varInfo nodeId="6762883159245048026" varName="constants" />
+    </scopeInfo>
     <scopeInfo nodeId="6762883159245048026" fileName="MqlConditionKind.java" startLine="38" startPosition="0" endLine="51" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048026" fileName="MqlConditionKind_PropertySupport.java" startLine="9" startPosition="71" endLine="23" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048026" fileName="MqlConditionKind_PropertySupport.java" startLine="23" startPosition="0" endLine="37" endPosition="0" />
+    <scopeInfo nodeId="6762883159245048026" fileName="MqlConditionKind_PropertySupport.java" startLine="9" startPosition="71" endLine="23" endPosition="0">
+      <varInfo nodeId="6762883159245048026" varName="value" />
+    </scopeInfo>
+    <scopeInfo nodeId="6762883159245048026" fileName="MqlConditionKind_PropertySupport.java" startLine="23" startPosition="0" endLine="37" endPosition="0">
+      <varInfo nodeId="6762883159245048026" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="6762883159245048026" fileName="MqlConditionKind.java" startLine="56" startPosition="59" endLine="84" endPosition="41" />
-    <scopeInfo nodeId="6762883159245048026" fileName="MqlConditionKind.java" startLine="55" startPosition="0" endLine="86" endPosition="0" />
-    <unitInfo nodeId="6762883159245048026" fileName="MqlConditionKind_PropertySupport.java" startLine="9" startPosition="0" endLine="46" endPosition="0" unitName="jetbrains.mps.core.query.structure.MqlConditionKind_PropertySupport" />
+    <scopeInfo nodeId="6762883159245048026" fileName="MqlConditionKind.java" startLine="55" startPosition="0" endLine="86" endPosition="0">
+      <varInfo nodeId="6762883159245048026" varName="value" />
+    </scopeInfo>
     <unitInfo nodeId="6762883159245048026" fileName="MqlConditionKind.java" startLine="9" startPosition="0" endLine="87" endPosition="0" unitName="jetbrains.mps.core.query.structure.MqlConditionKind" />
+    <unitInfo nodeId="6762883159245048026" fileName="MqlConditionKind_PropertySupport.java" startLine="9" startPosition="0" endLine="46" endPosition="0" unitName="jetbrains.mps.core.query.structure.MqlConditionKind_PropertySupport" />
   </root>
   <root nodeId="6762883159245048034">
     <nodeInfo nodeId="6762883159245048034" fileName="MqlUnary.java" startLine="10" startPosition="45" endLine="11" endPosition="85" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="concept" />
@@ -1056,25 +1346,38 @@
     <nodeInfo nodeId="6762883159245048034" fileName="MqlUnary.java" startLine="36" startPosition="63" endLine="37" endPosition="164" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="6762883159245048034" fileName="MqlUnary.java" startLine="40" startPosition="49" endLine="41" endPosition="43" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="6762883159245048034" fileName="MqlUnary.java" startLine="14" startPosition="0" endLine="17" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="MqlUnary#(Ljetbrains/mps/smodel/SNode;)V" />
-    <nodeInfo nodeId="6762883159245048034" fileName="MqlUnary.java" startLine="23" startPosition="0" endLine="27" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setKind#(Ljetbrains/mps/core/query/structure/MqlUnaryKind;)V" />
+    <nodeInfo nodeId="6762883159245048034" fileName="MqlUnary.java" startLine="23" startPosition="0" endLine="27" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setKind#(Ljava/lang/Object;)V" />
     <nodeInfo nodeId="6762883159245048034" fileName="MqlUnary.java" startLine="27" startPosition="0" endLine="31" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getExpr#()Ljetbrains/mps/smodel/INodeAdapter;" />
     <nodeInfo nodeId="6762883159245048034" fileName="MqlUnary.java" startLine="31" startPosition="0" endLine="35" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setExpr#(Ljetbrains/mps/smodel/INodeAdapter;)V" />
     <nodeInfo nodeId="6762883159245048034" fileName="MqlUnary.java" startLine="35" startPosition="0" endLine="39" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="newInstance#(Ljetbrains/mps/smodel/SModel;Z)Ljetbrains/mps/core/query/structure/MqlUnary;" />
     <nodeInfo nodeId="6762883159245048034" fileName="MqlUnary.java" startLine="39" startPosition="0" endLine="43" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="newInstance#(Ljetbrains/mps/smodel/SModel;)Ljetbrains/mps/core/query/structure/MqlUnary;" />
-    <nodeInfo nodeId="6762883159245048034" fileName="MqlUnary.java" startLine="18" startPosition="0" endLine="23" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getKind#()Ljetbrains/mps/core/query/structure/MqlUnaryKind;" />
+    <nodeInfo nodeId="6762883159245048034" fileName="MqlUnary.java" startLine="18" startPosition="0" endLine="23" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getKind#()Ljava/lang/Object;" />
     <scopeInfo nodeId="6762883159245048034" fileName="MqlUnary.java" startLine="15" startPosition="31" endLine="16" endPosition="16" />
     <scopeInfo nodeId="6762883159245048034" fileName="MqlUnary.java" startLine="24" startPosition="43" endLine="25" endPosition="63" />
     <scopeInfo nodeId="6762883159245048034" fileName="MqlUnary.java" startLine="28" startPosition="34" endLine="29" endPosition="77" />
     <scopeInfo nodeId="6762883159245048034" fileName="MqlUnary.java" startLine="32" startPosition="43" endLine="33" endPosition="40" />
     <scopeInfo nodeId="6762883159245048034" fileName="MqlUnary.java" startLine="36" startPosition="63" endLine="37" endPosition="164" />
     <scopeInfo nodeId="6762883159245048034" fileName="MqlUnary.java" startLine="40" startPosition="49" endLine="41" endPosition="43" />
-    <scopeInfo nodeId="6762883159245048034" fileName="MqlUnary.java" startLine="19" startPosition="33" endLine="21" endPosition="42" />
-    <scopeInfo nodeId="6762883159245048034" fileName="MqlUnary.java" startLine="14" startPosition="0" endLine="17" endPosition="3" />
-    <scopeInfo nodeId="6762883159245048034" fileName="MqlUnary.java" startLine="23" startPosition="0" endLine="27" endPosition="0" />
+    <scopeInfo nodeId="6762883159245048034" fileName="MqlUnary.java" startLine="19" startPosition="33" endLine="21" endPosition="42">
+      <varInfo nodeId="6762883159245048034" varName="value" />
+    </scopeInfo>
+    <scopeInfo nodeId="6762883159245048034" fileName="MqlUnary.java" startLine="14" startPosition="0" endLine="17" endPosition="3">
+      <varInfo nodeId="6762883159245048034" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="6762883159245048034" fileName="MqlUnary.java" startLine="23" startPosition="0" endLine="27" endPosition="0">
+      <varInfo nodeId="6762883159245048034" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="6762883159245048034" fileName="MqlUnary.java" startLine="27" startPosition="0" endLine="31" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048034" fileName="MqlUnary.java" startLine="31" startPosition="0" endLine="35" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048034" fileName="MqlUnary.java" startLine="35" startPosition="0" endLine="39" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048034" fileName="MqlUnary.java" startLine="39" startPosition="0" endLine="43" endPosition="0" />
+    <scopeInfo nodeId="6762883159245048034" fileName="MqlUnary.java" startLine="31" startPosition="0" endLine="35" endPosition="0">
+      <varInfo nodeId="6762883159245048034" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="6762883159245048034" fileName="MqlUnary.java" startLine="35" startPosition="0" endLine="39" endPosition="0">
+      <varInfo nodeId="6762883159245048034" varName="init" />
+      <varInfo nodeId="6762883159245048034" varName="sm" />
+    </scopeInfo>
+    <scopeInfo nodeId="6762883159245048034" fileName="MqlUnary.java" startLine="39" startPosition="0" endLine="43" endPosition="0">
+      <varInfo nodeId="6762883159245048034" varName="sm" />
+    </scopeInfo>
     <scopeInfo nodeId="6762883159245048034" fileName="MqlUnary.java" startLine="18" startPosition="0" endLine="23" endPosition="0" />
     <unitInfo nodeId="6762883159245048034" fileName="MqlUnary.java" startLine="10" startPosition="0" endLine="44" endPosition="0" unitName="jetbrains.mps.core.query.structure.MqlUnary" />
   </root>
@@ -1141,25 +1444,48 @@
     <scopeInfo nodeId="6762883159245048035" fileName="MqlUnaryKind.java" startLine="48" startPosition="60" endLine="49" endPosition="30" />
     <scopeInfo nodeId="6762883159245048035" fileName="MqlUnaryKind.java" startLine="51" startPosition="62" endLine="52" endPosition="32" />
     <scopeInfo nodeId="6762883159245048035" fileName="MqlUnaryKind.java" startLine="16" startPosition="40" endLine="18" endPosition="25" />
-    <scopeInfo nodeId="6762883159245048035" fileName="MqlUnaryKind.java" startLine="15" startPosition="0" endLine="19" endPosition="3" />
-    <scopeInfo nodeId="6762883159245048035" fileName="MqlUnaryKind_PropertySupport.java" startLine="15" startPosition="33" endLine="19" endPosition="7" />
+    <scopeInfo nodeId="6762883159245048035" fileName="MqlUnaryKind.java" startLine="15" startPosition="0" endLine="19" endPosition="3">
+      <varInfo nodeId="6762883159245048035" varName="name" />
+      <varInfo nodeId="6762883159245048035" varName="value" />
+    </scopeInfo>
+    <scopeInfo nodeId="6762883159245048035" fileName="MqlUnaryKind_PropertySupport.java" startLine="15" startPosition="33" endLine="19" endPosition="7">
+      <varInfo nodeId="6762883159245048035" varName="constant" />
+    </scopeInfo>
     <scopeInfo nodeId="6762883159245048035" fileName="MqlUnaryKind.java" startLine="20" startPosition="0" endLine="24" endPosition="0" />
     <scopeInfo nodeId="6762883159245048035" fileName="MqlUnaryKind.java" startLine="24" startPosition="0" endLine="28" endPosition="0" />
     <scopeInfo nodeId="6762883159245048035" fileName="MqlUnaryKind.java" startLine="28" startPosition="0" endLine="32" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048035" fileName="MqlUnaryKind_PropertySupport.java" startLine="29" startPosition="33" endLine="33" endPosition="7" />
-    <scopeInfo nodeId="6762883159245048035" fileName="MqlUnaryKind.java" startLine="33" startPosition="51" endLine="37" endPosition="16" />
+    <scopeInfo nodeId="6762883159245048035" fileName="MqlUnaryKind_PropertySupport.java" startLine="29" startPosition="33" endLine="33" endPosition="7">
+      <varInfo nodeId="6762883159245048035" varName="constant" />
+    </scopeInfo>
+    <scopeInfo nodeId="6762883159245048035" fileName="MqlUnaryKind.java" startLine="33" startPosition="51" endLine="37" endPosition="16">
+      <varInfo nodeId="6762883159245048035" varName="list" />
+    </scopeInfo>
     <scopeInfo nodeId="6762883159245048035" fileName="MqlUnaryKind.java" startLine="39" startPosition="0" endLine="43" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048035" fileName="MqlUnaryKind_PropertySupport.java" startLine="38" startPosition="49" endLine="43" endPosition="14" />
+    <scopeInfo nodeId="6762883159245048035" fileName="MqlUnaryKind_PropertySupport.java" startLine="38" startPosition="49" endLine="43" endPosition="14">
+      <varInfo nodeId="6762883159245048035" varName="constant" />
+    </scopeInfo>
     <scopeInfo nodeId="6762883159245048035" fileName="MqlUnaryKind.java" startLine="32" startPosition="0" endLine="39" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048035" fileName="MqlUnaryKind_PropertySupport.java" startLine="37" startPosition="0" endLine="45" endPosition="0" />
+    <scopeInfo nodeId="6762883159245048035" fileName="MqlUnaryKind_PropertySupport.java" startLine="37" startPosition="0" endLine="45" endPosition="0">
+      <varInfo nodeId="6762883159245048035" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="6762883159245048035" fileName="MqlUnaryKind.java" startLine="44" startPosition="55" endLine="54" endPosition="37" />
-    <scopeInfo nodeId="6762883159245048035" fileName="MqlUnaryKind_PropertySupport.java" startLine="10" startPosition="44" endLine="21" endPosition="17" />
-    <scopeInfo nodeId="6762883159245048035" fileName="MqlUnaryKind_PropertySupport.java" startLine="24" startPosition="47" endLine="35" endPosition="16" />
-    <scopeInfo nodeId="6762883159245048035" fileName="MqlUnaryKind.java" startLine="43" startPosition="0" endLine="56" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048035" fileName="MqlUnaryKind_PropertySupport.java" startLine="9" startPosition="67" endLine="23" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048035" fileName="MqlUnaryKind_PropertySupport.java" startLine="23" startPosition="0" endLine="37" endPosition="0" />
-    <unitInfo nodeId="6762883159245048035" fileName="MqlUnaryKind_PropertySupport.java" startLine="9" startPosition="0" endLine="46" endPosition="0" unitName="jetbrains.mps.core.query.structure.MqlUnaryKind_PropertySupport" />
+    <scopeInfo nodeId="6762883159245048035" fileName="MqlUnaryKind_PropertySupport.java" startLine="10" startPosition="44" endLine="21" endPosition="17">
+      <varInfo nodeId="6762883159245048035" varName="constants" />
+    </scopeInfo>
+    <scopeInfo nodeId="6762883159245048035" fileName="MqlUnaryKind_PropertySupport.java" startLine="24" startPosition="47" endLine="35" endPosition="16">
+      <varInfo nodeId="6762883159245048035" varName="constants" />
+    </scopeInfo>
+    <scopeInfo nodeId="6762883159245048035" fileName="MqlUnaryKind.java" startLine="43" startPosition="0" endLine="56" endPosition="0">
+      <varInfo nodeId="6762883159245048035" varName="value" />
+    </scopeInfo>
+    <scopeInfo nodeId="6762883159245048035" fileName="MqlUnaryKind_PropertySupport.java" startLine="9" startPosition="67" endLine="23" endPosition="0">
+      <varInfo nodeId="6762883159245048035" varName="value" />
+    </scopeInfo>
+    <scopeInfo nodeId="6762883159245048035" fileName="MqlUnaryKind_PropertySupport.java" startLine="23" startPosition="0" endLine="37" endPosition="0">
+      <varInfo nodeId="6762883159245048035" varName="value" />
+    </scopeInfo>
     <unitInfo nodeId="6762883159245048035" fileName="MqlUnaryKind.java" startLine="9" startPosition="0" endLine="57" endPosition="0" unitName="jetbrains.mps.core.query.structure.MqlUnaryKind" />
+    <unitInfo nodeId="6762883159245048035" fileName="MqlUnaryKind_PropertySupport.java" startLine="9" startPosition="0" endLine="46" endPosition="0" unitName="jetbrains.mps.core.query.structure.MqlUnaryKind_PropertySupport" />
   </root>
   <root nodeId="6762883159245048040">
     <nodeInfo nodeId="6762883159245048040" fileName="MqlArithmetic.java" startLine="10" startPosition="50" endLine="11" endPosition="90" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="concept" />
@@ -1171,19 +1497,30 @@
     <nodeInfo nodeId="6762883159245048040" fileName="MqlArithmetic.java" startLine="27" startPosition="68" endLine="28" endPosition="174" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="6762883159245048040" fileName="MqlArithmetic.java" startLine="31" startPosition="54" endLine="32" endPosition="48" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="6762883159245048040" fileName="MqlArithmetic.java" startLine="13" startPosition="0" endLine="16" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="MqlArithmetic#(Ljetbrains/mps/smodel/SNode;)V" />
-    <nodeInfo nodeId="6762883159245048040" fileName="MqlArithmetic.java" startLine="22" startPosition="0" endLine="26" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setKind#(Ljetbrains/mps/core/query/structure/MqlArithmeticKind;)V" />
+    <nodeInfo nodeId="6762883159245048040" fileName="MqlArithmetic.java" startLine="22" startPosition="0" endLine="26" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setKind#(Ljava/lang/Object;)V" />
     <nodeInfo nodeId="6762883159245048040" fileName="MqlArithmetic.java" startLine="26" startPosition="0" endLine="30" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="newInstance#(Ljetbrains/mps/smodel/SModel;Z)Ljetbrains/mps/core/query/structure/MqlArithmetic;" />
     <nodeInfo nodeId="6762883159245048040" fileName="MqlArithmetic.java" startLine="30" startPosition="0" endLine="34" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="newInstance#(Ljetbrains/mps/smodel/SModel;)Ljetbrains/mps/core/query/structure/MqlArithmetic;" />
-    <nodeInfo nodeId="6762883159245048040" fileName="MqlArithmetic.java" startLine="17" startPosition="0" endLine="22" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getKind#()Ljetbrains/mps/core/query/structure/MqlArithmeticKind;" />
+    <nodeInfo nodeId="6762883159245048040" fileName="MqlArithmetic.java" startLine="17" startPosition="0" endLine="22" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getKind#()Ljava/lang/Object;" />
     <scopeInfo nodeId="6762883159245048040" fileName="MqlArithmetic.java" startLine="14" startPosition="36" endLine="15" endPosition="16" />
     <scopeInfo nodeId="6762883159245048040" fileName="MqlArithmetic.java" startLine="23" startPosition="48" endLine="24" endPosition="68" />
     <scopeInfo nodeId="6762883159245048040" fileName="MqlArithmetic.java" startLine="27" startPosition="68" endLine="28" endPosition="174" />
     <scopeInfo nodeId="6762883159245048040" fileName="MqlArithmetic.java" startLine="31" startPosition="54" endLine="32" endPosition="48" />
-    <scopeInfo nodeId="6762883159245048040" fileName="MqlArithmetic.java" startLine="18" startPosition="38" endLine="20" endPosition="47" />
-    <scopeInfo nodeId="6762883159245048040" fileName="MqlArithmetic.java" startLine="13" startPosition="0" endLine="16" endPosition="3" />
-    <scopeInfo nodeId="6762883159245048040" fileName="MqlArithmetic.java" startLine="22" startPosition="0" endLine="26" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048040" fileName="MqlArithmetic.java" startLine="26" startPosition="0" endLine="30" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048040" fileName="MqlArithmetic.java" startLine="30" startPosition="0" endLine="34" endPosition="0" />
+    <scopeInfo nodeId="6762883159245048040" fileName="MqlArithmetic.java" startLine="18" startPosition="38" endLine="20" endPosition="47">
+      <varInfo nodeId="6762883159245048040" varName="value" />
+    </scopeInfo>
+    <scopeInfo nodeId="6762883159245048040" fileName="MqlArithmetic.java" startLine="13" startPosition="0" endLine="16" endPosition="3">
+      <varInfo nodeId="6762883159245048040" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="6762883159245048040" fileName="MqlArithmetic.java" startLine="22" startPosition="0" endLine="26" endPosition="0">
+      <varInfo nodeId="6762883159245048040" varName="value" />
+    </scopeInfo>
+    <scopeInfo nodeId="6762883159245048040" fileName="MqlArithmetic.java" startLine="26" startPosition="0" endLine="30" endPosition="0">
+      <varInfo nodeId="6762883159245048040" varName="init" />
+      <varInfo nodeId="6762883159245048040" varName="sm" />
+    </scopeInfo>
+    <scopeInfo nodeId="6762883159245048040" fileName="MqlArithmetic.java" startLine="30" startPosition="0" endLine="34" endPosition="0">
+      <varInfo nodeId="6762883159245048040" varName="sm" />
+    </scopeInfo>
     <scopeInfo nodeId="6762883159245048040" fileName="MqlArithmetic.java" startLine="17" startPosition="0" endLine="22" endPosition="0" />
     <unitInfo nodeId="6762883159245048040" fileName="MqlArithmetic.java" startLine="10" startPosition="0" endLine="35" endPosition="0" unitName="jetbrains.mps.core.query.structure.MqlArithmetic" />
   </root>
@@ -1262,25 +1599,48 @@
     <scopeInfo nodeId="6762883159245048041" fileName="MqlArithmeticKind.java" startLine="63" startPosition="65" endLine="64" endPosition="35" />
     <scopeInfo nodeId="6762883159245048041" fileName="MqlArithmeticKind.java" startLine="66" startPosition="65" endLine="67" endPosition="35" />
     <scopeInfo nodeId="6762883159245048041" fileName="MqlArithmeticKind.java" startLine="19" startPosition="45" endLine="21" endPosition="25" />
-    <scopeInfo nodeId="6762883159245048041" fileName="MqlArithmeticKind_PropertySupport.java" startLine="15" startPosition="33" endLine="19" endPosition="7" />
-    <scopeInfo nodeId="6762883159245048041" fileName="MqlArithmeticKind.java" startLine="18" startPosition="0" endLine="22" endPosition="3" />
+    <scopeInfo nodeId="6762883159245048041" fileName="MqlArithmeticKind_PropertySupport.java" startLine="15" startPosition="33" endLine="19" endPosition="7">
+      <varInfo nodeId="6762883159245048041" varName="constant" />
+    </scopeInfo>
+    <scopeInfo nodeId="6762883159245048041" fileName="MqlArithmeticKind.java" startLine="18" startPosition="0" endLine="22" endPosition="3">
+      <varInfo nodeId="6762883159245048041" varName="name" />
+      <varInfo nodeId="6762883159245048041" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="6762883159245048041" fileName="MqlArithmeticKind.java" startLine="23" startPosition="0" endLine="27" endPosition="0" />
     <scopeInfo nodeId="6762883159245048041" fileName="MqlArithmeticKind.java" startLine="27" startPosition="0" endLine="31" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048041" fileName="MqlArithmeticKind_PropertySupport.java" startLine="29" startPosition="33" endLine="33" endPosition="7" />
+    <scopeInfo nodeId="6762883159245048041" fileName="MqlArithmeticKind_PropertySupport.java" startLine="29" startPosition="33" endLine="33" endPosition="7">
+      <varInfo nodeId="6762883159245048041" varName="constant" />
+    </scopeInfo>
     <scopeInfo nodeId="6762883159245048041" fileName="MqlArithmeticKind.java" startLine="31" startPosition="0" endLine="35" endPosition="0" />
     <scopeInfo nodeId="6762883159245048041" fileName="MqlArithmeticKind.java" startLine="45" startPosition="0" endLine="49" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048041" fileName="MqlArithmeticKind_PropertySupport.java" startLine="38" startPosition="49" endLine="43" endPosition="14" />
-    <scopeInfo nodeId="6762883159245048041" fileName="MqlArithmeticKind.java" startLine="36" startPosition="56" endLine="43" endPosition="16" />
-    <scopeInfo nodeId="6762883159245048041" fileName="MqlArithmeticKind_PropertySupport.java" startLine="37" startPosition="0" endLine="45" endPosition="0" />
+    <scopeInfo nodeId="6762883159245048041" fileName="MqlArithmeticKind_PropertySupport.java" startLine="38" startPosition="49" endLine="43" endPosition="14">
+      <varInfo nodeId="6762883159245048041" varName="constant" />
+    </scopeInfo>
+    <scopeInfo nodeId="6762883159245048041" fileName="MqlArithmeticKind.java" startLine="36" startPosition="56" endLine="43" endPosition="16">
+      <varInfo nodeId="6762883159245048041" varName="list" />
+    </scopeInfo>
+    <scopeInfo nodeId="6762883159245048041" fileName="MqlArithmeticKind_PropertySupport.java" startLine="37" startPosition="0" endLine="45" endPosition="0">
+      <varInfo nodeId="6762883159245048041" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="6762883159245048041" fileName="MqlArithmeticKind.java" startLine="35" startPosition="0" endLine="45" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048041" fileName="MqlArithmeticKind_PropertySupport.java" startLine="10" startPosition="44" endLine="21" endPosition="17" />
-    <scopeInfo nodeId="6762883159245048041" fileName="MqlArithmeticKind_PropertySupport.java" startLine="24" startPosition="47" endLine="35" endPosition="16" />
-    <scopeInfo nodeId="6762883159245048041" fileName="MqlArithmeticKind_PropertySupport.java" startLine="9" startPosition="72" endLine="23" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048041" fileName="MqlArithmeticKind_PropertySupport.java" startLine="23" startPosition="0" endLine="37" endPosition="0" />
+    <scopeInfo nodeId="6762883159245048041" fileName="MqlArithmeticKind_PropertySupport.java" startLine="10" startPosition="44" endLine="21" endPosition="17">
+      <varInfo nodeId="6762883159245048041" varName="constants" />
+    </scopeInfo>
+    <scopeInfo nodeId="6762883159245048041" fileName="MqlArithmeticKind_PropertySupport.java" startLine="24" startPosition="47" endLine="35" endPosition="16">
+      <varInfo nodeId="6762883159245048041" varName="constants" />
+    </scopeInfo>
+    <scopeInfo nodeId="6762883159245048041" fileName="MqlArithmeticKind_PropertySupport.java" startLine="9" startPosition="72" endLine="23" endPosition="0">
+      <varInfo nodeId="6762883159245048041" varName="value" />
+    </scopeInfo>
+    <scopeInfo nodeId="6762883159245048041" fileName="MqlArithmeticKind_PropertySupport.java" startLine="23" startPosition="0" endLine="37" endPosition="0">
+      <varInfo nodeId="6762883159245048041" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="6762883159245048041" fileName="MqlArithmeticKind.java" startLine="50" startPosition="60" endLine="69" endPosition="42" />
-    <scopeInfo nodeId="6762883159245048041" fileName="MqlArithmeticKind.java" startLine="49" startPosition="0" endLine="71" endPosition="0" />
-    <unitInfo nodeId="6762883159245048041" fileName="MqlArithmeticKind_PropertySupport.java" startLine="9" startPosition="0" endLine="46" endPosition="0" unitName="jetbrains.mps.core.query.structure.MqlArithmeticKind_PropertySupport" />
+    <scopeInfo nodeId="6762883159245048041" fileName="MqlArithmeticKind.java" startLine="49" startPosition="0" endLine="71" endPosition="0">
+      <varInfo nodeId="6762883159245048041" varName="value" />
+    </scopeInfo>
     <unitInfo nodeId="6762883159245048041" fileName="MqlArithmeticKind.java" startLine="9" startPosition="0" endLine="72" endPosition="0" unitName="jetbrains.mps.core.query.structure.MqlArithmeticKind" />
+    <unitInfo nodeId="6762883159245048041" fileName="MqlArithmeticKind_PropertySupport.java" startLine="9" startPosition="0" endLine="46" endPosition="0" unitName="jetbrains.mps.core.query.structure.MqlArithmeticKind_PropertySupport" />
   </root>
   <root nodeId="6762883159245048051">
     <nodeInfo nodeId="6762883159245048051" fileName="MqlType.java" startLine="11" startPosition="42" endLine="12" endPosition="84" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="concept" />
@@ -1293,9 +1653,16 @@
     <scopeInfo nodeId="6762883159245048051" fileName="MqlType.java" startLine="14" startPosition="30" endLine="15" endPosition="16" />
     <scopeInfo nodeId="6762883159245048051" fileName="MqlType.java" startLine="18" startPosition="62" endLine="19" endPosition="162" />
     <scopeInfo nodeId="6762883159245048051" fileName="MqlType.java" startLine="22" startPosition="48" endLine="23" endPosition="42" />
-    <scopeInfo nodeId="6762883159245048051" fileName="MqlType.java" startLine="13" startPosition="0" endLine="16" endPosition="3" />
-    <scopeInfo nodeId="6762883159245048051" fileName="MqlType.java" startLine="17" startPosition="0" endLine="21" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048051" fileName="MqlType.java" startLine="21" startPosition="0" endLine="25" endPosition="0" />
+    <scopeInfo nodeId="6762883159245048051" fileName="MqlType.java" startLine="13" startPosition="0" endLine="16" endPosition="3">
+      <varInfo nodeId="6762883159245048051" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="6762883159245048051" fileName="MqlType.java" startLine="17" startPosition="0" endLine="21" endPosition="0">
+      <varInfo nodeId="6762883159245048051" varName="init" />
+      <varInfo nodeId="6762883159245048051" varName="sm" />
+    </scopeInfo>
+    <scopeInfo nodeId="6762883159245048051" fileName="MqlType.java" startLine="21" startPosition="0" endLine="25" endPosition="0">
+      <varInfo nodeId="6762883159245048051" varName="sm" />
+    </scopeInfo>
     <unitInfo nodeId="6762883159245048051" fileName="MqlType.java" startLine="11" startPosition="0" endLine="26" endPosition="0" unitName="jetbrains.mps.core.query.structure.MqlType" />
   </root>
   <root nodeId="6762883159245048052">
@@ -1316,11 +1683,20 @@
     <scopeInfo nodeId="6762883159245048052" fileName="MqlIntLiteral.java" startLine="22" startPosition="35" endLine="23" endPosition="56" />
     <scopeInfo nodeId="6762883159245048052" fileName="MqlIntLiteral.java" startLine="26" startPosition="68" endLine="27" endPosition="174" />
     <scopeInfo nodeId="6762883159245048052" fileName="MqlIntLiteral.java" startLine="30" startPosition="54" endLine="31" endPosition="48" />
-    <scopeInfo nodeId="6762883159245048052" fileName="MqlIntLiteral.java" startLine="13" startPosition="0" endLine="16" endPosition="3" />
+    <scopeInfo nodeId="6762883159245048052" fileName="MqlIntLiteral.java" startLine="13" startPosition="0" endLine="16" endPosition="3">
+      <varInfo nodeId="6762883159245048052" varName="node" />
+    </scopeInfo>
     <scopeInfo nodeId="6762883159245048052" fileName="MqlIntLiteral.java" startLine="17" startPosition="0" endLine="21" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048052" fileName="MqlIntLiteral.java" startLine="21" startPosition="0" endLine="25" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048052" fileName="MqlIntLiteral.java" startLine="25" startPosition="0" endLine="29" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048052" fileName="MqlIntLiteral.java" startLine="29" startPosition="0" endLine="33" endPosition="0" />
+    <scopeInfo nodeId="6762883159245048052" fileName="MqlIntLiteral.java" startLine="21" startPosition="0" endLine="25" endPosition="0">
+      <varInfo nodeId="6762883159245048052" varName="value" />
+    </scopeInfo>
+    <scopeInfo nodeId="6762883159245048052" fileName="MqlIntLiteral.java" startLine="25" startPosition="0" endLine="29" endPosition="0">
+      <varInfo nodeId="6762883159245048052" varName="init" />
+      <varInfo nodeId="6762883159245048052" varName="sm" />
+    </scopeInfo>
+    <scopeInfo nodeId="6762883159245048052" fileName="MqlIntLiteral.java" startLine="29" startPosition="0" endLine="33" endPosition="0">
+      <varInfo nodeId="6762883159245048052" varName="sm" />
+    </scopeInfo>
     <unitInfo nodeId="6762883159245048052" fileName="MqlIntLiteral.java" startLine="10" startPosition="0" endLine="34" endPosition="0" unitName="jetbrains.mps.core.query.structure.MqlIntLiteral" />
   </root>
   <root nodeId="6762883159245048054">
@@ -1341,11 +1717,20 @@
     <scopeInfo nodeId="6762883159245048054" fileName="MqlStringLiteral.java" startLine="22" startPosition="38" endLine="23" endPosition="52" />
     <scopeInfo nodeId="6762883159245048054" fileName="MqlStringLiteral.java" startLine="26" startPosition="71" endLine="27" endPosition="180" />
     <scopeInfo nodeId="6762883159245048054" fileName="MqlStringLiteral.java" startLine="30" startPosition="57" endLine="31" endPosition="51" />
-    <scopeInfo nodeId="6762883159245048054" fileName="MqlStringLiteral.java" startLine="13" startPosition="0" endLine="16" endPosition="3" />
+    <scopeInfo nodeId="6762883159245048054" fileName="MqlStringLiteral.java" startLine="13" startPosition="0" endLine="16" endPosition="3">
+      <varInfo nodeId="6762883159245048054" varName="node" />
+    </scopeInfo>
     <scopeInfo nodeId="6762883159245048054" fileName="MqlStringLiteral.java" startLine="17" startPosition="0" endLine="21" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048054" fileName="MqlStringLiteral.java" startLine="21" startPosition="0" endLine="25" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048054" fileName="MqlStringLiteral.java" startLine="25" startPosition="0" endLine="29" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048054" fileName="MqlStringLiteral.java" startLine="29" startPosition="0" endLine="33" endPosition="0" />
+    <scopeInfo nodeId="6762883159245048054" fileName="MqlStringLiteral.java" startLine="21" startPosition="0" endLine="25" endPosition="0">
+      <varInfo nodeId="6762883159245048054" varName="value" />
+    </scopeInfo>
+    <scopeInfo nodeId="6762883159245048054" fileName="MqlStringLiteral.java" startLine="25" startPosition="0" endLine="29" endPosition="0">
+      <varInfo nodeId="6762883159245048054" varName="init" />
+      <varInfo nodeId="6762883159245048054" varName="sm" />
+    </scopeInfo>
+    <scopeInfo nodeId="6762883159245048054" fileName="MqlStringLiteral.java" startLine="29" startPosition="0" endLine="33" endPosition="0">
+      <varInfo nodeId="6762883159245048054" varName="sm" />
+    </scopeInfo>
     <unitInfo nodeId="6762883159245048054" fileName="MqlStringLiteral.java" startLine="10" startPosition="0" endLine="34" endPosition="0" unitName="jetbrains.mps.core.query.structure.MqlStringLiteral" />
   </root>
   <root nodeId="6762883159245048056">
@@ -1366,11 +1751,20 @@
     <scopeInfo nodeId="6762883159245048056" fileName="MqlBoolLiteral.java" startLine="22" startPosition="39" endLine="23" endPosition="57" />
     <scopeInfo nodeId="6762883159245048056" fileName="MqlBoolLiteral.java" startLine="26" startPosition="69" endLine="27" endPosition="176" />
     <scopeInfo nodeId="6762883159245048056" fileName="MqlBoolLiteral.java" startLine="30" startPosition="55" endLine="31" endPosition="49" />
-    <scopeInfo nodeId="6762883159245048056" fileName="MqlBoolLiteral.java" startLine="13" startPosition="0" endLine="16" endPosition="3" />
+    <scopeInfo nodeId="6762883159245048056" fileName="MqlBoolLiteral.java" startLine="13" startPosition="0" endLine="16" endPosition="3">
+      <varInfo nodeId="6762883159245048056" varName="node" />
+    </scopeInfo>
     <scopeInfo nodeId="6762883159245048056" fileName="MqlBoolLiteral.java" startLine="17" startPosition="0" endLine="21" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048056" fileName="MqlBoolLiteral.java" startLine="21" startPosition="0" endLine="25" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048056" fileName="MqlBoolLiteral.java" startLine="25" startPosition="0" endLine="29" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048056" fileName="MqlBoolLiteral.java" startLine="29" startPosition="0" endLine="33" endPosition="0" />
+    <scopeInfo nodeId="6762883159245048056" fileName="MqlBoolLiteral.java" startLine="21" startPosition="0" endLine="25" endPosition="0">
+      <varInfo nodeId="6762883159245048056" varName="value" />
+    </scopeInfo>
+    <scopeInfo nodeId="6762883159245048056" fileName="MqlBoolLiteral.java" startLine="25" startPosition="0" endLine="29" endPosition="0">
+      <varInfo nodeId="6762883159245048056" varName="init" />
+      <varInfo nodeId="6762883159245048056" varName="sm" />
+    </scopeInfo>
+    <scopeInfo nodeId="6762883159245048056" fileName="MqlBoolLiteral.java" startLine="29" startPosition="0" endLine="33" endPosition="0">
+      <varInfo nodeId="6762883159245048056" varName="sm" />
+    </scopeInfo>
     <unitInfo nodeId="6762883159245048056" fileName="MqlBoolLiteral.java" startLine="10" startPosition="0" endLine="34" endPosition="0" unitName="jetbrains.mps.core.query.structure.MqlBoolLiteral" />
   </root>
   <root nodeId="6762883159245048058">
@@ -1405,15 +1799,28 @@
     <scopeInfo nodeId="6762883159245048058" fileName="MqlTriplex.java" startLine="40" startPosition="47" endLine="41" endPosition="46" />
     <scopeInfo nodeId="6762883159245048058" fileName="MqlTriplex.java" startLine="44" startPosition="65" endLine="45" endPosition="168" />
     <scopeInfo nodeId="6762883159245048058" fileName="MqlTriplex.java" startLine="48" startPosition="51" endLine="49" endPosition="45" />
-    <scopeInfo nodeId="6762883159245048058" fileName="MqlTriplex.java" startLine="15" startPosition="0" endLine="18" endPosition="3" />
+    <scopeInfo nodeId="6762883159245048058" fileName="MqlTriplex.java" startLine="15" startPosition="0" endLine="18" endPosition="3">
+      <varInfo nodeId="6762883159245048058" varName="node" />
+    </scopeInfo>
     <scopeInfo nodeId="6762883159245048058" fileName="MqlTriplex.java" startLine="19" startPosition="0" endLine="23" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048058" fileName="MqlTriplex.java" startLine="23" startPosition="0" endLine="27" endPosition="0" />
+    <scopeInfo nodeId="6762883159245048058" fileName="MqlTriplex.java" startLine="23" startPosition="0" endLine="27" endPosition="0">
+      <varInfo nodeId="6762883159245048058" varName="node" />
+    </scopeInfo>
     <scopeInfo nodeId="6762883159245048058" fileName="MqlTriplex.java" startLine="27" startPosition="0" endLine="31" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048058" fileName="MqlTriplex.java" startLine="31" startPosition="0" endLine="35" endPosition="0" />
+    <scopeInfo nodeId="6762883159245048058" fileName="MqlTriplex.java" startLine="31" startPosition="0" endLine="35" endPosition="0">
+      <varInfo nodeId="6762883159245048058" varName="node" />
+    </scopeInfo>
     <scopeInfo nodeId="6762883159245048058" fileName="MqlTriplex.java" startLine="35" startPosition="0" endLine="39" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048058" fileName="MqlTriplex.java" startLine="39" startPosition="0" endLine="43" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048058" fileName="MqlTriplex.java" startLine="43" startPosition="0" endLine="47" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048058" fileName="MqlTriplex.java" startLine="47" startPosition="0" endLine="51" endPosition="0" />
+    <scopeInfo nodeId="6762883159245048058" fileName="MqlTriplex.java" startLine="39" startPosition="0" endLine="43" endPosition="0">
+      <varInfo nodeId="6762883159245048058" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="6762883159245048058" fileName="MqlTriplex.java" startLine="43" startPosition="0" endLine="47" endPosition="0">
+      <varInfo nodeId="6762883159245048058" varName="init" />
+      <varInfo nodeId="6762883159245048058" varName="sm" />
+    </scopeInfo>
+    <scopeInfo nodeId="6762883159245048058" fileName="MqlTriplex.java" startLine="47" startPosition="0" endLine="51" endPosition="0">
+      <varInfo nodeId="6762883159245048058" varName="sm" />
+    </scopeInfo>
     <unitInfo nodeId="6762883159245048058" fileName="MqlTriplex.java" startLine="10" startPosition="0" endLine="52" endPosition="0" unitName="jetbrains.mps.core.query.structure.MqlTriplex" />
   </root>
   <root nodeId="6762883159245048062">
@@ -1427,9 +1834,16 @@
     <scopeInfo nodeId="6762883159245048062" fileName="MqlNullLiteral.java" startLine="13" startPosition="37" endLine="14" endPosition="16" />
     <scopeInfo nodeId="6762883159245048062" fileName="MqlNullLiteral.java" startLine="17" startPosition="69" endLine="18" endPosition="176" />
     <scopeInfo nodeId="6762883159245048062" fileName="MqlNullLiteral.java" startLine="21" startPosition="55" endLine="22" endPosition="49" />
-    <scopeInfo nodeId="6762883159245048062" fileName="MqlNullLiteral.java" startLine="12" startPosition="0" endLine="15" endPosition="3" />
-    <scopeInfo nodeId="6762883159245048062" fileName="MqlNullLiteral.java" startLine="16" startPosition="0" endLine="20" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048062" fileName="MqlNullLiteral.java" startLine="20" startPosition="0" endLine="24" endPosition="0" />
+    <scopeInfo nodeId="6762883159245048062" fileName="MqlNullLiteral.java" startLine="12" startPosition="0" endLine="15" endPosition="3">
+      <varInfo nodeId="6762883159245048062" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="6762883159245048062" fileName="MqlNullLiteral.java" startLine="16" startPosition="0" endLine="20" endPosition="0">
+      <varInfo nodeId="6762883159245048062" varName="init" />
+      <varInfo nodeId="6762883159245048062" varName="sm" />
+    </scopeInfo>
+    <scopeInfo nodeId="6762883159245048062" fileName="MqlNullLiteral.java" startLine="20" startPosition="0" endLine="24" endPosition="0">
+      <varInfo nodeId="6762883159245048062" varName="sm" />
+    </scopeInfo>
     <unitInfo nodeId="6762883159245048062" fileName="MqlNullLiteral.java" startLine="10" startPosition="0" endLine="25" endPosition="0" unitName="jetbrains.mps.core.query.structure.MqlNullLiteral" />
   </root>
   <root nodeId="6762883159245048067">
@@ -1443,9 +1857,16 @@
     <scopeInfo nodeId="6762883159245048067" fileName="MqlThis.java" startLine="13" startPosition="30" endLine="14" endPosition="16" />
     <scopeInfo nodeId="6762883159245048067" fileName="MqlThis.java" startLine="17" startPosition="62" endLine="18" endPosition="162" />
     <scopeInfo nodeId="6762883159245048067" fileName="MqlThis.java" startLine="21" startPosition="48" endLine="22" endPosition="42" />
-    <scopeInfo nodeId="6762883159245048067" fileName="MqlThis.java" startLine="12" startPosition="0" endLine="15" endPosition="3" />
-    <scopeInfo nodeId="6762883159245048067" fileName="MqlThis.java" startLine="16" startPosition="0" endLine="20" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048067" fileName="MqlThis.java" startLine="20" startPosition="0" endLine="24" endPosition="0" />
+    <scopeInfo nodeId="6762883159245048067" fileName="MqlThis.java" startLine="12" startPosition="0" endLine="15" endPosition="3">
+      <varInfo nodeId="6762883159245048067" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="6762883159245048067" fileName="MqlThis.java" startLine="16" startPosition="0" endLine="20" endPosition="0">
+      <varInfo nodeId="6762883159245048067" varName="init" />
+      <varInfo nodeId="6762883159245048067" varName="sm" />
+    </scopeInfo>
+    <scopeInfo nodeId="6762883159245048067" fileName="MqlThis.java" startLine="20" startPosition="0" endLine="24" endPosition="0">
+      <varInfo nodeId="6762883159245048067" varName="sm" />
+    </scopeInfo>
     <unitInfo nodeId="6762883159245048067" fileName="MqlThis.java" startLine="10" startPosition="0" endLine="25" endPosition="0" unitName="jetbrains.mps.core.query.structure.MqlThis" />
   </root>
   <root nodeId="6762883159245048068">
@@ -1466,11 +1887,20 @@
     <scopeInfo nodeId="6762883159245048068" fileName="MqlListType.java" startLine="22" startPosition="38" endLine="23" endPosition="44" />
     <scopeInfo nodeId="6762883159245048068" fileName="MqlListType.java" startLine="26" startPosition="66" endLine="27" endPosition="170" />
     <scopeInfo nodeId="6762883159245048068" fileName="MqlListType.java" startLine="30" startPosition="52" endLine="31" endPosition="46" />
-    <scopeInfo nodeId="6762883159245048068" fileName="MqlListType.java" startLine="13" startPosition="0" endLine="16" endPosition="3" />
+    <scopeInfo nodeId="6762883159245048068" fileName="MqlListType.java" startLine="13" startPosition="0" endLine="16" endPosition="3">
+      <varInfo nodeId="6762883159245048068" varName="node" />
+    </scopeInfo>
     <scopeInfo nodeId="6762883159245048068" fileName="MqlListType.java" startLine="17" startPosition="0" endLine="21" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048068" fileName="MqlListType.java" startLine="21" startPosition="0" endLine="25" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048068" fileName="MqlListType.java" startLine="25" startPosition="0" endLine="29" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048068" fileName="MqlListType.java" startLine="29" startPosition="0" endLine="33" endPosition="0" />
+    <scopeInfo nodeId="6762883159245048068" fileName="MqlListType.java" startLine="21" startPosition="0" endLine="25" endPosition="0">
+      <varInfo nodeId="6762883159245048068" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="6762883159245048068" fileName="MqlListType.java" startLine="25" startPosition="0" endLine="29" endPosition="0">
+      <varInfo nodeId="6762883159245048068" varName="init" />
+      <varInfo nodeId="6762883159245048068" varName="sm" />
+    </scopeInfo>
+    <scopeInfo nodeId="6762883159245048068" fileName="MqlListType.java" startLine="29" startPosition="0" endLine="33" endPosition="0">
+      <varInfo nodeId="6762883159245048068" varName="sm" />
+    </scopeInfo>
     <unitInfo nodeId="6762883159245048068" fileName="MqlListType.java" startLine="10" startPosition="0" endLine="34" endPosition="0" unitName="jetbrains.mps.core.query.structure.MqlListType" />
   </root>
   <root nodeId="6762883159245048069">
@@ -1484,9 +1914,16 @@
     <scopeInfo nodeId="6762883159245048069" fileName="MqlIntType.java" startLine="13" startPosition="33" endLine="14" endPosition="16" />
     <scopeInfo nodeId="6762883159245048069" fileName="MqlIntType.java" startLine="17" startPosition="65" endLine="18" endPosition="168" />
     <scopeInfo nodeId="6762883159245048069" fileName="MqlIntType.java" startLine="21" startPosition="51" endLine="22" endPosition="45" />
-    <scopeInfo nodeId="6762883159245048069" fileName="MqlIntType.java" startLine="12" startPosition="0" endLine="15" endPosition="3" />
-    <scopeInfo nodeId="6762883159245048069" fileName="MqlIntType.java" startLine="16" startPosition="0" endLine="20" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048069" fileName="MqlIntType.java" startLine="20" startPosition="0" endLine="24" endPosition="0" />
+    <scopeInfo nodeId="6762883159245048069" fileName="MqlIntType.java" startLine="12" startPosition="0" endLine="15" endPosition="3">
+      <varInfo nodeId="6762883159245048069" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="6762883159245048069" fileName="MqlIntType.java" startLine="16" startPosition="0" endLine="20" endPosition="0">
+      <varInfo nodeId="6762883159245048069" varName="init" />
+      <varInfo nodeId="6762883159245048069" varName="sm" />
+    </scopeInfo>
+    <scopeInfo nodeId="6762883159245048069" fileName="MqlIntType.java" startLine="20" startPosition="0" endLine="24" endPosition="0">
+      <varInfo nodeId="6762883159245048069" varName="sm" />
+    </scopeInfo>
     <unitInfo nodeId="6762883159245048069" fileName="MqlIntType.java" startLine="10" startPosition="0" endLine="25" endPosition="0" unitName="jetbrains.mps.core.query.structure.MqlIntType" />
   </root>
   <root nodeId="6762883159245048070">
@@ -1500,9 +1937,16 @@
     <scopeInfo nodeId="6762883159245048070" fileName="MqlStringType.java" startLine="13" startPosition="36" endLine="14" endPosition="16" />
     <scopeInfo nodeId="6762883159245048070" fileName="MqlStringType.java" startLine="17" startPosition="68" endLine="18" endPosition="174" />
     <scopeInfo nodeId="6762883159245048070" fileName="MqlStringType.java" startLine="21" startPosition="54" endLine="22" endPosition="48" />
-    <scopeInfo nodeId="6762883159245048070" fileName="MqlStringType.java" startLine="12" startPosition="0" endLine="15" endPosition="3" />
-    <scopeInfo nodeId="6762883159245048070" fileName="MqlStringType.java" startLine="16" startPosition="0" endLine="20" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048070" fileName="MqlStringType.java" startLine="20" startPosition="0" endLine="24" endPosition="0" />
+    <scopeInfo nodeId="6762883159245048070" fileName="MqlStringType.java" startLine="12" startPosition="0" endLine="15" endPosition="3">
+      <varInfo nodeId="6762883159245048070" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="6762883159245048070" fileName="MqlStringType.java" startLine="16" startPosition="0" endLine="20" endPosition="0">
+      <varInfo nodeId="6762883159245048070" varName="init" />
+      <varInfo nodeId="6762883159245048070" varName="sm" />
+    </scopeInfo>
+    <scopeInfo nodeId="6762883159245048070" fileName="MqlStringType.java" startLine="20" startPosition="0" endLine="24" endPosition="0">
+      <varInfo nodeId="6762883159245048070" varName="sm" />
+    </scopeInfo>
     <unitInfo nodeId="6762883159245048070" fileName="MqlStringType.java" startLine="10" startPosition="0" endLine="25" endPosition="0" unitName="jetbrains.mps.core.query.structure.MqlStringType" />
   </root>
   <root nodeId="6762883159245048072">
@@ -1516,9 +1960,16 @@
     <scopeInfo nodeId="6762883159245048072" fileName="MqlBoolType.java" startLine="13" startPosition="34" endLine="14" endPosition="16" />
     <scopeInfo nodeId="6762883159245048072" fileName="MqlBoolType.java" startLine="17" startPosition="66" endLine="18" endPosition="170" />
     <scopeInfo nodeId="6762883159245048072" fileName="MqlBoolType.java" startLine="21" startPosition="52" endLine="22" endPosition="46" />
-    <scopeInfo nodeId="6762883159245048072" fileName="MqlBoolType.java" startLine="12" startPosition="0" endLine="15" endPosition="3" />
-    <scopeInfo nodeId="6762883159245048072" fileName="MqlBoolType.java" startLine="16" startPosition="0" endLine="20" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048072" fileName="MqlBoolType.java" startLine="20" startPosition="0" endLine="24" endPosition="0" />
+    <scopeInfo nodeId="6762883159245048072" fileName="MqlBoolType.java" startLine="12" startPosition="0" endLine="15" endPosition="3">
+      <varInfo nodeId="6762883159245048072" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="6762883159245048072" fileName="MqlBoolType.java" startLine="16" startPosition="0" endLine="20" endPosition="0">
+      <varInfo nodeId="6762883159245048072" varName="init" />
+      <varInfo nodeId="6762883159245048072" varName="sm" />
+    </scopeInfo>
+    <scopeInfo nodeId="6762883159245048072" fileName="MqlBoolType.java" startLine="20" startPosition="0" endLine="24" endPosition="0">
+      <varInfo nodeId="6762883159245048072" varName="sm" />
+    </scopeInfo>
     <unitInfo nodeId="6762883159245048072" fileName="MqlBoolType.java" startLine="10" startPosition="0" endLine="25" endPosition="0" unitName="jetbrains.mps.core.query.structure.MqlBoolType" />
   </root>
   <root nodeId="6762883159245048080">
@@ -1555,16 +2006,30 @@
     <scopeInfo nodeId="6762883159245048080" fileName="MqlFunctionType.java" startLine="45" startPosition="64" endLine="46" endPosition="66" />
     <scopeInfo nodeId="6762883159245048080" fileName="MqlFunctionType.java" startLine="49" startPosition="70" endLine="50" endPosition="178" />
     <scopeInfo nodeId="6762883159245048080" fileName="MqlFunctionType.java" startLine="53" startPosition="56" endLine="54" endPosition="50" />
-    <scopeInfo nodeId="6762883159245048080" fileName="MqlFunctionType.java" startLine="16" startPosition="0" endLine="19" endPosition="3" />
+    <scopeInfo nodeId="6762883159245048080" fileName="MqlFunctionType.java" startLine="16" startPosition="0" endLine="19" endPosition="3">
+      <varInfo nodeId="6762883159245048080" varName="node" />
+    </scopeInfo>
     <scopeInfo nodeId="6762883159245048080" fileName="MqlFunctionType.java" startLine="20" startPosition="0" endLine="24" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048080" fileName="MqlFunctionType.java" startLine="24" startPosition="0" endLine="28" endPosition="0" />
+    <scopeInfo nodeId="6762883159245048080" fileName="MqlFunctionType.java" startLine="24" startPosition="0" endLine="28" endPosition="0">
+      <varInfo nodeId="6762883159245048080" varName="node" />
+    </scopeInfo>
     <scopeInfo nodeId="6762883159245048080" fileName="MqlFunctionType.java" startLine="28" startPosition="0" endLine="32" endPosition="0" />
     <scopeInfo nodeId="6762883159245048080" fileName="MqlFunctionType.java" startLine="32" startPosition="0" endLine="36" endPosition="0" />
     <scopeInfo nodeId="6762883159245048080" fileName="MqlFunctionType.java" startLine="36" startPosition="0" endLine="40" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048080" fileName="MqlFunctionType.java" startLine="40" startPosition="0" endLine="44" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048080" fileName="MqlFunctionType.java" startLine="44" startPosition="0" endLine="48" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048080" fileName="MqlFunctionType.java" startLine="48" startPosition="0" endLine="52" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048080" fileName="MqlFunctionType.java" startLine="52" startPosition="0" endLine="56" endPosition="0" />
+    <scopeInfo nodeId="6762883159245048080" fileName="MqlFunctionType.java" startLine="40" startPosition="0" endLine="44" endPosition="0">
+      <varInfo nodeId="6762883159245048080" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="6762883159245048080" fileName="MqlFunctionType.java" startLine="44" startPosition="0" endLine="48" endPosition="0">
+      <varInfo nodeId="6762883159245048080" varName="node" />
+      <varInfo nodeId="6762883159245048080" varName="prev" />
+    </scopeInfo>
+    <scopeInfo nodeId="6762883159245048080" fileName="MqlFunctionType.java" startLine="48" startPosition="0" endLine="52" endPosition="0">
+      <varInfo nodeId="6762883159245048080" varName="init" />
+      <varInfo nodeId="6762883159245048080" varName="sm" />
+    </scopeInfo>
+    <scopeInfo nodeId="6762883159245048080" fileName="MqlFunctionType.java" startLine="52" startPosition="0" endLine="56" endPosition="0">
+      <varInfo nodeId="6762883159245048080" varName="sm" />
+    </scopeInfo>
     <unitInfo nodeId="6762883159245048080" fileName="MqlFunctionType.java" startLine="12" startPosition="0" endLine="57" endPosition="0" unitName="jetbrains.mps.core.query.structure.MqlFunctionType" />
   </root>
   <root nodeId="6762883159245048082">
@@ -1578,9 +2043,16 @@
     <scopeInfo nodeId="6762883159245048082" fileName="MqlNullType.java" startLine="13" startPosition="34" endLine="14" endPosition="16" />
     <scopeInfo nodeId="6762883159245048082" fileName="MqlNullType.java" startLine="17" startPosition="66" endLine="18" endPosition="170" />
     <scopeInfo nodeId="6762883159245048082" fileName="MqlNullType.java" startLine="21" startPosition="52" endLine="22" endPosition="46" />
-    <scopeInfo nodeId="6762883159245048082" fileName="MqlNullType.java" startLine="12" startPosition="0" endLine="15" endPosition="3" />
-    <scopeInfo nodeId="6762883159245048082" fileName="MqlNullType.java" startLine="16" startPosition="0" endLine="20" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048082" fileName="MqlNullType.java" startLine="20" startPosition="0" endLine="24" endPosition="0" />
+    <scopeInfo nodeId="6762883159245048082" fileName="MqlNullType.java" startLine="12" startPosition="0" endLine="15" endPosition="3">
+      <varInfo nodeId="6762883159245048082" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="6762883159245048082" fileName="MqlNullType.java" startLine="16" startPosition="0" endLine="20" endPosition="0">
+      <varInfo nodeId="6762883159245048082" varName="init" />
+      <varInfo nodeId="6762883159245048082" varName="sm" />
+    </scopeInfo>
+    <scopeInfo nodeId="6762883159245048082" fileName="MqlNullType.java" startLine="20" startPosition="0" endLine="24" endPosition="0">
+      <varInfo nodeId="6762883159245048082" varName="sm" />
+    </scopeInfo>
     <unitInfo nodeId="6762883159245048082" fileName="MqlNullType.java" startLine="10" startPosition="0" endLine="25" endPosition="0" unitName="jetbrains.mps.core.query.structure.MqlNullType" />
   </root>
   <root nodeId="6762883159245048084">
@@ -1601,11 +2073,20 @@
     <scopeInfo nodeId="6762883159245048084" fileName="MqlPropertySelector.java" startLine="23" startPosition="53" endLine="24" endPosition="58" />
     <scopeInfo nodeId="6762883159245048084" fileName="MqlPropertySelector.java" startLine="27" startPosition="74" endLine="28" endPosition="186" />
     <scopeInfo nodeId="6762883159245048084" fileName="MqlPropertySelector.java" startLine="31" startPosition="60" endLine="32" endPosition="54" />
-    <scopeInfo nodeId="6762883159245048084" fileName="MqlPropertySelector.java" startLine="14" startPosition="0" endLine="17" endPosition="3" />
+    <scopeInfo nodeId="6762883159245048084" fileName="MqlPropertySelector.java" startLine="14" startPosition="0" endLine="17" endPosition="3">
+      <varInfo nodeId="6762883159245048084" varName="node" />
+    </scopeInfo>
     <scopeInfo nodeId="6762883159245048084" fileName="MqlPropertySelector.java" startLine="18" startPosition="0" endLine="22" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048084" fileName="MqlPropertySelector.java" startLine="22" startPosition="0" endLine="26" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048084" fileName="MqlPropertySelector.java" startLine="26" startPosition="0" endLine="30" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048084" fileName="MqlPropertySelector.java" startLine="30" startPosition="0" endLine="34" endPosition="0" />
+    <scopeInfo nodeId="6762883159245048084" fileName="MqlPropertySelector.java" startLine="22" startPosition="0" endLine="26" endPosition="0">
+      <varInfo nodeId="6762883159245048084" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="6762883159245048084" fileName="MqlPropertySelector.java" startLine="26" startPosition="0" endLine="30" endPosition="0">
+      <varInfo nodeId="6762883159245048084" varName="init" />
+      <varInfo nodeId="6762883159245048084" varName="sm" />
+    </scopeInfo>
+    <scopeInfo nodeId="6762883159245048084" fileName="MqlPropertySelector.java" startLine="30" startPosition="0" endLine="34" endPosition="0">
+      <varInfo nodeId="6762883159245048084" varName="sm" />
+    </scopeInfo>
     <unitInfo nodeId="6762883159245048084" fileName="MqlPropertySelector.java" startLine="11" startPosition="0" endLine="35" endPosition="0" unitName="jetbrains.mps.core.query.structure.MqlPropertySelector" />
   </root>
   <root nodeId="6762883159245048085">
@@ -1633,13 +2114,24 @@
     <scopeInfo nodeId="6762883159245048085" fileName="MqlDotExpression.java" startLine="31" startPosition="42" endLine="32" endPosition="49" />
     <scopeInfo nodeId="6762883159245048085" fileName="MqlDotExpression.java" startLine="35" startPosition="71" endLine="36" endPosition="180" />
     <scopeInfo nodeId="6762883159245048085" fileName="MqlDotExpression.java" startLine="39" startPosition="57" endLine="40" endPosition="51" />
-    <scopeInfo nodeId="6762883159245048085" fileName="MqlDotExpression.java" startLine="14" startPosition="0" endLine="17" endPosition="3" />
+    <scopeInfo nodeId="6762883159245048085" fileName="MqlDotExpression.java" startLine="14" startPosition="0" endLine="17" endPosition="3">
+      <varInfo nodeId="6762883159245048085" varName="node" />
+    </scopeInfo>
     <scopeInfo nodeId="6762883159245048085" fileName="MqlDotExpression.java" startLine="18" startPosition="0" endLine="22" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048085" fileName="MqlDotExpression.java" startLine="22" startPosition="0" endLine="26" endPosition="0" />
+    <scopeInfo nodeId="6762883159245048085" fileName="MqlDotExpression.java" startLine="22" startPosition="0" endLine="26" endPosition="0">
+      <varInfo nodeId="6762883159245048085" varName="node" />
+    </scopeInfo>
     <scopeInfo nodeId="6762883159245048085" fileName="MqlDotExpression.java" startLine="26" startPosition="0" endLine="30" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048085" fileName="MqlDotExpression.java" startLine="30" startPosition="0" endLine="34" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048085" fileName="MqlDotExpression.java" startLine="34" startPosition="0" endLine="38" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048085" fileName="MqlDotExpression.java" startLine="38" startPosition="0" endLine="42" endPosition="0" />
+    <scopeInfo nodeId="6762883159245048085" fileName="MqlDotExpression.java" startLine="30" startPosition="0" endLine="34" endPosition="0">
+      <varInfo nodeId="6762883159245048085" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="6762883159245048085" fileName="MqlDotExpression.java" startLine="34" startPosition="0" endLine="38" endPosition="0">
+      <varInfo nodeId="6762883159245048085" varName="init" />
+      <varInfo nodeId="6762883159245048085" varName="sm" />
+    </scopeInfo>
+    <scopeInfo nodeId="6762883159245048085" fileName="MqlDotExpression.java" startLine="38" startPosition="0" endLine="42" endPosition="0">
+      <varInfo nodeId="6762883159245048085" varName="sm" />
+    </scopeInfo>
     <unitInfo nodeId="6762883159245048085" fileName="MqlDotExpression.java" startLine="10" startPosition="0" endLine="43" endPosition="0" unitName="jetbrains.mps.core.query.structure.MqlDotExpression" />
   </root>
   <root nodeId="6762883159245048087">
@@ -1653,9 +2145,16 @@
     <scopeInfo nodeId="6762883159245048087" fileName="MqlSelector.java" startLine="14" startPosition="34" endLine="15" endPosition="16" />
     <scopeInfo nodeId="6762883159245048087" fileName="MqlSelector.java" startLine="18" startPosition="66" endLine="19" endPosition="170" />
     <scopeInfo nodeId="6762883159245048087" fileName="MqlSelector.java" startLine="22" startPosition="52" endLine="23" endPosition="46" />
-    <scopeInfo nodeId="6762883159245048087" fileName="MqlSelector.java" startLine="13" startPosition="0" endLine="16" endPosition="3" />
-    <scopeInfo nodeId="6762883159245048087" fileName="MqlSelector.java" startLine="17" startPosition="0" endLine="21" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048087" fileName="MqlSelector.java" startLine="21" startPosition="0" endLine="25" endPosition="0" />
+    <scopeInfo nodeId="6762883159245048087" fileName="MqlSelector.java" startLine="13" startPosition="0" endLine="16" endPosition="3">
+      <varInfo nodeId="6762883159245048087" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="6762883159245048087" fileName="MqlSelector.java" startLine="17" startPosition="0" endLine="21" endPosition="0">
+      <varInfo nodeId="6762883159245048087" varName="init" />
+      <varInfo nodeId="6762883159245048087" varName="sm" />
+    </scopeInfo>
+    <scopeInfo nodeId="6762883159245048087" fileName="MqlSelector.java" startLine="21" startPosition="0" endLine="25" endPosition="0">
+      <varInfo nodeId="6762883159245048087" varName="sm" />
+    </scopeInfo>
     <unitInfo nodeId="6762883159245048087" fileName="MqlSelector.java" startLine="11" startPosition="0" endLine="26" endPosition="0" unitName="jetbrains.mps.core.query.structure.MqlSelector" />
   </root>
   <root nodeId="6762883159245048091">
@@ -1676,11 +2175,20 @@
     <scopeInfo nodeId="6762883159245048091" fileName="MqlNodeType.java" startLine="23" startPosition="59" endLine="24" endPosition="49" />
     <scopeInfo nodeId="6762883159245048091" fileName="MqlNodeType.java" startLine="27" startPosition="66" endLine="28" endPosition="170" />
     <scopeInfo nodeId="6762883159245048091" fileName="MqlNodeType.java" startLine="31" startPosition="52" endLine="32" endPosition="46" />
-    <scopeInfo nodeId="6762883159245048091" fileName="MqlNodeType.java" startLine="14" startPosition="0" endLine="17" endPosition="3" />
+    <scopeInfo nodeId="6762883159245048091" fileName="MqlNodeType.java" startLine="14" startPosition="0" endLine="17" endPosition="3">
+      <varInfo nodeId="6762883159245048091" varName="node" />
+    </scopeInfo>
     <scopeInfo nodeId="6762883159245048091" fileName="MqlNodeType.java" startLine="18" startPosition="0" endLine="22" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048091" fileName="MqlNodeType.java" startLine="22" startPosition="0" endLine="26" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048091" fileName="MqlNodeType.java" startLine="26" startPosition="0" endLine="30" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048091" fileName="MqlNodeType.java" startLine="30" startPosition="0" endLine="34" endPosition="0" />
+    <scopeInfo nodeId="6762883159245048091" fileName="MqlNodeType.java" startLine="22" startPosition="0" endLine="26" endPosition="0">
+      <varInfo nodeId="6762883159245048091" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="6762883159245048091" fileName="MqlNodeType.java" startLine="26" startPosition="0" endLine="30" endPosition="0">
+      <varInfo nodeId="6762883159245048091" varName="init" />
+      <varInfo nodeId="6762883159245048091" varName="sm" />
+    </scopeInfo>
+    <scopeInfo nodeId="6762883159245048091" fileName="MqlNodeType.java" startLine="30" startPosition="0" endLine="34" endPosition="0">
+      <varInfo nodeId="6762883159245048091" varName="sm" />
+    </scopeInfo>
     <unitInfo nodeId="6762883159245048091" fileName="MqlNodeType.java" startLine="11" startPosition="0" endLine="35" endPosition="0" unitName="jetbrains.mps.core.query.structure.MqlNodeType" />
   </root>
   <root nodeId="6762883159245048630">
@@ -1770,32 +2278,62 @@
     <scopeInfo nodeId="6762883159245048630" fileName="MqlPackage.java" startLine="117" startPosition="69" endLine="118" endPosition="62" />
     <scopeInfo nodeId="6762883159245048630" fileName="MqlPackage.java" startLine="121" startPosition="65" endLine="122" endPosition="168" />
     <scopeInfo nodeId="6762883159245048630" fileName="MqlPackage.java" startLine="125" startPosition="51" endLine="126" endPosition="45" />
-    <scopeInfo nodeId="6762883159245048630" fileName="MqlPackage.java" startLine="24" startPosition="0" endLine="27" endPosition="3" />
+    <scopeInfo nodeId="6762883159245048630" fileName="MqlPackage.java" startLine="24" startPosition="0" endLine="27" endPosition="3">
+      <varInfo nodeId="6762883159245048630" varName="node" />
+    </scopeInfo>
     <scopeInfo nodeId="6762883159245048630" fileName="MqlPackage.java" startLine="28" startPosition="0" endLine="32" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048630" fileName="MqlPackage.java" startLine="32" startPosition="0" endLine="36" endPosition="0" />
+    <scopeInfo nodeId="6762883159245048630" fileName="MqlPackage.java" startLine="32" startPosition="0" endLine="36" endPosition="0">
+      <varInfo nodeId="6762883159245048630" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="6762883159245048630" fileName="MqlPackage.java" startLine="36" startPosition="0" endLine="40" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048630" fileName="MqlPackage.java" startLine="40" startPosition="0" endLine="44" endPosition="0" />
+    <scopeInfo nodeId="6762883159245048630" fileName="MqlPackage.java" startLine="40" startPosition="0" endLine="44" endPosition="0">
+      <varInfo nodeId="6762883159245048630" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="6762883159245048630" fileName="MqlPackage.java" startLine="44" startPosition="0" endLine="48" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048630" fileName="MqlPackage.java" startLine="48" startPosition="0" endLine="52" endPosition="0" />
+    <scopeInfo nodeId="6762883159245048630" fileName="MqlPackage.java" startLine="48" startPosition="0" endLine="52" endPosition="0">
+      <varInfo nodeId="6762883159245048630" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="6762883159245048630" fileName="MqlPackage.java" startLine="52" startPosition="0" endLine="56" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048630" fileName="MqlPackage.java" startLine="56" startPosition="0" endLine="60" endPosition="0" />
+    <scopeInfo nodeId="6762883159245048630" fileName="MqlPackage.java" startLine="56" startPosition="0" endLine="60" endPosition="0">
+      <varInfo nodeId="6762883159245048630" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="6762883159245048630" fileName="MqlPackage.java" startLine="60" startPosition="0" endLine="64" endPosition="0" />
     <scopeInfo nodeId="6762883159245048630" fileName="MqlPackage.java" startLine="64" startPosition="0" endLine="68" endPosition="0" />
     <scopeInfo nodeId="6762883159245048630" fileName="MqlPackage.java" startLine="68" startPosition="0" endLine="72" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048630" fileName="MqlPackage.java" startLine="72" startPosition="0" endLine="76" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048630" fileName="MqlPackage.java" startLine="76" startPosition="0" endLine="80" endPosition="0" />
+    <scopeInfo nodeId="6762883159245048630" fileName="MqlPackage.java" startLine="72" startPosition="0" endLine="76" endPosition="0">
+      <varInfo nodeId="6762883159245048630" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="6762883159245048630" fileName="MqlPackage.java" startLine="76" startPosition="0" endLine="80" endPosition="0">
+      <varInfo nodeId="6762883159245048630" varName="node" />
+      <varInfo nodeId="6762883159245048630" varName="prev" />
+    </scopeInfo>
     <scopeInfo nodeId="6762883159245048630" fileName="MqlPackage.java" startLine="80" startPosition="0" endLine="84" endPosition="0" />
     <scopeInfo nodeId="6762883159245048630" fileName="MqlPackage.java" startLine="84" startPosition="0" endLine="88" endPosition="0" />
     <scopeInfo nodeId="6762883159245048630" fileName="MqlPackage.java" startLine="88" startPosition="0" endLine="92" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048630" fileName="MqlPackage.java" startLine="92" startPosition="0" endLine="96" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048630" fileName="MqlPackage.java" startLine="96" startPosition="0" endLine="100" endPosition="0" />
+    <scopeInfo nodeId="6762883159245048630" fileName="MqlPackage.java" startLine="92" startPosition="0" endLine="96" endPosition="0">
+      <varInfo nodeId="6762883159245048630" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="6762883159245048630" fileName="MqlPackage.java" startLine="96" startPosition="0" endLine="100" endPosition="0">
+      <varInfo nodeId="6762883159245048630" varName="node" />
+      <varInfo nodeId="6762883159245048630" varName="prev" />
+    </scopeInfo>
     <scopeInfo nodeId="6762883159245048630" fileName="MqlPackage.java" startLine="100" startPosition="0" endLine="104" endPosition="0" />
     <scopeInfo nodeId="6762883159245048630" fileName="MqlPackage.java" startLine="104" startPosition="0" endLine="108" endPosition="0" />
     <scopeInfo nodeId="6762883159245048630" fileName="MqlPackage.java" startLine="108" startPosition="0" endLine="112" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048630" fileName="MqlPackage.java" startLine="112" startPosition="0" endLine="116" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048630" fileName="MqlPackage.java" startLine="116" startPosition="0" endLine="120" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048630" fileName="MqlPackage.java" startLine="120" startPosition="0" endLine="124" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048630" fileName="MqlPackage.java" startLine="124" startPosition="0" endLine="128" endPosition="0" />
+    <scopeInfo nodeId="6762883159245048630" fileName="MqlPackage.java" startLine="112" startPosition="0" endLine="116" endPosition="0">
+      <varInfo nodeId="6762883159245048630" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="6762883159245048630" fileName="MqlPackage.java" startLine="116" startPosition="0" endLine="120" endPosition="0">
+      <varInfo nodeId="6762883159245048630" varName="node" />
+      <varInfo nodeId="6762883159245048630" varName="prev" />
+    </scopeInfo>
+    <scopeInfo nodeId="6762883159245048630" fileName="MqlPackage.java" startLine="120" startPosition="0" endLine="124" endPosition="0">
+      <varInfo nodeId="6762883159245048630" varName="init" />
+      <varInfo nodeId="6762883159245048630" varName="sm" />
+    </scopeInfo>
+    <scopeInfo nodeId="6762883159245048630" fileName="MqlPackage.java" startLine="124" startPosition="0" endLine="128" endPosition="0">
+      <varInfo nodeId="6762883159245048630" varName="sm" />
+    </scopeInfo>
     <unitInfo nodeId="6762883159245048630" fileName="MqlPackage.java" startLine="15" startPosition="0" endLine="129" endPosition="0" unitName="jetbrains.mps.core.query.structure.MqlPackage" />
   </root>
   <root nodeId="6762883159245048635">
@@ -1860,24 +2398,46 @@
     <scopeInfo nodeId="6762883159245048635" fileName="MqlParameter.java" startLine="84" startPosition="69" endLine="85" endPosition="64" />
     <scopeInfo nodeId="6762883159245048635" fileName="MqlParameter.java" startLine="88" startPosition="67" endLine="89" endPosition="172" />
     <scopeInfo nodeId="6762883159245048635" fileName="MqlParameter.java" startLine="92" startPosition="53" endLine="93" endPosition="47" />
-    <scopeInfo nodeId="6762883159245048635" fileName="MqlParameter.java" startLine="23" startPosition="0" endLine="26" endPosition="3" />
+    <scopeInfo nodeId="6762883159245048635" fileName="MqlParameter.java" startLine="23" startPosition="0" endLine="26" endPosition="3">
+      <varInfo nodeId="6762883159245048635" varName="node" />
+    </scopeInfo>
     <scopeInfo nodeId="6762883159245048635" fileName="MqlParameter.java" startLine="27" startPosition="0" endLine="31" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048635" fileName="MqlParameter.java" startLine="31" startPosition="0" endLine="35" endPosition="0" />
+    <scopeInfo nodeId="6762883159245048635" fileName="MqlParameter.java" startLine="31" startPosition="0" endLine="35" endPosition="0">
+      <varInfo nodeId="6762883159245048635" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="6762883159245048635" fileName="MqlParameter.java" startLine="35" startPosition="0" endLine="39" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048635" fileName="MqlParameter.java" startLine="39" startPosition="0" endLine="43" endPosition="0" />
+    <scopeInfo nodeId="6762883159245048635" fileName="MqlParameter.java" startLine="39" startPosition="0" endLine="43" endPosition="0">
+      <varInfo nodeId="6762883159245048635" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="6762883159245048635" fileName="MqlParameter.java" startLine="43" startPosition="0" endLine="47" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048635" fileName="MqlParameter.java" startLine="47" startPosition="0" endLine="51" endPosition="0" />
+    <scopeInfo nodeId="6762883159245048635" fileName="MqlParameter.java" startLine="47" startPosition="0" endLine="51" endPosition="0">
+      <varInfo nodeId="6762883159245048635" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="6762883159245048635" fileName="MqlParameter.java" startLine="51" startPosition="0" endLine="55" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048635" fileName="MqlParameter.java" startLine="55" startPosition="0" endLine="59" endPosition="0" />
+    <scopeInfo nodeId="6762883159245048635" fileName="MqlParameter.java" startLine="55" startPosition="0" endLine="59" endPosition="0">
+      <varInfo nodeId="6762883159245048635" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="6762883159245048635" fileName="MqlParameter.java" startLine="59" startPosition="0" endLine="63" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048635" fileName="MqlParameter.java" startLine="63" startPosition="0" endLine="67" endPosition="0" />
+    <scopeInfo nodeId="6762883159245048635" fileName="MqlParameter.java" startLine="63" startPosition="0" endLine="67" endPosition="0">
+      <varInfo nodeId="6762883159245048635" varName="node" />
+    </scopeInfo>
     <scopeInfo nodeId="6762883159245048635" fileName="MqlParameter.java" startLine="67" startPosition="0" endLine="71" endPosition="0" />
     <scopeInfo nodeId="6762883159245048635" fileName="MqlParameter.java" startLine="71" startPosition="0" endLine="75" endPosition="0" />
     <scopeInfo nodeId="6762883159245048635" fileName="MqlParameter.java" startLine="75" startPosition="0" endLine="79" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048635" fileName="MqlParameter.java" startLine="79" startPosition="0" endLine="83" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048635" fileName="MqlParameter.java" startLine="83" startPosition="0" endLine="87" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048635" fileName="MqlParameter.java" startLine="87" startPosition="0" endLine="91" endPosition="0" />
-    <scopeInfo nodeId="6762883159245048635" fileName="MqlParameter.java" startLine="91" startPosition="0" endLine="95" endPosition="0" />
+    <scopeInfo nodeId="6762883159245048635" fileName="MqlParameter.java" startLine="79" startPosition="0" endLine="83" endPosition="0">
+      <varInfo nodeId="6762883159245048635" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="6762883159245048635" fileName="MqlParameter.java" startLine="83" startPosition="0" endLine="87" endPosition="0">
+      <varInfo nodeId="6762883159245048635" varName="node" />
+      <varInfo nodeId="6762883159245048635" varName="prev" />
+    </scopeInfo>
+    <scopeInfo nodeId="6762883159245048635" fileName="MqlParameter.java" startLine="87" startPosition="0" endLine="91" endPosition="0">
+      <varInfo nodeId="6762883159245048635" varName="init" />
+      <varInfo nodeId="6762883159245048635" varName="sm" />
+    </scopeInfo>
+    <scopeInfo nodeId="6762883159245048635" fileName="MqlParameter.java" startLine="91" startPosition="0" endLine="95" endPosition="0">
+      <varInfo nodeId="6762883159245048635" varName="sm" />
+    </scopeInfo>
     <unitInfo nodeId="6762883159245048635" fileName="MqlParameter.java" startLine="15" startPosition="0" endLine="96" endPosition="0" unitName="jetbrains.mps.core.query.structure.MqlParameter" />
   </root>
   <root nodeId="6762883159245086407">
@@ -1898,11 +2458,20 @@
     <scopeInfo nodeId="6762883159245086407" fileName="MqlParameterReference.java" startLine="22" startPosition="47" endLine="23" endPosition="61" />
     <scopeInfo nodeId="6762883159245086407" fileName="MqlParameterReference.java" startLine="26" startPosition="76" endLine="27" endPosition="190" />
     <scopeInfo nodeId="6762883159245086407" fileName="MqlParameterReference.java" startLine="30" startPosition="62" endLine="31" endPosition="56" />
-    <scopeInfo nodeId="6762883159245086407" fileName="MqlParameterReference.java" startLine="13" startPosition="0" endLine="16" endPosition="3" />
+    <scopeInfo nodeId="6762883159245086407" fileName="MqlParameterReference.java" startLine="13" startPosition="0" endLine="16" endPosition="3">
+      <varInfo nodeId="6762883159245086407" varName="node" />
+    </scopeInfo>
     <scopeInfo nodeId="6762883159245086407" fileName="MqlParameterReference.java" startLine="17" startPosition="0" endLine="21" endPosition="0" />
-    <scopeInfo nodeId="6762883159245086407" fileName="MqlParameterReference.java" startLine="21" startPosition="0" endLine="25" endPosition="0" />
-    <scopeInfo nodeId="6762883159245086407" fileName="MqlParameterReference.java" startLine="25" startPosition="0" endLine="29" endPosition="0" />
-    <scopeInfo nodeId="6762883159245086407" fileName="MqlParameterReference.java" startLine="29" startPosition="0" endLine="33" endPosition="0" />
+    <scopeInfo nodeId="6762883159245086407" fileName="MqlParameterReference.java" startLine="21" startPosition="0" endLine="25" endPosition="0">
+      <varInfo nodeId="6762883159245086407" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="6762883159245086407" fileName="MqlParameterReference.java" startLine="25" startPosition="0" endLine="29" endPosition="0">
+      <varInfo nodeId="6762883159245086407" varName="init" />
+      <varInfo nodeId="6762883159245086407" varName="sm" />
+    </scopeInfo>
+    <scopeInfo nodeId="6762883159245086407" fileName="MqlParameterReference.java" startLine="29" startPosition="0" endLine="33" endPosition="0">
+      <varInfo nodeId="6762883159245086407" varName="sm" />
+    </scopeInfo>
     <unitInfo nodeId="6762883159245086407" fileName="MqlParameterReference.java" startLine="10" startPosition="0" endLine="34" endPosition="0" unitName="jetbrains.mps.core.query.structure.MqlParameterReference" />
   </root>
   <root nodeId="6762883159245086411">
@@ -1923,11 +2492,20 @@
     <scopeInfo nodeId="6762883159245086411" fileName="MqlLinkSelector.java" startLine="23" startPosition="45" endLine="24" endPosition="50" />
     <scopeInfo nodeId="6762883159245086411" fileName="MqlLinkSelector.java" startLine="27" startPosition="70" endLine="28" endPosition="178" />
     <scopeInfo nodeId="6762883159245086411" fileName="MqlLinkSelector.java" startLine="31" startPosition="56" endLine="32" endPosition="50" />
-    <scopeInfo nodeId="6762883159245086411" fileName="MqlLinkSelector.java" startLine="14" startPosition="0" endLine="17" endPosition="3" />
+    <scopeInfo nodeId="6762883159245086411" fileName="MqlLinkSelector.java" startLine="14" startPosition="0" endLine="17" endPosition="3">
+      <varInfo nodeId="6762883159245086411" varName="node" />
+    </scopeInfo>
     <scopeInfo nodeId="6762883159245086411" fileName="MqlLinkSelector.java" startLine="18" startPosition="0" endLine="22" endPosition="0" />
-    <scopeInfo nodeId="6762883159245086411" fileName="MqlLinkSelector.java" startLine="22" startPosition="0" endLine="26" endPosition="0" />
-    <scopeInfo nodeId="6762883159245086411" fileName="MqlLinkSelector.java" startLine="26" startPosition="0" endLine="30" endPosition="0" />
-    <scopeInfo nodeId="6762883159245086411" fileName="MqlLinkSelector.java" startLine="30" startPosition="0" endLine="34" endPosition="0" />
+    <scopeInfo nodeId="6762883159245086411" fileName="MqlLinkSelector.java" startLine="22" startPosition="0" endLine="26" endPosition="0">
+      <varInfo nodeId="6762883159245086411" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="6762883159245086411" fileName="MqlLinkSelector.java" startLine="26" startPosition="0" endLine="30" endPosition="0">
+      <varInfo nodeId="6762883159245086411" varName="init" />
+      <varInfo nodeId="6762883159245086411" varName="sm" />
+    </scopeInfo>
+    <scopeInfo nodeId="6762883159245086411" fileName="MqlLinkSelector.java" startLine="30" startPosition="0" endLine="34" endPosition="0">
+      <varInfo nodeId="6762883159245086411" varName="sm" />
+    </scopeInfo>
     <unitInfo nodeId="6762883159245086411" fileName="MqlLinkSelector.java" startLine="11" startPosition="0" endLine="35" endPosition="0" unitName="jetbrains.mps.core.query.structure.MqlLinkSelector" />
   </root>
   <root nodeId="6762883159245086414">
@@ -2001,27 +2579,52 @@
     <scopeInfo nodeId="6762883159245086414" fileName="MqlClosure.java" startLine="94" startPosition="69" endLine="95" endPosition="62" />
     <scopeInfo nodeId="6762883159245086414" fileName="MqlClosure.java" startLine="98" startPosition="65" endLine="99" endPosition="168" />
     <scopeInfo nodeId="6762883159245086414" fileName="MqlClosure.java" startLine="102" startPosition="51" endLine="103" endPosition="45" />
-    <scopeInfo nodeId="6762883159245086414" fileName="MqlClosure.java" startLine="21" startPosition="0" endLine="24" endPosition="3" />
+    <scopeInfo nodeId="6762883159245086414" fileName="MqlClosure.java" startLine="21" startPosition="0" endLine="24" endPosition="3">
+      <varInfo nodeId="6762883159245086414" varName="node" />
+    </scopeInfo>
     <scopeInfo nodeId="6762883159245086414" fileName="MqlClosure.java" startLine="25" startPosition="0" endLine="29" endPosition="0" />
-    <scopeInfo nodeId="6762883159245086414" fileName="MqlClosure.java" startLine="29" startPosition="0" endLine="33" endPosition="0" />
+    <scopeInfo nodeId="6762883159245086414" fileName="MqlClosure.java" startLine="29" startPosition="0" endLine="33" endPosition="0">
+      <varInfo nodeId="6762883159245086414" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="6762883159245086414" fileName="MqlClosure.java" startLine="33" startPosition="0" endLine="37" endPosition="0" />
-    <scopeInfo nodeId="6762883159245086414" fileName="MqlClosure.java" startLine="37" startPosition="0" endLine="41" endPosition="0" />
+    <scopeInfo nodeId="6762883159245086414" fileName="MqlClosure.java" startLine="37" startPosition="0" endLine="41" endPosition="0">
+      <varInfo nodeId="6762883159245086414" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="6762883159245086414" fileName="MqlClosure.java" startLine="41" startPosition="0" endLine="45" endPosition="0" />
-    <scopeInfo nodeId="6762883159245086414" fileName="MqlClosure.java" startLine="45" startPosition="0" endLine="49" endPosition="0" />
+    <scopeInfo nodeId="6762883159245086414" fileName="MqlClosure.java" startLine="45" startPosition="0" endLine="49" endPosition="0">
+      <varInfo nodeId="6762883159245086414" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="6762883159245086414" fileName="MqlClosure.java" startLine="49" startPosition="0" endLine="53" endPosition="0" />
-    <scopeInfo nodeId="6762883159245086414" fileName="MqlClosure.java" startLine="53" startPosition="0" endLine="57" endPosition="0" />
+    <scopeInfo nodeId="6762883159245086414" fileName="MqlClosure.java" startLine="53" startPosition="0" endLine="57" endPosition="0">
+      <varInfo nodeId="6762883159245086414" varName="node" />
+    </scopeInfo>
     <scopeInfo nodeId="6762883159245086414" fileName="MqlClosure.java" startLine="57" startPosition="0" endLine="61" endPosition="0" />
     <scopeInfo nodeId="6762883159245086414" fileName="MqlClosure.java" startLine="61" startPosition="0" endLine="65" endPosition="0" />
     <scopeInfo nodeId="6762883159245086414" fileName="MqlClosure.java" startLine="65" startPosition="0" endLine="69" endPosition="0" />
-    <scopeInfo nodeId="6762883159245086414" fileName="MqlClosure.java" startLine="69" startPosition="0" endLine="73" endPosition="0" />
-    <scopeInfo nodeId="6762883159245086414" fileName="MqlClosure.java" startLine="73" startPosition="0" endLine="77" endPosition="0" />
+    <scopeInfo nodeId="6762883159245086414" fileName="MqlClosure.java" startLine="69" startPosition="0" endLine="73" endPosition="0">
+      <varInfo nodeId="6762883159245086414" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="6762883159245086414" fileName="MqlClosure.java" startLine="73" startPosition="0" endLine="77" endPosition="0">
+      <varInfo nodeId="6762883159245086414" varName="node" />
+      <varInfo nodeId="6762883159245086414" varName="prev" />
+    </scopeInfo>
     <scopeInfo nodeId="6762883159245086414" fileName="MqlClosure.java" startLine="77" startPosition="0" endLine="81" endPosition="0" />
     <scopeInfo nodeId="6762883159245086414" fileName="MqlClosure.java" startLine="81" startPosition="0" endLine="85" endPosition="0" />
     <scopeInfo nodeId="6762883159245086414" fileName="MqlClosure.java" startLine="85" startPosition="0" endLine="89" endPosition="0" />
-    <scopeInfo nodeId="6762883159245086414" fileName="MqlClosure.java" startLine="89" startPosition="0" endLine="93" endPosition="0" />
-    <scopeInfo nodeId="6762883159245086414" fileName="MqlClosure.java" startLine="93" startPosition="0" endLine="97" endPosition="0" />
-    <scopeInfo nodeId="6762883159245086414" fileName="MqlClosure.java" startLine="97" startPosition="0" endLine="101" endPosition="0" />
-    <scopeInfo nodeId="6762883159245086414" fileName="MqlClosure.java" startLine="101" startPosition="0" endLine="105" endPosition="0" />
+    <scopeInfo nodeId="6762883159245086414" fileName="MqlClosure.java" startLine="89" startPosition="0" endLine="93" endPosition="0">
+      <varInfo nodeId="6762883159245086414" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="6762883159245086414" fileName="MqlClosure.java" startLine="93" startPosition="0" endLine="97" endPosition="0">
+      <varInfo nodeId="6762883159245086414" varName="node" />
+      <varInfo nodeId="6762883159245086414" varName="prev" />
+    </scopeInfo>
+    <scopeInfo nodeId="6762883159245086414" fileName="MqlClosure.java" startLine="97" startPosition="0" endLine="101" endPosition="0">
+      <varInfo nodeId="6762883159245086414" varName="init" />
+      <varInfo nodeId="6762883159245086414" varName="sm" />
+    </scopeInfo>
+    <scopeInfo nodeId="6762883159245086414" fileName="MqlClosure.java" startLine="101" startPosition="0" endLine="105" endPosition="0">
+      <varInfo nodeId="6762883159245086414" varName="sm" />
+    </scopeInfo>
     <unitInfo nodeId="6762883159245086414" fileName="MqlClosure.java" startLine="13" startPosition="0" endLine="106" endPosition="0" unitName="jetbrains.mps.core.query.structure.MqlClosure" />
   </root>
   <root nodeId="7862448911997365751">
@@ -2051,14 +2654,26 @@
     <scopeInfo nodeId="7862448911997365751" fileName="MqlListLiteral.java" startLine="36" startPosition="70" endLine="37" endPosition="58" />
     <scopeInfo nodeId="7862448911997365751" fileName="MqlListLiteral.java" startLine="40" startPosition="69" endLine="41" endPosition="176" />
     <scopeInfo nodeId="7862448911997365751" fileName="MqlListLiteral.java" startLine="44" startPosition="55" endLine="45" endPosition="49" />
-    <scopeInfo nodeId="7862448911997365751" fileName="MqlListLiteral.java" startLine="15" startPosition="0" endLine="18" endPosition="3" />
+    <scopeInfo nodeId="7862448911997365751" fileName="MqlListLiteral.java" startLine="15" startPosition="0" endLine="18" endPosition="3">
+      <varInfo nodeId="7862448911997365751" varName="node" />
+    </scopeInfo>
     <scopeInfo nodeId="7862448911997365751" fileName="MqlListLiteral.java" startLine="19" startPosition="0" endLine="23" endPosition="0" />
     <scopeInfo nodeId="7862448911997365751" fileName="MqlListLiteral.java" startLine="23" startPosition="0" endLine="27" endPosition="0" />
     <scopeInfo nodeId="7862448911997365751" fileName="MqlListLiteral.java" startLine="27" startPosition="0" endLine="31" endPosition="0" />
-    <scopeInfo nodeId="7862448911997365751" fileName="MqlListLiteral.java" startLine="31" startPosition="0" endLine="35" endPosition="0" />
-    <scopeInfo nodeId="7862448911997365751" fileName="MqlListLiteral.java" startLine="35" startPosition="0" endLine="39" endPosition="0" />
-    <scopeInfo nodeId="7862448911997365751" fileName="MqlListLiteral.java" startLine="39" startPosition="0" endLine="43" endPosition="0" />
-    <scopeInfo nodeId="7862448911997365751" fileName="MqlListLiteral.java" startLine="43" startPosition="0" endLine="47" endPosition="0" />
+    <scopeInfo nodeId="7862448911997365751" fileName="MqlListLiteral.java" startLine="31" startPosition="0" endLine="35" endPosition="0">
+      <varInfo nodeId="7862448911997365751" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="7862448911997365751" fileName="MqlListLiteral.java" startLine="35" startPosition="0" endLine="39" endPosition="0">
+      <varInfo nodeId="7862448911997365751" varName="node" />
+      <varInfo nodeId="7862448911997365751" varName="prev" />
+    </scopeInfo>
+    <scopeInfo nodeId="7862448911997365751" fileName="MqlListLiteral.java" startLine="39" startPosition="0" endLine="43" endPosition="0">
+      <varInfo nodeId="7862448911997365751" varName="init" />
+      <varInfo nodeId="7862448911997365751" varName="sm" />
+    </scopeInfo>
+    <scopeInfo nodeId="7862448911997365751" fileName="MqlListLiteral.java" startLine="43" startPosition="0" endLine="47" endPosition="0">
+      <varInfo nodeId="7862448911997365751" varName="sm" />
+    </scopeInfo>
     <unitInfo nodeId="7862448911997365751" fileName="MqlListLiteral.java" startLine="12" startPosition="0" endLine="48" endPosition="0" unitName="jetbrains.mps.core.query.structure.MqlListLiteral" />
   </root>
 </debugInfo>

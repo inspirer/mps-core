@@ -20,14 +20,25 @@
     <scopeInfo nodeId="228266671027905045" fileName="typeof_MqlExpression_InferenceRule.java" startLine="26" startPosition="46" endLine="27" endPosition="62" />
     <scopeInfo nodeId="228266671027905045" fileName="typeof_MqlExpression_InferenceRule.java" startLine="37" startPosition="30" endLine="38" endPosition="17" />
     <scopeInfo nodeId="228266671027905045" fileName="typeof_MqlExpression_InferenceRule.java" startLine="14" startPosition="120" endLine="16" endPosition="3" />
-    <scopeInfo nodeId="228266671027905045" fileName="typeof_MqlExpression_InferenceRule.java" startLine="31" startPosition="5" endLine="33" endPosition="45" />
-    <scopeInfo nodeId="228266671027905055" fileName="typeof_MqlExpression_InferenceRule.java" startLine="19" startPosition="5" endLine="22" endPosition="310" />
+    <scopeInfo nodeId="228266671027905045" fileName="typeof_MqlExpression_InferenceRule.java" startLine="31" startPosition="5" endLine="33" endPosition="45">
+      <varInfo nodeId="228266671027905045" varName="b" />
+    </scopeInfo>
+    <scopeInfo nodeId="228266671027905055" fileName="typeof_MqlExpression_InferenceRule.java" startLine="19" startPosition="5" endLine="22" endPosition="310">
+      <varInfo nodeId="228266671027905055" varName="_info_12389875345" />
+      <varInfo nodeId="228266671027905055" varName="_nodeToCheck_1029348928467" />
+    </scopeInfo>
     <scopeInfo nodeId="228266671027905045" fileName="typeof_MqlExpression_InferenceRule.java" startLine="25" startPosition="0" endLine="29" endPosition="0" />
     <scopeInfo nodeId="228266671027905045" fileName="typeof_MqlExpression_InferenceRule.java" startLine="30" startPosition="68" endLine="34" endPosition="5" />
     <scopeInfo nodeId="228266671027905045" fileName="typeof_MqlExpression_InferenceRule.java" startLine="36" startPosition="0" endLine="40" endPosition="0" />
     <scopeInfo nodeId="228266671027905046" fileName="typeof_MqlExpression_InferenceRule.java" startLine="18" startPosition="126" endLine="23" endPosition="5" />
-    <scopeInfo nodeId="228266671027905045" fileName="typeof_MqlExpression_InferenceRule.java" startLine="29" startPosition="0" endLine="36" endPosition="0" />
-    <scopeInfo nodeId="228266671027905045" fileName="typeof_MqlExpression_InferenceRule.java" startLine="17" startPosition="0" endLine="25" endPosition="0" />
+    <scopeInfo nodeId="228266671027905045" fileName="typeof_MqlExpression_InferenceRule.java" startLine="29" startPosition="0" endLine="36" endPosition="0">
+      <varInfo nodeId="228266671027905045" varName="argument" />
+    </scopeInfo>
+    <scopeInfo nodeId="228266671027905045" fileName="typeof_MqlExpression_InferenceRule.java" startLine="17" startPosition="0" endLine="25" endPosition="0">
+      <varInfo nodeId="228266671027905045" varName="mqlExpression" />
+      <varInfo nodeId="228266671027905045" varName="status" />
+      <varInfo nodeId="228266671027905045" varName="typeCheckingContext" />
+    </scopeInfo>
     <unitInfo nodeId="228266671027905045" fileName="typeof_MqlExpression_InferenceRule.java" startLine="14" startPosition="0" endLine="41" endPosition="0" unitName="jetbrains.mps.core.query.typesystem.typeof_MqlExpression_InferenceRule" />
   </root>
   <root nodeId="2852142168179589858">
@@ -57,15 +68,25 @@
     <scopeInfo nodeId="2852142168179589858" fileName="check_NoContextCall_NonTypesystemRule.java" startLine="43" startPosition="46" endLine="44" endPosition="70" />
     <scopeInfo nodeId="2852142168179589858" fileName="check_NoContextCall_NonTypesystemRule.java" startLine="54" startPosition="30" endLine="55" endPosition="17" />
     <scopeInfo nodeId="2852142168179589858" fileName="check_NoContextCall_NonTypesystemRule.java" startLine="19" startPosition="131" endLine="21" endPosition="3" />
-    <scopeInfo nodeId="2852142168179589893" fileName="check_NoContextCall_NonTypesystemRule.java" startLine="25" startPosition="7" endLine="27" endPosition="255" />
-    <scopeInfo nodeId="2852142168179589986" fileName="check_NoContextCall_NonTypesystemRule.java" startLine="35" startPosition="9" endLine="37" endPosition="241" />
-    <scopeInfo nodeId="2852142168179589858" fileName="check_NoContextCall_NonTypesystemRule.java" startLine="48" startPosition="5" endLine="50" endPosition="45" />
+    <scopeInfo nodeId="2852142168179589893" fileName="check_NoContextCall_NonTypesystemRule.java" startLine="25" startPosition="7" endLine="27" endPosition="255">
+      <varInfo nodeId="2852142168179589893" varName="_reporter_2309309498" />
+      <varInfo nodeId="2852142168179589893" varName="errorTarget" />
+    </scopeInfo>
+    <scopeInfo nodeId="2852142168179589986" fileName="check_NoContextCall_NonTypesystemRule.java" startLine="35" startPosition="9" endLine="37" endPosition="241">
+      <varInfo nodeId="2852142168179589986" varName="_reporter_2309309498" />
+      <varInfo nodeId="2852142168179589986" varName="errorTarget" />
+    </scopeInfo>
+    <scopeInfo nodeId="2852142168179589858" fileName="check_NoContextCall_NonTypesystemRule.java" startLine="48" startPosition="5" endLine="50" endPosition="45">
+      <varInfo nodeId="2852142168179589858" varName="b" />
+    </scopeInfo>
     <scopeInfo nodeId="2852142168179589960" fileName="check_NoContextCall_NonTypesystemRule.java" startLine="34" startPosition="183" endLine="38" endPosition="9" />
     <scopeInfo nodeId="2852142168179589858" fileName="check_NoContextCall_NonTypesystemRule.java" startLine="42" startPosition="0" endLine="46" endPosition="0" />
     <scopeInfo nodeId="2852142168179589858" fileName="check_NoContextCall_NonTypesystemRule.java" startLine="47" startPosition="68" endLine="51" endPosition="5" />
     <scopeInfo nodeId="2852142168179589858" fileName="check_NoContextCall_NonTypesystemRule.java" startLine="53" startPosition="0" endLine="57" endPosition="0" />
     <scopeInfo nodeId="2852142168179589864" fileName="check_NoContextCall_NonTypesystemRule.java" startLine="24" startPosition="257" endLine="29" endPosition="13" />
-    <scopeInfo nodeId="2852142168179589858" fileName="check_NoContextCall_NonTypesystemRule.java" startLine="46" startPosition="0" endLine="53" endPosition="0" />
+    <scopeInfo nodeId="2852142168179589858" fileName="check_NoContextCall_NonTypesystemRule.java" startLine="46" startPosition="0" endLine="53" endPosition="0">
+      <varInfo nodeId="2852142168179589858" varName="argument" />
+    </scopeInfo>
     <scopeInfo nodeId="2852142168179589908" fileName="check_NoContextCall_NonTypesystemRule.java" startLine="31" startPosition="131" endLine="39" endPosition="7">
       <varInfo nodeId="2852142168179589934" varName="argument" />
       <varInfo nodeId="2852142168179589947" varName="param" />
@@ -74,7 +95,11 @@
       <varInfo nodeId="2852142168179589910" varName="i" />
     </scopeInfo>
     <scopeInfo nodeId="2852142168179589859" fileName="check_NoContextCall_NonTypesystemRule.java" startLine="23" startPosition="134" endLine="40" endPosition="5" />
-    <scopeInfo nodeId="2852142168179589858" fileName="check_NoContextCall_NonTypesystemRule.java" startLine="22" startPosition="0" endLine="42" endPosition="0" />
+    <scopeInfo nodeId="2852142168179589858" fileName="check_NoContextCall_NonTypesystemRule.java" startLine="22" startPosition="0" endLine="42" endPosition="0">
+      <varInfo nodeId="2852142168179589858" varName="mqlNoContextQueryCall" />
+      <varInfo nodeId="2852142168179589858" varName="status" />
+      <varInfo nodeId="2852142168179589858" varName="typeCheckingContext" />
+    </scopeInfo>
     <unitInfo nodeId="2852142168179589858" fileName="check_NoContextCall_NonTypesystemRule.java" startLine="19" startPosition="0" endLine="58" endPosition="0" unitName="jetbrains.mps.core.query.typesystem.check_NoContextCall_NonTypesystemRule" />
   </root>
   <root nodeId="5280308256730662789">
@@ -97,8 +122,13 @@
     <scopeInfo nodeId="5280308256730662789" fileName="check_CollectionSelector_NonTypesystemRule.java" startLine="31" startPosition="46" endLine="32" endPosition="70" />
     <scopeInfo nodeId="5280308256730662789" fileName="check_CollectionSelector_NonTypesystemRule.java" startLine="42" startPosition="30" endLine="43" endPosition="17" />
     <scopeInfo nodeId="5280308256730662789" fileName="check_CollectionSelector_NonTypesystemRule.java" startLine="17" startPosition="136" endLine="19" endPosition="3" />
-    <scopeInfo nodeId="5280308256730689738" fileName="check_CollectionSelector_NonTypesystemRule.java" startLine="24" startPosition="7" endLine="26" endPosition="297" />
-    <scopeInfo nodeId="5280308256730662789" fileName="check_CollectionSelector_NonTypesystemRule.java" startLine="36" startPosition="5" endLine="38" endPosition="45" />
+    <scopeInfo nodeId="5280308256730689738" fileName="check_CollectionSelector_NonTypesystemRule.java" startLine="24" startPosition="7" endLine="26" endPosition="297">
+      <varInfo nodeId="5280308256730689738" varName="_reporter_2309309498" />
+      <varInfo nodeId="5280308256730689738" varName="errorTarget" />
+    </scopeInfo>
+    <scopeInfo nodeId="5280308256730662789" fileName="check_CollectionSelector_NonTypesystemRule.java" startLine="36" startPosition="5" endLine="38" endPosition="45">
+      <varInfo nodeId="5280308256730662789" varName="b" />
+    </scopeInfo>
     <scopeInfo nodeId="5280308256730689722" fileName="check_CollectionSelector_NonTypesystemRule.java" startLine="23" startPosition="98" endLine="27" endPosition="7" />
     <scopeInfo nodeId="5280308256730662789" fileName="check_CollectionSelector_NonTypesystemRule.java" startLine="30" startPosition="0" endLine="34" endPosition="0" />
     <scopeInfo nodeId="5280308256730662789" fileName="check_CollectionSelector_NonTypesystemRule.java" startLine="35" startPosition="68" endLine="39" endPosition="5" />
@@ -106,8 +136,14 @@
     <scopeInfo nodeId="5280308256730662790" fileName="check_CollectionSelector_NonTypesystemRule.java" startLine="21" startPosition="121" endLine="28" endPosition="5">
       <varInfo nodeId="5280308256730689700" varName="left" />
     </scopeInfo>
-    <scopeInfo nodeId="5280308256730662789" fileName="check_CollectionSelector_NonTypesystemRule.java" startLine="34" startPosition="0" endLine="41" endPosition="0" />
-    <scopeInfo nodeId="5280308256730662789" fileName="check_CollectionSelector_NonTypesystemRule.java" startLine="20" startPosition="0" endLine="30" endPosition="0" />
+    <scopeInfo nodeId="5280308256730662789" fileName="check_CollectionSelector_NonTypesystemRule.java" startLine="34" startPosition="0" endLine="41" endPosition="0">
+      <varInfo nodeId="5280308256730662789" varName="argument" />
+    </scopeInfo>
+    <scopeInfo nodeId="5280308256730662789" fileName="check_CollectionSelector_NonTypesystemRule.java" startLine="20" startPosition="0" endLine="30" endPosition="0">
+      <varInfo nodeId="5280308256730662789" varName="selector" />
+      <varInfo nodeId="5280308256730662789" varName="status" />
+      <varInfo nodeId="5280308256730662789" varName="typeCheckingContext" />
+    </scopeInfo>
     <unitInfo nodeId="5280308256730662789" fileName="check_CollectionSelector_NonTypesystemRule.java" startLine="17" startPosition="0" endLine="46" endPosition="0" unitName="jetbrains.mps.core.query.typesystem.check_CollectionSelector_NonTypesystemRule" />
   </root>
   <root nodeId="5804859299351488467">
@@ -129,15 +165,26 @@
     <scopeInfo nodeId="5804859299351488467" fileName="check_Dot_NonTypesystemRule.java" startLine="30" startPosition="46" endLine="31" endPosition="65" />
     <scopeInfo nodeId="5804859299351488467" fileName="check_Dot_NonTypesystemRule.java" startLine="41" startPosition="30" endLine="42" endPosition="17" />
     <scopeInfo nodeId="5804859299351488467" fileName="check_Dot_NonTypesystemRule.java" startLine="17" startPosition="121" endLine="19" endPosition="3" />
-    <scopeInfo nodeId="5804859299351493530" fileName="check_Dot_NonTypesystemRule.java" startLine="23" startPosition="7" endLine="25" endPosition="295" />
-    <scopeInfo nodeId="5804859299351488467" fileName="check_Dot_NonTypesystemRule.java" startLine="35" startPosition="5" endLine="37" endPosition="45" />
+    <scopeInfo nodeId="5804859299351493530" fileName="check_Dot_NonTypesystemRule.java" startLine="23" startPosition="7" endLine="25" endPosition="295">
+      <varInfo nodeId="5804859299351493530" varName="_reporter_2309309498" />
+      <varInfo nodeId="5804859299351493530" varName="errorTarget" />
+    </scopeInfo>
+    <scopeInfo nodeId="5804859299351488467" fileName="check_Dot_NonTypesystemRule.java" startLine="35" startPosition="5" endLine="37" endPosition="45">
+      <varInfo nodeId="5804859299351488467" varName="b" />
+    </scopeInfo>
     <scopeInfo nodeId="5804859299351488473" fileName="check_Dot_NonTypesystemRule.java" startLine="22" startPosition="241" endLine="26" endPosition="7" />
     <scopeInfo nodeId="5804859299351488467" fileName="check_Dot_NonTypesystemRule.java" startLine="29" startPosition="0" endLine="33" endPosition="0" />
     <scopeInfo nodeId="5804859299351488467" fileName="check_Dot_NonTypesystemRule.java" startLine="34" startPosition="68" endLine="38" endPosition="5" />
     <scopeInfo nodeId="5804859299351488467" fileName="check_Dot_NonTypesystemRule.java" startLine="40" startPosition="0" endLine="44" endPosition="0" />
     <scopeInfo nodeId="5804859299351488468" fileName="check_Dot_NonTypesystemRule.java" startLine="21" startPosition="116" endLine="27" endPosition="5" />
-    <scopeInfo nodeId="5804859299351488467" fileName="check_Dot_NonTypesystemRule.java" startLine="33" startPosition="0" endLine="40" endPosition="0" />
-    <scopeInfo nodeId="5804859299351488467" fileName="check_Dot_NonTypesystemRule.java" startLine="20" startPosition="0" endLine="29" endPosition="0" />
+    <scopeInfo nodeId="5804859299351488467" fileName="check_Dot_NonTypesystemRule.java" startLine="33" startPosition="0" endLine="40" endPosition="0">
+      <varInfo nodeId="5804859299351488467" varName="argument" />
+    </scopeInfo>
+    <scopeInfo nodeId="5804859299351488467" fileName="check_Dot_NonTypesystemRule.java" startLine="20" startPosition="0" endLine="29" endPosition="0">
+      <varInfo nodeId="5804859299351488467" varName="dot" />
+      <varInfo nodeId="5804859299351488467" varName="status" />
+      <varInfo nodeId="5804859299351488467" varName="typeCheckingContext" />
+    </scopeInfo>
     <unitInfo nodeId="5804859299351488467" fileName="check_Dot_NonTypesystemRule.java" startLine="17" startPosition="0" endLine="45" endPosition="0" unitName="jetbrains.mps.core.query.typesystem.check_Dot_NonTypesystemRule" />
   </root>
   <root nodeId="5804859299351493537">
@@ -159,15 +206,26 @@
     <scopeInfo nodeId="5804859299351493537" fileName="check_Unary_NonTypesystemRule.java" startLine="30" startPosition="46" endLine="31" endPosition="57" />
     <scopeInfo nodeId="5804859299351493537" fileName="check_Unary_NonTypesystemRule.java" startLine="41" startPosition="30" endLine="42" endPosition="17" />
     <scopeInfo nodeId="5804859299351493537" fileName="check_Unary_NonTypesystemRule.java" startLine="17" startPosition="123" endLine="19" endPosition="3" />
-    <scopeInfo nodeId="5804859299351493578" fileName="check_Unary_NonTypesystemRule.java" startLine="23" startPosition="7" endLine="25" endPosition="300" />
-    <scopeInfo nodeId="5804859299351493537" fileName="check_Unary_NonTypesystemRule.java" startLine="35" startPosition="5" endLine="37" endPosition="45" />
+    <scopeInfo nodeId="5804859299351493578" fileName="check_Unary_NonTypesystemRule.java" startLine="23" startPosition="7" endLine="25" endPosition="300">
+      <varInfo nodeId="5804859299351493578" varName="_reporter_2309309498" />
+      <varInfo nodeId="5804859299351493578" varName="errorTarget" />
+    </scopeInfo>
+    <scopeInfo nodeId="5804859299351493537" fileName="check_Unary_NonTypesystemRule.java" startLine="35" startPosition="5" endLine="37" endPosition="45">
+      <varInfo nodeId="5804859299351493537" varName="b" />
+    </scopeInfo>
     <scopeInfo nodeId="5804859299351493543" fileName="check_Unary_NonTypesystemRule.java" startLine="22" startPosition="256" endLine="26" endPosition="7" />
     <scopeInfo nodeId="5804859299351493537" fileName="check_Unary_NonTypesystemRule.java" startLine="29" startPosition="0" endLine="33" endPosition="0" />
     <scopeInfo nodeId="5804859299351493537" fileName="check_Unary_NonTypesystemRule.java" startLine="34" startPosition="68" endLine="38" endPosition="5" />
     <scopeInfo nodeId="5804859299351493537" fileName="check_Unary_NonTypesystemRule.java" startLine="40" startPosition="0" endLine="44" endPosition="0" />
     <scopeInfo nodeId="5804859299351493538" fileName="check_Unary_NonTypesystemRule.java" startLine="21" startPosition="121" endLine="27" endPosition="5" />
-    <scopeInfo nodeId="5804859299351493537" fileName="check_Unary_NonTypesystemRule.java" startLine="33" startPosition="0" endLine="40" endPosition="0" />
-    <scopeInfo nodeId="5804859299351493537" fileName="check_Unary_NonTypesystemRule.java" startLine="20" startPosition="0" endLine="29" endPosition="0" />
+    <scopeInfo nodeId="5804859299351493537" fileName="check_Unary_NonTypesystemRule.java" startLine="33" startPosition="0" endLine="40" endPosition="0">
+      <varInfo nodeId="5804859299351493537" varName="argument" />
+    </scopeInfo>
+    <scopeInfo nodeId="5804859299351493537" fileName="check_Unary_NonTypesystemRule.java" startLine="20" startPosition="0" endLine="29" endPosition="0">
+      <varInfo nodeId="5804859299351493537" varName="mqlUnary" />
+      <varInfo nodeId="5804859299351493537" varName="status" />
+      <varInfo nodeId="5804859299351493537" varName="typeCheckingContext" />
+    </scopeInfo>
     <unitInfo nodeId="5804859299351493537" fileName="check_Unary_NonTypesystemRule.java" startLine="17" startPosition="0" endLine="45" endPosition="0" unitName="jetbrains.mps.core.query.typesystem.check_Unary_NonTypesystemRule" />
   </root>
   <root nodeId="8595827001410591240">
@@ -200,9 +258,17 @@
     <scopeInfo nodeId="8595827001410591240" fileName="check_BinaryExpr_NonTypesystemRule.java" startLine="46" startPosition="46" endLine="47" endPosition="62" />
     <scopeInfo nodeId="8595827001410591240" fileName="check_BinaryExpr_NonTypesystemRule.java" startLine="57" startPosition="30" endLine="58" endPosition="17" />
     <scopeInfo nodeId="8595827001410591240" fileName="check_BinaryExpr_NonTypesystemRule.java" startLine="18" startPosition="128" endLine="20" endPosition="3" />
-    <scopeInfo nodeId="8595827001410591338" fileName="check_BinaryExpr_NonTypesystemRule.java" startLine="29" startPosition="9" endLine="31" endPosition="307" />
-    <scopeInfo nodeId="8595827001410591377" fileName="check_BinaryExpr_NonTypesystemRule.java" startLine="38" startPosition="9" endLine="40" endPosition="308" />
-    <scopeInfo nodeId="8595827001410591240" fileName="check_BinaryExpr_NonTypesystemRule.java" startLine="51" startPosition="5" endLine="53" endPosition="45" />
+    <scopeInfo nodeId="8595827001410591338" fileName="check_BinaryExpr_NonTypesystemRule.java" startLine="29" startPosition="9" endLine="31" endPosition="307">
+      <varInfo nodeId="8595827001410591338" varName="_reporter_2309309498" />
+      <varInfo nodeId="8595827001410591338" varName="errorTarget" />
+    </scopeInfo>
+    <scopeInfo nodeId="8595827001410591377" fileName="check_BinaryExpr_NonTypesystemRule.java" startLine="38" startPosition="9" endLine="40" endPosition="308">
+      <varInfo nodeId="8595827001410591377" varName="_reporter_2309309498" />
+      <varInfo nodeId="8595827001410591377" varName="errorTarget" />
+    </scopeInfo>
+    <scopeInfo nodeId="8595827001410591240" fileName="check_BinaryExpr_NonTypesystemRule.java" startLine="51" startPosition="5" endLine="53" endPosition="45">
+      <varInfo nodeId="8595827001410591240" varName="b" />
+    </scopeInfo>
     <scopeInfo nodeId="8595827001410591314" fileName="check_BinaryExpr_NonTypesystemRule.java" startLine="28" startPosition="88" endLine="32" endPosition="9" />
     <scopeInfo nodeId="8595827001410591376" fileName="check_BinaryExpr_NonTypesystemRule.java" startLine="37" startPosition="90" endLine="41" endPosition="9" />
     <scopeInfo nodeId="8595827001410591240" fileName="check_BinaryExpr_NonTypesystemRule.java" startLine="45" startPosition="0" endLine="49" endPosition="0" />
@@ -214,12 +280,18 @@
     <scopeInfo nodeId="8595827001410591345" fileName="check_BinaryExpr_NonTypesystemRule.java" startLine="35" startPosition="76" endLine="42" endPosition="7">
       <varInfo nodeId="8595827001410591361" varName="rightPrio" />
     </scopeInfo>
-    <scopeInfo nodeId="8595827001410591240" fileName="check_BinaryExpr_NonTypesystemRule.java" startLine="49" startPosition="0" endLine="56" endPosition="0" />
+    <scopeInfo nodeId="8595827001410591240" fileName="check_BinaryExpr_NonTypesystemRule.java" startLine="49" startPosition="0" endLine="56" endPosition="0">
+      <varInfo nodeId="8595827001410591240" varName="argument" />
+    </scopeInfo>
     <scopeInfo nodeId="8595827001410591241" fileName="check_BinaryExpr_NonTypesystemRule.java" startLine="22" startPosition="126" endLine="43" endPosition="5">
       <varInfo nodeId="8595827001410591266" varName="assoc" />
       <varInfo nodeId="8595827001410591252" varName="priority" />
     </scopeInfo>
-    <scopeInfo nodeId="8595827001410591240" fileName="check_BinaryExpr_NonTypesystemRule.java" startLine="21" startPosition="0" endLine="45" endPosition="0" />
+    <scopeInfo nodeId="8595827001410591240" fileName="check_BinaryExpr_NonTypesystemRule.java" startLine="21" startPosition="0" endLine="45" endPosition="0">
+      <varInfo nodeId="8595827001410591240" varName="mqlBinaryExpr" />
+      <varInfo nodeId="8595827001410591240" varName="status" />
+      <varInfo nodeId="8595827001410591240" varName="typeCheckingContext" />
+    </scopeInfo>
     <unitInfo nodeId="8595827001410591240" fileName="check_BinaryExpr_NonTypesystemRule.java" startLine="18" startPosition="0" endLine="61" endPosition="0" unitName="jetbrains.mps.core.query.typesystem.check_BinaryExpr_NonTypesystemRule" />
   </root>
   <root nodeId="8595827001410598353">
@@ -249,19 +321,36 @@
     <scopeInfo nodeId="8595827001410598353" fileName="check_Triplex_NonTypesystemRule.java" startLine="42" startPosition="46" endLine="43" endPosition="59" />
     <scopeInfo nodeId="8595827001410598353" fileName="check_Triplex_NonTypesystemRule.java" startLine="53" startPosition="30" endLine="54" endPosition="17" />
     <scopeInfo nodeId="8595827001410598353" fileName="check_Triplex_NonTypesystemRule.java" startLine="17" startPosition="125" endLine="19" endPosition="3" />
-    <scopeInfo nodeId="8595827001410598398" fileName="check_Triplex_NonTypesystemRule.java" startLine="23" startPosition="7" endLine="25" endPosition="307" />
-    <scopeInfo nodeId="8595827001410598410" fileName="check_Triplex_NonTypesystemRule.java" startLine="29" startPosition="7" endLine="31" endPosition="306" />
-    <scopeInfo nodeId="8595827001410598432" fileName="check_Triplex_NonTypesystemRule.java" startLine="35" startPosition="7" endLine="37" endPosition="306" />
-    <scopeInfo nodeId="8595827001410598353" fileName="check_Triplex_NonTypesystemRule.java" startLine="47" startPosition="5" endLine="49" endPosition="45" />
+    <scopeInfo nodeId="8595827001410598398" fileName="check_Triplex_NonTypesystemRule.java" startLine="23" startPosition="7" endLine="25" endPosition="307">
+      <varInfo nodeId="8595827001410598398" varName="_reporter_2309309498" />
+      <varInfo nodeId="8595827001410598398" varName="errorTarget" />
+    </scopeInfo>
+    <scopeInfo nodeId="8595827001410598410" fileName="check_Triplex_NonTypesystemRule.java" startLine="29" startPosition="7" endLine="31" endPosition="306">
+      <varInfo nodeId="8595827001410598410" varName="_reporter_2309309498" />
+      <varInfo nodeId="8595827001410598410" varName="errorTarget" />
+    </scopeInfo>
+    <scopeInfo nodeId="8595827001410598432" fileName="check_Triplex_NonTypesystemRule.java" startLine="35" startPosition="7" endLine="37" endPosition="306">
+      <varInfo nodeId="8595827001410598432" varName="_reporter_2309309498" />
+      <varInfo nodeId="8595827001410598432" varName="errorTarget" />
+    </scopeInfo>
+    <scopeInfo nodeId="8595827001410598353" fileName="check_Triplex_NonTypesystemRule.java" startLine="47" startPosition="5" endLine="49" endPosition="45">
+      <varInfo nodeId="8595827001410598353" varName="b" />
+    </scopeInfo>
     <scopeInfo nodeId="8595827001410598359" fileName="check_Triplex_NonTypesystemRule.java" startLine="22" startPosition="273" endLine="26" endPosition="7" />
     <scopeInfo nodeId="8595827001410598409" fileName="check_Triplex_NonTypesystemRule.java" startLine="28" startPosition="271" endLine="32" endPosition="7" />
     <scopeInfo nodeId="8595827001410598431" fileName="check_Triplex_NonTypesystemRule.java" startLine="34" startPosition="270" endLine="38" endPosition="7" />
     <scopeInfo nodeId="8595827001410598353" fileName="check_Triplex_NonTypesystemRule.java" startLine="41" startPosition="0" endLine="45" endPosition="0" />
     <scopeInfo nodeId="8595827001410598353" fileName="check_Triplex_NonTypesystemRule.java" startLine="46" startPosition="68" endLine="50" endPosition="5" />
     <scopeInfo nodeId="8595827001410598353" fileName="check_Triplex_NonTypesystemRule.java" startLine="52" startPosition="0" endLine="56" endPosition="0" />
-    <scopeInfo nodeId="8595827001410598353" fileName="check_Triplex_NonTypesystemRule.java" startLine="45" startPosition="0" endLine="52" endPosition="0" />
+    <scopeInfo nodeId="8595827001410598353" fileName="check_Triplex_NonTypesystemRule.java" startLine="45" startPosition="0" endLine="52" endPosition="0">
+      <varInfo nodeId="8595827001410598353" varName="argument" />
+    </scopeInfo>
     <scopeInfo nodeId="8595827001410598354" fileName="check_Triplex_NonTypesystemRule.java" startLine="21" startPosition="123" endLine="39" endPosition="5" />
-    <scopeInfo nodeId="8595827001410598353" fileName="check_Triplex_NonTypesystemRule.java" startLine="20" startPosition="0" endLine="41" endPosition="0" />
+    <scopeInfo nodeId="8595827001410598353" fileName="check_Triplex_NonTypesystemRule.java" startLine="20" startPosition="0" endLine="41" endPosition="0">
+      <varInfo nodeId="8595827001410598353" varName="mqlTriplex" />
+      <varInfo nodeId="8595827001410598353" varName="status" />
+      <varInfo nodeId="8595827001410598353" varName="typeCheckingContext" />
+    </scopeInfo>
     <unitInfo nodeId="8595827001410598353" fileName="check_Triplex_NonTypesystemRule.java" startLine="17" startPosition="0" endLine="57" endPosition="0" unitName="jetbrains.mps.core.query.typesystem.check_Triplex_NonTypesystemRule" />
   </root>
   <root nodeId="8595827001410598458">
@@ -283,15 +372,26 @@
     <scopeInfo nodeId="8595827001410598458" fileName="check_Assignment_NonTypesystemRule.java" startLine="30" startPosition="46" endLine="31" endPosition="62" />
     <scopeInfo nodeId="8595827001410598458" fileName="check_Assignment_NonTypesystemRule.java" startLine="41" startPosition="30" endLine="42" endPosition="17" />
     <scopeInfo nodeId="8595827001410598458" fileName="check_Assignment_NonTypesystemRule.java" startLine="17" startPosition="128" endLine="19" endPosition="3" />
-    <scopeInfo nodeId="8595827001410598501" fileName="check_Assignment_NonTypesystemRule.java" startLine="23" startPosition="7" endLine="25" endPosition="306" />
-    <scopeInfo nodeId="8595827001410598458" fileName="check_Assignment_NonTypesystemRule.java" startLine="35" startPosition="5" endLine="37" endPosition="45" />
+    <scopeInfo nodeId="8595827001410598501" fileName="check_Assignment_NonTypesystemRule.java" startLine="23" startPosition="7" endLine="25" endPosition="306">
+      <varInfo nodeId="8595827001410598501" varName="_reporter_2309309498" />
+      <varInfo nodeId="8595827001410598501" varName="errorTarget" />
+    </scopeInfo>
+    <scopeInfo nodeId="8595827001410598458" fileName="check_Assignment_NonTypesystemRule.java" startLine="35" startPosition="5" endLine="37" endPosition="45">
+      <varInfo nodeId="8595827001410598458" varName="b" />
+    </scopeInfo>
     <scopeInfo nodeId="8595827001410598464" fileName="check_Assignment_NonTypesystemRule.java" startLine="22" startPosition="274" endLine="26" endPosition="7" />
     <scopeInfo nodeId="8595827001410598458" fileName="check_Assignment_NonTypesystemRule.java" startLine="29" startPosition="0" endLine="33" endPosition="0" />
     <scopeInfo nodeId="8595827001410598458" fileName="check_Assignment_NonTypesystemRule.java" startLine="34" startPosition="68" endLine="38" endPosition="5" />
     <scopeInfo nodeId="8595827001410598458" fileName="check_Assignment_NonTypesystemRule.java" startLine="40" startPosition="0" endLine="44" endPosition="0" />
     <scopeInfo nodeId="8595827001410598459" fileName="check_Assignment_NonTypesystemRule.java" startLine="21" startPosition="126" endLine="27" endPosition="5" />
-    <scopeInfo nodeId="8595827001410598458" fileName="check_Assignment_NonTypesystemRule.java" startLine="33" startPosition="0" endLine="40" endPosition="0" />
-    <scopeInfo nodeId="8595827001410598458" fileName="check_Assignment_NonTypesystemRule.java" startLine="20" startPosition="0" endLine="29" endPosition="0" />
+    <scopeInfo nodeId="8595827001410598458" fileName="check_Assignment_NonTypesystemRule.java" startLine="33" startPosition="0" endLine="40" endPosition="0">
+      <varInfo nodeId="8595827001410598458" varName="argument" />
+    </scopeInfo>
+    <scopeInfo nodeId="8595827001410598458" fileName="check_Assignment_NonTypesystemRule.java" startLine="20" startPosition="0" endLine="29" endPosition="0">
+      <varInfo nodeId="8595827001410598458" varName="mqlAssignment" />
+      <varInfo nodeId="8595827001410598458" varName="status" />
+      <varInfo nodeId="8595827001410598458" varName="typeCheckingContext" />
+    </scopeInfo>
     <unitInfo nodeId="8595827001410598458" fileName="check_Assignment_NonTypesystemRule.java" startLine="17" startPosition="0" endLine="45" endPosition="0" unitName="jetbrains.mps.core.query.typesystem.check_Assignment_NonTypesystemRule" />
   </root>
 </debugInfo>

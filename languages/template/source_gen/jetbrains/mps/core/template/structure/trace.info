@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debugInfo>
-  <unitInfo fileName="Template_Language.java" startLine="9" startPosition="0" endLine="16" endPosition="0" unitName="jetbrains.mps.core.template.structure.Template_Language" />
   <unitInfo fileName="StructureAspectDescriptor.java" startLine="10" startPosition="0" endLine="53" endPosition="0" unitName="jetbrains.mps.core.template.structure.StructureAspectDescriptor" />
+  <unitInfo fileName="Template_Language.java" startLine="9" startPosition="0" endLine="16" endPosition="0" unitName="jetbrains.mps.core.template.structure.Template_Language" />
   <root nodeId="212212067811886747">
     <nodeInfo nodeId="212212067811886747" fileName="MtlLibrary.java" startLine="16" startPosition="88" endLine="17" endPosition="90" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="concept" />
     <nodeInfo nodeId="212212067811886747" fileName="MtlLibrary.java" startLine="17" startPosition="90" endLine="18" endPosition="43" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="NAME" />
@@ -73,27 +73,52 @@
     <scopeInfo nodeId="212212067811886747" fileName="MtlLibrary.java" startLine="97" startPosition="69" endLine="98" endPosition="62" />
     <scopeInfo nodeId="212212067811886747" fileName="MtlLibrary.java" startLine="101" startPosition="65" endLine="102" endPosition="171" />
     <scopeInfo nodeId="212212067811886747" fileName="MtlLibrary.java" startLine="105" startPosition="51" endLine="106" endPosition="45" />
-    <scopeInfo nodeId="212212067811886747" fileName="MtlLibrary.java" startLine="24" startPosition="0" endLine="27" endPosition="3" />
+    <scopeInfo nodeId="212212067811886747" fileName="MtlLibrary.java" startLine="24" startPosition="0" endLine="27" endPosition="3">
+      <varInfo nodeId="212212067811886747" varName="node" />
+    </scopeInfo>
     <scopeInfo nodeId="212212067811886747" fileName="MtlLibrary.java" startLine="28" startPosition="0" endLine="32" endPosition="0" />
-    <scopeInfo nodeId="212212067811886747" fileName="MtlLibrary.java" startLine="32" startPosition="0" endLine="36" endPosition="0" />
+    <scopeInfo nodeId="212212067811886747" fileName="MtlLibrary.java" startLine="32" startPosition="0" endLine="36" endPosition="0">
+      <varInfo nodeId="212212067811886747" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="212212067811886747" fileName="MtlLibrary.java" startLine="36" startPosition="0" endLine="40" endPosition="0" />
-    <scopeInfo nodeId="212212067811886747" fileName="MtlLibrary.java" startLine="40" startPosition="0" endLine="44" endPosition="0" />
+    <scopeInfo nodeId="212212067811886747" fileName="MtlLibrary.java" startLine="40" startPosition="0" endLine="44" endPosition="0">
+      <varInfo nodeId="212212067811886747" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="212212067811886747" fileName="MtlLibrary.java" startLine="44" startPosition="0" endLine="48" endPosition="0" />
-    <scopeInfo nodeId="212212067811886747" fileName="MtlLibrary.java" startLine="48" startPosition="0" endLine="52" endPosition="0" />
+    <scopeInfo nodeId="212212067811886747" fileName="MtlLibrary.java" startLine="48" startPosition="0" endLine="52" endPosition="0">
+      <varInfo nodeId="212212067811886747" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="212212067811886747" fileName="MtlLibrary.java" startLine="52" startPosition="0" endLine="56" endPosition="0" />
-    <scopeInfo nodeId="212212067811886747" fileName="MtlLibrary.java" startLine="56" startPosition="0" endLine="60" endPosition="0" />
+    <scopeInfo nodeId="212212067811886747" fileName="MtlLibrary.java" startLine="56" startPosition="0" endLine="60" endPosition="0">
+      <varInfo nodeId="212212067811886747" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="212212067811886747" fileName="MtlLibrary.java" startLine="60" startPosition="0" endLine="64" endPosition="0" />
     <scopeInfo nodeId="212212067811886747" fileName="MtlLibrary.java" startLine="64" startPosition="0" endLine="68" endPosition="0" />
     <scopeInfo nodeId="212212067811886747" fileName="MtlLibrary.java" startLine="68" startPosition="0" endLine="72" endPosition="0" />
-    <scopeInfo nodeId="212212067811886747" fileName="MtlLibrary.java" startLine="72" startPosition="0" endLine="76" endPosition="0" />
-    <scopeInfo nodeId="212212067811886747" fileName="MtlLibrary.java" startLine="76" startPosition="0" endLine="80" endPosition="0" />
+    <scopeInfo nodeId="212212067811886747" fileName="MtlLibrary.java" startLine="72" startPosition="0" endLine="76" endPosition="0">
+      <varInfo nodeId="212212067811886747" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="212212067811886747" fileName="MtlLibrary.java" startLine="76" startPosition="0" endLine="80" endPosition="0">
+      <varInfo nodeId="212212067811886747" varName="node" />
+      <varInfo nodeId="212212067811886747" varName="prev" />
+    </scopeInfo>
     <scopeInfo nodeId="212212067811886747" fileName="MtlLibrary.java" startLine="80" startPosition="0" endLine="84" endPosition="0" />
     <scopeInfo nodeId="212212067811886747" fileName="MtlLibrary.java" startLine="84" startPosition="0" endLine="88" endPosition="0" />
     <scopeInfo nodeId="212212067811886747" fileName="MtlLibrary.java" startLine="88" startPosition="0" endLine="92" endPosition="0" />
-    <scopeInfo nodeId="212212067811886747" fileName="MtlLibrary.java" startLine="92" startPosition="0" endLine="96" endPosition="0" />
-    <scopeInfo nodeId="212212067811886747" fileName="MtlLibrary.java" startLine="96" startPosition="0" endLine="100" endPosition="0" />
-    <scopeInfo nodeId="212212067811886747" fileName="MtlLibrary.java" startLine="100" startPosition="0" endLine="104" endPosition="0" />
-    <scopeInfo nodeId="212212067811886747" fileName="MtlLibrary.java" startLine="104" startPosition="0" endLine="108" endPosition="0" />
+    <scopeInfo nodeId="212212067811886747" fileName="MtlLibrary.java" startLine="92" startPosition="0" endLine="96" endPosition="0">
+      <varInfo nodeId="212212067811886747" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="212212067811886747" fileName="MtlLibrary.java" startLine="96" startPosition="0" endLine="100" endPosition="0">
+      <varInfo nodeId="212212067811886747" varName="node" />
+      <varInfo nodeId="212212067811886747" varName="prev" />
+    </scopeInfo>
+    <scopeInfo nodeId="212212067811886747" fileName="MtlLibrary.java" startLine="100" startPosition="0" endLine="104" endPosition="0">
+      <varInfo nodeId="212212067811886747" varName="init" />
+      <varInfo nodeId="212212067811886747" varName="sm" />
+    </scopeInfo>
+    <scopeInfo nodeId="212212067811886747" fileName="MtlLibrary.java" startLine="104" startPosition="0" endLine="108" endPosition="0">
+      <varInfo nodeId="212212067811886747" varName="sm" />
+    </scopeInfo>
     <unitInfo nodeId="212212067811886747" fileName="MtlLibrary.java" startLine="16" startPosition="0" endLine="109" endPosition="0" unitName="jetbrains.mps.core.template.structure.MtlLibrary" />
   </root>
   <root nodeId="212212067811886750">
@@ -181,31 +206,60 @@
     <scopeInfo nodeId="212212067811886750" fileName="MtlBuilder.java" startLine="117" startPosition="69" endLine="118" endPosition="62" />
     <scopeInfo nodeId="212212067811886750" fileName="MtlBuilder.java" startLine="121" startPosition="65" endLine="122" endPosition="171" />
     <scopeInfo nodeId="212212067811886750" fileName="MtlBuilder.java" startLine="125" startPosition="51" endLine="126" endPosition="45" />
-    <scopeInfo nodeId="212212067811886750" fileName="MtlBuilder.java" startLine="28" startPosition="0" endLine="31" endPosition="3" />
+    <scopeInfo nodeId="212212067811886750" fileName="MtlBuilder.java" startLine="28" startPosition="0" endLine="31" endPosition="3">
+      <varInfo nodeId="212212067811886750" varName="node" />
+    </scopeInfo>
     <scopeInfo nodeId="212212067811886750" fileName="MtlBuilder.java" startLine="32" startPosition="0" endLine="36" endPosition="0" />
-    <scopeInfo nodeId="212212067811886750" fileName="MtlBuilder.java" startLine="36" startPosition="0" endLine="40" endPosition="0" />
+    <scopeInfo nodeId="212212067811886750" fileName="MtlBuilder.java" startLine="36" startPosition="0" endLine="40" endPosition="0">
+      <varInfo nodeId="212212067811886750" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="212212067811886750" fileName="MtlBuilder.java" startLine="40" startPosition="0" endLine="44" endPosition="0" />
-    <scopeInfo nodeId="212212067811886750" fileName="MtlBuilder.java" startLine="44" startPosition="0" endLine="48" endPosition="0" />
+    <scopeInfo nodeId="212212067811886750" fileName="MtlBuilder.java" startLine="44" startPosition="0" endLine="48" endPosition="0">
+      <varInfo nodeId="212212067811886750" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="212212067811886750" fileName="MtlBuilder.java" startLine="48" startPosition="0" endLine="52" endPosition="0" />
-    <scopeInfo nodeId="212212067811886750" fileName="MtlBuilder.java" startLine="52" startPosition="0" endLine="56" endPosition="0" />
+    <scopeInfo nodeId="212212067811886750" fileName="MtlBuilder.java" startLine="52" startPosition="0" endLine="56" endPosition="0">
+      <varInfo nodeId="212212067811886750" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="212212067811886750" fileName="MtlBuilder.java" startLine="56" startPosition="0" endLine="60" endPosition="0" />
-    <scopeInfo nodeId="212212067811886750" fileName="MtlBuilder.java" startLine="60" startPosition="0" endLine="64" endPosition="0" />
+    <scopeInfo nodeId="212212067811886750" fileName="MtlBuilder.java" startLine="60" startPosition="0" endLine="64" endPosition="0">
+      <varInfo nodeId="212212067811886750" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="212212067811886750" fileName="MtlBuilder.java" startLine="64" startPosition="0" endLine="68" endPosition="0" />
-    <scopeInfo nodeId="212212067811886750" fileName="MtlBuilder.java" startLine="68" startPosition="0" endLine="72" endPosition="0" />
+    <scopeInfo nodeId="212212067811886750" fileName="MtlBuilder.java" startLine="68" startPosition="0" endLine="72" endPosition="0">
+      <varInfo nodeId="212212067811886750" varName="node" />
+    </scopeInfo>
     <scopeInfo nodeId="212212067811886750" fileName="MtlBuilder.java" startLine="72" startPosition="0" endLine="76" endPosition="0" />
-    <scopeInfo nodeId="212212067811886750" fileName="MtlBuilder.java" startLine="76" startPosition="0" endLine="80" endPosition="0" />
+    <scopeInfo nodeId="212212067811886750" fileName="MtlBuilder.java" startLine="76" startPosition="0" endLine="80" endPosition="0">
+      <varInfo nodeId="212212067811886750" varName="node" />
+    </scopeInfo>
     <scopeInfo nodeId="212212067811886750" fileName="MtlBuilder.java" startLine="80" startPosition="0" endLine="84" endPosition="0" />
     <scopeInfo nodeId="212212067811886750" fileName="MtlBuilder.java" startLine="84" startPosition="0" endLine="88" endPosition="0" />
     <scopeInfo nodeId="212212067811886750" fileName="MtlBuilder.java" startLine="88" startPosition="0" endLine="92" endPosition="0" />
-    <scopeInfo nodeId="212212067811886750" fileName="MtlBuilder.java" startLine="92" startPosition="0" endLine="96" endPosition="0" />
-    <scopeInfo nodeId="212212067811886750" fileName="MtlBuilder.java" startLine="96" startPosition="0" endLine="100" endPosition="0" />
+    <scopeInfo nodeId="212212067811886750" fileName="MtlBuilder.java" startLine="92" startPosition="0" endLine="96" endPosition="0">
+      <varInfo nodeId="212212067811886750" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="212212067811886750" fileName="MtlBuilder.java" startLine="96" startPosition="0" endLine="100" endPosition="0">
+      <varInfo nodeId="212212067811886750" varName="node" />
+      <varInfo nodeId="212212067811886750" varName="prev" />
+    </scopeInfo>
     <scopeInfo nodeId="212212067811886750" fileName="MtlBuilder.java" startLine="100" startPosition="0" endLine="104" endPosition="0" />
     <scopeInfo nodeId="212212067811886750" fileName="MtlBuilder.java" startLine="104" startPosition="0" endLine="108" endPosition="0" />
     <scopeInfo nodeId="212212067811886750" fileName="MtlBuilder.java" startLine="108" startPosition="0" endLine="112" endPosition="0" />
-    <scopeInfo nodeId="212212067811886750" fileName="MtlBuilder.java" startLine="112" startPosition="0" endLine="116" endPosition="0" />
-    <scopeInfo nodeId="212212067811886750" fileName="MtlBuilder.java" startLine="116" startPosition="0" endLine="120" endPosition="0" />
-    <scopeInfo nodeId="212212067811886750" fileName="MtlBuilder.java" startLine="120" startPosition="0" endLine="124" endPosition="0" />
-    <scopeInfo nodeId="212212067811886750" fileName="MtlBuilder.java" startLine="124" startPosition="0" endLine="128" endPosition="0" />
+    <scopeInfo nodeId="212212067811886750" fileName="MtlBuilder.java" startLine="112" startPosition="0" endLine="116" endPosition="0">
+      <varInfo nodeId="212212067811886750" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="212212067811886750" fileName="MtlBuilder.java" startLine="116" startPosition="0" endLine="120" endPosition="0">
+      <varInfo nodeId="212212067811886750" varName="node" />
+      <varInfo nodeId="212212067811886750" varName="prev" />
+    </scopeInfo>
+    <scopeInfo nodeId="212212067811886750" fileName="MtlBuilder.java" startLine="120" startPosition="0" endLine="124" endPosition="0">
+      <varInfo nodeId="212212067811886750" varName="init" />
+      <varInfo nodeId="212212067811886750" varName="sm" />
+    </scopeInfo>
+    <scopeInfo nodeId="212212067811886750" fileName="MtlBuilder.java" startLine="124" startPosition="0" endLine="128" endPosition="0">
+      <varInfo nodeId="212212067811886750" varName="sm" />
+    </scopeInfo>
     <unitInfo nodeId="212212067811886750" fileName="MtlBuilder.java" startLine="18" startPosition="0" endLine="129" endPosition="0" unitName="jetbrains.mps.core.template.structure.MtlBuilder" />
   </root>
   <root nodeId="212212067811886751">
@@ -309,36 +363,70 @@
     <scopeInfo nodeId="212212067811886751" fileName="MtlTemplate.java" startLine="138" startPosition="69" endLine="139" endPosition="63" />
     <scopeInfo nodeId="212212067811886751" fileName="MtlTemplate.java" startLine="142" startPosition="66" endLine="143" endPosition="173" />
     <scopeInfo nodeId="212212067811886751" fileName="MtlTemplate.java" startLine="146" startPosition="52" endLine="147" endPosition="46" />
-    <scopeInfo nodeId="212212067811886751" fileName="MtlTemplate.java" startLine="29" startPosition="0" endLine="32" endPosition="3" />
+    <scopeInfo nodeId="212212067811886751" fileName="MtlTemplate.java" startLine="29" startPosition="0" endLine="32" endPosition="3">
+      <varInfo nodeId="212212067811886751" varName="node" />
+    </scopeInfo>
     <scopeInfo nodeId="212212067811886751" fileName="MtlTemplate.java" startLine="33" startPosition="0" endLine="37" endPosition="0" />
-    <scopeInfo nodeId="212212067811886751" fileName="MtlTemplate.java" startLine="37" startPosition="0" endLine="41" endPosition="0" />
+    <scopeInfo nodeId="212212067811886751" fileName="MtlTemplate.java" startLine="37" startPosition="0" endLine="41" endPosition="0">
+      <varInfo nodeId="212212067811886751" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="212212067811886751" fileName="MtlTemplate.java" startLine="41" startPosition="0" endLine="45" endPosition="0" />
-    <scopeInfo nodeId="212212067811886751" fileName="MtlTemplate.java" startLine="45" startPosition="0" endLine="49" endPosition="0" />
+    <scopeInfo nodeId="212212067811886751" fileName="MtlTemplate.java" startLine="45" startPosition="0" endLine="49" endPosition="0">
+      <varInfo nodeId="212212067811886751" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="212212067811886751" fileName="MtlTemplate.java" startLine="49" startPosition="0" endLine="53" endPosition="0" />
-    <scopeInfo nodeId="212212067811886751" fileName="MtlTemplate.java" startLine="53" startPosition="0" endLine="57" endPosition="0" />
+    <scopeInfo nodeId="212212067811886751" fileName="MtlTemplate.java" startLine="53" startPosition="0" endLine="57" endPosition="0">
+      <varInfo nodeId="212212067811886751" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="212212067811886751" fileName="MtlTemplate.java" startLine="57" startPosition="0" endLine="61" endPosition="0" />
-    <scopeInfo nodeId="212212067811886751" fileName="MtlTemplate.java" startLine="61" startPosition="0" endLine="65" endPosition="0" />
+    <scopeInfo nodeId="212212067811886751" fileName="MtlTemplate.java" startLine="61" startPosition="0" endLine="65" endPosition="0">
+      <varInfo nodeId="212212067811886751" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="212212067811886751" fileName="MtlTemplate.java" startLine="65" startPosition="0" endLine="69" endPosition="0" />
-    <scopeInfo nodeId="212212067811886751" fileName="MtlTemplate.java" startLine="69" startPosition="0" endLine="73" endPosition="0" />
+    <scopeInfo nodeId="212212067811886751" fileName="MtlTemplate.java" startLine="69" startPosition="0" endLine="73" endPosition="0">
+      <varInfo nodeId="212212067811886751" varName="node" />
+    </scopeInfo>
     <scopeInfo nodeId="212212067811886751" fileName="MtlTemplate.java" startLine="73" startPosition="0" endLine="77" endPosition="0" />
-    <scopeInfo nodeId="212212067811886751" fileName="MtlTemplate.java" startLine="77" startPosition="0" endLine="81" endPosition="0" />
+    <scopeInfo nodeId="212212067811886751" fileName="MtlTemplate.java" startLine="77" startPosition="0" endLine="81" endPosition="0">
+      <varInfo nodeId="212212067811886751" varName="node" />
+    </scopeInfo>
     <scopeInfo nodeId="212212067811886751" fileName="MtlTemplate.java" startLine="81" startPosition="0" endLine="85" endPosition="0" />
     <scopeInfo nodeId="212212067811886751" fileName="MtlTemplate.java" startLine="85" startPosition="0" endLine="89" endPosition="0" />
     <scopeInfo nodeId="212212067811886751" fileName="MtlTemplate.java" startLine="89" startPosition="0" endLine="93" endPosition="0" />
-    <scopeInfo nodeId="212212067811886751" fileName="MtlTemplate.java" startLine="93" startPosition="0" endLine="97" endPosition="0" />
-    <scopeInfo nodeId="212212067811886751" fileName="MtlTemplate.java" startLine="97" startPosition="0" endLine="101" endPosition="0" />
+    <scopeInfo nodeId="212212067811886751" fileName="MtlTemplate.java" startLine="93" startPosition="0" endLine="97" endPosition="0">
+      <varInfo nodeId="212212067811886751" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="212212067811886751" fileName="MtlTemplate.java" startLine="97" startPosition="0" endLine="101" endPosition="0">
+      <varInfo nodeId="212212067811886751" varName="node" />
+      <varInfo nodeId="212212067811886751" varName="prev" />
+    </scopeInfo>
     <scopeInfo nodeId="212212067811886751" fileName="MtlTemplate.java" startLine="101" startPosition="0" endLine="105" endPosition="0" />
     <scopeInfo nodeId="212212067811886751" fileName="MtlTemplate.java" startLine="105" startPosition="0" endLine="109" endPosition="0" />
     <scopeInfo nodeId="212212067811886751" fileName="MtlTemplate.java" startLine="109" startPosition="0" endLine="113" endPosition="0" />
-    <scopeInfo nodeId="212212067811886751" fileName="MtlTemplate.java" startLine="113" startPosition="0" endLine="117" endPosition="0" />
-    <scopeInfo nodeId="212212067811886751" fileName="MtlTemplate.java" startLine="117" startPosition="0" endLine="121" endPosition="0" />
+    <scopeInfo nodeId="212212067811886751" fileName="MtlTemplate.java" startLine="113" startPosition="0" endLine="117" endPosition="0">
+      <varInfo nodeId="212212067811886751" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="212212067811886751" fileName="MtlTemplate.java" startLine="117" startPosition="0" endLine="121" endPosition="0">
+      <varInfo nodeId="212212067811886751" varName="node" />
+      <varInfo nodeId="212212067811886751" varName="prev" />
+    </scopeInfo>
     <scopeInfo nodeId="212212067811886751" fileName="MtlTemplate.java" startLine="121" startPosition="0" endLine="125" endPosition="0" />
     <scopeInfo nodeId="212212067811886751" fileName="MtlTemplate.java" startLine="125" startPosition="0" endLine="129" endPosition="0" />
     <scopeInfo nodeId="212212067811886751" fileName="MtlTemplate.java" startLine="129" startPosition="0" endLine="133" endPosition="0" />
-    <scopeInfo nodeId="212212067811886751" fileName="MtlTemplate.java" startLine="133" startPosition="0" endLine="137" endPosition="0" />
-    <scopeInfo nodeId="212212067811886751" fileName="MtlTemplate.java" startLine="137" startPosition="0" endLine="141" endPosition="0" />
-    <scopeInfo nodeId="212212067811886751" fileName="MtlTemplate.java" startLine="141" startPosition="0" endLine="145" endPosition="0" />
-    <scopeInfo nodeId="212212067811886751" fileName="MtlTemplate.java" startLine="145" startPosition="0" endLine="149" endPosition="0" />
+    <scopeInfo nodeId="212212067811886751" fileName="MtlTemplate.java" startLine="133" startPosition="0" endLine="137" endPosition="0">
+      <varInfo nodeId="212212067811886751" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="212212067811886751" fileName="MtlTemplate.java" startLine="137" startPosition="0" endLine="141" endPosition="0">
+      <varInfo nodeId="212212067811886751" varName="node" />
+      <varInfo nodeId="212212067811886751" varName="prev" />
+    </scopeInfo>
+    <scopeInfo nodeId="212212067811886751" fileName="MtlTemplate.java" startLine="141" startPosition="0" endLine="145" endPosition="0">
+      <varInfo nodeId="212212067811886751" varName="init" />
+      <varInfo nodeId="212212067811886751" varName="sm" />
+    </scopeInfo>
+    <scopeInfo nodeId="212212067811886751" fileName="MtlTemplate.java" startLine="145" startPosition="0" endLine="149" endPosition="0">
+      <varInfo nodeId="212212067811886751" varName="sm" />
+    </scopeInfo>
     <unitInfo nodeId="212212067811886751" fileName="MtlTemplate.java" startLine="18" startPosition="0" endLine="150" endPosition="0" unitName="jetbrains.mps.core.template.structure.MtlTemplate" />
   </root>
   <root nodeId="212212067812118741">
@@ -416,27 +504,52 @@
     <scopeInfo nodeId="212212067812118743" fileName="MtlQuery.java" startLine="96" startPosition="69" endLine="97" endPosition="60" />
     <scopeInfo nodeId="212212067812118743" fileName="MtlQuery.java" startLine="100" startPosition="63" endLine="101" endPosition="167" />
     <scopeInfo nodeId="212212067812118743" fileName="MtlQuery.java" startLine="104" startPosition="49" endLine="105" endPosition="43" />
-    <scopeInfo nodeId="212212067812118743" fileName="MtlQuery.java" startLine="23" startPosition="0" endLine="26" endPosition="3" />
+    <scopeInfo nodeId="212212067812118743" fileName="MtlQuery.java" startLine="23" startPosition="0" endLine="26" endPosition="3">
+      <varInfo nodeId="212212067812118743" varName="node" />
+    </scopeInfo>
     <scopeInfo nodeId="212212067812118743" fileName="MtlQuery.java" startLine="27" startPosition="0" endLine="31" endPosition="0" />
-    <scopeInfo nodeId="212212067812118743" fileName="MtlQuery.java" startLine="31" startPosition="0" endLine="35" endPosition="0" />
+    <scopeInfo nodeId="212212067812118743" fileName="MtlQuery.java" startLine="31" startPosition="0" endLine="35" endPosition="0">
+      <varInfo nodeId="212212067812118743" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="212212067812118743" fileName="MtlQuery.java" startLine="35" startPosition="0" endLine="39" endPosition="0" />
-    <scopeInfo nodeId="212212067812118743" fileName="MtlQuery.java" startLine="39" startPosition="0" endLine="43" endPosition="0" />
+    <scopeInfo nodeId="212212067812118743" fileName="MtlQuery.java" startLine="39" startPosition="0" endLine="43" endPosition="0">
+      <varInfo nodeId="212212067812118743" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="212212067812118743" fileName="MtlQuery.java" startLine="43" startPosition="0" endLine="47" endPosition="0" />
-    <scopeInfo nodeId="212212067812118743" fileName="MtlQuery.java" startLine="47" startPosition="0" endLine="51" endPosition="0" />
+    <scopeInfo nodeId="212212067812118743" fileName="MtlQuery.java" startLine="47" startPosition="0" endLine="51" endPosition="0">
+      <varInfo nodeId="212212067812118743" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="212212067812118743" fileName="MtlQuery.java" startLine="51" startPosition="0" endLine="55" endPosition="0" />
-    <scopeInfo nodeId="212212067812118743" fileName="MtlQuery.java" startLine="55" startPosition="0" endLine="59" endPosition="0" />
+    <scopeInfo nodeId="212212067812118743" fileName="MtlQuery.java" startLine="55" startPosition="0" endLine="59" endPosition="0">
+      <varInfo nodeId="212212067812118743" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="212212067812118743" fileName="MtlQuery.java" startLine="59" startPosition="0" endLine="63" endPosition="0" />
     <scopeInfo nodeId="212212067812118743" fileName="MtlQuery.java" startLine="63" startPosition="0" endLine="67" endPosition="0" />
     <scopeInfo nodeId="212212067812118743" fileName="MtlQuery.java" startLine="67" startPosition="0" endLine="71" endPosition="0" />
-    <scopeInfo nodeId="212212067812118743" fileName="MtlQuery.java" startLine="71" startPosition="0" endLine="75" endPosition="0" />
-    <scopeInfo nodeId="212212067812118743" fileName="MtlQuery.java" startLine="75" startPosition="0" endLine="79" endPosition="0" />
+    <scopeInfo nodeId="212212067812118743" fileName="MtlQuery.java" startLine="71" startPosition="0" endLine="75" endPosition="0">
+      <varInfo nodeId="212212067812118743" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="212212067812118743" fileName="MtlQuery.java" startLine="75" startPosition="0" endLine="79" endPosition="0">
+      <varInfo nodeId="212212067812118743" varName="node" />
+      <varInfo nodeId="212212067812118743" varName="prev" />
+    </scopeInfo>
     <scopeInfo nodeId="212212067812118743" fileName="MtlQuery.java" startLine="79" startPosition="0" endLine="83" endPosition="0" />
     <scopeInfo nodeId="212212067812118743" fileName="MtlQuery.java" startLine="83" startPosition="0" endLine="87" endPosition="0" />
     <scopeInfo nodeId="212212067812118743" fileName="MtlQuery.java" startLine="87" startPosition="0" endLine="91" endPosition="0" />
-    <scopeInfo nodeId="212212067812118743" fileName="MtlQuery.java" startLine="91" startPosition="0" endLine="95" endPosition="0" />
-    <scopeInfo nodeId="212212067812118743" fileName="MtlQuery.java" startLine="95" startPosition="0" endLine="99" endPosition="0" />
-    <scopeInfo nodeId="212212067812118743" fileName="MtlQuery.java" startLine="99" startPosition="0" endLine="103" endPosition="0" />
-    <scopeInfo nodeId="212212067812118743" fileName="MtlQuery.java" startLine="103" startPosition="0" endLine="107" endPosition="0" />
+    <scopeInfo nodeId="212212067812118743" fileName="MtlQuery.java" startLine="91" startPosition="0" endLine="95" endPosition="0">
+      <varInfo nodeId="212212067812118743" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="212212067812118743" fileName="MtlQuery.java" startLine="95" startPosition="0" endLine="99" endPosition="0">
+      <varInfo nodeId="212212067812118743" varName="node" />
+      <varInfo nodeId="212212067812118743" varName="prev" />
+    </scopeInfo>
+    <scopeInfo nodeId="212212067812118743" fileName="MtlQuery.java" startLine="99" startPosition="0" endLine="103" endPosition="0">
+      <varInfo nodeId="212212067812118743" varName="init" />
+      <varInfo nodeId="212212067812118743" varName="sm" />
+    </scopeInfo>
+    <scopeInfo nodeId="212212067812118743" fileName="MtlQuery.java" startLine="103" startPosition="0" endLine="107" endPosition="0">
+      <varInfo nodeId="212212067812118743" varName="sm" />
+    </scopeInfo>
     <unitInfo nodeId="212212067812118743" fileName="MtlQuery.java" startLine="15" startPosition="0" endLine="108" endPosition="0" unitName="jetbrains.mps.core.template.structure.MtlQuery" />
   </root>
   <root nodeId="4273915927700364672">
@@ -457,11 +570,20 @@
     <scopeInfo nodeId="4273915927700364672" fileName="MtlPropertyMacro.java" startLine="24" startPosition="44" endLine="25" endPosition="49" />
     <scopeInfo nodeId="4273915927700364672" fileName="MtlPropertyMacro.java" startLine="28" startPosition="71" endLine="29" endPosition="183" />
     <scopeInfo nodeId="4273915927700364672" fileName="MtlPropertyMacro.java" startLine="32" startPosition="57" endLine="33" endPosition="51" />
-    <scopeInfo nodeId="4273915927700364672" fileName="MtlPropertyMacro.java" startLine="15" startPosition="0" endLine="18" endPosition="3" />
+    <scopeInfo nodeId="4273915927700364672" fileName="MtlPropertyMacro.java" startLine="15" startPosition="0" endLine="18" endPosition="3">
+      <varInfo nodeId="4273915927700364672" varName="node" />
+    </scopeInfo>
     <scopeInfo nodeId="4273915927700364672" fileName="MtlPropertyMacro.java" startLine="19" startPosition="0" endLine="23" endPosition="0" />
-    <scopeInfo nodeId="4273915927700364672" fileName="MtlPropertyMacro.java" startLine="23" startPosition="0" endLine="27" endPosition="0" />
-    <scopeInfo nodeId="4273915927700364672" fileName="MtlPropertyMacro.java" startLine="27" startPosition="0" endLine="31" endPosition="0" />
-    <scopeInfo nodeId="4273915927700364672" fileName="MtlPropertyMacro.java" startLine="31" startPosition="0" endLine="35" endPosition="0" />
+    <scopeInfo nodeId="4273915927700364672" fileName="MtlPropertyMacro.java" startLine="23" startPosition="0" endLine="27" endPosition="0">
+      <varInfo nodeId="4273915927700364672" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="4273915927700364672" fileName="MtlPropertyMacro.java" startLine="27" startPosition="0" endLine="31" endPosition="0">
+      <varInfo nodeId="4273915927700364672" varName="init" />
+      <varInfo nodeId="4273915927700364672" varName="sm" />
+    </scopeInfo>
+    <scopeInfo nodeId="4273915927700364672" fileName="MtlPropertyMacro.java" startLine="31" startPosition="0" endLine="35" endPosition="0">
+      <varInfo nodeId="4273915927700364672" varName="sm" />
+    </scopeInfo>
     <unitInfo nodeId="4273915927700364672" fileName="MtlPropertyMacro.java" startLine="12" startPosition="0" endLine="36" endPosition="0" unitName="jetbrains.mps.core.template.structure.MtlPropertyMacro" />
   </root>
   <root nodeId="4273915927700610086">
@@ -475,9 +597,16 @@
     <scopeInfo nodeId="4273915927700610086" fileName="MtlNodeMacro.java" startLine="14" startPosition="35" endLine="15" endPosition="16" />
     <scopeInfo nodeId="4273915927700610086" fileName="MtlNodeMacro.java" startLine="18" startPosition="67" endLine="19" endPosition="175" />
     <scopeInfo nodeId="4273915927700610086" fileName="MtlNodeMacro.java" startLine="22" startPosition="53" endLine="23" endPosition="47" />
-    <scopeInfo nodeId="4273915927700610086" fileName="MtlNodeMacro.java" startLine="13" startPosition="0" endLine="16" endPosition="3" />
-    <scopeInfo nodeId="4273915927700610086" fileName="MtlNodeMacro.java" startLine="17" startPosition="0" endLine="21" endPosition="0" />
-    <scopeInfo nodeId="4273915927700610086" fileName="MtlNodeMacro.java" startLine="21" startPosition="0" endLine="25" endPosition="0" />
+    <scopeInfo nodeId="4273915927700610086" fileName="MtlNodeMacro.java" startLine="13" startPosition="0" endLine="16" endPosition="3">
+      <varInfo nodeId="4273915927700610086" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="4273915927700610086" fileName="MtlNodeMacro.java" startLine="17" startPosition="0" endLine="21" endPosition="0">
+      <varInfo nodeId="4273915927700610086" varName="init" />
+      <varInfo nodeId="4273915927700610086" varName="sm" />
+    </scopeInfo>
+    <scopeInfo nodeId="4273915927700610086" fileName="MtlNodeMacro.java" startLine="21" startPosition="0" endLine="25" endPosition="0">
+      <varInfo nodeId="4273915927700610086" varName="sm" />
+    </scopeInfo>
     <unitInfo nodeId="4273915927700610086" fileName="MtlNodeMacro.java" startLine="11" startPosition="0" endLine="26" endPosition="0" unitName="jetbrains.mps.core.template.structure.MtlNodeMacro" />
   </root>
   <root nodeId="4273915927700610087">
@@ -498,11 +627,20 @@
     <scopeInfo nodeId="4273915927700610087" fileName="MtlReferenceMacro.java" startLine="24" startPosition="44" endLine="25" endPosition="50" />
     <scopeInfo nodeId="4273915927700610087" fileName="MtlReferenceMacro.java" startLine="28" startPosition="72" endLine="29" endPosition="185" />
     <scopeInfo nodeId="4273915927700610087" fileName="MtlReferenceMacro.java" startLine="32" startPosition="58" endLine="33" endPosition="52" />
-    <scopeInfo nodeId="4273915927700610087" fileName="MtlReferenceMacro.java" startLine="15" startPosition="0" endLine="18" endPosition="3" />
+    <scopeInfo nodeId="4273915927700610087" fileName="MtlReferenceMacro.java" startLine="15" startPosition="0" endLine="18" endPosition="3">
+      <varInfo nodeId="4273915927700610087" varName="node" />
+    </scopeInfo>
     <scopeInfo nodeId="4273915927700610087" fileName="MtlReferenceMacro.java" startLine="19" startPosition="0" endLine="23" endPosition="0" />
-    <scopeInfo nodeId="4273915927700610087" fileName="MtlReferenceMacro.java" startLine="23" startPosition="0" endLine="27" endPosition="0" />
-    <scopeInfo nodeId="4273915927700610087" fileName="MtlReferenceMacro.java" startLine="27" startPosition="0" endLine="31" endPosition="0" />
-    <scopeInfo nodeId="4273915927700610087" fileName="MtlReferenceMacro.java" startLine="31" startPosition="0" endLine="35" endPosition="0" />
+    <scopeInfo nodeId="4273915927700610087" fileName="MtlReferenceMacro.java" startLine="23" startPosition="0" endLine="27" endPosition="0">
+      <varInfo nodeId="4273915927700610087" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="4273915927700610087" fileName="MtlReferenceMacro.java" startLine="27" startPosition="0" endLine="31" endPosition="0">
+      <varInfo nodeId="4273915927700610087" varName="init" />
+      <varInfo nodeId="4273915927700610087" varName="sm" />
+    </scopeInfo>
+    <scopeInfo nodeId="4273915927700610087" fileName="MtlReferenceMacro.java" startLine="31" startPosition="0" endLine="35" endPosition="0">
+      <varInfo nodeId="4273915927700610087" varName="sm" />
+    </scopeInfo>
     <unitInfo nodeId="4273915927700610087" fileName="MtlReferenceMacro.java" startLine="12" startPosition="0" endLine="36" endPosition="0" unitName="jetbrains.mps.core.template.structure.MtlReferenceMacro" />
   </root>
   <root nodeId="4273915927700610137">
@@ -523,11 +661,20 @@
     <scopeInfo nodeId="4273915927700610137" fileName="MtlNewNodeType.java" startLine="24" startPosition="59" endLine="25" endPosition="52" />
     <scopeInfo nodeId="4273915927700610137" fileName="MtlNewNodeType.java" startLine="28" startPosition="69" endLine="29" endPosition="179" />
     <scopeInfo nodeId="4273915927700610137" fileName="MtlNewNodeType.java" startLine="32" startPosition="55" endLine="33" endPosition="49" />
-    <scopeInfo nodeId="4273915927700610137" fileName="MtlNewNodeType.java" startLine="15" startPosition="0" endLine="18" endPosition="3" />
+    <scopeInfo nodeId="4273915927700610137" fileName="MtlNewNodeType.java" startLine="15" startPosition="0" endLine="18" endPosition="3">
+      <varInfo nodeId="4273915927700610137" varName="node" />
+    </scopeInfo>
     <scopeInfo nodeId="4273915927700610137" fileName="MtlNewNodeType.java" startLine="19" startPosition="0" endLine="23" endPosition="0" />
-    <scopeInfo nodeId="4273915927700610137" fileName="MtlNewNodeType.java" startLine="23" startPosition="0" endLine="27" endPosition="0" />
-    <scopeInfo nodeId="4273915927700610137" fileName="MtlNewNodeType.java" startLine="27" startPosition="0" endLine="31" endPosition="0" />
-    <scopeInfo nodeId="4273915927700610137" fileName="MtlNewNodeType.java" startLine="31" startPosition="0" endLine="35" endPosition="0" />
+    <scopeInfo nodeId="4273915927700610137" fileName="MtlNewNodeType.java" startLine="23" startPosition="0" endLine="27" endPosition="0">
+      <varInfo nodeId="4273915927700610137" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="4273915927700610137" fileName="MtlNewNodeType.java" startLine="27" startPosition="0" endLine="31" endPosition="0">
+      <varInfo nodeId="4273915927700610137" varName="init" />
+      <varInfo nodeId="4273915927700610137" varName="sm" />
+    </scopeInfo>
+    <scopeInfo nodeId="4273915927700610137" fileName="MtlNewNodeType.java" startLine="31" startPosition="0" endLine="35" endPosition="0">
+      <varInfo nodeId="4273915927700610137" varName="sm" />
+    </scopeInfo>
     <unitInfo nodeId="4273915927700610137" fileName="MtlNewNodeType.java" startLine="12" startPosition="0" endLine="36" endPosition="0" unitName="jetbrains.mps.core.template.structure.MtlNewNodeType" />
   </root>
   <root nodeId="4273915927700610187">
@@ -555,13 +702,24 @@
     <scopeInfo nodeId="4273915927700610187" fileName="MtlIfMacro.java" startLine="32" startPosition="48" endLine="33" endPosition="47" />
     <scopeInfo nodeId="4273915927700610187" fileName="MtlIfMacro.java" startLine="36" startPosition="65" endLine="37" endPosition="171" />
     <scopeInfo nodeId="4273915927700610187" fileName="MtlIfMacro.java" startLine="40" startPosition="51" endLine="41" endPosition="45" />
-    <scopeInfo nodeId="4273915927700610187" fileName="MtlIfMacro.java" startLine="15" startPosition="0" endLine="18" endPosition="3" />
+    <scopeInfo nodeId="4273915927700610187" fileName="MtlIfMacro.java" startLine="15" startPosition="0" endLine="18" endPosition="3">
+      <varInfo nodeId="4273915927700610187" varName="node" />
+    </scopeInfo>
     <scopeInfo nodeId="4273915927700610187" fileName="MtlIfMacro.java" startLine="19" startPosition="0" endLine="23" endPosition="0" />
-    <scopeInfo nodeId="4273915927700610187" fileName="MtlIfMacro.java" startLine="23" startPosition="0" endLine="27" endPosition="0" />
+    <scopeInfo nodeId="4273915927700610187" fileName="MtlIfMacro.java" startLine="23" startPosition="0" endLine="27" endPosition="0">
+      <varInfo nodeId="4273915927700610187" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="4273915927700610187" fileName="MtlIfMacro.java" startLine="27" startPosition="0" endLine="31" endPosition="0" />
-    <scopeInfo nodeId="4273915927700610187" fileName="MtlIfMacro.java" startLine="31" startPosition="0" endLine="35" endPosition="0" />
-    <scopeInfo nodeId="4273915927700610187" fileName="MtlIfMacro.java" startLine="35" startPosition="0" endLine="39" endPosition="0" />
-    <scopeInfo nodeId="4273915927700610187" fileName="MtlIfMacro.java" startLine="39" startPosition="0" endLine="43" endPosition="0" />
+    <scopeInfo nodeId="4273915927700610187" fileName="MtlIfMacro.java" startLine="31" startPosition="0" endLine="35" endPosition="0">
+      <varInfo nodeId="4273915927700610187" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="4273915927700610187" fileName="MtlIfMacro.java" startLine="35" startPosition="0" endLine="39" endPosition="0">
+      <varInfo nodeId="4273915927700610187" varName="init" />
+      <varInfo nodeId="4273915927700610187" varName="sm" />
+    </scopeInfo>
+    <scopeInfo nodeId="4273915927700610187" fileName="MtlIfMacro.java" startLine="39" startPosition="0" endLine="43" endPosition="0">
+      <varInfo nodeId="4273915927700610187" varName="sm" />
+    </scopeInfo>
     <unitInfo nodeId="4273915927700610187" fileName="MtlIfMacro.java" startLine="11" startPosition="0" endLine="44" endPosition="0" unitName="jetbrains.mps.core.template.structure.MtlIfMacro" />
   </root>
   <root nodeId="4273915927700610188">
@@ -633,26 +791,50 @@
     <scopeInfo nodeId="4273915927700610188" fileName="MtlForeachMacro.java" startLine="95" startPosition="69" endLine="96" endPosition="67" />
     <scopeInfo nodeId="4273915927700610188" fileName="MtlForeachMacro.java" startLine="99" startPosition="70" endLine="100" endPosition="181" />
     <scopeInfo nodeId="4273915927700610188" fileName="MtlForeachMacro.java" startLine="103" startPosition="56" endLine="104" endPosition="50" />
-    <scopeInfo nodeId="4273915927700610188" fileName="MtlForeachMacro.java" startLine="26" startPosition="0" endLine="29" endPosition="3" />
+    <scopeInfo nodeId="4273915927700610188" fileName="MtlForeachMacro.java" startLine="26" startPosition="0" endLine="29" endPosition="3">
+      <varInfo nodeId="4273915927700610188" varName="node" />
+    </scopeInfo>
     <scopeInfo nodeId="4273915927700610188" fileName="MtlForeachMacro.java" startLine="30" startPosition="0" endLine="34" endPosition="0" />
-    <scopeInfo nodeId="4273915927700610188" fileName="MtlForeachMacro.java" startLine="34" startPosition="0" endLine="38" endPosition="0" />
+    <scopeInfo nodeId="4273915927700610188" fileName="MtlForeachMacro.java" startLine="34" startPosition="0" endLine="38" endPosition="0">
+      <varInfo nodeId="4273915927700610188" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="4273915927700610188" fileName="MtlForeachMacro.java" startLine="38" startPosition="0" endLine="42" endPosition="0" />
-    <scopeInfo nodeId="4273915927700610188" fileName="MtlForeachMacro.java" startLine="42" startPosition="0" endLine="46" endPosition="0" />
+    <scopeInfo nodeId="4273915927700610188" fileName="MtlForeachMacro.java" startLine="42" startPosition="0" endLine="46" endPosition="0">
+      <varInfo nodeId="4273915927700610188" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="4273915927700610188" fileName="MtlForeachMacro.java" startLine="46" startPosition="0" endLine="50" endPosition="0" />
-    <scopeInfo nodeId="4273915927700610188" fileName="MtlForeachMacro.java" startLine="50" startPosition="0" endLine="54" endPosition="0" />
+    <scopeInfo nodeId="4273915927700610188" fileName="MtlForeachMacro.java" startLine="50" startPosition="0" endLine="54" endPosition="0">
+      <varInfo nodeId="4273915927700610188" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="4273915927700610188" fileName="MtlForeachMacro.java" startLine="54" startPosition="0" endLine="58" endPosition="0" />
-    <scopeInfo nodeId="4273915927700610188" fileName="MtlForeachMacro.java" startLine="58" startPosition="0" endLine="62" endPosition="0" />
+    <scopeInfo nodeId="4273915927700610188" fileName="MtlForeachMacro.java" startLine="58" startPosition="0" endLine="62" endPosition="0">
+      <varInfo nodeId="4273915927700610188" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="4273915927700610188" fileName="MtlForeachMacro.java" startLine="62" startPosition="0" endLine="66" endPosition="0" />
-    <scopeInfo nodeId="4273915927700610188" fileName="MtlForeachMacro.java" startLine="66" startPosition="0" endLine="70" endPosition="0" />
+    <scopeInfo nodeId="4273915927700610188" fileName="MtlForeachMacro.java" startLine="66" startPosition="0" endLine="70" endPosition="0">
+      <varInfo nodeId="4273915927700610188" varName="node" />
+    </scopeInfo>
     <scopeInfo nodeId="4273915927700610188" fileName="MtlForeachMacro.java" startLine="70" startPosition="0" endLine="74" endPosition="0" />
-    <scopeInfo nodeId="4273915927700610188" fileName="MtlForeachMacro.java" startLine="74" startPosition="0" endLine="78" endPosition="0" />
+    <scopeInfo nodeId="4273915927700610188" fileName="MtlForeachMacro.java" startLine="74" startPosition="0" endLine="78" endPosition="0">
+      <varInfo nodeId="4273915927700610188" varName="node" />
+    </scopeInfo>
     <scopeInfo nodeId="4273915927700610188" fileName="MtlForeachMacro.java" startLine="78" startPosition="0" endLine="82" endPosition="0" />
     <scopeInfo nodeId="4273915927700610188" fileName="MtlForeachMacro.java" startLine="82" startPosition="0" endLine="86" endPosition="0" />
     <scopeInfo nodeId="4273915927700610188" fileName="MtlForeachMacro.java" startLine="86" startPosition="0" endLine="90" endPosition="0" />
-    <scopeInfo nodeId="4273915927700610188" fileName="MtlForeachMacro.java" startLine="90" startPosition="0" endLine="94" endPosition="0" />
-    <scopeInfo nodeId="4273915927700610188" fileName="MtlForeachMacro.java" startLine="94" startPosition="0" endLine="98" endPosition="0" />
-    <scopeInfo nodeId="4273915927700610188" fileName="MtlForeachMacro.java" startLine="98" startPosition="0" endLine="102" endPosition="0" />
-    <scopeInfo nodeId="4273915927700610188" fileName="MtlForeachMacro.java" startLine="102" startPosition="0" endLine="106" endPosition="0" />
+    <scopeInfo nodeId="4273915927700610188" fileName="MtlForeachMacro.java" startLine="90" startPosition="0" endLine="94" endPosition="0">
+      <varInfo nodeId="4273915927700610188" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="4273915927700610188" fileName="MtlForeachMacro.java" startLine="94" startPosition="0" endLine="98" endPosition="0">
+      <varInfo nodeId="4273915927700610188" varName="node" />
+      <varInfo nodeId="4273915927700610188" varName="prev" />
+    </scopeInfo>
+    <scopeInfo nodeId="4273915927700610188" fileName="MtlForeachMacro.java" startLine="98" startPosition="0" endLine="102" endPosition="0">
+      <varInfo nodeId="4273915927700610188" varName="init" />
+      <varInfo nodeId="4273915927700610188" varName="sm" />
+    </scopeInfo>
+    <scopeInfo nodeId="4273915927700610188" fileName="MtlForeachMacro.java" startLine="102" startPosition="0" endLine="106" endPosition="0">
+      <varInfo nodeId="4273915927700610188" varName="sm" />
+    </scopeInfo>
     <unitInfo nodeId="4273915927700610188" fileName="MtlForeachMacro.java" startLine="17" startPosition="0" endLine="107" endPosition="0" unitName="jetbrains.mps.core.template.structure.MtlForeachMacro" />
   </root>
   <root nodeId="4273915927700610189">
@@ -673,11 +855,20 @@
     <scopeInfo nodeId="4273915927700610189" fileName="MtlNodeQueryMacro.java" startLine="23" startPosition="48" endLine="24" endPosition="55" />
     <scopeInfo nodeId="4273915927700610189" fileName="MtlNodeQueryMacro.java" startLine="27" startPosition="72" endLine="28" endPosition="185" />
     <scopeInfo nodeId="4273915927700610189" fileName="MtlNodeQueryMacro.java" startLine="31" startPosition="58" endLine="32" endPosition="52" />
-    <scopeInfo nodeId="4273915927700610189" fileName="MtlNodeQueryMacro.java" startLine="14" startPosition="0" endLine="17" endPosition="3" />
+    <scopeInfo nodeId="4273915927700610189" fileName="MtlNodeQueryMacro.java" startLine="14" startPosition="0" endLine="17" endPosition="3">
+      <varInfo nodeId="4273915927700610189" varName="node" />
+    </scopeInfo>
     <scopeInfo nodeId="4273915927700610189" fileName="MtlNodeQueryMacro.java" startLine="18" startPosition="0" endLine="22" endPosition="0" />
-    <scopeInfo nodeId="4273915927700610189" fileName="MtlNodeQueryMacro.java" startLine="22" startPosition="0" endLine="26" endPosition="0" />
-    <scopeInfo nodeId="4273915927700610189" fileName="MtlNodeQueryMacro.java" startLine="26" startPosition="0" endLine="30" endPosition="0" />
-    <scopeInfo nodeId="4273915927700610189" fileName="MtlNodeQueryMacro.java" startLine="30" startPosition="0" endLine="34" endPosition="0" />
+    <scopeInfo nodeId="4273915927700610189" fileName="MtlNodeQueryMacro.java" startLine="22" startPosition="0" endLine="26" endPosition="0">
+      <varInfo nodeId="4273915927700610189" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="4273915927700610189" fileName="MtlNodeQueryMacro.java" startLine="26" startPosition="0" endLine="30" endPosition="0">
+      <varInfo nodeId="4273915927700610189" varName="init" />
+      <varInfo nodeId="4273915927700610189" varName="sm" />
+    </scopeInfo>
+    <scopeInfo nodeId="4273915927700610189" fileName="MtlNodeQueryMacro.java" startLine="30" startPosition="0" endLine="34" endPosition="0">
+      <varInfo nodeId="4273915927700610189" varName="sm" />
+    </scopeInfo>
     <unitInfo nodeId="4273915927700610189" fileName="MtlNodeQueryMacro.java" startLine="11" startPosition="0" endLine="35" endPosition="0" unitName="jetbrains.mps.core.template.structure.MtlNodeQueryMacro" />
   </root>
   <root nodeId="641202304629581072">
@@ -735,22 +926,42 @@
     <scopeInfo nodeId="641202304629581072" fileName="MtlLabelNodeMacro.java" startLine="76" startPosition="69" endLine="77" endPosition="69" />
     <scopeInfo nodeId="641202304629581072" fileName="MtlLabelNodeMacro.java" startLine="80" startPosition="72" endLine="81" endPosition="185" />
     <scopeInfo nodeId="641202304629581072" fileName="MtlLabelNodeMacro.java" startLine="84" startPosition="58" endLine="85" endPosition="52" />
-    <scopeInfo nodeId="641202304629581072" fileName="MtlLabelNodeMacro.java" startLine="23" startPosition="0" endLine="26" endPosition="3" />
+    <scopeInfo nodeId="641202304629581072" fileName="MtlLabelNodeMacro.java" startLine="23" startPosition="0" endLine="26" endPosition="3">
+      <varInfo nodeId="641202304629581072" varName="node" />
+    </scopeInfo>
     <scopeInfo nodeId="641202304629581072" fileName="MtlLabelNodeMacro.java" startLine="27" startPosition="0" endLine="31" endPosition="0" />
-    <scopeInfo nodeId="641202304629581072" fileName="MtlLabelNodeMacro.java" startLine="31" startPosition="0" endLine="35" endPosition="0" />
+    <scopeInfo nodeId="641202304629581072" fileName="MtlLabelNodeMacro.java" startLine="31" startPosition="0" endLine="35" endPosition="0">
+      <varInfo nodeId="641202304629581072" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="641202304629581072" fileName="MtlLabelNodeMacro.java" startLine="35" startPosition="0" endLine="39" endPosition="0" />
-    <scopeInfo nodeId="641202304629581072" fileName="MtlLabelNodeMacro.java" startLine="39" startPosition="0" endLine="43" endPosition="0" />
+    <scopeInfo nodeId="641202304629581072" fileName="MtlLabelNodeMacro.java" startLine="39" startPosition="0" endLine="43" endPosition="0">
+      <varInfo nodeId="641202304629581072" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="641202304629581072" fileName="MtlLabelNodeMacro.java" startLine="43" startPosition="0" endLine="47" endPosition="0" />
-    <scopeInfo nodeId="641202304629581072" fileName="MtlLabelNodeMacro.java" startLine="47" startPosition="0" endLine="51" endPosition="0" />
+    <scopeInfo nodeId="641202304629581072" fileName="MtlLabelNodeMacro.java" startLine="47" startPosition="0" endLine="51" endPosition="0">
+      <varInfo nodeId="641202304629581072" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="641202304629581072" fileName="MtlLabelNodeMacro.java" startLine="51" startPosition="0" endLine="55" endPosition="0" />
-    <scopeInfo nodeId="641202304629581072" fileName="MtlLabelNodeMacro.java" startLine="55" startPosition="0" endLine="59" endPosition="0" />
+    <scopeInfo nodeId="641202304629581072" fileName="MtlLabelNodeMacro.java" startLine="55" startPosition="0" endLine="59" endPosition="0">
+      <varInfo nodeId="641202304629581072" varName="node" />
+    </scopeInfo>
     <scopeInfo nodeId="641202304629581072" fileName="MtlLabelNodeMacro.java" startLine="59" startPosition="0" endLine="63" endPosition="0" />
     <scopeInfo nodeId="641202304629581072" fileName="MtlLabelNodeMacro.java" startLine="63" startPosition="0" endLine="67" endPosition="0" />
     <scopeInfo nodeId="641202304629581072" fileName="MtlLabelNodeMacro.java" startLine="67" startPosition="0" endLine="71" endPosition="0" />
-    <scopeInfo nodeId="641202304629581072" fileName="MtlLabelNodeMacro.java" startLine="71" startPosition="0" endLine="75" endPosition="0" />
-    <scopeInfo nodeId="641202304629581072" fileName="MtlLabelNodeMacro.java" startLine="75" startPosition="0" endLine="79" endPosition="0" />
-    <scopeInfo nodeId="641202304629581072" fileName="MtlLabelNodeMacro.java" startLine="79" startPosition="0" endLine="83" endPosition="0" />
-    <scopeInfo nodeId="641202304629581072" fileName="MtlLabelNodeMacro.java" startLine="83" startPosition="0" endLine="87" endPosition="0" />
+    <scopeInfo nodeId="641202304629581072" fileName="MtlLabelNodeMacro.java" startLine="71" startPosition="0" endLine="75" endPosition="0">
+      <varInfo nodeId="641202304629581072" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="641202304629581072" fileName="MtlLabelNodeMacro.java" startLine="75" startPosition="0" endLine="79" endPosition="0">
+      <varInfo nodeId="641202304629581072" varName="node" />
+      <varInfo nodeId="641202304629581072" varName="prev" />
+    </scopeInfo>
+    <scopeInfo nodeId="641202304629581072" fileName="MtlLabelNodeMacro.java" startLine="79" startPosition="0" endLine="83" endPosition="0">
+      <varInfo nodeId="641202304629581072" varName="init" />
+      <varInfo nodeId="641202304629581072" varName="sm" />
+    </scopeInfo>
+    <scopeInfo nodeId="641202304629581072" fileName="MtlLabelNodeMacro.java" startLine="83" startPosition="0" endLine="87" endPosition="0">
+      <varInfo nodeId="641202304629581072" varName="sm" />
+    </scopeInfo>
     <unitInfo nodeId="641202304629581072" fileName="MtlLabelNodeMacro.java" startLine="16" startPosition="0" endLine="88" endPosition="0" unitName="jetbrains.mps.core.template.structure.MtlLabelNodeMacro" />
   </root>
   <root nodeId="8585534596770839433">
@@ -808,22 +1019,42 @@
     <scopeInfo nodeId="8585534596770839433" fileName="MtlForeachVar.java" startLine="75" startPosition="69" endLine="76" endPosition="65" />
     <scopeInfo nodeId="8585534596770839433" fileName="MtlForeachVar.java" startLine="79" startPosition="68" endLine="80" endPosition="177" />
     <scopeInfo nodeId="8585534596770839433" fileName="MtlForeachVar.java" startLine="83" startPosition="54" endLine="84" endPosition="48" />
-    <scopeInfo nodeId="8585534596770839433" fileName="MtlForeachVar.java" startLine="22" startPosition="0" endLine="25" endPosition="3" />
+    <scopeInfo nodeId="8585534596770839433" fileName="MtlForeachVar.java" startLine="22" startPosition="0" endLine="25" endPosition="3">
+      <varInfo nodeId="8585534596770839433" varName="node" />
+    </scopeInfo>
     <scopeInfo nodeId="8585534596770839433" fileName="MtlForeachVar.java" startLine="26" startPosition="0" endLine="30" endPosition="0" />
-    <scopeInfo nodeId="8585534596770839433" fileName="MtlForeachVar.java" startLine="30" startPosition="0" endLine="34" endPosition="0" />
+    <scopeInfo nodeId="8585534596770839433" fileName="MtlForeachVar.java" startLine="30" startPosition="0" endLine="34" endPosition="0">
+      <varInfo nodeId="8585534596770839433" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="8585534596770839433" fileName="MtlForeachVar.java" startLine="34" startPosition="0" endLine="38" endPosition="0" />
-    <scopeInfo nodeId="8585534596770839433" fileName="MtlForeachVar.java" startLine="38" startPosition="0" endLine="42" endPosition="0" />
+    <scopeInfo nodeId="8585534596770839433" fileName="MtlForeachVar.java" startLine="38" startPosition="0" endLine="42" endPosition="0">
+      <varInfo nodeId="8585534596770839433" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="8585534596770839433" fileName="MtlForeachVar.java" startLine="42" startPosition="0" endLine="46" endPosition="0" />
-    <scopeInfo nodeId="8585534596770839433" fileName="MtlForeachVar.java" startLine="46" startPosition="0" endLine="50" endPosition="0" />
+    <scopeInfo nodeId="8585534596770839433" fileName="MtlForeachVar.java" startLine="46" startPosition="0" endLine="50" endPosition="0">
+      <varInfo nodeId="8585534596770839433" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="8585534596770839433" fileName="MtlForeachVar.java" startLine="50" startPosition="0" endLine="54" endPosition="0" />
-    <scopeInfo nodeId="8585534596770839433" fileName="MtlForeachVar.java" startLine="54" startPosition="0" endLine="58" endPosition="0" />
+    <scopeInfo nodeId="8585534596770839433" fileName="MtlForeachVar.java" startLine="54" startPosition="0" endLine="58" endPosition="0">
+      <varInfo nodeId="8585534596770839433" varName="value" />
+    </scopeInfo>
     <scopeInfo nodeId="8585534596770839433" fileName="MtlForeachVar.java" startLine="58" startPosition="0" endLine="62" endPosition="0" />
     <scopeInfo nodeId="8585534596770839433" fileName="MtlForeachVar.java" startLine="62" startPosition="0" endLine="66" endPosition="0" />
     <scopeInfo nodeId="8585534596770839433" fileName="MtlForeachVar.java" startLine="66" startPosition="0" endLine="70" endPosition="0" />
-    <scopeInfo nodeId="8585534596770839433" fileName="MtlForeachVar.java" startLine="70" startPosition="0" endLine="74" endPosition="0" />
-    <scopeInfo nodeId="8585534596770839433" fileName="MtlForeachVar.java" startLine="74" startPosition="0" endLine="78" endPosition="0" />
-    <scopeInfo nodeId="8585534596770839433" fileName="MtlForeachVar.java" startLine="78" startPosition="0" endLine="82" endPosition="0" />
-    <scopeInfo nodeId="8585534596770839433" fileName="MtlForeachVar.java" startLine="82" startPosition="0" endLine="86" endPosition="0" />
+    <scopeInfo nodeId="8585534596770839433" fileName="MtlForeachVar.java" startLine="70" startPosition="0" endLine="74" endPosition="0">
+      <varInfo nodeId="8585534596770839433" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="8585534596770839433" fileName="MtlForeachVar.java" startLine="74" startPosition="0" endLine="78" endPosition="0">
+      <varInfo nodeId="8585534596770839433" varName="node" />
+      <varInfo nodeId="8585534596770839433" varName="prev" />
+    </scopeInfo>
+    <scopeInfo nodeId="8585534596770839433" fileName="MtlForeachVar.java" startLine="78" startPosition="0" endLine="82" endPosition="0">
+      <varInfo nodeId="8585534596770839433" varName="init" />
+      <varInfo nodeId="8585534596770839433" varName="sm" />
+    </scopeInfo>
+    <scopeInfo nodeId="8585534596770839433" fileName="MtlForeachVar.java" startLine="82" startPosition="0" endLine="86" endPosition="0">
+      <varInfo nodeId="8585534596770839433" varName="sm" />
+    </scopeInfo>
     <unitInfo nodeId="8585534596770839433" fileName="MtlForeachVar.java" startLine="15" startPosition="0" endLine="87" endPosition="0" unitName="jetbrains.mps.core.template.structure.MtlForeachVar" />
   </root>
   <root nodeId="9160962589444214864">
@@ -837,9 +1068,16 @@
     <scopeInfo nodeId="9160962589444214864" fileName="MtlTemplateRoot.java" startLine="14" startPosition="38" endLine="15" endPosition="16" />
     <scopeInfo nodeId="9160962589444214864" fileName="MtlTemplateRoot.java" startLine="18" startPosition="70" endLine="19" endPosition="181" />
     <scopeInfo nodeId="9160962589444214864" fileName="MtlTemplateRoot.java" startLine="22" startPosition="56" endLine="23" endPosition="50" />
-    <scopeInfo nodeId="9160962589444214864" fileName="MtlTemplateRoot.java" startLine="13" startPosition="0" endLine="16" endPosition="3" />
-    <scopeInfo nodeId="9160962589444214864" fileName="MtlTemplateRoot.java" startLine="17" startPosition="0" endLine="21" endPosition="0" />
-    <scopeInfo nodeId="9160962589444214864" fileName="MtlTemplateRoot.java" startLine="21" startPosition="0" endLine="25" endPosition="0" />
+    <scopeInfo nodeId="9160962589444214864" fileName="MtlTemplateRoot.java" startLine="13" startPosition="0" endLine="16" endPosition="3">
+      <varInfo nodeId="9160962589444214864" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="9160962589444214864" fileName="MtlTemplateRoot.java" startLine="17" startPosition="0" endLine="21" endPosition="0">
+      <varInfo nodeId="9160962589444214864" varName="init" />
+      <varInfo nodeId="9160962589444214864" varName="sm" />
+    </scopeInfo>
+    <scopeInfo nodeId="9160962589444214864" fileName="MtlTemplateRoot.java" startLine="21" startPosition="0" endLine="25" endPosition="0">
+      <varInfo nodeId="9160962589444214864" varName="sm" />
+    </scopeInfo>
     <unitInfo nodeId="9160962589444214864" fileName="MtlTemplateRoot.java" startLine="11" startPosition="0" endLine="26" endPosition="0" unitName="jetbrains.mps.core.template.structure.MtlTemplateRoot" />
   </root>
 </debugInfo>

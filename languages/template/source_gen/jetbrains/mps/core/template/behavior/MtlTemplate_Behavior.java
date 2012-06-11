@@ -19,7 +19,7 @@ public class MtlTemplate_Behavior {
 
   public static SNode call_getTemplateRoot_3373821274546492156(SNode thisNode) {
     List<SNode> rootMarkers = SNodeOperations.getDescendants(SLinkOperations.getTarget(thisNode, "template", true), "jetbrains.mps.core.template.structure.MtlTemplateRoot", false, new String[]{});
-    if (ListSequence.fromList(rootMarkers).count() == 1) {
+    if ((int) ListSequence.fromList(rootMarkers).count() == 1) {
       SNode node = ListSequence.fromList(rootMarkers).first();
       return SNodeOperations.getParent(node);
     }

@@ -79,9 +79,9 @@
     </scopeInfo>
     <scopeInfo nodeId="5280308256730800888" fileName="EvaluationEnvironment.java" startLine="69" startPosition="37" endLine="72" endPosition="68" />
     <scopeInfo nodeId="1671449901154581092" fileName="EvaluationEnvironment.java" startLine="75" startPosition="0" endLine="78" endPosition="0">
-      <varInfo nodeId="1310998557965184774" varName="message" />
       <varInfo nodeId="5280308256730800950" varName="hintNode" />
       <varInfo nodeId="5280308256730800947" varName="kind" />
+      <varInfo nodeId="1310998557965184774" varName="message" />
     </scopeInfo>
     <scopeInfo nodeId="1671449901154580815" fileName="EvaluationEnvironment.java" startLine="81" startPosition="0" endLine="84" endPosition="5">
       <varInfo nodeId="1671449901154580827" varName="keys" />
@@ -90,9 +90,9 @@
       <varInfo nodeId="5280308256730808347" varName="cause" />
     </scopeInfo>
     <scopeInfo nodeId="5280308256730812602" fileName="EvaluationEnvironment.java" startLine="105" startPosition="0" endLine="108" endPosition="5">
+      <varInfo nodeId="5280308256730812614" varName="context" />
       <varInfo nodeId="5280308256730812606" varName="message" />
       <varInfo nodeId="5280308256730812608" varName="query" />
-      <varInfo nodeId="5280308256730812614" varName="context" />
     </scopeInfo>
     <scopeInfo nodeId="1671449901154580782" fileName="EvaluationEnvironment.java" startLine="23" startPosition="0" endLine="27" endPosition="0">
       <varInfo nodeId="1671449901154580788" varName="keys" />
@@ -110,8 +110,8 @@
       <varInfo nodeId="5280308256730800897" varName="result" />
     </scopeInfo>
     <scopeInfo nodeId="1671449901154580796" fileName="EvaluationEnvironment.java" startLine="28" startPosition="40" endLine="37" endPosition="6">
-      <varInfo nodeId="1671449901154580971" varName="result" />
       <varInfo nodeId="1671449901154581027" varName="key" />
+      <varInfo nodeId="1671449901154580971" varName="result" />
     </scopeInfo>
     <scopeInfo nodeId="1671449901154580842" fileName="EvaluationEnvironment.java" startLine="85" startPosition="0" endLine="94" endPosition="0">
       <varInfo nodeId="1671449901154580845" varName="object" />
@@ -131,9 +131,9 @@
       <varInfo nodeId="5280308256730800878" varName="expr" />
       <varInfo nodeId="5280308256730800891" varName="permitNull" />
     </scopeInfo>
+    <unitInfo nodeId="1671449901154580776" fileName="EvaluationEnvironment.java" startLine="12" startPosition="0" endLine="111" endPosition="0" unitName="jetbrains.mps.core.query.runtime.EvaluationEnvironment" />
     <unitInfo nodeId="5280308256730808336" fileName="EvaluationEnvironment.java" startLine="101" startPosition="0" endLine="110" endPosition="0" unitName="jetbrains.mps.core.query.runtime.EvaluationEnvironment$HandledEvaluationException" />
     <unitInfo nodeId="1671449901154580813" fileName="EvaluationEnvironment.java" startLine="79" startPosition="0" endLine="100" endPosition="0" unitName="jetbrains.mps.core.query.runtime.EvaluationEnvironment$Key" />
-    <unitInfo nodeId="1671449901154580776" fileName="EvaluationEnvironment.java" startLine="12" startPosition="0" endLine="111" endPosition="0" unitName="jetbrains.mps.core.query.runtime.EvaluationEnvironment" />
   </root>
   <root nodeId="3435983127247139259">
     <nodeInfo nodeId="3435983127247139270" fileName="SingleElementScope.java" startLine="10" startPosition="52" endLine="11" endPosition="21" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="node" />
@@ -155,16 +155,16 @@
       <varInfo nodeId="3435983127247139304" varName="l" />
     </scopeInfo>
     <scopeInfo nodeId="3435983127247139261" fileName="SingleElementScope.java" startLine="13" startPosition="0" endLine="17" endPosition="3">
-      <varInfo nodeId="3435983127247139265" varName="node" />
       <varInfo nodeId="3435983127247139267" varName="name" />
+      <varInfo nodeId="3435983127247139265" varName="node" />
     </scopeInfo>
     <scopeInfo nodeId="3435983127247139302" fileName="SingleElementScope.java" startLine="25" startPosition="50" endLine="29" endPosition="16" />
     <scopeInfo nodeId="3435983127247139289" fileName="SingleElementScope.java" startLine="18" startPosition="0" endLine="24" endPosition="0">
       <varInfo nodeId="3435983127247139292" varName="prefix" />
     </scopeInfo>
     <scopeInfo nodeId="3435983127247139295" fileName="SingleElementScope.java" startLine="24" startPosition="0" endLine="31" endPosition="0">
-      <varInfo nodeId="3435983127247139300" varName="str" />
       <varInfo nodeId="3435983127247139298" varName="anchor" />
+      <varInfo nodeId="3435983127247139300" varName="str" />
     </scopeInfo>
     <unitInfo nodeId="3435983127247139259" fileName="SingleElementScope.java" startLine="10" startPosition="0" endLine="32" endPosition="0" unitName="jetbrains.mps.core.query.runtime.SingleElementScope" />
   </root>
@@ -211,8 +211,8 @@
     <scopeInfo nodeId="7934151313360368160" fileName="QueryScope.java" startLine="71" startPosition="27" endLine="72" endPosition="22" />
     <scopeInfo nodeId="5433095484313879190" fileName="QueryScope.java" startLine="13" startPosition="34" endLine="15" endPosition="3" />
     <scopeInfo nodeId="5433095484313911451" fileName="QueryScope.java" startLine="16" startPosition="0" endLine="18" endPosition="0">
-      <varInfo nodeId="5433095484313911490" varName="str" />
       <varInfo nodeId="5433095484313911507" varName="anchor" />
+      <varInfo nodeId="5433095484313911490" varName="str" />
     </scopeInfo>
     <scopeInfo nodeId="5433095484313911497" fileName="QueryScope.java" startLine="18" startPosition="0" endLine="20" endPosition="0">
       <varInfo nodeId="5433095484313911502" varName="prefix" />
@@ -222,13 +222,15 @@
       <varInfo nodeId="5433095484313911417" varName="scope" />
     </scopeInfo>
     <scopeInfo nodeId="7934151313360368115" fileName="QueryScope.java" startLine="52" startPosition="30" endLine="56" endPosition="54" />
-    <scopeInfo nodeId="7934151313360368205" fileName="QueryScope.java" startLine="66" startPosition="203" endLine="70" endPosition="0" />
+    <scopeInfo nodeId="7934151313360368205" fileName="QueryScope.java" startLine="66" startPosition="203" endLine="70" endPosition="0">
+      <varInfo nodeId="7934151313360368205" varName="it" />
+    </scopeInfo>
     <scopeInfo nodeId="5433095484313911390" fileName="QueryScope.java" startLine="27" startPosition="26" endLine="35" endPosition="26" />
     <scopeInfo nodeId="3435983127247139481" fileName="QueryScope.java" startLine="39" startPosition="0" endLine="47" endPosition="0">
       <varInfo nodeId="3435983127247139495" varName="index" />
+      <varInfo nodeId="3435983127247139490" varName="kind" />
       <varInfo nodeId="3435983127247139486" varName="node" />
       <varInfo nodeId="3435983127247139492" varName="role" />
-      <varInfo nodeId="3435983127247139490" varName="kind" />
     </scopeInfo>
     <scopeInfo nodeId="7934151313360368052" fileName="QueryScope.java" startLine="50" startPosition="95" endLine="62" endPosition="10">
       <varInfo nodeId="7934151313360368107" varName="next" />
@@ -239,9 +241,9 @@
     </scopeInfo>
     <scopeInfo nodeId="7934151313360368497" fileName="QueryScope.java" startLine="49" startPosition="41" endLine="64" endPosition="42" />
     <scopeInfo nodeId="7934151313360314508" fileName="QueryScope.java" startLine="20" startPosition="0" endLine="39" endPosition="0">
-      <varInfo nodeId="7934151313360314513" varName="node" />
-      <varInfo nodeId="7934151313360314515" varName="kind" />
       <varInfo nodeId="7934151313360314518" varName="fromChild" />
+      <varInfo nodeId="7934151313360314515" varName="kind" />
+      <varInfo nodeId="7934151313360314513" varName="node" />
     </scopeInfo>
     <scopeInfo nodeId="7934151313360368044" fileName="QueryScope.java" startLine="48" startPosition="40" endLine="75" endPosition="40">
       <varInfo nodeId="7934151313360368178" varName="lastAttr" />
@@ -249,8 +251,8 @@
     <scopeInfo nodeId="7934151313360368041" fileName="QueryScope.java" startLine="47" startPosition="0" endLine="77" endPosition="0">
       <varInfo nodeId="7934151313360368045" varName="n" />
     </scopeInfo>
-    <unitInfo nodeId="7934151313360368205" fileName="QueryScope.java" startLine="66" startPosition="180" endLine="70" endPosition="5" unitName="jetbrains.mps.core.query.runtime.QueryScope$1" />
     <unitInfo nodeId="5433095484313879188" fileName="QueryScope.java" startLine="13" startPosition="0" endLine="78" endPosition="0" unitName="jetbrains.mps.core.query.runtime.QueryScope" />
+    <unitInfo nodeId="7934151313360368205" fileName="QueryScope.java" startLine="66" startPosition="180" endLine="70" endPosition="5" unitName="jetbrains.mps.core.query.runtime.QueryScope$1" />
   </root>
   <root nodeId="5433095484313911510">
     <nodeInfo nodeId="5433095484313911527" fileName="CompositeScope.java" startLine="11" startPosition="48" endLine="12" endPosition="36" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="myScopes" />
@@ -341,8 +343,8 @@
     </scopeInfo>
     <scopeInfo nodeId="3435983127247159419" fileName="CompositeScope.java" startLine="64" startPosition="33" endLine="76" endPosition="7" />
     <scopeInfo nodeId="5433095484313913721" fileName="CompositeScope.java" startLine="39" startPosition="0" endLine="53" endPosition="0">
-      <varInfo nodeId="5433095484313913726" varName="str" />
       <varInfo nodeId="5433095484313913724" varName="anchor" />
+      <varInfo nodeId="5433095484313913726" varName="str" />
     </scopeInfo>
     <scopeInfo nodeId="3435983127247159418" fileName="CompositeScope.java" startLine="63" startPosition="27" endLine="77" endPosition="5">
       <varInfo nodeId="3435983127247159421" varName="s" />
@@ -398,16 +400,16 @@
     <scopeInfo nodeId="5433095484313947231" fileName="SimpleRoleScope.java" startLine="19" startPosition="125" endLine="22" endPosition="35" />
     <scopeInfo nodeId="7934151313360368523" fileName="SimpleRoleScope.java" startLine="25" startPosition="147" endLine="29" endPosition="39" />
     <scopeInfo nodeId="5433095484313947228" fileName="SimpleRoleScope.java" startLine="18" startPosition="0" endLine="23" endPosition="3">
-      <varInfo nodeId="5433095484313947335" varName="resolveInfo" />
-      <varInfo nodeId="5433095484313947244" varName="node" />
       <varInfo nodeId="5433095484313947292" varName="link" />
+      <varInfo nodeId="5433095484313947244" varName="node" />
+      <varInfo nodeId="5433095484313947335" varName="resolveInfo" />
     </scopeInfo>
     <scopeInfo nodeId="5433095484313947450" fileName="SimpleRoleScope.java" startLine="53" startPosition="29" endLine="58" endPosition="9" />
     <scopeInfo nodeId="7934151313360368520" fileName="SimpleRoleScope.java" startLine="24" startPosition="0" endLine="30" endPosition="3">
-      <varInfo nodeId="7934151313360368546" varName="resolveInfo" />
-      <varInfo nodeId="7934151313360368542" varName="node" />
-      <varInfo nodeId="7934151313360368544" varName="link" />
       <varInfo nodeId="7934151313360368550" varName="conceptFqName" />
+      <varInfo nodeId="7934151313360368544" varName="link" />
+      <varInfo nodeId="7934151313360368542" varName="node" />
+      <varInfo nodeId="7934151313360368546" varName="resolveInfo" />
     </scopeInfo>
     <scopeInfo nodeId="5433095484313947346" fileName="SimpleRoleScope.java" startLine="34" startPosition="61" endLine="41" endPosition="7">
       <varInfo nodeId="5433095484313947361" varName="name" />
@@ -431,8 +433,8 @@
       <varInfo nodeId="5433095484313947460" varName="result" />
     </scopeInfo>
     <scopeInfo nodeId="5433095484313947327" fileName="SimpleRoleScope.java" startLine="45" startPosition="0" endLine="63" endPosition="0">
-      <varInfo nodeId="5433095484313947332" varName="str" />
       <varInfo nodeId="5433095484313947330" varName="anchor" />
+      <varInfo nodeId="5433095484313947332" varName="str" />
     </scopeInfo>
     <unitInfo nodeId="5433095484313947226" fileName="SimpleRoleScope.java" startLine="13" startPosition="0" endLine="64" endPosition="0" unitName="jetbrains.mps.core.query.runtime.SimpleRoleScope" />
   </root>
@@ -466,8 +468,8 @@
       <varInfo nodeId="5433095484313948355" varName="scope" />
     </scopeInfo>
     <scopeInfo nodeId="5433095484313948574" fileName="QueryScopeAdapter.java" startLine="23" startPosition="41" endLine="27" endPosition="0">
-      <varInfo nodeId="5433095484313948579" varName="targetModelReference" />
       <varInfo nodeId="5433095484313948577" varName="referenceInfo" />
+      <varInfo nodeId="5433095484313948579" varName="targetModelReference" />
     </scopeInfo>
     <scopeInfo nodeId="5433095484313948381" fileName="QueryScopeAdapter.java" startLine="34" startPosition="0" endLine="38" endPosition="0">
       <varInfo nodeId="5433095484313948384" varName="node" />
@@ -490,8 +492,8 @@
     <scopeInfo nodeId="5433095484313948387" fileName="QueryScopeAdapter.java" startLine="38" startPosition="0" endLine="53" endPosition="0">
       <varInfo nodeId="5433095484313948391" varName="condition" />
     </scopeInfo>
-    <unitInfo nodeId="5433095484313948572" fileName="QueryScopeAdapter.java" startLine="23" startPosition="15" endLine="27" endPosition="5" unitName="jetbrains.mps.core.query.runtime.QueryScopeAdapter$1" />
     <unitInfo nodeId="5433095484313948349" fileName="QueryScopeAdapter.java" startLine="15" startPosition="0" endLine="54" endPosition="0" unitName="jetbrains.mps.core.query.runtime.QueryScopeAdapter" />
+    <unitInfo nodeId="5433095484313948572" fileName="QueryScopeAdapter.java" startLine="23" startPosition="15" endLine="27" endPosition="5" unitName="jetbrains.mps.core.query.runtime.QueryScopeAdapter$1" />
   </root>
   <root nodeId="6711176417918013834">
     <nodeInfo nodeId="6711176417918017666" fileName="MultipleElementsScope.java" startLine="11" startPosition="55" endLine="12" endPosition="28" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="nodes" />
@@ -521,8 +523,8 @@
     <scopeInfo nodeId="6711176417918017659" fileName="MultipleElementsScope.java" startLine="38" startPosition="16" endLine="39" endPosition="22" />
     <scopeInfo nodeId="6711176417918017509" fileName="MultipleElementsScope.java" startLine="15" startPosition="126" endLine="17" endPosition="35" />
     <scopeInfo nodeId="6711176417918017506" fileName="MultipleElementsScope.java" startLine="14" startPosition="0" endLine="18" endPosition="3">
-      <varInfo nodeId="6711176417918017532" varName="resolveInfo" />
       <varInfo nodeId="6711176417918017528" varName="nodes" />
+      <varInfo nodeId="6711176417918017532" varName="resolveInfo" />
     </scopeInfo>
     <scopeInfo nodeId="6711176417918017557" fileName="MultipleElementsScope.java" startLine="22" startPosition="27" endLine="26" endPosition="7">
       <varInfo nodeId="6711176417918017575" varName="name" />
@@ -547,8 +549,8 @@
       <varInfo nodeId="6711176417918017607" varName="result" />
     </scopeInfo>
     <scopeInfo nodeId="6711176417918017598" fileName="MultipleElementsScope.java" startLine="30" startPosition="0" endLine="45" endPosition="0">
-      <varInfo nodeId="6711176417918017603" varName="str" />
       <varInfo nodeId="6711176417918017601" varName="anchor" />
+      <varInfo nodeId="6711176417918017603" varName="str" />
     </scopeInfo>
     <unitInfo nodeId="6711176417918013834" fileName="MultipleElementsScope.java" startLine="11" startPosition="0" endLine="46" endPosition="0" unitName="jetbrains.mps.core.query.runtime.MultipleElementsScope" />
   </root>
@@ -577,8 +579,8 @@
     <scopeInfo nodeId="6711176417918083313" fileName="EvaluationContext.java" startLine="40" startPosition="41" endLine="41" endPosition="55" />
     <scopeInfo nodeId="6762883159245086424" fileName="EvaluationContext.java" startLine="14" startPosition="68" endLine="16" endPosition="25" />
     <scopeInfo nodeId="6762883159245086421" fileName="EvaluationContext.java" startLine="13" startPosition="0" endLine="17" endPosition="3">
-      <varInfo nodeId="1671449901154580605" varName="this_" />
       <varInfo nodeId="1671449901154580608" varName="parent" />
+      <varInfo nodeId="1671449901154580605" varName="this_" />
     </scopeInfo>
     <scopeInfo nodeId="1671449901154580629" fileName="EvaluationContext.java" startLine="18" startPosition="0" endLine="22" endPosition="0" />
     <scopeInfo nodeId="1671449901154580733" fileName="EvaluationContext.java" startLine="33" startPosition="54" endLine="37" endPosition="50" />
@@ -616,9 +618,9 @@
     <scopeInfo nodeId="1671449901154597492" fileName="EvaluationException.java" startLine="23" startPosition="0" endLine="27" endPosition="0" />
     <scopeInfo nodeId="1671449901154597498" fileName="EvaluationException.java" startLine="27" startPosition="0" endLine="31" endPosition="0" />
     <scopeInfo nodeId="6762883159245086427" fileName="EvaluationException.java" startLine="10" startPosition="0" endLine="15" endPosition="3">
+      <varInfo nodeId="1671449901154581424" varName="context" />
       <varInfo nodeId="6762883159245086432" varName="message" />
       <varInfo nodeId="1671449901154581427" varName="query" />
-      <varInfo nodeId="1671449901154581424" varName="context" />
     </scopeInfo>
     <scopeInfo nodeId="5280308256730808355" fileName="EvaluationException.java" startLine="16" startPosition="0" endLine="22" endPosition="3">
       <varInfo nodeId="5280308256730808362" varName="cause" />
@@ -700,12 +702,12 @@
     <scopeInfo nodeId="7862448911997344402" fileName="EvaluationRuntime.java" startLine="60" startPosition="68" endLine="62" endPosition="16" />
     <scopeInfo nodeId="4188390566614808066" fileName="EvaluationRuntime.java" startLine="75" startPosition="53" endLine="79" endPosition="25" />
     <scopeInfo nodeId="4188390566614808063" fileName="EvaluationRuntime.java" startLine="74" startPosition="0" endLine="81" endPosition="0">
-      <varInfo nodeId="4188390566614808070" varName="o2" />
       <varInfo nodeId="4188390566614808068" varName="o1" />
+      <varInfo nodeId="4188390566614808070" varName="o2" />
     </scopeInfo>
     <scopeInfo nodeId="7862448911997344370" fileName="EvaluationRuntime.java" startLine="54" startPosition="28" endLine="65" endPosition="9">
-      <varInfo nodeId="7862448911997344381" varName="next" />
       <varInfo nodeId="7862448911997344394" varName="asText" />
+      <varInfo nodeId="7862448911997344381" varName="next" />
     </scopeInfo>
     <scopeInfo nodeId="7862448911997338071" fileName="EvaluationRuntime.java" startLine="51" startPosition="44" endLine="69" endPosition="27">
       <varInfo nodeId="7862448911997344349" varName="it" />

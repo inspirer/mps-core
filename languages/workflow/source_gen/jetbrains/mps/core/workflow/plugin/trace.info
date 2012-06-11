@@ -1,92 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debugInfo>
-  <unitInfo fileName="Workflow_ProjectPlugin.java" startLine="7" startPosition="0" endLine="11" endPosition="0" unitName="jetbrains.mps.core.workflow.plugin.Workflow_ProjectPlugin" />
-  <unitInfo fileName="Workflow_ApplicationPlugin.java" startLine="9" startPosition="0" endLine="30" endPosition="0" unitName="jetbrains.mps.core.workflow.plugin.Workflow_ApplicationPlugin" />
   <root nodeId="1163325315882442989">
-    <nodeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="21" startPosition="57" endLine="22" endPosition="40" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="ICON" />
-    <nodeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="22" startPosition="40" endLine="23" endPosition="73" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="LOG" />
-    <nodeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="25" startPosition="31" endLine="26" endPosition="36" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
-    <nodeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="26" startPosition="36" endLine="27" endPosition="35" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="27" startPosition="35" endLine="28" endPosition="41" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="32" startPosition="9" endLine="33" endPosition="43" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
-    <nodeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="32" startPosition="9" endLine="33" endPosition="43" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="34" startPosition="27" endLine="35" endPosition="84" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="35" startPosition="84" endLine="36" endPosition="44" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="41" startPosition="53" endLine="42" endPosition="19" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="44" startPosition="5" endLine="45" endPosition="51" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="47" startPosition="109" endLine="48" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="50" startPosition="7" endLine="51" endPosition="57" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="53" startPosition="63" endLine="54" endPosition="19" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="55" startPosition="5" endLine="56" endPosition="94" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="57" startPosition="62" endLine="58" endPosition="19" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="59" startPosition="5" endLine="60" endPosition="86" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="61" startPosition="65" endLine="62" endPosition="19" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="63" startPosition="5" endLine="64" endPosition="84" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="65" startPosition="62" endLine="66" endPosition="19" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="67" startPosition="5" endLine="68" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="1310998557965150037" fileName="RunWorkflow_Action.java" startLine="72" startPosition="9" endLine="73" endPosition="129" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="1310998557965179672" fileName="RunWorkflow_Action.java" startLine="76" startPosition="43" endLine="77" endPosition="37" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1310998557965179682" fileName="RunWorkflow_Action.java" startLine="80" startPosition="31" endLine="81" endPosition="35" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="85" startPosition="27" endLine="86" endPosition="83" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="40" startPosition="95" endLine="43" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="46" startPosition="25" endLine="49" endPosition="9" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="52" startPosition="5" endLine="55" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="56" startPosition="94" endLine="59" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="60" startPosition="86" endLine="63" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="64" startPosition="84" endLine="67" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="55" startPosition="5" endLine="59" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
-    <nodeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="59" startPosition="5" endLine="63" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
-    <nodeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="63" startPosition="5" endLine="67" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
-    <nodeInfo nodeId="1310998557965179662" fileName="RunWorkflow_Action.java" startLine="75" startPosition="50" endLine="79" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="handle#(Ljetbrains/mps/messages/IMessage;)V" />
-    <nodeInfo nodeId="1310998557965179668" fileName="RunWorkflow_Action.java" startLine="79" startPosition="0" endLine="83" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="clear#()V" />
-    <nodeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="24" startPosition="0" endLine="29" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="RunWorkflow_Action#()V" />
-    <nodeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="45" startPosition="51" endLine="50" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="31" startPosition="89" endLine="37" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.TryCatchStatement" />
-    <nodeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="30" startPosition="0" endLine="39" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="doUpdate#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)V" />
-    <nodeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="43" startPosition="5" endLine="52" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
-    <nodeInfo nodeId="1310998557965168992" fileName="RunWorkflow_Action.java" startLine="74" startPosition="25" endLine="83" endPosition="131" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1310998557965166399" fileName="RunWorkflow_Action.java" startLine="73" startPosition="129" endLine="84" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="43" startPosition="5" endLine="55" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
-    <nodeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="71" startPosition="96" endLine="87" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.TryCatchStatement" />
-    <nodeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="70" startPosition="0" endLine="89" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="doExecute#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)V" />
-    <nodeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="39" startPosition="0" endLine="70" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="collectActionData#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)Z" />
-    <scopeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="32" startPosition="9" endLine="33" endPosition="43" />
-    <scopeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="41" startPosition="53" endLine="42" endPosition="19" />
-    <scopeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="47" startPosition="109" endLine="48" endPosition="22" />
-    <scopeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="53" startPosition="63" endLine="54" endPosition="19" />
-    <scopeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="57" startPosition="62" endLine="58" endPosition="19" />
-    <scopeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="61" startPosition="65" endLine="62" endPosition="19" />
-    <scopeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="65" startPosition="62" endLine="66" endPosition="19" />
-    <scopeInfo nodeId="1310998557965179667" fileName="RunWorkflow_Action.java" startLine="76" startPosition="43" endLine="77" endPosition="37" />
-    <scopeInfo nodeId="1310998557965179671" fileName="RunWorkflow_Action.java" startLine="80" startPosition="31" endLine="81" endPosition="35" />
-    <scopeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="85" startPosition="0" endLine="86" endPosition="83" />
-    <scopeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="85" startPosition="27" endLine="86" endPosition="83" />
-    <scopeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="34" startPosition="0" endLine="36" endPosition="44" />
-    <scopeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="34" startPosition="27" endLine="36" endPosition="44" />
-    <scopeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="25" startPosition="31" endLine="28" endPosition="41" />
-    <scopeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="46" startPosition="25" endLine="49" endPosition="9" />
-    <scopeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="55" startPosition="5" endLine="59" endPosition="5" />
-    <scopeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="59" startPosition="5" endLine="63" endPosition="5" />
-    <scopeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="63" startPosition="5" endLine="67" endPosition="5" />
-    <scopeInfo nodeId="1310998557965179662" fileName="RunWorkflow_Action.java" startLine="75" startPosition="50" endLine="79" endPosition="0">
+    <nodeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="22" startPosition="52" endLine="23" endPosition="40" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="ICON" />
+    <nodeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="23" startPosition="40" endLine="24" endPosition="73" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="LOG" />
+    <nodeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="26" startPosition="31" endLine="27" endPosition="36" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+    <nodeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="27" startPosition="36" endLine="28" endPosition="35" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="28" startPosition="35" endLine="29" endPosition="41" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="33" startPosition="32" endLine="34" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="38" startPosition="9" endLine="39" endPosition="43" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="38" startPosition="9" endLine="39" endPosition="43" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="40" startPosition="27" endLine="41" endPosition="84" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="41" startPosition="84" endLine="42" endPosition="44" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="47" startPosition="53" endLine="48" endPosition="19" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="50" startPosition="5" endLine="51" endPosition="57" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="53" startPosition="109" endLine="54" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="56" startPosition="7" endLine="57" endPosition="57" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="58" startPosition="5" endLine="59" endPosition="100" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="58" startPosition="5" endLine="59" endPosition="100" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="59" startPosition="100" endLine="60" endPosition="92" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="59" startPosition="100" endLine="60" endPosition="92" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="60" startPosition="92" endLine="61" endPosition="89" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="60" startPosition="92" endLine="61" endPosition="89" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="61" startPosition="89" endLine="62" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1310998557965150037" fileName="RunWorkflow_Action.java" startLine="66" startPosition="9" endLine="67" endPosition="129" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="1310998557965179672" fileName="RunWorkflow_Action.java" startLine="70" startPosition="43" endLine="71" endPosition="37" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1310998557965179682" fileName="RunWorkflow_Action.java" startLine="74" startPosition="31" endLine="75" endPosition="35" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="79" startPosition="27" endLine="80" endPosition="83" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="46" startPosition="95" endLine="49" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="52" startPosition="25" endLine="55" endPosition="9" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="1310998557965179662" fileName="RunWorkflow_Action.java" startLine="69" startPosition="50" endLine="73" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="handle#(Ljetbrains/mps/messages/IMessage;)V" />
+    <nodeInfo nodeId="1310998557965179668" fileName="RunWorkflow_Action.java" startLine="73" startPosition="0" endLine="77" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="clear#()V" />
+    <nodeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="25" startPosition="0" endLine="30" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="RunWorkflow_Action#()V" />
+    <nodeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="31" startPosition="0" endLine="36" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="isDumbAware#()Z" />
+    <nodeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="51" startPosition="57" endLine="56" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="37" startPosition="89" endLine="43" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.TryCatchStatement" />
+    <nodeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="36" startPosition="0" endLine="45" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="doUpdate#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)V" />
+    <nodeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="49" startPosition="5" endLine="58" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="49" startPosition="5" endLine="58" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="1310998557965168992" fileName="RunWorkflow_Action.java" startLine="68" startPosition="25" endLine="77" endPosition="131" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1310998557965166399" fileName="RunWorkflow_Action.java" startLine="67" startPosition="129" endLine="78" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="65" startPosition="96" endLine="81" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.TryCatchStatement" />
+    <nodeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="45" startPosition="0" endLine="64" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="collectActionData#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)Z" />
+    <nodeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="64" startPosition="0" endLine="83" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="doExecute#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)V" />
+    <scopeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="33" startPosition="32" endLine="34" endPosition="16" />
+    <scopeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="38" startPosition="9" endLine="39" endPosition="43" />
+    <scopeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="47" startPosition="53" endLine="48" endPosition="19" />
+    <scopeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="53" startPosition="109" endLine="54" endPosition="22" />
+    <scopeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="58" startPosition="5" endLine="59" endPosition="100" />
+    <scopeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="59" startPosition="100" endLine="60" endPosition="92" />
+    <scopeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="60" startPosition="92" endLine="61" endPosition="89" />
+    <scopeInfo nodeId="1310998557965179667" fileName="RunWorkflow_Action.java" startLine="70" startPosition="43" endLine="71" endPosition="37" />
+    <scopeInfo nodeId="1310998557965179671" fileName="RunWorkflow_Action.java" startLine="74" startPosition="31" endLine="75" endPosition="35" />
+    <scopeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="79" startPosition="0" endLine="80" endPosition="83">
+      <varInfo nodeId="1163325315882442989" varName="t" />
+    </scopeInfo>
+    <scopeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="79" startPosition="27" endLine="80" endPosition="83" />
+    <scopeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="40" startPosition="0" endLine="42" endPosition="44">
+      <varInfo nodeId="1163325315882442989" varName="t" />
+    </scopeInfo>
+    <scopeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="40" startPosition="27" endLine="42" endPosition="44" />
+    <scopeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="26" startPosition="31" endLine="29" endPosition="41" />
+    <scopeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="52" startPosition="25" endLine="55" endPosition="9" />
+    <scopeInfo nodeId="1310998557965179662" fileName="RunWorkflow_Action.java" startLine="69" startPosition="50" endLine="73" endPosition="0">
       <varInfo nodeId="1310998557965179665" varName="p0" />
     </scopeInfo>
-    <scopeInfo nodeId="1310998557965179668" fileName="RunWorkflow_Action.java" startLine="79" startPosition="0" endLine="83" endPosition="0" />
-    <scopeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="24" startPosition="0" endLine="29" endPosition="3" />
-    <scopeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="31" startPosition="89" endLine="37" endPosition="5" />
-    <scopeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="44" startPosition="5" endLine="51" endPosition="57" />
-    <scopeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="30" startPosition="0" endLine="39" endPosition="0" />
-    <scopeInfo nodeId="1310998557965166400" fileName="RunWorkflow_Action.java" startLine="74" startPosition="25" endLine="83" endPosition="131" />
-    <scopeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="43" startPosition="5" endLine="55" endPosition="5" />
-    <scopeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="72" startPosition="9" endLine="84" endPosition="7">
+    <scopeInfo nodeId="1310998557965179668" fileName="RunWorkflow_Action.java" startLine="73" startPosition="0" endLine="77" endPosition="0" />
+    <scopeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="25" startPosition="0" endLine="30" endPosition="3" />
+    <scopeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="31" startPosition="0" endLine="36" endPosition="0" />
+    <scopeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="37" startPosition="89" endLine="43" endPosition="5" />
+    <scopeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="50" startPosition="5" endLine="57" endPosition="57">
+      <varInfo nodeId="1163325315882442989" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="36" startPosition="0" endLine="45" endPosition="0">
+      <varInfo nodeId="1163325315882442989" varName="_params" />
+      <varInfo nodeId="1163325315882442989" varName="event" />
+    </scopeInfo>
+    <scopeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="49" startPosition="5" endLine="58" endPosition="5" />
+    <scopeInfo nodeId="1310998557965166400" fileName="RunWorkflow_Action.java" startLine="68" startPosition="25" endLine="77" endPosition="131" />
+    <scopeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="66" startPosition="9" endLine="78" endPosition="7">
       <varInfo nodeId="1310998557965150038" varName="tool" />
     </scopeInfo>
-    <scopeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="71" startPosition="96" endLine="87" endPosition="5" />
-    <scopeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="70" startPosition="0" endLine="89" endPosition="0" />
-    <scopeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="40" startPosition="95" endLine="68" endPosition="16" />
-    <scopeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="39" startPosition="0" endLine="70" endPosition="0" />
-    <unitInfo nodeId="1310998557965179660" fileName="RunWorkflow_Action.java" startLine="75" startPosition="31" endLine="83" endPosition="9" unitName="jetbrains.mps.core.workflow.plugin.RunWorkflow_Action$1" />
-    <unitInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="21" startPosition="0" endLine="90" endPosition="0" unitName="jetbrains.mps.core.workflow.plugin.RunWorkflow_Action" />
+    <scopeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="46" startPosition="95" endLine="62" endPosition="16" />
+    <scopeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="65" startPosition="96" endLine="81" endPosition="5" />
+    <scopeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="45" startPosition="0" endLine="64" endPosition="0">
+      <varInfo nodeId="1163325315882442989" varName="_params" />
+      <varInfo nodeId="1163325315882442989" varName="event" />
+    </scopeInfo>
+    <scopeInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="64" startPosition="0" endLine="83" endPosition="0">
+      <varInfo nodeId="1163325315882442989" varName="_params" />
+      <varInfo nodeId="1163325315882442989" varName="event" />
+    </scopeInfo>
+    <unitInfo nodeId="1163325315882442989" fileName="RunWorkflow_Action.java" startLine="22" startPosition="0" endLine="84" endPosition="0" unitName="jetbrains.mps.core.workflow.plugin.RunWorkflow_Action" />
+    <unitInfo nodeId="1310998557965179660" fileName="RunWorkflow_Action.java" startLine="69" startPosition="31" endLine="77" endPosition="9" unitName="jetbrains.mps.core.workflow.plugin.RunWorkflow_Action$1" />
   </root>
   <root nodeId="1310998557965168901">
     <nodeInfo nodeId="1310998557965168921" fileName="WorkflowRunner.java" startLine="19" startPosition="29" endLine="20" endPosition="34" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="handler" />
@@ -168,31 +173,31 @@
       <varInfo nodeId="5280308256730808196" varName="message" />
     </scopeInfo>
     <scopeInfo nodeId="1310998557965186127" fileName="WorkflowRunner.java" startLine="43" startPosition="13" endLine="49" endPosition="0">
-      <varInfo nodeId="1310998557965184819" varName="result" />
-      <varInfo nodeId="1310998557965184841" varName="exprst" />
       <varInfo nodeId="1310998557965184869" varName="asString" />
+      <varInfo nodeId="1310998557965184841" varName="exprst" />
+      <varInfo nodeId="1310998557965184819" varName="result" />
     </scopeInfo>
     <scopeInfo nodeId="7862448911997432240" fileName="WorkflowRunner.java" startLine="98" startPosition="51" endLine="104" endPosition="16" />
     <scopeInfo nodeId="1310998557965184779" fileName="WorkflowRunner.java" startLine="31" startPosition="61" endLine="39" endPosition="0">
-      <varInfo nodeId="1310998557965184774" varName="message" />
       <varInfo nodeId="5280308256730800950" varName="hintNode" />
       <varInfo nodeId="5280308256730800947" varName="kind" />
+      <varInfo nodeId="1310998557965184774" varName="message" />
     </scopeInfo>
     <scopeInfo nodeId="1310998557965168939" fileName="WorkflowRunner.java" startLine="78" startPosition="0" endLine="86" endPosition="0">
-      <varInfo nodeId="1310998557965168947" varName="text" />
       <varInfo nodeId="5280308256730808192" varName="hintNode" />
       <varInfo nodeId="1310998557965168943" varName="kind" />
+      <varInfo nodeId="1310998557965168947" varName="text" />
     </scopeInfo>
     <scopeInfo nodeId="7862448911997437193" fileName="WorkflowRunner.java" startLine="87" startPosition="41" endLine="95" endPosition="16">
-      <varInfo nodeId="7862448911997437200" varName="last" />
       <varInfo nodeId="7862448911997437244" varName="counter" />
+      <varInfo nodeId="7862448911997437200" varName="last" />
       <varInfo nodeId="7862448911997437208" varName="next" />
     </scopeInfo>
     <scopeInfo nodeId="4188390566614807983" fileName="WorkflowRunner.java" startLine="58" startPosition="13" endLine="67" endPosition="0">
-      <varInfo nodeId="4188390566614808140" varName="result" />
+      <varInfo nodeId="4188390566614808014" varName="actual" />
       <varInfo nodeId="4188390566614807969" varName="expected" />
       <varInfo nodeId="4188390566614807964" varName="exprst" />
-      <varInfo nodeId="4188390566614808014" varName="actual" />
+      <varInfo nodeId="4188390566614808140" varName="result" />
     </scopeInfo>
     <scopeInfo nodeId="7862448911997432237" fileName="WorkflowRunner.java" startLine="97" startPosition="0" endLine="106" endPosition="0">
       <varInfo nodeId="7862448911997432242" varName="ex" />
@@ -207,14 +212,14 @@
       <varInfo nodeId="1310998557965180089" varName="st" />
     </scopeInfo>
     <scopeInfo nodeId="1310998557965168983" fileName="WorkflowRunner.java" startLine="29" startPosition="37" endLine="76" endPosition="5">
-      <varInfo nodeId="1310998557965180107" varName="rootContext" />
       <varInfo nodeId="1310998557965180096" varName="env" />
+      <varInfo nodeId="1310998557965180107" varName="rootContext" />
     </scopeInfo>
     <scopeInfo nodeId="1310998557965168980" fileName="WorkflowRunner.java" startLine="28" startPosition="0" endLine="78" endPosition="0">
       <varInfo nodeId="1310998557965179646" varName="executable" />
     </scopeInfo>
-    <unitInfo nodeId="1310998557965184777" fileName="WorkflowRunner.java" startLine="31" startPosition="36" endLine="39" endPosition="5" unitName="jetbrains.mps.core.workflow.plugin.WorkflowRunner$1" />
     <unitInfo nodeId="1310998557965168901" fileName="WorkflowRunner.java" startLine="19" startPosition="0" endLine="107" endPosition="0" unitName="jetbrains.mps.core.workflow.plugin.WorkflowRunner" />
+    <unitInfo nodeId="1310998557965184777" fileName="WorkflowRunner.java" startLine="31" startPosition="36" endLine="39" endPosition="5" unitName="jetbrains.mps.core.workflow.plugin.WorkflowRunner$1" />
   </root>
   <root nodeId="1671449901154510504">
     <nodeInfo nodeId="1671449901154510504" fileName="WorkflowGroup_ActionGroup.java" startLine="8" startPosition="69" endLine="9" endPosition="80" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="LOG" />
@@ -227,11 +232,35 @@
     <nodeInfo nodeId="1671449901154510504" fileName="WorkflowGroup_ActionGroup.java" startLine="15" startPosition="25" endLine="20" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.TryCatchStatement" />
     <nodeInfo nodeId="1671449901154510504" fileName="WorkflowGroup_ActionGroup.java" startLine="11" startPosition="0" endLine="21" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="WorkflowGroup_ActionGroup#()V" />
     <scopeInfo nodeId="1671449901154510504" fileName="WorkflowGroup_ActionGroup.java" startLine="16" startPosition="9" endLine="17" endPosition="104" />
-    <scopeInfo nodeId="1671449901154510504" fileName="WorkflowGroup_ActionGroup.java" startLine="18" startPosition="0" endLine="19" endPosition="39" />
+    <scopeInfo nodeId="1671449901154510504" fileName="WorkflowGroup_ActionGroup.java" startLine="18" startPosition="0" endLine="19" endPosition="39">
+      <varInfo nodeId="1671449901154510504" varName="t" />
+    </scopeInfo>
     <scopeInfo nodeId="1671449901154510504" fileName="WorkflowGroup_ActionGroup.java" startLine="18" startPosition="27" endLine="19" endPosition="39" />
     <scopeInfo nodeId="1671449901154510504" fileName="WorkflowGroup_ActionGroup.java" startLine="12" startPosition="38" endLine="20" endPosition="5" />
     <scopeInfo nodeId="1671449901154510504" fileName="WorkflowGroup_ActionGroup.java" startLine="11" startPosition="0" endLine="21" endPosition="3" />
     <unitInfo nodeId="1671449901154510504" fileName="WorkflowGroup_ActionGroup.java" startLine="8" startPosition="0" endLine="23" endPosition="0" unitName="jetbrains.mps.core.workflow.plugin.WorkflowGroup_ActionGroup" />
+  </root>
+  <root nodeId="7815867052582620960">
+    <nodeInfo nodeId="7815867052582620960" fileName="Workflow_ApplicationPlugin.java" startLine="9" startPosition="71" endLine="10" endPosition="72" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="myId" />
+    <nodeInfo nodeId="7815867052582620960" fileName="Workflow_ApplicationPlugin.java" startLine="15" startPosition="27" endLine="16" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="7815867052582620960" fileName="Workflow_ApplicationPlugin.java" startLine="19" startPosition="30" endLine="20" endPosition="30" conceptFqName="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+    <nodeInfo nodeId="7815867052582620960" fileName="Workflow_ApplicationPlugin.java" startLine="20" startPosition="30" endLine="21" endPosition="40" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7815867052582620960" fileName="Workflow_ApplicationPlugin.java" startLine="21" startPosition="40" endLine="22" endPosition="14" conceptFqName="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+    <nodeInfo nodeId="7815867052582620960" fileName="Workflow_ApplicationPlugin.java" startLine="22" startPosition="14" endLine="23" endPosition="46" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7815867052582620960" fileName="Workflow_ApplicationPlugin.java" startLine="26" startPosition="37" endLine="27" endPosition="129" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7815867052582620960" fileName="Workflow_ApplicationPlugin.java" startLine="11" startPosition="0" endLine="13" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="Workflow_ApplicationPlugin#()V" />
+    <nodeInfo nodeId="7815867052582620960" fileName="Workflow_ApplicationPlugin.java" startLine="14" startPosition="0" endLine="18" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getId#()Lcom/intellij/openapi/extensions/PluginId;" />
+    <nodeInfo nodeId="7815867052582620960" fileName="Workflow_ApplicationPlugin.java" startLine="25" startPosition="0" endLine="29" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="adjustRegularGroups#()V" />
+    <nodeInfo nodeId="7815867052582620960" fileName="Workflow_ApplicationPlugin.java" startLine="18" startPosition="0" endLine="25" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createGroups#()V" />
+    <scopeInfo nodeId="7815867052582620960" fileName="Workflow_ApplicationPlugin.java" startLine="12" startPosition="39" endLine="12" endPosition="39" />
+    <scopeInfo nodeId="7815867052582620960" fileName="Workflow_ApplicationPlugin.java" startLine="15" startPosition="27" endLine="16" endPosition="16" />
+    <scopeInfo nodeId="7815867052582620960" fileName="Workflow_ApplicationPlugin.java" startLine="26" startPosition="37" endLine="27" endPosition="129" />
+    <scopeInfo nodeId="7815867052582620960" fileName="Workflow_ApplicationPlugin.java" startLine="11" startPosition="0" endLine="13" endPosition="3" />
+    <scopeInfo nodeId="7815867052582620960" fileName="Workflow_ApplicationPlugin.java" startLine="14" startPosition="0" endLine="18" endPosition="0" />
+    <scopeInfo nodeId="7815867052582620960" fileName="Workflow_ApplicationPlugin.java" startLine="19" startPosition="30" endLine="23" endPosition="46" />
+    <scopeInfo nodeId="7815867052582620960" fileName="Workflow_ApplicationPlugin.java" startLine="25" startPosition="0" endLine="29" endPosition="0" />
+    <scopeInfo nodeId="7815867052582620960" fileName="Workflow_ApplicationPlugin.java" startLine="18" startPosition="0" endLine="25" endPosition="0" />
+    <unitInfo nodeId="7815867052582620960" fileName="Workflow_ApplicationPlugin.java" startLine="9" startPosition="0" endLine="30" endPosition="0" unitName="jetbrains.mps.core.workflow.plugin.Workflow_ApplicationPlugin" />
   </root>
 </debugInfo>
 

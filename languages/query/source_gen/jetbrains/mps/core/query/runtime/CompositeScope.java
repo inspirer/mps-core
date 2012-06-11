@@ -45,7 +45,7 @@ public class CompositeScope extends QueryScope {
         ListSequence.fromList(result).addElement(r);
       }
     }
-    return (ListSequence.fromList(result).count() == 1 ?
+    return ((int) ListSequence.fromList(result).count() == 1 ?
       ListSequence.fromList(result).first() :
       null
     );

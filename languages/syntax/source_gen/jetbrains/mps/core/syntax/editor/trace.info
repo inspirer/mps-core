@@ -51,18 +51,42 @@
     <scopeInfo nodeId="2481283025450046979" fileName="SLineComment_Editor.java" startLine="34" startPosition="87" endLine="36" endPosition="65" />
     <scopeInfo nodeId="2481283025450046981" fileName="SLineComment_Editor.java" startLine="48" startPosition="58" endLine="50" endPosition="65" />
     <scopeInfo nodeId="2481283025450202653" fileName="SLineComment_Editor.java" startLine="62" startPosition="119" endLine="64" endPosition="5" />
-    <scopeInfo nodeId="2481283025450046981" fileName="SLineComment_Editor.java" startLine="54" startPosition="35" endLine="57" endPosition="105" />
-    <scopeInfo nodeId="2481283025450046974" fileName="SLineComment_Editor.java" startLine="20" startPosition="60" endLine="24" endPosition="0" />
+    <scopeInfo nodeId="2481283025450046981" fileName="SLineComment_Editor.java" startLine="54" startPosition="35" endLine="57" endPosition="105">
+      <varInfo nodeId="2481283025450046981" varName="manager" />
+      <varInfo nodeId="2481283025450046981" varName="opContext" />
+    </scopeInfo>
+    <scopeInfo nodeId="2481283025450046974" fileName="SLineComment_Editor.java" startLine="20" startPosition="60" endLine="24" endPosition="0">
+      <varInfo nodeId="2481283025450046974" varName="editorContext" />
+      <varInfo nodeId="2481283025450046974" varName="node" />
+    </scopeInfo>
     <scopeInfo nodeId="2481283025450046981" fileName="SLineComment_Editor.java" startLine="47" startPosition="26" endLine="51" endPosition="73" />
     <scopeInfo nodeId="2481283025450202653" fileName="SLineComment_Editor.java" startLine="65" startPosition="0" endLine="69" endPosition="0" />
-    <scopeInfo nodeId="2481283025450046976" fileName="SLineComment_Editor.java" startLine="25" startPosition="89" endLine="30" endPosition="22" />
-    <scopeInfo nodeId="2481283025450046979" fileName="SLineComment_Editor.java" startLine="33" startPosition="88" endLine="39" endPosition="22" />
-    <scopeInfo nodeId="2481283025450046976" fileName="SLineComment_Editor.java" startLine="24" startPosition="0" endLine="32" endPosition="0" />
-    <scopeInfo nodeId="2481283025450046979" fileName="SLineComment_Editor.java" startLine="32" startPosition="0" endLine="41" endPosition="0" />
-    <scopeInfo nodeId="2481283025450046981" fileName="SLineComment_Editor.java" startLine="42" startPosition="88" endLine="59" endPosition="22" />
-    <scopeInfo nodeId="2481283025450046981" fileName="SLineComment_Editor.java" startLine="41" startPosition="0" endLine="61" endPosition="0" />
-    <unitInfo nodeId="2481283025450202653" fileName="SLineComment_Editor.java" startLine="62" startPosition="0" endLine="70" endPosition="0" unitName="jetbrains.mps.core.syntax.editor.SLineComment_Editor$ReplaceWith_SLexerPart_cellMenu_a0a0" />
+    <scopeInfo nodeId="2481283025450046976" fileName="SLineComment_Editor.java" startLine="25" startPosition="89" endLine="30" endPosition="22">
+      <varInfo nodeId="2481283025450046976" varName="editorCell" />
+    </scopeInfo>
+    <scopeInfo nodeId="2481283025450046979" fileName="SLineComment_Editor.java" startLine="33" startPosition="88" endLine="39" endPosition="22">
+      <varInfo nodeId="2481283025450046979" varName="editorCell" />
+    </scopeInfo>
+    <scopeInfo nodeId="2481283025450046976" fileName="SLineComment_Editor.java" startLine="24" startPosition="0" endLine="32" endPosition="0">
+      <varInfo nodeId="2481283025450046976" varName="editorContext" />
+      <varInfo nodeId="2481283025450046976" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="2481283025450046979" fileName="SLineComment_Editor.java" startLine="32" startPosition="0" endLine="41" endPosition="0">
+      <varInfo nodeId="2481283025450046979" varName="editorContext" />
+      <varInfo nodeId="2481283025450046979" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="2481283025450046981" fileName="SLineComment_Editor.java" startLine="42" startPosition="88" endLine="59" endPosition="22">
+      <varInfo nodeId="2481283025450046981" varName="attributeConcept" />
+      <varInfo nodeId="2481283025450046981" varName="attributeKind" />
+      <varInfo nodeId="2481283025450046981" varName="editorCell" />
+      <varInfo nodeId="2481283025450046981" varName="provider" />
+    </scopeInfo>
+    <scopeInfo nodeId="2481283025450046981" fileName="SLineComment_Editor.java" startLine="41" startPosition="0" endLine="61" endPosition="0">
+      <varInfo nodeId="2481283025450046981" varName="editorContext" />
+      <varInfo nodeId="2481283025450046981" varName="node" />
+    </scopeInfo>
     <unitInfo nodeId="2481283025450046974" fileName="SLineComment_Editor.java" startLine="20" startPosition="0" endLine="71" endPosition="0" unitName="jetbrains.mps.core.syntax.editor.SLineComment_Editor" />
+    <unitInfo nodeId="2481283025450202653" fileName="SLineComment_Editor.java" startLine="62" startPosition="0" endLine="70" endPosition="0" unitName="jetbrains.mps.core.syntax.editor.SLineComment_Editor$ReplaceWith_SLexerPart_cellMenu_a0a0" />
   </root>
   <root nodeId="3135327435335338955">
     <nodeInfo nodeId="3135327435335338955" fileName="SGrammarPart_Editor.java" startLine="14" startPosition="79" endLine="15" endPosition="61" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
@@ -77,11 +101,21 @@
     <nodeInfo nodeId="3135327435335338957" fileName="SGrammarPart_Editor.java" startLine="19" startPosition="86" endLine="24" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
     <nodeInfo nodeId="3135327435335338957" fileName="SGrammarPart_Editor.java" startLine="17" startPosition="0" endLine="28" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createConstant_45d3ea_a#(Ljetbrains/mps/nodeEditor/EditorContext;Ljetbrains/mps/smodel/SNode;)Ljetbrains/mps/nodeEditor/cells/EditorCell;" />
     <scopeInfo nodeId="3135327435335338955" fileName="SGrammarPart_Editor.java" startLine="14" startPosition="79" endLine="15" endPosition="61" />
-    <scopeInfo nodeId="3135327435335338957" fileName="SGrammarPart_Editor.java" startLine="21" startPosition="5" endLine="23" endPosition="48" />
-    <scopeInfo nodeId="3135327435335338955" fileName="SGrammarPart_Editor.java" startLine="13" startPosition="60" endLine="17" endPosition="0" />
+    <scopeInfo nodeId="3135327435335338957" fileName="SGrammarPart_Editor.java" startLine="21" startPosition="5" endLine="23" endPosition="48">
+      <varInfo nodeId="3135327435335338957" varName="style" />
+    </scopeInfo>
+    <scopeInfo nodeId="3135327435335338955" fileName="SGrammarPart_Editor.java" startLine="13" startPosition="60" endLine="17" endPosition="0">
+      <varInfo nodeId="3135327435335338955" varName="editorContext" />
+      <varInfo nodeId="3135327435335338955" varName="node" />
+    </scopeInfo>
     <scopeInfo nodeId="3135327435335338957" fileName="SGrammarPart_Editor.java" startLine="19" startPosition="86" endLine="24" endPosition="5" />
-    <scopeInfo nodeId="3135327435335338957" fileName="SGrammarPart_Editor.java" startLine="18" startPosition="87" endLine="26" endPosition="22" />
-    <scopeInfo nodeId="3135327435335338957" fileName="SGrammarPart_Editor.java" startLine="17" startPosition="0" endLine="28" endPosition="0" />
+    <scopeInfo nodeId="3135327435335338957" fileName="SGrammarPart_Editor.java" startLine="18" startPosition="87" endLine="26" endPosition="22">
+      <varInfo nodeId="3135327435335338957" varName="editorCell" />
+    </scopeInfo>
+    <scopeInfo nodeId="3135327435335338957" fileName="SGrammarPart_Editor.java" startLine="17" startPosition="0" endLine="28" endPosition="0">
+      <varInfo nodeId="3135327435335338957" varName="editorContext" />
+      <varInfo nodeId="3135327435335338957" varName="node" />
+    </scopeInfo>
     <unitInfo nodeId="3135327435335338955" fileName="SGrammarPart_Editor.java" startLine="13" startPosition="0" endLine="29" endPosition="0" unitName="jetbrains.mps.core.syntax.editor.SGrammarPart_Editor" />
   </root>
   <root nodeId="5073985075243001603">
@@ -141,22 +175,55 @@
     <scopeInfo nodeId="5073985075243001605" fileName="SRegex_Editor.java" startLine="25" startPosition="48" endLine="26" endPosition="81" />
     <scopeInfo nodeId="5073985075243001605" fileName="SRegex_Editor.java" startLine="26" startPosition="81" endLine="27" endPosition="81" />
     <scopeInfo nodeId="5073985075243001605" fileName="SRegex_Editor.java" startLine="27" startPosition="81" endLine="28" endPosition="81" />
-    <scopeInfo nodeId="5073985075243001608" fileName="SRegex_Editor.java" startLine="36" startPosition="5" endLine="38" endPosition="57" />
-    <scopeInfo nodeId="5073985075243001610" fileName="SRegex_Editor.java" startLine="48" startPosition="5" endLine="50" endPosition="56" />
+    <scopeInfo nodeId="5073985075243001608" fileName="SRegex_Editor.java" startLine="36" startPosition="5" endLine="38" endPosition="57">
+      <varInfo nodeId="5073985075243001608" varName="style" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243001610" fileName="SRegex_Editor.java" startLine="48" startPosition="5" endLine="50" endPosition="56">
+      <varInfo nodeId="5073985075243001610" varName="style" />
+    </scopeInfo>
     <scopeInfo nodeId="5073985075243001612" fileName="SRegex_Editor.java" startLine="61" startPosition="58" endLine="63" endPosition="63" />
-    <scopeInfo nodeId="5073985075243001612" fileName="SRegex_Editor.java" startLine="67" startPosition="35" endLine="70" endPosition="105" />
-    <scopeInfo nodeId="5073985075243001603" fileName="SRegex_Editor.java" startLine="18" startPosition="54" endLine="22" endPosition="0" />
+    <scopeInfo nodeId="5073985075243001612" fileName="SRegex_Editor.java" startLine="67" startPosition="35" endLine="70" endPosition="105">
+      <varInfo nodeId="5073985075243001612" varName="manager" />
+      <varInfo nodeId="5073985075243001612" varName="opContext" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243001603" fileName="SRegex_Editor.java" startLine="18" startPosition="54" endLine="22" endPosition="0">
+      <varInfo nodeId="5073985075243001603" varName="editorContext" />
+      <varInfo nodeId="5073985075243001603" varName="node" />
+    </scopeInfo>
     <scopeInfo nodeId="5073985075243001612" fileName="SRegex_Editor.java" startLine="60" startPosition="26" endLine="64" endPosition="73" />
-    <scopeInfo nodeId="5073985075243001605" fileName="SRegex_Editor.java" startLine="23" startPosition="89" endLine="29" endPosition="22" />
+    <scopeInfo nodeId="5073985075243001605" fileName="SRegex_Editor.java" startLine="23" startPosition="89" endLine="29" endPosition="22">
+      <varInfo nodeId="5073985075243001605" varName="editorCell" />
+    </scopeInfo>
     <scopeInfo nodeId="5073985075243001608" fileName="SRegex_Editor.java" startLine="33" startPosition="87" endLine="39" endPosition="5" />
     <scopeInfo nodeId="5073985075243001610" fileName="SRegex_Editor.java" startLine="45" startPosition="87" endLine="51" endPosition="5" />
-    <scopeInfo nodeId="5073985075243001605" fileName="SRegex_Editor.java" startLine="22" startPosition="0" endLine="31" endPosition="0" />
-    <scopeInfo nodeId="5073985075243001608" fileName="SRegex_Editor.java" startLine="32" startPosition="88" endLine="41" endPosition="22" />
-    <scopeInfo nodeId="5073985075243001610" fileName="SRegex_Editor.java" startLine="44" startPosition="88" endLine="53" endPosition="22" />
-    <scopeInfo nodeId="5073985075243001608" fileName="SRegex_Editor.java" startLine="31" startPosition="0" endLine="43" endPosition="0" />
-    <scopeInfo nodeId="5073985075243001610" fileName="SRegex_Editor.java" startLine="43" startPosition="0" endLine="55" endPosition="0" />
-    <scopeInfo nodeId="5073985075243001612" fileName="SRegex_Editor.java" startLine="56" startPosition="88" endLine="72" endPosition="22" />
-    <scopeInfo nodeId="5073985075243001612" fileName="SRegex_Editor.java" startLine="55" startPosition="0" endLine="74" endPosition="0" />
+    <scopeInfo nodeId="5073985075243001605" fileName="SRegex_Editor.java" startLine="22" startPosition="0" endLine="31" endPosition="0">
+      <varInfo nodeId="5073985075243001605" varName="editorContext" />
+      <varInfo nodeId="5073985075243001605" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243001608" fileName="SRegex_Editor.java" startLine="32" startPosition="88" endLine="41" endPosition="22">
+      <varInfo nodeId="5073985075243001608" varName="editorCell" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243001610" fileName="SRegex_Editor.java" startLine="44" startPosition="88" endLine="53" endPosition="22">
+      <varInfo nodeId="5073985075243001610" varName="editorCell" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243001608" fileName="SRegex_Editor.java" startLine="31" startPosition="0" endLine="43" endPosition="0">
+      <varInfo nodeId="5073985075243001608" varName="editorContext" />
+      <varInfo nodeId="5073985075243001608" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243001610" fileName="SRegex_Editor.java" startLine="43" startPosition="0" endLine="55" endPosition="0">
+      <varInfo nodeId="5073985075243001610" varName="editorContext" />
+      <varInfo nodeId="5073985075243001610" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243001612" fileName="SRegex_Editor.java" startLine="56" startPosition="88" endLine="72" endPosition="22">
+      <varInfo nodeId="5073985075243001612" varName="attributeConcept" />
+      <varInfo nodeId="5073985075243001612" varName="attributeKind" />
+      <varInfo nodeId="5073985075243001612" varName="editorCell" />
+      <varInfo nodeId="5073985075243001612" varName="provider" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243001612" fileName="SRegex_Editor.java" startLine="55" startPosition="0" endLine="74" endPosition="0">
+      <varInfo nodeId="5073985075243001612" varName="editorContext" />
+      <varInfo nodeId="5073985075243001612" varName="node" />
+    </scopeInfo>
     <unitInfo nodeId="5073985075243001603" fileName="SRegex_Editor.java" startLine="18" startPosition="0" endLine="75" endPosition="0" unitName="jetbrains.mps.core.syntax.editor.SRegex_Editor" />
   </root>
   <root nodeId="5073985075243002179">
@@ -449,102 +516,295 @@
     <scopeInfo nodeId="5073985075243002206" fileName="SSource_Editor.java" startLine="334" startPosition="131" endLine="335" endPosition="139" />
     <scopeInfo nodeId="5073985075243002183" fileName="SSource_Editor.java" startLine="53" startPosition="92" endLine="55" endPosition="65" />
     <scopeInfo nodeId="4242261035235347649" fileName="SSource_Editor.java" startLine="61" startPosition="95" endLine="63" endPosition="65" />
-    <scopeInfo nodeId="5073985075243002222" fileName="SSource_Editor.java" startLine="71" startPosition="5" endLine="73" endPosition="62" />
+    <scopeInfo nodeId="5073985075243002222" fileName="SSource_Editor.java" startLine="71" startPosition="5" endLine="73" endPosition="62">
+      <varInfo nodeId="5073985075243002222" varName="style" />
+    </scopeInfo>
     <scopeInfo nodeId="5073985075243149414" fileName="SSource_Editor.java" startLine="80" startPosition="92" endLine="82" endPosition="65" />
-    <scopeInfo nodeId="5073985075243149407" fileName="SSource_Editor.java" startLine="102" startPosition="5" endLine="104" endPosition="62" />
-    <scopeInfo nodeId="5073985075243002200" fileName="SSource_Editor.java" startLine="113" startPosition="5" endLine="115" endPosition="62" />
-    <scopeInfo nodeId="1030525575875731620" fileName="SSource_Editor.java" startLine="125" startPosition="5" endLine="127" endPosition="62" />
-    <scopeInfo nodeId="1030525575875731617" fileName="SSource_Editor.java" startLine="136" startPosition="5" endLine="138" endPosition="62" />
-    <scopeInfo nodeId="4242261035235347651" fileName="SSource_Editor.java" startLine="184" startPosition="5" endLine="186" endPosition="62" />
-    <scopeInfo nodeId="5073985075243149415" fileName="SSource_Editor.java" startLine="222" startPosition="66" endLine="224" endPosition="93" />
-    <scopeInfo nodeId="5073985075243002195" fileName="SSource_Editor.java" startLine="258" startPosition="66" endLine="260" endPosition="93" />
+    <scopeInfo nodeId="5073985075243149407" fileName="SSource_Editor.java" startLine="102" startPosition="5" endLine="104" endPosition="62">
+      <varInfo nodeId="5073985075243149407" varName="style" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243002200" fileName="SSource_Editor.java" startLine="113" startPosition="5" endLine="115" endPosition="62">
+      <varInfo nodeId="5073985075243002200" varName="style" />
+    </scopeInfo>
+    <scopeInfo nodeId="1030525575875731620" fileName="SSource_Editor.java" startLine="125" startPosition="5" endLine="127" endPosition="62">
+      <varInfo nodeId="1030525575875731620" varName="style" />
+    </scopeInfo>
+    <scopeInfo nodeId="1030525575875731617" fileName="SSource_Editor.java" startLine="136" startPosition="5" endLine="138" endPosition="62">
+      <varInfo nodeId="1030525575875731617" varName="style" />
+    </scopeInfo>
+    <scopeInfo nodeId="4242261035235347651" fileName="SSource_Editor.java" startLine="184" startPosition="5" endLine="186" endPosition="62">
+      <varInfo nodeId="4242261035235347651" varName="style" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243149415" fileName="SSource_Editor.java" startLine="222" startPosition="66" endLine="224" endPosition="93">
+      <varInfo nodeId="5073985075243149415" varName="listOwner" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243002195" fileName="SSource_Editor.java" startLine="258" startPosition="66" endLine="260" endPosition="93">
+      <varInfo nodeId="5073985075243002195" varName="listOwner" />
+    </scopeInfo>
     <scopeInfo nodeId="5073985075243002224" fileName="SSource_Editor.java" startLine="293" startPosition="110" endLine="295" endPosition="75" />
-    <scopeInfo nodeId="5073985075243002206" fileName="SSource_Editor.java" startLine="306" startPosition="66" endLine="308" endPosition="93" />
+    <scopeInfo nodeId="5073985075243002206" fileName="SSource_Editor.java" startLine="306" startPosition="66" endLine="308" endPosition="93">
+      <varInfo nodeId="5073985075243002206" varName="listOwner" />
+    </scopeInfo>
     <scopeInfo nodeId="5073985075243002228" fileName="SSource_Editor.java" startLine="341" startPosition="112" endLine="343" endPosition="75" />
-    <scopeInfo nodeId="5073985075243149408" fileName="SSource_Editor.java" startLine="90" startPosition="5" endLine="93" endPosition="56" />
-    <scopeInfo nodeId="5073985075243002195" fileName="SSource_Editor.java" startLine="156" startPosition="5" endLine="159" endPosition="62" />
-    <scopeInfo nodeId="5073985075243002206" fileName="SSource_Editor.java" startLine="169" startPosition="5" endLine="172" endPosition="62" />
-    <scopeInfo nodeId="4242261035235347651" fileName="SSource_Editor.java" startLine="191" startPosition="35" endLine="194" endPosition="105" />
+    <scopeInfo nodeId="5073985075243149408" fileName="SSource_Editor.java" startLine="90" startPosition="5" endLine="93" endPosition="56">
+      <varInfo nodeId="5073985075243149408" varName="style" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243002195" fileName="SSource_Editor.java" startLine="156" startPosition="5" endLine="159" endPosition="62">
+      <varInfo nodeId="5073985075243002195" varName="style" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243002206" fileName="SSource_Editor.java" startLine="169" startPosition="5" endLine="172" endPosition="62">
+      <varInfo nodeId="5073985075243002206" varName="style" />
+    </scopeInfo>
+    <scopeInfo nodeId="4242261035235347651" fileName="SSource_Editor.java" startLine="191" startPosition="35" endLine="194" endPosition="105">
+      <varInfo nodeId="4242261035235347651" varName="manager" />
+      <varInfo nodeId="4242261035235347651" varName="opContext" />
+    </scopeInfo>
     <scopeInfo nodeId="5073985075243002184" fileName="SSource_Editor.java" startLine="203" startPosition="26" endLine="206" endPosition="73" />
-    <scopeInfo nodeId="5073985075243002184" fileName="SSource_Editor.java" startLine="209" startPosition="35" endLine="212" endPosition="105" />
-    <scopeInfo nodeId="5073985075243149415" fileName="SSource_Editor.java" startLine="217" startPosition="78" endLine="220" endPosition="5" />
-    <scopeInfo nodeId="5073985075243149415" fileName="SSource_Editor.java" startLine="227" startPosition="86" endLine="230" endPosition="25" />
-    <scopeInfo nodeId="5073985075243002195" fileName="SSource_Editor.java" startLine="253" startPosition="83" endLine="256" endPosition="5" />
-    <scopeInfo nodeId="5073985075243002195" fileName="SSource_Editor.java" startLine="263" startPosition="86" endLine="266" endPosition="25" />
-    <scopeInfo nodeId="5073985075243002206" fileName="SSource_Editor.java" startLine="301" startPosition="85" endLine="304" endPosition="5" />
-    <scopeInfo nodeId="5073985075243002206" fileName="SSource_Editor.java" startLine="311" startPosition="86" endLine="314" endPosition="25" />
-    <scopeInfo nodeId="5073985075243002179" fileName="SSource_Editor.java" startLine="27" startPosition="55" endLine="31" endPosition="0" />
+    <scopeInfo nodeId="5073985075243002184" fileName="SSource_Editor.java" startLine="209" startPosition="35" endLine="212" endPosition="105">
+      <varInfo nodeId="5073985075243002184" varName="manager" />
+      <varInfo nodeId="5073985075243002184" varName="opContext" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243149415" fileName="SSource_Editor.java" startLine="217" startPosition="78" endLine="220" endPosition="5">
+      <varInfo nodeId="5073985075243149415" varName="childRole" />
+      <varInfo nodeId="5073985075243149415" varName="context" />
+      <varInfo nodeId="5073985075243149415" varName="ownerNode" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243149415" fileName="SSource_Editor.java" startLine="227" startPosition="86" endLine="230" endPosition="25">
+      <varInfo nodeId="5073985075243149415" varName="elementCell" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243002195" fileName="SSource_Editor.java" startLine="253" startPosition="83" endLine="256" endPosition="5">
+      <varInfo nodeId="5073985075243002195" varName="childRole" />
+      <varInfo nodeId="5073985075243002195" varName="context" />
+      <varInfo nodeId="5073985075243002195" varName="ownerNode" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243002195" fileName="SSource_Editor.java" startLine="263" startPosition="86" endLine="266" endPosition="25">
+      <varInfo nodeId="5073985075243002195" varName="elementCell" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243002206" fileName="SSource_Editor.java" startLine="301" startPosition="85" endLine="304" endPosition="5">
+      <varInfo nodeId="5073985075243002206" varName="childRole" />
+      <varInfo nodeId="5073985075243002206" varName="context" />
+      <varInfo nodeId="5073985075243002206" varName="ownerNode" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243002206" fileName="SSource_Editor.java" startLine="311" startPosition="86" endLine="314" endPosition="25">
+      <varInfo nodeId="5073985075243002206" varName="elementCell" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243002179" fileName="SSource_Editor.java" startLine="27" startPosition="55" endLine="31" endPosition="0">
+      <varInfo nodeId="5073985075243002179" varName="editorContext" />
+      <varInfo nodeId="5073985075243002179" varName="node" />
+    </scopeInfo>
     <scopeInfo nodeId="4242261035235347651" fileName="SSource_Editor.java" startLine="183" startPosition="58" endLine="187" endPosition="5" />
-    <scopeInfo nodeId="5073985075243149415" fileName="SSource_Editor.java" startLine="233" startPosition="68" endLine="237" endPosition="23" />
-    <scopeInfo nodeId="5073985075243002195" fileName="SSource_Editor.java" startLine="269" startPosition="68" endLine="273" endPosition="23" />
-    <scopeInfo nodeId="5073985075243002195" fileName="SSource_Editor.java" startLine="275" startPosition="0" endLine="279" endPosition="0" />
-    <scopeInfo nodeId="5073985075243002206" fileName="SSource_Editor.java" startLine="317" startPosition="68" endLine="321" endPosition="23" />
-    <scopeInfo nodeId="5073985075243002206" fileName="SSource_Editor.java" startLine="323" startPosition="0" endLine="327" endPosition="0" />
-    <scopeInfo nodeId="5073985075243002183" fileName="SSource_Editor.java" startLine="52" startPosition="88" endLine="57" endPosition="22" />
-    <scopeInfo nodeId="4242261035235347649" fileName="SSource_Editor.java" startLine="60" startPosition="88" endLine="65" endPosition="22" />
+    <scopeInfo nodeId="5073985075243149415" fileName="SSource_Editor.java" startLine="233" startPosition="68" endLine="237" endPosition="23">
+      <varInfo nodeId="5073985075243149415" varName="emptyCell" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243002195" fileName="SSource_Editor.java" startLine="269" startPosition="68" endLine="273" endPosition="23">
+      <varInfo nodeId="5073985075243002195" varName="emptyCell" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243002195" fileName="SSource_Editor.java" startLine="275" startPosition="0" endLine="279" endPosition="0">
+      <varInfo nodeId="5073985075243002195" varName="editorContext" />
+      <varInfo nodeId="5073985075243002195" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243002206" fileName="SSource_Editor.java" startLine="317" startPosition="68" endLine="321" endPosition="23">
+      <varInfo nodeId="5073985075243002206" varName="emptyCell" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243002206" fileName="SSource_Editor.java" startLine="323" startPosition="0" endLine="327" endPosition="0">
+      <varInfo nodeId="5073985075243002206" varName="editorContext" />
+      <varInfo nodeId="5073985075243002206" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243002183" fileName="SSource_Editor.java" startLine="52" startPosition="88" endLine="57" endPosition="22">
+      <varInfo nodeId="5073985075243002183" varName="editorCell" />
+    </scopeInfo>
+    <scopeInfo nodeId="4242261035235347649" fileName="SSource_Editor.java" startLine="60" startPosition="88" endLine="65" endPosition="22">
+      <varInfo nodeId="4242261035235347649" varName="editorCell" />
+    </scopeInfo>
     <scopeInfo nodeId="5073985075243002222" fileName="SSource_Editor.java" startLine="69" startPosition="86" endLine="74" endPosition="5" />
-    <scopeInfo nodeId="5073985075243149414" fileName="SSource_Editor.java" startLine="79" startPosition="88" endLine="84" endPosition="22" />
+    <scopeInfo nodeId="5073985075243149414" fileName="SSource_Editor.java" startLine="79" startPosition="88" endLine="84" endPosition="22">
+      <varInfo nodeId="5073985075243149414" varName="editorCell" />
+    </scopeInfo>
     <scopeInfo nodeId="5073985075243149407" fileName="SSource_Editor.java" startLine="100" startPosition="86" endLine="105" endPosition="5" />
     <scopeInfo nodeId="5073985075243002200" fileName="SSource_Editor.java" startLine="111" startPosition="86" endLine="116" endPosition="5" />
     <scopeInfo nodeId="1030525575875731617" fileName="SSource_Editor.java" startLine="134" startPosition="86" endLine="139" endPosition="5" />
-    <scopeInfo nodeId="5073985075243149415" fileName="SSource_Editor.java" startLine="144" startPosition="91" endLine="149" endPosition="22" />
-    <scopeInfo nodeId="5073985075243149415" fileName="SSource_Editor.java" startLine="221" startPosition="0" endLine="226" endPosition="0" />
-    <scopeInfo nodeId="5073985075243002195" fileName="SSource_Editor.java" startLine="257" startPosition="0" endLine="262" endPosition="0" />
-    <scopeInfo nodeId="5073985075243002224" fileName="SSource_Editor.java" startLine="292" startPosition="91" endLine="297" endPosition="24" />
-    <scopeInfo nodeId="5073985075243002206" fileName="SSource_Editor.java" startLine="305" startPosition="0" endLine="310" endPosition="0" />
-    <scopeInfo nodeId="5073985075243002228" fileName="SSource_Editor.java" startLine="340" startPosition="92" endLine="345" endPosition="24" />
+    <scopeInfo nodeId="5073985075243149415" fileName="SSource_Editor.java" startLine="144" startPosition="91" endLine="149" endPosition="22">
+      <varInfo nodeId="5073985075243149415" varName="editorCell" />
+      <varInfo nodeId="5073985075243149415" varName="handler" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243149415" fileName="SSource_Editor.java" startLine="221" startPosition="0" endLine="226" endPosition="0">
+      <varInfo nodeId="5073985075243149415" varName="editorContext" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243002195" fileName="SSource_Editor.java" startLine="257" startPosition="0" endLine="262" endPosition="0">
+      <varInfo nodeId="5073985075243002195" varName="editorContext" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243002224" fileName="SSource_Editor.java" startLine="292" startPosition="91" endLine="297" endPosition="24">
+      <varInfo nodeId="5073985075243002224" varName="editorCell" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243002206" fileName="SSource_Editor.java" startLine="305" startPosition="0" endLine="310" endPosition="0">
+      <varInfo nodeId="5073985075243002206" varName="editorContext" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243002228" fileName="SSource_Editor.java" startLine="340" startPosition="92" endLine="345" endPosition="24">
+      <varInfo nodeId="5073985075243002228" varName="editorCell" />
+    </scopeInfo>
     <scopeInfo nodeId="5073985075243149408" fileName="SSource_Editor.java" startLine="88" startPosition="87" endLine="94" endPosition="5" />
     <scopeInfo nodeId="1030525575875731620" fileName="SSource_Editor.java" startLine="122" startPosition="93" endLine="128" endPosition="5" />
     <scopeInfo nodeId="5073985075243002195" fileName="SSource_Editor.java" startLine="154" startPosition="106" endLine="160" endPosition="5" />
     <scopeInfo nodeId="5073985075243002206" fileName="SSource_Editor.java" startLine="167" startPosition="106" endLine="173" endPosition="5" />
     <scopeInfo nodeId="4242261035235347651" fileName="SSource_Editor.java" startLine="182" startPosition="26" endLine="188" endPosition="73" />
-    <scopeInfo nodeId="5073985075243149415" fileName="SSource_Editor.java" startLine="226" startPosition="0" endLine="232" endPosition="0" />
-    <scopeInfo nodeId="5073985075243002195" fileName="SSource_Editor.java" startLine="262" startPosition="0" endLine="268" endPosition="0" />
-    <scopeInfo nodeId="5073985075243002206" fileName="SSource_Editor.java" startLine="310" startPosition="0" endLine="316" endPosition="0" />
-    <scopeInfo nodeId="5073985075243149415" fileName="SSource_Editor.java" startLine="232" startPosition="0" endLine="239" endPosition="0" />
+    <scopeInfo nodeId="5073985075243149415" fileName="SSource_Editor.java" startLine="226" startPosition="0" endLine="232" endPosition="0">
+      <varInfo nodeId="5073985075243149415" varName="editorContext" />
+      <varInfo nodeId="5073985075243149415" varName="elementNode" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243002195" fileName="SSource_Editor.java" startLine="262" startPosition="0" endLine="268" endPosition="0">
+      <varInfo nodeId="5073985075243002195" varName="editorContext" />
+      <varInfo nodeId="5073985075243002195" varName="elementNode" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243002206" fileName="SSource_Editor.java" startLine="310" startPosition="0" endLine="316" endPosition="0">
+      <varInfo nodeId="5073985075243002206" varName="editorContext" />
+      <varInfo nodeId="5073985075243002206" varName="elementNode" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243149415" fileName="SSource_Editor.java" startLine="232" startPosition="0" endLine="239" endPosition="0">
+      <varInfo nodeId="5073985075243149415" varName="editorContext" />
+    </scopeInfo>
     <scopeInfo nodeId="5073985075243149415" fileName="SSource_Editor.java" startLine="241" startPosition="96" endLine="248" endPosition="9" />
-    <scopeInfo nodeId="5073985075243002195" fileName="SSource_Editor.java" startLine="268" startPosition="0" endLine="275" endPosition="0" />
+    <scopeInfo nodeId="5073985075243002195" fileName="SSource_Editor.java" startLine="268" startPosition="0" endLine="275" endPosition="0">
+      <varInfo nodeId="5073985075243002195" varName="editorContext" />
+    </scopeInfo>
     <scopeInfo nodeId="5073985075243002195" fileName="SSource_Editor.java" startLine="281" startPosition="96" endLine="288" endPosition="9" />
-    <scopeInfo nodeId="5073985075243002206" fileName="SSource_Editor.java" startLine="316" startPosition="0" endLine="323" endPosition="0" />
+    <scopeInfo nodeId="5073985075243002206" fileName="SSource_Editor.java" startLine="316" startPosition="0" endLine="323" endPosition="0">
+      <varInfo nodeId="5073985075243002206" varName="editorContext" />
+    </scopeInfo>
     <scopeInfo nodeId="5073985075243002206" fileName="SSource_Editor.java" startLine="329" startPosition="96" endLine="336" endPosition="9" />
-    <scopeInfo nodeId="5073985075243002183" fileName="SSource_Editor.java" startLine="51" startPosition="0" endLine="59" endPosition="0" />
-    <scopeInfo nodeId="4242261035235347649" fileName="SSource_Editor.java" startLine="59" startPosition="0" endLine="67" endPosition="0" />
-    <scopeInfo nodeId="5073985075243002222" fileName="SSource_Editor.java" startLine="68" startPosition="88" endLine="76" endPosition="22" />
-    <scopeInfo nodeId="5073985075243149414" fileName="SSource_Editor.java" startLine="78" startPosition="0" endLine="86" endPosition="0" />
-    <scopeInfo nodeId="5073985075243149407" fileName="SSource_Editor.java" startLine="99" startPosition="88" endLine="107" endPosition="22" />
-    <scopeInfo nodeId="5073985075243002200" fileName="SSource_Editor.java" startLine="110" startPosition="88" endLine="118" endPosition="22" />
-    <scopeInfo nodeId="1030525575875731617" fileName="SSource_Editor.java" startLine="133" startPosition="88" endLine="141" endPosition="22" />
-    <scopeInfo nodeId="5073985075243149415" fileName="SSource_Editor.java" startLine="143" startPosition="0" endLine="151" endPosition="0" />
-    <scopeInfo nodeId="5073985075243002224" fileName="SSource_Editor.java" startLine="291" startPosition="0" endLine="299" endPosition="0" />
-    <scopeInfo nodeId="5073985075243002228" fileName="SSource_Editor.java" startLine="339" startPosition="0" endLine="347" endPosition="0" />
-    <scopeInfo nodeId="5073985075243149408" fileName="SSource_Editor.java" startLine="87" startPosition="88" endLine="96" endPosition="22" />
-    <scopeInfo nodeId="1030525575875731620" fileName="SSource_Editor.java" startLine="121" startPosition="88" endLine="130" endPosition="22" />
+    <scopeInfo nodeId="5073985075243002183" fileName="SSource_Editor.java" startLine="51" startPosition="0" endLine="59" endPosition="0">
+      <varInfo nodeId="5073985075243002183" varName="editorContext" />
+      <varInfo nodeId="5073985075243002183" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="4242261035235347649" fileName="SSource_Editor.java" startLine="59" startPosition="0" endLine="67" endPosition="0">
+      <varInfo nodeId="4242261035235347649" varName="editorContext" />
+      <varInfo nodeId="4242261035235347649" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243002222" fileName="SSource_Editor.java" startLine="68" startPosition="88" endLine="76" endPosition="22">
+      <varInfo nodeId="5073985075243002222" varName="editorCell" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243149414" fileName="SSource_Editor.java" startLine="78" startPosition="0" endLine="86" endPosition="0">
+      <varInfo nodeId="5073985075243149414" varName="editorContext" />
+      <varInfo nodeId="5073985075243149414" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243149407" fileName="SSource_Editor.java" startLine="99" startPosition="88" endLine="107" endPosition="22">
+      <varInfo nodeId="5073985075243149407" varName="editorCell" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243002200" fileName="SSource_Editor.java" startLine="110" startPosition="88" endLine="118" endPosition="22">
+      <varInfo nodeId="5073985075243002200" varName="editorCell" />
+    </scopeInfo>
+    <scopeInfo nodeId="1030525575875731617" fileName="SSource_Editor.java" startLine="133" startPosition="88" endLine="141" endPosition="22">
+      <varInfo nodeId="1030525575875731617" varName="editorCell" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243149415" fileName="SSource_Editor.java" startLine="143" startPosition="0" endLine="151" endPosition="0">
+      <varInfo nodeId="5073985075243149415" varName="editorContext" />
+      <varInfo nodeId="5073985075243149415" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243002224" fileName="SSource_Editor.java" startLine="291" startPosition="0" endLine="299" endPosition="0">
+      <varInfo nodeId="5073985075243002224" varName="editorContext" />
+      <varInfo nodeId="5073985075243002224" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243002228" fileName="SSource_Editor.java" startLine="339" startPosition="0" endLine="347" endPosition="0">
+      <varInfo nodeId="5073985075243002228" varName="editorContext" />
+      <varInfo nodeId="5073985075243002228" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243149408" fileName="SSource_Editor.java" startLine="87" startPosition="88" endLine="96" endPosition="22">
+      <varInfo nodeId="5073985075243149408" varName="editorCell" />
+    </scopeInfo>
+    <scopeInfo nodeId="1030525575875731620" fileName="SSource_Editor.java" startLine="121" startPosition="88" endLine="130" endPosition="22">
+      <varInfo nodeId="1030525575875731620" varName="editorCell" />
+    </scopeInfo>
     <scopeInfo nodeId="5073985075243149415" fileName="SSource_Editor.java" startLine="240" startPosition="132" endLine="249" endPosition="7" />
     <scopeInfo nodeId="5073985075243002195" fileName="SSource_Editor.java" startLine="280" startPosition="132" endLine="289" endPosition="7" />
     <scopeInfo nodeId="5073985075243002206" fileName="SSource_Editor.java" startLine="328" startPosition="132" endLine="337" endPosition="7" />
-    <scopeInfo nodeId="5073985075243002195" fileName="SSource_Editor.java" startLine="152" startPosition="91" endLine="162" endPosition="22" />
-    <scopeInfo nodeId="5073985075243002206" fileName="SSource_Editor.java" startLine="165" startPosition="91" endLine="175" endPosition="22" />
-    <scopeInfo nodeId="5073985075243002222" fileName="SSource_Editor.java" startLine="67" startPosition="0" endLine="78" endPosition="0" />
-    <scopeInfo nodeId="5073985075243149407" fileName="SSource_Editor.java" startLine="98" startPosition="0" endLine="109" endPosition="0" />
-    <scopeInfo nodeId="5073985075243002200" fileName="SSource_Editor.java" startLine="109" startPosition="0" endLine="120" endPosition="0" />
-    <scopeInfo nodeId="1030525575875731617" fileName="SSource_Editor.java" startLine="132" startPosition="0" endLine="143" endPosition="0" />
-    <scopeInfo nodeId="5073985075243149408" fileName="SSource_Editor.java" startLine="86" startPosition="0" endLine="98" endPosition="0" />
-    <scopeInfo nodeId="1030525575875731620" fileName="SSource_Editor.java" startLine="120" startPosition="0" endLine="132" endPosition="0" />
-    <scopeInfo nodeId="5073985075243149415" fileName="SSource_Editor.java" startLine="239" startPosition="0" endLine="251" endPosition="0" />
-    <scopeInfo nodeId="5073985075243002195" fileName="SSource_Editor.java" startLine="279" startPosition="0" endLine="291" endPosition="0" />
-    <scopeInfo nodeId="5073985075243002206" fileName="SSource_Editor.java" startLine="327" startPosition="0" endLine="339" endPosition="0" />
-    <scopeInfo nodeId="5073985075243002195" fileName="SSource_Editor.java" startLine="151" startPosition="0" endLine="164" endPosition="0" />
-    <scopeInfo nodeId="5073985075243002206" fileName="SSource_Editor.java" startLine="164" startPosition="0" endLine="177" endPosition="0" />
-    <scopeInfo nodeId="5073985075243002184" fileName="SSource_Editor.java" startLine="199" startPosition="88" endLine="214" endPosition="22" />
-    <scopeInfo nodeId="5073985075243002181" fileName="SSource_Editor.java" startLine="32" startPosition="89" endLine="49" endPosition="22" />
-    <scopeInfo nodeId="4242261035235347651" fileName="SSource_Editor.java" startLine="178" startPosition="87" endLine="196" endPosition="22" />
-    <scopeInfo nodeId="5073985075243002184" fileName="SSource_Editor.java" startLine="198" startPosition="0" endLine="216" endPosition="0" />
-    <scopeInfo nodeId="5073985075243002181" fileName="SSource_Editor.java" startLine="31" startPosition="0" endLine="51" endPosition="0" />
-    <scopeInfo nodeId="4242261035235347651" fileName="SSource_Editor.java" startLine="177" startPosition="0" endLine="198" endPosition="0" />
+    <scopeInfo nodeId="5073985075243002195" fileName="SSource_Editor.java" startLine="152" startPosition="91" endLine="162" endPosition="22">
+      <varInfo nodeId="5073985075243002195" varName="editorCell" />
+      <varInfo nodeId="5073985075243002195" varName="handler" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243002206" fileName="SSource_Editor.java" startLine="165" startPosition="91" endLine="175" endPosition="22">
+      <varInfo nodeId="5073985075243002206" varName="editorCell" />
+      <varInfo nodeId="5073985075243002206" varName="handler" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243002222" fileName="SSource_Editor.java" startLine="67" startPosition="0" endLine="78" endPosition="0">
+      <varInfo nodeId="5073985075243002222" varName="editorContext" />
+      <varInfo nodeId="5073985075243002222" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243149407" fileName="SSource_Editor.java" startLine="98" startPosition="0" endLine="109" endPosition="0">
+      <varInfo nodeId="5073985075243149407" varName="editorContext" />
+      <varInfo nodeId="5073985075243149407" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243002200" fileName="SSource_Editor.java" startLine="109" startPosition="0" endLine="120" endPosition="0">
+      <varInfo nodeId="5073985075243002200" varName="editorContext" />
+      <varInfo nodeId="5073985075243002200" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="1030525575875731617" fileName="SSource_Editor.java" startLine="132" startPosition="0" endLine="143" endPosition="0">
+      <varInfo nodeId="1030525575875731617" varName="editorContext" />
+      <varInfo nodeId="1030525575875731617" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243149408" fileName="SSource_Editor.java" startLine="86" startPosition="0" endLine="98" endPosition="0">
+      <varInfo nodeId="5073985075243149408" varName="editorContext" />
+      <varInfo nodeId="5073985075243149408" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="1030525575875731620" fileName="SSource_Editor.java" startLine="120" startPosition="0" endLine="132" endPosition="0">
+      <varInfo nodeId="1030525575875731620" varName="editorContext" />
+      <varInfo nodeId="1030525575875731620" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243149415" fileName="SSource_Editor.java" startLine="239" startPosition="0" endLine="251" endPosition="0">
+      <varInfo nodeId="5073985075243149415" varName="editorContext" />
+      <varInfo nodeId="5073985075243149415" varName="elementCell" />
+      <varInfo nodeId="5073985075243149415" varName="elementNode" />
+      <varInfo nodeId="5073985075243149415" varName="listOwner" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243002195" fileName="SSource_Editor.java" startLine="279" startPosition="0" endLine="291" endPosition="0">
+      <varInfo nodeId="5073985075243002195" varName="editorContext" />
+      <varInfo nodeId="5073985075243002195" varName="elementCell" />
+      <varInfo nodeId="5073985075243002195" varName="elementNode" />
+      <varInfo nodeId="5073985075243002195" varName="listOwner" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243002206" fileName="SSource_Editor.java" startLine="327" startPosition="0" endLine="339" endPosition="0">
+      <varInfo nodeId="5073985075243002206" varName="editorContext" />
+      <varInfo nodeId="5073985075243002206" varName="elementCell" />
+      <varInfo nodeId="5073985075243002206" varName="elementNode" />
+      <varInfo nodeId="5073985075243002206" varName="listOwner" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243002195" fileName="SSource_Editor.java" startLine="151" startPosition="0" endLine="164" endPosition="0">
+      <varInfo nodeId="5073985075243002195" varName="editorContext" />
+      <varInfo nodeId="5073985075243002195" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243002206" fileName="SSource_Editor.java" startLine="164" startPosition="0" endLine="177" endPosition="0">
+      <varInfo nodeId="5073985075243002206" varName="editorContext" />
+      <varInfo nodeId="5073985075243002206" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243002184" fileName="SSource_Editor.java" startLine="199" startPosition="88" endLine="214" endPosition="22">
+      <varInfo nodeId="5073985075243002184" varName="attributeConcept" />
+      <varInfo nodeId="5073985075243002184" varName="attributeKind" />
+      <varInfo nodeId="5073985075243002184" varName="editorCell" />
+      <varInfo nodeId="5073985075243002184" varName="provider" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243002181" fileName="SSource_Editor.java" startLine="32" startPosition="89" endLine="49" endPosition="22">
+      <varInfo nodeId="5073985075243002181" varName="editorCell" />
+    </scopeInfo>
+    <scopeInfo nodeId="4242261035235347651" fileName="SSource_Editor.java" startLine="178" startPosition="87" endLine="196" endPosition="22">
+      <varInfo nodeId="4242261035235347651" varName="attributeConcept" />
+      <varInfo nodeId="4242261035235347651" varName="attributeKind" />
+      <varInfo nodeId="4242261035235347651" varName="editorCell" />
+      <varInfo nodeId="4242261035235347651" varName="provider" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243002184" fileName="SSource_Editor.java" startLine="198" startPosition="0" endLine="216" endPosition="0">
+      <varInfo nodeId="5073985075243002184" varName="editorContext" />
+      <varInfo nodeId="5073985075243002184" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243002181" fileName="SSource_Editor.java" startLine="31" startPosition="0" endLine="51" endPosition="0">
+      <varInfo nodeId="5073985075243002181" varName="editorContext" />
+      <varInfo nodeId="5073985075243002181" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="4242261035235347651" fileName="SSource_Editor.java" startLine="177" startPosition="0" endLine="198" endPosition="0">
+      <varInfo nodeId="4242261035235347651" varName="editorContext" />
+      <varInfo nodeId="4242261035235347651" varName="node" />
+    </scopeInfo>
+    <unitInfo nodeId="5073985075243002179" fileName="SSource_Editor.java" startLine="27" startPosition="0" endLine="349" endPosition="0" unitName="jetbrains.mps.core.syntax.editor.SSource_Editor" />
+    <unitInfo nodeId="5073985075243002206" fileName="SSource_Editor.java" startLine="301" startPosition="0" endLine="348" endPosition="0" unitName="jetbrains.mps.core.syntax.editor.SSource_Editor$grammarPartsListHandler_5svtcf_n0" />
     <unitInfo nodeId="5073985075243149415" fileName="SSource_Editor.java" startLine="217" startPosition="0" endLine="252" endPosition="0" unitName="jetbrains.mps.core.syntax.editor.SSource_Editor$inputListHandler_5svtcf_g0" />
     <unitInfo nodeId="5073985075243002195" fileName="SSource_Editor.java" startLine="253" startPosition="0" endLine="300" endPosition="0" unitName="jetbrains.mps.core.syntax.editor.SSource_Editor$lexerPartsListHandler_5svtcf_j0" />
-    <unitInfo nodeId="5073985075243002206" fileName="SSource_Editor.java" startLine="301" startPosition="0" endLine="348" endPosition="0" unitName="jetbrains.mps.core.syntax.editor.SSource_Editor$grammarPartsListHandler_5svtcf_n0" />
-    <unitInfo nodeId="5073985075243002179" fileName="SSource_Editor.java" startLine="27" startPosition="0" endLine="349" endPosition="0" unitName="jetbrains.mps.core.syntax.editor.SSource_Editor" />
   </root>
   <root nodeId="5073985075243002232">
     <nodeInfo nodeId="5073985075243002232" fileName="SRule_Editor.java" startLine="23" startPosition="79" endLine="24" endPosition="63" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
@@ -617,34 +877,89 @@
     <scopeInfo nodeId="5073985075243002237" fileName="SRule_Editor.java" startLine="81" startPosition="89" endLine="82" endPosition="66" />
     <scopeInfo nodeId="5073985075243002237" fileName="SRule_Editor.java" startLine="88" startPosition="34" endLine="89" endPosition="95" />
     <scopeInfo nodeId="5073985075243002237" fileName="SRule_Editor.java" startLine="91" startPosition="131" endLine="92" endPosition="139" />
-    <scopeInfo nodeId="5989029785192083552" fileName="SRule_Editor.java" startLine="30" startPosition="5" endLine="32" endPosition="60" />
-    <scopeInfo nodeId="5073985075243002237" fileName="SRule_Editor.java" startLine="63" startPosition="66" endLine="65" endPosition="93" />
-    <scopeInfo nodeId="6627258180876555638" fileName="SRule_Editor.java" startLine="100" startPosition="7" endLine="102" endPosition="50" />
-    <scopeInfo nodeId="5073985075243002234" fileName="SRule_Editor.java" startLine="41" startPosition="5" endLine="44" endPosition="51" />
-    <scopeInfo nodeId="5073985075243002237" fileName="SRule_Editor.java" startLine="58" startPosition="79" endLine="61" endPosition="5" />
-    <scopeInfo nodeId="5073985075243002237" fileName="SRule_Editor.java" startLine="68" startPosition="86" endLine="71" endPosition="25" />
-    <scopeInfo nodeId="5073985075243002232" fileName="SRule_Editor.java" startLine="22" startPosition="53" endLine="26" endPosition="0" />
-    <scopeInfo nodeId="5073985075243002237" fileName="SRule_Editor.java" startLine="74" startPosition="68" endLine="78" endPosition="23" />
-    <scopeInfo nodeId="5073985075243002237" fileName="SRule_Editor.java" startLine="80" startPosition="0" endLine="84" endPosition="0" />
+    <scopeInfo nodeId="5989029785192083552" fileName="SRule_Editor.java" startLine="30" startPosition="5" endLine="32" endPosition="60">
+      <varInfo nodeId="5989029785192083552" varName="style" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243002237" fileName="SRule_Editor.java" startLine="63" startPosition="66" endLine="65" endPosition="93">
+      <varInfo nodeId="5073985075243002237" varName="listOwner" />
+    </scopeInfo>
+    <scopeInfo nodeId="6627258180876555638" fileName="SRule_Editor.java" startLine="100" startPosition="7" endLine="102" endPosition="50">
+      <varInfo nodeId="6627258180876555638" varName="style" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243002234" fileName="SRule_Editor.java" startLine="41" startPosition="5" endLine="44" endPosition="51">
+      <varInfo nodeId="5073985075243002234" varName="style" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243002237" fileName="SRule_Editor.java" startLine="58" startPosition="79" endLine="61" endPosition="5">
+      <varInfo nodeId="5073985075243002237" varName="childRole" />
+      <varInfo nodeId="5073985075243002237" varName="context" />
+      <varInfo nodeId="5073985075243002237" varName="ownerNode" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243002237" fileName="SRule_Editor.java" startLine="68" startPosition="86" endLine="71" endPosition="25">
+      <varInfo nodeId="5073985075243002237" varName="elementCell" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243002232" fileName="SRule_Editor.java" startLine="22" startPosition="53" endLine="26" endPosition="0">
+      <varInfo nodeId="5073985075243002232" varName="editorContext" />
+      <varInfo nodeId="5073985075243002232" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243002237" fileName="SRule_Editor.java" startLine="74" startPosition="68" endLine="78" endPosition="23">
+      <varInfo nodeId="5073985075243002237" varName="emptyCell" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243002237" fileName="SRule_Editor.java" startLine="80" startPosition="0" endLine="84" endPosition="0">
+      <varInfo nodeId="5073985075243002237" varName="editorContext" />
+      <varInfo nodeId="5073985075243002237" varName="node" />
+    </scopeInfo>
     <scopeInfo nodeId="5989029785192083552" fileName="SRule_Editor.java" startLine="28" startPosition="96" endLine="33" endPosition="5" />
-    <scopeInfo nodeId="5073985075243002237" fileName="SRule_Editor.java" startLine="50" startPosition="92" endLine="55" endPosition="22" />
-    <scopeInfo nodeId="5073985075243002237" fileName="SRule_Editor.java" startLine="62" startPosition="0" endLine="67" endPosition="0" />
+    <scopeInfo nodeId="5073985075243002237" fileName="SRule_Editor.java" startLine="50" startPosition="92" endLine="55" endPosition="22">
+      <varInfo nodeId="5073985075243002237" varName="editorCell" />
+      <varInfo nodeId="5073985075243002237" varName="handler" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243002237" fileName="SRule_Editor.java" startLine="62" startPosition="0" endLine="67" endPosition="0">
+      <varInfo nodeId="5073985075243002237" varName="editorContext" />
+    </scopeInfo>
     <scopeInfo nodeId="6627258180876555638" fileName="SRule_Editor.java" startLine="98" startPosition="88" endLine="103" endPosition="7" />
     <scopeInfo nodeId="5073985075243002234" fileName="SRule_Editor.java" startLine="39" startPosition="96" endLine="45" endPosition="5" />
-    <scopeInfo nodeId="5073985075243002237" fileName="SRule_Editor.java" startLine="67" startPosition="0" endLine="73" endPosition="0" />
-    <scopeInfo nodeId="5073985075243002237" fileName="SRule_Editor.java" startLine="73" startPosition="0" endLine="80" endPosition="0" />
+    <scopeInfo nodeId="5073985075243002237" fileName="SRule_Editor.java" startLine="67" startPosition="0" endLine="73" endPosition="0">
+      <varInfo nodeId="5073985075243002237" varName="editorContext" />
+      <varInfo nodeId="5073985075243002237" varName="elementNode" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243002237" fileName="SRule_Editor.java" startLine="73" startPosition="0" endLine="80" endPosition="0">
+      <varInfo nodeId="5073985075243002237" varName="editorContext" />
+    </scopeInfo>
     <scopeInfo nodeId="5073985075243002237" fileName="SRule_Editor.java" startLine="86" startPosition="96" endLine="93" endPosition="9" />
-    <scopeInfo nodeId="5989029785192083552" fileName="SRule_Editor.java" startLine="27" startPosition="89" endLine="35" endPosition="22" />
-    <scopeInfo nodeId="5073985075243002237" fileName="SRule_Editor.java" startLine="49" startPosition="0" endLine="57" endPosition="0" />
-    <scopeInfo nodeId="6627258180876555638" fileName="SRule_Editor.java" startLine="97" startPosition="92" endLine="105" endPosition="24" />
-    <scopeInfo nodeId="5073985075243002234" fileName="SRule_Editor.java" startLine="38" startPosition="90" endLine="47" endPosition="22" />
+    <scopeInfo nodeId="5989029785192083552" fileName="SRule_Editor.java" startLine="27" startPosition="89" endLine="35" endPosition="22">
+      <varInfo nodeId="5989029785192083552" varName="editorCell" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243002237" fileName="SRule_Editor.java" startLine="49" startPosition="0" endLine="57" endPosition="0">
+      <varInfo nodeId="5073985075243002237" varName="editorContext" />
+      <varInfo nodeId="5073985075243002237" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="6627258180876555638" fileName="SRule_Editor.java" startLine="97" startPosition="92" endLine="105" endPosition="24">
+      <varInfo nodeId="6627258180876555638" varName="editorCell" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243002234" fileName="SRule_Editor.java" startLine="38" startPosition="90" endLine="47" endPosition="22">
+      <varInfo nodeId="5073985075243002234" varName="editorCell" />
+    </scopeInfo>
     <scopeInfo nodeId="5073985075243002237" fileName="SRule_Editor.java" startLine="85" startPosition="132" endLine="94" endPosition="7" />
-    <scopeInfo nodeId="5989029785192083552" fileName="SRule_Editor.java" startLine="26" startPosition="0" endLine="37" endPosition="0" />
-    <scopeInfo nodeId="6627258180876555638" fileName="SRule_Editor.java" startLine="96" startPosition="0" endLine="107" endPosition="0" />
-    <scopeInfo nodeId="5073985075243002234" fileName="SRule_Editor.java" startLine="37" startPosition="0" endLine="49" endPosition="0" />
-    <scopeInfo nodeId="5073985075243002237" fileName="SRule_Editor.java" startLine="84" startPosition="0" endLine="96" endPosition="0" />
-    <unitInfo nodeId="5073985075243002237" fileName="SRule_Editor.java" startLine="58" startPosition="0" endLine="108" endPosition="0" unitName="jetbrains.mps.core.syntax.editor.SRule_Editor$partsListHandler_h2bu26_a0a" />
+    <scopeInfo nodeId="5989029785192083552" fileName="SRule_Editor.java" startLine="26" startPosition="0" endLine="37" endPosition="0">
+      <varInfo nodeId="5989029785192083552" varName="editorContext" />
+      <varInfo nodeId="5989029785192083552" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="6627258180876555638" fileName="SRule_Editor.java" startLine="96" startPosition="0" endLine="107" endPosition="0">
+      <varInfo nodeId="6627258180876555638" varName="editorContext" />
+      <varInfo nodeId="6627258180876555638" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243002234" fileName="SRule_Editor.java" startLine="37" startPosition="0" endLine="49" endPosition="0">
+      <varInfo nodeId="5073985075243002234" varName="editorContext" />
+      <varInfo nodeId="5073985075243002234" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243002237" fileName="SRule_Editor.java" startLine="84" startPosition="0" endLine="96" endPosition="0">
+      <varInfo nodeId="5073985075243002237" varName="editorContext" />
+      <varInfo nodeId="5073985075243002237" varName="elementCell" />
+      <varInfo nodeId="5073985075243002237" varName="elementNode" />
+      <varInfo nodeId="5073985075243002237" varName="listOwner" />
+    </scopeInfo>
     <unitInfo nodeId="5073985075243002232" fileName="SRule_Editor.java" startLine="22" startPosition="0" endLine="109" endPosition="0" unitName="jetbrains.mps.core.syntax.editor.SRule_Editor" />
+    <unitInfo nodeId="5073985075243002237" fileName="SRule_Editor.java" startLine="58" startPosition="0" endLine="108" endPosition="0" unitName="jetbrains.mps.core.syntax.editor.SRule_Editor$partsListHandler_h2bu26_a0a" />
   </root>
   <root nodeId="5073985075243002240">
     <nodeInfo nodeId="5073985075243002240" fileName="SyntaxSS_StyleSheet.java" startLine="13" startPosition="57" endLine="14" endPosition="34" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
@@ -672,16 +987,36 @@
     <nodeInfo nodeId="5073985075243002240" fileName="SyntaxSS_StyleSheet.java" startLine="26" startPosition="0" endLine="33" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="getEmptyCollection#(Ljetbrains/mps/nodeEditor/cells/EditorCell;)Ljetbrains/mps/nodeEditor/style/Style;" />
     <nodeInfo nodeId="5073985075243002240" fileName="SyntaxSS_StyleSheet.java" startLine="33" startPosition="0" endLine="40" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="getComment#(Ljetbrains/mps/nodeEditor/cells/EditorCell;)Ljetbrains/mps/nodeEditor/style/Style;" />
     <nodeInfo nodeId="5073985075243002240" fileName="SyntaxSS_StyleSheet.java" startLine="40" startPosition="0" endLine="47" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="getRegex#(Ljetbrains/mps/nodeEditor/cells/EditorCell;)Ljetbrains/mps/nodeEditor/style/Style;" />
-    <scopeInfo nodeId="5073985075243002240" fileName="SyntaxSS_StyleSheet.java" startLine="13" startPosition="57" endLine="17" endPosition="17" />
-    <scopeInfo nodeId="5073985075243002240" fileName="SyntaxSS_StyleSheet.java" startLine="20" startPosition="61" endLine="24" endPosition="17" />
-    <scopeInfo nodeId="5073985075243002240" fileName="SyntaxSS_StyleSheet.java" startLine="27" startPosition="65" endLine="31" endPosition="17" />
-    <scopeInfo nodeId="5073985075243002240" fileName="SyntaxSS_StyleSheet.java" startLine="34" startPosition="57" endLine="38" endPosition="17" />
-    <scopeInfo nodeId="5073985075243002240" fileName="SyntaxSS_StyleSheet.java" startLine="41" startPosition="55" endLine="45" endPosition="17" />
-    <scopeInfo nodeId="5073985075243002240" fileName="SyntaxSS_StyleSheet.java" startLine="12" startPosition="34" endLine="19" endPosition="0" />
-    <scopeInfo nodeId="5073985075243002240" fileName="SyntaxSS_StyleSheet.java" startLine="19" startPosition="0" endLine="26" endPosition="0" />
-    <scopeInfo nodeId="5073985075243002240" fileName="SyntaxSS_StyleSheet.java" startLine="26" startPosition="0" endLine="33" endPosition="0" />
-    <scopeInfo nodeId="5073985075243002240" fileName="SyntaxSS_StyleSheet.java" startLine="33" startPosition="0" endLine="40" endPosition="0" />
-    <scopeInfo nodeId="5073985075243002240" fileName="SyntaxSS_StyleSheet.java" startLine="40" startPosition="0" endLine="47" endPosition="0" />
+    <scopeInfo nodeId="5073985075243002240" fileName="SyntaxSS_StyleSheet.java" startLine="13" startPosition="57" endLine="17" endPosition="17">
+      <varInfo nodeId="5073985075243002240" varName="style" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243002240" fileName="SyntaxSS_StyleSheet.java" startLine="20" startPosition="61" endLine="24" endPosition="17">
+      <varInfo nodeId="5073985075243002240" varName="style" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243002240" fileName="SyntaxSS_StyleSheet.java" startLine="27" startPosition="65" endLine="31" endPosition="17">
+      <varInfo nodeId="5073985075243002240" varName="style" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243002240" fileName="SyntaxSS_StyleSheet.java" startLine="34" startPosition="57" endLine="38" endPosition="17">
+      <varInfo nodeId="5073985075243002240" varName="style" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243002240" fileName="SyntaxSS_StyleSheet.java" startLine="41" startPosition="55" endLine="45" endPosition="17">
+      <varInfo nodeId="5073985075243002240" varName="style" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243002240" fileName="SyntaxSS_StyleSheet.java" startLine="12" startPosition="34" endLine="19" endPosition="0">
+      <varInfo nodeId="5073985075243002240" varName="cell" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243002240" fileName="SyntaxSS_StyleSheet.java" startLine="19" startPosition="0" endLine="26" endPosition="0">
+      <varInfo nodeId="5073985075243002240" varName="cell" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243002240" fileName="SyntaxSS_StyleSheet.java" startLine="26" startPosition="0" endLine="33" endPosition="0">
+      <varInfo nodeId="5073985075243002240" varName="cell" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243002240" fileName="SyntaxSS_StyleSheet.java" startLine="33" startPosition="0" endLine="40" endPosition="0">
+      <varInfo nodeId="5073985075243002240" varName="cell" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243002240" fileName="SyntaxSS_StyleSheet.java" startLine="40" startPosition="0" endLine="47" endPosition="0">
+      <varInfo nodeId="5073985075243002240" varName="cell" />
+    </scopeInfo>
     <unitInfo nodeId="5073985075243002240" fileName="SyntaxSS_StyleSheet.java" startLine="12" startPosition="0" endLine="48" endPosition="0" unitName="jetbrains.mps.core.syntax.editor.SyntaxSS_StyleSheet" />
   </root>
   <root nodeId="5073985075243002245">
@@ -774,31 +1109,86 @@
     <scopeInfo nodeId="5989029785191987576" fileName="SSymbol_Editor.java" startLine="44" startPosition="81" endLine="45" endPosition="82" />
     <scopeInfo nodeId="5073985075243002249" fileName="SSymbol_Editor.java" startLine="93" startPosition="58" endLine="94" endPosition="42" />
     <scopeInfo nodeId="5989029785191987581" fileName="SSymbol_Editor.java" startLine="106" startPosition="111" endLine="107" endPosition="67" />
-    <scopeInfo nodeId="5989029785191987576" fileName="SSymbol_Editor.java" startLine="39" startPosition="5" endLine="41" endPosition="51" />
-    <scopeInfo nodeId="5989029785191987603" fileName="SSymbol_Editor.java" startLine="52" startPosition="5" endLine="54" endPosition="57" />
-    <scopeInfo nodeId="5989029785191987605" fileName="SSymbol_Editor.java" startLine="63" startPosition="5" endLine="65" endPosition="56" />
+    <scopeInfo nodeId="5989029785191987576" fileName="SSymbol_Editor.java" startLine="39" startPosition="5" endLine="41" endPosition="51">
+      <varInfo nodeId="5989029785191987576" varName="style" />
+    </scopeInfo>
+    <scopeInfo nodeId="5989029785191987603" fileName="SSymbol_Editor.java" startLine="52" startPosition="5" endLine="54" endPosition="57">
+      <varInfo nodeId="5989029785191987603" varName="style" />
+    </scopeInfo>
+    <scopeInfo nodeId="5989029785191987605" fileName="SSymbol_Editor.java" startLine="63" startPosition="5" endLine="65" endPosition="56">
+      <varInfo nodeId="5989029785191987605" varName="style" />
+    </scopeInfo>
     <scopeInfo nodeId="5989029785191987607" fileName="SSymbol_Editor.java" startLine="75" startPosition="26" endLine="77" endPosition="73" />
     <scopeInfo nodeId="5073985075243002247" fileName="SSymbol_Editor.java" startLine="29" startPosition="81" endLine="32" endPosition="5" />
-    <scopeInfo nodeId="5989029785191987607" fileName="SSymbol_Editor.java" startLine="80" startPosition="35" endLine="83" endPosition="105" />
+    <scopeInfo nodeId="5989029785191987607" fileName="SSymbol_Editor.java" startLine="80" startPosition="35" endLine="83" endPosition="105">
+      <varInfo nodeId="5989029785191987607" varName="manager" />
+      <varInfo nodeId="5989029785191987607" varName="opContext" />
+    </scopeInfo>
     <scopeInfo nodeId="5073985075243002249" fileName="SSymbol_Editor.java" startLine="92" startPosition="26" endLine="95" endPosition="73" />
-    <scopeInfo nodeId="5073985075243002249" fileName="SSymbol_Editor.java" startLine="98" startPosition="35" endLine="101" endPosition="105" />
-    <scopeInfo nodeId="5073985075243002245" fileName="SSymbol_Editor.java" startLine="21" startPosition="55" endLine="25" endPosition="0" />
-    <scopeInfo nodeId="5989029785191987580" fileName="SSymbol_Editor.java" startLine="105" startPosition="0" endLine="109" endPosition="0" />
+    <scopeInfo nodeId="5073985075243002249" fileName="SSymbol_Editor.java" startLine="98" startPosition="35" endLine="101" endPosition="105">
+      <varInfo nodeId="5073985075243002249" varName="manager" />
+      <varInfo nodeId="5073985075243002249" varName="opContext" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243002245" fileName="SSymbol_Editor.java" startLine="21" startPosition="55" endLine="25" endPosition="0">
+      <varInfo nodeId="5073985075243002245" varName="editorContext" />
+      <varInfo nodeId="5073985075243002245" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="5989029785191987580" fileName="SSymbol_Editor.java" startLine="105" startPosition="0" endLine="109" endPosition="0">
+      <varInfo nodeId="5989029785191987580" varName="editorContext" />
+      <varInfo nodeId="5989029785191987580" varName="node" />
+      <varInfo nodeId="5989029785191987580" varName="scope" />
+    </scopeInfo>
     <scopeInfo nodeId="5989029785191987576" fileName="SSymbol_Editor.java" startLine="37" startPosition="96" endLine="42" endPosition="5" />
     <scopeInfo nodeId="5989029785191987603" fileName="SSymbol_Editor.java" startLine="50" startPosition="87" endLine="55" endPosition="5" />
     <scopeInfo nodeId="5989029785191987605" fileName="SSymbol_Editor.java" startLine="61" startPosition="87" endLine="66" endPosition="5" />
-    <scopeInfo nodeId="5073985075243002247" fileName="SSymbol_Editor.java" startLine="26" startPosition="89" endLine="33" endPosition="22" />
-    <scopeInfo nodeId="5989029785191987603" fileName="SSymbol_Editor.java" startLine="49" startPosition="89" endLine="57" endPosition="22" />
-    <scopeInfo nodeId="5989029785191987605" fileName="SSymbol_Editor.java" startLine="60" startPosition="89" endLine="68" endPosition="22" />
-    <scopeInfo nodeId="5073985075243002247" fileName="SSymbol_Editor.java" startLine="25" startPosition="0" endLine="35" endPosition="0" />
-    <scopeInfo nodeId="5989029785191987576" fileName="SSymbol_Editor.java" startLine="36" startPosition="90" endLine="46" endPosition="22" />
-    <scopeInfo nodeId="5989029785191987603" fileName="SSymbol_Editor.java" startLine="48" startPosition="0" endLine="59" endPosition="0" />
-    <scopeInfo nodeId="5989029785191987605" fileName="SSymbol_Editor.java" startLine="59" startPosition="0" endLine="70" endPosition="0" />
-    <scopeInfo nodeId="5989029785191987576" fileName="SSymbol_Editor.java" startLine="35" startPosition="0" endLine="48" endPosition="0" />
-    <scopeInfo nodeId="5989029785191987607" fileName="SSymbol_Editor.java" startLine="71" startPosition="88" endLine="85" endPosition="22" />
-    <scopeInfo nodeId="5073985075243002249" fileName="SSymbol_Editor.java" startLine="88" startPosition="88" endLine="103" endPosition="22" />
-    <scopeInfo nodeId="5989029785191987607" fileName="SSymbol_Editor.java" startLine="70" startPosition="0" endLine="87" endPosition="0" />
-    <scopeInfo nodeId="5073985075243002249" fileName="SSymbol_Editor.java" startLine="87" startPosition="0" endLine="105" endPosition="0" />
+    <scopeInfo nodeId="5073985075243002247" fileName="SSymbol_Editor.java" startLine="26" startPosition="89" endLine="33" endPosition="22">
+      <varInfo nodeId="5073985075243002247" varName="editorCell" />
+    </scopeInfo>
+    <scopeInfo nodeId="5989029785191987603" fileName="SSymbol_Editor.java" startLine="49" startPosition="89" endLine="57" endPosition="22">
+      <varInfo nodeId="5989029785191987603" varName="editorCell" />
+    </scopeInfo>
+    <scopeInfo nodeId="5989029785191987605" fileName="SSymbol_Editor.java" startLine="60" startPosition="89" endLine="68" endPosition="22">
+      <varInfo nodeId="5989029785191987605" varName="editorCell" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243002247" fileName="SSymbol_Editor.java" startLine="25" startPosition="0" endLine="35" endPosition="0">
+      <varInfo nodeId="5073985075243002247" varName="editorContext" />
+      <varInfo nodeId="5073985075243002247" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="5989029785191987576" fileName="SSymbol_Editor.java" startLine="36" startPosition="90" endLine="46" endPosition="22">
+      <varInfo nodeId="5989029785191987576" varName="editorCell" />
+    </scopeInfo>
+    <scopeInfo nodeId="5989029785191987603" fileName="SSymbol_Editor.java" startLine="48" startPosition="0" endLine="59" endPosition="0">
+      <varInfo nodeId="5989029785191987603" varName="editorContext" />
+      <varInfo nodeId="5989029785191987603" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="5989029785191987605" fileName="SSymbol_Editor.java" startLine="59" startPosition="0" endLine="70" endPosition="0">
+      <varInfo nodeId="5989029785191987605" varName="editorContext" />
+      <varInfo nodeId="5989029785191987605" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="5989029785191987576" fileName="SSymbol_Editor.java" startLine="35" startPosition="0" endLine="48" endPosition="0">
+      <varInfo nodeId="5989029785191987576" varName="editorContext" />
+      <varInfo nodeId="5989029785191987576" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="5989029785191987607" fileName="SSymbol_Editor.java" startLine="71" startPosition="88" endLine="85" endPosition="22">
+      <varInfo nodeId="5989029785191987607" varName="attributeConcept" />
+      <varInfo nodeId="5989029785191987607" varName="attributeKind" />
+      <varInfo nodeId="5989029785191987607" varName="editorCell" />
+      <varInfo nodeId="5989029785191987607" varName="provider" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243002249" fileName="SSymbol_Editor.java" startLine="88" startPosition="88" endLine="103" endPosition="22">
+      <varInfo nodeId="5073985075243002249" varName="attributeConcept" />
+      <varInfo nodeId="5073985075243002249" varName="attributeKind" />
+      <varInfo nodeId="5073985075243002249" varName="editorCell" />
+      <varInfo nodeId="5073985075243002249" varName="provider" />
+    </scopeInfo>
+    <scopeInfo nodeId="5989029785191987607" fileName="SSymbol_Editor.java" startLine="70" startPosition="0" endLine="87" endPosition="0">
+      <varInfo nodeId="5989029785191987607" varName="editorContext" />
+      <varInfo nodeId="5989029785191987607" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243002249" fileName="SSymbol_Editor.java" startLine="87" startPosition="0" endLine="105" endPosition="0">
+      <varInfo nodeId="5073985075243002249" varName="editorContext" />
+      <varInfo nodeId="5073985075243002249" varName="node" />
+    </scopeInfo>
     <unitInfo nodeId="5073985075243002245" fileName="SSymbol_Editor.java" startLine="21" startPosition="0" endLine="110" endPosition="0" unitName="jetbrains.mps.core.syntax.editor.SSymbol_Editor" />
   </root>
   <root nodeId="5073985075243002251">
@@ -910,46 +1300,113 @@
     <scopeInfo nodeId="5073985075243002262" fileName="SSymbolRef_Editor.java" startLine="125" startPosition="33" endLine="126" endPosition="14" />
     <scopeInfo nodeId="5073985075243002262" fileName="SSymbolRef_Editor.java" startLine="129" startPosition="69" endLine="130" endPosition="67" />
     <scopeInfo nodeId="5073985075243002262" fileName="SSymbolRef_Editor.java" startLine="133" startPosition="81" endLine="134" endPosition="79" />
-    <scopeInfo nodeId="5073985075243002256" fileName="SSymbolRef_Editor.java" startLine="49" startPosition="5" endLine="51" endPosition="51" />
-    <scopeInfo nodeId="5073985075243144247" fileName="SSymbolRef_Editor.java" startLine="96" startPosition="5" endLine="98" endPosition="61" />
+    <scopeInfo nodeId="5073985075243002256" fileName="SSymbolRef_Editor.java" startLine="49" startPosition="5" endLine="51" endPosition="51">
+      <varInfo nodeId="5073985075243002256" varName="style" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144247" fileName="SSymbolRef_Editor.java" startLine="96" startPosition="5" endLine="98" endPosition="61">
+      <varInfo nodeId="5073985075243144247" varName="style" />
+    </scopeInfo>
     <scopeInfo nodeId="1030525575875898039" fileName="SSymbolRef_Editor.java" startLine="115" startPosition="119" endLine="117" endPosition="5" />
     <scopeInfo nodeId="5073985075243002253" fileName="SSymbolRef_Editor.java" startLine="38" startPosition="48" endLine="41" endPosition="5" />
-    <scopeInfo nodeId="5073985075243144249" fileName="SSymbolRef_Editor.java" startLine="62" startPosition="5" endLine="65" endPosition="57" />
+    <scopeInfo nodeId="5073985075243144249" fileName="SSymbolRef_Editor.java" startLine="62" startPosition="5" endLine="65" endPosition="57">
+      <varInfo nodeId="5073985075243144249" varName="style" />
+    </scopeInfo>
     <scopeInfo nodeId="5073985075243002261" fileName="SSymbolRef_Editor.java" startLine="75" startPosition="26" endLine="78" endPosition="192" />
-    <scopeInfo nodeId="5073985075243002261" fileName="SSymbolRef_Editor.java" startLine="81" startPosition="35" endLine="84" endPosition="105" />
-    <scopeInfo nodeId="5073985075243144247" fileName="SSymbolRef_Editor.java" startLine="103" startPosition="35" endLine="106" endPosition="105" />
+    <scopeInfo nodeId="5073985075243002261" fileName="SSymbolRef_Editor.java" startLine="81" startPosition="35" endLine="84" endPosition="105">
+      <varInfo nodeId="5073985075243002261" varName="manager" />
+      <varInfo nodeId="5073985075243002261" varName="opContext" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144247" fileName="SSymbolRef_Editor.java" startLine="103" startPosition="35" endLine="106" endPosition="105">
+      <varInfo nodeId="5073985075243144247" varName="manager" />
+      <varInfo nodeId="5073985075243144247" varName="opContext" />
+    </scopeInfo>
     <scopeInfo nodeId="5073985075243002262" fileName="SSymbolRef_Editor.java" startLine="124" startPosition="69" endLine="127" endPosition="5" />
-    <scopeInfo nodeId="5073985075243002251" fileName="SSymbolRef_Editor.java" startLine="31" startPosition="58" endLine="35" endPosition="0" />
-    <scopeInfo nodeId="5073985075243002265" fileName="SSymbolRef_Editor.java" startLine="110" startPosition="0" endLine="114" endPosition="0" />
+    <scopeInfo nodeId="5073985075243002251" fileName="SSymbolRef_Editor.java" startLine="31" startPosition="58" endLine="35" endPosition="0">
+      <varInfo nodeId="5073985075243002251" varName="editorContext" />
+      <varInfo nodeId="5073985075243002251" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243002265" fileName="SSymbolRef_Editor.java" startLine="110" startPosition="0" endLine="114" endPosition="0">
+      <varInfo nodeId="5073985075243002265" varName="editorContext" />
+      <varInfo nodeId="5073985075243002265" varName="node" />
+      <varInfo nodeId="5073985075243002265" varName="scope" />
+    </scopeInfo>
     <scopeInfo nodeId="1030525575875898039" fileName="SSymbolRef_Editor.java" startLine="118" startPosition="0" endLine="122" endPosition="0" />
-    <scopeInfo nodeId="5073985075243002262" fileName="SSymbolRef_Editor.java" startLine="128" startPosition="0" endLine="132" endPosition="0" />
-    <scopeInfo nodeId="5073985075243002262" fileName="SSymbolRef_Editor.java" startLine="132" startPosition="0" endLine="136" endPosition="0" />
+    <scopeInfo nodeId="5073985075243002262" fileName="SSymbolRef_Editor.java" startLine="128" startPosition="0" endLine="132" endPosition="0">
+      <varInfo nodeId="5073985075243002262" varName="editorContext" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243002262" fileName="SSymbolRef_Editor.java" startLine="132" startPosition="0" endLine="136" endPosition="0">
+      <varInfo nodeId="5073985075243002262" varName="editorContext" />
+      <varInfo nodeId="5073985075243002262" varName="node" />
+    </scopeInfo>
     <scopeInfo nodeId="5891355986060211396" fileName="SSymbolRef_Editor.java" startLine="157" startPosition="111" endLine="161" endPosition="8" />
     <scopeInfo nodeId="5073985075243002256" fileName="SSymbolRef_Editor.java" startLine="47" startPosition="96" endLine="52" endPosition="5" />
     <scopeInfo nodeId="5073985075243144247" fileName="SSymbolRef_Editor.java" startLine="94" startPosition="58" endLine="99" endPosition="5" />
-    <scopeInfo nodeId="5073985075243002253" fileName="SSymbolRef_Editor.java" startLine="36" startPosition="89" endLine="43" endPosition="22" />
+    <scopeInfo nodeId="5073985075243002253" fileName="SSymbolRef_Editor.java" startLine="36" startPosition="89" endLine="43" endPosition="22">
+      <varInfo nodeId="5073985075243002253" varName="editorCell" />
+    </scopeInfo>
     <scopeInfo nodeId="5073985075243144249" fileName="SSymbolRef_Editor.java" startLine="59" startPosition="87" endLine="66" endPosition="5" />
     <scopeInfo nodeId="5073985075243144247" fileName="SSymbolRef_Editor.java" startLine="93" startPosition="26" endLine="100" endPosition="73" />
     <scopeInfo nodeId="1030525575875885952" fileName="SSymbolRef_Editor.java" startLine="143" startPosition="51" endLine="150" endPosition="15" />
-    <scopeInfo nodeId="5891355986060211395" fileName="SSymbolRef_Editor.java" startLine="156" startPosition="0" endLine="163" endPosition="0" />
-    <scopeInfo nodeId="5073985075243002256" fileName="SSymbolRef_Editor.java" startLine="46" startPosition="90" endLine="55" endPosition="22" />
-    <scopeInfo nodeId="5073985075243002253" fileName="SSymbolRef_Editor.java" startLine="35" startPosition="0" endLine="45" endPosition="0" />
-    <scopeInfo nodeId="5073985075243144249" fileName="SSymbolRef_Editor.java" startLine="58" startPosition="89" endLine="68" endPosition="22" />
-    <scopeInfo nodeId="1030525575875885952" fileName="SSymbolRef_Editor.java" startLine="142" startPosition="80" endLine="152" endPosition="0" />
-    <scopeInfo nodeId="5073985075243002256" fileName="SSymbolRef_Editor.java" startLine="45" startPosition="0" endLine="57" endPosition="0" />
-    <scopeInfo nodeId="1030525575875885952" fileName="SSymbolRef_Editor.java" startLine="140" startPosition="7" endLine="152" endPosition="11" />
-    <scopeInfo nodeId="5073985075243144249" fileName="SSymbolRef_Editor.java" startLine="57" startPosition="0" endLine="70" endPosition="0" />
-    <scopeInfo nodeId="5073985075243002261" fileName="SSymbolRef_Editor.java" startLine="71" startPosition="87" endLine="86" endPosition="22" />
+    <scopeInfo nodeId="5891355986060211395" fileName="SSymbolRef_Editor.java" startLine="156" startPosition="0" endLine="163" endPosition="0">
+      <varInfo nodeId="5891355986060211395" varName="editorContext" />
+      <varInfo nodeId="5891355986060211395" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243002256" fileName="SSymbolRef_Editor.java" startLine="46" startPosition="90" endLine="55" endPosition="22">
+      <varInfo nodeId="5073985075243002256" varName="editorCell" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243002253" fileName="SSymbolRef_Editor.java" startLine="35" startPosition="0" endLine="45" endPosition="0">
+      <varInfo nodeId="5073985075243002253" varName="editorContext" />
+      <varInfo nodeId="5073985075243002253" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144249" fileName="SSymbolRef_Editor.java" startLine="58" startPosition="89" endLine="68" endPosition="22">
+      <varInfo nodeId="5073985075243144249" varName="editorCell" />
+    </scopeInfo>
+    <scopeInfo nodeId="1030525575875885952" fileName="SSymbolRef_Editor.java" startLine="142" startPosition="80" endLine="152" endPosition="0">
+      <varInfo nodeId="1030525575875885952" varName="cell" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243002256" fileName="SSymbolRef_Editor.java" startLine="45" startPosition="0" endLine="57" endPosition="0">
+      <varInfo nodeId="5073985075243002256" varName="editorContext" />
+      <varInfo nodeId="5073985075243002256" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="1030525575875885952" fileName="SSymbolRef_Editor.java" startLine="140" startPosition="7" endLine="152" endPosition="11">
+      <varInfo nodeId="1030525575875885952" varName="style" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144249" fileName="SSymbolRef_Editor.java" startLine="57" startPosition="0" endLine="70" endPosition="0">
+      <varInfo nodeId="5073985075243144249" varName="editorContext" />
+      <varInfo nodeId="5073985075243144249" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243002261" fileName="SSymbolRef_Editor.java" startLine="71" startPosition="87" endLine="86" endPosition="22">
+      <varInfo nodeId="5073985075243002261" varName="attributeConcept" />
+      <varInfo nodeId="5073985075243002261" varName="attributeKind" />
+      <varInfo nodeId="5073985075243002261" varName="editorCell" />
+      <varInfo nodeId="5073985075243002261" varName="provider" />
+    </scopeInfo>
     <scopeInfo nodeId="1030525575875885952" fileName="SSymbolRef_Editor.java" startLine="138" startPosition="140" endLine="153" endPosition="7" />
-    <scopeInfo nodeId="1030525575875885952" fileName="SSymbolRef_Editor.java" startLine="137" startPosition="105" endLine="154" endPosition="24" />
-    <scopeInfo nodeId="5073985075243002261" fileName="SSymbolRef_Editor.java" startLine="70" startPosition="0" endLine="88" endPosition="0" />
-    <scopeInfo nodeId="5073985075243144247" fileName="SSymbolRef_Editor.java" startLine="89" startPosition="89" endLine="108" endPosition="22" />
-    <scopeInfo nodeId="1030525575875885952" fileName="SSymbolRef_Editor.java" startLine="136" startPosition="0" endLine="156" endPosition="0" />
-    <scopeInfo nodeId="5073985075243144247" fileName="SSymbolRef_Editor.java" startLine="88" startPosition="0" endLine="110" endPosition="0" />
-    <unitInfo nodeId="1030525575875898039" fileName="SSymbolRef_Editor.java" startLine="115" startPosition="0" endLine="123" endPosition="0" unitName="jetbrains.mps.core.syntax.editor.SSymbolRef_Editor$ReplaceWith_SSymbolRef_cellMenu_a0b0" />
-    <unitInfo nodeId="1030525575875885952" fileName="SSymbolRef_Editor.java" startLine="142" startPosition="50" endLine="152" endPosition="9" unitName="jetbrains.mps.core.syntax.editor.SSymbolRef_Editor$1" />
-    <unitInfo nodeId="5073985075243002262" fileName="SSymbolRef_Editor.java" startLine="124" startPosition="0" endLine="164" endPosition="0" unitName="jetbrains.mps.core.syntax.editor.SSymbolRef_Editor$_Inline_mdkd4i_a1a" />
+    <scopeInfo nodeId="1030525575875885952" fileName="SSymbolRef_Editor.java" startLine="137" startPosition="105" endLine="154" endPosition="24">
+      <varInfo nodeId="1030525575875885952" varName="editorCell" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243002261" fileName="SSymbolRef_Editor.java" startLine="70" startPosition="0" endLine="88" endPosition="0">
+      <varInfo nodeId="5073985075243002261" varName="editorContext" />
+      <varInfo nodeId="5073985075243002261" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144247" fileName="SSymbolRef_Editor.java" startLine="89" startPosition="89" endLine="108" endPosition="22">
+      <varInfo nodeId="5073985075243144247" varName="attributeConcept" />
+      <varInfo nodeId="5073985075243144247" varName="attributeKind" />
+      <varInfo nodeId="5073985075243144247" varName="editorCell" />
+      <varInfo nodeId="5073985075243144247" varName="provider" />
+    </scopeInfo>
+    <scopeInfo nodeId="1030525575875885952" fileName="SSymbolRef_Editor.java" startLine="136" startPosition="0" endLine="156" endPosition="0">
+      <varInfo nodeId="1030525575875885952" varName="editorContext" />
+      <varInfo nodeId="1030525575875885952" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144247" fileName="SSymbolRef_Editor.java" startLine="88" startPosition="0" endLine="110" endPosition="0">
+      <varInfo nodeId="5073985075243144247" varName="editorContext" />
+      <varInfo nodeId="5073985075243144247" varName="node" />
+    </scopeInfo>
     <unitInfo nodeId="5073985075243002251" fileName="SSymbolRef_Editor.java" startLine="31" startPosition="0" endLine="165" endPosition="0" unitName="jetbrains.mps.core.syntax.editor.SSymbolRef_Editor" />
+    <unitInfo nodeId="1030525575875885952" fileName="SSymbolRef_Editor.java" startLine="142" startPosition="50" endLine="152" endPosition="9" unitName="jetbrains.mps.core.syntax.editor.SSymbolRef_Editor$1" />
+    <unitInfo nodeId="1030525575875898039" fileName="SSymbolRef_Editor.java" startLine="115" startPosition="0" endLine="123" endPosition="0" unitName="jetbrains.mps.core.syntax.editor.SSymbolRef_Editor$ReplaceWith_SSymbolRef_cellMenu_a0b0" />
+    <unitInfo nodeId="5073985075243002262" fileName="SSymbolRef_Editor.java" startLine="124" startPosition="0" endLine="164" endPosition="0" unitName="jetbrains.mps.core.syntax.editor.SSymbolRef_Editor$_Inline_mdkd4i_a1a" />
   </root>
   <root nodeId="5073985075243144258">
     <nodeInfo nodeId="5073985075243144263" fileName="SLexem_Editor.java" startLine="78" startPosition="58" endLine="78" endPosition="58" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
@@ -1064,37 +1521,107 @@
     <scopeInfo nodeId="2481283025450212882" fileName="SLexem_Editor.java" startLine="56" startPosition="5" endLine="57" endPosition="82" />
     <scopeInfo nodeId="2481283025450212887" fileName="SLexem_Editor.java" startLine="124" startPosition="112" endLine="125" endPosition="69" />
     <scopeInfo nodeId="2481283025450212850" fileName="SLexem_Editor.java" startLine="128" startPosition="111" endLine="129" endPosition="130" />
-    <scopeInfo nodeId="2481283025450212845" fileName="SLexem_Editor.java" startLine="39" startPosition="5" endLine="41" endPosition="51" />
-    <scopeInfo nodeId="2481283025450212882" fileName="SLexem_Editor.java" startLine="53" startPosition="5" endLine="55" endPosition="51" />
-    <scopeInfo nodeId="5073985075243144265" fileName="SLexem_Editor.java" startLine="65" startPosition="5" endLine="67" endPosition="56" />
+    <scopeInfo nodeId="2481283025450212845" fileName="SLexem_Editor.java" startLine="39" startPosition="5" endLine="41" endPosition="51">
+      <varInfo nodeId="2481283025450212845" varName="style" />
+    </scopeInfo>
+    <scopeInfo nodeId="2481283025450212882" fileName="SLexem_Editor.java" startLine="53" startPosition="5" endLine="55" endPosition="51">
+      <varInfo nodeId="2481283025450212882" varName="style" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144265" fileName="SLexem_Editor.java" startLine="65" startPosition="5" endLine="67" endPosition="56">
+      <varInfo nodeId="5073985075243144265" varName="style" />
+    </scopeInfo>
     <scopeInfo nodeId="5073985075243144263" fileName="SLexem_Editor.java" startLine="77" startPosition="26" endLine="79" endPosition="73" />
     <scopeInfo nodeId="5073985075243144267" fileName="SLexem_Editor.java" startLine="94" startPosition="26" endLine="96" endPosition="73" />
     <scopeInfo nodeId="2481283025450228587" fileName="SLexem_Editor.java" startLine="111" startPosition="26" endLine="113" endPosition="73" />
     <scopeInfo nodeId="5073985075243144260" fileName="SLexem_Editor.java" startLine="29" startPosition="81" endLine="32" endPosition="5" />
     <scopeInfo nodeId="2481283025450212845" fileName="SLexem_Editor.java" startLine="43" startPosition="81" endLine="46" endPosition="5" />
-    <scopeInfo nodeId="5073985075243144263" fileName="SLexem_Editor.java" startLine="82" startPosition="35" endLine="85" endPosition="105" />
-    <scopeInfo nodeId="5073985075243144267" fileName="SLexem_Editor.java" startLine="99" startPosition="35" endLine="102" endPosition="105" />
-    <scopeInfo nodeId="2481283025450228587" fileName="SLexem_Editor.java" startLine="116" startPosition="35" endLine="119" endPosition="105" />
-    <scopeInfo nodeId="5073985075243144258" fileName="SLexem_Editor.java" startLine="20" startPosition="54" endLine="24" endPosition="0" />
-    <scopeInfo nodeId="2481283025450212886" fileName="SLexem_Editor.java" startLine="123" startPosition="0" endLine="127" endPosition="0" />
-    <scopeInfo nodeId="2481283025450212849" fileName="SLexem_Editor.java" startLine="127" startPosition="0" endLine="131" endPosition="0" />
+    <scopeInfo nodeId="5073985075243144263" fileName="SLexem_Editor.java" startLine="82" startPosition="35" endLine="85" endPosition="105">
+      <varInfo nodeId="5073985075243144263" varName="manager" />
+      <varInfo nodeId="5073985075243144263" varName="opContext" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144267" fileName="SLexem_Editor.java" startLine="99" startPosition="35" endLine="102" endPosition="105">
+      <varInfo nodeId="5073985075243144267" varName="manager" />
+      <varInfo nodeId="5073985075243144267" varName="opContext" />
+    </scopeInfo>
+    <scopeInfo nodeId="2481283025450228587" fileName="SLexem_Editor.java" startLine="116" startPosition="35" endLine="119" endPosition="105">
+      <varInfo nodeId="2481283025450228587" varName="manager" />
+      <varInfo nodeId="2481283025450228587" varName="opContext" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144258" fileName="SLexem_Editor.java" startLine="20" startPosition="54" endLine="24" endPosition="0">
+      <varInfo nodeId="5073985075243144258" varName="editorContext" />
+      <varInfo nodeId="5073985075243144258" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="2481283025450212886" fileName="SLexem_Editor.java" startLine="123" startPosition="0" endLine="127" endPosition="0">
+      <varInfo nodeId="2481283025450212886" varName="editorContext" />
+      <varInfo nodeId="2481283025450212886" varName="node" />
+      <varInfo nodeId="2481283025450212886" varName="scope" />
+    </scopeInfo>
+    <scopeInfo nodeId="2481283025450212849" fileName="SLexem_Editor.java" startLine="127" startPosition="0" endLine="131" endPosition="0">
+      <varInfo nodeId="2481283025450212849" varName="editorContext" />
+      <varInfo nodeId="2481283025450212849" varName="node" />
+      <varInfo nodeId="2481283025450212849" varName="scope" />
+    </scopeInfo>
     <scopeInfo nodeId="2481283025450212845" fileName="SLexem_Editor.java" startLine="37" startPosition="96" endLine="42" endPosition="5" />
     <scopeInfo nodeId="2481283025450212882" fileName="SLexem_Editor.java" startLine="51" startPosition="96" endLine="56" endPosition="5" />
     <scopeInfo nodeId="5073985075243144265" fileName="SLexem_Editor.java" startLine="62" startPosition="87" endLine="68" endPosition="5" />
-    <scopeInfo nodeId="5073985075243144260" fileName="SLexem_Editor.java" startLine="25" startPosition="89" endLine="33" endPosition="22" />
-    <scopeInfo nodeId="2481283025450212882" fileName="SLexem_Editor.java" startLine="50" startPosition="91" endLine="58" endPosition="22" />
-    <scopeInfo nodeId="5073985075243144265" fileName="SLexem_Editor.java" startLine="61" startPosition="88" endLine="70" endPosition="22" />
-    <scopeInfo nodeId="5073985075243144260" fileName="SLexem_Editor.java" startLine="24" startPosition="0" endLine="35" endPosition="0" />
-    <scopeInfo nodeId="2481283025450212845" fileName="SLexem_Editor.java" startLine="36" startPosition="90" endLine="47" endPosition="22" />
-    <scopeInfo nodeId="2481283025450212882" fileName="SLexem_Editor.java" startLine="49" startPosition="0" endLine="60" endPosition="0" />
-    <scopeInfo nodeId="5073985075243144265" fileName="SLexem_Editor.java" startLine="60" startPosition="0" endLine="72" endPosition="0" />
-    <scopeInfo nodeId="2481283025450212845" fileName="SLexem_Editor.java" startLine="35" startPosition="0" endLine="49" endPosition="0" />
-    <scopeInfo nodeId="5073985075243144263" fileName="SLexem_Editor.java" startLine="73" startPosition="87" endLine="87" endPosition="22" />
-    <scopeInfo nodeId="5073985075243144267" fileName="SLexem_Editor.java" startLine="90" startPosition="88" endLine="104" endPosition="22" />
-    <scopeInfo nodeId="2481283025450228587" fileName="SLexem_Editor.java" startLine="107" startPosition="89" endLine="121" endPosition="22" />
-    <scopeInfo nodeId="5073985075243144263" fileName="SLexem_Editor.java" startLine="72" startPosition="0" endLine="89" endPosition="0" />
-    <scopeInfo nodeId="5073985075243144267" fileName="SLexem_Editor.java" startLine="89" startPosition="0" endLine="106" endPosition="0" />
-    <scopeInfo nodeId="2481283025450228587" fileName="SLexem_Editor.java" startLine="106" startPosition="0" endLine="123" endPosition="0" />
+    <scopeInfo nodeId="5073985075243144260" fileName="SLexem_Editor.java" startLine="25" startPosition="89" endLine="33" endPosition="22">
+      <varInfo nodeId="5073985075243144260" varName="editorCell" />
+    </scopeInfo>
+    <scopeInfo nodeId="2481283025450212882" fileName="SLexem_Editor.java" startLine="50" startPosition="91" endLine="58" endPosition="22">
+      <varInfo nodeId="2481283025450212882" varName="editorCell" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144265" fileName="SLexem_Editor.java" startLine="61" startPosition="88" endLine="70" endPosition="22">
+      <varInfo nodeId="5073985075243144265" varName="editorCell" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144260" fileName="SLexem_Editor.java" startLine="24" startPosition="0" endLine="35" endPosition="0">
+      <varInfo nodeId="5073985075243144260" varName="editorContext" />
+      <varInfo nodeId="5073985075243144260" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="2481283025450212845" fileName="SLexem_Editor.java" startLine="36" startPosition="90" endLine="47" endPosition="22">
+      <varInfo nodeId="2481283025450212845" varName="editorCell" />
+    </scopeInfo>
+    <scopeInfo nodeId="2481283025450212882" fileName="SLexem_Editor.java" startLine="49" startPosition="0" endLine="60" endPosition="0">
+      <varInfo nodeId="2481283025450212882" varName="editorContext" />
+      <varInfo nodeId="2481283025450212882" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144265" fileName="SLexem_Editor.java" startLine="60" startPosition="0" endLine="72" endPosition="0">
+      <varInfo nodeId="5073985075243144265" varName="editorContext" />
+      <varInfo nodeId="5073985075243144265" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="2481283025450212845" fileName="SLexem_Editor.java" startLine="35" startPosition="0" endLine="49" endPosition="0">
+      <varInfo nodeId="2481283025450212845" varName="editorContext" />
+      <varInfo nodeId="2481283025450212845" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144263" fileName="SLexem_Editor.java" startLine="73" startPosition="87" endLine="87" endPosition="22">
+      <varInfo nodeId="5073985075243144263" varName="attributeConcept" />
+      <varInfo nodeId="5073985075243144263" varName="attributeKind" />
+      <varInfo nodeId="5073985075243144263" varName="editorCell" />
+      <varInfo nodeId="5073985075243144263" varName="provider" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144267" fileName="SLexem_Editor.java" startLine="90" startPosition="88" endLine="104" endPosition="22">
+      <varInfo nodeId="5073985075243144267" varName="attributeConcept" />
+      <varInfo nodeId="5073985075243144267" varName="attributeKind" />
+      <varInfo nodeId="5073985075243144267" varName="editorCell" />
+      <varInfo nodeId="5073985075243144267" varName="provider" />
+    </scopeInfo>
+    <scopeInfo nodeId="2481283025450228587" fileName="SLexem_Editor.java" startLine="107" startPosition="89" endLine="121" endPosition="22">
+      <varInfo nodeId="2481283025450228587" varName="attributeConcept" />
+      <varInfo nodeId="2481283025450228587" varName="attributeKind" />
+      <varInfo nodeId="2481283025450228587" varName="editorCell" />
+      <varInfo nodeId="2481283025450228587" varName="provider" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144263" fileName="SLexem_Editor.java" startLine="72" startPosition="0" endLine="89" endPosition="0">
+      <varInfo nodeId="5073985075243144263" varName="editorContext" />
+      <varInfo nodeId="5073985075243144263" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144267" fileName="SLexem_Editor.java" startLine="89" startPosition="0" endLine="106" endPosition="0">
+      <varInfo nodeId="5073985075243144267" varName="editorContext" />
+      <varInfo nodeId="5073985075243144267" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="2481283025450228587" fileName="SLexem_Editor.java" startLine="106" startPosition="0" endLine="123" endPosition="0">
+      <varInfo nodeId="2481283025450228587" varName="editorContext" />
+      <varInfo nodeId="2481283025450228587" varName="node" />
+    </scopeInfo>
     <unitInfo nodeId="5073985075243144258" fileName="SLexem_Editor.java" startLine="20" startPosition="0" endLine="132" endPosition="0" unitName="jetbrains.mps.core.syntax.editor.SLexem_Editor" />
   </root>
   <root nodeId="5073985075243144274">
@@ -1160,18 +1687,53 @@
     <scopeInfo nodeId="5073985075243144281" fileName="SNamedPattern_Editor.java" startLine="61" startPosition="58" endLine="62" endPosition="42" />
     <scopeInfo nodeId="5073985075243144283" fileName="SNamedPattern_Editor.java" startLine="32" startPosition="87" endLine="34" endPosition="69" />
     <scopeInfo nodeId="5073985075243144279" fileName="SNamedPattern_Editor.java" startLine="43" startPosition="26" endLine="45" endPosition="73" />
-    <scopeInfo nodeId="5073985075243144279" fileName="SNamedPattern_Editor.java" startLine="48" startPosition="35" endLine="51" endPosition="105" />
+    <scopeInfo nodeId="5073985075243144279" fileName="SNamedPattern_Editor.java" startLine="48" startPosition="35" endLine="51" endPosition="105">
+      <varInfo nodeId="5073985075243144279" varName="manager" />
+      <varInfo nodeId="5073985075243144279" varName="opContext" />
+    </scopeInfo>
     <scopeInfo nodeId="5073985075243144281" fileName="SNamedPattern_Editor.java" startLine="60" startPosition="26" endLine="63" endPosition="73" />
-    <scopeInfo nodeId="5073985075243144281" fileName="SNamedPattern_Editor.java" startLine="66" startPosition="35" endLine="69" endPosition="105" />
-    <scopeInfo nodeId="5073985075243144274" fileName="SNamedPattern_Editor.java" startLine="17" startPosition="61" endLine="21" endPosition="0" />
-    <scopeInfo nodeId="5073985075243144283" fileName="SNamedPattern_Editor.java" startLine="31" startPosition="88" endLine="36" endPosition="22" />
-    <scopeInfo nodeId="5073985075243144276" fileName="SNamedPattern_Editor.java" startLine="22" startPosition="89" endLine="28" endPosition="22" />
-    <scopeInfo nodeId="5073985075243144283" fileName="SNamedPattern_Editor.java" startLine="30" startPosition="0" endLine="38" endPosition="0" />
-    <scopeInfo nodeId="5073985075243144276" fileName="SNamedPattern_Editor.java" startLine="21" startPosition="0" endLine="30" endPosition="0" />
-    <scopeInfo nodeId="5073985075243144279" fileName="SNamedPattern_Editor.java" startLine="39" startPosition="87" endLine="53" endPosition="22" />
-    <scopeInfo nodeId="5073985075243144281" fileName="SNamedPattern_Editor.java" startLine="56" startPosition="88" endLine="71" endPosition="22" />
-    <scopeInfo nodeId="5073985075243144279" fileName="SNamedPattern_Editor.java" startLine="38" startPosition="0" endLine="55" endPosition="0" />
-    <scopeInfo nodeId="5073985075243144281" fileName="SNamedPattern_Editor.java" startLine="55" startPosition="0" endLine="73" endPosition="0" />
+    <scopeInfo nodeId="5073985075243144281" fileName="SNamedPattern_Editor.java" startLine="66" startPosition="35" endLine="69" endPosition="105">
+      <varInfo nodeId="5073985075243144281" varName="manager" />
+      <varInfo nodeId="5073985075243144281" varName="opContext" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144274" fileName="SNamedPattern_Editor.java" startLine="17" startPosition="61" endLine="21" endPosition="0">
+      <varInfo nodeId="5073985075243144274" varName="editorContext" />
+      <varInfo nodeId="5073985075243144274" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144283" fileName="SNamedPattern_Editor.java" startLine="31" startPosition="88" endLine="36" endPosition="22">
+      <varInfo nodeId="5073985075243144283" varName="editorCell" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144276" fileName="SNamedPattern_Editor.java" startLine="22" startPosition="89" endLine="28" endPosition="22">
+      <varInfo nodeId="5073985075243144276" varName="editorCell" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144283" fileName="SNamedPattern_Editor.java" startLine="30" startPosition="0" endLine="38" endPosition="0">
+      <varInfo nodeId="5073985075243144283" varName="editorContext" />
+      <varInfo nodeId="5073985075243144283" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144276" fileName="SNamedPattern_Editor.java" startLine="21" startPosition="0" endLine="30" endPosition="0">
+      <varInfo nodeId="5073985075243144276" varName="editorContext" />
+      <varInfo nodeId="5073985075243144276" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144279" fileName="SNamedPattern_Editor.java" startLine="39" startPosition="87" endLine="53" endPosition="22">
+      <varInfo nodeId="5073985075243144279" varName="attributeConcept" />
+      <varInfo nodeId="5073985075243144279" varName="attributeKind" />
+      <varInfo nodeId="5073985075243144279" varName="editorCell" />
+      <varInfo nodeId="5073985075243144279" varName="provider" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144281" fileName="SNamedPattern_Editor.java" startLine="56" startPosition="88" endLine="71" endPosition="22">
+      <varInfo nodeId="5073985075243144281" varName="attributeConcept" />
+      <varInfo nodeId="5073985075243144281" varName="attributeKind" />
+      <varInfo nodeId="5073985075243144281" varName="editorCell" />
+      <varInfo nodeId="5073985075243144281" varName="provider" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144279" fileName="SNamedPattern_Editor.java" startLine="38" startPosition="0" endLine="55" endPosition="0">
+      <varInfo nodeId="5073985075243144279" varName="editorContext" />
+      <varInfo nodeId="5073985075243144279" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144281" fileName="SNamedPattern_Editor.java" startLine="55" startPosition="0" endLine="73" endPosition="0">
+      <varInfo nodeId="5073985075243144281" varName="editorContext" />
+      <varInfo nodeId="5073985075243144281" varName="node" />
+    </scopeInfo>
     <unitInfo nodeId="5073985075243144274" fileName="SNamedPattern_Editor.java" startLine="17" startPosition="0" endLine="74" endPosition="0" unitName="jetbrains.mps.core.syntax.editor.SNamedPattern_Editor" />
   </root>
   <root nodeId="5073985075243144284">
@@ -1385,77 +1947,220 @@
     <scopeInfo nodeId="5073985075243144300" fileName="SNonTerm_Editor.java" startLine="203" startPosition="131" endLine="204" endPosition="139" />
     <scopeInfo nodeId="1030525575875839446" fileName="SNonTerm_Editor.java" startLine="225" startPosition="101" endLine="226" endPosition="50" />
     <scopeInfo nodeId="1030525575875839446" fileName="SNonTerm_Editor.java" startLine="254" startPosition="131" endLine="255" endPosition="139" />
-    <scopeInfo nodeId="5073985075243144291" fileName="SNonTerm_Editor.java" startLine="89" startPosition="5" endLine="91" endPosition="62" />
-    <scopeInfo nodeId="5073985075243144300" fileName="SNonTerm_Editor.java" startLine="132" startPosition="5" endLine="134" endPosition="62" />
-    <scopeInfo nodeId="5073985075243144289" fileName="SNonTerm_Editor.java" startLine="154" startPosition="5" endLine="156" endPosition="67" />
-    <scopeInfo nodeId="5073985075243144300" fileName="SNonTerm_Editor.java" startLine="178" startPosition="66" endLine="180" endPosition="93" />
+    <scopeInfo nodeId="5073985075243144291" fileName="SNonTerm_Editor.java" startLine="89" startPosition="5" endLine="91" endPosition="62">
+      <varInfo nodeId="5073985075243144291" varName="style" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144300" fileName="SNonTerm_Editor.java" startLine="132" startPosition="5" endLine="134" endPosition="62">
+      <varInfo nodeId="5073985075243144300" varName="style" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144289" fileName="SNonTerm_Editor.java" startLine="154" startPosition="5" endLine="156" endPosition="67">
+      <varInfo nodeId="5073985075243144289" varName="style" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144300" fileName="SNonTerm_Editor.java" startLine="178" startPosition="66" endLine="180" endPosition="93">
+      <varInfo nodeId="5073985075243144300" varName="listOwner" />
+    </scopeInfo>
     <scopeInfo nodeId="5073985075243144300" fileName="SNonTerm_Editor.java" startLine="199" startPosition="34" endLine="201" endPosition="80" />
-    <scopeInfo nodeId="1030525575875839446" fileName="SNonTerm_Editor.java" startLine="229" startPosition="66" endLine="231" endPosition="93" />
+    <scopeInfo nodeId="1030525575875839446" fileName="SNonTerm_Editor.java" startLine="229" startPosition="66" endLine="231" endPosition="93">
+      <varInfo nodeId="1030525575875839446" varName="listOwner" />
+    </scopeInfo>
     <scopeInfo nodeId="1030525575875839446" fileName="SNonTerm_Editor.java" startLine="250" startPosition="34" endLine="252" endPosition="80" />
-    <scopeInfo nodeId="1030525575875839439" fileName="SNonTerm_Editor.java" startLine="75" startPosition="5" endLine="78" endPosition="60" />
-    <scopeInfo nodeId="7384592777050076565" fileName="SNonTerm_Editor.java" startLine="100" startPosition="5" endLine="103" endPosition="51" />
-    <scopeInfo nodeId="1030525575875839443" fileName="SNonTerm_Editor.java" startLine="112" startPosition="5" endLine="115" endPosition="51" />
-    <scopeInfo nodeId="5073985075243144289" fileName="SNonTerm_Editor.java" startLine="161" startPosition="35" endLine="164" endPosition="105" />
-    <scopeInfo nodeId="5073985075243144300" fileName="SNonTerm_Editor.java" startLine="173" startPosition="80" endLine="176" endPosition="5" />
-    <scopeInfo nodeId="5073985075243144300" fileName="SNonTerm_Editor.java" startLine="183" startPosition="86" endLine="186" endPosition="25" />
-    <scopeInfo nodeId="5073985075243144300" fileName="SNonTerm_Editor.java" startLine="213" startPosition="7" endLine="216" endPosition="53" />
-    <scopeInfo nodeId="1030525575875839446" fileName="SNonTerm_Editor.java" startLine="224" startPosition="82" endLine="227" endPosition="5" />
-    <scopeInfo nodeId="1030525575875839446" fileName="SNonTerm_Editor.java" startLine="234" startPosition="86" endLine="237" endPosition="25" />
-    <scopeInfo nodeId="1030525575875839446" fileName="SNonTerm_Editor.java" startLine="264" startPosition="7" endLine="267" endPosition="80" />
-    <scopeInfo nodeId="5073985075243144284" fileName="SNonTerm_Editor.java" startLine="31" startPosition="56" endLine="35" endPosition="0" />
-    <scopeInfo nodeId="7384592777050066424" fileName="SNonTerm_Editor.java" startLine="61" startPosition="5" endLine="65" endPosition="60" />
-    <scopeInfo nodeId="5073985075243144307" fileName="SNonTerm_Editor.java" startLine="121" startPosition="88" endLine="125" endPosition="22" />
+    <scopeInfo nodeId="1030525575875839439" fileName="SNonTerm_Editor.java" startLine="75" startPosition="5" endLine="78" endPosition="60">
+      <varInfo nodeId="1030525575875839439" varName="style" />
+    </scopeInfo>
+    <scopeInfo nodeId="7384592777050076565" fileName="SNonTerm_Editor.java" startLine="100" startPosition="5" endLine="103" endPosition="51">
+      <varInfo nodeId="7384592777050076565" varName="style" />
+    </scopeInfo>
+    <scopeInfo nodeId="1030525575875839443" fileName="SNonTerm_Editor.java" startLine="112" startPosition="5" endLine="115" endPosition="51">
+      <varInfo nodeId="1030525575875839443" varName="style" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144289" fileName="SNonTerm_Editor.java" startLine="161" startPosition="35" endLine="164" endPosition="105">
+      <varInfo nodeId="5073985075243144289" varName="manager" />
+      <varInfo nodeId="5073985075243144289" varName="opContext" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144300" fileName="SNonTerm_Editor.java" startLine="173" startPosition="80" endLine="176" endPosition="5">
+      <varInfo nodeId="5073985075243144300" varName="childRole" />
+      <varInfo nodeId="5073985075243144300" varName="context" />
+      <varInfo nodeId="5073985075243144300" varName="ownerNode" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144300" fileName="SNonTerm_Editor.java" startLine="183" startPosition="86" endLine="186" endPosition="25">
+      <varInfo nodeId="5073985075243144300" varName="elementCell" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144300" fileName="SNonTerm_Editor.java" startLine="213" startPosition="7" endLine="216" endPosition="53">
+      <varInfo nodeId="5073985075243144300" varName="style" />
+    </scopeInfo>
+    <scopeInfo nodeId="1030525575875839446" fileName="SNonTerm_Editor.java" startLine="224" startPosition="82" endLine="227" endPosition="5">
+      <varInfo nodeId="1030525575875839446" varName="childRole" />
+      <varInfo nodeId="1030525575875839446" varName="context" />
+      <varInfo nodeId="1030525575875839446" varName="ownerNode" />
+    </scopeInfo>
+    <scopeInfo nodeId="1030525575875839446" fileName="SNonTerm_Editor.java" startLine="234" startPosition="86" endLine="237" endPosition="25">
+      <varInfo nodeId="1030525575875839446" varName="elementCell" />
+    </scopeInfo>
+    <scopeInfo nodeId="1030525575875839446" fileName="SNonTerm_Editor.java" startLine="264" startPosition="7" endLine="267" endPosition="80">
+      <varInfo nodeId="1030525575875839446" varName="style" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144284" fileName="SNonTerm_Editor.java" startLine="31" startPosition="56" endLine="35" endPosition="0">
+      <varInfo nodeId="5073985075243144284" varName="editorContext" />
+      <varInfo nodeId="5073985075243144284" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="7384592777050066424" fileName="SNonTerm_Editor.java" startLine="61" startPosition="5" endLine="65" endPosition="60">
+      <varInfo nodeId="7384592777050066424" varName="style" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144307" fileName="SNonTerm_Editor.java" startLine="121" startPosition="88" endLine="125" endPosition="22">
+      <varInfo nodeId="5073985075243144307" varName="editorCell" />
+    </scopeInfo>
     <scopeInfo nodeId="5073985075243144289" fileName="SNonTerm_Editor.java" startLine="153" startPosition="58" endLine="157" endPosition="5" />
-    <scopeInfo nodeId="1030525575875839436" fileName="SNonTerm_Editor.java" startLine="168" startPosition="0" endLine="172" endPosition="0" />
-    <scopeInfo nodeId="5073985075243144300" fileName="SNonTerm_Editor.java" startLine="189" startPosition="68" endLine="193" endPosition="23" />
-    <scopeInfo nodeId="1030525575875839446" fileName="SNonTerm_Editor.java" startLine="240" startPosition="68" endLine="244" endPosition="23" />
+    <scopeInfo nodeId="1030525575875839436" fileName="SNonTerm_Editor.java" startLine="168" startPosition="0" endLine="172" endPosition="0">
+      <varInfo nodeId="1030525575875839436" varName="editorContext" />
+      <varInfo nodeId="1030525575875839436" varName="node" />
+      <varInfo nodeId="1030525575875839436" varName="scope" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144300" fileName="SNonTerm_Editor.java" startLine="189" startPosition="68" endLine="193" endPosition="23">
+      <varInfo nodeId="5073985075243144300" varName="emptyCell" />
+    </scopeInfo>
+    <scopeInfo nodeId="1030525575875839446" fileName="SNonTerm_Editor.java" startLine="240" startPosition="68" endLine="244" endPosition="23">
+      <varInfo nodeId="1030525575875839446" varName="emptyCell" />
+    </scopeInfo>
     <scopeInfo nodeId="5073985075243144300" fileName="SNonTerm_Editor.java" startLine="130" startPosition="106" endLine="135" endPosition="5" />
-    <scopeInfo nodeId="1030525575875839446" fileName="SNonTerm_Editor.java" startLine="140" startPosition="95" endLine="145" endPosition="22" />
-    <scopeInfo nodeId="5073985075243144300" fileName="SNonTerm_Editor.java" startLine="177" startPosition="0" endLine="182" endPosition="0" />
-    <scopeInfo nodeId="1030525575875839446" fileName="SNonTerm_Editor.java" startLine="228" startPosition="0" endLine="233" endPosition="0" />
+    <scopeInfo nodeId="1030525575875839446" fileName="SNonTerm_Editor.java" startLine="140" startPosition="95" endLine="145" endPosition="22">
+      <varInfo nodeId="1030525575875839446" varName="editorCell" />
+      <varInfo nodeId="1030525575875839446" varName="handler" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144300" fileName="SNonTerm_Editor.java" startLine="177" startPosition="0" endLine="182" endPosition="0">
+      <varInfo nodeId="5073985075243144300" varName="editorContext" />
+    </scopeInfo>
+    <scopeInfo nodeId="1030525575875839446" fileName="SNonTerm_Editor.java" startLine="228" startPosition="0" endLine="233" endPosition="0">
+      <varInfo nodeId="1030525575875839446" varName="editorContext" />
+    </scopeInfo>
     <scopeInfo nodeId="1030525575875839439" fileName="SNonTerm_Editor.java" startLine="73" startPosition="96" endLine="79" endPosition="5" />
     <scopeInfo nodeId="5073985075243144291" fileName="SNonTerm_Editor.java" startLine="86" startPosition="89" endLine="92" endPosition="5" />
     <scopeInfo nodeId="7384592777050076565" fileName="SNonTerm_Editor.java" startLine="98" startPosition="88" endLine="104" endPosition="5" />
     <scopeInfo nodeId="1030525575875839443" fileName="SNonTerm_Editor.java" startLine="110" startPosition="88" endLine="116" endPosition="5" />
     <scopeInfo nodeId="5073985075243144289" fileName="SNonTerm_Editor.java" startLine="152" startPosition="26" endLine="158" endPosition="73" />
-    <scopeInfo nodeId="5073985075243144300" fileName="SNonTerm_Editor.java" startLine="182" startPosition="0" endLine="188" endPosition="0" />
-    <scopeInfo nodeId="1030525575875839446" fileName="SNonTerm_Editor.java" startLine="233" startPosition="0" endLine="239" endPosition="0" />
-    <scopeInfo nodeId="5073985075243144286" fileName="SNonTerm_Editor.java" startLine="48" startPosition="89" endLine="55" endPosition="22" />
+    <scopeInfo nodeId="5073985075243144300" fileName="SNonTerm_Editor.java" startLine="182" startPosition="0" endLine="188" endPosition="0">
+      <varInfo nodeId="5073985075243144300" varName="editorContext" />
+      <varInfo nodeId="5073985075243144300" varName="elementNode" />
+    </scopeInfo>
+    <scopeInfo nodeId="1030525575875839446" fileName="SNonTerm_Editor.java" startLine="233" startPosition="0" endLine="239" endPosition="0">
+      <varInfo nodeId="1030525575875839446" varName="editorContext" />
+      <varInfo nodeId="1030525575875839446" varName="elementNode" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144286" fileName="SNonTerm_Editor.java" startLine="48" startPosition="89" endLine="55" endPosition="22">
+      <varInfo nodeId="5073985075243144286" varName="editorCell" />
+    </scopeInfo>
     <scopeInfo nodeId="7384592777050066424" fileName="SNonTerm_Editor.java" startLine="59" startPosition="96" endLine="66" endPosition="5" />
-    <scopeInfo nodeId="5073985075243144307" fileName="SNonTerm_Editor.java" startLine="120" startPosition="0" endLine="127" endPosition="0" />
-    <scopeInfo nodeId="5073985075243144300" fileName="SNonTerm_Editor.java" startLine="188" startPosition="0" endLine="195" endPosition="0" />
-    <scopeInfo nodeId="1030525575875839446" fileName="SNonTerm_Editor.java" startLine="239" startPosition="0" endLine="246" endPosition="0" />
-    <scopeInfo nodeId="1030525575875839446" fileName="SNonTerm_Editor.java" startLine="139" startPosition="0" endLine="147" endPosition="0" />
+    <scopeInfo nodeId="5073985075243144307" fileName="SNonTerm_Editor.java" startLine="120" startPosition="0" endLine="127" endPosition="0">
+      <varInfo nodeId="5073985075243144307" varName="editorContext" />
+      <varInfo nodeId="5073985075243144307" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144300" fileName="SNonTerm_Editor.java" startLine="188" startPosition="0" endLine="195" endPosition="0">
+      <varInfo nodeId="5073985075243144300" varName="editorContext" />
+    </scopeInfo>
+    <scopeInfo nodeId="1030525575875839446" fileName="SNonTerm_Editor.java" startLine="239" startPosition="0" endLine="246" endPosition="0">
+      <varInfo nodeId="1030525575875839446" varName="editorContext" />
+    </scopeInfo>
+    <scopeInfo nodeId="1030525575875839446" fileName="SNonTerm_Editor.java" startLine="139" startPosition="0" endLine="147" endPosition="0">
+      <varInfo nodeId="1030525575875839446" varName="editorContext" />
+      <varInfo nodeId="1030525575875839446" varName="node" />
+    </scopeInfo>
     <scopeInfo nodeId="5073985075243144300" fileName="SNonTerm_Editor.java" startLine="197" startPosition="96" endLine="205" endPosition="9" />
     <scopeInfo nodeId="1030525575875839446" fileName="SNonTerm_Editor.java" startLine="248" startPosition="96" endLine="256" endPosition="9" />
-    <scopeInfo nodeId="1030525575875839434" fileName="SNonTerm_Editor.java" startLine="36" startPosition="91" endLine="45" endPosition="22" />
-    <scopeInfo nodeId="5073985075243144291" fileName="SNonTerm_Editor.java" startLine="85" startPosition="88" endLine="94" endPosition="22" />
-    <scopeInfo nodeId="7384592777050076565" fileName="SNonTerm_Editor.java" startLine="97" startPosition="90" endLine="106" endPosition="22" />
-    <scopeInfo nodeId="1030525575875839443" fileName="SNonTerm_Editor.java" startLine="109" startPosition="92" endLine="118" endPosition="22" />
-    <scopeInfo nodeId="5073985075243144300" fileName="SNonTerm_Editor.java" startLine="128" startPosition="93" endLine="137" endPosition="22" />
-    <scopeInfo nodeId="5073985075243144286" fileName="SNonTerm_Editor.java" startLine="47" startPosition="0" endLine="57" endPosition="0" />
-    <scopeInfo nodeId="1030525575875839439" fileName="SNonTerm_Editor.java" startLine="72" startPosition="93" endLine="82" endPosition="22" />
+    <scopeInfo nodeId="1030525575875839434" fileName="SNonTerm_Editor.java" startLine="36" startPosition="91" endLine="45" endPosition="22">
+      <varInfo nodeId="1030525575875839434" varName="alternationCondition" />
+      <varInfo nodeId="1030525575875839434" varName="editorCell" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144291" fileName="SNonTerm_Editor.java" startLine="85" startPosition="88" endLine="94" endPosition="22">
+      <varInfo nodeId="5073985075243144291" varName="editorCell" />
+    </scopeInfo>
+    <scopeInfo nodeId="7384592777050076565" fileName="SNonTerm_Editor.java" startLine="97" startPosition="90" endLine="106" endPosition="22">
+      <varInfo nodeId="7384592777050076565" varName="editorCell" />
+    </scopeInfo>
+    <scopeInfo nodeId="1030525575875839443" fileName="SNonTerm_Editor.java" startLine="109" startPosition="92" endLine="118" endPosition="22">
+      <varInfo nodeId="1030525575875839443" varName="editorCell" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144300" fileName="SNonTerm_Editor.java" startLine="128" startPosition="93" endLine="137" endPosition="22">
+      <varInfo nodeId="5073985075243144300" varName="editorCell" />
+      <varInfo nodeId="5073985075243144300" varName="handler" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144286" fileName="SNonTerm_Editor.java" startLine="47" startPosition="0" endLine="57" endPosition="0">
+      <varInfo nodeId="5073985075243144286" varName="editorContext" />
+      <varInfo nodeId="5073985075243144286" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="1030525575875839439" fileName="SNonTerm_Editor.java" startLine="72" startPosition="93" endLine="82" endPosition="22">
+      <varInfo nodeId="1030525575875839439" varName="editorCell" />
+    </scopeInfo>
     <scopeInfo nodeId="5073985075243144300" fileName="SNonTerm_Editor.java" startLine="196" startPosition="132" endLine="206" endPosition="7" />
-    <scopeInfo nodeId="5073985075243144300" fileName="SNonTerm_Editor.java" startLine="210" startPosition="84" endLine="220" endPosition="24" />
+    <scopeInfo nodeId="5073985075243144300" fileName="SNonTerm_Editor.java" startLine="210" startPosition="84" endLine="220" endPosition="24">
+      <varInfo nodeId="5073985075243144300" varName="editorCell" />
+    </scopeInfo>
     <scopeInfo nodeId="1030525575875839446" fileName="SNonTerm_Editor.java" startLine="247" startPosition="132" endLine="257" endPosition="7" />
-    <scopeInfo nodeId="1030525575875839446" fileName="SNonTerm_Editor.java" startLine="261" startPosition="84" endLine="271" endPosition="24" />
-    <scopeInfo nodeId="7384592777050066424" fileName="SNonTerm_Editor.java" startLine="58" startPosition="91" endLine="69" endPosition="22" />
-    <scopeInfo nodeId="1030525575875839434" fileName="SNonTerm_Editor.java" startLine="35" startPosition="0" endLine="47" endPosition="0" />
-    <scopeInfo nodeId="5073985075243144291" fileName="SNonTerm_Editor.java" startLine="84" startPosition="0" endLine="96" endPosition="0" />
-    <scopeInfo nodeId="7384592777050076565" fileName="SNonTerm_Editor.java" startLine="96" startPosition="0" endLine="108" endPosition="0" />
-    <scopeInfo nodeId="1030525575875839443" fileName="SNonTerm_Editor.java" startLine="108" startPosition="0" endLine="120" endPosition="0" />
-    <scopeInfo nodeId="5073985075243144300" fileName="SNonTerm_Editor.java" startLine="127" startPosition="0" endLine="139" endPosition="0" />
-    <scopeInfo nodeId="1030525575875839439" fileName="SNonTerm_Editor.java" startLine="71" startPosition="0" endLine="84" endPosition="0" />
-    <scopeInfo nodeId="5073985075243144300" fileName="SNonTerm_Editor.java" startLine="195" startPosition="0" endLine="208" endPosition="0" />
-    <scopeInfo nodeId="1030525575875839446" fileName="SNonTerm_Editor.java" startLine="246" startPosition="0" endLine="259" endPosition="0" />
-    <scopeInfo nodeId="7384592777050066424" fileName="SNonTerm_Editor.java" startLine="57" startPosition="0" endLine="71" endPosition="0" />
-    <scopeInfo nodeId="5073985075243144300" fileName="SNonTerm_Editor.java" startLine="208" startPosition="0" endLine="222" endPosition="0" />
-    <scopeInfo nodeId="1030525575875839446" fileName="SNonTerm_Editor.java" startLine="259" startPosition="0" endLine="273" endPosition="0" />
-    <scopeInfo nodeId="5073985075243144289" fileName="SNonTerm_Editor.java" startLine="148" startPosition="87" endLine="166" endPosition="22" />
-    <scopeInfo nodeId="5073985075243144289" fileName="SNonTerm_Editor.java" startLine="147" startPosition="0" endLine="168" endPosition="0" />
+    <scopeInfo nodeId="1030525575875839446" fileName="SNonTerm_Editor.java" startLine="261" startPosition="84" endLine="271" endPosition="24">
+      <varInfo nodeId="1030525575875839446" varName="editorCell" />
+    </scopeInfo>
+    <scopeInfo nodeId="7384592777050066424" fileName="SNonTerm_Editor.java" startLine="58" startPosition="91" endLine="69" endPosition="22">
+      <varInfo nodeId="7384592777050066424" varName="editorCell" />
+    </scopeInfo>
+    <scopeInfo nodeId="1030525575875839434" fileName="SNonTerm_Editor.java" startLine="35" startPosition="0" endLine="47" endPosition="0">
+      <varInfo nodeId="1030525575875839434" varName="editorContext" />
+      <varInfo nodeId="1030525575875839434" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144291" fileName="SNonTerm_Editor.java" startLine="84" startPosition="0" endLine="96" endPosition="0">
+      <varInfo nodeId="5073985075243144291" varName="editorContext" />
+      <varInfo nodeId="5073985075243144291" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="7384592777050076565" fileName="SNonTerm_Editor.java" startLine="96" startPosition="0" endLine="108" endPosition="0">
+      <varInfo nodeId="7384592777050076565" varName="editorContext" />
+      <varInfo nodeId="7384592777050076565" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="1030525575875839443" fileName="SNonTerm_Editor.java" startLine="108" startPosition="0" endLine="120" endPosition="0">
+      <varInfo nodeId="1030525575875839443" varName="editorContext" />
+      <varInfo nodeId="1030525575875839443" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144300" fileName="SNonTerm_Editor.java" startLine="127" startPosition="0" endLine="139" endPosition="0">
+      <varInfo nodeId="5073985075243144300" varName="editorContext" />
+      <varInfo nodeId="5073985075243144300" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="1030525575875839439" fileName="SNonTerm_Editor.java" startLine="71" startPosition="0" endLine="84" endPosition="0">
+      <varInfo nodeId="1030525575875839439" varName="editorContext" />
+      <varInfo nodeId="1030525575875839439" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144300" fileName="SNonTerm_Editor.java" startLine="195" startPosition="0" endLine="208" endPosition="0">
+      <varInfo nodeId="5073985075243144300" varName="editorContext" />
+      <varInfo nodeId="5073985075243144300" varName="elementCell" />
+      <varInfo nodeId="5073985075243144300" varName="elementNode" />
+      <varInfo nodeId="5073985075243144300" varName="listOwner" />
+    </scopeInfo>
+    <scopeInfo nodeId="1030525575875839446" fileName="SNonTerm_Editor.java" startLine="246" startPosition="0" endLine="259" endPosition="0">
+      <varInfo nodeId="1030525575875839446" varName="editorContext" />
+      <varInfo nodeId="1030525575875839446" varName="elementCell" />
+      <varInfo nodeId="1030525575875839446" varName="elementNode" />
+      <varInfo nodeId="1030525575875839446" varName="listOwner" />
+    </scopeInfo>
+    <scopeInfo nodeId="7384592777050066424" fileName="SNonTerm_Editor.java" startLine="57" startPosition="0" endLine="71" endPosition="0">
+      <varInfo nodeId="7384592777050066424" varName="editorContext" />
+      <varInfo nodeId="7384592777050066424" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144300" fileName="SNonTerm_Editor.java" startLine="208" startPosition="0" endLine="222" endPosition="0">
+      <varInfo nodeId="5073985075243144300" varName="editorContext" />
+      <varInfo nodeId="5073985075243144300" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="1030525575875839446" fileName="SNonTerm_Editor.java" startLine="259" startPosition="0" endLine="273" endPosition="0">
+      <varInfo nodeId="1030525575875839446" varName="editorContext" />
+      <varInfo nodeId="1030525575875839446" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144289" fileName="SNonTerm_Editor.java" startLine="148" startPosition="87" endLine="166" endPosition="22">
+      <varInfo nodeId="5073985075243144289" varName="attributeConcept" />
+      <varInfo nodeId="5073985075243144289" varName="attributeKind" />
+      <varInfo nodeId="5073985075243144289" varName="editorCell" />
+      <varInfo nodeId="5073985075243144289" varName="provider" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144289" fileName="SNonTerm_Editor.java" startLine="147" startPosition="0" endLine="168" endPosition="0">
+      <varInfo nodeId="5073985075243144289" varName="editorContext" />
+      <varInfo nodeId="5073985075243144289" varName="node" />
+    </scopeInfo>
+    <unitInfo nodeId="5073985075243144284" fileName="SNonTerm_Editor.java" startLine="31" startPosition="0" endLine="275" endPosition="0" unitName="jetbrains.mps.core.syntax.editor.SNonTerm_Editor" />
     <unitInfo nodeId="5073985075243144300" fileName="SNonTerm_Editor.java" startLine="173" startPosition="0" endLine="223" endPosition="0" unitName="jetbrains.mps.core.syntax.editor.SNonTerm_Editor$rulesListHandler_9v4a5v_b0c0" />
     <unitInfo nodeId="1030525575875839446" fileName="SNonTerm_Editor.java" startLine="224" startPosition="0" endLine="274" endPosition="0" unitName="jetbrains.mps.core.syntax.editor.SNonTerm_Editor$rulesListHandler_9v4a5v_b0c0_0" />
-    <unitInfo nodeId="5073985075243144284" fileName="SNonTerm_Editor.java" startLine="31" startPosition="0" endLine="275" endPosition="0" unitName="jetbrains.mps.core.syntax.editor.SNonTerm_Editor" />
   </root>
   <root nodeId="5073985075243144322">
     <nodeInfo nodeId="5073985075243144327" fileName="SReference_Editor.java" startLine="35" startPosition="58" endLine="35" endPosition="58" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
@@ -1517,21 +2222,56 @@
     <scopeInfo nodeId="5073985075243144328" fileName="SReference_Editor.java" startLine="56" startPosition="81" endLine="57" endPosition="66" />
     <scopeInfo nodeId="5073985075243144330" fileName="SReference_Editor.java" startLine="66" startPosition="60" endLine="67" endPosition="44" />
     <scopeInfo nodeId="5073985075243144327" fileName="SReference_Editor.java" startLine="33" startPosition="26" endLine="36" endPosition="73" />
-    <scopeInfo nodeId="5073985075243144327" fileName="SReference_Editor.java" startLine="39" startPosition="35" endLine="42" endPosition="105" />
+    <scopeInfo nodeId="5073985075243144327" fileName="SReference_Editor.java" startLine="39" startPosition="35" endLine="42" endPosition="105">
+      <varInfo nodeId="5073985075243144327" varName="manager" />
+      <varInfo nodeId="5073985075243144327" varName="opContext" />
+    </scopeInfo>
     <scopeInfo nodeId="5073985075243144328" fileName="SReference_Editor.java" startLine="47" startPosition="69" endLine="50" endPosition="5" />
     <scopeInfo nodeId="5073985075243144330" fileName="SReference_Editor.java" startLine="65" startPosition="28" endLine="68" endPosition="75" />
-    <scopeInfo nodeId="5073985075243144330" fileName="SReference_Editor.java" startLine="71" startPosition="37" endLine="74" endPosition="107" />
-    <scopeInfo nodeId="5073985075243144322" fileName="SReference_Editor.java" startLine="17" startPosition="58" endLine="21" endPosition="0" />
-    <scopeInfo nodeId="5073985075243144324" fileName="SReference_Editor.java" startLine="22" startPosition="89" endLine="26" endPosition="22" />
-    <scopeInfo nodeId="5073985075243144328" fileName="SReference_Editor.java" startLine="51" startPosition="0" endLine="55" endPosition="0" />
-    <scopeInfo nodeId="5073985075243144328" fileName="SReference_Editor.java" startLine="55" startPosition="0" endLine="59" endPosition="0" />
-    <scopeInfo nodeId="5073985075243144324" fileName="SReference_Editor.java" startLine="21" startPosition="0" endLine="28" endPosition="0" />
-    <scopeInfo nodeId="5073985075243144327" fileName="SReference_Editor.java" startLine="29" startPosition="87" endLine="44" endPosition="22" />
-    <scopeInfo nodeId="5073985075243144330" fileName="SReference_Editor.java" startLine="60" startPosition="92" endLine="76" endPosition="24" />
-    <scopeInfo nodeId="5073985075243144327" fileName="SReference_Editor.java" startLine="28" startPosition="0" endLine="46" endPosition="0" />
-    <scopeInfo nodeId="5073985075243144330" fileName="SReference_Editor.java" startLine="59" startPosition="0" endLine="78" endPosition="0" />
-    <unitInfo nodeId="5073985075243144328" fileName="SReference_Editor.java" startLine="47" startPosition="0" endLine="79" endPosition="0" unitName="jetbrains.mps.core.syntax.editor.SReference_Editor$_Inline_iir456_a0a" />
+    <scopeInfo nodeId="5073985075243144330" fileName="SReference_Editor.java" startLine="71" startPosition="37" endLine="74" endPosition="107">
+      <varInfo nodeId="5073985075243144330" varName="manager" />
+      <varInfo nodeId="5073985075243144330" varName="opContext" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144322" fileName="SReference_Editor.java" startLine="17" startPosition="58" endLine="21" endPosition="0">
+      <varInfo nodeId="5073985075243144322" varName="editorContext" />
+      <varInfo nodeId="5073985075243144322" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144324" fileName="SReference_Editor.java" startLine="22" startPosition="89" endLine="26" endPosition="22">
+      <varInfo nodeId="5073985075243144324" varName="editorCell" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144328" fileName="SReference_Editor.java" startLine="51" startPosition="0" endLine="55" endPosition="0">
+      <varInfo nodeId="5073985075243144328" varName="editorContext" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144328" fileName="SReference_Editor.java" startLine="55" startPosition="0" endLine="59" endPosition="0">
+      <varInfo nodeId="5073985075243144328" varName="editorContext" />
+      <varInfo nodeId="5073985075243144328" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144324" fileName="SReference_Editor.java" startLine="21" startPosition="0" endLine="28" endPosition="0">
+      <varInfo nodeId="5073985075243144324" varName="editorContext" />
+      <varInfo nodeId="5073985075243144324" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144327" fileName="SReference_Editor.java" startLine="29" startPosition="87" endLine="44" endPosition="22">
+      <varInfo nodeId="5073985075243144327" varName="attributeConcept" />
+      <varInfo nodeId="5073985075243144327" varName="attributeKind" />
+      <varInfo nodeId="5073985075243144327" varName="editorCell" />
+      <varInfo nodeId="5073985075243144327" varName="provider" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144330" fileName="SReference_Editor.java" startLine="60" startPosition="92" endLine="76" endPosition="24">
+      <varInfo nodeId="5073985075243144330" varName="attributeConcept" />
+      <varInfo nodeId="5073985075243144330" varName="attributeKind" />
+      <varInfo nodeId="5073985075243144330" varName="editorCell" />
+      <varInfo nodeId="5073985075243144330" varName="provider" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144327" fileName="SReference_Editor.java" startLine="28" startPosition="0" endLine="46" endPosition="0">
+      <varInfo nodeId="5073985075243144327" varName="editorContext" />
+      <varInfo nodeId="5073985075243144327" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144330" fileName="SReference_Editor.java" startLine="59" startPosition="0" endLine="78" endPosition="0">
+      <varInfo nodeId="5073985075243144330" varName="editorContext" />
+      <varInfo nodeId="5073985075243144330" varName="node" />
+    </scopeInfo>
     <unitInfo nodeId="5073985075243144322" fileName="SReference_Editor.java" startLine="17" startPosition="0" endLine="80" endPosition="0" unitName="jetbrains.mps.core.syntax.editor.SReference_Editor" />
+    <unitInfo nodeId="5073985075243144328" fileName="SReference_Editor.java" startLine="47" startPosition="0" endLine="79" endPosition="0" unitName="jetbrains.mps.core.syntax.editor.SReference_Editor$_Inline_iir456_a0a" />
   </root>
   <root nodeId="5073985075243144332">
     <nodeInfo nodeId="5073985075243144332" fileName="SPrio_Editor.java" startLine="29" startPosition="79" endLine="30" endPosition="63" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
@@ -1638,40 +2378,111 @@
     <scopeInfo nodeId="5073985075243144341" fileName="SPrio_Editor.java" startLine="116" startPosition="89" endLine="117" endPosition="65" />
     <scopeInfo nodeId="5073985075243144341" fileName="SPrio_Editor.java" startLine="123" startPosition="34" endLine="124" endPosition="95" />
     <scopeInfo nodeId="5073985075243144341" fileName="SPrio_Editor.java" startLine="126" startPosition="131" endLine="127" endPosition="139" />
-    <scopeInfo nodeId="5073985075243144337" fileName="SPrio_Editor.java" startLine="47" startPosition="5" endLine="49" endPosition="57" />
-    <scopeInfo nodeId="5073985075243144345" fileName="SPrio_Editor.java" startLine="59" startPosition="5" endLine="61" endPosition="56" />
-    <scopeInfo nodeId="5073985075243144341" fileName="SPrio_Editor.java" startLine="98" startPosition="66" endLine="100" endPosition="93" />
+    <scopeInfo nodeId="5073985075243144337" fileName="SPrio_Editor.java" startLine="47" startPosition="5" endLine="49" endPosition="57">
+      <varInfo nodeId="5073985075243144337" varName="style" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144345" fileName="SPrio_Editor.java" startLine="59" startPosition="5" endLine="61" endPosition="56">
+      <varInfo nodeId="5073985075243144345" varName="style" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144341" fileName="SPrio_Editor.java" startLine="98" startPosition="66" endLine="100" endPosition="93">
+      <varInfo nodeId="5073985075243144341" varName="listOwner" />
+    </scopeInfo>
     <scopeInfo nodeId="5073985075243144339" fileName="SPrio_Editor.java" startLine="79" startPosition="26" endLine="82" endPosition="73" />
-    <scopeInfo nodeId="5073985075243144339" fileName="SPrio_Editor.java" startLine="85" startPosition="35" endLine="88" endPosition="105" />
-    <scopeInfo nodeId="5073985075243144341" fileName="SPrio_Editor.java" startLine="93" startPosition="83" endLine="96" endPosition="5" />
-    <scopeInfo nodeId="5073985075243144341" fileName="SPrio_Editor.java" startLine="103" startPosition="86" endLine="106" endPosition="25" />
-    <scopeInfo nodeId="831208648099885060" fileName="SPrio_Editor.java" startLine="135" startPosition="7" endLine="138" endPosition="62" />
-    <scopeInfo nodeId="5073985075243144332" fileName="SPrio_Editor.java" startLine="28" startPosition="53" endLine="32" endPosition="0" />
-    <scopeInfo nodeId="5073985075243144341" fileName="SPrio_Editor.java" startLine="109" startPosition="68" endLine="113" endPosition="23" />
-    <scopeInfo nodeId="5073985075243144341" fileName="SPrio_Editor.java" startLine="115" startPosition="0" endLine="119" endPosition="0" />
-    <scopeInfo nodeId="5073985075243144341" fileName="SPrio_Editor.java" startLine="67" startPosition="91" endLine="72" endPosition="22" />
-    <scopeInfo nodeId="5073985075243144341" fileName="SPrio_Editor.java" startLine="97" startPosition="0" endLine="102" endPosition="0" />
+    <scopeInfo nodeId="5073985075243144339" fileName="SPrio_Editor.java" startLine="85" startPosition="35" endLine="88" endPosition="105">
+      <varInfo nodeId="5073985075243144339" varName="manager" />
+      <varInfo nodeId="5073985075243144339" varName="opContext" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144341" fileName="SPrio_Editor.java" startLine="93" startPosition="83" endLine="96" endPosition="5">
+      <varInfo nodeId="5073985075243144341" varName="childRole" />
+      <varInfo nodeId="5073985075243144341" varName="context" />
+      <varInfo nodeId="5073985075243144341" varName="ownerNode" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144341" fileName="SPrio_Editor.java" startLine="103" startPosition="86" endLine="106" endPosition="25">
+      <varInfo nodeId="5073985075243144341" varName="elementCell" />
+    </scopeInfo>
+    <scopeInfo nodeId="831208648099885060" fileName="SPrio_Editor.java" startLine="135" startPosition="7" endLine="138" endPosition="62">
+      <varInfo nodeId="831208648099885060" varName="style" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144332" fileName="SPrio_Editor.java" startLine="28" startPosition="53" endLine="32" endPosition="0">
+      <varInfo nodeId="5073985075243144332" varName="editorContext" />
+      <varInfo nodeId="5073985075243144332" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144341" fileName="SPrio_Editor.java" startLine="109" startPosition="68" endLine="113" endPosition="23">
+      <varInfo nodeId="5073985075243144341" varName="emptyCell" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144341" fileName="SPrio_Editor.java" startLine="115" startPosition="0" endLine="119" endPosition="0">
+      <varInfo nodeId="5073985075243144341" varName="editorContext" />
+      <varInfo nodeId="5073985075243144341" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144341" fileName="SPrio_Editor.java" startLine="67" startPosition="91" endLine="72" endPosition="22">
+      <varInfo nodeId="5073985075243144341" varName="editorCell" />
+      <varInfo nodeId="5073985075243144341" varName="handler" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144341" fileName="SPrio_Editor.java" startLine="97" startPosition="0" endLine="102" endPosition="0">
+      <varInfo nodeId="5073985075243144341" varName="editorContext" />
+    </scopeInfo>
     <scopeInfo nodeId="5073985075243144337" fileName="SPrio_Editor.java" startLine="44" startPosition="87" endLine="50" endPosition="5" />
     <scopeInfo nodeId="5073985075243144345" fileName="SPrio_Editor.java" startLine="56" startPosition="87" endLine="62" endPosition="5" />
-    <scopeInfo nodeId="5073985075243144341" fileName="SPrio_Editor.java" startLine="102" startPosition="0" endLine="108" endPosition="0" />
+    <scopeInfo nodeId="5073985075243144341" fileName="SPrio_Editor.java" startLine="102" startPosition="0" endLine="108" endPosition="0">
+      <varInfo nodeId="5073985075243144341" varName="editorContext" />
+      <varInfo nodeId="5073985075243144341" varName="elementNode" />
+    </scopeInfo>
     <scopeInfo nodeId="831208648099885060" fileName="SPrio_Editor.java" startLine="133" startPosition="97" endLine="139" endPosition="7" />
-    <scopeInfo nodeId="5073985075243144334" fileName="SPrio_Editor.java" startLine="33" startPosition="89" endLine="40" endPosition="22" />
-    <scopeInfo nodeId="5073985075243144341" fileName="SPrio_Editor.java" startLine="108" startPosition="0" endLine="115" endPosition="0" />
+    <scopeInfo nodeId="5073985075243144334" fileName="SPrio_Editor.java" startLine="33" startPosition="89" endLine="40" endPosition="22">
+      <varInfo nodeId="5073985075243144334" varName="editorCell" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144341" fileName="SPrio_Editor.java" startLine="108" startPosition="0" endLine="115" endPosition="0">
+      <varInfo nodeId="5073985075243144341" varName="editorContext" />
+    </scopeInfo>
     <scopeInfo nodeId="5073985075243144341" fileName="SPrio_Editor.java" startLine="121" startPosition="96" endLine="128" endPosition="9" />
-    <scopeInfo nodeId="5073985075243144341" fileName="SPrio_Editor.java" startLine="66" startPosition="0" endLine="74" endPosition="0" />
-    <scopeInfo nodeId="5073985075243144337" fileName="SPrio_Editor.java" startLine="43" startPosition="88" endLine="52" endPosition="22" />
-    <scopeInfo nodeId="5073985075243144345" fileName="SPrio_Editor.java" startLine="55" startPosition="88" endLine="64" endPosition="22" />
+    <scopeInfo nodeId="5073985075243144341" fileName="SPrio_Editor.java" startLine="66" startPosition="0" endLine="74" endPosition="0">
+      <varInfo nodeId="5073985075243144341" varName="editorContext" />
+      <varInfo nodeId="5073985075243144341" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144337" fileName="SPrio_Editor.java" startLine="43" startPosition="88" endLine="52" endPosition="22">
+      <varInfo nodeId="5073985075243144337" varName="editorCell" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144345" fileName="SPrio_Editor.java" startLine="55" startPosition="88" endLine="64" endPosition="22">
+      <varInfo nodeId="5073985075243144345" varName="editorCell" />
+    </scopeInfo>
     <scopeInfo nodeId="5073985075243144341" fileName="SPrio_Editor.java" startLine="120" startPosition="132" endLine="129" endPosition="7" />
-    <scopeInfo nodeId="831208648099885060" fileName="SPrio_Editor.java" startLine="132" startPosition="91" endLine="141" endPosition="24" />
-    <scopeInfo nodeId="5073985075243144334" fileName="SPrio_Editor.java" startLine="32" startPosition="0" endLine="42" endPosition="0" />
-    <scopeInfo nodeId="5073985075243144337" fileName="SPrio_Editor.java" startLine="42" startPosition="0" endLine="54" endPosition="0" />
-    <scopeInfo nodeId="5073985075243144345" fileName="SPrio_Editor.java" startLine="54" startPosition="0" endLine="66" endPosition="0" />
-    <scopeInfo nodeId="5073985075243144341" fileName="SPrio_Editor.java" startLine="119" startPosition="0" endLine="131" endPosition="0" />
-    <scopeInfo nodeId="831208648099885060" fileName="SPrio_Editor.java" startLine="131" startPosition="0" endLine="143" endPosition="0" />
-    <scopeInfo nodeId="5073985075243144339" fileName="SPrio_Editor.java" startLine="75" startPosition="88" endLine="90" endPosition="22" />
-    <scopeInfo nodeId="5073985075243144339" fileName="SPrio_Editor.java" startLine="74" startPosition="0" endLine="92" endPosition="0" />
-    <unitInfo nodeId="5073985075243144341" fileName="SPrio_Editor.java" startLine="93" startPosition="0" endLine="144" endPosition="0" unitName="jetbrains.mps.core.syntax.editor.SPrio_Editor$referencesListHandler_rimxco_c0" />
+    <scopeInfo nodeId="831208648099885060" fileName="SPrio_Editor.java" startLine="132" startPosition="91" endLine="141" endPosition="24">
+      <varInfo nodeId="831208648099885060" varName="editorCell" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144334" fileName="SPrio_Editor.java" startLine="32" startPosition="0" endLine="42" endPosition="0">
+      <varInfo nodeId="5073985075243144334" varName="editorContext" />
+      <varInfo nodeId="5073985075243144334" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144337" fileName="SPrio_Editor.java" startLine="42" startPosition="0" endLine="54" endPosition="0">
+      <varInfo nodeId="5073985075243144337" varName="editorContext" />
+      <varInfo nodeId="5073985075243144337" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144345" fileName="SPrio_Editor.java" startLine="54" startPosition="0" endLine="66" endPosition="0">
+      <varInfo nodeId="5073985075243144345" varName="editorContext" />
+      <varInfo nodeId="5073985075243144345" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144341" fileName="SPrio_Editor.java" startLine="119" startPosition="0" endLine="131" endPosition="0">
+      <varInfo nodeId="5073985075243144341" varName="editorContext" />
+      <varInfo nodeId="5073985075243144341" varName="elementCell" />
+      <varInfo nodeId="5073985075243144341" varName="elementNode" />
+      <varInfo nodeId="5073985075243144341" varName="listOwner" />
+    </scopeInfo>
+    <scopeInfo nodeId="831208648099885060" fileName="SPrio_Editor.java" startLine="131" startPosition="0" endLine="143" endPosition="0">
+      <varInfo nodeId="831208648099885060" varName="editorContext" />
+      <varInfo nodeId="831208648099885060" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144339" fileName="SPrio_Editor.java" startLine="75" startPosition="88" endLine="90" endPosition="22">
+      <varInfo nodeId="5073985075243144339" varName="attributeConcept" />
+      <varInfo nodeId="5073985075243144339" varName="attributeKind" />
+      <varInfo nodeId="5073985075243144339" varName="editorCell" />
+      <varInfo nodeId="5073985075243144339" varName="provider" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144339" fileName="SPrio_Editor.java" startLine="74" startPosition="0" endLine="92" endPosition="0">
+      <varInfo nodeId="5073985075243144339" varName="editorContext" />
+      <varInfo nodeId="5073985075243144339" varName="node" />
+    </scopeInfo>
     <unitInfo nodeId="5073985075243144332" fileName="SPrio_Editor.java" startLine="28" startPosition="0" endLine="145" endPosition="0" unitName="jetbrains.mps.core.syntax.editor.SPrio_Editor" />
+    <unitInfo nodeId="5073985075243144341" fileName="SPrio_Editor.java" startLine="93" startPosition="0" endLine="144" endPosition="0" unitName="jetbrains.mps.core.syntax.editor.SPrio_Editor$referencesListHandler_rimxco_c0" />
   </root>
   <root nodeId="5073985075243144350">
     <nodeInfo nodeId="5073985075243144355" fileName="SInputRef_Editor.java" startLine="67" startPosition="58" endLine="67" endPosition="58" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
@@ -1761,32 +2572,85 @@
     <scopeInfo nodeId="5073985075243144356" fileName="SInputRef_Editor.java" startLine="88" startPosition="69" endLine="89" endPosition="67" />
     <scopeInfo nodeId="5073985075243144356" fileName="SInputRef_Editor.java" startLine="92" startPosition="81" endLine="93" endPosition="66" />
     <scopeInfo nodeId="5073985075243144358" fileName="SInputRef_Editor.java" startLine="102" startPosition="60" endLine="103" endPosition="44" />
-    <scopeInfo nodeId="5073985075243144360" fileName="SInputRef_Editor.java" startLine="40" startPosition="5" endLine="42" endPosition="51" />
-    <scopeInfo nodeId="5073985075243149397" fileName="SInputRef_Editor.java" startLine="52" startPosition="5" endLine="54" endPosition="48" />
+    <scopeInfo nodeId="5073985075243144360" fileName="SInputRef_Editor.java" startLine="40" startPosition="5" endLine="42" endPosition="51">
+      <varInfo nodeId="5073985075243144360" varName="style" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243149397" fileName="SInputRef_Editor.java" startLine="52" startPosition="5" endLine="54" endPosition="48">
+      <varInfo nodeId="5073985075243149397" varName="style" />
+    </scopeInfo>
     <scopeInfo nodeId="5073985075243144352" fileName="SInputRef_Editor.java" startLine="30" startPosition="80" endLine="33" endPosition="5" />
     <scopeInfo nodeId="5073985075243144355" fileName="SInputRef_Editor.java" startLine="65" startPosition="26" endLine="68" endPosition="73" />
-    <scopeInfo nodeId="5073985075243144355" fileName="SInputRef_Editor.java" startLine="71" startPosition="35" endLine="74" endPosition="105" />
+    <scopeInfo nodeId="5073985075243144355" fileName="SInputRef_Editor.java" startLine="71" startPosition="35" endLine="74" endPosition="105">
+      <varInfo nodeId="5073985075243144355" varName="manager" />
+      <varInfo nodeId="5073985075243144355" varName="opContext" />
+    </scopeInfo>
     <scopeInfo nodeId="5073985075243144356" fileName="SInputRef_Editor.java" startLine="83" startPosition="69" endLine="86" endPosition="5" />
     <scopeInfo nodeId="5073985075243144358" fileName="SInputRef_Editor.java" startLine="101" startPosition="28" endLine="104" endPosition="75" />
-    <scopeInfo nodeId="5073985075243144358" fileName="SInputRef_Editor.java" startLine="107" startPosition="37" endLine="110" endPosition="107" />
-    <scopeInfo nodeId="5073985075243144350" fileName="SInputRef_Editor.java" startLine="22" startPosition="57" endLine="26" endPosition="0" />
-    <scopeInfo nodeId="5073985075243144364" fileName="SInputRef_Editor.java" startLine="78" startPosition="0" endLine="82" endPosition="0" />
-    <scopeInfo nodeId="5073985075243144356" fileName="SInputRef_Editor.java" startLine="87" startPosition="0" endLine="91" endPosition="0" />
-    <scopeInfo nodeId="5073985075243144356" fileName="SInputRef_Editor.java" startLine="91" startPosition="0" endLine="95" endPosition="0" />
+    <scopeInfo nodeId="5073985075243144358" fileName="SInputRef_Editor.java" startLine="107" startPosition="37" endLine="110" endPosition="107">
+      <varInfo nodeId="5073985075243144358" varName="manager" />
+      <varInfo nodeId="5073985075243144358" varName="opContext" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144350" fileName="SInputRef_Editor.java" startLine="22" startPosition="57" endLine="26" endPosition="0">
+      <varInfo nodeId="5073985075243144350" varName="editorContext" />
+      <varInfo nodeId="5073985075243144350" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144364" fileName="SInputRef_Editor.java" startLine="78" startPosition="0" endLine="82" endPosition="0">
+      <varInfo nodeId="5073985075243144364" varName="editorContext" />
+      <varInfo nodeId="5073985075243144364" varName="node" />
+      <varInfo nodeId="5073985075243144364" varName="scope" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144356" fileName="SInputRef_Editor.java" startLine="87" startPosition="0" endLine="91" endPosition="0">
+      <varInfo nodeId="5073985075243144356" varName="editorContext" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144356" fileName="SInputRef_Editor.java" startLine="91" startPosition="0" endLine="95" endPosition="0">
+      <varInfo nodeId="5073985075243144356" varName="editorContext" />
+      <varInfo nodeId="5073985075243144356" varName="node" />
+    </scopeInfo>
     <scopeInfo nodeId="5073985075243144360" fileName="SInputRef_Editor.java" startLine="38" startPosition="96" endLine="43" endPosition="5" />
-    <scopeInfo nodeId="5073985075243144352" fileName="SInputRef_Editor.java" startLine="27" startPosition="89" endLine="34" endPosition="22" />
+    <scopeInfo nodeId="5073985075243144352" fileName="SInputRef_Editor.java" startLine="27" startPosition="89" endLine="34" endPosition="22">
+      <varInfo nodeId="5073985075243144352" varName="editorCell" />
+    </scopeInfo>
     <scopeInfo nodeId="5073985075243149397" fileName="SInputRef_Editor.java" startLine="49" startPosition="94" endLine="56" endPosition="65" />
-    <scopeInfo nodeId="5073985075243144360" fileName="SInputRef_Editor.java" startLine="37" startPosition="90" endLine="45" endPosition="22" />
-    <scopeInfo nodeId="5073985075243144352" fileName="SInputRef_Editor.java" startLine="26" startPosition="0" endLine="36" endPosition="0" />
-    <scopeInfo nodeId="5073985075243149397" fileName="SInputRef_Editor.java" startLine="48" startPosition="89" endLine="58" endPosition="22" />
-    <scopeInfo nodeId="5073985075243144360" fileName="SInputRef_Editor.java" startLine="36" startPosition="0" endLine="47" endPosition="0" />
-    <scopeInfo nodeId="5073985075243149397" fileName="SInputRef_Editor.java" startLine="47" startPosition="0" endLine="60" endPosition="0" />
-    <scopeInfo nodeId="5073985075243144355" fileName="SInputRef_Editor.java" startLine="61" startPosition="87" endLine="76" endPosition="22" />
-    <scopeInfo nodeId="5073985075243144358" fileName="SInputRef_Editor.java" startLine="96" startPosition="92" endLine="112" endPosition="24" />
-    <scopeInfo nodeId="5073985075243144355" fileName="SInputRef_Editor.java" startLine="60" startPosition="0" endLine="78" endPosition="0" />
-    <scopeInfo nodeId="5073985075243144358" fileName="SInputRef_Editor.java" startLine="95" startPosition="0" endLine="114" endPosition="0" />
-    <unitInfo nodeId="5073985075243144356" fileName="SInputRef_Editor.java" startLine="83" startPosition="0" endLine="115" endPosition="0" unitName="jetbrains.mps.core.syntax.editor.SInputRef_Editor$_Inline_dsjx60_a0a" />
+    <scopeInfo nodeId="5073985075243144360" fileName="SInputRef_Editor.java" startLine="37" startPosition="90" endLine="45" endPosition="22">
+      <varInfo nodeId="5073985075243144360" varName="editorCell" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144352" fileName="SInputRef_Editor.java" startLine="26" startPosition="0" endLine="36" endPosition="0">
+      <varInfo nodeId="5073985075243144352" varName="editorContext" />
+      <varInfo nodeId="5073985075243144352" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243149397" fileName="SInputRef_Editor.java" startLine="48" startPosition="89" endLine="58" endPosition="22">
+      <varInfo nodeId="5073985075243149397" varName="editorCell" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144360" fileName="SInputRef_Editor.java" startLine="36" startPosition="0" endLine="47" endPosition="0">
+      <varInfo nodeId="5073985075243144360" varName="editorContext" />
+      <varInfo nodeId="5073985075243144360" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243149397" fileName="SInputRef_Editor.java" startLine="47" startPosition="0" endLine="60" endPosition="0">
+      <varInfo nodeId="5073985075243149397" varName="editorContext" />
+      <varInfo nodeId="5073985075243149397" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144355" fileName="SInputRef_Editor.java" startLine="61" startPosition="87" endLine="76" endPosition="22">
+      <varInfo nodeId="5073985075243144355" varName="attributeConcept" />
+      <varInfo nodeId="5073985075243144355" varName="attributeKind" />
+      <varInfo nodeId="5073985075243144355" varName="editorCell" />
+      <varInfo nodeId="5073985075243144355" varName="provider" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144358" fileName="SInputRef_Editor.java" startLine="96" startPosition="92" endLine="112" endPosition="24">
+      <varInfo nodeId="5073985075243144358" varName="attributeConcept" />
+      <varInfo nodeId="5073985075243144358" varName="attributeKind" />
+      <varInfo nodeId="5073985075243144358" varName="editorCell" />
+      <varInfo nodeId="5073985075243144358" varName="provider" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144355" fileName="SInputRef_Editor.java" startLine="60" startPosition="0" endLine="78" endPosition="0">
+      <varInfo nodeId="5073985075243144355" varName="editorContext" />
+      <varInfo nodeId="5073985075243144355" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243144358" fileName="SInputRef_Editor.java" startLine="95" startPosition="0" endLine="114" endPosition="0">
+      <varInfo nodeId="5073985075243144358" varName="editorContext" />
+      <varInfo nodeId="5073985075243144358" varName="node" />
+    </scopeInfo>
     <unitInfo nodeId="5073985075243144350" fileName="SInputRef_Editor.java" startLine="22" startPosition="0" endLine="116" endPosition="0" unitName="jetbrains.mps.core.syntax.editor.SInputRef_Editor" />
+    <unitInfo nodeId="5073985075243144356" fileName="SInputRef_Editor.java" startLine="83" startPosition="0" endLine="115" endPosition="0" unitName="jetbrains.mps.core.syntax.editor.SInputRef_Editor$_Inline_dsjx60_a0a" />
   </root>
   <root nodeId="5073985075243225849">
     <nodeInfo nodeId="5073985075243225849" fileName="delete_NoEoi.java" startLine="13" startPosition="95" endLine="14" endPosition="92" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
@@ -1802,12 +2666,23 @@
     <scopeInfo nodeId="5073985075243225849" fileName="delete_NoEoi.java" startLine="20" startPosition="44" endLine="21" endPosition="25" />
     <scopeInfo nodeId="5073985075243225849" fileName="delete_NoEoi.java" startLine="24" startPosition="54" endLine="25" endPosition="56" />
     <scopeInfo nodeId="5073985075243225852" fileName="delete_NoEoi.java" startLine="28" startPosition="75" endLine="29" endPosition="57" />
-    <scopeInfo nodeId="5073985075243225849" fileName="delete_NoEoi.java" startLine="19" startPosition="0" endLine="22" endPosition="5" />
-    <scopeInfo nodeId="5073985075243225849" fileName="delete_NoEoi.java" startLine="12" startPosition="27" endLine="16" endPosition="0" />
-    <scopeInfo nodeId="5073985075243225849" fileName="delete_NoEoi.java" startLine="23" startPosition="0" endLine="27" endPosition="0" />
-    <scopeInfo nodeId="5073985075243225849" fileName="delete_NoEoi.java" startLine="27" startPosition="0" endLine="31" endPosition="0" />
-    <unitInfo nodeId="5073985075243225849" fileName="delete_NoEoi.java" startLine="17" startPosition="0" endLine="32" endPosition="0" unitName="jetbrains.mps.core.syntax.editor.delete_NoEoi$delete_NoEoi_DELETE" />
+    <scopeInfo nodeId="5073985075243225849" fileName="delete_NoEoi.java" startLine="19" startPosition="0" endLine="22" endPosition="5">
+      <varInfo nodeId="5073985075243225849" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243225849" fileName="delete_NoEoi.java" startLine="12" startPosition="27" endLine="16" endPosition="0">
+      <varInfo nodeId="5073985075243225849" varName="context" />
+      <varInfo nodeId="5073985075243225849" varName="editorCell" />
+      <varInfo nodeId="5073985075243225849" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243225849" fileName="delete_NoEoi.java" startLine="23" startPosition="0" endLine="27" endPosition="0">
+      <varInfo nodeId="5073985075243225849" varName="editorContext" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243225849" fileName="delete_NoEoi.java" startLine="27" startPosition="0" endLine="31" endPosition="0">
+      <varInfo nodeId="5073985075243225849" varName="editorContext" />
+      <varInfo nodeId="5073985075243225849" varName="node" />
+    </scopeInfo>
     <unitInfo nodeId="5073985075243225849" fileName="delete_NoEoi.java" startLine="12" startPosition="0" endLine="33" endPosition="0" unitName="jetbrains.mps.core.syntax.editor.delete_NoEoi" />
+    <unitInfo nodeId="5073985075243225849" fileName="delete_NoEoi.java" startLine="17" startPosition="0" endLine="32" endPosition="0" unitName="jetbrains.mps.core.syntax.editor.delete_NoEoi$delete_NoEoi_DELETE" />
   </root>
   <root nodeId="5073985075243238825">
     <nodeInfo nodeId="5073985075243238825" fileName="SLexerPart_Editor.java" startLine="14" startPosition="79" endLine="15" endPosition="61" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
@@ -1822,11 +2697,21 @@
     <nodeInfo nodeId="5073985075243238828" fileName="SLexerPart_Editor.java" startLine="19" startPosition="86" endLine="24" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
     <nodeInfo nodeId="5073985075243238828" fileName="SLexerPart_Editor.java" startLine="17" startPosition="0" endLine="28" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createConstant_9mk8eo_a#(Ljetbrains/mps/nodeEditor/EditorContext;Ljetbrains/mps/smodel/SNode;)Ljetbrains/mps/nodeEditor/cells/EditorCell;" />
     <scopeInfo nodeId="5073985075243238825" fileName="SLexerPart_Editor.java" startLine="14" startPosition="79" endLine="15" endPosition="61" />
-    <scopeInfo nodeId="5073985075243238828" fileName="SLexerPart_Editor.java" startLine="21" startPosition="5" endLine="23" endPosition="48" />
-    <scopeInfo nodeId="5073985075243238825" fileName="SLexerPart_Editor.java" startLine="13" startPosition="58" endLine="17" endPosition="0" />
+    <scopeInfo nodeId="5073985075243238828" fileName="SLexerPart_Editor.java" startLine="21" startPosition="5" endLine="23" endPosition="48">
+      <varInfo nodeId="5073985075243238828" varName="style" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243238825" fileName="SLexerPart_Editor.java" startLine="13" startPosition="58" endLine="17" endPosition="0">
+      <varInfo nodeId="5073985075243238825" varName="editorContext" />
+      <varInfo nodeId="5073985075243238825" varName="node" />
+    </scopeInfo>
     <scopeInfo nodeId="5073985075243238828" fileName="SLexerPart_Editor.java" startLine="19" startPosition="86" endLine="24" endPosition="5" />
-    <scopeInfo nodeId="5073985075243238828" fileName="SLexerPart_Editor.java" startLine="18" startPosition="87" endLine="26" endPosition="22" />
-    <scopeInfo nodeId="5073985075243238828" fileName="SLexerPart_Editor.java" startLine="17" startPosition="0" endLine="28" endPosition="0" />
+    <scopeInfo nodeId="5073985075243238828" fileName="SLexerPart_Editor.java" startLine="18" startPosition="87" endLine="26" endPosition="22">
+      <varInfo nodeId="5073985075243238828" varName="editorCell" />
+    </scopeInfo>
+    <scopeInfo nodeId="5073985075243238828" fileName="SLexerPart_Editor.java" startLine="17" startPosition="0" endLine="28" endPosition="0">
+      <varInfo nodeId="5073985075243238828" varName="editorContext" />
+      <varInfo nodeId="5073985075243238828" varName="node" />
+    </scopeInfo>
     <unitInfo nodeId="5073985075243238825" fileName="SLexerPart_Editor.java" startLine="13" startPosition="0" endLine="29" endPosition="0" unitName="jetbrains.mps.core.syntax.editor.SLexerPart_Editor" />
   </root>
 </debugInfo>

@@ -5,7 +5,6 @@ package jetbrains.mps.core.query.behavior;
 import jetbrains.mps.smodel.SNode;
 import jetbrains.mps.core.query.runtime.EvaluationEnvironment;
 import jetbrains.mps.core.query.runtime.EvaluationContext;
-import java.io.Serializable;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.core.query.runtime.QueryScope;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
@@ -13,12 +12,12 @@ import jetbrains.mps.core.query.runtime.SimpleRoleScope;
 import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.smodel.structure.BehaviorDescriptor;
-import jetbrains.mps.smodel.structure.ConceptRegistry;
+import jetbrains.mps.smodel.runtime.BehaviorDescriptor;
+import jetbrains.mps.smodel.language.ConceptRegistry;
 import jetbrains.mps.smodel.behaviour.BehaviorManager;
 
 public class MqlQuery_Behavior {
-  private static Class[] PARAMETERS_1671449901154581077 = {SNode.class, EvaluationEnvironment.class, EvaluationContext.class, Serializable.class};
+  private static Class[] PARAMETERS_1671449901154581077 = {SNode.class, EvaluationEnvironment.class, EvaluationContext.class, Object[].class};
 
   public static void init(SNode thisNode) {
   }

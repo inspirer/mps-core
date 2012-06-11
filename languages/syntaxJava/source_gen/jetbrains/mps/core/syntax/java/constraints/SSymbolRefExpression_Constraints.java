@@ -13,7 +13,6 @@ import jetbrains.mps.smodel.runtime.ReferenceScopeProvider;
 import jetbrains.mps.smodel.runtime.base.BaseReferenceScopeProvider;
 import jetbrains.mps.smodel.IOperationContext;
 import jetbrains.mps.smodel.runtime.ReferencePresentationContext;
-import org.apache.commons.lang.StringUtils;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.smodel.runtime.ReferenceConstraintsContext;
@@ -50,7 +49,7 @@ public class SSymbolRefExpression_Constraints extends BaseConstraintsDescriptor 
 
           @Override
           public String getPresentation(final IOperationContext operationContext, final ReferencePresentationContext _context) {
-            String name = (StringUtils.isNotEmpty(SPropertyOperations.getString(_context.getParameterNode(), "refalias")) ?
+            String name = (isNotEmpty_c3xnmz_a0a0a0b0a0a0b0a1a0b0a(SPropertyOperations.getString(_context.getParameterNode(), "refalias")) ?
               SPropertyOperations.getString(_context.getParameterNode(), "refalias") :
               ((SPropertyOperations.getBoolean(_context.getParameterNode(), "isOptional") ?
                 SPropertyOperations.getString(SLinkOperations.getTarget(_context.getParameterNode(), "ref", false), "name") + "opt" :
@@ -91,5 +90,9 @@ public class SSymbolRefExpression_Constraints extends BaseConstraintsDescriptor 
       }
     });
     return references;
+  }
+
+  public static boolean isNotEmpty_c3xnmz_a0a0a0b0a0a0b0a1a0b0a(String str) {
+    return str != null && str.length() > 0;
   }
 }
