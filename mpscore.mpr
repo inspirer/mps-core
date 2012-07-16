@@ -16,7 +16,9 @@
   <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false" />
   <component name="MPSProject">
     <projectModules>
+      <modulePath path="${project}/languages/notation/notation.mpl" folder="" />
       <modulePath path="${project}/languages/query/query.mpl" />
+      <modulePath path="${project}/languages/structure/structure.mpl" folder="" />
       <modulePath path="${project}/languages/syntax/syntax.mpl" folder="" />
       <modulePath path="${project}/languages/syntaxJava/java.mpl" folder="" />
       <modulePath path="${project}/languages/template/template.mpl" folder="" />
