@@ -36,6 +36,11 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="enum" />
       <link role="concept" roleId="tp1t.1213093996982" targetNodeId="ydsw.7581772527307852674" resolveInfo="SEnumerationMember" />
     </node>
+    <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="2223786200032642316">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="members" />
+      <link role="concept" roleId="tp1t.1213093996982" targetNodeId="ydsw.7581772527308071265" resolveInfo="SConstraintsPart" />
+      <link role="defaultConcreteConcept" roleId="tp1t.1213106917431" targetNodeId="ydsw.2223786200032642308" resolveInfo="SConstraintsPartEmptyLine" />
+    </node>
   </roots>
   <root id="6195190339581962053" />
   <root id="6195190339581979662">
@@ -199,5 +204,6 @@
       </node>
     </node>
   </root>
+  <root id="2223786200032642316" />
 </model>
 

@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debugInfo>
-  <unitInfo fileName="ConstraintsAspectDescriptor.java" startLine="9" startPosition="0" endLine="35" endPosition="0" unitName="jetbrains.mps.core.structure.constraints.ConstraintsAspectDescriptor" />
+  <unitInfo fileName="ConstraintsAspectDescriptor.java" startLine="9" startPosition="0" endLine="37" endPosition="0" unitName="jetbrains.mps.core.structure.constraints.ConstraintsAspectDescriptor" />
+  <root nodeId="2223786200032642316">
+    <nodeInfo nodeId="2223786200032642316" fileName="SConstraintsPart_Constraints.java" startLine="8" startPosition="41" endLine="9" endPosition="69" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+    <nodeInfo nodeId="2223786200032642316" fileName="SConstraintsPart_Constraints.java" startLine="12" startPosition="51" endLine="13" endPosition="78" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2223786200032642316" fileName="SConstraintsPart_Constraints.java" startLine="7" startPosition="77" endLine="10" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="SConstraintsPart_Constraints#()V" />
+    <nodeInfo nodeId="2223786200032642316" fileName="SConstraintsPart_Constraints.java" startLine="11" startPosition="0" endLine="15" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getDefaultConcreteConceptFqName#()Ljava/lang/String;" />
+    <scopeInfo nodeId="2223786200032642316" fileName="SConstraintsPart_Constraints.java" startLine="8" startPosition="41" endLine="9" endPosition="69" />
+    <scopeInfo nodeId="2223786200032642316" fileName="SConstraintsPart_Constraints.java" startLine="12" startPosition="51" endLine="13" endPosition="78" />
+    <scopeInfo nodeId="2223786200032642316" fileName="SConstraintsPart_Constraints.java" startLine="7" startPosition="77" endLine="10" endPosition="3" />
+    <scopeInfo nodeId="2223786200032642316" fileName="SConstraintsPart_Constraints.java" startLine="11" startPosition="0" endLine="15" endPosition="0" />
+    <unitInfo nodeId="2223786200032642316" fileName="SConstraintsPart_Constraints.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="jetbrains.mps.core.structure.constraints.SConstraintsPart_Constraints" />
+  </root>
   <root nodeId="6195190339581962053">
     <nodeInfo nodeId="6195190339581962053" fileName="SStructureElement_Constraints.java" startLine="8" startPosition="42" endLine="9" endPosition="70" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
     <nodeInfo nodeId="6195190339581962053" fileName="SStructureElement_Constraints.java" startLine="12" startPosition="51" endLine="13" endPosition="72" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
