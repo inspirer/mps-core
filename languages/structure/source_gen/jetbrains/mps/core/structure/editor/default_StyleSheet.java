@@ -30,4 +30,10 @@ public class default_StyleSheet {
     style.set(StyleAttributes.TEXT_COLOR, new Color(4161375));
     return style;
   }
+
+  public static Style getString(final EditorCell cell) {
+    Style style = new Style(cell);
+    style.set(StyleAttributes.TEXT_COLOR, MPSColors.blue);
+    return style;
+  }
 }

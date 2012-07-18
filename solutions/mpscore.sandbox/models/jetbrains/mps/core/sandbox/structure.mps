@@ -110,11 +110,267 @@
       </node>
     </node>
     <node role="structure" roleId="ydsw.6195190339581766884" type="ydsw.SStructureEmptyLine" typeId="ydsw.6195190339581962051" id="7581772527307617791" />
-    <node role="structure" roleId="ydsw.6195190339581766884" type="ydsw.SStructureEmptyLine" typeId="ydsw.6195190339581962051" id="7581772527307617792" />
-    <node role="structure" roleId="ydsw.6195190339581766884" type="74m3.SConceptNotation" typeId="74m3.6195190339582080388" id="6195190339582081009">
-      <link role="concept" roleId="74m3.6195190339582080391" targetNodeId="6195190339582074039" resolveInfo="CharacterReader" />
+    <node role="structure" roleId="ydsw.6195190339581766884" type="ydsw.SStructureEmptyLine" typeId="ydsw.6195190339581962051" id="3647933405694826359" />
+    <node role="structure" roleId="ydsw.6195190339581766884" type="74m3.SConceptNotation" typeId="74m3.6195190339582080388" id="8667867085240603242">
+      <link role="concept" roleId="74m3.6195190339582080391" targetNodeId="6195190339582074032" resolveInfo="Reader" />
+      <node role="alternatives" roleId="74m3.3647933405694717738" type="74m3.SNotationAlternativePart" typeId="74m3.3647933405694717735" id="8667867085240603243">
+        <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationLabel" typeId="74m3.3647933405694713882" id="8667867085240603244">
+          <property name="text" nameId="74m3.3647933405694713883" value="asad" />
+        </node>
+        <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationLabel" typeId="74m3.3647933405694713882" id="8667867085240603245">
+          <property name="text" nameId="74m3.3647933405694713883" value="asd" />
+        </node>
+        <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationParentheses" typeId="74m3.3647933405694717717" id="8667867085240603246">
+          <node role="alternatives" roleId="74m3.3647933405694717738" type="74m3.SNotationAlternativePart" typeId="74m3.3647933405694717735" id="8667867085240603247">
+            <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationLabel" typeId="74m3.3647933405694713882" id="8667867085240603248">
+              <property name="text" nameId="74m3.3647933405694713883" value="d" />
+            </node>
+          </node>
+          <node role="alternatives" roleId="74m3.3647933405694717738" type="74m3.SNotationAlternativePart" typeId="74m3.3647933405694717735" id="8667867085240603249">
+            <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationLabel" typeId="74m3.3647933405694713882" id="8667867085240603250">
+              <property name="text" nameId="74m3.3647933405694713883" value="asd" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="alternatives" roleId="74m3.3647933405694717738" type="74m3.SNotationAlternativePart" typeId="74m3.3647933405694717735" id="8667867085240603251">
+        <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationLabel" typeId="74m3.3647933405694713882" id="8667867085240603252">
+          <property name="text" nameId="74m3.3647933405694713883" value="asd" />
+        </node>
+        <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationLabel" typeId="74m3.3647933405694713882" id="8667867085240603253">
+          <property name="text" nameId="74m3.3647933405694713883" value="asd" />
+        </node>
+        <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationNewLine" typeId="74m3.3647933405694717730" id="8667867085240603254" />
+      </node>
     </node>
-    <node role="structure" roleId="ydsw.6195190339581766884" type="ydsw.SStructureEmptyLine" typeId="ydsw.6195190339581962051" id="6195190339582080384" />
+    <node role="structure" roleId="ydsw.6195190339581766884" type="ydsw.SStructureEmptyLine" typeId="ydsw.6195190339581962051" id="8667867085240603241" />
+    <node role="structure" roleId="ydsw.6195190339581766884" type="74m3.SConceptNotation" typeId="74m3.6195190339582080388" id="3647933405694829069">
+      <property name="id" nameId="74m3.6195190339582080396" value="inspector" />
+      <link role="concept" roleId="74m3.6195190339582080391" targetNodeId="6195190339582069380" resolveInfo="ILazy" />
+      <node role="alternatives" roleId="74m3.3647933405694717738" type="74m3.SNotationAlternativePart" typeId="74m3.3647933405694717735" id="3647933405694833581" />
+      <node role="alternatives" roleId="74m3.3647933405694717738" type="74m3.SNotationAlternativePart" typeId="74m3.3647933405694717735" id="3647933405694833580">
+        <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationLabel" typeId="74m3.3647933405694713882" id="3647933405694833582">
+          <property name="text" nameId="74m3.3647933405694713883" value="asd" />
+        </node>
+        <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationNewLine" typeId="74m3.3647933405694717730" id="3647933405694833584" />
+        <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationLabel" typeId="74m3.3647933405694713882" id="3647933405694833586">
+          <property name="text" nameId="74m3.3647933405694713883" value="aa" />
+        </node>
+        <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationParentheses" typeId="74m3.3647933405694717717" id="8667867085240448573">
+          <node role="alternatives" roleId="74m3.3647933405694717738" type="74m3.SNotationAlternativePart" typeId="74m3.3647933405694717735" id="8667867085240448574">
+            <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationLabel" typeId="74m3.3647933405694713882" id="8667867085240448576">
+              <property name="text" nameId="74m3.3647933405694713883" value="{" />
+            </node>
+            <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationLabel" typeId="74m3.3647933405694713882" id="8667867085240448582">
+              <property name="text" nameId="74m3.3647933405694713883" value="}" />
+            </node>
+          </node>
+          <node role="alternatives" roleId="74m3.3647933405694717738" type="74m3.SNotationAlternativePart" typeId="74m3.3647933405694717735" id="8667867085240448577">
+            <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationLabel" typeId="74m3.3647933405694713882" id="8667867085240448578">
+              <property name="text" nameId="74m3.3647933405694713883" value="aaa" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="structure" roleId="ydsw.6195190339581766884" type="ydsw.SStructureEmptyLine" typeId="ydsw.6195190339581962051" id="3647933405694781685" />
+    <node role="structure" roleId="ydsw.6195190339581766884" type="74m3.SConceptNotation" typeId="74m3.6195190339582080388" id="3647933405694781676">
+      <property name="id" nameId="74m3.6195190339582080396" value="inspector" />
+      <link role="concept" roleId="74m3.6195190339582080391" targetNodeId="6195190339582074039" resolveInfo="CharacterReader" />
+      <node role="alternatives" roleId="74m3.3647933405694717738" type="74m3.SNotationAlternativePart" typeId="74m3.3647933405694717735" id="3647933405694781678">
+        <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationLabel" typeId="74m3.3647933405694713882" id="3647933405694781679">
+          <property name="text" nameId="74m3.3647933405694713883" value="token" />
+        </node>
+      </node>
+      <node role="alternatives" roleId="74m3.3647933405694717738" type="74m3.SNotationAlternativePart" typeId="74m3.3647933405694717735" id="3647933405694781684">
+        <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationLabel" typeId="74m3.3647933405694713882" id="3647933405694782257">
+          <property name="text" nameId="74m3.3647933405694713883" value="top level new line" />
+        </node>
+        <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationNewLine" typeId="74m3.3647933405694717730" id="3647933405694785177" />
+        <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationLabel" typeId="74m3.3647933405694713882" id="3647933405694808253">
+          <property name="text" nameId="74m3.3647933405694713883" value="once again" />
+        </node>
+        <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationNewLine" typeId="74m3.3647933405694717730" id="3647933405694808255" />
+        <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationLabel" typeId="74m3.3647933405694713882" id="3647933405694785182">
+          <property name="text" nameId="74m3.3647933405694713883" value="very long strings" />
+        </node>
+        <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationLabel" typeId="74m3.3647933405694713882" id="3647933405694808256">
+          <property name="text" nameId="74m3.3647933405694713883" value="very long strings" />
+        </node>
+        <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationLabel" typeId="74m3.3647933405694713882" id="3647933405694808257">
+          <property name="text" nameId="74m3.3647933405694713883" value="very long strings" />
+        </node>
+        <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationLabel" typeId="74m3.3647933405694713882" id="3647933405694808258">
+          <property name="text" nameId="74m3.3647933405694713883" value="very long strings" />
+        </node>
+        <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationLabel" typeId="74m3.3647933405694713882" id="3647933405694808259">
+          <property name="text" nameId="74m3.3647933405694713883" value="very long strings" />
+        </node>
+        <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationLabel" typeId="74m3.3647933405694713882" id="3647933405694808260">
+          <property name="text" nameId="74m3.3647933405694713883" value="very long strings" />
+        </node>
+        <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationLabel" typeId="74m3.3647933405694713882" id="3647933405694808261">
+          <property name="text" nameId="74m3.3647933405694713883" value="very long strings" />
+        </node>
+        <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationLabel" typeId="74m3.3647933405694713882" id="3647933405694808262">
+          <property name="text" nameId="74m3.3647933405694713883" value="very long strings" />
+        </node>
+        <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationLabel" typeId="74m3.3647933405694713882" id="3647933405694808263">
+          <property name="text" nameId="74m3.3647933405694713883" value="very long strings" />
+        </node>
+        <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationLabel" typeId="74m3.3647933405694713882" id="3647933405694808264">
+          <property name="text" nameId="74m3.3647933405694713883" value="very long strings" />
+        </node>
+        <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationLabel" typeId="74m3.3647933405694713882" id="3647933405694808265">
+          <property name="text" nameId="74m3.3647933405694713883" value="very long strings" />
+        </node>
+        <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationLabel" typeId="74m3.3647933405694713882" id="3647933405694808266">
+          <property name="text" nameId="74m3.3647933405694713883" value="very long strings" />
+        </node>
+        <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationLabel" typeId="74m3.3647933405694713882" id="3647933405694808267">
+          <property name="text" nameId="74m3.3647933405694713883" value="very long strings" />
+        </node>
+        <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationLabel" typeId="74m3.3647933405694713882" id="3647933405694808268">
+          <property name="text" nameId="74m3.3647933405694713883" value="very long strings" />
+        </node>
+        <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationLabel" typeId="74m3.3647933405694713882" id="3647933405694808269">
+          <property name="text" nameId="74m3.3647933405694713883" value="very long strings" />
+        </node>
+        <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationLabel" typeId="74m3.3647933405694713882" id="3647933405694808270">
+          <property name="text" nameId="74m3.3647933405694713883" value="very long strings" />
+        </node>
+        <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationLabel" typeId="74m3.3647933405694713882" id="3647933405694808271">
+          <property name="text" nameId="74m3.3647933405694713883" value="very long strings" />
+        </node>
+        <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationLabel" typeId="74m3.3647933405694713882" id="3647933405694808272">
+          <property name="text" nameId="74m3.3647933405694713883" value="very long strings" />
+        </node>
+        <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationLabel" typeId="74m3.3647933405694713882" id="3647933405694808273">
+          <property name="text" nameId="74m3.3647933405694713883" value="very long strings" />
+        </node>
+        <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationLabel" typeId="74m3.3647933405694713882" id="3647933405694808275">
+          <property name="text" nameId="74m3.3647933405694713883" value="very long strings" />
+        </node>
+        <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationLabel" typeId="74m3.3647933405694713882" id="3647933405694808274">
+          <property name="text" nameId="74m3.3647933405694713883" value="very long strings" />
+        </node>
+        <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationLabel" typeId="74m3.3647933405694713882" id="3647933405694808277">
+          <property name="text" nameId="74m3.3647933405694713883" value="newline" />
+        </node>
+        <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationNewLine" typeId="74m3.3647933405694717730" id="3647933405694785184" />
+        <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationLabel" typeId="74m3.3647933405694713882" id="3647933405694801725">
+          <property name="text" nameId="74m3.3647933405694713883" value="sdfd" />
+        </node>
+        <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationLabel" typeId="74m3.3647933405694713882" id="3647933405694801727">
+          <property name="text" nameId="74m3.3647933405694713883" value="sdf" />
+        </node>
+      </node>
+      <node role="alternatives" roleId="74m3.3647933405694717738" type="74m3.SNotationAlternativePart" typeId="74m3.3647933405694717735" id="3647933405694808279">
+        <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationLabel" typeId="74m3.3647933405694713882" id="3647933405694808288">
+          <property name="text" nameId="74m3.3647933405694713883" value="text" />
+        </node>
+        <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationParentheses" typeId="74m3.3647933405694717717" id="3647933405694808280">
+          <node role="alternatives" roleId="74m3.3647933405694717738" type="74m3.SNotationAlternativePart" typeId="74m3.3647933405694717735" id="3647933405694808281">
+            <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationLabel" typeId="74m3.3647933405694713882" id="3647933405694808282">
+              <property name="text" nameId="74m3.3647933405694713883" value="alternative" />
+            </node>
+          </node>
+          <node role="alternatives" roleId="74m3.3647933405694717738" type="74m3.SNotationAlternativePart" typeId="74m3.3647933405694717735" id="3647933405694808283">
+            <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationLabel" typeId="74m3.3647933405694713882" id="3647933405694808284">
+              <property name="text" nameId="74m3.3647933405694713883" value="simple" />
+            </node>
+          </node>
+        </node>
+        <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationLabel" typeId="74m3.3647933405694713882" id="3647933405694808286">
+          <property name="text" nameId="74m3.3647933405694713883" value="text" />
+        </node>
+      </node>
+      <node role="alternatives" roleId="74m3.3647933405694717738" type="74m3.SNotationAlternativePart" typeId="74m3.3647933405694717735" id="3647933405694808290">
+        <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationLabel" typeId="74m3.3647933405694713882" id="3647933405694808291">
+          <property name="text" nameId="74m3.3647933405694713883" value="complex" />
+        </node>
+        <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationLabel" typeId="74m3.3647933405694713882" id="3647933405694823911">
+          <property name="text" nameId="74m3.3647933405694713883" value="asdadasd" />
+        </node>
+        <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationParentheses" typeId="74m3.3647933405694717717" id="3647933405694808293">
+          <node role="alternatives" roleId="74m3.3647933405694717738" type="74m3.SNotationAlternativePart" typeId="74m3.3647933405694717735" id="3647933405694808294">
+            <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationLabel" typeId="74m3.3647933405694713882" id="3647933405694808296">
+              <property name="text" nameId="74m3.3647933405694713883" value="alt" />
+            </node>
+            <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationNewLine" typeId="74m3.3647933405694717730" id="3647933405694808300" />
+            <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationLabel" typeId="74m3.3647933405694713882" id="3647933405694808302">
+              <property name="text" nameId="74m3.3647933405694713883" value="x" />
+            </node>
+            <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationLabel" typeId="74m3.3647933405694713882" id="3647933405694808303">
+              <property name="text" nameId="74m3.3647933405694713883" value="very long strings" />
+            </node>
+            <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationLabel" typeId="74m3.3647933405694713882" id="3647933405694808304">
+              <property name="text" nameId="74m3.3647933405694713883" value="very long strings" />
+            </node>
+            <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationLabel" typeId="74m3.3647933405694713882" id="3647933405694808305">
+              <property name="text" nameId="74m3.3647933405694713883" value="very long strings" />
+            </node>
+            <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationLabel" typeId="74m3.3647933405694713882" id="3647933405694808306">
+              <property name="text" nameId="74m3.3647933405694713883" value="very long strings" />
+            </node>
+            <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationLabel" typeId="74m3.3647933405694713882" id="3647933405694808307">
+              <property name="text" nameId="74m3.3647933405694713883" value="very long strings" />
+            </node>
+            <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationLabel" typeId="74m3.3647933405694713882" id="3647933405694808308">
+              <property name="text" nameId="74m3.3647933405694713883" value="very long strings" />
+            </node>
+            <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationLabel" typeId="74m3.3647933405694713882" id="3647933405694808309">
+              <property name="text" nameId="74m3.3647933405694713883" value="very long strings" />
+            </node>
+            <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationLabel" typeId="74m3.3647933405694713882" id="3647933405694808310">
+              <property name="text" nameId="74m3.3647933405694713883" value="very long strings" />
+            </node>
+            <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationLabel" typeId="74m3.3647933405694713882" id="3647933405694808311">
+              <property name="text" nameId="74m3.3647933405694713883" value="very long strings" />
+            </node>
+            <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationParentheses" typeId="74m3.3647933405694717717" id="3647933405694823913">
+              <node role="alternatives" roleId="74m3.3647933405694717738" type="74m3.SNotationAlternativePart" typeId="74m3.3647933405694717735" id="3647933405694823914">
+                <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationLabel" typeId="74m3.3647933405694713882" id="3647933405694823915" />
+              </node>
+              <node role="alternatives" roleId="74m3.3647933405694717738" type="74m3.SNotationAlternativePart" typeId="74m3.3647933405694717735" id="3647933405694823916">
+                <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationLabel" typeId="74m3.3647933405694713882" id="3647933405694823917">
+                  <property name="text" nameId="74m3.3647933405694713883" value="asd" />
+                </node>
+                <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationNewLine" typeId="74m3.3647933405694717730" id="3647933405694823922" />
+              </node>
+            </node>
+            <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationNewLine" typeId="74m3.3647933405694717730" id="3647933405694808313" />
+            <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationLabel" typeId="74m3.3647933405694713882" id="3647933405694808315">
+              <property name="text" nameId="74m3.3647933405694713883" value="y" />
+            </node>
+          </node>
+          <node role="alternatives" roleId="74m3.3647933405694717738" type="74m3.SNotationAlternativePart" typeId="74m3.3647933405694717735" id="3647933405694808297">
+            <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationLabel" typeId="74m3.3647933405694713882" id="3647933405694808298">
+              <property name="text" nameId="74m3.3647933405694713883" value="another" />
+            </node>
+            <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationNewLine" typeId="74m3.3647933405694717730" id="3647933405694808327" />
+            <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationNewLine" typeId="74m3.3647933405694717730" id="3647933405694808329" />
+          </node>
+        </node>
+        <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationParentheses" typeId="74m3.3647933405694717717" id="3647933405694808317">
+          <node role="alternatives" roleId="74m3.3647933405694717738" type="74m3.SNotationAlternativePart" typeId="74m3.3647933405694717735" id="3647933405694808318">
+            <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationLabel" typeId="74m3.3647933405694713882" id="3647933405694808320">
+              <property name="text" nameId="74m3.3647933405694713883" value="new one" />
+            </node>
+          </node>
+        </node>
+        <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationParentheses" typeId="74m3.3647933405694717717" id="8667867085240448589">
+          <node role="alternatives" roleId="74m3.3647933405694717738" type="74m3.SNotationAlternativePart" typeId="74m3.3647933405694717735" id="8667867085240448590">
+            <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationLabel" typeId="74m3.3647933405694713882" id="8667867085240448591">
+              <property name="text" nameId="74m3.3647933405694713883" value="aaa" />
+            </node>
+            <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationLabel" typeId="74m3.3647933405694713882" id="8667867085240448593">
+              <property name="text" nameId="74m3.3647933405694713883" value="aaa" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </root>
 </model>
 

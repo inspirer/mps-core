@@ -7,7 +7,7 @@ import java.util.Arrays;
 import jetbrains.mps.smodel.runtime.interpreted.BehaviorAspectInterpreted;
 
 public class BehaviorAspectDescriptor implements jetbrains.mps.smodel.runtime.BehaviorAspectDescriptor {
-  private static String[] stringSwitchCases_846f5o_a0a0a = new String[]{"jetbrains.mps.core.notation.structure.SConceptNotation"};
+  private static String[] stringSwitchCases_846f5o_a0a0a = new String[]{"jetbrains.mps.core.notation.structure.SConceptNotation", "jetbrains.mps.core.notation.structure.SNotationAlternativePart", "jetbrains.mps.core.notation.structure.SNotationLabel", "jetbrains.mps.core.notation.structure.SNotationNewLine", "jetbrains.mps.core.notation.structure.SNotationParentheses"};
 
   public BehaviorAspectDescriptor() {
   }
@@ -16,6 +16,14 @@ public class BehaviorAspectDescriptor implements jetbrains.mps.smodel.runtime.Be
     switch (Arrays.binarySearch(stringSwitchCases_846f5o_a0a0a, fqName)) {
       case 0:
         return new SConceptNotation_BehaviorDescriptor();
+      case 2:
+        return new SNotationLabel_BehaviorDescriptor();
+      case 4:
+        return new SNotationParentheses_BehaviorDescriptor();
+      case 3:
+        return new SNotationNewLine_BehaviorDescriptor();
+      case 1:
+        return new SNotationAlternativePart_BehaviorDescriptor();
       default:
         return BehaviorAspectInterpreted.getInstance().getDescriptor(fqName);
     }

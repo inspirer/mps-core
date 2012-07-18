@@ -31,9 +31,6 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="concept" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="ydsw.6195190339581766741" resolveInfo="SConcept" />
     </node>
-    <node type="tpc2.StyleSheet" typeId="tpc2.1186402211651" id="6195190339581766834">
-      <property name="name" nameId="tpck.1169194664001" value="default" />
-    </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="6195190339581766842">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="concept" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="ydsw.6195190339581766740" resolveInfo="SInterfaceConcept" />
@@ -143,6 +140,9 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="members" />
       <property name="name" nameId="tpck.1169194664001" value="SConstraints_delete" />
       <link role="applicableConcept" roleId="tpc2.1139535219968" targetNodeId="ydsw.7581772527308071232" resolveInfo="SConstraints" />
+    </node>
+    <node type="tpc2.StyleSheet" typeId="tpc2.1186402211651" id="6195190339581766834">
+      <property name="name" nameId="tpck.1169194664001" value="default" />
     </node>
   </roots>
   <root id="6195190339581766727">
@@ -344,35 +344,6 @@
         <link role="styleClass" roleId="tpc2.1186406756722" targetNodeId="5073985075243144250" resolveInfo="punctuation" />
         <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.MatchingLabelStyleClassItem" typeId="tpc2.1236262245656" id="6195190339581766833">
           <property name="labelName" nameId="tpc2.1238091709220" value="body-brace" />
-        </node>
-      </node>
-    </node>
-  </root>
-  <root id="6195190339581766834">
-    <node role="styleClass" roleId="tpc2.1186402402630" type="tpc2.StyleSheetClass" typeId="tpc2.1186402373407" id="5073985075243002241">
-      <property name="name" nameId="tpck.1169194664001" value="keyword" />
-      <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.FontStyleStyleClassItem" typeId="tpc2.1186403751766" id="5073985075243149399">
-        <property name="style" nameId="tpc2.1186403771423" value="BOLD" />
-      </node>
-      <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.ForegroundColorStyleClassItem" typeId="tpc2.1186404549998" id="5073985075243149402">
-        <property name="color" nameId="tpc2.1186403713874" value="DARK_BLUE" />
-      </node>
-    </node>
-    <node role="styleClass" roleId="tpc2.1186402402630" type="tpc2.StyleSheetClass" typeId="tpc2.1186402373407" id="5073985075243144250">
-      <property name="name" nameId="tpck.1169194664001" value="punctuation" />
-      <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.IndentLayoutNoWrapClassItem" typeId="tpc2.1240253180846" id="5073985075243144251">
-        <property name="flag" nameId="tpc2.1186414551515" value="true" />
-      </node>
-      <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.FontStyleStyleClassItem" typeId="tpc2.1186403751766" id="5073985075243144255" />
-    </node>
-    <node role="styleClass" roleId="tpc2.1186402402630" type="tpc2.StyleSheetClass" typeId="tpc2.1186402373407" id="2481283025450046982">
-      <property name="name" nameId="tpck.1169194664001" value="comment" />
-      <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.FontStyleStyleClassItem" typeId="tpc2.1186403751766" id="2481283025450046983">
-        <property name="style" nameId="tpc2.1186403771423" value="ITALIC" />
-      </node>
-      <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.ForegroundColorStyleClassItem" typeId="tpc2.1186404549998" id="2481283025450046986">
-        <node role="query" roleId="tpc2.1186403803051" type="tpc2.RGBColor" typeId="tpc2.1225456267680" id="2481283025450046987">
-          <property name="value" nameId="tpc2.1225456424731" value="3f7f5f" />
         </node>
       </node>
     </node>
@@ -1480,6 +1451,41 @@
             </node>
           </node>
         </node>
+      </node>
+    </node>
+  </root>
+  <root id="6195190339581766834">
+    <node role="styleClass" roleId="tpc2.1186402402630" type="tpc2.StyleSheetClass" typeId="tpc2.1186402373407" id="5073985075243002241">
+      <property name="name" nameId="tpck.1169194664001" value="keyword" />
+      <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.FontStyleStyleClassItem" typeId="tpc2.1186403751766" id="5073985075243149399">
+        <property name="style" nameId="tpc2.1186403771423" value="BOLD" />
+      </node>
+      <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.ForegroundColorStyleClassItem" typeId="tpc2.1186404549998" id="5073985075243149402">
+        <property name="color" nameId="tpc2.1186403713874" value="DARK_BLUE" />
+      </node>
+    </node>
+    <node role="styleClass" roleId="tpc2.1186402402630" type="tpc2.StyleSheetClass" typeId="tpc2.1186402373407" id="5073985075243144250">
+      <property name="name" nameId="tpck.1169194664001" value="punctuation" />
+      <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.IndentLayoutNoWrapClassItem" typeId="tpc2.1240253180846" id="5073985075243144251">
+        <property name="flag" nameId="tpc2.1186414551515" value="true" />
+      </node>
+      <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.FontStyleStyleClassItem" typeId="tpc2.1186403751766" id="5073985075243144255" />
+    </node>
+    <node role="styleClass" roleId="tpc2.1186402402630" type="tpc2.StyleSheetClass" typeId="tpc2.1186402373407" id="2481283025450046982">
+      <property name="name" nameId="tpck.1169194664001" value="comment" />
+      <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.FontStyleStyleClassItem" typeId="tpc2.1186403751766" id="2481283025450046983">
+        <property name="style" nameId="tpc2.1186403771423" value="ITALIC" />
+      </node>
+      <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.ForegroundColorStyleClassItem" typeId="tpc2.1186404549998" id="2481283025450046986">
+        <node role="query" roleId="tpc2.1186403803051" type="tpc2.RGBColor" typeId="tpc2.1225456267680" id="2481283025450046987">
+          <property name="value" nameId="tpc2.1225456424731" value="3f7f5f" />
+        </node>
+      </node>
+    </node>
+    <node role="styleClass" roleId="tpc2.1186402402630" type="tpc2.StyleSheetClass" typeId="tpc2.1186402373407" id="6601450967974198052">
+      <property name="name" nameId="tpck.1169194664001" value="string" />
+      <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.ForegroundColorStyleClassItem" typeId="tpc2.1186404549998" id="6601450967974198053">
+        <property name="color" nameId="tpc2.1186403713874" value="blue" />
       </node>
     </node>
   </root>
