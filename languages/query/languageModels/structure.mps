@@ -132,11 +132,6 @@
       <property name="name" nameId="tpck.1169194664001" value="MqlNullType" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="6762883159245048051" resolveInfo="MqlType" />
     </node>
-    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6762883159245048084">
-      <property name="name" nameId="tpck.1169194664001" value="MqlPropertySelector" />
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="smodel" />
-      <link role="extends" roleId="tpce.1071489389519" targetNodeId="6762883159245048087" resolveInfo="MqlSelector" />
-    </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6762883159245048085">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="expr" />
       <property name="name" nameId="tpck.1169194664001" value="MqlDotExpression" />
@@ -166,11 +161,6 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="vars" />
       <property name="name" nameId="tpck.1169194664001" value="MqlParameterReference" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="6762883159245048012" resolveInfo="MqlExpression" />
-    </node>
-    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6762883159245086411">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="smodel" />
-      <property name="name" nameId="tpck.1169194664001" value="MqlLinkSelector" />
-      <link role="extends" roleId="tpce.1071489389519" targetNodeId="6762883159245048087" resolveInfo="MqlSelector" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6762883159245086414">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="expr" />
@@ -568,14 +558,6 @@
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473994950" resolveInfo="dontSubstituteByDefault" />
     </node>
   </root>
-  <root id="6762883159245048084">
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="6762883159245048090">
-      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
-      <property name="role" nameId="tpce.1071599776563" value="property" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="tpce.1071489288299" resolveInfo="PropertyDeclaration" />
-    </node>
-  </root>
   <root id="6762883159245048085">
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="6762883159245048086">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
@@ -650,14 +632,6 @@
       <property name="role" nameId="tpce.1071599776563" value="parameter" />
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="6762883159245048635" resolveInfo="MqlParameter" />
-    </node>
-  </root>
-  <root id="6762883159245086411">
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="6762883159245086413">
-      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
-      <property name="role" nameId="tpce.1071599776563" value="link" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="tpce.1071489288298" resolveInfo="LinkDeclaration" />
     </node>
   </root>
   <root id="6762883159245086414">

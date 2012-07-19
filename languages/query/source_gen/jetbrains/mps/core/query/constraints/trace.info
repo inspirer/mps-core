@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debugInfo>
-  <unitInfo fileName="ConstraintsAspectDescriptor.java" startLine="9" startPosition="0" endLine="43" endPosition="0" unitName="jetbrains.mps.core.query.constraints.ConstraintsAspectDescriptor" />
+  <unitInfo fileName="ConstraintsAspectDescriptor.java" startLine="9" startPosition="0" endLine="39" endPosition="0" unitName="jetbrains.mps.core.query.constraints.ConstraintsAspectDescriptor" />
   <root nodeId="1992172484410364111">
     <nodeInfo nodeId="1992172484410364111" fileName="MqlParameterReference_Constraints.java" startLine="21" startPosition="82" endLine="22" endPosition="191" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="breakingNode_ny604g_a0a1a0a0a1a0b0a1a0" />
     <nodeInfo nodeId="1992172484410364111" fileName="MqlParameterReference_Constraints.java" startLine="24" startPosition="46" endLine="25" endPosition="70" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
@@ -50,122 +50,6 @@
     <scopeInfo nodeId="2268293679705627797" fileName="MqlAssignment_Constraints.java" startLine="8" startPosition="38" endLine="9" endPosition="62" />
     <scopeInfo nodeId="2268293679705627797" fileName="MqlAssignment_Constraints.java" startLine="7" startPosition="74" endLine="10" endPosition="3" />
     <unitInfo nodeId="2268293679705627797" fileName="MqlAssignment_Constraints.java" startLine="7" startPosition="0" endLine="12" endPosition="0" unitName="jetbrains.mps.core.query.constraints.MqlAssignment_Constraints" />
-  </root>
-  <root nodeId="228266671027861702">
-    <nodeInfo nodeId="228266671027861702" fileName="MqlLinkSelector_Constraints.java" startLine="25" startPosition="76" endLine="26" endPosition="190" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="breakingNode_3c55os_a0a1a0a0a1a0b0a1a0" />
-    <nodeInfo nodeId="228266671027861702" fileName="MqlLinkSelector_Constraints.java" startLine="28" startPosition="40" endLine="29" endPosition="64" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
-    <nodeInfo nodeId="228266671027861702" fileName="MqlLinkSelector_Constraints.java" startLine="33" startPosition="83" endLine="34" endPosition="75" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="228266671027861702" fileName="MqlLinkSelector_Constraints.java" startLine="37" startPosition="44" endLine="38" endPosition="20" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="228266671027861709" fileName="MqlLinkSelector_Constraints.java" startLine="46" startPosition="142" endLine="47" endPosition="56" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="228266671027887190" fileName="MqlLinkSelector_Constraints.java" startLine="47" startPosition="56" endLine="48" endPosition="23" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="228266671027887195" fileName="MqlLinkSelector_Constraints.java" startLine="49" startPosition="56" endLine="50" endPosition="112" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="228266671027887218" fileName="MqlLinkSelector_Constraints.java" startLine="51" startPosition="138" endLine="52" endPosition="223" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="228266671027887236" fileName="MqlLinkSelector_Constraints.java" startLine="53" startPosition="20" endLine="54" endPosition="26" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="228266671027887268" fileName="MqlLinkSelector_Constraints.java" startLine="56" startPosition="103" endLine="57" endPosition="149" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="228266671027887291" fileName="MqlLinkSelector_Constraints.java" startLine="58" startPosition="35" endLine="59" endPosition="140" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="228266671027861706" fileName="MqlLinkSelector_Constraints.java" startLine="61" startPosition="13" endLine="62" endPosition="26" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="228266671027861702" fileName="MqlLinkSelector_Constraints.java" startLine="66" startPosition="61" endLine="67" endPosition="58" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="228266671027861702" fileName="MqlLinkSelector_Constraints.java" startLine="71" startPosition="7" endLine="72" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="228266671027887193" fileName="MqlLinkSelector_Constraints.java" startLine="53" startPosition="18" endLine="55" endPosition="13" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
-    <nodeInfo nodeId="228266671027861702" fileName="MqlLinkSelector_Constraints.java" startLine="27" startPosition="0" endLine="30" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="MqlLinkSelector_Constraints#()V" />
-    <nodeInfo nodeId="228266671027887281" fileName="MqlLinkSelector_Constraints.java" startLine="57" startPosition="149" endLine="60" endPosition="15" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="228266671027861702" fileName="MqlLinkSelector_Constraints.java" startLine="35" startPosition="81" endLine="40" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="hasOwnScopeProvider#()Z" />
-    <nodeInfo nodeId="228266671027861702" fileName="MqlLinkSelector_Constraints.java" startLine="64" startPosition="0" endLine="69" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getSearchScopeValidatorNode#()Ljetbrains/mps/smodel/SNodePointer;" />
-    <nodeInfo nodeId="228266671027887243" fileName="MqlLinkSelector_Constraints.java" startLine="55" startPosition="13" endLine="61" endPosition="13" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="228266671027887179" fileName="MqlLinkSelector_Constraints.java" startLine="48" startPosition="23" endLine="55" endPosition="13" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="228266671027861702" fileName="MqlLinkSelector_Constraints.java" startLine="44" startPosition="49" endLine="64" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createSearchScopeOrListOfNodes#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljava/lang/Object;" />
-    <nodeInfo nodeId="228266671027861702" fileName="MqlLinkSelector_Constraints.java" startLine="43" startPosition="56" endLine="69" endPosition="10" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="228266671027861702" fileName="MqlLinkSelector_Constraints.java" startLine="40" startPosition="0" endLine="71" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
-    <nodeInfo nodeId="228266671027861702" fileName="MqlLinkSelector_Constraints.java" startLine="34" startPosition="75" endLine="71" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="228266671027861702" fileName="MqlLinkSelector_Constraints.java" startLine="31" startPosition="0" endLine="74" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getNotDefaultReferences#()Ljava/util/Map;" />
-    <scopeInfo nodeId="228266671027861702" fileName="MqlLinkSelector_Constraints.java" startLine="28" startPosition="40" endLine="29" endPosition="64" />
-    <scopeInfo nodeId="228266671027861702" fileName="MqlLinkSelector_Constraints.java" startLine="37" startPosition="44" endLine="38" endPosition="20" />
-    <scopeInfo nodeId="228266671027887180" fileName="MqlLinkSelector_Constraints.java" startLine="49" startPosition="56" endLine="50" endPosition="112" />
-    <scopeInfo nodeId="228266671027887209" fileName="MqlLinkSelector_Constraints.java" startLine="51" startPosition="138" endLine="52" endPosition="223" />
-    <scopeInfo nodeId="228266671027887194" fileName="MqlLinkSelector_Constraints.java" startLine="53" startPosition="20" endLine="54" endPosition="26" />
-    <scopeInfo nodeId="228266671027887282" fileName="MqlLinkSelector_Constraints.java" startLine="58" startPosition="35" endLine="59" endPosition="140" />
-    <scopeInfo nodeId="228266671027861702" fileName="MqlLinkSelector_Constraints.java" startLine="66" startPosition="61" endLine="67" endPosition="58" />
-    <scopeInfo nodeId="228266671027861702" fileName="MqlLinkSelector_Constraints.java" startLine="27" startPosition="0" endLine="30" endPosition="3" />
-    <scopeInfo nodeId="228266671027887244" fileName="MqlLinkSelector_Constraints.java" startLine="56" startPosition="103" endLine="60" endPosition="15">
-      <varInfo nodeId="228266671027887269" varName="decl" />
-    </scopeInfo>
-    <scopeInfo nodeId="228266671027861702" fileName="MqlLinkSelector_Constraints.java" startLine="35" startPosition="81" endLine="40" endPosition="0" />
-    <scopeInfo nodeId="228266671027861702" fileName="MqlLinkSelector_Constraints.java" startLine="64" startPosition="0" endLine="69" endPosition="0" />
-    <scopeInfo nodeId="228266671027861705" fileName="MqlLinkSelector_Constraints.java" startLine="46" startPosition="142" endLine="62" endPosition="26">
-      <varInfo nodeId="228266671027861710" varName="result" />
-      <varInfo nodeId="228266671027887191" varName="type" />
-    </scopeInfo>
-    <scopeInfo nodeId="228266671027861702" fileName="MqlLinkSelector_Constraints.java" startLine="44" startPosition="49" endLine="64" endPosition="0">
-      <varInfo nodeId="228266671027861702" varName="_context" />
-      <varInfo nodeId="228266671027861702" varName="operationContext" />
-    </scopeInfo>
-    <scopeInfo nodeId="228266671027861702" fileName="MqlLinkSelector_Constraints.java" startLine="43" startPosition="56" endLine="69" endPosition="10" />
-    <scopeInfo nodeId="228266671027861702" fileName="MqlLinkSelector_Constraints.java" startLine="40" startPosition="0" endLine="71" endPosition="0" />
-    <scopeInfo nodeId="228266671027861702" fileName="MqlLinkSelector_Constraints.java" startLine="33" startPosition="83" endLine="72" endPosition="22">
-      <varInfo nodeId="228266671027861702" varName="references" />
-    </scopeInfo>
-    <scopeInfo nodeId="228266671027861702" fileName="MqlLinkSelector_Constraints.java" startLine="31" startPosition="0" endLine="74" endPosition="0" />
-    <unitInfo nodeId="228266671027861702" fileName="MqlLinkSelector_Constraints.java" startLine="25" startPosition="0" endLine="75" endPosition="0" unitName="jetbrains.mps.core.query.constraints.MqlLinkSelector_Constraints" />
-    <unitInfo nodeId="228266671027861702" fileName="MqlLinkSelector_Constraints.java" startLine="35" startPosition="31" endLine="71" endPosition="5" unitName="jetbrains.mps.core.query.constraints.MqlLinkSelector_Constraints$1" />
-    <unitInfo nodeId="228266671027861702" fileName="MqlLinkSelector_Constraints.java" startLine="44" startPosition="19" endLine="69" endPosition="9" unitName="jetbrains.mps.core.query.constraints.MqlLinkSelector_Constraints$2" />
-  </root>
-  <root nodeId="228266671027887305">
-    <nodeInfo nodeId="228266671027887305" fileName="MqlPropertySelector_Constraints.java" startLine="25" startPosition="80" endLine="26" endPosition="190" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="breakingNode_qzbrjt_a0a1a0a0a1a0b0a1a0" />
-    <nodeInfo nodeId="228266671027887305" fileName="MqlPropertySelector_Constraints.java" startLine="28" startPosition="44" endLine="29" endPosition="68" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
-    <nodeInfo nodeId="228266671027887305" fileName="MqlPropertySelector_Constraints.java" startLine="33" startPosition="83" endLine="34" endPosition="75" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="228266671027887305" fileName="MqlPropertySelector_Constraints.java" startLine="37" startPosition="44" endLine="38" endPosition="20" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="228266671027887309" fileName="MqlPropertySelector_Constraints.java" startLine="46" startPosition="142" endLine="47" endPosition="56" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="228266671027887315" fileName="MqlPropertySelector_Constraints.java" startLine="47" startPosition="56" endLine="48" endPosition="23" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="228266671027887320" fileName="MqlPropertySelector_Constraints.java" startLine="49" startPosition="56" endLine="50" endPosition="112" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="228266671027887337" fileName="MqlPropertySelector_Constraints.java" startLine="51" startPosition="138" endLine="52" endPosition="223" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="228266671027887331" fileName="MqlPropertySelector_Constraints.java" startLine="53" startPosition="20" endLine="54" endPosition="26" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="228266671027887352" fileName="MqlPropertySelector_Constraints.java" startLine="56" startPosition="103" endLine="57" endPosition="149" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="228266671027887361" fileName="MqlPropertySelector_Constraints.java" startLine="58" startPosition="35" endLine="59" endPosition="144" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="228266671027887375" fileName="MqlPropertySelector_Constraints.java" startLine="61" startPosition="13" endLine="62" endPosition="26" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="228266671027887305" fileName="MqlPropertySelector_Constraints.java" startLine="66" startPosition="61" endLine="67" endPosition="58" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="228266671027887305" fileName="MqlPropertySelector_Constraints.java" startLine="71" startPosition="7" endLine="72" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="228266671027887329" fileName="MqlPropertySelector_Constraints.java" startLine="53" startPosition="18" endLine="55" endPosition="13" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
-    <nodeInfo nodeId="228266671027887305" fileName="MqlPropertySelector_Constraints.java" startLine="27" startPosition="0" endLine="30" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="MqlPropertySelector_Constraints#()V" />
-    <nodeInfo nodeId="228266671027887359" fileName="MqlPropertySelector_Constraints.java" startLine="57" startPosition="149" endLine="60" endPosition="15" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="228266671027887305" fileName="MqlPropertySelector_Constraints.java" startLine="35" startPosition="89" endLine="40" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="hasOwnScopeProvider#()Z" />
-    <nodeInfo nodeId="228266671027887305" fileName="MqlPropertySelector_Constraints.java" startLine="64" startPosition="0" endLine="69" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getSearchScopeValidatorNode#()Ljetbrains/mps/smodel/SNodePointer;" />
-    <nodeInfo nodeId="228266671027887350" fileName="MqlPropertySelector_Constraints.java" startLine="55" startPosition="13" endLine="61" endPosition="13" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="228266671027887318" fileName="MqlPropertySelector_Constraints.java" startLine="48" startPosition="23" endLine="55" endPosition="13" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="228266671027887305" fileName="MqlPropertySelector_Constraints.java" startLine="44" startPosition="49" endLine="64" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createSearchScopeOrListOfNodes#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljava/lang/Object;" />
-    <nodeInfo nodeId="228266671027887305" fileName="MqlPropertySelector_Constraints.java" startLine="43" startPosition="56" endLine="69" endPosition="10" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="228266671027887305" fileName="MqlPropertySelector_Constraints.java" startLine="40" startPosition="0" endLine="71" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
-    <nodeInfo nodeId="228266671027887305" fileName="MqlPropertySelector_Constraints.java" startLine="34" startPosition="75" endLine="71" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="228266671027887305" fileName="MqlPropertySelector_Constraints.java" startLine="31" startPosition="0" endLine="74" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getNotDefaultReferences#()Ljava/util/Map;" />
-    <scopeInfo nodeId="228266671027887305" fileName="MqlPropertySelector_Constraints.java" startLine="28" startPosition="44" endLine="29" endPosition="68" />
-    <scopeInfo nodeId="228266671027887305" fileName="MqlPropertySelector_Constraints.java" startLine="37" startPosition="44" endLine="38" endPosition="20" />
-    <scopeInfo nodeId="228266671027887319" fileName="MqlPropertySelector_Constraints.java" startLine="49" startPosition="56" endLine="50" endPosition="112" />
-    <scopeInfo nodeId="228266671027887336" fileName="MqlPropertySelector_Constraints.java" startLine="51" startPosition="138" endLine="52" endPosition="223" />
-    <scopeInfo nodeId="228266671027887330" fileName="MqlPropertySelector_Constraints.java" startLine="53" startPosition="20" endLine="54" endPosition="26" />
-    <scopeInfo nodeId="228266671027887360" fileName="MqlPropertySelector_Constraints.java" startLine="58" startPosition="35" endLine="59" endPosition="144" />
-    <scopeInfo nodeId="228266671027887305" fileName="MqlPropertySelector_Constraints.java" startLine="66" startPosition="61" endLine="67" endPosition="58" />
-    <scopeInfo nodeId="228266671027887305" fileName="MqlPropertySelector_Constraints.java" startLine="27" startPosition="0" endLine="30" endPosition="3" />
-    <scopeInfo nodeId="228266671027887351" fileName="MqlPropertySelector_Constraints.java" startLine="56" startPosition="103" endLine="60" endPosition="15">
-      <varInfo nodeId="228266671027887353" varName="decl" />
-    </scopeInfo>
-    <scopeInfo nodeId="228266671027887305" fileName="MqlPropertySelector_Constraints.java" startLine="35" startPosition="89" endLine="40" endPosition="0" />
-    <scopeInfo nodeId="228266671027887305" fileName="MqlPropertySelector_Constraints.java" startLine="64" startPosition="0" endLine="69" endPosition="0" />
-    <scopeInfo nodeId="228266671027887308" fileName="MqlPropertySelector_Constraints.java" startLine="46" startPosition="142" endLine="62" endPosition="26">
-      <varInfo nodeId="228266671027887310" varName="result" />
-      <varInfo nodeId="228266671027887316" varName="type" />
-    </scopeInfo>
-    <scopeInfo nodeId="228266671027887305" fileName="MqlPropertySelector_Constraints.java" startLine="44" startPosition="49" endLine="64" endPosition="0">
-      <varInfo nodeId="228266671027887305" varName="_context" />
-      <varInfo nodeId="228266671027887305" varName="operationContext" />
-    </scopeInfo>
-    <scopeInfo nodeId="228266671027887305" fileName="MqlPropertySelector_Constraints.java" startLine="43" startPosition="56" endLine="69" endPosition="10" />
-    <scopeInfo nodeId="228266671027887305" fileName="MqlPropertySelector_Constraints.java" startLine="40" startPosition="0" endLine="71" endPosition="0" />
-    <scopeInfo nodeId="228266671027887305" fileName="MqlPropertySelector_Constraints.java" startLine="33" startPosition="83" endLine="72" endPosition="22">
-      <varInfo nodeId="228266671027887305" varName="references" />
-    </scopeInfo>
-    <scopeInfo nodeId="228266671027887305" fileName="MqlPropertySelector_Constraints.java" startLine="31" startPosition="0" endLine="74" endPosition="0" />
-    <unitInfo nodeId="228266671027887305" fileName="MqlPropertySelector_Constraints.java" startLine="25" startPosition="0" endLine="75" endPosition="0" unitName="jetbrains.mps.core.query.constraints.MqlPropertySelector_Constraints" />
-    <unitInfo nodeId="228266671027887305" fileName="MqlPropertySelector_Constraints.java" startLine="35" startPosition="35" endLine="71" endPosition="5" unitName="jetbrains.mps.core.query.constraints.MqlPropertySelector_Constraints$1" />
-    <unitInfo nodeId="228266671027887305" fileName="MqlPropertySelector_Constraints.java" startLine="44" startPosition="19" endLine="69" endPosition="9" unitName="jetbrains.mps.core.query.constraints.MqlPropertySelector_Constraints$2" />
   </root>
   <root nodeId="2852142168179597402">
     <nodeInfo nodeId="2852142168179597410" fileName="MqlParameter_Constraints.java" startLine="15" startPosition="73" endLine="16" endPosition="103" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="REGEXP_bcd3bw_a0a0a1a1a0b0a1a0" />
