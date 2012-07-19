@@ -11,7 +11,7 @@ import jetbrains.mps.nodeEditor.style.Style;
 import jetbrains.mps.nodeEditor.style.StyleAttributes;
 import java.awt.Color;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
-import jetbrains.mps.core.query.editor.MqlSS_StyleSheet;
+import jetbrains.mps.core.structure.editor.default_StyleSheet;
 import jetbrains.mps.nodeEditor.AbstractCellProvider;
 import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
 import jetbrains.mps.core.template.behavior.MtlTemplate_Behavior;
@@ -44,14 +44,14 @@ public class MtlTemplate_Editor extends DefaultNodeEditor {
     return this.createCollection_c4w2e_a(editorContext, node);
   }
 
-  private EditorCell createAlternation_c4w2e_a11a(EditorContext editorContext, SNode node) {
+  private EditorCell createAlternation_c4w2e_a21a(EditorContext editorContext, SNode node) {
     boolean alternationCondition = true;
-    alternationCondition = MtlTemplate_Editor.renderingCondition_c4w2e_a0l0(node, editorContext, editorContext.getOperationContext().getScope());
+    alternationCondition = MtlTemplate_Editor.renderingCondition_c4w2e_a0m0(node, editorContext, editorContext.getOperationContext().getScope());
     EditorCell editorCell = null;
     if (alternationCondition) {
-      editorCell = this.createRefNode_c4w2e_a0l0(editorContext, node);
+      editorCell = this.createRefNode_c4w2e_a0m0(editorContext, node);
     } else {
-      editorCell = this.createCustom_c4w2e_a0l0(editorContext, node);
+      editorCell = this.createCustom_c4w2e_a0m0(editorContext, node);
     }
     return editorCell;
   }
@@ -69,15 +69,16 @@ public class MtlTemplate_Editor extends DefaultNodeEditor {
     editorCell.addEditorCell(this.createConstant_c4w2e_h0(editorContext, node));
     editorCell.addEditorCell(this.createReadOnlyModelAccessor_c4w2e_i0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_c4w2e_j0(editorContext, node));
-    editorCell.addEditorCell(this.createRefNodeList_c4w2e_k0(editorContext, node));
-    editorCell.addEditorCell(this.createCollection_c4w2e_l0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_c4w2e_m0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_c4w2e_k0(editorContext, node));
+    editorCell.addEditorCell(this.createRefNodeList_c4w2e_l0(editorContext, node));
+    editorCell.addEditorCell(this.createCollection_c4w2e_m0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_c4w2e_n0(editorContext, node));
     return editorCell;
   }
 
-  private EditorCell createCollection_c4w2e_l0(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_c4w2e_m0(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createVertical(editorContext, node);
-    editorCell.setCellId("Collection_c4w2e_l0");
+    editorCell.setCellId("Collection_c4w2e_m0");
     {
       Style style = editorCell.getStyle();
       style.set(StyleAttributes.SELECTABLE, false);
@@ -85,14 +86,14 @@ public class MtlTemplate_Editor extends DefaultNodeEditor {
       style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, true);
       style.set(StyleAttributes.BACKGROUND_COLOR, new Color(15395562));
     }
-    editorCell.addEditorCell(this.createAlternation_c4w2e_a11a(editorContext, node));
+    editorCell.addEditorCell(this.createAlternation_c4w2e_a21a(editorContext, node));
     return editorCell;
   }
 
   private EditorCell createConstant_c4w2e_a0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "template");
     editorCell.setCellId("Constant_c4w2e_a0");
-    MqlSS_StyleSheet.getKeyword(editorCell).apply(editorCell);
+    default_StyleSheet.getKeyword(editorCell).apply(editorCell);
     editorCell.setDefaultText("");
     return editorCell;
   }
@@ -100,7 +101,7 @@ public class MtlTemplate_Editor extends DefaultNodeEditor {
   private EditorCell createConstant_c4w2e_c0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "::");
     editorCell.setCellId("Constant_c4w2e_c0");
-    MqlSS_StyleSheet.getPunctuation(editorCell).apply(editorCell);
+    default_StyleSheet.getPunctuation(editorCell).apply(editorCell);
     {
       Style style = editorCell.getStyle();
       style.set(StyleAttributes.PUNCTUATION_RIGHT, true);
@@ -113,7 +114,7 @@ public class MtlTemplate_Editor extends DefaultNodeEditor {
   private EditorCell createConstant_c4w2e_e0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "(");
     editorCell.setCellId("Constant_c4w2e_e0");
-    MqlSS_StyleSheet.getPunctuation(editorCell).apply(editorCell);
+    default_StyleSheet.getPunctuation(editorCell).apply(editorCell);
     {
       Style style = editorCell.getStyle();
       style.set(StyleAttributes.PUNCTUATION_LEFT, true);
@@ -139,7 +140,7 @@ public class MtlTemplate_Editor extends DefaultNodeEditor {
   private EditorCell createConstant_c4w2e_h0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "->");
     editorCell.setCellId("Constant_c4w2e_h0");
-    MqlSS_StyleSheet.getPunctuation(editorCell).apply(editorCell);
+    default_StyleSheet.getPunctuation(editorCell).apply(editorCell);
     editorCell.setDefaultText("");
     return editorCell;
   }
@@ -147,7 +148,7 @@ public class MtlTemplate_Editor extends DefaultNodeEditor {
   private EditorCell createConstant_c4w2e_j0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ":");
     editorCell.setCellId("Constant_c4w2e_j0");
-    MqlSS_StyleSheet.getPunctuation(editorCell).apply(editorCell);
+    default_StyleSheet.getPunctuation(editorCell).apply(editorCell);
     {
       Style style = editorCell.getStyle();
       style.set(StyleAttributes.PUNCTUATION_RIGHT, true);
@@ -156,14 +157,26 @@ public class MtlTemplate_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private EditorCell createConstant_c4w2e_m0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "");
-    editorCell.setCellId("Constant_c4w2e_m0");
+  private EditorCell createConstant_c4w2e_k0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ":");
+    editorCell.setCellId("Constant_c4w2e_k0");
+    default_StyleSheet.getPunctuation(editorCell).apply(editorCell);
+    {
+      Style style = editorCell.getStyle();
+      style.set(StyleAttributes.PUNCTUATION_RIGHT, true);
+    }
     editorCell.setDefaultText("");
     return editorCell;
   }
 
-  private EditorCell createCustom_c4w2e_a0l0(final EditorContext editorContext, final SNode node) {
+  private EditorCell createConstant_c4w2e_n0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "");
+    editorCell.setCellId("Constant_c4w2e_n0");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+
+  private EditorCell createCustom_c4w2e_a0m0(final EditorContext editorContext, final SNode node) {
     AbstractCellProvider provider = new _FunctionTypes._return_P0_E0<AbstractCellProvider>() {
       public AbstractCellProvider invoke() {
         return new AbstractCellProvider() {
@@ -177,7 +190,7 @@ public class MtlTemplate_Editor extends DefaultNodeEditor {
       }
     }.invoke();
     EditorCell editorCell = provider.createEditorCell(editorContext);
-    editorCell.setCellId("Custom_c4w2e_a0l0");
+    editorCell.setCellId("Custom_c4w2e_a0m0");
     return editorCell;
   }
 
@@ -215,15 +228,15 @@ public class MtlTemplate_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private EditorCell createRefNodeList_c4w2e_k0(EditorContext editorContext, SNode node) {
-    AbstractCellListHandler handler = new MtlTemplate_Editor.varsListHandler_c4w2e_k0(node, "vars", editorContext);
+  private EditorCell createRefNodeList_c4w2e_l0(EditorContext editorContext, SNode node) {
+    AbstractCellListHandler handler = new MtlTemplate_Editor.varsListHandler_c4w2e_l0(node, "vars", editorContext);
     EditorCell_Collection editorCell = handler.createCells(editorContext, new CellLayout_Indent(), false);
     editorCell.setCellId("refNodeList_vars");
     {
       Style style = editorCell.getStyle();
       style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, new AttributeCalculator<Boolean>() {
         public Boolean calculate(EditorCell cell) {
-          return MtlTemplate_Editor._StyleParameter_QueryFunction_c4w2e_a0k0((cell == null ?
+          return MtlTemplate_Editor._StyleParameter_QueryFunction_c4w2e_a0l0((cell == null ?
             null :
             cell.getSNode()
           ), (cell == null ?
@@ -234,7 +247,7 @@ public class MtlTemplate_Editor extends DefaultNodeEditor {
       });
       style.set(StyleAttributes.INDENT_LAYOUT_INDENT, new AttributeCalculator<Boolean>() {
         public Boolean calculate(EditorCell cell) {
-          return MtlTemplate_Editor._StyleParameter_QueryFunction_c4w2e_a1k0((cell == null ?
+          return MtlTemplate_Editor._StyleParameter_QueryFunction_c4w2e_a1l0((cell == null ?
             null :
             cell.getSNode()
           ), (cell == null ?
@@ -266,7 +279,7 @@ public class MtlTemplate_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private EditorCell createRefNode_c4w2e_a0l0(EditorContext editorContext, SNode node) {
+  private EditorCell createRefNode_c4w2e_a0m0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new RefNodeCellProvider(node, editorContext);
     provider.setRole("template");
     provider.setNoTargetText("<no template>");
@@ -301,15 +314,15 @@ public class MtlTemplate_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private static boolean renderingCondition_c4w2e_a0l0(SNode node, EditorContext editorContext, IScope scope) {
+  private static boolean renderingCondition_c4w2e_a0m0(SNode node, EditorContext editorContext, IScope scope) {
     return MtlTemplate_Behavior.call_getTemplateRoot_3373821274546492156(node) == SLinkOperations.getTarget(node, "template", true);
   }
 
-  private static boolean _StyleParameter_QueryFunction_c4w2e_a0k0(SNode node, EditorContext editorContext) {
+  private static boolean _StyleParameter_QueryFunction_c4w2e_a0l0(SNode node, EditorContext editorContext) {
     return ListSequence.fromList(SLinkOperations.getTargets(SNodeOperations.cast(SNodeOperations.cast(node, "jetbrains.mps.lang.core.structure.BaseConcept"), "jetbrains.mps.core.template.structure.MtlTemplate"), "vars", true)).isNotEmpty();
   }
 
-  private static boolean _StyleParameter_QueryFunction_c4w2e_a1k0(SNode node, EditorContext editorContext) {
+  private static boolean _StyleParameter_QueryFunction_c4w2e_a1l0(SNode node, EditorContext editorContext) {
     return ListSequence.fromList(SLinkOperations.getTargets(SNodeOperations.cast(SNodeOperations.cast(node, "jetbrains.mps.lang.core.structure.BaseConcept"), "jetbrains.mps.core.template.structure.MtlTemplate"), "vars", true)).isNotEmpty();
   }
 
@@ -374,8 +387,8 @@ public class MtlTemplate_Editor extends DefaultNodeEditor {
     }
   }
 
-  private static class varsListHandler_c4w2e_k0 extends RefNodeListHandler {
-    public varsListHandler_c4w2e_k0(SNode ownerNode, String childRole, EditorContext context) {
+  private static class varsListHandler_c4w2e_l0 extends RefNodeListHandler {
+    public varsListHandler_c4w2e_l0(SNode ownerNode, String childRole, EditorContext context) {
       super(ownerNode, childRole, context, false);
     }
 
@@ -398,7 +411,7 @@ public class MtlTemplate_Editor extends DefaultNodeEditor {
     }
 
     public EditorCell createEmptyCell_internal(EditorContext editorContext, SNode node) {
-      return this.createConstant_c4w2e_a01a(editorContext, node);
+      return this.createConstant_c4w2e_a11a(editorContext, node);
     }
 
     public void installElementCellActions(SNode listOwner, SNode elementNode, EditorCell elementCell, EditorContext editorContext) {
@@ -413,9 +426,9 @@ public class MtlTemplate_Editor extends DefaultNodeEditor {
       }
     }
 
-    private EditorCell createConstant_c4w2e_a01a(EditorContext editorContext, SNode node) {
+    private EditorCell createConstant_c4w2e_a11a(EditorContext editorContext, SNode node) {
       EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "");
-      editorCell.setCellId("Constant_c4w2e_a01a");
+      editorCell.setCellId("Constant_c4w2e_a11a");
       editorCell.setDefaultText("");
       return editorCell;
     }

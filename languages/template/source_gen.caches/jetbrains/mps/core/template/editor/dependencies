@@ -20,7 +20,7 @@
   <dependency className="jetbrains.mps.core.template.editor.MtlBuilder_Editor" file="MtlBuilder_Editor.java">
     <classNode dependClassName="java.lang.Class" />
     <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="jetbrains.mps.core.query.editor.MqlSS_StyleSheet" />
+    <classNode dependClassName="jetbrains.mps.core.structure.editor.default_StyleSheet" />
     <classNode dependClassName="jetbrains.mps.core.template.editor.remove_builderContext" />
     <classNode dependClassName="jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider" />
     <classNode dependClassName="jetbrains.mps.lang.editor.cellProviders.RefNodeCellProvider" />
@@ -138,7 +138,7 @@
   <dependency className="jetbrains.mps.core.template.editor.MtlLibrary_Editor" file="MtlLibrary_Editor.java">
     <classNode dependClassName="java.lang.Class" />
     <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="jetbrains.mps.core.query.editor.MqlSS_StyleSheet" />
+    <classNode dependClassName="jetbrains.mps.core.structure.editor.default_StyleSheet" />
     <classNode dependClassName="jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider" />
     <classNode dependClassName="jetbrains.mps.nodeEditor.CellActionType" />
     <classNode dependClassName="jetbrains.mps.nodeEditor.EditorContext" />
@@ -278,7 +278,7 @@
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes" />
-    <classNode dependClassName="jetbrains.mps.core.query.editor.MqlSS_StyleSheet" />
+    <classNode dependClassName="jetbrains.mps.core.structure.editor.default_StyleSheet" />
     <classNode dependClassName="jetbrains.mps.core.template.behavior.MtlTemplate_Behavior" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
     <classNode dependClassName="jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider" />

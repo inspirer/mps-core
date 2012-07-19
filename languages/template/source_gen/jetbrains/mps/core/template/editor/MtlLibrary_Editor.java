@@ -8,7 +8,7 @@ import jetbrains.mps.nodeEditor.EditorContext;
 import jetbrains.mps.smodel.SNode;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Collection;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
-import jetbrains.mps.core.query.editor.MqlSS_StyleSheet;
+import jetbrains.mps.core.structure.editor.default_StyleSheet;
 import jetbrains.mps.nodeEditor.style.Style;
 import jetbrains.mps.nodeEditor.style.StyleAttributes;
 import jetbrains.mps.nodeEditor.cellProviders.AbstractCellListHandler;
@@ -43,7 +43,7 @@ public class MtlLibrary_Editor extends DefaultNodeEditor {
   private EditorCell createConstant_b2jbcr_a0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "library");
     editorCell.setCellId("Constant_b2jbcr_a0");
-    MqlSS_StyleSheet.getKeyword(editorCell).apply(editorCell);
+    default_StyleSheet.getKeyword(editorCell).apply(editorCell);
     editorCell.setDefaultText("");
     return editorCell;
   }
@@ -51,7 +51,7 @@ public class MtlLibrary_Editor extends DefaultNodeEditor {
   private EditorCell createConstant_b2jbcr_c0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ";");
     editorCell.setCellId("Constant_b2jbcr_c0");
-    MqlSS_StyleSheet.getPunctuation(editorCell).apply(editorCell);
+    default_StyleSheet.getPunctuation(editorCell).apply(editorCell);
     {
       Style style = editorCell.getStyle();
       style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, true);

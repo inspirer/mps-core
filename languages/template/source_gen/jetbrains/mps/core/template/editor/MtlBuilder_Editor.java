@@ -10,7 +10,7 @@ import jetbrains.mps.nodeEditor.cells.EditorCell_Collection;
 import jetbrains.mps.nodeEditor.style.Style;
 import jetbrains.mps.nodeEditor.style.StyleAttributes;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
-import jetbrains.mps.core.query.editor.MqlSS_StyleSheet;
+import jetbrains.mps.core.structure.editor.default_StyleSheet;
 import jetbrains.mps.nodeEditor.cellProviders.AbstractCellListHandler;
 import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Indent;
 import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
@@ -65,7 +65,7 @@ public class MtlBuilder_Editor extends DefaultNodeEditor {
   private EditorCell createConstant_vcqcp7_a0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "builder");
     editorCell.setCellId("Constant_vcqcp7_a0");
-    MqlSS_StyleSheet.getKeyword(editorCell).apply(editorCell);
+    default_StyleSheet.getKeyword(editorCell).apply(editorCell);
     editorCell.setDefaultText("");
     return editorCell;
   }
@@ -73,7 +73,7 @@ public class MtlBuilder_Editor extends DefaultNodeEditor {
   private EditorCell createConstant_vcqcp7_b1a(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "::");
     editorCell.setCellId("Constant_vcqcp7_b1a");
-    MqlSS_StyleSheet.getPunctuation(editorCell).apply(editorCell);
+    default_StyleSheet.getPunctuation(editorCell).apply(editorCell);
     {
       Style style = editorCell.getStyle();
       style.set(StyleAttributes.PUNCTUATION_RIGHT, true);
@@ -87,7 +87,7 @@ public class MtlBuilder_Editor extends DefaultNodeEditor {
   private EditorCell createConstant_vcqcp7_d0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "(");
     editorCell.setCellId("Constant_vcqcp7_d0");
-    MqlSS_StyleSheet.getPunctuation(editorCell).apply(editorCell);
+    default_StyleSheet.getPunctuation(editorCell).apply(editorCell);
     {
       Style style = editorCell.getStyle();
       style.set(StyleAttributes.PUNCTUATION_LEFT, true);
@@ -101,7 +101,7 @@ public class MtlBuilder_Editor extends DefaultNodeEditor {
   private EditorCell createConstant_vcqcp7_f0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ")");
     editorCell.setCellId("Constant_vcqcp7_f0");
-    MqlSS_StyleSheet.getPunctuation(editorCell).apply(editorCell);
+    default_StyleSheet.getPunctuation(editorCell).apply(editorCell);
     {
       Style style = editorCell.getStyle();
       style.set(StyleAttributes.PUNCTUATION_LEFT, true);
@@ -121,7 +121,7 @@ public class MtlBuilder_Editor extends DefaultNodeEditor {
   private EditorCell createConstant_vcqcp7_i0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ";");
     editorCell.setCellId("Constant_vcqcp7_i0");
-    MqlSS_StyleSheet.getPunctuation(editorCell).apply(editorCell);
+    default_StyleSheet.getPunctuation(editorCell).apply(editorCell);
     {
       Style style = editorCell.getStyle();
       style.set(StyleAttributes.PUNCTUATION_LEFT, true);

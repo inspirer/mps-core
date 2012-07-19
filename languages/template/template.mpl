@@ -20,6 +20,7 @@
   </usedDevKits>
   <extendedLanguages>
     <extendedLanguage>41a590b4-0cca-40d1-9a11-d9ef253734cc(jetbrains.mps.core.smodel)</extendedLanguage>
+    <extendedLanguage>1372eb94-b402-4b9f-bb3f-44315b20f92d(jetbrains.mps.core.structure)</extendedLanguage>
   </extendedLanguages>
 </language>
 
