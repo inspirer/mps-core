@@ -684,5 +684,378 @@
     <unitInfo nodeId="5270931306887555499" fileName="SConceptQuery_Editor.java" startLine="29" startPosition="0" endLine="222" endPosition="0" unitName="jetbrains.mps.core.smodel.editor.SConceptQuery_Editor" />
     <unitInfo nodeId="6601450967974097549" fileName="SConceptQuery_Editor.java" startLine="161" startPosition="0" endLine="221" endPosition="0" unitName="jetbrains.mps.core.smodel.editor.SConceptQuery_Editor$parametersListHandler_hi5u6k_b2a" />
   </root>
+  <root nodeId="535637396506608319">
+    <nodeInfo nodeId="8595827001410597614" fileName="SConceptQueryCall_Editor.java" startLine="87" startPosition="58" endLine="87" endPosition="58" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="535637396506608319" fileName="SConceptQueryCall_Editor.java" startLine="30" startPosition="79" endLine="31" endPosition="63" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2059702675525965932" fileName="SConceptQueryCall_Editor.java" startLine="34" startPosition="89" endLine="35" endPosition="96" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="2059702675525965932" fileName="SConceptQueryCall_Editor.java" startLine="35" startPosition="96" endLine="36" endPosition="48" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="2059702675525965932" fileName="SConceptQueryCall_Editor.java" startLine="35" startPosition="96" endLine="36" endPosition="48" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2059702675525965932" fileName="SConceptQueryCall_Editor.java" startLine="36" startPosition="48" endLine="37" endPosition="80" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="2059702675525965932" fileName="SConceptQueryCall_Editor.java" startLine="36" startPosition="48" endLine="37" endPosition="80" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2059702675525965932" fileName="SConceptQueryCall_Editor.java" startLine="37" startPosition="80" endLine="38" endPosition="81" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="2059702675525965932" fileName="SConceptQueryCall_Editor.java" startLine="37" startPosition="80" endLine="38" endPosition="81" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2059702675525965932" fileName="SConceptQueryCall_Editor.java" startLine="38" startPosition="81" endLine="39" endPosition="84" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="2059702675525965932" fileName="SConceptQueryCall_Editor.java" startLine="38" startPosition="81" endLine="39" endPosition="84" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2059702675525965932" fileName="SConceptQueryCall_Editor.java" startLine="39" startPosition="84" endLine="40" endPosition="81" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="2059702675525965932" fileName="SConceptQueryCall_Editor.java" startLine="39" startPosition="84" endLine="40" endPosition="81" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2059702675525965932" fileName="SConceptQueryCall_Editor.java" startLine="40" startPosition="81" endLine="41" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2059702675525965944" fileName="SConceptQueryCall_Editor.java" startLine="44" startPosition="88" endLine="45" endPosition="87" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="2059702675525965944" fileName="SConceptQueryCall_Editor.java" startLine="45" startPosition="87" endLine="46" endPosition="47" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2059702675525965944" fileName="SConceptQueryCall_Editor.java" startLine="47" startPosition="5" endLine="48" endPosition="42" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="2059702675525965944" fileName="SConceptQueryCall_Editor.java" startLine="48" startPosition="42" endLine="49" endPosition="56" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2059702675525965944" fileName="SConceptQueryCall_Editor.java" startLine="49" startPosition="56" endLine="50" endPosition="67" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2059702675525965944" fileName="SConceptQueryCall_Editor.java" startLine="50" startPosition="67" endLine="51" endPosition="57" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2059702675525965944" fileName="SConceptQueryCall_Editor.java" startLine="52" startPosition="5" endLine="53" endPosition="34" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2059702675525965944" fileName="SConceptQueryCall_Editor.java" startLine="53" startPosition="34" endLine="54" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2059702675525965950" fileName="SConceptQueryCall_Editor.java" startLine="57" startPosition="88" endLine="58" endPosition="87" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="2059702675525965950" fileName="SConceptQueryCall_Editor.java" startLine="58" startPosition="87" endLine="59" endPosition="47" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2059702675525965950" fileName="SConceptQueryCall_Editor.java" startLine="60" startPosition="5" endLine="61" endPosition="42" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="2059702675525965950" fileName="SConceptQueryCall_Editor.java" startLine="61" startPosition="42" endLine="62" endPosition="56" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2059702675525965950" fileName="SConceptQueryCall_Editor.java" startLine="62" startPosition="56" endLine="63" endPosition="67" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2059702675525965950" fileName="SConceptQueryCall_Editor.java" startLine="64" startPosition="5" endLine="65" endPosition="34" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2059702675525965950" fileName="SConceptQueryCall_Editor.java" startLine="65" startPosition="34" endLine="66" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2059702675525965948" fileName="SConceptQueryCall_Editor.java" startLine="69" startPosition="91" endLine="70" endPosition="132" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="2059702675525965948" fileName="SConceptQueryCall_Editor.java" startLine="70" startPosition="132" endLine="71" endPosition="106" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="2059702675525965948" fileName="SConceptQueryCall_Editor.java" startLine="71" startPosition="106" endLine="72" endPosition="50" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2059702675525965948" fileName="SConceptQueryCall_Editor.java" startLine="73" startPosition="5" endLine="74" endPosition="42" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="2059702675525965948" fileName="SConceptQueryCall_Editor.java" startLine="74" startPosition="42" endLine="75" endPosition="90" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2059702675525965948" fileName="SConceptQueryCall_Editor.java" startLine="76" startPosition="5" endLine="77" endPosition="49" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2059702675525965948" fileName="SConceptQueryCall_Editor.java" startLine="77" startPosition="49" endLine="78" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="8595827001410597614" fileName="SConceptQueryCall_Editor.java" startLine="81" startPosition="87" endLine="82" endPosition="81" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="8595827001410597614" fileName="SConceptQueryCall_Editor.java" startLine="82" startPosition="81" endLine="83" endPosition="30" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="8595827001410597614" fileName="SConceptQueryCall_Editor.java" startLine="83" startPosition="30" endLine="84" endPosition="43" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="8595827001410597614" fileName="SConceptQueryCall_Editor.java" startLine="84" startPosition="43" endLine="85" endPosition="26" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="8595827001410597614" fileName="SConceptQueryCall_Editor.java" startLine="85" startPosition="26" endLine="86" endPosition="89" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="8595827001410597614" fileName="SConceptQueryCall_Editor.java" startLine="86" startPosition="89" endLine="87" endPosition="58" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="8595827001410597614" fileName="SConceptQueryCall_Editor.java" startLine="87" startPosition="58" endLine="88" endPosition="73" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="8595827001410597614" fileName="SConceptQueryCall_Editor.java" startLine="88" startPosition="73" endLine="89" endPosition="57" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="8595827001410597614" fileName="SConceptQueryCall_Editor.java" startLine="89" startPosition="57" endLine="90" endPosition="59" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="8595827001410597614" fileName="SConceptQueryCall_Editor.java" startLine="91" startPosition="35" endLine="92" endPosition="72" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="8595827001410597614" fileName="SConceptQueryCall_Editor.java" startLine="92" startPosition="72" endLine="93" endPosition="78" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="8595827001410597614" fileName="SConceptQueryCall_Editor.java" startLine="93" startPosition="78" endLine="94" endPosition="105" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="8595827001410597614" fileName="SConceptQueryCall_Editor.java" startLine="95" startPosition="10" endLine="96" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="8595827001410597615" fileName="SConceptQueryCall_Editor.java" startLine="100" startPosition="33" endLine="101" endPosition="14" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+    <nodeInfo nodeId="8595827001410597615" fileName="SConceptQueryCall_Editor.java" startLine="104" startPosition="69" endLine="105" endPosition="67" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="8595827001410597615" fileName="SConceptQueryCall_Editor.java" startLine="108" startPosition="81" endLine="109" endPosition="66" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="8595827001410597617" fileName="SConceptQueryCall_Editor.java" startLine="112" startPosition="92" endLine="113" endPosition="84" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="8595827001410597617" fileName="SConceptQueryCall_Editor.java" startLine="113" startPosition="84" endLine="114" endPosition="31" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="8595827001410597617" fileName="SConceptQueryCall_Editor.java" startLine="114" startPosition="31" endLine="115" endPosition="44" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="8595827001410597617" fileName="SConceptQueryCall_Editor.java" startLine="115" startPosition="44" endLine="116" endPosition="33" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="8595827001410597617" fileName="SConceptQueryCall_Editor.java" startLine="116" startPosition="33" endLine="117" endPosition="28" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="8595827001410597617" fileName="SConceptQueryCall_Editor.java" startLine="117" startPosition="28" endLine="118" endPosition="60" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="8595827001410597617" fileName="SConceptQueryCall_Editor.java" startLine="118" startPosition="60" endLine="119" endPosition="44" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="8595827001410597617" fileName="SConceptQueryCall_Editor.java" startLine="118" startPosition="60" endLine="119" endPosition="44" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="8595827001410597617" fileName="SConceptQueryCall_Editor.java" startLine="119" startPosition="44" endLine="120" endPosition="75" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="8595827001410597617" fileName="SConceptQueryCall_Editor.java" startLine="120" startPosition="75" endLine="121" endPosition="59" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="8595827001410597617" fileName="SConceptQueryCall_Editor.java" startLine="121" startPosition="59" endLine="122" endPosition="61" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="8595827001410597617" fileName="SConceptQueryCall_Editor.java" startLine="123" startPosition="37" endLine="124" endPosition="74" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="8595827001410597617" fileName="SConceptQueryCall_Editor.java" startLine="124" startPosition="74" endLine="125" endPosition="80" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="8595827001410597617" fileName="SConceptQueryCall_Editor.java" startLine="125" startPosition="80" endLine="126" endPosition="107" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="8595827001410597617" fileName="SConceptQueryCall_Editor.java" startLine="127" startPosition="12" endLine="128" endPosition="24" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2059702675525965948" fileName="SConceptQueryCall_Editor.java" startLine="133" startPosition="101" endLine="134" endPosition="50" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+    <nodeInfo nodeId="2059702675525965948" fileName="SConceptQueryCall_Editor.java" startLine="137" startPosition="66" endLine="138" endPosition="41" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="2059702675525965948" fileName="SConceptQueryCall_Editor.java" startLine="138" startPosition="41" endLine="139" endPosition="93" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2059702675525965948" fileName="SConceptQueryCall_Editor.java" startLine="142" startPosition="86" endLine="143" endPosition="80" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="2059702675525965948" fileName="SConceptQueryCall_Editor.java" startLine="143" startPosition="80" endLine="144" endPosition="95" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2059702675525965948" fileName="SConceptQueryCall_Editor.java" startLine="144" startPosition="95" endLine="145" endPosition="25" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2059702675525965948" fileName="SConceptQueryCall_Editor.java" startLine="148" startPosition="68" endLine="149" endPosition="34" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="2059702675525965948" fileName="SConceptQueryCall_Editor.java" startLine="149" startPosition="34" endLine="150" endPosition="80" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2059702675525965948" fileName="SConceptQueryCall_Editor.java" startLine="150" startPosition="80" endLine="151" endPosition="87" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2059702675525965948" fileName="SConceptQueryCall_Editor.java" startLine="151" startPosition="87" endLine="152" endPosition="23" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2059702675525965948" fileName="SConceptQueryCall_Editor.java" startLine="155" startPosition="89" endLine="156" endPosition="65" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2059702675525965948" fileName="SConceptQueryCall_Editor.java" startLine="160" startPosition="96" endLine="161" endPosition="134" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2059702675525965948" fileName="SConceptQueryCall_Editor.java" startLine="162" startPosition="34" endLine="163" endPosition="95" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2059702675525965948" fileName="SConceptQueryCall_Editor.java" startLine="163" startPosition="95" endLine="164" endPosition="80" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2059702675525965948" fileName="SConceptQueryCall_Editor.java" startLine="166" startPosition="131" endLine="167" endPosition="139" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2059702675525965948" fileName="SConceptQueryCall_Editor.java" startLine="173" startPosition="84" endLine="174" endPosition="100" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="2059702675525965948" fileName="SConceptQueryCall_Editor.java" startLine="174" startPosition="100" endLine="175" endPosition="38" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2059702675525965948" fileName="SConceptQueryCall_Editor.java" startLine="175" startPosition="38" endLine="176" endPosition="71" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2059702675525965948" fileName="SConceptQueryCall_Editor.java" startLine="176" startPosition="71" endLine="177" endPosition="72" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2059702675525965948" fileName="SConceptQueryCall_Editor.java" startLine="177" startPosition="72" endLine="178" endPosition="24" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2059702675525965957" fileName="SConceptQueryCall_Editor.java" startLine="181" startPosition="91" endLine="182" endPosition="88" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="2059702675525965957" fileName="SConceptQueryCall_Editor.java" startLine="182" startPosition="88" endLine="183" endPosition="50" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2059702675525965957" fileName="SConceptQueryCall_Editor.java" startLine="184" startPosition="7" endLine="185" endPosition="44" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="2059702675525965957" fileName="SConceptQueryCall_Editor.java" startLine="185" startPosition="44" endLine="186" endPosition="50" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2059702675525965957" fileName="SConceptQueryCall_Editor.java" startLine="187" startPosition="7" endLine="188" endPosition="36" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2059702675525965957" fileName="SConceptQueryCall_Editor.java" startLine="188" startPosition="36" endLine="189" endPosition="24" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="8595827001410597614" fileName="SConceptQueryCall_Editor.java" startLine="85" startPosition="26" endLine="88" endPosition="73" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="8595827001410597615" fileName="SConceptQueryCall_Editor.java" startLine="99" startPosition="69" endLine="102" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="_Inline_jhkb71_a0a#()V" />
+    <nodeInfo nodeId="8595827001410597617" fileName="SConceptQueryCall_Editor.java" startLine="117" startPosition="28" endLine="120" endPosition="75" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="2059702675525965948" fileName="SConceptQueryCall_Editor.java" startLine="132" startPosition="82" endLine="135" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="argumentsListHandler_jhkb71_c0#(Ljetbrains/mps/smodel/SNode;Ljava/lang/String;Ljetbrains/mps/nodeEditor/EditorContext;)V" />
+    <nodeInfo nodeId="2059702675525965948" fileName="SConceptQueryCall_Editor.java" startLine="165" startPosition="9" endLine="168" endPosition="9" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="535637396506608319" fileName="SConceptQueryCall_Editor.java" startLine="29" startPosition="65" endLine="33" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createEditorCell#(Ljetbrains/mps/nodeEditor/EditorContext;Ljetbrains/mps/smodel/SNode;)Ljetbrains/mps/nodeEditor/cells/EditorCell;" />
+    <nodeInfo nodeId="2059702675525965948" fileName="SConceptQueryCall_Editor.java" startLine="72" startPosition="50" endLine="76" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="8595827001410597615" fileName="SConceptQueryCall_Editor.java" startLine="103" startPosition="0" endLine="107" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createEditorCell#(Ljetbrains/mps/nodeEditor/EditorContext;)Ljetbrains/mps/nodeEditor/cells/EditorCell;" />
+    <nodeInfo nodeId="8595827001410597615" fileName="SConceptQueryCall_Editor.java" startLine="107" startPosition="0" endLine="111" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createEditorCell#(Ljetbrains/mps/nodeEditor/EditorContext;Ljetbrains/mps/smodel/SNode;)Ljetbrains/mps/nodeEditor/cells/EditorCell;" />
+    <nodeInfo nodeId="2059702675525965948" fileName="SConceptQueryCall_Editor.java" startLine="154" startPosition="0" endLine="158" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createEmptyCell_internal#(Ljetbrains/mps/nodeEditor/EditorContext;Ljetbrains/mps/smodel/SNode;)Ljetbrains/mps/nodeEditor/cells/EditorCell;" />
+    <nodeInfo nodeId="2059702675525965948" fileName="SConceptQueryCall_Editor.java" startLine="161" startPosition="134" endLine="165" endPosition="9" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="2059702675525965957" fileName="SConceptQueryCall_Editor.java" startLine="183" startPosition="50" endLine="187" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="2059702675525965950" fileName="SConceptQueryCall_Editor.java" startLine="59" startPosition="47" endLine="64" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="2059702675525965948" fileName="SConceptQueryCall_Editor.java" startLine="71" startPosition="106" endLine="76" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="2059702675525965948" fileName="SConceptQueryCall_Editor.java" startLine="136" startPosition="0" endLine="141" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createNodeToInsert#(Ljetbrains/mps/nodeEditor/EditorContext;)Ljetbrains/mps/smodel/SNode;" />
+    <nodeInfo nodeId="2059702675525965957" fileName="SConceptQueryCall_Editor.java" startLine="182" startPosition="88" endLine="187" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="2059702675525965944" fileName="SConceptQueryCall_Editor.java" startLine="46" startPosition="47" endLine="52" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="2059702675525965950" fileName="SConceptQueryCall_Editor.java" startLine="58" startPosition="87" endLine="64" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="8595827001410597614" fileName="SConceptQueryCall_Editor.java" startLine="90" startPosition="59" endLine="96" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="8595827001410597617" fileName="SConceptQueryCall_Editor.java" startLine="122" startPosition="61" endLine="128" endPosition="24" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="2059702675525965948" fileName="SConceptQueryCall_Editor.java" startLine="141" startPosition="0" endLine="147" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createNodeCell#(Ljetbrains/mps/nodeEditor/EditorContext;Ljetbrains/mps/smodel/SNode;)Ljetbrains/mps/nodeEditor/cells/EditorCell;" />
+    <nodeInfo nodeId="2059702675525965944" fileName="SConceptQueryCall_Editor.java" startLine="45" startPosition="87" endLine="52" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="2059702675525965948" fileName="SConceptQueryCall_Editor.java" startLine="147" startPosition="0" endLine="154" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createEmptyCell#(Ljetbrains/mps/nodeEditor/EditorContext;)Ljetbrains/mps/nodeEditor/cells/EditorCell;" />
+    <nodeInfo nodeId="2059702675525965948" fileName="SConceptQueryCall_Editor.java" startLine="171" startPosition="0" endLine="180" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createSeparatorCell#(Ljetbrains/mps/nodeEditor/EditorContext;Ljetbrains/mps/smodel/SNode;)Ljetbrains/mps/nodeEditor/cells/EditorCell;" />
+    <nodeInfo nodeId="2059702675525965932" fileName="SConceptQueryCall_Editor.java" startLine="33" startPosition="0" endLine="43" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createCollection_jhkb71_a#(Ljetbrains/mps/nodeEditor/EditorContext;Ljetbrains/mps/smodel/SNode;)Ljetbrains/mps/nodeEditor/cells/EditorCell;" />
+    <nodeInfo nodeId="2059702675525965948" fileName="SConceptQueryCall_Editor.java" startLine="159" startPosition="132" endLine="169" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="2059702675525965957" fileName="SConceptQueryCall_Editor.java" startLine="180" startPosition="0" endLine="191" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createConstant_jhkb71_a2a#(Ljetbrains/mps/nodeEditor/EditorContext;Ljetbrains/mps/smodel/SNode;)Ljetbrains/mps/nodeEditor/cells/EditorCell;" />
+    <nodeInfo nodeId="2059702675525965950" fileName="SConceptQueryCall_Editor.java" startLine="56" startPosition="0" endLine="68" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createConstant_jhkb71_d0#(Ljetbrains/mps/nodeEditor/EditorContext;Ljetbrains/mps/smodel/SNode;)Ljetbrains/mps/nodeEditor/cells/EditorCell;" />
+    <nodeInfo nodeId="2059702675525965948" fileName="SConceptQueryCall_Editor.java" startLine="68" startPosition="0" endLine="80" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createRefNodeList_jhkb71_c0#(Ljetbrains/mps/nodeEditor/EditorContext;Ljetbrains/mps/smodel/SNode;)Ljetbrains/mps/nodeEditor/cells/EditorCell;" />
+    <nodeInfo nodeId="2059702675525965944" fileName="SConceptQueryCall_Editor.java" startLine="43" startPosition="0" endLine="56" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createConstant_jhkb71_b0#(Ljetbrains/mps/nodeEditor/EditorContext;Ljetbrains/mps/smodel/SNode;)Ljetbrains/mps/nodeEditor/cells/EditorCell;" />
+    <nodeInfo nodeId="2059702675525965948" fileName="SConceptQueryCall_Editor.java" startLine="158" startPosition="0" endLine="171" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="installElementCellActions#(Ljetbrains/mps/smodel/SNode;Ljetbrains/mps/smodel/SNode;Ljetbrains/mps/nodeEditor/cells/EditorCell;Ljetbrains/mps/nodeEditor/EditorContext;)V" />
+    <nodeInfo nodeId="8595827001410597614" fileName="SConceptQueryCall_Editor.java" startLine="80" startPosition="0" endLine="98" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createRefCell_jhkb71_a0#(Ljetbrains/mps/nodeEditor/EditorContext;Ljetbrains/mps/smodel/SNode;)Ljetbrains/mps/nodeEditor/cells/EditorCell;" />
+    <nodeInfo nodeId="8595827001410597617" fileName="SConceptQueryCall_Editor.java" startLine="111" startPosition="0" endLine="130" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createProperty_jhkb71_a0a0#(Ljetbrains/mps/nodeEditor/EditorContext;Ljetbrains/mps/smodel/SNode;)Ljetbrains/mps/nodeEditor/cells/EditorCell;" />
+    <scopeInfo nodeId="8595827001410597614" fileName="SConceptQueryCall_Editor.java" startLine="87" startPosition="58" endLine="87" endPosition="58" />
+    <scopeInfo nodeId="535637396506608319" fileName="SConceptQueryCall_Editor.java" startLine="30" startPosition="79" endLine="31" endPosition="63" />
+    <scopeInfo nodeId="2059702675525965932" fileName="SConceptQueryCall_Editor.java" startLine="35" startPosition="96" endLine="36" endPosition="48" />
+    <scopeInfo nodeId="2059702675525965932" fileName="SConceptQueryCall_Editor.java" startLine="36" startPosition="48" endLine="37" endPosition="80" />
+    <scopeInfo nodeId="2059702675525965932" fileName="SConceptQueryCall_Editor.java" startLine="37" startPosition="80" endLine="38" endPosition="81" />
+    <scopeInfo nodeId="2059702675525965932" fileName="SConceptQueryCall_Editor.java" startLine="38" startPosition="81" endLine="39" endPosition="84" />
+    <scopeInfo nodeId="2059702675525965932" fileName="SConceptQueryCall_Editor.java" startLine="39" startPosition="84" endLine="40" endPosition="81" />
+    <scopeInfo nodeId="8595827001410597615" fileName="SConceptQueryCall_Editor.java" startLine="100" startPosition="33" endLine="101" endPosition="14" />
+    <scopeInfo nodeId="8595827001410597615" fileName="SConceptQueryCall_Editor.java" startLine="104" startPosition="69" endLine="105" endPosition="67" />
+    <scopeInfo nodeId="8595827001410597615" fileName="SConceptQueryCall_Editor.java" startLine="108" startPosition="81" endLine="109" endPosition="66" />
+    <scopeInfo nodeId="8595827001410597617" fileName="SConceptQueryCall_Editor.java" startLine="118" startPosition="60" endLine="119" endPosition="44" />
+    <scopeInfo nodeId="2059702675525965948" fileName="SConceptQueryCall_Editor.java" startLine="133" startPosition="101" endLine="134" endPosition="50" />
+    <scopeInfo nodeId="2059702675525965948" fileName="SConceptQueryCall_Editor.java" startLine="155" startPosition="89" endLine="156" endPosition="65" />
+    <scopeInfo nodeId="2059702675525965948" fileName="SConceptQueryCall_Editor.java" startLine="166" startPosition="131" endLine="167" endPosition="139" />
+    <scopeInfo nodeId="2059702675525965948" fileName="SConceptQueryCall_Editor.java" startLine="73" startPosition="5" endLine="75" endPosition="90">
+      <varInfo nodeId="2059702675525965948" varName="style" />
+    </scopeInfo>
+    <scopeInfo nodeId="2059702675525965948" fileName="SConceptQueryCall_Editor.java" startLine="137" startPosition="66" endLine="139" endPosition="93">
+      <varInfo nodeId="2059702675525965948" varName="listOwner" />
+    </scopeInfo>
+    <scopeInfo nodeId="2059702675525965948" fileName="SConceptQueryCall_Editor.java" startLine="162" startPosition="34" endLine="164" endPosition="80" />
+    <scopeInfo nodeId="2059702675525965957" fileName="SConceptQueryCall_Editor.java" startLine="184" startPosition="7" endLine="186" endPosition="50">
+      <varInfo nodeId="2059702675525965957" varName="style" />
+    </scopeInfo>
+    <scopeInfo nodeId="2059702675525965950" fileName="SConceptQueryCall_Editor.java" startLine="60" startPosition="5" endLine="63" endPosition="67">
+      <varInfo nodeId="2059702675525965950" varName="style" />
+    </scopeInfo>
+    <scopeInfo nodeId="8595827001410597614" fileName="SConceptQueryCall_Editor.java" startLine="85" startPosition="26" endLine="88" endPosition="73" />
+    <scopeInfo nodeId="8595827001410597614" fileName="SConceptQueryCall_Editor.java" startLine="91" startPosition="35" endLine="94" endPosition="105">
+      <varInfo nodeId="8595827001410597614" varName="manager" />
+      <varInfo nodeId="8595827001410597614" varName="opContext" />
+    </scopeInfo>
+    <scopeInfo nodeId="8595827001410597615" fileName="SConceptQueryCall_Editor.java" startLine="99" startPosition="69" endLine="102" endPosition="5" />
+    <scopeInfo nodeId="8595827001410597617" fileName="SConceptQueryCall_Editor.java" startLine="117" startPosition="28" endLine="120" endPosition="75" />
+    <scopeInfo nodeId="8595827001410597617" fileName="SConceptQueryCall_Editor.java" startLine="123" startPosition="37" endLine="126" endPosition="107">
+      <varInfo nodeId="8595827001410597617" varName="manager" />
+      <varInfo nodeId="8595827001410597617" varName="opContext" />
+    </scopeInfo>
+    <scopeInfo nodeId="2059702675525965948" fileName="SConceptQueryCall_Editor.java" startLine="132" startPosition="82" endLine="135" endPosition="5">
+      <varInfo nodeId="2059702675525965948" varName="childRole" />
+      <varInfo nodeId="2059702675525965948" varName="context" />
+      <varInfo nodeId="2059702675525965948" varName="ownerNode" />
+    </scopeInfo>
+    <scopeInfo nodeId="2059702675525965948" fileName="SConceptQueryCall_Editor.java" startLine="142" startPosition="86" endLine="145" endPosition="25">
+      <varInfo nodeId="2059702675525965948" varName="elementCell" />
+    </scopeInfo>
+    <scopeInfo nodeId="535637396506608319" fileName="SConceptQueryCall_Editor.java" startLine="29" startPosition="65" endLine="33" endPosition="0">
+      <varInfo nodeId="535637396506608319" varName="editorContext" />
+      <varInfo nodeId="535637396506608319" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="2059702675525965944" fileName="SConceptQueryCall_Editor.java" startLine="47" startPosition="5" endLine="51" endPosition="57">
+      <varInfo nodeId="2059702675525965944" varName="style" />
+    </scopeInfo>
+    <scopeInfo nodeId="8595827001410597615" fileName="SConceptQueryCall_Editor.java" startLine="103" startPosition="0" endLine="107" endPosition="0">
+      <varInfo nodeId="8595827001410597615" varName="editorContext" />
+    </scopeInfo>
+    <scopeInfo nodeId="8595827001410597615" fileName="SConceptQueryCall_Editor.java" startLine="107" startPosition="0" endLine="111" endPosition="0">
+      <varInfo nodeId="8595827001410597615" varName="editorContext" />
+      <varInfo nodeId="8595827001410597615" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="2059702675525965948" fileName="SConceptQueryCall_Editor.java" startLine="148" startPosition="68" endLine="152" endPosition="23">
+      <varInfo nodeId="2059702675525965948" varName="emptyCell" />
+    </scopeInfo>
+    <scopeInfo nodeId="2059702675525965948" fileName="SConceptQueryCall_Editor.java" startLine="154" startPosition="0" endLine="158" endPosition="0">
+      <varInfo nodeId="2059702675525965948" varName="editorContext" />
+      <varInfo nodeId="2059702675525965948" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="2059702675525965948" fileName="SConceptQueryCall_Editor.java" startLine="71" startPosition="106" endLine="76" endPosition="5" />
+    <scopeInfo nodeId="2059702675525965948" fileName="SConceptQueryCall_Editor.java" startLine="136" startPosition="0" endLine="141" endPosition="0">
+      <varInfo nodeId="2059702675525965948" varName="editorContext" />
+    </scopeInfo>
+    <scopeInfo nodeId="2059702675525965948" fileName="SConceptQueryCall_Editor.java" startLine="173" startPosition="84" endLine="178" endPosition="24">
+      <varInfo nodeId="2059702675525965948" varName="editorCell" />
+    </scopeInfo>
+    <scopeInfo nodeId="2059702675525965957" fileName="SConceptQueryCall_Editor.java" startLine="182" startPosition="88" endLine="187" endPosition="7" />
+    <scopeInfo nodeId="2059702675525965950" fileName="SConceptQueryCall_Editor.java" startLine="58" startPosition="87" endLine="64" endPosition="5" />
+    <scopeInfo nodeId="2059702675525965948" fileName="SConceptQueryCall_Editor.java" startLine="141" startPosition="0" endLine="147" endPosition="0">
+      <varInfo nodeId="2059702675525965948" varName="editorContext" />
+      <varInfo nodeId="2059702675525965948" varName="elementNode" />
+    </scopeInfo>
+    <scopeInfo nodeId="2059702675525965932" fileName="SConceptQueryCall_Editor.java" startLine="34" startPosition="89" endLine="41" endPosition="22">
+      <varInfo nodeId="2059702675525965932" varName="editorCell" />
+    </scopeInfo>
+    <scopeInfo nodeId="2059702675525965944" fileName="SConceptQueryCall_Editor.java" startLine="45" startPosition="87" endLine="52" endPosition="5" />
+    <scopeInfo nodeId="2059702675525965948" fileName="SConceptQueryCall_Editor.java" startLine="147" startPosition="0" endLine="154" endPosition="0">
+      <varInfo nodeId="2059702675525965948" varName="editorContext" />
+    </scopeInfo>
+    <scopeInfo nodeId="2059702675525965948" fileName="SConceptQueryCall_Editor.java" startLine="160" startPosition="96" endLine="168" endPosition="9" />
+    <scopeInfo nodeId="2059702675525965957" fileName="SConceptQueryCall_Editor.java" startLine="181" startPosition="91" endLine="189" endPosition="24">
+      <varInfo nodeId="2059702675525965957" varName="editorCell" />
+    </scopeInfo>
+    <scopeInfo nodeId="2059702675525965950" fileName="SConceptQueryCall_Editor.java" startLine="57" startPosition="88" endLine="66" endPosition="22">
+      <varInfo nodeId="2059702675525965950" varName="editorCell" />
+    </scopeInfo>
+    <scopeInfo nodeId="2059702675525965948" fileName="SConceptQueryCall_Editor.java" startLine="69" startPosition="91" endLine="78" endPosition="22">
+      <varInfo nodeId="2059702675525965948" varName="editorCell" />
+      <varInfo nodeId="2059702675525965948" varName="handler" />
+    </scopeInfo>
+    <scopeInfo nodeId="2059702675525965948" fileName="SConceptQueryCall_Editor.java" startLine="171" startPosition="0" endLine="180" endPosition="0">
+      <varInfo nodeId="2059702675525965948" varName="editorContext" />
+      <varInfo nodeId="2059702675525965948" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="2059702675525965932" fileName="SConceptQueryCall_Editor.java" startLine="33" startPosition="0" endLine="43" endPosition="0">
+      <varInfo nodeId="2059702675525965932" varName="editorContext" />
+      <varInfo nodeId="2059702675525965932" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="2059702675525965944" fileName="SConceptQueryCall_Editor.java" startLine="44" startPosition="88" endLine="54" endPosition="22">
+      <varInfo nodeId="2059702675525965944" varName="editorCell" />
+    </scopeInfo>
+    <scopeInfo nodeId="2059702675525965948" fileName="SConceptQueryCall_Editor.java" startLine="159" startPosition="132" endLine="169" endPosition="7" />
+    <scopeInfo nodeId="2059702675525965957" fileName="SConceptQueryCall_Editor.java" startLine="180" startPosition="0" endLine="191" endPosition="0">
+      <varInfo nodeId="2059702675525965957" varName="editorContext" />
+      <varInfo nodeId="2059702675525965957" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="2059702675525965950" fileName="SConceptQueryCall_Editor.java" startLine="56" startPosition="0" endLine="68" endPosition="0">
+      <varInfo nodeId="2059702675525965950" varName="editorContext" />
+      <varInfo nodeId="2059702675525965950" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="2059702675525965948" fileName="SConceptQueryCall_Editor.java" startLine="68" startPosition="0" endLine="80" endPosition="0">
+      <varInfo nodeId="2059702675525965948" varName="editorContext" />
+      <varInfo nodeId="2059702675525965948" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="2059702675525965944" fileName="SConceptQueryCall_Editor.java" startLine="43" startPosition="0" endLine="56" endPosition="0">
+      <varInfo nodeId="2059702675525965944" varName="editorContext" />
+      <varInfo nodeId="2059702675525965944" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="2059702675525965948" fileName="SConceptQueryCall_Editor.java" startLine="158" startPosition="0" endLine="171" endPosition="0">
+      <varInfo nodeId="2059702675525965948" varName="editorContext" />
+      <varInfo nodeId="2059702675525965948" varName="elementCell" />
+      <varInfo nodeId="2059702675525965948" varName="elementNode" />
+      <varInfo nodeId="2059702675525965948" varName="listOwner" />
+    </scopeInfo>
+    <scopeInfo nodeId="8595827001410597614" fileName="SConceptQueryCall_Editor.java" startLine="81" startPosition="87" endLine="96" endPosition="22">
+      <varInfo nodeId="8595827001410597614" varName="attributeConcept" />
+      <varInfo nodeId="8595827001410597614" varName="attributeKind" />
+      <varInfo nodeId="8595827001410597614" varName="editorCell" />
+      <varInfo nodeId="8595827001410597614" varName="provider" />
+    </scopeInfo>
+    <scopeInfo nodeId="8595827001410597617" fileName="SConceptQueryCall_Editor.java" startLine="112" startPosition="92" endLine="128" endPosition="24">
+      <varInfo nodeId="8595827001410597617" varName="attributeConcept" />
+      <varInfo nodeId="8595827001410597617" varName="attributeKind" />
+      <varInfo nodeId="8595827001410597617" varName="editorCell" />
+      <varInfo nodeId="8595827001410597617" varName="provider" />
+    </scopeInfo>
+    <scopeInfo nodeId="8595827001410597614" fileName="SConceptQueryCall_Editor.java" startLine="80" startPosition="0" endLine="98" endPosition="0">
+      <varInfo nodeId="8595827001410597614" varName="editorContext" />
+      <varInfo nodeId="8595827001410597614" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="8595827001410597617" fileName="SConceptQueryCall_Editor.java" startLine="111" startPosition="0" endLine="130" endPosition="0">
+      <varInfo nodeId="8595827001410597617" varName="editorContext" />
+      <varInfo nodeId="8595827001410597617" varName="node" />
+    </scopeInfo>
+    <unitInfo nodeId="535637396506608319" fileName="SConceptQueryCall_Editor.java" startLine="29" startPosition="0" endLine="193" endPosition="0" unitName="jetbrains.mps.core.smodel.editor.SConceptQueryCall_Editor" />
+    <unitInfo nodeId="8595827001410597615" fileName="SConceptQueryCall_Editor.java" startLine="99" startPosition="0" endLine="131" endPosition="0" unitName="jetbrains.mps.core.smodel.editor.SConceptQueryCall_Editor$_Inline_jhkb71_a0a" />
+    <unitInfo nodeId="2059702675525965948" fileName="SConceptQueryCall_Editor.java" startLine="132" startPosition="0" endLine="192" endPosition="0" unitName="jetbrains.mps.core.smodel.editor.SConceptQueryCall_Editor$argumentsListHandler_jhkb71_c0" />
+  </root>
+  <root nodeId="535637396506617131">
+    <nodeInfo nodeId="7386719926921898033" fileName="conceptQueryCallParameters.java" startLine="21" startPosition="78" endLine="22" endPosition="86" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="7386719926921920095" fileName="conceptQueryCallParameters.java" startLine="25" startPosition="137" endLine="26" endPosition="108" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="4519148889084567114" fileName="conceptQueryCallParameters.java" startLine="29" startPosition="98" endLine="30" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="7386719926921899976" fileName="conceptQueryCallParameters.java" startLine="33" startPosition="95" endLine="34" endPosition="57" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="7386719926921899984" fileName="conceptQueryCallParameters.java" startLine="35" startPosition="31" endLine="36" endPosition="18" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="7386719926921900000" fileName="conceptQueryCallParameters.java" startLine="39" startPosition="39" endLine="40" endPosition="219" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="7386719926921915393" fileName="conceptQueryCallParameters.java" startLine="46" startPosition="63" endLine="47" endPosition="70" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7386719926921915407" fileName="conceptQueryCallParameters.java" startLine="48" startPosition="12" endLine="49" endPosition="37" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7386719926921915473" fileName="conceptQueryCallParameters.java" startLine="50" startPosition="5" endLine="51" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="7386719926921915485" fileName="conceptQueryCallParameters.java" startLine="55" startPosition="6" endLine="56" endPosition="27" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7386719926921915499" fileName="conceptQueryCallParameters.java" startLine="58" startPosition="56" endLine="59" endPosition="32" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7386719926921915511" fileName="conceptQueryCallParameters.java" startLine="61" startPosition="69" endLine="62" endPosition="33" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7386719926921915523" fileName="conceptQueryCallParameters.java" startLine="64" startPosition="67" endLine="65" endPosition="131" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7386719926921915539" fileName="conceptQueryCallParameters.java" startLine="66" startPosition="14" endLine="67" endPosition="33" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7386719926921915546" fileName="conceptQueryCallParameters.java" startLine="69" startPosition="65" endLine="70" endPosition="78" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7386719926921915560" fileName="conceptQueryCallParameters.java" startLine="71" startPosition="7" endLine="72" endPosition="32" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7386719926921915565" fileName="conceptQueryCallParameters.java" startLine="73" startPosition="5" endLine="74" endPosition="27" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="535637396506617131" fileName="conceptQueryCallParameters.java" startLine="17" startPosition="78" endLine="19" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="conceptQueryCallParameters#()V" />
+    <nodeInfo nodeId="7386719926921915405" fileName="conceptQueryCallParameters.java" startLine="48" startPosition="10" endLine="50" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="7386719926921915537" fileName="conceptQueryCallParameters.java" startLine="66" startPosition="12" endLine="68" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="7386719926921899982" fileName="conceptQueryCallParameters.java" startLine="34" startPosition="57" endLine="37" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="7386719926921915497" fileName="conceptQueryCallParameters.java" startLine="57" startPosition="79" endLine="60" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="7386719926921915509" fileName="conceptQueryCallParameters.java" startLine="60" startPosition="7" endLine="63" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="7386719926921915544" fileName="conceptQueryCallParameters.java" startLine="68" startPosition="7" endLine="71" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="535637396506617131" fileName="conceptQueryCallParameters.java" startLine="20" startPosition="0" endLine="24" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getMethods#(Ljetbrains/mps/smodel/SNode;Ljetbrains/mps/nodeEditor/EditorContext;)Ljava/lang/Iterable;" />
+    <nodeInfo nodeId="535637396506617131" fileName="conceptQueryCallParameters.java" startLine="24" startPosition="0" endLine="28" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getStyledMethodPresentation#(Ljetbrains/mps/smodel/SNode;Ljetbrains/mps/nodeEditor/EditorContext;Ljetbrains/mps/smodel/SNode;Ljetbrains/mps/editor/runtime/StyledTextPrinter;)V" />
+    <nodeInfo nodeId="535637396506617131" fileName="conceptQueryCallParameters.java" startLine="28" startPosition="0" endLine="32" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="isMethodCurrent#(Ljetbrains/mps/smodel/SNode;Ljetbrains/mps/nodeEditor/EditorContext;Ljetbrains/mps/smodel/SNode;)Z" />
+    <nodeInfo nodeId="7386719926921899998" fileName="conceptQueryCallParameters.java" startLine="38" startPosition="172" endLine="42" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="accept#(Ljetbrains/mps/smodel/SNode;)Z" />
+    <nodeInfo nodeId="7386719926921915474" fileName="conceptQueryCallParameters.java" startLine="51" startPosition="0" endLine="55" endPosition="6" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="7386719926921899989" fileName="conceptQueryCallParameters.java" startLine="37" startPosition="5" endLine="42" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="7386719926921915391" fileName="conceptQueryCallParameters.java" startLine="45" startPosition="110" endLine="50" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="7386719926921915521" fileName="conceptQueryCallParameters.java" startLine="63" startPosition="7" endLine="68" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="7386719926921899969" fileName="conceptQueryCallParameters.java" startLine="32" startPosition="0" endLine="44" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getSelectedActualArgument#(Ljetbrains/mps/nodeEditor/EditorContext;Ljetbrains/mps/smodel/SNode;)Ljetbrains/mps/smodel/SNode;" />
+    <nodeInfo nodeId="7386719926921915490" fileName="conceptQueryCallParameters.java" startLine="56" startPosition="27" endLine="73" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+    <nodeInfo nodeId="7386719926921915345" fileName="conceptQueryCallParameters.java" startLine="44" startPosition="0" endLine="76" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="fillPresentation#(Ljetbrains/mps/smodel/SNode;Ljetbrains/mps/smodel/SNode;Ljetbrains/mps/editor/runtime/StyledTextPrinter;)V" />
+    <scopeInfo nodeId="535637396506617131" fileName="conceptQueryCallParameters.java" startLine="18" startPosition="39" endLine="18" endPosition="39" />
+    <scopeInfo nodeId="535637396506617134" fileName="conceptQueryCallParameters.java" startLine="21" startPosition="78" endLine="22" endPosition="86" />
+    <scopeInfo nodeId="535637396506617136" fileName="conceptQueryCallParameters.java" startLine="25" startPosition="137" endLine="26" endPosition="108" />
+    <scopeInfo nodeId="535637396506617138" fileName="conceptQueryCallParameters.java" startLine="29" startPosition="98" endLine="30" endPosition="16" />
+    <scopeInfo nodeId="7386719926921899983" fileName="conceptQueryCallParameters.java" startLine="35" startPosition="31" endLine="36" endPosition="18" />
+    <scopeInfo nodeId="7386719926921899999" fileName="conceptQueryCallParameters.java" startLine="39" startPosition="39" endLine="40" endPosition="219" />
+    <scopeInfo nodeId="7386719926921915392" fileName="conceptQueryCallParameters.java" startLine="46" startPosition="63" endLine="47" endPosition="70" />
+    <scopeInfo nodeId="7386719926921915406" fileName="conceptQueryCallParameters.java" startLine="48" startPosition="12" endLine="49" endPosition="37" />
+    <scopeInfo nodeId="7386719926921915498" fileName="conceptQueryCallParameters.java" startLine="58" startPosition="56" endLine="59" endPosition="32" />
+    <scopeInfo nodeId="7386719926921915510" fileName="conceptQueryCallParameters.java" startLine="61" startPosition="69" endLine="62" endPosition="33" />
+    <scopeInfo nodeId="7386719926921915522" fileName="conceptQueryCallParameters.java" startLine="64" startPosition="67" endLine="65" endPosition="131" />
+    <scopeInfo nodeId="7386719926921915538" fileName="conceptQueryCallParameters.java" startLine="66" startPosition="14" endLine="67" endPosition="33" />
+    <scopeInfo nodeId="7386719926921915545" fileName="conceptQueryCallParameters.java" startLine="69" startPosition="65" endLine="70" endPosition="78" />
+    <scopeInfo nodeId="535637396506617131" fileName="conceptQueryCallParameters.java" startLine="17" startPosition="78" endLine="19" endPosition="3" />
+    <scopeInfo nodeId="535637396506617131" fileName="conceptQueryCallParameters.java" startLine="20" startPosition="0" endLine="24" endPosition="0">
+      <varInfo nodeId="535637396506617131" varName="editorContext" />
+      <varInfo nodeId="535637396506617131" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="535637396506617131" fileName="conceptQueryCallParameters.java" startLine="24" startPosition="0" endLine="28" endPosition="0">
+      <varInfo nodeId="535637396506617131" varName="editorContext" />
+      <varInfo nodeId="535637396506617131" varName="node" />
+      <varInfo nodeId="535637396506617131" varName="parameterObject" />
+      <varInfo nodeId="535637396506617131" varName="styledText" />
+    </scopeInfo>
+    <scopeInfo nodeId="535637396506617131" fileName="conceptQueryCallParameters.java" startLine="28" startPosition="0" endLine="32" endPosition="0">
+      <varInfo nodeId="535637396506617131" varName="editorContext" />
+      <varInfo nodeId="535637396506617131" varName="node" />
+      <varInfo nodeId="535637396506617131" varName="parameterObject" />
+    </scopeInfo>
+    <scopeInfo nodeId="7386719926921899998" fileName="conceptQueryCallParameters.java" startLine="38" startPosition="172" endLine="42" endPosition="0">
+      <varInfo nodeId="7386719926921899998" varName="it" />
+    </scopeInfo>
+    <scopeInfo nodeId="7386719926921899975" fileName="conceptQueryCallParameters.java" startLine="33" startPosition="95" endLine="42" endPosition="7">
+      <varInfo nodeId="7386719926921899977" varName="selectedNode" />
+    </scopeInfo>
+    <scopeInfo nodeId="7386719926921899969" fileName="conceptQueryCallParameters.java" startLine="32" startPosition="0" endLine="44" endPosition="0">
+      <varInfo nodeId="7386719926921899970" varName="editorContext" />
+      <varInfo nodeId="7386719926921899972" varName="queryCall" />
+    </scopeInfo>
+    <scopeInfo nodeId="7386719926921915496" fileName="conceptQueryCallParameters.java" startLine="57" startPosition="79" endLine="72" endPosition="32" />
+    <scopeInfo nodeId="7386719926921915490" fileName="conceptQueryCallParameters.java" startLine="56" startPosition="27" endLine="73" endPosition="5">
+      <varInfo nodeId="7386719926921915494" varName="param" />
+    </scopeInfo>
+    <scopeInfo nodeId="7386719926921915347" fileName="conceptQueryCallParameters.java" startLine="45" startPosition="110" endLine="74" endPosition="27">
+      <varInfo nodeId="7386719926921915475" varName="argumentIndex" />
+    </scopeInfo>
+    <scopeInfo nodeId="7386719926921915345" fileName="conceptQueryCallParameters.java" startLine="44" startPosition="0" endLine="76" endPosition="0">
+      <varInfo nodeId="7386719926921915349" varName="query" />
+      <varInfo nodeId="7386719926921915351" varName="selectedActualArgument" />
+      <varInfo nodeId="7386719926921915353" varName="styledText" />
+    </scopeInfo>
+    <unitInfo nodeId="535637396506617131" fileName="conceptQueryCallParameters.java" startLine="17" startPosition="0" endLine="77" endPosition="0" unitName="jetbrains.mps.core.smodel.editor.conceptQueryCallParameters" />
+    <unitInfo nodeId="7386719926921899998" fileName="conceptQueryCallParameters.java" startLine="38" startPosition="149" endLine="42" endPosition="5" unitName="jetbrains.mps.core.smodel.editor.conceptQueryCallParameters$1" />
+  </root>
 </debugInfo>
 

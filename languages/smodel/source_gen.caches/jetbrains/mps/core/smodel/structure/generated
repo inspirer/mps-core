@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="7ofd3kf67eogfobpz1n87hfii9snn3s">
+<dependencies version="2" modelHash="-70xnspjo5mzdhsx2ghyxocg2tj3puq4">
   <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
   <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
   <dep model="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
@@ -17,6 +17,7 @@
     <dep root="4260762357824841783" />
     <dep root="4260762357825047862" />
     <dep root="5270931306887544473" />
+    <dep root="535637396506608313" />
     <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
     <dep model="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
@@ -41,7 +42,10 @@
   <source id="4260762357825047862" name="MqlNodeType" hash="67l0i4yh1rekmrcmctmk64b9ej6l7oq">
     <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
   </source>
-  <source id="5270931306887544473" name="SConceptQuery" hash="3dr6dl5oii2rmcl1r0hy1i1jwwldklm">
+  <source id="5270931306887544473" name="SConceptQuery" hash="-74e5qjns9qkq0911hebb5ufd2p4va2f">
+    <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
+  </source>
+  <source id="535637396506608313" name="SConceptQueryCall" hash="9rf1zdj0clf92vt4giccwtcxrcra20z">
     <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
   </source>
 </dependencies>

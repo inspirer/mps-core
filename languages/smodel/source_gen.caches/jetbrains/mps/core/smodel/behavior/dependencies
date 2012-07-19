@@ -6,6 +6,7 @@
     <classNode dependClassName="jetbrains.mps.core.smodel.behavior.MqlLinkSelector_BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.core.smodel.behavior.MqlNodeType_BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.core.smodel.behavior.MqlPropertySelector_BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.core.smodel.behavior.SConceptQueryCall_BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.core.smodel.behavior.SConceptQuery_BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.interpreted.BehaviorAspectInterpreted" />
@@ -61,12 +62,25 @@
     <classNode dependClassName="jetbrains.mps.smodel.SNode" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
+  <dependency className="jetbrains.mps.core.smodel.behavior.SConceptQueryCall_Behavior" file="SConceptQueryCall_Behavior.java">
+    <classNode dependClassName="jetbrains.mps.smodel.SNode" />
+  </dependency>
+  <dependency className="jetbrains.mps.core.smodel.behavior.SConceptQueryCall_BehaviorDescriptor" file="SConceptQueryCall_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.core.query.behavior.MqlSelector_BehaviorDescriptor" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
   <dependency className="jetbrains.mps.core.smodel.behavior.SConceptQuery_Behavior" file="SConceptQuery_Behavior.java">
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.util.HashSet" />
     <classNode dependClassName="java.util.Set" />
     <classNode dependClassName="jetbrains.mps.core.structure.behavior.SConceptMember_Behavior" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
     <classNode dependClassName="jetbrains.mps.project.GlobalScope" />
+    <classNode dependClassName="jetbrains.mps.scope.Scope" />
+    <classNode dependClassName="jetbrains.mps.scope.SimpleRoleScope" />
     <classNode dependClassName="jetbrains.mps.smodel.SModelUtil_new" />
     <classNode dependClassName="jetbrains.mps.smodel.SNode" />
   </dependency>
@@ -79,6 +93,9 @@
     <classNode dependClassName="jetbrains.mps.core.structure.behavior.SConceptMember_BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.lang.core.behavior.INamedConcept_Behavior" />
     <classNode dependClassName="jetbrains.mps.lang.core.behavior.INamedConcept_BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.ScopeProvider_Behavior" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.ScopeProvider_BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.scope.Scope" />
     <classNode dependClassName="jetbrains.mps.smodel.SNode" />
     <classNode extendsClassName="java.lang.Cloneable" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />

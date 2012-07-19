@@ -4,6 +4,10 @@ package jetbrains.mps.core.smodel.behavior;
 
 import jetbrains.mps.smodel.SNode;
 import jetbrains.mps.core.structure.behavior.SConceptMember_Behavior;
+import jetbrains.mps.scope.Scope;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
+import jetbrains.mps.scope.SimpleRoleScope;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import java.util.Set;
 import java.util.HashSet;
 import jetbrains.mps.smodel.SModelUtil_new;
@@ -15,6 +19,13 @@ public class SConceptQuery_Behavior {
 
   public static SNode virtual_getThisType_4125821269968916020(SNode thisNode) {
     return new SConceptQuery_Behavior.QuotationClass_m9cidb_a0a0b().createNode(SConceptMember_Behavior.call_getContainingConcept_4125821269968947769(thisNode));
+  }
+
+  public static Scope virtual_getScope_3734116213129936182(SNode thisNode, SNode kind, SNode child) {
+    if (kind == SConceptOperations.findConceptDeclaration("jetbrains.mps.core.query.structure.MqlParameter")) {
+      return SimpleRoleScope.forNamedElements(thisNode, SLinkOperations.findLinkDeclaration("jetbrains.mps.core.query.structure.MqlParametersContainer", "parameters"));
+    }
+    return null;
   }
 
   public static class QuotationClass_m9cidb_a0a0b {
