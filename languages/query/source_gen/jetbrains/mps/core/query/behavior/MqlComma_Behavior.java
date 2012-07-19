@@ -6,12 +6,12 @@ import jetbrains.mps.smodel.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.core.query.runtime.EvaluationEnvironment;
 import jetbrains.mps.core.query.runtime.EvaluationContext;
-import jetbrains.mps.core.query.runtime.QueryScope;
+import jetbrains.mps.scope.Scope;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.core.query.runtime.SingleElementScope;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.core.query.runtime.CompositeScope;
+import jetbrains.mps.scope.CompositeScope;
 
 public class MqlComma_Behavior {
   public static void init(SNode thisNode) {
@@ -34,13 +34,13 @@ public class MqlComma_Behavior {
     return env.evaluate(SLinkOperations.getTarget(thisNode, "right", true), context, true);
   }
 
-  public static QueryScope virtual_getScope_5433095484313879207(SNode thisNode, SNode kind, SNode child) {
+  public static Scope virtual_getScope_3734116213129936182(SNode thisNode, SNode kind, SNode child) {
     if (kind == SConceptOperations.findConceptDeclaration("jetbrains.mps.core.query.structure.MqlVariable")) {
       if (child == SLinkOperations.getTarget(thisNode, "right", true) && SNodeOperations.isInstanceOf(SLinkOperations.getTarget(thisNode, "left", true), "jetbrains.mps.core.query.structure.MqlAssignment")) {
         SNode var = SLinkOperations.getTarget(SNodeOperations.cast(SLinkOperations.getTarget(thisNode, "left", true), "jetbrains.mps.core.query.structure.MqlAssignment"), "var", true);
         if ((var != null)) {
-          QueryScope scope = new SingleElementScope(var, SPropertyOperations.getString(var, "name"));
-          return CompositeScope.createComposite(scope, QueryScope.getScope(SNodeOperations.getParent(thisNode), thisNode, kind));
+          Scope scope = new SingleElementScope(var, SPropertyOperations.getString(var, "name"));
+          return CompositeScope.createComposite(scope, Scope.getScope(SNodeOperations.getParent(thisNode), thisNode, kind));
         }
       }
     }

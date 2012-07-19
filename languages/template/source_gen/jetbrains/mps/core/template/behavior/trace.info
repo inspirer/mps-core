@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debugInfo>
   <unitInfo fileName="BehaviorAspectDescriptor.java" startLine="9" startPosition="0" endLine="48" endPosition="0" unitName="jetbrains.mps.core.template.behavior.BehaviorAspectDescriptor" />
-  <unitInfo fileName="MtlBuilder_BehaviorDescriptor.java" startLine="11" startPosition="0" endLine="28" endPosition="0" unitName="jetbrains.mps.core.template.behavior.MtlBuilder_BehaviorDescriptor" />
+  <unitInfo fileName="MtlBuilder_BehaviorDescriptor.java" startLine="12" startPosition="0" endLine="33" endPosition="0" unitName="jetbrains.mps.core.template.behavior.MtlBuilder_BehaviorDescriptor" />
   <unitInfo fileName="MtlEntity_BehaviorDescriptor.java" startLine="8" startPosition="0" endLine="10" endPosition="0" unitName="jetbrains.mps.core.template.behavior.MtlEntity_BehaviorDescriptor" />
-  <unitInfo fileName="MtlForeachMacro_BehaviorDescriptor.java" startLine="10" startPosition="0" endLine="27" endPosition="0" unitName="jetbrains.mps.core.template.behavior.MtlForeachMacro_BehaviorDescriptor" />
+  <unitInfo fileName="MtlForeachMacro_BehaviorDescriptor.java" startLine="11" startPosition="0" endLine="32" endPosition="0" unitName="jetbrains.mps.core.template.behavior.MtlForeachMacro_BehaviorDescriptor" />
   <unitInfo fileName="MtlForeachVar_BehaviorDescriptor.java" startLine="10" startPosition="0" endLine="23" endPosition="0" unitName="jetbrains.mps.core.template.behavior.MtlForeachVar_BehaviorDescriptor" />
   <unitInfo fileName="MtlIfMacro_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="jetbrains.mps.core.template.behavior.MtlIfMacro_BehaviorDescriptor" />
   <unitInfo fileName="MtlLabelNodeMacro_BehaviorDescriptor.java" startLine="9" startPosition="0" endLine="22" endPosition="0" unitName="jetbrains.mps.core.template.behavior.MtlLabelNodeMacro_BehaviorDescriptor" />
-  <unitInfo fileName="MtlLibrary_BehaviorDescriptor.java" startLine="12" startPosition="0" endLine="29" endPosition="0" unitName="jetbrains.mps.core.template.behavior.MtlLibrary_BehaviorDescriptor" />
+  <unitInfo fileName="MtlLibrary_BehaviorDescriptor.java" startLine="13" startPosition="0" endLine="34" endPosition="0" unitName="jetbrains.mps.core.template.behavior.MtlLibrary_BehaviorDescriptor" />
   <unitInfo fileName="MtlNewNodeType_BehaviorDescriptor.java" startLine="8" startPosition="0" endLine="21" endPosition="0" unitName="jetbrains.mps.core.template.behavior.MtlNewNodeType_BehaviorDescriptor" />
   <unitInfo fileName="MtlNodeMacro_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="jetbrains.mps.core.template.behavior.MtlNodeMacro_BehaviorDescriptor" />
   <unitInfo fileName="MtlNodeQueryMacro_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="jetbrains.mps.core.template.behavior.MtlNodeQueryMacro_BehaviorDescriptor" />
@@ -15,47 +15,40 @@
   <unitInfo fileName="MtlQuery_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="jetbrains.mps.core.template.behavior.MtlQuery_BehaviorDescriptor" />
   <unitInfo fileName="MtlReferenceMacro_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="jetbrains.mps.core.template.behavior.MtlReferenceMacro_BehaviorDescriptor" />
   <unitInfo fileName="MtlTemplateRoot_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="jetbrains.mps.core.template.behavior.MtlTemplateRoot_BehaviorDescriptor" />
-  <unitInfo fileName="MtlTemplate_BehaviorDescriptor.java" startLine="11" startPosition="0" endLine="28" endPosition="0" unitName="jetbrains.mps.core.template.behavior.MtlTemplate_BehaviorDescriptor" />
+  <unitInfo fileName="MtlTemplate_BehaviorDescriptor.java" startLine="12" startPosition="0" endLine="33" endPosition="0" unitName="jetbrains.mps.core.template.behavior.MtlTemplate_BehaviorDescriptor" />
   <root nodeId="3373821274546492153">
-    <nodeInfo nodeId="3373821274546492164" fileName="MtlTemplate_Behavior.java" startLine="20" startPosition="80" endLine="21" endPosition="196" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="3373821274546514745" fileName="MtlTemplate_Behavior.java" startLine="22" startPosition="64" endLine="23" endPosition="62" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="3373821274546514768" fileName="MtlTemplate_Behavior.java" startLine="23" startPosition="62" endLine="24" endPosition="45" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="3373821274546492186" fileName="MtlTemplate_Behavior.java" startLine="25" startPosition="5" endLine="26" endPosition="65" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="7934151313360408032" fileName="MtlTemplate_Behavior.java" startLine="32" startPosition="39" endLine="33" endPosition="131" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="7934151313360408037" fileName="MtlTemplate_Behavior.java" startLine="36" startPosition="5" endLine="37" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="3373821274546492153" fileName="MtlTemplate_Behavior.java" startLine="16" startPosition="35" endLine="19" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="init#(Ljetbrains/mps/smodel/SNode;)V" />
-    <nodeInfo nodeId="3373821274546514733" fileName="MtlTemplate_Behavior.java" startLine="21" startPosition="196" endLine="25" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="7934151313360408028" fileName="MtlTemplate_Behavior.java" startLine="31" startPosition="206" endLine="35" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="invoke#(Ljetbrains/mps/smodel/SNode;)Ljava/lang/String;" />
-    <nodeInfo nodeId="7934151313360408023" fileName="MtlTemplate_Behavior.java" startLine="30" startPosition="111" endLine="35" endPosition="9" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="7934151313360408018" fileName="MtlTemplate_Behavior.java" startLine="29" startPosition="106" endLine="36" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="3373821274546492153" fileName="MtlTemplate_Behavior.java" startLine="19" startPosition="0" endLine="28" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="call_getTemplateRoot_3373821274546492156#(Ljetbrains/mps/smodel/SNode;)Ljetbrains/mps/smodel/SNode;" />
-    <nodeInfo nodeId="3373821274546492153" fileName="MtlTemplate_Behavior.java" startLine="28" startPosition="0" endLine="39" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="virtual_getScope_5433095484313879207#(Ljetbrains/mps/smodel/SNode;Ljetbrains/mps/smodel/SNode;Ljetbrains/mps/smodel/SNode;)Ljetbrains/mps/core/query/runtime/QueryScope;" />
-    <scopeInfo nodeId="3373821274546492155" fileName="MtlTemplate_Behavior.java" startLine="17" startPosition="43" endLine="17" endPosition="43" />
-    <scopeInfo nodeId="7934151313360408031" fileName="MtlTemplate_Behavior.java" startLine="32" startPosition="39" endLine="33" endPosition="131" />
-    <scopeInfo nodeId="3373821274546514734" fileName="MtlTemplate_Behavior.java" startLine="22" startPosition="64" endLine="24" endPosition="45">
+    <nodeInfo nodeId="3373821274546492164" fileName="MtlTemplate_Behavior.java" startLine="18" startPosition="80" endLine="19" endPosition="196" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="3373821274546514745" fileName="MtlTemplate_Behavior.java" startLine="20" startPosition="64" endLine="21" endPosition="62" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="3373821274546514768" fileName="MtlTemplate_Behavior.java" startLine="21" startPosition="62" endLine="22" endPosition="45" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="3373821274546492186" fileName="MtlTemplate_Behavior.java" startLine="23" startPosition="5" endLine="24" endPosition="65" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="261388556849377754" fileName="MtlTemplate_Behavior.java" startLine="28" startPosition="111" endLine="29" endPosition="168" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="7934151313360408037" fileName="MtlTemplate_Behavior.java" startLine="30" startPosition="5" endLine="31" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="3373821274546492153" fileName="MtlTemplate_Behavior.java" startLine="14" startPosition="35" endLine="17" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="init#(Ljetbrains/mps/smodel/SNode;)V" />
+    <nodeInfo nodeId="7934151313360408018" fileName="MtlTemplate_Behavior.java" startLine="27" startPosition="101" endLine="30" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="3373821274546514733" fileName="MtlTemplate_Behavior.java" startLine="19" startPosition="196" endLine="23" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="3373821274546492153" fileName="MtlTemplate_Behavior.java" startLine="26" startPosition="0" endLine="33" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="virtual_getScope_3734116213129936182#(Ljetbrains/mps/smodel/SNode;Ljetbrains/mps/smodel/SNode;Ljetbrains/mps/smodel/SNode;)Ljetbrains/mps/scope/Scope;" />
+    <nodeInfo nodeId="3373821274546492153" fileName="MtlTemplate_Behavior.java" startLine="17" startPosition="0" endLine="26" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="call_getTemplateRoot_3373821274546492156#(Ljetbrains/mps/smodel/SNode;)Ljetbrains/mps/smodel/SNode;" />
+    <scopeInfo nodeId="3373821274546492155" fileName="MtlTemplate_Behavior.java" startLine="15" startPosition="43" endLine="15" endPosition="43" />
+    <scopeInfo nodeId="7934151313360408022" fileName="MtlTemplate_Behavior.java" startLine="28" startPosition="111" endLine="29" endPosition="168" />
+    <scopeInfo nodeId="3373821274546514734" fileName="MtlTemplate_Behavior.java" startLine="20" startPosition="64" endLine="22" endPosition="45">
       <varInfo nodeId="3373821274546514746" varName="node" />
     </scopeInfo>
-    <scopeInfo nodeId="3373821274546492153" fileName="MtlTemplate_Behavior.java" startLine="16" startPosition="35" endLine="19" endPosition="0">
+    <scopeInfo nodeId="3373821274546492153" fileName="MtlTemplate_Behavior.java" startLine="14" startPosition="35" endLine="17" endPosition="0">
       <varInfo nodeId="3373821274546492153" varName="thisNode" />
     </scopeInfo>
-    <scopeInfo nodeId="7934151313360408028" fileName="MtlTemplate_Behavior.java" startLine="31" startPosition="206" endLine="35" endPosition="0">
-      <varInfo nodeId="7934151313360408028" varName="n" />
-    </scopeInfo>
-    <scopeInfo nodeId="7934151313360408022" fileName="MtlTemplate_Behavior.java" startLine="30" startPosition="111" endLine="35" endPosition="9" />
-    <scopeInfo nodeId="3373821274546492159" fileName="MtlTemplate_Behavior.java" startLine="20" startPosition="80" endLine="26" endPosition="65">
+    <scopeInfo nodeId="261388556849377740" fileName="MtlTemplate_Behavior.java" startLine="27" startPosition="101" endLine="31" endPosition="16" />
+    <scopeInfo nodeId="3373821274546492159" fileName="MtlTemplate_Behavior.java" startLine="18" startPosition="80" endLine="24" endPosition="65">
       <varInfo nodeId="3373821274546492165" varName="rootMarkers" />
     </scopeInfo>
-    <scopeInfo nodeId="7934151313360408017" fileName="MtlTemplate_Behavior.java" startLine="29" startPosition="106" endLine="37" endPosition="16" />
-    <scopeInfo nodeId="3373821274546492153" fileName="MtlTemplate_Behavior.java" startLine="19" startPosition="0" endLine="28" endPosition="0">
+    <scopeInfo nodeId="3373821274546492153" fileName="MtlTemplate_Behavior.java" startLine="26" startPosition="0" endLine="33" endPosition="0">
+      <varInfo nodeId="261388556849377743" varName="child" />
+      <varInfo nodeId="261388556849377741" varName="kind" />
       <varInfo nodeId="3373821274546492153" varName="thisNode" />
     </scopeInfo>
-    <scopeInfo nodeId="3373821274546492153" fileName="MtlTemplate_Behavior.java" startLine="28" startPosition="0" endLine="39" endPosition="0">
-      <varInfo nodeId="3435983127247139191" varName="child" />
-      <varInfo nodeId="7934151313360408039" varName="kind" />
+    <scopeInfo nodeId="3373821274546492153" fileName="MtlTemplate_Behavior.java" startLine="17" startPosition="0" endLine="26" endPosition="0">
       <varInfo nodeId="3373821274546492153" varName="thisNode" />
     </scopeInfo>
-    <unitInfo nodeId="3373821274546492153" fileName="MtlTemplate_Behavior.java" startLine="16" startPosition="0" endLine="40" endPosition="0" unitName="jetbrains.mps.core.template.behavior.MtlTemplate_Behavior" />
-    <unitInfo nodeId="7934151313360408028" fileName="MtlTemplate_Behavior.java" startLine="31" startPosition="159" endLine="35" endPosition="7" unitName="jetbrains.mps.core.template.behavior.MtlTemplate_Behavior$1" />
+    <unitInfo nodeId="3373821274546492153" fileName="MtlTemplate_Behavior.java" startLine="14" startPosition="0" endLine="34" endPosition="0" unitName="jetbrains.mps.core.template.behavior.MtlTemplate_Behavior" />
   </root>
   <root nodeId="4273915927700610140">
     <nodeInfo nodeId="2852142168179579218" fileName="MtlNewNodeType_Behavior.java" startLine="15" startPosition="101" endLine="16" endPosition="149" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
@@ -89,22 +82,22 @@
     <nodeInfo nodeId="5109194352282815903" fileName="MtlForeachMacro_Behavior.java" startLine="21" startPosition="5" endLine="22" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="5109194352282826104" fileName="MtlForeachMacro_Behavior.java" startLine="25" startPosition="105" endLine="26" endPosition="130" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
     <nodeInfo nodeId="5109194352282780042" fileName="MtlForeachMacro_Behavior.java" startLine="14" startPosition="39" endLine="17" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="init#(Ljetbrains/mps/smodel/SNode;)V" />
-    <nodeInfo nodeId="5109194352282812223" fileName="MtlForeachMacro_Behavior.java" startLine="18" startPosition="106" endLine="21" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="5109194352282812223" fileName="MtlForeachMacro_Behavior.java" startLine="18" startPosition="101" endLine="21" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
     <nodeInfo nodeId="5109194352282826096" fileName="MtlForeachMacro_Behavior.java" startLine="26" startPosition="130" endLine="30" endPosition="6" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="5109194352282780042" fileName="MtlForeachMacro_Behavior.java" startLine="17" startPosition="0" endLine="24" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="virtual_getScope_5433095484313879207#(Ljetbrains/mps/smodel/SNode;Ljetbrains/mps/smodel/SNode;Ljetbrains/mps/smodel/SNode;)Ljetbrains/mps/core/query/runtime/QueryScope;" />
+    <nodeInfo nodeId="5109194352282780042" fileName="MtlForeachMacro_Behavior.java" startLine="17" startPosition="0" endLine="24" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="virtual_getScope_3734116213129936182#(Ljetbrains/mps/smodel/SNode;Ljetbrains/mps/smodel/SNode;Ljetbrains/mps/smodel/SNode;)Ljetbrains/mps/scope/Scope;" />
     <nodeInfo nodeId="5109194352282780042" fileName="MtlForeachMacro_Behavior.java" startLine="24" startPosition="0" endLine="32" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="virtual_getContainedVariableType_3435983127247055569#(Ljetbrains/mps/smodel/SNode;Ljava/lang/String;)Ljetbrains/mps/smodel/SNode;" />
     <scopeInfo nodeId="5109194352282780044" fileName="MtlForeachMacro_Behavior.java" startLine="15" startPosition="43" endLine="15" endPosition="43" />
     <scopeInfo nodeId="5109194352282812225" fileName="MtlForeachMacro_Behavior.java" startLine="19" startPosition="110" endLine="20" endPosition="175" />
     <scopeInfo nodeId="5109194352282780042" fileName="MtlForeachMacro_Behavior.java" startLine="14" startPosition="39" endLine="17" endPosition="0">
       <varInfo nodeId="5109194352282780042" varName="thisNode" />
     </scopeInfo>
-    <scopeInfo nodeId="5109194352282812211" fileName="MtlForeachMacro_Behavior.java" startLine="18" startPosition="106" endLine="22" endPosition="16" />
+    <scopeInfo nodeId="261388556849377940" fileName="MtlForeachMacro_Behavior.java" startLine="18" startPosition="101" endLine="22" endPosition="16" />
     <scopeInfo nodeId="5109194352282826092" fileName="MtlForeachMacro_Behavior.java" startLine="25" startPosition="105" endLine="30" endPosition="6">
       <varInfo nodeId="5109194352282826105" varName="eType" />
     </scopeInfo>
     <scopeInfo nodeId="5109194352282780042" fileName="MtlForeachMacro_Behavior.java" startLine="17" startPosition="0" endLine="24" endPosition="0">
-      <varInfo nodeId="5109194352282812214" varName="child" />
-      <varInfo nodeId="5109194352282812212" varName="kind" />
+      <varInfo nodeId="261388556849377943" varName="child" />
+      <varInfo nodeId="261388556849377941" varName="kind" />
       <varInfo nodeId="5109194352282780042" varName="thisNode" />
     </scopeInfo>
     <scopeInfo nodeId="5109194352282780042" fileName="MtlForeachMacro_Behavior.java" startLine="24" startPosition="0" endLine="32" endPosition="0">
@@ -114,39 +107,32 @@
     <unitInfo nodeId="5109194352282780042" fileName="MtlForeachMacro_Behavior.java" startLine="14" startPosition="0" endLine="33" endPosition="0" unitName="jetbrains.mps.core.template.behavior.MtlForeachMacro_Behavior" />
   </root>
   <root nodeId="5433095484313962444">
-    <nodeInfo nodeId="5433095484313947546" fileName="MtlLibrary_Behavior.java" startLine="21" startPosition="39" endLine="22" endPosition="131" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="5433095484313962475" fileName="MtlLibrary_Behavior.java" startLine="27" startPosition="39" endLine="28" endPosition="131" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="5433095484313947553" fileName="MtlLibrary_Behavior.java" startLine="31" startPosition="5" endLine="32" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="5433095484313962444" fileName="MtlLibrary_Behavior.java" startLine="14" startPosition="34" endLine="17" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="init#(Ljetbrains/mps/smodel/SNode;)V" />
-    <nodeInfo nodeId="5433095484313947542" fileName="MtlLibrary_Behavior.java" startLine="20" startPosition="195" endLine="24" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="invoke#(Ljetbrains/mps/smodel/SNode;)Ljava/lang/String;" />
-    <nodeInfo nodeId="5433095484313962471" fileName="MtlLibrary_Behavior.java" startLine="26" startPosition="242" endLine="30" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="invoke#(Ljetbrains/mps/smodel/SNode;)Ljava/lang/String;" />
-    <nodeInfo nodeId="5433095484313947537" fileName="MtlLibrary_Behavior.java" startLine="19" startPosition="111" endLine="24" endPosition="9" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="5433095484313962466" fileName="MtlLibrary_Behavior.java" startLine="25" startPosition="114" endLine="30" endPosition="9" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="5433095484313947532" fileName="MtlLibrary_Behavior.java" startLine="18" startPosition="106" endLine="31" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="5433095484313962444" fileName="MtlLibrary_Behavior.java" startLine="17" startPosition="0" endLine="34" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="virtual_getScope_5433095484313879207#(Ljetbrains/mps/smodel/SNode;Ljetbrains/mps/smodel/SNode;Ljetbrains/mps/smodel/SNode;)Ljetbrains/mps/core/query/runtime/QueryScope;" />
-    <scopeInfo nodeId="5433095484313962446" fileName="MtlLibrary_Behavior.java" startLine="15" startPosition="43" endLine="15" endPosition="43" />
-    <scopeInfo nodeId="5433095484313947545" fileName="MtlLibrary_Behavior.java" startLine="21" startPosition="39" endLine="22" endPosition="131" />
-    <scopeInfo nodeId="5433095484313962474" fileName="MtlLibrary_Behavior.java" startLine="27" startPosition="39" endLine="28" endPosition="131" />
-    <scopeInfo nodeId="5433095484313962444" fileName="MtlLibrary_Behavior.java" startLine="14" startPosition="34" endLine="17" endPosition="0">
+    <nodeInfo nodeId="261388556849377792" fileName="MtlLibrary_Behavior.java" startLine="18" startPosition="111" endLine="19" endPosition="157" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="261388556849377829" fileName="MtlLibrary_Behavior.java" startLine="22" startPosition="44" endLine="23" endPosition="135" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="5433095484313947553" fileName="MtlLibrary_Behavior.java" startLine="26" startPosition="5" endLine="27" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="5433095484313962444" fileName="MtlLibrary_Behavior.java" startLine="13" startPosition="34" endLine="16" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="init#(Ljetbrains/mps/smodel/SNode;)V" />
+    <nodeInfo nodeId="261388556849377823" fileName="MtlLibrary_Behavior.java" startLine="21" startPosition="192" endLine="25" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getName#(Ljetbrains/mps/smodel/SNode;)Ljava/lang/String;" />
+    <nodeInfo nodeId="261388556849377816" fileName="MtlLibrary_Behavior.java" startLine="20" startPosition="114" endLine="25" endPosition="8" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="5433095484313947532" fileName="MtlLibrary_Behavior.java" startLine="17" startPosition="101" endLine="26" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="5433095484313962444" fileName="MtlLibrary_Behavior.java" startLine="16" startPosition="0" endLine="29" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="virtual_getScope_3734116213129936182#(Ljetbrains/mps/smodel/SNode;Ljetbrains/mps/smodel/SNode;Ljetbrains/mps/smodel/SNode;)Ljetbrains/mps/scope/Scope;" />
+    <scopeInfo nodeId="5433095484313962446" fileName="MtlLibrary_Behavior.java" startLine="14" startPosition="43" endLine="14" endPosition="43" />
+    <scopeInfo nodeId="5433095484313947536" fileName="MtlLibrary_Behavior.java" startLine="18" startPosition="111" endLine="19" endPosition="157" />
+    <scopeInfo nodeId="261388556849377828" fileName="MtlLibrary_Behavior.java" startLine="22" startPosition="44" endLine="23" endPosition="135" />
+    <scopeInfo nodeId="5433095484313962444" fileName="MtlLibrary_Behavior.java" startLine="13" startPosition="34" endLine="16" endPosition="0">
       <varInfo nodeId="5433095484313962444" varName="thisNode" />
     </scopeInfo>
-    <scopeInfo nodeId="5433095484313947542" fileName="MtlLibrary_Behavior.java" startLine="20" startPosition="195" endLine="24" endPosition="0">
-      <varInfo nodeId="5433095484313947542" varName="n" />
+    <scopeInfo nodeId="261388556849377823" fileName="MtlLibrary_Behavior.java" startLine="21" startPosition="192" endLine="25" endPosition="0">
+      <varInfo nodeId="261388556849377826" varName="child" />
     </scopeInfo>
-    <scopeInfo nodeId="5433095484313962471" fileName="MtlLibrary_Behavior.java" startLine="26" startPosition="242" endLine="30" endPosition="0">
-      <varInfo nodeId="5433095484313962471" varName="n" />
-    </scopeInfo>
-    <scopeInfo nodeId="5433095484313947536" fileName="MtlLibrary_Behavior.java" startLine="19" startPosition="111" endLine="24" endPosition="9" />
-    <scopeInfo nodeId="5433095484313962460" fileName="MtlLibrary_Behavior.java" startLine="25" startPosition="114" endLine="30" endPosition="9" />
-    <scopeInfo nodeId="5433095484313962449" fileName="MtlLibrary_Behavior.java" startLine="18" startPosition="106" endLine="32" endPosition="16" />
-    <scopeInfo nodeId="5433095484313962444" fileName="MtlLibrary_Behavior.java" startLine="17" startPosition="0" endLine="34" endPosition="0">
-      <varInfo nodeId="7934151313360314495" varName="child" />
-      <varInfo nodeId="5433095484313962450" varName="kind" />
+    <scopeInfo nodeId="5433095484313962460" fileName="MtlLibrary_Behavior.java" startLine="20" startPosition="114" endLine="25" endPosition="8" />
+    <scopeInfo nodeId="261388556849377776" fileName="MtlLibrary_Behavior.java" startLine="17" startPosition="101" endLine="27" endPosition="16" />
+    <scopeInfo nodeId="5433095484313962444" fileName="MtlLibrary_Behavior.java" startLine="16" startPosition="0" endLine="29" endPosition="0">
+      <varInfo nodeId="261388556849377779" varName="child" />
+      <varInfo nodeId="261388556849377777" varName="kind" />
       <varInfo nodeId="5433095484313962444" varName="thisNode" />
     </scopeInfo>
-    <unitInfo nodeId="5433095484313962444" fileName="MtlLibrary_Behavior.java" startLine="14" startPosition="0" endLine="35" endPosition="0" unitName="jetbrains.mps.core.template.behavior.MtlLibrary_Behavior" />
-    <unitInfo nodeId="5433095484313947542" fileName="MtlLibrary_Behavior.java" startLine="20" startPosition="148" endLine="24" endPosition="7" unitName="jetbrains.mps.core.template.behavior.MtlLibrary_Behavior$1" />
-    <unitInfo nodeId="5433095484313962471" fileName="MtlLibrary_Behavior.java" startLine="26" startPosition="195" endLine="30" endPosition="7" unitName="jetbrains.mps.core.template.behavior.MtlLibrary_Behavior$2" />
+    <unitInfo nodeId="5433095484313962444" fileName="MtlLibrary_Behavior.java" startLine="13" startPosition="0" endLine="30" endPosition="0" unitName="jetbrains.mps.core.template.behavior.MtlLibrary_Behavior" />
+    <unitInfo nodeId="261388556849377821" fileName="MtlLibrary_Behavior.java" startLine="21" startPosition="17" endLine="25" endPosition="7" unitName="jetbrains.mps.core.template.behavior.MtlLibrary_Behavior$1" />
   </root>
   <root nodeId="641202304629636321">
     <nodeInfo nodeId="8148155863335702444" fileName="MtlLabelNodeMacro_Behavior.java" startLine="12" startPosition="105" endLine="13" endPosition="12" conceptFqName="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
@@ -170,30 +156,23 @@
     <unitInfo nodeId="641202304629636321" fileName="MtlLabelNodeMacro_Behavior.java" startLine="8" startPosition="0" endLine="20" endPosition="0" unitName="jetbrains.mps.core.template.behavior.MtlLabelNodeMacro_Behavior" />
   </root>
   <root nodeId="7934151313360408012">
-    <nodeInfo nodeId="7934151313360408005" fileName="MtlBuilder_Behavior.java" startLine="21" startPosition="39" endLine="22" endPosition="131" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="7934151313360408010" fileName="MtlBuilder_Behavior.java" startLine="25" startPosition="5" endLine="26" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="7934151313360408012" fileName="MtlBuilder_Behavior.java" startLine="14" startPosition="34" endLine="17" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="init#(Ljetbrains/mps/smodel/SNode;)V" />
-    <nodeInfo nodeId="7934151313360408001" fileName="MtlBuilder_Behavior.java" startLine="20" startPosition="206" endLine="24" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="invoke#(Ljetbrains/mps/smodel/SNode;)Ljava/lang/String;" />
-    <nodeInfo nodeId="7934151313360407996" fileName="MtlBuilder_Behavior.java" startLine="19" startPosition="111" endLine="24" endPosition="9" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="7934151313360407991" fileName="MtlBuilder_Behavior.java" startLine="18" startPosition="106" endLine="25" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="7934151313360408012" fileName="MtlBuilder_Behavior.java" startLine="17" startPosition="0" endLine="28" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="virtual_getScope_5433095484313879207#(Ljetbrains/mps/smodel/SNode;Ljetbrains/mps/smodel/SNode;Ljetbrains/mps/smodel/SNode;)Ljetbrains/mps/core/query/runtime/QueryScope;" />
-    <scopeInfo nodeId="7934151313360408014" fileName="MtlBuilder_Behavior.java" startLine="15" startPosition="43" endLine="15" endPosition="43" />
-    <scopeInfo nodeId="7934151313360408004" fileName="MtlBuilder_Behavior.java" startLine="21" startPosition="39" endLine="22" endPosition="131" />
-    <scopeInfo nodeId="7934151313360408012" fileName="MtlBuilder_Behavior.java" startLine="14" startPosition="34" endLine="17" endPosition="0">
+    <nodeInfo nodeId="261388556849377702" fileName="MtlBuilder_Behavior.java" startLine="16" startPosition="111" endLine="17" endPosition="168" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="7934151313360408010" fileName="MtlBuilder_Behavior.java" startLine="18" startPosition="5" endLine="19" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="7934151313360408012" fileName="MtlBuilder_Behavior.java" startLine="11" startPosition="34" endLine="14" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="init#(Ljetbrains/mps/smodel/SNode;)V" />
+    <nodeInfo nodeId="7934151313360407991" fileName="MtlBuilder_Behavior.java" startLine="15" startPosition="101" endLine="18" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="7934151313360408012" fileName="MtlBuilder_Behavior.java" startLine="14" startPosition="0" endLine="21" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="virtual_getScope_3734116213129936182#(Ljetbrains/mps/smodel/SNode;Ljetbrains/mps/smodel/SNode;Ljetbrains/mps/smodel/SNode;)Ljetbrains/mps/scope/Scope;" />
+    <scopeInfo nodeId="7934151313360408014" fileName="MtlBuilder_Behavior.java" startLine="12" startPosition="43" endLine="12" endPosition="43" />
+    <scopeInfo nodeId="7934151313360407995" fileName="MtlBuilder_Behavior.java" startLine="16" startPosition="111" endLine="17" endPosition="168" />
+    <scopeInfo nodeId="7934151313360408012" fileName="MtlBuilder_Behavior.java" startLine="11" startPosition="34" endLine="14" endPosition="0">
       <varInfo nodeId="7934151313360408012" varName="thisNode" />
     </scopeInfo>
-    <scopeInfo nodeId="7934151313360408001" fileName="MtlBuilder_Behavior.java" startLine="20" startPosition="206" endLine="24" endPosition="0">
-      <varInfo nodeId="7934151313360408001" varName="n" />
-    </scopeInfo>
-    <scopeInfo nodeId="7934151313360407995" fileName="MtlBuilder_Behavior.java" startLine="19" startPosition="111" endLine="24" endPosition="9" />
-    <scopeInfo nodeId="7934151313360407979" fileName="MtlBuilder_Behavior.java" startLine="18" startPosition="106" endLine="26" endPosition="16" />
-    <scopeInfo nodeId="7934151313360408012" fileName="MtlBuilder_Behavior.java" startLine="17" startPosition="0" endLine="28" endPosition="0">
-      <varInfo nodeId="3435983127247139189" varName="child" />
-      <varInfo nodeId="7934151313360407980" varName="kind" />
+    <scopeInfo nodeId="261388556849377709" fileName="MtlBuilder_Behavior.java" startLine="15" startPosition="101" endLine="19" endPosition="16" />
+    <scopeInfo nodeId="7934151313360408012" fileName="MtlBuilder_Behavior.java" startLine="14" startPosition="0" endLine="21" endPosition="0">
+      <varInfo nodeId="261388556849377712" varName="child" />
+      <varInfo nodeId="261388556849377710" varName="kind" />
       <varInfo nodeId="7934151313360408012" varName="thisNode" />
     </scopeInfo>
-    <unitInfo nodeId="7934151313360408012" fileName="MtlBuilder_Behavior.java" startLine="14" startPosition="0" endLine="29" endPosition="0" unitName="jetbrains.mps.core.template.behavior.MtlBuilder_Behavior" />
-    <unitInfo nodeId="7934151313360408001" fileName="MtlBuilder_Behavior.java" startLine="20" startPosition="159" endLine="24" endPosition="7" unitName="jetbrains.mps.core.template.behavior.MtlBuilder_Behavior$1" />
+    <unitInfo nodeId="7934151313360408012" fileName="MtlBuilder_Behavior.java" startLine="11" startPosition="0" endLine="22" endPosition="0" unitName="jetbrains.mps.core.template.behavior.MtlBuilder_Behavior" />
   </root>
 </debugInfo>
 

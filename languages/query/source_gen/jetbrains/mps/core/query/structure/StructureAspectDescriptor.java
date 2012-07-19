@@ -8,7 +8,7 @@ import jetbrains.mps.smodel.runtime.impl.CompiledConceptDescriptor;
 import jetbrains.mps.smodel.runtime.interpreted.StructureAspectInterpreted;
 
 public class StructureAspectDescriptor implements jetbrains.mps.smodel.runtime.StructureAspectDescriptor {
-  private static String[] stringSwitchCases_1htk8d_a0a0a = new String[]{"jetbrains.mps.core.query.structure.MqlArithmetic", "jetbrains.mps.core.query.structure.MqlAssignment", "jetbrains.mps.core.query.structure.MqlBinaryExpr", "jetbrains.mps.core.query.structure.MqlBoolLiteral", "jetbrains.mps.core.query.structure.MqlBoolType", "jetbrains.mps.core.query.structure.MqlClosure", "jetbrains.mps.core.query.structure.MqlCollectionProperty", "jetbrains.mps.core.query.structure.MqlCollectionSelector", "jetbrains.mps.core.query.structure.MqlCollectionSelectorVar", "jetbrains.mps.core.query.structure.MqlCollectionSelectorVarRef", "jetbrains.mps.core.query.structure.MqlComma", "jetbrains.mps.core.query.structure.MqlCondition", "jetbrains.mps.core.query.structure.MqlDotExpression", "jetbrains.mps.core.query.structure.MqlExpression", "jetbrains.mps.core.query.structure.MqlFunctionType", "jetbrains.mps.core.query.structure.MqlImport", "jetbrains.mps.core.query.structure.MqlIntLiteral", "jetbrains.mps.core.query.structure.MqlIntType", "jetbrains.mps.core.query.structure.MqlListLiteral", "jetbrains.mps.core.query.structure.MqlListType", "jetbrains.mps.core.query.structure.MqlNoContextQueryCall", "jetbrains.mps.core.query.structure.MqlNullLiteral", "jetbrains.mps.core.query.structure.MqlNullType", "jetbrains.mps.core.query.structure.MqlPackage", "jetbrains.mps.core.query.structure.MqlParameter", "jetbrains.mps.core.query.structure.MqlParameterReference", "jetbrains.mps.core.query.structure.MqlParametersContainer", "jetbrains.mps.core.query.structure.MqlParentheses", "jetbrains.mps.core.query.structure.MqlQuery", "jetbrains.mps.core.query.structure.MqlScopeExporter", "jetbrains.mps.core.query.structure.MqlScopeProvider", "jetbrains.mps.core.query.structure.MqlSelector", "jetbrains.mps.core.query.structure.MqlStringLiteral", "jetbrains.mps.core.query.structure.MqlStringType", "jetbrains.mps.core.query.structure.MqlThis", "jetbrains.mps.core.query.structure.MqlThisProvider", "jetbrains.mps.core.query.structure.MqlTriplex", "jetbrains.mps.core.query.structure.MqlType", "jetbrains.mps.core.query.structure.MqlUnary", "jetbrains.mps.core.query.structure.MqlVariable", "jetbrains.mps.core.query.structure.MqlVariableContainer", "jetbrains.mps.core.query.structure.MqlVariableReference"};
+  private static String[] stringSwitchCases_1htk8d_a0a0a = new String[]{"jetbrains.mps.core.query.structure.MqlArithmetic", "jetbrains.mps.core.query.structure.MqlAssignment", "jetbrains.mps.core.query.structure.MqlBinaryExpr", "jetbrains.mps.core.query.structure.MqlBoolLiteral", "jetbrains.mps.core.query.structure.MqlBoolType", "jetbrains.mps.core.query.structure.MqlClosure", "jetbrains.mps.core.query.structure.MqlCollectionProperty", "jetbrains.mps.core.query.structure.MqlCollectionSelector", "jetbrains.mps.core.query.structure.MqlCollectionSelectorVar", "jetbrains.mps.core.query.structure.MqlCollectionSelectorVarRef", "jetbrains.mps.core.query.structure.MqlComma", "jetbrains.mps.core.query.structure.MqlCondition", "jetbrains.mps.core.query.structure.MqlDotExpression", "jetbrains.mps.core.query.structure.MqlExpression", "jetbrains.mps.core.query.structure.MqlFunctionType", "jetbrains.mps.core.query.structure.MqlImport", "jetbrains.mps.core.query.structure.MqlIntLiteral", "jetbrains.mps.core.query.structure.MqlIntType", "jetbrains.mps.core.query.structure.MqlListLiteral", "jetbrains.mps.core.query.structure.MqlListType", "jetbrains.mps.core.query.structure.MqlNoContextQueryCall", "jetbrains.mps.core.query.structure.MqlNullLiteral", "jetbrains.mps.core.query.structure.MqlNullType", "jetbrains.mps.core.query.structure.MqlPackage", "jetbrains.mps.core.query.structure.MqlParameter", "jetbrains.mps.core.query.structure.MqlParameterReference", "jetbrains.mps.core.query.structure.MqlParametersContainer", "jetbrains.mps.core.query.structure.MqlParentheses", "jetbrains.mps.core.query.structure.MqlQuery", "jetbrains.mps.core.query.structure.MqlScopeExporter", "jetbrains.mps.core.query.structure.MqlSelector", "jetbrains.mps.core.query.structure.MqlStringLiteral", "jetbrains.mps.core.query.structure.MqlStringType", "jetbrains.mps.core.query.structure.MqlThis", "jetbrains.mps.core.query.structure.MqlThisProvider", "jetbrains.mps.core.query.structure.MqlTriplex", "jetbrains.mps.core.query.structure.MqlType", "jetbrains.mps.core.query.structure.MqlUnary", "jetbrains.mps.core.query.structure.MqlVariable", "jetbrains.mps.core.query.structure.MqlVariableContainer", "jetbrains.mps.core.query.structure.MqlVariableReference"};
 
   public StructureAspectDescriptor() {
   }
@@ -26,7 +26,7 @@ public class StructureAspectDescriptor implements jetbrains.mps.smodel.runtime.S
       case 4:
         return new CompiledConceptDescriptor("jetbrains.mps.core.query.structure.MqlBoolType", "jetbrains.mps.core.query.structure.MqlType", false, new String[]{"jetbrains.mps.core.query.structure.MqlType"}, new String[]{}, new String[]{});
       case 5:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.query.structure.MqlClosure", "jetbrains.mps.core.query.structure.MqlExpression", false, new String[]{"jetbrains.mps.core.query.structure.MqlExpression", "jetbrains.mps.core.query.structure.MqlParametersContainer", "jetbrains.mps.core.query.structure.MqlScopeProvider"}, new String[]{}, new String[]{});
+        return new CompiledConceptDescriptor("jetbrains.mps.core.query.structure.MqlClosure", "jetbrains.mps.core.query.structure.MqlExpression", false, new String[]{"jetbrains.mps.core.query.structure.MqlExpression", "jetbrains.mps.core.query.structure.MqlParametersContainer", "jetbrains.mps.lang.core.structure.ScopeProvider"}, new String[]{}, new String[]{});
       case 6:
         return new CompiledConceptDescriptor("jetbrains.mps.core.query.structure.MqlCollectionProperty", "jetbrains.mps.core.query.structure.MqlSelector", false, new String[]{"jetbrains.mps.core.query.structure.MqlSelector"}, new String[]{"kind"}, new String[]{});
       case 7:
@@ -36,7 +36,7 @@ public class StructureAspectDescriptor implements jetbrains.mps.smodel.runtime.S
       case 9:
         return new CompiledConceptDescriptor("jetbrains.mps.core.query.structure.MqlCollectionSelectorVarRef", "jetbrains.mps.core.query.structure.MqlExpression", false, new String[]{"jetbrains.mps.core.query.structure.MqlExpression"}, new String[]{}, new String[]{"var"});
       case 10:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.query.structure.MqlComma", "jetbrains.mps.core.query.structure.MqlBinaryExpr", false, new String[]{"jetbrains.mps.core.query.structure.MqlBinaryExpr", "jetbrains.mps.core.query.structure.MqlScopeProvider"}, new String[]{}, new String[]{});
+        return new CompiledConceptDescriptor("jetbrains.mps.core.query.structure.MqlComma", "jetbrains.mps.core.query.structure.MqlBinaryExpr", false, new String[]{"jetbrains.mps.core.query.structure.MqlBinaryExpr", "jetbrains.mps.lang.core.structure.ScopeProvider"}, new String[]{}, new String[]{});
       case 11:
         return new CompiledConceptDescriptor("jetbrains.mps.core.query.structure.MqlCondition", "jetbrains.mps.core.query.structure.MqlBinaryExpr", false, new String[]{"jetbrains.mps.core.query.structure.MqlBinaryExpr"}, new String[]{"kind"}, new String[]{});
       case 12:
@@ -62,7 +62,7 @@ public class StructureAspectDescriptor implements jetbrains.mps.smodel.runtime.S
       case 22:
         return new CompiledConceptDescriptor("jetbrains.mps.core.query.structure.MqlNullType", "jetbrains.mps.core.query.structure.MqlType", false, new String[]{"jetbrains.mps.core.query.structure.MqlType"}, new String[]{}, new String[]{});
       case 23:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.query.structure.MqlPackage", "jetbrains.mps.lang.core.structure.BaseConcept", false, new String[]{"jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept", "jetbrains.mps.core.query.structure.MqlScopeProvider", "jetbrains.mps.core.query.structure.MqlScopeExporter"}, new String[]{}, new String[]{});
+        return new CompiledConceptDescriptor("jetbrains.mps.core.query.structure.MqlPackage", "jetbrains.mps.lang.core.structure.BaseConcept", false, new String[]{"jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept", "jetbrains.mps.lang.core.structure.ScopeProvider", "jetbrains.mps.core.query.structure.MqlScopeExporter"}, new String[]{}, new String[]{});
       case 24:
         return new CompiledConceptDescriptor("jetbrains.mps.core.query.structure.MqlParameter", "jetbrains.mps.lang.core.structure.BaseConcept", false, new String[]{"jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept"}, new String[]{}, new String[]{});
       case 25:
@@ -72,32 +72,30 @@ public class StructureAspectDescriptor implements jetbrains.mps.smodel.runtime.S
       case 27:
         return new CompiledConceptDescriptor("jetbrains.mps.core.query.structure.MqlParentheses", "jetbrains.mps.core.query.structure.MqlExpression", false, new String[]{"jetbrains.mps.core.query.structure.MqlExpression"}, new String[]{}, new String[]{});
       case 28:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.query.structure.MqlQuery", "jetbrains.mps.lang.core.structure.BaseConcept", false, new String[]{"jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept", "jetbrains.mps.core.query.structure.MqlParametersContainer", "jetbrains.mps.core.query.structure.MqlScopeProvider", "jetbrains.mps.core.query.structure.MqlThisProvider"}, new String[]{"isCached"}, new String[]{});
+        return new CompiledConceptDescriptor("jetbrains.mps.core.query.structure.MqlQuery", "jetbrains.mps.lang.core.structure.BaseConcept", false, new String[]{"jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept", "jetbrains.mps.lang.core.structure.ScopeProvider", "jetbrains.mps.core.query.structure.MqlParametersContainer", "jetbrains.mps.core.query.structure.MqlThisProvider"}, new String[]{"isCached"}, new String[]{});
       case 29:
         return new CompiledConceptDescriptor("jetbrains.mps.core.query.structure.MqlScopeExporter", null, true, new String[]{"jetbrains.mps.lang.core.structure.INamedConcept"}, new String[]{}, new String[]{});
       case 30:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.query.structure.MqlScopeProvider", null, true, new String[]{}, new String[]{}, new String[]{});
-      case 31:
         return new CompiledConceptDescriptor("jetbrains.mps.core.query.structure.MqlSelector", "jetbrains.mps.lang.core.structure.BaseConcept", false, new String[]{"jetbrains.mps.lang.core.structure.BaseConcept"}, new String[]{}, new String[]{});
-      case 32:
+      case 31:
         return new CompiledConceptDescriptor("jetbrains.mps.core.query.structure.MqlStringLiteral", "jetbrains.mps.core.query.structure.MqlExpression", false, new String[]{"jetbrains.mps.core.query.structure.MqlExpression"}, new String[]{"value"}, new String[]{});
-      case 33:
+      case 32:
         return new CompiledConceptDescriptor("jetbrains.mps.core.query.structure.MqlStringType", "jetbrains.mps.core.query.structure.MqlType", false, new String[]{"jetbrains.mps.core.query.structure.MqlType"}, new String[]{}, new String[]{});
-      case 34:
+      case 33:
         return new CompiledConceptDescriptor("jetbrains.mps.core.query.structure.MqlThis", "jetbrains.mps.core.query.structure.MqlExpression", false, new String[]{"jetbrains.mps.core.query.structure.MqlExpression"}, new String[]{}, new String[]{});
-      case 35:
+      case 34:
         return new CompiledConceptDescriptor("jetbrains.mps.core.query.structure.MqlThisProvider", null, true, new String[]{}, new String[]{}, new String[]{});
-      case 36:
+      case 35:
         return new CompiledConceptDescriptor("jetbrains.mps.core.query.structure.MqlTriplex", "jetbrains.mps.core.query.structure.MqlExpression", false, new String[]{"jetbrains.mps.core.query.structure.MqlExpression"}, new String[]{}, new String[]{});
-      case 37:
+      case 36:
         return new CompiledConceptDescriptor("jetbrains.mps.core.query.structure.MqlType", "jetbrains.mps.lang.core.structure.BaseConcept", false, new String[]{"jetbrains.mps.lang.core.structure.BaseConcept"}, new String[]{}, new String[]{});
-      case 38:
+      case 37:
         return new CompiledConceptDescriptor("jetbrains.mps.core.query.structure.MqlUnary", "jetbrains.mps.core.query.structure.MqlExpression", false, new String[]{"jetbrains.mps.core.query.structure.MqlExpression"}, new String[]{"kind"}, new String[]{});
-      case 39:
+      case 38:
         return new CompiledConceptDescriptor("jetbrains.mps.core.query.structure.MqlVariable", "jetbrains.mps.lang.core.structure.BaseConcept", false, new String[]{"jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept"}, new String[]{}, new String[]{});
-      case 40:
+      case 39:
         return new CompiledConceptDescriptor("jetbrains.mps.core.query.structure.MqlVariableContainer", null, true, new String[]{}, new String[]{}, new String[]{});
-      case 41:
+      case 40:
         return new CompiledConceptDescriptor("jetbrains.mps.core.query.structure.MqlVariableReference", "jetbrains.mps.core.query.structure.MqlExpression", false, new String[]{"jetbrains.mps.core.query.structure.MqlExpression"}, new String[]{}, new String[]{"var"});
       default:
         return StructureAspectInterpreted.getInstance().getDescriptor(conceptFqName);

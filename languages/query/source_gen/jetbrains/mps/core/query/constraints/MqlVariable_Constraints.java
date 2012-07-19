@@ -6,15 +6,14 @@ import jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor;
 import jetbrains.mps.smodel.SNodePointer;
 import java.util.regex.Pattern;
 import jetbrains.mps.smodel.runtime.ReferenceScopeProvider;
-import jetbrains.mps.smodel.runtime.base.BaseReferenceScopeProvider;
+import jetbrains.mps.smodel.runtime.base.BaseScopeProvider;
+import jetbrains.mps.scope.Scope;
 import jetbrains.mps.smodel.IOperationContext;
 import jetbrains.mps.smodel.runtime.ReferenceConstraintsContext;
-import jetbrains.mps.core.query.runtime.QueryScope;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
-import jetbrains.mps.core.query.runtime.QueryScopeAdapter;
-import jetbrains.mps.smodel.search.EmptySearchScope;
-import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.smodel.SNode;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
+import jetbrains.mps.scope.EmptyScope;
+import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.smodel.runtime.CheckingNodeContext;
 import java.util.Map;
 import jetbrains.mps.smodel.runtime.PropertyConstraintsDescriptor;
@@ -25,7 +24,7 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 
 public class MqlVariable_Constraints extends BaseConstraintsDescriptor {
-  private static SNodePointer breakingNode_hmy0p9_a0a1a0a0a1 = new SNodePointer("r:d2131fa8-9bff-49c9-a7e2-6972f9544c0a(jetbrains.mps.core.query.constraints)", "3435983127247055480");
+  private static SNodePointer breakingNode_hmy0p9_a0a0a0a0a1 = new SNodePointer("r:d2131fa8-9bff-49c9-a7e2-6972f9544c0a(jetbrains.mps.core.query.constraints)", "261388556849264580");
   private static SNodePointer canBeChildBreakingPoint = new SNodePointer("r:d2131fa8-9bff-49c9-a7e2-6972f9544c0a(jetbrains.mps.core.query.constraints)", "3435983127247055593");
   private static Pattern REGEXP_hmy0p9_a0a0a1a1a0b0a1a4 = Pattern.compile("[a-zA-Z_][a-zA-Z_0-9]*", 0);
 
@@ -40,22 +39,21 @@ public class MqlVariable_Constraints extends BaseConstraintsDescriptor {
 
   @Override
   public ReferenceScopeProvider getDefaultScopeProvider() {
-    return new BaseReferenceScopeProvider() {
+    return new BaseScopeProvider() {
       @Override
-      public Object createSearchScopeOrListOfNodes(final IOperationContext operationContext, final ReferenceConstraintsContext _context) {
-        QueryScope qscope = QueryScope.getScope((_context.getReferenceNode() == null ?
-          _context.getEnclosingNode() :
-          _context.getReferenceNode()
-        ), null, SConceptOperations.findConceptDeclaration("jetbrains.mps.core.query.structure.MqlVariable"));
-        if (qscope != null) {
-          return new QueryScopeAdapter(qscope);
-        }
-        return new EmptySearchScope();
+      public SNodePointer getSearchScopeValidatorNode() {
+        return breakingNode_hmy0p9_a0a0a0a0a1;
       }
 
       @Override
-      public SNodePointer getSearchScopeValidatorNode() {
-        return breakingNode_hmy0p9_a0a1a0a0a1;
+      public Scope createScope(final IOperationContext operationContext, final ReferenceConstraintsContext _context) {
+        {
+          Scope scope = Scope.getScope(_context.getContextNode(), _context.getContextRole(), _context.getPosition(), (SNode) SConceptOperations.findConceptDeclaration("jetbrains.mps.core.query.structure.MqlVariable"));
+          return (scope == null ?
+            new EmptyScope() :
+            scope
+          );
+        }
       }
     };
   }

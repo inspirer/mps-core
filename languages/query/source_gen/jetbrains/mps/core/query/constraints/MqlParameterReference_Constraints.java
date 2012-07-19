@@ -10,16 +10,16 @@ import java.util.HashMap;
 import jetbrains.mps.smodel.runtime.base.BaseReferenceConstraintsDescriptor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.smodel.runtime.ReferenceScopeProvider;
-import jetbrains.mps.smodel.runtime.base.BaseReferenceScopeProvider;
+import jetbrains.mps.smodel.runtime.base.BaseScopeProvider;
+import jetbrains.mps.scope.Scope;
 import jetbrains.mps.smodel.IOperationContext;
 import jetbrains.mps.smodel.runtime.ReferenceConstraintsContext;
-import jetbrains.mps.core.query.runtime.QueryScope;
+import jetbrains.mps.smodel.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
-import jetbrains.mps.core.query.runtime.QueryScopeAdapter;
-import jetbrains.mps.smodel.search.EmptySearchScope;
+import jetbrains.mps.scope.EmptyScope;
 
 public class MqlParameterReference_Constraints extends BaseConstraintsDescriptor {
-  private static SNodePointer breakingNode_ny604g_a0a1a0a0a1a0b0a1a0 = new SNodePointer("r:d2131fa8-9bff-49c9-a7e2-6972f9544c0a(jetbrains.mps.core.query.constraints)", "1992172484410364113");
+  private static SNodePointer breakingNode_ny604g_a0a0a0a0a1a0b0a1a0 = new SNodePointer("r:d2131fa8-9bff-49c9-a7e2-6972f9544c0a(jetbrains.mps.core.query.constraints)", "261388556849264575");
 
   public MqlParameterReference_Constraints() {
     super("jetbrains.mps.core.query.structure.MqlParameterReference");
@@ -37,22 +37,21 @@ public class MqlParameterReference_Constraints extends BaseConstraintsDescriptor
       @Nullable
       @Override
       public ReferenceScopeProvider getScopeProvider() {
-        return new BaseReferenceScopeProvider() {
+        return new BaseScopeProvider() {
           @Override
-          public Object createSearchScopeOrListOfNodes(final IOperationContext operationContext, final ReferenceConstraintsContext _context) {
-            QueryScope qscope = QueryScope.getScope((_context.getReferenceNode() == null ?
-              _context.getEnclosingNode() :
-              _context.getReferenceNode()
-            ), null, SConceptOperations.findConceptDeclaration("jetbrains.mps.core.query.structure.MqlParameter"));
-            if (qscope != null) {
-              return new QueryScopeAdapter(qscope);
-            }
-            return new EmptySearchScope();
+          public SNodePointer getSearchScopeValidatorNode() {
+            return breakingNode_ny604g_a0a0a0a0a1a0b0a1a0;
           }
 
           @Override
-          public SNodePointer getSearchScopeValidatorNode() {
-            return breakingNode_ny604g_a0a1a0a0a1a0b0a1a0;
+          public Scope createScope(final IOperationContext operationContext, final ReferenceConstraintsContext _context) {
+            {
+              Scope scope = Scope.getScope(_context.getContextNode(), _context.getContextRole(), _context.getPosition(), (SNode) SConceptOperations.findConceptDeclaration("jetbrains.mps.core.query.structure.MqlParameter"));
+              return (scope == null ?
+                new EmptyScope() :
+                scope
+              );
+            }
           }
         };
       }

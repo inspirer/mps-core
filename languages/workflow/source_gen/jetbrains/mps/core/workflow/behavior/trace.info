@@ -2,7 +2,7 @@
 <debugInfo>
   <unitInfo fileName="BehaviorAspectDescriptor.java" startLine="9" startPosition="0" endLine="30" endPosition="0" unitName="jetbrains.mps.core.workflow.behavior.BehaviorAspectDescriptor" />
   <unitInfo fileName="WflowAssert_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="jetbrains.mps.core.workflow.behavior.WflowAssert_BehaviorDescriptor" />
-  <unitInfo fileName="WflowExecutable_BehaviorDescriptor.java" startLine="12" startPosition="0" endLine="29" endPosition="0" unitName="jetbrains.mps.core.workflow.behavior.WflowExecutable_BehaviorDescriptor" />
+  <unitInfo fileName="WflowExecutable_BehaviorDescriptor.java" startLine="13" startPosition="0" endLine="34" endPosition="0" unitName="jetbrains.mps.core.workflow.behavior.WflowExecutable_BehaviorDescriptor" />
   <unitInfo fileName="WflowExpressionStatement_BehaviorDescriptor.java" startLine="8" startPosition="0" endLine="21" endPosition="0" unitName="jetbrains.mps.core.workflow.behavior.WflowExpressionStatement_BehaviorDescriptor" />
   <unitInfo fileName="WflowStatement_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="jetbrains.mps.core.workflow.behavior.WflowStatement_BehaviorDescriptor" />
   <root nodeId="4188390566614790289">
@@ -44,8 +44,8 @@
     <nodeInfo nodeId="6711176417918005030" fileName="WflowExecutable_Behavior.java" startLine="36" startPosition="7" endLine="41" endPosition="9" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="6711176417918004954" fileName="WflowExecutable_Behavior.java" startLine="22" startPosition="110" endLine="28" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
     <nodeInfo nodeId="6711176417918005011" fileName="WflowExecutable_Behavior.java" startLine="30" startPosition="47" endLine="36" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.WhileStatement" />
-    <nodeInfo nodeId="6711176417918004946" fileName="WflowExecutable_Behavior.java" startLine="21" startPosition="106" endLine="42" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="6711176417918004929" fileName="WflowExecutable_Behavior.java" startLine="20" startPosition="0" endLine="45" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="virtual_getScope_5433095484313879207#(Ljetbrains/mps/smodel/SNode;Ljetbrains/mps/smodel/SNode;Ljetbrains/mps/smodel/SNode;)Ljetbrains/mps/core/query/runtime/QueryScope;" />
+    <nodeInfo nodeId="6711176417918004946" fileName="WflowExecutable_Behavior.java" startLine="21" startPosition="101" endLine="42" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="6711176417918004929" fileName="WflowExecutable_Behavior.java" startLine="20" startPosition="0" endLine="45" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="virtual_getScope_3734116213129936182#(Ljetbrains/mps/smodel/SNode;Ljetbrains/mps/smodel/SNode;Ljetbrains/mps/smodel/SNode;)Ljetbrains/mps/scope/Scope;" />
     <scopeInfo nodeId="6711176417918004931" fileName="WflowExecutable_Behavior.java" startLine="18" startPosition="43" endLine="18" endPosition="43" />
     <scopeInfo nodeId="6711176417918005001" fileName="WflowExecutable_Behavior.java" startLine="25" startPosition="28" endLine="26" endPosition="22" />
     <scopeInfo nodeId="6711176417918013785" fileName="WflowExecutable_Behavior.java" startLine="32" startPosition="120" endLine="33" endPosition="187" />
@@ -62,10 +62,10 @@
       <varInfo nodeId="6711176417918005022" varName="res" />
       <varInfo nodeId="6711176417918004988" varName="statement" />
     </scopeInfo>
-    <scopeInfo nodeId="6711176417918004934" fileName="WflowExecutable_Behavior.java" startLine="21" startPosition="106" endLine="43" endPosition="16" />
+    <scopeInfo nodeId="857164630130626360" fileName="WflowExecutable_Behavior.java" startLine="21" startPosition="101" endLine="43" endPosition="16" />
     <scopeInfo nodeId="6711176417918004929" fileName="WflowExecutable_Behavior.java" startLine="20" startPosition="0" endLine="45" endPosition="0">
-      <varInfo nodeId="6711176417918004937" varName="child" />
-      <varInfo nodeId="6711176417918004935" varName="kind" />
+      <varInfo nodeId="857164630130626363" varName="child" />
+      <varInfo nodeId="857164630130626361" varName="kind" />
       <varInfo nodeId="6711176417918004929" varName="thisNode" />
     </scopeInfo>
     <unitInfo nodeId="6711176417918004929" fileName="WflowExecutable_Behavior.java" startLine="17" startPosition="0" endLine="46" endPosition="0" unitName="jetbrains.mps.core.workflow.behavior.WflowExecutable_Behavior" />

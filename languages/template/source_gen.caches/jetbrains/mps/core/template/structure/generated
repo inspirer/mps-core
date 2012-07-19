@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="4rt0h344bbklesed15y84rpsdcugwqs">
+<dependencies version="2" modelHash="3kk58ui2158wlxuu3943nkegix8thsu">
   <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
   <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
   <dep model="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
@@ -10,7 +10,7 @@
   <dep model="r:00000000-0000-4000-0000-011c8959033a(jetbrains.mps.baseLanguage.closures.generator.baseLanguage.template.main@generator)" />
   <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" />
   <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" />
-  <dep model="r:f9198ffd-e084-425c-aa82-f2db8289f5eb(jetbrains.mps.core.query.structure)" hash="-c8mo4ks5k9ytkz2gnklg52o2j69k1r9" />
+  <dep model="r:f9198ffd-e084-425c-aa82-f2db8289f5eb(jetbrains.mps.core.query.structure)" hash="-73d9yxkwbjjgvr2ekcpoh9xmcr40sc8" />
   <common hash="-81935gr9bpcwcwfm6p5fgqryi9u5pyz" dependsOnNodes="true">
     <dep root="212212067811886747" />
     <dep root="212212067811886750" />
@@ -41,13 +41,13 @@
     <file name="StructureAspectDescriptor.java" />
     <file name="Template_Language.java" />
   </common>
-  <source id="212212067811886747" name="MtlLibrary" hash="-7291e5mzgm9ezz4l7vbbsxh3qi35f2e">
+  <source id="212212067811886747" name="MtlLibrary" hash="-264iydncdjyp88dlo09aeprtsml650p">
     <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
   </source>
-  <source id="212212067811886750" name="MtlBuilder" hash="93fuguc7pvf0xgtonbbnn4qvagx6gii">
+  <source id="212212067811886750" name="MtlBuilder" hash="-2axqkqp4jpkdrbkbkonrdnuwxfadp31">
     <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
   </source>
-  <source id="212212067811886751" name="MtlTemplate" hash="epyn5w97zw0td5n71ckl37g3jgkuxw2">
+  <source id="212212067811886751" name="MtlTemplate" hash="8m9246p1rbrm2zdg4o1codazg2b0d2q">
     <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
   </source>
   <source id="212212067812118741" name="MtlEntity" hash="-6pf82ft1nopwiw8hethn017io60hnm7">
@@ -74,7 +74,7 @@
   <source id="4273915927700610187" name="MtlIfMacro" hash="821zyf6twm68yqausb90bxg9noqrxch">
     <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
   </source>
-  <source id="4273915927700610188" name="MtlForeachMacro" hash="-dejorf0s8bdjery19y3h61e4exwdpi0">
+  <source id="4273915927700610188" name="MtlForeachMacro" hash="-8y48f55qztqf8zvg6ezu2j3469qn8sa">
     <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
   </source>
   <source id="4273915927700610189" name="MtlNodeQueryMacro" hash="6frh5jlqlz39pq8wnzjntobm759eypk">
