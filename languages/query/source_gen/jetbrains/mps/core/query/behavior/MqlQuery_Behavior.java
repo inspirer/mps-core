@@ -43,6 +43,10 @@ public class MqlQuery_Behavior {
     return null;
   }
 
+  public static SNode virtual_getThisType_4125821269968916020(SNode thisNode) {
+    return SNodeOperations.copyNode(SLinkOperations.getTarget(thisNode, "contextNode", true));
+  }
+
   public static Object call_evaluate_1671449901154581077(SNode thisNode, EvaluationEnvironment env, EvaluationContext context, Object[] arguments) {
     BehaviorDescriptor descriptor = ConceptRegistry.getInstance().getBehaviorDescriptorForInstanceNode(thisNode);
     return (Object) descriptor.invoke(Object.class, SNodeOperations.cast(thisNode, "jetbrains.mps.core.query.structure.MqlQuery"), "virtual_evaluate_1671449901154581077", PARAMETERS_1671449901154581077, env, context, arguments);

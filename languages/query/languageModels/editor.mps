@@ -189,6 +189,10 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="imports" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="bwy9.5109194352282839186" resolveInfo="MqlImport" />
     </node>
+    <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="4125821269969005133">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="expr" />
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="bwy9.6762883159245048087" resolveInfo="MqlSelector" />
+    </node>
   </roots>
   <root id="6601450967974097002">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="6601450967974097004">
@@ -1512,6 +1516,11 @@
         </node>
       </node>
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="5109194352282839193" />
+    </node>
+  </root>
+  <root id="4125821269969005133">
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Error" typeId="tpc2.1075375595203" id="4125821269969005135">
+      <property name="text" nameId="tpc2.1075375595204" value="&lt;selector&gt;" />
     </node>
   </root>
 </model>

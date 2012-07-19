@@ -18,12 +18,12 @@
   <dep model="r:00000000-0000-4000-0000-011c89590338(jetbrains.mps.baseLanguage.closures.structure)" />
   <dep model="r:00000000-0000-4000-0000-011c8959033a(jetbrains.mps.baseLanguage.closures.generator.baseLanguage.template.main@generator)" />
   <dep model="r:00000000-0000-4000-0000-011c895903ac(jetbrains.mps.baseLanguageInternal.structure)" />
-  <dep model="r:2eb00686-cf12-445a-b169-a375a4c25909(jetbrains.mps.core.query.behavior)" hash="9x3eh0ucr2dzywzpjk9ynsetysxw6r1" />
+  <dep model="r:2eb00686-cf12-445a-b169-a375a4c25909(jetbrains.mps.core.query.behavior)" hash="ehlti0dqhozv25v1tem07rm4v0inebf" />
   <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" />
   <dep model="r:c11a239c-3061-4b62-b5dd-6749678497d7(jetbrains.mps.core.structure.structure)" hash="64z8i78bu21h2wc4gim42ma4moedocb" />
-  <dep model="r:e3b9700d-5825-4641-895a-925f28591c5b(jetbrains.mps.core.smodel.structure)" hash="e9k2qtmk2gseayncnrurjql8ijhww3s" />
+  <dep model="r:e3b9700d-5825-4641-895a-925f28591c5b(jetbrains.mps.core.smodel.structure)" hash="7ofd3kf67eogfobpz1n87hfii9snn3s" />
   <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" />
-  <dep model="r:f9198ffd-e084-425c-aa82-f2db8289f5eb(jetbrains.mps.core.query.structure)" hash="-c8mo4ks5k9ytkz2gnklg52o2j69k1r9" />
+  <dep model="r:f9198ffd-e084-425c-aa82-f2db8289f5eb(jetbrains.mps.core.query.structure)" hash="6aemjwtm00qnmmazmvsdq4nz3zcfh4n" />
   <dep model="r:fc76aa36-3cff-41c7-b94b-eee0e8341932(jetbrains.mps.internal.collections.runtime)" />
   <common hash="-mossj9qjdecdjjky4kt1jq3joyrp4s" dependsOnNodes="true">
     <dep root="4260762357824841874" />

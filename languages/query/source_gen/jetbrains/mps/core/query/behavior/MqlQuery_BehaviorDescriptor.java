@@ -10,7 +10,7 @@ import jetbrains.mps.core.query.runtime.EvaluationEnvironment;
 import jetbrains.mps.core.query.runtime.EvaluationContext;
 import jetbrains.mps.lang.core.behavior.INamedConcept_Behavior;
 
-public class MqlQuery_BehaviorDescriptor extends BaseConcept_BehaviorDescriptor implements INamedConcept_BehaviorDescriptor, MqlParametersContainer_BehaviorDescriptor, MqlScopeProvider_BehaviorDescriptor {
+public class MqlQuery_BehaviorDescriptor extends BaseConcept_BehaviorDescriptor implements INamedConcept_BehaviorDescriptor, MqlParametersContainer_BehaviorDescriptor, MqlScopeProvider_BehaviorDescriptor, MqlThisProvider_BehaviorDescriptor {
   public MqlQuery_BehaviorDescriptor() {
   }
 
@@ -20,6 +20,10 @@ public class MqlQuery_BehaviorDescriptor extends BaseConcept_BehaviorDescriptor 
 
   public Object virtual_evaluate_1671449901154581077(SNode thisNode, EvaluationEnvironment env, EvaluationContext context, Object[] arguments) {
     return MqlQuery_Behavior.virtual_evaluate_1671449901154581077(thisNode, env, context, arguments);
+  }
+
+  public SNode virtual_getThisType_4125821269968916020(SNode thisNode) {
+    return MqlQuery_Behavior.virtual_getThisType_4125821269968916020(thisNode);
   }
 
   public String virtual_getFqName_1213877404258(SNode thisNode) {

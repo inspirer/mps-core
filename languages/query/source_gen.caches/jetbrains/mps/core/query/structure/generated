@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="-c8mo4ks5k9ytkz2gnklg52o2j69k1r9">
+<dependencies version="2" modelHash="6aemjwtm00qnmmazmvsdq4nz3zcfh4n">
   <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
   <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
   <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
@@ -19,6 +19,7 @@
     <dep root="3435983127247044629" />
     <dep root="3435983127247055506" />
     <dep root="3435983127247055565" />
+    <dep root="4125821269968916016" />
     <dep root="5109194352282839186" />
     <dep root="5109194352282839187" />
     <dep root="5280308256730467462" />
@@ -68,7 +69,7 @@
     <file name="Query_Language.java" />
     <file name="StructureAspectDescriptor.java" />
   </common>
-  <source id="6762883159245048009" name="MqlQuery" hash="8jajoz4k8cvpvfrcz1jtz6i4g72csf">
+  <source id="6762883159245048009" name="MqlQuery" hash="6jsj6ki477vzshsbh2vy0vz7s81skff">
     <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
   </source>
   <source id="6762883159245048011" name="MqlComma" hash="-et9vmd78g6uky3hcjwuv9p2s2dgyvhk">
@@ -274,6 +275,9 @@
     <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
   </source>
   <source id="5109194352282839187" name="MqlScopeExporter" hash="vf9x78t5wo0hjb6nmh4efa52dookh2">
+    <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
+  </source>
+  <source id="4125821269968916016" name="MqlThisProvider" hash="411h2ij49slkgwvc3ykcloxyxee93lc">
     <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
   </source>
 </dependencies>

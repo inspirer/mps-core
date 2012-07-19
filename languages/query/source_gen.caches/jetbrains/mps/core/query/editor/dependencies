@@ -468,6 +468,13 @@
     <classNode dependClassName="jetbrains.mps.nodeEditor.style.Style" />
     <classNode dependClassName="jetbrains.mps.nodeEditor.style.StyleAttributes" />
   </dependency>
+  <dependency className="jetbrains.mps.core.query.editor.MqlSelector_Editor" file="MqlSelector_Editor.java">
+    <classNode dependClassName="jetbrains.mps.nodeEditor.EditorContext" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Error" />
+    <classNode dependClassName="jetbrains.mps.smodel.SNode" />
+    <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
+  </dependency>
   <dependency className="jetbrains.mps.core.query.editor.MqlStringLiteral_Editor" file="MqlStringLiteral_Editor.java">
     <classNode dependClassName="java.lang.Class" />
     <classNode dependClassName="jetbrains.mps.core.query.editor.MqlSS_StyleSheet" />

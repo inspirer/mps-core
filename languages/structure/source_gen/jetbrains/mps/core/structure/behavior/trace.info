@@ -78,6 +78,50 @@
     <unitInfo nodeId="2223786200032678195" fileName="SConstraints_Behavior.java" startLine="10" startPosition="0" endLine="22" endPosition="0" unitName="jetbrains.mps.core.structure.behavior.SConstraints_Behavior" />
     <unitInfo nodeId="2223786200032678317" fileName="SConstraints_Behavior.java" startLine="15" startPosition="94" endLine="19" endPosition="5" unitName="jetbrains.mps.core.structure.behavior.SConstraints_Behavior$1" />
   </root>
+  <root nodeId="4125821269968947766">
+    <nodeInfo nodeId="4125821269968947774" fileName="SConceptMember_Behavior.java" startLine="12" startPosition="85" endLine="13" endPosition="128" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="4125821269968947766" fileName="SConceptMember_Behavior.java" startLine="8" startPosition="38" endLine="11" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="init#(Ljetbrains/mps/smodel/SNode;)V" />
+    <nodeInfo nodeId="4125821269968947766" fileName="SConceptMember_Behavior.java" startLine="11" startPosition="0" endLine="15" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="call_getContainingConcept_4125821269968947769#(Ljetbrains/mps/smodel/SNode;)Ljetbrains/mps/smodel/SNode;" />
+    <scopeInfo nodeId="4125821269968947768" fileName="SConceptMember_Behavior.java" startLine="9" startPosition="43" endLine="9" endPosition="43" />
+    <scopeInfo nodeId="4125821269968947772" fileName="SConceptMember_Behavior.java" startLine="12" startPosition="85" endLine="13" endPosition="128" />
+    <scopeInfo nodeId="4125821269968947766" fileName="SConceptMember_Behavior.java" startLine="8" startPosition="38" endLine="11" endPosition="0">
+      <varInfo nodeId="4125821269968947766" varName="thisNode" />
+    </scopeInfo>
+    <scopeInfo nodeId="4125821269968947766" fileName="SConceptMember_Behavior.java" startLine="11" startPosition="0" endLine="15" endPosition="0">
+      <varInfo nodeId="4125821269968947766" varName="thisNode" />
+    </scopeInfo>
+    <unitInfo nodeId="4125821269968947766" fileName="SConceptMember_Behavior.java" startLine="8" startPosition="0" endLine="16" endPosition="0" unitName="jetbrains.mps.core.structure.behavior.SConceptMember_Behavior" />
+  </root>
+  <root nodeId="4125821269969003164">
+    <nodeInfo nodeId="4125821269969003188" fileName="SAbstractLink_Behavior.java" startLine="13" startPosition="77" endLine="14" endPosition="184" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="4125821269969003164" fileName="SAbstractLink_Behavior.java" startLine="9" startPosition="37" endLine="12" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="init#(Ljetbrains/mps/smodel/SNode;)V" />
+    <nodeInfo nodeId="4125821269969003164" fileName="SAbstractLink_Behavior.java" startLine="12" startPosition="0" endLine="16" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="call_isMultiple_4125821269969003167#(Ljetbrains/mps/smodel/SNode;)Z" />
+    <scopeInfo nodeId="4125821269969003166" fileName="SAbstractLink_Behavior.java" startLine="10" startPosition="43" endLine="10" endPosition="43" />
+    <scopeInfo nodeId="4125821269969003170" fileName="SAbstractLink_Behavior.java" startLine="13" startPosition="77" endLine="14" endPosition="184" />
+    <scopeInfo nodeId="4125821269969003164" fileName="SAbstractLink_Behavior.java" startLine="9" startPosition="37" endLine="12" endPosition="0">
+      <varInfo nodeId="4125821269969003164" varName="thisNode" />
+    </scopeInfo>
+    <scopeInfo nodeId="4125821269969003164" fileName="SAbstractLink_Behavior.java" startLine="12" startPosition="0" endLine="16" endPosition="0">
+      <varInfo nodeId="4125821269969003164" varName="thisNode" />
+    </scopeInfo>
+    <unitInfo nodeId="4125821269969003164" fileName="SAbstractLink_Behavior.java" startLine="9" startPosition="0" endLine="17" endPosition="0" unitName="jetbrains.mps.core.structure.behavior.SAbstractLink_Behavior" />
+  </root>
+  <root nodeId="4125821269969003178">
+    <nodeInfo nodeId="4125821269969003178" fileName="SChildLink_Behavior.java" startLine="7" startPosition="34" endLine="10" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="init#(Ljetbrains/mps/smodel/SNode;)V" />
+    <scopeInfo nodeId="4125821269969003180" fileName="SChildLink_Behavior.java" startLine="8" startPosition="43" endLine="8" endPosition="43" />
+    <scopeInfo nodeId="4125821269969003178" fileName="SChildLink_Behavior.java" startLine="7" startPosition="34" endLine="10" endPosition="0">
+      <varInfo nodeId="4125821269969003178" varName="thisNode" />
+    </scopeInfo>
+    <unitInfo nodeId="4125821269969003178" fileName="SChildLink_Behavior.java" startLine="7" startPosition="0" endLine="11" endPosition="0" unitName="jetbrains.mps.core.structure.behavior.SChildLink_Behavior" />
+  </root>
+  <root nodeId="4125821269969003303">
+    <nodeInfo nodeId="4125821269969003303" fileName="SReference_Behavior.java" startLine="7" startPosition="34" endLine="10" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="init#(Ljetbrains/mps/smodel/SNode;)V" />
+    <scopeInfo nodeId="4125821269969003305" fileName="SReference_Behavior.java" startLine="8" startPosition="43" endLine="8" endPosition="43" />
+    <scopeInfo nodeId="4125821269969003303" fileName="SReference_Behavior.java" startLine="7" startPosition="34" endLine="10" endPosition="0">
+      <varInfo nodeId="4125821269969003303" varName="thisNode" />
+    </scopeInfo>
+    <unitInfo nodeId="4125821269969003303" fileName="SReference_Behavior.java" startLine="7" startPosition="0" endLine="11" endPosition="0" unitName="jetbrains.mps.core.structure.behavior.SReference_Behavior" />
+  </root>
   <root nodeId="5938997310819191535">
     <nodeInfo nodeId="5938997310819191535" fileName="SAbstractConcept_Behavior.java" startLine="11" startPosition="40" endLine="12" endPosition="85" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="PARAMETERS_5938997310819191538" />
     <nodeInfo nodeId="5938997310819223103" fileName="SAbstractConcept_Behavior.java" startLine="17" startPosition="99" endLine="18" endPosition="17" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />

@@ -7,7 +7,7 @@ import java.util.Arrays;
 import jetbrains.mps.smodel.runtime.interpreted.BehaviorAspectInterpreted;
 
 public class BehaviorAspectDescriptor implements jetbrains.mps.smodel.runtime.BehaviorAspectDescriptor {
-  private static String[] stringSwitchCases_846f5o_a0a0a = new String[]{"jetbrains.mps.core.smodel.structure.MqlLinkSelector", "jetbrains.mps.core.smodel.structure.MqlNodeType", "jetbrains.mps.core.smodel.structure.MqlPropertySelector"};
+  private static String[] stringSwitchCases_846f5o_a0a0a = new String[]{"jetbrains.mps.core.smodel.structure.MqlLinkSelector", "jetbrains.mps.core.smodel.structure.MqlNodeType", "jetbrains.mps.core.smodel.structure.MqlPropertySelector", "jetbrains.mps.core.smodel.structure.SConceptQuery"};
 
   public BehaviorAspectDescriptor() {
   }
@@ -20,6 +20,8 @@ public class BehaviorAspectDescriptor implements jetbrains.mps.smodel.runtime.Be
         return new MqlPropertySelector_BehaviorDescriptor();
       case 1:
         return new MqlNodeType_BehaviorDescriptor();
+      case 3:
+        return new SConceptQuery_BehaviorDescriptor();
       default:
         return BehaviorAspectInterpreted.getInstance().getDescriptor(fqName);
     }

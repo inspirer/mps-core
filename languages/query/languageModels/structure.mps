@@ -242,6 +242,10 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="imports" />
       <property name="name" nameId="tpck.1169194664001" value="MqlScopeExporter" />
     </node>
+    <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="4125821269968916016">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="expr" />
+      <property name="name" nameId="tpck.1169194664001" value="MqlThisProvider" />
+    </node>
   </roots>
   <root id="6762883159245048009">
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="212212067812118826">
@@ -271,6 +275,9 @@
     </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5433095484313947202">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="5433095484313879184" resolveInfo="MqlScopeProvider" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="4125821269968916030">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="4125821269968916016" resolveInfo="MqlThisProvider" />
     </node>
   </root>
   <root id="6762883159245048011">
@@ -834,5 +841,6 @@
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.1169194658468" resolveInfo="INamedConcept" />
     </node>
   </root>
+  <root id="4125821269968916016" />
 </model>
 

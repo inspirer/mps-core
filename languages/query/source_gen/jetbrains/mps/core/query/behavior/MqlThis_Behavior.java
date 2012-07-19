@@ -4,7 +4,6 @@ package jetbrains.mps.core.query.behavior;
 
 import jetbrains.mps.smodel.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.core.query.runtime.EvaluationEnvironment;
 import jetbrains.mps.core.query.runtime.EvaluationContext;
 
@@ -13,10 +12,9 @@ public class MqlThis_Behavior {
   }
 
   public static SNode virtual_getType_228266671027861783(SNode thisNode) {
-    for (SNode ancestor : SNodeOperations.getAncestorsWhereConceptInList(thisNode, new String[]{"jetbrains.mps.core.query.structure.MqlQuery", "jetbrains.mps.core.query.structure.MqlClosure"}, false)) {
-      if (SNodeOperations.isInstanceOf(ancestor, "jetbrains.mps.core.query.structure.MqlQuery")) {
-        return SNodeOperations.copyNode(SLinkOperations.getTarget(SNodeOperations.cast(ancestor, "jetbrains.mps.core.query.structure.MqlQuery"), "contextNode", true));
-      }
+    SNode ancestor = SNodeOperations.getAncestor(thisNode, "jetbrains.mps.core.query.structure.MqlThisProvider", false, false);
+    if (ancestor != null) {
+      return MqlThisProvider_Behavior.call_getThisType_4125821269968916020(ancestor);
     }
     return null;
   }

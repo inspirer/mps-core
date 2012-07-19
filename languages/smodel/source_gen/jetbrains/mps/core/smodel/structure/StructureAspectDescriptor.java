@@ -8,7 +8,7 @@ import jetbrains.mps.smodel.runtime.impl.CompiledConceptDescriptor;
 import jetbrains.mps.smodel.runtime.interpreted.StructureAspectInterpreted;
 
 public class StructureAspectDescriptor implements jetbrains.mps.smodel.runtime.StructureAspectDescriptor {
-  private static String[] stringSwitchCases_1htk8d_a0a0a = new String[]{"jetbrains.mps.core.smodel.structure.MqlLinkSelector", "jetbrains.mps.core.smodel.structure.MqlNodeType", "jetbrains.mps.core.smodel.structure.MqlPropertySelector"};
+  private static String[] stringSwitchCases_1htk8d_a0a0a = new String[]{"jetbrains.mps.core.smodel.structure.MqlLinkSelector", "jetbrains.mps.core.smodel.structure.MqlNodeType", "jetbrains.mps.core.smodel.structure.MqlPropertySelector", "jetbrains.mps.core.smodel.structure.SConceptQuery"};
 
   public StructureAspectDescriptor() {
   }
@@ -21,6 +21,8 @@ public class StructureAspectDescriptor implements jetbrains.mps.smodel.runtime.S
         return new CompiledConceptDescriptor("jetbrains.mps.core.smodel.structure.MqlNodeType", "jetbrains.mps.core.query.structure.MqlType", false, new String[]{"jetbrains.mps.core.query.structure.MqlType"}, new String[]{}, new String[]{"concept"});
       case 2:
         return new CompiledConceptDescriptor("jetbrains.mps.core.smodel.structure.MqlPropertySelector", "jetbrains.mps.core.query.structure.MqlSelector", false, new String[]{"jetbrains.mps.core.query.structure.MqlSelector"}, new String[]{}, new String[]{"property"});
+      case 3:
+        return new CompiledConceptDescriptor("jetbrains.mps.core.smodel.structure.SConceptQuery", "jetbrains.mps.core.structure.structure.SConceptMember", false, new String[]{"jetbrains.mps.core.structure.structure.SConceptMember", "jetbrains.mps.lang.core.structure.INamedConcept", "jetbrains.mps.core.query.structure.MqlParametersContainer", "jetbrains.mps.core.query.structure.MqlThisProvider"}, new String[]{}, new String[]{});
       default:
         return StructureAspectInterpreted.getInstance().getDescriptor(conceptFqName);
     }

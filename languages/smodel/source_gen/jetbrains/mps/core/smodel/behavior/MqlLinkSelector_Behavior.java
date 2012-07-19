@@ -4,6 +4,7 @@ package jetbrains.mps.core.smodel.behavior;
 
 import jetbrains.mps.smodel.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.core.structure.behavior.SAbstractLink_Behavior;
 import java.util.Set;
 import java.util.HashSet;
 import jetbrains.mps.smodel.SModelUtil_new;
@@ -15,14 +16,41 @@ public class MqlLinkSelector_Behavior {
 
   public static SNode virtual_getType_228266671027867010(SNode thisNode) {
     SNode concept = SLinkOperations.getTarget(SLinkOperations.getTarget(thisNode, "link", false), "target", false);
-    return ((concept != null) ?
-      new MqlLinkSelector_Behavior.QuotationClass_71mfo8_a0a1a1().createNode(concept) :
-      null
+    if ((concept == null)) {
+      return null;
+    }
+    return (SAbstractLink_Behavior.call_isMultiple_4125821269969003167(SLinkOperations.getTarget(thisNode, "link", false)) ?
+      new MqlLinkSelector_Behavior.QuotationClass_71mfo8_a0a2a1().createNode(concept) :
+      new MqlLinkSelector_Behavior.QuotationClass_71mfo8_a0a2a1_0().createNode(concept)
     );
   }
 
-  public static class QuotationClass_71mfo8_a0a1a1 {
-    public QuotationClass_71mfo8_a0a1a1() {
+  public static class QuotationClass_71mfo8_a0a2a1 {
+    public QuotationClass_71mfo8_a0a2a1() {
+    }
+
+    public SNode createNode(Object parameter_5) {
+      SNode result = null;
+      Set<SNode> _parameterValues_129834374 = new HashSet<SNode>();
+      SNode quotedNode_1 = null;
+      SNode quotedNode_2 = null;
+      {
+        quotedNode_1 = SModelUtil_new.instantiateConceptDeclaration("jetbrains.mps.core.query.structure.MqlListType", null, GlobalScope.getInstance(), false);
+        SNode quotedNode1_3 = quotedNode_1;
+        {
+          quotedNode_2 = SModelUtil_new.instantiateConceptDeclaration("jetbrains.mps.core.smodel.structure.MqlNodeType", null, GlobalScope.getInstance(), false);
+          SNode quotedNode1_4 = quotedNode_2;
+          quotedNode1_4.setReferent("concept", (SNode) parameter_5);
+          quotedNode_1.addChild("inner", quotedNode1_4);
+        }
+        result = quotedNode1_3;
+      }
+      return result;
+    }
+  }
+
+  public static class QuotationClass_71mfo8_a0a2a1_0 {
+    public QuotationClass_71mfo8_a0a2a1_0() {
     }
 
     public SNode createNode(Object parameter_3) {

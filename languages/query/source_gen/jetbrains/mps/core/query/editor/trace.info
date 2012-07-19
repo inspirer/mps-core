@@ -1950,6 +1950,29 @@
     <unitInfo nodeId="3435983127247055507" fileName="MqlVariableReference_Editor.java" startLine="17" startPosition="0" endLine="80" endPosition="0" unitName="jetbrains.mps.core.query.editor.MqlVariableReference_Editor" />
     <unitInfo nodeId="3435983127247055514" fileName="MqlVariableReference_Editor.java" startLine="47" startPosition="0" endLine="79" endPosition="0" unitName="jetbrains.mps.core.query.editor.MqlVariableReference_Editor$_Inline_a3qb1u_a0a" />
   </root>
+  <root nodeId="4125821269969005133">
+    <nodeInfo nodeId="4125821269969005133" fileName="MqlSelector_Editor.java" startLine="12" startPosition="79" endLine="13" endPosition="58" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="4125821269969005135" fileName="MqlSelector_Editor.java" startLine="16" startPosition="84" endLine="17" endPosition="90" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="4125821269969005135" fileName="MqlSelector_Editor.java" startLine="17" startPosition="90" endLine="18" endPosition="43" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="4125821269969005135" fileName="MqlSelector_Editor.java" startLine="17" startPosition="90" endLine="18" endPosition="43" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="4125821269969005135" fileName="MqlSelector_Editor.java" startLine="18" startPosition="43" endLine="19" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="4125821269969005133" fileName="MqlSelector_Editor.java" startLine="11" startPosition="59" endLine="15" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createEditorCell#(Ljetbrains/mps/nodeEditor/EditorContext;Ljetbrains/mps/smodel/SNode;)Ljetbrains/mps/nodeEditor/cells/EditorCell;" />
+    <nodeInfo nodeId="4125821269969005135" fileName="MqlSelector_Editor.java" startLine="15" startPosition="0" endLine="21" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createError_psohxu_a#(Ljetbrains/mps/nodeEditor/EditorContext;Ljetbrains/mps/smodel/SNode;)Ljetbrains/mps/nodeEditor/cells/EditorCell;" />
+    <scopeInfo nodeId="4125821269969005133" fileName="MqlSelector_Editor.java" startLine="12" startPosition="79" endLine="13" endPosition="58" />
+    <scopeInfo nodeId="4125821269969005135" fileName="MqlSelector_Editor.java" startLine="17" startPosition="90" endLine="18" endPosition="43" />
+    <scopeInfo nodeId="4125821269969005135" fileName="MqlSelector_Editor.java" startLine="16" startPosition="84" endLine="19" endPosition="22">
+      <varInfo nodeId="4125821269969005135" varName="editorCell" />
+    </scopeInfo>
+    <scopeInfo nodeId="4125821269969005133" fileName="MqlSelector_Editor.java" startLine="11" startPosition="59" endLine="15" endPosition="0">
+      <varInfo nodeId="4125821269969005133" varName="editorContext" />
+      <varInfo nodeId="4125821269969005133" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="4125821269969005135" fileName="MqlSelector_Editor.java" startLine="15" startPosition="0" endLine="21" endPosition="0">
+      <varInfo nodeId="4125821269969005135" varName="editorContext" />
+      <varInfo nodeId="4125821269969005135" varName="node" />
+    </scopeInfo>
+    <unitInfo nodeId="4125821269969005133" fileName="MqlSelector_Editor.java" startLine="11" startPosition="0" endLine="22" endPosition="0" unitName="jetbrains.mps.core.query.editor.MqlSelector_Editor" />
+  </root>
   <root nodeId="5109194352282839189">
     <nodeInfo nodeId="5109194352282839198" fileName="MqlImport_Editor.java" startLine="60" startPosition="58" endLine="60" endPosition="58" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
     <nodeInfo nodeId="5109194352282839189" fileName="MqlImport_Editor.java" startLine="21" startPosition="79" endLine="22" endPosition="63" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
