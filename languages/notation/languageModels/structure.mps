@@ -61,6 +61,11 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="parts" />
       <property name="name" nameId="tpck.1169194664001" value="SNotationPartsContainer" />
     </node>
+    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4519148889084594750">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="text" />
+      <property name="name" nameId="tpck.1169194664001" value="SNotationProperty" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="3647933405694693955" resolveInfo="SNotationTextualPart" />
+    </node>
   </roots>
   <root id="6195190339582080388">
     <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="6195190339582080396">
@@ -75,6 +80,9 @@
     </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3647933405694717748">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3647933405694717737" resolveInfo="SNotationPartsContainer" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="4519148889084689179">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.3734116213129792499" resolveInfo="ScopeProvider" />
     </node>
   </root>
   <root id="3647933405694693953">
@@ -141,6 +149,14 @@
       <property name="role" nameId="tpce.1071599776563" value="alternatives" />
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1..n" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="3647933405694717735" resolveInfo="SNotationAlternativePart" />
+    </node>
+  </root>
+  <root id="4519148889084594750">
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="4519148889084594751">
+      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
+      <property name="role" nameId="tpce.1071599776563" value="property" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="ydsw.6195190339581766742" resolveInfo="SProperty" />
     </node>
   </root>
 </model>

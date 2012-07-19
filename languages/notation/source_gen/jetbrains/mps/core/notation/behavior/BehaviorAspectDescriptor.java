@@ -7,7 +7,7 @@ import java.util.Arrays;
 import jetbrains.mps.smodel.runtime.interpreted.BehaviorAspectInterpreted;
 
 public class BehaviorAspectDescriptor implements jetbrains.mps.smodel.runtime.BehaviorAspectDescriptor {
-  private static String[] stringSwitchCases_846f5o_a0a0a = new String[]{"jetbrains.mps.core.notation.structure.SConceptNotation", "jetbrains.mps.core.notation.structure.SNotationAlternativePart", "jetbrains.mps.core.notation.structure.SNotationLabel", "jetbrains.mps.core.notation.structure.SNotationNewLine", "jetbrains.mps.core.notation.structure.SNotationParentheses"};
+  private static String[] stringSwitchCases_846f5o_a0a0a = new String[]{"jetbrains.mps.core.notation.structure.SConceptNotation", "jetbrains.mps.core.notation.structure.SNotationAlternativePart", "jetbrains.mps.core.notation.structure.SNotationLabel", "jetbrains.mps.core.notation.structure.SNotationNewLine", "jetbrains.mps.core.notation.structure.SNotationParentheses", "jetbrains.mps.core.notation.structure.SNotationProperty"};
 
   public BehaviorAspectDescriptor() {
   }
@@ -24,6 +24,8 @@ public class BehaviorAspectDescriptor implements jetbrains.mps.smodel.runtime.Be
         return new SNotationNewLine_BehaviorDescriptor();
       case 1:
         return new SNotationAlternativePart_BehaviorDescriptor();
+      case 5:
+        return new SNotationProperty_BehaviorDescriptor();
       default:
         return BehaviorAspectInterpreted.getInstance().getDescriptor(fqName);
     }

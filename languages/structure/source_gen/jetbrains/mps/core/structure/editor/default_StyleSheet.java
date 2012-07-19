@@ -33,7 +33,7 @@ public class default_StyleSheet {
 
   public static Style getString(final EditorCell cell) {
     Style style = new Style(cell);
-    style.set(StyleAttributes.TEXT_COLOR, MPSColors.blue);
+    style.set(StyleAttributes.TEXT_COLOR, MPSColors.DARK_GREEN);
     return style;
   }
 }

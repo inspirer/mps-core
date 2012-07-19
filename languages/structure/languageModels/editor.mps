@@ -1485,7 +1485,7 @@
     <node role="styleClass" roleId="tpc2.1186402402630" type="tpc2.StyleSheetClass" typeId="tpc2.1186402373407" id="6601450967974198052">
       <property name="name" nameId="tpck.1169194664001" value="string" />
       <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.ForegroundColorStyleClassItem" typeId="tpc2.1186404549998" id="6601450967974198053">
-        <property name="color" nameId="tpc2.1186403713874" value="blue" />
+        <property name="color" nameId="tpc2.1186403713874" value="DARK_GREEN" />
       </node>
     </node>
   </root>
