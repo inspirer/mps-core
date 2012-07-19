@@ -53,8 +53,8 @@ public class MqlLinkSelector_Constraints extends BaseConstraintsDescriptor {
             } else {
               type = null;
             }
-            if (SNodeOperations.isInstanceOf(type, "jetbrains.mps.core.query.structure.MqlNodeType")) {
-              SNode decl = SLinkOperations.getTarget(SNodeOperations.cast(type, "jetbrains.mps.core.query.structure.MqlNodeType"), "concept", false);
+            if (SNodeOperations.isInstanceOf(type, "jetbrains.mps.core.smodel.structure.MqlNodeType")) {
+              SNode decl = SLinkOperations.getTarget(SNodeOperations.cast(type, "jetbrains.mps.core.smodel.structure.MqlNodeType"), "concept", false);
               if ((decl != null)) {
                 ListSequence.fromList(result).addSequence(ListSequence.fromList(SLinkOperations.getTargets(decl, "linkDeclaration", true)));
               }

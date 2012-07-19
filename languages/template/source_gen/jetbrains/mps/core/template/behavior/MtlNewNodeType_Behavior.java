@@ -17,8 +17,8 @@ public class MtlNewNodeType_Behavior {
       SNode target = SLinkOperations.getTarget(SNodeOperations.cast(type, "jetbrains.mps.core.template.structure.MtlNewNodeType"), "concept", false);
       return SConceptOperations.isSubConceptOf(SLinkOperations.getTarget(thisNode, "concept", false), NameUtil.nodeFQName(target));
     }
-    if (SNodeOperations.isInstanceOf(type, "jetbrains.mps.core.query.structure.MqlNodeType")) {
-      SNode target = SLinkOperations.getTarget(SNodeOperations.cast(type, "jetbrains.mps.core.query.structure.MqlNodeType"), "concept", false);
+    if (SNodeOperations.isInstanceOf(type, "jetbrains.mps.core.smodel.structure.MqlNodeType")) {
+      SNode target = SLinkOperations.getTarget(SNodeOperations.cast(type, "jetbrains.mps.core.smodel.structure.MqlNodeType"), "concept", false);
       return SConceptOperations.isSubConceptOf(SLinkOperations.getTarget(thisNode, "concept", false), NameUtil.nodeFQName(target));
     }
     return false;

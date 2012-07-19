@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="jetbrains.mps.core.workflow" uuid="78c70cc5-3e2a-478b-9524-f2d47690ac85" doNotGenerateAdapters="false">
+<language namespace="jetbrains.mps.core.workflow" uuid="78c70cc5-3e2a-478b-9524-f2d47690ac85" doNotGenerateAdapters="true">
   <models>
     <modelRoot path="${language_descriptor}/languageModels" />
   </models>

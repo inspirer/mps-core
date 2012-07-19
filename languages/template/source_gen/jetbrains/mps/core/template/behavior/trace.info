@@ -60,8 +60,8 @@
   <root nodeId="4273915927700610140">
     <nodeInfo nodeId="2852142168179579218" fileName="MtlNewNodeType_Behavior.java" startLine="16" startPosition="101" endLine="17" endPosition="149" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
     <nodeInfo nodeId="2852142168179579191" fileName="MtlNewNodeType_Behavior.java" startLine="17" startPosition="149" endLine="18" endPosition="131" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="4273915927700610160" fileName="MtlNewNodeType_Behavior.java" startLine="20" startPosition="95" endLine="21" endPosition="143" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="4273915927700610167" fileName="MtlNewNodeType_Behavior.java" startLine="21" startPosition="143" endLine="22" endPosition="131" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="4273915927700610160" fileName="MtlNewNodeType_Behavior.java" startLine="20" startPosition="96" endLine="21" endPosition="144" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="4273915927700610167" fileName="MtlNewNodeType_Behavior.java" startLine="21" startPosition="144" endLine="22" endPosition="131" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="2852142168179584285" fileName="MtlNewNodeType_Behavior.java" startLine="23" startPosition="5" endLine="24" endPosition="17" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="4273915927700610140" fileName="MtlNewNodeType_Behavior.java" startLine="11" startPosition="38" endLine="14" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="init#(Ljetbrains/mps/smodel/SNode;)V" />
     <nodeInfo nodeId="2852142168179579180" fileName="MtlNewNodeType_Behavior.java" startLine="15" startPosition="93" endLine="19" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
@@ -71,7 +71,7 @@
     <scopeInfo nodeId="2852142168179579182" fileName="MtlNewNodeType_Behavior.java" startLine="16" startPosition="101" endLine="18" endPosition="131">
       <varInfo nodeId="2852142168179579219" varName="target" />
     </scopeInfo>
-    <scopeInfo nodeId="4273915927700610151" fileName="MtlNewNodeType_Behavior.java" startLine="20" startPosition="95" endLine="22" endPosition="131">
+    <scopeInfo nodeId="4273915927700610151" fileName="MtlNewNodeType_Behavior.java" startLine="20" startPosition="96" endLine="22" endPosition="131">
       <varInfo nodeId="4273915927700610161" varName="target" />
     </scopeInfo>
     <scopeInfo nodeId="4273915927700610140" fileName="MtlNewNodeType_Behavior.java" startLine="11" startPosition="38" endLine="14" endPosition="0">

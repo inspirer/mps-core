@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="jetbrains.mps.core.syntax" uuid="92bc763c-568d-4252-b8a3-a157f8320a67" doNotGenerateAdapters="false">
+<language namespace="jetbrains.mps.core.syntax" uuid="92bc763c-568d-4252-b8a3-a157f8320a67" doNotGenerateAdapters="true">
   <models>
     <modelRoot path="${language_descriptor}/languageModels" />
     <modelRoot path="${language_descriptor}/libs/lapg-1.3.10.jar">

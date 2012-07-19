@@ -16,6 +16,10 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="smodel" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="xsnc.4260762357824841781" resolveInfo="MqlLinkSelector" />
     </node>
+    <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="4260762357825047864">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="type" />
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="xsnc.4260762357825047862" resolveInfo="MqlNodeType" />
+    </node>
   </roots>
   <root id="4260762357824841785">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="4260762357824841786">
@@ -43,6 +47,19 @@
         </node>
       </node>
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="4260762357824841796" />
+    </node>
+  </root>
+  <root id="4260762357825047864">
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="4260762357825047865">
+      <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="4260762357825047866" />
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefCell" typeId="tpc2.1088013125922" id="4260762357825047867">
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="xsnc.4260762357825047863" />
+        <node role="editorComponent" roleId="tpc2.1088186146602" type="tpc2.InlineEditorComponent" typeId="tpc2.1088185857835" id="4260762357825047868">
+          <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="4260762357825047869">
+            <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="tpck.1169194664001" resolveInfo="name" />
+          </node>
+        </node>
+      </node>
     </node>
   </root>
 </model>
