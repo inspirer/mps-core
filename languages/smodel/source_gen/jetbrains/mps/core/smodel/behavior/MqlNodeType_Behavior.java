@@ -5,8 +5,7 @@ package jetbrains.mps.core.smodel.behavior;
 import jetbrains.mps.smodel.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
-import jetbrains.mps.util.NameUtil;
+import jetbrains.mps.core.structure.behavior.SAbstractConcept_Behavior;
 
 public class MqlNodeType_Behavior {
   public static void init(SNode thisNode) {
@@ -15,7 +14,7 @@ public class MqlNodeType_Behavior {
   public static boolean virtual_isSubtypeOf_2852142168179579064(SNode thisNode, SNode type) {
     if (SNodeOperations.isInstanceOf(type, "jetbrains.mps.core.smodel.structure.MqlNodeType")) {
       SNode target = SLinkOperations.getTarget(SNodeOperations.cast(type, "jetbrains.mps.core.smodel.structure.MqlNodeType"), "concept", false);
-      return SConceptOperations.isSubConceptOf(SLinkOperations.getTarget(thisNode, "concept", false), NameUtil.nodeFQName(target));
+      return SAbstractConcept_Behavior.call_isSubConceptOf_5938997310819191538(SLinkOperations.getTarget(thisNode, "concept", false), target);
     }
     return false;
   }

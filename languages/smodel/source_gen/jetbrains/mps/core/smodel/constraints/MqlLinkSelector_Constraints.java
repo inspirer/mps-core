@@ -21,6 +21,8 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.core.query.behavior.MqlExpression_Behavior;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
+import jetbrains.mps.internal.collections.runtime.IWhereFilter;
+import jetbrains.mps.internal.collections.runtime.ISelector;
 
 public class MqlLinkSelector_Constraints extends BaseConstraintsDescriptor {
   private static SNodePointer breakingNode_3c55os_a0a1a0a0a1a0b0a1a0 = new SNodePointer("r:a3118036-be6c-4f13-a069-b1078aa590d5(jetbrains.mps.core.smodel.constraints)", "4260762357824841876");
@@ -56,7 +58,15 @@ public class MqlLinkSelector_Constraints extends BaseConstraintsDescriptor {
             if (SNodeOperations.isInstanceOf(type, "jetbrains.mps.core.smodel.structure.MqlNodeType")) {
               SNode decl = SLinkOperations.getTarget(SNodeOperations.cast(type, "jetbrains.mps.core.smodel.structure.MqlNodeType"), "concept", false);
               if ((decl != null)) {
-                ListSequence.fromList(result).addSequence(ListSequence.fromList(SLinkOperations.getTargets(decl, "linkDeclaration", true)));
+                ListSequence.fromList(result).addSequence(ListSequence.fromList(SLinkOperations.getTargets(decl, "members", true)).where(new IWhereFilter<SNode>() {
+                  public boolean accept(SNode it) {
+                    return SNodeOperations.isInstanceOf(it, "jetbrains.mps.core.structure.structure.SAbstractLink");
+                  }
+                }).select(new ISelector<SNode, SNode>() {
+                  public SNode select(SNode it) {
+                    return SNodeOperations.cast(it, "jetbrains.mps.core.structure.structure.SAbstractLink");
+                  }
+                }));
               }
             }
             return result;

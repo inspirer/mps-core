@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="-4bftxcxkpa8ncweqd186gi10ijhw7a4">
+<dependencies version="2" modelHash="e9k2qtmk2gseayncnrurjql8ijhww3s">
   <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
   <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
   <dep model="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
@@ -11,7 +11,7 @@
   <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" />
   <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" />
   <dep model="r:f9198ffd-e084-425c-aa82-f2db8289f5eb(jetbrains.mps.core.query.structure)" hash="-c8mo4ks5k9ytkz2gnklg52o2j69k1r9" />
-  <common hash="4b155asru53360nv1fu7qptk66dp47g" dependsOnNodes="true">
+  <common hash="364estfu3y25byw7p779qc7djl3v2qs" dependsOnNodes="true">
     <dep root="4260762357824841781" />
     <dep root="4260762357824841783" />
     <dep root="4260762357825047862" />
@@ -29,13 +29,13 @@
     <file name="Smodel_Language.java" />
     <file name="StructureAspectDescriptor.java" />
   </common>
-  <source id="4260762357824841781" name="MqlLinkSelector" hash="-cq9rh9x62hy9vt91phuw4nre1n27p9p">
+  <source id="4260762357824841781" name="MqlLinkSelector" hash="-ckknts8tmiilxszdsaewmrldnwjf0hq">
     <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
   </source>
-  <source id="4260762357824841783" name="MqlPropertySelector" hash="a6la6788derp8z7srm46ohmrdjbn7w1">
+  <source id="4260762357824841783" name="MqlPropertySelector" hash="-3250h34wo6px9cxhnpadx6r5cm3k817">
     <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
   </source>
-  <source id="4260762357825047862" name="MqlNodeType" hash="daecbb3td3vm4dcy83nmuiojdr3v8wb">
+  <source id="4260762357825047862" name="MqlNodeType" hash="67l0i4yh1rekmrcmctmk64b9ej6l7oq">
     <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
   </source>
 </dependencies>

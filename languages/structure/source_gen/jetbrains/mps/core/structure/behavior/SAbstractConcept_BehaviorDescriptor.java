@@ -10,6 +10,10 @@ public abstract class SAbstractConcept_BehaviorDescriptor extends SStructureElem
   public SAbstractConcept_BehaviorDescriptor() {
   }
 
+  public boolean virtual_isSubConceptOf_5938997310819191538(SNode thisNode, SNode concept) {
+    return SAbstractConcept_Behavior.virtual_isSubConceptOf_5938997310819191538(thisNode, concept);
+  }
+
   public String virtual_getFqName_1213877404258(SNode thisNode) {
     return INamedConcept_Behavior.virtual_getFqName_1213877404258(thisNode);
   }

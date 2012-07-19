@@ -6,14 +6,14 @@
   <language namespace="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" />
   <language namespace="78c70cc5-3e2a-478b-9524-f2d47690ac85(jetbrains.mps.core.workflow)" />
   <language namespace="41a590b4-0cca-40d1-9a11-d9ef253734cc(jetbrains.mps.core.smodel)" />
-  <import index="tpce" modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" />
-  <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" />
+  <import index="1ulq" modelUID="r:832e0baa-411d-4487-afdf-7fc210c943c1(jetbrains.mps.core.sandbox.structure)" version="-1" />
   <import index="bwy9" modelUID="r:f9198ffd-e084-425c-aa82-f2db8289f5eb(jetbrains.mps.core.query.structure)" version="0" implicit="yes" />
   <import index="h0os" modelUID="r:d290b86d-8b61-4a2f-a17f-263226953ecc(jetbrains.mps.core.template.structure)" version="0" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="3" implicit="yes" />
   <import index="e5td" modelUID="r:ebf59dd9-04f3-4209-8dd7-dca3f04cac82(jetbrains.mps.core.workflow.structure)" version="0" implicit="yes" />
   <import index="e2lb" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" version="-1" implicit="yes" />
   <import index="xsnc" modelUID="r:e3b9700d-5825-4641-895a-925f28591c5b(jetbrains.mps.core.smodel.structure)" version="-1" implicit="yes" />
+  <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <roots>
     <node type="bwy9.MqlPackage" typeId="bwy9.6762883159245048630" id="6601450967974137522">
       <property name="name" nameId="tpck.1169194664001" value="default" />
@@ -90,8 +90,8 @@
       <property name="name" nameId="tpck.1169194664001" value="getProperties" />
       <node role="parameters" roleId="bwy9.1992172484410518817" type="bwy9.MqlParameter" typeId="bwy9.6762883159245048635" id="228266671027905035">
         <property name="name" nameId="tpck.1169194664001" value="decl" />
-        <node role="type" roleId="bwy9.6762883159245086405" type="xsnc.MqlNodeType" typeId="xsnc.4260762357825047862" id="228266671027906937">
-          <link role="concept" roleId="xsnc.4260762357825047863" targetNodeId="tpce.1169125787135" resolveInfo="AbstractConceptDeclaration" />
+        <node role="type" roleId="bwy9.6762883159245086405" type="xsnc.MqlNodeType" typeId="xsnc.4260762357825047862" id="6960281617114545456">
+          <link role="concept" roleId="xsnc.4260762357825047863" targetNodeId="1ulq.6195190339582074039" resolveInfo="CharacterReader" />
         </node>
       </node>
       <node role="parameters" roleId="bwy9.1992172484410518817" type="bwy9.MqlParameter" typeId="bwy9.6762883159245048635" id="2852142168179598247">
@@ -102,8 +102,8 @@
         <node role="left" roleId="bwy9.6762883159245048086" type="bwy9.MqlParameterReference" typeId="bwy9.6762883159245086407" id="2059702675525965888">
           <link role="parameter" roleId="bwy9.6762883159245086408" targetNodeId="228266671027905035" resolveInfo="decl" />
         </node>
-        <node role="right" roleId="bwy9.6762883159245048089" type="xsnc.MqlLinkSelector" typeId="xsnc.4260762357824841781" id="2059702675525965894">
-          <link role="link" roleId="xsnc.4260762357824841782" targetNodeId="tpce.1071489727084" />
+        <node role="right" roleId="bwy9.6762883159245048089" type="xsnc.MqlLinkSelector" typeId="xsnc.4260762357824841781" id="6960281617114545459">
+          <link role="link" roleId="xsnc.4260762357824841782" targetNodeId="1ulq.7581772527308056983" resolveInfo="props" />
         </node>
       </node>
     </node>
@@ -111,22 +111,20 @@
       <property name="name" nameId="tpck.1169194664001" value="getPropertyNames" />
       <node role="parameters" roleId="bwy9.1992172484410518817" type="bwy9.MqlParameter" typeId="bwy9.6762883159245048635" id="2059702675525982937">
         <property name="name" nameId="tpck.1169194664001" value="decl" />
-        <node role="type" roleId="bwy9.6762883159245086405" type="xsnc.MqlNodeType" typeId="xsnc.4260762357825047862" id="2059702675525982938">
-          <link role="concept" roleId="xsnc.4260762357825047863" targetNodeId="tpce.1169125787135" resolveInfo="AbstractConceptDeclaration" />
+        <node role="type" roleId="bwy9.6762883159245086405" type="xsnc.MqlNodeType" typeId="xsnc.4260762357825047862" id="6960281617114545457">
+          <link role="concept" roleId="xsnc.4260762357825047863" targetNodeId="1ulq.6195190339582074039" resolveInfo="CharacterReader" />
         </node>
       </node>
       <node role="body" roleId="bwy9.6762883159245048634" type="bwy9.MqlDotExpression" typeId="bwy9.6762883159245048085" id="2059702675525983613">
         <node role="left" roleId="bwy9.6762883159245048086" type="bwy9.MqlNoContextQueryCall" typeId="bwy9.2059702675525965924" id="2059702675525982930">
           <link role="query" roleId="bwy9.2059702675525965925" targetNodeId="228266671027848216" resolveInfo="getProperties" />
-          <node role="arguments" roleId="bwy9.2059702675525965926" type="bwy9.MqlParameterReference" typeId="bwy9.6762883159245086407" id="2059702675525982939">
-            <link role="parameter" roleId="bwy9.6762883159245086408" targetNodeId="2059702675525982937" resolveInfo="decl" />
-          </node>
+          <node role="arguments" roleId="bwy9.2059702675525965926" type="bwy9.MqlNullLiteral" typeId="bwy9.6762883159245048062" id="6960281617114545460" />
           <node role="arguments" roleId="bwy9.2059702675525965926" type="bwy9.MqlIntLiteral" typeId="bwy9.6762883159245048052" id="2852142168179609474">
             <property name="value" nameId="bwy9.6762883159245048053" value="1" />
           </node>
         </node>
-        <node role="right" roleId="bwy9.6762883159245048089" type="xsnc.MqlPropertySelector" typeId="xsnc.4260762357824841783" id="1016170791824156251">
-          <link role="property" roleId="xsnc.4260762357824841784" targetNodeId="tpce.9026942911489198753" resolveInfo="doNotGenerate" />
+        <node role="right" roleId="bwy9.6762883159245048089" type="xsnc.MqlLinkSelector" typeId="xsnc.4260762357824841781" id="6960281617114545461">
+          <link role="link" roleId="xsnc.4260762357824841782" targetNodeId="1ulq.2223786200032662875" resolveInfo="ref" />
         </node>
       </node>
     </node>
@@ -341,14 +339,14 @@
           </node>
         </node>
       </node>
-      <node role="contextNode" roleId="h0os.212212067812118810" type="xsnc.MqlNodeType" typeId="xsnc.4260762357825047862" id="1163325315882438927">
-        <link role="concept" roleId="xsnc.4260762357825047863" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+      <node role="contextNode" roleId="h0os.212212067812118810" type="xsnc.MqlNodeType" typeId="xsnc.4260762357825047862" id="6960281617114628963">
+        <link role="concept" roleId="xsnc.4260762357825047863" targetNodeId="1ulq.6195190339582074032" resolveInfo="Reader" />
       </node>
     </node>
     <node role="entities" roleId="h0os.212212067812118757" type="h0os.MtlTemplate" typeId="h0os.212212067811886751" id="1163325315882442994">
       <property name="name" nameId="tpck.1169194664001" value="asd" />
-      <node role="contextNode" roleId="h0os.212212067812118810" type="xsnc.MqlNodeType" typeId="xsnc.4260762357825047862" id="1163325315882442997">
-        <link role="concept" roleId="xsnc.4260762357825047863" targetNodeId="tpce.1105741535888" resolveInfo="AggregationConceptLinkDeclaration" />
+      <node role="contextNode" roleId="h0os.212212067812118810" type="xsnc.MqlNodeType" typeId="xsnc.4260762357825047862" id="6960281617114628962">
+        <link role="concept" roleId="xsnc.4260762357825047863" targetNodeId="1ulq.6195190339582069380" resolveInfo="ILazy" />
       </node>
       <node role="template" roleId="h0os.212212067812118827" type="bwy9.MqlArithmetic" typeId="bwy9.6762883159245048040" id="1163325315882442999">
         <property name="kind" nameId="bwy9.6762883159245048047" value="1" />
@@ -587,8 +585,8 @@
           <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="3373821274546684867" />
         </node>
       </node>
-      <node role="contextNode" roleId="h0os.212212067812118810" type="xsnc.MqlNodeType" typeId="xsnc.4260762357825047862" id="1163325315882438928">
-        <link role="concept" roleId="xsnc.4260762357825047863" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+      <node role="contextNode" roleId="h0os.212212067812118810" type="xsnc.MqlNodeType" typeId="xsnc.4260762357825047862" id="6960281617114628961">
+        <link role="concept" roleId="xsnc.4260762357825047863" targetNodeId="1ulq.6195190339582074039" resolveInfo="CharacterReader" />
       </node>
     </node>
     <node role="entities" roleId="h0os.212212067812118757" type="h0os.MtlTemplate" typeId="h0os.212212067811886751" id="1163325315882432874">
@@ -596,8 +594,8 @@
       <node role="template" roleId="h0os.212212067812118827" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="1163325315882438943">
         <property name="value" nameId="tpee.1068580320021" value="123" />
       </node>
-      <node role="contextNode" roleId="h0os.212212067812118810" type="xsnc.MqlNodeType" typeId="xsnc.4260762357825047862" id="1163325315882438929">
-        <link role="concept" roleId="xsnc.4260762357825047863" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+      <node role="contextNode" roleId="h0os.212212067812118810" type="xsnc.MqlNodeType" typeId="xsnc.4260762357825047862" id="6960281617114628964">
+        <link role="concept" roleId="xsnc.4260762357825047863" targetNodeId="1ulq.6195190339582074032" resolveInfo="Reader" />
       </node>
     </node>
     <node role="entities" roleId="h0os.212212067812118757" type="h0os.MtlBuilder" typeId="h0os.212212067811886750" id="212212067812146069">
@@ -615,8 +613,8 @@
           <link role="parameter" roleId="bwy9.6762883159245086408" targetNodeId="7934151313360426457" resolveInfo="a" />
         </node>
       </node>
-      <node role="contextNode" roleId="h0os.6762883159245086410" type="xsnc.MqlNodeType" typeId="xsnc.4260762357825047862" id="1163325315882422093">
-        <link role="concept" roleId="xsnc.4260762357825047863" targetNodeId="tpce.1105736889287" resolveInfo="AggregationConceptLink" />
+      <node role="contextNode" roleId="h0os.6762883159245086410" type="xsnc.MqlNodeType" typeId="xsnc.4260762357825047862" id="6960281617114628965">
+        <link role="concept" roleId="xsnc.4260762357825047863" targetNodeId="1ulq.6195190339582074043" resolveInfo="HasToString" />
       </node>
     </node>
     <node role="entities" roleId="h0os.212212067812118757" type="h0os.MtlQuery" typeId="h0os.212212067812118743" id="212212067812146075">

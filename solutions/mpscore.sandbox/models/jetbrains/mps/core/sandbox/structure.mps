@@ -93,7 +93,7 @@
       </node>
       <node role="members" roleId="ydsw.6195190339581766761" type="ydsw.SConceptMemberEmptyLine" typeId="ydsw.7581772527307844356" id="7581772527308201596" />
       <node role="members" roleId="ydsw.6195190339581766761" type="ydsw.SChildLink" typeId="ydsw.7581772527307862083" id="7581772527308056983">
-        <property name="name" nameId="tpck.1169194664001" value="ad" />
+        <property name="name" nameId="tpck.1169194664001" value="props" />
         <link role="target" roleId="ydsw.7581772527307862085" targetNodeId="6195190339582074043" resolveInfo="HasToString" />
         <node role="cardinality" roleId="ydsw.7581772527307907847" type="ydsw.SCardinality" typeId="ydsw.7581772527307895408" id="7581772527308201595">
           <property name="isRequired" nameId="ydsw.7581772527307895409" value="true" />
@@ -110,6 +110,9 @@
       </node>
     </node>
     <node role="structure" roleId="ydsw.6195190339581766884" type="ydsw.SStructureEmptyLine" typeId="ydsw.6195190339581962051" id="2824764010657616311" />
+    <node role="structure" roleId="ydsw.6195190339581766884" type="ydsw.SStructureEmptyLine" typeId="ydsw.6195190339581962051" id="5938997310819163599" />
+    <node role="structure" roleId="ydsw.6195190339581766884" type="ydsw.SStructureEmptyLine" typeId="ydsw.6195190339581962051" id="5938997310819163602" />
+    <node role="structure" roleId="ydsw.6195190339581766884" type="ydsw.SStructureEmptyLine" typeId="ydsw.6195190339581962051" id="5938997310819163603" />
     <node role="structure" roleId="ydsw.6195190339581766884" type="74m3.SConceptNotation" typeId="74m3.6195190339582080388" id="8667867085240603242">
       <link role="concept" roleId="74m3.6195190339582080391" targetNodeId="6195190339582074032" resolveInfo="Reader" />
       <node role="alternatives" roleId="74m3.3647933405694717738" type="74m3.SNotationAlternativePart" typeId="74m3.3647933405694717735" id="8667867085240603243">

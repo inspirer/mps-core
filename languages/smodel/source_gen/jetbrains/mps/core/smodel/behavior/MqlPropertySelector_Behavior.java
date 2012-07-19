@@ -5,7 +5,7 @@ package jetbrains.mps.core.smodel.behavior;
 import jetbrains.mps.smodel.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.lang.structure.behavior.PrimitiveDataTypeDeclaration_Behavior;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import java.util.Set;
 import java.util.HashSet;
 import jetbrains.mps.smodel.SModelUtil_new;
@@ -16,14 +16,14 @@ public class MqlPropertySelector_Behavior {
   }
 
   public static SNode virtual_getType_228266671027867010(SNode thisNode) {
-    SNode dt = SLinkOperations.getTarget(SLinkOperations.getTarget(thisNode, "property", false), "dataType", false);
-    if (SNodeOperations.isInstanceOf(dt, "jetbrains.mps.lang.structure.structure.PrimitiveDataTypeDeclaration")) {
-      SNode pdt = SNodeOperations.cast(dt, "jetbrains.mps.lang.structure.structure.PrimitiveDataTypeDeclaration");
-      if (PrimitiveDataTypeDeclaration_Behavior.call_isString_1220268752134(pdt)) {
+    SNode dt = SLinkOperations.getTarget(SLinkOperations.getTarget(thisNode, "property", false), "type", true);
+    if (SNodeOperations.isInstanceOf(dt, "jetbrains.mps.core.structure.structure.SPrimitiveDataType")) {
+      SNode pdt = SNodeOperations.cast(dt, "jetbrains.mps.core.structure.structure.SPrimitiveDataType");
+      if (SPropertyOperations.hasValue(pdt, "kind", "string", "string")) {
         return new MqlPropertySelector_Behavior.QuotationClass_wadyfu_a0a0b0b0b().createNode();
-      } else if (PrimitiveDataTypeDeclaration_Behavior.call_isInteger_1220268780075(pdt)) {
+      } else if (SPropertyOperations.hasValue(pdt, "kind", "int", "string")) {
         return new MqlPropertySelector_Behavior.QuotationClass_wadyfu_a0a0a1a1a1().createNode();
-      } else if (PrimitiveDataTypeDeclaration_Behavior.call_isBoolean_1220268791641(pdt)) {
+      } else if (SPropertyOperations.hasValue(pdt, "kind", "bool", "string")) {
         return new MqlPropertySelector_Behavior.QuotationClass_wadyfu_a0a0b1a1a1().createNode();
       }
     }
