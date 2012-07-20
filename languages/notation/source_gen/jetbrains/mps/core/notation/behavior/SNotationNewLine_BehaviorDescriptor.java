@@ -4,7 +4,7 @@ package jetbrains.mps.core.notation.behavior;
 
 import jetbrains.mps.smodel.SNode;
 
-public class SNotationNewLine_BehaviorDescriptor extends SNotationTextualPart_BehaviorDescriptor {
+public class SNotationNewLine_BehaviorDescriptor extends SNotationPart_BehaviorDescriptor {
   public SNotationNewLine_BehaviorDescriptor() {
   }
 

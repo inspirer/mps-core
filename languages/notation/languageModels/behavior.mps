@@ -22,7 +22,7 @@
       <link role="concept" roleId="1i04.1225194240799" targetNodeId="74m3.6195190339582080388" resolveInfo="SNotation" />
     </node>
     <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="3647933405694790197">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="text" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="notation" />
       <link role="concept" roleId="1i04.1225194240799" targetNodeId="74m3.3647933405694717717" resolveInfo="SNotationParentheses" />
     </node>
     <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="3647933405694801732">
@@ -30,7 +30,7 @@
       <link role="concept" roleId="1i04.1225194240799" targetNodeId="74m3.3647933405694693953" resolveInfo="SNotationPart" />
     </node>
     <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="3647933405694801756">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="text" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="notation" />
       <link role="concept" roleId="1i04.1225194240799" targetNodeId="74m3.3647933405694717730" resolveInfo="SNotationNewLine" />
     </node>
   </roots>

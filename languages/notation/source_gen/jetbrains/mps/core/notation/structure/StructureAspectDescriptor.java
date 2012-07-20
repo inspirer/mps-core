@@ -8,7 +8,7 @@ import jetbrains.mps.smodel.runtime.impl.CompiledConceptDescriptor;
 import jetbrains.mps.smodel.runtime.interpreted.StructureAspectInterpreted;
 
 public class StructureAspectDescriptor implements jetbrains.mps.smodel.runtime.StructureAspectDescriptor {
-  private static String[] stringSwitchCases_1htk8d_a0a0a = new String[]{"jetbrains.mps.core.notation.structure.SNotation", "jetbrains.mps.core.notation.structure.SNotationAlternativePart", "jetbrains.mps.core.notation.structure.SNotationLabel", "jetbrains.mps.core.notation.structure.SNotationNewLine", "jetbrains.mps.core.notation.structure.SNotationParentheses", "jetbrains.mps.core.notation.structure.SNotationParserPart", "jetbrains.mps.core.notation.structure.SNotationPart", "jetbrains.mps.core.notation.structure.SNotationPartsContainer", "jetbrains.mps.core.notation.structure.SNotationProjectionalPart", "jetbrains.mps.core.notation.structure.SNotationProperty", "jetbrains.mps.core.notation.structure.SNotationTextualPart", "jetbrains.mps.core.notation.structure.SNotationWhitespacePart"};
+  private static String[] stringSwitchCases_1htk8d_a0a0a = new String[]{"jetbrains.mps.core.notation.structure.SNotation", "jetbrains.mps.core.notation.structure.SNotationAlternativePart", "jetbrains.mps.core.notation.structure.SNotationLabel", "jetbrains.mps.core.notation.structure.SNotationMapping", "jetbrains.mps.core.notation.structure.SNotationNewLine", "jetbrains.mps.core.notation.structure.SNotationParentheses", "jetbrains.mps.core.notation.structure.SNotationPart", "jetbrains.mps.core.notation.structure.SNotationPartsContainer", "jetbrains.mps.core.notation.structure.SNotationQuantifier", "jetbrains.mps.core.notation.structure.SStructureEntityRef", "jetbrains.mps.core.notation.structure.SStructureLinkRef", "jetbrains.mps.core.notation.structure.SStructurePropertyRef"};
 
   public StructureAspectDescriptor() {
   }
@@ -20,25 +20,25 @@ public class StructureAspectDescriptor implements jetbrains.mps.smodel.runtime.S
       case 1:
         return new CompiledConceptDescriptor("jetbrains.mps.core.notation.structure.SNotationAlternativePart", "jetbrains.mps.lang.core.structure.BaseConcept", false, new String[]{"jetbrains.mps.lang.core.structure.BaseConcept"}, new String[]{}, new String[]{});
       case 2:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.notation.structure.SNotationLabel", "jetbrains.mps.core.notation.structure.SNotationTextualPart", false, new String[]{"jetbrains.mps.core.notation.structure.SNotationTextualPart"}, new String[]{"text"}, new String[]{});
+        return new CompiledConceptDescriptor("jetbrains.mps.core.notation.structure.SNotationLabel", "jetbrains.mps.core.notation.structure.SNotationPart", false, new String[]{"jetbrains.mps.core.notation.structure.SNotationPart"}, new String[]{"text"}, new String[]{});
       case 3:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.notation.structure.SNotationNewLine", "jetbrains.mps.core.notation.structure.SNotationTextualPart", false, new String[]{"jetbrains.mps.core.notation.structure.SNotationTextualPart"}, new String[]{}, new String[]{});
+        return new CompiledConceptDescriptor("jetbrains.mps.core.notation.structure.SNotationMapping", "jetbrains.mps.core.notation.structure.SNotationPart", false, new String[]{"jetbrains.mps.core.notation.structure.SNotationPart"}, new String[]{}, new String[]{});
       case 4:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.notation.structure.SNotationParentheses", "jetbrains.mps.core.notation.structure.SNotationPart", false, new String[]{"jetbrains.mps.core.notation.structure.SNotationPart", "jetbrains.mps.core.notation.structure.SNotationPartsContainer"}, new String[]{}, new String[]{});
+        return new CompiledConceptDescriptor("jetbrains.mps.core.notation.structure.SNotationNewLine", "jetbrains.mps.core.notation.structure.SNotationPart", false, new String[]{"jetbrains.mps.core.notation.structure.SNotationPart"}, new String[]{}, new String[]{});
       case 5:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.notation.structure.SNotationParserPart", "jetbrains.mps.core.notation.structure.SNotationPart", false, new String[]{"jetbrains.mps.core.notation.structure.SNotationPart"}, new String[]{}, new String[]{});
+        return new CompiledConceptDescriptor("jetbrains.mps.core.notation.structure.SNotationParentheses", "jetbrains.mps.core.notation.structure.SNotationPart", false, new String[]{"jetbrains.mps.core.notation.structure.SNotationPart", "jetbrains.mps.core.notation.structure.SNotationPartsContainer"}, new String[]{}, new String[]{});
       case 6:
         return new CompiledConceptDescriptor("jetbrains.mps.core.notation.structure.SNotationPart", "jetbrains.mps.lang.core.structure.BaseConcept", false, new String[]{"jetbrains.mps.lang.core.structure.BaseConcept"}, new String[]{}, new String[]{});
       case 7:
         return new CompiledConceptDescriptor("jetbrains.mps.core.notation.structure.SNotationPartsContainer", null, true, new String[]{}, new String[]{}, new String[]{});
       case 8:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.notation.structure.SNotationProjectionalPart", "jetbrains.mps.core.notation.structure.SNotationPart", false, new String[]{"jetbrains.mps.core.notation.structure.SNotationPart"}, new String[]{}, new String[]{});
+        return new CompiledConceptDescriptor("jetbrains.mps.core.notation.structure.SNotationQuantifier", "jetbrains.mps.core.notation.structure.SNotationPart", false, new String[]{"jetbrains.mps.core.notation.structure.SNotationPart"}, new String[]{"kind"}, new String[]{});
       case 9:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.notation.structure.SNotationProperty", "jetbrains.mps.core.notation.structure.SNotationTextualPart", false, new String[]{"jetbrains.mps.core.notation.structure.SNotationTextualPart"}, new String[]{}, new String[]{"property"});
+        return new CompiledConceptDescriptor("jetbrains.mps.core.notation.structure.SStructureEntityRef", "jetbrains.mps.lang.core.structure.BaseConcept", false, new String[]{"jetbrains.mps.lang.core.structure.BaseConcept"}, new String[]{}, new String[]{});
       case 10:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.notation.structure.SNotationTextualPart", "jetbrains.mps.core.notation.structure.SNotationPart", false, new String[]{"jetbrains.mps.core.notation.structure.SNotationPart"}, new String[]{}, new String[]{});
+        return new CompiledConceptDescriptor("jetbrains.mps.core.notation.structure.SStructureLinkRef", "jetbrains.mps.core.notation.structure.SStructureEntityRef", false, new String[]{"jetbrains.mps.core.notation.structure.SStructureEntityRef"}, new String[]{}, new String[]{"link"});
       case 11:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.notation.structure.SNotationWhitespacePart", "jetbrains.mps.core.notation.structure.SNotationPart", false, new String[]{"jetbrains.mps.core.notation.structure.SNotationPart"}, new String[]{}, new String[]{});
+        return new CompiledConceptDescriptor("jetbrains.mps.core.notation.structure.SStructurePropertyRef", "jetbrains.mps.core.notation.structure.SStructureEntityRef", false, new String[]{"jetbrains.mps.core.notation.structure.SStructureEntityRef"}, new String[]{}, new String[]{"property"});
       default:
         return StructureAspectInterpreted.getInstance().getDescriptor(conceptFqName);
     }

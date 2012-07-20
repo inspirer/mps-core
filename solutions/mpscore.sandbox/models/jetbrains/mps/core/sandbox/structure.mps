@@ -12,7 +12,10 @@
   <import index="xsnc" modelUID="r:e3b9700d-5825-4641-895a-925f28591c5b(jetbrains.mps.core.smodel.structure)" version="-1" implicit="yes" />
   <roots>
     <node type="ydsw.SStructureContainer" typeId="ydsw.6195190339581766868" id="6195190339581846123">
-      <property name="name" nameId="tpck.1169194664001" value="expressions" />
+      <property name="name" nameId="tpck.1169194664001" value="other" />
+    </node>
+    <node type="ydsw.SStructureContainer" typeId="ydsw.6195190339581766868" id="5362811550739085625">
+      <property name="name" nameId="tpck.1169194664001" value="classifiers" />
     </node>
   </roots>
   <root id="6195190339581846123">
@@ -247,6 +250,7 @@
       </node>
     </node>
     <node role="structure" roleId="ydsw.6195190339581766884" type="ydsw.SStructureEmptyLine" typeId="ydsw.6195190339581962051" id="4519148889084686739" />
+    <node role="structure" roleId="ydsw.6195190339581766884" type="ydsw.SStructureEmptyLine" typeId="ydsw.6195190339581962051" id="5362811550739085617" />
     <node role="structure" roleId="ydsw.6195190339581766884" type="74m3.SNotation" typeId="74m3.6195190339582080388" id="3592778465723943670">
       <link role="element" roleId="74m3.6195190339582080391" targetNodeId="6195190339582069380" resolveInfo="ILazy" />
       <node role="alternatives" roleId="74m3.3647933405694717738" type="74m3.SNotationAlternativePart" typeId="74m3.3647933405694717735" id="3592778465723943671" />
@@ -272,14 +276,33 @@
         <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationLabel" typeId="74m3.3647933405694713882" id="4519148889084712768">
           <property name="text" nameId="74m3.3647933405694713883" value="reader" />
         </node>
-        <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationProperty" typeId="74m3.4519148889084594750" id="4519148889084712765">
-          <link role="property" roleId="74m3.4519148889084594751" targetNodeId="7581772527308059309" resolveInfo="visibility" />
-        </node>
-        <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationProperty" typeId="74m3.4519148889084594750" id="4519148889084712763">
-          <link role="property" roleId="74m3.4519148889084594751" targetNodeId="7581772527308059306" resolveInfo="name" />
+        <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationQuantifier" typeId="74m3.3129031437528339296" id="3129031437528361741">
+          <property name="kind" nameId="74m3.3129031437528339316" value="optional" />
+          <node role="inner" roleId="74m3.3129031437528339297" type="74m3.SNotationParentheses" typeId="74m3.3647933405694717717" id="3129031437528339287">
+            <node role="alternatives" roleId="74m3.3647933405694717738" type="74m3.SNotationAlternativePart" typeId="74m3.3647933405694717735" id="3129031437528339288">
+              <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationLabel" typeId="74m3.3647933405694713882" id="3129031437528339290">
+                <property name="text" nameId="74m3.3647933405694713883" value="extends" />
+              </node>
+              <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationMapping" typeId="74m3.3129031437528132565" id="7805033636902355746">
+                <node role="entity" roleId="74m3.7805033636902348041" type="74m3.SStructureLinkRef" typeId="74m3.7805033636902348042" id="7805033636902355748">
+                  <link role="feature" targetNodeId="5362811550739085649" resolveInfo="extends" />
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
         <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationLabel" typeId="74m3.3647933405694713882" id="4519148889084712766">
           <property name="text" nameId="74m3.3647933405694713883" value="(" />
+        </node>
+        <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationQuantifier" typeId="74m3.3129031437528339296" id="5362811550739085613">
+          <property name="kind" nameId="74m3.3129031437528339316" value="nonempty-list" />
+          <node role="inner" roleId="74m3.3129031437528339297" type="74m3.SNotationParentheses" typeId="74m3.3647933405694717717" id="3129031437528339293">
+            <node role="alternatives" roleId="74m3.3647933405694717738" type="74m3.SNotationAlternativePart" typeId="74m3.3647933405694717735" id="3129031437528339294">
+              <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationLabel" typeId="74m3.3647933405694713882" id="5362811550739085598">
+                <property name="text" nameId="74m3.3647933405694713883" value="+" />
+              </node>
+            </node>
+          </node>
         </node>
         <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationLabel" typeId="74m3.3647933405694713882" id="4519148889084712767">
           <property name="text" nameId="74m3.3647933405694713883" value=")" />
@@ -289,15 +312,179 @@
         <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationLabel" typeId="74m3.3647933405694713882" id="4519148889084712771">
           <property name="text" nameId="74m3.3647933405694713883" value="reader" />
         </node>
-        <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationProperty" typeId="74m3.4519148889084594750" id="4519148889084712772">
-          <link role="property" roleId="74m3.4519148889084594751" targetNodeId="7581772527308059306" resolveInfo="name" />
-        </node>
         <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationLabel" typeId="74m3.3647933405694713882" id="4519148889084712773">
           <property name="text" nameId="74m3.3647933405694713883" value=";" />
         </node>
       </node>
     </node>
     <node role="structure" roleId="ydsw.6195190339581766884" type="ydsw.SStructureEmptyLine" typeId="ydsw.6195190339581962051" id="4519148889084712774" />
+  </root>
+  <root id="5362811550739085625">
+    <node role="structure" roleId="ydsw.6195190339581766884" type="ydsw.SInterfaceConcept" typeId="ydsw.6195190339581766740" id="5362811550739085635">
+      <property name="name" nameId="tpck.1169194664001" value="IMember" />
+    </node>
+    <node role="structure" roleId="ydsw.6195190339581766884" type="ydsw.SStructureEmptyLine" typeId="ydsw.6195190339581962051" id="5362811550739085633" />
+    <node role="structure" roleId="ydsw.6195190339581766884" type="ydsw.SConcept" typeId="ydsw.6195190339581766741" id="5362811550739085637">
+      <property name="name" nameId="tpck.1169194664001" value="Field" />
+      <node role="members" roleId="ydsw.6195190339581766761" type="ydsw.SProperty" typeId="ydsw.6195190339581766742" id="5362811550739085641">
+        <property name="name" nameId="tpck.1169194664001" value="type" />
+        <node role="type" roleId="ydsw.7581772527307667429" type="ydsw.SPrimitiveDataType" typeId="ydsw.7581772527307667404" id="5362811550739085642">
+          <property name="kind" nameId="ydsw.7581772527307667409" value="string" />
+        </node>
+      </node>
+      <node role="members" roleId="ydsw.6195190339581766761" type="ydsw.SProperty" typeId="ydsw.6195190339581766742" id="5362811550739085644">
+        <property name="name" nameId="tpck.1169194664001" value="name" />
+        <node role="type" roleId="ydsw.7581772527307667429" type="ydsw.SPrimitiveDataType" typeId="ydsw.7581772527307667404" id="5362811550739085645">
+          <property name="kind" nameId="ydsw.7581772527307667409" value="string" />
+        </node>
+      </node>
+      <node role="implements" roleId="ydsw.6195190339581766790" type="ydsw.SInterfaceReference" typeId="ydsw.6195190339581766766" id="5362811550739085639">
+        <link role="target" roleId="ydsw.6195190339581766767" targetNodeId="5362811550739085635" resolveInfo="IMember" />
+      </node>
+    </node>
+    <node role="structure" roleId="ydsw.6195190339581766884" type="ydsw.SStructureEmptyLine" typeId="ydsw.6195190339581962051" id="5362811550739085700" />
+    <node role="structure" roleId="ydsw.6195190339581766884" type="ydsw.SConcept" typeId="ydsw.6195190339581766741" id="5362811550739085702">
+      <property name="name" nameId="tpck.1169194664001" value="InterfaceClassifier" />
+    </node>
+    <node role="structure" roleId="ydsw.6195190339581766884" type="ydsw.SStructureEmptyLine" typeId="ydsw.6195190339581962051" id="5362811550739085703" />
+    <node role="structure" roleId="ydsw.6195190339581766884" type="ydsw.SConcept" typeId="ydsw.6195190339581766741" id="5362811550739085705">
+      <property name="name" nameId="tpck.1169194664001" value="InterfaceClassifierRef" />
+      <node role="members" roleId="ydsw.6195190339581766761" type="ydsw.SReference" typeId="ydsw.6195190339581766759" id="5362811550739085707">
+        <property name="name" nameId="tpck.1169194664001" value="iface" />
+        <link role="target" roleId="ydsw.7581772527307862085" targetNodeId="5362811550739085702" resolveInfo="InterfaceClassifier" />
+        <node role="cardinality" roleId="ydsw.7581772527307907847" type="ydsw.SCardinality" typeId="ydsw.7581772527307895408" id="5362811550739085708">
+          <property name="isRequired" nameId="ydsw.7581772527307895409" value="true" />
+        </node>
+      </node>
+    </node>
+    <node role="structure" roleId="ydsw.6195190339581766884" type="ydsw.SStructureEmptyLine" typeId="ydsw.6195190339581962051" id="7805033636902120271" />
+    <node role="structure" roleId="ydsw.6195190339581766884" type="ydsw.SEnumeration" typeId="ydsw.7581772527307617794" id="7805033636902120273">
+      <property name="name" nameId="tpck.1169194664001" value="Visibility" />
+      <node role="members" roleId="ydsw.7581772527307852678" type="ydsw.SEnumerationMember" typeId="ydsw.7581772527307852674" id="7805033636902120274">
+        <property name="name" nameId="tpck.1169194664001" value="public" />
+      </node>
+      <node role="members" roleId="ydsw.7581772527307852678" type="ydsw.SEnumerationMember" typeId="ydsw.7581772527307852674" id="7805033636902120275">
+        <property name="name" nameId="tpck.1169194664001" value="private" />
+      </node>
+    </node>
+    <node role="structure" roleId="ydsw.6195190339581766884" type="ydsw.SStructureEmptyLine" typeId="ydsw.6195190339581962051" id="5362811550739085634" />
+    <node role="structure" roleId="ydsw.6195190339581766884" type="ydsw.SConcept" typeId="ydsw.6195190339581766741" id="5362811550739085618">
+      <property name="name" nameId="tpck.1169194664001" value="Classifier" />
+      <node role="members" roleId="ydsw.6195190339581766761" type="ydsw.SProperty" typeId="ydsw.6195190339581766742" id="5362811550739085620">
+        <property name="name" nameId="tpck.1169194664001" value="abstract" />
+        <node role="type" roleId="ydsw.7581772527307667429" type="ydsw.SPrimitiveDataType" typeId="ydsw.7581772527307667404" id="5362811550739085621">
+          <property name="kind" nameId="ydsw.7581772527307667409" value="bool" />
+        </node>
+      </node>
+      <node role="members" roleId="ydsw.6195190339581766761" type="ydsw.SProperty" typeId="ydsw.6195190339581766742" id="5362811550739085623">
+        <property name="name" nameId="tpck.1169194664001" value="final" />
+        <node role="type" roleId="ydsw.7581772527307667429" type="ydsw.SPrimitiveDataType" typeId="ydsw.7581772527307667404" id="5362811550739085624">
+          <property name="kind" nameId="ydsw.7581772527307667409" value="bool" />
+        </node>
+      </node>
+      <node role="members" roleId="ydsw.6195190339581766761" type="ydsw.SProperty" typeId="ydsw.6195190339581766742" id="5362811550739085630">
+        <property name="name" nameId="tpck.1169194664001" value="name" />
+        <node role="type" roleId="ydsw.7581772527307667429" type="ydsw.SPrimitiveDataType" typeId="ydsw.7581772527307667404" id="5362811550739085631">
+          <property name="kind" nameId="ydsw.7581772527307667409" value="string" />
+        </node>
+      </node>
+      <node role="members" roleId="ydsw.6195190339581766761" type="ydsw.SProperty" typeId="ydsw.6195190339581766742" id="7805033636902120277">
+        <property name="name" nameId="tpck.1169194664001" value="vis" />
+        <node role="type" roleId="ydsw.7581772527307667429" type="ydsw.SEnumerationDataType" typeId="ydsw.7581772527307667403" id="7805033636902120278">
+          <link role="enum" roleId="ydsw.7581772527307667431" targetNodeId="7805033636902120273" resolveInfo="Visibility" />
+        </node>
+      </node>
+      <node role="members" roleId="ydsw.6195190339581766761" type="ydsw.SConceptMemberEmptyLine" typeId="ydsw.7581772527307844356" id="7805033636902120270" />
+      <node role="members" roleId="ydsw.6195190339581766761" type="ydsw.SChildLink" typeId="ydsw.7581772527307862083" id="5362811550739085649">
+        <property name="name" nameId="tpck.1169194664001" value="extends" />
+        <link role="target" roleId="ydsw.7581772527307862085" targetNodeId="5362811550739085618" resolveInfo="Classifier" />
+      </node>
+      <node role="members" roleId="ydsw.6195190339581766761" type="ydsw.SChildLink" typeId="ydsw.7581772527307862083" id="5362811550739085646">
+        <property name="name" nameId="tpck.1169194664001" value="fields" />
+        <link role="target" roleId="ydsw.7581772527307862085" targetNodeId="5362811550739085637" resolveInfo="Field" />
+        <node role="cardinality" roleId="ydsw.7581772527307907847" type="ydsw.SCardinality" typeId="ydsw.7581772527307895408" id="5362811550739085647">
+          <property name="isRequired" nameId="ydsw.7581772527307895409" value="true" />
+          <property name="isMultiple" nameId="ydsw.7581772527307895410" value="true" />
+        </node>
+      </node>
+      <node role="members" roleId="ydsw.6195190339581766761" type="ydsw.SChildLink" typeId="ydsw.7581772527307862083" id="5362811550739085710">
+        <property name="name" nameId="tpck.1169194664001" value="implements" />
+        <link role="target" roleId="ydsw.7581772527307862085" targetNodeId="5362811550739085705" resolveInfo="InterfaceClassifierRef" />
+        <node role="cardinality" roleId="ydsw.7581772527307907847" type="ydsw.SCardinality" typeId="ydsw.7581772527307895408" id="5362811550739085711">
+          <property name="isRequired" nameId="ydsw.7581772527307895409" value="true" />
+          <property name="isMultiple" nameId="ydsw.7581772527307895410" value="true" />
+        </node>
+      </node>
+    </node>
+    <node role="structure" roleId="ydsw.6195190339581766884" type="ydsw.SStructureEmptyLine" typeId="ydsw.6195190339581962051" id="5362811550739085627" />
+    <node role="structure" roleId="ydsw.6195190339581766884" type="ydsw.SStructureEmptyLine" typeId="ydsw.6195190339581962051" id="5362811550739085650" />
+    <node role="structure" roleId="ydsw.6195190339581766884" type="74m3.SNotation" typeId="74m3.6195190339582080388" id="5362811550739085652">
+      <link role="element" roleId="74m3.6195190339582080391" targetNodeId="5362811550739085618" resolveInfo="Classifier" />
+      <node role="alternatives" roleId="74m3.3647933405694717738" type="74m3.SNotationAlternativePart" typeId="74m3.3647933405694717735" id="5362811550739085653">
+        <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationMapping" typeId="74m3.3129031437528132565" id="146911029171922512">
+          <node role="entity" roleId="74m3.7805033636902348041" type="74m3.SStructurePropertyRef" typeId="74m3.146911029171891500" id="146911029171922514">
+            <link role="property" roleId="74m3.146911029171891501" targetNodeId="5362811550739085620" resolveInfo="abstract" />
+          </node>
+          <node role="presentation" roleId="74m3.3129031437528291180" type="74m3.SNotationQuantifier" typeId="74m3.3129031437528339296" id="146911029171922519">
+            <property name="kind" nameId="74m3.3129031437528339316" value="optional" />
+            <node role="inner" roleId="74m3.3129031437528339297" type="74m3.SNotationLabel" typeId="74m3.3647933405694713882" id="146911029171922516">
+              <property name="text" nameId="74m3.3647933405694713883" value="abstract" />
+            </node>
+          </node>
+        </node>
+        <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationLabel" typeId="74m3.3647933405694713882" id="5362811550739085654">
+          <property name="text" nameId="74m3.3647933405694713883" value="class" />
+        </node>
+        <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationMapping" typeId="74m3.3129031437528132565" id="146911029171922522">
+          <node role="entity" roleId="74m3.7805033636902348041" type="74m3.SStructurePropertyRef" typeId="74m3.146911029171891500" id="146911029171922523">
+            <link role="property" roleId="74m3.146911029171891501" targetNodeId="5362811550739085630" resolveInfo="name" />
+          </node>
+        </node>
+        <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationQuantifier" typeId="74m3.3129031437528339296" id="5362811550739085660">
+          <property name="kind" nameId="74m3.3129031437528339316" value="optional" />
+          <node role="inner" roleId="74m3.3129031437528339297" type="74m3.SNotationParentheses" typeId="74m3.3647933405694717717" id="5362811550739085656">
+            <node role="alternatives" roleId="74m3.3647933405694717738" type="74m3.SNotationAlternativePart" typeId="74m3.3647933405694717735" id="5362811550739085657">
+              <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationLabel" typeId="74m3.3647933405694713882" id="5362811550739085658">
+                <property name="text" nameId="74m3.3647933405694713883" value="extends" />
+              </node>
+              <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationMapping" typeId="74m3.3129031437528132565" id="146911029171900011">
+                <node role="entity" roleId="74m3.7805033636902348041" type="74m3.SStructureLinkRef" typeId="74m3.7805033636902348042" id="146911029171900012">
+                  <link role="link" roleId="74m3.3129031437528291155" targetNodeId="5362811550739085649" resolveInfo="extends" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationQuantifier" typeId="74m3.3129031437528339296" id="5362811550739085715">
+          <property name="kind" nameId="74m3.3129031437528339316" value="nonempty-list" />
+          <node role="inner" roleId="74m3.3129031437528339297" type="74m3.SNotationParentheses" typeId="74m3.3647933405694717717" id="5362811550739085712">
+            <node role="alternatives" roleId="74m3.3647933405694717738" type="74m3.SNotationAlternativePart" typeId="74m3.3647933405694717735" id="5362811550739085713">
+              <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationLabel" typeId="74m3.3647933405694713882" id="5362811550739085714">
+                <property name="text" nameId="74m3.3647933405694713883" value="implements" />
+              </node>
+              <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationMapping" typeId="74m3.3129031437528132565" id="146911029171910599">
+                <node role="entity" roleId="74m3.7805033636902348041" type="74m3.SStructureLinkRef" typeId="74m3.7805033636902348042" id="146911029171910600">
+                  <link role="link" roleId="74m3.3129031437528291155" targetNodeId="5362811550739085710" resolveInfo="implements" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationLabel" typeId="74m3.3647933405694713882" id="5362811550739085662">
+          <property name="text" nameId="74m3.3647933405694713883" value="{" />
+        </node>
+        <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationNewLine" typeId="74m3.3647933405694717730" id="5362811550739085663" />
+        <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationNewLine" typeId="74m3.3647933405694717730" id="5362811550739085669" />
+        <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationLabel" typeId="74m3.3647933405694713882" id="5362811550739085665">
+          <property name="text" nameId="74m3.3647933405694713883" value="}" />
+        </node>
+      </node>
+    </node>
+    <node role="structure" roleId="ydsw.6195190339581766884" type="ydsw.SStructureEmptyLine" typeId="ydsw.6195190339581962051" id="5362811550739085676" />
+    <node role="structure" roleId="ydsw.6195190339581766884" type="74m3.SNotation" typeId="74m3.6195190339582080388" id="5362811550739085678">
+      <link role="element" roleId="74m3.6195190339582080391" targetNodeId="5362811550739085637" resolveInfo="Field" />
+      <node role="alternatives" roleId="74m3.3647933405694717738" type="74m3.SNotationAlternativePart" typeId="74m3.3647933405694717735" id="5362811550739085679" />
+    </node>
   </root>
 </model>
 

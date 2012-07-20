@@ -7,7 +7,7 @@ import java.util.Arrays;
 import jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor;
 
 public class ConstraintsAspectDescriptor implements jetbrains.mps.smodel.runtime.ConstraintsAspectDescriptor {
-  private static String[] stringSwitchCases_2qnle6_a0a0a = new String[]{"jetbrains.mps.core.notation.structure.SNotationProperty"};
+  private static String[] stringSwitchCases_2qnle6_a0a0a = new String[]{"jetbrains.mps.core.notation.structure.SNotationMapping", "jetbrains.mps.core.notation.structure.SNotationQuantifier", "jetbrains.mps.core.notation.structure.SStructureEntityRef", "jetbrains.mps.core.notation.structure.SStructureLinkRef", "jetbrains.mps.core.notation.structure.SStructurePropertyRef"};
 
   public ConstraintsAspectDescriptor() {
   }
@@ -15,7 +15,15 @@ public class ConstraintsAspectDescriptor implements jetbrains.mps.smodel.runtime
   public ConstraintsDescriptor getDescriptor(String fqName) {
     switch (Arrays.binarySearch(stringSwitchCases_2qnle6_a0a0a, fqName)) {
       case 0:
-        return new SNotationProperty_Constraints();
+        return new SNotationMapping_Constraints();
+      case 1:
+        return new SNotationQuantifier_Constraints();
+      case 3:
+        return new SStructureLinkRef_Constraints();
+      case 4:
+        return new SStructurePropertyRef_Constraints();
+      case 2:
+        return new SStructureEntityRef_Constraints();
       default:
         // todo: illegal in some cases? 
         return new BaseConstraintsDescriptor(fqName);

@@ -13,25 +13,29 @@ import jetbrains.mps.smodel.IOperationContext;
 import jetbrains.mps.nodeEditor.EditorManager;
 import jetbrains.mps.nodeEditor.InlineCellProvider;
 import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
+import jetbrains.mps.nodeEditor.style.Style;
+import jetbrains.mps.nodeEditor.style.StyleAttributes;
+import jetbrains.mps.nodeEditor.MPSColors;
+import jetbrains.mps.nodeEditor.MPSFonts;
 
-public class SNotationProperty_Editor extends DefaultNodeEditor {
+public class SStructureLinkRef_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return this.createCollection_71attt_a(editorContext, node);
+    return this.createCollection_81uxyh_a(editorContext, node);
   }
 
-  private EditorCell createCollection_71attt_a(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_81uxyh_a(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
-    editorCell.setCellId("Collection_71attt_a");
-    editorCell.addEditorCell(this.createRefCell_71attt_a0(editorContext, node));
+    editorCell.setCellId("Collection_81uxyh_a");
+    editorCell.addEditorCell(this.createRefCell_81uxyh_a0(editorContext, node));
     return editorCell;
   }
 
-  private EditorCell createRefCell_71attt_a0(EditorContext editorContext, SNode node) {
+  private EditorCell createRefCell_81uxyh_a0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new RefCellCellProvider(node, editorContext);
-    provider.setRole("property");
-    provider.setNoTargetText("<no property>");
+    provider.setRole("link");
+    provider.setNoTargetText("<no link>");
     EditorCell editorCell;
-    provider.setAuxiliaryCellProvider(new SNotationProperty_Editor._Inline_71attt_a0a());
+    provider.setAuxiliaryCellProvider(new SStructureLinkRef_Editor._Inline_81uxyh_a0a());
     editorCell = provider.createEditorCell(editorContext);
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
@@ -44,8 +48,8 @@ public class SNotationProperty_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  public static class _Inline_71attt_a0a extends InlineCellProvider {
-    public _Inline_71attt_a0a() {
+  public static class _Inline_81uxyh_a0a extends InlineCellProvider {
+    public _Inline_81uxyh_a0a() {
       super();
     }
 
@@ -54,10 +58,10 @@ public class SNotationProperty_Editor extends DefaultNodeEditor {
     }
 
     public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-      return this.createProperty_71attt_a0a0(editorContext, node);
+      return this.createProperty_81uxyh_a0a0(editorContext, node);
     }
 
-    private EditorCell createProperty_71attt_a0a0(EditorContext editorContext, SNode node) {
+    private EditorCell createProperty_81uxyh_a0a0(EditorContext editorContext, SNode node) {
       CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
       provider.setRole("name");
       provider.setNoTargetText("<no name>");
@@ -65,6 +69,11 @@ public class SNotationProperty_Editor extends DefaultNodeEditor {
       EditorCell editorCell;
       editorCell = provider.createEditorCell(editorContext);
       editorCell.setCellId("property_name");
+      {
+        Style style = editorCell.getStyle();
+        style.set(StyleAttributes.TEXT_COLOR, MPSColors.DARK_MAGENTA);
+        style.set(StyleAttributes.FONT_STYLE, MPSFonts.BOLD);
+      }
       editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
       SNode attributeConcept = provider.getRoleAttribute();
       Class attributeKind = provider.getRoleAttributeClass();

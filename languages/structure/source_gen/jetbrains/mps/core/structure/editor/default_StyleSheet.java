@@ -34,6 +34,14 @@ public class default_StyleSheet {
   public static Style getString(final EditorCell cell) {
     Style style = new Style(cell);
     style.set(StyleAttributes.TEXT_COLOR, MPSColors.DARK_GREEN);
+    style.set(StyleAttributes.FONT_STYLE, MPSFonts.BOLD);
+    return style;
+  }
+
+  public static Style getFeature(final EditorCell cell) {
+    Style style = new Style(cell);
+    style.set(StyleAttributes.TEXT_COLOR, MPSColors.DARK_MAGENTA);
+    style.set(StyleAttributes.FONT_STYLE, MPSFonts.BOLD);
     return style;
   }
 }

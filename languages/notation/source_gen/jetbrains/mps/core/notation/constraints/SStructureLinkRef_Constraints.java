@@ -18,17 +18,17 @@ import jetbrains.mps.smodel.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.scope.EmptyScope;
 
-public class SNotationProperty_Constraints extends BaseConstraintsDescriptor {
-  private static SNodePointer breakingNode_cp7x0g_a0a0a0a0a1a0b0a1a0 = new SNodePointer("r:f55d268e-47a6-49d8-8d89-2139ce9c0cd2(jetbrains.mps.core.notation.constraints)", "4519148889084689177");
+public class SStructureLinkRef_Constraints extends BaseConstraintsDescriptor {
+  private static SNodePointer breakingNode_n2tft4_a0a0a0a0a1a0b0a1a0 = new SNodePointer("r:f55d268e-47a6-49d8-8d89-2139ce9c0cd2(jetbrains.mps.core.notation.constraints)", "7805033636902363743");
 
-  public SNotationProperty_Constraints() {
-    super("jetbrains.mps.core.notation.structure.SNotationProperty");
+  public SStructureLinkRef_Constraints() {
+    super("jetbrains.mps.core.notation.structure.SStructureLinkRef");
   }
 
   @Override
   protected Map<String, ReferenceConstraintsDescriptor> getNotDefaultReferences() {
     Map<String, ReferenceConstraintsDescriptor> references = new HashMap();
-    references.put("property", new BaseReferenceConstraintsDescriptor("property", this) {
+    references.put("link", new BaseReferenceConstraintsDescriptor("link", this) {
       @Override
       public boolean hasOwnScopeProvider() {
         return true;
@@ -40,13 +40,13 @@ public class SNotationProperty_Constraints extends BaseConstraintsDescriptor {
         return new BaseScopeProvider() {
           @Override
           public SNodePointer getSearchScopeValidatorNode() {
-            return breakingNode_cp7x0g_a0a0a0a0a1a0b0a1a0;
+            return breakingNode_n2tft4_a0a0a0a0a1a0b0a1a0;
           }
 
           @Override
           public Scope createScope(final IOperationContext operationContext, final ReferenceConstraintsContext _context) {
             {
-              Scope scope = Scope.getScope(_context.getContextNode(), _context.getContextRole(), _context.getPosition(), (SNode) SConceptOperations.findConceptDeclaration("jetbrains.mps.core.structure.structure.SProperty"));
+              Scope scope = Scope.getScope(_context.getContextNode(), _context.getContextRole(), _context.getPosition(), (SNode) SConceptOperations.findConceptDeclaration("jetbrains.mps.core.structure.structure.SAbstractLink"));
               return (scope == null ?
                 new EmptyScope() :
                 scope

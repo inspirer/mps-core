@@ -7,7 +7,7 @@ import java.util.Arrays;
 import jetbrains.mps.smodel.runtime.interpreted.BehaviorAspectInterpreted;
 
 public class BehaviorAspectDescriptor implements jetbrains.mps.smodel.runtime.BehaviorAspectDescriptor {
-  private static String[] stringSwitchCases_846f5o_a0a0a = new String[]{"jetbrains.mps.core.notation.structure.SNotation", "jetbrains.mps.core.notation.structure.SNotationAlternativePart", "jetbrains.mps.core.notation.structure.SNotationLabel", "jetbrains.mps.core.notation.structure.SNotationNewLine", "jetbrains.mps.core.notation.structure.SNotationParentheses", "jetbrains.mps.core.notation.structure.SNotationProperty"};
+  private static String[] stringSwitchCases_846f5o_a0a0a = new String[]{"jetbrains.mps.core.notation.structure.SNotation", "jetbrains.mps.core.notation.structure.SNotationAlternativePart", "jetbrains.mps.core.notation.structure.SNotationLabel", "jetbrains.mps.core.notation.structure.SNotationMapping", "jetbrains.mps.core.notation.structure.SNotationNewLine", "jetbrains.mps.core.notation.structure.SNotationParentheses", "jetbrains.mps.core.notation.structure.SNotationQuantifier", "jetbrains.mps.core.notation.structure.SStructureLinkRef", "jetbrains.mps.core.notation.structure.SStructurePropertyRef"};
 
   public BehaviorAspectDescriptor() {
   }
@@ -18,14 +18,20 @@ public class BehaviorAspectDescriptor implements jetbrains.mps.smodel.runtime.Be
         return new SNotation_BehaviorDescriptor();
       case 2:
         return new SNotationLabel_BehaviorDescriptor();
-      case 4:
+      case 5:
         return new SNotationParentheses_BehaviorDescriptor();
-      case 3:
+      case 4:
         return new SNotationNewLine_BehaviorDescriptor();
       case 1:
         return new SNotationAlternativePart_BehaviorDescriptor();
-      case 5:
-        return new SNotationProperty_BehaviorDescriptor();
+      case 3:
+        return new SNotationMapping_BehaviorDescriptor();
+      case 6:
+        return new SNotationQuantifier_BehaviorDescriptor();
+      case 7:
+        return new SStructureLinkRef_BehaviorDescriptor();
+      case 8:
+        return new SStructurePropertyRef_BehaviorDescriptor();
       default:
         return BehaviorAspectInterpreted.getInstance().getDescriptor(fqName);
     }
