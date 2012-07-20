@@ -121,7 +121,7 @@ public class SConcept_Editor extends DefaultNodeEditor {
       style.set(StyleAttributes.EDITABLE, true);
     }
     editorCell.setDefaultText("");
-    editorCell.setSubstituteInfo(new CompositeSubstituteInfo(editorContext, new BasicCellContext(node), new SubstituteInfoPart[]{new SConcept_Editor.ReplaceWith_SStructureElement_cellMenu_a0c0()}));
+    editorCell.setSubstituteInfo(new CompositeSubstituteInfo(editorContext, new BasicCellContext(node), new SubstituteInfoPart[]{new SConcept_Editor.ReplaceWith_SStructurePart_cellMenu_a0c0()}));
     return editorCell;
   }
 
@@ -264,12 +264,12 @@ public class SConcept_Editor extends DefaultNodeEditor {
     return ListSequence.fromList(SLinkOperations.getTargets(node, "members", true)).isNotEmpty();
   }
 
-  public static class ReplaceWith_SStructureElement_cellMenu_a0c0 extends AbstractCellMenuPart_ReplaceNode_CustomNodeConcept {
-    public ReplaceWith_SStructureElement_cellMenu_a0c0() {
+  public static class ReplaceWith_SStructurePart_cellMenu_a0c0 extends AbstractCellMenuPart_ReplaceNode_CustomNodeConcept {
+    public ReplaceWith_SStructurePart_cellMenu_a0c0() {
     }
 
     public String getReplacementConceptName() {
-      return "jetbrains.mps.core.structure.structure.SStructureElement";
+      return "jetbrains.mps.core.structure.structure.SStructurePart";
     }
   }
 

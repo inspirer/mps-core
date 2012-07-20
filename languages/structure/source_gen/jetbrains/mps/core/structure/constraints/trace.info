@@ -13,15 +13,15 @@
     <unitInfo nodeId="2223786200032642316" fileName="SConstraintsPart_Constraints.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="jetbrains.mps.core.structure.constraints.SConstraintsPart_Constraints" />
   </root>
   <root nodeId="6195190339581962053">
-    <nodeInfo nodeId="6195190339581962053" fileName="SStructureElement_Constraints.java" startLine="8" startPosition="42" endLine="9" endPosition="70" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
-    <nodeInfo nodeId="6195190339581962053" fileName="SStructureElement_Constraints.java" startLine="12" startPosition="51" endLine="13" endPosition="72" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="6195190339581962053" fileName="SStructureElement_Constraints.java" startLine="7" startPosition="78" endLine="10" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="SStructureElement_Constraints#()V" />
-    <nodeInfo nodeId="6195190339581962053" fileName="SStructureElement_Constraints.java" startLine="11" startPosition="0" endLine="15" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getDefaultConcreteConceptFqName#()Ljava/lang/String;" />
-    <scopeInfo nodeId="6195190339581962053" fileName="SStructureElement_Constraints.java" startLine="8" startPosition="42" endLine="9" endPosition="70" />
-    <scopeInfo nodeId="6195190339581962053" fileName="SStructureElement_Constraints.java" startLine="12" startPosition="51" endLine="13" endPosition="72" />
-    <scopeInfo nodeId="6195190339581962053" fileName="SStructureElement_Constraints.java" startLine="7" startPosition="78" endLine="10" endPosition="3" />
-    <scopeInfo nodeId="6195190339581962053" fileName="SStructureElement_Constraints.java" startLine="11" startPosition="0" endLine="15" endPosition="0" />
-    <unitInfo nodeId="6195190339581962053" fileName="SStructureElement_Constraints.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="jetbrains.mps.core.structure.constraints.SStructureElement_Constraints" />
+    <nodeInfo nodeId="6195190339581962053" fileName="SStructurePart_Constraints.java" startLine="8" startPosition="39" endLine="9" endPosition="67" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+    <nodeInfo nodeId="6195190339581962053" fileName="SStructurePart_Constraints.java" startLine="12" startPosition="51" endLine="13" endPosition="72" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6195190339581962053" fileName="SStructurePart_Constraints.java" startLine="7" startPosition="75" endLine="10" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="SStructurePart_Constraints#()V" />
+    <nodeInfo nodeId="6195190339581962053" fileName="SStructurePart_Constraints.java" startLine="11" startPosition="0" endLine="15" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getDefaultConcreteConceptFqName#()Ljava/lang/String;" />
+    <scopeInfo nodeId="6195190339581962053" fileName="SStructurePart_Constraints.java" startLine="8" startPosition="39" endLine="9" endPosition="67" />
+    <scopeInfo nodeId="6195190339581962053" fileName="SStructurePart_Constraints.java" startLine="12" startPosition="51" endLine="13" endPosition="72" />
+    <scopeInfo nodeId="6195190339581962053" fileName="SStructurePart_Constraints.java" startLine="7" startPosition="75" endLine="10" endPosition="3" />
+    <scopeInfo nodeId="6195190339581962053" fileName="SStructurePart_Constraints.java" startLine="11" startPosition="0" endLine="15" endPosition="0" />
+    <unitInfo nodeId="6195190339581962053" fileName="SStructurePart_Constraints.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="jetbrains.mps.core.structure.constraints.SStructurePart_Constraints" />
   </root>
   <root nodeId="6195190339581979662">
     <nodeInfo nodeId="2481283025450253560" fileName="SAbstractConcept_Constraints.java" startLine="15" startPosition="77" endLine="16" endPosition="96" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="REGEXP_wgkk8l_a0a0a1a1a0b0a1a0" />

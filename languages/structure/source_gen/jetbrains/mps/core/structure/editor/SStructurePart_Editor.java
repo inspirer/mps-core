@@ -8,14 +8,14 @@ import jetbrains.mps.nodeEditor.EditorContext;
 import jetbrains.mps.smodel.SNode;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Error;
 
-public class SStructureElement_Editor extends DefaultNodeEditor {
+public class SStructurePart_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return this.createError_r302fs_a(editorContext, node);
+    return this.createError_hs5u98_a(editorContext, node);
   }
 
-  private EditorCell createError_r302fs_a(EditorContext editorContext, SNode node) {
+  private EditorCell createError_hs5u98_a(EditorContext editorContext, SNode node) {
     EditorCell_Error editorCell = new EditorCell_Error(editorContext, node, "no element");
-    editorCell.setCellId("Error_r302fs_a");
+    editorCell.setCellId("Error_hs5u98_a");
     return editorCell;
   }
 }

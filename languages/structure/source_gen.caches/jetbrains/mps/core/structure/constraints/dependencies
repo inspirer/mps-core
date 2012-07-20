@@ -9,7 +9,7 @@
     <classNode dependClassName="jetbrains.mps.core.structure.constraints.SConstraintsPart_Constraints" />
     <classNode dependClassName="jetbrains.mps.core.structure.constraints.SEnumerationMember_Constraints" />
     <classNode dependClassName="jetbrains.mps.core.structure.constraints.SProperty_Constraints" />
-    <classNode dependClassName="jetbrains.mps.core.structure.constraints.SStructureElement_Constraints" />
+    <classNode dependClassName="jetbrains.mps.core.structure.constraints.SStructurePart_Constraints" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.ConstraintsDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.ConstraintsAspectDescriptor" />
@@ -74,7 +74,7 @@
     <classNode dependClassName="jetbrains.mps.smodel.runtime.base.BasePropertyConstraintsDescriptor" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor" />
   </dependency>
-  <dependency className="jetbrains.mps.core.structure.constraints.SStructureElement_Constraints" file="SStructureElement_Constraints.java">
+  <dependency className="jetbrains.mps.core.structure.constraints.SStructurePart_Constraints" file="SStructurePart_Constraints.java">
     <classNode dependClassName="java.lang.String" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor" />
   </dependency>

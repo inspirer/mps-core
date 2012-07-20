@@ -27,16 +27,16 @@ public class SStructureEmptyLine_Editor extends DefaultNodeEditor {
       style.set(StyleAttributes.EDITABLE, true);
     }
     editorCell.setDefaultText("");
-    editorCell.setSubstituteInfo(new CompositeSubstituteInfo(editorContext, new BasicCellContext(node), new SubstituteInfoPart[]{new SStructureEmptyLine_Editor.ReplaceWith_SStructureElement_cellMenu_a0a()}));
+    editorCell.setSubstituteInfo(new CompositeSubstituteInfo(editorContext, new BasicCellContext(node), new SubstituteInfoPart[]{new SStructureEmptyLine_Editor.ReplaceWith_SStructurePart_cellMenu_a0a()}));
     return editorCell;
   }
 
-  public static class ReplaceWith_SStructureElement_cellMenu_a0a extends AbstractCellMenuPart_ReplaceNode_CustomNodeConcept {
-    public ReplaceWith_SStructureElement_cellMenu_a0a() {
+  public static class ReplaceWith_SStructurePart_cellMenu_a0a extends AbstractCellMenuPart_ReplaceNode_CustomNodeConcept {
+    public ReplaceWith_SStructurePart_cellMenu_a0a() {
     }
 
     public String getReplacementConceptName() {
-      return "jetbrains.mps.core.structure.structure.SStructureElement";
+      return "jetbrains.mps.core.structure.structure.SStructurePart";
     }
   }
 }

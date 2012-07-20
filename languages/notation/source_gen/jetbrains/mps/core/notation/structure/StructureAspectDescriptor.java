@@ -8,7 +8,7 @@ import jetbrains.mps.smodel.runtime.impl.CompiledConceptDescriptor;
 import jetbrains.mps.smodel.runtime.interpreted.StructureAspectInterpreted;
 
 public class StructureAspectDescriptor implements jetbrains.mps.smodel.runtime.StructureAspectDescriptor {
-  private static String[] stringSwitchCases_1htk8d_a0a0a = new String[]{"jetbrains.mps.core.notation.structure.SConceptNotation", "jetbrains.mps.core.notation.structure.SNotationAlternativePart", "jetbrains.mps.core.notation.structure.SNotationLabel", "jetbrains.mps.core.notation.structure.SNotationNewLine", "jetbrains.mps.core.notation.structure.SNotationParentheses", "jetbrains.mps.core.notation.structure.SNotationParserPart", "jetbrains.mps.core.notation.structure.SNotationPart", "jetbrains.mps.core.notation.structure.SNotationPartsContainer", "jetbrains.mps.core.notation.structure.SNotationProjectionalPart", "jetbrains.mps.core.notation.structure.SNotationProperty", "jetbrains.mps.core.notation.structure.SNotationTextualPart", "jetbrains.mps.core.notation.structure.SNotationWhitespacePart"};
+  private static String[] stringSwitchCases_1htk8d_a0a0a = new String[]{"jetbrains.mps.core.notation.structure.SNotation", "jetbrains.mps.core.notation.structure.SNotationAlternativePart", "jetbrains.mps.core.notation.structure.SNotationLabel", "jetbrains.mps.core.notation.structure.SNotationNewLine", "jetbrains.mps.core.notation.structure.SNotationParentheses", "jetbrains.mps.core.notation.structure.SNotationParserPart", "jetbrains.mps.core.notation.structure.SNotationPart", "jetbrains.mps.core.notation.structure.SNotationPartsContainer", "jetbrains.mps.core.notation.structure.SNotationProjectionalPart", "jetbrains.mps.core.notation.structure.SNotationProperty", "jetbrains.mps.core.notation.structure.SNotationTextualPart", "jetbrains.mps.core.notation.structure.SNotationWhitespacePart"};
 
   public StructureAspectDescriptor() {
   }
@@ -16,7 +16,7 @@ public class StructureAspectDescriptor implements jetbrains.mps.smodel.runtime.S
   public ConceptDescriptor getDescriptor(String conceptFqName) {
     switch (Arrays.binarySearch(stringSwitchCases_1htk8d_a0a0a, conceptFqName)) {
       case 0:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.notation.structure.SConceptNotation", "jetbrains.mps.core.structure.structure.SStructureElement", false, new String[]{"jetbrains.mps.core.structure.structure.SStructureElement", "jetbrains.mps.core.notation.structure.SNotationPartsContainer", "jetbrains.mps.lang.core.structure.ScopeProvider"}, new String[]{"id"}, new String[]{"concept"});
+        return new CompiledConceptDescriptor("jetbrains.mps.core.notation.structure.SNotation", "jetbrains.mps.core.structure.structure.SStructurePart", false, new String[]{"jetbrains.mps.core.structure.structure.SStructurePart", "jetbrains.mps.core.notation.structure.SNotationPartsContainer", "jetbrains.mps.lang.core.structure.ScopeProvider"}, new String[]{"id"}, new String[]{"element"});
       case 1:
         return new CompiledConceptDescriptor("jetbrains.mps.core.notation.structure.SNotationAlternativePart", "jetbrains.mps.lang.core.structure.BaseConcept", false, new String[]{"jetbrains.mps.lang.core.structure.BaseConcept"}, new String[]{}, new String[]{});
       case 2:

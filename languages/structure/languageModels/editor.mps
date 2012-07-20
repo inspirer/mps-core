@@ -6,13 +6,13 @@
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   <import index="ydsw" modelUID="r:c11a239c-3061-4b62-b5dd-6749678497d7(jetbrains.mps.core.structure.structure)" version="-1" />
   <import index="cu2c" modelUID="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.smodel(MPS.Core/jetbrains.mps.smodel@java_stub)" version="-1" />
+  <import index="9a8" modelUID="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.nodeEditor(MPS.Editor/jetbrains.mps.nodeEditor@java_stub)" version="-1" />
   <import index="tpc2" modelUID="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" version="32" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="16" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="4" implicit="yes" />
   <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" implicit="yes" />
   <import index="tpdg" modelUID="r:00000000-0000-4000-0000-011c895902a8(jetbrains.mps.lang.actions.structure)" version="23" implicit="yes" />
-  <import index="9a8" modelUID="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.nodeEditor(MPS.Editor/jetbrains.mps.nodeEditor@java_stub)" version="-1" implicit="yes" />
   <import index="fgrj" modelUID="r:46939f5e-82e9-4b3e-aa07-c280fcacc97f(jetbrains.mps.core.structure.behavior)" version="-1" implicit="yes" />
   <roots>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="6195190339581766727">
@@ -35,11 +35,8 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="concept" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="ydsw.6195190339581766740" resolveInfo="SInterfaceConcept" />
     </node>
-    <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="6195190339581766871">
-      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="ydsw.6195190339581766870" resolveInfo="SStructureElement" />
-    </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="6195190339581766885">
-      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="ydsw.6195190339581766868" resolveInfo="SStructure" />
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="ydsw.6195190339581766868" resolveInfo="SStructureContainer" />
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="6195190339581846131">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="members" />
@@ -144,6 +141,9 @@
     <node type="tpc2.StyleSheet" typeId="tpc2.1186402211651" id="6195190339581766834">
       <property name="name" nameId="tpck.1169194664001" value="default" />
     </node>
+    <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="3592778465723943673">
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="ydsw.3592778465723943672" resolveInfo="SStructurePart" />
+    </node>
   </roots>
   <root id="6195190339581766727">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Error" typeId="tpc2.1075375595203" id="6195190339581766739">
@@ -218,7 +218,7 @@
         </node>
         <node role="menuDescriptor" roleId="tpc2.1164826688380" type="tpc2.CellMenuDescriptor" typeId="tpc2.1164824717996" id="6195190339581968259">
           <node role="cellMenuPart" roleId="tpc2.1164824815888" type="tpc2.CellMenuPart_ReplaceNode_CustomNodeConcept" typeId="tpc2.1164914519156" id="6195190339581968260">
-            <link role="replacementConcept" roleId="tpc2.1164914727930" targetNodeId="ydsw.6195190339581766870" resolveInfo="SStructureElement" />
+            <link role="replacementConcept" roleId="tpc2.1164914727930" targetNodeId="ydsw.3592778465723943672" resolveInfo="SStructurePart" />
           </node>
         </node>
       </node>
@@ -359,7 +359,7 @@
         </node>
         <node role="menuDescriptor" roleId="tpc2.1164826688380" type="tpc2.CellMenuDescriptor" typeId="tpc2.1164824717996" id="6195190339582069382">
           <node role="cellMenuPart" roleId="tpc2.1164824815888" type="tpc2.CellMenuPart_ReplaceNode_CustomNodeConcept" typeId="tpc2.1164914519156" id="6195190339582069383">
-            <link role="replacementConcept" roleId="tpc2.1164914727930" targetNodeId="ydsw.6195190339581766870" resolveInfo="SStructureElement" />
+            <link role="replacementConcept" roleId="tpc2.1164914727930" targetNodeId="ydsw.3592778465723943672" resolveInfo="SStructurePart" />
           </node>
         </node>
       </node>
@@ -469,11 +469,6 @@
           <property name="labelName" nameId="tpc2.1238091709220" value="body-brace" />
         </node>
       </node>
-    </node>
-  </root>
-  <root id="6195190339581766871">
-    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Error" typeId="tpc2.1075375595203" id="6195190339581766883">
-      <property name="text" nameId="tpc2.1075375595204" value="no element" />
     </node>
   </root>
   <root id="6195190339581766885">
@@ -704,7 +699,7 @@
       </node>
       <node role="menuDescriptor" roleId="tpc2.1164826688380" type="tpc2.CellMenuDescriptor" typeId="tpc2.1164824717996" id="6195190339581962072">
         <node role="cellMenuPart" roleId="tpc2.1164824815888" type="tpc2.CellMenuPart_ReplaceNode_CustomNodeConcept" typeId="tpc2.1164914519156" id="6195190339581962073">
-          <link role="replacementConcept" roleId="tpc2.1164914727930" targetNodeId="ydsw.6195190339581766870" resolveInfo="SStructureElement" />
+          <link role="replacementConcept" roleId="tpc2.1164914727930" targetNodeId="ydsw.3592778465723943672" resolveInfo="SStructurePart" />
         </node>
       </node>
     </node>
@@ -717,7 +712,7 @@
         <link role="styleClass" roleId="tpc2.1186406756722" targetNodeId="2481283025450046982" resolveInfo="comment" />
         <node role="menuDescriptor" roleId="tpc2.1164826688380" type="tpc2.CellMenuDescriptor" typeId="tpc2.1164824717996" id="6195190339581962070">
           <node role="cellMenuPart" roleId="tpc2.1164824815888" type="tpc2.CellMenuPart_ReplaceNode_CustomNodeConcept" typeId="tpc2.1164914519156" id="6195190339581962071">
-            <link role="replacementConcept" roleId="tpc2.1164914727930" targetNodeId="ydsw.6195190339581766870" resolveInfo="SStructureElement" />
+            <link role="replacementConcept" roleId="tpc2.1164914727930" targetNodeId="ydsw.3592778465723943672" resolveInfo="SStructurePart" />
           </node>
         </node>
       </node>
@@ -1487,6 +1482,11 @@
       <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.ForegroundColorStyleClassItem" typeId="tpc2.1186404549998" id="6601450967974198053">
         <property name="color" nameId="tpc2.1186403713874" value="DARK_GREEN" />
       </node>
+    </node>
+  </root>
+  <root id="3592778465723943673">
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Error" typeId="tpc2.1075375595203" id="3592778465723943675">
+      <property name="text" nameId="tpc2.1075375595204" value="no element" />
     </node>
   </root>
 </model>

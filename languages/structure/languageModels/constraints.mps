@@ -12,8 +12,8 @@
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="4" implicit="yes" />
   <roots>
     <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="6195190339581962053">
-      <link role="concept" roleId="tp1t.1213093996982" targetNodeId="ydsw.6195190339581766870" resolveInfo="SStructureElement" />
       <link role="defaultConcreteConcept" roleId="tp1t.1213106917431" targetNodeId="ydsw.6195190339581962051" resolveInfo="SStructureEmptyLine" />
+      <link role="concept" roleId="tp1t.1213093996982" targetNodeId="ydsw.3592778465723943672" resolveInfo="SStructurePart" />
     </node>
     <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="6195190339581979662">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="concept" />

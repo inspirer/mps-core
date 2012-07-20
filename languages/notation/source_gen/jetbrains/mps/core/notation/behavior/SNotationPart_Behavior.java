@@ -24,7 +24,7 @@ public class SNotationPart_Behavior {
   }
 
   public static SNode call_getConceptNotation_4519148889084689137(SNode thisNode) {
-    return SNodeOperations.getAncestor(thisNode, "jetbrains.mps.core.notation.structure.SConceptNotation", false, false);
+    return SNodeOperations.getAncestor(thisNode, "jetbrains.mps.core.notation.structure.SNotation", false, false);
   }
 
   public static boolean call_hasNewLineAfter_3647933405694801735(SNode thisNode) {

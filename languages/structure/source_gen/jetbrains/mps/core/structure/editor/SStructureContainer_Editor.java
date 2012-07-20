@@ -23,32 +23,32 @@ import jetbrains.mps.nodeEditor.cellActions.CellAction_DeleteNode;
 import jetbrains.mps.nodeEditor.cellMenu.DefaultReferenceSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.DefaultChildSubstituteInfo;
 
-public class SStructure_Editor extends DefaultNodeEditor {
+public class SStructureContainer_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return this.createCollection_sig8py_a(editorContext, node);
+    return this.createCollection_akfpvp_a(editorContext, node);
   }
 
-  private EditorCell createCollection_sig8py_a(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_akfpvp_a(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
-    editorCell.setCellId("Collection_sig8py_a");
-    editorCell.addEditorCell(this.createConstant_sig8py_a0(editorContext, node));
-    editorCell.addEditorCell(this.createProperty_sig8py_b0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_sig8py_c0(editorContext, node));
-    editorCell.addEditorCell(this.createRefNodeList_sig8py_d0(editorContext, node));
+    editorCell.setCellId("Collection_akfpvp_a");
+    editorCell.addEditorCell(this.createConstant_akfpvp_a0(editorContext, node));
+    editorCell.addEditorCell(this.createProperty_akfpvp_b0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_akfpvp_c0(editorContext, node));
+    editorCell.addEditorCell(this.createRefNodeList_akfpvp_d0(editorContext, node));
     return editorCell;
   }
 
-  private EditorCell createConstant_sig8py_a0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_akfpvp_a0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "structure of");
-    editorCell.setCellId("Constant_sig8py_a0");
+    editorCell.setCellId("Constant_akfpvp_a0");
     default_StyleSheet.getKeyword(editorCell).apply(editorCell);
     editorCell.setDefaultText("");
     return editorCell;
   }
 
-  private EditorCell createConstant_sig8py_c0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_akfpvp_c0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "");
-    editorCell.setCellId("Constant_sig8py_c0");
+    editorCell.setCellId("Constant_akfpvp_c0");
     {
       Style style = editorCell.getStyle();
       style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, true);
@@ -57,8 +57,8 @@ public class SStructure_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private EditorCell createRefNodeList_sig8py_d0(EditorContext editorContext, SNode node) {
-    AbstractCellListHandler handler = new SStructure_Editor.structureListHandler_sig8py_d0(node, "structure", editorContext);
+  private EditorCell createRefNodeList_akfpvp_d0(EditorContext editorContext, SNode node) {
+    AbstractCellListHandler handler = new SStructureContainer_Editor.structureListHandler_akfpvp_d0(node, "structure", editorContext);
     EditorCell_Collection editorCell = handler.createCells(editorContext, new CellLayout_Indent(), false);
     editorCell.setCellId("refNodeList_structure");
     {
@@ -70,7 +70,7 @@ public class SStructure_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private EditorCell createProperty_sig8py_b0(EditorContext editorContext, SNode node) {
+  private EditorCell createProperty_akfpvp_b0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
     provider.setRole("name");
     provider.setNoTargetText("<no name>");
@@ -92,8 +92,8 @@ public class SStructure_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private static class structureListHandler_sig8py_d0 extends RefNodeListHandler {
-    public structureListHandler_sig8py_d0(SNode ownerNode, String childRole, EditorContext context) {
+  private static class structureListHandler_akfpvp_d0 extends RefNodeListHandler {
+    public structureListHandler_akfpvp_d0(SNode ownerNode, String childRole, EditorContext context) {
       super(ownerNode, childRole, context, false);
     }
 
@@ -116,7 +116,7 @@ public class SStructure_Editor extends DefaultNodeEditor {
     }
 
     public EditorCell createEmptyCell_internal(EditorContext editorContext, SNode node) {
-      return this.createConstant_sig8py_a3a(editorContext, node);
+      return this.createConstant_akfpvp_a3a(editorContext, node);
     }
 
     public void installElementCellActions(SNode listOwner, SNode elementNode, EditorCell elementCell, EditorContext editorContext) {
@@ -131,9 +131,9 @@ public class SStructure_Editor extends DefaultNodeEditor {
       }
     }
 
-    private EditorCell createConstant_sig8py_a3a(EditorContext editorContext, SNode node) {
+    private EditorCell createConstant_akfpvp_a3a(EditorContext editorContext, SNode node) {
       EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "");
-      editorCell.setCellId("Constant_sig8py_a3a");
+      editorCell.setCellId("Constant_akfpvp_a3a");
       {
         Style style = editorCell.getStyle();
         style.set(StyleAttributes.EDITABLE, true);

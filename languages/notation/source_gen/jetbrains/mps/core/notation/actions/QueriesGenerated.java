@@ -22,14 +22,14 @@ import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.nodeEditor.EditorContext;
 
 public class QueriesGenerated {
-  public static boolean sideTransformHintSubstituteActionsBuilder_Precondition_SConceptNotation_3647933405694680657(final IOperationContext operationContext, final SideTransformPreconditionContext _context) {
+  public static boolean sideTransformHintSubstituteActionsBuilder_Precondition_SNotation_3647933405694680657(final IOperationContext operationContext, final SideTransformPreconditionContext _context) {
     return SPropertyOperations.getString(_context.getSourceNode(), "id") == null;
   }
 
-  public static List<INodeSubstituteAction> sideTransform_ActionsFactory_SConceptNotation_3647933405694680656(final IOperationContext operationContext, final SideTransformActionsBuilderContext _context) {
+  public static List<INodeSubstituteAction> sideTransform_ActionsFactory_SNotation_3647933405694680656(final IOperationContext operationContext, final SideTransformActionsBuilderContext _context) {
     List<INodeSubstituteAction> result = ListSequence.fromList(new ArrayList<INodeSubstituteAction>());
     {
-      SNode concept = SConceptOperations.findConceptDeclaration("jetbrains.mps.core.notation.structure.SConceptNotation");
+      SNode concept = SConceptOperations.findConceptDeclaration("jetbrains.mps.core.notation.structure.SNotation");
       ListSequence.fromList(result).addElement(new AbstractSideTransformHintSubstituteAction(concept, _context.getSourceNode()) {
         public SNode doSubstitute(String pattern) {
           SPropertyOperations.set(_context.getSourceNode(), "id", "");

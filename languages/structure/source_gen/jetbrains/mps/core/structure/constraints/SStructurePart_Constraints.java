@@ -4,9 +4,9 @@ package jetbrains.mps.core.structure.constraints;
 
 import jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor;
 
-public class SStructureElement_Constraints extends BaseConstraintsDescriptor {
-  public SStructureElement_Constraints() {
-    super("jetbrains.mps.core.structure.structure.SStructureElement");
+public class SStructurePart_Constraints extends BaseConstraintsDescriptor {
+  public SStructurePart_Constraints() {
+    super("jetbrains.mps.core.structure.structure.SStructurePart");
   }
 
   public String getDefaultConcreteConceptFqName() {

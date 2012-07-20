@@ -35,7 +35,7 @@ public class SStructureComment_Editor extends DefaultNodeEditor {
     editorCell.setCellId("Constant_16tpme_a0");
     default_StyleSheet.getComment(editorCell).apply(editorCell);
     editorCell.setDefaultText("");
-    editorCell.setSubstituteInfo(new CompositeSubstituteInfo(editorContext, new BasicCellContext(node), new SubstituteInfoPart[]{new SStructureComment_Editor.ReplaceWith_SStructureElement_cellMenu_a0a0_0()}));
+    editorCell.setSubstituteInfo(new CompositeSubstituteInfo(editorContext, new BasicCellContext(node), new SubstituteInfoPart[]{new SStructureComment_Editor.ReplaceWith_SStructurePart_cellMenu_a0a0_0()}));
     return editorCell;
   }
 
@@ -59,12 +59,12 @@ public class SStructureComment_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  public static class ReplaceWith_SStructureElement_cellMenu_a0a0_0 extends AbstractCellMenuPart_ReplaceNode_CustomNodeConcept {
-    public ReplaceWith_SStructureElement_cellMenu_a0a0_0() {
+  public static class ReplaceWith_SStructurePart_cellMenu_a0a0_0 extends AbstractCellMenuPart_ReplaceNode_CustomNodeConcept {
+    public ReplaceWith_SStructurePart_cellMenu_a0a0_0() {
     }
 
     public String getReplacementConceptName() {
-      return "jetbrains.mps.core.structure.structure.SStructureElement";
+      return "jetbrains.mps.core.structure.structure.SStructurePart";
     }
   }
 }
