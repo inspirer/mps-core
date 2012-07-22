@@ -5,8 +5,9 @@ package jetbrains.mps.core.notation.actions;
 import jetbrains.mps.smodel.IOperationContext;
 import jetbrains.mps.smodel.action.SideTransformPreconditionContext;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.internal.collections.runtime.ListSequence;
+import jetbrains.mps.lang.structure.behavior.LinkDeclaration_Behavior;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.smodel.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.smodel.action.NodeSetupContext;
@@ -35,6 +36,26 @@ public class QueriesGenerated {
     return SPropertyOperations.getString(_context.getSourceNode(), "id") == null;
   }
 
+  public static boolean sideTransformHintSubstituteActionsBuilder_Precondition_SNotationPart_8379004527113924650(final IOperationContext operationContext, final SideTransformPreconditionContext _context) {
+    if (LinkDeclaration_Behavior.call_isSingular_1213877254557(SNodeOperations.getContainingLinkDeclaration(_context.getSourceNode()))) {
+      if (SNodeOperations.isInstanceOf(SNodeOperations.getParent(_context.getSourceNode()), "jetbrains.mps.core.notation.structure.SNotationMapping") && SNodeOperations.getContainingLinkRole(_context.getSourceNode()).equals("presentation")) {
+        return true;
+      }
+      return false;
+    }
+    return true;
+  }
+
+  public static boolean sideTransformHintSubstituteActionsBuilder_Precondition_SNotationPart_8379004527113924582(final IOperationContext operationContext, final SideTransformPreconditionContext _context) {
+    if (LinkDeclaration_Behavior.call_isSingular_1213877254557(SNodeOperations.getContainingLinkDeclaration(_context.getSourceNode()))) {
+      if (SNodeOperations.isInstanceOf(SNodeOperations.getParent(_context.getSourceNode()), "jetbrains.mps.core.notation.structure.SNotationQuantifier")) {
+        return true;
+      }
+      return false;
+    }
+    return true;
+  }
+
   public static boolean sideTransformHintSubstituteActionsBuilder_Precondition_SNotationPart_146911029171910614(final IOperationContext operationContext, final SideTransformPreconditionContext _context) {
     return ListSequence.fromList(SNodeOperations.getDescendants(_context.getSourceNode(), "jetbrains.mps.core.notation.structure.SNotationMapping", false, new String[]{})).isEmpty();
   }
@@ -55,7 +76,7 @@ public class QueriesGenerated {
   }
 
   public static boolean sideTransformHintSubstituteActionsBuilder_Precondition_SStructureEntityRef_7805033636902372966(final IOperationContext operationContext, final SideTransformPreconditionContext _context) {
-    return SNodeOperations.isInstanceOf(SNodeOperations.getParent(_context.getSourceNode()), "jetbrains.mps.core.notation.structure.SNotationMapping");
+    return SNodeOperations.isInstanceOf(SNodeOperations.getParent(_context.getSourceNode()), "jetbrains.mps.core.notation.structure.SNotationMapping") && (SLinkOperations.getTarget(SNodeOperations.cast(SNodeOperations.getParent(_context.getSourceNode()), "jetbrains.mps.core.notation.structure.SNotationMapping"), "presentation", true) == null);
   }
 
   public static void nodeFactory_NodeSetup_SNotationParentheses_5362811550739117351(final IOperationContext operationContext, final NodeSetupContext _context) {
@@ -132,7 +153,11 @@ public class QueriesGenerated {
         }
 
         private SNode substitute(SNode result, String pattern) {
-          SNodeOperations.insertNextSiblingChild(_context.getSourceNode(), result);
+          SNode node = _context.getSourceNode();
+          if (SNodeOperations.isInstanceOf(SNodeOperations.getParent(_context.getSourceNode()), "jetbrains.mps.core.notation.structure.SNotationMapping") && SNodeOperations.getContainingLinkRole(_context.getSourceNode()).equals("presentation")) {
+            node = SNodeOperations.cast(SNodeOperations.getParent(_context.getSourceNode()), "jetbrains.mps.core.notation.structure.SNotationMapping");
+          }
+          SNodeOperations.insertNextSiblingChild(node, result);
           return result;
         }
       }, operationContext);
@@ -159,7 +184,11 @@ public class QueriesGenerated {
         }
 
         private SNode substitute(SNode result, String pattern) {
-          SNodeOperations.insertPrevSiblingChild(_context.getSourceNode(), result);
+          SNode node = _context.getSourceNode();
+          if (SNodeOperations.isInstanceOf(SNodeOperations.getParent(_context.getSourceNode()), "jetbrains.mps.core.notation.structure.SNotationQuantifier")) {
+            node = SNodeOperations.cast(SNodeOperations.getParent(_context.getSourceNode()), "jetbrains.mps.core.notation.structure.SNotationQuantifier");
+          }
+          SNodeOperations.insertPrevSiblingChild(node, result);
           return result;
         }
       }, operationContext);
