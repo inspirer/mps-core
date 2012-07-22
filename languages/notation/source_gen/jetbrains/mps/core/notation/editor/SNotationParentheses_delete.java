@@ -36,6 +36,8 @@ public class SNotationParentheses_delete {
         List<SNode> parts = ListSequence.fromList(SLinkOperations.getTargets(ListSequence.fromList(SLinkOperations.getTargets(node, "alternatives", true)).first(), "parts", true)).toListSequence();
         if ((int) ListSequence.fromList(parts).count() == 1) {
           SNodeOperations.replaceWithAnother(node, ListSequence.fromList(parts).first());
+        } else if ((int) ListSequence.fromList(parts).count() == 0) {
+          SNodeOperations.deleteNode(node);
         } else if (!(LinkDeclaration_Behavior.call_isSingular_1213877254557(SNodeOperations.getContainingLinkDeclaration(node)))) {
           SNodeOperations.replaceWithAnother(node, ListSequence.fromList(parts).first());
           final Wrappers._T<SNode> anchor = new Wrappers._T<SNode>(ListSequence.fromList(parts).removeElementAt(0));
@@ -46,6 +48,8 @@ public class SNotationParentheses_delete {
             }
           });
         }
+      } else if ((int) ListSequence.fromList(SLinkOperations.getTargets(node, "alternatives", true)).count() == 0) {
+        SNodeOperations.deleteNode(node);
       }
     }
   }

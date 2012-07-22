@@ -4,7 +4,7 @@ package jetbrains.mps.core.notation.behavior;
 
 import jetbrains.mps.smodel.SNode;
 
-public class SNotationParentheses_BehaviorDescriptor extends SNotationPart_BehaviorDescriptor implements SNotationPartsContainer_BehaviorDescriptor {
+public class SNotationParentheses_BehaviorDescriptor extends SNotationPart_BehaviorDescriptor implements SNotationPartsContainer_BehaviorDescriptor, SNotationPartWithStyle_BehaviorDescriptor {
   public SNotationParentheses_BehaviorDescriptor() {
   }
 

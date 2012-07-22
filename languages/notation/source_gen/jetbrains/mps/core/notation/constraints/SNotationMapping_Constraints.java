@@ -52,7 +52,7 @@ public class SNotationMapping_Constraints extends BaseConstraintsDescriptor {
   }
 
   public static boolean static_canBeAParent(SNode node, SNode childNode, SNode childConcept, SNode link, final IOperationContext operationContext) {
-    if (link == SLinkOperations.findLinkDeclaration("jetbrains.mps.core.notation.structure.SNotationMapping", "presentation") && (SConceptOperations.isSubConceptOf(childConcept, "jetbrains.mps.core.notation.structure.SNotationMapping") || SConceptOperations.isSubConceptOf(childConcept, "jetbrains.mps.core.notation.structure.SStructureEntityRef"))) {
+    if (link == SLinkOperations.findLinkDeclaration("jetbrains.mps.core.notation.structure.SNotationMapping", "presentation") && (SConceptOperations.isSubConceptOf(childConcept, "jetbrains.mps.core.notation.structure.SNotationMapping"))) {
       return false;
     }
     return true;

@@ -5,18 +5,18 @@ package jetbrains.mps.core.notation.actions;
 import jetbrains.mps.smodel.IOperationContext;
 import jetbrains.mps.smodel.action.SideTransformPreconditionContext;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import jetbrains.mps.smodel.SNode;
 import jetbrains.mps.lang.structure.behavior.LinkDeclaration_Behavior;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
-import jetbrains.mps.smodel.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.smodel.action.NodeSetupContext;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.smodel.action.SNodeFactoryOperations;
 import java.util.List;
 import jetbrains.mps.smodel.action.INodeSubstituteAction;
 import jetbrains.mps.smodel.action.NodeSubstituteActionsFactoryContext;
 import java.util.ArrayList;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.util.NameUtil;
 import jetbrains.mps.smodel.action.IChildNodeSetter;
 import jetbrains.mps.smodel.action.AbstractChildNodeSetter;
@@ -37,23 +37,13 @@ public class QueriesGenerated {
   }
 
   public static boolean sideTransformHintSubstituteActionsBuilder_Precondition_SNotationPart_8379004527113924650(final IOperationContext operationContext, final SideTransformPreconditionContext _context) {
-    if (LinkDeclaration_Behavior.call_isSingular_1213877254557(SNodeOperations.getContainingLinkDeclaration(_context.getSourceNode()))) {
-      if (SNodeOperations.isInstanceOf(SNodeOperations.getParent(_context.getSourceNode()), "jetbrains.mps.core.notation.structure.SNotationMapping") && SNodeOperations.getContainingLinkRole(_context.getSourceNode()).equals("presentation")) {
-        return true;
-      }
-      return false;
-    }
-    return true;
+    SNode outer = SNotationActionUtil.getRightOutermostNotation(_context.getSourceNode());
+    return !(LinkDeclaration_Behavior.call_isSingular_1213877254557(SNodeOperations.getContainingLinkDeclaration(outer)));
   }
 
   public static boolean sideTransformHintSubstituteActionsBuilder_Precondition_SNotationPart_8379004527113924582(final IOperationContext operationContext, final SideTransformPreconditionContext _context) {
-    if (LinkDeclaration_Behavior.call_isSingular_1213877254557(SNodeOperations.getContainingLinkDeclaration(_context.getSourceNode()))) {
-      if (SNodeOperations.isInstanceOf(SNodeOperations.getParent(_context.getSourceNode()), "jetbrains.mps.core.notation.structure.SNotationQuantifier")) {
-        return true;
-      }
-      return false;
-    }
-    return true;
+    SNode outer = SNotationActionUtil.getLeftOutermostNotation(_context.getSourceNode());
+    return !(LinkDeclaration_Behavior.call_isSingular_1213877254557(SNodeOperations.getContainingLinkDeclaration(outer)));
   }
 
   public static boolean sideTransformHintSubstituteActionsBuilder_Precondition_SNotationPart_146911029171910614(final IOperationContext operationContext, final SideTransformPreconditionContext _context) {
@@ -61,14 +51,25 @@ public class QueriesGenerated {
   }
 
   public static boolean sideTransformHintSubstituteActionsBuilder_Precondition_SNotationPart_3129031437528344799(final IOperationContext operationContext, final SideTransformPreconditionContext _context) {
+    if (!(SNotationActionUtil.canWrap(_context.getSourceNode(), 10))) {
+      return false;
+    }
     if (SNodeOperations.isInstanceOf(_context.getSourceNode(), "jetbrains.mps.core.notation.structure.SNotationQuantifier") || SNodeOperations.isInstanceOf(SNodeOperations.getParent(_context.getSourceNode()), "jetbrains.mps.core.notation.structure.SNotationQuantifier")) {
+      return false;
+    }
+    if (SNodeOperations.isInstanceOf(_context.getSourceNode(), "jetbrains.mps.core.notation.structure.SNotationStyle")) {
       return false;
     }
     if (SNodeOperations.isInstanceOf(_context.getSourceNode(), "jetbrains.mps.core.notation.structure.SNotationMapping")) {
       SNode presentation = SLinkOperations.getTarget(SNodeOperations.cast(_context.getSourceNode(), "jetbrains.mps.core.notation.structure.SNotationMapping"), "presentation", true);
-      return presentation != null && !(SNodeOperations.isInstanceOf(presentation, "jetbrains.mps.core.notation.structure.SNotationQuantifier"));
+      return presentation != null;
     }
     return true;
+  }
+
+  public static boolean sideTransformHintSubstituteActionsBuilder_Precondition_SNotationPart_8379004527113948453(final IOperationContext operationContext, final SideTransformPreconditionContext _context) {
+    SNode container = SNotationActionUtil.getTargetForNewStyle(_context.getSourceNode());
+    return container != null && !(LinkDeclaration_Behavior.call_isSingular_1213877254557(SNodeOperations.getContainingLinkDeclaration(container))) && !(SNodeOperations.isInstanceOf(SNodeOperations.getNextSibling(container), "jetbrains.mps.core.notation.structure.SNotationStyle"));
   }
 
   public static boolean sideTransformHintSubstituteActionsBuilder_Precondition_SNotationMapping_3129031437528328601(final IOperationContext operationContext, final SideTransformPreconditionContext _context) {
@@ -80,7 +81,7 @@ public class QueriesGenerated {
   }
 
   public static void nodeFactory_NodeSetup_SNotationParentheses_5362811550739117351(final IOperationContext operationContext, final NodeSetupContext _context) {
-    if (SNodeOperations.isInstanceOf(_context.getSampleNode(), "jetbrains.mps.core.notation.structure.SNotationPart")) {
+    if (SNodeOperations.isInstanceOf(_context.getSampleNode(), "jetbrains.mps.core.notation.structure.SNotationPart") && !(SConceptOperations.isExactly(SNodeOperations.getConceptDeclaration(_context.getSampleNode()), "jetbrains.mps.core.notation.structure.SNotationPart"))) {
       ListSequence.fromList(SLinkOperations.getTargets(_context.getNewNode(), "alternatives", true)).clear();
       SNodeFactoryOperations.addNewChild(_context.getNewNode(), "alternatives", "jetbrains.mps.core.notation.structure.SNotationAlternativePart");
       ListSequence.fromList(SLinkOperations.getTargets(ListSequence.fromList(SLinkOperations.getTargets(_context.getNewNode(), "alternatives", true)).first(), "parts", true)).addElement(SNodeOperations.cast(_context.getSampleNode(), "jetbrains.mps.core.notation.structure.SNotationPart"));
@@ -153,11 +154,8 @@ public class QueriesGenerated {
         }
 
         private SNode substitute(SNode result, String pattern) {
-          SNode node = _context.getSourceNode();
-          if (SNodeOperations.isInstanceOf(SNodeOperations.getParent(_context.getSourceNode()), "jetbrains.mps.core.notation.structure.SNotationMapping") && SNodeOperations.getContainingLinkRole(_context.getSourceNode()).equals("presentation")) {
-            node = SNodeOperations.cast(SNodeOperations.getParent(_context.getSourceNode()), "jetbrains.mps.core.notation.structure.SNotationMapping");
-          }
-          SNodeOperations.insertNextSiblingChild(node, result);
+          SNode outer = SNotationActionUtil.getRightOutermostNotation(_context.getSourceNode());
+          SNodeOperations.insertNextSiblingChild(outer, result);
           return result;
         }
       }, operationContext);
@@ -184,11 +182,8 @@ public class QueriesGenerated {
         }
 
         private SNode substitute(SNode result, String pattern) {
-          SNode node = _context.getSourceNode();
-          if (SNodeOperations.isInstanceOf(SNodeOperations.getParent(_context.getSourceNode()), "jetbrains.mps.core.notation.structure.SNotationQuantifier")) {
-            node = SNodeOperations.cast(SNodeOperations.getParent(_context.getSourceNode()), "jetbrains.mps.core.notation.structure.SNotationQuantifier");
-          }
-          SNodeOperations.insertPrevSiblingChild(node, result);
+          SNode outer = SNotationActionUtil.getLeftOutermostNotation(_context.getSourceNode());
+          SNodeOperations.insertPrevSiblingChild(outer, result);
           return result;
         }
       }, operationContext);
@@ -211,13 +206,10 @@ public class QueriesGenerated {
       SNode concept = SConceptOperations.findConceptDeclaration("jetbrains.mps.lang.core.structure.BaseConcept");
       ListSequence.fromList(result).addElement(new AbstractSideTransformHintSubstituteAction(concept, _context.getSourceNode()) {
         public SNode doSubstitute(String pattern) {
-          SNode node = _context.getSourceNode();
-          if (SNodeOperations.isInstanceOf(SNodeOperations.getParent(node), "jetbrains.mps.core.notation.structure.SNotationQuantifier")) {
-            node = SNodeOperations.cast(SNodeOperations.getParent(node), "jetbrains.mps.core.notation.structure.SNotationQuantifier");
-          }
+          SNode outer = SNotationActionUtil.getLeftOutermostNotation(_context.getSourceNode());
           SNode mapping = SNodeFactoryOperations.createNewNode(_context.getModel(), "jetbrains.mps.core.notation.structure.SNotationMapping", null);
-          SNodeOperations.replaceWithAnother(node, mapping);
-          SLinkOperations.setTarget(mapping, "presentation", node, true);
+          SNodeOperations.replaceWithAnother(outer, mapping);
+          SLinkOperations.setTarget(mapping, "presentation", outer, true);
           return mapping;
         }
 
@@ -301,6 +293,33 @@ public class QueriesGenerated {
 
         public String getDescriptionText(String pattern) {
           return "optional";
+        }
+      });
+    }
+    return result;
+  }
+
+  public static List<INodeSubstituteAction> sideTransform_ActionsFactory_SNotationPart_8379004527113948452(final IOperationContext operationContext, final SideTransformActionsBuilderContext _context) {
+    List<INodeSubstituteAction> result = ListSequence.fromList(new ArrayList<INodeSubstituteAction>());
+    {
+      SNode concept = SConceptOperations.findConceptDeclaration("jetbrains.mps.core.notation.structure.SNotationQuantifier");
+      ListSequence.fromList(result).addElement(new AbstractSideTransformHintSubstituteAction(concept, _context.getSourceNode()) {
+        public SNode doSubstitute(String pattern) {
+          SNode container = SNotationActionUtil.getTargetForNewStyle(_context.getSourceNode());
+          SNode q = SNodeFactoryOperations.createNewNode(_context.getModel(), "jetbrains.mps.core.notation.structure.SNotationStyle", null);
+          return SNodeOperations.insertNextSiblingChild(container, q);
+        }
+
+        public String getMatchingText(String pattern) {
+          return "{";
+        }
+
+        public String getVisibleMatchingText(String pattern) {
+          return this.getMatchingText(pattern);
+        }
+
+        public String getDescriptionText(String pattern) {
+          return "style";
         }
       });
     }

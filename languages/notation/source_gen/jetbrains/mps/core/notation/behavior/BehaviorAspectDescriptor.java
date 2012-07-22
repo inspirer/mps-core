@@ -7,7 +7,7 @@ import java.util.Arrays;
 import jetbrains.mps.smodel.runtime.interpreted.BehaviorAspectInterpreted;
 
 public class BehaviorAspectDescriptor implements jetbrains.mps.smodel.runtime.BehaviorAspectDescriptor {
-  private static String[] stringSwitchCases_846f5o_a0a0a = new String[]{"jetbrains.mps.core.notation.structure.SNotation", "jetbrains.mps.core.notation.structure.SNotationAlternativePart", "jetbrains.mps.core.notation.structure.SNotationLabel", "jetbrains.mps.core.notation.structure.SNotationMapping", "jetbrains.mps.core.notation.structure.SNotationNewLine", "jetbrains.mps.core.notation.structure.SNotationNospace", "jetbrains.mps.core.notation.structure.SNotationParentheses", "jetbrains.mps.core.notation.structure.SNotationQuantifier", "jetbrains.mps.core.notation.structure.SStructureLinkRef", "jetbrains.mps.core.notation.structure.SStructurePropertyRef"};
+  private static String[] stringSwitchCases_846f5o_a0a0a = new String[]{"jetbrains.mps.core.notation.structure.SNotation", "jetbrains.mps.core.notation.structure.SNotationAlternativePart", "jetbrains.mps.core.notation.structure.SNotationLabel", "jetbrains.mps.core.notation.structure.SNotationMapping", "jetbrains.mps.core.notation.structure.SNotationNewLine", "jetbrains.mps.core.notation.structure.SNotationNospace", "jetbrains.mps.core.notation.structure.SNotationParentheses", "jetbrains.mps.core.notation.structure.SNotationQuantifier", "jetbrains.mps.core.notation.structure.SNotationStyle", "jetbrains.mps.core.notation.structure.SNotationStyleIndent", "jetbrains.mps.core.notation.structure.SStructureLinkRef", "jetbrains.mps.core.notation.structure.SStructurePropertyRef"};
 
   public BehaviorAspectDescriptor() {
   }
@@ -28,12 +28,16 @@ public class BehaviorAspectDescriptor implements jetbrains.mps.smodel.runtime.Be
         return new SNotationMapping_BehaviorDescriptor();
       case 7:
         return new SNotationQuantifier_BehaviorDescriptor();
-      case 8:
+      case 10:
         return new SStructureLinkRef_BehaviorDescriptor();
-      case 9:
+      case 11:
         return new SStructurePropertyRef_BehaviorDescriptor();
       case 5:
         return new SNotationNospace_BehaviorDescriptor();
+      case 8:
+        return new SNotationStyle_BehaviorDescriptor();
+      case 9:
+        return new SNotationStyleIndent_BehaviorDescriptor();
       default:
         return BehaviorAspectInterpreted.getInstance().getDescriptor(fqName);
     }

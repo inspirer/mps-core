@@ -37,6 +37,9 @@ public class SNotationQuantifier_Constraints extends BaseConstraintsDescriptor {
     if (SConceptOperations.isSubConceptOf(childConcept, "jetbrains.mps.core.notation.structure.SNotationMapping")) {
       return false;
     }
+    if (SConceptOperations.isSubConceptOf(childConcept, "jetbrains.mps.core.notation.structure.SNotationQuantifier")) {
+      return false;
+    }
     return true;
   }
 }

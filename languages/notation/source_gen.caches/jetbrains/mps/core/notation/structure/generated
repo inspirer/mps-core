@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="1i4fujtp2rnjhadjjrlirwjf0qxnxbl">
+<dependencies version="2" modelHash="-700b4a6iq30e8hf7gpmbqn5r7fjgxck">
   <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
   <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
   <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
@@ -16,6 +16,8 @@
   <dep model="r:fc76aa36-3cff-41c7-b94b-eee0e8341932(jetbrains.mps.internal.collections.runtime)" />
   <common hash="-8moh7dk8xuczlueag9rgeqh39y4gj4t" dependsOnNodes="true">
     <dep root="146911029171891500" />
+    <dep root="2711998566964106140" />
+    <dep root="2711998566964106145" />
     <dep root="3129031437528132565" />
     <dep root="3129031437528339296" />
     <dep root="3647933405694693953" />
@@ -28,6 +30,9 @@
     <dep root="7805033636902348039" />
     <dep root="7805033636902348042" />
     <dep root="8379004527113710095" />
+    <dep root="8379004527113948349" />
+    <dep root="8379004527113948615" />
+    <dep root="8379004527113970168" />
     <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
     <dep model="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
@@ -48,10 +53,10 @@
   <source id="3647933405694693953" name="SNotationPart" hash="ddfxs3cdrzfsodc3ey80r2rh8t7bn88">
     <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
   </source>
-  <source id="3647933405694713882" name="SNotationLabel" hash="-1etv17avm27a9do5myajh31ahy8rsxi">
+  <source id="3647933405694713882" name="SNotationLabel" hash="249booly7hd1e0i1hjku82kyqpq8cy8">
     <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
   </source>
-  <source id="3647933405694717717" name="SNotationParentheses" hash="-60lltmf3qwru014wo0yar3ltp05ohle">
+  <source id="3647933405694717717" name="SNotationParentheses" hash="a7q6nq9q2zosphgxm966qk45c9wrruy">
     <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
   </source>
   <source id="3647933405694717730" name="SNotationNewLine" hash="-6tisa9smefj7oqib69uo0p7wy589yk2">
@@ -63,10 +68,10 @@
   <source id="3647933405694717737" name="SNotationPartsContainer" hash="qn14oujfi47xsg5jm9u4e9j57mwh9p">
     <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
   </source>
-  <source id="3129031437528132565" name="SNotationMapping" hash="-14eek7aoo8bu0c67xxawu6pxp654uo0">
+  <source id="3129031437528132565" name="SNotationMapping" hash="-7opyb9yztu8h4kr9yo0m58nma06hscw">
     <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
   </source>
-  <source id="3129031437528339296" name="SNotationQuantifier" hash="-yusanbr6y2jyczz1yljw13uwxdiwmc">
+  <source id="3129031437528339296" name="SNotationQuantifier" hash="afzpdaoytllvfpacuskeq5xq7w3gfg8">
     <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
   </source>
   <source id="3129031437528339312" name="SNotationQuantifierKind" hash="-3a8fv743qxw51039v208ph1htiv20br">
@@ -96,6 +101,21 @@
     <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
   </source>
   <source id="8379004527113710095" name="SNotationNospace" hash="90lvseu7i0bv7rhajp7k8991x3h5ces">
+    <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
+  </source>
+  <source id="8379004527113948349" name="SNotationStyle" hash="-1gkid139womtr63juw66w34ed337rnk">
+    <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
+  </source>
+  <source id="8379004527113948615" name="SNotationWrapper" hash="bp9toeasmsxsoglr2xafh6g45hfui2e">
+    <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
+  </source>
+  <source id="8379004527113970168" name="SNotationPartWithStyle" hash="-2s4i8zb99vf5pqvjz1x3f8hme5g8qj5">
+    <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
+  </source>
+  <source id="2711998566964106140" name="SNotationStylePart" hash="-dtnmkqttxb5hf4caezbihotto50ebtc">
+    <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
+  </source>
+  <source id="2711998566964106145" name="SNotationStyleIndent" hash="ci9d713c8pj94jlux0ld0he3fxhklax">
     <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
   </source>
 </dependencies>
