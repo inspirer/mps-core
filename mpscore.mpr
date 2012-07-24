@@ -25,6 +25,7 @@
       <modulePath path="${project}/languages/template/template.mpl" folder="" />
       <modulePath path="${project}/languages/workflow/solutions/pluginSolution/pluginSolution.msd" folder="" />
       <modulePath path="${project}/languages/workflow/workflow.mpl" folder="" />
+      <modulePath path="${project}/solutions/jetbrains.mps.core.structure.pluginSolution/pluginSolution.msd" folder="" />
       <modulePath path="${project}/solutions/mpscore.sandbox/mpscore.sandbox.msd" />
     </projectModules>
     <genConfs />
