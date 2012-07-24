@@ -12,8 +12,8 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.core.behavior.INamedConcept_Behavior;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
-import jetbrains.mps.lang.structure.behavior.PrimitiveDataTypeDeclaration_Behavior;
 import jetbrains.mps.smodel.DynamicReference;
+import jetbrains.mps.lang.structure.behavior.PrimitiveDataTypeDeclaration_Behavior;
 import java.util.Set;
 import java.util.HashSet;
 import jetbrains.mps.smodel.SModelUtil_new;
@@ -52,12 +52,26 @@ public class PluginUtils {
   public static SNode convertConcreteConcept(SNode concept) {
     SNode result = SConceptOperations.createNewNode("jetbrains.mps.core.structure.structure.SConcept", null);
     updateAbstractConceptDeclarationFields(concept, result);
+    for (SNode implementedConcepts : SLinkOperations.getTargets(concept, "implements", true)) {
+      SNode ref = SConceptOperations.createNewNode("jetbrains.mps.core.structure.structure.SInterfaceReference", null);
+      ref.addReference(new DynamicReference("target", ref, null, SPropertyOperations.getString(SLinkOperations.getTarget(implementedConcepts, "intfc", false), "name")));
+      SNodeOperations.getChildren(result, SLinkOperations.findLinkDeclaration("jetbrains.mps.core.structure.structure.SConcept", "implements")).add(ref);
+    }
+    if ((SLinkOperations.getTarget(concept, "extends", false) != null) && !(SLinkOperations.getTarget(concept, "extends", false) == SNodeOperations.getNode("r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)", "1133920641626"))) {
+      result.addReference(new DynamicReference("extends", result, null, SPropertyOperations.getString(SLinkOperations.getTarget(concept, "extends", false), "name")));
+    }
+
     return result;
   }
 
   public static SNode convertInterfaceConcept(SNode concept) {
     SNode result = SConceptOperations.createNewNode("jetbrains.mps.core.structure.structure.SInterfaceConcept", null);
     updateAbstractConceptDeclarationFields(concept, result);
+    for (SNode extendsConcept : SLinkOperations.getTargets(concept, "extends", true)) {
+      SNode ref = SConceptOperations.createNewNode("jetbrains.mps.core.structure.structure.SInterfaceReference", null);
+      ref.addReference(new DynamicReference("target", ref, null, SPropertyOperations.getString(SLinkOperations.getTarget(extendsConcept, "intfc", false), "name")));
+      SNodeOperations.getChildren(result, SLinkOperations.findLinkDeclaration("jetbrains.mps.core.structure.structure.SInterfaceConcept", "extends")).add(ref);
+    }
     return result;
   }
 
