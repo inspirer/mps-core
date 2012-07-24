@@ -14,6 +14,10 @@ import jetbrains.mps.smodel.Language;
 import org.jetbrains.annotations.NotNull;
 import com.intellij.openapi.actionSystem.PlatformDataKeys;
 import jetbrains.mps.ide.actions.MPSCommonDataKeys;
+import jetbrains.mps.smodel.MPSModuleRepository;
+import jetbrains.mps.smodel.SModelFqName;
+import jetbrains.mps.smodel.LanguageAspect;
+import jetbrains.mps.smodel.SModel;
 
 public class ConvertStructureToNewFormat_Action extends BaseAction {
   private static final Icon ICON = null;
@@ -63,7 +67,14 @@ public class ConvertStructureToNewFormat_Action extends BaseAction {
 
   public void doExecute(@NotNull final AnActionEvent event, final Map<String, Object> _params) {
     try {
-      System.out.println("Hello world!");
+      Language newStructureLanguage = (Language) MPSModuleRepository.getInstance().getModuleByFqName("jetbrains.mps.core.structure");
+
+      Language language = (Language) ((IModule) MapSequence.fromMap(_params).get("module"));
+      language.addUsedLanguage(newStructureLanguage.getModuleReference());
+      SModelFqName newModelName = SModelFqName.fromString(LanguageAspect.STRUCTURE.get(language).getSModel().getSModelFqName().toString() + "_New");
+      SModel newStructure = language.createModel(newModelName, language.getSModelRoots().iterator().next(), null).getSModel();
+      newStructure.addLanguage(newStructureLanguage.getModuleReference());
+      newStructure.addRoot(PluginUtils.convertStructure(LanguageAspect.STRUCTURE.get(language).getSModel()));
     } catch (Throwable t) {
       if (log.isErrorEnabled()) {
         log.error("User's action execute method failed. Action:" + "ConvertStructureToNewFormat", t);
