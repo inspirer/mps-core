@@ -8,9 +8,13 @@ import jetbrains.mps.smodel.SNode;
 import jetbrains.mps.smodel.SModel;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
+import java.util.List;
+import jetbrains.mps.internal.collections.runtime.ListSequence;
+import java.util.ArrayList;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.core.behavior.INamedConcept_Behavior;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.smodel.DynamicReference;
 import jetbrains.mps.lang.structure.behavior.PrimitiveDataTypeDeclaration_Behavior;
@@ -29,22 +33,22 @@ public class PluginUtils {
   public static SNode convertStructure(SModel structureModel) {
     SNode container = new PluginUtils.QuotationClass_l4wyvj_a0a0a0().createNode(SPropertyOperations.getString(SModelOperations.getModuleStub(structureModel), "name"));
 
+    List<SNode> structureElements = ListSequence.fromList(new ArrayList());
     for (SNode root : SModelOperations.getRoots(structureModel, null)) {
       if (SNodeOperations.isInstanceOf(root, "jetbrains.mps.lang.structure.structure.ConceptDeclaration")) {
-        SNodeOperations.getChildren(container, SLinkOperations.findLinkDeclaration("jetbrains.mps.core.structure.structure.SStructureContainer", "structure")).add(convertConcreteConcept((SNode) root));
+        ListSequence.fromList(structureElements).addElement(convertConcreteConcept((SNode) root));
+      } else if (SNodeOperations.isInstanceOf(root, "jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration")) {
+        ListSequence.fromList(structureElements).addElement(convertInterfaceConcept((SNode) root));
+      } else if (SNodeOperations.isInstanceOf(root, "jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration")) {
+        ListSequence.fromList(structureElements).addElement(convertEnumeration((SNode) root));
+      } else {
+        if (log.isWarnEnabled()) {
+          log.warn("Strange root in structure model with concept " + INamedConcept_Behavior.call_getFqName_1213877404258(SNodeOperations.getConceptDeclaration(root)));
+        }
       }
-      if (SNodeOperations.isInstanceOf(root, "jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration")) {
-        SNodeOperations.getChildren(container, SLinkOperations.findLinkDeclaration("jetbrains.mps.core.structure.structure.SStructureContainer", "structure")).add(convertInterfaceConcept((SNode) root));
-      }
-      if (SNodeOperations.isInstanceOf(root, "jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration")) {
-        SNodeOperations.getChildren(container, SLinkOperations.findLinkDeclaration("jetbrains.mps.core.structure.structure.SStructureContainer", "structure")).add(convertEnumeration((SNode) root));
-      }
-      if (log.isWarnEnabled()) {
-        log.warn("Strange root in structure model with concept " + INamedConcept_Behavior.call_getFqName_1213877404258(SNodeOperations.getConceptDeclaration(root)));
-      }
-
-      SNodeOperations.getChildren(container, SLinkOperations.findLinkDeclaration("jetbrains.mps.core.structure.structure.SStructureContainer", "structure")).add(SConceptOperations.createNewNode("jetbrains.mps.core.structure.structure.SStructureEmptyLine", null));
     }
+
+    ListSequence.fromList(SNodeOperations.getChildren(container, SLinkOperations.findLinkDeclaration("jetbrains.mps.core.structure.structure.SStructureContainer", "structure"))).addSequence(Sequence.fromIterable((Iterable<SNode>) join(structureElements, SConceptOperations.createNewNode("jetbrains.mps.core.structure.structure.SStructureEmptyLine", null))));
 
     return container;
   }
@@ -60,7 +64,6 @@ public class PluginUtils {
     if ((SLinkOperations.getTarget(concept, "extends", false) != null) && !(SLinkOperations.getTarget(concept, "extends", false) == SNodeOperations.getNode("r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)", "1133920641626"))) {
       result.addReference(new DynamicReference("extends", result, null, SPropertyOperations.getString(SLinkOperations.getTarget(concept, "extends", false), "name")));
     }
-
     return result;
   }
 
@@ -82,11 +85,17 @@ public class PluginUtils {
   public static void updateAbstractConceptDeclarationFields(SNode source, SNode destination) {
     // name 
     SPropertyOperations.set(destination, "name", SPropertyOperations.getString(source, "name"));
+
+    List<SNode> members = new ArrayList<SNode>();
+
     // properties 
     for (SNode property : SLinkOperations.getTargets(source, "propertyDeclaration", true)) {
-      SNodeOperations.getChildren(destination, SLinkOperations.findLinkDeclaration("jetbrains.mps.core.structure.structure.SAbstractConcept", "members")).add(convertProperty(property));
+      members.add(convertProperty(property));
     }
-    SNodeOperations.getChildren(destination, SLinkOperations.findLinkDeclaration("jetbrains.mps.core.structure.structure.SAbstractConcept", "members")).add(SConceptOperations.createNewNode("jetbrains.mps.core.structure.structure.SConceptMemberEmptyLine", null));
+    if (ListSequence.fromList(members).isNotEmpty()) {
+      ListSequence.fromList(SNodeOperations.getChildren(destination, SLinkOperations.findLinkDeclaration("jetbrains.mps.core.structure.structure.SAbstractConcept", "members"))).addSequence(ListSequence.fromList(members));
+      ListSequence.fromList(SNodeOperations.getChildren(destination, SLinkOperations.findLinkDeclaration("jetbrains.mps.core.structure.structure.SAbstractConcept", "members"))).addElement(SConceptOperations.createNewNode("jetbrains.mps.core.structure.structure.SConceptMemberEmptyLine", null));
+    }
   }
 
   public static SNode convertProperty(SNode property) {
@@ -126,6 +135,23 @@ public class PluginUtils {
     DynamicReference ref = new DynamicReference("enum", result, null, SPropertyOperations.getString(typeDeclaration, "name"));
     result.addReference(ref);
 
+    return result;
+  }
+
+  public static Iterable<SNode> join(Iterable<SNode> source, SNode separator) {
+    if (Sequence.fromIterable(source).isEmpty()) {
+      return ListSequence.fromList(new ArrayList<SNode>());
+    }
+    List<SNode> result = ListSequence.fromList(new ArrayList<SNode>());
+    boolean isFirst = true;
+    for (SNode node : source) {
+      if (isFirst) {
+        isFirst = false;
+      } else {
+        ListSequence.fromList(result).addElement(SNodeOperations.copyNode(separator));
+      }
+      ListSequence.fromList(result).addElement(node);
+    }
     return result;
   }
 
