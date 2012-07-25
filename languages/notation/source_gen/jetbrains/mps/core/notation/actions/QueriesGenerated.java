@@ -80,6 +80,10 @@ public class QueriesGenerated {
     return SNodeOperations.isInstanceOf(SNodeOperations.getParent(_context.getSourceNode()), "jetbrains.mps.core.notation.structure.SNotationMapping") && (SLinkOperations.getTarget(SNodeOperations.cast(SNodeOperations.getParent(_context.getSourceNode()), "jetbrains.mps.core.notation.structure.SNotationMapping"), "presentation", true) == null);
   }
 
+  public static boolean sideTransformHintSubstituteActionsBuilder_Precondition_SNotationCall_8527797492907053873(final IOperationContext operationContext, final SideTransformPreconditionContext _context) {
+    return SPropertyOperations.getString(_context.getSourceNode(), "id") == null;
+  }
+
   public static void nodeFactory_NodeSetup_SNotationParentheses_5362811550739117351(final IOperationContext operationContext, final NodeSetupContext _context) {
     if (SNodeOperations.isInstanceOf(_context.getSampleNode(), "jetbrains.mps.core.notation.structure.SNotationPart") && !(SConceptOperations.isExactly(SNodeOperations.getConceptDeclaration(_context.getSampleNode()), "jetbrains.mps.core.notation.structure.SNotationPart"))) {
       ListSequence.fromList(SLinkOperations.getTargets(_context.getNewNode(), "alternatives", true)).clear();
@@ -358,6 +362,28 @@ public class QueriesGenerated {
       };
       SNode node = (SNode) computable.compute();
       ListSequence.fromList(result).addSequence(ListSequence.fromList(ModelActions.createRightTransformHintSubstituteActions(node, CellSide.RIGHT, _context.getTransformationTag(), operationContext)));
+    }
+    return result;
+  }
+
+  public static List<INodeSubstituteAction> sideTransform_ActionsFactory_SNotationCall_8527797492907044062(final IOperationContext operationContext, final SideTransformActionsBuilderContext _context) {
+    List<INodeSubstituteAction> result = ListSequence.fromList(new ArrayList<INodeSubstituteAction>());
+    {
+      SNode concept = SConceptOperations.findConceptDeclaration("jetbrains.mps.core.notation.structure.SNotationCall");
+      ListSequence.fromList(result).addElement(new AbstractSideTransformHintSubstituteAction(concept, _context.getSourceNode()) {
+        public SNode doSubstitute(String pattern) {
+          SPropertyOperations.set(_context.getSourceNode(), "id", "");
+          return _context.getSourceNode();
+        }
+
+        public String getMatchingText(String pattern) {
+          return ".";
+        }
+
+        public String getVisibleMatchingText(String pattern) {
+          return this.getMatchingText(pattern);
+        }
+      });
     }
     return result;
   }

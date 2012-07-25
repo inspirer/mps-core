@@ -7,7 +7,7 @@ import java.util.Arrays;
 import jetbrains.mps.smodel.runtime.interpreted.BehaviorAspectInterpreted;
 
 public class BehaviorAspectDescriptor implements jetbrains.mps.smodel.runtime.BehaviorAspectDescriptor {
-  private static String[] stringSwitchCases_846f5o_a0a0a = new String[]{"jetbrains.mps.core.notation.structure.SNotation", "jetbrains.mps.core.notation.structure.SNotationAlternativePart", "jetbrains.mps.core.notation.structure.SNotationLabel", "jetbrains.mps.core.notation.structure.SNotationMapping", "jetbrains.mps.core.notation.structure.SNotationNewLine", "jetbrains.mps.core.notation.structure.SNotationNospace", "jetbrains.mps.core.notation.structure.SNotationParentheses", "jetbrains.mps.core.notation.structure.SNotationQuantifier", "jetbrains.mps.core.notation.structure.SNotationStyle", "jetbrains.mps.core.notation.structure.SNotationStyleIndent", "jetbrains.mps.core.notation.structure.SStructureLinkRef", "jetbrains.mps.core.notation.structure.SStructurePropertyRef"};
+  private static String[] stringSwitchCases_846f5o_a0a0a = new String[]{"jetbrains.mps.core.notation.structure.SNotation", "jetbrains.mps.core.notation.structure.SNotationAlternativePart", "jetbrains.mps.core.notation.structure.SNotationCall", "jetbrains.mps.core.notation.structure.SNotationLabel", "jetbrains.mps.core.notation.structure.SNotationMapping", "jetbrains.mps.core.notation.structure.SNotationNewLine", "jetbrains.mps.core.notation.structure.SNotationNospace", "jetbrains.mps.core.notation.structure.SNotationParentheses", "jetbrains.mps.core.notation.structure.SNotationQuantifier", "jetbrains.mps.core.notation.structure.SNotationStyle", "jetbrains.mps.core.notation.structure.SNotationStyleIndent", "jetbrains.mps.core.notation.structure.SNotationStyleSeparator", "jetbrains.mps.core.notation.structure.SNotationTab", "jetbrains.mps.core.notation.structure.SStructureLinkRef", "jetbrains.mps.core.notation.structure.SStructurePropertyRef"};
 
   public BehaviorAspectDescriptor() {
   }
@@ -16,28 +16,34 @@ public class BehaviorAspectDescriptor implements jetbrains.mps.smodel.runtime.Be
     switch (Arrays.binarySearch(stringSwitchCases_846f5o_a0a0a, fqName)) {
       case 0:
         return new SNotation_BehaviorDescriptor();
-      case 2:
+      case 3:
         return new SNotationLabel_BehaviorDescriptor();
-      case 6:
+      case 7:
         return new SNotationParentheses_BehaviorDescriptor();
-      case 4:
+      case 5:
         return new SNotationNewLine_BehaviorDescriptor();
       case 1:
         return new SNotationAlternativePart_BehaviorDescriptor();
-      case 3:
+      case 4:
         return new SNotationMapping_BehaviorDescriptor();
-      case 7:
-        return new SNotationQuantifier_BehaviorDescriptor();
-      case 10:
-        return new SStructureLinkRef_BehaviorDescriptor();
-      case 11:
-        return new SStructurePropertyRef_BehaviorDescriptor();
-      case 5:
-        return new SNotationNospace_BehaviorDescriptor();
       case 8:
-        return new SNotationStyle_BehaviorDescriptor();
+        return new SNotationQuantifier_BehaviorDescriptor();
+      case 13:
+        return new SStructureLinkRef_BehaviorDescriptor();
+      case 14:
+        return new SStructurePropertyRef_BehaviorDescriptor();
+      case 6:
+        return new SNotationNospace_BehaviorDescriptor();
       case 9:
+        return new SNotationStyle_BehaviorDescriptor();
+      case 10:
         return new SNotationStyleIndent_BehaviorDescriptor();
+      case 2:
+        return new SNotationCall_BehaviorDescriptor();
+      case 12:
+        return new SNotationTab_BehaviorDescriptor();
+      case 11:
+        return new SNotationStyleSeparator_BehaviorDescriptor();
       default:
         return BehaviorAspectInterpreted.getInstance().getDescriptor(fqName);
     }

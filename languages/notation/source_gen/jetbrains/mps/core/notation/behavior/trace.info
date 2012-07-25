@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debugInfo>
-  <unitInfo fileName="BehaviorAspectDescriptor.java" startLine="9" startPosition="0" endLine="46" endPosition="0" unitName="jetbrains.mps.core.notation.behavior.BehaviorAspectDescriptor" />
+  <unitInfo fileName="BehaviorAspectDescriptor.java" startLine="9" startPosition="0" endLine="52" endPosition="0" unitName="jetbrains.mps.core.notation.behavior.BehaviorAspectDescriptor" />
   <unitInfo fileName="SNotationAlternativePart_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="jetbrains.mps.core.notation.behavior.SNotationAlternativePart_BehaviorDescriptor" />
+  <unitInfo fileName="SNotationCall_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="jetbrains.mps.core.notation.behavior.SNotationCall_BehaviorDescriptor" />
   <unitInfo fileName="SNotationLabel_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="jetbrains.mps.core.notation.behavior.SNotationLabel_BehaviorDescriptor" />
   <unitInfo fileName="SNotationMapping_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="jetbrains.mps.core.notation.behavior.SNotationMapping_BehaviorDescriptor" />
   <unitInfo fileName="SNotationNewLine_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="20" endPosition="0" unitName="jetbrains.mps.core.notation.behavior.SNotationNewLine_BehaviorDescriptor" />
@@ -13,7 +14,9 @@
   <unitInfo fileName="SNotationQuantifier_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="28" endPosition="0" unitName="jetbrains.mps.core.notation.behavior.SNotationQuantifier_BehaviorDescriptor" />
   <unitInfo fileName="SNotationStyleIndent_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="jetbrains.mps.core.notation.behavior.SNotationStyleIndent_BehaviorDescriptor" />
   <unitInfo fileName="SNotationStylePart_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="jetbrains.mps.core.notation.behavior.SNotationStylePart_BehaviorDescriptor" />
+  <unitInfo fileName="SNotationStyleSeparator_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="jetbrains.mps.core.notation.behavior.SNotationStyleSeparator_BehaviorDescriptor" />
   <unitInfo fileName="SNotationStyle_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="jetbrains.mps.core.notation.behavior.SNotationStyle_BehaviorDescriptor" />
+  <unitInfo fileName="SNotationTab_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="jetbrains.mps.core.notation.behavior.SNotationTab_BehaviorDescriptor" />
   <unitInfo fileName="SNotationWrapper_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="12" endPosition="0" unitName="jetbrains.mps.core.notation.behavior.SNotationWrapper_BehaviorDescriptor" />
   <unitInfo fileName="SNotation_BehaviorDescriptor.java" startLine="11" startPosition="0" endLine="32" endPosition="0" unitName="jetbrains.mps.core.notation.behavior.SNotation_BehaviorDescriptor" />
   <unitInfo fileName="SStructureEntityRef_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="jetbrains.mps.core.notation.behavior.SStructureEntityRef_BehaviorDescriptor" />
