@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
-  <dependency className="jetbrains.mps.core.structure.pluginSolution.plugin.ConvertStructureToNewFormat_Action" file="ConvertStructureToNewFormat_Action.java">
+  <dependency className="jetbrains.mps.core.structure.pluginSolution.plugin.MigrateStructureGroup_ActionGroup" file="MigrateStructureGroup_ActionGroup.java">
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.lang.Throwable" />
+    <classNode dependClassName="jetbrains.mps.logging.Logger" />
+    <classNode extendsClassName="jetbrains.mps.plugins.actions.GeneratedActionGroup" />
+  </dependency>
+  <dependency className="jetbrains.mps.core.structure.pluginSolution.plugin.MigrateStructure_Action" file="MigrateStructure_Action.java">
     <classNode dependClassName="com.intellij.openapi.actionSystem.AnActionEvent" />
-    <classNode dependClassName="com.intellij.openapi.actionSystem.PlatformDataKeys" />
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
@@ -23,16 +28,10 @@
     <classNode dependClassName="org.jetbrains.annotations.NotNull" />
     <classNode extendsClassName="jetbrains.mps.workbench.action.BaseAction" />
   </dependency>
-  <dependency className="jetbrains.mps.core.structure.pluginSolution.plugin.LanguageConvert_ActionGroup" file="LanguageConvert_ActionGroup.java">
-    <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="java.lang.Throwable" />
-    <classNode dependClassName="jetbrains.mps.logging.Logger" />
-    <classNode extendsClassName="jetbrains.mps.plugins.actions.GeneratedActionGroup" />
-  </dependency>
   <dependency className="jetbrains.mps.core.structure.pluginSolution.plugin.PluginSolution_ApplicationPlugin" file="PluginSolution_ApplicationPlugin.java">
     <classNode dependClassName="com.intellij.openapi.extensions.PluginId" />
-    <classNode dependClassName="jetbrains.mps.core.structure.pluginSolution.plugin.ConvertStructureToNewFormat_Action" />
-    <classNode dependClassName="jetbrains.mps.core.structure.pluginSolution.plugin.LanguageConvert_ActionGroup" />
+    <classNode dependClassName="jetbrains.mps.core.structure.pluginSolution.plugin.MigrateStructureGroup_ActionGroup" />
+    <classNode dependClassName="jetbrains.mps.core.structure.pluginSolution.plugin.MigrateStructure_Action" />
     <classNode dependClassName="jetbrains.mps.ide.actions.CommonModuleActions_ActionGroup" />
     <classNode extendsClassName="jetbrains.mps.plugins.applicationplugins.BaseApplicationPlugin" />
   </dependency>

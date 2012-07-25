@@ -18,12 +18,12 @@ public class PluginSolution_ApplicationPlugin extends BaseApplicationPlugin {
 
   public void createGroups() {
     // actions w/o parameters 
-    addAction(new ConvertStructureToNewFormat_Action());
+    addAction(new MigrateStructure_Action());
     // groups 
-    addGroup(new LanguageConvert_ActionGroup());
+    addGroup(new MigrateStructureGroup_ActionGroup());
   }
 
   public void adjustRegularGroups() {
-    insertGroupIntoAnother(LanguageConvert_ActionGroup.ID, CommonModuleActions_ActionGroup.ID, CommonModuleActions_ActionGroup.LABEL_ID_refactoring);
+    insertGroupIntoAnother(MigrateStructureGroup_ActionGroup.ID, CommonModuleActions_ActionGroup.ID, CommonModuleActions_ActionGroup.LABEL_ID_refactoring);
   }
 }

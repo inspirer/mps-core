@@ -40,11 +40,11 @@
   <import index="bwy9" modelUID="r:f9198ffd-e084-425c-aa82-f2db8289f5eb(jetbrains.mps.core.query.structure)" version="0" implicit="yes" />
   <roots>
     <node type="tp4k.ActionDeclaration" typeId="tp4k.1203071646776" id="1014779104259186304">
-      <property name="name" nameId="tpck.1169194664001" value="ConvertStructureToNewFormat" />
-      <property name="caption" nameId="tp4k.1205250923097" value="Convert old structure model to new one" />
+      <property name="name" nameId="tpck.1169194664001" value="MigrateStructure" />
+      <property name="caption" nameId="tp4k.1205250923097" value="Migrate structure" />
     </node>
     <node type="tp4k.ActionGroupDeclaration" typeId="tp4k.1203087890642" id="6704189311108072718">
-      <property name="name" nameId="tpck.1169194664001" value="LanguageConvert" />
+      <property name="name" nameId="tpck.1169194664001" value="MigrateStructureGroup" />
     </node>
     <node type="tgbt.StandalonePluginDescriptor" typeId="tgbt.7520713872864775836" id="2354898832652190754" />
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="2354898832652249666">
@@ -128,7 +128,7 @@
               <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="cu2c.~SModelFqName" resolveInfo="SModelFqName" />
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="2354898832652247479">
                 <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2354898832652247482">
-                  <property name="value" nameId="tpee.1070475926801" value="_New" />
+                  <property name="value" nameId="tpee.1070475926801" value="_new" />
                 </node>
                 <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2354898832652247463">
                   <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2354898832652247444">
@@ -255,14 +255,6 @@
         </node>
       </node>
     </node>
-    <node role="parameter" roleId="tp4k.1217413222820" type="tp4k.ActionDataParameterDeclaration" typeId="tp4k.1217252042208" id="8586967776370449197">
-      <property name="name" nameId="tpck.1169194664001" value="project" />
-      <link role="key" roleId="tp4k.1217252646389" targetNodeId="6tyf.~PlatformDataKeys%dPROJECT" resolveInfo="PROJECT" />
-    </node>
-    <node role="parameter" roleId="tp4k.1217413222820" type="tp4k.ActionDataParameterDeclaration" typeId="tp4k.1217252042208" id="8586967776370449198">
-      <property name="name" nameId="tpck.1169194664001" value="frame" />
-      <link role="key" roleId="tp4k.1217252646389" targetNodeId="5xh9.~MPSCommonDataKeys%dFRAME" resolveInfo="FRAME" />
-    </node>
     <node role="parameter" roleId="tp4k.1217413222820" type="tp4k.ActionDataParameterDeclaration" typeId="tp4k.1217252042208" id="8586967776370449199">
       <property name="name" nameId="tpck.1169194664001" value="module" />
       <link role="key" roleId="tp4k.1217252646389" targetNodeId="5xh9.~MPSCommonDataKeys%dMODULE" resolveInfo="MODULE" />
@@ -293,7 +285,7 @@
     </node>
     <node role="contents" roleId="tp4k.1207145245948" type="tp4k.ElementListContents" typeId="tp4k.1207145163717" id="6704189311108072721">
       <node role="reference" roleId="tp4k.1207145201301" type="tp4k.ActionInstance" typeId="tp4k.1203088046679" id="6704189311108072722">
-        <link role="action" roleId="tp4k.1203088061055" targetNodeId="1014779104259186304" resolveInfo="ConvertStructureToNewFormat" />
+        <link role="action" roleId="tp4k.1203088061055" targetNodeId="1014779104259186304" resolveInfo="MigrateStructure" />
       </node>
     </node>
   </root>
