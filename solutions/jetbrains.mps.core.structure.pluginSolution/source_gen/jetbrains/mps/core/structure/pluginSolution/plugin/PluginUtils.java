@@ -17,6 +17,7 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.smodel.DynamicReference;
+import jetbrains.mps.internal.collections.runtime.ISelector;
 import jetbrains.mps.lang.structure.behavior.PrimitiveDataTypeDeclaration_Behavior;
 import java.util.Set;
 import java.util.HashSet;
@@ -104,27 +105,27 @@ public class PluginUtils {
     }
 
     // refs and children 
-    List<SNode> links = new ArrayList<SNode>();
-    for (SNode linkNode : SLinkOperations.getTargets(source, "linkDeclaration", true)) {
-      SNode link = null;
-      if (SPropertyOperations.hasValue(linkNode, "metaClass", "reference", "reference")) {
-        link = SConceptOperations.createNewNode("jetbrains.mps.core.structure.structure.SReference", null);
-      } else if (SPropertyOperations.hasValue(linkNode, "metaClass", "aggregation", "reference")) {
-        link = SConceptOperations.createNewNode("jetbrains.mps.core.structure.structure.SChildLink", null);
+    Iterable<SNode> links = ListSequence.fromList(SLinkOperations.getTargets(source, "linkDeclaration", true)).select(new ISelector<SNode, SNode>() {
+      public SNode select(SNode it) {
+        return convertLinkDeclaration(it);
       }
-      SPropertyOperations.set(link, "name", SPropertyOperations.getString(linkNode, "role"));
-      link.addReference(new DynamicReference("target", link, null, SPropertyOperations.getString(SLinkOperations.getTarget(linkNode, "target", false), "name")));
-      SLinkOperations.setTarget(link, "cardinality", SConceptOperations.createNewNode("jetbrains.mps.core.structure.structure.SCardinality", null), true);
-      SPropertyOperations.set(SLinkOperations.getTarget(link, "cardinality", true), "isRequired", "" + (SPropertyOperations.hasValue(linkNode, "sourceCardinality", "1", "0..1") || SPropertyOperations.hasValue(linkNode, "sourceCardinality", "1..n", "0..1")));
-      SPropertyOperations.set(SLinkOperations.getTarget(link, "cardinality", true), "isMultiple", "" + (SPropertyOperations.hasValue(linkNode, "sourceCardinality", "0..n", "0..1") || SPropertyOperations.hasValue(linkNode, "sourceCardinality", "1..n", "0..1")));
-      ListSequence.fromList(links).addElement(link);
-    }
-    if (ListSequence.fromList(links).isNotEmpty()) {
-      ListSequence.fromList(SNodeOperations.getChildren(destination, SLinkOperations.findLinkDeclaration("jetbrains.mps.core.structure.structure.SAbstractConcept", "members"))).addSequence(ListSequence.fromList(links));
+    });
+    if (Sequence.fromIterable(links).isNotEmpty()) {
+      ListSequence.fromList(SNodeOperations.getChildren(destination, SLinkOperations.findLinkDeclaration("jetbrains.mps.core.structure.structure.SAbstractConcept", "members"))).addSequence(Sequence.fromIterable(links));
       ListSequence.fromList(SNodeOperations.getChildren(destination, SLinkOperations.findLinkDeclaration("jetbrains.mps.core.structure.structure.SAbstractConcept", "members"))).addElement(SConceptOperations.createNewNode("jetbrains.mps.core.structure.structure.SConceptMemberEmptyLine", null));
     }
 
-    // concept property 
+    // concept property (abstract, final, etc) 
+    Iterable<SNode> conceptProperties = ListSequence.fromList(SLinkOperations.getTargets(source, "conceptProperty", true)).select(new ISelector<SNode, SNode>() {
+      public SNode select(SNode it) {
+        return convertConceptProperty(it);
+      }
+    });
+    if (Sequence.fromIterable(conceptProperties).isNotEmpty()) {
+      ListSequence.fromList(SNodeOperations.getChildren(destination, SLinkOperations.findLinkDeclaration("jetbrains.mps.core.structure.structure.SAbstractConcept", "members"))).addElement(new PluginUtils.QuotationClass_l4wyvj_a0a0a0o0e().createNode());
+      ListSequence.fromList(SNodeOperations.getChildren(destination, SLinkOperations.findLinkDeclaration("jetbrains.mps.core.structure.structure.SAbstractConcept", "members"))).addSequence(Sequence.fromIterable(conceptProperties));
+      ListSequence.fromList(SNodeOperations.getChildren(destination, SLinkOperations.findLinkDeclaration("jetbrains.mps.core.structure.structure.SAbstractConcept", "members"))).addElement(SConceptOperations.createNewNode("jetbrains.mps.core.structure.structure.SConceptMemberEmptyLine", null));
+    }
 
     // concept link 
 
@@ -133,8 +134,39 @@ public class PluginUtils {
     removeLastChild(destination);
   }
 
+  public static SNode convertLinkDeclaration(SNode linkNode) {
+    SNode link = null;
+    if (SPropertyOperations.hasValue(linkNode, "metaClass", "reference", "reference")) {
+      link = SConceptOperations.createNewNode("jetbrains.mps.core.structure.structure.SReference", null);
+    } else if (SPropertyOperations.hasValue(linkNode, "metaClass", "aggregation", "reference")) {
+      link = SConceptOperations.createNewNode("jetbrains.mps.core.structure.structure.SChildLink", null);
+    }
+    SPropertyOperations.set(link, "name", SPropertyOperations.getString(linkNode, "role"));
+    link.addReference(new DynamicReference("target", link, null, SPropertyOperations.getString(SLinkOperations.getTarget(linkNode, "target", false), "name")));
+    SLinkOperations.setTarget(link, "cardinality", SConceptOperations.createNewNode("jetbrains.mps.core.structure.structure.SCardinality", null), true);
+    SPropertyOperations.set(SLinkOperations.getTarget(link, "cardinality", true), "isRequired", "" + (SPropertyOperations.hasValue(linkNode, "sourceCardinality", "1", "0..1") || SPropertyOperations.hasValue(linkNode, "sourceCardinality", "1..n", "0..1")));
+    SPropertyOperations.set(SLinkOperations.getTarget(link, "cardinality", true), "isMultiple", "" + (SPropertyOperations.hasValue(linkNode, "sourceCardinality", "0..n", "0..1") || SPropertyOperations.hasValue(linkNode, "sourceCardinality", "1..n", "0..1")));
+    return link;
+  }
+
+  public static SNode convertConceptProperty(SNode conceptProperty) {
+    String name = SPropertyOperations.getString(SLinkOperations.getTarget(conceptProperty, "conceptPropertyDeclaration", false), "name");
+    if (SNodeOperations.isInstanceOf(conceptProperty, "jetbrains.mps.lang.structure.structure.BooleanConceptProperty")) {
+      return new PluginUtils.QuotationClass_l4wyvj_a0a0b0g().createNode("s_" + name);
+    }
+    if (SNodeOperations.isInstanceOf(conceptProperty, "jetbrains.mps.lang.structure.structure.IntegerConceptProperty")) {
+      int value = SPropertyOperations.getInteger(((SNode) conceptProperty), "value");
+      return new PluginUtils.QuotationClass_l4wyvj_a0b0c0g().createNode("" + value, "s_" + name);
+    }
+    if (SNodeOperations.isInstanceOf(conceptProperty, "jetbrains.mps.lang.structure.structure.StringConceptProperty")) {
+      String value = SPropertyOperations.getString(((SNode) conceptProperty), "value");
+      return new PluginUtils.QuotationClass_l4wyvj_a0b0d0g().createNode(value, "s_" + name);
+    }
+    return null;
+  }
+
   public static SNode convertProperty(SNode property) {
-    return new PluginUtils.QuotationClass_l4wyvj_a0a0f().createNode(convertPropertyType(SLinkOperations.getTarget(property, "dataType", false)), SPropertyOperations.getString(property, "name"));
+    return new PluginUtils.QuotationClass_l4wyvj_a0a0h().createNode(convertPropertyType(SLinkOperations.getTarget(property, "dataType", false)), SPropertyOperations.getString(property, "name"));
   }
 
   public static SNode convertPropertyType(SNode typeDeclaration) {
@@ -150,11 +182,11 @@ public class PluginUtils {
 
   public static SNode convertPrimitivePropertyType(SNode typeDeclaration) {
     if (PrimitiveDataTypeDeclaration_Behavior.call_isString_1220268752134(typeDeclaration)) {
-      return new PluginUtils.QuotationClass_l4wyvj_a0a0a0h().createNode();
+      return new PluginUtils.QuotationClass_l4wyvj_a0a0a0j().createNode();
     } else if (PrimitiveDataTypeDeclaration_Behavior.call_isInteger_1220268780075(typeDeclaration)) {
-      return new PluginUtils.QuotationClass_l4wyvj_a0a0a0a7().createNode();
+      return new PluginUtils.QuotationClass_l4wyvj_a0a0a0a9().createNode();
     } else if (PrimitiveDataTypeDeclaration_Behavior.call_isBoolean_1220268791641(typeDeclaration)) {
-      return new PluginUtils.QuotationClass_l4wyvj_a0a0b0a7().createNode();
+      return new PluginUtils.QuotationClass_l4wyvj_a0a0b0a9().createNode();
     } else {
       return null;
     }
@@ -162,11 +194,11 @@ public class PluginUtils {
 
   public static SNode convertConstrainedDataType(SNode typeDeclaration) {
     // todo 
-    return new PluginUtils.QuotationClass_l4wyvj_a0b0i().createNode();
+    return new PluginUtils.QuotationClass_l4wyvj_a0b0k().createNode();
   }
 
   public static SNode convertEnumerationDataType(SNode typeDeclaration) {
-    SNode result = new PluginUtils.QuotationClass_l4wyvj_a0a0a9().createNode();
+    SNode result = new PluginUtils.QuotationClass_l4wyvj_a0a0a11().createNode();
     DynamicReference ref = new DynamicReference("enum", result, null, SPropertyOperations.getString(typeDeclaration, "name"));
     result.addReference(ref);
 
@@ -251,8 +283,101 @@ public class PluginUtils {
     }
   }
 
-  public static class QuotationClass_l4wyvj_a0a0f {
-    public QuotationClass_l4wyvj_a0a0f() {
+  public static class QuotationClass_l4wyvj_a0a0a0o0e {
+    public QuotationClass_l4wyvj_a0a0a0o0e() {
+    }
+
+    public SNode createNode() {
+      SNode result = null;
+      Set<SNode> _parameterValues_129834374 = new HashSet<SNode>();
+      SNode quotedNode_1 = null;
+      {
+        quotedNode_1 = SModelUtil_new.instantiateConceptDeclaration("jetbrains.mps.core.structure.structure.SConceptMemberComment", null, GlobalScope.getInstance(), false);
+        SNode quotedNode1_2 = quotedNode_1;
+        quotedNode1_2.setProperty("comment", "concept properties");
+        result = quotedNode1_2;
+      }
+      return result;
+    }
+  }
+
+  public static class QuotationClass_l4wyvj_a0a0b0g {
+    public QuotationClass_l4wyvj_a0a0b0g() {
+    }
+
+    public SNode createNode(Object parameter_5) {
+      SNode result = null;
+      Set<SNode> _parameterValues_129834374 = new HashSet<SNode>();
+      SNode quotedNode_1 = null;
+      SNode quotedNode_2 = null;
+      {
+        quotedNode_1 = SModelUtil_new.instantiateConceptDeclaration("jetbrains.mps.core.smodel.structure.SConceptQuery", null, GlobalScope.getInstance(), false);
+        SNode quotedNode1_3 = quotedNode_1;
+        quotedNode1_3.setProperty("name", (String) parameter_5);
+        {
+          quotedNode_2 = SModelUtil_new.instantiateConceptDeclaration("jetbrains.mps.core.query.structure.MqlBoolLiteral", null, GlobalScope.getInstance(), false);
+          SNode quotedNode1_4 = quotedNode_2;
+          quotedNode1_4.setProperty("value", "true");
+          quotedNode_1.addChild("body", quotedNode1_4);
+        }
+        result = quotedNode1_3;
+      }
+      return result;
+    }
+  }
+
+  public static class QuotationClass_l4wyvj_a0b0c0g {
+    public QuotationClass_l4wyvj_a0b0c0g() {
+    }
+
+    public SNode createNode(Object parameter_5, Object parameter_6) {
+      SNode result = null;
+      Set<SNode> _parameterValues_129834374 = new HashSet<SNode>();
+      SNode quotedNode_1 = null;
+      SNode quotedNode_2 = null;
+      {
+        quotedNode_1 = SModelUtil_new.instantiateConceptDeclaration("jetbrains.mps.core.smodel.structure.SConceptQuery", null, GlobalScope.getInstance(), false);
+        SNode quotedNode1_3 = quotedNode_1;
+        quotedNode1_3.setProperty("name", (String) parameter_6);
+        {
+          quotedNode_2 = SModelUtil_new.instantiateConceptDeclaration("jetbrains.mps.core.query.structure.MqlIntLiteral", null, GlobalScope.getInstance(), false);
+          SNode quotedNode1_4 = quotedNode_2;
+          quotedNode1_4.setProperty("value", (String) parameter_5);
+          quotedNode_1.addChild("body", quotedNode1_4);
+        }
+        result = quotedNode1_3;
+      }
+      return result;
+    }
+  }
+
+  public static class QuotationClass_l4wyvj_a0b0d0g {
+    public QuotationClass_l4wyvj_a0b0d0g() {
+    }
+
+    public SNode createNode(Object parameter_5, Object parameter_6) {
+      SNode result = null;
+      Set<SNode> _parameterValues_129834374 = new HashSet<SNode>();
+      SNode quotedNode_1 = null;
+      SNode quotedNode_2 = null;
+      {
+        quotedNode_1 = SModelUtil_new.instantiateConceptDeclaration("jetbrains.mps.core.smodel.structure.SConceptQuery", null, GlobalScope.getInstance(), false);
+        SNode quotedNode1_3 = quotedNode_1;
+        quotedNode1_3.setProperty("name", (String) parameter_6);
+        {
+          quotedNode_2 = SModelUtil_new.instantiateConceptDeclaration("jetbrains.mps.core.query.structure.MqlStringLiteral", null, GlobalScope.getInstance(), false);
+          SNode quotedNode1_4 = quotedNode_2;
+          quotedNode1_4.setProperty("value", (String) parameter_5);
+          quotedNode_1.addChild("body", quotedNode1_4);
+        }
+        result = quotedNode1_3;
+      }
+      return result;
+    }
+  }
+
+  public static class QuotationClass_l4wyvj_a0a0h {
+    public QuotationClass_l4wyvj_a0a0h() {
     }
 
     public SNode createNode(Object parameter_5, Object parameter_6) {
@@ -283,8 +408,8 @@ public class PluginUtils {
     }
   }
 
-  public static class QuotationClass_l4wyvj_a0a0a0h {
-    public QuotationClass_l4wyvj_a0a0a0h() {
+  public static class QuotationClass_l4wyvj_a0a0a0j {
+    public QuotationClass_l4wyvj_a0a0a0j() {
     }
 
     public SNode createNode() {
@@ -300,8 +425,8 @@ public class PluginUtils {
     }
   }
 
-  public static class QuotationClass_l4wyvj_a0a0a0a7 {
-    public QuotationClass_l4wyvj_a0a0a0a7() {
+  public static class QuotationClass_l4wyvj_a0a0a0a9 {
+    public QuotationClass_l4wyvj_a0a0a0a9() {
     }
 
     public SNode createNode() {
@@ -318,8 +443,8 @@ public class PluginUtils {
     }
   }
 
-  public static class QuotationClass_l4wyvj_a0a0b0a7 {
-    public QuotationClass_l4wyvj_a0a0b0a7() {
+  public static class QuotationClass_l4wyvj_a0a0b0a9 {
+    public QuotationClass_l4wyvj_a0a0b0a9() {
     }
 
     public SNode createNode() {
@@ -336,8 +461,8 @@ public class PluginUtils {
     }
   }
 
-  public static class QuotationClass_l4wyvj_a0b0i {
-    public QuotationClass_l4wyvj_a0b0i() {
+  public static class QuotationClass_l4wyvj_a0b0k {
+    public QuotationClass_l4wyvj_a0b0k() {
     }
 
     public SNode createNode() {
@@ -354,8 +479,8 @@ public class PluginUtils {
     }
   }
 
-  public static class QuotationClass_l4wyvj_a0a0a9 {
-    public QuotationClass_l4wyvj_a0a0a9() {
+  public static class QuotationClass_l4wyvj_a0a0a11 {
+    public QuotationClass_l4wyvj_a0a0a11() {
     }
 
     public SNode createNode() {
