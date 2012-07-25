@@ -79,23 +79,58 @@ public class PluginUtils {
   }
 
   public static SNode convertEnumeration(SNode enumeration) {
-    return new PluginUtils.QuotationClass_l4wyvj_a0a0d().createNode(SPropertyOperations.getString(enumeration, "name"));
+    SNode result = new PluginUtils.QuotationClass_l4wyvj_a0a0a3().createNode(SPropertyOperations.getString(enumeration, "name"));
+    for (SNode member : ListSequence.fromList(SLinkOperations.getTargets(enumeration, "member", true))) {
+      ListSequence.fromList(SNodeOperations.getChildren(result, SLinkOperations.findLinkDeclaration("jetbrains.mps.core.structure.structure.SEnumeration", "members"))).addElement(new PluginUtils.QuotationClass_l4wyvj_a0a0a0b0d().createNode(SPropertyOperations.getString(member, "internalValue")));
+    }
+    if ((SLinkOperations.getTarget(enumeration, "defaultMember", false) != null)) {
+      result.addReference(new DynamicReference("default", result, null, SPropertyOperations.getString(SLinkOperations.getTarget(enumeration, "defaultMember", false), "internalValue")));
+    }
+    return result;
   }
 
   public static void updateAbstractConceptDeclarationFields(SNode source, SNode destination) {
     // name 
     SPropertyOperations.set(destination, "name", SPropertyOperations.getString(source, "name"));
 
-    List<SNode> members = new ArrayList<SNode>();
-
     // properties 
+    List<SNode> properties = new ArrayList<SNode>();
     for (SNode property : SLinkOperations.getTargets(source, "propertyDeclaration", true)) {
-      members.add(convertProperty(property));
+      properties.add(convertProperty(property));
     }
-    if (ListSequence.fromList(members).isNotEmpty()) {
-      ListSequence.fromList(SNodeOperations.getChildren(destination, SLinkOperations.findLinkDeclaration("jetbrains.mps.core.structure.structure.SAbstractConcept", "members"))).addSequence(ListSequence.fromList(members));
+    if (ListSequence.fromList(properties).isNotEmpty()) {
+      ListSequence.fromList(SNodeOperations.getChildren(destination, SLinkOperations.findLinkDeclaration("jetbrains.mps.core.structure.structure.SAbstractConcept", "members"))).addSequence(ListSequence.fromList(properties));
       ListSequence.fromList(SNodeOperations.getChildren(destination, SLinkOperations.findLinkDeclaration("jetbrains.mps.core.structure.structure.SAbstractConcept", "members"))).addElement(SConceptOperations.createNewNode("jetbrains.mps.core.structure.structure.SConceptMemberEmptyLine", null));
     }
+
+    // refs and children 
+    List<SNode> links = new ArrayList<SNode>();
+    for (SNode linkNode : SLinkOperations.getTargets(source, "linkDeclaration", true)) {
+      SNode link = null;
+      if (SPropertyOperations.hasValue(linkNode, "metaClass", "reference", "reference")) {
+        link = SConceptOperations.createNewNode("jetbrains.mps.core.structure.structure.SReference", null);
+      } else if (SPropertyOperations.hasValue(linkNode, "metaClass", "aggregation", "reference")) {
+        link = SConceptOperations.createNewNode("jetbrains.mps.core.structure.structure.SChildLink", null);
+      }
+      SPropertyOperations.set(link, "name", SPropertyOperations.getString(linkNode, "role"));
+      link.addReference(new DynamicReference("target", link, null, SPropertyOperations.getString(SLinkOperations.getTarget(linkNode, "target", false), "name")));
+      SLinkOperations.setTarget(link, "cardinality", SConceptOperations.createNewNode("jetbrains.mps.core.structure.structure.SCardinality", null), true);
+      SPropertyOperations.set(SLinkOperations.getTarget(link, "cardinality", true), "isRequired", "" + (SPropertyOperations.hasValue(linkNode, "sourceCardinality", "1", "0..1") || SPropertyOperations.hasValue(linkNode, "sourceCardinality", "1..n", "0..1")));
+      SPropertyOperations.set(SLinkOperations.getTarget(link, "cardinality", true), "isMultiple", "" + (SPropertyOperations.hasValue(linkNode, "sourceCardinality", "0..n", "0..1") || SPropertyOperations.hasValue(linkNode, "sourceCardinality", "1..n", "0..1")));
+      ListSequence.fromList(links).addElement(link);
+    }
+    if (ListSequence.fromList(links).isNotEmpty()) {
+      ListSequence.fromList(SNodeOperations.getChildren(destination, SLinkOperations.findLinkDeclaration("jetbrains.mps.core.structure.structure.SAbstractConcept", "members"))).addSequence(ListSequence.fromList(links));
+      ListSequence.fromList(SNodeOperations.getChildren(destination, SLinkOperations.findLinkDeclaration("jetbrains.mps.core.structure.structure.SAbstractConcept", "members"))).addElement(SConceptOperations.createNewNode("jetbrains.mps.core.structure.structure.SConceptMemberEmptyLine", null));
+    }
+
+    // concept property 
+
+    // concept link 
+
+    // concept property value 
+
+    removeLastChild(destination);
   }
 
   public static SNode convertProperty(SNode property) {
@@ -155,6 +190,13 @@ public class PluginUtils {
     return result;
   }
 
+  public static void removeLastChild(SNode node) {
+    if (SNodeOperations.getChildren(node).isEmpty()) {
+      return;
+    }
+    SNodeOperations.deleteNode(SNodeOperations.getChildren(node).get(SNodeOperations.getChildren(node).size() - 1));
+  }
+
   public static class QuotationClass_l4wyvj_a0a0a0 {
     public QuotationClass_l4wyvj_a0a0a0() {
     }
@@ -173,8 +215,8 @@ public class PluginUtils {
     }
   }
 
-  public static class QuotationClass_l4wyvj_a0a0d {
-    public QuotationClass_l4wyvj_a0a0d() {
+  public static class QuotationClass_l4wyvj_a0a0a3 {
+    public QuotationClass_l4wyvj_a0a0a3() {
     }
 
     public SNode createNode(Object parameter_3) {
@@ -183,6 +225,24 @@ public class PluginUtils {
       SNode quotedNode_1 = null;
       {
         quotedNode_1 = SModelUtil_new.instantiateConceptDeclaration("jetbrains.mps.core.structure.structure.SEnumeration", null, GlobalScope.getInstance(), false);
+        SNode quotedNode1_2 = quotedNode_1;
+        quotedNode1_2.setProperty("name", (String) parameter_3);
+        result = quotedNode1_2;
+      }
+      return result;
+    }
+  }
+
+  public static class QuotationClass_l4wyvj_a0a0a0b0d {
+    public QuotationClass_l4wyvj_a0a0a0b0d() {
+    }
+
+    public SNode createNode(Object parameter_3) {
+      SNode result = null;
+      Set<SNode> _parameterValues_129834374 = new HashSet<SNode>();
+      SNode quotedNode_1 = null;
+      {
+        quotedNode_1 = SModelUtil_new.instantiateConceptDeclaration("jetbrains.mps.core.structure.structure.SEnumerationMember", null, GlobalScope.getInstance(), false);
         SNode quotedNode1_2 = quotedNode_1;
         quotedNode1_2.setProperty("name", (String) parameter_3);
         result = quotedNode1_2;
