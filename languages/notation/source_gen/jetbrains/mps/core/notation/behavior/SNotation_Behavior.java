@@ -14,10 +14,6 @@ public class SNotation_Behavior {
   public static void init(SNode thisNode) {
   }
 
-  public static boolean virtual_isMultiline_3647933405694785195(SNode thisNode) {
-    return true;
-  }
-
   public static Scope virtual_getScope_3734116213129936182(SNode thisNode, SNode kind, SNode child) {
     if (SNodeOperations.isInstanceOf(SLinkOperations.getTarget(thisNode, "element", false), "jetbrains.mps.core.structure.structure.SAbstractConcept") && SConceptOperations.isSubConceptOf(kind, "jetbrains.mps.core.structure.structure.SConceptMember")) {
       return ScopeProvider_Behavior.call_getScope_3734116213129936182(SNodeOperations.cast(SLinkOperations.getTarget(thisNode, "element", false), "jetbrains.mps.core.structure.structure.SAbstractConcept"), kind, null);

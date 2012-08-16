@@ -14,6 +14,7 @@ import jetbrains.mps.core.structure.editor.default_StyleSheet;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Indent;
 import jetbrains.mps.smodel.IScope;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import jetbrains.mps.core.notation.behavior.SNotationPart_Behavior;
 
 public class SNotationTab_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
@@ -66,6 +67,6 @@ public class SNotationTab_Editor extends DefaultNodeEditor {
   }
 
   private static boolean renderingCondition_i2cn6u_a0a(SNode node, EditorContext editorContext, IScope scope) {
-    return SNodeOperations.isInstanceOf(SNodeOperations.getPrevSibling(node), "jetbrains.mps.core.notation.structure.SNotationNewLine");
+    return SNodeOperations.isInstanceOf(SNodeOperations.getPrevSibling(node), "jetbrains.mps.core.notation.structure.SNotationNewLine") && SNotationPart_Behavior.call_inMultilineContext_7465902928068905821(node);
   }
 }

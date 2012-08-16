@@ -30,6 +30,10 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="mapping" />
       <link role="concept" roleId="tp1t.1213093996982" targetNodeId="74m3.7805033636902348039" resolveInfo="SStructureEntityRef" />
     </node>
+    <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="7465902928068860708">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="parts" />
+      <link role="concept" roleId="tp1t.1213093996982" targetNodeId="74m3.3647933405694693953" resolveInfo="SNotationPart" />
+    </node>
   </roots>
   <root id="3129031437528291156">
     <node role="canBeAncestor" roleId="tp1t.7852712695066883424" type="tp1t.ConstraintFunction_CanBeAnAncestor" typeId="tp1t.7855321458717464197" id="3129031437528334255">
@@ -158,5 +162,6 @@
     </node>
   </root>
   <root id="146911029171900695" />
+  <root id="7465902928068860708" />
 </model>
 

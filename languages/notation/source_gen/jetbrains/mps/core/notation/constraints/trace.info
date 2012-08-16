@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debugInfo>
-  <unitInfo fileName="ConstraintsAspectDescriptor.java" startLine="9" startPosition="0" endLine="33" endPosition="0" unitName="jetbrains.mps.core.notation.constraints.ConstraintsAspectDescriptor" />
+  <unitInfo fileName="ConstraintsAspectDescriptor.java" startLine="9" startPosition="0" endLine="35" endPosition="0" unitName="jetbrains.mps.core.notation.constraints.ConstraintsAspectDescriptor" />
   <root nodeId="146911029171891504">
     <nodeInfo nodeId="146911029171891504" fileName="SStructurePropertyRef_Constraints.java" startLine="21" startPosition="82" endLine="22" endPosition="193" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="breakingNode_dd2wtm_a0a0a0a0a1a0b0a1a0" />
     <nodeInfo nodeId="146911029171891504" fileName="SStructurePropertyRef_Constraints.java" startLine="24" startPosition="46" endLine="25" endPosition="73" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
@@ -175,6 +175,13 @@
       <varInfo nodeId="3129031437528339306" varName="operationContext" />
     </scopeInfo>
     <unitInfo nodeId="3129031437528339306" fileName="SNotationQuantifier_Constraints.java" startLine="13" startPosition="0" endLine="46" endPosition="0" unitName="jetbrains.mps.core.notation.constraints.SNotationQuantifier_Constraints" />
+  </root>
+  <root nodeId="7465902928068860708">
+    <nodeInfo nodeId="7465902928068860708" fileName="SNotationPart_Constraints.java" startLine="8" startPosition="38" endLine="9" endPosition="65" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+    <nodeInfo nodeId="7465902928068860708" fileName="SNotationPart_Constraints.java" startLine="7" startPosition="74" endLine="10" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="SNotationPart_Constraints#()V" />
+    <scopeInfo nodeId="7465902928068860708" fileName="SNotationPart_Constraints.java" startLine="8" startPosition="38" endLine="9" endPosition="65" />
+    <scopeInfo nodeId="7465902928068860708" fileName="SNotationPart_Constraints.java" startLine="7" startPosition="74" endLine="10" endPosition="3" />
+    <unitInfo nodeId="7465902928068860708" fileName="SNotationPart_Constraints.java" startLine="7" startPosition="0" endLine="12" endPosition="0" unitName="jetbrains.mps.core.notation.constraints.SNotationPart_Constraints" />
   </root>
   <root nodeId="7805033636902348043">
     <nodeInfo nodeId="7805033636902348043" fileName="SStructureLinkRef_Constraints.java" startLine="21" startPosition="78" endLine="22" endPosition="194" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="breakingNode_n2tft4_a0a0a0a0a1a0b0a1a0" />

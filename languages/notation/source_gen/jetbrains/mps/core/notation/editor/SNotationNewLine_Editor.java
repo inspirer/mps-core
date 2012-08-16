@@ -6,19 +6,41 @@ import jetbrains.mps.nodeEditor.DefaultNodeEditor;
 import jetbrains.mps.nodeEditor.cells.EditorCell;
 import jetbrains.mps.nodeEditor.EditorContext;
 import jetbrains.mps.smodel.SNode;
+import jetbrains.mps.nodeEditor.cells.EditorCell_Collection;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 import jetbrains.mps.core.structure.editor.default_StyleSheet;
 import jetbrains.mps.nodeEditor.style.Style;
 import jetbrains.mps.nodeEditor.style.StyleAttributes;
+import jetbrains.mps.smodel.IScope;
+import jetbrains.mps.core.notation.behavior.SNotationPart_Behavior;
 
 public class SNotationNewLine_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return this.createConstant_nhowx2_a(editorContext, node);
+    return this.createCollection_nhowx2_a(editorContext, node);
   }
 
-  private EditorCell createConstant_nhowx2_a(EditorContext editorContext, SNode node) {
+  private EditorCell createAlternation_nhowx2_a0(EditorContext editorContext, SNode node) {
+    boolean alternationCondition = true;
+    alternationCondition = SNotationNewLine_Editor.renderingCondition_nhowx2_a0a(node, editorContext, editorContext.getOperationContext().getScope());
+    EditorCell editorCell = null;
+    if (alternationCondition) {
+      editorCell = this.createConstant_nhowx2_a0a(editorContext, node);
+    } else {
+      editorCell = this.createConstant_nhowx2_a0a_0(editorContext, node);
+    }
+    return editorCell;
+  }
+
+  private EditorCell createCollection_nhowx2_a(EditorContext editorContext, SNode node) {
+    EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
+    editorCell.setCellId("Collection_nhowx2_a");
+    editorCell.addEditorCell(this.createAlternation_nhowx2_a0(editorContext, node));
+    return editorCell;
+  }
+
+  private EditorCell createConstant_nhowx2_a0a(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "\\n");
-    editorCell.setCellId("Constant_nhowx2_a");
+    editorCell.setCellId("Constant_nhowx2_a0a");
     default_StyleSheet.getKeyword(editorCell).apply(editorCell);
     {
       Style style = editorCell.getStyle();
@@ -26,5 +48,17 @@ public class SNotationNewLine_Editor extends DefaultNodeEditor {
     }
     editorCell.setDefaultText("");
     return editorCell;
+  }
+
+  private EditorCell createConstant_nhowx2_a0a_0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "\\n");
+    editorCell.setCellId("Constant_nhowx2_a0a_0");
+    default_StyleSheet.getKeyword(editorCell).apply(editorCell);
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+
+  private static boolean renderingCondition_nhowx2_a0a(SNode node, EditorContext editorContext, IScope scope) {
+    return SNotationPart_Behavior.call_inMultilineContext_7465902928068905821(node);
   }
 }

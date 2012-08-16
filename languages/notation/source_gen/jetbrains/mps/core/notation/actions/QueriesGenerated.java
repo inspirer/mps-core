@@ -87,7 +87,7 @@ public class QueriesGenerated {
   public static void nodeFactory_NodeSetup_SNotationParentheses_5362811550739117351(final IOperationContext operationContext, final NodeSetupContext _context) {
     if (SNodeOperations.isInstanceOf(_context.getSampleNode(), "jetbrains.mps.core.notation.structure.SNotationPart") && !(SConceptOperations.isExactly(SNodeOperations.getConceptDeclaration(_context.getSampleNode()), "jetbrains.mps.core.notation.structure.SNotationPart"))) {
       ListSequence.fromList(SLinkOperations.getTargets(_context.getNewNode(), "alternatives", true)).clear();
-      SNodeFactoryOperations.addNewChild(_context.getNewNode(), "alternatives", "jetbrains.mps.core.notation.structure.SNotationAlternativePart");
+      SNodeFactoryOperations.addNewChild(_context.getNewNode(), "alternatives", "jetbrains.mps.core.notation.structure.SNotationPartList");
       ListSequence.fromList(SLinkOperations.getTargets(ListSequence.fromList(SLinkOperations.getTargets(_context.getNewNode(), "alternatives", true)).first(), "parts", true)).addElement(SNodeOperations.cast(_context.getSampleNode(), "jetbrains.mps.core.notation.structure.SNotationPart"));
     }
   }

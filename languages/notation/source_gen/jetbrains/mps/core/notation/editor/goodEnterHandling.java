@@ -29,9 +29,9 @@ public class goodEnterHandling {
 
     public void execute_internal(EditorContext editorContext, SNode node) {
       if (ListSequence.fromList(SLinkOperations.getTargets(node, "alternatives", true)).isEmpty()) {
-        SNodeFactoryOperations.addNewChild(node, "alternatives", "jetbrains.mps.core.notation.structure.SNotationAlternativePart");
+        SNodeFactoryOperations.addNewChild(node, "alternatives", "jetbrains.mps.core.notation.structure.SNotationPartList");
       } else {
-        SNodeFactoryOperations.addNewChild(ListSequence.fromList(SLinkOperations.getTargets(node, "alternatives", true)).last(), "parts", "jetbrains.mps.core.notation.structure.SNotationPart");
+        SNodeFactoryOperations.addNewChild(ListSequence.fromList(SLinkOperations.getTargets(node, "alternatives", true)).last(), "parts", "jetbrains.mps.core.notation.structure.SNotationBreak");
       }
     }
   }

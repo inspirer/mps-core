@@ -16,10 +16,6 @@ public class SNotation_BehaviorDescriptor extends SStructurePart_BehaviorDescrip
     return ScopeProvider_Behavior.virtual_getScope_7722139651431880752(thisNode, kind, role, index);
   }
 
-  public boolean virtual_isMultiline_3647933405694785195(SNode thisNode) {
-    return SNotation_Behavior.virtual_isMultiline_3647933405694785195(thisNode);
-  }
-
   public Scope virtual_getScope_3734116213129936182(SNode thisNode, SNode kind, SNode child) {
     return SNotation_Behavior.virtual_getScope_3734116213129936182(thisNode, kind, child);
   }

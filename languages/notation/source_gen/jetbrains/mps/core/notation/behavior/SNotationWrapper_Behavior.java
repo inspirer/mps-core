@@ -18,28 +18,28 @@ public class SNotationWrapper_Behavior {
 
   public static boolean call_hasSuffix_8379004527113948621(SNode thisNode) {
     BehaviorDescriptor descriptor = ConceptRegistry.getInstance().getBehaviorDescriptorForInstanceNode(thisNode);
-    return (Boolean) descriptor.invoke(Boolean.class, SNodeOperations.cast(thisNode, "jetbrains.mps.core.notation.structure.SNotationWrapper"), "virtual_hasSuffix_8379004527113948621", PARAMETERS_8379004527113948621);
+    return (Boolean) descriptor.invoke(Boolean.class, SNodeOperations.cast(thisNode, "jetbrains.mps.core.notation.structure.SNotationWrapper"), "virtual_hasSuffix_8379004527113948621", PARAMETERS_8379004527113948621, new Object[]{});
   }
 
   public static boolean call_hasPrefix_8379004527113948625(SNode thisNode) {
     BehaviorDescriptor descriptor = ConceptRegistry.getInstance().getBehaviorDescriptorForInstanceNode(thisNode);
-    return (Boolean) descriptor.invoke(Boolean.class, SNodeOperations.cast(thisNode, "jetbrains.mps.core.notation.structure.SNotationWrapper"), "virtual_hasPrefix_8379004527113948625", PARAMETERS_8379004527113948625);
+    return (Boolean) descriptor.invoke(Boolean.class, SNodeOperations.cast(thisNode, "jetbrains.mps.core.notation.structure.SNotationWrapper"), "virtual_hasPrefix_8379004527113948625", PARAMETERS_8379004527113948625, new Object[]{});
   }
 
   public static int call_getPrio_2711998566963954000(SNode thisNode) {
     BehaviorDescriptor descriptor = ConceptRegistry.getInstance().getBehaviorDescriptorForInstanceNode(thisNode);
-    return (Integer) descriptor.invoke(Integer.class, SNodeOperations.cast(thisNode, "jetbrains.mps.core.notation.structure.SNotationWrapper"), "virtual_getPrio_2711998566963954000", PARAMETERS_2711998566963954000);
+    return (Integer) descriptor.invoke(Integer.class, SNodeOperations.cast(thisNode, "jetbrains.mps.core.notation.structure.SNotationWrapper"), "virtual_getPrio_2711998566963954000", PARAMETERS_2711998566963954000, new Object[]{});
   }
 
   public static boolean callSuper_hasSuffix_8379004527113948621(SNode thisNode, String callerConceptFqName) {
-    return (Boolean) BehaviorManager.getInstance().invokeSuper(Boolean.class, SNodeOperations.cast(thisNode, "jetbrains.mps.core.notation.structure.SNotationWrapper"), callerConceptFqName, "virtual_hasSuffix_8379004527113948621", PARAMETERS_8379004527113948621);
+    return (Boolean) BehaviorManager.getInstance().invokeSuper(Boolean.class, SNodeOperations.cast(thisNode, "jetbrains.mps.core.notation.structure.SNotationWrapper"), callerConceptFqName, "virtual_hasSuffix_8379004527113948621", PARAMETERS_8379004527113948621, new Object[]{});
   }
 
   public static boolean callSuper_hasPrefix_8379004527113948625(SNode thisNode, String callerConceptFqName) {
-    return (Boolean) BehaviorManager.getInstance().invokeSuper(Boolean.class, SNodeOperations.cast(thisNode, "jetbrains.mps.core.notation.structure.SNotationWrapper"), callerConceptFqName, "virtual_hasPrefix_8379004527113948625", PARAMETERS_8379004527113948625);
+    return (Boolean) BehaviorManager.getInstance().invokeSuper(Boolean.class, SNodeOperations.cast(thisNode, "jetbrains.mps.core.notation.structure.SNotationWrapper"), callerConceptFqName, "virtual_hasPrefix_8379004527113948625", PARAMETERS_8379004527113948625, new Object[]{});
   }
 
   public static int callSuper_getPrio_2711998566963954000(SNode thisNode, String callerConceptFqName) {
-    return (Integer) BehaviorManager.getInstance().invokeSuper(Integer.class, SNodeOperations.cast(thisNode, "jetbrains.mps.core.notation.structure.SNotationWrapper"), callerConceptFqName, "virtual_getPrio_2711998566963954000", PARAMETERS_2711998566963954000);
+    return (Integer) BehaviorManager.getInstance().invokeSuper(Integer.class, SNodeOperations.cast(thisNode, "jetbrains.mps.core.notation.structure.SNotationWrapper"), callerConceptFqName, "virtual_getPrio_2711998566963954000", PARAMETERS_2711998566963954000, new Object[]{});
   }
 }

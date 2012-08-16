@@ -4,6 +4,7 @@
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.Arrays" />
     <classNode dependClassName="jetbrains.mps.core.notation.constraints.SNotationMapping_Constraints" />
+    <classNode dependClassName="jetbrains.mps.core.notation.constraints.SNotationPart_Constraints" />
     <classNode dependClassName="jetbrains.mps.core.notation.constraints.SNotationQuantifier_Constraints" />
     <classNode dependClassName="jetbrains.mps.core.notation.constraints.SStructureEntityRef_Constraints" />
     <classNode dependClassName="jetbrains.mps.core.notation.constraints.SStructureLinkRef_Constraints" />
@@ -21,6 +22,9 @@
     <classNode dependClassName="jetbrains.mps.smodel.SNodePointer" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.CheckingNodeContext" />
     <classNode dependClassName="org.jetbrains.annotations.Nullable" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor" />
+  </dependency>
+  <dependency className="jetbrains.mps.core.notation.constraints.SNotationPart_Constraints" file="SNotationPart_Constraints.java">
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor" />
   </dependency>
   <dependency className="jetbrains.mps.core.notation.constraints.SNotationQuantifier_Constraints" file="SNotationQuantifier_Constraints.java">

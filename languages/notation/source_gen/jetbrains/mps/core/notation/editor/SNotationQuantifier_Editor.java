@@ -64,6 +64,7 @@ public class SNotationQuantifier_Editor extends DefaultNodeEditor {
       style.set(StyleAttributes.EDITABLE, false);
       style.set(StyleAttributes.FONT_STYLE, MPSFonts.BOLD);
       style.set(StyleAttributes.TEXT_COLOR, MPSColors.DARK_BLUE);
+      style.set(StyleAttributes.INDENT_LAYOUT_NO_WRAP, true);
     }
     SNotationQuantifier_delete.setCellActions(editorCell, node, editorContext);
     return editorCell;
