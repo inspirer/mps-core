@@ -4,7 +4,7 @@ package jetbrains.mps.core.notation.actions;
 
 import jetbrains.mps.smodel.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.core.notation.behavior.SNotationWrapper_Behavior;
+import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 
 public class SNotationActionUtil {
@@ -13,10 +13,10 @@ public class SNotationActionUtil {
 
   public static SNode getRightOutermostNotation(SNode part) {
     SNode parent = SNodeOperations.getParent(part);
-    if (SNodeOperations.isInstanceOf(parent, "jetbrains.mps.core.notation.structure.SNotationWrapper") && !(SNotationWrapper_Behavior.call_hasSuffix_8379004527113948621(SNodeOperations.cast(parent, "jetbrains.mps.core.notation.structure.SNotationWrapper")))) {
+    if (SNodeOperations.isInstanceOf(parent, "jetbrains.mps.core.notation.structure.SNotationMapping") && "presentation".equals(SNodeOperations.getContainingLinkRole(part))) {
       return getRightOutermostNotation(SNodeOperations.cast(parent, "jetbrains.mps.core.notation.structure.SNotationPart"));
     }
-    if (SNodeOperations.isInstanceOf(parent, "jetbrains.mps.core.notation.structure.SNotationMapping") && "presentation".equals(SNodeOperations.getContainingLinkRole(part))) {
+    if (SNodeOperations.isInstanceOf(parent, "jetbrains.mps.core.notation.structure.SNotationUnorderedGroup") && ListSequence.fromList(SLinkOperations.getTargets(SNodeOperations.cast(parent, "jetbrains.mps.core.notation.structure.SNotationUnorderedGroup"), "parts", true)).last() == part) {
       return getRightOutermostNotation(SNodeOperations.cast(parent, "jetbrains.mps.core.notation.structure.SNotationPart"));
     }
     return part;
@@ -24,28 +24,13 @@ public class SNotationActionUtil {
 
   public static SNode getLeftOutermostNotation(SNode part) {
     SNode parent = SNodeOperations.getParent(part);
-    if (SNodeOperations.isInstanceOf(parent, "jetbrains.mps.core.notation.structure.SNotationWrapper") && !(SNotationWrapper_Behavior.call_hasPrefix_8379004527113948625(SNodeOperations.cast(parent, "jetbrains.mps.core.notation.structure.SNotationWrapper")))) {
+    if (SNodeOperations.isInstanceOf(parent, "jetbrains.mps.core.notation.structure.SNotationQuantifier")) {
+      return getLeftOutermostNotation(SNodeOperations.cast(parent, "jetbrains.mps.core.notation.structure.SNotationPart"));
+    }
+    if (SNodeOperations.isInstanceOf(parent, "jetbrains.mps.core.notation.structure.SNotationUnorderedGroup") && ListSequence.fromList(SLinkOperations.getTargets(SNodeOperations.cast(parent, "jetbrains.mps.core.notation.structure.SNotationUnorderedGroup"), "parts", true)).first() == part) {
       return getLeftOutermostNotation(SNodeOperations.cast(parent, "jetbrains.mps.core.notation.structure.SNotationPart"));
     }
     return part;
-  }
-
-  public static boolean canWrap(SNode part, int prio) {
-    SNode node = part;
-    while (SNodeOperations.isInstanceOf(node, "jetbrains.mps.core.notation.structure.SNotationWrapper")) {
-      if (SNotationWrapper_Behavior.call_getPrio_2711998566963954000(SNodeOperations.cast(node, "jetbrains.mps.core.notation.structure.SNotationWrapper")) > prio) {
-        return false;
-      }
-      node = SLinkOperations.getTarget(SNodeOperations.cast(node, "jetbrains.mps.core.notation.structure.SNotationWrapper"), "inner", true);
-    }
-    node = part;
-    while (SNodeOperations.isInstanceOf(SNodeOperations.getParent(node), "jetbrains.mps.core.notation.structure.SNotationWrapper")) {
-      if (SNotationWrapper_Behavior.call_getPrio_2711998566963954000(SNodeOperations.cast(SNodeOperations.getParent(node), "jetbrains.mps.core.notation.structure.SNotationWrapper")) < prio) {
-        return false;
-      }
-      node = SNodeOperations.cast(SNodeOperations.getParent(node), "jetbrains.mps.core.notation.structure.SNotationPart");
-    }
-    return true;
   }
 
   public static SNode getTargetForNewStyle(SNode node) {
@@ -56,5 +41,33 @@ public class SNotationActionUtil {
       node = SNodeOperations.cast(SNodeOperations.getParent(node), "jetbrains.mps.core.notation.structure.SNotationPart");
     }
     return node;
+  }
+
+  public static SNode getTargetForNewUnorderedGroup(SNode node) {
+    while ((node != null) && (SNodeOperations.isInstanceOf(SNodeOperations.getParent(node), "jetbrains.mps.core.notation.structure.SNotationCorePart") || SNodeOperations.isInstanceOf(SNodeOperations.getParent(node), "jetbrains.mps.core.notation.structure.SNotationMapping"))) {
+      node = SNodeOperations.cast(SNodeOperations.getParent(node), "jetbrains.mps.core.notation.structure.SNotationPart");
+    }
+    if ((node != null) && SNodeOperations.isInstanceOf(SNodeOperations.getParent(node), "jetbrains.mps.core.notation.structure.SNotationPartList") && (SNodeOperations.isInstanceOf(node, "jetbrains.mps.core.notation.structure.SNotationCorePart") || SNodeOperations.isInstanceOf(node, "jetbrains.mps.core.notation.structure.SNotationMapping"))) {
+      return node;
+    }
+    return null;
+  }
+
+  public static SNode getTargetForQuantifier(SNode node) {
+    if (SNodeOperations.isInstanceOf(node, "jetbrains.mps.core.notation.structure.SNotationMapping")) {
+      node = SLinkOperations.getTarget(SNodeOperations.cast(node, "jetbrains.mps.core.notation.structure.SNotationMapping"), "presentation", true);
+    }
+    SNode result = SNodeOperations.as(node, "jetbrains.mps.core.notation.structure.SNotationCorePart");
+    if ((result == null)) {
+      return null;
+    }
+
+    while ((node != null)) {
+      if (SNodeOperations.isInstanceOf(node, "jetbrains.mps.core.notation.structure.SNotationQuantifier")) {
+        return null;
+      }
+      node = SNodeOperations.as(SNodeOperations.getParent(node), "jetbrains.mps.core.notation.structure.SNotationCorePart");
+    }
+    return result;
   }
 }

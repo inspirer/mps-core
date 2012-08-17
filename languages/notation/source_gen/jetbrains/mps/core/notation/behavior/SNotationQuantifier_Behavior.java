@@ -7,16 +7,4 @@ import jetbrains.mps.smodel.SNode;
 public class SNotationQuantifier_Behavior {
   public static void init(SNode thisNode) {
   }
-
-  public static boolean virtual_hasSuffix_8379004527113948621(SNode thisNode) {
-    return true;
-  }
-
-  public static boolean virtual_hasPrefix_8379004527113948625(SNode thisNode) {
-    return false;
-  }
-
-  public static int virtual_getPrio_2711998566963954000(SNode thisNode) {
-    return 10;
-  }
 }

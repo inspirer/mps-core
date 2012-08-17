@@ -40,6 +40,9 @@ public class SNotationQuantifier_Constraints extends BaseConstraintsDescriptor {
     if (SConceptOperations.isSubConceptOf(childConcept, "jetbrains.mps.core.notation.structure.SNotationQuantifier")) {
       return false;
     }
+    if (SConceptOperations.isSubConceptOf(childConcept, "jetbrains.mps.core.notation.structure.SNotationUnorderedGroup")) {
+      return false;
+    }
     return true;
   }
 }

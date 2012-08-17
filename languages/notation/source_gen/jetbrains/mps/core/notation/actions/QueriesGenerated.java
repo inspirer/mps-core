@@ -47,24 +47,18 @@ public class QueriesGenerated {
   }
 
   public static boolean sideTransformHintSubstituteActionsBuilder_Precondition_SNotationPart_146911029171910614(final IOperationContext operationContext, final SideTransformPreconditionContext _context) {
-    return ListSequence.fromList(SNodeOperations.getDescendants(_context.getSourceNode(), "jetbrains.mps.core.notation.structure.SNotationMapping", false, new String[]{})).isEmpty();
+    SNode outer = SNotationActionUtil.getLeftOutermostNotation(_context.getSourceNode());
+    return SNodeOperations.isInstanceOf(outer, "jetbrains.mps.core.notation.structure.SNotationCorePart") && ListSequence.fromList(SNodeOperations.getDescendants(outer, "jetbrains.mps.core.notation.structure.SNotationMapping", false, new String[]{})).isEmpty();
   }
 
   public static boolean sideTransformHintSubstituteActionsBuilder_Precondition_SNotationPart_3129031437528344799(final IOperationContext operationContext, final SideTransformPreconditionContext _context) {
-    if (!(SNotationActionUtil.canWrap(_context.getSourceNode(), 10))) {
-      return false;
-    }
-    if (SNodeOperations.isInstanceOf(_context.getSourceNode(), "jetbrains.mps.core.notation.structure.SNotationQuantifier") || SNodeOperations.isInstanceOf(SNodeOperations.getParent(_context.getSourceNode()), "jetbrains.mps.core.notation.structure.SNotationQuantifier")) {
-      return false;
-    }
-    if (SNodeOperations.isInstanceOf(_context.getSourceNode(), "jetbrains.mps.core.notation.structure.SNotationStyle")) {
-      return false;
-    }
-    if (SNodeOperations.isInstanceOf(_context.getSourceNode(), "jetbrains.mps.core.notation.structure.SNotationMapping")) {
-      SNode presentation = SLinkOperations.getTarget(SNodeOperations.cast(_context.getSourceNode(), "jetbrains.mps.core.notation.structure.SNotationMapping"), "presentation", true);
-      return presentation != null;
-    }
-    return true;
+    SNode outer = SNotationActionUtil.getTargetForQuantifier(_context.getSourceNode());
+    return outer != null;
+  }
+
+  public static boolean sideTransformHintSubstituteActionsBuilder_Precondition_SNotationPart_7524455788176639157(final IOperationContext operationContext, final SideTransformPreconditionContext _context) {
+    SNode container = SNotationActionUtil.getTargetForNewUnorderedGroup(_context.getSourceNode());
+    return container != null;
   }
 
   public static boolean sideTransformHintSubstituteActionsBuilder_Precondition_SNotationPart_8379004527113948453(final IOperationContext operationContext, final SideTransformPreconditionContext _context) {
@@ -210,7 +204,7 @@ public class QueriesGenerated {
       SNode concept = SConceptOperations.findConceptDeclaration("jetbrains.mps.lang.core.structure.BaseConcept");
       ListSequence.fromList(result).addElement(new AbstractSideTransformHintSubstituteAction(concept, _context.getSourceNode()) {
         public SNode doSubstitute(String pattern) {
-          SNode outer = SNotationActionUtil.getLeftOutermostNotation(_context.getSourceNode());
+          SNode outer = SNodeOperations.cast(SNotationActionUtil.getLeftOutermostNotation(_context.getSourceNode()), "jetbrains.mps.core.notation.structure.SNotationCorePart");
           SNode mapping = SNodeFactoryOperations.createNewNode(_context.getModel(), "jetbrains.mps.core.notation.structure.SNotationMapping", null);
           SNodeOperations.replaceWithAnother(outer, mapping);
           SLinkOperations.setTarget(mapping, "presentation", outer, true);
@@ -235,10 +229,11 @@ public class QueriesGenerated {
       SNode concept = SConceptOperations.findConceptDeclaration("jetbrains.mps.core.notation.structure.SNotationQuantifier");
       ListSequence.fromList(result).addElement(new AbstractSideTransformHintSubstituteAction(concept, _context.getSourceNode()) {
         public SNode doSubstitute(String pattern) {
+          SNode outer = SNotationActionUtil.getTargetForQuantifier(_context.getSourceNode());
           SNode q = SNodeFactoryOperations.createNewNode(_context.getModel(), "jetbrains.mps.core.notation.structure.SNotationQuantifier", null);
           SPropertyOperations.set(q, "kind", "optional");
-          SNodeOperations.replaceWithAnother(_context.getSourceNode(), q);
-          return SLinkOperations.setTarget(q, "inner", _context.getSourceNode(), true);
+          SNodeOperations.replaceWithAnother(outer, q);
+          return SLinkOperations.setTarget(q, "inner", outer, true);
         }
 
         public String getMatchingText(String pattern) {
@@ -296,7 +291,37 @@ public class QueriesGenerated {
         }
 
         public String getDescriptionText(String pattern) {
-          return "optional";
+          return "one or more";
+        }
+      });
+    }
+    return result;
+  }
+
+  public static List<INodeSubstituteAction> sideTransform_ActionsFactory_SNotationPart_7524455788176639151(final IOperationContext operationContext, final SideTransformActionsBuilderContext _context) {
+    List<INodeSubstituteAction> result = ListSequence.fromList(new ArrayList<INodeSubstituteAction>());
+    {
+      SNode concept = SConceptOperations.findConceptDeclaration("jetbrains.mps.core.notation.structure.SNotationUnorderedGroup");
+      ListSequence.fromList(result).addElement(new AbstractSideTransformHintSubstituteAction(concept, _context.getSourceNode()) {
+        public SNode doSubstitute(String pattern) {
+          SNode container = SNotationActionUtil.getTargetForNewUnorderedGroup(_context.getSourceNode());
+          SNode group = SConceptOperations.createNewNode("jetbrains.mps.core.notation.structure.SNotationUnorderedGroup", null);
+          SNodeOperations.replaceWithAnother(container, group);
+          ListSequence.fromList(SLinkOperations.getTargets(group, "parts", true)).addElement(container);
+          ListSequence.fromList(SLinkOperations.getTargets(group, "parts", true)).addElement(SConceptOperations.createNewNode("jetbrains.mps.core.notation.structure.SNotationPart", null));
+          return ListSequence.fromList(SLinkOperations.getTargets(group, "parts", true)).last();
+        }
+
+        public String getMatchingText(String pattern) {
+          return "&";
+        }
+
+        public String getVisibleMatchingText(String pattern) {
+          return this.getMatchingText(pattern);
+        }
+
+        public String getDescriptionText(String pattern) {
+          return "unordered group";
         }
       });
     }
@@ -336,7 +361,7 @@ public class QueriesGenerated {
       SNode concept = SConceptOperations.findConceptDeclaration("jetbrains.mps.lang.core.structure.BaseConcept");
       ListSequence.fromList(result).addElement(new AbstractSideTransformHintSubstituteAction(concept, _context.getSourceNode()) {
         public SNode doSubstitute(String pattern) {
-          SNodeFactoryOperations.setNewChild(_context.getSourceNode(), "presentation", "jetbrains.mps.core.notation.structure.SNotationPart");
+          SNodeFactoryOperations.setNewChild(_context.getSourceNode(), "presentation", "jetbrains.mps.core.notation.structure.SNotationCorePart");
           return SLinkOperations.getTarget(_context.getSourceNode(), "presentation", true);
         }
 
@@ -346,6 +371,10 @@ public class QueriesGenerated {
 
         public String getVisibleMatchingText(String pattern) {
           return this.getMatchingText(pattern);
+        }
+
+        public String getDescriptionText(String pattern) {
+          return "customize presentation";
         }
       });
     }
