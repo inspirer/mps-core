@@ -237,14 +237,17 @@
     <nodeInfo nodeId="7524455788176639027" fileName="SNotationUnorderedGroup_Constraints.java" startLine="49" startPosition="5" endLine="50" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
     <nodeInfo nodeId="7524455788176639027" fileName="SNotationUnorderedGroup_Constraints.java" startLine="50" startPosition="0" endLine="51" endPosition="18" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="7524455788176639030" fileName="SNotationUnorderedGroup_Constraints.java" startLine="54" startPosition="148" endLine="55" endPosition="111" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="6373561361597625644" fileName="SNotationUnorderedGroup_Constraints.java" startLine="58" startPosition="148" endLine="59" endPosition="323" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="8293363061793853700" fileName="SNotationUnorderedGroup_Constraints.java" startLine="59" startPosition="119" endLine="60" endPosition="24" conceptFqName="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+    <nodeInfo nodeId="8293363061793853703" fileName="SNotationUnorderedGroup_Constraints.java" startLine="60" startPosition="24" endLine="61" endPosition="18" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6373561361597625644" fileName="SNotationUnorderedGroup_Constraints.java" startLine="62" startPosition="5" endLine="63" endPosition="323" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="7524455788176639027" fileName="SNotationUnorderedGroup_Constraints.java" startLine="17" startPosition="0" endLine="20" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="SNotationUnorderedGroup_Constraints#()V" />
     <nodeInfo nodeId="7524455788176639027" fileName="SNotationUnorderedGroup_Constraints.java" startLine="30" startPosition="0" endLine="33" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
     <nodeInfo nodeId="7524455788176639027" fileName="SNotationUnorderedGroup_Constraints.java" startLine="46" startPosition="0" endLine="49" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
     <nodeInfo nodeId="7524455788176639027" fileName="SNotationUnorderedGroup_Constraints.java" startLine="53" startPosition="0" endLine="57" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="static_canBeAChild#(Ljetbrains/mps/smodel/SNode;Ljetbrains/mps/smodel/SNode;Ljetbrains/mps/smodel/SNode;Ljetbrains/mps/smodel/SNode;Ljetbrains/mps/smodel/IOperationContext;)Z" />
-    <nodeInfo nodeId="7524455788176639027" fileName="SNotationUnorderedGroup_Constraints.java" startLine="57" startPosition="0" endLine="61" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="static_canBeAParent#(Ljetbrains/mps/smodel/SNode;Ljetbrains/mps/smodel/SNode;Ljetbrains/mps/smodel/SNode;Ljetbrains/mps/smodel/SNode;Ljetbrains/mps/smodel/IOperationContext;)Z" />
+    <nodeInfo nodeId="8293363061793800179" fileName="SNotationUnorderedGroup_Constraints.java" startLine="58" startPosition="148" endLine="62" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
     <nodeInfo nodeId="7524455788176639027" fileName="SNotationUnorderedGroup_Constraints.java" startLine="21" startPosition="0" endLine="26" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="hasOwnCanBeChildMethod#()Z" />
     <nodeInfo nodeId="7524455788176639027" fileName="SNotationUnorderedGroup_Constraints.java" startLine="37" startPosition="0" endLine="42" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="hasOwnCanBeParentMethod#()Z" />
+    <nodeInfo nodeId="7524455788176639027" fileName="SNotationUnorderedGroup_Constraints.java" startLine="57" startPosition="0" endLine="65" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="static_canBeAParent#(Ljetbrains/mps/smodel/SNode;Ljetbrains/mps/smodel/SNode;Ljetbrains/mps/smodel/SNode;Ljetbrains/mps/smodel/SNode;Ljetbrains/mps/smodel/IOperationContext;)Z" />
     <nodeInfo nodeId="7524455788176639027" fileName="SNotationUnorderedGroup_Constraints.java" startLine="26" startPosition="0" endLine="37" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="canBeChild#(Ljetbrains/mps/smodel/SNode;Ljetbrains/mps/smodel/SNode;Ljetbrains/mps/smodel/SNode;Ljetbrains/mps/smodel/SNode;Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Z" />
     <nodeInfo nodeId="7524455788176639027" fileName="SNotationUnorderedGroup_Constraints.java" startLine="42" startPosition="0" endLine="53" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="canBeParent#(Ljetbrains/mps/smodel/SNode;Ljetbrains/mps/smodel/SNode;Ljetbrains/mps/smodel/SNode;Ljetbrains/mps/smodel/SNode;Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Z" />
     <scopeInfo nodeId="7524455788176639027" fileName="SNotationUnorderedGroup_Constraints.java" startLine="18" startPosition="48" endLine="19" endPosition="75" />
@@ -253,7 +256,7 @@
     <scopeInfo nodeId="7524455788176639027" fileName="SNotationUnorderedGroup_Constraints.java" startLine="39" startPosition="44" endLine="40" endPosition="16" />
     <scopeInfo nodeId="7524455788176639027" fileName="SNotationUnorderedGroup_Constraints.java" startLine="47" startPosition="51" endLine="48" endPosition="68" />
     <scopeInfo nodeId="7524455788176639029" fileName="SNotationUnorderedGroup_Constraints.java" startLine="54" startPosition="148" endLine="55" endPosition="111" />
-    <scopeInfo nodeId="6373561361597625643" fileName="SNotationUnorderedGroup_Constraints.java" startLine="58" startPosition="148" endLine="59" endPosition="323" />
+    <scopeInfo nodeId="8293363061793800180" fileName="SNotationUnorderedGroup_Constraints.java" startLine="59" startPosition="119" endLine="61" endPosition="18" />
     <scopeInfo nodeId="7524455788176639027" fileName="SNotationUnorderedGroup_Constraints.java" startLine="17" startPosition="0" endLine="20" endPosition="3" />
     <scopeInfo nodeId="7524455788176639027" fileName="SNotationUnorderedGroup_Constraints.java" startLine="53" startPosition="0" endLine="57" endPosition="0">
       <varInfo nodeId="7524455788176639027" varName="childConcept" />
@@ -262,20 +265,21 @@
       <varInfo nodeId="7524455788176639027" varName="operationContext" />
       <varInfo nodeId="7524455788176639027" varName="parentNode" />
     </scopeInfo>
-    <scopeInfo nodeId="7524455788176639027" fileName="SNotationUnorderedGroup_Constraints.java" startLine="57" startPosition="0" endLine="61" endPosition="0">
-      <varInfo nodeId="7524455788176639027" varName="childConcept" />
-      <varInfo nodeId="7524455788176639027" varName="childNode" />
-      <varInfo nodeId="7524455788176639027" varName="link" />
-      <varInfo nodeId="7524455788176639027" varName="node" />
-      <varInfo nodeId="7524455788176639027" varName="operationContext" />
-    </scopeInfo>
     <scopeInfo nodeId="7524455788176639027" fileName="SNotationUnorderedGroup_Constraints.java" startLine="21" startPosition="0" endLine="26" endPosition="0" />
     <scopeInfo nodeId="7524455788176639027" fileName="SNotationUnorderedGroup_Constraints.java" startLine="37" startPosition="0" endLine="42" endPosition="0" />
+    <scopeInfo nodeId="6373561361597625643" fileName="SNotationUnorderedGroup_Constraints.java" startLine="58" startPosition="148" endLine="63" endPosition="323" />
     <scopeInfo nodeId="7524455788176639027" fileName="SNotationUnorderedGroup_Constraints.java" startLine="28" startPosition="200" endLine="35" endPosition="18">
       <varInfo nodeId="7524455788176639027" varName="result" />
     </scopeInfo>
     <scopeInfo nodeId="7524455788176639027" fileName="SNotationUnorderedGroup_Constraints.java" startLine="44" startPosition="188" endLine="51" endPosition="18">
       <varInfo nodeId="7524455788176639027" varName="result" />
+    </scopeInfo>
+    <scopeInfo nodeId="7524455788176639027" fileName="SNotationUnorderedGroup_Constraints.java" startLine="57" startPosition="0" endLine="65" endPosition="0">
+      <varInfo nodeId="7524455788176639027" varName="childConcept" />
+      <varInfo nodeId="7524455788176639027" varName="childNode" />
+      <varInfo nodeId="7524455788176639027" varName="link" />
+      <varInfo nodeId="7524455788176639027" varName="node" />
+      <varInfo nodeId="7524455788176639027" varName="operationContext" />
     </scopeInfo>
     <scopeInfo nodeId="7524455788176639027" fileName="SNotationUnorderedGroup_Constraints.java" startLine="26" startPosition="0" endLine="37" endPosition="0">
       <varInfo nodeId="7524455788176639027" varName="checkingNodeContext" />
@@ -293,7 +297,7 @@
       <varInfo nodeId="7524455788176639027" varName="node" />
       <varInfo nodeId="7524455788176639027" varName="operationContext" />
     </scopeInfo>
-    <unitInfo nodeId="7524455788176639027" fileName="SNotationUnorderedGroup_Constraints.java" startLine="14" startPosition="0" endLine="62" endPosition="0" unitName="jetbrains.mps.core.notation.constraints.SNotationUnorderedGroup_Constraints" />
+    <unitInfo nodeId="7524455788176639027" fileName="SNotationUnorderedGroup_Constraints.java" startLine="14" startPosition="0" endLine="66" endPosition="0" unitName="jetbrains.mps.core.notation.constraints.SNotationUnorderedGroup_Constraints" />
   </root>
   <root nodeId="7805033636902348043">
     <nodeInfo nodeId="7805033636902348043" fileName="SStructureLinkRef_Constraints.java" startLine="21" startPosition="78" endLine="22" endPosition="194" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="breakingNode_n2tft4_a0a0a0a0a1a0b0a1a0" />

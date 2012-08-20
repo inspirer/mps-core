@@ -56,6 +56,10 @@ public class SNotationUnorderedGroup_Constraints extends BaseConstraintsDescript
   }
 
   public static boolean static_canBeAParent(SNode node, SNode childNode, SNode childConcept, SNode link, final IOperationContext operationContext) {
+    if (SConceptOperations.isSubConceptOf(childConcept, "jetbrains.mps.core.notation.structure.SStructureEntityRef")) {
+      // TODO temp hack 
+      return true;
+    }
     return SConceptOperations.isSubConceptOf(childConcept, "jetbrains.mps.core.notation.structure.SNotationCorePart") || SConceptOperations.isExactly(childConcept, "jetbrains.mps.core.notation.structure.SNotationMapping") || SConceptOperations.isExactly(childConcept, "jetbrains.mps.core.notation.structure.SNotationPart");
   }
 }
