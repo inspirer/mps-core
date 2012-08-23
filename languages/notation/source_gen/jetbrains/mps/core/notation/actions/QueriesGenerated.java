@@ -24,9 +24,9 @@ import jetbrains.mps.smodel.SModel;
 import jetbrains.mps.smodel.IScope;
 import jetbrains.mps.smodel.action.ModelActions;
 import jetbrains.mps.util.Computable;
-import jetbrains.mps.baseLanguage.tuples.runtime.Tuples;
 import jetbrains.mps.core.notation.util.NotationContext;
-import jetbrains.mps.core.notation.behavior.SNotationContextProvider_Behavior;
+import jetbrains.mps.core.notation.constraints.ContextUtil;
+import jetbrains.mps.baseLanguage.tuples.runtime.Tuples;
 import jetbrains.mps.scope.Scope;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.internal.collections.runtime.IWhereFilter;
@@ -85,10 +85,6 @@ public class QueriesGenerated {
     return SNodeOperations.isInstanceOf(SNodeOperations.getParent(_context.getSourceNode()), "jetbrains.mps.core.notation.structure.SNotationMapping") && (SLinkOperations.getTarget(SNodeOperations.cast(SNodeOperations.getParent(_context.getSourceNode()), "jetbrains.mps.core.notation.structure.SNotationMapping"), "presentation", true) == null);
   }
 
-  public static boolean sideTransformHintSubstituteActionsBuilder_Precondition_SNotationCall_8527797492907053873(final IOperationContext operationContext, final SideTransformPreconditionContext _context) {
-    return SPropertyOperations.getString(_context.getSourceNode(), "id") == null;
-  }
-
   public static void nodeFactory_NodeSetup_SNotationParentheses_5362811550739117351(final IOperationContext operationContext, final NodeSetupContext _context) {
     if (SNodeOperations.isInstanceOf(_context.getSampleNode(), "jetbrains.mps.core.notation.structure.SNotationPart") && !(SConceptOperations.isExactly(SNodeOperations.getConceptDeclaration(_context.getSampleNode()), "jetbrains.mps.core.notation.structure.SNotationPart"))) {
       ListSequence.fromList(SLinkOperations.getTargets(_context.getNewNode(), "alternatives", true)).clear();
@@ -139,11 +135,13 @@ public class QueriesGenerated {
       if (SConceptOperations.isSuperConceptOf(childConcept, NameUtil.nodeFQName(outputConcept))) {
         Computable computable = new Computable() {
           public Object compute() {
-            SNode provider = SNodeOperations.as(_context.getParentNode(), "jetbrains.mps.core.notation.structure.SNotationContextProvider");
-            if (provider == null) {
+            final NotationContext context = ContextUtil.getContext((_context.getCurrentTargetNode() != null ?
+              _context.getCurrentTargetNode() :
+              _context.getParentNode()
+            ), null);
+            if (context == null) {
               return ListSequence.fromList(new ArrayList<Tuples._2<String, NotationContext>>());
             }
-            final NotationContext context = SNotationContextProvider_Behavior.call_getContext_8632884680339357870(provider);
             Scope lscope = Scope.getScope(_context.getParentNode(), null, SConceptOperations.findConceptDeclaration("jetbrains.mps.core.notation.structure.SNotation"));
             Iterable<String> result = Sequence.fromIterable(lscope.getAvailableElements(null)).where(new IWhereFilter<SNode>() {
               public boolean accept(SNode it) {
@@ -157,7 +155,7 @@ public class QueriesGenerated {
               public String select(SNode it) {
                 return SPropertyOperations.getString(it, "id");
               }
-            });
+            }).distinct();
             return Sequence.fromIterable(result).select(new ISelector<String, Tuples._2<String, NotationContext>>() {
               public Tuples._2<String, NotationContext> select(String it) {
                 return MultiTuple.<String,NotationContext>from(it, context);
@@ -225,7 +223,11 @@ public class QueriesGenerated {
     List<INodeSubstituteAction> result = ListSequence.fromList(new ArrayList<INodeSubstituteAction>());
     {
       final String[] lastPattern = new String[1];
-      List<INodeSubstituteAction> list = ModelActions.createChildSubstituteActions(_context.getSourceNode(), null, SConceptOperations.findConceptDeclaration("jetbrains.mps.core.notation.structure.SNotationPart"), new AbstractChildNodeSetter() {
+      List<INodeSubstituteAction> list = ModelActions.createChildSubstituteActions(new Computable<SNode>() {
+        public SNode compute() {
+          return SNotationActionUtil.getRightOutermostNotation(_context.getSourceNode());
+        }
+      }.compute(), null, SConceptOperations.findConceptDeclaration("jetbrains.mps.core.notation.structure.SNotationPart"), new AbstractChildNodeSetter() {
         public SNode doExecute(SNode parentNode, SNode oldChild, SNode newChild, IScope p3) {
           return substitute(newChild, lastPattern[0]);
         }
@@ -470,28 +472,6 @@ public class QueriesGenerated {
       };
       SNode node = (SNode) computable.compute();
       ListSequence.fromList(result).addSequence(ListSequence.fromList(ModelActions.createRightTransformHintSubstituteActions(node, CellSide.RIGHT, _context.getTransformationTag(), operationContext)));
-    }
-    return result;
-  }
-
-  public static List<INodeSubstituteAction> sideTransform_ActionsFactory_SNotationCall_8527797492907044062(final IOperationContext operationContext, final SideTransformActionsBuilderContext _context) {
-    List<INodeSubstituteAction> result = ListSequence.fromList(new ArrayList<INodeSubstituteAction>());
-    {
-      SNode concept = SConceptOperations.findConceptDeclaration("jetbrains.mps.core.notation.structure.SNotationCall");
-      ListSequence.fromList(result).addElement(new AbstractSideTransformHintSubstituteAction(concept, _context.getSourceNode()) {
-        public SNode doSubstitute(String pattern) {
-          SPropertyOperations.set(_context.getSourceNode(), "id", "");
-          return _context.getSourceNode();
-        }
-
-        public String getMatchingText(String pattern) {
-          return ".";
-        }
-
-        public String getVisibleMatchingText(String pattern) {
-          return this.getMatchingText(pattern);
-        }
-      });
     }
     return result;
   }

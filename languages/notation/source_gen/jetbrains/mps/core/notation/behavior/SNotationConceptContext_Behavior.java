@@ -4,9 +4,16 @@ package jetbrains.mps.core.notation.behavior;
 
 import jetbrains.mps.smodel.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.core.notation.util.NotationContext;
+import jetbrains.mps.scope.Scope;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
+import jetbrains.mps.internal.collections.runtime.Sequence;
+import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.core.structure.behavior.SAbstractConcept_Behavior;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import jetbrains.mps.internal.collections.runtime.ISelector;
+import jetbrains.mps.core.structure.util.ConceptUtil;
+import jetbrains.mps.core.notation.util.NotationContext;
 
 public class SNotationConceptContext_Behavior {
   public static void init(SNode thisNode) {
@@ -16,7 +23,53 @@ public class SNotationConceptContext_Behavior {
     return SLinkOperations.getTarget(thisNode, "element", false);
   }
 
+  public static SNode call_getBaseNotation_8200039929379506936(final SNode thisNode) {
+    if (SLinkOperations.getTarget(thisNode, "element", false) == null) {
+      return null;
+    }
+
+    Scope lscope = Scope.getScope(SLinkOperations.getTarget(thisNode, "element", false), null, SConceptOperations.findConceptDeclaration("jetbrains.mps.core.notation.structure.SNotation"));
+    Iterable<SNode> result = Sequence.fromIterable(lscope.getAvailableElements(null)).where(new IWhereFilter<SNode>() {
+      public boolean accept(SNode it) {
+        return SNodeOperations.isInstanceOf(it, "jetbrains.mps.core.notation.structure.SNotation") && it != SNodeOperations.getParent(thisNode) && SNodeOperations.isInstanceOf(SLinkOperations.getTarget(SNodeOperations.cast(it, "jetbrains.mps.core.notation.structure.SNotation"), "context", true), "jetbrains.mps.core.notation.structure.SNotationConceptContext") && SAbstractConcept_Behavior.call_isSubConceptOf_5938997310819191538(SLinkOperations.getTarget(thisNode, "element", false), SLinkOperations.getTarget(SNodeOperations.cast(SLinkOperations.getTarget(SNodeOperations.cast(it, "jetbrains.mps.core.notation.structure.SNotation"), "context", true), "jetbrains.mps.core.notation.structure.SNotationConceptContext"), "element", false));
+      }
+    }).where(new IWhereFilter<SNode>() {
+      public boolean accept(SNode it) {
+        return eq_kgiyay_a0a0a0a0a0a0d0c(SPropertyOperations.getString(SLinkOperations.getTarget(SNodeOperations.cast(it, "jetbrains.mps.core.notation.structure.SNotation"), "context", true), "id"), SPropertyOperations.getString(thisNode, "id"));
+      }
+    }).select(new ISelector<SNode, SNode>() {
+      public SNode select(SNode it) {
+        return SNodeOperations.cast(it, "jetbrains.mps.core.notation.structure.SNotation");
+      }
+    });
+    final SNode nearestConcept = ConceptUtil.getNearestConcept(SLinkOperations.getTarget(thisNode, "element", false), Sequence.fromIterable(result).where(new IWhereFilter<SNode>() {
+      public boolean accept(SNode it) {
+        return SNodeOperations.isInstanceOf(SLinkOperations.getTarget(it, "context", true), "jetbrains.mps.core.notation.structure.SNotationConceptContext");
+      }
+    }).select(new ISelector<SNode, SNode>() {
+      public SNode select(SNode it) {
+        return SLinkOperations.getTarget(SNodeOperations.cast(SLinkOperations.getTarget(it, "context", true), "jetbrains.mps.core.notation.structure.SNotationConceptContext"), "element", false);
+      }
+    }));
+    SNode prioNode = Sequence.fromIterable(result).findFirst(new IWhereFilter<SNode>() {
+      public boolean accept(SNode it) {
+        return SNodeOperations.isInstanceOf(SLinkOperations.getTarget(it, "context", true), "jetbrains.mps.core.notation.structure.SNotationConceptContext") && SLinkOperations.getTarget(SNodeOperations.cast(SLinkOperations.getTarget(it, "context", true), "jetbrains.mps.core.notation.structure.SNotationConceptContext"), "element", false) == nearestConcept;
+      }
+    });
+    if (prioNode != null) {
+      return prioNode;
+    }
+    return Sequence.fromIterable(result).first();
+  }
+
   public static boolean virtual_isApplicable_5566195403253848024(SNode thisNode, NotationContext context) {
     return !(context.isMultiple()) && SNodeOperations.isInstanceOf(context.getNode(), "jetbrains.mps.core.structure.structure.SAbstractConcept") && SAbstractConcept_Behavior.call_isSubConceptOf_5938997310819191538(SNodeOperations.cast(context.getNode(), "jetbrains.mps.core.structure.structure.SAbstractConcept"), SLinkOperations.getTarget(thisNode, "element", false));
+  }
+
+  private static boolean eq_kgiyay_a0a0a0a0a0a0d0c(Object a, Object b) {
+    return (a != null ?
+      a.equals(b) :
+      a == b
+    );
   }
 }

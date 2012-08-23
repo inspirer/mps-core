@@ -20,6 +20,7 @@ import jetbrains.mps.nodeEditor.style.Style;
 import jetbrains.mps.nodeEditor.style.StyleAttributes;
 import jetbrains.mps.nodeEditor.MPSColors;
 import jetbrains.mps.nodeEditor.style.AttributeCalculator;
+import jetbrains.mps.smodel.IScope;
 import jetbrains.mps.core.notation.behavior.SNotationCall_Behavior;
 
 public class SNotationCall_Editor extends DefaultNodeEditor {
@@ -30,7 +31,9 @@ public class SNotationCall_Editor extends DefaultNodeEditor {
   private EditorCell createCollection_401fjg_a(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
     editorCell.setCellId("Collection_401fjg_a");
-    editorCell.addEditorCell(this.createReadOnlyModelAccessor_401fjg_a0(editorContext, node));
+    if (renderingCondition_401fjg_a0a(node, editorContext, editorContext.getOperationContext().getScope())) {
+      editorCell.addEditorCell(this.createReadOnlyModelAccessor_401fjg_a0(editorContext, node));
+    }
     return editorCell;
   }
 
@@ -77,6 +80,11 @@ public class SNotationCall_Editor extends DefaultNodeEditor {
       });
     }
     return editorCell;
+  }
+
+  private static boolean renderingCondition_401fjg_a0a(SNode node, EditorContext editorContext, IScope scope) {
+    SNotationCall_Behavior.call_resolve_5566195403253919806(node);
+    return true;
   }
 
   private static SNode _StyleParameter_QueryFunction_401fjg_a1a0(SNode node, EditorContext editorContext) {

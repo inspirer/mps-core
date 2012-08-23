@@ -21,7 +21,7 @@ import jetbrains.mps.nodeEditor.cellMenu.CompositeSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.SubstituteInfoPart;
 import jetbrains.mps.smodel.IScope;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import jetbrains.mps.core.notation.behavior.SNotationConceptContext_Behavior;
 import jetbrains.mps.lang.editor.generator.internal.AbstractCellMenuPart_Generic_Group;
 import java.util.List;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
@@ -29,6 +29,7 @@ import jetbrains.mps.scope.Scope;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.internal.collections.runtime.IWhereFilter;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.core.structure.behavior.SAbstractConcept_Behavior;
 import jetbrains.mps.internal.collections.runtime.ISelector;
 import jetbrains.mps.smodel.SModel;
@@ -134,23 +135,22 @@ public class SNotationConceptContext_Editor extends DefaultNodeEditor {
   }
 
   private static SNode _StyleParameter_QueryFunction_tvsk60_a0b1a(SNode node, EditorContext editorContext) {
-    return SNodeOperations.getPrevSibling(SNodeOperations.getParent(node));
+    return SNotationConceptContext_Behavior.call_getBaseNotation_8200039929379506936(node);
   }
 
   public static class SNotationConceptContext_generic_cellMenu_a0b1a extends AbstractCellMenuPart_Generic_Group {
     public SNotationConceptContext_generic_cellMenu_a0b1a() {
     }
 
-    public List<?> createParameterObjects(SNode node, IScope scope, IOperationContext operationContext) {
-      final SNode concept = SNodeOperations.as(SLinkOperations.getTarget(node, "element", false), "jetbrains.mps.core.structure.structure.SAbstractConcept");
-      if (concept == null) {
+    public List<?> createParameterObjects(final SNode node, IScope scope, IOperationContext operationContext) {
+      if (SLinkOperations.getTarget(node, "element", false) == null) {
         return null;
       }
 
-      Scope lscope = Scope.getScope(concept, null, SConceptOperations.findConceptDeclaration("jetbrains.mps.core.notation.structure.SNotation"));
+      Scope lscope = Scope.getScope(SLinkOperations.getTarget(node, "element", false), null, SConceptOperations.findConceptDeclaration("jetbrains.mps.core.notation.structure.SNotation"));
       Iterable<String> result = Sequence.fromIterable(lscope.getAvailableElements(null)).where(new IWhereFilter<SNode>() {
         public boolean accept(SNode it) {
-          return SNodeOperations.isInstanceOf(it, "jetbrains.mps.core.notation.structure.SNotation") && SNodeOperations.isInstanceOf(SLinkOperations.getTarget(SNodeOperations.cast(it, "jetbrains.mps.core.notation.structure.SNotation"), "context", true), "jetbrains.mps.core.notation.structure.SNotationConceptContext") && SAbstractConcept_Behavior.call_isSubConceptOf_5938997310819191538(concept, SLinkOperations.getTarget(SNodeOperations.cast(SLinkOperations.getTarget(SNodeOperations.cast(it, "jetbrains.mps.core.notation.structure.SNotation"), "context", true), "jetbrains.mps.core.notation.structure.SNotationConceptContext"), "element", false));
+          return SNodeOperations.isInstanceOf(it, "jetbrains.mps.core.notation.structure.SNotation") && SNodeOperations.isInstanceOf(SLinkOperations.getTarget(SNodeOperations.cast(it, "jetbrains.mps.core.notation.structure.SNotation"), "context", true), "jetbrains.mps.core.notation.structure.SNotationConceptContext") && SAbstractConcept_Behavior.call_isSubConceptOf_5938997310819191538(SLinkOperations.getTarget(node, "element", false), SLinkOperations.getTarget(SNodeOperations.cast(SLinkOperations.getTarget(SNodeOperations.cast(it, "jetbrains.mps.core.notation.structure.SNotation"), "context", true), "jetbrains.mps.core.notation.structure.SNotationConceptContext"), "element", false));
         }
       }).select(new ISelector<SNode, SNode>() {
         public SNode select(SNode it) {

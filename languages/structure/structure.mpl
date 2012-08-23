@@ -2,6 +2,7 @@
 <language namespace="jetbrains.mps.core.structure" uuid="1372eb94-b402-4b9f-bb3f-44315b20f92d" doNotGenerateAdapters="true">
   <models>
     <modelRoot path="${language_descriptor}/languageModels" />
+    <modelRoot path="${language_descriptor}/util" />
   </models>
   <accessoryModels />
   <generators />
