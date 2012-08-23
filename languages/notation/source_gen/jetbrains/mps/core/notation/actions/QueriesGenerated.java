@@ -23,16 +23,27 @@ import jetbrains.mps.smodel.action.AbstractChildNodeSetter;
 import jetbrains.mps.smodel.SModel;
 import jetbrains.mps.smodel.IScope;
 import jetbrains.mps.smodel.action.ModelActions;
+import jetbrains.mps.util.Computable;
+import jetbrains.mps.baseLanguage.tuples.runtime.Tuples;
+import jetbrains.mps.core.notation.util.NotationContext;
+import jetbrains.mps.core.notation.behavior.SNotationContextProvider_Behavior;
+import jetbrains.mps.scope.Scope;
+import jetbrains.mps.internal.collections.runtime.Sequence;
+import jetbrains.mps.internal.collections.runtime.IWhereFilter;
+import jetbrains.mps.core.notation.behavior.SNotationContext_Behavior;
+import jetbrains.mps.internal.collections.runtime.ISelector;
+import jetbrains.mps.baseLanguage.tuples.runtime.MultiTuple;
+import jetbrains.mps.smodel.action.DefaultChildNodeSubstituteAction;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
 import jetbrains.mps.smodel.action.SideTransformActionsBuilderContext;
 import jetbrains.mps.smodel.action.AbstractSideTransformHintSubstituteAction;
 import jetbrains.mps.smodel.action.NodeSubstituteActionWrapper;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.nodeEditor.EditorContext;
-import jetbrains.mps.util.Computable;
 import jetbrains.mps.nodeEditor.CellSide;
 
 public class QueriesGenerated {
-  public static boolean sideTransformHintSubstituteActionsBuilder_Precondition_SNotation_3647933405694680657(final IOperationContext operationContext, final SideTransformPreconditionContext _context) {
+  public static boolean sideTransformHintSubstituteActionsBuilder_Precondition_SNotationConceptContext_3647933405694680657(final IOperationContext operationContext, final SideTransformPreconditionContext _context) {
     return SPropertyOperations.getString(_context.getSourceNode(), "id") == null;
   }
 
@@ -96,7 +107,7 @@ public class QueriesGenerated {
         IChildNodeSetter setter = new AbstractChildNodeSetter() {
           public SNode wrapNode(SNode nodeToWrap, SModel model) {
             SNode node = SNodeFactoryOperations.createNewNode(model, "jetbrains.mps.core.notation.structure.SNotationMapping", null);
-            SLinkOperations.setTarget(node, "entity", nodeToWrap, true);
+            SLinkOperations.setTarget(node, "entityRef", nodeToWrap, true);
             return node;
           }
 
@@ -120,7 +131,75 @@ public class QueriesGenerated {
     return result;
   }
 
-  public static List<INodeSubstituteAction> sideTransform_ActionsFactory_SNotation_3647933405694680656(final IOperationContext operationContext, final SideTransformActionsBuilderContext _context) {
+  public static List<INodeSubstituteAction> nodeSubstituteActionsBuilder_ActionsFactory_SNotationCall_5566195403253816174(final IOperationContext operationContext, final NodeSubstituteActionsFactoryContext _context) {
+    List<INodeSubstituteAction> result = ListSequence.fromList(new ArrayList<INodeSubstituteAction>());
+    {
+      SNode outputConcept = SConceptOperations.findConceptDeclaration("jetbrains.mps.core.notation.structure.SNotationCall");
+      SNode childConcept = (SNode) _context.getChildConcept();
+      if (SConceptOperations.isSuperConceptOf(childConcept, NameUtil.nodeFQName(outputConcept))) {
+        Computable computable = new Computable() {
+          public Object compute() {
+            SNode provider = SNodeOperations.as(_context.getParentNode(), "jetbrains.mps.core.notation.structure.SNotationContextProvider");
+            if (provider == null) {
+              return ListSequence.fromList(new ArrayList<Tuples._2<String, NotationContext>>());
+            }
+            final NotationContext context = SNotationContextProvider_Behavior.call_getContext_8632884680339357870(provider);
+            Scope lscope = Scope.getScope(_context.getParentNode(), null, SConceptOperations.findConceptDeclaration("jetbrains.mps.core.notation.structure.SNotation"));
+            Iterable<String> result = Sequence.fromIterable(lscope.getAvailableElements(null)).where(new IWhereFilter<SNode>() {
+              public boolean accept(SNode it) {
+                return SNodeOperations.isInstanceOf(it, "jetbrains.mps.core.notation.structure.SNotation") && SNotationContext_Behavior.call_isApplicable_5566195403253848024(SLinkOperations.getTarget(SNodeOperations.cast(it, "jetbrains.mps.core.notation.structure.SNotation"), "context", true), context);
+              }
+            }).select(new ISelector<SNode, SNode>() {
+              public SNode select(SNode it) {
+                return SLinkOperations.getTarget(SNodeOperations.cast(it, "jetbrains.mps.core.notation.structure.SNotation"), "context", true);
+              }
+            }).select(new ISelector<SNode, String>() {
+              public String select(SNode it) {
+                return SPropertyOperations.getString(it, "id");
+              }
+            });
+            return Sequence.fromIterable(result).select(new ISelector<String, Tuples._2<String, NotationContext>>() {
+              public Tuples._2<String, NotationContext> select(String it) {
+                return MultiTuple.<String,NotationContext>from(it, context);
+              }
+            }).toListSequence();
+          }
+        };
+        Iterable<Tuples._2<String, NotationContext>> queryResult = (Iterable) computable.compute();
+        if (queryResult != null) {
+          for (final Tuples._2<String, NotationContext> item : queryResult) {
+            ListSequence.fromList(result).addElement(new DefaultChildNodeSubstituteAction(outputConcept, item, _context.getParentNode(), _context.getCurrentTargetNode(), _context.getChildSetter(), operationContext.getScope()) {
+              public SNode createChildNode(Object parameterObject, SModel model, String pattern) {
+                SNode call = SModelOperations.createNewNode(model, "jetbrains.mps.core.notation.structure.SNotationCall", null);
+                SPropertyOperations.set(call, "id", (item)._0());
+                return call;
+              }
+
+              public String getMatchingText(String pattern) {
+                SNode cnode = (item)._1().getNode();
+                String idSuffix = ((item)._0() != null ?
+                  "." + (item)._0() :
+                  ""
+                );
+                return ((SNodeOperations.isInstanceOf(cnode, "jetbrains.mps.lang.core.structure.INamedConcept") ?
+                  SPropertyOperations.getString(SNodeOperations.cast(cnode, "jetbrains.mps.lang.core.structure.INamedConcept"), "name") :
+                  "<unknown>"
+                )) + idSuffix;
+
+              }
+
+              public String getVisibleMatchingText(String pattern) {
+                return this.getMatchingText(pattern);
+              }
+            });
+          }
+        }
+      }
+    }
+    return result;
+  }
+
+  public static List<INodeSubstituteAction> sideTransform_ActionsFactory_SNotationConceptContext_3647933405694680656(final IOperationContext operationContext, final SideTransformActionsBuilderContext _context) {
     List<INodeSubstituteAction> result = ListSequence.fromList(new ArrayList<INodeSubstituteAction>());
     {
       SNode concept = SConceptOperations.findConceptDeclaration("jetbrains.mps.core.notation.structure.SNotation");

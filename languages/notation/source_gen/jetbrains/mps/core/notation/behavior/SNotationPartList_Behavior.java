@@ -7,6 +7,7 @@ import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import jetbrains.mps.core.notation.util.NotationContext;
 
 public class SNotationPartList_Behavior {
   public static void init(SNode thisNode) {
@@ -22,5 +23,12 @@ public class SNotationPartList_Behavior {
         return SNotationPart_Behavior.call_hasNewLineAfter_3647933405694801735(it) && it != ListSequence.fromList(SLinkOperations.getTargets(thisNode, "parts", true)).last() || SNotationPart_Behavior.call_hasNewLineBefore_3647933405694801750(it) && it != ListSequence.fromList(SLinkOperations.getTargets(thisNode, "parts", true)).first();
       }
     });
+  }
+
+  public static NotationContext virtual_getContext_8632884680339357870(SNode thisNode) {
+    if (SNodeOperations.isInstanceOf(SNodeOperations.getParent(thisNode), "jetbrains.mps.core.notation.structure.SNotationContextProvider")) {
+      return SNotationContextProvider_Behavior.call_getContext_8632884680339357870(SNodeOperations.cast(SNodeOperations.getParent(thisNode), "jetbrains.mps.core.notation.structure.SNotationContextProvider"));
+    }
+    return null;
   }
 }

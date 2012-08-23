@@ -15,7 +15,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 public class SNotationMapping_Constraints extends BaseConstraintsDescriptor {
   private static SNodePointer canBeChildBreakingPoint = new SNodePointer("r:f55d268e-47a6-49d8-8d89-2139ce9c0cd2(jetbrains.mps.core.notation.constraints)", "6373561361597751500");
   private static SNodePointer canBeParentBreakingPoint = new SNodePointer("r:f55d268e-47a6-49d8-8d89-2139ce9c0cd2(jetbrains.mps.core.notation.constraints)", "146911029171900014");
-  private static SNodePointer canBeAncesctorBreakingPoint = new SNodePointer("r:f55d268e-47a6-49d8-8d89-2139ce9c0cd2(jetbrains.mps.core.notation.constraints)", "3129031437528334255");
 
   public SNotationMapping_Constraints() {
     super("jetbrains.mps.core.notation.structure.SNotationMapping");
@@ -53,35 +52,12 @@ public class SNotationMapping_Constraints extends BaseConstraintsDescriptor {
     return result;
   }
 
-  @Override
-  public boolean hasOwnCanBeAncestorMethod() {
-    return true;
-  }
-
-  @Override
-  public boolean canBeAncestor(SNode node, @Nullable SNode childNode, SNode childConcept, IOperationContext context, @Nullable CheckingNodeContext checkingNodeContext) {
-    boolean result = static_canBeAnAncestor(node, childNode, childConcept, context);
-
-    if (!(result) && checkingNodeContext != null) {
-      checkingNodeContext.setBreakingNode(canBeAncesctorBreakingPoint);
-    }
-
-    return result;
-  }
-
   public static boolean static_canBeAChild(SNode node, SNode parentNode, SNode link, SNode childConcept, final IOperationContext operationContext) {
     return SNodeOperations.isInstanceOf(parentNode, "jetbrains.mps.core.notation.structure.SNotationPartList") || SNodeOperations.isInstanceOf(parentNode, "jetbrains.mps.core.notation.structure.SNotationUnorderedGroup");
   }
 
   public static boolean static_canBeAParent(SNode node, SNode childNode, SNode childConcept, SNode link, final IOperationContext operationContext) {
     if (link == SLinkOperations.findLinkDeclaration("jetbrains.mps.core.notation.structure.SNotationMapping", "presentation") && (SConceptOperations.isSubConceptOf(childConcept, "jetbrains.mps.core.notation.structure.SNotationMapping"))) {
-      return false;
-    }
-    return true;
-  }
-
-  public static boolean static_canBeAnAncestor(SNode node, SNode childNode, SNode childConcept, final IOperationContext operationContext) {
-    if (SConceptOperations.isSubConceptOf(childConcept, "jetbrains.mps.core.notation.structure.SNotationMapping")) {
       return false;
     }
     return true;

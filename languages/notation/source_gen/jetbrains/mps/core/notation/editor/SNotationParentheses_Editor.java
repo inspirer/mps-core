@@ -296,8 +296,9 @@ public class SNotationParentheses_Editor extends DefaultNodeEditor {
       default_StyleSheet.getPunctuation(editorCell).apply(editorCell);
       {
         Style style = editorCell.getStyle();
-        style.set(StyleAttributes.SELECTABLE, false);
+        style.set(StyleAttributes.SELECTABLE, true);
         style.set(StyleAttributes.PADDING_LEFT, new Padding(1, Measure.SPACES));
+        style.set(StyleAttributes.FIRST_POSITION_ALLOWED, true);
       }
       editorCell.getStyle().set(StyleAttributes.LAYOUT_CONSTRAINT, "");
       editorCell.getStyle().set(StyleAttributes.PUNCTUATION_LEFT, true);

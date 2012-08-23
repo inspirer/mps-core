@@ -64,8 +64,8 @@ public class SNotationMapping_Editor extends DefaultNodeEditor {
 
   private EditorCell createRefNode_l0jb7d_a0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new RefNodeCellProvider(node, editorContext);
-    provider.setRole("entity");
-    provider.setNoTargetText("<no entity>");
+    provider.setRole("entityRef");
+    provider.setNoTargetText("<no entityRef>");
     EditorCell editorCell;
     editorCell = provider.createEditorCell(editorContext);
     SNotationMapping_deleteName.setCellActions(editorCell, node, editorContext);

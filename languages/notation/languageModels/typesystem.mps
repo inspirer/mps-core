@@ -10,6 +10,7 @@
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="4" implicit="yes" />
   <import index="tpd4" modelUID="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" version="3" implicit="yes" />
   <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" implicit="yes" />
+  <import index="auau" modelUID="r:d0c0949b-affc-47c9-a29d-6ab6789bf502(jetbrains.mps.core.notation.behavior)" version="-1" implicit="yes" />
   <roots>
     <node type="tpd4.NonTypesystemRule" typeId="tpd4.1195214364922" id="2711998566964092837">
       <property name="name" nameId="tpck.1169194664001" value="check_SNotationStyle" />
@@ -18,6 +19,10 @@
     <node type="tpd4.NonTypesystemRule" typeId="tpd4.1195214364922" id="6373561361597667771">
       <property name="name" nameId="tpck.1169194664001" value="check_SNotationUnorderedGroup" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="notation" />
+    </node>
+    <node type="tpd4.NonTypesystemRule" typeId="tpd4.1195214364922" id="5566195403253968515">
+      <property name="name" nameId="tpck.1169194664001" value="check_SNotationCall" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mapping" />
     </node>
   </roots>
   <root id="2711998566964092837">
@@ -118,6 +123,37 @@
     <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="6373561361597667773">
       <property name="name" nameId="tpck.1169194664001" value="group" />
       <link role="concept" roleId="tpd4.1174642800329" targetNodeId="74m3.7524455788176520989" resolveInfo="SNotationUnorderedGroup" />
+    </node>
+  </root>
+  <root id="5566195403253968515">
+    <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="5566195403253968516">
+      <node role="statement" roleId="tpee.1068581517665" type="tpee.IfStatement" typeId="tpee.1068580123159" id="5566195403253968518">
+        <node role="condition" roleId="tpee.1068580123160" type="tpee.EqualsExpression" typeId="tpee.1068580123152" id="5566195403253968569">
+          <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="5566195403253968572" />
+          <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5566195403253968542">
+            <node role="operand" roleId="tpee.1197027771414" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="5566195403253968521">
+              <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="5566195403253968517" resolveInfo="call" />
+            </node>
+            <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="5566195403253968548">
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="auau.5566195403253919806" resolveInfo="resolve" />
+            </node>
+          </node>
+        </node>
+        <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="5566195403253968520">
+          <node role="statement" roleId="tpee.1068581517665" type="tpd4.ReportErrorStatement" typeId="tpd4.1175517767210" id="5566195403253968573">
+            <node role="errorString" roleId="tpd4.1175517851849" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5566195403253968576">
+              <property name="value" nameId="tpee.1070475926801" value="unresolved reference; target notation doesn't exist" />
+            </node>
+            <node role="nodeToReport" roleId="tpd4.1227096802790" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="5566195403253968577">
+              <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="5566195403253968517" resolveInfo="call" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="5566195403253968517">
+      <property name="name" nameId="tpck.1169194664001" value="call" />
+      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="74m3.2711998566964153005" resolveInfo="SNotationCall" />
     </node>
   </root>
 </model>

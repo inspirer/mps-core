@@ -14,12 +14,14 @@ import jetbrains.mps.smodel.runtime.base.BaseScopeProvider;
 import jetbrains.mps.scope.Scope;
 import jetbrains.mps.smodel.IOperationContext;
 import jetbrains.mps.smodel.runtime.ReferenceConstraintsContext;
-import jetbrains.mps.smodel.SNode;
+import jetbrains.mps.core.notation.util.NotationContext;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import jetbrains.mps.lang.core.behavior.ScopeProvider_Behavior;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.scope.EmptyScope;
 
 public class SStructureLinkRef_Constraints extends BaseConstraintsDescriptor {
-  private static SNodePointer breakingNode_n2tft4_a0a0a0a0a1a0b0a1a0 = new SNodePointer("r:f55d268e-47a6-49d8-8d89-2139ce9c0cd2(jetbrains.mps.core.notation.constraints)", "7805033636902363743");
+  private static SNodePointer breakingNode_n2tft4_a0a0a0a0a1a0b0a1a0 = new SNodePointer("r:f55d268e-47a6-49d8-8d89-2139ce9c0cd2(jetbrains.mps.core.notation.constraints)", "5566195403254018648");
 
   public SStructureLinkRef_Constraints() {
     super("jetbrains.mps.core.notation.structure.SStructureLinkRef");
@@ -46,11 +48,11 @@ public class SStructureLinkRef_Constraints extends BaseConstraintsDescriptor {
           @Override
           public Scope createScope(final IOperationContext operationContext, final ReferenceConstraintsContext _context) {
             {
-              Scope scope = Scope.getScope(_context.getContextNode(), _context.getContextRole(), _context.getPosition(), (SNode) SConceptOperations.findConceptDeclaration("jetbrains.mps.core.structure.structure.SAbstractLink"));
-              return (scope == null ?
-                new EmptyScope() :
-                scope
-              );
+              NotationContext context = ContextUtil.getContext(_context.getContextNode(), _context.getContextRole());
+              if (context != null && !(context.isMultiple()) && SNodeOperations.isInstanceOf(context.getNode(), "jetbrains.mps.core.structure.structure.SAbstractConcept")) {
+                return ScopeProvider_Behavior.call_getScope_3734116213129936182(SNodeOperations.cast(context.getNode(), "jetbrains.mps.core.structure.structure.SAbstractConcept"), SConceptOperations.findConceptDeclaration("jetbrains.mps.core.structure.structure.SAbstractLink"), null);
+              }
+              return new EmptyScope();
             }
           }
         };
