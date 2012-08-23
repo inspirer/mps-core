@@ -20,10 +20,10 @@ public class SConstraintsPart_Behavior {
 
   public static boolean call_isMultiline_2223786200032678188(SNode thisNode) {
     BehaviorDescriptor descriptor = ConceptRegistry.getInstance().getBehaviorDescriptorForInstanceNode(thisNode);
-    return (Boolean) descriptor.invoke(Boolean.class, SNodeOperations.cast(thisNode, "jetbrains.mps.core.structure.structure.SConstraintsPart"), "virtual_isMultiline_2223786200032678188", PARAMETERS_2223786200032678188);
+    return (Boolean) descriptor.invoke(Boolean.class, SNodeOperations.cast(thisNode, "jetbrains.mps.core.structure.structure.SConstraintsPart"), "virtual_isMultiline_2223786200032678188", PARAMETERS_2223786200032678188, new Object[]{});
   }
 
   public static boolean callSuper_isMultiline_2223786200032678188(SNode thisNode, String callerConceptFqName) {
-    return (Boolean) BehaviorManager.getInstance().invokeSuper(Boolean.class, SNodeOperations.cast(thisNode, "jetbrains.mps.core.structure.structure.SConstraintsPart"), callerConceptFqName, "virtual_isMultiline_2223786200032678188", PARAMETERS_2223786200032678188);
+    return (Boolean) BehaviorManager.getInstance().invokeSuper(Boolean.class, SNodeOperations.cast(thisNode, "jetbrains.mps.core.structure.structure.SConstraintsPart"), callerConceptFqName, "virtual_isMultiline_2223786200032678188", PARAMETERS_2223786200032678188, new Object[]{});
   }
 }

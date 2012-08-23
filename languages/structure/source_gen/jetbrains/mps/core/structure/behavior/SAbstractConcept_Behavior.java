@@ -41,10 +41,10 @@ public class SAbstractConcept_Behavior {
 
   public static boolean call_isSubConceptOf_5938997310819191538(SNode thisNode, SNode concept) {
     BehaviorDescriptor descriptor = ConceptRegistry.getInstance().getBehaviorDescriptorForInstanceNode(thisNode);
-    return (Boolean) descriptor.invoke(Boolean.class, SNodeOperations.cast(thisNode, "jetbrains.mps.core.structure.structure.SAbstractConcept"), "virtual_isSubConceptOf_5938997310819191538", PARAMETERS_5938997310819191538, concept);
+    return (Boolean) descriptor.invoke(Boolean.class, SNodeOperations.cast(thisNode, "jetbrains.mps.core.structure.structure.SAbstractConcept"), "virtual_isSubConceptOf_5938997310819191538", PARAMETERS_5938997310819191538, new Object[]{concept});
   }
 
   public static boolean callSuper_isSubConceptOf_5938997310819191538(SNode thisNode, String callerConceptFqName, SNode concept) {
-    return (Boolean) BehaviorManager.getInstance().invokeSuper(Boolean.class, SNodeOperations.cast(thisNode, "jetbrains.mps.core.structure.structure.SAbstractConcept"), callerConceptFqName, "virtual_isSubConceptOf_5938997310819191538", PARAMETERS_5938997310819191538, concept);
+    return (Boolean) BehaviorManager.getInstance().invokeSuper(Boolean.class, SNodeOperations.cast(thisNode, "jetbrains.mps.core.structure.structure.SAbstractConcept"), callerConceptFqName, "virtual_isSubConceptOf_5938997310819191538", PARAMETERS_5938997310819191538, new Object[]{concept});
   }
 }
