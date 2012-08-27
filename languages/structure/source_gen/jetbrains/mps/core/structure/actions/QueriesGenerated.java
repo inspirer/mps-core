@@ -9,6 +9,7 @@ import jetbrains.mps.smodel.action.SideTransformPreconditionContext;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import jetbrains.mps.smodel.action.NodeSetupContext;
 import java.util.List;
 import jetbrains.mps.smodel.action.INodeSubstituteAction;
 import jetbrains.mps.smodel.action.NodeSubstituteActionsFactoryContext;
@@ -79,6 +80,32 @@ public class QueriesGenerated {
     return SNodeOperations.isInstanceOf(SNodeOperations.getParent(_context.getSourceNode()), "jetbrains.mps.core.structure.structure.SEnumeration") && SLinkOperations.getTarget(SNodeOperations.cast(SNodeOperations.getParent(_context.getSourceNode()), "jetbrains.mps.core.structure.structure.SEnumeration"), "default", false) != _context.getSourceNode();
   }
 
+  public static void nodeFactory_NodeSetup_SConceptFeature_4366849661834368517(final IOperationContext operationContext, final NodeSetupContext _context) {
+    if (SNodeOperations.isInstanceOf(_context.getSampleNode(), "jetbrains.mps.core.structure.structure.SConceptFeature")) {
+      SPropertyOperations.set(_context.getNewNode(), "name", SPropertyOperations.getString(SNodeOperations.cast(_context.getSampleNode(), "jetbrains.mps.core.structure.structure.SConceptFeature"), "name"));
+    }
+  }
+
+  public static void nodeFactory_NodeSetup_SAbstractLink_2312000175984048008(final IOperationContext operationContext, final NodeSetupContext _context) {
+    if (SNodeOperations.isInstanceOf(_context.getSampleNode(), "jetbrains.mps.core.structure.structure.SAbstractLink")) {
+      SLinkOperations.setTarget(_context.getNewNode(), "constraints", SLinkOperations.getTarget(SNodeOperations.cast(_context.getSampleNode(), "jetbrains.mps.core.structure.structure.SAbstractLink"), "constraints", true), true);
+      SLinkOperations.setTarget(_context.getNewNode(), "cardinality", SLinkOperations.getTarget(SNodeOperations.cast(_context.getSampleNode(), "jetbrains.mps.core.structure.structure.SAbstractLink"), "cardinality", true), true);
+      if (SNodeOperations.isInstanceOf(_context.getNewNode(), "jetbrains.mps.core.structure.structure.SReference")) {
+        SPropertyOperations.set(SLinkOperations.getTarget(_context.getNewNode(), "cardinality", true), "isMultiple", "" + false);
+      }
+      SLinkOperations.setTarget(_context.getNewNode(), "target", SLinkOperations.getTarget(SNodeOperations.cast(_context.getSampleNode(), "jetbrains.mps.core.structure.structure.SAbstractLink"), "target", false), false);
+    }
+    if (SNodeOperations.isInstanceOf(_context.getSampleNode(), "jetbrains.mps.core.structure.structure.SProperty")) {
+      SLinkOperations.setTarget(_context.getNewNode(), "constraints", SLinkOperations.getTarget(SNodeOperations.cast(_context.getSampleNode(), "jetbrains.mps.core.structure.structure.SProperty"), "constraints", true), true);
+    }
+  }
+
+  public static void nodeFactory_NodeSetup_SProperty_2312000175984126562(final IOperationContext operationContext, final NodeSetupContext _context) {
+    if (SNodeOperations.isInstanceOf(_context.getSampleNode(), "jetbrains.mps.core.structure.structure.SAbstractLink")) {
+      SLinkOperations.setTarget(_context.getNewNode(), "constraints", SLinkOperations.getTarget(SNodeOperations.cast(_context.getSampleNode(), "jetbrains.mps.core.structure.structure.SAbstractLink"), "constraints", true), true);
+    }
+  }
+
   public static List<INodeSubstituteAction> nodeSubstituteActionsBuilder_ActionsFactory_SProperty_7581772527307667439(final IOperationContext operationContext, final NodeSubstituteActionsFactoryContext _context) {
     List<INodeSubstituteAction> result = ListSequence.fromList(new ArrayList<INodeSubstituteAction>());
     {
@@ -88,7 +115,7 @@ public class QueriesGenerated {
         SNode wrappedConcept = SConceptOperations.findConceptDeclaration("jetbrains.mps.core.structure.structure.SDataType");
         IChildNodeSetter setter = new AbstractChildNodeSetter() {
           public SNode wrapNode(SNode nodeToWrap, SModel model) {
-            SNode prop = SNodeFactoryOperations.createNewNode(model, "jetbrains.mps.core.structure.structure.SProperty", null);
+            SNode prop = SNodeFactoryOperations.createNewNode(model, "jetbrains.mps.core.structure.structure.SProperty", _context.getCurrentTargetNode());
             SLinkOperations.setTarget(prop, "type", nodeToWrap, true);
             return prop;
           }
@@ -496,6 +523,28 @@ public class QueriesGenerated {
 
         public String getDescriptionText(String pattern) {
           return "strictly one element";
+        }
+      });
+    }
+    return result;
+  }
+
+  public static List<INodeSubstituteAction> sideTransform_ActionsFactory_SChildLink_2312000175983998267(final IOperationContext operationContext, final SideTransformActionsBuilderContext _context) {
+    List<INodeSubstituteAction> result = ListSequence.fromList(new ArrayList<INodeSubstituteAction>());
+    {
+      SNode concept = SConceptOperations.findConceptDeclaration("jetbrains.mps.core.structure.structure.SAbstractLink");
+      ListSequence.fromList(result).addElement(new AbstractSideTransformHintSubstituteAction(concept, _context.getSourceNode()) {
+        public SNode doSubstitute(String pattern) {
+          SNode ref = SNodeFactoryOperations.replaceWithNewChild(_context.getSourceNode(), "jetbrains.mps.core.structure.structure.SReference");
+          return ref;
+        }
+
+        public String getMatchingText(String pattern) {
+          return "ref";
+        }
+
+        public String getVisibleMatchingText(String pattern) {
+          return this.getMatchingText(pattern);
         }
       });
     }

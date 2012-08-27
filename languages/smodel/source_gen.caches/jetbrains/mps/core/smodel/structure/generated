@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="-70xnspjo5mzdhsx2ghyxocg2tj3puq4">
+<dependencies version="2" modelHash="cp200ctrmiw7zh0i01bjlidygeqgxti">
   <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
   <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
   <dep model="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
@@ -9,9 +9,9 @@
   <dep model="r:00000000-0000-4000-0000-011c8959032f(jetbrains.mps.baseLanguage.collections.generator.baseLanguage.template.main@generator)" />
   <dep model="r:00000000-0000-4000-0000-011c8959033a(jetbrains.mps.baseLanguage.closures.generator.baseLanguage.template.main@generator)" />
   <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" />
-  <dep model="r:c11a239c-3061-4b62-b5dd-6749678497d7(jetbrains.mps.core.structure.structure)" hash="-ch29nvc12s9lag4zh47cagfz3kfe8p4" />
+  <dep model="r:c11a239c-3061-4b62-b5dd-6749678497d7(jetbrains.mps.core.structure.structure)" hash="-411kz1kc0ltocrjeqp1ps6t5slps14k" />
   <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" />
-  <dep model="r:f9198ffd-e084-425c-aa82-f2db8289f5eb(jetbrains.mps.core.query.structure)" hash="-73d9yxkwbjjgvr2ekcpoh9xmcr40sc8" />
+  <dep model="r:f9198ffd-e084-425c-aa82-f2db8289f5eb(jetbrains.mps.core.query.structure)" hash="uyx8ixnbqd6oaxfxy8imfolrwze6wa" />
   <common hash="364estfu3y25byw7p779qc7djl3v2qs" dependsOnNodes="true">
     <dep root="4260762357824841781" />
     <dep root="4260762357824841783" />
@@ -42,7 +42,7 @@
   <source id="4260762357825047862" name="MqlNodeType" hash="67l0i4yh1rekmrcmctmk64b9ej6l7oq">
     <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
   </source>
-  <source id="5270931306887544473" name="SConceptQuery" hash="-74e5qjns9qkq0911hebb5ufd2p4va2f">
+  <source id="5270931306887544473" name="SConceptQuery" hash="9l6bp5o7zhezp05ga74notjycucslxi">
     <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
   </source>
   <source id="535637396506608313" name="SConceptQueryCall" hash="9rf1zdj0clf92vt4giccwtcxrcra20z">

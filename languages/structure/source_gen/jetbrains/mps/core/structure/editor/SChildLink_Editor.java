@@ -13,12 +13,16 @@ import jetbrains.mps.nodeEditor.style.StyleAttributes;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
 import jetbrains.mps.lang.editor.cellProviders.RefCellCellProvider;
+import jetbrains.mps.nodeEditor.cellMenu.CompositeSubstituteInfo;
+import jetbrains.mps.nodeEditor.cellMenu.SubstituteInfoPart;
 import jetbrains.mps.smodel.IOperationContext;
 import jetbrains.mps.nodeEditor.EditorManager;
 import jetbrains.mps.lang.editor.cellProviders.RefNodeCellProvider;
 import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
 import jetbrains.mps.smodel.IScope;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.lang.editor.generator.internal.AbstractCellMenuPart_ReplaceNode_CustomNodeConcept;
+import jetbrains.mps.lang.editor.generator.internal.PrimaryReferentMenuCellMenuPart;
 import jetbrains.mps.nodeEditor.InlineCellProvider;
 
 public class SChildLink_Editor extends DefaultNodeEditor {
@@ -72,7 +76,7 @@ public class SChildLink_Editor extends DefaultNodeEditor {
     EditorCell editorCell;
     provider.setAuxiliaryCellProvider(new SChildLink_Editor._Inline_lacg44_a0a());
     editorCell = provider.createEditorCell(editorContext);
-    editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
+    editorCell.setSubstituteInfo(new CompositeSubstituteInfo(editorContext, provider.getCellContext(), new SubstituteInfoPart[]{new SChildLink_Editor.ReplaceWith_SProperty_cellMenu_a0a0(), new SChildLink_Editor.SChildLink_target_cellMenu_b0a0()}));
     SNode attributeConcept = provider.getRoleAttribute();
     Class attributeKind = provider.getRoleAttributeClass();
     if (attributeConcept != null) {
@@ -133,6 +137,20 @@ public class SChildLink_Editor extends DefaultNodeEditor {
 
   private static boolean renderingCondition_lacg44_a4a(SNode node, EditorContext editorContext, IScope scope) {
     return (SLinkOperations.getTarget(node, "constraints", true) == null);
+  }
+
+  public static class ReplaceWith_SProperty_cellMenu_a0a0 extends AbstractCellMenuPart_ReplaceNode_CustomNodeConcept {
+    public ReplaceWith_SProperty_cellMenu_a0a0() {
+    }
+
+    public String getReplacementConceptName() {
+      return "jetbrains.mps.core.structure.structure.SProperty";
+    }
+  }
+
+  public static class SChildLink_target_cellMenu_b0a0 extends PrimaryReferentMenuCellMenuPart {
+    public SChildLink_target_cellMenu_b0a0() {
+    }
   }
 
   public static class _Inline_lacg44_a0a extends InlineCellProvider {

@@ -58,6 +58,7 @@ public class SReference_Editor extends DefaultNodeEditor {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "ref");
     editorCell.setCellId("Constant_iir456_a0");
     default_StyleSheet.getKeyword(editorCell).apply(editorCell);
+    SReference_deleteRef.setCellActions(editorCell, node, editorContext);
     editorCell.setDefaultText("");
     return editorCell;
   }
