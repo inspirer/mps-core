@@ -332,11 +332,16 @@
       <node role="members" roleId="ydsw.6195190339581766761" type="xsnc.SConceptQuery" typeId="xsnc.5270931306887544473" id="197339667876179870">
         <property name="name" nameId="tpck.1169194664001" value="id" />
         <property name="isFinal" nameId="xsnc.6195190339581766763" value="true" />
-        <node role="body" roleId="xsnc.6762883159245048634" type="bwy9.MqlNullLiteral" typeId="bwy9.6762883159245048062" id="197339667876179876" />
         <node role="type" roleId="xsnc.4366849661834287896" type="bwy9.MqlStringType" typeId="bwy9.6762883159245048070" id="197339667876179873" />
         <node role="parameters" roleId="bwy9.1992172484410518817" type="bwy9.MqlParameter" typeId="bwy9.6762883159245048635" id="197339667876179874">
           <property name="name" nameId="tpck.1169194664001" value="suffix" />
           <node role="type" roleId="bwy9.6762883159245086405" type="bwy9.MqlStringType" typeId="bwy9.6762883159245048070" id="197339667876179875" />
+        </node>
+        <node role="body" roleId="xsnc.6762883159245048634" type="bwy9.MqlDotExpression" typeId="bwy9.6762883159245048085" id="5130788244153231151">
+          <node role="left" roleId="bwy9.6762883159245048086" type="bwy9.MqlThis" typeId="bwy9.6762883159245048067" id="5130788244153231150" />
+          <node role="right" roleId="bwy9.6762883159245048089" type="xsnc.SConceptQueryCall" typeId="xsnc.535637396506608313" id="5130788244153231156">
+            <link role="query" roleId="xsnc.535637396506608314" targetNodeId="197339667876179870" resolveInfo="id" />
+          </node>
         </node>
       </node>
     </node>
@@ -363,6 +368,27 @@
     <node role="structure" roleId="ydsw.6195190339581766884" type="ydsw.SConcept" typeId="ydsw.6195190339581766741" id="197339667876179856">
       <property name="name" nameId="tpck.1169194664001" value="MyType" />
       <link role="extends" roleId="ydsw.6195190339581766765" targetNodeId="8379004527113924471" resolveInfo="Type" />
+      <node role="members" roleId="ydsw.6195190339581766761" type="xsnc.SConceptQuery" typeId="xsnc.5270931306887544473" id="667076193709664466">
+        <property name="name" nameId="tpck.1169194664001" value="id" />
+        <property name="isOverride" nameId="xsnc.4366849661834292509" value="true" />
+        <node role="body" roleId="xsnc.6762883159245048634" type="bwy9.MqlIntLiteral" typeId="bwy9.6762883159245048052" id="667076193709664469">
+          <property name="value" nameId="bwy9.6762883159245048053" value="1" />
+        </node>
+        <node role="type" roleId="xsnc.4366849661834287896" type="bwy9.MqlStringType" typeId="bwy9.6762883159245048070" id="667076193709664468" />
+      </node>
+    </node>
+    <node role="structure" roleId="ydsw.6195190339581766884" type="ydsw.SStructureEmptyLine" typeId="ydsw.6195190339581962051" id="667076193709664470" />
+    <node role="structure" roleId="ydsw.6195190339581766884" type="ydsw.SConcept" typeId="ydsw.6195190339581766741" id="667076193709664472">
+      <property name="name" nameId="tpck.1169194664001" value="QQQ" />
+      <link role="extends" roleId="ydsw.6195190339581766765" targetNodeId="197339667876179856" resolveInfo="MyType" />
+      <node role="members" roleId="ydsw.6195190339581766761" type="xsnc.SConceptQuery" typeId="xsnc.5270931306887544473" id="667076193709664475">
+        <property name="name" nameId="tpck.1169194664001" value="id" />
+        <property name="isOverride" nameId="xsnc.4366849661834292509" value="true" />
+        <node role="type" roleId="xsnc.4366849661834287896" type="bwy9.MqlStringType" typeId="bwy9.6762883159245048070" id="667076193709664477" />
+        <node role="body" roleId="xsnc.6762883159245048634" type="bwy9.MqlStringLiteral" typeId="bwy9.6762883159245048054" id="667076193709751048">
+          <property name="value" nameId="bwy9.6762883159245048055" value="aaa" />
+        </node>
+      </node>
     </node>
     <node role="structure" roleId="ydsw.6195190339581766884" type="ydsw.SStructureEmptyLine" typeId="ydsw.6195190339581962051" id="5362811550739085700" />
     <node role="structure" roleId="ydsw.6195190339581766884" type="ydsw.SConcept" typeId="ydsw.6195190339581766741" id="5362811550739085702">
