@@ -16,10 +16,10 @@ public class MqlVariableContainer_Behavior {
 
   public static SNode call_getContainedVariableType_3435983127247055569(SNode thisNode, String role) {
     BehaviorDescriptor descriptor = ConceptRegistry.getInstance().getBehaviorDescriptorForInstanceNode(thisNode);
-    return (SNode) descriptor.invoke(Object.class, SNodeOperations.cast(thisNode, "jetbrains.mps.core.query.structure.MqlVariableContainer"), "virtual_getContainedVariableType_3435983127247055569", PARAMETERS_3435983127247055569, role);
+    return (SNode) descriptor.invoke(Object.class, SNodeOperations.cast(thisNode, "jetbrains.mps.core.query.structure.MqlVariableContainer"), "virtual_getContainedVariableType_3435983127247055569", PARAMETERS_3435983127247055569, new Object[]{role});
   }
 
   public static SNode callSuper_getContainedVariableType_3435983127247055569(SNode thisNode, String callerConceptFqName, String role) {
-    return (SNode) BehaviorManager.getInstance().invokeSuper(Object.class, SNodeOperations.cast(thisNode, "jetbrains.mps.core.query.structure.MqlVariableContainer"), callerConceptFqName, "virtual_getContainedVariableType_3435983127247055569", PARAMETERS_3435983127247055569, role);
+    return (SNode) BehaviorManager.getInstance().invokeSuper(Object.class, SNodeOperations.cast(thisNode, "jetbrains.mps.core.query.structure.MqlVariableContainer"), callerConceptFqName, "virtual_getContainedVariableType_3435983127247055569", PARAMETERS_3435983127247055569, new Object[]{role});
   }
 }

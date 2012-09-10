@@ -6,6 +6,7 @@ import jetbrains.mps.smodel.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.core.structure.behavior.SAbstractConcept_Behavior;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 
 public class MtlNewNodeType_Behavior {
   public static void init(SNode thisNode) {
@@ -21,5 +22,13 @@ public class MtlNewNodeType_Behavior {
       return SAbstractConcept_Behavior.call_isSubConceptOf_5938997310819191538(SLinkOperations.getTarget(thisNode, "concept", false), target);
     }
     return false;
+  }
+
+  public static String virtual_getSignature_270269450479785729(SNode thisNode) {
+    return "node<>";
+  }
+
+  public static String virtual_getText_270269450479797040(SNode thisNode) {
+    return SPropertyOperations.getString(SLinkOperations.getTarget(thisNode, "concept", false), "name");
   }
 }

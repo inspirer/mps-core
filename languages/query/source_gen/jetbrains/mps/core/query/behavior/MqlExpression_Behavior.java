@@ -33,28 +33,28 @@ public class MqlExpression_Behavior {
 
   public static SNode call_getType_228266671027861783(SNode thisNode) {
     BehaviorDescriptor descriptor = ConceptRegistry.getInstance().getBehaviorDescriptorForInstanceNode(thisNode);
-    return (SNode) descriptor.invoke(Object.class, SNodeOperations.cast(thisNode, "jetbrains.mps.core.query.structure.MqlExpression"), "virtual_getType_228266671027861783", PARAMETERS_228266671027861783);
+    return (SNode) descriptor.invoke(Object.class, SNodeOperations.cast(thisNode, "jetbrains.mps.core.query.structure.MqlExpression"), "virtual_getType_228266671027861783", PARAMETERS_228266671027861783, new Object[]{});
   }
 
   public static int call_getPriority_7352592509980890960(SNode thisNode) {
     BehaviorDescriptor descriptor = ConceptRegistry.getInstance().getBehaviorDescriptorForInstanceNode(thisNode);
-    return (Integer) descriptor.invoke(Integer.class, SNodeOperations.cast(thisNode, "jetbrains.mps.core.query.structure.MqlExpression"), "virtual_getPriority_7352592509980890960", PARAMETERS_7352592509980890960);
+    return (Integer) descriptor.invoke(Integer.class, SNodeOperations.cast(thisNode, "jetbrains.mps.core.query.structure.MqlExpression"), "virtual_getPriority_7352592509980890960", PARAMETERS_7352592509980890960, new Object[]{});
   }
 
   public static Object call_evaluate_1671449901154581105(SNode thisNode, EvaluationEnvironment env, EvaluationContext context) {
     BehaviorDescriptor descriptor = ConceptRegistry.getInstance().getBehaviorDescriptorForInstanceNode(thisNode);
-    return (Object) descriptor.invoke(Object.class, SNodeOperations.cast(thisNode, "jetbrains.mps.core.query.structure.MqlExpression"), "virtual_evaluate_1671449901154581105", PARAMETERS_1671449901154581105, env, context);
+    return (Object) descriptor.invoke(Object.class, SNodeOperations.cast(thisNode, "jetbrains.mps.core.query.structure.MqlExpression"), "virtual_evaluate_1671449901154581105", PARAMETERS_1671449901154581105, new Object[]{env, context});
   }
 
   public static SNode callSuper_getType_228266671027861783(SNode thisNode, String callerConceptFqName) {
-    return (SNode) BehaviorManager.getInstance().invokeSuper(Object.class, SNodeOperations.cast(thisNode, "jetbrains.mps.core.query.structure.MqlExpression"), callerConceptFqName, "virtual_getType_228266671027861783", PARAMETERS_228266671027861783);
+    return (SNode) BehaviorManager.getInstance().invokeSuper(Object.class, SNodeOperations.cast(thisNode, "jetbrains.mps.core.query.structure.MqlExpression"), callerConceptFqName, "virtual_getType_228266671027861783", PARAMETERS_228266671027861783, new Object[]{});
   }
 
   public static int callSuper_getPriority_7352592509980890960(SNode thisNode, String callerConceptFqName) {
-    return (Integer) BehaviorManager.getInstance().invokeSuper(Integer.class, SNodeOperations.cast(thisNode, "jetbrains.mps.core.query.structure.MqlExpression"), callerConceptFqName, "virtual_getPriority_7352592509980890960", PARAMETERS_7352592509980890960);
+    return (Integer) BehaviorManager.getInstance().invokeSuper(Integer.class, SNodeOperations.cast(thisNode, "jetbrains.mps.core.query.structure.MqlExpression"), callerConceptFqName, "virtual_getPriority_7352592509980890960", PARAMETERS_7352592509980890960, new Object[]{});
   }
 
   public static Object callSuper_evaluate_1671449901154581105(SNode thisNode, String callerConceptFqName, EvaluationEnvironment env, EvaluationContext context) {
-    return (Object) BehaviorManager.getInstance().invokeSuper(Object.class, SNodeOperations.cast(thisNode, "jetbrains.mps.core.query.structure.MqlExpression"), callerConceptFqName, "virtual_evaluate_1671449901154581105", PARAMETERS_1671449901154581105, env, context);
+    return (Object) BehaviorManager.getInstance().invokeSuper(Object.class, SNodeOperations.cast(thisNode, "jetbrains.mps.core.query.structure.MqlExpression"), callerConceptFqName, "virtual_evaluate_1671449901154581105", PARAMETERS_1671449901154581105, new Object[]{env, context});
   }
 }

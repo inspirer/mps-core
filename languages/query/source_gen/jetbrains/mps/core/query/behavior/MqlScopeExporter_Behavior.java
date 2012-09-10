@@ -17,10 +17,10 @@ public class MqlScopeExporter_Behavior {
 
   public static Scope call_getExportedScope_5109194352282852190(SNode thisNode) {
     BehaviorDescriptor descriptor = ConceptRegistry.getInstance().getBehaviorDescriptorForInstanceNode(thisNode);
-    return (Scope) descriptor.invoke(Object.class, SNodeOperations.cast(thisNode, "jetbrains.mps.core.query.structure.MqlScopeExporter"), "virtual_getExportedScope_5109194352282852190", PARAMETERS_5109194352282852190);
+    return (Scope) descriptor.invoke(Object.class, SNodeOperations.cast(thisNode, "jetbrains.mps.core.query.structure.MqlScopeExporter"), "virtual_getExportedScope_5109194352282852190", PARAMETERS_5109194352282852190, new Object[]{});
   }
 
   public static Scope callSuper_getExportedScope_5109194352282852190(SNode thisNode, String callerConceptFqName) {
-    return (Scope) BehaviorManager.getInstance().invokeSuper(Object.class, SNodeOperations.cast(thisNode, "jetbrains.mps.core.query.structure.MqlScopeExporter"), callerConceptFqName, "virtual_getExportedScope_5109194352282852190", PARAMETERS_5109194352282852190);
+    return (Scope) BehaviorManager.getInstance().invokeSuper(Object.class, SNodeOperations.cast(thisNode, "jetbrains.mps.core.query.structure.MqlScopeExporter"), callerConceptFqName, "virtual_getExportedScope_5109194352282852190", PARAMETERS_5109194352282852190, new Object[]{});
   }
 }

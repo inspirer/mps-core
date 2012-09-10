@@ -322,10 +322,21 @@
     <node role="structure" roleId="ydsw.6195190339581766884" type="ydsw.SStructureEmptyLine" typeId="ydsw.6195190339581962051" id="8379004527113872027" />
     <node role="structure" roleId="ydsw.6195190339581766884" type="ydsw.SConcept" typeId="ydsw.6195190339581766741" id="8379004527113924471">
       <property name="name" nameId="tpck.1169194664001" value="Type" />
-      <node role="members" roleId="ydsw.6195190339581766761" type="ydsw.SProperty" typeId="ydsw.6195190339581766742" id="8379004527113924473">
+      <node role="members" roleId="ydsw.6195190339581766761" type="xsnc.SConceptQuery" typeId="xsnc.5270931306887544473" id="270269450479642826">
         <property name="name" nameId="tpck.1169194664001" value="id" />
-        <node role="type" roleId="ydsw.7581772527307667429" type="ydsw.SPrimitiveDataType" typeId="ydsw.7581772527307667404" id="8379004527113924474">
-          <property name="kind" nameId="ydsw.7581772527307667409" value="string" />
+        <node role="body" roleId="xsnc.6762883159245048634" type="bwy9.MqlIntLiteral" typeId="bwy9.6762883159245048052" id="270269450479642831">
+          <property name="value" nameId="bwy9.6762883159245048053" value="1" />
+        </node>
+        <node role="type" roleId="xsnc.4366849661834287896" type="bwy9.MqlStringType" typeId="bwy9.6762883159245048070" id="270269450479642829" />
+      </node>
+      <node role="members" roleId="ydsw.6195190339581766761" type="xsnc.SConceptQuery" typeId="xsnc.5270931306887544473" id="197339667876179870">
+        <property name="name" nameId="tpck.1169194664001" value="id" />
+        <property name="isFinal" nameId="xsnc.6195190339581766763" value="true" />
+        <node role="body" roleId="xsnc.6762883159245048634" type="bwy9.MqlNullLiteral" typeId="bwy9.6762883159245048062" id="197339667876179876" />
+        <node role="type" roleId="xsnc.4366849661834287896" type="bwy9.MqlStringType" typeId="bwy9.6762883159245048070" id="197339667876179873" />
+        <node role="parameters" roleId="bwy9.1992172484410518817" type="bwy9.MqlParameter" typeId="bwy9.6762883159245048635" id="197339667876179874">
+          <property name="name" nameId="tpck.1169194664001" value="suffix" />
+          <node role="type" roleId="bwy9.6762883159245086405" type="bwy9.MqlStringType" typeId="bwy9.6762883159245048070" id="197339667876179875" />
         </node>
       </node>
     </node>
@@ -347,6 +358,11 @@
       <node role="implements" roleId="ydsw.6195190339581766790" type="ydsw.SInterfaceReference" typeId="ydsw.6195190339581766766" id="5362811550739085639">
         <link role="target" roleId="ydsw.6195190339581766767" targetNodeId="5362811550739085635" resolveInfo="IMember" />
       </node>
+    </node>
+    <node role="structure" roleId="ydsw.6195190339581766884" type="ydsw.SStructureEmptyLine" typeId="ydsw.6195190339581962051" id="197339667876179854" />
+    <node role="structure" roleId="ydsw.6195190339581766884" type="ydsw.SConcept" typeId="ydsw.6195190339581766741" id="197339667876179856">
+      <property name="name" nameId="tpck.1169194664001" value="MyType" />
+      <link role="extends" roleId="ydsw.6195190339581766765" targetNodeId="8379004527113924471" resolveInfo="Type" />
     </node>
     <node role="structure" roleId="ydsw.6195190339581766884" type="ydsw.SStructureEmptyLine" typeId="ydsw.6195190339581962051" id="5362811550739085700" />
     <node role="structure" roleId="ydsw.6195190339581766884" type="ydsw.SConcept" typeId="ydsw.6195190339581766741" id="5362811550739085702">

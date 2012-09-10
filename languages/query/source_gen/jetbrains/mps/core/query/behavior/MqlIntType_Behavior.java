@@ -12,4 +12,8 @@ public class MqlIntType_Behavior {
   public static boolean virtual_isSubtypeOf_2852142168179579064(SNode thisNode, SNode type) {
     return SNodeOperations.isInstanceOf(type, "jetbrains.mps.core.query.structure.MqlIntType");
   }
+
+  public static String virtual_getSignature_270269450479785729(SNode thisNode) {
+    return "int";
+  }
 }

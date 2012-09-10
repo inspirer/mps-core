@@ -16,4 +16,12 @@ public class MqlListType_Behavior {
     }
     return false;
   }
+
+  public static String virtual_getSignature_270269450479785729(SNode thisNode) {
+    return "list<>";
+  }
+
+  public static String virtual_getText_270269450479797040(SNode thisNode) {
+    return "list<" + MqlType_Behavior.call_getText_270269450479797040(SLinkOperations.getTarget(thisNode, "inner", true)) + ">";
+  }
 }

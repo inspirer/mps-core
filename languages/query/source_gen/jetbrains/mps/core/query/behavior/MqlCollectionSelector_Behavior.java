@@ -174,11 +174,11 @@ public class MqlCollectionSelector_Behavior {
 
   public static Object call_evaluate_7862448911997425386(SNode thisNode, Object object, final EvaluationEnvironment env, final EvaluationContext context) {
     BehaviorDescriptor descriptor = ConceptRegistry.getInstance().getBehaviorDescriptorForInstanceNode(thisNode);
-    return (Object) descriptor.invoke(Object.class, SNodeOperations.cast(thisNode, "jetbrains.mps.core.query.structure.MqlCollectionSelector"), "virtual_evaluate_7862448911997337721", PARAMETERS_7862448911997425386, object, env, context);
+    return (Object) descriptor.invoke(Object.class, SNodeOperations.cast(thisNode, "jetbrains.mps.core.query.structure.MqlCollectionSelector"), "virtual_evaluate_7862448911997337721", PARAMETERS_7862448911997425386, new Object[]{object, env, context});
   }
 
   public static Object callSuper_evaluate_7862448911997425386(SNode thisNode, String callerConceptFqName, Object object, final EvaluationEnvironment env, final EvaluationContext context) {
-    return (Object) BehaviorManager.getInstance().invokeSuper(Object.class, SNodeOperations.cast(thisNode, "jetbrains.mps.core.query.structure.MqlCollectionSelector"), callerConceptFqName, "virtual_evaluate_7862448911997337721", PARAMETERS_7862448911997425386, object, env, context);
+    return (Object) BehaviorManager.getInstance().invokeSuper(Object.class, SNodeOperations.cast(thisNode, "jetbrains.mps.core.query.structure.MqlCollectionSelector"), callerConceptFqName, "virtual_evaluate_7862448911997337721", PARAMETERS_7862448911997425386, new Object[]{object, env, context});
   }
 
   public static class QuotationClass_6kvg7a_a0a0a0b {

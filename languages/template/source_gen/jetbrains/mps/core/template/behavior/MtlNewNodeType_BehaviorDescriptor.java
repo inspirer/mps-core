@@ -13,6 +13,14 @@ public class MtlNewNodeType_BehaviorDescriptor extends MqlType_BehaviorDescripto
     return MtlNewNodeType_Behavior.virtual_isSubtypeOf_2852142168179579064(thisNode, type);
   }
 
+  public String virtual_getText_270269450479797040(SNode thisNode) {
+    return MtlNewNodeType_Behavior.virtual_getText_270269450479797040(thisNode);
+  }
+
+  public String virtual_getSignature_270269450479785729(SNode thisNode) {
+    return MtlNewNodeType_Behavior.virtual_getSignature_270269450479785729(thisNode);
+  }
+
   @Override
   public String getConceptFqName() {
     return "jetbrains.mps.core.template.structure.MtlNewNodeType";

@@ -8,6 +8,11 @@ import jetbrains.mps.scope.Scope;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.scope.SimpleRoleScope;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import jetbrains.mps.internal.collections.runtime.IterableUtils;
+import jetbrains.mps.internal.collections.runtime.ListSequence;
+import jetbrains.mps.internal.collections.runtime.ISelector;
+import jetbrains.mps.core.query.behavior.MqlType_Behavior;
 import java.util.Set;
 import java.util.HashSet;
 import jetbrains.mps.smodel.SModelUtil_new;
@@ -26,6 +31,22 @@ public class SConceptQuery_Behavior {
       return SimpleRoleScope.forNamedElements(thisNode, SLinkOperations.findLinkDeclaration("jetbrains.mps.core.query.structure.MqlParametersContainer", "parameters"));
     }
     return null;
+  }
+
+  public static String call_getSignature_270269450479785542(SNode thisNode) {
+    return SPropertyOperations.getString(thisNode, "name") + "(" + IterableUtils.join(ListSequence.fromList(SLinkOperations.getTargets(thisNode, "parameters", true)).select(new ISelector<SNode, String>() {
+      public String select(SNode it) {
+        return MqlType_Behavior.call_getSignature_270269450479785729(SLinkOperations.getTarget(it, "type", true));
+      }
+    }), ",") + ")";
+  }
+
+  public static String call_getText_270269450479821683(SNode thisNode) {
+    return MqlType_Behavior.call_getText_270269450479797040(SLinkOperations.getTarget(thisNode, "type", true)) + " " + SPropertyOperations.getString(thisNode, "name") + "(" + IterableUtils.join(ListSequence.fromList(SLinkOperations.getTargets(thisNode, "parameters", true)).select(new ISelector<SNode, String>() {
+      public String select(SNode it) {
+        return MqlType_Behavior.call_getText_270269450479797040(SLinkOperations.getTarget(it, "type", true));
+      }
+    }), ",") + ")";
   }
 
   public static class QuotationClass_m9cidb_a0a0b {

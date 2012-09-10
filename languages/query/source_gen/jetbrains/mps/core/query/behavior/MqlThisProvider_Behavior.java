@@ -16,10 +16,10 @@ public class MqlThisProvider_Behavior {
 
   public static SNode call_getThisType_4125821269968916020(SNode thisNode) {
     BehaviorDescriptor descriptor = ConceptRegistry.getInstance().getBehaviorDescriptorForInstanceNode(thisNode);
-    return (SNode) descriptor.invoke(Object.class, SNodeOperations.cast(thisNode, "jetbrains.mps.core.query.structure.MqlThisProvider"), "virtual_getThisType_4125821269968916020", PARAMETERS_4125821269968916020);
+    return (SNode) descriptor.invoke(Object.class, SNodeOperations.cast(thisNode, "jetbrains.mps.core.query.structure.MqlThisProvider"), "virtual_getThisType_4125821269968916020", PARAMETERS_4125821269968916020, new Object[]{});
   }
 
   public static SNode callSuper_getThisType_4125821269968916020(SNode thisNode, String callerConceptFqName) {
-    return (SNode) BehaviorManager.getInstance().invokeSuper(Object.class, SNodeOperations.cast(thisNode, "jetbrains.mps.core.query.structure.MqlThisProvider"), callerConceptFqName, "virtual_getThisType_4125821269968916020", PARAMETERS_4125821269968916020);
+    return (SNode) BehaviorManager.getInstance().invokeSuper(Object.class, SNodeOperations.cast(thisNode, "jetbrains.mps.core.query.structure.MqlThisProvider"), callerConceptFqName, "virtual_getThisType_4125821269968916020", PARAMETERS_4125821269968916020, new Object[]{});
   }
 }

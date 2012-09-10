@@ -6,6 +6,8 @@ import jetbrains.mps.smodel.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.internal.collections.runtime.IterableUtils;
+import jetbrains.mps.internal.collections.runtime.ISelector;
 
 public class MqlFunctionType_Behavior {
   public static void init(SNode thisNode) {
@@ -22,5 +24,17 @@ public class MqlFunctionType_Behavior {
       return MqlType_Behavior.call_isSubtypeOf_2852142168179579064(SLinkOperations.getTarget(thisNode, "returnType", true), SLinkOperations.getTarget(ftype, "returnType", true));
     }
     return false;
+  }
+
+  public static String virtual_getSignature_270269450479785729(SNode thisNode) {
+    return "{->}";
+  }
+
+  public static String virtual_getText_270269450479797040(SNode thisNode) {
+    return "{" + IterableUtils.join(ListSequence.fromList(SLinkOperations.getTargets(thisNode, "parameterTypes", true)).select(new ISelector<SNode, String>() {
+      public String select(SNode it) {
+        return MqlType_Behavior.call_getText_270269450479797040(it);
+      }
+    }), ",") + "->" + MqlType_Behavior.call_getText_270269450479797040(SLinkOperations.getTarget(thisNode, "returnType", true)) + "}";
   }
 }

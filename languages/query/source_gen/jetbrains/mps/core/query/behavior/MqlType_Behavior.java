@@ -10,6 +10,8 @@ import jetbrains.mps.smodel.behaviour.BehaviorManager;
 
 public class MqlType_Behavior {
   private static Class[] PARAMETERS_2852142168179579064 = {SNode.class, SNode.class};
+  private static Class[] PARAMETERS_270269450479785729 = {SNode.class};
+  private static Class[] PARAMETERS_270269450479797040 = {SNode.class};
 
   public static void init(SNode thisNode) {
   }
@@ -18,12 +20,38 @@ public class MqlType_Behavior {
     return false;
   }
 
+  public static String virtual_getSignature_270269450479785729(SNode thisNode) {
+    return null;
+  }
+
+  public static String virtual_getText_270269450479797040(SNode thisNode) {
+    return MqlType_Behavior.call_getSignature_270269450479785729(thisNode);
+  }
+
   public static boolean call_isSubtypeOf_2852142168179579064(SNode thisNode, SNode type) {
     BehaviorDescriptor descriptor = ConceptRegistry.getInstance().getBehaviorDescriptorForInstanceNode(thisNode);
-    return (Boolean) descriptor.invoke(Boolean.class, SNodeOperations.cast(thisNode, "jetbrains.mps.core.query.structure.MqlType"), "virtual_isSubtypeOf_2852142168179579064", PARAMETERS_2852142168179579064, type);
+    return (Boolean) descriptor.invoke(Boolean.class, SNodeOperations.cast(thisNode, "jetbrains.mps.core.query.structure.MqlType"), "virtual_isSubtypeOf_2852142168179579064", PARAMETERS_2852142168179579064, new Object[]{type});
+  }
+
+  public static String call_getSignature_270269450479785729(SNode thisNode) {
+    BehaviorDescriptor descriptor = ConceptRegistry.getInstance().getBehaviorDescriptorForInstanceNode(thisNode);
+    return (String) descriptor.invoke(Object.class, SNodeOperations.cast(thisNode, "jetbrains.mps.core.query.structure.MqlType"), "virtual_getSignature_270269450479785729", PARAMETERS_270269450479785729, new Object[]{});
+  }
+
+  public static String call_getText_270269450479797040(SNode thisNode) {
+    BehaviorDescriptor descriptor = ConceptRegistry.getInstance().getBehaviorDescriptorForInstanceNode(thisNode);
+    return (String) descriptor.invoke(Object.class, SNodeOperations.cast(thisNode, "jetbrains.mps.core.query.structure.MqlType"), "virtual_getText_270269450479797040", PARAMETERS_270269450479797040, new Object[]{});
   }
 
   public static boolean callSuper_isSubtypeOf_2852142168179579064(SNode thisNode, String callerConceptFqName, SNode type) {
-    return (Boolean) BehaviorManager.getInstance().invokeSuper(Boolean.class, SNodeOperations.cast(thisNode, "jetbrains.mps.core.query.structure.MqlType"), callerConceptFqName, "virtual_isSubtypeOf_2852142168179579064", PARAMETERS_2852142168179579064, type);
+    return (Boolean) BehaviorManager.getInstance().invokeSuper(Boolean.class, SNodeOperations.cast(thisNode, "jetbrains.mps.core.query.structure.MqlType"), callerConceptFqName, "virtual_isSubtypeOf_2852142168179579064", PARAMETERS_2852142168179579064, new Object[]{type});
+  }
+
+  public static String callSuper_getSignature_270269450479785729(SNode thisNode, String callerConceptFqName) {
+    return (String) BehaviorManager.getInstance().invokeSuper(Object.class, SNodeOperations.cast(thisNode, "jetbrains.mps.core.query.structure.MqlType"), callerConceptFqName, "virtual_getSignature_270269450479785729", PARAMETERS_270269450479785729, new Object[]{});
+  }
+
+  public static String callSuper_getText_270269450479797040(SNode thisNode, String callerConceptFqName) {
+    return (String) BehaviorManager.getInstance().invokeSuper(Object.class, SNodeOperations.cast(thisNode, "jetbrains.mps.core.query.structure.MqlType"), callerConceptFqName, "virtual_getText_270269450479797040", PARAMETERS_270269450479797040, new Object[]{});
   }
 }

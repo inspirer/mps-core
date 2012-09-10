@@ -13,6 +13,14 @@ public abstract class MqlType_BehaviorDescriptor extends BaseConcept_BehaviorDes
     return MqlType_Behavior.virtual_isSubtypeOf_2852142168179579064(thisNode, type);
   }
 
+  public String virtual_getText_270269450479797040(SNode thisNode) {
+    return MqlType_Behavior.virtual_getText_270269450479797040(thisNode);
+  }
+
+  public String virtual_getSignature_270269450479785729(SNode thisNode) {
+    return MqlType_Behavior.virtual_getSignature_270269450479785729(thisNode);
+  }
+
   @Override
   public String getConceptFqName() {
     return "jetbrains.mps.core.query.structure.MqlType";

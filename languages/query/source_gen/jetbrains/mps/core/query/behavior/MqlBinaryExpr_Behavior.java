@@ -20,10 +20,10 @@ public class MqlBinaryExpr_Behavior {
 
   public static int call_getAssociativity_5322644393894740267(SNode thisNode) {
     BehaviorDescriptor descriptor = ConceptRegistry.getInstance().getBehaviorDescriptorForInstanceNode(thisNode);
-    return (Integer) descriptor.invoke(Integer.class, SNodeOperations.cast(thisNode, "jetbrains.mps.core.query.structure.MqlBinaryExpr"), "virtual_getAssociativity_5322644393894740267", PARAMETERS_5322644393894740267);
+    return (Integer) descriptor.invoke(Integer.class, SNodeOperations.cast(thisNode, "jetbrains.mps.core.query.structure.MqlBinaryExpr"), "virtual_getAssociativity_5322644393894740267", PARAMETERS_5322644393894740267, new Object[]{});
   }
 
   public static int callSuper_getAssociativity_5322644393894740267(SNode thisNode, String callerConceptFqName) {
-    return (Integer) BehaviorManager.getInstance().invokeSuper(Integer.class, SNodeOperations.cast(thisNode, "jetbrains.mps.core.query.structure.MqlBinaryExpr"), callerConceptFqName, "virtual_getAssociativity_5322644393894740267", PARAMETERS_5322644393894740267);
+    return (Integer) BehaviorManager.getInstance().invokeSuper(Integer.class, SNodeOperations.cast(thisNode, "jetbrains.mps.core.query.structure.MqlBinaryExpr"), callerConceptFqName, "virtual_getAssociativity_5322644393894740267", PARAMETERS_5322644393894740267, new Object[]{});
   }
 }

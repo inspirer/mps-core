@@ -12,6 +12,10 @@ public class MqlNullType_BehaviorDescriptor extends MqlType_BehaviorDescriptor {
     return MqlNullType_Behavior.virtual_isSubtypeOf_2852142168179579064(thisNode, type);
   }
 
+  public String virtual_getSignature_270269450479785729(SNode thisNode) {
+    return MqlNullType_Behavior.virtual_getSignature_270269450479785729(thisNode);
+  }
+
   @Override
   public String getConceptFqName() {
     return "jetbrains.mps.core.query.structure.MqlNullType";

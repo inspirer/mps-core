@@ -46,19 +46,19 @@ public class MqlSelector_Behavior {
 
   public static SNode call_getType_228266671027867010(SNode thisNode) {
     BehaviorDescriptor descriptor = ConceptRegistry.getInstance().getBehaviorDescriptorForInstanceNode(thisNode);
-    return (SNode) descriptor.invoke(Object.class, SNodeOperations.cast(thisNode, "jetbrains.mps.core.query.structure.MqlSelector"), "virtual_getType_228266671027867010", PARAMETERS_228266671027867010);
+    return (SNode) descriptor.invoke(Object.class, SNodeOperations.cast(thisNode, "jetbrains.mps.core.query.structure.MqlSelector"), "virtual_getType_228266671027867010", PARAMETERS_228266671027867010, new Object[]{});
   }
 
   public static Object call_evaluate_7862448911997337721(SNode thisNode, Object object, EvaluationEnvironment env, EvaluationContext context) {
     BehaviorDescriptor descriptor = ConceptRegistry.getInstance().getBehaviorDescriptorForInstanceNode(thisNode);
-    return (Object) descriptor.invoke(Object.class, SNodeOperations.cast(thisNode, "jetbrains.mps.core.query.structure.MqlSelector"), "virtual_evaluate_7862448911997337721", PARAMETERS_7862448911997337721, object, env, context);
+    return (Object) descriptor.invoke(Object.class, SNodeOperations.cast(thisNode, "jetbrains.mps.core.query.structure.MqlSelector"), "virtual_evaluate_7862448911997337721", PARAMETERS_7862448911997337721, new Object[]{object, env, context});
   }
 
   public static SNode callSuper_getType_228266671027867010(SNode thisNode, String callerConceptFqName) {
-    return (SNode) BehaviorManager.getInstance().invokeSuper(Object.class, SNodeOperations.cast(thisNode, "jetbrains.mps.core.query.structure.MqlSelector"), callerConceptFqName, "virtual_getType_228266671027867010", PARAMETERS_228266671027867010);
+    return (SNode) BehaviorManager.getInstance().invokeSuper(Object.class, SNodeOperations.cast(thisNode, "jetbrains.mps.core.query.structure.MqlSelector"), callerConceptFqName, "virtual_getType_228266671027867010", PARAMETERS_228266671027867010, new Object[]{});
   }
 
   public static Object callSuper_evaluate_7862448911997337721(SNode thisNode, String callerConceptFqName, Object object, EvaluationEnvironment env, EvaluationContext context) {
-    return (Object) BehaviorManager.getInstance().invokeSuper(Object.class, SNodeOperations.cast(thisNode, "jetbrains.mps.core.query.structure.MqlSelector"), callerConceptFqName, "virtual_evaluate_7862448911997337721", PARAMETERS_7862448911997337721, object, env, context);
+    return (Object) BehaviorManager.getInstance().invokeSuper(Object.class, SNodeOperations.cast(thisNode, "jetbrains.mps.core.query.structure.MqlSelector"), callerConceptFqName, "virtual_evaluate_7862448911997337721", PARAMETERS_7862448911997337721, new Object[]{object, env, context});
   }
 }
