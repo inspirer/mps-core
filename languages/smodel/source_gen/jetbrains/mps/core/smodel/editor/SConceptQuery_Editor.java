@@ -21,6 +21,9 @@ import jetbrains.mps.nodeEditor.EditorManager;
 import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
 import jetbrains.mps.smodel.IScope;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import jetbrains.mps.core.structure.behavior.SConceptMember_Behavior;
 import jetbrains.mps.lang.editor.cellProviders.RefNodeListHandler;
 import jetbrains.mps.smodel.action.NodeFactoryManager;
 import jetbrains.mps.nodeEditor.CellActionType;
@@ -49,9 +52,10 @@ public class SConceptQuery_Editor extends DefaultNodeEditor {
     editorCell.addEditorCell(this.createRefNode_hi5u6k_d0(editorContext, node));
     editorCell.addEditorCell(this.createProperty_hi5u6k_e0(editorContext, node));
     editorCell.addEditorCell(this.createCollection_hi5u6k_f0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_hi5u6k_g0(editorContext, node));
-    editorCell.addEditorCell(this.createRefNode_hi5u6k_h0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_hi5u6k_i0(editorContext, node));
+    if (renderingCondition_hi5u6k_a6a(node, editorContext, editorContext.getOperationContext().getScope())) {
+      editorCell.addEditorCell(this.createCollection_hi5u6k_g0(editorContext, node));
+    }
+    editorCell.addEditorCell(this.createConstant_hi5u6k_h0(editorContext, node));
     return editorCell;
   }
 
@@ -65,6 +69,18 @@ public class SConceptQuery_Editor extends DefaultNodeEditor {
     editorCell.addEditorCell(this.createConstant_hi5u6k_a5a(editorContext, node));
     editorCell.addEditorCell(this.createRefNodeList_hi5u6k_b5a(editorContext, node));
     editorCell.addEditorCell(this.createConstant_hi5u6k_c5a(editorContext, node));
+    return editorCell;
+  }
+
+  private EditorCell createCollection_hi5u6k_g0(EditorContext editorContext, SNode node) {
+    EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
+    editorCell.setCellId("Collection_hi5u6k_g0");
+    {
+      Style style = editorCell.getStyle();
+      style.set(StyleAttributes.SELECTABLE, false);
+    }
+    editorCell.addEditorCell(this.createConstant_hi5u6k_a6a(editorContext, node));
+    editorCell.addEditorCell(this.createRefNode_hi5u6k_b6a(editorContext, node));
     return editorCell;
   }
 
@@ -120,17 +136,17 @@ public class SConceptQuery_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private EditorCell createConstant_hi5u6k_g0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_hi5u6k_a6a(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "=");
-    editorCell.setCellId("Constant_hi5u6k_g0");
+    editorCell.setCellId("Constant_hi5u6k_a6a");
     SConceptQuery_deleteEq.setCellActions(editorCell, node, editorContext);
     editorCell.setDefaultText("");
     return editorCell;
   }
 
-  private EditorCell createConstant_hi5u6k_i0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_hi5u6k_h0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ";");
-    editorCell.setCellId("Constant_hi5u6k_i0");
+    editorCell.setCellId("Constant_hi5u6k_h0");
     {
       Style style = editorCell.getStyle();
       style.set(StyleAttributes.PUNCTUATION_LEFT, true);
@@ -164,7 +180,7 @@ public class SConceptQuery_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private EditorCell createRefNode_hi5u6k_h0(EditorContext editorContext, SNode node) {
+  private EditorCell createRefNode_hi5u6k_b6a(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new RefNodeCellProvider(node, editorContext);
     provider.setRole("body");
     provider.setNoTargetText("<no body>");
@@ -214,6 +230,10 @@ public class SConceptQuery_Editor extends DefaultNodeEditor {
 
   private static boolean renderingCondition_hi5u6k_a2a(SNode node, EditorContext editorContext, IScope scope) {
     return SPropertyOperations.getBoolean(node, "isOverride");
+  }
+
+  private static boolean renderingCondition_hi5u6k_a6a(SNode node, EditorContext editorContext, IScope scope) {
+    return (SLinkOperations.getTarget(node, "body", true) != null) || !(SPropertyOperations.getBoolean(node, "isAbstract")) && !(SNodeOperations.isInstanceOf(SConceptMember_Behavior.call_getContainingConcept_4125821269968947769(node), "jetbrains.mps.core.structure.structure.SInterfaceConcept"));
   }
 
   private static class parametersListHandler_hi5u6k_b5a extends RefNodeListHandler {
