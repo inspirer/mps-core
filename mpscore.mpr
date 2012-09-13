@@ -19,6 +19,7 @@
       <modulePath path="${project}/languages/notation/notation.mpl" folder="" />
       <modulePath path="${project}/languages/query/query.mpl" />
       <modulePath path="${project}/languages/smodel/smodel.mpl" folder="" />
+      <modulePath path="${project}/languages/smodel/solutions/pluginSolution/pluginSolution.msd" folder="" />
       <modulePath path="${project}/languages/structure/solutions/pluginSolution/pluginSolution.msd" folder="" />
       <modulePath path="${project}/languages/structure/structure.mpl" folder="" />
       <modulePath path="${project}/languages/syntax/syntax.mpl" folder="" />
