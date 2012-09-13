@@ -11,6 +11,7 @@ public class Default_KeymapChanges extends BaseKeymapChanges {
   public Default_KeymapChanges() {
     // simple 
     addSimpleShortcut("jetbrains.mps.core.smodel.pluginSolution.plugin.GoToOverridenQuery_Action", getShortcut("ctrl U"));
+    addSimpleShortcut("jetbrains.mps.core.smodel.pluginSolution.plugin.GoToOverridingQueries_Action", getShortcut("ctrl alt B"));
     // simple parameterized 
     // complex 
   }

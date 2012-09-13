@@ -15,6 +15,7 @@ public class EditorPopup_ActionGroup extends GeneratedActionGroup {
     this.setPopup(false);
     try {
       EditorPopup_ActionGroup.this.addAction("jetbrains.mps.core.smodel.pluginSolution.plugin.GoToOverridenQuery_Action");
+      EditorPopup_ActionGroup.this.addAction("jetbrains.mps.core.smodel.pluginSolution.plugin.GoToOverridingQueries_Action");
     } catch (Throwable t) {
       LOG.error("User group error", t);
     }

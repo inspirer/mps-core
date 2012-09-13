@@ -22,6 +22,7 @@ public class PluginSolution_ApplicationPlugin extends BaseApplicationPlugin {
   public void createGroups() {
     // actions w/o parameters 
     addAction(new GoToOverridenQuery_Action());
+    addAction(new GoToOverridingQueries_Action());
     // groups 
     addGroup(new EditorPopup_ActionGroup());
   }

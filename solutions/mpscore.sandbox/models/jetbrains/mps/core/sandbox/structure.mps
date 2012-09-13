@@ -84,6 +84,19 @@
       </node>
     </node>
     <node role="structure" roleId="ydsw.6195190339581766884" type="ydsw.SStructureEmptyLine" typeId="ydsw.6195190339581962051" id="6195190339582074042" />
+    <node role="structure" roleId="ydsw.6195190339581766884" type="ydsw.SConcept" typeId="ydsw.6195190339581766741" id="2792997962487335939">
+      <property name="name" nameId="tpck.1169194664001" value="TypeEx" />
+      <link role="extends" roleId="ydsw.6195190339581766765" targetNodeId="8379004527113924471" resolveInfo="Type" />
+      <node role="members" roleId="ydsw.6195190339581766761" type="xsnc.SConceptQuery" typeId="xsnc.5270931306887544473" id="2792997962487335941">
+        <property name="name" nameId="tpck.1169194664001" value="id" />
+        <property name="isOverride" nameId="xsnc.4366849661834292509" value="true" />
+        <node role="body" roleId="xsnc.6762883159245048634" type="bwy9.MqlIntLiteral" typeId="bwy9.6762883159245048052" id="2792997962487335944">
+          <property name="value" nameId="bwy9.6762883159245048053" value="1" />
+        </node>
+        <node role="type" roleId="xsnc.4366849661834287896" type="bwy9.MqlStringType" typeId="bwy9.6762883159245048070" id="2792997962487335943" />
+      </node>
+    </node>
+    <node role="structure" roleId="ydsw.6195190339581766884" type="ydsw.SStructureEmptyLine" typeId="ydsw.6195190339581962051" id="2792997962487335938" />
     <node role="structure" roleId="ydsw.6195190339581766884" type="ydsw.SStructureComment" typeId="ydsw.6195190339581962058" id="6195190339582074050">
       <property name="comment" nameId="ydsw.6195190339581962060" value="TODO: test" />
     </node>
