@@ -5,8 +5,11 @@
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.Collections" />
     <classNode dependClassName="java.util.HashMap" />
+    <classNode dependClassName="java.util.Iterator" />
     <classNode dependClassName="java.util.Map" />
     <classNode dependClassName="jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes" />
+    <classNode dependClassName="jetbrains.mps.core.query.behavior.MqlExpression_Behavior" />
+    <classNode dependClassName="jetbrains.mps.core.query.behavior.MqlType_Behavior" />
     <classNode dependClassName="jetbrains.mps.core.smodel.behavior.SConceptQuery_Behavior" />
     <classNode dependClassName="jetbrains.mps.core.structure.behavior.SConceptMember_Behavior" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.IMapSequence" />

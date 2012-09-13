@@ -90,6 +90,7 @@
       <node role="members" roleId="ydsw.6195190339581766761" type="xsnc.SConceptQuery" typeId="xsnc.5270931306887544473" id="2792997962487335941">
         <property name="name" nameId="tpck.1169194664001" value="id" />
         <property name="isOverride" nameId="xsnc.4366849661834292509" value="true" />
+        <property name="isAbstract" nameId="xsnc.6195190339581766762" value="false" />
         <node role="body" roleId="xsnc.6762883159245048634" type="bwy9.MqlIntLiteral" typeId="bwy9.6762883159245048052" id="2792997962487335944">
           <property name="value" nameId="bwy9.6762883159245048053" value="1" />
         </node>
@@ -353,7 +354,7 @@
         <node role="body" roleId="xsnc.6762883159245048634" type="bwy9.MqlDotExpression" typeId="bwy9.6762883159245048085" id="5130788244153231151">
           <node role="left" roleId="bwy9.6762883159245048086" type="bwy9.MqlThis" typeId="bwy9.6762883159245048067" id="5130788244153231150" />
           <node role="right" roleId="bwy9.6762883159245048089" type="xsnc.SConceptQueryCall" typeId="xsnc.535637396506608313" id="5130788244153231156">
-            <link role="query" roleId="xsnc.535637396506608314" targetNodeId="197339667876179870" resolveInfo="id" />
+            <link role="query" roleId="xsnc.535637396506608314" targetNodeId="270269450479642826" resolveInfo="id" />
           </node>
         </node>
       </node>
@@ -490,6 +491,10 @@
           <property name="isRequired" nameId="ydsw.7581772527307895409" value="true" />
         </node>
       </node>
+      <node role="members" roleId="ydsw.6195190339581766761" type="ydsw.SChildLink" typeId="ydsw.7581772527307862083" id="4524748913103453430">
+        <property name="name" nameId="tpck.1169194664001" value="t" />
+        <link role="target" roleId="ydsw.7581772527307862085" targetNodeId="197339667876179856" resolveInfo="MyType" />
+      </node>
       <node role="members" roleId="ydsw.6195190339581766761" type="ydsw.SConceptMemberEmptyLine" typeId="ydsw.7581772527307844356" id="4366849661834267183" />
       <node role="members" roleId="ydsw.6195190339581766761" type="xsnc.SConceptQuery" typeId="xsnc.5270931306887544473" id="2312000175984144164">
         <property name="name" nameId="tpck.1169194664001" value="mem" />
@@ -498,7 +503,17 @@
       </node>
       <node role="members" roleId="ydsw.6195190339581766761" type="xsnc.SConceptQuery" typeId="xsnc.5270931306887544473" id="8435711864839251661">
         <property name="name" nameId="tpck.1169194664001" value="q" />
-        <node role="body" roleId="xsnc.6762883159245048634" type="bwy9.MqlNullLiteral" typeId="bwy9.6762883159245048062" id="8435711864839251665" />
+        <node role="body" roleId="xsnc.6762883159245048634" type="bwy9.MqlDotExpression" typeId="bwy9.6762883159245048085" id="4524748913103453437">
+          <node role="left" roleId="bwy9.6762883159245048086" type="bwy9.MqlDotExpression" typeId="bwy9.6762883159245048085" id="4524748913103453432">
+            <node role="left" roleId="bwy9.6762883159245048086" type="bwy9.MqlThis" typeId="bwy9.6762883159245048067" id="4524748913103453431" />
+            <node role="right" roleId="bwy9.6762883159245048089" type="xsnc.MqlLinkSelector" typeId="xsnc.4260762357824841781" id="4524748913103453436">
+              <link role="link" roleId="xsnc.4260762357824841782" targetNodeId="4524748913103453430" resolveInfo="t" />
+            </node>
+          </node>
+          <node role="right" roleId="bwy9.6762883159245048089" type="xsnc.SConceptQueryCall" typeId="xsnc.535637396506608313" id="4524748913103453441">
+            <link role="query" roleId="xsnc.535637396506608314" targetNodeId="667076193709664466" resolveInfo="id" />
+          </node>
+        </node>
         <node role="type" roleId="xsnc.4366849661834287896" type="xsnc.MqlNodeType" typeId="xsnc.4260762357825047862" id="8435711864839251664">
           <link role="concept" roleId="xsnc.4260762357825047863" targetNodeId="5362811550739085618" resolveInfo="Classifier" />
         </node>

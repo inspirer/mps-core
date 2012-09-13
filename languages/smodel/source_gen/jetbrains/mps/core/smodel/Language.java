@@ -5,6 +5,7 @@ package jetbrains.mps.core.smodel;
 import jetbrains.mps.smodel.language.LanguageRuntime;
 import jetbrains.mps.project.structure.modules.ModuleReference;
 import jetbrains.mps.lang.typesystem.runtime.IHelginsDescriptor;
+import jetbrains.mps.core.smodel.typesystem.TypesystemDescriptor;
 import jetbrains.mps.ide.findusages.BaseFindUsagesDescriptor;
 import jetbrains.mps.core.smodel.findUsages.FindUsagesDescriptor;
 import java.util.Collection;
@@ -23,7 +24,7 @@ public class Language extends LanguageRuntime {
 
   @Override
   public IHelginsDescriptor getTypesystem() {
-    return null;
+    return new TypesystemDescriptor();
   }
 
   @Override

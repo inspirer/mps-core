@@ -4,7 +4,7 @@
   <unitInfo fileName="MqlLinkSelector_BehaviorDescriptor.java" startLine="8" startPosition="0" endLine="21" endPosition="0" unitName="jetbrains.mps.core.smodel.behavior.MqlLinkSelector_BehaviorDescriptor" />
   <unitInfo fileName="MqlNodeType_BehaviorDescriptor.java" startLine="8" startPosition="0" endLine="29" endPosition="0" unitName="jetbrains.mps.core.smodel.behavior.MqlNodeType_BehaviorDescriptor" />
   <unitInfo fileName="MqlPropertySelector_BehaviorDescriptor.java" startLine="8" startPosition="0" endLine="21" endPosition="0" unitName="jetbrains.mps.core.smodel.behavior.MqlPropertySelector_BehaviorDescriptor" />
-  <unitInfo fileName="SConceptQueryCall_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="jetbrains.mps.core.smodel.behavior.SConceptQueryCall_BehaviorDescriptor" />
+  <unitInfo fileName="SConceptQueryCall_BehaviorDescriptor.java" startLine="10" startPosition="0" endLine="23" endPosition="0" unitName="jetbrains.mps.core.smodel.behavior.SConceptQueryCall_BehaviorDescriptor" />
   <unitInfo fileName="SConceptQuery_BehaviorDescriptor.java" startLine="15" startPosition="0" endLine="40" endPosition="0" unitName="jetbrains.mps.core.smodel.behavior.SConceptQuery_BehaviorDescriptor" />
   <root nodeId="4125821269968947731">
     <nodeInfo nodeId="4125821269968947865" fileName="SConceptQuery_Behavior.java" startLine="25" startPosition="79" endLine="26" endPosition="160" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
@@ -304,12 +304,22 @@
     <unitInfo nodeId="4260762357825047870" fileName="MqlNodeType_Behavior.java" startLine="11" startPosition="0" endLine="31" endPosition="0" unitName="jetbrains.mps.core.smodel.behavior.MqlNodeType_Behavior" />
   </root>
   <root nodeId="535637396506608315">
-    <nodeInfo nodeId="535637396506608315" fileName="SConceptQueryCall_Behavior.java" startLine="7" startPosition="41" endLine="10" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="init#(Ljetbrains/mps/smodel/SNode;)V" />
-    <scopeInfo nodeId="535637396506608317" fileName="SConceptQueryCall_Behavior.java" startLine="8" startPosition="43" endLine="8" endPosition="43" />
-    <scopeInfo nodeId="535637396506608315" fileName="SConceptQueryCall_Behavior.java" startLine="7" startPosition="41" endLine="10" endPosition="0">
+    <nodeInfo nodeId="6371775917726514771" fileName="SConceptQueryCall_Behavior.java" startLine="13" startPosition="146" endLine="14" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+    <nodeInfo nodeId="6371775917726514777" fileName="SConceptQueryCall_Behavior.java" startLine="14" startPosition="22" endLine="15" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="535637396506608315" fileName="SConceptQueryCall_Behavior.java" startLine="9" startPosition="41" endLine="12" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="init#(Ljetbrains/mps/smodel/SNode;)V" />
+    <nodeInfo nodeId="535637396506608315" fileName="SConceptQueryCall_Behavior.java" startLine="12" startPosition="0" endLine="17" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="virtual_evaluate_7862448911997337721#(Ljetbrains/mps/smodel/SNode;Ljava/lang/Object;Ljetbrains/mps/core/query/runtime/EvaluationEnvironment;Ljetbrains/mps/core/query/runtime/EvaluationContext;)Ljava/lang/Object;" />
+    <scopeInfo nodeId="535637396506608317" fileName="SConceptQueryCall_Behavior.java" startLine="10" startPosition="43" endLine="10" endPosition="43" />
+    <scopeInfo nodeId="6371775917726514756" fileName="SConceptQueryCall_Behavior.java" startLine="13" startPosition="146" endLine="15" endPosition="16" />
+    <scopeInfo nodeId="535637396506608315" fileName="SConceptQueryCall_Behavior.java" startLine="9" startPosition="41" endLine="12" endPosition="0">
       <varInfo nodeId="535637396506608315" varName="thisNode" />
     </scopeInfo>
-    <unitInfo nodeId="535637396506608315" fileName="SConceptQueryCall_Behavior.java" startLine="7" startPosition="0" endLine="11" endPosition="0" unitName="jetbrains.mps.core.smodel.behavior.SConceptQueryCall_Behavior" />
+    <scopeInfo nodeId="535637396506608315" fileName="SConceptQueryCall_Behavior.java" startLine="12" startPosition="0" endLine="17" endPosition="0">
+      <varInfo nodeId="6371775917726514761" varName="context" />
+      <varInfo nodeId="6371775917726514759" varName="env" />
+      <varInfo nodeId="6371775917726514757" varName="object" />
+      <varInfo nodeId="535637396506608315" varName="thisNode" />
+    </scopeInfo>
+    <unitInfo nodeId="535637396506608315" fileName="SConceptQueryCall_Behavior.java" startLine="9" startPosition="0" endLine="18" endPosition="0" unitName="jetbrains.mps.core.smodel.behavior.SConceptQueryCall_Behavior" />
   </root>
 </debugInfo>
 

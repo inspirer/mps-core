@@ -19,6 +19,9 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.core.smodel.behavior.SConceptQuery_Behavior;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.core.structure.behavior.SConceptMember_Behavior;
+import java.util.Iterator;
+import jetbrains.mps.core.query.behavior.MqlExpression_Behavior;
+import jetbrains.mps.core.query.behavior.MqlType_Behavior;
 import java.util.Collections;
 import jetbrains.mps.internal.collections.runtime.ISelector;
 
@@ -72,6 +75,36 @@ public class ConceptQueryUtil {
         SNode result = SNodeOperations.as(ListSequence.fromList(SLinkOperations.getTargets(concept, "members", true)).where(new IWhereFilter<SNode>() {
           public boolean accept(SNode it) {
             return it != query && SNodeOperations.isInstanceOf(it, "jetbrains.mps.core.smodel.structure.SConceptQuery") && SConceptQuery_Behavior.call_getSignature_270269450479785542(SNodeOperations.cast(it, "jetbrains.mps.core.smodel.structure.SConceptQuery")).equals(signature);
+          }
+        }).first(), "jetbrains.mps.core.smodel.structure.SConceptQuery");
+        if (result == null) {
+          result = Sequence.fromIterable(inherited).first();
+        }
+        return result;
+      }
+    });
+  }
+
+  private static boolean matches(Iterable<SNode> arguments, Iterable<SNode> params) {
+    Iterator<SNode> paramsIterator = Sequence.fromIterable(params).iterator();
+    Iterator<SNode> argumentsIterator = Sequence.fromIterable(arguments).iterator();
+    while (paramsIterator.hasNext() && argumentsIterator.hasNext()) {
+      SNode param = paramsIterator.next();
+      SNode expr = argumentsIterator.next();
+      SNode type = MqlExpression_Behavior.call_getType_228266671027861783(expr);
+      if (type == null || !(MqlType_Behavior.call_isSubtypeOf_2852142168179579064(type, SLinkOperations.getTarget(param, "type", true)))) {
+        return false;
+      }
+    }
+    return paramsIterator.hasNext() == argumentsIterator.hasNext();
+  }
+
+  public static SNode resolveQuery(SNode type, final String name, final Iterable<SNode> arguments) {
+    return traverse(type, new _FunctionTypes._return_P2_E0<SNode, SNode, Iterable<SNode>>() {
+      public SNode invoke(SNode concept, Iterable<SNode> inherited) {
+        SNode result = SNodeOperations.as(ListSequence.fromList(SLinkOperations.getTargets(concept, "members", true)).where(new IWhereFilter<SNode>() {
+          public boolean accept(SNode it) {
+            return SNodeOperations.isInstanceOf(it, "jetbrains.mps.core.smodel.structure.SConceptQuery") && SPropertyOperations.getString(SNodeOperations.cast(it, "jetbrains.mps.core.smodel.structure.SConceptQuery"), "name").equals(name) && matches(arguments, SLinkOperations.getTargets(SNodeOperations.cast(it, "jetbrains.mps.core.smodel.structure.SConceptQuery"), "parameters", true));
           }
         }).first(), "jetbrains.mps.core.smodel.structure.SConceptQuery");
         if (result == null) {
