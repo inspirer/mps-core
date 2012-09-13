@@ -49,6 +49,37 @@ public class SConceptQuery_Behavior {
     }), ",") + ")";
   }
 
+  public static String virtual_getPresentation_1213877396640(SNode thisNode) {
+    StringBuilder result = new StringBuilder();
+    String name = SPropertyOperations.getString(thisNode, "name");
+    if (name != null) {
+      result.append(name);
+    } else {
+      result.append("<no name>");
+    }
+    result.append("(");
+    boolean first = true;
+    for (SNode parm : SLinkOperations.getTargets(thisNode, "parameters", true)) {
+      if (!(first)) {
+        result.append(",");
+      }
+      first = false;
+      if (SLinkOperations.getTarget(parm, "type", true) != null) {
+        result.append(MqlType_Behavior.call_getText_270269450479797040(SLinkOperations.getTarget(parm, "type", true)));
+      } else {
+        result.append("???");
+      }
+    }
+    result.append(")");
+    result.append(":");
+    if (SLinkOperations.getTarget(thisNode, "type", true) != null) {
+      result.append(MqlType_Behavior.call_getText_270269450479797040(SLinkOperations.getTarget(thisNode, "type", true)));
+    } else {
+      result.append("???");
+    }
+    return result.toString();
+  }
+
   public static class QuotationClass_m9cidb_a0a0b {
     public QuotationClass_m9cidb_a0a0b() {
     }

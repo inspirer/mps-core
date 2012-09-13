@@ -144,6 +144,8 @@
   </dependency>
   <dependency className="jetbrains.mps.core.smodel.editor.conceptQueryCallParameters" file="conceptQueryCallParameters.java">
     <classNode dependClassName="java.lang.Iterable" />
+    <classNode dependClassName="jetbrains.mps.core.query.behavior.MqlSelector_Behavior" />
+    <classNode dependClassName="jetbrains.mps.core.smodel.util.ConceptQueryUtil" />
     <classNode dependClassName="jetbrains.mps.editor.runtime.StyledTextPrinter" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.IWhereFilter" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />

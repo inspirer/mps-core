@@ -18,6 +18,8 @@ import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.core.smodel.behavior.SConceptQuery_Behavior;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import org.jetbrains.annotations.Nullable;
+import java.util.LinkedHashMap;
 import jetbrains.mps.core.structure.behavior.SConceptMember_Behavior;
 import java.util.Iterator;
 import jetbrains.mps.core.query.behavior.MqlExpression_Behavior;
@@ -66,6 +68,36 @@ public class ConceptQueryUtil {
         return !(SPropertyOperations.getBoolean(it, "isFinal"));
       }
     });
+  }
+
+  public static Iterable<SNode> getAvailableQueries(SNode forConcept, @Nullable final String name) {
+    return MapSequence.fromMap(traverse(forConcept, new _FunctionTypes._return_P2_E0<IMapSequence<String, SNode>, SNode, Iterable<Map<String, SNode>>>() {
+      public IMapSequence<String, SNode> invoke(SNode concept, Iterable<Map<String, SNode>> inherited) {
+        final Map<String, SNode> result = MapSequence.fromMap(new LinkedHashMap<String, SNode>(16, (float) 0.75, false));
+        Sequence.fromIterable(inherited).visitAll(new IVisitor<Map<String, SNode>>() {
+          public void visit(Map<String, SNode> inh) {
+            SetSequence.fromSet(MapSequence.fromMap(inh).mappingsSet()).visitAll(new IVisitor<IMapping<String, SNode>>() {
+              public void visit(IMapping<String, SNode> it) {
+                if (!(MapSequence.fromMap(result).containsKey(it.key()))) {
+                  MapSequence.fromMap(result).put(it.key(), it.value());
+                }
+              }
+            });
+          }
+        });
+        ListSequence.fromList(SLinkOperations.getTargets(concept, "members", true)).where(new IWhereFilter<SNode>() {
+          public boolean accept(SNode it) {
+            return SNodeOperations.isInstanceOf(it, "jetbrains.mps.core.smodel.structure.SConceptQuery") && (name == null || name.equals(SPropertyOperations.getString(SNodeOperations.cast(it, "jetbrains.mps.core.smodel.structure.SConceptQuery"), "name")));
+          }
+        }).visitAll(new IVisitor<SNode>() {
+          public void visit(SNode it) {
+            SNode q = SNodeOperations.cast(it, "jetbrains.mps.core.smodel.structure.SConceptQuery");
+            MapSequence.fromMap(result).put(SConceptQuery_Behavior.call_getSignature_270269450479785542(q), q);
+          }
+        });
+        return MapSequence.fromMap(result);
+      }
+    })).values();
   }
 
   public static SNode getOverriddenQuery(final SNode query) {

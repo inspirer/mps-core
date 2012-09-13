@@ -22,8 +22,8 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.core.query.behavior.MqlExpression_Behavior;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
-import jetbrains.mps.internal.collections.runtime.IWhereFilter;
-import jetbrains.mps.internal.collections.runtime.ISelector;
+import jetbrains.mps.internal.collections.runtime.Sequence;
+import jetbrains.mps.core.smodel.util.ConceptQueryUtil;
 import jetbrains.mps.core.query.runtime.MultipleElementsScope;
 import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
@@ -68,15 +68,7 @@ public class SConceptQueryCall_Constraints extends BaseConstraintsDescriptor {
               if (SNodeOperations.isInstanceOf(type, "jetbrains.mps.core.smodel.structure.MqlNodeType")) {
                 SNode decl = SLinkOperations.getTarget(SNodeOperations.cast(type, "jetbrains.mps.core.smodel.structure.MqlNodeType"), "concept", false);
                 if ((decl != null)) {
-                  ListSequence.fromList(result).addSequence(ListSequence.fromList(SLinkOperations.getTargets(decl, "members", true)).where(new IWhereFilter<SNode>() {
-                    public boolean accept(SNode it) {
-                      return SNodeOperations.isInstanceOf(it, "jetbrains.mps.core.smodel.structure.SConceptQuery");
-                    }
-                  }).select(new ISelector<SNode, SNode>() {
-                    public SNode select(SNode it) {
-                      return SNodeOperations.cast(it, "jetbrains.mps.core.smodel.structure.SConceptQuery");
-                    }
-                  }));
+                  ListSequence.fromList(result).addSequence(Sequence.fromIterable(ConceptQueryUtil.getAvailableQueries(decl, null)));
                 }
               }
               return new MultipleElementsScope(result, new _FunctionTypes._return_P1_E0<String, SNode>() {

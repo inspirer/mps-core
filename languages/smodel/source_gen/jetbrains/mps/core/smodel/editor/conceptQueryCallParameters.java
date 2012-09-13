@@ -5,13 +5,15 @@ package jetbrains.mps.core.smodel.editor;
 import jetbrains.mps.editor.runtime.ParametersInformation;
 import jetbrains.mps.smodel.SNode;
 import jetbrains.mps.nodeEditor.EditorContext;
-import jetbrains.mps.internal.collections.runtime.Sequence;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import jetbrains.mps.core.query.behavior.MqlSelector_Behavior;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.core.smodel.util.ConceptQueryUtil;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.editor.runtime.StyledTextPrinter;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.internal.collections.runtime.IWhereFilter;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.core.behavior.BaseConcept_Behavior;
 
 public class conceptQueryCallParameters extends ParametersInformation<SNode> {
@@ -19,6 +21,13 @@ public class conceptQueryCallParameters extends ParametersInformation<SNode> {
   }
 
   public Iterable<SNode> getMethods(SNode node, EditorContext editorContext) {
+    SNode type = SNodeOperations.as(MqlSelector_Behavior.call_getContainerType_228266671027861723(node), "jetbrains.mps.core.smodel.structure.MqlNodeType");
+    if (type != null && SLinkOperations.getTarget(node, "query", false) != null) {
+      Iterable<SNode> availableQueries = ConceptQueryUtil.getAvailableQueries(SLinkOperations.getTarget(type, "concept", false), SPropertyOperations.getString(SLinkOperations.getTarget(node, "query", false), "name"));
+      if (Sequence.fromIterable(availableQueries).isNotEmpty()) {
+        return availableQueries;
+      }
+    }
     return Sequence.<SNode>singleton(SLinkOperations.getTarget(node, "query", false));
   }
 
@@ -27,7 +36,7 @@ public class conceptQueryCallParameters extends ParametersInformation<SNode> {
   }
 
   public boolean isMethodCurrent(SNode node, EditorContext editorContext, SNode parameterObject) {
-    return true;
+    return SLinkOperations.getTarget(node, "query", false) == parameterObject;
   }
 
   private SNode getSelectedActualArgument(EditorContext editorContext, final SNode queryCall) {

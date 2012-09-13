@@ -20,6 +20,10 @@ public class SConceptQuery_BehaviorDescriptor extends SConceptMember_BehaviorDes
     return ScopeProvider_Behavior.virtual_getScope_7722139651431880752(thisNode, kind, role, index);
   }
 
+  public String virtual_getPresentation_1213877396640(SNode thisNode) {
+    return SConceptQuery_Behavior.virtual_getPresentation_1213877396640(thisNode);
+  }
+
   public SNode virtual_getThisType_4125821269968916020(SNode thisNode) {
     return SConceptQuery_Behavior.virtual_getThisType_4125821269968916020(thisNode);
   }
