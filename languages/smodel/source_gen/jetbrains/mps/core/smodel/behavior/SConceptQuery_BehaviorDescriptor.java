@@ -4,6 +4,7 @@ package jetbrains.mps.core.smodel.behavior;
 
 import jetbrains.mps.core.structure.behavior.SConceptMember_BehaviorDescriptor;
 import jetbrains.mps.lang.core.behavior.INamedConcept_BehaviorDescriptor;
+import jetbrains.mps.lang.core.behavior.IResolveInfo_BehaviorDescriptor;
 import jetbrains.mps.core.query.behavior.MqlParametersContainer_BehaviorDescriptor;
 import jetbrains.mps.core.query.behavior.MqlThisProvider_BehaviorDescriptor;
 import jetbrains.mps.lang.core.behavior.ScopeProvider_BehaviorDescriptor;
@@ -12,7 +13,7 @@ import jetbrains.mps.smodel.SNode;
 import jetbrains.mps.lang.core.behavior.ScopeProvider_Behavior;
 import jetbrains.mps.lang.core.behavior.INamedConcept_Behavior;
 
-public class SConceptQuery_BehaviorDescriptor extends SConceptMember_BehaviorDescriptor implements INamedConcept_BehaviorDescriptor, MqlParametersContainer_BehaviorDescriptor, MqlThisProvider_BehaviorDescriptor, ScopeProvider_BehaviorDescriptor {
+public class SConceptQuery_BehaviorDescriptor extends SConceptMember_BehaviorDescriptor implements INamedConcept_BehaviorDescriptor, IResolveInfo_BehaviorDescriptor, MqlParametersContainer_BehaviorDescriptor, MqlThisProvider_BehaviorDescriptor, ScopeProvider_BehaviorDescriptor {
   public SConceptQuery_BehaviorDescriptor() {
   }
 

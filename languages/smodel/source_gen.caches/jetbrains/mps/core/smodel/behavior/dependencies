@@ -110,6 +110,7 @@
     <classNode dependClassName="jetbrains.mps.core.structure.behavior.SConceptMember_BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.lang.core.behavior.INamedConcept_Behavior" />
     <classNode dependClassName="jetbrains.mps.lang.core.behavior.INamedConcept_BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.IResolveInfo_BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.lang.core.behavior.ScopeProvider_Behavior" />
     <classNode dependClassName="jetbrains.mps.lang.core.behavior.ScopeProvider_BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.scope.Scope" />

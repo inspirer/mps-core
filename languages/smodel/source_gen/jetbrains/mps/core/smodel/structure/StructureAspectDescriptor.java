@@ -22,7 +22,7 @@ public class StructureAspectDescriptor implements jetbrains.mps.smodel.runtime.S
       case 2:
         return new CompiledConceptDescriptor("jetbrains.mps.core.smodel.structure.MqlPropertySelector", "jetbrains.mps.core.query.structure.MqlSelector", false, new String[]{"jetbrains.mps.core.query.structure.MqlSelector"}, new String[]{}, new String[]{"property"});
       case 3:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.smodel.structure.SConceptQuery", "jetbrains.mps.core.structure.structure.SConceptMember", false, new String[]{"jetbrains.mps.core.structure.structure.SConceptMember", "jetbrains.mps.lang.core.structure.INamedConcept", "jetbrains.mps.core.query.structure.MqlParametersContainer", "jetbrains.mps.core.query.structure.MqlThisProvider", "jetbrains.mps.lang.core.structure.ScopeProvider"}, new String[]{"isAbstract", "isFinal", "isOverride"}, new String[]{});
+        return new CompiledConceptDescriptor("jetbrains.mps.core.smodel.structure.SConceptQuery", "jetbrains.mps.core.structure.structure.SConceptMember", false, new String[]{"jetbrains.mps.core.structure.structure.SConceptMember", "jetbrains.mps.lang.core.structure.INamedConcept", "jetbrains.mps.lang.core.structure.IResolveInfo", "jetbrains.mps.core.query.structure.MqlParametersContainer", "jetbrains.mps.core.query.structure.MqlThisProvider", "jetbrains.mps.lang.core.structure.ScopeProvider"}, new String[]{"isAbstract", "isFinal", "isOverride"}, new String[]{});
       case 4:
         return new CompiledConceptDescriptor("jetbrains.mps.core.smodel.structure.SConceptQueryCall", "jetbrains.mps.core.query.structure.MqlSelector", false, new String[]{"jetbrains.mps.core.query.structure.MqlSelector"}, new String[]{}, new String[]{"query"});
       default:
