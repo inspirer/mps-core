@@ -5,6 +5,7 @@ package jetbrains.mps.core.query.typesystem;
 import jetbrains.mps.lang.typesystem.runtime.BaseHelginsDescriptor;
 import jetbrains.mps.lang.typesystem.runtime.InferenceRule_Runtime;
 import jetbrains.mps.lang.typesystem.runtime.NonTypesystemRule_Runtime;
+import jetbrains.mps.lang.typesystem.runtime.InequationReplacementRule_Runtime;
 
 public class TypesystemDescriptor extends BaseHelginsDescriptor {
   public TypesystemDescriptor() {
@@ -39,6 +40,10 @@ public class TypesystemDescriptor extends BaseHelginsDescriptor {
     {
       NonTypesystemRule_Runtime nonTypesystemRule = new check_Unary_NonTypesystemRule();
       this.myNonTypesystemRules.add(nonTypesystemRule);
+    }
+    {
+      InequationReplacementRule_Runtime eliminationRule = new any_type_supertypeof_MqlNullType_InequationReplacementRule();
+      this.myInequationReplacementRules.add(eliminationRule);
     }
   }
 }

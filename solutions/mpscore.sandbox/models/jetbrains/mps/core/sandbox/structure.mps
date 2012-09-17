@@ -288,6 +288,10 @@
         <property name="isAbstract" nameId="xsnc.6195190339581766762" value="false" />
         <node role="type" roleId="xsnc.4366849661834287896" type="bwy9.MqlStringType" typeId="bwy9.6762883159245048070" id="8616491442583849626" />
       </node>
+      <node role="members" roleId="ydsw.6195190339581766761" type="xsnc.SConceptQuery" typeId="xsnc.5270931306887544473" id="3530118130426592526">
+        <property name="name" nameId="tpck.1169194664001" value="qq" />
+        <node role="type" roleId="xsnc.4366849661834287896" type="bwy9.MqlIntType" typeId="bwy9.6762883159245048069" id="3530118130426592528" />
+      </node>
       <node role="extends" roleId="ydsw.6195190339581766791" type="ydsw.SInterfaceReference" typeId="ydsw.6195190339581766766" id="5566195403253926244">
         <link role="target" roleId="ydsw.6195190339581766767" targetNodeId="5566195403253926242" resolveInfo="IMemberBase" />
       </node>
@@ -333,7 +337,14 @@
           </node>
         </node>
       </node>
-      <node role="members" roleId="ydsw.6195190339581766761" type="ydsw.SConceptMemberEmptyLine" typeId="ydsw.7581772527307844356" id="8616491442583858702" />
+      <node role="members" roleId="ydsw.6195190339581766761" type="xsnc.SConceptQuery" typeId="xsnc.5270931306887544473" id="3530118130426592530">
+        <property name="name" nameId="tpck.1169194664001" value="qq" />
+        <property name="isOverride" nameId="xsnc.4366849661834292509" value="true" />
+        <node role="type" roleId="xsnc.4366849661834287896" type="bwy9.MqlIntType" typeId="bwy9.6762883159245048069" id="3530118130426592531" />
+        <node role="body" roleId="xsnc.6762883159245048634" type="bwy9.MqlIntLiteral" typeId="bwy9.6762883159245048052" id="3530118130426592533">
+          <property name="value" nameId="bwy9.6762883159245048053" value="0" />
+        </node>
+      </node>
       <node role="implements" roleId="ydsw.6195190339581766790" type="ydsw.SInterfaceReference" typeId="ydsw.6195190339581766766" id="8379004527113872030">
         <link role="target" roleId="ydsw.6195190339581766767" targetNodeId="5362811550739085635" resolveInfo="IMember" />
       </node>
@@ -357,17 +368,13 @@
       <property name="name" nameId="tpck.1169194664001" value="Type" />
       <node role="members" roleId="ydsw.6195190339581766761" type="xsnc.SConceptQuery" typeId="xsnc.5270931306887544473" id="270269450479642826">
         <property name="name" nameId="tpck.1169194664001" value="id" />
-        <node role="body" roleId="xsnc.6762883159245048634" type="bwy9.MqlIntLiteral" typeId="bwy9.6762883159245048052" id="270269450479642831">
-          <property name="value" nameId="bwy9.6762883159245048053" value="1" />
-        </node>
         <node role="type" roleId="xsnc.4366849661834287896" type="bwy9.MqlStringType" typeId="bwy9.6762883159245048070" id="270269450479642829" />
+        <node role="body" roleId="xsnc.6762883159245048634" type="bwy9.MqlStringLiteral" typeId="bwy9.6762883159245048054" id="3530118130426580953" />
       </node>
       <node role="members" roleId="ydsw.6195190339581766761" type="xsnc.SConceptQuery" typeId="xsnc.5270931306887544473" id="803795786414408117">
         <property name="name" nameId="tpck.1169194664001" value="q" />
-        <node role="type" roleId="xsnc.4366849661834287896" type="bwy9.MqlStringType" typeId="bwy9.6762883159245048070" id="803795786414408119" />
-        <node role="body" roleId="xsnc.6762883159245048634" type="bwy9.MqlIntLiteral" typeId="bwy9.6762883159245048052" id="803795786414408120">
-          <property name="value" nameId="bwy9.6762883159245048053" value="2" />
-        </node>
+        <node role="type" roleId="xsnc.4366849661834287896" type="bwy9.MqlStringType" typeId="bwy9.6762883159245048070" id="3530118130426591180" />
+        <node role="body" roleId="xsnc.6762883159245048634" type="bwy9.MqlNullLiteral" typeId="bwy9.6762883159245048062" id="3530118130426580954" />
       </node>
       <node role="members" roleId="ydsw.6195190339581766761" type="xsnc.SConceptQuery" typeId="xsnc.5270931306887544473" id="197339667876179870">
         <property name="name" nameId="tpck.1169194664001" value="id" />
@@ -400,6 +407,14 @@
           <property name="kind" nameId="ydsw.7581772527307667409" value="string" />
         </node>
       </node>
+      <node role="members" roleId="ydsw.6195190339581766761" type="xsnc.SConceptQuery" typeId="xsnc.5270931306887544473" id="3530118130426418475">
+        <property name="name" nameId="tpck.1169194664001" value="q" />
+        <property name="isOverride" nameId="xsnc.4366849661834292509" value="true" />
+        <node role="type" roleId="xsnc.4366849661834287896" type="bwy9.MqlStringType" typeId="bwy9.6762883159245048070" id="3530118130426418476" />
+        <node role="body" roleId="xsnc.6762883159245048634" type="bwy9.MqlStringLiteral" typeId="bwy9.6762883159245048054" id="3530118130426580947">
+          <property name="value" nameId="bwy9.6762883159245048055" value="as" />
+        </node>
+      </node>
       <node role="implements" roleId="ydsw.6195190339581766790" type="ydsw.SInterfaceReference" typeId="ydsw.6195190339581766766" id="5362811550739085639">
         <link role="target" roleId="ydsw.6195190339581766767" targetNodeId="5362811550739085635" resolveInfo="IMember" />
       </node>
@@ -410,8 +425,8 @@
       <link role="extends" roleId="ydsw.6195190339581766765" targetNodeId="8379004527113924471" resolveInfo="Type" />
       <node role="members" roleId="ydsw.6195190339581766761" type="xsnc.SConceptQuery" typeId="xsnc.5270931306887544473" id="4524748913103503287">
         <property name="name" nameId="tpck.1169194664001" value="id" />
-        <node role="body" roleId="xsnc.6762883159245048634" type="bwy9.MqlIntLiteral" typeId="bwy9.6762883159245048052" id="4524748913103503291">
-          <property name="value" nameId="bwy9.6762883159245048053" value="3" />
+        <node role="body" roleId="xsnc.6762883159245048634" type="bwy9.MqlStringLiteral" typeId="bwy9.6762883159245048054" id="3530118130426580948">
+          <property name="value" nameId="bwy9.6762883159245048055" value="a" />
         </node>
         <node role="type" roleId="xsnc.4366849661834287896" type="bwy9.MqlStringType" typeId="bwy9.6762883159245048070" id="4524748913103503290" />
         <node role="parameters" roleId="bwy9.1992172484410518817" type="bwy9.MqlParameter" typeId="bwy9.6762883159245048635" id="4524748913103586294">

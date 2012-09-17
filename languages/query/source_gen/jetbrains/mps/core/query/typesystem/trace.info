@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debugInfo>
-  <unitInfo fileName="TypesystemDescriptor.java" startLine="9" startPosition="0" endLine="45" endPosition="0" unitName="jetbrains.mps.core.query.typesystem.TypesystemDescriptor" />
+  <unitInfo fileName="TypesystemDescriptor.java" startLine="10" startPosition="0" endLine="50" endPosition="0" unitName="jetbrains.mps.core.query.typesystem.TypesystemDescriptor" />
   <root nodeId="228266671027905045">
     <nodeInfo nodeId="228266671027905055" fileName="typeof_MqlExpression_InferenceRule.java" startLine="19" startPosition="5" endLine="20" endPosition="55" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
     <nodeInfo nodeId="228266671027905055" fileName="typeof_MqlExpression_InferenceRule.java" startLine="20" startPosition="55" endLine="21" endPosition="200" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
@@ -101,6 +101,94 @@
       <varInfo nodeId="2852142168179589858" varName="typeCheckingContext" />
     </scopeInfo>
     <unitInfo nodeId="2852142168179589858" fileName="check_NoContextCall_NonTypesystemRule.java" startLine="19" startPosition="0" endLine="58" endPosition="0" unitName="jetbrains.mps.core.query.typesystem.check_NoContextCall_NonTypesystemRule" />
+  </root>
+  <root nodeId="3530118130426588121">
+    <nodeInfo nodeId="1490671888444437728" fileName="any_type_supertypeof_MqlNullType_InequationReplacementRule.java" startLine="22" startPosition="97" endLine="23" endPosition="117" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1215774901982" fileName="any_type_supertypeof_MqlNullType_InequationReplacementRule.java" startLine="28" startPosition="7" endLine="29" endPosition="60" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="1215774901982" fileName="any_type_supertypeof_MqlNullType_InequationReplacementRule.java" startLine="29" startPosition="60" endLine="30" endPosition="281" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="1215774901982" fileName="any_type_supertypeof_MqlNullType_InequationReplacementRule.java" startLine="30" startPosition="281" endLine="31" endPosition="79" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="3530118130426588121" fileName="any_type_supertypeof_MqlNullType_InequationReplacementRule.java" startLine="36" startPosition="207" endLine="37" endPosition="35" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="1215774901982" fileName="any_type_supertypeof_MqlNullType_InequationReplacementRule.java" startLine="38" startPosition="192" endLine="39" endPosition="30" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="3530118130426588121" fileName="any_type_supertypeof_MqlNullType_InequationReplacementRule.java" startLine="40" startPosition="5" endLine="41" endPosition="27" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="3530118130426588121" fileName="any_type_supertypeof_MqlNullType_InequationReplacementRule.java" startLine="44" startPosition="27" endLine="45" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="3530118130426588121" fileName="any_type_supertypeof_MqlNullType_InequationReplacementRule.java" startLine="49" startPosition="5" endLine="50" endPosition="120" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="3530118130426588121" fileName="any_type_supertypeof_MqlNullType_InequationReplacementRule.java" startLine="50" startPosition="120" endLine="51" endPosition="45" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="3530118130426588121" fileName="any_type_supertypeof_MqlNullType_InequationReplacementRule.java" startLine="56" startPosition="5" endLine="57" endPosition="122" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="3530118130426588121" fileName="any_type_supertypeof_MqlNullType_InequationReplacementRule.java" startLine="57" startPosition="122" endLine="58" endPosition="45" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="3530118130426588121" fileName="any_type_supertypeof_MqlNullType_InequationReplacementRule.java" startLine="62" startPosition="53" endLine="63" endPosition="60" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="3530118130426588121" fileName="any_type_supertypeof_MqlNullType_InequationReplacementRule.java" startLine="66" startPosition="55" endLine="67" endPosition="59" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="3530118130426588121" fileName="any_type_supertypeof_MqlNullType_InequationReplacementRule.java" startLine="18" startPosition="123" endLine="20" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="any_type_supertypeof_MqlNullType_InequationReplacementRule#()V" />
+    <nodeInfo nodeId="1215774863268" fileName="any_type_supertypeof_MqlNullType_InequationReplacementRule.java" startLine="37" startPosition="35" endLine="40" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="3530118130426588121" fileName="any_type_supertypeof_MqlNullType_InequationReplacementRule.java" startLine="37" startPosition="35" endLine="40" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="3530118130426588121" fileName="any_type_supertypeof_MqlNullType_InequationReplacementRule.java" startLine="21" startPosition="0" endLine="25" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="isApplicableCustom#(Ljetbrains/mps/smodel/SNode;Ljetbrains/mps/smodel/SNode;Ljetbrains/mps/lang/typesystem/runtime/IsApplicable2Status;)Z" />
+    <nodeInfo nodeId="3530118130426588121" fileName="any_type_supertypeof_MqlNullType_InequationReplacementRule.java" startLine="43" startPosition="0" endLine="47" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="isWeak#()Z" />
+    <nodeInfo nodeId="3530118130426588121" fileName="any_type_supertypeof_MqlNullType_InequationReplacementRule.java" startLine="48" startPosition="71" endLine="52" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="3530118130426588121" fileName="any_type_supertypeof_MqlNullType_InequationReplacementRule.java" startLine="55" startPosition="73" endLine="59" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="3530118130426588121" fileName="any_type_supertypeof_MqlNullType_InequationReplacementRule.java" startLine="61" startPosition="0" endLine="65" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getApplicableSubtypeConceptFQName#()Ljava/lang/String;" />
+    <nodeInfo nodeId="3530118130426588121" fileName="any_type_supertypeof_MqlNullType_InequationReplacementRule.java" startLine="65" startPosition="0" endLine="69" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getApplicableSupertypeConceptFQName#()Ljava/lang/String;" />
+    <nodeInfo nodeId="1215774901982" fileName="any_type_supertypeof_MqlNullType_InequationReplacementRule.java" startLine="27" startPosition="192" endLine="32" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="1215774863268" fileName="any_type_supertypeof_MqlNullType_InequationReplacementRule.java" startLine="26" startPosition="253" endLine="33" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="3530118130426588121" fileName="any_type_supertypeof_MqlNullType_InequationReplacementRule.java" startLine="47" startPosition="0" endLine="54" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="isApplicableSubtypeAndPattern#(Ljetbrains/mps/smodel/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+    <nodeInfo nodeId="3530118130426588121" fileName="any_type_supertypeof_MqlNullType_InequationReplacementRule.java" startLine="54" startPosition="0" endLine="61" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="isApplicableSupertypeAndPattern#(Ljetbrains/mps/smodel/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+    <nodeInfo nodeId="3530118130426588121" fileName="any_type_supertypeof_MqlNullType_InequationReplacementRule.java" startLine="35" startPosition="0" endLine="43" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="checkInequation#(Ljetbrains/mps/smodel/SNode;Ljetbrains/mps/smodel/SNode;Ljetbrains/mps/typesystem/inference/EquationInfo;Ljetbrains/mps/lang/typesystem/runtime/IsApplicable2Status;ZZ)Z" />
+    <nodeInfo nodeId="3530118130426588121" fileName="any_type_supertypeof_MqlNullType_InequationReplacementRule.java" startLine="25" startPosition="0" endLine="35" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="processInequation#(Ljetbrains/mps/smodel/SNode;Ljetbrains/mps/smodel/SNode;Ljetbrains/mps/typesystem/inference/EquationInfo;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicable2Status;ZZ)V" />
+    <scopeInfo nodeId="3530118130426588121" fileName="any_type_supertypeof_MqlNullType_InequationReplacementRule.java" startLine="19" startPosition="71" endLine="19" endPosition="71" />
+    <scopeInfo nodeId="3530118130426588127" fileName="any_type_supertypeof_MqlNullType_InequationReplacementRule.java" startLine="22" startPosition="97" endLine="23" endPosition="117" />
+    <scopeInfo nodeId="1215774863270" fileName="any_type_supertypeof_MqlNullType_InequationReplacementRule.java" startLine="38" startPosition="192" endLine="39" endPosition="30" />
+    <scopeInfo nodeId="3530118130426588121" fileName="any_type_supertypeof_MqlNullType_InequationReplacementRule.java" startLine="44" startPosition="27" endLine="45" endPosition="16" />
+    <scopeInfo nodeId="3530118130426588121" fileName="any_type_supertypeof_MqlNullType_InequationReplacementRule.java" startLine="62" startPosition="53" endLine="63" endPosition="60" />
+    <scopeInfo nodeId="3530118130426588121" fileName="any_type_supertypeof_MqlNullType_InequationReplacementRule.java" startLine="66" startPosition="55" endLine="67" endPosition="59" />
+    <scopeInfo nodeId="3530118130426588121" fileName="any_type_supertypeof_MqlNullType_InequationReplacementRule.java" startLine="18" startPosition="123" endLine="20" endPosition="3" />
+    <scopeInfo nodeId="3530118130426588121" fileName="any_type_supertypeof_MqlNullType_InequationReplacementRule.java" startLine="49" startPosition="5" endLine="51" endPosition="45">
+      <varInfo nodeId="3530118130426588121" varName="b" />
+    </scopeInfo>
+    <scopeInfo nodeId="3530118130426588121" fileName="any_type_supertypeof_MqlNullType_InequationReplacementRule.java" startLine="56" startPosition="5" endLine="58" endPosition="45">
+      <varInfo nodeId="3530118130426588121" varName="b" />
+    </scopeInfo>
+    <scopeInfo nodeId="1215774901982" fileName="any_type_supertypeof_MqlNullType_InequationReplacementRule.java" startLine="28" startPosition="7" endLine="31" endPosition="79">
+      <varInfo nodeId="1215774901982" varName="_reporter_2309309498" />
+      <varInfo nodeId="1215774901982" varName="errorTarget" />
+    </scopeInfo>
+    <scopeInfo nodeId="3530118130426588123" fileName="any_type_supertypeof_MqlNullType_InequationReplacementRule.java" startLine="37" startPosition="35" endLine="40" endPosition="5" />
+    <scopeInfo nodeId="3530118130426588121" fileName="any_type_supertypeof_MqlNullType_InequationReplacementRule.java" startLine="21" startPosition="0" endLine="25" endPosition="0">
+      <varInfo nodeId="3530118130426588121" varName="status" />
+      <varInfo nodeId="3530118130426588121" varName="subtype" />
+      <varInfo nodeId="3530118130426588121" varName="supertype" />
+    </scopeInfo>
+    <scopeInfo nodeId="3530118130426588121" fileName="any_type_supertypeof_MqlNullType_InequationReplacementRule.java" startLine="43" startPosition="0" endLine="47" endPosition="0" />
+    <scopeInfo nodeId="3530118130426588121" fileName="any_type_supertypeof_MqlNullType_InequationReplacementRule.java" startLine="48" startPosition="71" endLine="52" endPosition="5" />
+    <scopeInfo nodeId="3530118130426588121" fileName="any_type_supertypeof_MqlNullType_InequationReplacementRule.java" startLine="55" startPosition="73" endLine="59" endPosition="5" />
+    <scopeInfo nodeId="3530118130426588121" fileName="any_type_supertypeof_MqlNullType_InequationReplacementRule.java" startLine="61" startPosition="0" endLine="65" endPosition="0" />
+    <scopeInfo nodeId="3530118130426588121" fileName="any_type_supertypeof_MqlNullType_InequationReplacementRule.java" startLine="65" startPosition="0" endLine="69" endPosition="0" />
+    <scopeInfo nodeId="1215774863270" fileName="any_type_supertypeof_MqlNullType_InequationReplacementRule.java" startLine="27" startPosition="192" endLine="32" endPosition="7" />
+    <scopeInfo nodeId="3530118130426588121" fileName="any_type_supertypeof_MqlNullType_InequationReplacementRule.java" startLine="36" startPosition="207" endLine="41" endPosition="27">
+      <varInfo nodeId="3530118130426588121" varName="result_14532009" />
+    </scopeInfo>
+    <scopeInfo nodeId="3530118130426588123" fileName="any_type_supertypeof_MqlNullType_InequationReplacementRule.java" startLine="26" startPosition="253" endLine="33" endPosition="5" />
+    <scopeInfo nodeId="3530118130426588121" fileName="any_type_supertypeof_MqlNullType_InequationReplacementRule.java" startLine="47" startPosition="0" endLine="54" endPosition="0">
+      <varInfo nodeId="3530118130426588121" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="3530118130426588121" fileName="any_type_supertypeof_MqlNullType_InequationReplacementRule.java" startLine="54" startPosition="0" endLine="61" endPosition="0">
+      <varInfo nodeId="3530118130426588121" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="3530118130426588121" fileName="any_type_supertypeof_MqlNullType_InequationReplacementRule.java" startLine="35" startPosition="0" endLine="43" endPosition="0">
+      <varInfo nodeId="3530118130426588121" varName="equationInfo" />
+      <varInfo nodeId="3530118130426588121" varName="inequalityIsLessThan" />
+      <varInfo nodeId="3530118130426588121" varName="inequalityIsWeak" />
+      <varInfo nodeId="3530118130426588121" varName="status" />
+      <varInfo nodeId="3530118130426588121" varName="subtype" />
+      <varInfo nodeId="3530118130426588121" varName="supertype" />
+    </scopeInfo>
+    <scopeInfo nodeId="3530118130426588121" fileName="any_type_supertypeof_MqlNullType_InequationReplacementRule.java" startLine="25" startPosition="0" endLine="35" endPosition="0">
+      <varInfo nodeId="3530118130426588121" varName="equationInfo" />
+      <varInfo nodeId="3530118130426588121" varName="inequalityIsLessThan" />
+      <varInfo nodeId="3530118130426588121" varName="inequalityIsWeak" />
+      <varInfo nodeId="3530118130426588121" varName="status" />
+      <varInfo nodeId="3530118130426588121" varName="subtype" />
+      <varInfo nodeId="3530118130426588121" varName="supertype" />
+      <varInfo nodeId="3530118130426588121" varName="typeCheckingContext" />
+    </scopeInfo>
+    <unitInfo nodeId="3530118130426588121" fileName="any_type_supertypeof_MqlNullType_InequationReplacementRule.java" startLine="18" startPosition="0" endLine="70" endPosition="0" unitName="jetbrains.mps.core.query.typesystem.any_type_supertypeof_MqlNullType_InequationReplacementRule" />
   </root>
   <root nodeId="5280308256730662789">
     <nodeInfo nodeId="5280308256730689699" fileName="check_CollectionSelector_NonTypesystemRule.java" startLine="21" startPosition="121" endLine="22" endPosition="89" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
