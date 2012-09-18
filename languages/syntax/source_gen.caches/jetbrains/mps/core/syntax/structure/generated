@@ -13,7 +13,7 @@
   <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" />
   <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" />
   <dep model="r:fc76aa36-3cff-41c7-b94b-eee0e8341932(jetbrains.mps.internal.collections.runtime)" />
-  <common hash="b99ysxqymomld4om7gf0zha40851r0" dependsOnNodes="true">
+  <common hash="b99ysxqymomld4om7gf0zha40851r0">
     <dep root="2481283025450046972" />
     <dep root="3135327435335338954" />
     <dep root="4242261035235310866" />

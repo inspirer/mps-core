@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependenciesRoot>
+  <dependency className="jetbrains.mps.core.gen.transform.generator.main.util.ResolveUtil" file="ResolveUtil.java">
+    <classNode dependClassName="jetbrains.mps.generator.template.TemplateQueryContext" />
+    <classNode dependClassName="jetbrains.mps.smodel.SNode" />
+  </dependency>
+</dependenciesRoot>
+

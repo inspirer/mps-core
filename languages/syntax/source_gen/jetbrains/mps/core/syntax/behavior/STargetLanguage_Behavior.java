@@ -25,19 +25,19 @@ public class STargetLanguage_Behavior {
 
   public static SNode call_getActionConcept_4242261035235367595(SNode thisNode) {
     BehaviorDescriptor descriptor = ConceptRegistry.getInstance().getBehaviorDescriptorForInstanceNode(thisNode);
-    return (SNode) descriptor.invoke(Object.class, SNodeOperations.cast(thisNode, "jetbrains.mps.core.syntax.structure.STargetLanguage"), "virtual_getActionConcept_4242261035235367595", PARAMETERS_4242261035235367595);
+    return (SNode) descriptor.invoke(Object.class, SNodeOperations.cast(thisNode, "jetbrains.mps.core.syntax.structure.STargetLanguage"), "virtual_getActionConcept_4242261035235367595", PARAMETERS_4242261035235367595, new Object[]{});
   }
 
   public static SNode call_getTypeConcept_4242261035235367602(SNode thisNode) {
     BehaviorDescriptor descriptor = ConceptRegistry.getInstance().getBehaviorDescriptorForInstanceNode(thisNode);
-    return (SNode) descriptor.invoke(Object.class, SNodeOperations.cast(thisNode, "jetbrains.mps.core.syntax.structure.STargetLanguage"), "virtual_getTypeConcept_4242261035235367602", PARAMETERS_4242261035235367602);
+    return (SNode) descriptor.invoke(Object.class, SNodeOperations.cast(thisNode, "jetbrains.mps.core.syntax.structure.STargetLanguage"), "virtual_getTypeConcept_4242261035235367602", PARAMETERS_4242261035235367602, new Object[]{});
   }
 
   public static SNode callSuper_getActionConcept_4242261035235367595(SNode thisNode, String callerConceptFqName) {
-    return (SNode) BehaviorManager.getInstance().invokeSuper(Object.class, SNodeOperations.cast(thisNode, "jetbrains.mps.core.syntax.structure.STargetLanguage"), callerConceptFqName, "virtual_getActionConcept_4242261035235367595", PARAMETERS_4242261035235367595);
+    return (SNode) BehaviorManager.getInstance().invokeSuper(Object.class, SNodeOperations.cast(thisNode, "jetbrains.mps.core.syntax.structure.STargetLanguage"), callerConceptFqName, "virtual_getActionConcept_4242261035235367595", PARAMETERS_4242261035235367595, new Object[]{});
   }
 
   public static SNode callSuper_getTypeConcept_4242261035235367602(SNode thisNode, String callerConceptFqName) {
-    return (SNode) BehaviorManager.getInstance().invokeSuper(Object.class, SNodeOperations.cast(thisNode, "jetbrains.mps.core.syntax.structure.STargetLanguage"), callerConceptFqName, "virtual_getTypeConcept_4242261035235367602", PARAMETERS_4242261035235367602);
+    return (SNode) BehaviorManager.getInstance().invokeSuper(Object.class, SNodeOperations.cast(thisNode, "jetbrains.mps.core.syntax.structure.STargetLanguage"), callerConceptFqName, "virtual_getTypeConcept_4242261035235367602", PARAMETERS_4242261035235367602, new Object[]{});
   }
 }

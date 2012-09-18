@@ -128,6 +128,25 @@
     <unitInfo nodeId="5566195403253949776" fileName="SConcept_Behavior.java" startLine="26" startPosition="20" endLine="30" endPosition="7" unitName="jetbrains.mps.core.structure.behavior.SConcept_Behavior$2" />
     <unitInfo nodeId="5566195403253949810" fileName="SConcept_Behavior.java" startLine="30" startPosition="17" endLine="34" endPosition="7" unitName="jetbrains.mps.core.structure.behavior.SConcept_Behavior$3" />
   </root>
+  <root nodeId="3564725181395014753">
+    <nodeInfo nodeId="3564725181395014753" fileName="SCardinality_Behavior.java" startLine="8" startPosition="36" endLine="11" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="init#(Ljetbrains/mps/smodel/SNode;)V" />
+    <nodeInfo nodeId="3564725181395014591" fileName="SCardinality_Behavior.java" startLine="13" startPosition="65" endLine="17" endPosition="8" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="3564725181395014700" fileName="SCardinality_Behavior.java" startLine="18" startPosition="12" endLine="22" endPosition="8" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="3564725181395014698" fileName="SCardinality_Behavior.java" startLine="18" startPosition="10" endLine="23" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="3564725181395014586" fileName="SCardinality_Behavior.java" startLine="12" startPosition="74" endLine="23" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="3564725181395014753" fileName="SCardinality_Behavior.java" startLine="11" startPosition="0" endLine="25" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="call_asString_3564725181395014756#(Ljetbrains/mps/smodel/SNode;)Ljava/lang/String;" />
+    <scopeInfo nodeId="3564725181395014755" fileName="SCardinality_Behavior.java" startLine="9" startPosition="43" endLine="9" endPosition="43" />
+    <scopeInfo nodeId="3564725181395014753" fileName="SCardinality_Behavior.java" startLine="8" startPosition="36" endLine="11" endPosition="0">
+      <varInfo nodeId="3564725181395014753" varName="thisNode" />
+    </scopeInfo>
+    <scopeInfo nodeId="3564725181395014587" fileName="SCardinality_Behavior.java" startLine="13" startPosition="65" endLine="17" endPosition="8" />
+    <scopeInfo nodeId="3564725181395014699" fileName="SCardinality_Behavior.java" startLine="18" startPosition="12" endLine="22" endPosition="8" />
+    <scopeInfo nodeId="3564725181395014759" fileName="SCardinality_Behavior.java" startLine="12" startPosition="74" endLine="23" endPosition="5" />
+    <scopeInfo nodeId="3564725181395014753" fileName="SCardinality_Behavior.java" startLine="11" startPosition="0" endLine="25" endPosition="0">
+      <varInfo nodeId="3564725181395014753" varName="thisNode" />
+    </scopeInfo>
+    <unitInfo nodeId="3564725181395014753" fileName="SCardinality_Behavior.java" startLine="8" startPosition="0" endLine="26" endPosition="0" unitName="jetbrains.mps.core.structure.behavior.SCardinality_Behavior" />
+  </root>
   <root nodeId="4125821269968947766">
     <nodeInfo nodeId="4125821269968947774" fileName="SConceptMember_Behavior.java" startLine="12" startPosition="85" endLine="13" endPosition="128" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="4125821269968947766" fileName="SConceptMember_Behavior.java" startLine="8" startPosition="38" endLine="11" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="init#(Ljetbrains/mps/smodel/SNode;)V" />
