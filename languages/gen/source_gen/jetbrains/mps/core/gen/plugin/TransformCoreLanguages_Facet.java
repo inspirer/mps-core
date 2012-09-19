@@ -19,25 +19,27 @@ import jetbrains.mps.make.resources.IPropertiesAccessor;
 import jetbrains.mps.baseLanguage.closures.runtime.Wrappers;
 import jetbrains.mps.smodel.SModelDescriptor;
 import jetbrains.mps.smodel.ModelAccess;
-import jetbrains.mps.internal.collections.runtime.ITranslator2;
-import jetbrains.mps.smodel.resources.MResource;
 import jetbrains.mps.internal.collections.runtime.IWhereFilter;
+import jetbrains.mps.smodel.resources.MResource;
+import jetbrains.mps.smodel.Language;
+import jetbrains.mps.internal.collections.runtime.ITranslator2;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
 import jetbrains.mps.smodel.SModel;
+import jetbrains.mps.messages.IMessageHandler;
+import jetbrains.mps.messages.IMessage;
+import jetbrains.mps.make.script.IFeedback;
 import jetbrains.mps.generator.generationTypes.IGenerationHandler;
 import jetbrains.mps.lang.core.plugin.MakeGenerationHandler;
 import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
 import jetbrains.mps.smodel.resources.GResource;
-import jetbrains.mps.make.script.IFeedback;
 import jetbrains.mps.messages.Message;
 import jetbrains.mps.messages.MessageKind;
-import jetbrains.mps.messages.IMessageHandler;
-import jetbrains.mps.messages.IMessage;
 import jetbrains.mps.lang.core.plugin.Generate_Facet.Target_checkParameters.Variables;
 import jetbrains.mps.generator.TransientModelsProvider;
 import jetbrains.mps.generator.GenerationOptions;
 import jetbrains.mps.generator.GenerationFacade;
 import jetbrains.mps.progress.EmptyProgressMonitor;
+import jetbrains.mps.internal.collections.runtime.IVisitor;
 import jetbrains.mps.make.script.IConfig;
 import java.util.Map;
 import jetbrains.mps.make.script.IPropertiesPool;
@@ -92,9 +94,13 @@ public class TransformCoreLanguages_Facet extends IFacet.Stub {
               final Wrappers._T<List<SModelDescriptor>> models = new Wrappers._T<List<SModelDescriptor>>();
               ModelAccess.instance().runReadAction(new Runnable() {
                 public void run() {
-                  models.value = Sequence.fromIterable(input).translate(new ITranslator2<IResource, SModelDescriptor>() {
-                    public Iterable<SModelDescriptor> translate(IResource in) {
-                      return ((MResource) in).models();
+                  models.value = Sequence.fromIterable(input).where(new IWhereFilter<IResource>() {
+                    public boolean accept(IResource it) {
+                      return ((MResource) it).module() instanceof Language;
+                    }
+                  }).translate(new ITranslator2<IResource, SModelDescriptor>() {
+                    public Iterable<SModelDescriptor> translate(IResource it) {
+                      return ((MResource) it).models();
                     }
                   }).where(new IWhereFilter<SModelDescriptor>() {
                     public boolean accept(SModelDescriptor it) {
@@ -108,14 +114,7 @@ public class TransformCoreLanguages_Facet extends IFacet.Stub {
                 return new IResult.SUCCESS(_output_kp7j54_a0a);
               }
 
-              IGenerationHandler gh = new MakeGenerationHandler(new _FunctionTypes._return_P1_E0<Boolean, GResource>() {
-                public Boolean invoke(GResource data) {
-                  monitor.currentProgress().advanceWork("Transforming", 100);
-                  monitor.reportFeedback(new IFeedback.MESSAGE(new Message(MessageKind.INFORMATION, "Generated " + data.model().getLongName())));
-                  return true;
-                }
-              });
-              IMessageHandler mh = new IMessageHandler() {
+              final IMessageHandler mh = new IMessageHandler() {
                 public void handle(IMessage msg) {
                   monitor.reportFeedback(new IFeedback.MESSAGE(msg));
                 }
@@ -123,6 +122,15 @@ public class TransformCoreLanguages_Facet extends IFacet.Stub {
                 public void clear() {
                 }
               };
+              final List<LanguageModelsMerger> generated = ListSequence.fromList(new ArrayList<LanguageModelsMerger>());
+              IGenerationHandler gh = new MakeGenerationHandler(new _FunctionTypes._return_P1_E0<Boolean, GResource>() {
+                public Boolean invoke(GResource data) {
+                  monitor.currentProgress().advanceWork("Transforming", 100);
+                  monitor.reportFeedback(new IFeedback.MESSAGE(new Message(MessageKind.INFORMATION, "Generated " + data.model().getLongName())));
+                  ListSequence.fromList(generated).addElement(new LanguageModelsMerger((Language) data.module(), data.status().getOutputModel(), mh));
+                  return true;
+                }
+              });
               monitor.reportFeedback(new IFeedback.MESSAGE(new Message(MessageKind.INFORMATION, "Transforming core language descriptors..")));
 
               monitor.currentProgress().beginWork("Transforming", ListSequence.fromList(models.value).count() * 100, monitor.currentProgress().workLeft());
@@ -153,6 +161,27 @@ public class TransformCoreLanguages_Facet extends IFacet.Stub {
               options = builder.create();
 
               boolean generationOk = GenerationFacade.generateModels(pa.global().properties(new ITarget.Name("jetbrains.mps.lang.core.Generate.checkParameters"), Variables.class).project(), models.value, pa.global().properties(new ITarget.Name("jetbrains.mps.lang.core.Generate.checkParameters"), Variables.class).operationContext(), gh, new EmptyProgressMonitor(), mh, options, transModels);
+
+              if (ListSequence.fromList(generated).isNotEmpty()) {
+                ModelAccess.instance().runReadAction(new Runnable() {
+                  public void run() {
+                    ListSequence.fromList(generated).visitAll(new IVisitor<LanguageModelsMerger>() {
+                      public void visit(LanguageModelsMerger it) {
+                        it.convert();
+                      }
+                    });
+                  }
+                });
+                ModelAccess.instance().runWriteAction(new Runnable() {
+                  public void run() {
+                    ListSequence.fromList(generated).visitAll(new IVisitor<LanguageModelsMerger>() {
+                      public void visit(LanguageModelsMerger it) {
+                        it.apply();
+                      }
+                    });
+                  }
+                });
+              }
 
               monitor.currentProgress().finishWork("Transforming");
               if (!(generationOk)) {
