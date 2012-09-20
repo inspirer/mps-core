@@ -20,12 +20,13 @@ import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.internal.collections.runtime.IMapping;
 import jetbrains.mps.smodel.loading.ModelLoadingState;
+import jetbrains.mps.smodel.SReference;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.internal.collections.runtime.IVisitor;
 import java.util.List;
 import jetbrains.mps.internal.collections.runtime.backports.LinkedList;
 import java.util.ArrayList;
 import java.util.Collections;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 
 public class LanguageModelsMerger {
@@ -84,17 +85,39 @@ public class LanguageModelsMerger {
     ModelAccess.assertLegalWrite();
 
     for (IMapping<DefaultSModelDescriptor, SModel> entry : MapSequence.fromMap(newContent)) {
-      DefaultSModelDescriptor descriptor = entry.key();
+      final DefaultSModelDescriptor descriptor = entry.key();
       messageHandler.handle(new Message(MessageKind.INFORMATION, "replacing " + descriptor.getLongName()));
       descriptor.updateDiskTimestamp();
       descriptor.replaceModel(entry.value(), ModelLoadingState.FULLY_LOADED);
       descriptor.setChanged(true);
-      descriptor.save();
+      ModelAccess.instance().runWriteInEDT(new Runnable() {
+        public void run() {
+          descriptor.save();
+        }
+      });
     }
   }
 
   private void restoreRefs() {
-    // TODO 
+    for (IMapping<SNode, SNode> m : MapSequence.fromMap(mapping)) {
+      SNode input = m.key();
+      SNode output = m.value();
+
+      for (SReference ref : input.getReferencesIterable()) {
+        SNode targetNode = ref.getTargetNodeSilently();
+        if (targetNode == null) {
+          messageHandler.handle(new Message(MessageKind.ERROR, "broken reference `" + ref.getRole() + "' in " + input.getDebugText()));
+          continue;
+        }
+        if (MapSequence.fromMap(mapping).containsKey(targetNode)) {
+          output.setReferent(ref.getRole(), MapSequence.fromMap(mapping).get(targetNode));
+        } else if (SNodeOperations.getModel(targetNode) == sourceModel) {
+          messageHandler.handle(new Message(MessageKind.ERROR, "not mapped node: " + targetNode.getDebugText()));
+        } else {
+          output.setReferent(ref.getRole(), targetNode);
+        }
+      }
+    }
   }
 
   private void merge(LanguageAspect aspect, Iterable<SNode> roots) {
