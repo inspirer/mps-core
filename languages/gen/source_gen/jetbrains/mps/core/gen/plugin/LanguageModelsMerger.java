@@ -28,6 +28,7 @@ import jetbrains.mps.internal.collections.runtime.backports.LinkedList;
 import java.util.ArrayList;
 import java.util.Collections;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import jetbrains.mps.smodel.SModelDescriptor;
 
 public class LanguageModelsMerger {
   private Language lang;
@@ -201,5 +202,13 @@ public class LanguageModelsMerger {
       signature = "#" + SPropertyOperations.getString(SNodeOperations.cast(node, "jetbrains.mps.lang.core.structure.INamedConcept"), "name");
     }
     return signature;
+  }
+
+  public Language getLanguage() {
+    return lang;
+  }
+
+  public Iterable<SModelDescriptor> getGenerated() {
+    return ListSequence.fromListWithValues(new ArrayList<SModelDescriptor>(), MapSequence.fromMap(newContent).keySet());
   }
 }

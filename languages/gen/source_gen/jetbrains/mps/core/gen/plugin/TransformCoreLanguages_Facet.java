@@ -88,7 +88,7 @@ public class TransformCoreLanguages_Facet extends IFacet.Stub {
     public IJob createJob() {
       return new IJob.Stub() {
         public IResult execute(final Iterable<IResource> input, final IJobMonitor monitor, final IPropertiesAccessor pa) {
-          Iterable<IResource> _output_kp7j54_a0a = null;
+          final Wrappers._T<Iterable<IResource>> _output_kp7j54_a0a = new Wrappers._T<Iterable<IResource>>(null);
           switch (0) {
             case 0:
               final Wrappers._T<List<SModelDescriptor>> models = new Wrappers._T<List<SModelDescriptor>>();
@@ -111,7 +111,7 @@ public class TransformCoreLanguages_Facet extends IFacet.Stub {
               });
 
               if (ListSequence.fromList(models.value).isEmpty()) {
-                return new IResult.SUCCESS(_output_kp7j54_a0a);
+                return new IResult.SUCCESS(_output_kp7j54_a0a.value);
               }
 
               final IMessageHandler mh = new IMessageHandler() {
@@ -181,14 +181,20 @@ public class TransformCoreLanguages_Facet extends IFacet.Stub {
                     });
                   }
                 });
+
+                ListSequence.fromList(generated).visitAll(new IVisitor<LanguageModelsMerger>() {
+                  public void visit(LanguageModelsMerger it) {
+                    _output_kp7j54_a0a.value = Sequence.fromIterable(_output_kp7j54_a0a.value).concat(Sequence.fromIterable(Sequence.<IResource>singleton(new MResource(it.getLanguage(), it.getGenerated()))));
+                  }
+                });
               }
 
               monitor.currentProgress().finishWork("Transforming");
               if (!(generationOk)) {
-                return new IResult.FAILURE(_output_kp7j54_a0a);
+                return new IResult.FAILURE(_output_kp7j54_a0a.value);
               }
             default:
-              return new IResult.SUCCESS(_output_kp7j54_a0a);
+              return new IResult.SUCCESS(_output_kp7j54_a0a.value);
           }
         }
       };
