@@ -5,11 +5,13 @@
   <language namespace="0bd2c9fd-3917-42dd-b383-70263eb772dd(jetbrains.mps.core.notation)" />
   <language namespace="41a590b4-0cca-40d1-9a11-d9ef253734cc(jetbrains.mps.core.smodel)" />
   <language namespace="c898d4a2-ef8e-481f-aff5-15e46db05e03(jetbrains.mps.core.query)" />
+  <language namespace="96edcf67-fb92-4a65-a193-b125e8994c8e(jetbrains.mps.core.metadata)" />
   <import index="ydsw" modelUID="r:c11a239c-3061-4b62-b5dd-6749678497d7(jetbrains.mps.core.structure.structure)" version="-1" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="bwy9" modelUID="r:f9198ffd-e084-425c-aa82-f2db8289f5eb(jetbrains.mps.core.query.structure)" version="0" implicit="yes" />
   <import index="xsnc" modelUID="r:e3b9700d-5825-4641-895a-925f28591c5b(jetbrains.mps.core.smodel.structure)" version="-1" implicit="yes" />
   <import index="74m3" modelUID="r:73e15084-90ca-4883-8020-50a625923cba(jetbrains.mps.core.notation.structure)" version="-1" implicit="yes" />
+  <import index="76x" modelUID="r:6c2a75d9-9b75-42bc-9094-a61409f20018(jetbrains.mps.core.metadata.structure)" version="-1" implicit="yes" />
   <roots>
     <node type="ydsw.SStructureContainer" typeId="ydsw.6195190339581766868" id="6195190339581846123">
       <property name="name" nameId="tpck.1169194664001" value="other" />
@@ -250,7 +252,7 @@
             <node role="left" roleId="bwy9.6762883159245048020" type="bwy9.MqlDotExpression" typeId="bwy9.6762883159245048085" id="4519148889084590306">
               <node role="left" roleId="bwy9.6762883159245048086" type="bwy9.MqlThis" typeId="bwy9.6762883159245048067" id="4519148889084590305" />
               <node role="right" roleId="bwy9.6762883159245048089" type="xsnc.SConceptQueryCall" typeId="xsnc.535637396506608313" id="4519148889084590310">
-                <link role="query" roleId="xsnc.535637396506608314" targetNodeId="4519148889084585898" resolveInfo="fibonachi" />
+                <link role="query" roleId="xsnc.535637396506608314" targetNodeId="4519148889084590349" resolveInfo="fibonachi" />
                 <node role="arguments" roleId="xsnc.2059702675525965926" type="bwy9.MqlArithmetic" typeId="bwy9.6762883159245048040" id="4519148889084590312">
                   <property name="kind" nameId="bwy9.6762883159245048047" value="2" />
                   <node role="right" roleId="bwy9.6762883159245048021" type="bwy9.MqlIntLiteral" typeId="bwy9.6762883159245048052" id="4519148889084590315">
@@ -514,6 +516,58 @@
       </node>
       <node role="members" roleId="ydsw.7581772527307852678" type="ydsw.SEnumerationMember" typeId="ydsw.7581772527307852674" id="8379004527113872031">
         <property name="name" nameId="tpck.1169194664001" value="protected" />
+      </node>
+    </node>
+    <node role="structure" roleId="ydsw.6195190339581766884" type="ydsw.SStructureEmptyLine" typeId="ydsw.6195190339581962051" id="2848533153256459330" />
+    <node role="structure" roleId="ydsw.6195190339581766884" type="76x.SConceptAnnotationType" typeId="76x.2848533153256408899" id="2848533153256459332">
+      <property name="name" nameId="tpck.1169194664001" value="Copyright" />
+      <node role="members" roleId="76x.2848533153256415339" type="76x.SConceptAnnotationProperty" typeId="76x.2848533153256415624" id="2848533153256459716">
+        <property name="name" nameId="tpck.1169194664001" value="value" />
+        <node role="type" roleId="76x.2848533153256415625" type="ydsw.SPrimitiveDataType" typeId="ydsw.7581772527307667404" id="2848533153256459717">
+          <property name="kind" nameId="ydsw.7581772527307667409" value="string" />
+        </node>
+      </node>
+    </node>
+    <node role="structure" roleId="ydsw.6195190339581766884" type="ydsw.SStructureEmptyLine" typeId="ydsw.6195190339581962051" id="2848533153256443236" />
+    <node role="structure" roleId="ydsw.6195190339581766884" type="76x.SConceptAnnotationType" typeId="76x.2848533153256408899" id="2848533153256446325">
+      <property name="name" nameId="tpck.1169194664001" value="asd" />
+      <node role="members" roleId="76x.2848533153256415339" type="76x.SConceptAnnotationProperty" typeId="76x.2848533153256415624" id="2848533153256449632">
+        <property name="name" nameId="tpck.1169194664001" value="asd" />
+        <node role="type" roleId="76x.2848533153256415625" type="ydsw.SPrimitiveDataType" typeId="ydsw.7581772527307667404" id="2848533153256449633">
+          <property name="kind" nameId="ydsw.7581772527307667409" value="string" />
+        </node>
+      </node>
+      <node role="members" roleId="76x.2848533153256415339" type="76x.SConceptAnnotationChildLink" typeId="76x.2848533153256415629" id="2848533153256449635">
+        <property name="name" nameId="tpck.1169194664001" value="asdasd" />
+        <link role="type" roleId="76x.2848533153256415634" targetNodeId="2848533153256446325" resolveInfo="asd" />
+      </node>
+      <node role="members" roleId="76x.2848533153256415339" type="76x.SConceptAnnotationMemberEmptyLine" typeId="76x.2848533153256436620" id="2848533153256453530" />
+    </node>
+    <node role="structure" roleId="ydsw.6195190339581766884" type="ydsw.SStructureEmptyLine" typeId="ydsw.6195190339581962051" id="2848533153256469418" />
+    <node role="structure" roleId="ydsw.6195190339581766884" type="76x.SConceptAnnotationType" typeId="76x.2848533153256408899" id="2848533153256469420">
+      <property name="name" nameId="tpck.1169194664001" value="X" />
+      <node role="members" roleId="76x.2848533153256415339" type="76x.SConceptAnnotationProperty" typeId="76x.2848533153256415624" id="2848533153256515197">
+        <property name="name" nameId="tpck.1169194664001" value="name" />
+        <node role="type" roleId="76x.2848533153256415625" type="ydsw.SPrimitiveDataType" typeId="ydsw.7581772527307667404" id="2848533153256515198">
+          <property name="kind" nameId="ydsw.7581772527307667409" value="string" />
+        </node>
+        <node role="defaultValue" roleId="76x.2848533153256515199" type="bwy9.MqlStringLiteral" typeId="bwy9.6762883159245048054" id="2848533153256551923">
+          <property name="value" nameId="bwy9.6762883159245048055" value="asas" />
+        </node>
+      </node>
+      <node role="members" roleId="76x.2848533153256415339" type="76x.SConceptAnnotationChildLink" typeId="76x.2848533153256415629" id="2848533153256469864">
+        <property name="name" nameId="tpck.1169194664001" value="aaa" />
+        <link role="type" roleId="76x.2848533153256415634" targetNodeId="2848533153256469420" resolveInfo="X" />
+        <node role="cardinality" roleId="76x.7581772527307907847" type="ydsw.SCardinality" typeId="ydsw.7581772527307895408" id="2848533153256515195">
+          <property name="isMultiple" nameId="ydsw.7581772527307895410" value="true" />
+        </node>
+      </node>
+      <node role="members" roleId="76x.2848533153256415339" type="76x.SConceptAnnotationNodeRef" typeId="76x.2848533153256463734" id="2848533153256469422">
+        <property name="name" nameId="tpck.1169194664001" value="ref" />
+        <link role="target" roleId="76x.2848533153256463735" targetNodeId="8632884680339330916" resolveInfo="AbstractClassifier" />
+        <node role="cardinality" roleId="76x.2848533153256463743" type="ydsw.SCardinality" typeId="ydsw.7581772527307895408" id="2848533153256469862">
+          <property name="isRequired" nameId="ydsw.7581772527307895409" value="true" />
+        </node>
       </node>
     </node>
     <node role="structure" roleId="ydsw.6195190339581766884" type="ydsw.SStructureEmptyLine" typeId="ydsw.6195190339581962051" id="5362811550739085634" />

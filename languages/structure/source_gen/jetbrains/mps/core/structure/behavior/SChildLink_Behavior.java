@@ -7,4 +7,8 @@ import jetbrains.mps.smodel.SNode;
 public class SChildLink_Behavior {
   public static void init(SNode thisNode) {
   }
+
+  public static boolean virtual_supportsMultiple_2848533153256469873(SNode thisNode) {
+    return true;
+  }
 }

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debugInfo>
+  <unitInfo fileName="BehaviorAspectDescriptor.java" startLine="9" startPosition="0" endLine="34" endPosition="0" unitName="jetbrains.mps.core.metadata.behavior.BehaviorAspectDescriptor" />
+  <unitInfo fileName="SConceptAnnotationChildLink_BehaviorDescriptor.java" startLine="10" startPosition="0" endLine="27" endPosition="0" unitName="jetbrains.mps.core.metadata.behavior.SConceptAnnotationChildLink_BehaviorDescriptor" />
+  <unitInfo fileName="SConceptAnnotationMemberComment_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="jetbrains.mps.core.metadata.behavior.SConceptAnnotationMemberComment_BehaviorDescriptor" />
+  <unitInfo fileName="SConceptAnnotationMemberEmptyLine_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="jetbrains.mps.core.metadata.behavior.SConceptAnnotationMemberEmptyLine_BehaviorDescriptor" />
+  <unitInfo fileName="SConceptAnnotationMember_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="jetbrains.mps.core.metadata.behavior.SConceptAnnotationMember_BehaviorDescriptor" />
+  <unitInfo fileName="SConceptAnnotationNodeRef_BehaviorDescriptor.java" startLine="9" startPosition="0" endLine="22" endPosition="0" unitName="jetbrains.mps.core.metadata.behavior.SConceptAnnotationNodeRef_BehaviorDescriptor" />
+  <unitInfo fileName="SConceptAnnotationProperty_BehaviorDescriptor.java" startLine="9" startPosition="0" endLine="22" endPosition="0" unitName="jetbrains.mps.core.metadata.behavior.SConceptAnnotationProperty_BehaviorDescriptor" />
+  <unitInfo fileName="SConceptAnnotationType_BehaviorDescriptor.java" startLine="12" startPosition="0" endLine="29" endPosition="0" unitName="jetbrains.mps.core.metadata.behavior.SConceptAnnotationType_BehaviorDescriptor" />
+  <root nodeId="2848533153256509588">
+    <nodeInfo nodeId="2848533153256509595" fileName="SConceptAnnotationChildLink_Behavior.java" startLine="11" startPosition="86" endLine="12" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2848533153256509588" fileName="SConceptAnnotationChildLink_Behavior.java" startLine="7" startPosition="51" endLine="10" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="init#(Ljetbrains/mps/smodel/SNode;)V" />
+    <nodeInfo nodeId="2848533153256509588" fileName="SConceptAnnotationChildLink_Behavior.java" startLine="10" startPosition="0" endLine="14" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="virtual_supportsMultiple_2848533153256469873#(Ljetbrains/mps/smodel/SNode;)Z" />
+    <scopeInfo nodeId="2848533153256509590" fileName="SConceptAnnotationChildLink_Behavior.java" startLine="8" startPosition="43" endLine="8" endPosition="43" />
+    <scopeInfo nodeId="2848533153256509593" fileName="SConceptAnnotationChildLink_Behavior.java" startLine="11" startPosition="86" endLine="12" endPosition="16" />
+    <scopeInfo nodeId="2848533153256509588" fileName="SConceptAnnotationChildLink_Behavior.java" startLine="7" startPosition="51" endLine="10" endPosition="0">
+      <varInfo nodeId="2848533153256509588" varName="thisNode" />
+    </scopeInfo>
+    <scopeInfo nodeId="2848533153256509588" fileName="SConceptAnnotationChildLink_Behavior.java" startLine="10" startPosition="0" endLine="14" endPosition="0">
+      <varInfo nodeId="2848533153256509588" varName="thisNode" />
+    </scopeInfo>
+    <unitInfo nodeId="2848533153256509588" fileName="SConceptAnnotationChildLink_Behavior.java" startLine="7" startPosition="0" endLine="15" endPosition="0" unitName="jetbrains.mps.core.metadata.behavior.SConceptAnnotationChildLink_Behavior" />
+  </root>
+</debugInfo>
+

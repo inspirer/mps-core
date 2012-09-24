@@ -3,8 +3,9 @@
   <unitInfo fileName="BehaviorAspectDescriptor.java" startLine="9" startPosition="0" endLine="60" endPosition="0" unitName="jetbrains.mps.core.structure.behavior.BehaviorAspectDescriptor" />
   <unitInfo fileName="SAbstractConcept_BehaviorDescriptor.java" startLine="11" startPosition="0" endLine="32" endPosition="0" unitName="jetbrains.mps.core.structure.behavior.SAbstractConcept_BehaviorDescriptor" />
   <unitInfo fileName="SAbstractLink_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="jetbrains.mps.core.structure.behavior.SAbstractLink_BehaviorDescriptor" />
+  <unitInfo fileName="SCardinalityContainer_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="10" endPosition="0" unitName="jetbrains.mps.core.structure.behavior.SCardinalityContainer_BehaviorDescriptor" />
   <unitInfo fileName="SCardinality_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="jetbrains.mps.core.structure.behavior.SCardinality_BehaviorDescriptor" />
-  <unitInfo fileName="SChildLink_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="jetbrains.mps.core.structure.behavior.SChildLink_BehaviorDescriptor" />
+  <unitInfo fileName="SChildLink_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="20" endPosition="0" unitName="jetbrains.mps.core.structure.behavior.SChildLink_BehaviorDescriptor" />
   <unitInfo fileName="SConceptFeature_BehaviorDescriptor.java" startLine="9" startPosition="0" endLine="22" endPosition="0" unitName="jetbrains.mps.core.structure.behavior.SConceptFeature_BehaviorDescriptor" />
   <unitInfo fileName="SConceptMemberComment_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="jetbrains.mps.core.structure.behavior.SConceptMemberComment_BehaviorDescriptor" />
   <unitInfo fileName="SConceptMemberEmptyLine_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="jetbrains.mps.core.structure.behavior.SConceptMemberEmptyLine_BehaviorDescriptor" />
@@ -79,6 +80,31 @@
     </scopeInfo>
     <unitInfo nodeId="2223786200032678195" fileName="SConstraints_Behavior.java" startLine="10" startPosition="0" endLine="22" endPosition="0" unitName="jetbrains.mps.core.structure.behavior.SConstraints_Behavior" />
     <unitInfo nodeId="2223786200032678317" fileName="SConstraints_Behavior.java" startLine="15" startPosition="94" endLine="19" endPosition="5" unitName="jetbrains.mps.core.structure.behavior.SConstraints_Behavior$1" />
+  </root>
+  <root nodeId="2848533153256469870">
+    <nodeInfo nodeId="2848533153256469870" fileName="SCardinalityContainer_Behavior.java" startLine="11" startPosition="45" endLine="12" endPosition="72" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="PARAMETERS_2848533153256469873" />
+    <nodeInfo nodeId="2848533153256469870" fileName="SCardinalityContainer_Behavior.java" startLine="17" startPosition="83" endLine="18" endPosition="113" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="2848533153256469870" fileName="SCardinalityContainer_Behavior.java" startLine="18" startPosition="113" endLine="19" endPosition="246" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2848533153256469870" fileName="SCardinalityContainer_Behavior.java" startLine="22" startPosition="116" endLine="23" endPosition="291" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2848533153256469870" fileName="SCardinalityContainer_Behavior.java" startLine="13" startPosition="0" endLine="16" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="init#(Ljetbrains/mps/smodel/SNode;)V" />
+    <nodeInfo nodeId="2848533153256469870" fileName="SCardinalityContainer_Behavior.java" startLine="21" startPosition="0" endLine="25" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="callSuper_supportsMultiple_2848533153256469873#(Ljetbrains/mps/smodel/SNode;Ljava/lang/String;)Z" />
+    <nodeInfo nodeId="2848533153256469870" fileName="SCardinalityContainer_Behavior.java" startLine="16" startPosition="0" endLine="21" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="call_supportsMultiple_2848533153256469873#(Ljetbrains/mps/smodel/SNode;)Z" />
+    <scopeInfo nodeId="2848533153256469872" fileName="SCardinalityContainer_Behavior.java" startLine="14" startPosition="43" endLine="14" endPosition="43" />
+    <scopeInfo nodeId="2848533153256469870" fileName="SCardinalityContainer_Behavior.java" startLine="22" startPosition="116" endLine="23" endPosition="291" />
+    <scopeInfo nodeId="2848533153256469870" fileName="SCardinalityContainer_Behavior.java" startLine="17" startPosition="83" endLine="19" endPosition="246">
+      <varInfo nodeId="2848533153256469870" varName="descriptor" />
+    </scopeInfo>
+    <scopeInfo nodeId="2848533153256469870" fileName="SCardinalityContainer_Behavior.java" startLine="13" startPosition="0" endLine="16" endPosition="0">
+      <varInfo nodeId="2848533153256469870" varName="thisNode" />
+    </scopeInfo>
+    <scopeInfo nodeId="2848533153256469870" fileName="SCardinalityContainer_Behavior.java" startLine="21" startPosition="0" endLine="25" endPosition="0">
+      <varInfo nodeId="2848533153256469870" varName="callerConceptFqName" />
+      <varInfo nodeId="2848533153256469870" varName="thisNode" />
+    </scopeInfo>
+    <scopeInfo nodeId="2848533153256469870" fileName="SCardinalityContainer_Behavior.java" startLine="16" startPosition="0" endLine="21" endPosition="0">
+      <varInfo nodeId="2848533153256469870" varName="thisNode" />
+    </scopeInfo>
+    <unitInfo nodeId="2848533153256469870" fileName="SCardinalityContainer_Behavior.java" startLine="11" startPosition="0" endLine="26" endPosition="0" unitName="jetbrains.mps.core.structure.behavior.SCardinalityContainer_Behavior" />
   </root>
   <root nodeId="3467610137587378142">
     <nodeInfo nodeId="3467610137587378157" fileName="SConcept_Behavior.java" startLine="16" startPosition="105" endLine="17" endPosition="29" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
@@ -176,12 +202,18 @@
     <unitInfo nodeId="4125821269969003164" fileName="SAbstractLink_Behavior.java" startLine="9" startPosition="0" endLine="17" endPosition="0" unitName="jetbrains.mps.core.structure.behavior.SAbstractLink_Behavior" />
   </root>
   <root nodeId="4125821269969003178">
+    <nodeInfo nodeId="2848533153256469883" fileName="SChildLink_Behavior.java" startLine="11" startPosition="86" endLine="12" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="4125821269969003178" fileName="SChildLink_Behavior.java" startLine="7" startPosition="34" endLine="10" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="init#(Ljetbrains/mps/smodel/SNode;)V" />
+    <nodeInfo nodeId="4125821269969003178" fileName="SChildLink_Behavior.java" startLine="10" startPosition="0" endLine="14" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="virtual_supportsMultiple_2848533153256469873#(Ljetbrains/mps/smodel/SNode;)Z" />
     <scopeInfo nodeId="4125821269969003180" fileName="SChildLink_Behavior.java" startLine="8" startPosition="43" endLine="8" endPosition="43" />
+    <scopeInfo nodeId="2848533153256469881" fileName="SChildLink_Behavior.java" startLine="11" startPosition="86" endLine="12" endPosition="16" />
     <scopeInfo nodeId="4125821269969003178" fileName="SChildLink_Behavior.java" startLine="7" startPosition="34" endLine="10" endPosition="0">
       <varInfo nodeId="4125821269969003178" varName="thisNode" />
     </scopeInfo>
-    <unitInfo nodeId="4125821269969003178" fileName="SChildLink_Behavior.java" startLine="7" startPosition="0" endLine="11" endPosition="0" unitName="jetbrains.mps.core.structure.behavior.SChildLink_Behavior" />
+    <scopeInfo nodeId="4125821269969003178" fileName="SChildLink_Behavior.java" startLine="10" startPosition="0" endLine="14" endPosition="0">
+      <varInfo nodeId="4125821269969003178" varName="thisNode" />
+    </scopeInfo>
+    <unitInfo nodeId="4125821269969003178" fileName="SChildLink_Behavior.java" startLine="7" startPosition="0" endLine="15" endPosition="0" unitName="jetbrains.mps.core.structure.behavior.SChildLink_Behavior" />
   </root>
   <root nodeId="4125821269969003303">
     <nodeInfo nodeId="4125821269969003303" fileName="SReference_Behavior.java" startLine="7" startPosition="34" endLine="10" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="init#(Ljetbrains/mps/smodel/SNode;)V" />

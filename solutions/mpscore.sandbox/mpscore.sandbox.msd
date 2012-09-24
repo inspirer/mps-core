@@ -6,6 +6,7 @@
   <sourcePath />
   <usedLanguages>
     <usedLanguage>f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)</usedLanguage>
+    <usedLanguage>96edcf67-fb92-4a65-a193-b125e8994c8e(jetbrains.mps.core.metadata)</usedLanguage>
     <usedLanguage>0bd2c9fd-3917-42dd-b383-70263eb772dd(jetbrains.mps.core.notation)</usedLanguage>
     <usedLanguage>c898d4a2-ef8e-481f-aff5-15e46db05e03(jetbrains.mps.core.query)</usedLanguage>
     <usedLanguage>41a590b4-0cca-40d1-9a11-d9ef253734cc(jetbrains.mps.core.smodel)</usedLanguage>

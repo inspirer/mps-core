@@ -5,6 +5,7 @@ package jetbrains.mps.core.structure.actions;
 import jetbrains.mps.smodel.IOperationContext;
 import jetbrains.mps.smodel.action.NodeSubstitutePreconditionContext;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import jetbrains.mps.core.structure.behavior.SCardinalityContainer_Behavior;
 import jetbrains.mps.smodel.action.SideTransformPreconditionContext;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
@@ -29,7 +30,7 @@ import jetbrains.mps.smodel.action.AbstractSideTransformHintSubstituteAction;
 
 public class QueriesGenerated {
   public static boolean nodeSubstituteActionsBuilder_Precondition_SCardinality_7581772527307942713(final IOperationContext operationContext, final NodeSubstitutePreconditionContext _context) {
-    return SNodeOperations.isInstanceOf(_context.getParentNode(), "jetbrains.mps.core.structure.structure.SChildLink");
+    return SNodeOperations.isInstanceOf(_context.getParentNode(), "jetbrains.mps.core.structure.structure.SCardinalityContainer") && SCardinalityContainer_Behavior.call_supportsMultiple_2848533153256469873(SNodeOperations.cast(_context.getParentNode(), "jetbrains.mps.core.structure.structure.SCardinalityContainer"));
   }
 
   public static boolean sideTransformHintSubstituteActionsBuilder_Precondition_SConcept_6195190339581955307(final IOperationContext operationContext, final SideTransformPreconditionContext _context) {

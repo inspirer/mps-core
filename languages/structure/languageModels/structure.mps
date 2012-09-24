@@ -147,6 +147,10 @@
       <property name="name" nameId="tpck.1169194664001" value="SStructurePart" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     </node>
+    <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="2848533153256469869">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="members" />
+      <property name="name" nameId="tpck.1169194664001" value="SCardinalityContainer" />
+    </node>
   </roots>
   <root id="6195190339581756310">
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="6195190339581766761">
@@ -403,6 +407,9 @@
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.BooleanConceptProperty" typeId="tpce.1105725574259" id="7581772527308071238">
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.8339862546319981473" resolveInfo="final" />
     </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="2848533153256469878">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="2848533153256469869" resolveInfo="SCardinalityContainer" />
+    </node>
   </root>
   <root id="7581772527307862084">
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7581772527307907847">
@@ -496,5 +503,6 @@
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473854053" resolveInfo="abstract" />
     </node>
   </root>
+  <root id="2848533153256469869" />
 </model>
 
