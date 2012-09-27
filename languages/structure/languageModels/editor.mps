@@ -158,6 +158,11 @@
       <property name="name" nameId="tpck.1169194664001" value="add_Annotation" />
       <link role="applicableConcept" roleId="tpc2.1139535219968" targetNodeId="ydsw.6195190339581756310" resolveInfo="SAbstractConcept" />
     </node>
+    <node type="tpc2.CellActionMapDeclaration" typeId="tpc2.1139535219966" id="2310679965751769581">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="concept" />
+      <property name="name" nameId="tpck.1169194664001" value="SConcept_deleteCanBeRoot" />
+      <link role="applicableConcept" roleId="tpc2.1139535219968" targetNodeId="ydsw.6195190339581766741" resolveInfo="SConcept" />
+    </node>
   </roots>
   <root id="6195190339581766727">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Error" typeId="tpc2.1075375595203" id="6195190339581766739">
@@ -243,6 +248,26 @@
           </node>
         </node>
         <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.SideTransformAnchorTagStyleClassItem" typeId="tpc2.1214320119173" id="6195190339581955303">
+          <property name="tag" nameId="tpc2.1214320119174" value="ext_5_RTransform" />
+        </node>
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="2310679965751769573">
+        <property name="text" nameId="tpc2.1073389577007" value="root" />
+        <link role="styleClass" roleId="tpc2.1186406756722" targetNodeId="5073985075243002241" resolveInfo="keyword" />
+        <link role="actionMap" roleId="tpc2.1139959269582" targetNodeId="2310679965751769581" resolveInfo="SConcept_deleteCanBeRoot" />
+        <node role="renderingCondition" roleId="tpc2.1142887637401" type="tpc2.QueryFunction_NodeCondition" typeId="tpc2.1142886221719" id="2310679965751769574">
+          <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="2310679965751769575">
+            <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="2310679965751769576">
+              <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2310679965751769577">
+                <node role="operand" roleId="tpee.1197027771414" type="tpc2.ConceptFunctionParameter_node" typeId="tpc2.1142886811589" id="2310679965751769578" />
+                <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="2310679965751769594">
+                  <link role="property" roleId="tp25.1138056395725" targetNodeId="ydsw.2310679965751763149" resolveInfo="canBeRoot" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.SideTransformAnchorTagStyleClassItem" typeId="tpc2.1214320119173" id="2310679965751769580">
           <property name="tag" nameId="tpc2.1214320119174" value="ext_5_RTransform" />
         </node>
       </node>
@@ -1624,6 +1649,28 @@
                 </node>
               </node>
               <node role="operation" roleId="tpee.1197027833540" type="tpdg.NF_LinkList_AddNewChildOperation" typeId="tpdg.767145758118872833" id="7891765471710034869" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </root>
+  <root id="2310679965751769581">
+    <node role="item" roleId="tpc2.1139535219969" type="tpc2.CellActionMapItem" typeId="tpc2.1139535280617" id="2310679965751769582">
+      <property name="actionId" nameId="tpc2.1139535298778" value="delete_action_id" />
+      <node role="executeFunction" roleId="tpc2.1139535280620" type="tpc2.CellActionMap_ExecuteFunction" typeId="tpc2.1139535439104" id="2310679965751769583">
+        <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="2310679965751769584">
+          <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="2310679965751769585">
+            <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="2310679965751769586">
+              <node role="lValue" roleId="tpee.1068498886295" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2310679965751769587">
+                <node role="operand" roleId="tpee.1197027771414" type="tpc2.CellActionMap_FunctionParm_selectedNode" typeId="tpc2.1139535439112" id="2310679965751769588" />
+                <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="2310679965751769592">
+                  <link role="property" roleId="tp25.1138056395725" targetNodeId="ydsw.2310679965751763149" resolveInfo="canBeRoot" />
+                </node>
+              </node>
+              <node role="rValue" roleId="tpee.1068498886297" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="2310679965751769590">
+                <property name="value" nameId="tpee.1068580123138" value="false" />
+              </node>
             </node>
           </node>
         </node>

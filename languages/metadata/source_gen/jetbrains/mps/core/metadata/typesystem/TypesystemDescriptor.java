@@ -15,5 +15,9 @@ public class TypesystemDescriptor extends BaseHelginsDescriptor {
       InferenceRule_Runtime inferenceRule = new typeof_SConceptAnnotationProperty_InferenceRule();
       this.myInferenceRules.add(inferenceRule);
     }
+    {
+      InferenceRule_Runtime inferenceRule = new typeof_SMetadataNodeRefExpression_InferenceRule();
+      this.myInferenceRules.add(inferenceRule);
+    }
   }
 }

@@ -52,6 +52,10 @@ public class QueriesGenerated {
     return SPropertyOperations.getBoolean(_context.getSourceNode(), "isFinal") == false;
   }
 
+  public static boolean sideTransformHintSubstituteActionsBuilder_Precondition_SConcept_2310679965751781198(final IOperationContext operationContext, final SideTransformPreconditionContext _context) {
+    return SPropertyOperations.getBoolean(_context.getSourceNode(), "canBeRoot") == false;
+  }
+
   public static boolean sideTransformHintSubstituteActionsBuilder_Precondition_SInterfaceConcept_6195190339582036811(final IOperationContext operationContext, final SideTransformPreconditionContext _context) {
     return ListSequence.fromList(SLinkOperations.getTargets(_context.getSourceNode(), "extends", true)).isEmpty();
   }
@@ -426,6 +430,28 @@ public class QueriesGenerated {
 
         public String getMatchingText(String pattern) {
           return "final";
+        }
+
+        public String getVisibleMatchingText(String pattern) {
+          return this.getMatchingText(pattern);
+        }
+      });
+    }
+    return result;
+  }
+
+  public static List<INodeSubstituteAction> sideTransform_ActionsFactory_SConcept_2310679965751781184(final IOperationContext operationContext, final SideTransformActionsBuilderContext _context) {
+    List<INodeSubstituteAction> result = ListSequence.fromList(new ArrayList<INodeSubstituteAction>());
+    {
+      SNode concept = SConceptOperations.findConceptDeclaration("jetbrains.mps.core.structure.structure.SConcept");
+      ListSequence.fromList(result).addElement(new AbstractSideTransformHintSubstituteAction(concept, _context.getSourceNode()) {
+        public SNode doSubstitute(String pattern) {
+          SPropertyOperations.set(_context.getSourceNode(), "canBeRoot", "" + true);
+          return _context.getSourceNode();
+        }
+
+        public String getMatchingText(String pattern) {
+          return "root";
         }
 
         public String getVisibleMatchingText(String pattern) {

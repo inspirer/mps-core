@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debugInfo>
-  <unitInfo fileName="BehaviorAspectDescriptor.java" startLine="9" startPosition="0" endLine="38" endPosition="0" unitName="jetbrains.mps.core.metadata.behavior.BehaviorAspectDescriptor" />
+  <unitInfo fileName="BehaviorAspectDescriptor.java" startLine="9" startPosition="0" endLine="40" endPosition="0" unitName="jetbrains.mps.core.metadata.behavior.BehaviorAspectDescriptor" />
   <unitInfo fileName="SConceptAnnotationArgument_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="jetbrains.mps.core.metadata.behavior.SConceptAnnotationArgument_BehaviorDescriptor" />
   <unitInfo fileName="SConceptAnnotationChildLink_BehaviorDescriptor.java" startLine="10" startPosition="0" endLine="27" endPosition="0" unitName="jetbrains.mps.core.metadata.behavior.SConceptAnnotationChildLink_BehaviorDescriptor" />
   <unitInfo fileName="SConceptAnnotationInstance_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="jetbrains.mps.core.metadata.behavior.SConceptAnnotationInstance_BehaviorDescriptor" />
@@ -10,6 +10,7 @@
   <unitInfo fileName="SConceptAnnotationNodeRef_BehaviorDescriptor.java" startLine="9" startPosition="0" endLine="22" endPosition="0" unitName="jetbrains.mps.core.metadata.behavior.SConceptAnnotationNodeRef_BehaviorDescriptor" />
   <unitInfo fileName="SConceptAnnotationProperty_BehaviorDescriptor.java" startLine="9" startPosition="0" endLine="22" endPosition="0" unitName="jetbrains.mps.core.metadata.behavior.SConceptAnnotationProperty_BehaviorDescriptor" />
   <unitInfo fileName="SConceptAnnotationType_BehaviorDescriptor.java" startLine="12" startPosition="0" endLine="29" endPosition="0" unitName="jetbrains.mps.core.metadata.behavior.SConceptAnnotationType_BehaviorDescriptor" />
+  <unitInfo fileName="SMetadataNodeRefExpression_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="jetbrains.mps.core.metadata.behavior.SMetadataNodeRefExpression_BehaviorDescriptor" />
   <root nodeId="2848533153256509588">
     <nodeInfo nodeId="2848533153256509595" fileName="SConceptAnnotationChildLink_Behavior.java" startLine="11" startPosition="86" endLine="12" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="2848533153256509588" fileName="SConceptAnnotationChildLink_Behavior.java" startLine="7" startPosition="51" endLine="10" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="init#(Ljetbrains/mps/smodel/SNode;)V" />

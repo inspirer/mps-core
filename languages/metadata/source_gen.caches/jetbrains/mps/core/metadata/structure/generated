@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="-dgxon90zxau5rwla5fn0z92fhs5twum">
+<dependencies version="2" modelHash="5qatxdd75bn8f9v6eg1qme5b3ctsoyj">
   <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
   <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
   <dep model="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
@@ -11,6 +11,7 @@
   <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" />
   <dep model="r:c11a239c-3061-4b62-b5dd-6749678497d7(jetbrains.mps.core.structure.structure)" hash="3hgtvsqrq98q95whdifvpsiat7d1swe" />
   <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" />
+  <dep model="r:f9198ffd-e084-425c-aa82-f2db8289f5eb(jetbrains.mps.core.query.structure)" hash="uyx8ixnbqd6oaxfxy8imfolrwze6wa" />
   <common hash="3acp4f59acfrkbbwhiclb4cyi36qapc">
     <dep root="2848533153256408899" />
     <dep root="2848533153256415325" />
@@ -21,6 +22,7 @@
     <dep root="2848533153256463734" />
     <dep root="7891765471709947212" />
     <dep root="7891765471710058196" />
+    <dep root="7891765471710461224" />
     <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
     <dep model="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
@@ -32,6 +34,7 @@
     <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" />
     <dep model="r:c11a239c-3061-4b62-b5dd-6749678497d7(jetbrains.mps.core.structure.structure)" />
     <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" />
+    <dep model="r:f9198ffd-e084-425c-aa82-f2db8289f5eb(jetbrains.mps.core.query.structure)" />
     <file name="Metadata_Language.java" />
     <file name="StructureAspectDescriptor.java" />
   </common>
@@ -56,10 +59,13 @@
   <source id="2848533153256463734" name="SConceptAnnotationNodeRef" hash="1fuzkjoeq1vtlcxqsx7x8dv2zxzqk7u">
     <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
   </source>
-  <source id="7891765471709947212" name="SConceptAnnotationInstance" hash="4gm5bce4w2hd926kxrhwalmbp4rhgfi">
+  <source id="7891765471709947212" name="SConceptAnnotationInstance" hash="6fydnwqpsh02gi3yt5zfr2c9n3b88a6">
     <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
   </source>
-  <source id="7891765471710058196" name="SConceptAnnotationArgument" hash="-6gki55l575hlsykc82vreiepisc7928">
+  <source id="7891765471710058196" name="SConceptAnnotationArgument" hash="52a4wm2m77j3wiwi558rai9s0vp3okp">
+    <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
+  </source>
+  <source id="7891765471710461224" name="SMetadataNodeRefExpression" hash="2wceqctogwd96uaweaq02opq1wancyb">
     <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
   </source>
 </dependencies>

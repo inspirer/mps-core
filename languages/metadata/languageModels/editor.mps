@@ -63,10 +63,16 @@
       <link role="applicableConcept" roleId="tpc2.1139535219968" targetNodeId="76x.2848533153256463734" resolveInfo="SConceptAnnotationNodeRef" />
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="7891765471709947213">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="instance" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="76x.7891765471709947212" resolveInfo="SConceptAnnotationInstance" />
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="7891765471710058199">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="instance" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="76x.7891765471710058196" resolveInfo="SConceptAnnotationArgument" />
+    </node>
+    <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="7891765471710461225">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="smodel" />
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="76x.7891765471710461224" resolveInfo="SMetadataNodeRefExpression" />
     </node>
   </roots>
   <root id="2848533153256408900">
@@ -903,6 +909,17 @@
         <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="76x.7891765471710058198" />
       </node>
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="7891765471710058203" />
+    </node>
+  </root>
+  <root id="7891765471710461225">
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="7891765471710461227">
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefCell" typeId="tpc2.1088013125922" id="7891765471710466896">
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="76x.7891765471710461266" />
+        <node role="editorComponent" roleId="tpc2.1088186146602" type="tpc2.InlineEditorComponent" typeId="tpc2.1088185857835" id="7891765471710466897">
+          <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_ReferencePresentation" typeId="tpc2.625126330682908270" id="7891765471710466899" />
+        </node>
+      </node>
+      <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="7891765471710461229" />
     </node>
   </root>
 </model>

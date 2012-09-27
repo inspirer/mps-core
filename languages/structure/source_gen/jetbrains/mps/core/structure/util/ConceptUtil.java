@@ -13,6 +13,14 @@ import jetbrains.mps.internal.collections.runtime.SetSequence;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import java.util.Collections;
 import java.util.HashSet;
+import jetbrains.mps.util.NameUtil;
+import jetbrains.mps.smodel.SModelDescriptor;
+import jetbrains.mps.smodel.SModelRepository;
+import jetbrains.mps.smodel.SModelFqName;
+import jetbrains.mps.smodel.SModel;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
+import jetbrains.mps.internal.collections.runtime.ITranslator2;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 
 public class ConceptUtil {
   public ConceptUtil() {
@@ -74,5 +82,49 @@ public class ConceptUtil {
       return concept;
     }
     return getNearestSuperConcept(concept, sset);
+  }
+
+  public static SNode getConceptByQualifiedName(String qualifiedName) {
+    if (qualifiedName == null) {
+      return null;
+    }
+    String language = NameUtil.namespaceFromConceptFQName(qualifiedName);
+    final String name = NameUtil.shortNameFromLongName(qualifiedName);
+    SModelDescriptor mdesc = SModelRepository.getInstance().getModelDescriptor(SModelFqName.fromString(language + ".core"));
+    if (mdesc == null) {
+      return null;
+    }
+    SModel sModel = mdesc.getSModel();
+    return SNodeOperations.as(ListSequence.fromList(SModelOperations.getRoots(sModel, "jetbrains.mps.core.structure.structure.SStructureContainer")).translate(new ITranslator2<SNode, SNode>() {
+      public Iterable<SNode> translate(SNode it) {
+        return SLinkOperations.getTargets(it, "structure", true);
+      }
+    }).where(new IWhereFilter<SNode>() {
+      public boolean accept(SNode it) {
+        return SNodeOperations.isInstanceOf(it, "jetbrains.mps.core.structure.structure.SAbstractConcept") && SPropertyOperations.getString(SNodeOperations.cast(it, "jetbrains.mps.core.structure.structure.SAbstractConcept"), "name").equals(name);
+      }
+    }).first(), "jetbrains.mps.core.structure.structure.SAbstractConcept");
+  }
+
+  public static SNode getEnumByQualifiedName(String qualifiedName) {
+    if (qualifiedName == null) {
+      return null;
+    }
+    String language = NameUtil.namespaceFromConceptFQName(qualifiedName);
+    final String name = NameUtil.shortNameFromLongName(qualifiedName);
+    SModelDescriptor mdesc = SModelRepository.getInstance().getModelDescriptor(SModelFqName.fromString(language + ".core"));
+    if (mdesc == null) {
+      return null;
+    }
+    SModel sModel = mdesc.getSModel();
+    return SNodeOperations.as(ListSequence.fromList(SModelOperations.getRoots(sModel, "jetbrains.mps.core.structure.structure.SStructureContainer")).translate(new ITranslator2<SNode, SNode>() {
+      public Iterable<SNode> translate(SNode it) {
+        return SLinkOperations.getTargets(it, "structure", true);
+      }
+    }).where(new IWhereFilter<SNode>() {
+      public boolean accept(SNode it) {
+        return SNodeOperations.isInstanceOf(it, "jetbrains.mps.core.structure.structure.SEnumeration") && SPropertyOperations.getString(SNodeOperations.cast(it, "jetbrains.mps.core.structure.structure.SEnumeration"), "name").equals(name);
+      }
+    }).first(), "jetbrains.mps.core.structure.structure.SEnumeration");
   }
 }

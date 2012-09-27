@@ -39,6 +39,11 @@ public class SAbstractConcept_Behavior {
     return null;
   }
 
+  public static String call_getQualifiedName_7891765471710491510(SNode thisNode) {
+    String language = SNodeOperations.getModel(thisNode).getModelDescriptor().getModule().getModuleFqName();
+    return language + ".structure." + SPropertyOperations.getString(thisNode, "name");
+  }
+
   public static boolean call_isSubConceptOf_5938997310819191538(SNode thisNode, SNode concept) {
     BehaviorDescriptor descriptor = ConceptRegistry.getInstance().getBehaviorDescriptorForInstanceNode(thisNode);
     return (Boolean) descriptor.invoke(Boolean.class, SNodeOperations.cast(thisNode, "jetbrains.mps.core.structure.structure.SAbstractConcept"), "virtual_isSubConceptOf_5938997310819191538", PARAMETERS_5938997310819191538, new Object[]{concept});

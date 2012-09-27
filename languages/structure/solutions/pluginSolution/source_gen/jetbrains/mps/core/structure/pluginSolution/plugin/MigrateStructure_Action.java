@@ -15,12 +15,17 @@ import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.ide.actions.MPSCommonDataKeys;
 import jetbrains.mps.smodel.MPSModuleRepository;
 import jetbrains.mps.smodel.SModelFqName;
-import jetbrains.mps.smodel.LanguageAspect;
+import jetbrains.mps.smodel.SModelDescriptor;
+import jetbrains.mps.smodel.SModelRepository;
+import jetbrains.mps.baseLanguage.closures.runtime.Wrappers;
+import jetbrains.mps.smodel.SModel;
 import jetbrains.mps.project.SModelRoot;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import jetbrains.mps.smodel.persistence.DefaultModelRootManager;
-import jetbrains.mps.smodel.SModel;
+import jetbrains.mps.smodel.SNode;
+import jetbrains.mps.internal.collections.runtime.IVisitor;
+import jetbrains.mps.smodel.LanguageAspect;
 
 public class MigrateStructure_Action extends BaseAction {
   private static final Icon ICON = null;
@@ -72,16 +77,26 @@ public class MigrateStructure_Action extends BaseAction {
 
       Language language = (Language) ((IModule) MapSequence.fromMap(_params).get("module"));
       language.addUsedLanguage(newStructureLanguage.getModuleReference());
-      SModelFqName newModelName = SModelFqName.fromString(LanguageAspect.STRUCTURE.get(language).getSModel().getSModelFqName().toString() + "_new");
-      // find suitable model root 
-      SModelRoot root = Sequence.fromIterable(((Iterable<SModelRoot>) language.getSModelRoots())).where(new IWhereFilter<SModelRoot>() {
-        public boolean accept(SModelRoot it) {
-          return it.getManager() instanceof DefaultModelRootManager;
-        }
-      }).first();
-      SModel newStructure = language.createModel(newModelName, root, null).getSModel();
-      newStructure.addLanguage(newStructureLanguage.getModuleReference());
-      newStructure.addRoot(PluginUtils.convertStructure(LanguageAspect.STRUCTURE.get(language).getSModel()));
+      SModelFqName newModelName = SModelFqName.fromString(language.getModuleFqName() + ".core");
+      SModelDescriptor desc = SModelRepository.getInstance().getModelDescriptor(newModelName);
+      final Wrappers._T<SModel> newStructure = new Wrappers._T<SModel>();
+      if (desc == null) {
+        SModelRoot root = Sequence.fromIterable(((Iterable<SModelRoot>) language.getSModelRoots())).where(new IWhereFilter<SModelRoot>() {
+          public boolean accept(SModelRoot it) {
+            return it.getManager() instanceof DefaultModelRootManager;
+          }
+        }).first();
+        newStructure.value = language.createModel(newModelName, root, null).getSModel();
+      } else {
+        newStructure.value = desc.getSModel();
+        Sequence.fromIterable(((Iterable<SNode>) newStructure.value.roots())).toListSequence().visitAll(new IVisitor<SNode>() {
+          public void visit(SNode it) {
+            newStructure.value.removeRoot(it);
+          }
+        });
+      }
+      newStructure.value.addLanguage(newStructureLanguage.getModuleReference());
+      newStructure.value.addRoot(PluginUtils.convertStructure(LanguageAspect.STRUCTURE.get(language).getSModel()));
     } catch (Throwable t) {
       if (log.isErrorEnabled()) {
         log.error("User's action execute method failed. Action:" + "MigrateStructure", t);

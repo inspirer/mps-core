@@ -501,6 +501,9 @@
           <property name="isRequired" nameId="ydsw.7581772527307895409" value="true" />
         </node>
       </node>
+      <node role="annotations" roleId="ydsw.7891765471709815410" type="76x.SConceptAnnotationInstance" typeId="76x.7891765471709947212" id="7891765471710460549">
+        <link role="type" roleId="76x.7891765471709947215" targetNodeId="2848533153256459332" resolveInfo="Copyright" />
+      </node>
     </node>
     <node role="structure" roleId="ydsw.6195190339581766884" type="ydsw.SStructureEmptyLine" typeId="ydsw.6195190339581962051" id="8527797492907237655" />
     <node role="structure" roleId="ydsw.6195190339581766884" type="ydsw.SConcept" typeId="ydsw.6195190339581766741" id="8527797492907237657">
@@ -527,11 +530,9 @@
     <node role="structure" roleId="ydsw.6195190339581766884" type="ydsw.SStructureEmptyLine" typeId="ydsw.6195190339581962051" id="2848533153256459330" />
     <node role="structure" roleId="ydsw.6195190339581766884" type="76x.SConceptAnnotationType" typeId="76x.2848533153256408899" id="2848533153256459332">
       <property name="name" nameId="tpck.1169194664001" value="Copyright" />
-      <node role="members" roleId="76x.2848533153256415339" type="76x.SConceptAnnotationProperty" typeId="76x.2848533153256415624" id="2848533153256459716">
+      <node role="members" roleId="76x.2848533153256415339" type="76x.SConceptAnnotationNodeRef" typeId="76x.2848533153256463734" id="7891765471710476836">
         <property name="name" nameId="tpck.1169194664001" value="value" />
-        <node role="type" roleId="76x.2848533153256415625" type="ydsw.SPrimitiveDataType" typeId="ydsw.7581772527307667404" id="2848533153256459717">
-          <property name="kind" nameId="ydsw.7581772527307667409" value="string" />
-        </node>
+        <link role="target" roleId="76x.2848533153256463735" targetNodeId="6195190339582074043" resolveInfo="HasToString" />
       </node>
     </node>
     <node role="structure" roleId="ydsw.6195190339581766884" type="ydsw.SStructureEmptyLine" typeId="ydsw.6195190339581962051" id="2848533153256443236" />

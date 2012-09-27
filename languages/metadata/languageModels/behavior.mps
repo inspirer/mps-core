@@ -17,6 +17,7 @@
       <link role="concept" roleId="1i04.1225194240799" targetNodeId="76x.2848533153256415629" resolveInfo="SConceptAnnotationChildLink" />
     </node>
     <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="7891765471710147474">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="instance" />
       <link role="concept" roleId="1i04.1225194240799" targetNodeId="76x.7891765471710058196" resolveInfo="SConceptAnnotationArgument" />
     </node>
   </roots>

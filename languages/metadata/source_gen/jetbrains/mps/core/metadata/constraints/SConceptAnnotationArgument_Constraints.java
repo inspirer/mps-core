@@ -36,7 +36,7 @@ public class SConceptAnnotationArgument_Constraints extends BaseConstraintsDescr
 
   public static boolean static_canBeAParent(SNode node, SNode childNode, SNode childConcept, SNode link, final IOperationContext operationContext) {
     if (SLinkOperations.findLinkDeclaration("jetbrains.mps.core.metadata.structure.SConceptAnnotationArgument", "value") == link) {
-      return SConceptOperations.isExactly(childConcept, "jetbrains.mps.core.query.structure.MqlIntLiteral") || SConceptOperations.isExactly(childConcept, "jetbrains.mps.core.query.structure.MqlStringLiteral") || SConceptOperations.isExactly(childConcept, "jetbrains.mps.core.query.structure.MqlBoolLiteral");
+      return SConceptOperations.isExactly(childConcept, "jetbrains.mps.core.query.structure.MqlIntLiteral") || SConceptOperations.isExactly(childConcept, "jetbrains.mps.core.query.structure.MqlStringLiteral") || SConceptOperations.isExactly(childConcept, "jetbrains.mps.core.query.structure.MqlBoolLiteral") || SConceptOperations.isExactly(childConcept, "jetbrains.mps.core.query.structure.MqlNullLiteral") || SConceptOperations.isExactly(childConcept, "jetbrains.mps.core.metadata.structure.SMetadataNodeRefExpression");
     }
     return true;
   }

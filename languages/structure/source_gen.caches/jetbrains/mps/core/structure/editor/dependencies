@@ -129,6 +129,7 @@
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="jetbrains.mps.core.structure.editor.SConcept_addImplements" />
     <classNode dependClassName="jetbrains.mps.core.structure.editor.SConcept_deleteAbstract" />
+    <classNode dependClassName="jetbrains.mps.core.structure.editor.SConcept_deleteCanBeRoot" />
     <classNode dependClassName="jetbrains.mps.core.structure.editor.SConcept_deleteFinal" />
     <classNode dependClassName="jetbrains.mps.core.structure.editor.add_Annotation" />
     <classNode dependClassName="jetbrains.mps.core.structure.editor.default_StyleSheet" />
@@ -175,6 +176,14 @@
     <classNode extendsClassName="jetbrains.mps.nodeEditor.EditorCellAction" />
   </dependency>
   <dependency className="jetbrains.mps.core.structure.editor.SConcept_deleteAbstract" file="SConcept_deleteAbstract.java">
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.CellActionType" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.EditorContext" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell" />
+    <classNode dependClassName="jetbrains.mps.smodel.SNode" />
+    <classNode extendsClassName="jetbrains.mps.nodeEditor.EditorCellAction" />
+  </dependency>
+  <dependency className="jetbrains.mps.core.structure.editor.SConcept_deleteCanBeRoot" file="SConcept_deleteCanBeRoot.java">
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
     <classNode dependClassName="jetbrains.mps.nodeEditor.CellActionType" />
     <classNode dependClassName="jetbrains.mps.nodeEditor.EditorContext" />

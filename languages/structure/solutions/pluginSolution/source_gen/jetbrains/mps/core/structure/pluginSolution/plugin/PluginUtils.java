@@ -16,7 +16,9 @@ import jetbrains.mps.lang.core.behavior.INamedConcept_Behavior;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
+import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import jetbrains.mps.smodel.DynamicReference;
+import jetbrains.mps.lang.structure.behavior.EnumerationMemberDeclaration_Behavior;
 import jetbrains.mps.internal.collections.runtime.ISelector;
 import jetbrains.mps.lang.structure.behavior.PrimitiveDataTypeDeclaration_Behavior;
 import java.util.Set;
@@ -57,6 +59,17 @@ public class PluginUtils {
   public static SNode convertConcreteConcept(SNode concept) {
     SNode result = SConceptOperations.createNewNode("jetbrains.mps.core.structure.structure.SConcept", null);
     updateAbstractConceptDeclarationFields(concept, result);
+    SPropertyOperations.set(result, "isAbstract", "" + ListSequence.fromList(SLinkOperations.getTargets(concept, "conceptProperty", true)).any(new IWhereFilter<SNode>() {
+      public boolean accept(SNode it) {
+        return isConceptProperty(it, "jetbrains.mps.lang.core.structure.BaseConcept", "abstract");
+      }
+    }));
+    SPropertyOperations.set(result, "isFinal", "" + ListSequence.fromList(SLinkOperations.getTargets(concept, "conceptProperty", true)).any(new IWhereFilter<SNode>() {
+      public boolean accept(SNode it) {
+        return isConceptProperty(it, "jetbrains.mps.lang.core.structure.BaseConcept", "final");
+      }
+    }));
+    SPropertyOperations.set(result, "canBeRoot", "" + SPropertyOperations.getBoolean(concept, "rootable"));
     for (SNode implementedConcepts : SLinkOperations.getTargets(concept, "implements", true)) {
       SNode ref = SConceptOperations.createNewNode("jetbrains.mps.core.structure.structure.SInterfaceReference", null);
       ref.addReference(new DynamicReference("target", ref, null, SPropertyOperations.getString(SLinkOperations.getTarget(implementedConcepts, "intfc", false), "name")));
@@ -66,6 +79,14 @@ public class PluginUtils {
       result.addReference(new DynamicReference("extends", result, null, SPropertyOperations.getString(SLinkOperations.getTarget(concept, "extends", false), "name")));
     }
     return result;
+  }
+
+  public static boolean isConceptProperty(SNode cp, String conceptFqName, String name) {
+    SNode decl = SLinkOperations.getTarget(cp, "conceptPropertyDeclaration", false);
+    if (decl == null) {
+      return false;
+    }
+    return eq_l4wyvj_a0a0c0c(SPropertyOperations.getString(decl, "name"), name) && SNodeOperations.isInstanceOf(SNodeOperations.getParent(decl), "jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration") && eq_l4wyvj_a0a2a2(INamedConcept_Behavior.call_getFqName_1213877404258(SNodeOperations.cast(SNodeOperations.getParent(decl), "jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration")), conceptFqName);
   }
 
   public static SNode convertInterfaceConcept(SNode concept) {
@@ -80,12 +101,13 @@ public class PluginUtils {
   }
 
   public static SNode convertEnumeration(SNode enumeration) {
-    SNode result = new PluginUtils.QuotationClass_l4wyvj_a0a0a3().createNode(SPropertyOperations.getString(enumeration, "name"));
+    SNode result = new PluginUtils.QuotationClass_l4wyvj_a0a0a4().createNode(SPropertyOperations.getString(enumeration, "name"));
     for (SNode member : ListSequence.fromList(SLinkOperations.getTargets(enumeration, "member", true))) {
-      ListSequence.fromList(SNodeOperations.getChildren(result, SLinkOperations.findLinkDeclaration("jetbrains.mps.core.structure.structure.SEnumeration", "members"))).addElement(new PluginUtils.QuotationClass_l4wyvj_a0a0a0b0d().createNode(SPropertyOperations.getString(member, "internalValue")));
-    }
-    if ((SLinkOperations.getTarget(enumeration, "defaultMember", false) != null)) {
-      result.addReference(new DynamicReference("default", result, null, SPropertyOperations.getString(SLinkOperations.getTarget(enumeration, "defaultMember", false), "internalValue")));
+      SNode node = new PluginUtils.QuotationClass_l4wyvj_a0a0a1a4().createNode(EnumerationMemberDeclaration_Behavior.call_getConstantName_1240164579791(member));
+      ListSequence.fromList(SLinkOperations.getTargets(result, "members", true)).addElement(node);
+      if (SLinkOperations.getTarget(enumeration, "defaultMember", false) == member) {
+        SLinkOperations.setTarget(result, "default", node, false);
+      }
     }
     return result;
   }
@@ -122,7 +144,7 @@ public class PluginUtils {
       }
     });
     if (Sequence.fromIterable(conceptProperties).isNotEmpty()) {
-      ListSequence.fromList(SNodeOperations.getChildren(destination, SLinkOperations.findLinkDeclaration("jetbrains.mps.core.structure.structure.SAbstractConcept", "members"))).addElement(new PluginUtils.QuotationClass_l4wyvj_a0a0a0o0e().createNode());
+      ListSequence.fromList(SNodeOperations.getChildren(destination, SLinkOperations.findLinkDeclaration("jetbrains.mps.core.structure.structure.SAbstractConcept", "members"))).addElement(new PluginUtils.QuotationClass_l4wyvj_a0a0a0o0f().createNode());
       ListSequence.fromList(SNodeOperations.getChildren(destination, SLinkOperations.findLinkDeclaration("jetbrains.mps.core.structure.structure.SAbstractConcept", "members"))).addSequence(Sequence.fromIterable(conceptProperties));
       ListSequence.fromList(SNodeOperations.getChildren(destination, SLinkOperations.findLinkDeclaration("jetbrains.mps.core.structure.structure.SAbstractConcept", "members"))).addElement(SConceptOperations.createNewNode("jetbrains.mps.core.structure.structure.SConceptMemberEmptyLine", null));
     }
@@ -134,7 +156,7 @@ public class PluginUtils {
       }
     });
     if (Sequence.fromIterable(conceptLinks).isNotEmpty()) {
-      ListSequence.fromList(SNodeOperations.getChildren(destination, SLinkOperations.findLinkDeclaration("jetbrains.mps.core.structure.structure.SAbstractConcept", "members"))).addElement(new PluginUtils.QuotationClass_l4wyvj_a0a0a0s0e().createNode());
+      ListSequence.fromList(SNodeOperations.getChildren(destination, SLinkOperations.findLinkDeclaration("jetbrains.mps.core.structure.structure.SAbstractConcept", "members"))).addElement(new PluginUtils.QuotationClass_l4wyvj_a0a0a0s0f().createNode());
       ListSequence.fromList(SNodeOperations.getChildren(destination, SLinkOperations.findLinkDeclaration("jetbrains.mps.core.structure.structure.SAbstractConcept", "members"))).addSequence(Sequence.fromIterable(conceptLinks));
       ListSequence.fromList(SNodeOperations.getChildren(destination, SLinkOperations.findLinkDeclaration("jetbrains.mps.core.structure.structure.SAbstractConcept", "members"))).addElement(SConceptOperations.createNewNode("jetbrains.mps.core.structure.structure.SConceptMemberEmptyLine", null));
     }
@@ -150,11 +172,11 @@ public class PluginUtils {
       }
     })).select(new ISelector<SNode, SNode>() {
       public SNode select(SNode it) {
-        return new PluginUtils.QuotationClass_l4wyvj_a0a0a0a0v0e().createNode(SPropertyOperations.getString(it, "name"));
+        return new PluginUtils.QuotationClass_l4wyvj_a0a0a0a0a0a12a5().createNode(SPropertyOperations.getString(it, "name"));
       }
     });
     if (Sequence.fromIterable(conceptPropertyAndLinkDeclarations).isNotEmpty()) {
-      ListSequence.fromList(SNodeOperations.getChildren(destination, SLinkOperations.findLinkDeclaration("jetbrains.mps.core.structure.structure.SAbstractConcept", "members"))).addElement(new PluginUtils.QuotationClass_l4wyvj_a0a0a0w0e().createNode());
+      ListSequence.fromList(SNodeOperations.getChildren(destination, SLinkOperations.findLinkDeclaration("jetbrains.mps.core.structure.structure.SAbstractConcept", "members"))).addElement(new PluginUtils.QuotationClass_l4wyvj_a0a0a0w0f().createNode());
       ListSequence.fromList(SNodeOperations.getChildren(destination, SLinkOperations.findLinkDeclaration("jetbrains.mps.core.structure.structure.SAbstractConcept", "members"))).addSequence(Sequence.fromIterable(conceptPropertyAndLinkDeclarations));
       ListSequence.fromList(SNodeOperations.getChildren(destination, SLinkOperations.findLinkDeclaration("jetbrains.mps.core.structure.structure.SAbstractConcept", "members"))).addElement(SConceptOperations.createNewNode("jetbrains.mps.core.structure.structure.SConceptMemberEmptyLine", null));
     }
@@ -180,11 +202,11 @@ public class PluginUtils {
   public static SNode convertConceptLink(SNode conceptLink) {
     if (SNodeOperations.isInstanceOf(conceptLink, "jetbrains.mps.lang.structure.structure.AggregationConceptLink")) {
       SNode child = SNodeOperations.cast(conceptLink, "jetbrains.mps.lang.structure.structure.AggregationConceptLink");
-      return new PluginUtils.QuotationClass_l4wyvj_a0b0a0g().createNode("s_" + SPropertyOperations.getString(SLinkOperations.getTarget(child, "conceptLinkDeclaration", false), "name"));
+      return new PluginUtils.QuotationClass_l4wyvj_a0b0a0h().createNode("s_" + SPropertyOperations.getString(SLinkOperations.getTarget(child, "conceptLinkDeclaration", false), "name"));
     }
     if (SNodeOperations.isInstanceOf(conceptLink, "jetbrains.mps.lang.structure.structure.ReferenceConceptLink")) {
       SNode ref = SNodeOperations.cast(conceptLink, "jetbrains.mps.lang.structure.structure.ReferenceConceptLink");
-      return new PluginUtils.QuotationClass_l4wyvj_a0b0b0g().createNode("s_" + SPropertyOperations.getString(SLinkOperations.getTarget(ref, "conceptLinkDeclaration", false), "name"));
+      return new PluginUtils.QuotationClass_l4wyvj_a0b0b0h().createNode("s_" + SPropertyOperations.getString(SLinkOperations.getTarget(ref, "conceptLinkDeclaration", false), "name"));
     }
     return null;
   }
@@ -192,21 +214,21 @@ public class PluginUtils {
   public static SNode convertConceptProperty(SNode conceptProperty) {
     String name = SPropertyOperations.getString(SLinkOperations.getTarget(conceptProperty, "conceptPropertyDeclaration", false), "name");
     if (SNodeOperations.isInstanceOf(conceptProperty, "jetbrains.mps.lang.structure.structure.BooleanConceptProperty")) {
-      return new PluginUtils.QuotationClass_l4wyvj_a0a0b0h().createNode("s_" + name);
+      return new PluginUtils.QuotationClass_l4wyvj_a0a0b0i().createNode("s_" + name);
     }
     if (SNodeOperations.isInstanceOf(conceptProperty, "jetbrains.mps.lang.structure.structure.IntegerConceptProperty")) {
       int value = SPropertyOperations.getInteger(((SNode) conceptProperty), "value");
-      return new PluginUtils.QuotationClass_l4wyvj_a0b0c0h().createNode("" + value, "s_" + name);
+      return new PluginUtils.QuotationClass_l4wyvj_a0b0c0i().createNode("" + value, "s_" + name);
     }
     if (SNodeOperations.isInstanceOf(conceptProperty, "jetbrains.mps.lang.structure.structure.StringConceptProperty")) {
       String value = SPropertyOperations.getString(((SNode) conceptProperty), "value");
-      return new PluginUtils.QuotationClass_l4wyvj_a0b0d0h().createNode(value, "s_" + name);
+      return new PluginUtils.QuotationClass_l4wyvj_a0b0d0i().createNode(value, "s_" + name);
     }
     return null;
   }
 
   public static SNode convertProperty(SNode property) {
-    return new PluginUtils.QuotationClass_l4wyvj_a0a0i().createNode(convertPropertyType(SLinkOperations.getTarget(property, "dataType", false)), SPropertyOperations.getString(property, "name"));
+    return new PluginUtils.QuotationClass_l4wyvj_a0a0j().createNode(convertPropertyType(SLinkOperations.getTarget(property, "dataType", false)), SPropertyOperations.getString(property, "name"));
   }
 
   public static SNode convertPropertyType(SNode typeDeclaration) {
@@ -222,11 +244,11 @@ public class PluginUtils {
 
   public static SNode convertPrimitivePropertyType(SNode typeDeclaration) {
     if (PrimitiveDataTypeDeclaration_Behavior.call_isString_1220268752134(typeDeclaration)) {
-      return new PluginUtils.QuotationClass_l4wyvj_a0a0a0k().createNode();
+      return new PluginUtils.QuotationClass_l4wyvj_a0a0a0l().createNode();
     } else if (PrimitiveDataTypeDeclaration_Behavior.call_isInteger_1220268780075(typeDeclaration)) {
-      return new PluginUtils.QuotationClass_l4wyvj_a0a0a0a01().createNode();
+      return new PluginUtils.QuotationClass_l4wyvj_a0a0a0a11().createNode();
     } else if (PrimitiveDataTypeDeclaration_Behavior.call_isBoolean_1220268791641(typeDeclaration)) {
-      return new PluginUtils.QuotationClass_l4wyvj_a0a0b0a01().createNode();
+      return new PluginUtils.QuotationClass_l4wyvj_a0a0b0a11().createNode();
     } else {
       return null;
     }
@@ -234,11 +256,11 @@ public class PluginUtils {
 
   public static SNode convertConstrainedDataType(SNode typeDeclaration) {
     // todo 
-    return new PluginUtils.QuotationClass_l4wyvj_a0b0l().createNode();
+    return new PluginUtils.QuotationClass_l4wyvj_a0b0m().createNode();
   }
 
   public static SNode convertEnumerationDataType(SNode typeDeclaration) {
-    SNode result = new PluginUtils.QuotationClass_l4wyvj_a0a0a21().createNode();
+    SNode result = new PluginUtils.QuotationClass_l4wyvj_a0a0a31().createNode();
     DynamicReference ref = new DynamicReference("enum", result, null, SPropertyOperations.getString(typeDeclaration, "name"));
     result.addReference(ref);
 
@@ -269,6 +291,20 @@ public class PluginUtils {
     SNodeOperations.deleteNode(SNodeOperations.getChildren(node).get(SNodeOperations.getChildren(node).size() - 1));
   }
 
+  private static boolean eq_l4wyvj_a0a0c0c(Object a, Object b) {
+    return (a != null ?
+      a.equals(b) :
+      a == b
+    );
+  }
+
+  private static boolean eq_l4wyvj_a0a2a2(Object a, Object b) {
+    return (a != null ?
+      a.equals(b) :
+      a == b
+    );
+  }
+
   public static class QuotationClass_l4wyvj_a0a0a0 {
     public QuotationClass_l4wyvj_a0a0a0() {
     }
@@ -287,8 +323,8 @@ public class PluginUtils {
     }
   }
 
-  public static class QuotationClass_l4wyvj_a0a0a3 {
-    public QuotationClass_l4wyvj_a0a0a3() {
+  public static class QuotationClass_l4wyvj_a0a0a4 {
+    public QuotationClass_l4wyvj_a0a0a4() {
     }
 
     public SNode createNode(Object parameter_3) {
@@ -305,8 +341,8 @@ public class PluginUtils {
     }
   }
 
-  public static class QuotationClass_l4wyvj_a0a0a0b0d {
-    public QuotationClass_l4wyvj_a0a0a0b0d() {
+  public static class QuotationClass_l4wyvj_a0a0a1a4 {
+    public QuotationClass_l4wyvj_a0a0a1a4() {
     }
 
     public SNode createNode(Object parameter_3) {
@@ -323,8 +359,8 @@ public class PluginUtils {
     }
   }
 
-  public static class QuotationClass_l4wyvj_a0a0a0o0e {
-    public QuotationClass_l4wyvj_a0a0a0o0e() {
+  public static class QuotationClass_l4wyvj_a0a0a0o0f {
+    public QuotationClass_l4wyvj_a0a0a0o0f() {
     }
 
     public SNode createNode() {
@@ -341,8 +377,8 @@ public class PluginUtils {
     }
   }
 
-  public static class QuotationClass_l4wyvj_a0a0a0s0e {
-    public QuotationClass_l4wyvj_a0a0a0s0e() {
+  public static class QuotationClass_l4wyvj_a0a0a0s0f {
+    public QuotationClass_l4wyvj_a0a0a0s0f() {
     }
 
     public SNode createNode() {
@@ -359,8 +395,8 @@ public class PluginUtils {
     }
   }
 
-  public static class QuotationClass_l4wyvj_a0a0a0a0v0e {
-    public QuotationClass_l4wyvj_a0a0a0a0v0e() {
+  public static class QuotationClass_l4wyvj_a0a0a0a0a0a12a5 {
+    public QuotationClass_l4wyvj_a0a0a0a0a0a12a5() {
     }
 
     public SNode createNode(Object parameter_5) {
@@ -384,8 +420,8 @@ public class PluginUtils {
     }
   }
 
-  public static class QuotationClass_l4wyvj_a0a0a0w0e {
-    public QuotationClass_l4wyvj_a0a0a0w0e() {
+  public static class QuotationClass_l4wyvj_a0a0a0w0f {
+    public QuotationClass_l4wyvj_a0a0a0w0f() {
     }
 
     public SNode createNode() {
@@ -402,8 +438,8 @@ public class PluginUtils {
     }
   }
 
-  public static class QuotationClass_l4wyvj_a0b0a0g {
-    public QuotationClass_l4wyvj_a0b0a0g() {
+  public static class QuotationClass_l4wyvj_a0b0a0h {
+    public QuotationClass_l4wyvj_a0b0a0h() {
     }
 
     public SNode createNode(Object parameter_5) {
@@ -427,8 +463,8 @@ public class PluginUtils {
     }
   }
 
-  public static class QuotationClass_l4wyvj_a0b0b0g {
-    public QuotationClass_l4wyvj_a0b0b0g() {
+  public static class QuotationClass_l4wyvj_a0b0b0h {
+    public QuotationClass_l4wyvj_a0b0b0h() {
     }
 
     public SNode createNode(Object parameter_5) {
@@ -452,8 +488,8 @@ public class PluginUtils {
     }
   }
 
-  public static class QuotationClass_l4wyvj_a0a0b0h {
-    public QuotationClass_l4wyvj_a0a0b0h() {
+  public static class QuotationClass_l4wyvj_a0a0b0i {
+    public QuotationClass_l4wyvj_a0a0b0i() {
     }
 
     public SNode createNode(Object parameter_5) {
@@ -477,8 +513,8 @@ public class PluginUtils {
     }
   }
 
-  public static class QuotationClass_l4wyvj_a0b0c0h {
-    public QuotationClass_l4wyvj_a0b0c0h() {
+  public static class QuotationClass_l4wyvj_a0b0c0i {
+    public QuotationClass_l4wyvj_a0b0c0i() {
     }
 
     public SNode createNode(Object parameter_5, Object parameter_6) {
@@ -502,8 +538,8 @@ public class PluginUtils {
     }
   }
 
-  public static class QuotationClass_l4wyvj_a0b0d0h {
-    public QuotationClass_l4wyvj_a0b0d0h() {
+  public static class QuotationClass_l4wyvj_a0b0d0i {
+    public QuotationClass_l4wyvj_a0b0d0i() {
     }
 
     public SNode createNode(Object parameter_5, Object parameter_6) {
@@ -527,8 +563,8 @@ public class PluginUtils {
     }
   }
 
-  public static class QuotationClass_l4wyvj_a0a0i {
-    public QuotationClass_l4wyvj_a0a0i() {
+  public static class QuotationClass_l4wyvj_a0a0j {
+    public QuotationClass_l4wyvj_a0a0j() {
     }
 
     public SNode createNode(Object parameter_5, Object parameter_6) {
@@ -559,8 +595,8 @@ public class PluginUtils {
     }
   }
 
-  public static class QuotationClass_l4wyvj_a0a0a0k {
-    public QuotationClass_l4wyvj_a0a0a0k() {
+  public static class QuotationClass_l4wyvj_a0a0a0l {
+    public QuotationClass_l4wyvj_a0a0a0l() {
     }
 
     public SNode createNode() {
@@ -576,8 +612,8 @@ public class PluginUtils {
     }
   }
 
-  public static class QuotationClass_l4wyvj_a0a0a0a01 {
-    public QuotationClass_l4wyvj_a0a0a0a01() {
+  public static class QuotationClass_l4wyvj_a0a0a0a11 {
+    public QuotationClass_l4wyvj_a0a0a0a11() {
     }
 
     public SNode createNode() {
@@ -594,8 +630,8 @@ public class PluginUtils {
     }
   }
 
-  public static class QuotationClass_l4wyvj_a0a0b0a01 {
-    public QuotationClass_l4wyvj_a0a0b0a01() {
+  public static class QuotationClass_l4wyvj_a0a0b0a11 {
+    public QuotationClass_l4wyvj_a0a0b0a11() {
     }
 
     public SNode createNode() {
@@ -612,8 +648,8 @@ public class PluginUtils {
     }
   }
 
-  public static class QuotationClass_l4wyvj_a0b0l {
-    public QuotationClass_l4wyvj_a0b0l() {
+  public static class QuotationClass_l4wyvj_a0b0m {
+    public QuotationClass_l4wyvj_a0b0m() {
     }
 
     public SNode createNode() {
@@ -630,8 +666,8 @@ public class PluginUtils {
     }
   }
 
-  public static class QuotationClass_l4wyvj_a0a0a21 {
-    public QuotationClass_l4wyvj_a0a0a21() {
+  public static class QuotationClass_l4wyvj_a0a0a31 {
+    public QuotationClass_l4wyvj_a0a0a31() {
     }
 
     public SNode createNode() {
