@@ -26,6 +26,9 @@ import jetbrains.mps.smodel.IScope;
 import jetbrains.mps.smodel.action.ModelActions;
 import jetbrains.mps.smodel.action.DefaultSimpleSubstituteAction;
 import jetbrains.mps.smodel.action.SideTransformActionsBuilderContext;
+import jetbrains.mps.smodel.action.NodeSubstituteActionWrapper;
+import org.jetbrains.annotations.Nullable;
+import jetbrains.mps.nodeEditor.EditorContext;
 import jetbrains.mps.smodel.action.AbstractSideTransformHintSubstituteAction;
 
 public class QueriesGenerated {
@@ -312,6 +315,32 @@ public class QueriesGenerated {
 
           public String getVisibleMatchingText(String pattern) {
             return this.getMatchingText(pattern);
+          }
+        });
+      }
+    }
+    return result;
+  }
+
+  public static List<INodeSubstituteAction> sideTransform_ActionsFactory_SAbstractConcept_7891765471709999830(final IOperationContext operationContext, final SideTransformActionsBuilderContext _context) {
+    List<INodeSubstituteAction> result = ListSequence.fromList(new ArrayList<INodeSubstituteAction>());
+    {
+      final String[] lastPattern = new String[1];
+      List<INodeSubstituteAction> list = ModelActions.createChildSubstituteActions(_context.getSourceNode(), null, SConceptOperations.findConceptDeclaration("jetbrains.mps.core.structure.structure.SConceptAnnotation"), new AbstractChildNodeSetter() {
+        public SNode doExecute(SNode parentNode, SNode oldChild, SNode newChild, IScope p3) {
+          return substitute(newChild, lastPattern[0]);
+        }
+
+        private SNode substitute(SNode result, String pattern) {
+          return ListSequence.fromList(SLinkOperations.getTargets(_context.getSourceNode(), "annotations", true)).addElement(result);
+        }
+      }, operationContext);
+      for (final INodeSubstituteAction action : list) {
+        ListSequence.fromList(result).addElement(new NodeSubstituteActionWrapper(action) {
+          @Override
+          public SNode substitute(@Nullable EditorContext context, String pattern) {
+            lastPattern[0] = pattern;
+            return super.substitute(context, pattern);
           }
         });
       }

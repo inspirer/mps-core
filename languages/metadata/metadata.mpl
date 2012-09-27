@@ -12,6 +12,7 @@
   <usedLanguages>
     <usedLanguage>daafa647-f1f7-4b0b-b096-69cd7c8408c0(jetbrains.mps.baseLanguage.regexp)</usedLanguage>
     <usedLanguage>c898d4a2-ef8e-481f-aff5-15e46db05e03(jetbrains.mps.core.query)</usedLanguage>
+    <usedLanguage>41a590b4-0cca-40d1-9a11-d9ef253734cc(jetbrains.mps.core.smodel)</usedLanguage>
     <usedLanguage>13744753-c81f-424a-9c1b-cf8943bf4e86(jetbrains.mps.lang.sharedConcepts)</usedLanguage>
   </usedLanguages>
   <usedDevKits>

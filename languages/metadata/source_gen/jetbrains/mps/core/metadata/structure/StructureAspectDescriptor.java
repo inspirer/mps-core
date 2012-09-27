@@ -8,7 +8,7 @@ import jetbrains.mps.smodel.runtime.impl.CompiledConceptDescriptor;
 import jetbrains.mps.smodel.runtime.interpreted.StructureAspectInterpreted;
 
 public class StructureAspectDescriptor implements jetbrains.mps.smodel.runtime.StructureAspectDescriptor {
-  private static String[] stringSwitchCases_1htk8d_a0a0a = new String[]{"jetbrains.mps.core.metadata.structure.SConceptAnnotationChildLink", "jetbrains.mps.core.metadata.structure.SConceptAnnotationMember", "jetbrains.mps.core.metadata.structure.SConceptAnnotationMemberComment", "jetbrains.mps.core.metadata.structure.SConceptAnnotationMemberEmptyLine", "jetbrains.mps.core.metadata.structure.SConceptAnnotationNodeRef", "jetbrains.mps.core.metadata.structure.SConceptAnnotationProperty", "jetbrains.mps.core.metadata.structure.SConceptAnnotationType"};
+  private static String[] stringSwitchCases_1htk8d_a0a0a = new String[]{"jetbrains.mps.core.metadata.structure.SConceptAnnotationArgument", "jetbrains.mps.core.metadata.structure.SConceptAnnotationChildLink", "jetbrains.mps.core.metadata.structure.SConceptAnnotationInstance", "jetbrains.mps.core.metadata.structure.SConceptAnnotationMember", "jetbrains.mps.core.metadata.structure.SConceptAnnotationMemberComment", "jetbrains.mps.core.metadata.structure.SConceptAnnotationMemberEmptyLine", "jetbrains.mps.core.metadata.structure.SConceptAnnotationNodeRef", "jetbrains.mps.core.metadata.structure.SConceptAnnotationProperty", "jetbrains.mps.core.metadata.structure.SConceptAnnotationType"};
 
   public StructureAspectDescriptor() {
   }
@@ -16,18 +16,22 @@ public class StructureAspectDescriptor implements jetbrains.mps.smodel.runtime.S
   public ConceptDescriptor getDescriptor(String conceptFqName) {
     switch (Arrays.binarySearch(stringSwitchCases_1htk8d_a0a0a, conceptFqName)) {
       case 0:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.metadata.structure.SConceptAnnotationChildLink", "jetbrains.mps.core.metadata.structure.SConceptAnnotationMember", false, new String[]{"jetbrains.mps.core.metadata.structure.SConceptAnnotationMember", "jetbrains.mps.lang.core.structure.INamedConcept", "jetbrains.mps.core.structure.structure.SCardinalityContainer"}, new String[]{}, new String[]{"type"});
+        return new CompiledConceptDescriptor("jetbrains.mps.core.metadata.structure.SConceptAnnotationArgument", "jetbrains.mps.lang.core.structure.BaseConcept", false, new String[]{"jetbrains.mps.lang.core.structure.BaseConcept"}, new String[]{"name"}, new String[]{});
       case 1:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.metadata.structure.SConceptAnnotationMember", "jetbrains.mps.lang.core.structure.BaseConcept", false, new String[]{"jetbrains.mps.lang.core.structure.BaseConcept"}, new String[]{}, new String[]{});
+        return new CompiledConceptDescriptor("jetbrains.mps.core.metadata.structure.SConceptAnnotationChildLink", "jetbrains.mps.core.metadata.structure.SConceptAnnotationMember", false, new String[]{"jetbrains.mps.core.metadata.structure.SConceptAnnotationMember", "jetbrains.mps.lang.core.structure.INamedConcept", "jetbrains.mps.core.structure.structure.SCardinalityContainer"}, new String[]{}, new String[]{"type"});
       case 2:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.metadata.structure.SConceptAnnotationMemberComment", "jetbrains.mps.core.metadata.structure.SConceptAnnotationMember", false, new String[]{"jetbrains.mps.core.metadata.structure.SConceptAnnotationMember"}, new String[]{"comment"}, new String[]{});
+        return new CompiledConceptDescriptor("jetbrains.mps.core.metadata.structure.SConceptAnnotationInstance", "jetbrains.mps.core.structure.structure.SConceptAnnotation", false, new String[]{"jetbrains.mps.core.structure.structure.SConceptAnnotation"}, new String[]{}, new String[]{"type"});
       case 3:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.metadata.structure.SConceptAnnotationMemberEmptyLine", "jetbrains.mps.core.metadata.structure.SConceptAnnotationMember", false, new String[]{"jetbrains.mps.core.metadata.structure.SConceptAnnotationMember"}, new String[]{}, new String[]{});
+        return new CompiledConceptDescriptor("jetbrains.mps.core.metadata.structure.SConceptAnnotationMember", "jetbrains.mps.lang.core.structure.BaseConcept", false, new String[]{"jetbrains.mps.lang.core.structure.BaseConcept"}, new String[]{}, new String[]{});
       case 4:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.metadata.structure.SConceptAnnotationNodeRef", "jetbrains.mps.core.metadata.structure.SConceptAnnotationMember", false, new String[]{"jetbrains.mps.core.metadata.structure.SConceptAnnotationMember", "jetbrains.mps.lang.core.structure.INamedConcept"}, new String[]{}, new String[]{"target"});
+        return new CompiledConceptDescriptor("jetbrains.mps.core.metadata.structure.SConceptAnnotationMemberComment", "jetbrains.mps.core.metadata.structure.SConceptAnnotationMember", false, new String[]{"jetbrains.mps.core.metadata.structure.SConceptAnnotationMember"}, new String[]{"comment"}, new String[]{});
       case 5:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.metadata.structure.SConceptAnnotationProperty", "jetbrains.mps.core.metadata.structure.SConceptAnnotationMember", false, new String[]{"jetbrains.mps.core.metadata.structure.SConceptAnnotationMember", "jetbrains.mps.lang.core.structure.INamedConcept"}, new String[]{}, new String[]{});
+        return new CompiledConceptDescriptor("jetbrains.mps.core.metadata.structure.SConceptAnnotationMemberEmptyLine", "jetbrains.mps.core.metadata.structure.SConceptAnnotationMember", false, new String[]{"jetbrains.mps.core.metadata.structure.SConceptAnnotationMember"}, new String[]{}, new String[]{});
       case 6:
+        return new CompiledConceptDescriptor("jetbrains.mps.core.metadata.structure.SConceptAnnotationNodeRef", "jetbrains.mps.core.metadata.structure.SConceptAnnotationMember", false, new String[]{"jetbrains.mps.core.metadata.structure.SConceptAnnotationMember", "jetbrains.mps.lang.core.structure.INamedConcept"}, new String[]{}, new String[]{"target"});
+      case 7:
+        return new CompiledConceptDescriptor("jetbrains.mps.core.metadata.structure.SConceptAnnotationProperty", "jetbrains.mps.core.metadata.structure.SConceptAnnotationMember", false, new String[]{"jetbrains.mps.core.metadata.structure.SConceptAnnotationMember", "jetbrains.mps.lang.core.structure.INamedConcept"}, new String[]{}, new String[]{});
+      case 8:
         return new CompiledConceptDescriptor("jetbrains.mps.core.metadata.structure.SConceptAnnotationType", "jetbrains.mps.core.structure.structure.SStructureElement", false, new String[]{"jetbrains.mps.core.structure.structure.SStructureElement", "jetbrains.mps.lang.core.structure.INamedConcept", "jetbrains.mps.lang.core.structure.ScopeProvider"}, new String[]{}, new String[]{});
       default:
         return StructureAspectInterpreted.getInstance().getDescriptor(conceptFqName);

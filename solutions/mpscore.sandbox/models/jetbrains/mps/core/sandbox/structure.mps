@@ -297,6 +297,9 @@
       <node role="extends" roleId="ydsw.6195190339581766791" type="ydsw.SInterfaceReference" typeId="ydsw.6195190339581766766" id="5566195403253926244">
         <link role="target" roleId="ydsw.6195190339581766767" targetNodeId="5566195403253926242" resolveInfo="IMemberBase" />
       </node>
+      <node role="annotations" roleId="ydsw.7891765471709815410" type="76x.SConceptAnnotationInstance" typeId="76x.7891765471709947212" id="7891765471710023220">
+        <link role="type" roleId="76x.7891765471709947215" targetNodeId="2848533153256459332" resolveInfo="Copyright" />
+      </node>
     </node>
     <node role="structure" roleId="ydsw.6195190339581766884" type="ydsw.SStructureEmptyLine" typeId="ydsw.6195190339581962051" id="5362811550739085633" />
     <node role="structure" roleId="ydsw.6195190339581766884" type="ydsw.SConcept" typeId="ydsw.6195190339581766741" id="8379004527113872028">
@@ -503,6 +506,9 @@
     <node role="structure" roleId="ydsw.6195190339581766884" type="ydsw.SConcept" typeId="ydsw.6195190339581766741" id="8527797492907237657">
       <property name="name" nameId="tpck.1169194664001" value="Statement" />
       <property name="isAbstract" nameId="ydsw.6195190339581766762" value="true" />
+      <node role="annotations" roleId="ydsw.7891765471709815410" type="76x.SConceptAnnotationInstance" typeId="76x.7891765471709947212" id="7891765471710058189">
+        <link role="type" roleId="76x.7891765471709947215" targetNodeId="2848533153256469420" resolveInfo="X" />
+      </node>
     </node>
     <node role="structure" roleId="ydsw.6195190339581766884" type="ydsw.SStructureEmptyLine" typeId="ydsw.6195190339581962051" id="7805033636902120271" />
     <node role="structure" roleId="ydsw.6195190339581766884" type="ydsw.SEnumeration" typeId="ydsw.7581772527307617794" id="7805033636902120273">
@@ -541,7 +547,6 @@
         <property name="name" nameId="tpck.1169194664001" value="asdasd" />
         <link role="type" roleId="76x.2848533153256415634" targetNodeId="2848533153256446325" resolveInfo="asd" />
       </node>
-      <node role="members" roleId="76x.2848533153256415339" type="76x.SConceptAnnotationMemberEmptyLine" typeId="76x.2848533153256436620" id="2848533153256453530" />
     </node>
     <node role="structure" roleId="ydsw.6195190339581766884" type="ydsw.SStructureEmptyLine" typeId="ydsw.6195190339581962051" id="2848533153256469418" />
     <node role="structure" roleId="ydsw.6195190339581766884" type="76x.SConceptAnnotationType" typeId="76x.2848533153256408899" id="2848533153256469420">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debugInfo>
-  <unitInfo fileName="ConstraintsAspectDescriptor.java" startLine="9" startPosition="0" endLine="33" endPosition="0" unitName="jetbrains.mps.core.metadata.constraints.ConstraintsAspectDescriptor" />
+  <unitInfo fileName="ConstraintsAspectDescriptor.java" startLine="9" startPosition="0" endLine="35" endPosition="0" unitName="jetbrains.mps.core.metadata.constraints.ConstraintsAspectDescriptor" />
   <root nodeId="2848533153256436629">
     <nodeInfo nodeId="2848533153256436629" fileName="SConceptAnnotationMember_Constraints.java" startLine="8" startPosition="49" endLine="9" endPosition="76" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
     <nodeInfo nodeId="2848533153256436629" fileName="SConceptAnnotationMember_Constraints.java" startLine="12" startPosition="51" endLine="13" endPosition="85" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
@@ -184,6 +184,50 @@
     <scopeInfo nodeId="2848533153256469423" fileName="SConceptAnnotationNodeRef_Constraints.java" startLine="21" startPosition="0" endLine="39" endPosition="0" />
     <unitInfo nodeId="2848533153256469423" fileName="SConceptAnnotationNodeRef_Constraints.java" startLine="15" startPosition="0" endLine="40" endPosition="0" unitName="jetbrains.mps.core.metadata.constraints.SConceptAnnotationNodeRef_Constraints" />
     <unitInfo nodeId="2848533153256469423" fileName="SConceptAnnotationNodeRef_Constraints.java" startLine="25" startPosition="31" endLine="36" endPosition="5" unitName="jetbrains.mps.core.metadata.constraints.SConceptAnnotationNodeRef_Constraints$1" />
+  </root>
+  <root nodeId="7891765471710148147">
+    <nodeInfo nodeId="7891765471710148147" fileName="SConceptAnnotationArgument_Constraints.java" startLine="14" startPosition="87" endLine="15" endPosition="180" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="canBeParentBreakingPoint" />
+    <nodeInfo nodeId="7891765471710148147" fileName="SConceptAnnotationArgument_Constraints.java" startLine="17" startPosition="51" endLine="18" endPosition="78" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+    <nodeInfo nodeId="7891765471710148147" fileName="SConceptAnnotationArgument_Constraints.java" startLine="22" startPosition="44" endLine="23" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="7891765471710148147" fileName="SConceptAnnotationArgument_Constraints.java" startLine="27" startPosition="188" endLine="28" endPosition="96" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="7891765471710148147" fileName="SConceptAnnotationArgument_Constraints.java" startLine="28" startPosition="96" endLine="29" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="7891765471710148147" fileName="SConceptAnnotationArgument_Constraints.java" startLine="30" startPosition="51" endLine="31" endPosition="68" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7891765471710148147" fileName="SConceptAnnotationArgument_Constraints.java" startLine="32" startPosition="5" endLine="33" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="7891765471710148147" fileName="SConceptAnnotationArgument_Constraints.java" startLine="33" startPosition="0" endLine="34" endPosition="18" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="7891765471710148155" fileName="SConceptAnnotationArgument_Constraints.java" startLine="38" startPosition="131" endLine="39" endPosition="308" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="7891765471710148170" fileName="SConceptAnnotationArgument_Constraints.java" startLine="40" startPosition="5" endLine="41" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="7891765471710148147" fileName="SConceptAnnotationArgument_Constraints.java" startLine="16" startPosition="0" endLine="19" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="SConceptAnnotationArgument_Constraints#()V" />
+    <nodeInfo nodeId="7891765471710148147" fileName="SConceptAnnotationArgument_Constraints.java" startLine="29" startPosition="0" endLine="32" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="7891765471710148150" fileName="SConceptAnnotationArgument_Constraints.java" startLine="37" startPosition="148" endLine="40" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="7891765471710148147" fileName="SConceptAnnotationArgument_Constraints.java" startLine="20" startPosition="0" endLine="25" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="hasOwnCanBeParentMethod#()Z" />
+    <nodeInfo nodeId="7891765471710148147" fileName="SConceptAnnotationArgument_Constraints.java" startLine="36" startPosition="0" endLine="43" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="static_canBeAParent#(Ljetbrains/mps/smodel/SNode;Ljetbrains/mps/smodel/SNode;Ljetbrains/mps/smodel/SNode;Ljetbrains/mps/smodel/SNode;Ljetbrains/mps/smodel/IOperationContext;)Z" />
+    <nodeInfo nodeId="7891765471710148147" fileName="SConceptAnnotationArgument_Constraints.java" startLine="25" startPosition="0" endLine="36" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="canBeParent#(Ljetbrains/mps/smodel/SNode;Ljetbrains/mps/smodel/SNode;Ljetbrains/mps/smodel/SNode;Ljetbrains/mps/smodel/SNode;Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Z" />
+    <scopeInfo nodeId="7891765471710148147" fileName="SConceptAnnotationArgument_Constraints.java" startLine="17" startPosition="51" endLine="18" endPosition="78" />
+    <scopeInfo nodeId="7891765471710148147" fileName="SConceptAnnotationArgument_Constraints.java" startLine="22" startPosition="44" endLine="23" endPosition="16" />
+    <scopeInfo nodeId="7891765471710148147" fileName="SConceptAnnotationArgument_Constraints.java" startLine="30" startPosition="51" endLine="31" endPosition="68" />
+    <scopeInfo nodeId="7891765471710148154" fileName="SConceptAnnotationArgument_Constraints.java" startLine="38" startPosition="131" endLine="39" endPosition="308" />
+    <scopeInfo nodeId="7891765471710148147" fileName="SConceptAnnotationArgument_Constraints.java" startLine="16" startPosition="0" endLine="19" endPosition="3" />
+    <scopeInfo nodeId="7891765471710148149" fileName="SConceptAnnotationArgument_Constraints.java" startLine="37" startPosition="148" endLine="41" endPosition="16" />
+    <scopeInfo nodeId="7891765471710148147" fileName="SConceptAnnotationArgument_Constraints.java" startLine="20" startPosition="0" endLine="25" endPosition="0" />
+    <scopeInfo nodeId="7891765471710148147" fileName="SConceptAnnotationArgument_Constraints.java" startLine="27" startPosition="188" endLine="34" endPosition="18">
+      <varInfo nodeId="7891765471710148147" varName="result" />
+    </scopeInfo>
+    <scopeInfo nodeId="7891765471710148147" fileName="SConceptAnnotationArgument_Constraints.java" startLine="36" startPosition="0" endLine="43" endPosition="0">
+      <varInfo nodeId="7891765471710148147" varName="childConcept" />
+      <varInfo nodeId="7891765471710148147" varName="childNode" />
+      <varInfo nodeId="7891765471710148147" varName="link" />
+      <varInfo nodeId="7891765471710148147" varName="node" />
+      <varInfo nodeId="7891765471710148147" varName="operationContext" />
+    </scopeInfo>
+    <scopeInfo nodeId="7891765471710148147" fileName="SConceptAnnotationArgument_Constraints.java" startLine="25" startPosition="0" endLine="36" endPosition="0">
+      <varInfo nodeId="7891765471710148147" varName="checkingNodeContext" />
+      <varInfo nodeId="7891765471710148147" varName="childConcept" />
+      <varInfo nodeId="7891765471710148147" varName="childNode" />
+      <varInfo nodeId="7891765471710148147" varName="link" />
+      <varInfo nodeId="7891765471710148147" varName="node" />
+      <varInfo nodeId="7891765471710148147" varName="operationContext" />
+    </scopeInfo>
+    <unitInfo nodeId="7891765471710148147" fileName="SConceptAnnotationArgument_Constraints.java" startLine="14" startPosition="0" endLine="44" endPosition="0" unitName="jetbrains.mps.core.metadata.constraints.SConceptAnnotationArgument_Constraints" />
   </root>
 </debugInfo>
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debugInfo>
-  <unitInfo fileName="StructureAspectDescriptor.java" startLine="10" startPosition="0" endLine="79" endPosition="0" unitName="jetbrains.mps.core.structure.structure.StructureAspectDescriptor" />
+  <unitInfo fileName="StructureAspectDescriptor.java" startLine="10" startPosition="0" endLine="81" endPosition="0" unitName="jetbrains.mps.core.structure.structure.StructureAspectDescriptor" />
   <unitInfo fileName="Structure_Language.java" startLine="9" startPosition="0" endLine="16" endPosition="0" unitName="jetbrains.mps.core.structure.structure.Structure_Language" />
   <root nodeId="7581772527307667405">
     <nodeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind_PropertySupport.java" startLine="11" startPosition="24" endLine="12" endPosition="18" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />

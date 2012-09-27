@@ -3,7 +3,9 @@
   <dependency className="jetbrains.mps.core.metadata.behavior.BehaviorAspectDescriptor" file="BehaviorAspectDescriptor.java">
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.Arrays" />
+    <classNode dependClassName="jetbrains.mps.core.metadata.behavior.SConceptAnnotationArgument_BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.core.metadata.behavior.SConceptAnnotationChildLink_BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.core.metadata.behavior.SConceptAnnotationInstance_BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.core.metadata.behavior.SConceptAnnotationMemberComment_BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.core.metadata.behavior.SConceptAnnotationMemberEmptyLine_BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.core.metadata.behavior.SConceptAnnotationNodeRef_BehaviorDescriptor" />
@@ -12,6 +14,21 @@
     <classNode dependClassName="jetbrains.mps.smodel.runtime.BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.interpreted.BehaviorAspectInterpreted" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.BehaviorAspectDescriptor" />
+  </dependency>
+  <dependency className="jetbrains.mps.core.metadata.behavior.SConceptAnnotationArgument_Behavior" file="SConceptAnnotationArgument_Behavior.java">
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.IWhereFilter" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.SNode" />
+  </dependency>
+  <dependency className="jetbrains.mps.core.metadata.behavior.SConceptAnnotationArgument_BehaviorDescriptor" file="SConceptAnnotationArgument_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="jetbrains.mps.core.metadata.behavior.SConceptAnnotationChildLink_Behavior" file="SConceptAnnotationChildLink_Behavior.java">
     <classNode dependClassName="jetbrains.mps.smodel.SNode" />
@@ -26,6 +43,12 @@
     <classNode dependClassName="jetbrains.mps.lang.core.behavior.INamedConcept_BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.SNode" />
     <classNode extendsClassName="java.lang.Cloneable" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="jetbrains.mps.core.metadata.behavior.SConceptAnnotationInstance_BehaviorDescriptor" file="SConceptAnnotationInstance_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.core.structure.behavior.SConceptAnnotation_BehaviorDescriptor" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="jetbrains.mps.core.metadata.behavior.SConceptAnnotationMemberComment_BehaviorDescriptor" file="SConceptAnnotationMemberComment_BehaviorDescriptor.java">

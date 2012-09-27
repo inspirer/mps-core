@@ -7,25 +7,29 @@ import java.util.Arrays;
 import jetbrains.mps.smodel.runtime.interpreted.BehaviorAspectInterpreted;
 
 public class BehaviorAspectDescriptor implements jetbrains.mps.smodel.runtime.BehaviorAspectDescriptor {
-  private static String[] stringSwitchCases_846f5o_a0a0a = new String[]{"jetbrains.mps.core.metadata.structure.SConceptAnnotationChildLink", "jetbrains.mps.core.metadata.structure.SConceptAnnotationMemberComment", "jetbrains.mps.core.metadata.structure.SConceptAnnotationMemberEmptyLine", "jetbrains.mps.core.metadata.structure.SConceptAnnotationNodeRef", "jetbrains.mps.core.metadata.structure.SConceptAnnotationProperty", "jetbrains.mps.core.metadata.structure.SConceptAnnotationType"};
+  private static String[] stringSwitchCases_846f5o_a0a0a = new String[]{"jetbrains.mps.core.metadata.structure.SConceptAnnotationArgument", "jetbrains.mps.core.metadata.structure.SConceptAnnotationChildLink", "jetbrains.mps.core.metadata.structure.SConceptAnnotationInstance", "jetbrains.mps.core.metadata.structure.SConceptAnnotationMemberComment", "jetbrains.mps.core.metadata.structure.SConceptAnnotationMemberEmptyLine", "jetbrains.mps.core.metadata.structure.SConceptAnnotationNodeRef", "jetbrains.mps.core.metadata.structure.SConceptAnnotationProperty", "jetbrains.mps.core.metadata.structure.SConceptAnnotationType"};
 
   public BehaviorAspectDescriptor() {
   }
 
   public BehaviorDescriptor getDescriptor(String fqName) {
     switch (Arrays.binarySearch(stringSwitchCases_846f5o_a0a0a, fqName)) {
-      case 5:
+      case 7:
         return new SConceptAnnotationType_BehaviorDescriptor();
-      case 4:
+      case 6:
         return new SConceptAnnotationProperty_BehaviorDescriptor();
-      case 0:
-        return new SConceptAnnotationChildLink_BehaviorDescriptor();
-      case 2:
-        return new SConceptAnnotationMemberEmptyLine_BehaviorDescriptor();
       case 1:
-        return new SConceptAnnotationMemberComment_BehaviorDescriptor();
+        return new SConceptAnnotationChildLink_BehaviorDescriptor();
+      case 4:
+        return new SConceptAnnotationMemberEmptyLine_BehaviorDescriptor();
       case 3:
+        return new SConceptAnnotationMemberComment_BehaviorDescriptor();
+      case 5:
         return new SConceptAnnotationNodeRef_BehaviorDescriptor();
+      case 2:
+        return new SConceptAnnotationInstance_BehaviorDescriptor();
+      case 0:
+        return new SConceptAnnotationArgument_BehaviorDescriptor();
       default:
         return BehaviorAspectInterpreted.getInstance().getDescriptor(fqName);
     }

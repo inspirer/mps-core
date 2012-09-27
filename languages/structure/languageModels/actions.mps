@@ -43,6 +43,31 @@
     </node>
   </roots>
   <root id="6195190339581955305">
+    <node role="actionsBuilder" roleId="tpdg.1138079416599" type="tpdg.SideTransformHintSubstituteActionsBuilder" typeId="tpdg.1138079221458" id="7891765471709999830">
+      <property name="side" nameId="tpdg.1215605257730" value="left" />
+      <property name="transformTag" nameId="tpdg.1140829165817" value="ext_5_RTransform" />
+      <link role="applicableConcept" roleId="tpdg.1138079221462" targetNodeId="ydsw.6195190339581756310" resolveInfo="SAbstractConcept" />
+      <node role="part" roleId="tpdg.1177442283389" type="tpdg.ConceptRightTransformPart" typeId="tpdg.1182819125053" id="7891765471709999835">
+        <link role="concept" roleId="tpdg.1182819234902" targetNodeId="ydsw.7891765471709799162" resolveInfo="SConceptAnnotation" />
+        <node role="handler" roleId="tpdg.1182819210322" type="tpdg.QueryFunction_SideTransform_ConceptHandler" typeId="tpdg.1177526592562" id="7891765471709999836">
+          <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="7891765471709999837">
+            <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="7891765471709999842">
+              <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="7891765471709999892">
+                <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="7891765471709999864">
+                  <node role="operand" roleId="tpee.1197027771414" type="tpdg.ConceptFunctionParameter_sourceNode" typeId="tpdg.1177497140107" id="7891765471709999843" />
+                  <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkListAccess" typeId="tp25.1138056282393" id="7891765471709999870">
+                    <link role="link" roleId="tp25.1138056546658" targetNodeId="ydsw.7891765471709815410" />
+                  </node>
+                </node>
+                <node role="operation" roleId="tpee.1197027833540" type="tp2q.AddElementOperation" typeId="tp2q.1160612413312" id="7891765471709999898">
+                  <node role="argument" roleId="tp2q.1160612519549" type="tpdg.ConceptFunctionParameter_result" typeId="tpdg.1177526535706" id="7891765471709999900" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node role="actionsBuilder" roleId="tpdg.1138079416599" type="tpdg.SideTransformHintSubstituteActionsBuilder" typeId="tpdg.1138079221458" id="6195190339581955306">
       <property name="transformTag" nameId="tpdg.1140829165817" value="ext_3_RTransform" />
       <property name="description" nameId="tpdg.1158952484319" value=" after class name or extends reference" />

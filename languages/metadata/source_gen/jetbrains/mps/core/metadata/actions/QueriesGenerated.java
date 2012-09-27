@@ -78,6 +78,131 @@ public class QueriesGenerated {
     return result;
   }
 
+  public static List<INodeSubstituteAction> nodeSubstituteActionsBuilder_ActionsFactory_SConceptAnnotationArgument_7891765471710156747(final IOperationContext operationContext, final NodeSubstituteActionsFactoryContext _context) {
+    List<INodeSubstituteAction> result = ListSequence.fromList(new ArrayList<INodeSubstituteAction>());
+    {
+      SNode outputConcept = SConceptOperations.findConceptDeclaration("jetbrains.mps.core.metadata.structure.SConceptAnnotationArgument");
+      SNode childConcept = (SNode) _context.getChildConcept();
+      if (SConceptOperations.isSuperConceptOf(childConcept, NameUtil.nodeFQName(outputConcept))) {
+        SNode wrappedConcept = SConceptOperations.findConceptDeclaration("jetbrains.mps.core.query.structure.MqlIntLiteral");
+        IChildNodeSetter setter = new AbstractChildNodeSetter() {
+          public SNode wrapNode(SNode nodeToWrap, SModel model) {
+            SNode n = SConceptOperations.createNewNode("jetbrains.mps.core.metadata.structure.SConceptAnnotationArgument", null);
+            SPropertyOperations.set(n, "name", "value");
+            SLinkOperations.setTarget(n, "value", nodeToWrap, true);
+            return n;
+          }
+
+          public boolean returnSmallPart(SNode nodeToWrap) {
+            return false;
+          }
+
+          public SNode doExecute(SNode pn, SNode oc, SNode nc, IScope sc) {
+            SNode wrappedNode = this.wrapNode(nc, nc.getModel());
+            _context.getChildSetter().execute(_context.getParentNode(), _context.getCurrentTargetNode(), wrappedNode, operationContext.getScope());
+            if (this.returnSmallPart(nc)) {
+              return nc;
+            } else {
+              return wrappedNode;
+            }
+          }
+        };
+        ListSequence.fromList(result).addSequence(ListSequence.fromList(ModelActions.createChildSubstituteActions(_context.getParentNode(), _context.getCurrentTargetNode(), wrappedConcept, setter, operationContext)));
+      }
+    }
+    {
+      SNode outputConcept = SConceptOperations.findConceptDeclaration("jetbrains.mps.core.metadata.structure.SConceptAnnotationArgument");
+      SNode childConcept = (SNode) _context.getChildConcept();
+      if (SConceptOperations.isSuperConceptOf(childConcept, NameUtil.nodeFQName(outputConcept))) {
+        SNode wrappedConcept = SConceptOperations.findConceptDeclaration("jetbrains.mps.core.query.structure.MqlStringLiteral");
+        IChildNodeSetter setter = new AbstractChildNodeSetter() {
+          public SNode wrapNode(SNode nodeToWrap, SModel model) {
+            SNode n = SConceptOperations.createNewNode("jetbrains.mps.core.metadata.structure.SConceptAnnotationArgument", null);
+            SPropertyOperations.set(n, "name", "value");
+            SLinkOperations.setTarget(n, "value", nodeToWrap, true);
+            return n;
+          }
+
+          public boolean returnSmallPart(SNode nodeToWrap) {
+            return false;
+          }
+
+          public SNode doExecute(SNode pn, SNode oc, SNode nc, IScope sc) {
+            SNode wrappedNode = this.wrapNode(nc, nc.getModel());
+            _context.getChildSetter().execute(_context.getParentNode(), _context.getCurrentTargetNode(), wrappedNode, operationContext.getScope());
+            if (this.returnSmallPart(nc)) {
+              return nc;
+            } else {
+              return wrappedNode;
+            }
+          }
+        };
+        ListSequence.fromList(result).addSequence(ListSequence.fromList(ModelActions.createChildSubstituteActions(_context.getParentNode(), _context.getCurrentTargetNode(), wrappedConcept, setter, operationContext)));
+      }
+    }
+    {
+      SNode outputConcept = SConceptOperations.findConceptDeclaration("jetbrains.mps.core.metadata.structure.SConceptAnnotationArgument");
+      SNode childConcept = (SNode) _context.getChildConcept();
+      if (SConceptOperations.isSuperConceptOf(childConcept, NameUtil.nodeFQName(outputConcept))) {
+        SNode wrappedConcept = SConceptOperations.findConceptDeclaration("jetbrains.mps.core.query.structure.MqlBoolLiteral");
+        IChildNodeSetter setter = new AbstractChildNodeSetter() {
+          public SNode wrapNode(SNode nodeToWrap, SModel model) {
+            SNode n = SConceptOperations.createNewNode("jetbrains.mps.core.metadata.structure.SConceptAnnotationArgument", null);
+            SPropertyOperations.set(n, "name", "value");
+            SLinkOperations.setTarget(n, "value", nodeToWrap, true);
+            return n;
+          }
+
+          public boolean returnSmallPart(SNode nodeToWrap) {
+            return false;
+          }
+
+          public SNode doExecute(SNode pn, SNode oc, SNode nc, IScope sc) {
+            SNode wrappedNode = this.wrapNode(nc, nc.getModel());
+            _context.getChildSetter().execute(_context.getParentNode(), _context.getCurrentTargetNode(), wrappedNode, operationContext.getScope());
+            if (this.returnSmallPart(nc)) {
+              return nc;
+            } else {
+              return wrappedNode;
+            }
+          }
+        };
+        ListSequence.fromList(result).addSequence(ListSequence.fromList(ModelActions.createChildSubstituteActions(_context.getParentNode(), _context.getCurrentTargetNode(), wrappedConcept, setter, operationContext)));
+      }
+    }
+    {
+      SNode outputConcept = SConceptOperations.findConceptDeclaration("jetbrains.mps.core.metadata.structure.SConceptAnnotationArgument");
+      SNode childConcept = (SNode) _context.getChildConcept();
+      if (SConceptOperations.isSuperConceptOf(childConcept, NameUtil.nodeFQName(outputConcept))) {
+        SNode wrappedConcept = SConceptOperations.findConceptDeclaration("jetbrains.mps.core.query.structure.MqlNullLiteral");
+        IChildNodeSetter setter = new AbstractChildNodeSetter() {
+          public SNode wrapNode(SNode nodeToWrap, SModel model) {
+            SNode n = SConceptOperations.createNewNode("jetbrains.mps.core.metadata.structure.SConceptAnnotationArgument", null);
+            SPropertyOperations.set(n, "name", "value");
+            SLinkOperations.setTarget(n, "value", nodeToWrap, true);
+            return n;
+          }
+
+          public boolean returnSmallPart(SNode nodeToWrap) {
+            return false;
+          }
+
+          public SNode doExecute(SNode pn, SNode oc, SNode nc, IScope sc) {
+            SNode wrappedNode = this.wrapNode(nc, nc.getModel());
+            _context.getChildSetter().execute(_context.getParentNode(), _context.getCurrentTargetNode(), wrappedNode, operationContext.getScope());
+            if (this.returnSmallPart(nc)) {
+              return nc;
+            } else {
+              return wrappedNode;
+            }
+          }
+        };
+        ListSequence.fromList(result).addSequence(ListSequence.fromList(ModelActions.createChildSubstituteActions(_context.getParentNode(), _context.getCurrentTargetNode(), wrappedConcept, setter, operationContext)));
+      }
+    }
+    return result;
+  }
+
   public static List<INodeSubstituteAction> sideTransform_ActionsFactory_SConceptAnnotationChildLink_7581772527308084356(final IOperationContext operationContext, final SideTransformActionsBuilderContext _context) {
     List<INodeSubstituteAction> result = ListSequence.fromList(new ArrayList<INodeSubstituteAction>());
     {
