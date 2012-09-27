@@ -399,22 +399,28 @@ public class PluginUtils {
     public QuotationClass_l4wyvj_a0a0a0a0a0a12a5() {
     }
 
-    public SNode createNode(Object parameter_5) {
+    public SNode createNode(Object parameter_7) {
       SNode result = null;
       Set<SNode> _parameterValues_129834374 = new HashSet<SNode>();
       SNode quotedNode_1 = null;
       SNode quotedNode_2 = null;
+      SNode quotedNode_3 = null;
       {
         quotedNode_1 = SModelUtil_new.instantiateConceptDeclaration("jetbrains.mps.core.smodel.structure.SConceptQuery", null, GlobalScope.getInstance(), false);
-        SNode quotedNode1_3 = quotedNode_1;
-        quotedNode1_3.setProperty("name", (String) parameter_5);
+        SNode quotedNode1_4 = quotedNode_1;
+        quotedNode1_4.setProperty("name", (String) parameter_7);
         {
           quotedNode_2 = SModelUtil_new.instantiateConceptDeclaration("jetbrains.mps.core.query.structure.MqlStringLiteral", null, GlobalScope.getInstance(), false);
-          SNode quotedNode1_4 = quotedNode_2;
-          quotedNode1_4.setProperty("value", "not implemented");
-          quotedNode_1.addChild("body", quotedNode1_4);
+          SNode quotedNode1_5 = quotedNode_2;
+          quotedNode1_5.setProperty("value", "not implemented");
+          quotedNode_1.addChild("body", quotedNode1_5);
         }
-        result = quotedNode1_3;
+        {
+          quotedNode_3 = SModelUtil_new.instantiateConceptDeclaration("jetbrains.mps.core.query.structure.MqlStringType", null, GlobalScope.getInstance(), false);
+          SNode quotedNode1_6 = quotedNode_3;
+          quotedNode_1.addChild("type", quotedNode1_6);
+        }
+        result = quotedNode1_4;
       }
       return result;
     }
@@ -442,22 +448,28 @@ public class PluginUtils {
     public QuotationClass_l4wyvj_a0b0a0h() {
     }
 
-    public SNode createNode(Object parameter_5) {
+    public SNode createNode(Object parameter_7) {
       SNode result = null;
       Set<SNode> _parameterValues_129834374 = new HashSet<SNode>();
       SNode quotedNode_1 = null;
       SNode quotedNode_2 = null;
+      SNode quotedNode_3 = null;
       {
         quotedNode_1 = SModelUtil_new.instantiateConceptDeclaration("jetbrains.mps.core.smodel.structure.SConceptQuery", null, GlobalScope.getInstance(), false);
-        SNode quotedNode1_3 = quotedNode_1;
-        quotedNode1_3.setProperty("name", (String) parameter_5);
+        SNode quotedNode1_4 = quotedNode_1;
+        quotedNode1_4.setProperty("name", (String) parameter_7);
         {
           quotedNode_2 = SModelUtil_new.instantiateConceptDeclaration("jetbrains.mps.core.query.structure.MqlStringLiteral", null, GlobalScope.getInstance(), false);
-          SNode quotedNode1_4 = quotedNode_2;
-          quotedNode1_4.setProperty("value", "todo, need quotation to query lang");
-          quotedNode_1.addChild("body", quotedNode1_4);
+          SNode quotedNode1_5 = quotedNode_2;
+          quotedNode1_5.setProperty("value", "todo, need quotation to query lang");
+          quotedNode_1.addChild("body", quotedNode1_5);
         }
-        result = quotedNode1_3;
+        {
+          quotedNode_3 = SModelUtil_new.instantiateConceptDeclaration("jetbrains.mps.core.query.structure.MqlStringType", null, GlobalScope.getInstance(), false);
+          SNode quotedNode1_6 = quotedNode_3;
+          quotedNode_1.addChild("type", quotedNode1_6);
+        }
+        result = quotedNode1_4;
       }
       return result;
     }
@@ -467,22 +479,28 @@ public class PluginUtils {
     public QuotationClass_l4wyvj_a0b0b0h() {
     }
 
-    public SNode createNode(Object parameter_5) {
+    public SNode createNode(Object parameter_7) {
       SNode result = null;
       Set<SNode> _parameterValues_129834374 = new HashSet<SNode>();
       SNode quotedNode_1 = null;
       SNode quotedNode_2 = null;
+      SNode quotedNode_3 = null;
       {
         quotedNode_1 = SModelUtil_new.instantiateConceptDeclaration("jetbrains.mps.core.smodel.structure.SConceptQuery", null, GlobalScope.getInstance(), false);
-        SNode quotedNode1_3 = quotedNode_1;
-        quotedNode1_3.setProperty("name", (String) parameter_5);
+        SNode quotedNode1_4 = quotedNode_1;
+        quotedNode1_4.setProperty("name", (String) parameter_7);
         {
           quotedNode_2 = SModelUtil_new.instantiateConceptDeclaration("jetbrains.mps.core.query.structure.MqlStringLiteral", null, GlobalScope.getInstance(), false);
-          SNode quotedNode1_4 = quotedNode_2;
-          quotedNode1_4.setProperty("value", "todo, need quotation to query lang");
-          quotedNode_1.addChild("body", quotedNode1_4);
+          SNode quotedNode1_5 = quotedNode_2;
+          quotedNode1_5.setProperty("value", "todo, need quotation to query lang");
+          quotedNode_1.addChild("body", quotedNode1_5);
         }
-        result = quotedNode1_3;
+        {
+          quotedNode_3 = SModelUtil_new.instantiateConceptDeclaration("jetbrains.mps.core.query.structure.MqlStringType", null, GlobalScope.getInstance(), false);
+          SNode quotedNode1_6 = quotedNode_3;
+          quotedNode_1.addChild("type", quotedNode1_6);
+        }
+        result = quotedNode1_4;
       }
       return result;
     }
@@ -492,22 +510,28 @@ public class PluginUtils {
     public QuotationClass_l4wyvj_a0a0b0i() {
     }
 
-    public SNode createNode(Object parameter_5) {
+    public SNode createNode(Object parameter_7) {
       SNode result = null;
       Set<SNode> _parameterValues_129834374 = new HashSet<SNode>();
       SNode quotedNode_1 = null;
       SNode quotedNode_2 = null;
+      SNode quotedNode_3 = null;
       {
         quotedNode_1 = SModelUtil_new.instantiateConceptDeclaration("jetbrains.mps.core.smodel.structure.SConceptQuery", null, GlobalScope.getInstance(), false);
-        SNode quotedNode1_3 = quotedNode_1;
-        quotedNode1_3.setProperty("name", (String) parameter_5);
+        SNode quotedNode1_4 = quotedNode_1;
+        quotedNode1_4.setProperty("name", (String) parameter_7);
         {
           quotedNode_2 = SModelUtil_new.instantiateConceptDeclaration("jetbrains.mps.core.query.structure.MqlBoolLiteral", null, GlobalScope.getInstance(), false);
-          SNode quotedNode1_4 = quotedNode_2;
-          quotedNode1_4.setProperty("value", "true");
-          quotedNode_1.addChild("body", quotedNode1_4);
+          SNode quotedNode1_5 = quotedNode_2;
+          quotedNode1_5.setProperty("value", "true");
+          quotedNode_1.addChild("body", quotedNode1_5);
         }
-        result = quotedNode1_3;
+        {
+          quotedNode_3 = SModelUtil_new.instantiateConceptDeclaration("jetbrains.mps.core.query.structure.MqlBoolType", null, GlobalScope.getInstance(), false);
+          SNode quotedNode1_6 = quotedNode_3;
+          quotedNode_1.addChild("type", quotedNode1_6);
+        }
+        result = quotedNode1_4;
       }
       return result;
     }
@@ -517,22 +541,28 @@ public class PluginUtils {
     public QuotationClass_l4wyvj_a0b0c0i() {
     }
 
-    public SNode createNode(Object parameter_5, Object parameter_6) {
+    public SNode createNode(Object parameter_7, Object parameter_8) {
       SNode result = null;
       Set<SNode> _parameterValues_129834374 = new HashSet<SNode>();
       SNode quotedNode_1 = null;
       SNode quotedNode_2 = null;
+      SNode quotedNode_3 = null;
       {
         quotedNode_1 = SModelUtil_new.instantiateConceptDeclaration("jetbrains.mps.core.smodel.structure.SConceptQuery", null, GlobalScope.getInstance(), false);
-        SNode quotedNode1_3 = quotedNode_1;
-        quotedNode1_3.setProperty("name", (String) parameter_6);
+        SNode quotedNode1_4 = quotedNode_1;
+        quotedNode1_4.setProperty("name", (String) parameter_8);
         {
           quotedNode_2 = SModelUtil_new.instantiateConceptDeclaration("jetbrains.mps.core.query.structure.MqlIntLiteral", null, GlobalScope.getInstance(), false);
-          SNode quotedNode1_4 = quotedNode_2;
-          quotedNode1_4.setProperty("value", (String) parameter_5);
-          quotedNode_1.addChild("body", quotedNode1_4);
+          SNode quotedNode1_5 = quotedNode_2;
+          quotedNode1_5.setProperty("value", (String) parameter_7);
+          quotedNode_1.addChild("body", quotedNode1_5);
         }
-        result = quotedNode1_3;
+        {
+          quotedNode_3 = SModelUtil_new.instantiateConceptDeclaration("jetbrains.mps.core.query.structure.MqlIntType", null, GlobalScope.getInstance(), false);
+          SNode quotedNode1_6 = quotedNode_3;
+          quotedNode_1.addChild("type", quotedNode1_6);
+        }
+        result = quotedNode1_4;
       }
       return result;
     }
@@ -542,22 +572,28 @@ public class PluginUtils {
     public QuotationClass_l4wyvj_a0b0d0i() {
     }
 
-    public SNode createNode(Object parameter_5, Object parameter_6) {
+    public SNode createNode(Object parameter_7, Object parameter_8) {
       SNode result = null;
       Set<SNode> _parameterValues_129834374 = new HashSet<SNode>();
       SNode quotedNode_1 = null;
       SNode quotedNode_2 = null;
+      SNode quotedNode_3 = null;
       {
         quotedNode_1 = SModelUtil_new.instantiateConceptDeclaration("jetbrains.mps.core.smodel.structure.SConceptQuery", null, GlobalScope.getInstance(), false);
-        SNode quotedNode1_3 = quotedNode_1;
-        quotedNode1_3.setProperty("name", (String) parameter_6);
+        SNode quotedNode1_4 = quotedNode_1;
+        quotedNode1_4.setProperty("name", (String) parameter_8);
         {
           quotedNode_2 = SModelUtil_new.instantiateConceptDeclaration("jetbrains.mps.core.query.structure.MqlStringLiteral", null, GlobalScope.getInstance(), false);
-          SNode quotedNode1_4 = quotedNode_2;
-          quotedNode1_4.setProperty("value", (String) parameter_5);
-          quotedNode_1.addChild("body", quotedNode1_4);
+          SNode quotedNode1_5 = quotedNode_2;
+          quotedNode1_5.setProperty("value", (String) parameter_7);
+          quotedNode_1.addChild("body", quotedNode1_5);
         }
-        result = quotedNode1_3;
+        {
+          quotedNode_3 = SModelUtil_new.instantiateConceptDeclaration("jetbrains.mps.core.query.structure.MqlStringType", null, GlobalScope.getInstance(), false);
+          SNode quotedNode1_6 = quotedNode_3;
+          quotedNode_1.addChild("type", quotedNode1_6);
+        }
+        result = quotedNode1_4;
       }
       return result;
     }

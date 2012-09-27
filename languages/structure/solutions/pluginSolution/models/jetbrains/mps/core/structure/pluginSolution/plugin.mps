@@ -1924,6 +1924,7 @@
                               </node>
                             </node>
                           </node>
+                          <node role="type" roleId="xsnc.4366849661834287896" type="bwy9.MqlStringType" typeId="bwy9.6762883159245048070" id="2310679965751830109" />
                         </node>
                       </node>
                     </node>
@@ -2372,6 +2373,7 @@
                   <node role="body" roleId="xsnc.6762883159245048634" type="bwy9.MqlStringLiteral" typeId="bwy9.6762883159245048054" id="4801280512974725391">
                     <property name="value" nameId="bwy9.6762883159245048055" value="todo, need quotation to query lang" />
                   </node>
+                  <node role="type" roleId="xsnc.4366849661834287896" type="bwy9.MqlStringType" typeId="bwy9.6762883159245048070" id="2310679965751830110" />
                 </node>
               </node>
             </node>
@@ -2420,6 +2422,7 @@
                       </node>
                     </node>
                   </node>
+                  <node role="type" roleId="xsnc.4366849661834287896" type="bwy9.MqlStringType" typeId="bwy9.6762883159245048070" id="2310679965751830111" />
                 </node>
               </node>
             </node>
@@ -2501,6 +2504,7 @@
                       </node>
                     </node>
                   </node>
+                  <node role="type" roleId="xsnc.4366849661834287896" type="bwy9.MqlBoolType" typeId="bwy9.6762883159245048072" id="2310679965751830114" />
                 </node>
               </node>
             </node>
@@ -2558,6 +2562,7 @@
                       </node>
                     </node>
                   </node>
+                  <node role="type" roleId="xsnc.4366849661834287896" type="bwy9.MqlIntType" typeId="bwy9.6762883159245048069" id="2310679965751830112" />
                 </node>
               </node>
             </node>
@@ -2618,6 +2623,7 @@
                       </node>
                     </node>
                   </node>
+                  <node role="type" roleId="xsnc.4366849661834287896" type="bwy9.MqlStringType" typeId="bwy9.6762883159245048070" id="2310679965751830115" />
                 </node>
               </node>
             </node>
