@@ -10,6 +10,6 @@ public class SConceptMember_Behavior {
   }
 
   public static SNode call_getContainingConcept_4125821269968947769(SNode thisNode) {
-    return SNodeOperations.cast(SNodeOperations.getParent(thisNode), "jetbrains.mps.core.structure.structure.SAbstractConcept");
+    return SNodeOperations.as(SNodeOperations.getParent(thisNode), "jetbrains.mps.core.structure.structure.SAbstractConcept");
   }
 }

@@ -10,6 +10,9 @@
         <modelRoot path="${language_descriptor}/generator/template" />
       </models>
       <external-templates />
+      <dependencies>
+        <dependency reexport="false">2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)</dependency>
+      </dependencies>
       <usedLanguages>
         <usedLanguage>af65afd8-f0dd-4942-87d9-63a55f2a9db1(jetbrains.mps.lang.behavior)</usedLanguage>
         <usedLanguage>b401a680-8325-4110-8fd3-84331ff25bef(jetbrains.mps.lang.generator)</usedLanguage>
