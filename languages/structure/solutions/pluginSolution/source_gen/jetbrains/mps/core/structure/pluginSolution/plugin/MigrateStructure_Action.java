@@ -25,7 +25,6 @@ import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import jetbrains.mps.smodel.persistence.DefaultModelRootManager;
 import jetbrains.mps.smodel.SNode;
 import jetbrains.mps.internal.collections.runtime.IVisitor;
-import jetbrains.mps.smodel.LanguageAspect;
 
 public class MigrateStructure_Action extends BaseAction {
   private static final Icon ICON = null;
@@ -96,7 +95,7 @@ public class MigrateStructure_Action extends BaseAction {
         });
       }
       newStructure.value.addLanguage(newStructureLanguage.getModuleReference());
-      newStructure.value.addRoot(PluginUtils.convertStructure(LanguageAspect.STRUCTURE.get(language).getSModel()));
+      newStructure.value.addRoot(new LanguageConverter(language).convert());
     } catch (Throwable t) {
       if (log.isErrorEnabled()) {
         log.error("User's action execute method failed. Action:" + "MigrateStructure", t);
