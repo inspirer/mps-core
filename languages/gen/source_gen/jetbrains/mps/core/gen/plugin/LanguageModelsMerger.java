@@ -5,56 +5,55 @@ package jetbrains.mps.core.gen.plugin;
 import jetbrains.mps.smodel.Language;
 import jetbrains.mps.smodel.SModel;
 import jetbrains.mps.messages.IMessageHandler;
-import java.util.Map;
-import jetbrains.mps.smodel.SNode;
-import jetbrains.mps.smodel.DefaultSModelDescriptor;
-import jetbrains.mps.smodel.ModelAccess;
+import java.util.List;
+import jetbrains.mps.smodel.SModelDescriptor;
+import jetbrains.mps.core.util.merge.MergeSession;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
+import java.util.ArrayList;
+import jetbrains.mps.smodel.ModelAccess;
+import jetbrains.mps.smodel.SNode;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
 import jetbrains.mps.messages.Message;
 import jetbrains.mps.messages.MessageKind;
-import jetbrains.mps.internal.collections.runtime.MapSequence;
-import java.util.HashMap;
 import jetbrains.mps.smodel.LanguageAspect;
 import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import jetbrains.mps.internal.collections.runtime.Sequence;
-import jetbrains.mps.internal.collections.runtime.IMapping;
-import jetbrains.mps.smodel.loading.ModelLoadingState;
-import jetbrains.mps.smodel.SReference;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.internal.collections.runtime.IVisitor;
-import java.util.List;
-import jetbrains.mps.internal.collections.runtime.backports.LinkedList;
-import java.util.ArrayList;
-import java.util.Collections;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.smodel.SModelDescriptor;
+import jetbrains.mps.smodel.DefaultSModelDescriptor;
 
 public class LanguageModelsMerger {
   private Language lang;
   private SModel sourceModel;
   private IMessageHandler messageHandler;
-  private Map<SNode, SNode> mapping;
-  private Map<SNode, SNode> reverseMapping;
-  private Map<DefaultSModelDescriptor, SModel> newContent;
+  private List<SModelDescriptor> generated;
+  private MergeSession session;
 
   public LanguageModelsMerger(Language lang, SModel sourceModel, IMessageHandler messageHandler) {
     this.lang = lang;
     this.sourceModel = sourceModel;
     this.messageHandler = messageHandler;
+    this.generated = ListSequence.fromList(new ArrayList<SModelDescriptor>());
   }
 
   public void convert() {
     ModelAccess.assertLegalRead();
+    session = new MergeSession(messageHandler) {
+      @Override
+      protected SNode merge(SNode existing, SNode node, SModel newmodel) {
+        SNode merged = super.merge(existing, node, newmodel);
+        if (isNotEmpty_mx80dq_a0b0a0a0a1a0(SPropertyOperations.getString(SNodeOperations.cast(existing, "jetbrains.mps.lang.core.structure.BaseConcept"), "virtualPackage"))) {
+          SPropertyOperations.set(SNodeOperations.cast(merged, "jetbrains.mps.lang.core.structure.BaseConcept"), "virtualPackage", SPropertyOperations.getString(SNodeOperations.cast(existing, "jetbrains.mps.lang.core.structure.BaseConcept"), "virtualPackage"));
+        }
+        return merged;
+      }
+    };
 
     if (ListSequence.fromList(SModelOperations.getRoots(sourceModel, "jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration")).isEmpty()) {
       messageHandler.handle(new Message(MessageKind.ERROR, "No concepts in generated model"));
       return;
     }
 
-    mapping = MapSequence.fromMap(new HashMap<SNode, SNode>());
-    reverseMapping = MapSequence.fromMap(new HashMap<SNode, SNode>());
-    newContent = MapSequence.fromMap(new HashMap<DefaultSModelDescriptor, SModel>());
 
     merge(LanguageAspect.STRUCTURE, ListSequence.fromList(SModelOperations.getRoots(sourceModel, null)).where(new IWhereFilter<SNode>() {
       public boolean accept(SNode it) {
@@ -69,7 +68,7 @@ public class LanguageModelsMerger {
 
     Iterable<SNode> notMerged = ListSequence.fromList(SModelOperations.getRoots(sourceModel, null)).where(new IWhereFilter<SNode>() {
       public boolean accept(SNode it) {
-        return !(MapSequence.fromMap(mapping).containsKey(it));
+        return !(session.isMapped(it));
       }
     });
     if (Sequence.fromIterable(notMerged).isNotEmpty()) {
@@ -77,48 +76,7 @@ public class LanguageModelsMerger {
       return;
     }
 
-    restoreRefs();
-    mapping = null;
-    reverseMapping = null;
-  }
-
-  public void apply() {
-    ModelAccess.assertLegalWrite();
-
-    for (IMapping<DefaultSModelDescriptor, SModel> entry : MapSequence.fromMap(newContent)) {
-      final DefaultSModelDescriptor descriptor = entry.key();
-      messageHandler.handle(new Message(MessageKind.INFORMATION, "replacing " + descriptor.getLongName()));
-      descriptor.updateDiskTimestamp();
-      descriptor.replaceModel(entry.value(), ModelLoadingState.FULLY_LOADED);
-      descriptor.setChanged(true);
-      ModelAccess.instance().runWriteInEDT(new Runnable() {
-        public void run() {
-          descriptor.save();
-        }
-      });
-    }
-  }
-
-  private void restoreRefs() {
-    for (IMapping<SNode, SNode> m : MapSequence.fromMap(mapping)) {
-      SNode input = m.key();
-      SNode output = m.value();
-
-      for (SReference ref : input.getReferencesIterable()) {
-        SNode targetNode = ref.getTargetNodeSilently();
-        if (targetNode == null) {
-          messageHandler.handle(new Message(MessageKind.ERROR, "broken reference `" + ref.getRole() + "' in " + input.getDebugText()));
-          continue;
-        }
-        if (MapSequence.fromMap(mapping).containsKey(targetNode)) {
-          output.setReferent(ref.getRole(), MapSequence.fromMap(mapping).get(targetNode));
-        } else if (SNodeOperations.getModel(targetNode) == sourceModel) {
-          messageHandler.handle(new Message(MessageKind.ERROR, "not mapped node: " + targetNode.getDebugText()));
-        } else {
-          output.setReferent(ref.getRole(), targetNode);
-        }
-      }
-    }
+    session.restoreRefs();
   }
 
   private void merge(LanguageAspect aspect, Iterable<SNode> roots) {
@@ -127,81 +85,8 @@ public class LanguageModelsMerger {
       messageHandler.handle(new Message(MessageKind.ERROR, "no " + aspect.getName() + " model"));
       return;
     }
-
-    SModel existing = modelDesc.getSModel();
-    if (existing == null) {
-      messageHandler.handle(new Message(MessageKind.ERROR, "no " + aspect.getName() + " model"));
-      return;
-    }
-
-    final SModel newmodel = new SModel(modelDesc.getSModelReference());
-    newmodel.getSModelHeader().updateDefaults(modelDesc.getSModelHeader());
-    Sequence.fromIterable(mergeLists(SModelOperations.getRoots(existing, null), roots, newmodel)).visitAll(new IVisitor<SNode>() {
-      public void visit(SNode it) {
-        newmodel.addRoot(it);
-      }
-    });
-    MapSequence.fromMap(newContent).put(modelDesc, newmodel);
-  }
-
-  private Iterable<SNode> mergeLists(Iterable<SNode> existing, Iterable<SNode> created, final SModel newmodel) {
-    final Map<String, List<SNode>> existingNodes = MapSequence.fromMap(new HashMap<String, List<SNode>>());
-    Sequence.fromIterable(existing).visitAll(new IVisitor<SNode>() {
-      public void visit(SNode it) {
-        String signature = getSignature(it);
-        if (!(MapSequence.fromMap(existingNodes).containsKey(signature))) {
-          MapSequence.fromMap(existingNodes).put(signature, ListSequence.fromList(new LinkedList<SNode>()));
-        }
-        ListSequence.fromList(MapSequence.fromMap(existingNodes).get(signature)).addElement(it);
-      }
-    });
-    final List<SNode> result = new ArrayList<SNode>();
-    Sequence.fromIterable(created).visitAll(new IVisitor<SNode>() {
-      public void visit(SNode it) {
-        String signature = getSignature(it);
-        SNode existingNode = (MapSequence.fromMap(existingNodes).containsKey(signature) ?
-          ListSequence.fromList(MapSequence.fromMap(existingNodes).get(signature)).removeElementAt(0) :
-          null
-        );
-        ListSequence.fromList(result).addElement(merge(existingNode, it, newmodel));
-      }
-    });
-    return result;
-  }
-
-  private SNode merge(SNode existing, SNode node, SModel newmodel) {
-    if (node == null) {
-      return null;
-    }
-    SNode result = new SNode(newmodel, node.getConceptFqName(), false);
-    MapSequence.fromMap(mapping).put(node, result);
-    MapSequence.fromMap(reverseMapping).put(result, node);
-    result.putProperties(node);
-    result.putUserObjects(node);
-    if (existing != null) {
-      result.setId(existing.getSNodeId());
-    }
-    for (SNode child : mergeLists((existing == null ?
-      Sequence.fromIterable(Collections.<SNode>emptyList()) :
-      existing.getChildren(true)
-    ), node.getChildren(true), newmodel)) {
-      String role = MapSequence.fromMap(reverseMapping).get(child).getRole_();
-      assert role != null;
-      result.addChild(role, child);
-    }
-    return result;
-  }
-
-  private String getSignature(SNode node) {
-    String signature = ((SNodeOperations.getParent(node) == null) ?
-      "{root}" :
-      SNodeOperations.getContainingLinkRole(node)
-    );
-    assert signature != null;
-    if (SNodeOperations.isInstanceOf(node, "jetbrains.mps.lang.core.structure.INamedConcept")) {
-      signature = "#" + SPropertyOperations.getString(SNodeOperations.cast(node, "jetbrains.mps.lang.core.structure.INamedConcept"), "name");
-    }
-    return signature;
+    session.replace(modelDesc, roots);
+    ListSequence.fromList(this.generated).addElement(modelDesc);
   }
 
   public Language getLanguage() {
@@ -209,6 +94,14 @@ public class LanguageModelsMerger {
   }
 
   public Iterable<SModelDescriptor> getGenerated() {
-    return ListSequence.fromListWithValues(new ArrayList<SModelDescriptor>(), MapSequence.fromMap(newContent).keySet());
+    return this.generated;
+  }
+
+  public void apply() {
+    session.apply();
+  }
+
+  public static boolean isNotEmpty_mx80dq_a0b0a0a0a1a0(String str) {
+    return str != null && str.length() > 0;
   }
 }

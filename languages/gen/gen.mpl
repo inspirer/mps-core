@@ -9,6 +9,7 @@
   <dependencies>
     <dependency reexport="false">6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)</dependency>
     <dependency reexport="false">1372eb94-b402-4b9f-bb3f-44315b20f92d(jetbrains.mps.core.structure)</dependency>
+    <dependency reexport="false">5e77ce2d-7832-4b1c-b2c5-4660988d074a(jetbrains.mps.core.util)</dependency>
     <dependency reexport="false">a1250a4d-c090-42c3-ad7c-d298a3357dd4(jetbrains.mps.make.runtime)</dependency>
     <dependency reexport="false">df9d410f-2ebb-43f7-893a-483a4f085250(jetbrains.mps.smodel.resources)</dependency>
   </dependencies>

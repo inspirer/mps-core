@@ -16,6 +16,10 @@ public class ResolveUtil {
   }
 
   public static SNode resolveConcept(TemplateQueryContext genContext, SNode concept) {
+    if ((concept == null)) {
+      return null;
+    }
+
     SNode local = genContext.getOutputNodeByInputNodeAndMappingLabel(concept, "concept");
     if (local != null) {
       return local;
@@ -26,6 +30,10 @@ public class ResolveUtil {
   }
 
   public static SNode resolveEnum(TemplateQueryContext genContext, SNode enumeration) {
+    if ((enumeration == null)) {
+      return null;
+    }
+
     SNode local = genContext.getOutputNodeByInputNodeAndMappingLabel(enumeration, "enumType");
     if (local != null) {
       return local;

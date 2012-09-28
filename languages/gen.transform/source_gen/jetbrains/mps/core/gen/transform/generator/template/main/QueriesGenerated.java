@@ -221,7 +221,11 @@ public class QueriesGenerated {
   }
 
   public static Object referenceMacro_GetReferent_3564725181395014020(final IOperationContext operationContext, final ReferenceMacroContext _context) {
-    return SNodeOperations.as(ResolveUtil.resolveConcept(_context, SLinkOperations.getTarget(_context.getNode(), "extends", false)), "jetbrains.mps.lang.structure.structure.ConceptDeclaration");
+    SNode concept = SNodeOperations.as(ResolveUtil.resolveConcept(_context, SLinkOperations.getTarget(_context.getNode(), "extends", false)), "jetbrains.mps.lang.structure.structure.ConceptDeclaration");
+    return (concept == null ?
+      SNodeOperations.getNode("r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)", "1133920641626") :
+      concept
+    );
   }
 
   public static Object referenceMacro_GetReferent_3564725181395014076(final IOperationContext operationContext, final ReferenceMacroContext _context) {

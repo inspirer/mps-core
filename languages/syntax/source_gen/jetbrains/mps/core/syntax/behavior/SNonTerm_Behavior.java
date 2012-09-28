@@ -14,17 +14,11 @@ public class SNonTerm_Behavior {
   }
 
   public static boolean call_isMultiline_1030525575875839456(SNode thisNode) {
-    if (SNonTerm_Behavior.call_isList_1030525575875844509(thisNode)) {
-      return false;
-    }
-    return ListSequence.fromList(SLinkOperations.getTargets(thisNode, "rules", true)).count() > 1;
+    return !(SNonTerm_Behavior.call_isList_1030525575875844509(thisNode)) && ListSequence.fromList(SLinkOperations.getTargets(thisNode, "rules", true)).count() > 1;
   }
 
   public static boolean call_isList_1030525575875844509(final SNode thisNode) {
-    if (ListSequence.fromList(SLinkOperations.getTargets(thisNode, "rules", true)).count() != 2) {
-      return false;
-    }
-    return (int) ListSequence.fromList(SLinkOperations.getTargets(thisNode, "rules", true)).translate(new ITranslator2<SNode, SNode>() {
+    return (int) ListSequence.fromList(SLinkOperations.getTargets(thisNode, "rules", true)).count() == 2 && (int) ListSequence.fromList(SLinkOperations.getTargets(thisNode, "rules", true)).translate(new ITranslator2<SNode, SNode>() {
       public Iterable<SNode> translate(SNode it) {
         return SLinkOperations.getTargets(it, "parts", true);
       }
