@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model modelUID="r:7d4bc876-a426-4064-acd3-0a4fe9eac094(jetbrains.mps.core.syntax.core)">
   <persistence version="7" />
-  <language namespace="1372eb94-b402-4b9f-bb3f-44315b20f92d(jetbrains.mps.core.structure)" />
-  <language namespace="96edcf67-fb92-4a65-a193-b125e8994c8e(jetbrains.mps.core.metadata)" />
-  <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
-  <import index="q5nm" modelUID="r:230b4cda-f32b-40d2-b83d-99b1e4b9eb9b(jetbrains.mps.core.syntax.structure)" version="-1" />
-  <import index="r03u" modelUID="r:780de4a4-4ef1-49d2-b575-fb16575adf2a(jetbrains.mps.core.sandbox.syntax)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="bwy9" modelUID="r:f9198ffd-e084-425c-aa82-f2db8289f5eb(jetbrains.mps.core.query.structure)" version="0" implicit="yes" />
   <import index="xsnc" modelUID="r:e3b9700d-5825-4641-895a-925f28591c5b(jetbrains.mps.core.smodel.structure)" version="-1" implicit="yes" />
@@ -23,7 +18,7 @@
       <property name="canBeRoot" nameId="ydsw.2310679965751763149" value="true" />
       <node role="members" roleId="ydsw.6195190339581766761" type="ydsw.SChildLink" typeId="ydsw.7581772527307862083" id="8746159225581847319">
         <property name="name" nameId="tpck.1169194664001" value="input" />
-        <link role="target" roleId="ydsw.7581772527307862085" targetNodeId="^" resolveInfo="SInputRef" />
+        <link role="target" roleId="ydsw.7581772527307862085" targetNodeId="8746159225581847440" resolveInfo="SInputRef" />
         <node role="cardinality" roleId="ydsw.7581772527307907847" type="ydsw.SCardinality" typeId="ydsw.7581772527307895408" id="8746159225581847320">
           <property name="isRequired" nameId="ydsw.7581772527307895409" value="true" />
           <property name="isMultiple" nameId="ydsw.7581772527307895410" value="true" />
@@ -31,7 +26,7 @@
       </node>
       <node role="members" roleId="ydsw.6195190339581766761" type="ydsw.SChildLink" typeId="ydsw.7581772527307862083" id="8746159225581847321">
         <property name="name" nameId="tpck.1169194664001" value="lexerParts" />
-        <link role="target" roleId="ydsw.7581772527307862085" targetNodeId="^" resolveInfo="SLexerPart" />
+        <link role="target" roleId="ydsw.7581772527307862085" targetNodeId="8746159225581847447" resolveInfo="SLexerPart" />
         <node role="cardinality" roleId="ydsw.7581772527307907847" type="ydsw.SCardinality" typeId="ydsw.7581772527307895408" id="8746159225581847322">
           <property name="isRequired" nameId="ydsw.7581772527307895409" value="false" />
           <property name="isMultiple" nameId="ydsw.7581772527307895410" value="true" />
@@ -39,7 +34,7 @@
       </node>
       <node role="members" roleId="ydsw.6195190339581766761" type="ydsw.SChildLink" typeId="ydsw.7581772527307862083" id="8746159225581847323">
         <property name="name" nameId="tpck.1169194664001" value="grammarParts" />
-        <link role="target" roleId="ydsw.7581772527307862085" targetNodeId="^" resolveInfo="SGrammarPart" />
+        <link role="target" roleId="ydsw.7581772527307862085" targetNodeId="8746159225581847462" resolveInfo="SGrammarPart" />
         <node role="cardinality" roleId="ydsw.7581772527307907847" type="ydsw.SCardinality" typeId="ydsw.7581772527307895408" id="8746159225581847324">
           <property name="isRequired" nameId="ydsw.7581772527307895409" value="false" />
           <property name="isMultiple" nameId="ydsw.7581772527307895410" value="true" />
@@ -47,7 +42,7 @@
       </node>
       <node role="members" roleId="ydsw.6195190339581766761" type="ydsw.SChildLink" typeId="ydsw.7581772527307862083" id="8746159225581847325">
         <property name="name" nameId="tpck.1169194664001" value="targetLanguage" />
-        <link role="target" roleId="ydsw.7581772527307862085" targetNodeId="^" resolveInfo="STargetLanguage" />
+        <link role="target" roleId="ydsw.7581772527307862085" targetNodeId="8746159225581847468" resolveInfo="STargetLanguage" />
         <node role="cardinality" roleId="ydsw.7581772527307907847" type="ydsw.SCardinality" typeId="ydsw.7581772527307895408" id="8746159225581847326">
           <property name="isRequired" nameId="ydsw.7581772527307895409" value="false" />
           <property name="isMultiple" nameId="ydsw.7581772527307895410" value="false" />
@@ -71,10 +66,10 @@
       <property name="isAbstract" nameId="ydsw.6195190339581766762" value="false" />
       <property name="isFinal" nameId="ydsw.6195190339581766763" value="false" />
       <property name="canBeRoot" nameId="ydsw.2310679965751763149" value="false" />
-      <link role="extends" roleId="ydsw.6195190339581766765" targetNodeId="^" resolveInfo="SLexerPart" />
+      <link role="extends" roleId="ydsw.6195190339581766765" targetNodeId="8746159225581847447" resolveInfo="SLexerPart" />
       <node role="members" roleId="ydsw.6195190339581766761" type="ydsw.SChildLink" typeId="ydsw.7581772527307862083" id="8746159225581847335">
         <property name="name" nameId="tpck.1169194664001" value="sym" />
-        <link role="target" roleId="ydsw.7581772527307862085" targetNodeId="^" resolveInfo="SSymbol" />
+        <link role="target" roleId="ydsw.7581772527307862085" targetNodeId="8746159225581847347" resolveInfo="SSymbol" />
         <node role="cardinality" roleId="ydsw.7581772527307907847" type="ydsw.SCardinality" typeId="ydsw.7581772527307895408" id="8746159225581847336">
           <property name="isRequired" nameId="ydsw.7581772527307895409" value="true" />
           <property name="isMultiple" nameId="ydsw.7581772527307895410" value="false" />
@@ -82,7 +77,7 @@
       </node>
       <node role="members" roleId="ydsw.6195190339581766761" type="ydsw.SChildLink" typeId="ydsw.7581772527307862083" id="8746159225581847337">
         <property name="name" nameId="tpck.1169194664001" value="regexp" />
-        <link role="target" roleId="ydsw.7581772527307862085" targetNodeId="^" resolveInfo="SRegex" />
+        <link role="target" roleId="ydsw.7581772527307862085" targetNodeId="8746159225581847385" resolveInfo="SRegex" />
         <node role="cardinality" roleId="ydsw.7581772527307907847" type="ydsw.SCardinality" typeId="ydsw.7581772527307895408" id="8746159225581847338">
           <property name="isRequired" nameId="ydsw.7581772527307895409" value="false" />
           <property name="isMultiple" nameId="ydsw.7581772527307895410" value="false" />
@@ -90,7 +85,7 @@
       </node>
       <node role="members" roleId="ydsw.6195190339581766761" type="ydsw.SChildLink" typeId="ydsw.7581772527307862083" id="8746159225581847339">
         <property name="name" nameId="tpck.1169194664001" value="action" />
-        <link role="target" roleId="ydsw.7581772527307862085" targetNodeId="^" resolveInfo="SAction" />
+        <link role="target" roleId="ydsw.7581772527307862085" targetNodeId="8746159225581847404" resolveInfo="SAction" />
         <node role="cardinality" roleId="ydsw.7581772527307907847" type="ydsw.SCardinality" typeId="ydsw.7581772527307895408" id="8746159225581847340">
           <property name="isRequired" nameId="ydsw.7581772527307895409" value="false" />
           <property name="isMultiple" nameId="ydsw.7581772527307895410" value="false" />
@@ -116,7 +111,7 @@
       <property name="canBeRoot" nameId="ydsw.2310679965751763149" value="false" />
       <node role="members" roleId="ydsw.6195190339581766761" type="ydsw.SChildLink" typeId="ydsw.7581772527307862083" id="8746159225581847348">
         <property name="name" nameId="tpck.1169194664001" value="type" />
-        <link role="target" roleId="ydsw.7581772527307862085" targetNodeId="^" resolveInfo="SType" />
+        <link role="target" roleId="ydsw.7581772527307862085" targetNodeId="8746159225581847413" resolveInfo="SType" />
         <node role="cardinality" roleId="ydsw.7581772527307907847" type="ydsw.SCardinality" typeId="ydsw.7581772527307895408" id="8746159225581847349">
           <property name="isRequired" nameId="ydsw.7581772527307895409" value="false" />
           <property name="isMultiple" nameId="ydsw.7581772527307895410" value="false" />
@@ -131,7 +126,7 @@
       <property name="canBeRoot" nameId="ydsw.2310679965751763149" value="false" />
       <node role="members" roleId="ydsw.6195190339581766761" type="ydsw.SChildLink" typeId="ydsw.7581772527307862083" id="8746159225581847353">
         <property name="name" nameId="tpck.1169194664001" value="parts" />
-        <link role="target" roleId="ydsw.7581772527307862085" targetNodeId="^" resolveInfo="SRulePart" />
+        <link role="target" roleId="ydsw.7581772527307862085" targetNodeId="8746159225581847411" resolveInfo="SRulePart" />
         <node role="cardinality" roleId="ydsw.7581772527307907847" type="ydsw.SCardinality" typeId="ydsw.7581772527307895408" id="8746159225581847354">
           <property name="isRequired" nameId="ydsw.7581772527307895409" value="false" />
           <property name="isMultiple" nameId="ydsw.7581772527307895410" value="true" />
@@ -144,10 +139,10 @@
       <property name="isAbstract" nameId="ydsw.6195190339581766762" value="false" />
       <property name="isFinal" nameId="ydsw.6195190339581766763" value="false" />
       <property name="canBeRoot" nameId="ydsw.2310679965751763149" value="false" />
-      <link role="extends" roleId="ydsw.6195190339581766765" targetNodeId="^" resolveInfo="SGrammarPart" />
+      <link role="extends" roleId="ydsw.6195190339581766765" targetNodeId="8746159225581847462" resolveInfo="SGrammarPart" />
       <node role="members" roleId="ydsw.6195190339581766761" type="ydsw.SChildLink" typeId="ydsw.7581772527307862083" id="8746159225581847357">
         <property name="name" nameId="tpck.1169194664001" value="sym" />
-        <link role="target" roleId="ydsw.7581772527307862085" targetNodeId="^" resolveInfo="SSymbol" />
+        <link role="target" roleId="ydsw.7581772527307862085" targetNodeId="8746159225581847347" resolveInfo="SSymbol" />
         <node role="cardinality" roleId="ydsw.7581772527307907847" type="ydsw.SCardinality" typeId="ydsw.7581772527307895408" id="8746159225581847358">
           <property name="isRequired" nameId="ydsw.7581772527307895409" value="true" />
           <property name="isMultiple" nameId="ydsw.7581772527307895410" value="false" />
@@ -155,7 +150,7 @@
       </node>
       <node role="members" roleId="ydsw.6195190339581766761" type="ydsw.SChildLink" typeId="ydsw.7581772527307862083" id="8746159225581847359">
         <property name="name" nameId="tpck.1169194664001" value="rules" />
-        <link role="target" roleId="ydsw.7581772527307862085" targetNodeId="^" resolveInfo="SRule" />
+        <link role="target" roleId="ydsw.7581772527307862085" targetNodeId="8746159225581847352" resolveInfo="SRule" />
         <node role="cardinality" roleId="ydsw.7581772527307907847" type="ydsw.SCardinality" typeId="ydsw.7581772527307895408" id="8746159225581847360">
           <property name="isRequired" nameId="ydsw.7581772527307895409" value="true" />
           <property name="isMultiple" nameId="ydsw.7581772527307895410" value="true" />
@@ -199,7 +194,7 @@
       <node role="members" roleId="ydsw.6195190339581766761" type="ydsw.SConceptMemberEmptyLine" typeId="ydsw.7581772527307844356" id="8746159225581847375" />
       <node role="members" roleId="ydsw.6195190339581766761" type="ydsw.SReference" typeId="ydsw.6195190339581766759" id="8746159225581847376">
         <property name="name" nameId="tpck.1169194664001" value="ref" />
-        <link role="target" roleId="ydsw.7581772527307862085" targetNodeId="^" resolveInfo="SSymbol" />
+        <link role="target" roleId="ydsw.7581772527307862085" targetNodeId="8746159225581847347" resolveInfo="SSymbol" />
         <node role="cardinality" roleId="ydsw.7581772527307907847" type="ydsw.SCardinality" typeId="ydsw.7581772527307895408" id="8746159225581847377">
           <property name="isRequired" nameId="ydsw.7581772527307895409" value="true" />
           <property name="isMultiple" nameId="ydsw.7581772527307895410" value="false" />
@@ -217,7 +212,7 @@
         <node role="type" roleId="xsnc.4366849661834287896" type="bwy9.MqlBoolType" typeId="bwy9.6762883159245048072" id="8746159225581847382" />
       </node>
       <node role="implements" roleId="ydsw.6195190339581766790" type="ydsw.SInterfaceReference" typeId="ydsw.6195190339581766766" id="8746159225581847383">
-        <link role="target" roleId="ydsw.6195190339581766767" targetNodeId="^" resolveInfo="SRulePart" />
+        <link role="target" roleId="ydsw.6195190339581766767" targetNodeId="8746159225581847411" resolveInfo="SRulePart" />
       </node>
     </node>
     <node role="structure" roleId="ydsw.6195190339581766884" type="ydsw.SStructureEmptyLine" typeId="ydsw.6195190339581962051" id="8746159225581847384" />
@@ -248,10 +243,10 @@
       <property name="isAbstract" nameId="ydsw.6195190339581766762" value="false" />
       <property name="isFinal" nameId="ydsw.6195190339581766763" value="false" />
       <property name="canBeRoot" nameId="ydsw.2310679965751763149" value="false" />
-      <link role="extends" roleId="ydsw.6195190339581766765" targetNodeId="^" resolveInfo="SLexerPart" />
+      <link role="extends" roleId="ydsw.6195190339581766765" targetNodeId="8746159225581847447" resolveInfo="SLexerPart" />
       <node role="members" roleId="ydsw.6195190339581766761" type="ydsw.SChildLink" typeId="ydsw.7581772527307862083" id="8746159225581847395">
         <property name="name" nameId="tpck.1169194664001" value="regex" />
-        <link role="target" roleId="ydsw.7581772527307862085" targetNodeId="^" resolveInfo="SRegex" />
+        <link role="target" roleId="ydsw.7581772527307862085" targetNodeId="8746159225581847385" resolveInfo="SRegex" />
         <node role="cardinality" roleId="ydsw.7581772527307907847" type="ydsw.SCardinality" typeId="ydsw.7581772527307895408" id="8746159225581847396">
           <property name="isRequired" nameId="ydsw.7581772527307895409" value="true" />
           <property name="isMultiple" nameId="ydsw.7581772527307895410" value="false" />
@@ -286,7 +281,7 @@
         <node role="type" roleId="xsnc.4366849661834287896" type="bwy9.MqlBoolType" typeId="bwy9.6762883159245048072" id="8746159225581847408" />
       </node>
       <node role="implements" roleId="ydsw.6195190339581766790" type="ydsw.SInterfaceReference" typeId="ydsw.6195190339581766766" id="8746159225581847409">
-        <link role="target" roleId="ydsw.6195190339581766767" targetNodeId="^" resolveInfo="SRulePart" />
+        <link role="target" roleId="ydsw.6195190339581766767" targetNodeId="8746159225581847411" resolveInfo="SRulePart" />
       </node>
     </node>
     <node role="structure" roleId="ydsw.6195190339581766884" type="ydsw.SStructureEmptyLine" typeId="ydsw.6195190339581962051" id="8746159225581847410" />
@@ -316,17 +311,17 @@
       <property name="isAbstract" nameId="ydsw.6195190339581766762" value="false" />
       <property name="isFinal" nameId="ydsw.6195190339581766763" value="false" />
       <property name="canBeRoot" nameId="ydsw.2310679965751763149" value="false" />
-      <link role="extends" roleId="ydsw.6195190339581766765" targetNodeId="^" resolveInfo="SGrammarPart" />
+      <link role="extends" roleId="ydsw.6195190339581766765" targetNodeId="8746159225581847462" resolveInfo="SGrammarPart" />
       <node role="members" roleId="ydsw.6195190339581766761" type="ydsw.SProperty" typeId="ydsw.6195190339581766742" id="8746159225581847420">
         <property name="name" nameId="tpck.1169194664001" value="kind" />
         <node role="type" roleId="ydsw.7581772527307667429" type="ydsw.SEnumerationDataType" typeId="ydsw.7581772527307667403" id="8746159225581847421">
-          <link role="enum" roleId="ydsw.7581772527307667431" targetNodeId="^" resolveInfo="SPrioKind" />
+          <link role="enum" roleId="ydsw.7581772527307667431" targetNodeId="8746159225581847431" resolveInfo="SPrioKind" />
         </node>
       </node>
       <node role="members" roleId="ydsw.6195190339581766761" type="ydsw.SConceptMemberEmptyLine" typeId="ydsw.7581772527307844356" id="8746159225581847422" />
       <node role="members" roleId="ydsw.6195190339581766761" type="ydsw.SChildLink" typeId="ydsw.7581772527307862083" id="8746159225581847423">
         <property name="name" nameId="tpck.1169194664001" value="references" />
-        <link role="target" roleId="ydsw.7581772527307862085" targetNodeId="^" resolveInfo="SReference" />
+        <link role="target" roleId="ydsw.7581772527307862085" targetNodeId="8746159225581847436" resolveInfo="SReference" />
         <node role="cardinality" roleId="ydsw.7581772527307907847" type="ydsw.SCardinality" typeId="ydsw.7581772527307895408" id="8746159225581847424">
           <property name="isRequired" nameId="ydsw.7581772527307895409" value="true" />
           <property name="isMultiple" nameId="ydsw.7581772527307895410" value="true" />
@@ -366,7 +361,7 @@
       <property name="canBeRoot" nameId="ydsw.2310679965751763149" value="false" />
       <node role="members" roleId="ydsw.6195190339581766761" type="ydsw.SReference" typeId="ydsw.6195190339581766759" id="8746159225581847437">
         <property name="name" nameId="tpck.1169194664001" value="symbol" />
-        <link role="target" roleId="ydsw.7581772527307862085" targetNodeId="^" resolveInfo="SSymbol" />
+        <link role="target" roleId="ydsw.7581772527307862085" targetNodeId="8746159225581847347" resolveInfo="SSymbol" />
         <node role="cardinality" roleId="ydsw.7581772527307907847" type="ydsw.SCardinality" typeId="ydsw.7581772527307895408" id="8746159225581847438">
           <property name="isRequired" nameId="ydsw.7581772527307895409" value="true" />
           <property name="isMultiple" nameId="ydsw.7581772527307895410" value="false" />
@@ -388,7 +383,7 @@
       <node role="members" roleId="ydsw.6195190339581766761" type="ydsw.SConceptMemberEmptyLine" typeId="ydsw.7581772527307844356" id="8746159225581847443" />
       <node role="members" roleId="ydsw.6195190339581766761" type="ydsw.SReference" typeId="ydsw.6195190339581766759" id="8746159225581847444">
         <property name="name" nameId="tpck.1169194664001" value="symbol" />
-        <link role="target" roleId="ydsw.7581772527307862085" targetNodeId="^" resolveInfo="SSymbol" />
+        <link role="target" roleId="ydsw.7581772527307862085" targetNodeId="8746159225581847347" resolveInfo="SSymbol" />
         <node role="cardinality" roleId="ydsw.7581772527307907847" type="ydsw.SCardinality" typeId="ydsw.7581772527307895408" id="8746159225581847445">
           <property name="isRequired" nameId="ydsw.7581772527307895409" value="true" />
           <property name="isMultiple" nameId="ydsw.7581772527307895410" value="false" />
@@ -418,7 +413,7 @@
       <property name="isAbstract" nameId="ydsw.6195190339581766762" value="false" />
       <property name="isFinal" nameId="ydsw.6195190339581766763" value="false" />
       <property name="canBeRoot" nameId="ydsw.2310679965751763149" value="false" />
-      <link role="extends" roleId="ydsw.6195190339581766765" targetNodeId="^" resolveInfo="SLexerPart" />
+      <link role="extends" roleId="ydsw.6195190339581766765" targetNodeId="8746159225581847447" resolveInfo="SLexerPart" />
       <node role="members" roleId="ydsw.6195190339581766761" type="ydsw.SProperty" typeId="ydsw.6195190339581766742" id="8746159225581847454">
         <property name="name" nameId="tpck.1169194664001" value="content" />
         <node role="type" roleId="ydsw.7581772527307667429" type="ydsw.SPrimitiveDataType" typeId="ydsw.7581772527307667404" id="8746159225581847455" />

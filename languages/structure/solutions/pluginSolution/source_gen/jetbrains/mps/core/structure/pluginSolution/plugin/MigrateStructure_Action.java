@@ -12,19 +12,26 @@ import jetbrains.mps.project.IModule;
 import jetbrains.mps.internal.collections.runtime.MapSequence;
 import jetbrains.mps.smodel.Language;
 import org.jetbrains.annotations.NotNull;
+import com.intellij.openapi.actionSystem.PlatformDataKeys;
 import jetbrains.mps.ide.actions.MPSCommonDataKeys;
+import jetbrains.mps.ide.messages.MessagesViewTool;
+import com.intellij.openapi.project.Project;
+import jetbrains.mps.messages.IMessageHandler;
+import jetbrains.mps.messages.IMessage;
+import jetbrains.mps.messages.Message;
+import jetbrains.mps.messages.MessageKind;
 import jetbrains.mps.smodel.MPSModuleRepository;
 import jetbrains.mps.smodel.SModelFqName;
 import jetbrains.mps.smodel.SModelDescriptor;
 import jetbrains.mps.smodel.SModelRepository;
-import jetbrains.mps.baseLanguage.closures.runtime.Wrappers;
 import jetbrains.mps.smodel.SModel;
-import jetbrains.mps.project.SModelRoot;
+import jetbrains.mps.smodel.SNode;
+import jetbrains.mps.smodel.DefaultSModelDescriptor;
+import jetbrains.mps.core.util.merge.MergeSession;
 import jetbrains.mps.internal.collections.runtime.Sequence;
+import jetbrains.mps.project.SModelRoot;
 import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import jetbrains.mps.smodel.persistence.DefaultModelRootManager;
-import jetbrains.mps.smodel.SNode;
-import jetbrains.mps.internal.collections.runtime.IVisitor;
 
 public class MigrateStructure_Action extends BaseAction {
   private static final Icon ICON = null;
@@ -63,6 +70,7 @@ public class MigrateStructure_Action extends BaseAction {
     if (!(super.collectActionData(event, _params))) {
       return false;
     }
+    MapSequence.fromMap(_params).put("project", event.getData(PlatformDataKeys.PROJECT));
     MapSequence.fromMap(_params).put("module", event.getData(MPSCommonDataKeys.MODULE));
     if (MapSequence.fromMap(_params).get("module") == null) {
       return false;
@@ -72,30 +80,45 @@ public class MigrateStructure_Action extends BaseAction {
 
   public void doExecute(@NotNull final AnActionEvent event, final Map<String, Object> _params) {
     try {
-      Language newStructureLanguage = (Language) MPSModuleRepository.getInstance().getModuleByFqName("jetbrains.mps.core.structure");
+      final MessagesViewTool tool = ((Project) MapSequence.fromMap(_params).get("project")).getComponent(MessagesViewTool.class);
+      if (tool == null) {
+        if (log.isErrorEnabled()) {
+          log.error("cannot get message view tool");
+        }
+      }
+      IMessageHandler mh = new IMessageHandler() {
+        public void handle(IMessage p0) {
+          tool.add(p0, "Migrate structure");
+        }
 
+        public void clear() {
+          tool.clear("Migrate structure");
+        }
+      };
       Language language = (Language) ((IModule) MapSequence.fromMap(_params).get("module"));
+      mh.handle(new Message(MessageKind.INFORMATION, "converting " + language.getModuleFqName()));
+
+      Language newStructureLanguage = (Language) MPSModuleRepository.getInstance().getModuleByFqName("jetbrains.mps.core.structure");
       language.addUsedLanguage(newStructureLanguage.getModuleReference());
       SModelFqName newModelName = SModelFqName.fromString(language.getModuleFqName() + ".core");
       SModelDescriptor desc = SModelRepository.getInstance().getModelDescriptor(newModelName);
-      final Wrappers._T<SModel> newStructure = new Wrappers._T<SModel>();
-      if (desc == null) {
+      SModel newStructure;
+      SNode converted = new LanguageConverter(language, mh).convert();
+      if (desc instanceof DefaultSModelDescriptor) {
+        MergeSession session = new MergeSession(mh);
+        session.replace((DefaultSModelDescriptor) desc, Sequence.<SNode>singleton(converted));
+        session.restoreRefs();
+        session.apply();
+      } else {
         SModelRoot root = Sequence.fromIterable(((Iterable<SModelRoot>) language.getSModelRoots())).where(new IWhereFilter<SModelRoot>() {
           public boolean accept(SModelRoot it) {
             return it.getManager() instanceof DefaultModelRootManager;
           }
         }).first();
-        newStructure.value = language.createModel(newModelName, root, null).getSModel();
-      } else {
-        newStructure.value = desc.getSModel();
-        Sequence.fromIterable(((Iterable<SNode>) newStructure.value.roots())).toListSequence().visitAll(new IVisitor<SNode>() {
-          public void visit(SNode it) {
-            newStructure.value.removeRoot(it);
-          }
-        });
+        newStructure = language.createModel(newModelName, root, null).getSModel();
+        newStructure.addLanguage(newStructureLanguage.getModuleReference());
+        newStructure.addRoot(converted);
       }
-      newStructure.value.addLanguage(newStructureLanguage.getModuleReference());
-      newStructure.value.addRoot(new LanguageConverter(language).convert());
     } catch (Throwable t) {
       if (log.isErrorEnabled()) {
         log.error("User's action execute method failed. Action:" + "MigrateStructure", t);
