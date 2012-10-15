@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debugInfo>
   <unitInfo fileName="TypesystemDescriptor.java" startLine="8" startPosition="0" endLine="16" endPosition="0" unitName="jetbrains.mps.core.syntax.java.typesystem.TypesystemDescriptor" />
-  <root nodeId="5989029785192121542">
+  <root nodeId="5989029785192121542" modelId="r:6d6aef8a-6633-4789-b993-98497e90be36(jetbrains.mps.core.syntax.java.typesystem)">
     <nodeInfo nodeId="5989029785192121600" fileName="typeof_SSymbolRefExpression_InferenceRule.java" startLine="25" startPosition="120" endLine="26" endPosition="219" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
     <nodeInfo nodeId="5989029785192121555" fileName="typeof_SSymbolRefExpression_InferenceRule.java" startLine="27" startPosition="5" endLine="28" endPosition="49" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
     <nodeInfo nodeId="5989029785192121555" fileName="typeof_SSymbolRefExpression_InferenceRule.java" startLine="28" startPosition="49" endLine="29" endPosition="207" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
@@ -89,8 +89,8 @@
       <varInfo nodeId="5989029785192121648" varName="typeCheckingContext" />
     </scopeInfo>
     <scopeInfo nodeId="5989029785192121648" fileName="typeof_SSymbolRefExpression_InferenceRule.java" startLine="68" startPosition="0" endLine="81" endPosition="0" />
-    <unitInfo nodeId="5989029785192121542" fileName="typeof_SSymbolRefExpression_InferenceRule.java" startLine="21" startPosition="0" endLine="83" endPosition="0" unitName="jetbrains.mps.core.syntax.java.typesystem.typeof_SSymbolRefExpression_InferenceRule" />
     <unitInfo nodeId="5989029785192121648" fileName="typeof_SSymbolRefExpression_InferenceRule.java" startLine="52" startPosition="0" endLine="82" endPosition="0" unitName="jetbrains.mps.core.syntax.java.typesystem.typeof_SSymbolRefExpression_InferenceRule$QuotationClass_ndx2rm_a0a0b0a" />
+    <unitInfo nodeId="5989029785192121542" fileName="typeof_SSymbolRefExpression_InferenceRule.java" startLine="21" startPosition="0" endLine="83" endPosition="0" unitName="jetbrains.mps.core.syntax.java.typesystem.typeof_SSymbolRefExpression_InferenceRule" />
   </root>
 </debugInfo>
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debugInfo>
-  <root nodeId="2848533153256408900">
+  <root nodeId="2848533153256408900" modelId="r:c088bf64-a023-4925-86df-f731efee39c0(jetbrains.mps.core.metadata.editor)">
     <nodeInfo nodeId="2223786200032532573" fileName="SConceptAnnotationType_Editor.java" startLine="43" startPosition="5" endLine="43" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
     <nodeInfo nodeId="2848533153256408900" fileName="SConceptAnnotationType_Editor.java" startLine="31" startPosition="79" endLine="32" endPosition="63" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="2223786200032532573" fileName="SConceptAnnotationType_Editor.java" startLine="35" startPosition="91" endLine="36" endPosition="40" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
@@ -287,10 +287,10 @@
       <varInfo nodeId="2848533153256415334" varName="editorContext" />
       <varInfo nodeId="2848533153256415334" varName="node" />
     </scopeInfo>
-    <unitInfo nodeId="2848533153256408900" fileName="SConceptAnnotationType_Editor.java" startLine="30" startPosition="0" endLine="193" endPosition="0" unitName="jetbrains.mps.core.metadata.editor.SConceptAnnotationType_Editor" />
     <unitInfo nodeId="6195190339581766827" fileName="SConceptAnnotationType_Editor.java" startLine="142" startPosition="0" endLine="192" endPosition="0" unitName="jetbrains.mps.core.metadata.editor.SConceptAnnotationType_Editor$membersListHandler_qbpxbr_d0" />
+    <unitInfo nodeId="2848533153256408900" fileName="SConceptAnnotationType_Editor.java" startLine="30" startPosition="0" endLine="193" endPosition="0" unitName="jetbrains.mps.core.metadata.editor.SConceptAnnotationType_Editor" />
   </root>
-  <root nodeId="2848533153256415327">
+  <root nodeId="2848533153256415327" modelId="r:c088bf64-a023-4925-86df-f731efee39c0(jetbrains.mps.core.metadata.editor)">
     <nodeInfo nodeId="2848533153256415327" fileName="SConceptAnnotationMember_Editor.java" startLine="12" startPosition="79" endLine="13" endPosition="58" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="6195190339581766739" fileName="SConceptAnnotationMember_Editor.java" startLine="16" startPosition="84" endLine="17" endPosition="89" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
     <nodeInfo nodeId="6195190339581766739" fileName="SConceptAnnotationMember_Editor.java" startLine="17" startPosition="89" endLine="18" endPosition="43" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
@@ -313,7 +313,7 @@
     </scopeInfo>
     <unitInfo nodeId="2848533153256415327" fileName="SConceptAnnotationMember_Editor.java" startLine="11" startPosition="0" endLine="22" endPosition="0" unitName="jetbrains.mps.core.metadata.editor.SConceptAnnotationMember_Editor" />
   </root>
-  <root nodeId="2848533153256415627">
+  <root nodeId="2848533153256415627" modelId="r:c088bf64-a023-4925-86df-f731efee39c0(jetbrains.mps.core.metadata.editor)">
     <nodeInfo nodeId="7581772527307823936" fileName="SConceptAnnotationProperty_Editor.java" startLine="80" startPosition="58" endLine="80" endPosition="58" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
     <nodeInfo nodeId="2848533153256515210" fileName="SConceptAnnotationProperty_Editor.java" startLine="97" startPosition="58" endLine="97" endPosition="58" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
     <nodeInfo nodeId="2848533153256415627" fileName="SConceptAnnotationProperty_Editor.java" startLine="27" startPosition="79" endLine="28" endPosition="63" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
@@ -530,11 +530,11 @@
       <varInfo nodeId="6195190339581846149" varName="editorContext" />
       <varInfo nodeId="6195190339581846149" varName="node" />
     </scopeInfo>
-    <unitInfo nodeId="2848533153256415627" fileName="SConceptAnnotationProperty_Editor.java" startLine="26" startPosition="0" endLine="149" endPosition="0" unitName="jetbrains.mps.core.metadata.editor.SConceptAnnotationProperty_Editor" />
-    <unitInfo nodeId="4366849661834379592" fileName="SConceptAnnotationProperty_Editor.java" startLine="135" startPosition="0" endLine="143" endPosition="0" unitName="jetbrains.mps.core.metadata.editor.SConceptAnnotationProperty_Editor$ReplaceWith_SConceptAnnotationChildLink_cellMenu_a0a0" />
     <unitInfo nodeId="4366849661834419959" fileName="SConceptAnnotationProperty_Editor.java" startLine="144" startPosition="0" endLine="148" endPosition="0" unitName="jetbrains.mps.core.metadata.editor.SConceptAnnotationProperty_Editor$SConceptAnnotationProperty_type_cellMenu_b0a0" />
+    <unitInfo nodeId="4366849661834379592" fileName="SConceptAnnotationProperty_Editor.java" startLine="135" startPosition="0" endLine="143" endPosition="0" unitName="jetbrains.mps.core.metadata.editor.SConceptAnnotationProperty_Editor$ReplaceWith_SConceptAnnotationChildLink_cellMenu_a0a0" />
+    <unitInfo nodeId="2848533153256415627" fileName="SConceptAnnotationProperty_Editor.java" startLine="26" startPosition="0" endLine="149" endPosition="0" unitName="jetbrains.mps.core.metadata.editor.SConceptAnnotationProperty_Editor" />
   </root>
-  <root nodeId="2848533153256415632">
+  <root nodeId="2848533153256415632" modelId="r:c088bf64-a023-4925-86df-f731efee39c0(jetbrains.mps.core.metadata.editor)">
     <nodeInfo nodeId="7581772527307885332" fileName="SConceptAnnotationChildLink_Editor.java" startLine="73" startPosition="58" endLine="73" endPosition="58" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
     <nodeInfo nodeId="2848533153256415632" fileName="SConceptAnnotationChildLink_Editor.java" startLine="29" startPosition="79" endLine="30" endPosition="63" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="7581772527307885329" fileName="SConceptAnnotationChildLink_Editor.java" startLine="33" startPosition="89" endLine="34" endPosition="96" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
@@ -752,12 +752,12 @@
       <varInfo nodeId="7581772527307885337" varName="editorContext" />
       <varInfo nodeId="7581772527307885337" varName="node" />
     </scopeInfo>
-    <unitInfo nodeId="2848533153256415632" fileName="SConceptAnnotationChildLink_Editor.java" startLine="28" startPosition="0" endLine="159" endPosition="0" unitName="jetbrains.mps.core.metadata.editor.SConceptAnnotationChildLink_Editor" />
-    <unitInfo nodeId="2312000175984115456" fileName="SConceptAnnotationChildLink_Editor.java" startLine="112" startPosition="0" endLine="120" endPosition="0" unitName="jetbrains.mps.core.metadata.editor.SConceptAnnotationChildLink_Editor$ReplaceWith_SConceptAnnotationProperty_cellMenu_a0a0" />
     <unitInfo nodeId="2312000175984115454" fileName="SConceptAnnotationChildLink_Editor.java" startLine="121" startPosition="0" endLine="125" endPosition="0" unitName="jetbrains.mps.core.metadata.editor.SConceptAnnotationChildLink_Editor$SConceptAnnotationChildLink_type_cellMenu_b0a0" />
+    <unitInfo nodeId="2312000175984115456" fileName="SConceptAnnotationChildLink_Editor.java" startLine="112" startPosition="0" endLine="120" endPosition="0" unitName="jetbrains.mps.core.metadata.editor.SConceptAnnotationChildLink_Editor$ReplaceWith_SConceptAnnotationProperty_cellMenu_a0a0" />
     <unitInfo nodeId="7581772527307885333" fileName="SConceptAnnotationChildLink_Editor.java" startLine="126" startPosition="0" endLine="158" endPosition="0" unitName="jetbrains.mps.core.metadata.editor.SConceptAnnotationChildLink_Editor$_Inline_rp8o59_a0a" />
+    <unitInfo nodeId="2848533153256415632" fileName="SConceptAnnotationChildLink_Editor.java" startLine="28" startPosition="0" endLine="159" endPosition="0" unitName="jetbrains.mps.core.metadata.editor.SConceptAnnotationChildLink_Editor" />
   </root>
-  <root nodeId="2848533153256427926">
+  <root nodeId="2848533153256427926" modelId="r:c088bf64-a023-4925-86df-f731efee39c0(jetbrains.mps.core.metadata.editor)">
     <nodeInfo nodeId="2848533153256427926" fileName="SConceptAnnotationChildLink_Cardinality.java" startLine="20" startPosition="62" endLine="21" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
     <nodeInfo nodeId="2848533153256427926" fileName="SConceptAnnotationChildLink_Cardinality.java" startLine="24" startPosition="67" endLine="25" endPosition="65" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="2848533153256427926" fileName="SConceptAnnotationChildLink_Cardinality.java" startLine="28" startPosition="79" endLine="29" endPosition="63" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
@@ -889,7 +889,7 @@
     </scopeInfo>
     <unitInfo nodeId="2848533153256427926" fileName="SConceptAnnotationChildLink_Cardinality.java" startLine="19" startPosition="0" endLine="94" endPosition="0" unitName="jetbrains.mps.core.metadata.editor.SConceptAnnotationChildLink_Cardinality" />
   </root>
-  <root nodeId="2848533153256427928">
+  <root nodeId="2848533153256427928" modelId="r:c088bf64-a023-4925-86df-f731efee39c0(jetbrains.mps.core.metadata.editor)">
     <nodeInfo nodeId="2848533153256427928" fileName="SConceptAnnotationChildLink_deleteCardinality.java" startLine="13" startPosition="95" endLine="14" endPosition="158" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
     <nodeInfo nodeId="2848533153256427928" fileName="SConceptAnnotationChildLink_deleteCardinality.java" startLine="17" startPosition="101" endLine="18" endPosition="29" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="myNode" />
     <nodeInfo nodeId="2848533153256427928" fileName="SConceptAnnotationChildLink_deleteCardinality.java" startLine="20" startPosition="77" endLine="21" endPosition="25" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
@@ -918,10 +918,10 @@
       <varInfo nodeId="2848533153256427928" varName="editorContext" />
       <varInfo nodeId="2848533153256427928" varName="node" />
     </scopeInfo>
-    <unitInfo nodeId="2848533153256427928" fileName="SConceptAnnotationChildLink_deleteCardinality.java" startLine="12" startPosition="0" endLine="33" endPosition="0" unitName="jetbrains.mps.core.metadata.editor.SConceptAnnotationChildLink_deleteCardinality" />
     <unitInfo nodeId="2848533153256427928" fileName="SConceptAnnotationChildLink_deleteCardinality.java" startLine="17" startPosition="0" endLine="32" endPosition="0" unitName="jetbrains.mps.core.metadata.editor.SConceptAnnotationChildLink_deleteCardinality$SConceptAnnotationChildLink_deleteCardinality_DELETE" />
+    <unitInfo nodeId="2848533153256427928" fileName="SConceptAnnotationChildLink_deleteCardinality.java" startLine="12" startPosition="0" endLine="33" endPosition="0" unitName="jetbrains.mps.core.metadata.editor.SConceptAnnotationChildLink_deleteCardinality" />
   </root>
-  <root nodeId="2848533153256436621">
+  <root nodeId="2848533153256436621" modelId="r:c088bf64-a023-4925-86df-f731efee39c0(jetbrains.mps.core.metadata.editor)">
     <nodeInfo nodeId="2848533153256436621" fileName="SConceptAnnotationMemberEmptyLine_Editor.java" startLine="18" startPosition="79" endLine="19" endPosition="61" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="7581772527307844360" fileName="SConceptAnnotationMemberEmptyLine_Editor.java" startLine="22" startPosition="87" endLine="23" endPosition="86" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
     <nodeInfo nodeId="7581772527307844360" fileName="SConceptAnnotationMemberEmptyLine_Editor.java" startLine="23" startPosition="86" endLine="24" endPosition="46" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
@@ -957,10 +957,10 @@
       <varInfo nodeId="7581772527307844360" varName="editorContext" />
       <varInfo nodeId="7581772527307844360" varName="node" />
     </scopeInfo>
-    <unitInfo nodeId="2848533153256436621" fileName="SConceptAnnotationMemberEmptyLine_Editor.java" startLine="17" startPosition="0" endLine="43" endPosition="0" unitName="jetbrains.mps.core.metadata.editor.SConceptAnnotationMemberEmptyLine_Editor" />
     <unitInfo nodeId="7581772527307844375" fileName="SConceptAnnotationMemberEmptyLine_Editor.java" startLine="34" startPosition="0" endLine="42" endPosition="0" unitName="jetbrains.mps.core.metadata.editor.SConceptAnnotationMemberEmptyLine_Editor$ReplaceWith_SConceptAnnotationMember_cellMenu_a0a" />
+    <unitInfo nodeId="2848533153256436621" fileName="SConceptAnnotationMemberEmptyLine_Editor.java" startLine="17" startPosition="0" endLine="43" endPosition="0" unitName="jetbrains.mps.core.metadata.editor.SConceptAnnotationMemberEmptyLine_Editor" />
   </root>
-  <root nodeId="2848533153256436624">
+  <root nodeId="2848533153256436624" modelId="r:c088bf64-a023-4925-86df-f731efee39c0(jetbrains.mps.core.metadata.editor)">
     <nodeInfo nodeId="2848533153256436624" fileName="SConceptAnnotationMemberComment_Editor.java" startLine="22" startPosition="79" endLine="23" endPosition="63" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="7581772527307844368" fileName="SConceptAnnotationMemberComment_Editor.java" startLine="26" startPosition="89" endLine="27" endPosition="96" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
     <nodeInfo nodeId="7581772527307844368" fileName="SConceptAnnotationMemberComment_Editor.java" startLine="27" startPosition="96" endLine="28" endPosition="48" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
@@ -1045,10 +1045,10 @@
       <varInfo nodeId="7581772527307844373" varName="editorContext" />
       <varInfo nodeId="7581772527307844373" varName="node" />
     </scopeInfo>
-    <unitInfo nodeId="2848533153256436624" fileName="SConceptAnnotationMemberComment_Editor.java" startLine="21" startPosition="0" endLine="72" endPosition="0" unitName="jetbrains.mps.core.metadata.editor.SConceptAnnotationMemberComment_Editor" />
     <unitInfo nodeId="7581772527307844377" fileName="SConceptAnnotationMemberComment_Editor.java" startLine="63" startPosition="0" endLine="71" endPosition="0" unitName="jetbrains.mps.core.metadata.editor.SConceptAnnotationMemberComment_Editor$ReplaceWith_SConceptAnnotationMember_cellMenu_a0a0" />
+    <unitInfo nodeId="2848533153256436624" fileName="SConceptAnnotationMemberComment_Editor.java" startLine="21" startPosition="0" endLine="72" endPosition="0" unitName="jetbrains.mps.core.metadata.editor.SConceptAnnotationMemberComment_Editor" />
   </root>
-  <root nodeId="2848533153256463737">
+  <root nodeId="2848533153256463737" modelId="r:c088bf64-a023-4925-86df-f731efee39c0(jetbrains.mps.core.metadata.editor)">
     <nodeInfo nodeId="7581772527307871447" fileName="SConceptAnnotationNodeRef_Editor.java" startLine="78" startPosition="58" endLine="78" endPosition="58" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
     <nodeInfo nodeId="2848533153256463737" fileName="SConceptAnnotationNodeRef_Editor.java" startLine="25" startPosition="79" endLine="26" endPosition="63" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="6195190339581846134" fileName="SConceptAnnotationNodeRef_Editor.java" startLine="29" startPosition="89" endLine="30" endPosition="96" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
@@ -1274,10 +1274,10 @@
       <varInfo nodeId="6195190339581846141" varName="editorContext" />
       <varInfo nodeId="6195190339581846141" varName="node" />
     </scopeInfo>
-    <unitInfo nodeId="2848533153256463737" fileName="SConceptAnnotationNodeRef_Editor.java" startLine="24" startPosition="0" endLine="150" endPosition="0" unitName="jetbrains.mps.core.metadata.editor.SConceptAnnotationNodeRef_Editor" />
     <unitInfo nodeId="7581772527307871448" fileName="SConceptAnnotationNodeRef_Editor.java" startLine="117" startPosition="0" endLine="149" endPosition="0" unitName="jetbrains.mps.core.metadata.editor.SConceptAnnotationNodeRef_Editor$_Inline_xcgn7z_a1a" />
+    <unitInfo nodeId="2848533153256463737" fileName="SConceptAnnotationNodeRef_Editor.java" startLine="24" startPosition="0" endLine="150" endPosition="0" unitName="jetbrains.mps.core.metadata.editor.SConceptAnnotationNodeRef_Editor" />
   </root>
-  <root nodeId="2848533153256463744">
+  <root nodeId="2848533153256463744" modelId="r:c088bf64-a023-4925-86df-f731efee39c0(jetbrains.mps.core.metadata.editor)">
     <nodeInfo nodeId="2848533153256463744" fileName="SConceptAnnotationNodeRef_Cardinality.java" startLine="20" startPosition="60" endLine="21" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
     <nodeInfo nodeId="2848533153256463744" fileName="SConceptAnnotationNodeRef_Cardinality.java" startLine="24" startPosition="67" endLine="25" endPosition="65" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="2848533153256463744" fileName="SConceptAnnotationNodeRef_Cardinality.java" startLine="28" startPosition="79" endLine="29" endPosition="63" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
@@ -1409,7 +1409,7 @@
     </scopeInfo>
     <unitInfo nodeId="2848533153256463744" fileName="SConceptAnnotationNodeRef_Cardinality.java" startLine="19" startPosition="0" endLine="94" endPosition="0" unitName="jetbrains.mps.core.metadata.editor.SConceptAnnotationNodeRef_Cardinality" />
   </root>
-  <root nodeId="2848533153256463759">
+  <root nodeId="2848533153256463759" modelId="r:c088bf64-a023-4925-86df-f731efee39c0(jetbrains.mps.core.metadata.editor)">
     <nodeInfo nodeId="2848533153256463759" fileName="SConceptAnnotationNodeRef_deleteCardinality.java" startLine="13" startPosition="95" endLine="14" endPosition="154" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
     <nodeInfo nodeId="2848533153256463759" fileName="SConceptAnnotationNodeRef_deleteCardinality.java" startLine="17" startPosition="99" endLine="18" endPosition="29" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="myNode" />
     <nodeInfo nodeId="2848533153256463759" fileName="SConceptAnnotationNodeRef_deleteCardinality.java" startLine="20" startPosition="75" endLine="21" endPosition="25" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
@@ -1438,10 +1438,10 @@
       <varInfo nodeId="2848533153256463759" varName="editorContext" />
       <varInfo nodeId="2848533153256463759" varName="node" />
     </scopeInfo>
-    <unitInfo nodeId="2848533153256463759" fileName="SConceptAnnotationNodeRef_deleteCardinality.java" startLine="12" startPosition="0" endLine="33" endPosition="0" unitName="jetbrains.mps.core.metadata.editor.SConceptAnnotationNodeRef_deleteCardinality" />
     <unitInfo nodeId="2848533153256463759" fileName="SConceptAnnotationNodeRef_deleteCardinality.java" startLine="17" startPosition="0" endLine="32" endPosition="0" unitName="jetbrains.mps.core.metadata.editor.SConceptAnnotationNodeRef_deleteCardinality$SConceptAnnotationNodeRef_deleteCardinality_DELETE" />
+    <unitInfo nodeId="2848533153256463759" fileName="SConceptAnnotationNodeRef_deleteCardinality.java" startLine="12" startPosition="0" endLine="33" endPosition="0" unitName="jetbrains.mps.core.metadata.editor.SConceptAnnotationNodeRef_deleteCardinality" />
   </root>
-  <root nodeId="7891765471709947213">
+  <root nodeId="7891765471709947213" modelId="r:c088bf64-a023-4925-86df-f731efee39c0(jetbrains.mps.core.metadata.editor)">
     <nodeInfo nodeId="7891765471709947221" fileName="SConceptAnnotationInstance_Editor.java" startLine="108" startPosition="58" endLine="108" endPosition="58" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
     <nodeInfo nodeId="7891765471709947213" fileName="SConceptAnnotationInstance_Editor.java" startLine="41" startPosition="79" endLine="42" endPosition="63" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="7891765471709947216" fileName="SConceptAnnotationInstance_Editor.java" startLine="45" startPosition="89" endLine="46" endPosition="96" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
@@ -1789,14 +1789,14 @@
       <varInfo nodeId="7891765471710060884" varName="editorContext" />
       <varInfo nodeId="7891765471710060884" varName="node" />
     </scopeInfo>
-    <unitInfo nodeId="7891765471709947213" fileName="SConceptAnnotationInstance_Editor.java" startLine="40" startPosition="0" endLine="249" endPosition="0" unitName="jetbrains.mps.core.metadata.editor.SConceptAnnotationInstance_Editor" />
     <unitInfo nodeId="7891765471710136446" fileName="SConceptAnnotationInstance_Editor.java" startLine="165" startPosition="94" endLine="169" endPosition="7" unitName="jetbrains.mps.core.metadata.editor.SConceptAnnotationInstance_Editor$1" />
     <unitInfo nodeId="7891765471710136604" fileName="SConceptAnnotationInstance_Editor.java" startLine="171" startPosition="146" endLine="175" endPosition="7" unitName="jetbrains.mps.core.metadata.editor.SConceptAnnotationInstance_Editor$2" />
     <unitInfo nodeId="7891765471710136668" fileName="SConceptAnnotationInstance_Editor.java" startLine="175" startPosition="20" endLine="179" endPosition="7" unitName="jetbrains.mps.core.metadata.editor.SConceptAnnotationInstance_Editor$3" />
     <unitInfo nodeId="7891765471709947222" fileName="SConceptAnnotationInstance_Editor.java" startLine="120" startPosition="0" endLine="152" endPosition="0" unitName="jetbrains.mps.core.metadata.editor.SConceptAnnotationInstance_Editor$_Inline_2h5qu1_a1a" />
     <unitInfo nodeId="7891765471710060884" fileName="SConceptAnnotationInstance_Editor.java" startLine="153" startPosition="0" endLine="248" endPosition="0" unitName="jetbrains.mps.core.metadata.editor.SConceptAnnotationInstance_Editor$argumentsListHandler_2h5qu1_d0" />
+    <unitInfo nodeId="7891765471709947213" fileName="SConceptAnnotationInstance_Editor.java" startLine="40" startPosition="0" endLine="249" endPosition="0" unitName="jetbrains.mps.core.metadata.editor.SConceptAnnotationInstance_Editor" />
   </root>
-  <root nodeId="7891765471710058199">
+  <root nodeId="7891765471710058199" modelId="r:c088bf64-a023-4925-86df-f731efee39c0(jetbrains.mps.core.metadata.editor)">
     <nodeInfo nodeId="7891765471710058978" fileName="SConceptAnnotationArgument_Editor.java" startLine="72" startPosition="58" endLine="72" endPosition="58" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
     <nodeInfo nodeId="7891765471710058199" fileName="SConceptAnnotationArgument_Editor.java" startLine="33" startPosition="79" endLine="34" endPosition="63" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="7891765471710058201" fileName="SConceptAnnotationArgument_Editor.java" startLine="37" startPosition="89" endLine="38" endPosition="96" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
@@ -1979,12 +1979,12 @@
       <varInfo nodeId="7891765471710087384" varName="operationContext" />
       <varInfo nodeId="7891765471710087384" varName="scope" />
     </scopeInfo>
-    <unitInfo nodeId="7891765471710058199" fileName="SConceptAnnotationArgument_Editor.java" startLine="32" startPosition="0" endLine="137" endPosition="0" unitName="jetbrains.mps.core.metadata.editor.SConceptAnnotationArgument_Editor" />
     <unitInfo nodeId="7891765471710087609" fileName="SConceptAnnotationArgument_Editor.java" startLine="122" startPosition="100" endLine="126" endPosition="11" unitName="jetbrains.mps.core.metadata.editor.SConceptAnnotationArgument_Editor$1" />
     <unitInfo nodeId="7891765471710087696" fileName="SConceptAnnotationArgument_Editor.java" startLine="126" startPosition="24" endLine="130" endPosition="11" unitName="jetbrains.mps.core.metadata.editor.SConceptAnnotationArgument_Editor$2" />
     <unitInfo nodeId="7891765471710087384" fileName="SConceptAnnotationArgument_Editor.java" startLine="113" startPosition="0" endLine="136" endPosition="0" unitName="jetbrains.mps.core.metadata.editor.SConceptAnnotationArgument_Editor$SConceptAnnotationArgument_name_cellMenu_a0a0a" />
+    <unitInfo nodeId="7891765471710058199" fileName="SConceptAnnotationArgument_Editor.java" startLine="32" startPosition="0" endLine="137" endPosition="0" unitName="jetbrains.mps.core.metadata.editor.SConceptAnnotationArgument_Editor" />
   </root>
-  <root nodeId="7891765471710461225">
+  <root nodeId="7891765471710461225" modelId="r:c088bf64-a023-4925-86df-f731efee39c0(jetbrains.mps.core.metadata.editor)">
     <nodeInfo nodeId="7891765471710466896" fileName="SMetadataNodeRefExpression_Editor.java" startLine="36" startPosition="58" endLine="36" endPosition="58" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
     <nodeInfo nodeId="7891765471710461225" fileName="SMetadataNodeRefExpression_Editor.java" startLine="19" startPosition="79" endLine="20" endPosition="63" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="7891765471710461227" fileName="SMetadataNodeRefExpression_Editor.java" startLine="23" startPosition="89" endLine="24" endPosition="96" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
@@ -2071,8 +2071,8 @@
       <varInfo nodeId="7891765471710466896" varName="editorContext" />
       <varInfo nodeId="7891765471710466896" varName="node" />
     </scopeInfo>
-    <unitInfo nodeId="7891765471710461225" fileName="SMetadataNodeRefExpression_Editor.java" startLine="18" startPosition="0" endLine="68" endPosition="0" unitName="jetbrains.mps.core.metadata.editor.SMetadataNodeRefExpression_Editor" />
     <unitInfo nodeId="7891765471710466897" fileName="SMetadataNodeRefExpression_Editor.java" startLine="48" startPosition="0" endLine="67" endPosition="0" unitName="jetbrains.mps.core.metadata.editor.SMetadataNodeRefExpression_Editor$_Inline_uf6n9u_a0a" />
+    <unitInfo nodeId="7891765471710461225" fileName="SMetadataNodeRefExpression_Editor.java" startLine="18" startPosition="0" endLine="68" endPosition="0" unitName="jetbrains.mps.core.metadata.editor.SMetadataNodeRefExpression_Editor" />
   </root>
 </debugInfo>
 

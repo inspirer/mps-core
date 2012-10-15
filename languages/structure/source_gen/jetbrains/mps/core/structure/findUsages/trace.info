@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debugInfo>
   <unitInfo fileName="FindUsagesDescriptor.java" startLine="9" startPosition="0" endLine="18" endPosition="0" unitName="jetbrains.mps.core.structure.findUsages.FindUsagesDescriptor" />
-  <root nodeId="5130788244153403834">
+  <root nodeId="5130788244153403834" modelId="r:ba11a22c-8766-40f4-811f-3748286e3c92(jetbrains.mps.core.structure.findUsages)">
     <nodeInfo nodeId="5130788244153403834" fileName="ConceptInheritors_Finder.java" startLine="16" startPosition="63" endLine="17" endPosition="115" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="LOG" />
     <nodeInfo nodeId="5130788244153403834" fileName="ConceptInheritors_Finder.java" startLine="22" startPosition="34" endLine="23" endPosition="24" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="5130788244153403834" fileName="ConceptInheritors_Finder.java" startLine="26" startPosition="38" endLine="27" endPosition="30" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />

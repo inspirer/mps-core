@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debugInfo>
-  <root nodeId="2312000175984147194">
+  <root nodeId="2312000175984147194" modelId="r:0f9e1a40-e026-47d9-b2c4-9e19063036dd(jetbrains.mps.core.smodel.editor)">
     <nodeInfo nodeId="2312000175984147194" fileName="SConceptQuery_deleteAbstract.java" startLine="13" startPosition="95" endLine="14" endPosition="124" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
     <nodeInfo nodeId="2312000175984147194" fileName="SConceptQuery_deleteAbstract.java" startLine="17" startPosition="84" endLine="18" endPosition="29" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="myNode" />
     <nodeInfo nodeId="2312000175984147194" fileName="SConceptQuery_deleteAbstract.java" startLine="20" startPosition="60" endLine="21" endPosition="25" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
@@ -29,10 +29,10 @@
       <varInfo nodeId="2312000175984147194" varName="editorContext" />
       <varInfo nodeId="2312000175984147194" varName="node" />
     </scopeInfo>
-    <unitInfo nodeId="2312000175984147194" fileName="SConceptQuery_deleteAbstract.java" startLine="12" startPosition="0" endLine="33" endPosition="0" unitName="jetbrains.mps.core.smodel.editor.SConceptQuery_deleteAbstract" />
     <unitInfo nodeId="2312000175984147194" fileName="SConceptQuery_deleteAbstract.java" startLine="17" startPosition="0" endLine="32" endPosition="0" unitName="jetbrains.mps.core.smodel.editor.SConceptQuery_deleteAbstract$SConceptQuery_deleteAbstract_DELETE" />
+    <unitInfo nodeId="2312000175984147194" fileName="SConceptQuery_deleteAbstract.java" startLine="12" startPosition="0" endLine="33" endPosition="0" unitName="jetbrains.mps.core.smodel.editor.SConceptQuery_deleteAbstract" />
   </root>
-  <root nodeId="2312000175984147257">
+  <root nodeId="2312000175984147257" modelId="r:0f9e1a40-e026-47d9-b2c4-9e19063036dd(jetbrains.mps.core.smodel.editor)">
     <nodeInfo nodeId="2312000175984147257" fileName="SConceptQuery_deleteFinal.java" startLine="13" startPosition="95" endLine="14" endPosition="118" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
     <nodeInfo nodeId="2312000175984147257" fileName="SConceptQuery_deleteFinal.java" startLine="17" startPosition="81" endLine="18" endPosition="29" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="myNode" />
     <nodeInfo nodeId="2312000175984147257" fileName="SConceptQuery_deleteFinal.java" startLine="20" startPosition="57" endLine="21" endPosition="25" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
@@ -61,10 +61,10 @@
       <varInfo nodeId="2312000175984147257" varName="editorContext" />
       <varInfo nodeId="2312000175984147257" varName="node" />
     </scopeInfo>
-    <unitInfo nodeId="2312000175984147257" fileName="SConceptQuery_deleteFinal.java" startLine="12" startPosition="0" endLine="33" endPosition="0" unitName="jetbrains.mps.core.smodel.editor.SConceptQuery_deleteFinal" />
     <unitInfo nodeId="2312000175984147257" fileName="SConceptQuery_deleteFinal.java" startLine="17" startPosition="0" endLine="32" endPosition="0" unitName="jetbrains.mps.core.smodel.editor.SConceptQuery_deleteFinal$SConceptQuery_deleteFinal_DELETE" />
+    <unitInfo nodeId="2312000175984147257" fileName="SConceptQuery_deleteFinal.java" startLine="12" startPosition="0" endLine="33" endPosition="0" unitName="jetbrains.mps.core.smodel.editor.SConceptQuery_deleteFinal" />
   </root>
-  <root nodeId="2312000175984147315">
+  <root nodeId="2312000175984147315" modelId="r:0f9e1a40-e026-47d9-b2c4-9e19063036dd(jetbrains.mps.core.smodel.editor)">
     <nodeInfo nodeId="2312000175984147315" fileName="SConceptQuery_deleteOverride.java" startLine="13" startPosition="95" endLine="14" endPosition="124" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
     <nodeInfo nodeId="2312000175984147315" fileName="SConceptQuery_deleteOverride.java" startLine="17" startPosition="84" endLine="18" endPosition="29" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="myNode" />
     <nodeInfo nodeId="2312000175984147315" fileName="SConceptQuery_deleteOverride.java" startLine="20" startPosition="60" endLine="21" endPosition="25" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
@@ -93,10 +93,10 @@
       <varInfo nodeId="2312000175984147315" varName="editorContext" />
       <varInfo nodeId="2312000175984147315" varName="node" />
     </scopeInfo>
-    <unitInfo nodeId="2312000175984147315" fileName="SConceptQuery_deleteOverride.java" startLine="12" startPosition="0" endLine="33" endPosition="0" unitName="jetbrains.mps.core.smodel.editor.SConceptQuery_deleteOverride" />
     <unitInfo nodeId="2312000175984147315" fileName="SConceptQuery_deleteOverride.java" startLine="17" startPosition="0" endLine="32" endPosition="0" unitName="jetbrains.mps.core.smodel.editor.SConceptQuery_deleteOverride$SConceptQuery_deleteOverride_DELETE" />
+    <unitInfo nodeId="2312000175984147315" fileName="SConceptQuery_deleteOverride.java" startLine="12" startPosition="0" endLine="33" endPosition="0" unitName="jetbrains.mps.core.smodel.editor.SConceptQuery_deleteOverride" />
   </root>
-  <root nodeId="4260762357824841785">
+  <root nodeId="4260762357824841785" modelId="r:0f9e1a40-e026-47d9-b2c4-9e19063036dd(jetbrains.mps.core.smodel.editor)">
     <nodeInfo nodeId="4260762357824841788" fileName="MqlPropertySelector_Editor.java" startLine="35" startPosition="58" endLine="35" endPosition="58" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
     <nodeInfo nodeId="4260762357824841785" fileName="MqlPropertySelector_Editor.java" startLine="18" startPosition="79" endLine="19" endPosition="63" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="4260762357824841786" fileName="MqlPropertySelector_Editor.java" startLine="22" startPosition="89" endLine="23" endPosition="96" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
@@ -204,10 +204,10 @@
       <varInfo nodeId="4260762357824841790" varName="editorContext" />
       <varInfo nodeId="4260762357824841790" varName="node" />
     </scopeInfo>
-    <unitInfo nodeId="4260762357824841785" fileName="MqlPropertySelector_Editor.java" startLine="17" startPosition="0" endLine="80" endPosition="0" unitName="jetbrains.mps.core.smodel.editor.MqlPropertySelector_Editor" />
     <unitInfo nodeId="4260762357824841789" fileName="MqlPropertySelector_Editor.java" startLine="47" startPosition="0" endLine="79" endPosition="0" unitName="jetbrains.mps.core.smodel.editor.MqlPropertySelector_Editor$_Inline_s1ppqg_a0a" />
+    <unitInfo nodeId="4260762357824841785" fileName="MqlPropertySelector_Editor.java" startLine="17" startPosition="0" endLine="80" endPosition="0" unitName="jetbrains.mps.core.smodel.editor.MqlPropertySelector_Editor" />
   </root>
-  <root nodeId="4260762357824841791">
+  <root nodeId="4260762357824841791" modelId="r:0f9e1a40-e026-47d9-b2c4-9e19063036dd(jetbrains.mps.core.smodel.editor)">
     <nodeInfo nodeId="4260762357824841793" fileName="MqlLinkSelector_Editor.java" startLine="35" startPosition="58" endLine="35" endPosition="58" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
     <nodeInfo nodeId="4260762357824841791" fileName="MqlLinkSelector_Editor.java" startLine="18" startPosition="79" endLine="19" endPosition="63" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="4260762357824841792" fileName="MqlLinkSelector_Editor.java" startLine="22" startPosition="89" endLine="23" endPosition="96" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
@@ -315,10 +315,10 @@
       <varInfo nodeId="4260762357824841795" varName="editorContext" />
       <varInfo nodeId="4260762357824841795" varName="node" />
     </scopeInfo>
-    <unitInfo nodeId="4260762357824841791" fileName="MqlLinkSelector_Editor.java" startLine="17" startPosition="0" endLine="80" endPosition="0" unitName="jetbrains.mps.core.smodel.editor.MqlLinkSelector_Editor" />
     <unitInfo nodeId="4260762357824841794" fileName="MqlLinkSelector_Editor.java" startLine="47" startPosition="0" endLine="79" endPosition="0" unitName="jetbrains.mps.core.smodel.editor.MqlLinkSelector_Editor$_Inline_72enmt_a0a" />
+    <unitInfo nodeId="4260762357824841791" fileName="MqlLinkSelector_Editor.java" startLine="17" startPosition="0" endLine="80" endPosition="0" unitName="jetbrains.mps.core.smodel.editor.MqlLinkSelector_Editor" />
   </root>
-  <root nodeId="4260762357825047864">
+  <root nodeId="4260762357825047864" modelId="r:0f9e1a40-e026-47d9-b2c4-9e19063036dd(jetbrains.mps.core.smodel.editor)">
     <nodeInfo nodeId="4366849661834341324" fileName="MqlNodeType_Editor.java" startLine="35" startPosition="58" endLine="35" endPosition="58" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
     <nodeInfo nodeId="4260762357825047864" fileName="MqlNodeType_Editor.java" startLine="18" startPosition="79" endLine="19" endPosition="63" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="4366849661834341324" fileName="MqlNodeType_Editor.java" startLine="22" startPosition="89" endLine="23" endPosition="96" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
@@ -426,10 +426,10 @@
       <varInfo nodeId="4366849661834341327" varName="editorContext" />
       <varInfo nodeId="4366849661834341327" varName="node" />
     </scopeInfo>
-    <unitInfo nodeId="4260762357825047864" fileName="MqlNodeType_Editor.java" startLine="17" startPosition="0" endLine="80" endPosition="0" unitName="jetbrains.mps.core.smodel.editor.MqlNodeType_Editor" />
     <unitInfo nodeId="4366849661834341325" fileName="MqlNodeType_Editor.java" startLine="47" startPosition="0" endLine="79" endPosition="0" unitName="jetbrains.mps.core.smodel.editor.MqlNodeType_Editor$_Inline_okhcuc_a0a" />
+    <unitInfo nodeId="4260762357825047864" fileName="MqlNodeType_Editor.java" startLine="17" startPosition="0" endLine="80" endPosition="0" unitName="jetbrains.mps.core.smodel.editor.MqlNodeType_Editor" />
   </root>
-  <root nodeId="5270931306887555499">
+  <root nodeId="5270931306887555499" modelId="r:0f9e1a40-e026-47d9-b2c4-9e19063036dd(jetbrains.mps.core.smodel.editor)">
     <nodeInfo nodeId="4366849661834292508" fileName="SConceptQuery_Editor.java" startLine="171" startPosition="58" endLine="171" endPosition="58" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
     <nodeInfo nodeId="5270931306887555499" fileName="SConceptQuery_Editor.java" startLine="36" startPosition="79" endLine="37" endPosition="63" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="6601450967974097004" fileName="SConceptQuery_Editor.java" startLine="40" startPosition="89" endLine="41" endPosition="96" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
@@ -910,10 +910,10 @@
       <varInfo nodeId="6601450967974097009" varName="editorContext" />
       <varInfo nodeId="6601450967974097009" varName="node" />
     </scopeInfo>
-    <unitInfo nodeId="5270931306887555499" fileName="SConceptQuery_Editor.java" startLine="35" startPosition="0" endLine="300" endPosition="0" unitName="jetbrains.mps.core.smodel.editor.SConceptQuery_Editor" />
     <unitInfo nodeId="6601450967974097549" fileName="SConceptQuery_Editor.java" startLine="239" startPosition="0" endLine="299" endPosition="0" unitName="jetbrains.mps.core.smodel.editor.SConceptQuery_Editor$parametersListHandler_hi5u6k_b5a" />
+    <unitInfo nodeId="5270931306887555499" fileName="SConceptQuery_Editor.java" startLine="35" startPosition="0" endLine="300" endPosition="0" unitName="jetbrains.mps.core.smodel.editor.SConceptQuery_Editor" />
   </root>
-  <root nodeId="535637396506608319">
+  <root nodeId="535637396506608319" modelId="r:0f9e1a40-e026-47d9-b2c4-9e19063036dd(jetbrains.mps.core.smodel.editor)">
     <nodeInfo nodeId="8595827001410597614" fileName="SConceptQueryCall_Editor.java" startLine="87" startPosition="58" endLine="87" endPosition="58" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
     <nodeInfo nodeId="535637396506608319" fileName="SConceptQueryCall_Editor.java" startLine="30" startPosition="79" endLine="31" endPosition="63" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="2059702675525965932" fileName="SConceptQueryCall_Editor.java" startLine="34" startPosition="89" endLine="35" endPosition="96" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
@@ -1192,11 +1192,11 @@
       <varInfo nodeId="8595827001410597617" varName="editorContext" />
       <varInfo nodeId="8595827001410597617" varName="node" />
     </scopeInfo>
-    <unitInfo nodeId="535637396506608319" fileName="SConceptQueryCall_Editor.java" startLine="29" startPosition="0" endLine="193" endPosition="0" unitName="jetbrains.mps.core.smodel.editor.SConceptQueryCall_Editor" />
     <unitInfo nodeId="8595827001410597615" fileName="SConceptQueryCall_Editor.java" startLine="99" startPosition="0" endLine="131" endPosition="0" unitName="jetbrains.mps.core.smodel.editor.SConceptQueryCall_Editor$_Inline_jhkb71_a0a" />
     <unitInfo nodeId="2059702675525965948" fileName="SConceptQueryCall_Editor.java" startLine="132" startPosition="0" endLine="192" endPosition="0" unitName="jetbrains.mps.core.smodel.editor.SConceptQueryCall_Editor$argumentsListHandler_jhkb71_c0" />
+    <unitInfo nodeId="535637396506608319" fileName="SConceptQueryCall_Editor.java" startLine="29" startPosition="0" endLine="193" endPosition="0" unitName="jetbrains.mps.core.smodel.editor.SConceptQueryCall_Editor" />
   </root>
-  <root nodeId="535637396506617131">
+  <root nodeId="535637396506617131" modelId="r:0f9e1a40-e026-47d9-b2c4-9e19063036dd(jetbrains.mps.core.smodel.editor)">
     <nodeInfo nodeId="4524748913103506698" fileName="conceptQueryCallParameters.java" startLine="23" startPosition="78" endLine="24" endPosition="156" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
     <nodeInfo nodeId="4524748913103506856" fileName="conceptQueryCallParameters.java" startLine="25" startPosition="82" endLine="26" endPosition="217" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
     <nodeInfo nodeId="4524748913103506902" fileName="conceptQueryCallParameters.java" startLine="27" startPosition="65" endLine="28" endPosition="32" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
@@ -1294,10 +1294,10 @@
       <varInfo nodeId="7386719926921915351" varName="selectedActualArgument" />
       <varInfo nodeId="7386719926921915353" varName="styledText" />
     </scopeInfo>
-    <unitInfo nodeId="535637396506617131" fileName="conceptQueryCallParameters.java" startLine="19" startPosition="0" endLine="86" endPosition="0" unitName="jetbrains.mps.core.smodel.editor.conceptQueryCallParameters" />
     <unitInfo nodeId="7386719926921899998" fileName="conceptQueryCallParameters.java" startLine="47" startPosition="149" endLine="51" endPosition="5" unitName="jetbrains.mps.core.smodel.editor.conceptQueryCallParameters$1" />
+    <unitInfo nodeId="535637396506617131" fileName="conceptQueryCallParameters.java" startLine="19" startPosition="0" endLine="86" endPosition="0" unitName="jetbrains.mps.core.smodel.editor.conceptQueryCallParameters" />
   </root>
-  <root nodeId="8435711864839203602">
+  <root nodeId="8435711864839203602" modelId="r:0f9e1a40-e026-47d9-b2c4-9e19063036dd(jetbrains.mps.core.smodel.editor)">
     <nodeInfo nodeId="8435711864839203602" fileName="SConceptQuery_deleteEq.java" startLine="17" startPosition="95" endLine="18" endPosition="112" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
     <nodeInfo nodeId="8435711864839203602" fileName="SConceptQuery_deleteEq.java" startLine="21" startPosition="78" endLine="22" endPosition="29" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="myNode" />
     <nodeInfo nodeId="8435711864839203602" fileName="SConceptQuery_deleteEq.java" startLine="24" startPosition="54" endLine="25" endPosition="25" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
@@ -1359,8 +1359,8 @@
       <varInfo nodeId="8435711864839203602" varName="editorContext" />
       <varInfo nodeId="8435711864839203602" varName="node" />
     </scopeInfo>
-    <unitInfo nodeId="8435711864839203602" fileName="SConceptQuery_deleteEq.java" startLine="16" startPosition="0" endLine="60" endPosition="0" unitName="jetbrains.mps.core.smodel.editor.SConceptQuery_deleteEq" />
     <unitInfo nodeId="8435711864839203602" fileName="SConceptQuery_deleteEq.java" startLine="21" startPosition="0" endLine="59" endPosition="0" unitName="jetbrains.mps.core.smodel.editor.SConceptQuery_deleteEq$SConceptQuery_deleteEq_DELETE" />
+    <unitInfo nodeId="8435711864839203602" fileName="SConceptQuery_deleteEq.java" startLine="16" startPosition="0" endLine="60" endPosition="0" unitName="jetbrains.mps.core.smodel.editor.SConceptQuery_deleteEq" />
   </root>
 </debugInfo>
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debugInfo>
-  <root nodeId="270269450479785514">
+  <root nodeId="270269450479785514" modelId="r:aaa4533e-6546-408d-8a98-5c8eb0452d91(jetbrains.mps.core.smodel.util)">
     <nodeInfo nodeId="197339667876177293" fileName="ConceptQueryUtil.java" startLine="36" startPosition="110" endLine="37" endPosition="92" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
     <nodeInfo nodeId="197339667876177560" fileName="ConceptQueryUtil.java" startLine="42" startPosition="75" endLine="43" endPosition="72" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
     <nodeInfo nodeId="197339667876177808" fileName="ConceptQueryUtil.java" startLine="50" startPosition="43" endLine="51" endPosition="105" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
@@ -252,30 +252,30 @@
       <varInfo nodeId="5541143127965854491" varName="handler" />
       <varInfo nodeId="5541143127965854489" varName="node" />
     </scopeInfo>
-    <unitInfo nodeId="270269450479785514" fileName="ConceptQueryUtil.java" startLine="30" startPosition="0" endLine="192" endPosition="0" unitName="jetbrains.mps.core.smodel.util.ConceptQueryUtil" />
-    <unitInfo nodeId="197339667876177286" fileName="ConceptQueryUtil.java" startLine="35" startPosition="78" endLine="66" endPosition="5" unitName="jetbrains.mps.core.smodel.util.ConceptQueryUtil$1" />
-    <unitInfo nodeId="7690915613761687945" fileName="ConceptQueryUtil.java" startLine="180" startPosition="101" endLine="184" endPosition="5" unitName="jetbrains.mps.core.smodel.util.ConceptQueryUtil$10" />
-    <unitInfo nodeId="7690915613761692275" fileName="ConceptQueryUtil.java" startLine="185" startPosition="75" endLine="189" endPosition="5" unitName="jetbrains.mps.core.smodel.util.ConceptQueryUtil$11" />
     <unitInfo nodeId="197339667876177804" fileName="ConceptQueryUtil.java" startLine="49" startPosition="94" endLine="53" endPosition="9" unitName="jetbrains.mps.core.smodel.util.ConceptQueryUtil$2" />
     <unitInfo nodeId="197339667876178128" fileName="ConceptQueryUtil.java" startLine="66" startPosition="28" endLine="70" endPosition="5" unitName="jetbrains.mps.core.smodel.util.ConceptQueryUtil$2" />
-    <unitInfo nodeId="197339667876177442" fileName="ConceptQueryUtil.java" startLine="38" startPosition="54" endLine="48" endPosition="9" unitName="jetbrains.mps.core.smodel.util.ConceptQueryUtil$2" />
-    <unitInfo nodeId="197339667876177867" fileName="ConceptQueryUtil.java" startLine="53" startPosition="24" endLine="63" endPosition="9" unitName="jetbrains.mps.core.smodel.util.ConceptQueryUtil$2" />
-    <unitInfo nodeId="197339667876177528" fileName="ConceptQueryUtil.java" startLine="40" startPosition="85" endLine="46" endPosition="13" unitName="jetbrains.mps.core.smodel.util.ConceptQueryUtil$3" />
-    <unitInfo nodeId="4524748913103500530" fileName="ConceptQueryUtil.java" startLine="74" startPosition="56" endLine="100" endPosition="5" unitName="jetbrains.mps.core.smodel.util.ConceptQueryUtil$3" />
     <unitInfo nodeId="4524748913103500592" fileName="ConceptQueryUtil.java" startLine="88" startPosition="94" endLine="92" endPosition="9" unitName="jetbrains.mps.core.smodel.util.ConceptQueryUtil$4" />
-    <unitInfo nodeId="4524748913103500602" fileName="ConceptQueryUtil.java" startLine="92" startPosition="24" endLine="97" endPosition="9" unitName="jetbrains.mps.core.smodel.util.ConceptQueryUtil$4" />
-    <unitInfo nodeId="4524748913103500552" fileName="ConceptQueryUtil.java" startLine="77" startPosition="54" endLine="87" endPosition="9" unitName="jetbrains.mps.core.smodel.util.ConceptQueryUtil$4" />
-    <unitInfo nodeId="7690915613761691872" fileName="ConceptQueryUtil.java" startLine="105" startPosition="102" endLine="117" endPosition="5" unitName="jetbrains.mps.core.smodel.util.ConceptQueryUtil$4" />
     <unitInfo nodeId="7690915613761692187" fileName="ConceptQueryUtil.java" startLine="107" startPosition="128" endLine="111" endPosition="9" unitName="jetbrains.mps.core.smodel.util.ConceptQueryUtil$5" />
-    <unitInfo nodeId="4524748913103500560" fileName="ConceptQueryUtil.java" startLine="79" startPosition="85" endLine="85" endPosition="13" unitName="jetbrains.mps.core.smodel.util.ConceptQueryUtil$5" />
-    <unitInfo nodeId="4524748913103452524" fileName="ConceptQueryUtil.java" startLine="135" startPosition="30" endLine="147" endPosition="5" unitName="jetbrains.mps.core.smodel.util.ConceptQueryUtil$5" />
     <unitInfo nodeId="4524748913103452541" fileName="ConceptQueryUtil.java" startLine="137" startPosition="128" endLine="141" endPosition="9" unitName="jetbrains.mps.core.smodel.util.ConceptQueryUtil$6" />
     <unitInfo nodeId="7690915613761687830" fileName="ConceptQueryUtil.java" startLine="157" startPosition="178" endLine="161" endPosition="7" unitName="jetbrains.mps.core.smodel.util.ConceptQueryUtil$6" />
     <unitInfo nodeId="7690915613761687830" fileName="ConceptQueryUtil.java" startLine="161" startPosition="20" endLine="165" endPosition="7" unitName="jetbrains.mps.core.smodel.util.ConceptQueryUtil$7" />
     <unitInfo nodeId="7690915613761687810" fileName="ConceptQueryUtil.java" startLine="168" startPosition="184" endLine="172" endPosition="7" unitName="jetbrains.mps.core.smodel.util.ConceptQueryUtil$8" />
     <unitInfo nodeId="7690915613761687810" fileName="ConceptQueryUtil.java" startLine="172" startPosition="20" endLine="176" endPosition="7" unitName="jetbrains.mps.core.smodel.util.ConceptQueryUtil$9" />
+    <unitInfo nodeId="7690915613761687945" fileName="ConceptQueryUtil.java" startLine="180" startPosition="101" endLine="184" endPosition="5" unitName="jetbrains.mps.core.smodel.util.ConceptQueryUtil$10" />
+    <unitInfo nodeId="7690915613761692275" fileName="ConceptQueryUtil.java" startLine="185" startPosition="75" endLine="189" endPosition="5" unitName="jetbrains.mps.core.smodel.util.ConceptQueryUtil$11" />
+    <unitInfo nodeId="4524748913103500602" fileName="ConceptQueryUtil.java" startLine="92" startPosition="24" endLine="97" endPosition="9" unitName="jetbrains.mps.core.smodel.util.ConceptQueryUtil$4" />
+    <unitInfo nodeId="197339667876177528" fileName="ConceptQueryUtil.java" startLine="40" startPosition="85" endLine="46" endPosition="13" unitName="jetbrains.mps.core.smodel.util.ConceptQueryUtil$3" />
+    <unitInfo nodeId="4524748913103500560" fileName="ConceptQueryUtil.java" startLine="79" startPosition="85" endLine="85" endPosition="13" unitName="jetbrains.mps.core.smodel.util.ConceptQueryUtil$5" />
+    <unitInfo nodeId="197339667876177442" fileName="ConceptQueryUtil.java" startLine="38" startPosition="54" endLine="48" endPosition="9" unitName="jetbrains.mps.core.smodel.util.ConceptQueryUtil$2" />
+    <unitInfo nodeId="197339667876177867" fileName="ConceptQueryUtil.java" startLine="53" startPosition="24" endLine="63" endPosition="9" unitName="jetbrains.mps.core.smodel.util.ConceptQueryUtil$2" />
+    <unitInfo nodeId="4524748913103500552" fileName="ConceptQueryUtil.java" startLine="77" startPosition="54" endLine="87" endPosition="9" unitName="jetbrains.mps.core.smodel.util.ConceptQueryUtil$4" />
+    <unitInfo nodeId="7690915613761691872" fileName="ConceptQueryUtil.java" startLine="105" startPosition="102" endLine="117" endPosition="5" unitName="jetbrains.mps.core.smodel.util.ConceptQueryUtil$4" />
+    <unitInfo nodeId="4524748913103452524" fileName="ConceptQueryUtil.java" startLine="135" startPosition="30" endLine="147" endPosition="5" unitName="jetbrains.mps.core.smodel.util.ConceptQueryUtil$5" />
+    <unitInfo nodeId="4524748913103500530" fileName="ConceptQueryUtil.java" startLine="74" startPosition="56" endLine="100" endPosition="5" unitName="jetbrains.mps.core.smodel.util.ConceptQueryUtil$3" />
+    <unitInfo nodeId="197339667876177286" fileName="ConceptQueryUtil.java" startLine="35" startPosition="78" endLine="66" endPosition="5" unitName="jetbrains.mps.core.smodel.util.ConceptQueryUtil$1" />
+    <unitInfo nodeId="270269450479785514" fileName="ConceptQueryUtil.java" startLine="30" startPosition="0" endLine="192" endPosition="0" unitName="jetbrains.mps.core.smodel.util.ConceptQueryUtil" />
   </root>
-  <root nodeId="2848533153256535719">
+  <root nodeId="2848533153256535719" modelId="r:aaa4533e-6546-408d-8a98-5c8eb0452d91(jetbrains.mps.core.smodel.util)">
     <nodeInfo nodeId="2848533153256535784" fileName="DataTypeUtil.java" startLine="18" startPosition="23" endLine="19" endPosition="18" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="4260762357824841813" fileName="DataTypeUtil.java" startLine="21" startPosition="104" endLine="22" endPosition="104" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
     <nodeInfo nodeId="4260762357824841820" fileName="DataTypeUtil.java" startLine="23" startPosition="74" endLine="24" endPosition="79" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
@@ -369,10 +369,10 @@
     <scopeInfo nodeId="2848533153256535738" fileName="DataTypeUtil.java" startLine="16" startPosition="0" endLine="33" endPosition="0">
       <varInfo nodeId="2848533153256535742" varName="dt" />
     </scopeInfo>
-    <unitInfo nodeId="2848533153256535719" fileName="DataTypeUtil.java" startLine="13" startPosition="0" endLine="85" endPosition="0" unitName="jetbrains.mps.core.smodel.util.DataTypeUtil" />
-    <unitInfo nodeId="4260762357824841832" fileName="DataTypeUtil.java" startLine="51" startPosition="0" endLine="67" endPosition="0" unitName="jetbrains.mps.core.smodel.util.DataTypeUtil$QuotationClass_6qp3xf_a0a0a1a1a0" />
     <unitInfo nodeId="4260762357824841821" fileName="DataTypeUtil.java" startLine="34" startPosition="0" endLine="50" endPosition="0" unitName="jetbrains.mps.core.smodel.util.DataTypeUtil$QuotationClass_6qp3xf_a0a0b0b0a" />
+    <unitInfo nodeId="4260762357824841832" fileName="DataTypeUtil.java" startLine="51" startPosition="0" endLine="67" endPosition="0" unitName="jetbrains.mps.core.smodel.util.DataTypeUtil$QuotationClass_6qp3xf_a0a0a1a1a0" />
     <unitInfo nodeId="4260762357824841840" fileName="DataTypeUtil.java" startLine="68" startPosition="0" endLine="84" endPosition="0" unitName="jetbrains.mps.core.smodel.util.DataTypeUtil$QuotationClass_6qp3xf_a0a0b1a1a0" />
+    <unitInfo nodeId="2848533153256535719" fileName="DataTypeUtil.java" startLine="13" startPosition="0" endLine="85" endPosition="0" unitName="jetbrains.mps.core.smodel.util.DataTypeUtil" />
   </root>
 </debugInfo>
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debugInfo>
-  <root nodeId="1671449901154580776">
+  <root nodeId="1671449901154580776" modelId="r:8343a69c-fe1e-4de5-8292-b3e2f558b5b6(jetbrains.mps.core.query.runtime)">
     <nodeInfo nodeId="1671449901154580992" fileName="EvaluationEnvironment.java" startLine="12" startPosition="36" endLine="13" endPosition="52" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="MISSED" />
     <nodeInfo nodeId="5280308256730800931" fileName="EvaluationEnvironment.java" startLine="13" startPosition="52" endLine="14" endPosition="39" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="KIND_ERR" />
     <nodeInfo nodeId="5280308256730800943" fileName="EvaluationEnvironment.java" startLine="14" startPosition="39" endLine="15" endPosition="40" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="KIND_WARN" />
@@ -131,11 +131,11 @@
       <varInfo nodeId="5280308256730800878" varName="expr" />
       <varInfo nodeId="5280308256730800891" varName="permitNull" />
     </scopeInfo>
-    <unitInfo nodeId="1671449901154580776" fileName="EvaluationEnvironment.java" startLine="12" startPosition="0" endLine="111" endPosition="0" unitName="jetbrains.mps.core.query.runtime.EvaluationEnvironment" />
     <unitInfo nodeId="5280308256730808336" fileName="EvaluationEnvironment.java" startLine="101" startPosition="0" endLine="110" endPosition="0" unitName="jetbrains.mps.core.query.runtime.EvaluationEnvironment$HandledEvaluationException" />
     <unitInfo nodeId="1671449901154580813" fileName="EvaluationEnvironment.java" startLine="79" startPosition="0" endLine="100" endPosition="0" unitName="jetbrains.mps.core.query.runtime.EvaluationEnvironment$Key" />
+    <unitInfo nodeId="1671449901154580776" fileName="EvaluationEnvironment.java" startLine="12" startPosition="0" endLine="111" endPosition="0" unitName="jetbrains.mps.core.query.runtime.EvaluationEnvironment" />
   </root>
-  <root nodeId="3435983127247139259">
+  <root nodeId="3435983127247139259" modelId="r:8343a69c-fe1e-4de5-8292-b3e2f558b5b6(jetbrains.mps.core.query.runtime)">
     <nodeInfo nodeId="3435983127247139270" fileName="SingleElementScope.java" startLine="13" startPosition="47" endLine="14" endPosition="21" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="node" />
     <nodeInfo nodeId="3435983127247139279" fileName="SingleElementScope.java" startLine="14" startPosition="21" endLine="15" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="name" />
     <nodeInfo nodeId="3435983127247139273" fileName="SingleElementScope.java" startLine="17" startPosition="54" endLine="18" endPosition="21" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
@@ -178,7 +178,7 @@
     </scopeInfo>
     <unitInfo nodeId="3435983127247139259" fileName="SingleElementScope.java" startLine="13" startPosition="0" endLine="47" endPosition="0" unitName="jetbrains.mps.core.query.runtime.SingleElementScope" />
   </root>
-  <root nodeId="6711176417918013834">
+  <root nodeId="6711176417918013834" modelId="r:8343a69c-fe1e-4de5-8292-b3e2f558b5b6(jetbrains.mps.core.query.runtime)">
     <nodeInfo nodeId="6711176417918017666" fileName="MultipleElementsScope.java" startLine="14" startPosition="50" endLine="15" endPosition="28" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="nodes" />
     <nodeInfo nodeId="6711176417918017498" fileName="MultipleElementsScope.java" startLine="15" startPosition="28" endLine="16" endPosition="84" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="resolveInfo" />
     <nodeInfo nodeId="6711176417918017669" fileName="MultipleElementsScope.java" startLine="18" startPosition="126" endLine="19" endPosition="23" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
@@ -244,7 +244,7 @@
     </scopeInfo>
     <unitInfo nodeId="6711176417918013834" fileName="MultipleElementsScope.java" startLine="14" startPosition="0" endLine="57" endPosition="0" unitName="jetbrains.mps.core.query.runtime.MultipleElementsScope" />
   </root>
-  <root nodeId="6762883159245086419">
+  <root nodeId="6762883159245086419" modelId="r:8343a69c-fe1e-4de5-8292-b3e2f558b5b6(jetbrains.mps.core.query.runtime)">
     <nodeInfo nodeId="1671449901154580620" fileName="EvaluationContext.java" startLine="9" startPosition="32" endLine="10" endPosition="28" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="self" />
     <nodeInfo nodeId="1671449901154580611" fileName="EvaluationContext.java" startLine="10" startPosition="28" endLine="11" endPosition="41" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="parent" />
     <nodeInfo nodeId="1671449901154580635" fileName="EvaluationContext.java" startLine="11" startPosition="41" endLine="12" endPosition="35" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="vars" />
@@ -285,7 +285,7 @@
     </scopeInfo>
     <unitInfo nodeId="6762883159245086419" fileName="EvaluationContext.java" startLine="9" startPosition="0" endLine="44" endPosition="0" unitName="jetbrains.mps.core.query.runtime.EvaluationContext" />
   </root>
-  <root nodeId="6762883159245086425">
+  <root nodeId="6762883159245086425" modelId="r:8343a69c-fe1e-4de5-8292-b3e2f558b5b6(jetbrains.mps.core.query.runtime)">
     <nodeInfo nodeId="1671449901154581432" fileName="EvaluationException.java" startLine="7" startPosition="59" endLine="8" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="query" />
     <nodeInfo nodeId="1671449901154581441" fileName="EvaluationException.java" startLine="8" startPosition="22" endLine="9" endPosition="36" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="context" />
     <nodeInfo nodeId="6762883159245086436" fileName="EvaluationException.java" startLine="11" startPosition="86" endLine="12" endPosition="19" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
@@ -317,7 +317,7 @@
     </scopeInfo>
     <unitInfo nodeId="6762883159245086425" fileName="EvaluationException.java" startLine="7" startPosition="0" endLine="32" endPosition="0" unitName="jetbrains.mps.core.query.runtime.EvaluationException" />
   </root>
-  <root nodeId="7862448911997337693">
+  <root nodeId="7862448911997337693" modelId="r:8343a69c-fe1e-4de5-8292-b3e2f558b5b6(jetbrains.mps.core.query.runtime)">
     <nodeInfo nodeId="7862448911997337787" fileName="EvaluationRuntime.java" startLine="13" startPosition="25" endLine="14" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="7862448911997337792" fileName="EvaluationRuntime.java" startLine="15" startPosition="5" endLine="16" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
     <nodeInfo nodeId="7862448911997337795" fileName="EvaluationRuntime.java" startLine="17" startPosition="36" endLine="18" endPosition="21" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />

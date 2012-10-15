@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debugInfo>
-  <root nodeId="8200039929379602765">
+  <root nodeId="8200039929379602765" modelId="r:8d6e1e48-a7af-4d8c-8a82-030ab7508b8d(jetbrains.mps.core.structure.util)">
     <nodeInfo nodeId="8200039929379603172" fileName="ConceptUtil.java" startLine="29" startPosition="88" endLine="30" endPosition="31" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
     <nodeInfo nodeId="8200039929379603256" fileName="ConceptUtil.java" startLine="33" startPosition="41" endLine="34" endPosition="74" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="8200039929379603256" fileName="ConceptUtil.java" startLine="37" startPosition="39" endLine="38" endPosition="64" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
@@ -156,9 +156,7 @@
       <varInfo nodeId="8200039929379602780" varName="concept" />
       <varInfo nodeId="8200039929379602776" varName="superConcepts" />
     </scopeInfo>
-    <unitInfo nodeId="8200039929379602765" fileName="ConceptUtil.java" startLine="25" startPosition="0" endLine="131" endPosition="0" unitName="jetbrains.mps.core.structure.util.ConceptUtil" />
     <unitInfo nodeId="8200039929379603256" fileName="ConceptUtil.java" startLine="32" startPosition="181" endLine="36" endPosition="7" unitName="jetbrains.mps.core.structure.util.ConceptUtil$1" />
-    <unitInfo nodeId="7891765471710518705" fileName="ConceptUtil.java" startLine="124" startPosition="17" endLine="128" endPosition="5" unitName="jetbrains.mps.core.structure.util.ConceptUtil$10" />
     <unitInfo nodeId="8200039929379603256" fileName="ConceptUtil.java" startLine="36" startPosition="20" endLine="40" endPosition="7" unitName="jetbrains.mps.core.structure.util.ConceptUtil$2" />
     <unitInfo nodeId="8200039929379612219" fileName="ConceptUtil.java" startLine="46" startPosition="147" endLine="50" endPosition="9" unitName="jetbrains.mps.core.structure.util.ConceptUtil$3" />
     <unitInfo nodeId="8200039929379612219" fileName="ConceptUtil.java" startLine="50" startPosition="22" endLine="54" endPosition="9" unitName="jetbrains.mps.core.structure.util.ConceptUtil$4" />
@@ -167,6 +165,8 @@
     <unitInfo nodeId="7891765471710518404" fileName="ConceptUtil.java" startLine="98" startPosition="163" endLine="102" endPosition="5" unitName="jetbrains.mps.core.structure.util.ConceptUtil$7" />
     <unitInfo nodeId="7891765471710518464" fileName="ConceptUtil.java" startLine="102" startPosition="17" endLine="106" endPosition="5" unitName="jetbrains.mps.core.structure.util.ConceptUtil$8" />
     <unitInfo nodeId="7891765471710518703" fileName="ConceptUtil.java" startLine="120" startPosition="163" endLine="124" endPosition="5" unitName="jetbrains.mps.core.structure.util.ConceptUtil$9" />
+    <unitInfo nodeId="7891765471710518705" fileName="ConceptUtil.java" startLine="124" startPosition="17" endLine="128" endPosition="5" unitName="jetbrains.mps.core.structure.util.ConceptUtil$10" />
+    <unitInfo nodeId="8200039929379602765" fileName="ConceptUtil.java" startLine="25" startPosition="0" endLine="131" endPosition="0" unitName="jetbrains.mps.core.structure.util.ConceptUtil" />
   </root>
 </debugInfo>
 

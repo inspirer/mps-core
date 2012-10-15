@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debugInfo>
-  <root nodeId="2792997962487264360">
+  <root nodeId="2792997962487264360" modelId="r:0e929fd7-38ac-4dd6-abf0-ac47e79d66c1(jetbrains.mps.core.smodel.pluginSolution.plugin)">
     <nodeInfo nodeId="2792997962487264360" fileName="GoToOverridingQueries_Action.java" startLine="26" startPosition="62" endLine="27" endPosition="40" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="ICON" />
     <nodeInfo nodeId="2792997962487264360" fileName="GoToOverridingQueries_Action.java" startLine="27" startPosition="40" endLine="28" endPosition="83" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="log" />
     <nodeInfo nodeId="2792997962487264360" fileName="GoToOverridingQueries_Action.java" startLine="30" startPosition="41" endLine="31" endPosition="48" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
@@ -121,11 +121,11 @@
       <varInfo nodeId="2792997962487264360" varName="_params" />
       <varInfo nodeId="2792997962487264360" varName="event" />
     </scopeInfo>
-    <unitInfo nodeId="2792997962487264360" fileName="GoToOverridingQueries_Action.java" startLine="26" startPosition="0" endLine="112" endPosition="0" unitName="jetbrains.mps.core.smodel.pluginSolution.plugin.GoToOverridingQueries_Action" />
     <unitInfo nodeId="2792997962487298657" fileName="GoToOverridingQueries_Action.java" startLine="43" startPosition="45" endLine="47" endPosition="5" unitName="jetbrains.mps.core.smodel.pluginSolution.plugin.GoToOverridingQueries_Action$1" />
     <unitInfo nodeId="2792997962487298187" fileName="GoToOverridingQueries_Action.java" startLine="95" startPosition="47" endLine="99" endPosition="7" unitName="jetbrains.mps.core.smodel.pluginSolution.plugin.GoToOverridingQueries_Action$2" />
+    <unitInfo nodeId="2792997962487264360" fileName="GoToOverridingQueries_Action.java" startLine="26" startPosition="0" endLine="112" endPosition="0" unitName="jetbrains.mps.core.smodel.pluginSolution.plugin.GoToOverridingQueries_Action" />
   </root>
-  <root nodeId="2792997962487264441">
+  <root nodeId="2792997962487264441" modelId="r:0e929fd7-38ac-4dd6-abf0-ac47e79d66c1(jetbrains.mps.core.smodel.pluginSolution.plugin)">
     <nodeInfo nodeId="2808756344206465636" fileName="QueriesGoToUtil.java" startLine="49" startPosition="111" endLine="50" endPosition="114" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="2808756344206270545" fileName="QueriesGoToUtil.java" startLine="53" startPosition="162" endLine="54" endPosition="46" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
     <nodeInfo nodeId="2808756344206270557" fileName="QueriesGoToUtil.java" startLine="56" startPosition="25" endLine="57" endPosition="69" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
@@ -308,17 +308,17 @@
       <varInfo nodeId="2808756344206463722" varName="project" />
       <varInfo nodeId="2808756344206463621" varName="query" />
     </scopeInfo>
-    <unitInfo nodeId="2792997962487264441" fileName="QueriesGoToUtil.java" startLine="45" startPosition="0" endLine="165" endPosition="0" unitName="jetbrains.mps.core.smodel.pluginSolution.plugin.QueriesGoToUtil" />
+    <unitInfo nodeId="2808756344206463753" fileName="QueriesGoToUtil.java" startLine="68" startPosition="90" endLine="72" endPosition="13" unitName="jetbrains.mps.core.smodel.pluginSolution.plugin.QueriesGoToUtil$4" />
     <unitInfo nodeId="2808756344206270555" fileName="QueriesGoToUtil.java" startLine="55" startPosition="45" endLine="60" endPosition="5" unitName="jetbrains.mps.core.smodel.pluginSolution.plugin.QueriesGoToUtil$1" />
     <unitInfo nodeId="2808756344206283902" fileName="QueriesGoToUtil.java" startLine="135" startPosition="54" endLine="143" endPosition="7" unitName="jetbrains.mps.core.smodel.pluginSolution.plugin.QueriesGoToUtil$1" />
     <unitInfo nodeId="2808756344206283927" fileName="QueriesGoToUtil.java" startLine="153" startPosition="54" endLine="161" endPosition="7" unitName="jetbrains.mps.core.smodel.pluginSolution.plugin.QueriesGoToUtil$2" />
-    <unitInfo nodeId="2808756344206270606" fileName="QueriesGoToUtil.java" startLine="63" startPosition="42" endLine="76" endPosition="5" unitName="jetbrains.mps.core.smodel.pluginSolution.plugin.QueriesGoToUtil$2" />
     <unitInfo nodeId="2808756344206270616" fileName="QueriesGoToUtil.java" startLine="65" startPosition="49" endLine="74" endPosition="9" unitName="jetbrains.mps.core.smodel.pluginSolution.plugin.QueriesGoToUtil$3" />
     <unitInfo nodeId="2808756344206284272" fileName="QueriesGoToUtil.java" startLine="113" startPosition="96" endLine="125" endPosition="7" unitName="jetbrains.mps.core.smodel.pluginSolution.plugin.QueriesGoToUtil$3" />
-    <unitInfo nodeId="2808756344206463753" fileName="QueriesGoToUtil.java" startLine="68" startPosition="90" endLine="72" endPosition="13" unitName="jetbrains.mps.core.smodel.pluginSolution.plugin.QueriesGoToUtil$4" />
+    <unitInfo nodeId="2808756344206270606" fileName="QueriesGoToUtil.java" startLine="63" startPosition="42" endLine="76" endPosition="5" unitName="jetbrains.mps.core.smodel.pluginSolution.plugin.QueriesGoToUtil$2" />
     <unitInfo nodeId="2808756344206283971" fileName="QueriesGoToUtil.java" startLine="129" startPosition="0" endLine="164" endPosition="0" unitName="jetbrains.mps.core.smodel.pluginSolution.plugin.QueriesGoToUtil$QueryCellRenderer" />
+    <unitInfo nodeId="2792997962487264441" fileName="QueriesGoToUtil.java" startLine="45" startPosition="0" endLine="165" endPosition="0" unitName="jetbrains.mps.core.smodel.pluginSolution.plugin.QueriesGoToUtil" />
   </root>
-  <root nodeId="4246302507742178773">
+  <root nodeId="4246302507742178773" modelId="r:0e929fd7-38ac-4dd6-abf0-ac47e79d66c1(jetbrains.mps.core.smodel.pluginSolution.plugin)">
     <nodeInfo nodeId="4246302507742178773" fileName="PluginSolution_ApplicationPlugin.java" startLine="12" startPosition="77" endLine="13" endPosition="85" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="myId" />
     <nodeInfo nodeId="4246302507742178773" fileName="PluginSolution_ApplicationPlugin.java" startLine="18" startPosition="27" endLine="19" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="4246302507742178773" fileName="PluginSolution_ApplicationPlugin.java" startLine="22" startPosition="30" endLine="23" endPosition="30" conceptFqName="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
@@ -349,7 +349,7 @@
     <scopeInfo nodeId="4246302507742178773" fileName="PluginSolution_ApplicationPlugin.java" startLine="21" startPosition="0" endLine="29" endPosition="0" />
     <unitInfo nodeId="4246302507742178773" fileName="PluginSolution_ApplicationPlugin.java" startLine="12" startPosition="0" endLine="40" endPosition="0" unitName="jetbrains.mps.core.smodel.pluginSolution.plugin.PluginSolution_ApplicationPlugin" />
   </root>
-  <root nodeId="4246302507742178774">
+  <root nodeId="4246302507742178774" modelId="r:0e929fd7-38ac-4dd6-abf0-ac47e79d66c1(jetbrains.mps.core.smodel.pluginSolution.plugin)">
     <nodeInfo nodeId="4246302507742178774" fileName="GoToOverridenQuery_Action.java" startLine="21" startPosition="59" endLine="22" endPosition="40" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="ICON" />
     <nodeInfo nodeId="4246302507742178774" fileName="GoToOverridenQuery_Action.java" startLine="22" startPosition="40" endLine="23" endPosition="80" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="log" />
     <nodeInfo nodeId="4246302507742178774" fileName="GoToOverridenQuery_Action.java" startLine="25" startPosition="38" endLine="26" endPosition="45" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
@@ -462,7 +462,7 @@
     </scopeInfo>
     <unitInfo nodeId="4246302507742178774" fileName="GoToOverridenQuery_Action.java" startLine="21" startPosition="0" endLine="101" endPosition="0" unitName="jetbrains.mps.core.smodel.pluginSolution.plugin.GoToOverridenQuery_Action" />
   </root>
-  <root nodeId="4246302507742179700">
+  <root nodeId="4246302507742179700" modelId="r:0e929fd7-38ac-4dd6-abf0-ac47e79d66c1(jetbrains.mps.core.smodel.pluginSolution.plugin)">
     <nodeInfo nodeId="4246302507742179700" fileName="Default_KeymapChanges.java" startLine="11" startPosition="34" endLine="12" endPosition="14" conceptFqName="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
     <nodeInfo nodeId="4246302507742179700" fileName="Default_KeymapChanges.java" startLine="12" startPosition="14" endLine="13" endPosition="122" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
     <nodeInfo nodeId="4246302507742179700" fileName="Default_KeymapChanges.java" startLine="13" startPosition="122" endLine="14" endPosition="129" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
@@ -483,7 +483,7 @@
     <scopeInfo nodeId="4246302507742179700" fileName="Default_KeymapChanges.java" startLine="10" startPosition="62" endLine="17" endPosition="3" />
     <unitInfo nodeId="4246302507742179700" fileName="Default_KeymapChanges.java" startLine="10" startPosition="0" endLine="27" endPosition="0" unitName="jetbrains.mps.core.smodel.pluginSolution.plugin.Default_KeymapChanges" />
   </root>
-  <root nodeId="4246302507742179718">
+  <root nodeId="4246302507742179718" modelId="r:0e929fd7-38ac-4dd6-abf0-ac47e79d66c1(jetbrains.mps.core.smodel.pluginSolution.plugin)">
     <nodeInfo nodeId="4246302507742179718" fileName="EditorPopup_ActionGroup.java" startLine="8" startPosition="67" endLine="9" endPosition="78" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="LOG" />
     <nodeInfo nodeId="4246302507742179718" fileName="EditorPopup_ActionGroup.java" startLine="9" startPosition="78" endLine="10" endPosition="108" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="ID" />
     <nodeInfo nodeId="4246302507742179718" fileName="EditorPopup_ActionGroup.java" startLine="12" startPosition="36" endLine="13" endPosition="29" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />

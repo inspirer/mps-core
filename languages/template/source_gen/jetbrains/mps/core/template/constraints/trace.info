@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debugInfo>
   <unitInfo fileName="ConstraintsAspectDescriptor.java" startLine="9" startPosition="0" endLine="27" endPosition="0" unitName="jetbrains.mps.core.template.constraints.ConstraintsAspectDescriptor" />
-  <root nodeId="1163325315882353810">
+  <root nodeId="1163325315882353810" modelId="r:defeca39-4fe5-4ec1-9da6-3d0d1bfe6f29(jetbrains.mps.core.template.constraints)">
     <nodeInfo nodeId="1163325315882353818" fileName="MtlBuilder_Constraints.java" startLine="15" startPosition="71" endLine="16" endPosition="103" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="REGEXP_adav9y_a0a0a1a1a0b0a1a0" />
     <nodeInfo nodeId="1163325315882353810" fileName="MtlBuilder_Constraints.java" startLine="18" startPosition="35" endLine="19" endPosition="62" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
     <nodeInfo nodeId="1163325315882353810" fileName="MtlBuilder_Constraints.java" startLine="23" startPosition="82" endLine="24" endPosition="74" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
@@ -32,10 +32,10 @@
       <varInfo nodeId="1163325315882353810" varName="properties" />
     </scopeInfo>
     <scopeInfo nodeId="1163325315882353810" fileName="MtlBuilder_Constraints.java" startLine="21" startPosition="0" endLine="39" endPosition="0" />
-    <unitInfo nodeId="1163325315882353810" fileName="MtlBuilder_Constraints.java" startLine="15" startPosition="0" endLine="40" endPosition="0" unitName="jetbrains.mps.core.template.constraints.MtlBuilder_Constraints" />
     <unitInfo nodeId="1163325315882353810" fileName="MtlBuilder_Constraints.java" startLine="25" startPosition="31" endLine="36" endPosition="5" unitName="jetbrains.mps.core.template.constraints.MtlBuilder_Constraints$1" />
+    <unitInfo nodeId="1163325315882353810" fileName="MtlBuilder_Constraints.java" startLine="15" startPosition="0" endLine="40" endPosition="0" unitName="jetbrains.mps.core.template.constraints.MtlBuilder_Constraints" />
   </root>
-  <root nodeId="3373821274546483536">
+  <root nodeId="3373821274546483536" modelId="r:defeca39-4fe5-4ec1-9da6-3d0d1bfe6f29(jetbrains.mps.core.template.constraints)">
     <nodeInfo nodeId="7352592509980959314" fileName="MtlTemplate_Constraints.java" startLine="15" startPosition="72" endLine="16" endPosition="103" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="REGEXP_8mtjzv_a0a0a1a1a0b0a1a0" />
     <nodeInfo nodeId="3373821274546483536" fileName="MtlTemplate_Constraints.java" startLine="18" startPosition="36" endLine="19" endPosition="63" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
     <nodeInfo nodeId="3373821274546483536" fileName="MtlTemplate_Constraints.java" startLine="23" startPosition="82" endLine="24" endPosition="74" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
@@ -66,8 +66,8 @@
       <varInfo nodeId="3373821274546483536" varName="properties" />
     </scopeInfo>
     <scopeInfo nodeId="3373821274546483536" fileName="MtlTemplate_Constraints.java" startLine="21" startPosition="0" endLine="39" endPosition="0" />
-    <unitInfo nodeId="3373821274546483536" fileName="MtlTemplate_Constraints.java" startLine="15" startPosition="0" endLine="40" endPosition="0" unitName="jetbrains.mps.core.template.constraints.MtlTemplate_Constraints" />
     <unitInfo nodeId="3373821274546483536" fileName="MtlTemplate_Constraints.java" startLine="25" startPosition="31" endLine="36" endPosition="5" unitName="jetbrains.mps.core.template.constraints.MtlTemplate_Constraints$1" />
+    <unitInfo nodeId="3373821274546483536" fileName="MtlTemplate_Constraints.java" startLine="15" startPosition="0" endLine="40" endPosition="0" unitName="jetbrains.mps.core.template.constraints.MtlTemplate_Constraints" />
   </root>
 </debugInfo>
 

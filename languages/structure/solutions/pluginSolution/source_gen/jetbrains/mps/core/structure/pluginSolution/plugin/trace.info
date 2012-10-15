@@ -82,6 +82,7 @@
     </scopeInfo>
     <scopeInfo nodeId="1014779104259186304" fileName="MigrateStructure_Action.java" startLine="40" startPosition="36" endLine="43" endPosition="41" />
     <scopeInfo nodeId="1014779104259186304" fileName="MigrateStructure_Action.java" startLine="61" startPosition="27" endLine="64" endPosition="7" />
+    <scopeInfo nodeId="5857755358246244148" fileName="MigrateStructure_Action.java" startLine="84" startPosition="25" endLine="87" endPosition="9" />
     <scopeInfo nodeId="5857755358246244191" fileName="MigrateStructure_Action.java" startLine="84" startPosition="25" endLine="87" endPosition="9" />
     <scopeInfo nodeId="1014779104259186304" fileName="MigrateStructure_Action.java" startLine="122" startPosition="0" endLine="125" endPosition="7">
       <varInfo nodeId="1014779104259186304" varName="t" />
@@ -137,9 +138,9 @@
       <varInfo nodeId="1014779104259186304" varName="_params" />
       <varInfo nodeId="1014779104259186304" varName="event" />
     </scopeInfo>
-    <unitInfo nodeId="1014779104259186304" fileName="MigrateStructure_Action.java" startLine="36" startPosition="0" endLine="129" endPosition="0" unitName="jetbrains.mps.core.structure.pluginSolution.plugin.MigrateStructure_Action" />
-    <unitInfo nodeId="7349647468656132508" fileName="MigrateStructure_Action.java" startLine="89" startPosition="31" endLine="97" endPosition="7" unitName="jetbrains.mps.core.structure.pluginSolution.plugin.MigrateStructure_Action$1" />
     <unitInfo nodeId="8671835029166879619" fileName="MigrateStructure_Action.java" startLine="113" startPosition="110" endLine="117" endPosition="9" unitName="jetbrains.mps.core.structure.pluginSolution.plugin.MigrateStructure_Action$2" />
+    <unitInfo nodeId="7349647468656132508" fileName="MigrateStructure_Action.java" startLine="89" startPosition="31" endLine="97" endPosition="7" unitName="jetbrains.mps.core.structure.pluginSolution.plugin.MigrateStructure_Action$1" />
+    <unitInfo nodeId="1014779104259186304" fileName="MigrateStructure_Action.java" startLine="36" startPosition="0" endLine="129" endPosition="0" unitName="jetbrains.mps.core.structure.pluginSolution.plugin.MigrateStructure_Action" />
   </root>
   <root nodeId="2354898832652190754" modelId="r:1cb7d6b1-62c1-477b-836e-0624c3f533ee(jetbrains.mps.core.structure.pluginSolution.plugin)">
     <nodeInfo nodeId="2354898832652190754" fileName="PluginSolution_ApplicationPlugin.java" startLine="9" startPosition="77" endLine="10" endPosition="88" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="myId" />
@@ -838,6 +839,7 @@
     <scopeInfo nodeId="4801280512974711939" fileName="LanguageConverter.java" startLine="742" startPosition="53" endLine="744" endPosition="5" />
     <scopeInfo nodeId="4801280512974711983" fileName="LanguageConverter.java" startLine="773" startPosition="53" endLine="775" endPosition="5" />
     <scopeInfo nodeId="4801280512974712124" fileName="LanguageConverter.java" startLine="804" startPosition="53" endLine="806" endPosition="5" />
+    <scopeInfo nodeId="220637581437635083" fileName="LanguageConverter.java" startLine="135" startPosition="14" endLine="138" endPosition="9" />
     <scopeInfo nodeId="2354898832652251533" fileName="LanguageConverter.java" startLine="135" startPosition="14" endLine="138" endPosition="9" />
     <scopeInfo nodeId="2354898832652257991" fileName="LanguageConverter.java" startLine="236" startPosition="52" endLine="239" endPosition="5">
       <varInfo nodeId="2354898832652257994" varName="property" />
@@ -1306,13 +1308,7 @@
       <varInfo nodeId="2354898832652257902" varName="destination" />
       <varInfo nodeId="2354898832652257900" varName="source" />
     </scopeInfo>
-    <unitInfo nodeId="8776389519611279293" fileName="LanguageConverter.java" startLine="42" startPosition="0" endLine="835" endPosition="0" unitName="jetbrains.mps.core.structure.pluginSolution.plugin.LanguageConverter" />
     <unitInfo nodeId="5857755358246266533" fileName="LanguageConverter.java" startLine="59" startPosition="46" endLine="63" endPosition="5" unitName="jetbrains.mps.core.structure.pluginSolution.plugin.LanguageConverter$1" />
-    <unitInfo nodeId="4801280512974725154" fileName="LanguageConverter.java" startLine="269" startPosition="125" endLine="273" endPosition="5" unitName="jetbrains.mps.core.structure.pluginSolution.plugin.LanguageConverter$10" />
-    <unitInfo nodeId="4801280512974781662" fileName="LanguageConverter.java" startLine="281" startPosition="162" endLine="285" endPosition="5" unitName="jetbrains.mps.core.structure.pluginSolution.plugin.LanguageConverter$11" />
-    <unitInfo nodeId="4801280512974781710" fileName="LanguageConverter.java" startLine="285" startPosition="115" endLine="289" endPosition="5" unitName="jetbrains.mps.core.structure.pluginSolution.plugin.LanguageConverter$12" />
-    <unitInfo nodeId="4801280512974781607" fileName="LanguageConverter.java" startLine="289" startPosition="19" endLine="293" endPosition="5" unitName="jetbrains.mps.core.structure.pluginSolution.plugin.LanguageConverter$13" />
-    <unitInfo nodeId="5857755358246267247" fileName="LanguageConverter.java" startLine="305" startPosition="14" endLine="309" endPosition="5" unitName="jetbrains.mps.core.structure.pluginSolution.plugin.LanguageConverter$14" />
     <unitInfo nodeId="2310679965751816286" fileName="LanguageConverter.java" startLine="151" startPosition="147" endLine="155" endPosition="5" unitName="jetbrains.mps.core.structure.pluginSolution.plugin.LanguageConverter$2" />
     <unitInfo nodeId="2310679965751826613" fileName="LanguageConverter.java" startLine="156" startPosition="144" endLine="160" endPosition="5" unitName="jetbrains.mps.core.structure.pluginSolution.plugin.LanguageConverter$3" />
     <unitInfo nodeId="5857755358246266685" fileName="LanguageConverter.java" startLine="164" startPosition="16" endLine="168" endPosition="7" unitName="jetbrains.mps.core.structure.pluginSolution.plugin.LanguageConverter$4" />
@@ -1321,24 +1317,30 @@
     <unitInfo nodeId="5857755358246267188" fileName="LanguageConverter.java" startLine="219" startPosition="14" endLine="223" endPosition="5" unitName="jetbrains.mps.core.structure.pluginSolution.plugin.LanguageConverter$7" />
     <unitInfo nodeId="4801280512974711333" fileName="LanguageConverter.java" startLine="246" startPosition="122" endLine="250" endPosition="5" unitName="jetbrains.mps.core.structure.pluginSolution.plugin.LanguageConverter$8" />
     <unitInfo nodeId="4801280512974711750" fileName="LanguageConverter.java" startLine="257" startPosition="134" endLine="261" endPosition="5" unitName="jetbrains.mps.core.structure.pluginSolution.plugin.LanguageConverter$9" />
+    <unitInfo nodeId="4801280512974725154" fileName="LanguageConverter.java" startLine="269" startPosition="125" endLine="273" endPosition="5" unitName="jetbrains.mps.core.structure.pluginSolution.plugin.LanguageConverter$10" />
+    <unitInfo nodeId="4801280512974781662" fileName="LanguageConverter.java" startLine="281" startPosition="162" endLine="285" endPosition="5" unitName="jetbrains.mps.core.structure.pluginSolution.plugin.LanguageConverter$11" />
+    <unitInfo nodeId="4801280512974781710" fileName="LanguageConverter.java" startLine="285" startPosition="115" endLine="289" endPosition="5" unitName="jetbrains.mps.core.structure.pluginSolution.plugin.LanguageConverter$12" />
+    <unitInfo nodeId="4801280512974781607" fileName="LanguageConverter.java" startLine="289" startPosition="19" endLine="293" endPosition="5" unitName="jetbrains.mps.core.structure.pluginSolution.plugin.LanguageConverter$13" />
+    <unitInfo nodeId="5857755358246267247" fileName="LanguageConverter.java" startLine="305" startPosition="14" endLine="309" endPosition="5" unitName="jetbrains.mps.core.structure.pluginSolution.plugin.LanguageConverter$14" />
     <unitInfo nodeId="220637581437587236" fileName="LanguageConverter.java" startLine="560" startPosition="0" endLine="576" endPosition="0" unitName="jetbrains.mps.core.structure.pluginSolution.plugin.LanguageConverter$QuotationClass_hm9xms_a0a0a01" />
-    <unitInfo nodeId="4801280512974781612" fileName="LanguageConverter.java" startLine="511" startPosition="0" endLine="541" endPosition="0" unitName="jetbrains.mps.core.structure.pluginSolution.plugin.LanguageConverter$QuotationClass_hm9xms_a0a0a0a0a0a12a9" />
-    <unitInfo nodeId="2354898832652261472" fileName="LanguageConverter.java" startLine="612" startPosition="0" endLine="629" endPosition="0" unitName="jetbrains.mps.core.structure.pluginSolution.plugin.LanguageConverter$QuotationClass_hm9xms_a0a0a0a21" />
     <unitInfo nodeId="2354898832652261464" fileName="LanguageConverter.java" startLine="595" startPosition="0" endLine="611" endPosition="0" unitName="jetbrains.mps.core.structure.pluginSolution.plugin.LanguageConverter$QuotationClass_hm9xms_a0a0a0m" />
+    <unitInfo nodeId="2354898832652250789" fileName="LanguageConverter.java" startLine="421" startPosition="0" endLine="438" endPosition="0" unitName="jetbrains.mps.core.structure.pluginSolution.plugin.LanguageConverter$QuotationClass_hm9xms_a0a0a4" />
+    <unitInfo nodeId="220637581437629963" fileName="LanguageConverter.java" startLine="439" startPosition="0" endLine="456" endPosition="0" unitName="jetbrains.mps.core.structure.pluginSolution.plugin.LanguageConverter$QuotationClass_hm9xms_a0a0a7" />
+    <unitInfo nodeId="2310679965751759858" fileName="LanguageConverter.java" startLine="457" startPosition="0" endLine="474" endPosition="0" unitName="jetbrains.mps.core.structure.pluginSolution.plugin.LanguageConverter$QuotationClass_hm9xms_a0a0a2a7" />
     <unitInfo nodeId="4801280512974712147" fileName="LanguageConverter.java" startLine="475" startPosition="0" endLine="492" endPosition="0" unitName="jetbrains.mps.core.structure.pluginSolution.plugin.LanguageConverter$QuotationClass_hm9xms_a0a0a0o0j" />
     <unitInfo nodeId="4801280512974725181" fileName="LanguageConverter.java" startLine="493" startPosition="0" endLine="510" endPosition="0" unitName="jetbrains.mps.core.structure.pluginSolution.plugin.LanguageConverter$QuotationClass_hm9xms_a0a0a0s0j" />
     <unitInfo nodeId="4801280512974781820" fileName="LanguageConverter.java" startLine="542" startPosition="0" endLine="559" endPosition="0" unitName="jetbrains.mps.core.structure.pluginSolution.plugin.LanguageConverter$QuotationClass_hm9xms_a0a0a0w0j" />
-    <unitInfo nodeId="2310679965751759858" fileName="LanguageConverter.java" startLine="457" startPosition="0" endLine="474" endPosition="0" unitName="jetbrains.mps.core.structure.pluginSolution.plugin.LanguageConverter$QuotationClass_hm9xms_a0a0a2a7" />
-    <unitInfo nodeId="2354898832652250789" fileName="LanguageConverter.java" startLine="421" startPosition="0" endLine="438" endPosition="0" unitName="jetbrains.mps.core.structure.pluginSolution.plugin.LanguageConverter$QuotationClass_hm9xms_a0a0a4" />
-    <unitInfo nodeId="5857755358246267350" fileName="LanguageConverter.java" startLine="648" startPosition="0" endLine="679" endPosition="0" unitName="jetbrains.mps.core.structure.pluginSolution.plugin.LanguageConverter$QuotationClass_hm9xms_a0a0a41" />
-    <unitInfo nodeId="220637581437629963" fileName="LanguageConverter.java" startLine="439" startPosition="0" endLine="456" endPosition="0" unitName="jetbrains.mps.core.structure.pluginSolution.plugin.LanguageConverter$QuotationClass_hm9xms_a0a0a7" />
+    <unitInfo nodeId="220637581437523368" fileName="LanguageConverter.java" startLine="577" startPosition="0" endLine="594" endPosition="0" unitName="jetbrains.mps.core.structure.pluginSolution.plugin.LanguageConverter$QuotationClass_hm9xms_a0b0l" />
+    <unitInfo nodeId="2354898832652261472" fileName="LanguageConverter.java" startLine="612" startPosition="0" endLine="629" endPosition="0" unitName="jetbrains.mps.core.structure.pluginSolution.plugin.LanguageConverter$QuotationClass_hm9xms_a0a0a0a21" />
     <unitInfo nodeId="4260762357824841840" fileName="LanguageConverter.java" startLine="630" startPosition="0" endLine="647" endPosition="0" unitName="jetbrains.mps.core.structure.pluginSolution.plugin.LanguageConverter$QuotationClass_hm9xms_a0a0b0a21" />
-    <unitInfo nodeId="4801280512974711939" fileName="LanguageConverter.java" startLine="742" startPosition="0" endLine="772" endPosition="0" unitName="jetbrains.mps.core.structure.pluginSolution.plugin.LanguageConverter$QuotationClass_hm9xms_a0a0b0q" />
+    <unitInfo nodeId="4801280512974781612" fileName="LanguageConverter.java" startLine="511" startPosition="0" endLine="541" endPosition="0" unitName="jetbrains.mps.core.structure.pluginSolution.plugin.LanguageConverter$QuotationClass_hm9xms_a0a0a0a0a0a12a9" />
     <unitInfo nodeId="4801280512974725315" fileName="LanguageConverter.java" startLine="680" startPosition="0" endLine="710" endPosition="0" unitName="jetbrains.mps.core.structure.pluginSolution.plugin.LanguageConverter$QuotationClass_hm9xms_a0b0a0p" />
     <unitInfo nodeId="4801280512974725452" fileName="LanguageConverter.java" startLine="711" startPosition="0" endLine="741" endPosition="0" unitName="jetbrains.mps.core.structure.pluginSolution.plugin.LanguageConverter$QuotationClass_hm9xms_a0b0b0p" />
+    <unitInfo nodeId="4801280512974711939" fileName="LanguageConverter.java" startLine="742" startPosition="0" endLine="772" endPosition="0" unitName="jetbrains.mps.core.structure.pluginSolution.plugin.LanguageConverter$QuotationClass_hm9xms_a0a0b0q" />
     <unitInfo nodeId="4801280512974711983" fileName="LanguageConverter.java" startLine="773" startPosition="0" endLine="803" endPosition="0" unitName="jetbrains.mps.core.structure.pluginSolution.plugin.LanguageConverter$QuotationClass_hm9xms_a0b0c0q" />
     <unitInfo nodeId="4801280512974712124" fileName="LanguageConverter.java" startLine="804" startPosition="0" endLine="834" endPosition="0" unitName="jetbrains.mps.core.structure.pluginSolution.plugin.LanguageConverter$QuotationClass_hm9xms_a0b0d0q" />
-    <unitInfo nodeId="220637581437523368" fileName="LanguageConverter.java" startLine="577" startPosition="0" endLine="594" endPosition="0" unitName="jetbrains.mps.core.structure.pluginSolution.plugin.LanguageConverter$QuotationClass_hm9xms_a0b0l" />
+    <unitInfo nodeId="5857755358246267350" fileName="LanguageConverter.java" startLine="648" startPosition="0" endLine="679" endPosition="0" unitName="jetbrains.mps.core.structure.pluginSolution.plugin.LanguageConverter$QuotationClass_hm9xms_a0a0a41" />
+    <unitInfo nodeId="8776389519611279293" fileName="LanguageConverter.java" startLine="42" startPosition="0" endLine="835" endPosition="0" unitName="jetbrains.mps.core.structure.pluginSolution.plugin.LanguageConverter" />
   </root>
 </debugInfo>
 

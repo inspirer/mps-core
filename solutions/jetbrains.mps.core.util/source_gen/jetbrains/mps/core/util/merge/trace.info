@@ -184,11 +184,11 @@
       <varInfo nodeId="660431788367047860" varName="existing" />
       <varInfo nodeId="660431788367115190" varName="newmodel" />
     </scopeInfo>
-    <unitInfo nodeId="8776389519611334200" fileName="MergeSession.java" startLine="29" startPosition="0" endLine="163" endPosition="0" unitName="jetbrains.mps.core.util.merge.MergeSession" />
     <unitInfo nodeId="660431788367115155" fileName="MergeSession.java" startLine="55" startPosition="111" endLine="59" endPosition="5" unitName="jetbrains.mps.core.util.merge.MergeSession$1" />
     <unitInfo nodeId="6239144935628349900" fileName="MergeSession.java" startLine="95" startPosition="47" endLine="99" endPosition="7" unitName="jetbrains.mps.core.util.merge.MergeSession$2" />
     <unitInfo nodeId="660431788367048819" fileName="MergeSession.java" startLine="105" startPosition="49" endLine="113" endPosition="5" unitName="jetbrains.mps.core.util.merge.MergeSession$3" />
     <unitInfo nodeId="660431788367049075" fileName="MergeSession.java" startLine="115" startPosition="48" endLine="124" endPosition="5" unitName="jetbrains.mps.core.util.merge.MergeSession$4" />
+    <unitInfo nodeId="8776389519611334200" fileName="MergeSession.java" startLine="29" startPosition="0" endLine="163" endPosition="0" unitName="jetbrains.mps.core.util.merge.MergeSession" />
   </root>
 </debugInfo>
 

@@ -11,7 +11,7 @@
   <unitInfo fileName="SConceptAnnotationProperty_BehaviorDescriptor.java" startLine="9" startPosition="0" endLine="22" endPosition="0" unitName="jetbrains.mps.core.metadata.behavior.SConceptAnnotationProperty_BehaviorDescriptor" />
   <unitInfo fileName="SConceptAnnotationType_BehaviorDescriptor.java" startLine="12" startPosition="0" endLine="29" endPosition="0" unitName="jetbrains.mps.core.metadata.behavior.SConceptAnnotationType_BehaviorDescriptor" />
   <unitInfo fileName="SMetadataNodeRefExpression_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="jetbrains.mps.core.metadata.behavior.SMetadataNodeRefExpression_BehaviorDescriptor" />
-  <root nodeId="2848533153256509588">
+  <root nodeId="2848533153256509588" modelId="r:e644e609-4945-47d6-b846-1dd32b65fe69(jetbrains.mps.core.metadata.behavior)">
     <nodeInfo nodeId="2848533153256509595" fileName="SConceptAnnotationChildLink_Behavior.java" startLine="11" startPosition="86" endLine="12" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="2848533153256509588" fileName="SConceptAnnotationChildLink_Behavior.java" startLine="7" startPosition="51" endLine="10" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="init#(Ljetbrains/mps/smodel/SNode;)V" />
     <nodeInfo nodeId="2848533153256509588" fileName="SConceptAnnotationChildLink_Behavior.java" startLine="10" startPosition="0" endLine="14" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="virtual_supportsMultiple_2848533153256469873#(Ljetbrains/mps/smodel/SNode;)Z" />
@@ -25,7 +25,7 @@
     </scopeInfo>
     <unitInfo nodeId="2848533153256509588" fileName="SConceptAnnotationChildLink_Behavior.java" startLine="7" startPosition="0" endLine="15" endPosition="0" unitName="jetbrains.mps.core.metadata.behavior.SConceptAnnotationChildLink_Behavior" />
   </root>
-  <root nodeId="7891765471710147474">
+  <root nodeId="7891765471710147474" modelId="r:e644e609-4945-47d6-b846-1dd32b65fe69(jetbrains.mps.core.metadata.behavior)">
     <nodeInfo nodeId="7891765471710147513" fileName="SConceptAnnotationArgument_Behavior.java" startLine="16" startPosition="83" endLine="17" endPosition="145" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
     <nodeInfo nodeId="7891765471710147554" fileName="SConceptAnnotationArgument_Behavior.java" startLine="18" startPosition="29" endLine="19" endPosition="18" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="7891765471710147558" fileName="SConceptAnnotationArgument_Behavior.java" startLine="20" startPosition="5" endLine="21" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
@@ -57,8 +57,8 @@
     <scopeInfo nodeId="7891765471710147474" fileName="SConceptAnnotationArgument_Behavior.java" startLine="15" startPosition="0" endLine="28" endPosition="0">
       <varInfo nodeId="7891765471710147474" varName="thisNode" />
     </scopeInfo>
-    <unitInfo nodeId="7891765471710147474" fileName="SConceptAnnotationArgument_Behavior.java" startLine="12" startPosition="0" endLine="36" endPosition="0" unitName="jetbrains.mps.core.metadata.behavior.SConceptAnnotationArgument_Behavior" />
     <unitInfo nodeId="7891765471710147649" fileName="SConceptAnnotationArgument_Behavior.java" startLine="22" startPosition="140" endLine="26" endPosition="5" unitName="jetbrains.mps.core.metadata.behavior.SConceptAnnotationArgument_Behavior$1" />
+    <unitInfo nodeId="7891765471710147474" fileName="SConceptAnnotationArgument_Behavior.java" startLine="12" startPosition="0" endLine="36" endPosition="0" unitName="jetbrains.mps.core.metadata.behavior.SConceptAnnotationArgument_Behavior" />
   </root>
 </debugInfo>
 

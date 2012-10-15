@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debugInfo>
   <unitInfo fileName="TypesystemDescriptor.java" startLine="9" startPosition="0" endLine="25" endPosition="0" unitName="jetbrains.mps.core.smodel.typesystem.TypesystemDescriptor" />
-  <root nodeId="3530118130426438714">
+  <root nodeId="3530118130426438714" modelId="r:51081164-5cb8-4581-b1a7-d92a2d5fc7da(jetbrains.mps.core.smodel.typesystem)">
     <nodeInfo nodeId="3530118130426443687" fileName="typeof_SConceptQuery_InferenceRule.java" startLine="20" startPosition="7" endLine="21" endPosition="90" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
     <nodeInfo nodeId="3530118130426443687" fileName="typeof_SConceptQuery_InferenceRule.java" startLine="21" startPosition="90" endLine="22" endPosition="204" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
     <nodeInfo nodeId="3530118130426443687" fileName="typeof_SConceptQuery_InferenceRule.java" startLine="22" startPosition="204" endLine="23" endPosition="313" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
@@ -43,7 +43,7 @@
     </scopeInfo>
     <unitInfo nodeId="3530118130426438714" fileName="typeof_SConceptQuery_InferenceRule.java" startLine="14" startPosition="0" endLine="43" endPosition="0" unitName="jetbrains.mps.core.smodel.typesystem.typeof_SConceptQuery_InferenceRule" />
   </root>
-  <root nodeId="4524748913103431025">
+  <root nodeId="4524748913103431025" modelId="r:51081164-5cb8-4581-b1a7-d92a2d5fc7da(jetbrains.mps.core.smodel.typesystem)">
     <nodeInfo nodeId="4524748913103431031" fileName="fixQueryCall_QuickFix.java" startLine="14" startPosition="35" endLine="15" endPosition="190" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
     <nodeInfo nodeId="4524748913103431025" fileName="fixQueryCall_QuickFix.java" startLine="10" startPosition="61" endLine="12" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="fixQueryCall_QuickFix#()V" />
     <nodeInfo nodeId="4524748913103431025" fileName="fixQueryCall_QuickFix.java" startLine="13" startPosition="0" endLine="17" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="execute#(Ljetbrains/mps/smodel/SNode;)V" />
@@ -55,7 +55,7 @@
     </scopeInfo>
     <unitInfo nodeId="4524748913103431025" fileName="fixQueryCall_QuickFix.java" startLine="10" startPosition="0" endLine="18" endPosition="0" unitName="jetbrains.mps.core.smodel.typesystem.fixQueryCall_QuickFix" />
   </root>
-  <root nodeId="6371775917726237442">
+  <root nodeId="6371775917726237442" modelId="r:51081164-5cb8-4581-b1a7-d92a2d5fc7da(jetbrains.mps.core.smodel.typesystem)">
     <nodeInfo nodeId="6371775917726296947" fileName="check_SConceptQuery_NonTypesystemRule.java" startLine="26" startPosition="118" endLine="27" endPosition="71" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
     <nodeInfo nodeId="6371775917726378685" fileName="check_SConceptQuery_NonTypesystemRule.java" startLine="30" startPosition="9" endLine="31" endPosition="62" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
     <nodeInfo nodeId="6371775917726378685" fileName="check_SConceptQuery_NonTypesystemRule.java" startLine="31" startPosition="62" endLine="32" endPosition="247" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
@@ -214,7 +214,7 @@
     </scopeInfo>
     <unitInfo nodeId="6371775917726237442" fileName="check_SConceptQuery_NonTypesystemRule.java" startLine="22" startPosition="0" endLine="130" endPosition="0" unitName="jetbrains.mps.core.smodel.typesystem.check_SConceptQuery_NonTypesystemRule" />
   </root>
-  <root nodeId="6371775917726390679">
+  <root nodeId="6371775917726390679" modelId="r:51081164-5cb8-4581-b1a7-d92a2d5fc7da(jetbrains.mps.core.smodel.typesystem)">
     <nodeInfo nodeId="6371775917726390785" fileName="addOverride_QuickFix.java" startLine="14" startPosition="44" endLine="15" endPosition="36" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="6371775917726390682" fileName="addOverride_QuickFix.java" startLine="18" startPosition="35" endLine="19" endPosition="134" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
     <nodeInfo nodeId="6371775917726390679" fileName="addOverride_QuickFix.java" startLine="10" startPosition="60" endLine="12" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="addOverride_QuickFix#()V" />
@@ -232,7 +232,7 @@
     </scopeInfo>
     <unitInfo nodeId="6371775917726390679" fileName="addOverride_QuickFix.java" startLine="10" startPosition="0" endLine="22" endPosition="0" unitName="jetbrains.mps.core.smodel.typesystem.addOverride_QuickFix" />
   </root>
-  <root nodeId="6371775917726514730">
+  <root nodeId="6371775917726514730" modelId="r:51081164-5cb8-4581-b1a7-d92a2d5fc7da(jetbrains.mps.core.smodel.typesystem)">
     <nodeInfo nodeId="4524748913103430499" fileName="check_SConceptQueryCall_NonTypesystemRule.java" startLine="26" startPosition="122" endLine="27" endPosition="99" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
     <nodeInfo nodeId="4524748913103430548" fileName="check_SConceptQueryCall_NonTypesystemRule.java" startLine="29" startPosition="7" endLine="30" endPosition="60" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
     <nodeInfo nodeId="4524748913103430653" fileName="check_SConceptQueryCall_NonTypesystemRule.java" startLine="35" startPosition="7" endLine="36" endPosition="13" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
@@ -311,7 +311,7 @@
     </scopeInfo>
     <unitInfo nodeId="6371775917726514730" fileName="check_SConceptQueryCall_NonTypesystemRule.java" startLine="22" startPosition="0" endLine="78" endPosition="0" unitName="jetbrains.mps.core.smodel.typesystem.check_SConceptQueryCall_NonTypesystemRule" />
   </root>
-  <root nodeId="8616491442583851431">
+  <root nodeId="8616491442583851431" modelId="r:51081164-5cb8-4581-b1a7-d92a2d5fc7da(jetbrains.mps.core.smodel.typesystem)">
     <nodeInfo nodeId="8616491442583851439" fileName="makeConceptAbstract_QuickFix.java" startLine="13" startPosition="44" endLine="14" endPosition="46" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="8616491442583851441" fileName="makeConceptAbstract_QuickFix.java" startLine="17" startPosition="35" endLine="18" endPosition="121" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
     <nodeInfo nodeId="8616491442583851431" fileName="makeConceptAbstract_QuickFix.java" startLine="9" startPosition="68" endLine="11" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="makeConceptAbstract_QuickFix#()V" />
@@ -329,7 +329,7 @@
     </scopeInfo>
     <unitInfo nodeId="8616491442583851431" fileName="makeConceptAbstract_QuickFix.java" startLine="9" startPosition="0" endLine="21" endPosition="0" unitName="jetbrains.mps.core.smodel.typesystem.makeConceptAbstract_QuickFix" />
   </root>
-  <root nodeId="8616491442583855493">
+  <root nodeId="8616491442583855493" modelId="r:51081164-5cb8-4581-b1a7-d92a2d5fc7da(jetbrains.mps.core.smodel.typesystem)">
     <nodeInfo nodeId="8616491442583855574" fileName="removeAbstract_QuickFix.java" startLine="14" startPosition="44" endLine="15" endPosition="31" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="8616491442583855496" fileName="removeAbstract_QuickFix.java" startLine="18" startPosition="35" endLine="19" endPosition="135" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
     <nodeInfo nodeId="8616491442583855493" fileName="removeAbstract_QuickFix.java" startLine="10" startPosition="63" endLine="12" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="removeAbstract_QuickFix#()V" />
@@ -347,7 +347,7 @@
     </scopeInfo>
     <unitInfo nodeId="8616491442583855493" fileName="removeAbstract_QuickFix.java" startLine="10" startPosition="0" endLine="22" endPosition="0" unitName="jetbrains.mps.core.smodel.typesystem.removeAbstract_QuickFix" />
   </root>
-  <root nodeId="8616491442583857860">
+  <root nodeId="8616491442583857860" modelId="r:51081164-5cb8-4581-b1a7-d92a2d5fc7da(jetbrains.mps.core.smodel.typesystem)">
     <nodeInfo nodeId="8616491442583857948" fileName="removeBody_QuickFix.java" startLine="14" startPosition="44" endLine="15" endPosition="25" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="8616491442583857863" fileName="removeBody_QuickFix.java" startLine="18" startPosition="35" endLine="19" endPosition="131" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
     <nodeInfo nodeId="8616491442583857860" fileName="removeBody_QuickFix.java" startLine="10" startPosition="59" endLine="12" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="removeBody_QuickFix#()V" />

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debugInfo>
-  <root nodeId="8632884680339392060">
+  <root nodeId="8632884680339392060" modelId="r:ed60ffd3-6005-452a-953f-db4b2887ebbf(jetbrains.mps.core.notation.util)">
     <nodeInfo nodeId="8632884680339392066" fileName="NotationContext.java" startLine="7" startPosition="30" endLine="8" endPosition="27" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="node" />
     <nodeInfo nodeId="8632884680339392070" fileName="NotationContext.java" startLine="8" startPosition="27" endLine="9" endPosition="35" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="isMultiple" />
     <nodeInfo nodeId="8632884680339397021" fileName="NotationContext.java" startLine="9" startPosition="35" endLine="10" endPosition="35" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="isOptional" />

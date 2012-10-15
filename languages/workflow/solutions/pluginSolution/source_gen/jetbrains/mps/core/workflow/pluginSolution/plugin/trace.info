@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debugInfo>
-  <root nodeId="7349647468656132482">
+  <root nodeId="7349647468656132482" modelId="r:05af58df-4727-4a24-a2a1-7f227cf4d76b(jetbrains.mps.core.workflow.pluginSolution.plugin)">
     <nodeInfo nodeId="7349647468656132482" fileName="RunWorkflow_Action.java" startLine="23" startPosition="52" endLine="24" endPosition="40" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="ICON" />
     <nodeInfo nodeId="7349647468656132482" fileName="RunWorkflow_Action.java" startLine="24" startPosition="40" endLine="25" endPosition="73" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="log" />
     <nodeInfo nodeId="7349647468656132482" fileName="RunWorkflow_Action.java" startLine="27" startPosition="31" endLine="28" endPosition="36" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
@@ -97,10 +97,10 @@
       <varInfo nodeId="7349647468656132482" varName="_params" />
       <varInfo nodeId="7349647468656132482" varName="event" />
     </scopeInfo>
-    <unitInfo nodeId="7349647468656132482" fileName="RunWorkflow_Action.java" startLine="23" startPosition="0" endLine="89" endPosition="0" unitName="jetbrains.mps.core.workflow.pluginSolution.plugin.RunWorkflow_Action" />
     <unitInfo nodeId="7349647468656132508" fileName="RunWorkflow_Action.java" startLine="72" startPosition="31" endLine="80" endPosition="9" unitName="jetbrains.mps.core.workflow.pluginSolution.plugin.RunWorkflow_Action$1" />
+    <unitInfo nodeId="7349647468656132482" fileName="RunWorkflow_Action.java" startLine="23" startPosition="0" endLine="89" endPosition="0" unitName="jetbrains.mps.core.workflow.pluginSolution.plugin.RunWorkflow_Action" />
   </root>
-  <root nodeId="7349647468656132541">
+  <root nodeId="7349647468656132541" modelId="r:05af58df-4727-4a24-a2a1-7f227cf4d76b(jetbrains.mps.core.workflow.pluginSolution.plugin)">
     <nodeInfo nodeId="7349647468656132541" fileName="WorkflowGroup_ActionGroup.java" startLine="8" startPosition="69" endLine="9" endPosition="80" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="LOG" />
     <nodeInfo nodeId="7349647468656132541" fileName="WorkflowGroup_ActionGroup.java" startLine="9" startPosition="80" endLine="10" endPosition="112" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="ID" />
     <nodeInfo nodeId="7349647468656132541" fileName="WorkflowGroup_ActionGroup.java" startLine="12" startPosition="38" endLine="13" endPosition="31" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
@@ -119,7 +119,7 @@
     <scopeInfo nodeId="7349647468656132541" fileName="WorkflowGroup_ActionGroup.java" startLine="11" startPosition="0" endLine="21" endPosition="3" />
     <unitInfo nodeId="7349647468656132541" fileName="WorkflowGroup_ActionGroup.java" startLine="8" startPosition="0" endLine="23" endPosition="0" unitName="jetbrains.mps.core.workflow.pluginSolution.plugin.WorkflowGroup_ActionGroup" />
   </root>
-  <root nodeId="7349647468656132545">
+  <root nodeId="7349647468656132545" modelId="r:05af58df-4727-4a24-a2a1-7f227cf4d76b(jetbrains.mps.core.workflow.pluginSolution.plugin)">
     <nodeInfo nodeId="7349647468656132914" fileName="WorkflowRunner.java" startLine="19" startPosition="29" endLine="20" endPosition="34" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="handler" />
     <nodeInfo nodeId="7349647468656132917" fileName="WorkflowRunner.java" startLine="20" startPosition="34" endLine="21" endPosition="32" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="contextModule" />
     <nodeInfo nodeId="7349647468656132892" fileName="WorkflowRunner.java" startLine="23" startPosition="73" endLine="24" endPosition="27" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
@@ -244,10 +244,10 @@
     <scopeInfo nodeId="7349647468656132546" fileName="WorkflowRunner.java" startLine="28" startPosition="0" endLine="78" endPosition="0">
       <varInfo nodeId="7349647468656132777" varName="executable" />
     </scopeInfo>
-    <unitInfo nodeId="7349647468656132545" fileName="WorkflowRunner.java" startLine="19" startPosition="0" endLine="107" endPosition="0" unitName="jetbrains.mps.core.workflow.pluginSolution.plugin.WorkflowRunner" />
     <unitInfo nodeId="7349647468656132564" fileName="WorkflowRunner.java" startLine="31" startPosition="36" endLine="39" endPosition="5" unitName="jetbrains.mps.core.workflow.pluginSolution.plugin.WorkflowRunner$1" />
+    <unitInfo nodeId="7349647468656132545" fileName="WorkflowRunner.java" startLine="19" startPosition="0" endLine="107" endPosition="0" unitName="jetbrains.mps.core.workflow.pluginSolution.plugin.WorkflowRunner" />
   </root>
-  <root nodeId="7349647468656132920">
+  <root nodeId="7349647468656132920" modelId="r:05af58df-4727-4a24-a2a1-7f227cf4d76b(jetbrains.mps.core.workflow.pluginSolution.plugin)">
     <nodeInfo nodeId="7349647468656132920" fileName="PluginSolution_ApplicationPlugin.java" startLine="9" startPosition="77" endLine="10" endPosition="87" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="myId" />
     <nodeInfo nodeId="7349647468656132920" fileName="PluginSolution_ApplicationPlugin.java" startLine="15" startPosition="27" endLine="16" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="7349647468656132920" fileName="PluginSolution_ApplicationPlugin.java" startLine="19" startPosition="30" endLine="20" endPosition="30" conceptFqName="jetbrains.mps.baseLanguage.structure.SingleLineComment" />

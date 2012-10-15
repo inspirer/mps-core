@@ -49,9 +49,9 @@
     <scopeInfo nodeId="1030525575875839453" fileName="SNonTerm_Behavior.java" startLine="19" startPosition="0" endLine="31" endPosition="0">
       <varInfo nodeId="1030525575875839453" varName="thisNode" />
     </scopeInfo>
-    <unitInfo nodeId="1030525575875839453" fileName="SNonTerm_Behavior.java" startLine="12" startPosition="0" endLine="32" endPosition="0" unitName="jetbrains.mps.core.syntax.behavior.SNonTerm_Behavior" />
     <unitInfo nodeId="1030525575875844588" fileName="SNonTerm_Behavior.java" startLine="21" startPosition="203" endLine="25" endPosition="5" unitName="jetbrains.mps.core.syntax.behavior.SNonTerm_Behavior$1" />
     <unitInfo nodeId="1030525575875865469" fileName="SNonTerm_Behavior.java" startLine="25" startPosition="17" endLine="29" endPosition="5" unitName="jetbrains.mps.core.syntax.behavior.SNonTerm_Behavior$2" />
+    <unitInfo nodeId="1030525575875839453" fileName="SNonTerm_Behavior.java" startLine="12" startPosition="0" endLine="32" endPosition="0" unitName="jetbrains.mps.core.syntax.behavior.SNonTerm_Behavior" />
   </root>
   <root nodeId="4242261035235367592" modelId="r:634291dd-a0fe-4158-8c6d-71668d515dab(jetbrains.mps.core.syntax.behavior)">
     <nodeInfo nodeId="4242261035235367592" fileName="STargetLanguage_Behavior.java" startLine="11" startPosition="39" endLine="12" endPosition="72" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="PARAMETERS_4242261035235367595" />

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debugInfo>
   <unitInfo fileName="TypesystemDescriptor.java" startLine="8" startPosition="0" endLine="24" endPosition="0" unitName="jetbrains.mps.core.notation.typesystem.TypesystemDescriptor" />
-  <root nodeId="2711998566964092837">
+  <root nodeId="2711998566964092837" modelId="r:a890372e-633e-4844-8377-f7d3b4a35a63(jetbrains.mps.core.notation.typesystem)">
     <nodeInfo nodeId="2711998566964092902" fileName="check_SNotationStyle_NonTypesystemRule.java" startLine="22" startPosition="7" endLine="23" endPosition="60" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
     <nodeInfo nodeId="2711998566964092902" fileName="check_SNotationStyle_NonTypesystemRule.java" startLine="23" startPosition="60" endLine="24" endPosition="240" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
     <nodeInfo nodeId="2711998566964092837" fileName="check_SNotationStyle_NonTypesystemRule.java" startLine="29" startPosition="46" endLine="30" endPosition="66" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
@@ -42,7 +42,7 @@
     </scopeInfo>
     <unitInfo nodeId="2711998566964092837" fileName="check_SNotationStyle_NonTypesystemRule.java" startLine="16" startPosition="0" endLine="44" endPosition="0" unitName="jetbrains.mps.core.notation.typesystem.check_SNotationStyle_NonTypesystemRule" />
   </root>
-  <root nodeId="5566195403253968515">
+  <root nodeId="5566195403253968515" modelId="r:a890372e-633e-4844-8377-f7d3b4a35a63(jetbrains.mps.core.notation.typesystem)">
     <nodeInfo nodeId="5566195403253968573" fileName="check_SNotationCall_NonTypesystemRule.java" startLine="22" startPosition="7" endLine="23" endPosition="60" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
     <nodeInfo nodeId="5566195403253968573" fileName="check_SNotationCall_NonTypesystemRule.java" startLine="23" startPosition="60" endLine="24" endPosition="267" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
     <nodeInfo nodeId="5566195403253968515" fileName="check_SNotationCall_NonTypesystemRule.java" startLine="29" startPosition="46" endLine="30" endPosition="65" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
@@ -83,7 +83,7 @@
     </scopeInfo>
     <unitInfo nodeId="5566195403253968515" fileName="check_SNotationCall_NonTypesystemRule.java" startLine="16" startPosition="0" endLine="44" endPosition="0" unitName="jetbrains.mps.core.notation.typesystem.check_SNotationCall_NonTypesystemRule" />
   </root>
-  <root nodeId="6373561361597667771">
+  <root nodeId="6373561361597667771" modelId="r:a890372e-633e-4844-8377-f7d3b4a35a63(jetbrains.mps.core.notation.typesystem)">
     <nodeInfo nodeId="6373561361597750923" fileName="check_SNotationUnorderedGroup_NonTypesystemRule.java" startLine="21" startPosition="118" endLine="22" endPosition="95" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
     <nodeInfo nodeId="6373561361597667837" fileName="check_SNotationUnorderedGroup_NonTypesystemRule.java" startLine="24" startPosition="7" endLine="25" endPosition="60" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
     <nodeInfo nodeId="6373561361597667837" fileName="check_SNotationUnorderedGroup_NonTypesystemRule.java" startLine="25" startPosition="60" endLine="26" endPosition="238" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />

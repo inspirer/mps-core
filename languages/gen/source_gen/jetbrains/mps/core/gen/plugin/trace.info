@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debugInfo>
-  <unitInfo fileName="FacetAspectDescriptor.java" startLine="9" startPosition="0" endLine="24" endPosition="0" unitName="jetbrains.mps.core.gen.plugin.FacetAspectDescriptor" />
   <unitInfo fileName="FacetAspectDescriptor.java" startLine="17" startPosition="15" endLine="21" endPosition="5" unitName="jetbrains.mps.core.gen.plugin.FacetAspectDescriptor$1" />
-  <unitInfo fileName="FacetManifest.java" startLine="12" startPosition="0" endLine="31" endPosition="0" unitName="jetbrains.mps.core.gen.plugin.FacetManifest" />
+  <unitInfo fileName="FacetAspectDescriptor.java" startLine="9" startPosition="0" endLine="24" endPosition="0" unitName="jetbrains.mps.core.gen.plugin.FacetAspectDescriptor" />
   <unitInfo fileName="FacetManifest.java" startLine="24" startPosition="55" endLine="28" endPosition="5" unitName="jetbrains.mps.core.gen.plugin.FacetManifest$1" />
+  <unitInfo fileName="FacetManifest.java" startLine="12" startPosition="0" endLine="31" endPosition="0" unitName="jetbrains.mps.core.gen.plugin.FacetManifest" />
   <root nodeId="2479484422645220996" modelId="r:91a6a437-1c2a-4254-ab34-48fe5071d618(jetbrains.mps.core.gen.plugin)">
     <nodeInfo nodeId="2479484422645221015" fileName="TransformGenerationPlan.java" startLine="16" startPosition="69" endLine="17" endPosition="111" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="steps" />
     <nodeInfo nodeId="2479484422645221084" fileName="TransformGenerationPlan.java" startLine="22" startPosition="65" endLine="23" endPosition="20" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
@@ -127,7 +127,7 @@
     <nodeInfo nodeId="7308541137203898755" fileName="LanguageModelsMerger.java" startLine="92" startPosition="33" endLine="93" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="7308541137203898918" fileName="LanguageModelsMerger.java" startLine="96" startPosition="52" endLine="97" endPosition="26" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="8776389519611335848" fileName="LanguageModelsMerger.java" startLine="100" startPosition="23" endLine="101" endPosition="20" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="8746159225582014665" fileName="LanguageModelsMerger.java" startLine="104" startPosition="68" endLine="105" endPosition="43" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="8746159225582015350" fileName="LanguageModelsMerger.java" startLine="104" startPosition="68" endLine="105" endPosition="43" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="8746159225582014596" fileName="LanguageModelsMerger.java" startLine="44" startPosition="61" endLine="47" endPosition="9" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
     <nodeInfo nodeId="660431788367008978" fileName="LanguageModelsMerger.java" startLine="51" startPosition="0" endLine="55" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
     <nodeInfo nodeId="660431788367045467" fileName="LanguageModelsMerger.java" startLine="58" startPosition="137" endLine="62" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="accept#(Ljetbrains/mps/smodel/SNode;)Z" />
@@ -138,7 +138,7 @@
     <nodeInfo nodeId="7308541137203898751" fileName="LanguageModelsMerger.java" startLine="91" startPosition="0" endLine="95" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getLanguage#()Ljetbrains/mps/smodel/Language;" />
     <nodeInfo nodeId="7308541137203898758" fileName="LanguageModelsMerger.java" startLine="95" startPosition="0" endLine="99" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getGenerated#()Ljava/lang/Iterable;" />
     <nodeInfo nodeId="8776389519611335809" fileName="LanguageModelsMerger.java" startLine="99" startPosition="0" endLine="103" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="apply#()V" />
-    <nodeInfo nodeId="8746159225582014665" fileName="LanguageModelsMerger.java" startLine="103" startPosition="0" endLine="107" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="isNotEmpty_mx80dq_a0b0a0a0a1a0#(Ljava/lang/String;)Z" />
+    <nodeInfo nodeId="8746159225582015350" fileName="LanguageModelsMerger.java" startLine="103" startPosition="0" endLine="107" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="isNotEmpty_mx80dq_a0b0a0a0a1a0#(Ljava/lang/String;)Z" />
     <nodeInfo nodeId="660431788367009152" fileName="LanguageModelsMerger.java" startLine="57" startPosition="0" endLine="62" endPosition="8" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
     <nodeInfo nodeId="660431788367045479" fileName="LanguageModelsMerger.java" startLine="62" startPosition="8" endLine="67" endPosition="8" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
     <nodeInfo nodeId="660431788367098515" fileName="LanguageModelsMerger.java" startLine="68" startPosition="0" endLine="73" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
@@ -154,7 +154,7 @@
     <scopeInfo nodeId="7308541137203898754" fileName="LanguageModelsMerger.java" startLine="92" startPosition="33" endLine="93" endPosition="16" />
     <scopeInfo nodeId="7308541137203898761" fileName="LanguageModelsMerger.java" startLine="96" startPosition="52" endLine="97" endPosition="26" />
     <scopeInfo nodeId="8776389519611335812" fileName="LanguageModelsMerger.java" startLine="100" startPosition="23" endLine="101" endPosition="20" />
-    <scopeInfo nodeId="8746159225582014665" fileName="LanguageModelsMerger.java" startLine="104" startPosition="68" endLine="105" endPosition="43" />
+    <scopeInfo nodeId="8746159225582015350" fileName="LanguageModelsMerger.java" startLine="104" startPosition="68" endLine="105" endPosition="43" />
     <scopeInfo nodeId="660431788367008980" fileName="LanguageModelsMerger.java" startLine="52" startPosition="151" endLine="54" endPosition="13" />
     <scopeInfo nodeId="660431788367098624" fileName="LanguageModelsMerger.java" startLine="74" startPosition="56" endLine="76" endPosition="13" />
     <scopeInfo nodeId="660431788367045543" fileName="LanguageModelsMerger.java" startLine="84" startPosition="28" endLine="86" endPosition="13" />
@@ -171,8 +171,8 @@
     <scopeInfo nodeId="7308541137203898751" fileName="LanguageModelsMerger.java" startLine="91" startPosition="0" endLine="95" endPosition="0" />
     <scopeInfo nodeId="7308541137203898758" fileName="LanguageModelsMerger.java" startLine="95" startPosition="0" endLine="99" endPosition="0" />
     <scopeInfo nodeId="8776389519611335809" fileName="LanguageModelsMerger.java" startLine="99" startPosition="0" endLine="103" endPosition="0" />
-    <scopeInfo nodeId="8746159225582014665" fileName="LanguageModelsMerger.java" startLine="103" startPosition="0" endLine="107" endPosition="0">
-      <varInfo nodeId="8746159225582014665" varName="str" />
+    <scopeInfo nodeId="8746159225582015350" fileName="LanguageModelsMerger.java" startLine="103" startPosition="0" endLine="107" endPosition="0">
+      <varInfo nodeId="8746159225582015350" varName="str" />
     </scopeInfo>
     <scopeInfo nodeId="8746159225582014431" fileName="LanguageModelsMerger.java" startLine="43" startPosition="74" endLine="48" endPosition="22">
       <varInfo nodeId="8746159225582014588" varName="merged" />
@@ -198,11 +198,11 @@
       <varInfo nodeId="660431788367098516" varName="notMerged" />
     </scopeInfo>
     <scopeInfo nodeId="660431788367008941" fileName="LanguageModelsMerger.java" startLine="38" startPosition="0" endLine="81" endPosition="0" />
-    <unitInfo nodeId="660431788367008736" fileName="LanguageModelsMerger.java" startLine="25" startPosition="0" endLine="108" endPosition="0" unitName="jetbrains.mps.core.gen.plugin.LanguageModelsMerger" />
-    <unitInfo nodeId="8746159225582014420" fileName="LanguageModelsMerger.java" startLine="41" startPosition="18" endLine="50" endPosition="5" unitName="jetbrains.mps.core.gen.plugin.LanguageModelsMerger$1" />
     <unitInfo nodeId="660431788367045467" fileName="LanguageModelsMerger.java" startLine="58" startPosition="114" endLine="62" endPosition="5" unitName="jetbrains.mps.core.gen.plugin.LanguageModelsMerger$2" />
     <unitInfo nodeId="660431788367045487" fileName="LanguageModelsMerger.java" startLine="63" startPosition="113" endLine="67" endPosition="5" unitName="jetbrains.mps.core.gen.plugin.LanguageModelsMerger$3" />
     <unitInfo nodeId="660431788367098579" fileName="LanguageModelsMerger.java" startLine="69" startPosition="110" endLine="73" endPosition="5" unitName="jetbrains.mps.core.gen.plugin.LanguageModelsMerger$4" />
+    <unitInfo nodeId="8746159225582014420" fileName="LanguageModelsMerger.java" startLine="41" startPosition="18" endLine="50" endPosition="5" unitName="jetbrains.mps.core.gen.plugin.LanguageModelsMerger$1" />
+    <unitInfo nodeId="660431788367008736" fileName="LanguageModelsMerger.java" startLine="25" startPosition="0" endLine="108" endPosition="0" unitName="jetbrains.mps.core.gen.plugin.LanguageModelsMerger" />
   </root>
   <root nodeId="710936335908831933" modelId="r:91a6a437-1c2a-4254-ab34-48fe5071d618(jetbrains.mps.core.gen.plugin)">
     <nodeInfo nodeId="710936335908831933" fileName="TransformCoreLanguages_Facet.java" startLine="47" startPosition="63" endLine="48" endPosition="82" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="targets" />
@@ -382,6 +382,9 @@
     <scopeInfo nodeId="710936335908831933" fileName="TransformCoreLanguages_Facet.java" startLine="257" startPosition="74" endLine="259" endPosition="5" />
     <scopeInfo nodeId="710936335908831933" fileName="TransformCoreLanguages_Facet.java" startLine="50" startPosition="0" endLine="53" endPosition="3" />
     <scopeInfo nodeId="6648795410103940142" fileName="TransformCoreLanguages_Facet.java" startLine="121" startPosition="0" endLine="124" endPosition="0" />
+    <scopeInfo nodeId="710936335908850461" fileName="TransformCoreLanguages_Facet.java" startLine="155" startPosition="35" endLine="158" endPosition="19">
+      <varInfo nodeId="710936335908850461" varName="m" />
+    </scopeInfo>
     <scopeInfo nodeId="710936335908850545" fileName="TransformCoreLanguages_Facet.java" startLine="155" startPosition="35" endLine="158" endPosition="19" />
     <scopeInfo nodeId="710936335908831933" fileName="TransformCoreLanguages_Facet.java" startLine="260" startPosition="0" endLine="263" endPosition="0">
       <varInfo nodeId="710936335908831933" varName="properties" />
@@ -470,22 +473,22 @@
     </scopeInfo>
     <scopeInfo nodeId="710936335908831935" fileName="TransformCoreLanguages_Facet.java" startLine="88" startPosition="29" endLine="200" endPosition="8" />
     <scopeInfo nodeId="710936335908831935" fileName="TransformCoreLanguages_Facet.java" startLine="87" startPosition="0" endLine="202" endPosition="0" />
-    <unitInfo nodeId="710936335908831933" fileName="TransformCoreLanguages_Facet.java" startLine="47" startPosition="0" endLine="271" endPosition="0" unitName="jetbrains.mps.core.gen.plugin.TransformCoreLanguages_Facet" />
-    <unitInfo nodeId="710936335908831937" fileName="TransformCoreLanguages_Facet.java" startLine="89" startPosition="17" endLine="200" endPosition="7" unitName="jetbrains.mps.core.gen.plugin.TransformCoreLanguages_Facet$1" />
+    <unitInfo nodeId="660431788367124294" fileName="TransformCoreLanguages_Facet.java" startLine="97" startPosition="72" endLine="101" endPosition="19" unitName="jetbrains.mps.core.gen.plugin.TransformCoreLanguages_Facet$3" />
+    <unitInfo nodeId="6648795410103940185" fileName="TransformCoreLanguages_Facet.java" startLine="101" startPosition="35" endLine="105" endPosition="19" unitName="jetbrains.mps.core.gen.plugin.TransformCoreLanguages_Facet$3" />
+    <unitInfo nodeId="710936335908844100" fileName="TransformCoreLanguages_Facet.java" startLine="105" startPosition="31" endLine="109" endPosition="19" unitName="jetbrains.mps.core.gen.plugin.TransformCoreLanguages_Facet$3" />
+    <unitInfo nodeId="660431788367124491" fileName="TransformCoreLanguages_Facet.java" startLine="168" startPosition="66" endLine="172" endPosition="21" unitName="jetbrains.mps.core.gen.plugin.TransformCoreLanguages_Facet$3" />
+    <unitInfo nodeId="660431788367124577" fileName="TransformCoreLanguages_Facet.java" startLine="177" startPosition="66" endLine="181" endPosition="21" unitName="jetbrains.mps.core.gen.plugin.TransformCoreLanguages_Facet$3" />
     <unitInfo nodeId="7308541137203860471" fileName="TransformCoreLanguages_Facet.java" startLine="185" startPosition="62" endLine="189" endPosition="17" unitName="jetbrains.mps.core.gen.plugin.TransformCoreLanguages_Facet$2" />
     <unitInfo nodeId="710936335908850544" fileName="TransformCoreLanguages_Facet.java" startLine="154" startPosition="55" endLine="160" endPosition="15" unitName="jetbrains.mps.core.gen.plugin.TransformCoreLanguages_Facet$2" />
     <unitInfo nodeId="6648795410103940132" fileName="TransformCoreLanguages_Facet.java" startLine="117" startPosition="45" endLine="124" endPosition="15" unitName="jetbrains.mps.core.gen.plugin.TransformCoreLanguages_Facet$2" />
     <unitInfo nodeId="6648795410103940104" fileName="TransformCoreLanguages_Facet.java" startLine="126" startPosition="68" endLine="133" endPosition="15" unitName="jetbrains.mps.core.gen.plugin.TransformCoreLanguages_Facet$2" />
     <unitInfo nodeId="660431788367124397" fileName="TransformCoreLanguages_Facet.java" startLine="166" startPosition="57" endLine="174" endPosition="17" unitName="jetbrains.mps.core.gen.plugin.TransformCoreLanguages_Facet$2" />
     <unitInfo nodeId="660431788367124547" fileName="TransformCoreLanguages_Facet.java" startLine="175" startPosition="58" endLine="183" endPosition="17" unitName="jetbrains.mps.core.gen.plugin.TransformCoreLanguages_Facet$2" />
-    <unitInfo nodeId="710936335908850540" fileName="TransformCoreLanguages_Facet.java" startLine="95" startPosition="55" endLine="111" endPosition="15" unitName="jetbrains.mps.core.gen.plugin.TransformCoreLanguages_Facet$2" />
-    <unitInfo nodeId="660431788367124294" fileName="TransformCoreLanguages_Facet.java" startLine="97" startPosition="72" endLine="101" endPosition="19" unitName="jetbrains.mps.core.gen.plugin.TransformCoreLanguages_Facet$3" />
-    <unitInfo nodeId="6648795410103940185" fileName="TransformCoreLanguages_Facet.java" startLine="101" startPosition="35" endLine="105" endPosition="19" unitName="jetbrains.mps.core.gen.plugin.TransformCoreLanguages_Facet$3" />
-    <unitInfo nodeId="710936335908844100" fileName="TransformCoreLanguages_Facet.java" startLine="105" startPosition="31" endLine="109" endPosition="19" unitName="jetbrains.mps.core.gen.plugin.TransformCoreLanguages_Facet$3" />
-    <unitInfo nodeId="660431788367124491" fileName="TransformCoreLanguages_Facet.java" startLine="168" startPosition="66" endLine="172" endPosition="21" unitName="jetbrains.mps.core.gen.plugin.TransformCoreLanguages_Facet$3" />
-    <unitInfo nodeId="660431788367124577" fileName="TransformCoreLanguages_Facet.java" startLine="177" startPosition="66" endLine="181" endPosition="21" unitName="jetbrains.mps.core.gen.plugin.TransformCoreLanguages_Facet$3" />
     <unitInfo nodeId="710936335908831933" fileName="TransformCoreLanguages_Facet.java" startLine="257" startPosition="0" endLine="270" endPosition="0" unitName="jetbrains.mps.core.gen.plugin.TransformCoreLanguages_Facet$TargetProperties" />
+    <unitInfo nodeId="710936335908850540" fileName="TransformCoreLanguages_Facet.java" startLine="95" startPosition="55" endLine="111" endPosition="15" unitName="jetbrains.mps.core.gen.plugin.TransformCoreLanguages_Facet$2" />
+    <unitInfo nodeId="710936335908831937" fileName="TransformCoreLanguages_Facet.java" startLine="89" startPosition="17" endLine="200" endPosition="7" unitName="jetbrains.mps.core.gen.plugin.TransformCoreLanguages_Facet$1" />
     <unitInfo nodeId="710936335908831935" fileName="TransformCoreLanguages_Facet.java" startLine="79" startPosition="0" endLine="256" endPosition="0" unitName="jetbrains.mps.core.gen.plugin.TransformCoreLanguages_Facet$Target_transformLanguages" />
+    <unitInfo nodeId="710936335908831933" fileName="TransformCoreLanguages_Facet.java" startLine="47" startPosition="0" endLine="271" endPosition="0" unitName="jetbrains.mps.core.gen.plugin.TransformCoreLanguages_Facet" />
   </root>
 </debugInfo>
 

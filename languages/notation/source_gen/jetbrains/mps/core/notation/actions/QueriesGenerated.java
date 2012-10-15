@@ -223,16 +223,17 @@ public class QueriesGenerated {
     List<INodeSubstituteAction> result = ListSequence.fromList(new ArrayList<INodeSubstituteAction>());
     {
       final String[] lastPattern = new String[1];
-      List<INodeSubstituteAction> list = ModelActions.createChildSubstituteActions(new Computable<SNode>() {
+      final SNode targetNode = new Computable<SNode>() {
         public SNode compute() {
           return SNotationActionUtil.getRightOutermostNotation(_context.getSourceNode());
         }
-      }.compute(), null, SConceptOperations.findConceptDeclaration("jetbrains.mps.core.notation.structure.SNotationPart"), new AbstractChildNodeSetter() {
+      }.compute();
+      List<INodeSubstituteAction> list = ModelActions.createChildSubstituteActions(targetNode, null, SConceptOperations.findConceptDeclaration("jetbrains.mps.core.notation.structure.SNotationPart"), new AbstractChildNodeSetter() {
         public SNode doExecute(SNode parentNode, SNode oldChild, SNode newChild, IScope p3) {
-          return substitute(newChild, lastPattern[0]);
+          return substitute(newChild, targetNode, lastPattern[0]);
         }
 
-        private SNode substitute(SNode result, String pattern) {
+        private SNode substitute(SNode result, SNode targetNode, String pattern) {
           SNode outer = SNotationActionUtil.getRightOutermostNotation(_context.getSourceNode());
           SNodeOperations.insertNextSiblingChild(outer, result);
           return result;
