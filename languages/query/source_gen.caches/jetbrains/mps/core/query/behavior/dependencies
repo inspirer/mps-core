@@ -43,8 +43,6 @@
   <dependency className="jetbrains.mps.core.query.behavior.MqlArithmetic_Behavior" file="MqlArithmetic_Behavior.java">
     <classNode dependClassName="java.lang.Integer" />
     <classNode dependClassName="java.lang.Object" />
-    <classNode dependClassName="java.util.HashSet" />
-    <classNode dependClassName="java.util.Set" />
     <classNode dependClassName="jetbrains.mps.core.query.runtime.EvaluationContext" />
     <classNode dependClassName="jetbrains.mps.core.query.runtime.EvaluationEnvironment" />
     <classNode dependClassName="jetbrains.mps.core.query.runtime.EvaluationException" />
@@ -110,8 +108,6 @@
   <dependency className="jetbrains.mps.core.query.behavior.MqlBoolLiteral_Behavior" file="MqlBoolLiteral_Behavior.java">
     <classNode dependClassName="java.lang.Boolean" />
     <classNode dependClassName="java.lang.Object" />
-    <classNode dependClassName="java.util.HashSet" />
-    <classNode dependClassName="java.util.Set" />
     <classNode dependClassName="jetbrains.mps.core.query.runtime.EvaluationContext" />
     <classNode dependClassName="jetbrains.mps.core.query.runtime.EvaluationEnvironment" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
@@ -173,10 +169,8 @@
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.util.Collection" />
     <classNode dependClassName="java.util.Collections" />
-    <classNode dependClassName="java.util.HashSet" />
     <classNode dependClassName="java.util.Iterator" />
     <classNode dependClassName="java.util.List" />
-    <classNode dependClassName="java.util.Set" />
     <classNode dependClassName="jetbrains.mps.core.query.behavior.MqlSelector_Behavior" />
     <classNode dependClassName="jetbrains.mps.core.query.runtime.EvaluationContext" />
     <classNode dependClassName="jetbrains.mps.core.query.runtime.EvaluationEnvironment" />
@@ -247,11 +241,9 @@
     <classNode dependClassName="java.util.Collections" />
     <classNode dependClassName="java.util.Comparator" />
     <classNode dependClassName="java.util.HashMap" />
-    <classNode dependClassName="java.util.HashSet" />
     <classNode dependClassName="java.util.LinkedHashSet" />
     <classNode dependClassName="java.util.List" />
     <classNode dependClassName="java.util.Map" />
-    <classNode dependClassName="java.util.Set" />
     <classNode dependClassName="jetbrains.mps.core.query.behavior.MqlExpression_Behavior" />
     <classNode dependClassName="jetbrains.mps.core.query.behavior.MqlSelector_Behavior" />
     <classNode dependClassName="jetbrains.mps.core.query.runtime.EvaluationContext" />
@@ -260,7 +252,6 @@
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
-    <classNode dependClassName="jetbrains.mps.lang.typesystem.runtime.HUtil" />
     <classNode dependClassName="jetbrains.mps.project.GlobalScope" />
     <classNode dependClassName="jetbrains.mps.smodel.SModelUtil_new" />
     <classNode dependClassName="jetbrains.mps.smodel.SNode" />
@@ -312,8 +303,6 @@
     <classNode dependClassName="java.lang.Boolean" />
     <classNode dependClassName="java.lang.Integer" />
     <classNode dependClassName="java.lang.Object" />
-    <classNode dependClassName="java.util.HashSet" />
-    <classNode dependClassName="java.util.Set" />
     <classNode dependClassName="jetbrains.mps.core.query.runtime.EvaluationContext" />
     <classNode dependClassName="jetbrains.mps.core.query.runtime.EvaluationEnvironment" />
     <classNode dependClassName="jetbrains.mps.core.query.runtime.EvaluationException" />
@@ -411,8 +400,6 @@
   <dependency className="jetbrains.mps.core.query.behavior.MqlIntLiteral_Behavior" file="MqlIntLiteral_Behavior.java">
     <classNode dependClassName="java.lang.Integer" />
     <classNode dependClassName="java.lang.Object" />
-    <classNode dependClassName="java.util.HashSet" />
-    <classNode dependClassName="java.util.Set" />
     <classNode dependClassName="jetbrains.mps.core.query.runtime.EvaluationContext" />
     <classNode dependClassName="jetbrains.mps.core.query.runtime.EvaluationEnvironment" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
@@ -447,16 +434,13 @@
   <dependency className="jetbrains.mps.core.query.behavior.MqlListLiteral_Behavior" file="MqlListLiteral_Behavior.java">
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.util.ArrayList" />
-    <classNode dependClassName="java.util.HashSet" />
     <classNode dependClassName="java.util.List" />
-    <classNode dependClassName="java.util.Set" />
     <classNode dependClassName="jetbrains.mps.core.query.behavior.MqlExpression_Behavior" />
     <classNode dependClassName="jetbrains.mps.core.query.runtime.EvaluationContext" />
     <classNode dependClassName="jetbrains.mps.core.query.runtime.EvaluationEnvironment" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
-    <classNode dependClassName="jetbrains.mps.lang.typesystem.runtime.HUtil" />
     <classNode dependClassName="jetbrains.mps.project.GlobalScope" />
     <classNode dependClassName="jetbrains.mps.smodel.SModelUtil_new" />
     <classNode dependClassName="jetbrains.mps.smodel.SNode" />
@@ -509,8 +493,6 @@
   </dependency>
   <dependency className="jetbrains.mps.core.query.behavior.MqlNullLiteral_Behavior" file="MqlNullLiteral_Behavior.java">
     <classNode dependClassName="java.lang.Object" />
-    <classNode dependClassName="java.util.HashSet" />
-    <classNode dependClassName="java.util.Set" />
     <classNode dependClassName="jetbrains.mps.core.query.runtime.EvaluationContext" />
     <classNode dependClassName="jetbrains.mps.core.query.runtime.EvaluationEnvironment" />
     <classNode dependClassName="jetbrains.mps.project.GlobalScope" />
@@ -640,7 +622,6 @@
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="jetbrains.mps.core.query.behavior.MqlParametersContainer_BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.core.query.behavior.MqlQuery_Behavior" />
-    <classNode dependClassName="jetbrains.mps.core.query.behavior.MqlThisProvider_BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.core.query.runtime.EvaluationContext" />
     <classNode dependClassName="jetbrains.mps.core.query.runtime.EvaluationEnvironment" />
     <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
@@ -698,8 +679,6 @@
   </dependency>
   <dependency className="jetbrains.mps.core.query.behavior.MqlStringLiteral_Behavior" file="MqlStringLiteral_Behavior.java">
     <classNode dependClassName="java.lang.Object" />
-    <classNode dependClassName="java.util.HashSet" />
-    <classNode dependClassName="java.util.Set" />
     <classNode dependClassName="jetbrains.mps.core.query.runtime.EvaluationContext" />
     <classNode dependClassName="jetbrains.mps.core.query.runtime.EvaluationEnvironment" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
@@ -807,8 +786,6 @@
     <classNode dependClassName="java.lang.Boolean" />
     <classNode dependClassName="java.lang.Integer" />
     <classNode dependClassName="java.lang.Object" />
-    <classNode dependClassName="java.util.HashSet" />
-    <classNode dependClassName="java.util.Set" />
     <classNode dependClassName="jetbrains.mps.core.query.runtime.EvaluationContext" />
     <classNode dependClassName="jetbrains.mps.core.query.runtime.EvaluationEnvironment" />
     <classNode dependClassName="jetbrains.mps.core.query.runtime.EvaluationException" />

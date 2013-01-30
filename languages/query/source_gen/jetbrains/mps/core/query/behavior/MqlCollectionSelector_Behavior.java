@@ -20,11 +20,8 @@ import java.util.Comparator;
 import jetbrains.mps.smodel.runtime.BehaviorDescriptor;
 import jetbrains.mps.smodel.language.ConceptRegistry;
 import jetbrains.mps.smodel.behaviour.BehaviorManager;
-import java.util.Set;
-import java.util.HashSet;
 import jetbrains.mps.smodel.SModelUtil_new;
 import jetbrains.mps.project.GlobalScope;
-import jetbrains.mps.lang.typesystem.runtime.HUtil;
 
 public class MqlCollectionSelector_Behavior {
   private static Class[] PARAMETERS_7862448911997425386 = {SNode.class, Object.class, EvaluationEnvironment.class, EvaluationContext.class};
@@ -34,15 +31,15 @@ public class MqlCollectionSelector_Behavior {
 
   public static SNode virtual_getType_228266671027867010(SNode thisNode) {
     if (SPropertyOperations.hasValue(thisNode, "kind", "5", null) || SPropertyOperations.hasValue(thisNode, "kind", "6", null)) {
-      return new MqlCollectionSelector_Behavior.QuotationClass_6kvg7a_a0a0a0b().createNode();
+      return createMqlBoolType_6kvg7a_a0a0a0();
     } else if (SPropertyOperations.hasValue(thisNode, "kind", "8", null)) {
-      return new MqlCollectionSelector_Behavior.QuotationClass_6kvg7a_a0a0a0a1().createNode(MqlSelector_Behavior.call_getContainerType_228266671027861723(thisNode));
+      return createMqlListType_6kvg7a_a0a0a0a(MqlSelector_Behavior.call_getContainerType_228266671027861723(thisNode));
     } else if (SPropertyOperations.hasValue(thisNode, "kind", "1", null) || SPropertyOperations.hasValue(thisNode, "kind", "2", null)) {
       SNode node = MqlExpression_Behavior.call_getType_228266671027861783(SLinkOperations.getTarget(thisNode, "expr", true));
       if (SNodeOperations.isInstanceOf(node, "jetbrains.mps.core.query.structure.MqlListType")) {
         return node;
       }
-      return new MqlCollectionSelector_Behavior.QuotationClass_6kvg7a_a0c0b0a1().createNode(node);
+      return createMqlListType_6kvg7a_a2a1a0a(node);
     }
     return MqlSelector_Behavior.call_getContainerType_228266671027861723(thisNode);
   }
@@ -181,82 +178,20 @@ public class MqlCollectionSelector_Behavior {
     return (Object) BehaviorManager.getInstance().invokeSuper(Object.class, SNodeOperations.cast(thisNode, "jetbrains.mps.core.query.structure.MqlCollectionSelector"), callerConceptFqName, "virtual_evaluate_7862448911997337721", PARAMETERS_7862448911997425386, new Object[]{object, env, context});
   }
 
-  public static class QuotationClass_6kvg7a_a0a0a0b {
-    public QuotationClass_6kvg7a_a0a0a0b() {
-    }
-
-    public SNode createNode() {
-      SNode result = null;
-      Set<SNode> _parameterValues_129834374 = new HashSet<SNode>();
-      SNode quotedNode_1 = null;
-      {
-        quotedNode_1 = SModelUtil_new.instantiateConceptDeclaration("jetbrains.mps.core.query.structure.MqlBoolType", null, GlobalScope.getInstance(), false);
-        SNode quotedNode1_2 = quotedNode_1;
-        result = quotedNode1_2;
-      }
-      return result;
-    }
+  private static SNode createMqlBoolType_6kvg7a_a0a0a0() {
+    SNode n1 = SModelUtil_new.instantiateConceptDeclaration("jetbrains.mps.core.query.structure.MqlBoolType", null, GlobalScope.getInstance(), false);
+    return n1;
   }
 
-  public static class QuotationClass_6kvg7a_a0a0a0a1 {
-    public QuotationClass_6kvg7a_a0a0a0a1() {
-    }
-
-    public SNode createNode(Object parameter_5) {
-      SNode result = null;
-      Set<SNode> _parameterValues_129834374 = new HashSet<SNode>();
-      SNode quotedNode_1 = null;
-      SNode quotedNode_2 = null;
-      {
-        quotedNode_1 = SModelUtil_new.instantiateConceptDeclaration("jetbrains.mps.core.query.structure.MqlListType", null, GlobalScope.getInstance(), false);
-        SNode quotedNode1_3 = quotedNode_1;
-        {
-          quotedNode_2 = (SNode) parameter_5;
-          SNode quotedNode1_4;
-          if (_parameterValues_129834374.contains(quotedNode_2)) {
-            quotedNode1_4 = HUtil.copyIfNecessary(quotedNode_2);
-          } else {
-            _parameterValues_129834374.add(quotedNode_2);
-            quotedNode1_4 = quotedNode_2;
-          }
-          if (quotedNode1_4 != null) {
-            quotedNode_1.addChild("inner", HUtil.copyIfNecessary(quotedNode1_4));
-          }
-        }
-        result = quotedNode1_3;
-      }
-      return result;
-    }
+  private static SNode createMqlListType_6kvg7a_a0a0a0a(Object p0) {
+    SNode n1 = SModelUtil_new.instantiateConceptDeclaration("jetbrains.mps.core.query.structure.MqlListType", null, GlobalScope.getInstance(), false);
+    n1.addChild("inner", (SNode) p0);
+    return n1;
   }
 
-  public static class QuotationClass_6kvg7a_a0c0b0a1 {
-    public QuotationClass_6kvg7a_a0c0b0a1() {
-    }
-
-    public SNode createNode(Object parameter_5) {
-      SNode result = null;
-      Set<SNode> _parameterValues_129834374 = new HashSet<SNode>();
-      SNode quotedNode_1 = null;
-      SNode quotedNode_2 = null;
-      {
-        quotedNode_1 = SModelUtil_new.instantiateConceptDeclaration("jetbrains.mps.core.query.structure.MqlListType", null, GlobalScope.getInstance(), false);
-        SNode quotedNode1_3 = quotedNode_1;
-        {
-          quotedNode_2 = (SNode) parameter_5;
-          SNode quotedNode1_4;
-          if (_parameterValues_129834374.contains(quotedNode_2)) {
-            quotedNode1_4 = HUtil.copyIfNecessary(quotedNode_2);
-          } else {
-            _parameterValues_129834374.add(quotedNode_2);
-            quotedNode1_4 = quotedNode_2;
-          }
-          if (quotedNode1_4 != null) {
-            quotedNode_1.addChild("inner", HUtil.copyIfNecessary(quotedNode1_4));
-          }
-        }
-        result = quotedNode1_3;
-      }
-      return result;
-    }
+  private static SNode createMqlListType_6kvg7a_a2a1a0a(Object p0) {
+    SNode n1 = SModelUtil_new.instantiateConceptDeclaration("jetbrains.mps.core.query.structure.MqlListType", null, GlobalScope.getInstance(), false);
+    n1.addChild("inner", (SNode) p0);
+    return n1;
   }
 }

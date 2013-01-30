@@ -72,7 +72,7 @@ public class StructureAspectDescriptor implements jetbrains.mps.smodel.runtime.S
       case 27:
         return new CompiledConceptDescriptor("jetbrains.mps.core.query.structure.MqlParentheses", "jetbrains.mps.core.query.structure.MqlExpression", false, new String[]{"jetbrains.mps.core.query.structure.MqlExpression"}, new String[]{}, new String[]{});
       case 28:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.query.structure.MqlQuery", "jetbrains.mps.lang.core.structure.BaseConcept", false, new String[]{"jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept", "jetbrains.mps.lang.core.structure.ScopeProvider", "jetbrains.mps.core.query.structure.MqlParametersContainer", "jetbrains.mps.core.query.structure.MqlThisProvider"}, new String[]{"isCached"}, new String[]{});
+        return new CompiledConceptDescriptor("jetbrains.mps.core.query.structure.MqlQuery", "jetbrains.mps.lang.core.structure.BaseConcept", false, new String[]{"jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept", "jetbrains.mps.lang.core.structure.ScopeProvider", "jetbrains.mps.core.query.structure.MqlParametersContainer"}, new String[]{"isCached"}, new String[]{});
       case 29:
         return new CompiledConceptDescriptor("jetbrains.mps.core.query.structure.MqlScopeExporter", null, true, new String[]{"jetbrains.mps.lang.core.structure.INamedConcept"}, new String[]{}, new String[]{});
       case 30:

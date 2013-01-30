@@ -481,7 +481,7 @@
     <delete dir="${build.layout}" />
   </target>
   
-  <target name="compileJava" depends="java.compile.jetbrains.mps.core.gen, java.compile.java.modules.cycle.1, java.compile.jetbrains.mps.core.smodel, java.compile.jetbrains.mps.core.query, java.compile.jetbrains.mps.core.notation, java.compile.jetbrains.mps.core.smodel.pluginSolution, java.compile.jetbrains.mps.core.workflow, java.compile.jetbrains.mps.core.template, java.compile.jetbrains.mps.core.structure.pluginSolution, java.compile.jetbrains.mps.core.util, java.compile.jetbrains.mps.core.metadata, java.compile.jetbrains.mps.core.gen.transform, java.compile.jetbrains.mps.core.syntax, java.compile.jetbrains.mps.core.structure, java.compile.jetbrains.mps.core.syntax.java, java.compile.jetbrains.mps.core.workflow.pluginSolution" />
+  <target name="compileJava" depends="java.compile.jetbrains.mps.core.gen, java.compile.jetbrains.mps.core.smodel, java.compile.jetbrains.mps.core.query, java.compile.jetbrains.mps.core.notation, java.compile.jetbrains.mps.core.smodel.pluginSolution, java.compile.jetbrains.mps.core.workflow, java.compile.jetbrains.mps.core.template, java.compile.jetbrains.mps.core.structure.pluginSolution, java.compile.jetbrains.mps.core.util, java.compile.jetbrains.mps.core.metadata, java.compile.jetbrains.mps.core.gen.transform, java.compile.jetbrains.mps.core.syntax, java.compile.jetbrains.mps.core.structure, java.compile.jetbrains.mps.core.syntax.java, java.compile.jetbrains.mps.core.workflow.pluginSolution" />
   
   <target name="processResources" />
   
@@ -525,54 +525,7 @@
     </javac>
   </target>
   
-  <target name="java.compile.java.modules.cycle.1" depends="java.compile.jetbrains.mps.core.structure, fetchDependencies">
-    <mkdir dir="${build.tmp}/java.modules.cycle.1" />
-    <javac destdir="${build.tmp}/java.modules.cycle.1" fork="true" nowarn="true" includeantruntime="false">
-      <compilerarg value="-Xlint:none" />
-      <src>
-        <path location="${basedir}/languages/smodel/source_gen" />
-        <path location="${basedir}/languages/query/source_gen" />
-      </src>
-      <classpath>
-        <fileset file="${artifacts.buildMPS}/lib/mps-closures.jar" />
-        <fileset file="${artifacts.buildMPS}/lib/mps-collections.jar" />
-        <fileset file="${artifacts.buildMPS}/lib/mps-tuples.jar" />
-        <fileset file="${artifacts.buildMPS}/lib/mps-core.jar" />
-        <fileset file="${artifacts.buildMPS}/lib/mps-editor-api.jar" />
-        <fileset file="${artifacts.buildMPS}/lib/mps-editor.jar" />
-        <fileset file="${artifacts.buildMPS}/lib/mps-platform.jar" />
-        <fileset file="${artifacts.buildMPS}/lib/commons-logging-1.1.1.jar" />
-        <fileset file="${artifacts.buildMPS}/lib/org.eclipse.jdt.core_3.5.2.v_981_R35x.jar" />
-        <fileset file="${artifacts.buildMPS}/lib/guava-11.0.1.jar" />
-        <fileset file="${artifacts.buildMPS}/lib/jdom.jar" />
-        <fileset file="${artifacts.buildMPS}/lib/log4j.jar" />
-        <fileset file="${artifacts.buildMPS}/lib/trove4j.jar" />
-        <fileset file="${artifacts.buildMPS}/lib/xstream.jar" />
-        <fileset file="${artifacts.buildMPS}/lib/annotations.jar" />
-        <fileset file="${artifacts.buildMPS}/lib/commons-lang-2.4.jar" />
-        <fileset file="${artifacts.buildMPS}/lib/asm.jar" />
-        <fileset file="${artifacts.buildMPS}/lib/diffutils-1.2.1.jar" />
-        <fileset dir="${artifacts.buildMPS}/lib" includes="*.jar" />
-        <fileset file="${artifacts.buildMPS}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
-        <fileset file="${artifacts.buildMPS}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
-        <fileset file="${artifacts.buildMPS}/languages/baseLanguage/jetbrains.mps.baseLanguage.closures.jar" />
-        <fileset file="${artifacts.buildMPS}/languages/baseLanguage/jetbrains.mps.baseLanguage.collections.jar" />
-        <fileset file="${artifacts.buildMPS}/languages/baseLanguage/jetbrains.mps.baseLanguage.jdk7.jar" />
-        <fileset file="${artifacts.buildMPS}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
-        <fileset file="${artifacts.buildMPS}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
-        <fileset file="${artifacts.buildMPS}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
-        <fileset file="${artifacts.buildMPS}/languages/baseLanguage/jetbrains.mps.baseLanguage.regexp.runtime.jar" />
-        <fileset file="${artifacts.buildMPS}/languages/languageDesign/jetbrains.mps.lang.constraints.jar" />
-        <fileset file="${artifacts.buildMPS}/languages/languageDesign/jetbrains.mps.lang.pattern.jar" />
-        <fileset file="${artifacts.buildMPS}/languages/languageDesign/jetbrains.mps.lang.sharedConcepts.jar" />
-        <fileset file="${artifacts.buildMPS}/languages/languageDesign/jetbrains.mps.lang.smodel.jar" />
-        <fileset file="${artifacts.buildMPS}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
-        <pathelement path="${build.tmp}/java/out/jetbrains.mps.core.structure" />
-      </classpath>
-    </javac>
-  </target>
-  
-  <target name="java.compile.jetbrains.mps.core.smodel" depends="java.compile.jetbrains.mps.core.structure, java.compile.java.modules.cycle.1, fetchDependencies">
+  <target name="java.compile.jetbrains.mps.core.smodel" depends="java.compile.jetbrains.mps.core.query, java.compile.jetbrains.mps.core.structure, fetchDependencies">
     <mkdir dir="${build.tmp}/java/out/jetbrains.mps.core.smodel" />
     <javac destdir="${build.tmp}/java/out/jetbrains.mps.core.smodel" fork="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
@@ -587,6 +540,7 @@
         <fileset file="${artifacts.buildMPS}/lib/mps-editor-api.jar" />
         <fileset file="${artifacts.buildMPS}/lib/mps-editor.jar" />
         <fileset file="${artifacts.buildMPS}/lib/mps-platform.jar" />
+        <pathelement path="${build.tmp}/java/out/jetbrains.mps.core.query" />
         <pathelement path="${build.tmp}/java/out/jetbrains.mps.core.structure" />
         <fileset file="${artifacts.buildMPS}/lib/commons-logging-1.1.1.jar" />
         <fileset file="${artifacts.buildMPS}/lib/org.eclipse.jdt.core_3.5.2.v_981_R35x.jar" />
@@ -600,20 +554,12 @@
         <fileset file="${artifacts.buildMPS}/lib/asm.jar" />
         <fileset file="${artifacts.buildMPS}/lib/diffutils-1.2.1.jar" />
         <fileset dir="${artifacts.buildMPS}/lib" includes="*.jar" />
-        <fileset file="${artifacts.buildMPS}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
-        <fileset file="${artifacts.buildMPS}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
-        <fileset file="${artifacts.buildMPS}/languages/baseLanguage/jetbrains.mps.baseLanguage.closures.jar" />
-        <fileset file="${artifacts.buildMPS}/languages/baseLanguage/jetbrains.mps.baseLanguage.collections.jar" />
-        <fileset file="${artifacts.buildMPS}/languages/baseLanguage/jetbrains.mps.baseLanguage.jdk7.jar" />
         <fileset file="${artifacts.buildMPS}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
-        <fileset file="${artifacts.buildMPS}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
-        <fileset file="${artifacts.buildMPS}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
-        <pathelement path="${build.tmp}/java.modules.cycle.1" />
       </classpath>
     </javac>
   </target>
   
-  <target name="java.compile.jetbrains.mps.core.query" depends="java.compile.jetbrains.mps.core.structure, java.compile.java.modules.cycle.1, fetchDependencies">
+  <target name="java.compile.jetbrains.mps.core.query" depends="fetchDependencies">
     <mkdir dir="${build.tmp}/java/out/jetbrains.mps.core.query" />
     <javac destdir="${build.tmp}/java/out/jetbrains.mps.core.query" fork="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
@@ -628,7 +574,6 @@
         <fileset file="${artifacts.buildMPS}/lib/mps-editor-api.jar" />
         <fileset file="${artifacts.buildMPS}/lib/mps-editor.jar" />
         <fileset file="${artifacts.buildMPS}/lib/mps-platform.jar" />
-        <pathelement path="${build.tmp}/java/out/jetbrains.mps.core.structure" />
         <fileset file="${artifacts.buildMPS}/lib/commons-logging-1.1.1.jar" />
         <fileset file="${artifacts.buildMPS}/lib/org.eclipse.jdt.core_3.5.2.v_981_R35x.jar" />
         <fileset file="${artifacts.buildMPS}/lib/guava-11.0.1.jar" />
@@ -655,7 +600,6 @@
         <fileset file="${artifacts.buildMPS}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
         <fileset file="${artifacts.buildMPS}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
         <fileset file="${artifacts.buildMPS}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
-        <pathelement path="${build.tmp}/java.modules.cycle.1" />
       </classpath>
     </javac>
   </target>
@@ -1192,22 +1136,22 @@
       <library file="${artifacts.buildMPS}/plugins/mps-devkit/lib/devkit.jar" />
       <chunk>
         <module file="${basedir}/languages/notation/notation.mpl" />
+        <module file="${basedir}/languages/query/query.mpl" />
         <module file="${basedir}/languages/structure/structure.mpl" />
+        <module file="${basedir}/languages/workflow/workflow.mpl" />
+        <module file="${basedir}/languages/workflow/solutions/pluginSolution/pluginSolution.msd" />
       </chunk>
-      <chunk bootstrap="true">
-        <module file="${basedir}/languages/query/query.mpl" bootstrap="true" />
-        <module file="${basedir}/languages/smodel/smodel.mpl" bootstrap="true" />
+      <chunk>
+        <module file="${basedir}/languages/gen.transform/transform.mpl" />
+        <module file="${basedir}/languages/smodel/smodel.mpl" />
+        <module file="${basedir}/languages/smodel/solutions/pluginSolution/pluginSolution.msd" />
+        <module file="${basedir}/languages/template/template.mpl" />
       </chunk>
       <chunk>
         <module file="${basedir}/languages/gen/gen.mpl" />
-        <module file="${basedir}/languages/gen.transform/transform.mpl" />
         <module file="${basedir}/languages/metadata/metadata.mpl" />
-        <module file="${basedir}/languages/smodel/solutions/pluginSolution/pluginSolution.msd" />
         <module file="${basedir}/languages/structure/solutions/pluginSolution/pluginSolution.msd" />
-        <module file="${basedir}/languages/template/template.mpl" />
         <module file="${basedir}/solutions/jetbrains.mps.core.util/util.msd" />
-        <module file="${basedir}/languages/workflow/workflow.mpl" />
-        <module file="${basedir}/languages/workflow/solutions/pluginSolution/pluginSolution.msd" />
       </chunk>
       <chunk>
         <module file="${basedir}/languages/syntax/syntax.mpl" />
@@ -1218,16 +1162,18 @@
   
   <target name="cleanSources">
     <delete dir="${basedir}/languages/notation/source_gen" />
+    <delete dir="${basedir}/languages/query/source_gen" />
     <delete dir="${basedir}/languages/structure/source_gen" />
-    <delete dir="${basedir}/languages/gen/source_gen" />
-    <delete dir="${basedir}/languages/gen.transform/source_gen" />
-    <delete dir="${basedir}/languages/metadata/source_gen" />
-    <delete dir="${basedir}/languages/smodel/solutions/pluginSolution/source_gen" />
-    <delete dir="${basedir}/languages/structure/solutions/pluginSolution/source_gen" />
-    <delete dir="${basedir}/languages/template/source_gen" />
-    <delete dir="${basedir}/solutions/jetbrains.mps.core.util/source_gen" />
     <delete dir="${basedir}/languages/workflow/source_gen" />
     <delete dir="${basedir}/languages/workflow/solutions/pluginSolution/source_gen" />
+    <delete dir="${basedir}/languages/gen.transform/source_gen" />
+    <delete dir="${basedir}/languages/smodel/source_gen" />
+    <delete dir="${basedir}/languages/smodel/solutions/pluginSolution/source_gen" />
+    <delete dir="${basedir}/languages/template/source_gen" />
+    <delete dir="${basedir}/languages/gen/source_gen" />
+    <delete dir="${basedir}/languages/metadata/source_gen" />
+    <delete dir="${basedir}/languages/structure/solutions/pluginSolution/source_gen" />
+    <delete dir="${basedir}/solutions/jetbrains.mps.core.util/source_gen" />
     <delete dir="${basedir}/languages/syntax/source_gen" />
     <delete dir="${basedir}/languages/syntaxJava/source_gen" />
   </target>

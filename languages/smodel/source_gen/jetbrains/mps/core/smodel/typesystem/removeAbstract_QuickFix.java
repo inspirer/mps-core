@@ -16,6 +16,6 @@ public class removeAbstract_QuickFix extends QuickFix_Runtime {
   }
 
   public void execute(SNode node) {
-    SPropertyOperations.set(SNodeOperations.cast(node, "jetbrains.mps.core.smodel.structure.SConceptQuery"), "isAbstract", "" + false);
+    SPropertyOperations.set(SNodeOperations.cast(node, "jetbrains.mps.core.smodel.structure.SConceptQuery"), "isAbstract", "" + (false));
   }
 }

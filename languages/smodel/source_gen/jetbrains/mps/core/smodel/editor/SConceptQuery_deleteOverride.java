@@ -26,7 +26,7 @@ public class SConceptQuery_deleteOverride {
     }
 
     public void execute_internal(EditorContext editorContext, SNode node) {
-      SPropertyOperations.set(node, "isOverride", "" + false);
+      SPropertyOperations.set(node, "isOverride", "" + (false));
     }
   }
 }

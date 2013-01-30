@@ -133,6 +133,18 @@
         </node>
       </node>
     </node>
+    <node role="queries" roleId="bwy9.6762883159245048633" type="xsnc.MqlModelQuery" typeId="xsnc.4363371899537405589" id="298856341417807341">
+      <property name="name" nameId="tpck.1169194664001" value="asad" />
+      <node role="body" roleId="bwy9.6762883159245048634" type="bwy9.MqlDotExpression" typeId="bwy9.6762883159245048085" id="298856341417807346">
+        <node role="left" roleId="bwy9.6762883159245048086" type="bwy9.MqlThis" typeId="bwy9.6762883159245048067" id="298856341417807345" />
+        <node role="right" roleId="bwy9.6762883159245048089" type="xsnc.MqlPropertySelector" typeId="xsnc.4260762357824841783" id="298856341417807350">
+          <link role="property" roleId="xsnc.4260762357824841784" targetNodeId="1ulq.5362811550739085644" resolveInfo="name" />
+        </node>
+      </node>
+      <node role="contextNode" roleId="xsnc.6762883159245086410" type="xsnc.MqlNodeType" typeId="xsnc.4260762357825047862" id="298856341417807344">
+        <link role="concept" roleId="xsnc.4260762357825047863" targetNodeId="1ulq.5362811550739085637" resolveInfo="Field" />
+      </node>
+    </node>
     <node role="queries" roleId="bwy9.6762883159245048633" type="bwy9.MqlQuery" typeId="bwy9.6762883159245048009" id="5280308256730728612">
       <property name="name" nameId="tpck.1169194664001" value="filter" />
       <node role="body" roleId="bwy9.6762883159245048634" type="bwy9.MqlDotExpression" typeId="bwy9.6762883159245048085" id="5280308256730792761">
@@ -417,6 +429,7 @@
                 </node>
               </node>
             </node>
+            <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="4363371899537719011" />
             <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="4273915927700610049">
               <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="4273915927700610051">
                 <node role="rValue" roleId="tpee.1068498886297" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="8585534596770894513">

@@ -216,13 +216,13 @@
   </root>
   <root nodeId="6371775917726390679" modelId="r:51081164-5cb8-4581-b1a7-d92a2d5fc7da(jetbrains.mps.core.smodel.typesystem)">
     <nodeInfo nodeId="6371775917726390785" fileName="addOverride_QuickFix.java" startLine="14" startPosition="44" endLine="15" endPosition="36" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="6371775917726390682" fileName="addOverride_QuickFix.java" startLine="18" startPosition="35" endLine="19" endPosition="134" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6371775917726390682" fileName="addOverride_QuickFix.java" startLine="18" startPosition="35" endLine="19" endPosition="136" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
     <nodeInfo nodeId="6371775917726390679" fileName="addOverride_QuickFix.java" startLine="10" startPosition="60" endLine="12" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="addOverride_QuickFix#()V" />
     <nodeInfo nodeId="6371775917726390679" fileName="addOverride_QuickFix.java" startLine="13" startPosition="0" endLine="17" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getDescription#(Ljetbrains/mps/smodel/SNode;)Ljava/lang/String;" />
     <nodeInfo nodeId="6371775917726390679" fileName="addOverride_QuickFix.java" startLine="17" startPosition="0" endLine="21" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="execute#(Ljetbrains/mps/smodel/SNode;)V" />
     <scopeInfo nodeId="6371775917726390679" fileName="addOverride_QuickFix.java" startLine="11" startPosition="33" endLine="11" endPosition="33" />
     <scopeInfo nodeId="6371775917726390784" fileName="addOverride_QuickFix.java" startLine="14" startPosition="44" endLine="15" endPosition="36" />
-    <scopeInfo nodeId="6371775917726390681" fileName="addOverride_QuickFix.java" startLine="18" startPosition="35" endLine="19" endPosition="134" />
+    <scopeInfo nodeId="6371775917726390681" fileName="addOverride_QuickFix.java" startLine="18" startPosition="35" endLine="19" endPosition="136" />
     <scopeInfo nodeId="6371775917726390679" fileName="addOverride_QuickFix.java" startLine="10" startPosition="60" endLine="12" endPosition="3" />
     <scopeInfo nodeId="6371775917726390679" fileName="addOverride_QuickFix.java" startLine="13" startPosition="0" endLine="17" endPosition="0">
       <varInfo nodeId="6371775917726390679" varName="node" />
@@ -313,13 +313,13 @@
   </root>
   <root nodeId="8616491442583851431" modelId="r:51081164-5cb8-4581-b1a7-d92a2d5fc7da(jetbrains.mps.core.smodel.typesystem)">
     <nodeInfo nodeId="8616491442583851439" fileName="makeConceptAbstract_QuickFix.java" startLine="13" startPosition="44" endLine="14" endPosition="46" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="8616491442583851441" fileName="makeConceptAbstract_QuickFix.java" startLine="17" startPosition="35" endLine="18" endPosition="121" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="8616491442583851441" fileName="makeConceptAbstract_QuickFix.java" startLine="17" startPosition="35" endLine="18" endPosition="123" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
     <nodeInfo nodeId="8616491442583851431" fileName="makeConceptAbstract_QuickFix.java" startLine="9" startPosition="68" endLine="11" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="makeConceptAbstract_QuickFix#()V" />
     <nodeInfo nodeId="8616491442583851431" fileName="makeConceptAbstract_QuickFix.java" startLine="12" startPosition="0" endLine="16" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getDescription#(Ljetbrains/mps/smodel/SNode;)Ljava/lang/String;" />
     <nodeInfo nodeId="8616491442583851431" fileName="makeConceptAbstract_QuickFix.java" startLine="16" startPosition="0" endLine="20" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="execute#(Ljetbrains/mps/smodel/SNode;)V" />
     <scopeInfo nodeId="8616491442583851431" fileName="makeConceptAbstract_QuickFix.java" startLine="10" startPosition="41" endLine="10" endPosition="41" />
     <scopeInfo nodeId="8616491442583851438" fileName="makeConceptAbstract_QuickFix.java" startLine="13" startPosition="44" endLine="14" endPosition="46" />
-    <scopeInfo nodeId="8616491442583851433" fileName="makeConceptAbstract_QuickFix.java" startLine="17" startPosition="35" endLine="18" endPosition="121" />
+    <scopeInfo nodeId="8616491442583851433" fileName="makeConceptAbstract_QuickFix.java" startLine="17" startPosition="35" endLine="18" endPosition="123" />
     <scopeInfo nodeId="8616491442583851431" fileName="makeConceptAbstract_QuickFix.java" startLine="9" startPosition="68" endLine="11" endPosition="3" />
     <scopeInfo nodeId="8616491442583851431" fileName="makeConceptAbstract_QuickFix.java" startLine="12" startPosition="0" endLine="16" endPosition="0">
       <varInfo nodeId="8616491442583851431" varName="node" />
@@ -331,13 +331,13 @@
   </root>
   <root nodeId="8616491442583855493" modelId="r:51081164-5cb8-4581-b1a7-d92a2d5fc7da(jetbrains.mps.core.smodel.typesystem)">
     <nodeInfo nodeId="8616491442583855574" fileName="removeAbstract_QuickFix.java" startLine="14" startPosition="44" endLine="15" endPosition="31" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="8616491442583855496" fileName="removeAbstract_QuickFix.java" startLine="18" startPosition="35" endLine="19" endPosition="135" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="8616491442583855496" fileName="removeAbstract_QuickFix.java" startLine="18" startPosition="35" endLine="19" endPosition="137" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
     <nodeInfo nodeId="8616491442583855493" fileName="removeAbstract_QuickFix.java" startLine="10" startPosition="63" endLine="12" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="removeAbstract_QuickFix#()V" />
     <nodeInfo nodeId="8616491442583855493" fileName="removeAbstract_QuickFix.java" startLine="13" startPosition="0" endLine="17" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getDescription#(Ljetbrains/mps/smodel/SNode;)Ljava/lang/String;" />
     <nodeInfo nodeId="8616491442583855493" fileName="removeAbstract_QuickFix.java" startLine="17" startPosition="0" endLine="21" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="execute#(Ljetbrains/mps/smodel/SNode;)V" />
     <scopeInfo nodeId="8616491442583855493" fileName="removeAbstract_QuickFix.java" startLine="11" startPosition="36" endLine="11" endPosition="36" />
     <scopeInfo nodeId="8616491442583855573" fileName="removeAbstract_QuickFix.java" startLine="14" startPosition="44" endLine="15" endPosition="31" />
-    <scopeInfo nodeId="8616491442583855495" fileName="removeAbstract_QuickFix.java" startLine="18" startPosition="35" endLine="19" endPosition="135" />
+    <scopeInfo nodeId="8616491442583855495" fileName="removeAbstract_QuickFix.java" startLine="18" startPosition="35" endLine="19" endPosition="137" />
     <scopeInfo nodeId="8616491442583855493" fileName="removeAbstract_QuickFix.java" startLine="10" startPosition="63" endLine="12" endPosition="3" />
     <scopeInfo nodeId="8616491442583855493" fileName="removeAbstract_QuickFix.java" startLine="13" startPosition="0" endLine="17" endPosition="0">
       <varInfo nodeId="8616491442583855493" varName="node" />

@@ -8,8 +8,6 @@ import jetbrains.mps.core.query.runtime.EvaluationEnvironment;
 import jetbrains.mps.core.query.runtime.EvaluationContext;
 import jetbrains.mps.core.query.runtime.EvaluationException;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import java.util.Set;
-import java.util.HashSet;
 import jetbrains.mps.smodel.SModelUtil_new;
 import jetbrains.mps.project.GlobalScope;
 
@@ -18,7 +16,7 @@ public class MqlArithmetic_Behavior {
   }
 
   public static SNode virtual_getType_228266671027861783(SNode thisNode) {
-    return new MqlArithmetic_Behavior.QuotationClass_yuyu4v_a0a0b().createNode();
+    return createMqlIntType_yuyu4v_a0a0();
   }
 
   public static int virtual_getAssociativity_5322644393894740267(SNode thisNode) {
@@ -61,20 +59,8 @@ public class MqlArithmetic_Behavior {
     throw new EvaluationException("arithmetic expression can handle integers only, not " + env.getRuntime().objectType(result), thisNode, context);
   }
 
-  public static class QuotationClass_yuyu4v_a0a0b {
-    public QuotationClass_yuyu4v_a0a0b() {
-    }
-
-    public SNode createNode() {
-      SNode result = null;
-      Set<SNode> _parameterValues_129834374 = new HashSet<SNode>();
-      SNode quotedNode_1 = null;
-      {
-        quotedNode_1 = SModelUtil_new.instantiateConceptDeclaration("jetbrains.mps.core.query.structure.MqlIntType", null, GlobalScope.getInstance(), false);
-        SNode quotedNode1_2 = quotedNode_1;
-        result = quotedNode1_2;
-      }
-      return result;
-    }
+  private static SNode createMqlIntType_yuyu4v_a0a0() {
+    SNode n1 = SModelUtil_new.instantiateConceptDeclaration("jetbrains.mps.core.query.structure.MqlIntType", null, GlobalScope.getInstance(), false);
+    return n1;
   }
 }

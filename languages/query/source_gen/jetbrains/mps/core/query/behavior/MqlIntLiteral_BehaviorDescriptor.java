@@ -10,12 +10,12 @@ public class MqlIntLiteral_BehaviorDescriptor extends MqlExpression_BehaviorDesc
   public MqlIntLiteral_BehaviorDescriptor() {
   }
 
-  public SNode virtual_getType_228266671027861783(SNode thisNode) {
-    return MqlIntLiteral_Behavior.virtual_getType_228266671027861783(thisNode);
-  }
-
   public Object virtual_evaluate_1671449901154581105(SNode thisNode, EvaluationEnvironment env, EvaluationContext context) {
     return MqlIntLiteral_Behavior.virtual_evaluate_1671449901154581105(thisNode, env, context);
+  }
+
+  public SNode virtual_getType_228266671027861783(SNode thisNode) {
+    return MqlIntLiteral_Behavior.virtual_getType_228266671027861783(thisNode);
   }
 
   @Override

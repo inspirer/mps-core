@@ -32,7 +32,7 @@
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="212212067812118743">
       <property name="name" nameId="tpck.1169194664001" value="MtlQuery" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="entities" />
-      <link role="extends" roleId="tpce.1071489389519" targetNodeId="bwy9.6762883159245048009" resolveInfo="MqlQuery" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="xsnc.4363371899537405589" resolveInfo="MqlModelQuery" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="9160962589444214864">
       <property name="name" nameId="tpck.1169194664001" value="MtlTemplateRoot" />

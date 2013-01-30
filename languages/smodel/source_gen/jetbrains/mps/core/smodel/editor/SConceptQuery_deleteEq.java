@@ -52,7 +52,7 @@ public class SConceptQuery_deleteEq {
         SLinkOperations.setTarget(link, "target", SLinkOperations.getTarget(SNodeOperations.cast(SLinkOperations.getTarget(SNodeOperations.cast(type, "jetbrains.mps.core.query.structure.MqlListType"), "inner", true), "jetbrains.mps.core.smodel.structure.MqlNodeType"), "concept", false), false);
         SPropertyOperations.set(link, "name", SPropertyOperations.getString(node, "name"));
         SNodeFactoryOperations.setNewChild(link, "cardinality", "jetbrains.mps.core.structure.structure.SCardinality");
-        SPropertyOperations.set(SLinkOperations.getTarget(link, "cardinality", true), "isMultiple", "" + true);
+        SPropertyOperations.set(SLinkOperations.getTarget(link, "cardinality", true), "isMultiple", "" + (true));
       }
     }
   }

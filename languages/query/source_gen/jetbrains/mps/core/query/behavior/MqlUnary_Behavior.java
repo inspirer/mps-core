@@ -8,8 +8,6 @@ import jetbrains.mps.core.query.runtime.EvaluationEnvironment;
 import jetbrains.mps.core.query.runtime.EvaluationContext;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.core.query.runtime.EvaluationException;
-import java.util.Set;
-import java.util.HashSet;
 import jetbrains.mps.smodel.SModelUtil_new;
 import jetbrains.mps.project.GlobalScope;
 
@@ -19,9 +17,9 @@ public class MqlUnary_Behavior {
 
   public static SNode virtual_getType_228266671027861783(SNode thisNode) {
     if (SPropertyOperations.hasValue(thisNode, "kind", "1", null)) {
-      return new MqlUnary_Behavior.QuotationClass_aad9ph_a0a0a0b().createNode();
+      return createMqlBoolType_aad9ph_a0a0a0();
     } else {
-      return new MqlUnary_Behavior.QuotationClass_aad9ph_a0a0a0a1().createNode();
+      return createMqlIntType_aad9ph_a0a0a0a();
     }
   }
 
@@ -46,37 +44,13 @@ public class MqlUnary_Behavior {
     throw new EvaluationException("bad query: unknown unary kind", thisNode, context);
   }
 
-  public static class QuotationClass_aad9ph_a0a0a0b {
-    public QuotationClass_aad9ph_a0a0a0b() {
-    }
-
-    public SNode createNode() {
-      SNode result = null;
-      Set<SNode> _parameterValues_129834374 = new HashSet<SNode>();
-      SNode quotedNode_1 = null;
-      {
-        quotedNode_1 = SModelUtil_new.instantiateConceptDeclaration("jetbrains.mps.core.query.structure.MqlBoolType", null, GlobalScope.getInstance(), false);
-        SNode quotedNode1_2 = quotedNode_1;
-        result = quotedNode1_2;
-      }
-      return result;
-    }
+  private static SNode createMqlBoolType_aad9ph_a0a0a0() {
+    SNode n1 = SModelUtil_new.instantiateConceptDeclaration("jetbrains.mps.core.query.structure.MqlBoolType", null, GlobalScope.getInstance(), false);
+    return n1;
   }
 
-  public static class QuotationClass_aad9ph_a0a0a0a1 {
-    public QuotationClass_aad9ph_a0a0a0a1() {
-    }
-
-    public SNode createNode() {
-      SNode result = null;
-      Set<SNode> _parameterValues_129834374 = new HashSet<SNode>();
-      SNode quotedNode_1 = null;
-      {
-        quotedNode_1 = SModelUtil_new.instantiateConceptDeclaration("jetbrains.mps.core.query.structure.MqlIntType", null, GlobalScope.getInstance(), false);
-        SNode quotedNode1_2 = quotedNode_1;
-        result = quotedNode1_2;
-      }
-      return result;
-    }
+  private static SNode createMqlIntType_aad9ph_a0a0a0a() {
+    SNode n1 = SModelUtil_new.instantiateConceptDeclaration("jetbrains.mps.core.query.structure.MqlIntType", null, GlobalScope.getInstance(), false);
+    return n1;
   }
 }

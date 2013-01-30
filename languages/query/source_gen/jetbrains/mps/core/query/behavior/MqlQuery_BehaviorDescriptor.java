@@ -5,27 +5,19 @@ package jetbrains.mps.core.query.behavior;
 import jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor;
 import jetbrains.mps.lang.core.behavior.INamedConcept_BehaviorDescriptor;
 import jetbrains.mps.lang.core.behavior.ScopeProvider_BehaviorDescriptor;
-import jetbrains.mps.scope.Scope;
 import jetbrains.mps.smodel.SNode;
-import jetbrains.mps.lang.core.behavior.ScopeProvider_Behavior;
 import jetbrains.mps.core.query.runtime.EvaluationEnvironment;
 import jetbrains.mps.core.query.runtime.EvaluationContext;
 import jetbrains.mps.lang.core.behavior.INamedConcept_Behavior;
+import jetbrains.mps.scope.Scope;
+import jetbrains.mps.lang.core.behavior.ScopeProvider_Behavior;
 
-public class MqlQuery_BehaviorDescriptor extends BaseConcept_BehaviorDescriptor implements INamedConcept_BehaviorDescriptor, ScopeProvider_BehaviorDescriptor, MqlParametersContainer_BehaviorDescriptor, MqlThisProvider_BehaviorDescriptor {
+public class MqlQuery_BehaviorDescriptor extends BaseConcept_BehaviorDescriptor implements INamedConcept_BehaviorDescriptor, ScopeProvider_BehaviorDescriptor, MqlParametersContainer_BehaviorDescriptor {
   public MqlQuery_BehaviorDescriptor() {
-  }
-
-  public Scope virtual_getScope_7722139651431880752(SNode thisNode, SNode kind, String role, int index) {
-    return ScopeProvider_Behavior.virtual_getScope_7722139651431880752(thisNode, kind, role, index);
   }
 
   public Object virtual_evaluate_1671449901154581077(SNode thisNode, EvaluationEnvironment env, EvaluationContext context, Object[] arguments) {
     return MqlQuery_Behavior.virtual_evaluate_1671449901154581077(thisNode, env, context, arguments);
-  }
-
-  public SNode virtual_getThisType_4125821269968916020(SNode thisNode) {
-    return MqlQuery_Behavior.virtual_getThisType_4125821269968916020(thisNode);
   }
 
   public String virtual_getFqName_1213877404258(SNode thisNode) {
@@ -34,6 +26,10 @@ public class MqlQuery_BehaviorDescriptor extends BaseConcept_BehaviorDescriptor 
 
   public Scope virtual_getScope_3734116213129936182(SNode thisNode, SNode kind, SNode child) {
     return MqlQuery_Behavior.virtual_getScope_3734116213129936182(thisNode, kind, child);
+  }
+
+  public Scope virtual_getScope_7722139651431880752(SNode thisNode, SNode kind, String role, int index) {
+    return ScopeProvider_Behavior.virtual_getScope_7722139651431880752(thisNode, kind, role, index);
   }
 
   @Override

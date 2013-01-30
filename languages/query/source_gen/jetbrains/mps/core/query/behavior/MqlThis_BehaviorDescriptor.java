@@ -10,12 +10,12 @@ public class MqlThis_BehaviorDescriptor extends MqlExpression_BehaviorDescriptor
   public MqlThis_BehaviorDescriptor() {
   }
 
-  public SNode virtual_getType_228266671027861783(SNode thisNode) {
-    return MqlThis_Behavior.virtual_getType_228266671027861783(thisNode);
-  }
-
   public Object virtual_evaluate_1671449901154581105(SNode thisNode, EvaluationEnvironment env, EvaluationContext context) {
     return MqlThis_Behavior.virtual_evaluate_1671449901154581105(thisNode, env, context);
+  }
+
+  public SNode virtual_getType_228266671027861783(SNode thisNode) {
+    return MqlThis_Behavior.virtual_getType_228266671027861783(thisNode);
   }
 
   @Override

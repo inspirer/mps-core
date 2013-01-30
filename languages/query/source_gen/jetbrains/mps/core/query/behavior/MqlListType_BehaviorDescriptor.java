@@ -8,16 +8,16 @@ public class MqlListType_BehaviorDescriptor extends MqlType_BehaviorDescriptor {
   public MqlListType_BehaviorDescriptor() {
   }
 
-  public boolean virtual_isSubtypeOf_2852142168179579064(SNode thisNode, SNode type) {
-    return MqlListType_Behavior.virtual_isSubtypeOf_2852142168179579064(thisNode, type);
+  public String virtual_getSignature_270269450479785729(SNode thisNode) {
+    return MqlListType_Behavior.virtual_getSignature_270269450479785729(thisNode);
   }
 
   public String virtual_getText_270269450479797040(SNode thisNode) {
     return MqlListType_Behavior.virtual_getText_270269450479797040(thisNode);
   }
 
-  public String virtual_getSignature_270269450479785729(SNode thisNode) {
-    return MqlListType_Behavior.virtual_getSignature_270269450479785729(thisNode);
+  public boolean virtual_isSubtypeOf_2852142168179579064(SNode thisNode, SNode type) {
+    return MqlListType_Behavior.virtual_isSubtypeOf_2852142168179579064(thisNode, type);
   }
 
   @Override

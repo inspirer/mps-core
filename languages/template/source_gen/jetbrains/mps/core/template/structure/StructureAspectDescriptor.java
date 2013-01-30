@@ -38,7 +38,7 @@ public class StructureAspectDescriptor implements jetbrains.mps.smodel.runtime.S
       case 10:
         return new CompiledConceptDescriptor("jetbrains.mps.core.template.structure.MtlPropertyMacro", "jetbrains.mps.lang.core.structure.PropertyAttribute", false, new String[]{"jetbrains.mps.lang.core.structure.PropertyAttribute"}, new String[]{}, new String[]{});
       case 11:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.template.structure.MtlQuery", "jetbrains.mps.core.query.structure.MqlQuery", false, new String[]{"jetbrains.mps.core.query.structure.MqlQuery", "jetbrains.mps.core.template.structure.MtlEntity"}, new String[]{}, new String[]{});
+        return new CompiledConceptDescriptor("jetbrains.mps.core.template.structure.MtlQuery", "jetbrains.mps.core.smodel.structure.MqlModelQuery", false, new String[]{"jetbrains.mps.core.smodel.structure.MqlModelQuery", "jetbrains.mps.core.template.structure.MtlEntity"}, new String[]{}, new String[]{});
       case 12:
         return new CompiledConceptDescriptor("jetbrains.mps.core.template.structure.MtlReferenceMacro", "jetbrains.mps.lang.core.structure.LinkAttribute", false, new String[]{"jetbrains.mps.lang.core.structure.LinkAttribute"}, new String[]{}, new String[]{});
       case 13:

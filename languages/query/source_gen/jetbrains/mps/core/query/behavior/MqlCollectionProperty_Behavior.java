@@ -13,8 +13,6 @@ import java.util.List;
 import java.util.Collection;
 import jetbrains.mps.core.query.runtime.EvaluationException;
 import java.util.Collections;
-import java.util.Set;
-import java.util.HashSet;
 import jetbrains.mps.smodel.SModelUtil_new;
 import jetbrains.mps.project.GlobalScope;
 
@@ -29,9 +27,9 @@ public class MqlCollectionProperty_Behavior {
         return SLinkOperations.getTarget(SNodeOperations.cast(ct, "jetbrains.mps.core.query.structure.MqlListType"), "inner", true);
       }
     } else if (SPropertyOperations.hasValue(thisNode, "kind", "1", null)) {
-      return new MqlCollectionProperty_Behavior.QuotationClass_tz2cyz_a0a0a0a1().createNode();
+      return createMqlIntType_tz2cyz_a0a0a0a();
     } else if (SPropertyOperations.hasValue(thisNode, "kind", "4", null) || SPropertyOperations.hasValue(thisNode, "kind", "5", null)) {
-      return new MqlCollectionProperty_Behavior.QuotationClass_tz2cyz_a0a0b0a1().createNode();
+      return createMqlBoolType_tz2cyz_a0a1a0a();
     }
     return null;
   }
@@ -88,37 +86,13 @@ public class MqlCollectionProperty_Behavior {
     throw new EvaluationException("object is not a collection `" + env.getRuntime().objectDebugText(object) + "'", thisNode, context);
   }
 
-  public static class QuotationClass_tz2cyz_a0a0a0a1 {
-    public QuotationClass_tz2cyz_a0a0a0a1() {
-    }
-
-    public SNode createNode() {
-      SNode result = null;
-      Set<SNode> _parameterValues_129834374 = new HashSet<SNode>();
-      SNode quotedNode_1 = null;
-      {
-        quotedNode_1 = SModelUtil_new.instantiateConceptDeclaration("jetbrains.mps.core.query.structure.MqlIntType", null, GlobalScope.getInstance(), false);
-        SNode quotedNode1_2 = quotedNode_1;
-        result = quotedNode1_2;
-      }
-      return result;
-    }
+  private static SNode createMqlIntType_tz2cyz_a0a0a0a() {
+    SNode n1 = SModelUtil_new.instantiateConceptDeclaration("jetbrains.mps.core.query.structure.MqlIntType", null, GlobalScope.getInstance(), false);
+    return n1;
   }
 
-  public static class QuotationClass_tz2cyz_a0a0b0a1 {
-    public QuotationClass_tz2cyz_a0a0b0a1() {
-    }
-
-    public SNode createNode() {
-      SNode result = null;
-      Set<SNode> _parameterValues_129834374 = new HashSet<SNode>();
-      SNode quotedNode_1 = null;
-      {
-        quotedNode_1 = SModelUtil_new.instantiateConceptDeclaration("jetbrains.mps.core.query.structure.MqlBoolType", null, GlobalScope.getInstance(), false);
-        SNode quotedNode1_2 = quotedNode_1;
-        result = quotedNode1_2;
-      }
-      return result;
-    }
+  private static SNode createMqlBoolType_tz2cyz_a0a1a0a() {
+    SNode n1 = SModelUtil_new.instantiateConceptDeclaration("jetbrains.mps.core.query.structure.MqlBoolType", null, GlobalScope.getInstance(), false);
+    return n1;
   }
 }

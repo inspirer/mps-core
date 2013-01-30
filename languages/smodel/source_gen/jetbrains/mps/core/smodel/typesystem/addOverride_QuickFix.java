@@ -16,6 +16,6 @@ public class addOverride_QuickFix extends QuickFix_Runtime {
   }
 
   public void execute(SNode node) {
-    SPropertyOperations.set(SNodeOperations.cast(node, "jetbrains.mps.core.smodel.structure.SConceptQuery"), "isOverride", "" + true);
+    SPropertyOperations.set(SNodeOperations.cast(node, "jetbrains.mps.core.smodel.structure.SConceptQuery"), "isOverride", "" + (true));
   }
 }

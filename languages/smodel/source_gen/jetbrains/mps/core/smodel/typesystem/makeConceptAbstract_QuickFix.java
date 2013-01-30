@@ -15,6 +15,6 @@ public class makeConceptAbstract_QuickFix extends QuickFix_Runtime {
   }
 
   public void execute(SNode node) {
-    SPropertyOperations.set(((SNode) makeConceptAbstract_QuickFix.this.getField("concept")[0]), "isAbstract", "" + true);
+    SPropertyOperations.set(((SNode) makeConceptAbstract_QuickFix.this.getField("concept")[0]), "isAbstract", "" + (true));
   }
 }

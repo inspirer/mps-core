@@ -13,8 +13,6 @@ import jetbrains.mps.internal.collections.runtime.IterableUtils;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.internal.collections.runtime.ISelector;
 import jetbrains.mps.core.query.behavior.MqlType_Behavior;
-import java.util.Set;
-import java.util.HashSet;
 import jetbrains.mps.smodel.SModelUtil_new;
 import jetbrains.mps.project.GlobalScope;
 
@@ -23,7 +21,7 @@ public class SConceptQuery_Behavior {
   }
 
   public static SNode virtual_getThisType_4125821269968916020(SNode thisNode) {
-    return new SConceptQuery_Behavior.QuotationClass_m9cidb_a0a0b().createNode(SConceptMember_Behavior.call_getContainingConcept_4125821269968947769(thisNode));
+    return createMqlNodeType_m9cidb_a0a0(SConceptMember_Behavior.call_getContainingConcept_4125821269968947769(thisNode));
   }
 
   public static Scope virtual_getScope_3734116213129936182(SNode thisNode, SNode kind, SNode child) {
@@ -80,21 +78,9 @@ public class SConceptQuery_Behavior {
     return result.toString();
   }
 
-  public static class QuotationClass_m9cidb_a0a0b {
-    public QuotationClass_m9cidb_a0a0b() {
-    }
-
-    public SNode createNode(Object parameter_3) {
-      SNode result = null;
-      Set<SNode> _parameterValues_129834374 = new HashSet<SNode>();
-      SNode quotedNode_1 = null;
-      {
-        quotedNode_1 = SModelUtil_new.instantiateConceptDeclaration("jetbrains.mps.core.smodel.structure.MqlNodeType", null, GlobalScope.getInstance(), false);
-        SNode quotedNode1_2 = quotedNode_1;
-        quotedNode1_2.setReferent("concept", (SNode) parameter_3);
-        result = quotedNode1_2;
-      }
-      return result;
-    }
+  private static SNode createMqlNodeType_m9cidb_a0a0(Object p0) {
+    SNode n1 = SModelUtil_new.instantiateConceptDeclaration("jetbrains.mps.core.smodel.structure.MqlNodeType", null, GlobalScope.getInstance(), false);
+    n1.setReferent("concept", (SNode) p0);
+    return n1;
   }
 }

@@ -10,20 +10,20 @@ public class MqlArithmetic_BehaviorDescriptor extends MqlBinaryExpr_BehaviorDesc
   public MqlArithmetic_BehaviorDescriptor() {
   }
 
-  public int virtual_getPriority_7352592509980890960(SNode thisNode) {
-    return MqlArithmetic_Behavior.virtual_getPriority_7352592509980890960(thisNode);
-  }
-
-  public SNode virtual_getType_228266671027861783(SNode thisNode) {
-    return MqlArithmetic_Behavior.virtual_getType_228266671027861783(thisNode);
-  }
-
   public Object virtual_evaluate_1671449901154581105(SNode thisNode, EvaluationEnvironment env, EvaluationContext context) {
     return MqlArithmetic_Behavior.virtual_evaluate_1671449901154581105(thisNode, env, context);
   }
 
   public int virtual_getAssociativity_5322644393894740267(SNode thisNode) {
     return MqlArithmetic_Behavior.virtual_getAssociativity_5322644393894740267(thisNode);
+  }
+
+  public int virtual_getPriority_7352592509980890960(SNode thisNode) {
+    return MqlArithmetic_Behavior.virtual_getPriority_7352592509980890960(thisNode);
+  }
+
+  public SNode virtual_getType_228266671027861783(SNode thisNode) {
+    return MqlArithmetic_Behavior.virtual_getType_228266671027861783(thisNode);
   }
 
   @Override

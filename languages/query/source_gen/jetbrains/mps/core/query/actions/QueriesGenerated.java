@@ -36,10 +36,10 @@ import jetbrains.mps.smodel.action.AbstractSideTransformHintSubstituteAction;
 import jetbrains.mps.nodeEditor.CellSide;
 
 public class QueriesGenerated {
-  private static Pattern REGEXP_x583g4_a0a0a0a2a0a0a0a2a0a1a7 = Pattern.compile("-?\\d+", 0);
-  private static Pattern REGEXP_x583g4_a0a0a0a0c0a0a0a0c0a0b0h = Pattern.compile("-?\\d*", 0);
-  private static Pattern REGEXP_x583g4_a0a0a2a0a0a0a0a2a0a1a01 = Pattern.compile("([a-zA-Z_]\\w*)\\s*=?", 0);
-  private static Pattern REGEXP_x583g4_a0a0a2a0a0a0a2a0a1a01 = Pattern.compile("(?:[a-zA-Z_]\\w*)\\s*=", 0);
+  private static Pattern REGEXP_x583g4_a0a0a0a2a0a0a0a2a0a1a6 = Pattern.compile("-?\\d+", 0);
+  private static Pattern REGEXP_x583g4_a0a0a0a0c0a0a0a0c0a0b0g = Pattern.compile("-?\\d*", 0);
+  private static Pattern REGEXP_x583g4_a0a0a2a0a0a0a0a2a0a1a9 = Pattern.compile("([a-zA-Z_]\\w*)\\s*=?", 0);
+  private static Pattern REGEXP_x583g4_a0a0a2a0a0a0a2a0a1a9 = Pattern.compile("(?:[a-zA-Z_]\\w*)\\s*=", 0);
 
   public static boolean nodeSubstituteActionsBuilder_Precondition_MqlExpression_2852142168179572874(final IOperationContext operationContext, final NodeSubstitutePreconditionContext _context) {
     if (!(SNodeOperations.isInstanceOf(_context.getParentNode(), "jetbrains.mps.core.query.structure.MqlExpression"))) {
@@ -63,10 +63,6 @@ public class QueriesGenerated {
 
   public static boolean sideTransformHintSubstituteActionsBuilder_Precondition_MqlExpression_2059702675525956873(final IOperationContext operationContext, final SideTransformPreconditionContext _context) {
     return (MqlExpression_Behavior.call_getType_228266671027861783(_context.getSourceNode()) != null);
-  }
-
-  public static boolean sideTransformHintSubstituteActionsBuilder_Precondition_MqlQuery_1016170791824030640(final IOperationContext operationContext, final SideTransformPreconditionContext _context) {
-    return (SLinkOperations.getTarget(_context.getSourceNode(), "contextNode", true) == null);
   }
 
   public static void nodeFactory_NodeSetup_MqlParentheses_7352592509980950440(final IOperationContext operationContext, final NodeSetupContext _context) {
@@ -98,9 +94,9 @@ public class QueriesGenerated {
 
           public boolean canSubstitute_internal(String pattern, boolean strictly) {
             if (strictly) {
-              return REGEXP_x583g4_a0a0a0a2a0a0a0a2a0a1a7.matcher(pattern).matches();
+              return REGEXP_x583g4_a0a0a0a2a0a0a0a2a0a1a6.matcher(pattern).matches();
             } else {
-              return REGEXP_x583g4_a0a0a0a0c0a0a0a0c0a0b0h.matcher(pattern).matches();
+              return REGEXP_x583g4_a0a0a0a0c0a0a0a0c0a0b0g.matcher(pattern).matches();
             }
           }
 
@@ -271,10 +267,10 @@ public class QueriesGenerated {
       if (outputConcept == null || SConceptOperations.isSuperConceptOf(childConcept, NameUtil.nodeFQName(outputConcept))) {
         ListSequence.fromList(result).addElement(new DefaultSimpleSubstituteAction(outputConcept, _context.getParentNode(), _context.getCurrentTargetNode(), _context.getChildSetter(), operationContext.getScope()) {
           public SNode createChildNode(Object parameterObject, SModel model, String pattern) {
-            Matcher _matcher_x583g4_a1a0a0a0a0a2a0a1a01;
+            Matcher _matcher_x583g4_a1a0a0a0a0a2a0a1a9;
             SNode result = SNodeFactoryOperations.createNewNode(model, "jetbrains.mps.core.query.structure.MqlAssignment", null);
-            if ((_matcher_x583g4_a1a0a0a0a0a2a0a1a01 = REGEXP_x583g4_a0a0a2a0a0a0a0a2a0a1a01.matcher(pattern)).find()) {
-              SPropertyOperations.set(SLinkOperations.getTarget(result, "var", true), "name", _matcher_x583g4_a1a0a0a0a0a2a0a1a01.group(1));
+            if ((_matcher_x583g4_a1a0a0a0a0a2a0a1a9 = REGEXP_x583g4_a0a0a2a0a0a0a0a2a0a1a9.matcher(pattern)).find()) {
+              SPropertyOperations.set(SLinkOperations.getTarget(result, "var", true), "name", _matcher_x583g4_a1a0a0a0a0a2a0a1a9.group(1));
             }
             return result;
           }
@@ -284,7 +280,7 @@ public class QueriesGenerated {
           }
 
           public boolean canSubstitute_internal(String pattern, boolean strictly) {
-            return REGEXP_x583g4_a0a0a2a0a0a0a2a0a1a01.matcher(pattern).matches();
+            return REGEXP_x583g4_a0a0a2a0a0a0a2a0a1a9.matcher(pattern).matches();
           }
 
           public String getDescriptionText(String pattern) {
@@ -345,7 +341,7 @@ public class QueriesGenerated {
             ListSequence.fromList(result).addElement(new DefaultChildNodeSubstituteAction(outputConcept, item, _context.getParentNode(), _context.getCurrentTargetNode(), _context.getChildSetter(), operationContext.getScope()) {
               public SNode createChildNode(Object parameterObject, SModel model, String pattern) {
                 SNode nn = SNodeFactoryOperations.createNewNode(model, "jetbrains.mps.core.query.structure.MqlCollectionSelector", null);
-                SPropertyOperations.set(nn, "kind", "" + SEnumOperations.getEnumMemberValue((item)));
+                SPropertyOperations.set(nn, "kind", "" + (SEnumOperations.getEnumMemberValue((item))));
                 SPropertyOperations.set(SLinkOperations.getTarget(nn, "var", true), "name", "it");
                 return nn;
               }
@@ -381,7 +377,7 @@ public class QueriesGenerated {
             ListSequence.fromList(result).addElement(new DefaultChildNodeSubstituteAction(outputConcept, item, _context.getParentNode(), _context.getCurrentTargetNode(), _context.getChildSetter(), operationContext.getScope()) {
               public SNode createChildNode(Object parameterObject, SModel model, String pattern) {
                 SNode nn = SNodeFactoryOperations.createNewNode(model, "jetbrains.mps.core.query.structure.MqlCollectionProperty", null);
-                SPropertyOperations.set(nn, "kind", "" + SEnumOperations.getEnumMemberValue((item)));
+                SPropertyOperations.set(nn, "kind", "" + (SEnumOperations.getEnumMemberValue((item))));
                 return nn;
               }
 
@@ -583,7 +579,7 @@ public class QueriesGenerated {
         ListSequence.fromList(result).addElement(new AbstractSideTransformHintSubstituteAction(concept, item, _context.getSourceNode()) {
           public SNode doSubstitute(String pattern) {
             SNode result = SNodeFactoryOperations.createNewNode(_context.getModel(), "jetbrains.mps.core.query.structure.MqlArithmetic", _context.getSourceNode());
-            SPropertyOperations.set(result, "kind", "" + SEnumOperations.getEnumMemberValue((item)));
+            SPropertyOperations.set(result, "kind", "" + (SEnumOperations.getEnumMemberValue((item))));
             SNode nodeToProcess = PrecedenceUtil.getTargetForRightTransform(_context.getSourceNode(), result);
             SNodeOperations.replaceWithAnother(nodeToProcess, result);
             SLinkOperations.setTarget(result, "left", nodeToProcess, true);
@@ -621,7 +617,7 @@ public class QueriesGenerated {
         ListSequence.fromList(result).addElement(new AbstractSideTransformHintSubstituteAction(concept, item, _context.getSourceNode()) {
           public SNode doSubstitute(String pattern) {
             SNode result = SNodeFactoryOperations.createNewNode(_context.getModel(), "jetbrains.mps.core.query.structure.MqlCondition", _context.getSourceNode());
-            SPropertyOperations.set(result, "kind", "" + SEnumOperations.getEnumMemberValue((item)));
+            SPropertyOperations.set(result, "kind", "" + (SEnumOperations.getEnumMemberValue((item))));
             SNode nodeToProcess = PrecedenceUtil.getTargetForRightTransform(_context.getSourceNode(), result);
             SNodeOperations.replaceWithAnother(nodeToProcess, result);
             SLinkOperations.setTarget(result, "left", nodeToProcess, true);
@@ -668,7 +664,7 @@ public class QueriesGenerated {
         ListSequence.fromList(result).addElement(new AbstractSideTransformHintSubstituteAction(concept, item, _context.getSourceNode()) {
           public SNode doSubstitute(String pattern) {
             SNode result = SNodeFactoryOperations.createNewNode(_context.getModel(), "jetbrains.mps.core.query.structure.MqlArithmetic", _context.getSourceNode());
-            SPropertyOperations.set(result, "kind", "" + SEnumOperations.getEnumMemberValue((item)));
+            SPropertyOperations.set(result, "kind", "" + (SEnumOperations.getEnumMemberValue((item))));
             SNode nodeToProcess = PrecedenceUtil.getTargetForLeftTransform(_context.getSourceNode(), result);
             SNodeOperations.replaceWithAnother(nodeToProcess, result);
             SLinkOperations.setTarget(result, "right", nodeToProcess, true);
@@ -706,7 +702,7 @@ public class QueriesGenerated {
         ListSequence.fromList(result).addElement(new AbstractSideTransformHintSubstituteAction(concept, item, _context.getSourceNode()) {
           public SNode doSubstitute(String pattern) {
             SNode result = SNodeFactoryOperations.createNewNode(_context.getModel(), "jetbrains.mps.core.query.structure.MqlCondition", _context.getSourceNode());
-            SPropertyOperations.set(result, "kind", "" + SEnumOperations.getEnumMemberValue((item)));
+            SPropertyOperations.set(result, "kind", "" + (SEnumOperations.getEnumMemberValue((item))));
             SNode nodeToProcess = PrecedenceUtil.getTargetForLeftTransform(_context.getSourceNode(), result);
             SNodeOperations.replaceWithAnother(nodeToProcess, result);
             SLinkOperations.setTarget(result, "right", nodeToProcess, true);
@@ -762,53 +758,6 @@ public class QueriesGenerated {
 
         public String getDescriptionText(String pattern) {
           return "unary minus";
-        }
-      });
-    }
-    return result;
-  }
-
-  public static List<INodeSubstituteAction> sideTransform_ActionsFactory_MqlQuery_212212067812029567(final IOperationContext operationContext, final SideTransformActionsBuilderContext _context) {
-    List<INodeSubstituteAction> result = ListSequence.fromList(new ArrayList<INodeSubstituteAction>());
-    {
-      SNode concept = SConceptOperations.findConceptDeclaration("jetbrains.mps.core.query.structure.MqlQuery");
-      ListSequence.fromList(result).addElement(new AbstractSideTransformHintSubstituteAction(concept, _context.getSourceNode()) {
-        public SNode doSubstitute(String pattern) {
-          SPropertyOperations.set(_context.getSourceNode(), "isCached", "" + true);
-          return _context.getSourceNode();
-        }
-
-        public String getMatchingText(String pattern) {
-          return "cached";
-        }
-
-        public String getVisibleMatchingText(String pattern) {
-          return this.getMatchingText(pattern);
-        }
-      });
-    }
-    return result;
-  }
-
-  public static List<INodeSubstituteAction> sideTransform_ActionsFactory_MqlQuery_1016170791824030639(final IOperationContext operationContext, final SideTransformActionsBuilderContext _context) {
-    List<INodeSubstituteAction> result = ListSequence.fromList(new ArrayList<INodeSubstituteAction>());
-    {
-      SNode concept = SConceptOperations.findConceptDeclaration("jetbrains.mps.core.query.structure.MqlQuery");
-      ListSequence.fromList(result).addElement(new AbstractSideTransformHintSubstituteAction(concept, _context.getSourceNode()) {
-        public SNode doSubstitute(String pattern) {
-          return SNodeFactoryOperations.setNewChild(_context.getSourceNode(), "contextNode", "jetbrains.mps.core.smodel.structure.MqlNodeType");
-        }
-
-        public String getMatchingText(String pattern) {
-          return "::";
-        }
-
-        public String getVisibleMatchingText(String pattern) {
-          return this.getMatchingText(pattern);
-        }
-
-        public String getDescriptionText(String pattern) {
-          return "add context node";
         }
       });
     }

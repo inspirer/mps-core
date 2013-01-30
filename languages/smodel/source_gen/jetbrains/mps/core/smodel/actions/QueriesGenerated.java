@@ -60,6 +60,10 @@ public class QueriesGenerated {
     return (SLinkOperations.getTarget(_context.getSourceNode(), "constraints", true) == null) && (SLinkOperations.getTarget(_context.getSourceNode(), "cardinality", true) == null);
   }
 
+  public static boolean sideTransformHintSubstituteActionsBuilder_Precondition_MqlModelQuery_4363371899537413600(final IOperationContext operationContext, final SideTransformPreconditionContext _context) {
+    return (SLinkOperations.getTarget(_context.getSourceNode(), "contextNode", true) == null);
+  }
+
   public static List<INodeSubstituteAction> nodeSubstituteActionsBuilder_ActionsFactory_SConceptQuery_270269450479642833(final IOperationContext operationContext, final NodeSubstituteActionsFactoryContext _context) {
     List<INodeSubstituteAction> result = ListSequence.fromList(new ArrayList<INodeSubstituteAction>());
     {
@@ -79,7 +83,7 @@ public class QueriesGenerated {
                 SNode res = SNodeFactoryOperations.createNewNode(model, "jetbrains.mps.core.smodel.structure.SConceptQuery", null);
                 SPropertyOperations.set(res, "name", SPropertyOperations.getString((item), "name"));
                 SLinkOperations.setTarget(res, "type", SNodeOperations.copyNode(SLinkOperations.getTarget((item), "type", true)), true);
-                SPropertyOperations.set(res, "isOverride", "" + true);
+                SPropertyOperations.set(res, "isOverride", "" + (true));
                 ListSequence.fromList(SLinkOperations.getTargets(res, "parameters", true)).addSequence(ListSequence.fromList(SLinkOperations.getTargets((item), "parameters", true)).select(new ISelector<SNode, SNode>() {
                   public SNode select(SNode it) {
                     return SNodeOperations.copyNode(it);
@@ -113,7 +117,7 @@ public class QueriesGenerated {
       SNode concept = SConceptOperations.findConceptDeclaration("jetbrains.mps.core.smodel.structure.SConceptQuery");
       ListSequence.fromList(result).addElement(new AbstractSideTransformHintSubstituteAction(concept, _context.getSourceNode()) {
         public SNode doSubstitute(String pattern) {
-          SPropertyOperations.set(_context.getSourceNode(), "isAbstract", "" + true);
+          SPropertyOperations.set(_context.getSourceNode(), "isAbstract", "" + (true));
           return _context.getSourceNode();
         }
 
@@ -135,7 +139,7 @@ public class QueriesGenerated {
       SNode concept = SConceptOperations.findConceptDeclaration("jetbrains.mps.core.smodel.structure.SConceptQuery");
       ListSequence.fromList(result).addElement(new AbstractSideTransformHintSubstituteAction(concept, _context.getSourceNode()) {
         public SNode doSubstitute(String pattern) {
-          SPropertyOperations.set(_context.getSourceNode(), "isFinal", "" + true);
+          SPropertyOperations.set(_context.getSourceNode(), "isFinal", "" + (true));
           return _context.getSourceNode();
         }
 
@@ -157,7 +161,7 @@ public class QueriesGenerated {
       SNode concept = SConceptOperations.findConceptDeclaration("jetbrains.mps.core.smodel.structure.SConceptQuery");
       ListSequence.fromList(result).addElement(new AbstractSideTransformHintSubstituteAction(concept, _context.getSourceNode()) {
         public SNode doSubstitute(String pattern) {
-          SPropertyOperations.set(_context.getSourceNode(), "isOverride", "" + true);
+          SPropertyOperations.set(_context.getSourceNode(), "isOverride", "" + (true));
           return _context.getSourceNode();
         }
 
@@ -241,6 +245,53 @@ public class QueriesGenerated {
 
         public String getVisibleMatchingText(String pattern) {
           return this.getMatchingText(pattern);
+        }
+      });
+    }
+    return result;
+  }
+
+  public static List<INodeSubstituteAction> sideTransform_ActionsFactory_MqlModelQuery_4363371899537413585(final IOperationContext operationContext, final SideTransformActionsBuilderContext _context) {
+    List<INodeSubstituteAction> result = ListSequence.fromList(new ArrayList<INodeSubstituteAction>());
+    {
+      SNode concept = SConceptOperations.findConceptDeclaration("jetbrains.mps.core.smodel.structure.MqlModelQuery");
+      ListSequence.fromList(result).addElement(new AbstractSideTransformHintSubstituteAction(concept, _context.getSourceNode()) {
+        public SNode doSubstitute(String pattern) {
+          SPropertyOperations.set(_context.getSourceNode(), "isCached", "" + (true));
+          return _context.getSourceNode();
+        }
+
+        public String getMatchingText(String pattern) {
+          return "cached";
+        }
+
+        public String getVisibleMatchingText(String pattern) {
+          return this.getMatchingText(pattern);
+        }
+      });
+    }
+    return result;
+  }
+
+  public static List<INodeSubstituteAction> sideTransform_ActionsFactory_MqlModelQuery_4363371899537413599(final IOperationContext operationContext, final SideTransformActionsBuilderContext _context) {
+    List<INodeSubstituteAction> result = ListSequence.fromList(new ArrayList<INodeSubstituteAction>());
+    {
+      SNode concept = SConceptOperations.findConceptDeclaration("jetbrains.mps.core.smodel.structure.MqlModelQuery");
+      ListSequence.fromList(result).addElement(new AbstractSideTransformHintSubstituteAction(concept, _context.getSourceNode()) {
+        public SNode doSubstitute(String pattern) {
+          return SNodeFactoryOperations.setNewChild(_context.getSourceNode(), "contextNode", "jetbrains.mps.core.smodel.structure.MqlNodeType");
+        }
+
+        public String getMatchingText(String pattern) {
+          return "::";
+        }
+
+        public String getVisibleMatchingText(String pattern) {
+          return this.getMatchingText(pattern);
+        }
+
+        public String getDescriptionText(String pattern) {
+          return "add context node";
         }
       });
     }

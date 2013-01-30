@@ -26,7 +26,7 @@ public class delete_cachedProperty {
     }
 
     public void execute_internal(EditorContext editorContext, SNode node) {
-      SPropertyOperations.set(node, "isCached", "" + false);
+      SPropertyOperations.set(node, "isCached", "" + (false));
     }
   }
 }

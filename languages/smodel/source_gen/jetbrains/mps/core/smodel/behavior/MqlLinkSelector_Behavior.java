@@ -5,8 +5,6 @@ package jetbrains.mps.core.smodel.behavior;
 import jetbrains.mps.smodel.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.core.structure.behavior.SAbstractLink_Behavior;
-import java.util.Set;
-import java.util.HashSet;
 import jetbrains.mps.smodel.SModelUtil_new;
 import jetbrains.mps.project.GlobalScope;
 
@@ -20,50 +18,24 @@ public class MqlLinkSelector_Behavior {
       return null;
     }
     return (SAbstractLink_Behavior.call_isMultiple_4125821269969003167(SLinkOperations.getTarget(thisNode, "link", false)) ?
-      new MqlLinkSelector_Behavior.QuotationClass_71mfo8_a0a2a1().createNode(concept) :
-      new MqlLinkSelector_Behavior.QuotationClass_71mfo8_a0a2a1_0().createNode(concept)
+      createMqlListType_71mfo8_a0c0a(concept) :
+      createMqlNodeType_71mfo8_a0c0a(concept)
     );
   }
 
-  public static class QuotationClass_71mfo8_a0a2a1 {
-    public QuotationClass_71mfo8_a0a2a1() {
+  private static SNode createMqlListType_71mfo8_a0c0a(Object p0) {
+    SNode n1 = SModelUtil_new.instantiateConceptDeclaration("jetbrains.mps.core.query.structure.MqlListType", null, GlobalScope.getInstance(), false);
+    {
+      SNode n2 = SModelUtil_new.instantiateConceptDeclaration("jetbrains.mps.core.smodel.structure.MqlNodeType", null, GlobalScope.getInstance(), false);
+      n2.setReferent("concept", (SNode) p0);
+      n1.addChild("inner", n2);
     }
-
-    public SNode createNode(Object parameter_5) {
-      SNode result = null;
-      Set<SNode> _parameterValues_129834374 = new HashSet<SNode>();
-      SNode quotedNode_1 = null;
-      SNode quotedNode_2 = null;
-      {
-        quotedNode_1 = SModelUtil_new.instantiateConceptDeclaration("jetbrains.mps.core.query.structure.MqlListType", null, GlobalScope.getInstance(), false);
-        SNode quotedNode1_3 = quotedNode_1;
-        {
-          quotedNode_2 = SModelUtil_new.instantiateConceptDeclaration("jetbrains.mps.core.smodel.structure.MqlNodeType", null, GlobalScope.getInstance(), false);
-          SNode quotedNode1_4 = quotedNode_2;
-          quotedNode1_4.setReferent("concept", (SNode) parameter_5);
-          quotedNode_1.addChild("inner", quotedNode1_4);
-        }
-        result = quotedNode1_3;
-      }
-      return result;
-    }
+    return n1;
   }
 
-  public static class QuotationClass_71mfo8_a0a2a1_0 {
-    public QuotationClass_71mfo8_a0a2a1_0() {
-    }
-
-    public SNode createNode(Object parameter_3) {
-      SNode result = null;
-      Set<SNode> _parameterValues_129834374 = new HashSet<SNode>();
-      SNode quotedNode_1 = null;
-      {
-        quotedNode_1 = SModelUtil_new.instantiateConceptDeclaration("jetbrains.mps.core.smodel.structure.MqlNodeType", null, GlobalScope.getInstance(), false);
-        SNode quotedNode1_2 = quotedNode_1;
-        quotedNode1_2.setReferent("concept", (SNode) parameter_3);
-        result = quotedNode1_2;
-      }
-      return result;
-    }
+  private static SNode createMqlNodeType_71mfo8_a0c0a(Object p0) {
+    SNode n1 = SModelUtil_new.instantiateConceptDeclaration("jetbrains.mps.core.smodel.structure.MqlNodeType", null, GlobalScope.getInstance(), false);
+    n1.setReferent("concept", (SNode) p0);
+    return n1;
   }
 }
