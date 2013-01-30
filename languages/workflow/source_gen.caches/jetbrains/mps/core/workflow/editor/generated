@@ -11,7 +11,7 @@
   <dep model="r:00000000-0000-4000-0000-011c895902cb(jetbrains.mps.baseLanguage.generator.java.closures@generator)" />
   <dep model="r:00000000-0000-4000-0000-011c895902e8(jetbrains.mps.lang.generator.structure)" />
   <dep model="r:00000000-0000-4000-0000-011c8959033a(jetbrains.mps.baseLanguage.closures.generator.baseLanguage.template.main@generator)" />
-  <dep model="r:840eec86-3255-419f-ad49-b366e05b6f22(jetbrains.mps.core.query.editor)" hash="7ts2rhtgol4ebk7aqil7onyla8zfx6" />
+  <dep model="r:840eec86-3255-419f-ad49-b366e05b6f22(jetbrains.mps.core.query.editor)" hash="5p2sp5yuahj3aud0mgnky63drrd0s2t" />
   <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" />
   <dep model="r:ebf59dd9-04f3-4209-8dd7-dca3f04cac82(jetbrains.mps.core.workflow.structure)" hash="2u0i72tlf07z4v3eus38rpwvqavfsmr" />
   <common hash="9fq25mmas3x2kvhx93ojd062wya883r">

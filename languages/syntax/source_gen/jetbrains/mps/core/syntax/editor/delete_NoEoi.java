@@ -26,7 +26,7 @@ public class delete_NoEoi {
     }
 
     public void execute_internal(EditorContext editorContext, SNode node) {
-      SPropertyOperations.set(node, "noEoi", "" + false);
+      SPropertyOperations.set(node, "noEoi", "" + (false));
     }
   }
 }

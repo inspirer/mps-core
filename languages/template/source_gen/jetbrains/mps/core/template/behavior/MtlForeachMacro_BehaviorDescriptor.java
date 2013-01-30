@@ -4,16 +4,12 @@ package jetbrains.mps.core.template.behavior;
 
 import jetbrains.mps.lang.core.behavior.ScopeProvider_BehaviorDescriptor;
 import jetbrains.mps.core.query.behavior.MqlVariableContainer_BehaviorDescriptor;
-import jetbrains.mps.scope.Scope;
 import jetbrains.mps.smodel.SNode;
+import jetbrains.mps.scope.Scope;
 import jetbrains.mps.lang.core.behavior.ScopeProvider_Behavior;
 
 public class MtlForeachMacro_BehaviorDescriptor extends MtlNodeMacro_BehaviorDescriptor implements ScopeProvider_BehaviorDescriptor, MqlVariableContainer_BehaviorDescriptor {
   public MtlForeachMacro_BehaviorDescriptor() {
-  }
-
-  public Scope virtual_getScope_7722139651431880752(SNode thisNode, SNode kind, String role, int index) {
-    return ScopeProvider_Behavior.virtual_getScope_7722139651431880752(thisNode, kind, role, index);
   }
 
   public SNode virtual_getContainedVariableType_3435983127247055569(SNode thisNode, String role) {
@@ -22,6 +18,10 @@ public class MtlForeachMacro_BehaviorDescriptor extends MtlNodeMacro_BehaviorDes
 
   public Scope virtual_getScope_3734116213129936182(SNode thisNode, SNode kind, SNode child) {
     return MtlForeachMacro_Behavior.virtual_getScope_3734116213129936182(thisNode, kind, child);
+  }
+
+  public Scope virtual_getScope_7722139651431880752(SNode thisNode, SNode kind, String role, int index) {
+    return ScopeProvider_Behavior.virtual_getScope_7722139651431880752(thisNode, kind, role, index);
   }
 
   @Override

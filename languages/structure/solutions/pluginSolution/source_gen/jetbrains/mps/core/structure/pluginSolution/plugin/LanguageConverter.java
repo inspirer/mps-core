@@ -148,17 +148,17 @@ public class LanguageConverter {
     final SNode result = SConceptOperations.createNewNode("jetbrains.mps.core.structure.structure.SConcept", null);
     MapSequence.fromMap(map).put(concept, result);
     updateAbstractConceptDeclarationFields(concept, result);
-    SPropertyOperations.set(result, "isAbstract", "" + ListSequence.fromList(SLinkOperations.getTargets(concept, "conceptProperty", true)).any(new IWhereFilter<SNode>() {
+    SPropertyOperations.set(result, "isAbstract", "" + (ListSequence.fromList(SLinkOperations.getTargets(concept, "conceptProperty", true)).any(new IWhereFilter<SNode>() {
       public boolean accept(SNode it) {
         return isConceptProperty(it, "jetbrains.mps.lang.core.structure.BaseConcept", "abstract");
       }
-    }));
-    SPropertyOperations.set(result, "isFinal", "" + ListSequence.fromList(SLinkOperations.getTargets(concept, "conceptProperty", true)).any(new IWhereFilter<SNode>() {
+    })));
+    SPropertyOperations.set(result, "isFinal", "" + (ListSequence.fromList(SLinkOperations.getTargets(concept, "conceptProperty", true)).any(new IWhereFilter<SNode>() {
       public boolean accept(SNode it) {
         return isConceptProperty(it, "jetbrains.mps.lang.core.structure.BaseConcept", "final");
       }
-    }));
-    SPropertyOperations.set(result, "canBeRoot", "" + SPropertyOperations.getBoolean(concept, "rootable"));
+    })));
+    SPropertyOperations.set(result, "canBeRoot", "" + (SPropertyOperations.getBoolean(concept, "rootable")));
     for (final SNode implementedConcepts : SLinkOperations.getTargets(concept, "implements", true)) {
       final SNode ref = SConceptOperations.createNewNode("jetbrains.mps.core.structure.structure.SInterfaceReference", null);
       later(new _FunctionTypes._void_P0_E0() {
@@ -223,8 +223,8 @@ public class LanguageConverter {
     });
 
     SLinkOperations.setTarget(link.value, "cardinality", SConceptOperations.createNewNode("jetbrains.mps.core.structure.structure.SCardinality", null), true);
-    SPropertyOperations.set(SLinkOperations.getTarget(link.value, "cardinality", true), "isRequired", "" + (SPropertyOperations.hasValue(linkNode, "sourceCardinality", "1", "0..1") || SPropertyOperations.hasValue(linkNode, "sourceCardinality", "1..n", "0..1")));
-    SPropertyOperations.set(SLinkOperations.getTarget(link.value, "cardinality", true), "isMultiple", "" + (SPropertyOperations.hasValue(linkNode, "sourceCardinality", "0..n", "0..1") || SPropertyOperations.hasValue(linkNode, "sourceCardinality", "1..n", "0..1")));
+    SPropertyOperations.set(SLinkOperations.getTarget(link.value, "cardinality", true), "isRequired", "" + ((SPropertyOperations.hasValue(linkNode, "sourceCardinality", "1", "0..1") || SPropertyOperations.hasValue(linkNode, "sourceCardinality", "1..n", "0..1"))));
+    SPropertyOperations.set(SLinkOperations.getTarget(link.value, "cardinality", true), "isMultiple", "" + ((SPropertyOperations.hasValue(linkNode, "sourceCardinality", "0..n", "0..1") || SPropertyOperations.hasValue(linkNode, "sourceCardinality", "1..n", "0..1"))));
     return link.value;
   }
 

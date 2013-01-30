@@ -99,7 +99,7 @@ public class QueriesGenerated {
       SLinkOperations.setTarget(_context.getNewNode(), "constraints", SLinkOperations.getTarget(SNodeOperations.cast(_context.getSampleNode(), "jetbrains.mps.core.structure.structure.SAbstractLink"), "constraints", true), true);
       SLinkOperations.setTarget(_context.getNewNode(), "cardinality", SLinkOperations.getTarget(SNodeOperations.cast(_context.getSampleNode(), "jetbrains.mps.core.structure.structure.SAbstractLink"), "cardinality", true), true);
       if (SNodeOperations.isInstanceOf(_context.getNewNode(), "jetbrains.mps.core.structure.structure.SReference")) {
-        SPropertyOperations.set(SLinkOperations.getTarget(_context.getNewNode(), "cardinality", true), "isMultiple", "" + false);
+        SPropertyOperations.set(SLinkOperations.getTarget(_context.getNewNode(), "cardinality", true), "isMultiple", "" + (false));
       }
       SLinkOperations.setTarget(_context.getNewNode(), "target", SLinkOperations.getTarget(SNodeOperations.cast(_context.getSampleNode(), "jetbrains.mps.core.structure.structure.SAbstractLink"), "target", false), false);
     }
@@ -249,7 +249,7 @@ public class QueriesGenerated {
         ListSequence.fromList(result).addElement(new DefaultSimpleSubstituteAction(outputConcept, _context.getParentNode(), _context.getCurrentTargetNode(), _context.getChildSetter(), operationContext.getScope()) {
           public SNode createChildNode(Object parameterObject, SModel model, String pattern) {
             SNode card = SNodeFactoryOperations.createNewNode(model, "jetbrains.mps.core.structure.structure.SCardinality", null);
-            SPropertyOperations.set(card, "isRequired", "" + true);
+            SPropertyOperations.set(card, "isRequired", "" + (true));
             return card;
           }
 
@@ -279,7 +279,7 @@ public class QueriesGenerated {
         ListSequence.fromList(result).addElement(new DefaultSimpleSubstituteAction(outputConcept, _context.getParentNode(), _context.getCurrentTargetNode(), _context.getChildSetter(), operationContext.getScope()) {
           public SNode createChildNode(Object parameterObject, SModel model, String pattern) {
             SNode card = SNodeFactoryOperations.createNewNode(model, "jetbrains.mps.core.structure.structure.SCardinality", null);
-            SPropertyOperations.set(card, "isMultiple", "" + true);
+            SPropertyOperations.set(card, "isMultiple", "" + (true));
             return card;
           }
 
@@ -304,8 +304,8 @@ public class QueriesGenerated {
         ListSequence.fromList(result).addElement(new DefaultSimpleSubstituteAction(outputConcept, _context.getParentNode(), _context.getCurrentTargetNode(), _context.getChildSetter(), operationContext.getScope()) {
           public SNode createChildNode(Object parameterObject, SModel model, String pattern) {
             SNode card = SNodeFactoryOperations.createNewNode(model, "jetbrains.mps.core.structure.structure.SCardinality", null);
-            SPropertyOperations.set(card, "isRequired", "" + true);
-            SPropertyOperations.set(card, "isMultiple", "" + true);
+            SPropertyOperations.set(card, "isRequired", "" + (true));
+            SPropertyOperations.set(card, "isMultiple", "" + (true));
             return card;
           }
 
@@ -402,7 +402,7 @@ public class QueriesGenerated {
       SNode concept = SConceptOperations.findConceptDeclaration("jetbrains.mps.core.structure.structure.SConcept");
       ListSequence.fromList(result).addElement(new AbstractSideTransformHintSubstituteAction(concept, _context.getSourceNode()) {
         public SNode doSubstitute(String pattern) {
-          SPropertyOperations.set(_context.getSourceNode(), "isAbstract", "" + true);
+          SPropertyOperations.set(_context.getSourceNode(), "isAbstract", "" + (true));
           return _context.getSourceNode();
         }
 
@@ -424,7 +424,7 @@ public class QueriesGenerated {
       SNode concept = SConceptOperations.findConceptDeclaration("jetbrains.mps.core.structure.structure.SConcept");
       ListSequence.fromList(result).addElement(new AbstractSideTransformHintSubstituteAction(concept, _context.getSourceNode()) {
         public SNode doSubstitute(String pattern) {
-          SPropertyOperations.set(_context.getSourceNode(), "isFinal", "" + true);
+          SPropertyOperations.set(_context.getSourceNode(), "isFinal", "" + (true));
           return _context.getSourceNode();
         }
 
@@ -446,7 +446,7 @@ public class QueriesGenerated {
       SNode concept = SConceptOperations.findConceptDeclaration("jetbrains.mps.core.structure.structure.SConcept");
       ListSequence.fromList(result).addElement(new AbstractSideTransformHintSubstituteAction(concept, _context.getSourceNode()) {
         public SNode doSubstitute(String pattern) {
-          SPropertyOperations.set(_context.getSourceNode(), "canBeRoot", "" + true);
+          SPropertyOperations.set(_context.getSourceNode(), "canBeRoot", "" + (true));
           return _context.getSourceNode();
         }
 
@@ -565,7 +565,7 @@ public class QueriesGenerated {
       ListSequence.fromList(result).addElement(new AbstractSideTransformHintSubstituteAction(concept, _context.getSourceNode()) {
         public SNode doSubstitute(String pattern) {
           SNodeFactoryOperations.setNewChild(_context.getSourceNode(), "cardinality", "jetbrains.mps.core.structure.structure.SCardinality");
-          SPropertyOperations.set(SLinkOperations.getTarget(_context.getSourceNode(), "cardinality", true), "isRequired", "" + true);
+          SPropertyOperations.set(SLinkOperations.getTarget(_context.getSourceNode(), "cardinality", true), "isRequired", "" + (true));
           return SLinkOperations.getTarget(_context.getSourceNode(), "cardinality", true);
         }
 
@@ -614,7 +614,7 @@ public class QueriesGenerated {
       ListSequence.fromList(result).addElement(new AbstractSideTransformHintSubstituteAction(concept, _context.getSourceNode()) {
         public SNode doSubstitute(String pattern) {
           SNodeFactoryOperations.setNewChild(_context.getSourceNode(), "cardinality", "jetbrains.mps.core.structure.structure.SCardinality");
-          SPropertyOperations.set(SLinkOperations.getTarget(_context.getSourceNode(), "cardinality", true), "isMultiple", "" + true);
+          SPropertyOperations.set(SLinkOperations.getTarget(_context.getSourceNode(), "cardinality", true), "isMultiple", "" + (true));
           return SLinkOperations.getTarget(_context.getSourceNode(), "cardinality", true);
         }
 
@@ -636,8 +636,8 @@ public class QueriesGenerated {
       ListSequence.fromList(result).addElement(new AbstractSideTransformHintSubstituteAction(concept, _context.getSourceNode()) {
         public SNode doSubstitute(String pattern) {
           SNodeFactoryOperations.setNewChild(_context.getSourceNode(), "cardinality", "jetbrains.mps.core.structure.structure.SCardinality");
-          SPropertyOperations.set(SLinkOperations.getTarget(_context.getSourceNode(), "cardinality", true), "isRequired", "" + true);
-          SPropertyOperations.set(SLinkOperations.getTarget(_context.getSourceNode(), "cardinality", true), "isMultiple", "" + true);
+          SPropertyOperations.set(SLinkOperations.getTarget(_context.getSourceNode(), "cardinality", true), "isRequired", "" + (true));
+          SPropertyOperations.set(SLinkOperations.getTarget(_context.getSourceNode(), "cardinality", true), "isMultiple", "" + (true));
           return SLinkOperations.getTarget(_context.getSourceNode(), "cardinality", true);
         }
 

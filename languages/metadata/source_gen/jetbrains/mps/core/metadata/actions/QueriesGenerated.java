@@ -210,7 +210,7 @@ public class QueriesGenerated {
       ListSequence.fromList(result).addElement(new AbstractSideTransformHintSubstituteAction(concept, _context.getSourceNode()) {
         public SNode doSubstitute(String pattern) {
           SNodeFactoryOperations.setNewChild(_context.getSourceNode(), "cardinality", "jetbrains.mps.core.structure.structure.SCardinality");
-          SPropertyOperations.set(SLinkOperations.getTarget(_context.getSourceNode(), "cardinality", true), "isRequired", "" + true);
+          SPropertyOperations.set(SLinkOperations.getTarget(_context.getSourceNode(), "cardinality", true), "isRequired", "" + (true));
           return SLinkOperations.getTarget(_context.getSourceNode(), "cardinality", true);
         }
 
@@ -232,7 +232,7 @@ public class QueriesGenerated {
       ListSequence.fromList(result).addElement(new AbstractSideTransformHintSubstituteAction(concept, _context.getSourceNode()) {
         public SNode doSubstitute(String pattern) {
           SNodeFactoryOperations.setNewChild(_context.getSourceNode(), "cardinality", "jetbrains.mps.core.structure.structure.SCardinality");
-          SPropertyOperations.set(SLinkOperations.getTarget(_context.getSourceNode(), "cardinality", true), "isMultiple", "" + true);
+          SPropertyOperations.set(SLinkOperations.getTarget(_context.getSourceNode(), "cardinality", true), "isMultiple", "" + (true));
           return SLinkOperations.getTarget(_context.getSourceNode(), "cardinality", true);
         }
 
@@ -254,8 +254,8 @@ public class QueriesGenerated {
       ListSequence.fromList(result).addElement(new AbstractSideTransformHintSubstituteAction(concept, _context.getSourceNode()) {
         public SNode doSubstitute(String pattern) {
           SNodeFactoryOperations.setNewChild(_context.getSourceNode(), "cardinality", "jetbrains.mps.core.structure.structure.SCardinality");
-          SPropertyOperations.set(SLinkOperations.getTarget(_context.getSourceNode(), "cardinality", true), "isRequired", "" + true);
-          SPropertyOperations.set(SLinkOperations.getTarget(_context.getSourceNode(), "cardinality", true), "isMultiple", "" + true);
+          SPropertyOperations.set(SLinkOperations.getTarget(_context.getSourceNode(), "cardinality", true), "isRequired", "" + (true));
+          SPropertyOperations.set(SLinkOperations.getTarget(_context.getSourceNode(), "cardinality", true), "isMultiple", "" + (true));
           return SLinkOperations.getTarget(_context.getSourceNode(), "cardinality", true);
         }
 
@@ -282,7 +282,7 @@ public class QueriesGenerated {
       ListSequence.fromList(result).addElement(new AbstractSideTransformHintSubstituteAction(concept, _context.getSourceNode()) {
         public SNode doSubstitute(String pattern) {
           SNodeFactoryOperations.setNewChild(_context.getSourceNode(), "cardinality", "jetbrains.mps.core.structure.structure.SCardinality");
-          SPropertyOperations.set(SLinkOperations.getTarget(_context.getSourceNode(), "cardinality", true), "isRequired", "" + true);
+          SPropertyOperations.set(SLinkOperations.getTarget(_context.getSourceNode(), "cardinality", true), "isRequired", "" + (true));
           return SLinkOperations.getTarget(_context.getSourceNode(), "cardinality", true);
         }
 
@@ -304,7 +304,7 @@ public class QueriesGenerated {
       ListSequence.fromList(result).addElement(new AbstractSideTransformHintSubstituteAction(concept, _context.getSourceNode()) {
         public SNode doSubstitute(String pattern) {
           SNodeFactoryOperations.setNewChild(_context.getSourceNode(), "cardinality", "jetbrains.mps.core.structure.structure.SCardinality");
-          SPropertyOperations.set(SLinkOperations.getTarget(_context.getSourceNode(), "cardinality", true), "isMultiple", "" + true);
+          SPropertyOperations.set(SLinkOperations.getTarget(_context.getSourceNode(), "cardinality", true), "isMultiple", "" + (true));
           return SLinkOperations.getTarget(_context.getSourceNode(), "cardinality", true);
         }
 
@@ -326,8 +326,8 @@ public class QueriesGenerated {
       ListSequence.fromList(result).addElement(new AbstractSideTransformHintSubstituteAction(concept, _context.getSourceNode()) {
         public SNode doSubstitute(String pattern) {
           SNodeFactoryOperations.setNewChild(_context.getSourceNode(), "cardinality", "jetbrains.mps.core.structure.structure.SCardinality");
-          SPropertyOperations.set(SLinkOperations.getTarget(_context.getSourceNode(), "cardinality", true), "isRequired", "" + true);
-          SPropertyOperations.set(SLinkOperations.getTarget(_context.getSourceNode(), "cardinality", true), "isMultiple", "" + true);
+          SPropertyOperations.set(SLinkOperations.getTarget(_context.getSourceNode(), "cardinality", true), "isRequired", "" + (true));
+          SPropertyOperations.set(SLinkOperations.getTarget(_context.getSourceNode(), "cardinality", true), "isMultiple", "" + (true));
           return SLinkOperations.getTarget(_context.getSourceNode(), "cardinality", true);
         }
 

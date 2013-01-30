@@ -14,12 +14,12 @@ public abstract class SNotationPart_BehaviorDescriptor extends BaseConcept_Behav
     return SNotationPart_Behavior.virtual_getContext_8632884680339357870(thisNode);
   }
 
-  public boolean virtual_hasNewLineBefore_3647933405694801750(SNode thisNode) {
-    return SNotationPart_Behavior.virtual_hasNewLineBefore_3647933405694801750(thisNode);
-  }
-
   public boolean virtual_hasNewLineAfter_3647933405694801735(SNode thisNode) {
     return SNotationPart_Behavior.virtual_hasNewLineAfter_3647933405694801735(thisNode);
+  }
+
+  public boolean virtual_hasNewLineBefore_3647933405694801750(SNode thisNode) {
+    return SNotationPart_Behavior.virtual_hasNewLineBefore_3647933405694801750(thisNode);
   }
 
   @Override

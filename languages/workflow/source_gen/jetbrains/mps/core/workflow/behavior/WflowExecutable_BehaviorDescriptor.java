@@ -5,17 +5,13 @@ package jetbrains.mps.core.workflow.behavior;
 import jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor;
 import jetbrains.mps.lang.core.behavior.INamedConcept_BehaviorDescriptor;
 import jetbrains.mps.lang.core.behavior.ScopeProvider_BehaviorDescriptor;
-import jetbrains.mps.scope.Scope;
 import jetbrains.mps.smodel.SNode;
-import jetbrains.mps.lang.core.behavior.ScopeProvider_Behavior;
 import jetbrains.mps.lang.core.behavior.INamedConcept_Behavior;
+import jetbrains.mps.scope.Scope;
+import jetbrains.mps.lang.core.behavior.ScopeProvider_Behavior;
 
 public class WflowExecutable_BehaviorDescriptor extends BaseConcept_BehaviorDescriptor implements INamedConcept_BehaviorDescriptor, ScopeProvider_BehaviorDescriptor {
   public WflowExecutable_BehaviorDescriptor() {
-  }
-
-  public Scope virtual_getScope_7722139651431880752(SNode thisNode, SNode kind, String role, int index) {
-    return ScopeProvider_Behavior.virtual_getScope_7722139651431880752(thisNode, kind, role, index);
   }
 
   public String virtual_getFqName_1213877404258(SNode thisNode) {
@@ -24,6 +20,10 @@ public class WflowExecutable_BehaviorDescriptor extends BaseConcept_BehaviorDesc
 
   public Scope virtual_getScope_3734116213129936182(SNode thisNode, SNode kind, SNode child) {
     return WflowExecutable_Behavior.virtual_getScope_3734116213129936182(thisNode, kind, child);
+  }
+
+  public Scope virtual_getScope_7722139651431880752(SNode thisNode, SNode kind, String role, int index) {
+    return ScopeProvider_Behavior.virtual_getScope_7722139651431880752(thisNode, kind, role, index);
   }
 
   @Override

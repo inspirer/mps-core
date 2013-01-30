@@ -4,17 +4,13 @@ package jetbrains.mps.core.template.behavior;
 
 import jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor;
 import jetbrains.mps.lang.core.behavior.ScopeProvider_BehaviorDescriptor;
-import jetbrains.mps.scope.Scope;
 import jetbrains.mps.smodel.SNode;
-import jetbrains.mps.lang.core.behavior.ScopeProvider_Behavior;
 import jetbrains.mps.lang.core.behavior.INamedConcept_Behavior;
+import jetbrains.mps.scope.Scope;
+import jetbrains.mps.lang.core.behavior.ScopeProvider_Behavior;
 
 public class MtlTemplate_BehaviorDescriptor extends BaseConcept_BehaviorDescriptor implements MtlEntity_BehaviorDescriptor, ScopeProvider_BehaviorDescriptor {
   public MtlTemplate_BehaviorDescriptor() {
-  }
-
-  public Scope virtual_getScope_7722139651431880752(SNode thisNode, SNode kind, String role, int index) {
-    return ScopeProvider_Behavior.virtual_getScope_7722139651431880752(thisNode, kind, role, index);
   }
 
   public String virtual_getFqName_1213877404258(SNode thisNode) {
@@ -23,6 +19,10 @@ public class MtlTemplate_BehaviorDescriptor extends BaseConcept_BehaviorDescript
 
   public Scope virtual_getScope_3734116213129936182(SNode thisNode, SNode kind, SNode child) {
     return MtlTemplate_Behavior.virtual_getScope_3734116213129936182(thisNode, kind, child);
+  }
+
+  public Scope virtual_getScope_7722139651431880752(SNode thisNode, SNode kind, String role, int index) {
+    return ScopeProvider_Behavior.virtual_getScope_7722139651431880752(thisNode, kind, role, index);
   }
 
   @Override

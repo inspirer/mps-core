@@ -12,7 +12,7 @@
   <unitInfo fileName="MtlNodeMacro_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="jetbrains.mps.core.template.behavior.MtlNodeMacro_BehaviorDescriptor" />
   <unitInfo fileName="MtlNodeQueryMacro_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="jetbrains.mps.core.template.behavior.MtlNodeQueryMacro_BehaviorDescriptor" />
   <unitInfo fileName="MtlPropertyMacro_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="jetbrains.mps.core.template.behavior.MtlPropertyMacro_BehaviorDescriptor" />
-  <unitInfo fileName="MtlQuery_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="jetbrains.mps.core.template.behavior.MtlQuery_BehaviorDescriptor" />
+  <unitInfo fileName="MtlQuery_BehaviorDescriptor.java" startLine="9" startPosition="0" endLine="22" endPosition="0" unitName="jetbrains.mps.core.template.behavior.MtlQuery_BehaviorDescriptor" />
   <unitInfo fileName="MtlReferenceMacro_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="jetbrains.mps.core.template.behavior.MtlReferenceMacro_BehaviorDescriptor" />
   <unitInfo fileName="MtlTemplateRoot_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="jetbrains.mps.core.template.behavior.MtlTemplateRoot_BehaviorDescriptor" />
   <unitInfo fileName="MtlTemplate_BehaviorDescriptor.java" startLine="12" startPosition="0" endLine="33" endPosition="0" unitName="jetbrains.mps.core.template.behavior.MtlTemplate_BehaviorDescriptor" />

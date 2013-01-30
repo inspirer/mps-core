@@ -196,7 +196,7 @@ public class QueriesGenerated {
               public SNode createChildNode(Object parameterObject, SModel model, String pattern) {
                 SNode p = SNodeFactoryOperations.createNewNode(model, "jetbrains.mps.core.syntax.structure.SSymbolRef", null);
                 SLinkOperations.setTarget(p, "ref", (item), false);
-                SPropertyOperations.set(p, "isOptional", "" + (SPropertyOperations.getString((item), "name") + "opt").equals(pattern));
+                SPropertyOperations.set(p, "isOptional", "" + ((SPropertyOperations.getString((item), "name") + "opt").equals(pattern)));
                 if (SNodeOperations.isInstanceOf(_context.getCurrentTargetNode(), "jetbrains.mps.core.syntax.structure.SSymbolRef")) {
                   SPropertyOperations.set(p, "refalias", SPropertyOperations.getString(SNodeOperations.cast(_context.getCurrentTargetNode(), "jetbrains.mps.core.syntax.structure.SSymbolRef"), "refalias"));
                 }
@@ -227,7 +227,7 @@ public class QueriesGenerated {
       SNode concept = SConceptOperations.findConceptDeclaration("jetbrains.mps.core.syntax.structure.SInputRef");
       ListSequence.fromList(result).addElement(new AbstractSideTransformHintSubstituteAction(concept, _context.getSourceNode()) {
         public SNode doSubstitute(String pattern) {
-          SPropertyOperations.set(_context.getSourceNode(), "noEoi", "" + true);
+          SPropertyOperations.set(_context.getSourceNode(), "noEoi", "" + (true));
           return _context.getSourceNode();
         }
 
@@ -348,7 +348,7 @@ public class QueriesGenerated {
           public SNode doSubstitute(String pattern) {
             SNode p = SNodeFactoryOperations.createNewNode(_context.getModel(), "jetbrains.mps.core.syntax.structure.SSymbolRef", null);
             SLinkOperations.setTarget(p, "ref", (item), false);
-            SPropertyOperations.set(p, "isOptional", "" + (SPropertyOperations.getString((item), "name") + "opt").equals(pattern));
+            SPropertyOperations.set(p, "isOptional", "" + ((SPropertyOperations.getString((item), "name") + "opt").equals(pattern)));
             int anchorIndex = SNodeOperations.getParent(_context.getSourceNode()).getIndexOfChild(_context.getSourceNode());
             ListSequence.fromList(SLinkOperations.getTargets(SNodeOperations.cast(SNodeOperations.getParent(_context.getSourceNode()), "jetbrains.mps.core.syntax.structure.SRule"), "parts", true)).insertElement(anchorIndex, p);
             return p;
@@ -386,7 +386,7 @@ public class QueriesGenerated {
           public SNode doSubstitute(String pattern) {
             SNode p = SNodeFactoryOperations.createNewNode(_context.getModel(), "jetbrains.mps.core.syntax.structure.SSymbolRef", null);
             SLinkOperations.setTarget(p, "ref", (item), false);
-            SPropertyOperations.set(p, "isOptional", "" + (SPropertyOperations.getString((item), "name") + "opt").equals(pattern));
+            SPropertyOperations.set(p, "isOptional", "" + ((SPropertyOperations.getString((item), "name") + "opt").equals(pattern)));
             int anchorIndex = SNodeOperations.getParent(_context.getSourceNode()).getIndexOfChild(_context.getSourceNode());
             ListSequence.fromList(SLinkOperations.getTargets(SNodeOperations.cast(SNodeOperations.getParent(_context.getSourceNode()), "jetbrains.mps.core.syntax.structure.SRule"), "parts", true)).insertElement(anchorIndex + 1, p);
             return p;

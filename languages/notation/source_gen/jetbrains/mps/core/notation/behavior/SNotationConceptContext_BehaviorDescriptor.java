@@ -9,12 +9,12 @@ public class SNotationConceptContext_BehaviorDescriptor extends SNotationContext
   public SNotationConceptContext_BehaviorDescriptor() {
   }
 
-  public boolean virtual_isApplicable_5566195403253848024(SNode thisNode, NotationContext context) {
-    return SNotationConceptContext_Behavior.virtual_isApplicable_5566195403253848024(thisNode, context);
-  }
-
   public SNode virtual_getContextElement_8632884680339331864(SNode thisNode) {
     return SNotationConceptContext_Behavior.virtual_getContextElement_8632884680339331864(thisNode);
+  }
+
+  public boolean virtual_isApplicable_5566195403253848024(SNode thisNode, NotationContext context) {
+    return SNotationConceptContext_Behavior.virtual_isApplicable_5566195403253848024(thisNode, context);
   }
 
   @Override

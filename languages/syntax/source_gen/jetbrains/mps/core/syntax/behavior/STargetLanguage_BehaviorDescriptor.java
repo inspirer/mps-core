@@ -9,12 +9,12 @@ public abstract class STargetLanguage_BehaviorDescriptor extends BaseConcept_Beh
   public STargetLanguage_BehaviorDescriptor() {
   }
 
-  public SNode virtual_getTypeConcept_4242261035235367602(SNode thisNode) {
-    return STargetLanguage_Behavior.virtual_getTypeConcept_4242261035235367602(thisNode);
-  }
-
   public SNode virtual_getActionConcept_4242261035235367595(SNode thisNode) {
     return STargetLanguage_Behavior.virtual_getActionConcept_4242261035235367595(thisNode);
+  }
+
+  public SNode virtual_getTypeConcept_4242261035235367602(SNode thisNode) {
+    return STargetLanguage_Behavior.virtual_getTypeConcept_4242261035235367602(thisNode);
   }
 
   @Override

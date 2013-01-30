@@ -26,7 +26,7 @@ public class SConcept_deleteAbstract {
     }
 
     public void execute_internal(EditorContext editorContext, SNode node) {
-      SPropertyOperations.set(node, "isAbstract", "" + false);
+      SPropertyOperations.set(node, "isAbstract", "" + (false));
     }
   }
 }

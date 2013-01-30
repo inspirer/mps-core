@@ -26,7 +26,7 @@ public class SConcept_deleteFinal {
     }
 
     public void execute_internal(EditorContext editorContext, SNode node) {
-      SPropertyOperations.set(node, "isFinal", "" + false);
+      SPropertyOperations.set(node, "isFinal", "" + (false));
     }
   }
 }

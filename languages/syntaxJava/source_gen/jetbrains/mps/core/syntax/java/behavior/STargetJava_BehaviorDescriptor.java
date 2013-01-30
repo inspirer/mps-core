@@ -9,12 +9,12 @@ public class STargetJava_BehaviorDescriptor extends STargetLanguage_BehaviorDesc
   public STargetJava_BehaviorDescriptor() {
   }
 
-  public SNode virtual_getTypeConcept_4242261035235367602(SNode thisNode) {
-    return STargetJava_Behavior.virtual_getTypeConcept_4242261035235367602(thisNode);
-  }
-
   public SNode virtual_getActionConcept_4242261035235367595(SNode thisNode) {
     return STargetJava_Behavior.virtual_getActionConcept_4242261035235367595(thisNode);
+  }
+
+  public SNode virtual_getTypeConcept_4242261035235367602(SNode thisNode) {
+    return STargetJava_Behavior.virtual_getTypeConcept_4242261035235367602(thisNode);
   }
 
   @Override

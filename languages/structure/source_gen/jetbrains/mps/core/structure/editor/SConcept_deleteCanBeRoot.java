@@ -26,7 +26,7 @@ public class SConcept_deleteCanBeRoot {
     }
 
     public void execute_internal(EditorContext editorContext, SNode node) {
-      SPropertyOperations.set(node, "canBeRoot", "" + false);
+      SPropertyOperations.set(node, "canBeRoot", "" + (false));
     }
   }
 }
