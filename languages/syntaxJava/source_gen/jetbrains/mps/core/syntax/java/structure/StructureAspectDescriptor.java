@@ -4,27 +4,27 @@ package jetbrains.mps.core.syntax.java.structure;
 
 import jetbrains.mps.smodel.runtime.ConceptDescriptor;
 import java.util.Arrays;
-import jetbrains.mps.smodel.runtime.impl.CompiledConceptDescriptor;
+import jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder;
 import jetbrains.mps.smodel.runtime.interpreted.StructureAspectInterpreted;
 
 public class StructureAspectDescriptor implements jetbrains.mps.smodel.runtime.StructureAspectDescriptor {
-  private static String[] stringSwitchCases_1htk8d_a0a0a = new String[]{"jetbrains.mps.core.syntax.java.structure.SJavaAction", "jetbrains.mps.core.syntax.java.structure.SJavaType", "jetbrains.mps.core.syntax.java.structure.SSymbolRefExpression", "jetbrains.mps.core.syntax.java.structure.STargetJava"};
-
   public StructureAspectDescriptor() {
   }
 
   public ConceptDescriptor getDescriptor(String conceptFqName) {
-    switch (Arrays.binarySearch(stringSwitchCases_1htk8d_a0a0a, conceptFqName)) {
+    switch (Arrays.binarySearch(stringSwitchCases_1htk8d_a0a0b, conceptFqName)) {
       case 0:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.syntax.java.structure.SJavaAction", "jetbrains.mps.core.syntax.structure.SAction", false, new String[]{"jetbrains.mps.core.syntax.structure.SAction", "jetbrains.mps.baseLanguage.structure.ILocalVariableElementList"}, new String[]{}, new String[]{});
+        return new ConceptDescriptorBuilder("jetbrains.mps.core.syntax.java.structure.SJavaAction").super_("jetbrains.mps.core.syntax.structure.SAction").parents("jetbrains.mps.core.syntax.structure.SAction", "jetbrains.mps.baseLanguage.structure.ILocalVariableElementList").children(new String[]{"statements"}, new boolean[]{true}).create();
       case 1:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.syntax.java.structure.SJavaType", "jetbrains.mps.core.syntax.structure.SType", false, new String[]{"jetbrains.mps.core.syntax.structure.SType"}, new String[]{}, new String[]{});
+        return new ConceptDescriptorBuilder("jetbrains.mps.core.syntax.java.structure.SJavaType").super_("jetbrains.mps.core.syntax.structure.SType").parents("jetbrains.mps.core.syntax.structure.SType").children(new String[]{"type"}, new boolean[]{false}).create();
       case 2:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.syntax.java.structure.SSymbolRefExpression", "jetbrains.mps.baseLanguage.structure.Expression", false, new String[]{"jetbrains.mps.baseLanguage.structure.Expression"}, new String[]{}, new String[]{"ref"});
+        return new ConceptDescriptorBuilder("jetbrains.mps.core.syntax.java.structure.SSymbolRefExpression").super_("jetbrains.mps.baseLanguage.structure.Expression").parents("jetbrains.mps.baseLanguage.structure.Expression").references("ref").create();
       case 3:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.syntax.java.structure.STargetJava", "jetbrains.mps.core.syntax.structure.STargetLanguage", false, new String[]{"jetbrains.mps.core.syntax.structure.STargetLanguage"}, new String[]{}, new String[]{});
+        return new ConceptDescriptorBuilder("jetbrains.mps.core.syntax.java.structure.STargetJava").super_("jetbrains.mps.core.syntax.structure.STargetLanguage").parents("jetbrains.mps.core.syntax.structure.STargetLanguage").alias("java", "").create();
       default:
         return StructureAspectInterpreted.getInstance().getDescriptor(conceptFqName);
     }
   }
+
+  private static String[] stringSwitchCases_1htk8d_a0a0b = new String[]{"jetbrains.mps.core.syntax.java.structure.SJavaAction", "jetbrains.mps.core.syntax.java.structure.SJavaType", "jetbrains.mps.core.syntax.java.structure.SSymbolRefExpression", "jetbrains.mps.core.syntax.java.structure.STargetJava"};
 }

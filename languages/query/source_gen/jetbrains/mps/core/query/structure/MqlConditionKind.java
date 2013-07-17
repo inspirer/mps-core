@@ -17,12 +17,6 @@ public enum MqlConditionKind {
   OR("||", 8);
 
   private String myName;
-  private int myValue;
-
-  MqlConditionKind(String name, int value) {
-    this.myName = name;
-    this.myValue = value;
-  }
 
   public String getName() {
     return this.myName;
@@ -30,10 +24,6 @@ public enum MqlConditionKind {
 
   public String getValueAsString() {
     return "" + this.myValue;
-  }
-
-  public int getValue() {
-    return this.myValue;
   }
 
   public static List<MqlConditionKind> getConstants() {
@@ -82,5 +72,16 @@ public enum MqlConditionKind {
       return MqlConditionKind.OR;
     }
     return MqlConditionKind.getDefault();
+  }
+
+  private int myValue;
+
+  MqlConditionKind(String name, int value) {
+    this.myName = name;
+    this.myValue = value;
+  }
+
+  public int getValue() {
+    return this.myValue;
   }
 }

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MPSProject">
+    <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/gen.transform/transform.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/gen/gen.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/metadata/metadata.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/notation/notation.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/query/query.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/smodel/smodel.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/smodel/solutions/pluginSolution/pluginSolution.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/structure/solutions/pluginSolution/pluginSolution.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/structure/structure.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/syntax/syntax.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/syntaxJava/java.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/template/template.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/workflow/solutions/pluginSolution/pluginSolution.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/workflow/workflow.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/jetbrains.mps.core.util/util.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/mpscore.build/mpscore.build.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/mpscore.sandbox/mpscore.sandbox.msd" folder="" />
+    </projectModules>
+  </component>
+</project>
+

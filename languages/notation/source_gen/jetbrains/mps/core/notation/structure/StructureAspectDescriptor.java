@@ -4,71 +4,71 @@ package jetbrains.mps.core.notation.structure;
 
 import jetbrains.mps.smodel.runtime.ConceptDescriptor;
 import java.util.Arrays;
-import jetbrains.mps.smodel.runtime.impl.CompiledConceptDescriptor;
+import jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder;
 import jetbrains.mps.smodel.runtime.interpreted.StructureAspectInterpreted;
 
 public class StructureAspectDescriptor implements jetbrains.mps.smodel.runtime.StructureAspectDescriptor {
-  private static String[] stringSwitchCases_1htk8d_a0a0a = new String[]{"jetbrains.mps.core.notation.structure.SNotation", "jetbrains.mps.core.notation.structure.SNotationBreak", "jetbrains.mps.core.notation.structure.SNotationCall", "jetbrains.mps.core.notation.structure.SNotationConceptContext", "jetbrains.mps.core.notation.structure.SNotationContext", "jetbrains.mps.core.notation.structure.SNotationContextProvider", "jetbrains.mps.core.notation.structure.SNotationCorePart", "jetbrains.mps.core.notation.structure.SNotationLabel", "jetbrains.mps.core.notation.structure.SNotationMapping", "jetbrains.mps.core.notation.structure.SNotationNewLine", "jetbrains.mps.core.notation.structure.SNotationNospace", "jetbrains.mps.core.notation.structure.SNotationParentheses", "jetbrains.mps.core.notation.structure.SNotationPart", "jetbrains.mps.core.notation.structure.SNotationPartList", "jetbrains.mps.core.notation.structure.SNotationPartWithStyle", "jetbrains.mps.core.notation.structure.SNotationPartsContainer", "jetbrains.mps.core.notation.structure.SNotationQuantifier", "jetbrains.mps.core.notation.structure.SNotationStyle", "jetbrains.mps.core.notation.structure.SNotationStyleIndent", "jetbrains.mps.core.notation.structure.SNotationStylePart", "jetbrains.mps.core.notation.structure.SNotationStyleSeparator", "jetbrains.mps.core.notation.structure.SNotationTab", "jetbrains.mps.core.notation.structure.SNotationUnorderedGroup", "jetbrains.mps.core.notation.structure.SStructureEntityRef", "jetbrains.mps.core.notation.structure.SStructureLinkRef", "jetbrains.mps.core.notation.structure.SStructurePropertyRef"};
-
   public StructureAspectDescriptor() {
   }
 
   public ConceptDescriptor getDescriptor(String conceptFqName) {
-    switch (Arrays.binarySearch(stringSwitchCases_1htk8d_a0a0a, conceptFqName)) {
+    switch (Arrays.binarySearch(stringSwitchCases_1htk8d_a0a0b, conceptFqName)) {
       case 0:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.notation.structure.SNotation", "jetbrains.mps.core.structure.structure.SStructurePart", false, new String[]{"jetbrains.mps.core.structure.structure.SStructurePart", "jetbrains.mps.core.notation.structure.SNotationPartsContainer", "jetbrains.mps.core.notation.structure.SNotationContextProvider"}, new String[]{}, new String[]{});
+        return new ConceptDescriptorBuilder("jetbrains.mps.core.notation.structure.SNotation").super_("jetbrains.mps.core.structure.structure.SStructurePart").parents("jetbrains.mps.core.structure.structure.SStructurePart", "jetbrains.mps.core.notation.structure.SNotationPartsContainer", "jetbrains.mps.core.notation.structure.SNotationContextProvider").children(new String[]{"context"}, new boolean[]{false}).alias("notation", "").create();
       case 1:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.notation.structure.SNotationBreak", "jetbrains.mps.core.notation.structure.SNotationPart", false, new String[]{"jetbrains.mps.core.notation.structure.SNotationPart"}, new String[]{}, new String[]{});
+        return new ConceptDescriptorBuilder("jetbrains.mps.core.notation.structure.SNotationBreak").super_("jetbrains.mps.core.notation.structure.SNotationPart").parents("jetbrains.mps.core.notation.structure.SNotationPart", "jetbrains.mps.lang.core.structure.IDontSubstituteByDefault").create();
       case 2:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.notation.structure.SNotationCall", "jetbrains.mps.core.notation.structure.SNotationCorePart", false, new String[]{"jetbrains.mps.core.notation.structure.SNotationCorePart"}, new String[]{"id"}, new String[]{});
+        return new ConceptDescriptorBuilder("jetbrains.mps.core.notation.structure.SNotationCall").super_("jetbrains.mps.core.notation.structure.SNotationCorePart").parents("jetbrains.mps.core.notation.structure.SNotationCorePart", "jetbrains.mps.lang.core.structure.IDontSubstituteByDefault").properties("id").create();
       case 3:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.notation.structure.SNotationConceptContext", "jetbrains.mps.core.notation.structure.SNotationContext", false, new String[]{"jetbrains.mps.core.notation.structure.SNotationContext"}, new String[]{}, new String[]{"element"});
+        return new ConceptDescriptorBuilder("jetbrains.mps.core.notation.structure.SNotationConceptContext").super_("jetbrains.mps.core.notation.structure.SNotationContext").parents("jetbrains.mps.core.notation.structure.SNotationContext").references("element").create();
       case 4:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.notation.structure.SNotationContext", "jetbrains.mps.lang.core.structure.BaseConcept", false, new String[]{"jetbrains.mps.lang.core.structure.BaseConcept"}, new String[]{"id"}, new String[]{});
+        return new ConceptDescriptorBuilder("jetbrains.mps.core.notation.structure.SNotationContext").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept").properties("id").abstract_().create();
       case 5:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.notation.structure.SNotationContextProvider", null, true, new String[]{}, new String[]{}, new String[]{});
+        return new ConceptDescriptorBuilder("jetbrains.mps.core.notation.structure.SNotationContextProvider").interface_().create();
       case 6:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.notation.structure.SNotationCorePart", "jetbrains.mps.core.notation.structure.SNotationPart", false, new String[]{"jetbrains.mps.core.notation.structure.SNotationPart"}, new String[]{}, new String[]{});
+        return new ConceptDescriptorBuilder("jetbrains.mps.core.notation.structure.SNotationCorePart").super_("jetbrains.mps.core.notation.structure.SNotationPart").parents("jetbrains.mps.core.notation.structure.SNotationPart").abstract_().create();
       case 7:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.notation.structure.SNotationLabel", "jetbrains.mps.core.notation.structure.SNotationCorePart", false, new String[]{"jetbrains.mps.core.notation.structure.SNotationCorePart", "jetbrains.mps.core.notation.structure.SNotationPartWithStyle"}, new String[]{"text"}, new String[]{});
+        return new ConceptDescriptorBuilder("jetbrains.mps.core.notation.structure.SNotationLabel").super_("jetbrains.mps.core.notation.structure.SNotationCorePart").parents("jetbrains.mps.core.notation.structure.SNotationCorePart", "jetbrains.mps.core.notation.structure.SNotationPartWithStyle").properties("text").alias("\"", "").create();
       case 8:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.notation.structure.SNotationMapping", "jetbrains.mps.core.notation.structure.SNotationPart", false, new String[]{"jetbrains.mps.core.notation.structure.SNotationPart", "jetbrains.mps.core.notation.structure.SNotationPartWithStyle"}, new String[]{}, new String[]{});
+        return new ConceptDescriptorBuilder("jetbrains.mps.core.notation.structure.SNotationMapping").super_("jetbrains.mps.core.notation.structure.SNotationPart").parents("jetbrains.mps.core.notation.structure.SNotationPart", "jetbrains.mps.core.notation.structure.SNotationPartWithStyle", "jetbrains.mps.lang.core.structure.IDontSubstituteByDefault").children(new String[]{"entityRef", "presentation"}, new boolean[]{false, false}).create();
       case 9:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.notation.structure.SNotationNewLine", "jetbrains.mps.core.notation.structure.SNotationPart", false, new String[]{"jetbrains.mps.core.notation.structure.SNotationPart"}, new String[]{}, new String[]{});
+        return new ConceptDescriptorBuilder("jetbrains.mps.core.notation.structure.SNotationNewLine").super_("jetbrains.mps.core.notation.structure.SNotationPart").parents("jetbrains.mps.core.notation.structure.SNotationPart").alias("\\n", "").create();
       case 10:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.notation.structure.SNotationNospace", "jetbrains.mps.core.notation.structure.SNotationPart", false, new String[]{"jetbrains.mps.core.notation.structure.SNotationPart"}, new String[]{}, new String[]{});
+        return new ConceptDescriptorBuilder("jetbrains.mps.core.notation.structure.SNotationNospace").super_("jetbrains.mps.core.notation.structure.SNotationPart").parents("jetbrains.mps.core.notation.structure.SNotationPart").alias("nospace", "").create();
       case 11:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.notation.structure.SNotationParentheses", "jetbrains.mps.core.notation.structure.SNotationCorePart", false, new String[]{"jetbrains.mps.core.notation.structure.SNotationCorePart", "jetbrains.mps.core.notation.structure.SNotationPartsContainer", "jetbrains.mps.core.notation.structure.SNotationPartWithStyle"}, new String[]{}, new String[]{});
+        return new ConceptDescriptorBuilder("jetbrains.mps.core.notation.structure.SNotationParentheses").super_("jetbrains.mps.core.notation.structure.SNotationCorePart").parents("jetbrains.mps.core.notation.structure.SNotationCorePart", "jetbrains.mps.core.notation.structure.SNotationPartsContainer", "jetbrains.mps.core.notation.structure.SNotationPartWithStyle").alias("(", "").create();
       case 12:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.notation.structure.SNotationPart", "jetbrains.mps.lang.core.structure.BaseConcept", false, new String[]{"jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.core.notation.structure.SNotationContextProvider"}, new String[]{}, new String[]{});
+        return new ConceptDescriptorBuilder("jetbrains.mps.core.notation.structure.SNotationPart").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.core.notation.structure.SNotationContextProvider").abstract_().create();
       case 13:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.notation.structure.SNotationPartList", "jetbrains.mps.lang.core.structure.BaseConcept", false, new String[]{"jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.core.notation.structure.SNotationContextProvider"}, new String[]{}, new String[]{});
+        return new ConceptDescriptorBuilder("jetbrains.mps.core.notation.structure.SNotationPartList").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.core.notation.structure.SNotationContextProvider").children(new String[]{"parts"}, new boolean[]{true}).create();
       case 14:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.notation.structure.SNotationPartWithStyle", null, true, new String[]{}, new String[]{}, new String[]{});
+        return new ConceptDescriptorBuilder("jetbrains.mps.core.notation.structure.SNotationPartWithStyle").interface_().create();
       case 15:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.notation.structure.SNotationPartsContainer", null, true, new String[]{}, new String[]{}, new String[]{});
+        return new ConceptDescriptorBuilder("jetbrains.mps.core.notation.structure.SNotationPartsContainer").interface_().children(new String[]{"alternatives"}, new boolean[]{true}).create();
       case 16:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.notation.structure.SNotationQuantifier", "jetbrains.mps.core.notation.structure.SNotationCorePart", false, new String[]{"jetbrains.mps.core.notation.structure.SNotationCorePart", "jetbrains.mps.core.notation.structure.SNotationPartWithStyle"}, new String[]{"kind"}, new String[]{});
+        return new ConceptDescriptorBuilder("jetbrains.mps.core.notation.structure.SNotationQuantifier").super_("jetbrains.mps.core.notation.structure.SNotationCorePart").parents("jetbrains.mps.core.notation.structure.SNotationCorePart", "jetbrains.mps.core.notation.structure.SNotationPartWithStyle", "jetbrains.mps.lang.core.structure.IDontSubstituteByDefault").properties("kind").children(new String[]{"inner"}, new boolean[]{false}).create();
       case 17:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.notation.structure.SNotationStyle", "jetbrains.mps.core.notation.structure.SNotationPart", false, new String[]{"jetbrains.mps.core.notation.structure.SNotationPart"}, new String[]{}, new String[]{});
+        return new ConceptDescriptorBuilder("jetbrains.mps.core.notation.structure.SNotationStyle").super_("jetbrains.mps.core.notation.structure.SNotationPart").parents("jetbrains.mps.core.notation.structure.SNotationPart", "jetbrains.mps.lang.core.structure.IDontSubstituteByDefault").children(new String[]{"styles"}, new boolean[]{true}).create();
       case 18:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.notation.structure.SNotationStyleIndent", "jetbrains.mps.core.notation.structure.SNotationStylePart", false, new String[]{"jetbrains.mps.core.notation.structure.SNotationStylePart"}, new String[]{}, new String[]{});
+        return new ConceptDescriptorBuilder("jetbrains.mps.core.notation.structure.SNotationStyleIndent").super_("jetbrains.mps.core.notation.structure.SNotationStylePart").parents("jetbrains.mps.core.notation.structure.SNotationStylePart").alias("indent", "").create();
       case 19:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.notation.structure.SNotationStylePart", "jetbrains.mps.lang.core.structure.BaseConcept", false, new String[]{"jetbrains.mps.lang.core.structure.BaseConcept"}, new String[]{}, new String[]{});
+        return new ConceptDescriptorBuilder("jetbrains.mps.core.notation.structure.SNotationStylePart").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept").abstract_().create();
       case 20:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.notation.structure.SNotationStyleSeparator", "jetbrains.mps.core.notation.structure.SNotationStylePart", false, new String[]{"jetbrains.mps.core.notation.structure.SNotationStylePart"}, new String[]{}, new String[]{});
+        return new ConceptDescriptorBuilder("jetbrains.mps.core.notation.structure.SNotationStyleSeparator").super_("jetbrains.mps.core.notation.structure.SNotationStylePart").parents("jetbrains.mps.core.notation.structure.SNotationStylePart").children(new String[]{"separator"}, new boolean[]{true}).alias("separator", "").create();
       case 21:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.notation.structure.SNotationTab", "jetbrains.mps.core.notation.structure.SNotationPart", false, new String[]{"jetbrains.mps.core.notation.structure.SNotationPart"}, new String[]{}, new String[]{});
+        return new ConceptDescriptorBuilder("jetbrains.mps.core.notation.structure.SNotationTab").super_("jetbrains.mps.core.notation.structure.SNotationPart").parents("jetbrains.mps.core.notation.structure.SNotationPart").alias("\\t", "").create();
       case 22:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.notation.structure.SNotationUnorderedGroup", "jetbrains.mps.core.notation.structure.SNotationPart", false, new String[]{"jetbrains.mps.core.notation.structure.SNotationPart"}, new String[]{}, new String[]{});
+        return new ConceptDescriptorBuilder("jetbrains.mps.core.notation.structure.SNotationUnorderedGroup").super_("jetbrains.mps.core.notation.structure.SNotationPart").parents("jetbrains.mps.core.notation.structure.SNotationPart", "jetbrains.mps.lang.core.structure.IDontSubstituteByDefault").children(new String[]{"parts"}, new boolean[]{true}).create();
       case 23:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.notation.structure.SStructureEntityRef", "jetbrains.mps.lang.core.structure.BaseConcept", false, new String[]{"jetbrains.mps.lang.core.structure.BaseConcept"}, new String[]{}, new String[]{});
+        return new ConceptDescriptorBuilder("jetbrains.mps.core.notation.structure.SStructureEntityRef").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept").abstract_().create();
       case 24:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.notation.structure.SStructureLinkRef", "jetbrains.mps.core.notation.structure.SStructureEntityRef", false, new String[]{"jetbrains.mps.core.notation.structure.SStructureEntityRef"}, new String[]{}, new String[]{"link"});
+        return new ConceptDescriptorBuilder("jetbrains.mps.core.notation.structure.SStructureLinkRef").super_("jetbrains.mps.core.notation.structure.SStructureEntityRef").parents("jetbrains.mps.core.notation.structure.SStructureEntityRef").references("link").create();
       case 25:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.notation.structure.SStructurePropertyRef", "jetbrains.mps.core.notation.structure.SStructureEntityRef", false, new String[]{"jetbrains.mps.core.notation.structure.SStructureEntityRef"}, new String[]{}, new String[]{"property"});
+        return new ConceptDescriptorBuilder("jetbrains.mps.core.notation.structure.SStructurePropertyRef").super_("jetbrains.mps.core.notation.structure.SStructureEntityRef").parents("jetbrains.mps.core.notation.structure.SStructureEntityRef").references("property").create();
       default:
         return StructureAspectInterpreted.getInstance().getDescriptor(conceptFqName);
     }
   }
+
+  private static String[] stringSwitchCases_1htk8d_a0a0b = new String[]{"jetbrains.mps.core.notation.structure.SNotation", "jetbrains.mps.core.notation.structure.SNotationBreak", "jetbrains.mps.core.notation.structure.SNotationCall", "jetbrains.mps.core.notation.structure.SNotationConceptContext", "jetbrains.mps.core.notation.structure.SNotationContext", "jetbrains.mps.core.notation.structure.SNotationContextProvider", "jetbrains.mps.core.notation.structure.SNotationCorePart", "jetbrains.mps.core.notation.structure.SNotationLabel", "jetbrains.mps.core.notation.structure.SNotationMapping", "jetbrains.mps.core.notation.structure.SNotationNewLine", "jetbrains.mps.core.notation.structure.SNotationNospace", "jetbrains.mps.core.notation.structure.SNotationParentheses", "jetbrains.mps.core.notation.structure.SNotationPart", "jetbrains.mps.core.notation.structure.SNotationPartList", "jetbrains.mps.core.notation.structure.SNotationPartWithStyle", "jetbrains.mps.core.notation.structure.SNotationPartsContainer", "jetbrains.mps.core.notation.structure.SNotationQuantifier", "jetbrains.mps.core.notation.structure.SNotationStyle", "jetbrains.mps.core.notation.structure.SNotationStyleIndent", "jetbrains.mps.core.notation.structure.SNotationStylePart", "jetbrains.mps.core.notation.structure.SNotationStyleSeparator", "jetbrains.mps.core.notation.structure.SNotationTab", "jetbrains.mps.core.notation.structure.SNotationUnorderedGroup", "jetbrains.mps.core.notation.structure.SStructureEntityRef", "jetbrains.mps.core.notation.structure.SStructureLinkRef", "jetbrains.mps.core.notation.structure.SStructurePropertyRef"};
 }

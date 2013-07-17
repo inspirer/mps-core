@@ -5,7 +5,7 @@ package jetbrains.mps.core.query.behavior;
 import jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor;
 import jetbrains.mps.lang.core.behavior.INamedConcept_BehaviorDescriptor;
 import jetbrains.mps.lang.core.behavior.ScopeProvider_BehaviorDescriptor;
-import jetbrains.mps.smodel.SNode;
+import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.query.runtime.EvaluationEnvironment;
 import jetbrains.mps.core.query.runtime.EvaluationContext;
 import jetbrains.mps.lang.core.behavior.INamedConcept_Behavior;

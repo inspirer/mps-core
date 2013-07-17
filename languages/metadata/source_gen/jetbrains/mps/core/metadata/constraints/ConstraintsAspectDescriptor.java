@@ -7,13 +7,11 @@ import java.util.Arrays;
 import jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor;
 
 public class ConstraintsAspectDescriptor implements jetbrains.mps.smodel.runtime.ConstraintsAspectDescriptor {
-  private static String[] stringSwitchCases_2qnle6_a0a0a = new String[]{"jetbrains.mps.core.metadata.structure.SConceptAnnotationArgument", "jetbrains.mps.core.metadata.structure.SConceptAnnotationChildLink", "jetbrains.mps.core.metadata.structure.SConceptAnnotationMember", "jetbrains.mps.core.metadata.structure.SConceptAnnotationNodeRef", "jetbrains.mps.core.metadata.structure.SConceptAnnotationProperty", "jetbrains.mps.core.metadata.structure.SConceptAnnotationType", "jetbrains.mps.core.metadata.structure.SMetadataNodeRefExpression"};
-
   public ConstraintsAspectDescriptor() {
   }
 
   public ConstraintsDescriptor getDescriptor(String fqName) {
-    switch (Arrays.binarySearch(stringSwitchCases_2qnle6_a0a0a, fqName)) {
+    switch (Arrays.binarySearch(stringSwitchCases_2qnle6_a0a0b, fqName)) {
       case 2:
         return new SConceptAnnotationMember_Constraints();
       case 1:
@@ -33,4 +31,6 @@ public class ConstraintsAspectDescriptor implements jetbrains.mps.smodel.runtime
         return new BaseConstraintsDescriptor(fqName);
     }
   }
+
+  private static String[] stringSwitchCases_2qnle6_a0a0b = new String[]{"jetbrains.mps.core.metadata.structure.SConceptAnnotationArgument", "jetbrains.mps.core.metadata.structure.SConceptAnnotationChildLink", "jetbrains.mps.core.metadata.structure.SConceptAnnotationMember", "jetbrains.mps.core.metadata.structure.SConceptAnnotationNodeRef", "jetbrains.mps.core.metadata.structure.SConceptAnnotationProperty", "jetbrains.mps.core.metadata.structure.SConceptAnnotationType", "jetbrains.mps.core.metadata.structure.SMetadataNodeRefExpression"};
 }

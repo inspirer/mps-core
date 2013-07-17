@@ -11,12 +11,6 @@ public enum MqlUnaryKind {
   MINUS("-", 2);
 
   private String myName;
-  private int myValue;
-
-  MqlUnaryKind(String name, int value) {
-    this.myName = name;
-    this.myValue = value;
-  }
 
   public String getName() {
     return this.myName;
@@ -24,10 +18,6 @@ public enum MqlUnaryKind {
 
   public String getValueAsString() {
     return "" + this.myValue;
-  }
-
-  public int getValue() {
-    return this.myValue;
   }
 
   public static List<MqlUnaryKind> getConstants() {
@@ -52,5 +42,16 @@ public enum MqlUnaryKind {
       return MqlUnaryKind.MINUS;
     }
     return MqlUnaryKind.getDefault();
+  }
+
+  private int myValue;
+
+  MqlUnaryKind(String name, int value) {
+    this.myName = name;
+    this.myValue = value;
+  }
+
+  public int getValue() {
+    return this.myValue;
   }
 }

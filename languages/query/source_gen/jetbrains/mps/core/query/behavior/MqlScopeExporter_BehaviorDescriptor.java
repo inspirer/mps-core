@@ -4,7 +4,7 @@ package jetbrains.mps.core.query.behavior;
 
 import jetbrains.mps.lang.core.behavior.INamedConcept_BehaviorDescriptor;
 import jetbrains.mps.scope.Scope;
-import jetbrains.mps.smodel.SNode;
+import org.jetbrains.mps.openapi.model.SNode;
 
 public interface MqlScopeExporter_BehaviorDescriptor extends INamedConcept_BehaviorDescriptor {
   public Scope virtual_getExportedScope_5109194352282852190(SNode thisNode);

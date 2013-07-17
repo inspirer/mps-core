@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="djxngq7rpnwl0sw1oyutsci0qa89f7s">
+<dependencies version="2" modelHash="bq30vpc6igg6mesdivrq7gbepjzzxuo">
   <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
   <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
+  <dep model="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.smodel.runtime.impl(MPS.Core/jetbrains.mps.smodel.runtime.impl@java_stub)" />
   <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
   <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
   <dep model="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
-  <dep model="r:00000000-0000-4000-0000-011c895902cb(jetbrains.mps.baseLanguage.generator.java.closures@generator)" />
   <dep model="r:00000000-0000-4000-0000-011c895902e8(jetbrains.mps.lang.generator.structure)" />
-  <dep model="r:00000000-0000-4000-0000-011c8959033a(jetbrains.mps.baseLanguage.closures.generator.baseLanguage.template.main@generator)" />
-  <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" />
   <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" />
   <dep model="r:fc76aa36-3cff-41c7-b94b-eee0e8341932(jetbrains.mps.internal.collections.runtime)" />
-  <common hash="b99ysxqymomld4om7gf0zha40851r0">
+  <common hash="737ju3ncxo8a7038r3ju3t5dxxswz3x">
     <dep root="2481283025450046972" />
     <dep root="3135327435335338954" />
     <dep root="4242261035235310866" />
@@ -27,85 +25,81 @@
     <dep root="5073985075243002178" />
     <dep root="5073985075243144311" />
     <dep root="5073985075243144313" />
+    <dep root="5073985075243144315" />
     <dep root="5073985075243144320" />
     <dep root="5073985075243144347" />
     <dep root="5073985075243238823" />
+    <dep model="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.smodel.runtime.impl(MPS.Core/jetbrains.mps.smodel.runtime.impl@java_stub)" />
     <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
     <dep model="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
-    <dep model="r:00000000-0000-4000-0000-011c895902cb(jetbrains.mps.baseLanguage.generator.java.closures@generator)" />
     <dep model="r:00000000-0000-4000-0000-011c895902e8(jetbrains.mps.lang.generator.structure)" />
-    <dep model="r:00000000-0000-4000-0000-011c8959033a(jetbrains.mps.baseLanguage.closures.generator.baseLanguage.template.main@generator)" />
-    <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" />
     <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" />
     <file name="StructureAspectDescriptor.java" />
-    <file name="Syntax_Language.java" />
   </common>
-  <source id="5073985075242991059" name="SSource" hash="d4k0lruh23572n6jc9sgn3wfugu50on">
+  <source id="5073985075242991059" name="SSource" hash="-2f0lz8lkj7gazua7s98u3dps0gqw1am">
     <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
   </source>
-  <source id="5073985075243001587" name="SLexem" hash="euq9whitd5ncnf33ur6zyldb1mrq7rl">
+  <source id="5073985075243001587" name="SLexem" hash="-88hc4wk43o8rojosfjm5rauv0l2ugew">
     <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
   </source>
-  <source id="5073985075243001589" name="SSymbol" hash="-d8soocp7w70zur2vcx77fa0wftb96tv">
+  <source id="5073985075243001589" name="SSymbol" hash="4hglgb5toenrhiy7jmqijjknr6yf8hq">
     <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
   </source>
-  <source id="5073985075243001592" name="SRule" hash="9b4imd37m03iqy5gi6m917clwc3e5aw">
+  <source id="5073985075243001592" name="SRule" hash="49xb4lm0ghek3q85iaxn5icr4mj9t0d">
     <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
   </source>
-  <source id="5073985075243001593" name="SNonTerm" hash="-1fvdrcd9yk9fkrzw6yav9t6adp1ykh2">
+  <source id="5073985075243001593" name="SNonTerm" hash="-7111q2aiftdr0q2v7you11mk8iusho0">
     <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
   </source>
-  <source id="5073985075243001597" name="SSymbolRef" hash="-6oeadw0vls98fflidkwxtgnxcyz9xdl">
+  <source id="5073985075243001597" name="SSymbolRef" hash="bhic4qvkka7krc0512otg8ehmykx8dg">
     <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
   </source>
-  <source id="5073985075243001601" name="SRegex" hash="6rxpn2fm5qntc3zaybuobq78kxinwar">
+  <source id="5073985075243001601" name="SRegex" hash="-7clx0nlg3n0dniy12njomkadhaz6vz9">
     <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
   </source>
-  <source id="5073985075243002170" name="SNamedPattern" hash="-b7l7o8u0vsedwxbeiov6vgmf0zzu5mh">
+  <source id="5073985075243002170" name="SNamedPattern" hash="2f4hrcqy170at63x30raa7f931h5x95">
     <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
   </source>
-  <source id="5073985075243002176" name="SAction" hash="-7b9htatsndg5e544nyc7h8zdf91081w">
+  <source id="5073985075243002176" name="SAction" hash="cu8aeqesk7gprgft8rmm6ee6nauze6i">
     <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
   </source>
-  <source id="5073985075243002178" name="SRulePart" hash="6jjimp86hgcphr2eekbe280t3xbmyvu">
+  <source id="5073985075243002178" name="SRulePart" hash="-2u89poptvjiurbmwixt7sh8jlyszvpy">
     <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
   </source>
-  <source id="5073985075243144311" name="SType" hash="-4ka1b42dpkacwladbui9l0cnrlj6ie8">
+  <source id="5073985075243144311" name="SType" hash="al2pqybmc60zj1lg7yua4w42b11wzow">
     <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
   </source>
-  <source id="5073985075243144313" name="SPrio" hash="-eyxb5c6gwgrpxcsvb0gyseaernaclg">
+  <source id="5073985075243144313" name="SPrio" hash="-7j9chscdp34qmslz4xdltwhw3cra2gv">
     <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
   </source>
-  <source id="5073985075243144315" name="SPrioKind" hash="9s20rnglwhp439tlqxqy9rorreynw77">
+  <source id="5073985075243144315" name="SPrioKind" hash="1jgswsmz5rogcbcd6mi0v44qepllbq7">
     <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
     <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
     <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
     <dep model="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
-    <dep model="r:00000000-0000-4000-0000-011c895902cb(jetbrains.mps.baseLanguage.generator.java.closures@generator)" />
     <dep model="r:00000000-0000-4000-0000-011c895902e8(jetbrains.mps.lang.generator.structure)" />
-    <dep model="r:00000000-0000-4000-0000-011c8959033a(jetbrains.mps.baseLanguage.closures.generator.baseLanguage.template.main@generator)" />
     <dep model="r:fc76aa36-3cff-41c7-b94b-eee0e8341932(jetbrains.mps.internal.collections.runtime)" />
     <file name="SPrioKind.java" />
     <file name="SPrioKind_PropertySupport.java" />
   </source>
-  <source id="5073985075243144320" name="SReference" hash="355dedqbn9ue2frhlqyewixpdsjfaxd">
+  <source id="5073985075243144320" name="SReference" hash="-6wef7en82gn0a6gs1tj13r4l588l5y6">
     <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
   </source>
-  <source id="5073985075243144347" name="SInputRef" hash="c6aktmdn294dj2s12kz5qsxfhotj5j">
+  <source id="5073985075243144347" name="SInputRef" hash="-7w8cvnk95gmg842u8xt3wktljz9azwb">
     <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
   </source>
-  <source id="5073985075243238823" name="SLexerPart" hash="-asrpnwokanuzh93id0vgjw7dz2eulkg">
+  <source id="5073985075243238823" name="SLexerPart" hash="1a61ycmytw7a5mxiu3ceqllla7lbbar">
     <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
   </source>
-  <source id="2481283025450046972" name="SLineComment" hash="a8hjhfvvc3zt6qa2jk13udsfmxrndzd">
+  <source id="2481283025450046972" name="SLineComment" hash="-2xtcfldvp3e6mkguf9x6qvxirmyscg2">
     <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
   </source>
-  <source id="3135327435335338954" name="SGrammarPart" hash="-2np9vczojsu2tgtbus111sg87uvqmvt">
+  <source id="3135327435335338954" name="SGrammarPart" hash="-ac9lizewh2pi6cawqugpxfugys1wdhb">
     <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
   </source>
-  <source id="4242261035235310866" name="STargetLanguage" hash="131xgob0hk7hsalepzgyb26tv9u9z6v">
+  <source id="4242261035235310866" name="STargetLanguage" hash="j6gaejqcgiq2jh6ql7lxkhvigugyge">
     <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
   </source>
 </dependencies>

@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <solution name="jetbrains.mps.core.util" uuid="5e77ce2d-7832-4b1c-b2c5-4660988d074a" pluginKind="PLUGIN_OTHER" compileInMPS="true">
   <models>
-    <modelRoot path="${solution_descriptor}/models" />
+    <modelRoot contentPath="${module}" type="default">
+      <sourceRoot location="models" />
+    </modelRoot>
   </models>
   <sourcePath />
   <dependencies>
     <dependency reexport="false">6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)</dependency>
+    <dependency reexport="false">2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)</dependency>
     <dependency reexport="false">ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</dependency>
   </dependencies>
   <usedLanguages>

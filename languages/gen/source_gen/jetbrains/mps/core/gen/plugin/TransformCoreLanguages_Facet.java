@@ -16,15 +16,16 @@ import jetbrains.mps.make.script.IJob;
 import jetbrains.mps.make.script.IResult;
 import jetbrains.mps.make.script.IJobMonitor;
 import jetbrains.mps.make.resources.IPropertiesAccessor;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.mps.openapi.util.ProgressMonitor;
 import jetbrains.mps.baseLanguage.closures.runtime.Wrappers;
-import jetbrains.mps.smodel.SModelDescriptor;
+import org.jetbrains.mps.openapi.model.SModel;
 import jetbrains.mps.smodel.ModelAccess;
 import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import jetbrains.mps.smodel.resources.MResource;
 import jetbrains.mps.smodel.Language;
 import jetbrains.mps.internal.collections.runtime.ITranslator2;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
-import jetbrains.mps.smodel.SModel;
 import jetbrains.mps.messages.IMessageHandler;
 import jetbrains.mps.messages.IMessage;
 import jetbrains.mps.make.script.IFeedback;
@@ -34,6 +35,7 @@ import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
 import jetbrains.mps.smodel.resources.GResource;
 import jetbrains.mps.messages.Message;
 import jetbrains.mps.messages.MessageKind;
+import jetbrains.mps.util.SNodeOperations;
 import jetbrains.mps.lang.core.plugin.Generate_Facet.Target_checkParameters.Variables;
 import jetbrains.mps.generator.TransientModelsProvider;
 import jetbrains.mps.generator.GenerationOptions;
@@ -79,7 +81,6 @@ public class TransformCoreLanguages_Facet extends IFacet.Stub {
   public static class Target_transformLanguages implements ITargetEx {
     private static Class<? extends IResource>[] EXPECTED_INPUT = (Class<? extends IResource>[]) new Class[]{IMResource.class};
     private static Class<? extends IResource>[] EXPECTED_OUTPUT = (Class<? extends IResource>[]) new Class[]{};
-
     private ITarget.Name name = new ITarget.Name("jetbrains.mps.core.gen.TransformCoreLanguages.transformLanguages");
 
     public Target_transformLanguages() {
@@ -87,24 +88,26 @@ public class TransformCoreLanguages_Facet extends IFacet.Stub {
 
     public IJob createJob() {
       return new IJob.Stub() {
-        public IResult execute(final Iterable<IResource> input, final IJobMonitor monitor, final IPropertiesAccessor pa) {
+        @Override
+        public IResult execute(final Iterable<IResource> rawInput, final IJobMonitor monitor, final IPropertiesAccessor pa, @NotNull final ProgressMonitor progressMonitor) {
           final Wrappers._T<Iterable<IResource>> _output_kp7j54_a0a = new Wrappers._T<Iterable<IResource>>(null);
+          final Iterable<IMResource> input = (Iterable<IMResource>) (Iterable) rawInput;
           switch (0) {
             case 0:
-              final Wrappers._T<List<SModelDescriptor>> models = new Wrappers._T<List<SModelDescriptor>>();
+              final Wrappers._T<List<SModel>> models = new Wrappers._T<List<SModel>>();
               ModelAccess.instance().runReadAction(new Runnable() {
                 public void run() {
-                  models.value = Sequence.fromIterable(input).where(new IWhereFilter<IResource>() {
-                    public boolean accept(IResource it) {
+                  models.value = Sequence.fromIterable(input).where(new IWhereFilter<IMResource>() {
+                    public boolean accept(IMResource it) {
                       return ((MResource) it).module() instanceof Language;
                     }
-                  }).translate(new ITranslator2<IResource, SModelDescriptor>() {
-                    public Iterable<SModelDescriptor> translate(IResource it) {
+                  }).translate(new ITranslator2<IMResource, SModel>() {
+                    public Iterable<SModel> translate(IMResource it) {
                       return ((MResource) it).models();
                     }
-                  }).where(new IWhereFilter<SModelDescriptor>() {
-                    public boolean accept(SModelDescriptor it) {
-                      return ListSequence.fromList(SModelOperations.getRoots(((SModel) it.getSModel()), "jetbrains.mps.core.structure.structure.SStructureContainer")).isNotEmpty();
+                  }).where(new IWhereFilter<SModel>() {
+                    public boolean accept(SModel it) {
+                      return ListSequence.fromList(SModelOperations.getRoots(((SModel) it), "jetbrains.mps.core.structure.structure.SStructureContainer")).isNotEmpty();
                     }
                   }).toListSequence();
                 }
@@ -126,7 +129,7 @@ public class TransformCoreLanguages_Facet extends IFacet.Stub {
               IGenerationHandler gh = new MakeGenerationHandler(new _FunctionTypes._return_P1_E0<Boolean, GResource>() {
                 public Boolean invoke(GResource data) {
                   monitor.currentProgress().advanceWork("Transforming", 100);
-                  monitor.reportFeedback(new IFeedback.MESSAGE(new Message(MessageKind.INFORMATION, "Generated " + data.model().getLongName())));
+                  monitor.reportFeedback(new IFeedback.MESSAGE(new Message(MessageKind.INFORMATION, "Generated " + SNodeOperations.getModelLongName(data.model()))));
                   ListSequence.fromList(generated).addElement(new LanguageModelsMerger((Language) data.module(), data.status().getOutputModel(), mh));
                   return true;
                 }
@@ -153,7 +156,7 @@ public class TransformCoreLanguages_Facet extends IFacet.Stub {
               final GenerationOptions.OptionsBuilder builder = GenerationOptions.getDefaults().keepOutputModel(true).strictMode(options.isStrictMode()).reporting(options.isShowInfo(), options.isShowWarnings(), options.isKeepModelsWithWarnings(), options.getNumberOfModelsToKeep()).saveTransientModels(options.isSaveTransientModels());
               ModelAccess.instance().runReadAction(new Runnable() {
                 public void run() {
-                  for (SModelDescriptor m : ListSequence.fromList(models.value)) {
+                  for (SModel m : ListSequence.fromList(models.value)) {
                     builder.customPlan(m, TransformGenerationPlan.forLanguages("jetbrains.mps.core.gen.transform"));
                   }
                 }

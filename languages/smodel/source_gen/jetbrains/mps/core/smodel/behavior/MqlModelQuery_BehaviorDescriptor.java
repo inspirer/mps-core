@@ -4,7 +4,7 @@ package jetbrains.mps.core.smodel.behavior;
 
 import jetbrains.mps.core.query.behavior.MqlQuery_BehaviorDescriptor;
 import jetbrains.mps.core.query.behavior.MqlThisProvider_BehaviorDescriptor;
-import jetbrains.mps.smodel.SNode;
+import org.jetbrains.mps.openapi.model.SNode;
 
 public class MqlModelQuery_BehaviorDescriptor extends MqlQuery_BehaviorDescriptor implements MqlThisProvider_BehaviorDescriptor {
   public MqlModelQuery_BehaviorDescriptor() {

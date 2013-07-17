@@ -4,11 +4,11 @@ package jetbrains.mps.core.query.typesystem;
 
 import jetbrains.mps.lang.typesystem.runtime.AbstractNonTypesystemRule_Runtime;
 import jetbrains.mps.lang.typesystem.runtime.NonTypesystemRule_Runtime;
-import jetbrains.mps.smodel.SNode;
+import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.typesystem.inference.TypeCheckingContext;
 import jetbrains.mps.lang.typesystem.runtime.IsApplicableStatus;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.core.query.behavior.MqlExpression_Behavior;
+import jetbrains.mps.smodel.behaviour.BehaviorReflection;
 import jetbrains.mps.errors.messageTargets.MessageTarget;
 import jetbrains.mps.errors.messageTargets.NodeMessageTarget;
 import jetbrains.mps.errors.IErrorReporter;
@@ -19,19 +19,19 @@ public class check_Triplex_NonTypesystemRule extends AbstractNonTypesystemRule_R
   }
 
   public void applyRule(final SNode mqlTriplex, final TypeCheckingContext typeCheckingContext, IsApplicableStatus status) {
-    if ((SLinkOperations.getTarget(mqlTriplex, "condition", true) != null) && MqlExpression_Behavior.call_getPriority_7352592509980890960(SLinkOperations.getTarget(mqlTriplex, "condition", true)) >= MqlExpression_Behavior.call_getPriority_7352592509980890960(mqlTriplex)) {
+    if ((SLinkOperations.getTarget(mqlTriplex, "condition", true) != null) && BehaviorReflection.invokeVirtual(Integer.TYPE, SLinkOperations.getTarget(mqlTriplex, "condition", true), "virtual_getPriority_7352592509980890960", new Object[]{}) >= BehaviorReflection.invokeVirtual(Integer.TYPE, mqlTriplex, "virtual_getPriority_7352592509980890960", new Object[]{})) {
       {
         MessageTarget errorTarget = new NodeMessageTarget();
         IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(SLinkOperations.getTarget(mqlTriplex, "condition", true), "invalid operator priority; use parentheses", "r:efe0605f-fbe2-49dd-8c71-c87a67c06b2c(jetbrains.mps.core.query.typesystem)", "8595827001410598398", null, errorTarget);
       }
     }
-    if ((SLinkOperations.getTarget(mqlTriplex, "thenexpr", true) != null) && MqlExpression_Behavior.call_getPriority_7352592509980890960(SLinkOperations.getTarget(mqlTriplex, "thenexpr", true)) >= MqlExpression_Behavior.call_getPriority_7352592509980890960(mqlTriplex)) {
+    if ((SLinkOperations.getTarget(mqlTriplex, "thenexpr", true) != null) && BehaviorReflection.invokeVirtual(Integer.TYPE, SLinkOperations.getTarget(mqlTriplex, "thenexpr", true), "virtual_getPriority_7352592509980890960", new Object[]{}) >= BehaviorReflection.invokeVirtual(Integer.TYPE, mqlTriplex, "virtual_getPriority_7352592509980890960", new Object[]{})) {
       {
         MessageTarget errorTarget = new NodeMessageTarget();
         IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(SLinkOperations.getTarget(mqlTriplex, "thenexpr", true), "invalid operator priority; use parentheses", "r:efe0605f-fbe2-49dd-8c71-c87a67c06b2c(jetbrains.mps.core.query.typesystem)", "8595827001410598410", null, errorTarget);
       }
     }
-    if ((SLinkOperations.getTarget(mqlTriplex, "elseexpr", true) != null) && MqlExpression_Behavior.call_getPriority_7352592509980890960(SLinkOperations.getTarget(mqlTriplex, "elseexpr", true)) > MqlExpression_Behavior.call_getPriority_7352592509980890960(mqlTriplex)) {
+    if ((SLinkOperations.getTarget(mqlTriplex, "elseexpr", true) != null) && BehaviorReflection.invokeVirtual(Integer.TYPE, SLinkOperations.getTarget(mqlTriplex, "elseexpr", true), "virtual_getPriority_7352592509980890960", new Object[]{}) > BehaviorReflection.invokeVirtual(Integer.TYPE, mqlTriplex, "virtual_getPriority_7352592509980890960", new Object[]{})) {
       {
         MessageTarget errorTarget = new NodeMessageTarget();
         IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(SLinkOperations.getTarget(mqlTriplex, "elseexpr", true), "invalid operator priority; use parentheses", "r:efe0605f-fbe2-49dd-8c71-c87a67c06b2c(jetbrains.mps.core.query.typesystem)", "8595827001410598432", null, errorTarget);
@@ -45,7 +45,7 @@ public class check_Triplex_NonTypesystemRule extends AbstractNonTypesystemRule_R
 
   public IsApplicableStatus isApplicableAndPattern(SNode argument) {
     {
-      boolean b = SModelUtil_new.isAssignableConcept(argument.getConceptFqName(), this.getApplicableConceptFQName());
+      boolean b = SModelUtil_new.isAssignableConcept(argument.getConcept().getQualifiedName(), this.getApplicableConceptFQName());
       return new IsApplicableStatus(b, null);
     }
   }

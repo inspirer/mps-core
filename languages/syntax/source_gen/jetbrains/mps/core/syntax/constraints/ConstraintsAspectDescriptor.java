@@ -7,13 +7,11 @@ import java.util.Arrays;
 import jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor;
 
 public class ConstraintsAspectDescriptor implements jetbrains.mps.smodel.runtime.ConstraintsAspectDescriptor {
-  private static String[] stringSwitchCases_2qnle6_a0a0a = new String[]{"jetbrains.mps.core.syntax.structure.SLexerPart", "jetbrains.mps.core.syntax.structure.SNonTerm", "jetbrains.mps.core.syntax.structure.SRegex", "jetbrains.mps.core.syntax.structure.SSymbol", "jetbrains.mps.core.syntax.structure.SSymbolRef"};
-
   public ConstraintsAspectDescriptor() {
   }
 
   public ConstraintsDescriptor getDescriptor(String fqName) {
-    switch (Arrays.binarySearch(stringSwitchCases_2qnle6_a0a0a, fqName)) {
+    switch (Arrays.binarySearch(stringSwitchCases_2qnle6_a0a0b, fqName)) {
       case 2:
         return new SRegex_Constraints();
       case 1:
@@ -29,4 +27,6 @@ public class ConstraintsAspectDescriptor implements jetbrains.mps.smodel.runtime
         return new BaseConstraintsDescriptor(fqName);
     }
   }
+
+  private static String[] stringSwitchCases_2qnle6_a0a0b = new String[]{"jetbrains.mps.core.syntax.structure.SLexerPart", "jetbrains.mps.core.syntax.structure.SNonTerm", "jetbrains.mps.core.syntax.structure.SRegex", "jetbrains.mps.core.syntax.structure.SSymbol", "jetbrains.mps.core.syntax.structure.SSymbolRef"};
 }

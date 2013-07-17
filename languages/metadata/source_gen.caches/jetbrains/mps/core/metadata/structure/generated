@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="5qatxdd75bn8f9v6eg1qme5b3ctsoyj">
+<dependencies version="2" modelHash="-dvzrx5o9eg0vcdonsoor199ohuk5oso">
+  <dep model="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.smodel.runtime.impl(MPS.Core/jetbrains.mps.smodel.runtime.impl@java_stub)" />
   <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
   <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
   <dep model="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
-  <dep model="r:00000000-0000-4000-0000-011c895902cb(jetbrains.mps.baseLanguage.generator.java.closures@generator)" />
   <dep model="r:00000000-0000-4000-0000-011c895902e8(jetbrains.mps.lang.generator.structure)" />
-  <dep model="r:00000000-0000-4000-0000-011c8959033a(jetbrains.mps.baseLanguage.closures.generator.baseLanguage.template.main@generator)" />
-  <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" />
-  <dep model="r:c11a239c-3061-4b62-b5dd-6749678497d7(jetbrains.mps.core.structure.structure)" hash="9u83111fl4ugftbpsudt7g8kwk49h4i" />
+  <dep model="r:c11a239c-3061-4b62-b5dd-6749678497d7(jetbrains.mps.core.structure.structure)" hash="5ivfl5chbw3lqbbem3jtd8ocli4gt4p" />
   <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" />
-  <dep model="r:f9198ffd-e084-425c-aa82-f2db8289f5eb(jetbrains.mps.core.query.structure)" hash="-aq228635dtu8v3d00l21yyp5j473bhs" />
-  <common hash="3acp4f59acfrkbbwhiclb4cyi36qapc">
+  <dep model="r:f9198ffd-e084-425c-aa82-f2db8289f5eb(jetbrains.mps.core.query.structure)" hash="-2wl4idcyvfy3s2t0wg4b5dd5apd516j" />
+  <common hash="4tpz18f3p6wsn1np17gmww95ko49500">
     <dep root="2848533153256408899" />
     <dep root="2848533153256415325" />
     <dep root="2848533153256415624" />
@@ -21,47 +19,44 @@
     <dep root="7891765471709947212" />
     <dep root="7891765471710058196" />
     <dep root="7891765471710461224" />
+    <dep model="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.smodel.runtime.impl(MPS.Core/jetbrains.mps.smodel.runtime.impl@java_stub)" />
     <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
     <dep model="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
-    <dep model="r:00000000-0000-4000-0000-011c895902cb(jetbrains.mps.baseLanguage.generator.java.closures@generator)" />
     <dep model="r:00000000-0000-4000-0000-011c895902e8(jetbrains.mps.lang.generator.structure)" />
-    <dep model="r:00000000-0000-4000-0000-011c8959033a(jetbrains.mps.baseLanguage.closures.generator.baseLanguage.template.main@generator)" />
-    <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" />
     <dep model="r:c11a239c-3061-4b62-b5dd-6749678497d7(jetbrains.mps.core.structure.structure)" />
     <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" />
     <dep model="r:f9198ffd-e084-425c-aa82-f2db8289f5eb(jetbrains.mps.core.query.structure)" />
-    <file name="Metadata_Language.java" />
     <file name="StructureAspectDescriptor.java" />
   </common>
-  <source id="2848533153256408899" name="SConceptAnnotationType" hash="-3j8hox3r4w1w2aa24kv230128qefayh">
+  <source id="2848533153256408899" name="SConceptAnnotationType" hash="-albl73e3v2ra57acv7ilv2ju5cxhu1i">
     <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
   </source>
-  <source id="2848533153256415325" name="SConceptAnnotationMember" hash="-8aezuroi4y032i9r46oy3yebaq6b4rg">
+  <source id="2848533153256415325" name="SConceptAnnotationMember" hash="e2xsyzwjls0nsxnztkhp90bmg3pf3fc">
     <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
   </source>
-  <source id="2848533153256415624" name="SConceptAnnotationProperty" hash="-e6ltqswxcpo3zm8s49cg9zbp11rj4vl">
+  <source id="2848533153256415624" name="SConceptAnnotationProperty" hash="-1vlivnltulq5hktrcvyg1eogb9ff539">
     <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
   </source>
-  <source id="2848533153256415629" name="SConceptAnnotationChildLink" hash="8pktv0j8ii04w858ia9p1rfnsnii8a9">
+  <source id="2848533153256415629" name="SConceptAnnotationChildLink" hash="-1x2az7mptp8azqy0t3oksf46iscwqcx">
     <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
   </source>
-  <source id="2848533153256436620" name="SConceptAnnotationMemberEmptyLine" hash="-eeoxy0k03a4svow68gotxz3squ7e8c7">
+  <source id="2848533153256436620" name="SConceptAnnotationMemberEmptyLine" hash="-dszh8gm73df0nvu8i11fwu4mvtqky83">
     <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
   </source>
-  <source id="2848533153256436623" name="SConceptAnnotationMemberComment" hash="39j9w200f1i8t47u318ftmlaacsjcrq">
+  <source id="2848533153256436623" name="SConceptAnnotationMemberComment" hash="-5902guxuwq92sw4d0rbg7e4ti7cli57">
     <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
   </source>
-  <source id="2848533153256463734" name="SConceptAnnotationNodeRef" hash="1fuzkjoeq1vtlcxqsx7x8dv2zxzqk7u">
+  <source id="2848533153256463734" name="SConceptAnnotationNodeRef" hash="6afzxgb213zvsrvbliwn6khizu4gm4">
     <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
   </source>
-  <source id="7891765471709947212" name="SConceptAnnotationInstance" hash="6fydnwqpsh02gi3yt5zfr2c9n3b88a6">
+  <source id="7891765471709947212" name="SConceptAnnotationInstance" hash="-bs66l1go47tc6b57bgev36r1j99qce6">
     <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
   </source>
-  <source id="7891765471710058196" name="SConceptAnnotationArgument" hash="52a4wm2m77j3wiwi558rai9s0vp3okp">
+  <source id="7891765471710058196" name="SConceptAnnotationArgument" hash="6vs4kh0gmxnkrq8lr920bfsl6znqmft">
     <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
   </source>
-  <source id="7891765471710461224" name="SMetadataNodeRefExpression" hash="2wceqctogwd96uaweaq02opq1wancyb">
+  <source id="7891765471710461224" name="SMetadataNodeRefExpression" hash="-3jhku5jeolpv3z7vnojyu0k75qlm5di">
     <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
   </source>
 </dependencies>

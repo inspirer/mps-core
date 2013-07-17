@@ -1,70 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debugInfo>
-  <unitInfo fileName="FindUsagesDescriptor.java" startLine="9" startPosition="0" endLine="18" endPosition="0" unitName="jetbrains.mps.core.smodel.findUsages.FindUsagesDescriptor" />
-  <root nodeId="5130788244153372158" modelId="r:e0893869-3da2-44ae-906d-cfcba5f538c8(jetbrains.mps.core.smodel.findUsages)">
-    <nodeInfo nodeId="5130788244153372158" fileName="OverridingQueries_Finder.java" startLine="19" startPosition="63" endLine="20" endPosition="112" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="LOG" />
-    <nodeInfo nodeId="5130788244153372158" fileName="OverridingQueries_Finder.java" startLine="25" startPosition="34" endLine="26" endPosition="32" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="5130788244153372158" fileName="OverridingQueries_Finder.java" startLine="29" startPosition="38" endLine="30" endPosition="33" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="5130788244153372158" fileName="OverridingQueries_Finder.java" startLine="33" startPosition="30" endLine="34" endPosition="63" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="5130788244153372163" fileName="OverridingQueries_Finder.java" startLine="37" startPosition="43" endLine="38" endPosition="132" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="5130788244153372158" fileName="OverridingQueries_Finder.java" startLine="41" startPosition="98" endLine="42" endPosition="39" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="3492202963404300500" fileName="OverridingQueries_Finder.java" startLine="43" startPosition="9" endLine="44" endPosition="97" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="3492202963404305458" fileName="OverridingQueries_Finder.java" startLine="45" startPosition="60" endLine="46" endPosition="15" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="3492202963404305534" fileName="OverridingQueries_Finder.java" startLine="50" startPosition="43" endLine="51" endPosition="102" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="3492202963404300443" fileName="OverridingQueries_Finder.java" startLine="51" startPosition="102" endLine="52" endPosition="250" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="3492202963404301270" fileName="OverridingQueries_Finder.java" startLine="54" startPosition="13" endLine="55" endPosition="60" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="5130788244153372158" fileName="OverridingQueries_Finder.java" startLine="58" startPosition="15" endLine="59" endPosition="21" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="5130788244153372158" fileName="OverridingQueries_Finder.java" startLine="21" startPosition="0" endLine="23" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="OverridingQueries_Finder#()V" />
-    <nodeInfo nodeId="3492202963404305426" fileName="OverridingQueries_Finder.java" startLine="44" startPosition="97" endLine="47" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="5130788244153372158" fileName="OverridingQueries_Finder.java" startLine="24" startPosition="0" endLine="28" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getDescription#()Ljava/lang/String;" />
-    <nodeInfo nodeId="5130788244153372158" fileName="OverridingQueries_Finder.java" startLine="28" startPosition="0" endLine="32" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getLongDescription#()Ljava/lang/String;" />
-    <nodeInfo nodeId="5130788244153372158" fileName="OverridingQueries_Finder.java" startLine="32" startPosition="0" endLine="36" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getConcept#()Ljava/lang/String;" />
-    <nodeInfo nodeId="5130788244153372158" fileName="OverridingQueries_Finder.java" startLine="36" startPosition="0" endLine="40" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="isApplicable#(Ljetbrains/mps/smodel/SNode;)Z" />
-    <nodeInfo nodeId="3492202963404300439" fileName="OverridingQueries_Finder.java" startLine="49" startPosition="220" endLine="54" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="accept#(Ljetbrains/mps/smodel/SNode;)Z" />
-    <nodeInfo nodeId="3492202963404268807" fileName="OverridingQueries_Finder.java" startLine="48" startPosition="288" endLine="56" endPosition="9" conceptFqName="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
-    <nodeInfo nodeId="1227530893124" fileName="OverridingQueries_Finder.java" startLine="47" startPosition="7" endLine="57" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
-    <nodeInfo nodeId="5130788244153372158" fileName="OverridingQueries_Finder.java" startLine="42" startPosition="39" endLine="60" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.TryStatement" />
-    <nodeInfo nodeId="5130788244153372158" fileName="OverridingQueries_Finder.java" startLine="40" startPosition="0" endLine="62" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="doFind#(Ljetbrains/mps/smodel/SNode;Ljetbrains/mps/smodel/IScope;Ljava/util/List;Ljetbrains/mps/progress/ProgressMonitor;)V" />
-    <scopeInfo nodeId="5130788244153372158" fileName="OverridingQueries_Finder.java" startLine="22" startPosition="37" endLine="22" endPosition="37" />
-    <scopeInfo nodeId="5130788244153372158" fileName="OverridingQueries_Finder.java" startLine="25" startPosition="34" endLine="26" endPosition="32" />
-    <scopeInfo nodeId="5130788244153372158" fileName="OverridingQueries_Finder.java" startLine="29" startPosition="38" endLine="30" endPosition="33" />
-    <scopeInfo nodeId="5130788244153372158" fileName="OverridingQueries_Finder.java" startLine="33" startPosition="30" endLine="34" endPosition="63" />
-    <scopeInfo nodeId="5130788244153372162" fileName="OverridingQueries_Finder.java" startLine="37" startPosition="43" endLine="38" endPosition="132" />
-    <scopeInfo nodeId="3492202963404305427" fileName="OverridingQueries_Finder.java" startLine="45" startPosition="60" endLine="46" endPosition="15" />
-    <scopeInfo nodeId="3492202963404268810" fileName="OverridingQueries_Finder.java" startLine="54" startPosition="13" endLine="55" endPosition="60" />
-    <scopeInfo nodeId="5130788244153372158" fileName="OverridingQueries_Finder.java" startLine="58" startPosition="15" endLine="59" endPosition="21" />
-    <scopeInfo nodeId="5130788244153372158" fileName="OverridingQueries_Finder.java" startLine="21" startPosition="0" endLine="23" endPosition="3" />
-    <scopeInfo nodeId="3492202963404300440" fileName="OverridingQueries_Finder.java" startLine="50" startPosition="43" endLine="52" endPosition="250">
+  <unitInfo fileName="FindUsagesDescriptor.java" startLine="8" startPosition="0" endLine="17" endPosition="0" unitName="jetbrains.mps.core.smodel.findUsages.FindUsagesDescriptor" />
+  <root nodeRef="r:e0893869-3da2-44ae-906d-cfcba5f538c8(jetbrains.mps.core.smodel.findUsages)/5130788244153372158">
+    <nodeInfo nodeId="5130788244153372158" fileName="OverridingQueries_Finder.java" startLine="21" startPosition="0" endLine="22" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="LOG" />
+    <nodeInfo nodeId="5130788244153372158" fileName="OverridingQueries_Finder.java" startLine="27" startPosition="34" endLine="28" endPosition="32" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="5130788244153372158" fileName="OverridingQueries_Finder.java" startLine="32" startPosition="38" endLine="33" endPosition="33" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="5130788244153372158" fileName="OverridingQueries_Finder.java" startLine="37" startPosition="30" endLine="38" endPosition="63" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="5130788244153372163" fileName="OverridingQueries_Finder.java" startLine="42" startPosition="43" endLine="43" endPosition="132" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="5130788244153372158" fileName="OverridingQueries_Finder.java" startLine="47" startPosition="103" endLine="48" endPosition="39" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="3492202963404300500" fileName="OverridingQueries_Finder.java" startLine="49" startPosition="9" endLine="50" endPosition="97" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="3492202963404305458" fileName="OverridingQueries_Finder.java" startLine="51" startPosition="60" endLine="52" endPosition="15" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="3492202963404305534" fileName="OverridingQueries_Finder.java" startLine="56" startPosition="43" endLine="57" endPosition="102" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="3492202963404300443" fileName="OverridingQueries_Finder.java" startLine="57" startPosition="102" endLine="58" endPosition="250" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="3492202963404301270" fileName="OverridingQueries_Finder.java" startLine="60" startPosition="13" endLine="61" endPosition="60" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="5130788244153372158" fileName="OverridingQueries_Finder.java" startLine="64" startPosition="15" endLine="65" endPosition="21" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="5130788244153372158" fileName="OverridingQueries_Finder.java" startLine="23" startPosition="0" endLine="25" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="OverridingQueries_Finder#()V" />
+    <nodeInfo nodeId="3492202963404305426" fileName="OverridingQueries_Finder.java" startLine="50" startPosition="97" endLine="53" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="5130788244153372158" fileName="OverridingQueries_Finder.java" startLine="26" startPosition="0" endLine="30" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getDescription#()Ljava/lang/String;" />
+    <nodeInfo nodeId="5130788244153372158" fileName="OverridingQueries_Finder.java" startLine="31" startPosition="0" endLine="35" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getLongDescription#()Ljava/lang/String;" />
+    <nodeInfo nodeId="5130788244153372158" fileName="OverridingQueries_Finder.java" startLine="36" startPosition="0" endLine="40" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getConcept#()Ljava/lang/String;" />
+    <nodeInfo nodeId="5130788244153372158" fileName="OverridingQueries_Finder.java" startLine="41" startPosition="0" endLine="45" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="isApplicable#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+    <nodeInfo nodeId="3492202963404300439" fileName="OverridingQueries_Finder.java" startLine="56" startPosition="0" endLine="60" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+    <nodeInfo nodeId="3492202963404268807" fileName="OverridingQueries_Finder.java" startLine="54" startPosition="288" endLine="62" endPosition="9" conceptFqName="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+    <nodeInfo nodeId="1227530893124" fileName="OverridingQueries_Finder.java" startLine="53" startPosition="7" endLine="63" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+    <nodeInfo nodeId="5130788244153372158" fileName="OverridingQueries_Finder.java" startLine="48" startPosition="39" endLine="66" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.TryStatement" />
+    <nodeInfo nodeId="5130788244153372158" fileName="OverridingQueries_Finder.java" startLine="46" startPosition="0" endLine="68" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="doFind#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/module/SearchScope;Ljava/util/List;Lorg/jetbrains/mps/openapi/util/ProgressMonitor;)V" />
+    <scopeInfo nodeId="5130788244153372158" fileName="OverridingQueries_Finder.java" startLine="23" startPosition="37" endLine="23" endPosition="37" />
+    <scopeInfo nodeId="5130788244153372158" fileName="OverridingQueries_Finder.java" startLine="27" startPosition="34" endLine="28" endPosition="32" />
+    <scopeInfo nodeId="5130788244153372158" fileName="OverridingQueries_Finder.java" startLine="32" startPosition="38" endLine="33" endPosition="33" />
+    <scopeInfo nodeId="5130788244153372158" fileName="OverridingQueries_Finder.java" startLine="37" startPosition="30" endLine="38" endPosition="63" />
+    <scopeInfo nodeId="5130788244153372162" fileName="OverridingQueries_Finder.java" startLine="42" startPosition="43" endLine="43" endPosition="132" />
+    <scopeInfo nodeId="3492202963404305427" fileName="OverridingQueries_Finder.java" startLine="51" startPosition="60" endLine="52" endPosition="15" />
+    <scopeInfo nodeId="3492202963404268810" fileName="OverridingQueries_Finder.java" startLine="60" startPosition="13" endLine="61" endPosition="60" />
+    <scopeInfo nodeId="5130788244153372158" fileName="OverridingQueries_Finder.java" startLine="64" startPosition="15" endLine="65" endPosition="21" />
+    <scopeInfo nodeId="5130788244153372158" fileName="OverridingQueries_Finder.java" startLine="23" startPosition="0" endLine="25" endPosition="0" />
+    <scopeInfo nodeId="3492202963404300440" fileName="OverridingQueries_Finder.java" startLine="56" startPosition="43" endLine="58" endPosition="250">
       <varInfo nodeId="3492202963404305535" varName="query" />
     </scopeInfo>
-    <scopeInfo nodeId="5130788244153372158" fileName="OverridingQueries_Finder.java" startLine="24" startPosition="0" endLine="28" endPosition="0" />
-    <scopeInfo nodeId="5130788244153372158" fileName="OverridingQueries_Finder.java" startLine="28" startPosition="0" endLine="32" endPosition="0" />
-    <scopeInfo nodeId="5130788244153372158" fileName="OverridingQueries_Finder.java" startLine="32" startPosition="0" endLine="36" endPosition="0" />
-    <scopeInfo nodeId="5130788244153372158" fileName="OverridingQueries_Finder.java" startLine="36" startPosition="0" endLine="40" endPosition="0">
+    <scopeInfo nodeId="5130788244153372158" fileName="OverridingQueries_Finder.java" startLine="26" startPosition="0" endLine="30" endPosition="0" />
+    <scopeInfo nodeId="5130788244153372158" fileName="OverridingQueries_Finder.java" startLine="31" startPosition="0" endLine="35" endPosition="0" />
+    <scopeInfo nodeId="5130788244153372158" fileName="OverridingQueries_Finder.java" startLine="36" startPosition="0" endLine="40" endPosition="0" />
+    <scopeInfo nodeId="5130788244153372158" fileName="OverridingQueries_Finder.java" startLine="41" startPosition="0" endLine="45" endPosition="0">
       <varInfo nodeId="5130788244153372158" varName="node" />
     </scopeInfo>
-    <scopeInfo nodeId="3492202963404300439" fileName="OverridingQueries_Finder.java" startLine="49" startPosition="220" endLine="54" endPosition="0">
+    <scopeInfo nodeId="3492202963404300439" fileName="OverridingQueries_Finder.java" startLine="56" startPosition="0" endLine="60" endPosition="0">
       <varInfo nodeId="3492202963404300439" varName="it" />
     </scopeInfo>
-    <scopeInfo nodeId="1227530893128" fileName="OverridingQueries_Finder.java" startLine="48" startPosition="288" endLine="56" endPosition="9" />
-    <scopeInfo nodeId="3492202963404268807" fileName="OverridingQueries_Finder.java" startLine="48" startPosition="288" endLine="56" endPosition="9">
-      <varInfo nodeId="3492202963404268807" varName="query" />
+    <scopeInfo nodeId="1227530893128" fileName="OverridingQueries_Finder.java" startLine="54" startPosition="288" endLine="62" endPosition="9" />
+    <scopeInfo nodeId="3492202963404268807" fileName="OverridingQueries_Finder.java" startLine="54" startPosition="288" endLine="62" endPosition="9">
+      <varInfo nodeId="3492202963404268808" varName="query" />
     </scopeInfo>
-    <scopeInfo nodeId="1227530893124" fileName="OverridingQueries_Finder.java" startLine="47" startPosition="7" endLine="57" endPosition="7">
-      <varInfo nodeId="1227530893124" varName="subConcept" />
+    <scopeInfo nodeId="1227530893124" fileName="OverridingQueries_Finder.java" startLine="53" startPosition="7" endLine="63" endPosition="7">
+      <varInfo nodeId="1227530893125" varName="subConcept" />
     </scopeInfo>
-    <scopeInfo nodeId="5130788244153372160" fileName="OverridingQueries_Finder.java" startLine="43" startPosition="9" endLine="57" endPosition="7">
+    <scopeInfo nodeId="5130788244153372160" fileName="OverridingQueries_Finder.java" startLine="49" startPosition="9" endLine="63" endPosition="7">
       <varInfo nodeId="3492202963404300501" varName="signature" />
     </scopeInfo>
-    <scopeInfo nodeId="5130788244153372158" fileName="OverridingQueries_Finder.java" startLine="41" startPosition="98" endLine="60" endPosition="5" />
-    <scopeInfo nodeId="5130788244153372158" fileName="OverridingQueries_Finder.java" startLine="40" startPosition="0" endLine="62" endPosition="0">
+    <scopeInfo nodeId="5130788244153372158" fileName="OverridingQueries_Finder.java" startLine="47" startPosition="103" endLine="66" endPosition="5" />
+    <scopeInfo nodeId="5130788244153372158" fileName="OverridingQueries_Finder.java" startLine="46" startPosition="0" endLine="68" endPosition="0">
       <varInfo nodeId="5130788244153372158" varName="_results" />
       <varInfo nodeId="5130788244153372158" varName="monitor" />
       <varInfo nodeId="5130788244153372158" varName="node" />
       <varInfo nodeId="5130788244153372158" varName="scope" />
     </scopeInfo>
-    <unitInfo nodeId="3492202963404300439" fileName="OverridingQueries_Finder.java" startLine="49" startPosition="197" endLine="54" endPosition="9" unitName="jetbrains.mps.core.smodel.findUsages.OverridingQueries_Finder$1" />
-    <unitInfo nodeId="5130788244153372158" fileName="OverridingQueries_Finder.java" startLine="19" startPosition="0" endLine="63" endPosition="0" unitName="jetbrains.mps.core.smodel.findUsages.OverridingQueries_Finder" />
+    <unitInfo nodeId="3492202963404300439" fileName="OverridingQueries_Finder.java" startLine="55" startPosition="197" endLine="60" endPosition="9" unitName="jetbrains.mps.core.smodel.findUsages.OverridingQueries_Finder$1" />
+    <unitInfo nodeId="5130788244153372158" fileName="OverridingQueries_Finder.java" startLine="20" startPosition="0" endLine="69" endPosition="0" unitName="jetbrains.mps.core.smodel.findUsages.OverridingQueries_Finder" />
   </root>
 </debugInfo>
 

@@ -17,12 +17,6 @@ public enum MqlCollectionSelectorKind {
   GROUPBY("groupBy", 8);
 
   private String myName;
-  private int myValue;
-
-  MqlCollectionSelectorKind(String name, int value) {
-    this.myName = name;
-    this.myValue = value;
-  }
 
   public String getName() {
     return this.myName;
@@ -30,10 +24,6 @@ public enum MqlCollectionSelectorKind {
 
   public String getValueAsString() {
     return "" + this.myValue;
-  }
-
-  public int getValue() {
-    return this.myValue;
   }
 
   public static List<MqlCollectionSelectorKind> getConstants() {
@@ -82,5 +72,16 @@ public enum MqlCollectionSelectorKind {
       return MqlCollectionSelectorKind.GROUPBY;
     }
     return MqlCollectionSelectorKind.getDefault();
+  }
+
+  private int myValue;
+
+  MqlCollectionSelectorKind(String name, int value) {
+    this.myName = name;
+    this.myValue = value;
+  }
+
+  public int getValue() {
+    return this.myValue;
   }
 }

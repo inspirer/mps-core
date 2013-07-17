@@ -5,15 +5,15 @@ package jetbrains.mps.core.query.runtime;
 import java.util.Map;
 import jetbrains.mps.internal.collections.runtime.MapSequence;
 import java.util.HashMap;
-import jetbrains.mps.smodel.SNode;
-import jetbrains.mps.core.query.behavior.MqlExpression_Behavior;
+import org.jetbrains.mps.openapi.model.SNode;
+import jetbrains.mps.util.SNodeOperations;
+import jetbrains.mps.smodel.behaviour.BehaviorReflection;
 import java.util.Arrays;
 
 public class EvaluationEnvironment {
   private static final Object MISSED = new Object();
   public static final int KIND_ERR = 1;
   public static final int KIND_WARN = 2;
-
   private final EvaluationRuntime runtime;
   private final Map<EvaluationEnvironment.Key, Object> cache = MapSequence.fromMap(new HashMap<EvaluationEnvironment.Key, Object>());
 
@@ -47,8 +47,8 @@ public class EvaluationEnvironment {
     }
     Object input = context.getThis();
     if (input instanceof SNode) {
-      SNode inputNode = (SNode) input;
-      report(KIND_ERR, " -- context node: " + inputNode.getDebugText(), inputNode);
+      SNode inputNode = (jetbrains.mps.smodel.SNode) input;
+      report(KIND_ERR, " -- context node: " + SNodeOperations.getDebugText(inputNode), inputNode);
     } else if (input != null) {
       report(KIND_ERR, " -- context: " + getRuntime().objectType(input), null);
     }
@@ -56,7 +56,7 @@ public class EvaluationEnvironment {
 
   public Object evaluate(SNode expr, EvaluationContext context, boolean permitNull) {
     try {
-      Object result = MqlExpression_Behavior.call_evaluate_1671449901154581105(expr, this, context);
+      Object result = BehaviorReflection.invokeVirtual(Object.class, expr, "virtual_evaluate_1671449901154581105", new Object[]{this, context});
       if (result == null && !(permitNull)) {
         String message = "Evaluation failed: null";
         report(KIND_ERR, message, expr);

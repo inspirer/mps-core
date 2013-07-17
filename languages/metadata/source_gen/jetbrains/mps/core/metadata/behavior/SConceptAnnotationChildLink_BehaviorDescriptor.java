@@ -4,7 +4,7 @@ package jetbrains.mps.core.metadata.behavior;
 
 import jetbrains.mps.lang.core.behavior.INamedConcept_BehaviorDescriptor;
 import jetbrains.mps.core.structure.behavior.SCardinalityContainer_BehaviorDescriptor;
-import jetbrains.mps.smodel.SNode;
+import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.core.behavior.INamedConcept_Behavior;
 
 public class SConceptAnnotationChildLink_BehaviorDescriptor extends SConceptAnnotationMember_BehaviorDescriptor implements INamedConcept_BehaviorDescriptor, SCardinalityContainer_BehaviorDescriptor {

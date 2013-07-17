@@ -4,7 +4,7 @@ package jetbrains.mps.core.notation.behavior;
 
 import jetbrains.mps.core.structure.behavior.SStructurePart_BehaviorDescriptor;
 import jetbrains.mps.core.notation.util.NotationContext;
-import jetbrains.mps.smodel.SNode;
+import org.jetbrains.mps.openapi.model.SNode;
 
 public class SNotation_BehaviorDescriptor extends SStructurePart_BehaviorDescriptor implements SNotationPartsContainer_BehaviorDescriptor, SNotationContextProvider_BehaviorDescriptor {
   public SNotation_BehaviorDescriptor() {

@@ -4,14 +4,25 @@ package jetbrains.mps.core.template.behavior;
 
 import jetbrains.mps.lang.core.behavior.NodeAttribute_BehaviorDescriptor;
 import jetbrains.mps.core.query.behavior.MqlVariableContainer_BehaviorDescriptor;
-import jetbrains.mps.smodel.SNode;
+import jetbrains.mps.lang.core.behavior.IDontSubstituteByDefault_BehaviorDescriptor;
+import java.util.List;
+import org.jetbrains.mps.openapi.model.SNode;
+import org.jetbrains.mps.openapi.language.SConcept;
 
-public class MtlLabelNodeMacro_BehaviorDescriptor extends NodeAttribute_BehaviorDescriptor implements MqlVariableContainer_BehaviorDescriptor {
+public class MtlLabelNodeMacro_BehaviorDescriptor extends NodeAttribute_BehaviorDescriptor implements MqlVariableContainer_BehaviorDescriptor, IDontSubstituteByDefault_BehaviorDescriptor {
   public MtlLabelNodeMacro_BehaviorDescriptor() {
+  }
+
+  public List<SNode> virtual_getAttributed_3044950653914717013(SConcept thisConcept) {
+    return MtlLabelNodeMacro_Behavior.virtual_getAttributed_3044950653914717013(thisConcept);
   }
 
   public SNode virtual_getContainedVariableType_3435983127247055569(SNode thisNode, String role) {
     return MtlLabelNodeMacro_Behavior.virtual_getContainedVariableType_3435983127247055569(thisNode, role);
+  }
+
+  public String virtual_getRole_1262430001741497900(SConcept thisConcept) {
+    return MtlLabelNodeMacro_Behavior.virtual_getRole_1262430001741497900(thisConcept);
   }
 
   @Override

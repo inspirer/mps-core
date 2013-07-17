@@ -7,13 +7,11 @@ import java.util.Arrays;
 import jetbrains.mps.smodel.runtime.interpreted.BehaviorAspectInterpreted;
 
 public class BehaviorAspectDescriptor implements jetbrains.mps.smodel.runtime.BehaviorAspectDescriptor {
-  private static String[] stringSwitchCases_846f5o_a0a0a = new String[]{"jetbrains.mps.core.structure.structure.SCardinality", "jetbrains.mps.core.structure.structure.SChildLink", "jetbrains.mps.core.structure.structure.SConcept", "jetbrains.mps.core.structure.structure.SConceptMemberComment", "jetbrains.mps.core.structure.structure.SConceptMemberEmptyLine", "jetbrains.mps.core.structure.structure.SConstraints", "jetbrains.mps.core.structure.structure.SConstraintsPartComment", "jetbrains.mps.core.structure.structure.SConstraintsPartEmptyLine", "jetbrains.mps.core.structure.structure.SEnumeration", "jetbrains.mps.core.structure.structure.SEnumerationDataType", "jetbrains.mps.core.structure.structure.SEnumerationMember", "jetbrains.mps.core.structure.structure.SInterfaceConcept", "jetbrains.mps.core.structure.structure.SInterfaceReference", "jetbrains.mps.core.structure.structure.SPrimitiveDataType", "jetbrains.mps.core.structure.structure.SProperty", "jetbrains.mps.core.structure.structure.SReference", "jetbrains.mps.core.structure.structure.SStructureComment", "jetbrains.mps.core.structure.structure.SStructureContainer", "jetbrains.mps.core.structure.structure.SStructureEmptyLine"};
-
   public BehaviorAspectDescriptor() {
   }
 
   public BehaviorDescriptor getDescriptor(String fqName) {
-    switch (Arrays.binarySearch(stringSwitchCases_846f5o_a0a0a, fqName)) {
+    switch (Arrays.binarySearch(stringSwitchCases_846f5o_a0a0b, fqName)) {
       case 11:
         return new SInterfaceConcept_BehaviorDescriptor();
       case 2:
@@ -56,4 +54,6 @@ public class BehaviorAspectDescriptor implements jetbrains.mps.smodel.runtime.Be
         return BehaviorAspectInterpreted.getInstance().getDescriptor(fqName);
     }
   }
+
+  private static String[] stringSwitchCases_846f5o_a0a0b = new String[]{"jetbrains.mps.core.structure.structure.SCardinality", "jetbrains.mps.core.structure.structure.SChildLink", "jetbrains.mps.core.structure.structure.SConcept", "jetbrains.mps.core.structure.structure.SConceptMemberComment", "jetbrains.mps.core.structure.structure.SConceptMemberEmptyLine", "jetbrains.mps.core.structure.structure.SConstraints", "jetbrains.mps.core.structure.structure.SConstraintsPartComment", "jetbrains.mps.core.structure.structure.SConstraintsPartEmptyLine", "jetbrains.mps.core.structure.structure.SEnumeration", "jetbrains.mps.core.structure.structure.SEnumerationDataType", "jetbrains.mps.core.structure.structure.SEnumerationMember", "jetbrains.mps.core.structure.structure.SInterfaceConcept", "jetbrains.mps.core.structure.structure.SInterfaceReference", "jetbrains.mps.core.structure.structure.SPrimitiveDataType", "jetbrains.mps.core.structure.structure.SProperty", "jetbrains.mps.core.structure.structure.SReference", "jetbrains.mps.core.structure.structure.SStructureComment", "jetbrains.mps.core.structure.structure.SStructureContainer", "jetbrains.mps.core.structure.structure.SStructureEmptyLine"};
 }

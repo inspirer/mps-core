@@ -1,37 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debugInfo>
   <unitInfo fileName="StructureAspectDescriptor.java" startLine="10" startPosition="0" endLine="81" endPosition="0" unitName="jetbrains.mps.core.structure.structure.StructureAspectDescriptor" />
-  <unitInfo fileName="Structure_Language.java" startLine="9" startPosition="0" endLine="16" endPosition="0" unitName="jetbrains.mps.core.structure.structure.Structure_Language" />
-  <root nodeId="7581772527307667405" modelId="r:c11a239c-3061-4b62-b5dd-6749678497d7(jetbrains.mps.core.structure.structure)">
-    <nodeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="13" startPosition="0" endLine="14" endPosition="24" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="myName" />
-    <nodeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="14" startPosition="24" endLine="15" endPosition="25" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="myValue" />
-    <nodeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="17" startPosition="49" endLine="18" endPosition="23" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="18" startPosition="23" endLine="19" endPosition="25" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="22" startPosition="27" endLine="23" endPosition="23" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="26" startPosition="36" endLine="27" endPosition="24" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="30" startPosition="28" endLine="31" endPosition="24" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="34" startPosition="57" endLine="35" endPosition="96" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="35" startPosition="96" endLine="36" endPosition="70" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="36" startPosition="70" endLine="37" endPosition="67" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="37" startPosition="67" endLine="38" endPosition="68" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="38" startPosition="68" endLine="39" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="42" startPosition="49" endLine="43" endPosition="37" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="47" startPosition="24" endLine="48" endPosition="45" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="50" startPosition="69" endLine="51" endPosition="39" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="53" startPosition="66" endLine="54" endPosition="36" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="56" startPosition="67" endLine="57" endPosition="37" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="58" startPosition="5" endLine="59" endPosition="43" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="46" startPosition="61" endLine="49" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="49" startPosition="5" endLine="52" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="52" startPosition="5" endLine="55" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="55" startPosition="5" endLine="58" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="16" startPosition="0" endLine="20" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="SPrimitiveTypeKind#(Ljava/lang/String;Ljava/lang/String;)V" />
-    <nodeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="21" startPosition="0" endLine="25" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getName#()Ljava/lang/String;" />
-    <nodeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="25" startPosition="0" endLine="29" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getValueAsString#()Ljava/lang/String;" />
-    <nodeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="29" startPosition="0" endLine="33" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getValue#()Ljava/lang/String;" />
-    <nodeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="41" startPosition="0" endLine="45" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="getDefault#()Ljetbrains/mps/core/structure/structure/SPrimitiveTypeKind;" />
-    <nodeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="33" startPosition="0" endLine="41" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="getConstants#()Ljava/util/List;" />
-    <nodeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="45" startPosition="0" endLine="61" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="parseValue#(Ljava/lang/String;)Ljetbrains/mps/core/structure/structure/SPrimitiveTypeKind;" />
+  <root nodeRef="r:c11a239c-3061-4b62-b5dd-6749678497d7(jetbrains.mps.core.structure.structure)/7581772527307667405">
+    <nodeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="14" startPosition="0" endLine="15" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="myName" />
+    <nodeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="16" startPosition="27" endLine="17" endPosition="23" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="20" startPosition="36" endLine="21" endPosition="24" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="24" startPosition="57" endLine="25" endPosition="96" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="25" startPosition="96" endLine="26" endPosition="70" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="26" startPosition="70" endLine="27" endPosition="67" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="27" startPosition="67" endLine="28" endPosition="68" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="28" startPosition="68" endLine="29" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="32" startPosition="49" endLine="33" endPosition="37" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="37" startPosition="24" endLine="38" endPosition="45" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="40" startPosition="69" endLine="41" endPosition="39" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="43" startPosition="66" endLine="44" endPosition="36" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="46" startPosition="67" endLine="47" endPosition="37" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="48" startPosition="5" endLine="49" endPosition="43" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="52" startPosition="0" endLine="53" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="myValue" />
+    <nodeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="54" startPosition="49" endLine="55" endPosition="23" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="55" startPosition="23" endLine="56" endPosition="25" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="59" startPosition="28" endLine="60" endPosition="24" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="16" startPosition="0" endLine="19" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getName#()Ljava/lang/String;" />
+    <nodeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="20" startPosition="0" endLine="23" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getValueAsString#()Ljava/lang/String;" />
+    <nodeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="32" startPosition="0" endLine="35" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="getDefault#()Ljetbrains/mps/core/structure/structure/SPrimitiveTypeKind;" />
+    <nodeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="36" startPosition="61" endLine="39" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="39" startPosition="5" endLine="42" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="42" startPosition="5" endLine="45" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="45" startPosition="5" endLine="48" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="59" startPosition="0" endLine="62" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getValue#()Ljava/lang/String;" />
+    <nodeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="54" startPosition="0" endLine="58" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="SPrimitiveTypeKind#(Ljava/lang/String;Ljava/lang/String;)V" />
+    <nodeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="24" startPosition="0" endLine="31" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="getConstants#()Ljava/util/List;" />
+    <nodeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="36" startPosition="0" endLine="51" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="parseValue#(Ljava/lang/String;)Ljetbrains/mps/core/structure/structure/SPrimitiveTypeKind;" />
     <nodeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind_PropertySupport.java" startLine="11" startPosition="24" endLine="12" endPosition="18" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind_PropertySupport.java" startLine="13" startPosition="5" endLine="14" endPosition="113" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
     <nodeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind_PropertySupport.java" startLine="15" startPosition="33" endLine="16" endPosition="53" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
@@ -52,32 +51,32 @@
     <nodeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind_PropertySupport.java" startLine="39" startPosition="71" endLine="42" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
     <nodeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind_PropertySupport.java" startLine="14" startPosition="113" endLine="20" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.WhileStatement" />
     <nodeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind_PropertySupport.java" startLine="28" startPosition="113" endLine="34" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.WhileStatement" />
-    <nodeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind_PropertySupport.java" startLine="37" startPosition="0" endLine="45" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="fromInternalValue#(Ljava/lang/String;)Ljava/lang/String;" />
-    <nodeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind_PropertySupport.java" startLine="9" startPosition="73" endLine="23" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="canSetValue#(Ljava/lang/String;)Z" />
-    <nodeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind_PropertySupport.java" startLine="23" startPosition="0" endLine="37" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="toInternalValue#(Ljava/lang/String;)Ljava/lang/String;" />
-    <scopeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="22" startPosition="27" endLine="23" endPosition="23" />
-    <scopeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="26" startPosition="36" endLine="27" endPosition="24" />
-    <scopeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="30" startPosition="28" endLine="31" endPosition="24" />
-    <scopeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="42" startPosition="49" endLine="43" endPosition="37" />
-    <scopeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="47" startPosition="24" endLine="48" endPosition="45" />
-    <scopeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="50" startPosition="69" endLine="51" endPosition="39" />
-    <scopeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="53" startPosition="66" endLine="54" endPosition="36" />
-    <scopeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="56" startPosition="67" endLine="57" endPosition="37" />
-    <scopeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="17" startPosition="49" endLine="19" endPosition="25" />
-    <scopeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="16" startPosition="0" endLine="20" endPosition="3">
+    <nodeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind_PropertySupport.java" startLine="38" startPosition="0" endLine="45" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="fromInternalValue#(Ljava/lang/String;)Ljava/lang/String;" />
+    <nodeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind_PropertySupport.java" startLine="10" startPosition="0" endLine="23" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="canSetValue#(Ljava/lang/String;)Z" />
+    <nodeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind_PropertySupport.java" startLine="24" startPosition="0" endLine="37" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="toInternalValue#(Ljava/lang/String;)Ljava/lang/String;" />
+    <scopeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="16" startPosition="27" endLine="17" endPosition="23" />
+    <scopeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="20" startPosition="36" endLine="21" endPosition="24" />
+    <scopeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="32" startPosition="49" endLine="33" endPosition="37" />
+    <scopeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="37" startPosition="24" endLine="38" endPosition="45" />
+    <scopeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="40" startPosition="69" endLine="41" endPosition="39" />
+    <scopeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="43" startPosition="66" endLine="44" endPosition="36" />
+    <scopeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="46" startPosition="67" endLine="47" endPosition="37" />
+    <scopeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="59" startPosition="28" endLine="60" endPosition="24" />
+    <scopeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="54" startPosition="49" endLine="56" endPosition="25" />
+    <scopeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="16" startPosition="0" endLine="19" endPosition="0" />
+    <scopeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="20" startPosition="0" endLine="23" endPosition="0" />
+    <scopeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="32" startPosition="0" endLine="35" endPosition="0" />
+    <scopeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="59" startPosition="0" endLine="62" endPosition="0" />
+    <scopeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="54" startPosition="0" endLine="58" endPosition="0">
       <varInfo nodeId="7581772527307667405" varName="name" />
       <varInfo nodeId="7581772527307667405" varName="value" />
     </scopeInfo>
-    <scopeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="21" startPosition="0" endLine="25" endPosition="0" />
-    <scopeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="25" startPosition="0" endLine="29" endPosition="0" />
-    <scopeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="29" startPosition="0" endLine="33" endPosition="0" />
-    <scopeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="41" startPosition="0" endLine="45" endPosition="0" />
-    <scopeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="34" startPosition="57" endLine="39" endPosition="16">
+    <scopeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="24" startPosition="57" endLine="29" endPosition="16">
       <varInfo nodeId="7581772527307667405" varName="list" />
     </scopeInfo>
-    <scopeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="33" startPosition="0" endLine="41" endPosition="0" />
-    <scopeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="46" startPosition="61" endLine="59" endPosition="43" />
-    <scopeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="45" startPosition="0" endLine="61" endPosition="0">
+    <scopeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="24" startPosition="0" endLine="31" endPosition="0" />
+    <scopeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="36" startPosition="61" endLine="49" endPosition="43" />
+    <scopeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="36" startPosition="0" endLine="51" endPosition="0">
       <varInfo nodeId="7581772527307667405" varName="value" />
     </scopeInfo>
     <scopeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind_PropertySupport.java" startLine="11" startPosition="24" endLine="12" endPosition="18" />
@@ -94,7 +93,7 @@
     <scopeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind_PropertySupport.java" startLine="38" startPosition="49" endLine="43" endPosition="14">
       <varInfo nodeId="7581772527307667405" varName="constant" />
     </scopeInfo>
-    <scopeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind_PropertySupport.java" startLine="37" startPosition="0" endLine="45" endPosition="0">
+    <scopeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind_PropertySupport.java" startLine="38" startPosition="0" endLine="45" endPosition="0">
       <varInfo nodeId="7581772527307667405" varName="value" />
     </scopeInfo>
     <scopeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind_PropertySupport.java" startLine="10" startPosition="44" endLine="21" endPosition="17">
@@ -103,13 +102,13 @@
     <scopeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind_PropertySupport.java" startLine="24" startPosition="47" endLine="35" endPosition="16">
       <varInfo nodeId="7581772527307667405" varName="constants" />
     </scopeInfo>
-    <scopeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind_PropertySupport.java" startLine="9" startPosition="73" endLine="23" endPosition="0">
+    <scopeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind_PropertySupport.java" startLine="10" startPosition="0" endLine="23" endPosition="0">
       <varInfo nodeId="7581772527307667405" varName="value" />
     </scopeInfo>
-    <scopeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind_PropertySupport.java" startLine="23" startPosition="0" endLine="37" endPosition="0">
+    <scopeInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind_PropertySupport.java" startLine="24" startPosition="0" endLine="37" endPosition="0">
       <varInfo nodeId="7581772527307667405" varName="value" />
     </scopeInfo>
-    <unitInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="9" startPosition="0" endLine="62" endPosition="0" unitName="jetbrains.mps.core.structure.structure.SPrimitiveTypeKind" />
+    <unitInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind.java" startLine="9" startPosition="0" endLine="63" endPosition="0" unitName="jetbrains.mps.core.structure.structure.SPrimitiveTypeKind" />
     <unitInfo nodeId="7581772527307667405" fileName="SPrimitiveTypeKind_PropertySupport.java" startLine="9" startPosition="0" endLine="46" endPosition="0" unitName="jetbrains.mps.core.structure.structure.SPrimitiveTypeKind_PropertySupport" />
   </root>
 </debugInfo>

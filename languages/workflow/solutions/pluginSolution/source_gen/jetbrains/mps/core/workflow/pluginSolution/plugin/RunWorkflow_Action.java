@@ -4,12 +4,11 @@ package jetbrains.mps.core.workflow.pluginSolution.plugin;
 
 import jetbrains.mps.workbench.action.BaseAction;
 import javax.swing.Icon;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 import org.jetbrains.annotations.NotNull;
 import com.intellij.openapi.actionSystem.AnActionEvent;
 import java.util.Map;
-import jetbrains.mps.smodel.SNode;
+import org.apache.log4j.Priority;
+import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.ide.actions.MPSCommonDataKeys;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.internal.collections.runtime.MapSequence;
@@ -18,11 +17,12 @@ import jetbrains.mps.ide.messages.MessagesViewTool;
 import com.intellij.openapi.project.Project;
 import jetbrains.mps.messages.IMessageHandler;
 import jetbrains.mps.messages.IMessage;
-import jetbrains.mps.project.IModule;
+import org.jetbrains.mps.openapi.module.SModule;
+import org.apache.log4j.Logger;
+import org.apache.log4j.LogManager;
 
 public class RunWorkflow_Action extends BaseAction {
   private static final Icon ICON = null;
-  protected static Log log = LogFactory.getLog(RunWorkflow_Action.class);
 
   public RunWorkflow_Action() {
     super("Run Workflow", "", ICON);
@@ -39,8 +39,8 @@ public class RunWorkflow_Action extends BaseAction {
     try {
       this.enable(event.getPresentation());
     } catch (Throwable t) {
-      if (log.isErrorEnabled()) {
-        log.error("User's action doUpdate method failed. Action:" + "RunWorkflow", t);
+      if (LOG.isEnabledFor(Priority.ERROR)) {
+        LOG.error("User's action doUpdate method failed. Action:" + "RunWorkflow", t);
       }
       this.disable(event.getPresentation());
     }
@@ -77,12 +77,14 @@ public class RunWorkflow_Action extends BaseAction {
           public void clear() {
             tool.clear("Workflow");
           }
-        }, ((IModule) MapSequence.fromMap(_params).get("langModule"))).run(((SNode) MapSequence.fromMap(_params).get("workflow")));
+        }, ((SModule) MapSequence.fromMap(_params).get("langModule"))).run(((SNode) MapSequence.fromMap(_params).get("workflow")));
       }
     } catch (Throwable t) {
-      if (log.isErrorEnabled()) {
-        log.error("User's action execute method failed. Action:" + "RunWorkflow", t);
+      if (LOG.isEnabledFor(Priority.ERROR)) {
+        LOG.error("User's action execute method failed. Action:" + "RunWorkflow", t);
       }
     }
   }
+
+  protected static Logger LOG = LogManager.getLogger(RunWorkflow_Action.class);
 }

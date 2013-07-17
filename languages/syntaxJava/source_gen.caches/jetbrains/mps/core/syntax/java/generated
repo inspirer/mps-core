@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="-2hm0bt39vydbeyi6trkqadxvkkcayj">
-  <dep model="r:00000000-0000-4000-0000-011c895902cb(jetbrains.mps.baseLanguage.generator.java.closures@generator)" />
-  <dep model="r:6d6aef8a-6633-4789-b993-98497e90be36(jetbrains.mps.core.syntax.java.typesystem)" hash="-37j7j1o7zq0codjtima3qdq0forep06" />
-  <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" />
+<dependencies version="2" modelHash="-15az74sm2cv5mv3rmbmviuhfmmx7ndd">
+  <dep model="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" />
+  <dep model="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
+  <dep model="r:6d6aef8a-6633-4789-b993-98497e90be36(jetbrains.mps.core.syntax.java.typesystem)" hash="-c8fm4l2ru5is54pz99fk65bhemdgxoz" />
+  <dep model="r:7ec26ee7-b99c-48f6-9850-811b7d91fc37(jetbrains.mps.core.syntax.java.editor)" hash="247eexhkmbtmgphu2tk6i1n2s4nyrie" />
   <common>
-    <dep model="r:00000000-0000-4000-0000-011c895902cb(jetbrains.mps.baseLanguage.generator.java.closures@generator)" />
+    <dep model="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <dep model="r:6d6aef8a-6633-4789-b993-98497e90be36(jetbrains.mps.core.syntax.java.typesystem)" />
-    <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" />
+    <dep model="r:7ec26ee7-b99c-48f6-9850-811b7d91fc37(jetbrains.mps.core.syntax.java.editor)" />
     <file name="Language.java" />
   </common>
 </dependencies>

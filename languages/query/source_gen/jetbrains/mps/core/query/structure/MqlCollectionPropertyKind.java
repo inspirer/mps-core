@@ -14,12 +14,6 @@ public enum MqlCollectionPropertyKind {
   IS_NOT_EMPTY("isNotEmpty", 5);
 
   private String myName;
-  private int myValue;
-
-  MqlCollectionPropertyKind(String name, int value) {
-    this.myName = name;
-    this.myValue = value;
-  }
 
   public String getName() {
     return this.myName;
@@ -27,10 +21,6 @@ public enum MqlCollectionPropertyKind {
 
   public String getValueAsString() {
     return "" + this.myValue;
-  }
-
-  public int getValue() {
-    return this.myValue;
   }
 
   public static List<MqlCollectionPropertyKind> getConstants() {
@@ -67,5 +57,16 @@ public enum MqlCollectionPropertyKind {
       return MqlCollectionPropertyKind.IS_NOT_EMPTY;
     }
     return MqlCollectionPropertyKind.getDefault();
+  }
+
+  private int myValue;
+
+  MqlCollectionPropertyKind(String name, int value) {
+    this.myName = name;
+    this.myValue = value;
+  }
+
+  public int getValue() {
+    return this.myValue;
   }
 }

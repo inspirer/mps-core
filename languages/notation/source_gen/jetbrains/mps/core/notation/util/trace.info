@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debugInfo>
-  <root nodeId="8632884680339392060" modelId="r:ed60ffd3-6005-452a-953f-db4b2887ebbf(jetbrains.mps.core.notation.util)">
-    <nodeInfo nodeId="8632884680339392066" fileName="NotationContext.java" startLine="7" startPosition="30" endLine="8" endPosition="27" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="node" />
-    <nodeInfo nodeId="8632884680339392070" fileName="NotationContext.java" startLine="8" startPosition="27" endLine="9" endPosition="35" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="isMultiple" />
-    <nodeInfo nodeId="8632884680339397021" fileName="NotationContext.java" startLine="9" startPosition="35" endLine="10" endPosition="35" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="isOptional" />
+  <root nodeRef="r:ed60ffd3-6005-452a-953f-db4b2887ebbf(jetbrains.mps.core.notation.util)/8632884680339392060">
+    <nodeInfo nodeId="8632884680339392066" fileName="NotationContext.java" startLine="8" startPosition="0" endLine="9" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="node" />
+    <nodeInfo nodeId="8632884680339392070" fileName="NotationContext.java" startLine="9" startPosition="0" endLine="10" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="isMultiple" />
+    <nodeInfo nodeId="8632884680339397021" fileName="NotationContext.java" startLine="10" startPosition="0" endLine="11" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="isOptional" />
     <nodeInfo nodeId="8632884680339397046" fileName="NotationContext.java" startLine="12" startPosition="78" endLine="13" endPosition="21" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
     <nodeInfo nodeId="8632884680339397055" fileName="NotationContext.java" startLine="13" startPosition="21" endLine="14" endPosition="33" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
     <nodeInfo nodeId="8632884680339397064" fileName="NotationContext.java" startLine="14" startPosition="33" endLine="15" endPosition="33" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
     <nodeInfo nodeId="8632884680339397112" fileName="NotationContext.java" startLine="18" startPosition="26" endLine="19" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="8632884680339397118" fileName="NotationContext.java" startLine="22" startPosition="31" endLine="23" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="8632884680339397124" fileName="NotationContext.java" startLine="26" startPosition="31" endLine="27" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="8632884680339397108" fileName="NotationContext.java" startLine="17" startPosition="0" endLine="21" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getNode#()Ljetbrains/mps/smodel/SNode;" />
-    <nodeInfo nodeId="8632884680339397114" fileName="NotationContext.java" startLine="21" startPosition="0" endLine="25" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="isMultiple#()Z" />
-    <nodeInfo nodeId="8632884680339397120" fileName="NotationContext.java" startLine="25" startPosition="0" endLine="29" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="isOptional#()Z" />
-    <nodeInfo nodeId="8632884680339397039" fileName="NotationContext.java" startLine="11" startPosition="0" endLine="16" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="NotationContext#(Ljetbrains/mps/smodel/SNode;ZZ)V" />
+    <nodeInfo nodeId="8632884680339397108" fileName="NotationContext.java" startLine="18" startPosition="0" endLine="21" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+    <nodeInfo nodeId="8632884680339397114" fileName="NotationContext.java" startLine="22" startPosition="0" endLine="25" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="isMultiple#()Z" />
+    <nodeInfo nodeId="8632884680339397120" fileName="NotationContext.java" startLine="26" startPosition="0" endLine="29" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="isOptional#()Z" />
+    <nodeInfo nodeId="8632884680339397039" fileName="NotationContext.java" startLine="12" startPosition="0" endLine="17" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="NotationContext#(Lorg/jetbrains/mps/openapi/model/SNode;ZZ)V" />
     <scopeInfo nodeId="8632884680339397111" fileName="NotationContext.java" startLine="18" startPosition="26" endLine="19" endPosition="16" />
     <scopeInfo nodeId="8632884680339397117" fileName="NotationContext.java" startLine="22" startPosition="31" endLine="23" endPosition="22" />
     <scopeInfo nodeId="8632884680339397123" fileName="NotationContext.java" startLine="26" startPosition="31" endLine="27" endPosition="22" />
     <scopeInfo nodeId="8632884680339397043" fileName="NotationContext.java" startLine="12" startPosition="78" endLine="15" endPosition="33" />
-    <scopeInfo nodeId="8632884680339397108" fileName="NotationContext.java" startLine="17" startPosition="0" endLine="21" endPosition="0" />
-    <scopeInfo nodeId="8632884680339397114" fileName="NotationContext.java" startLine="21" startPosition="0" endLine="25" endPosition="0" />
-    <scopeInfo nodeId="8632884680339397120" fileName="NotationContext.java" startLine="25" startPosition="0" endLine="29" endPosition="0" />
-    <scopeInfo nodeId="8632884680339397039" fileName="NotationContext.java" startLine="11" startPosition="0" endLine="16" endPosition="3">
+    <scopeInfo nodeId="8632884680339397108" fileName="NotationContext.java" startLine="18" startPosition="0" endLine="21" endPosition="0" />
+    <scopeInfo nodeId="8632884680339397114" fileName="NotationContext.java" startLine="22" startPosition="0" endLine="25" endPosition="0" />
+    <scopeInfo nodeId="8632884680339397120" fileName="NotationContext.java" startLine="26" startPosition="0" endLine="29" endPosition="0" />
+    <scopeInfo nodeId="8632884680339397039" fileName="NotationContext.java" startLine="12" startPosition="0" endLine="17" endPosition="0">
       <varInfo nodeId="8632884680339397053" varName="isMultiple" />
       <varInfo nodeId="8632884680339397062" varName="isOptional" />
       <varInfo nodeId="8632884680339397044" varName="node" />

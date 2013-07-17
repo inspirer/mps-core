@@ -5,7 +5,7 @@ package jetbrains.mps.core.syntax.java.behavior;
 import jetbrains.mps.core.syntax.behavior.SAction_BehaviorDescriptor;
 import jetbrains.mps.baseLanguage.behavior.ILocalVariableElementList_BehaviorDescriptor;
 import java.util.List;
-import jetbrains.mps.smodel.SNode;
+import org.jetbrains.mps.openapi.model.SNode;
 
 public class SJavaAction_BehaviorDescriptor extends SAction_BehaviorDescriptor implements ILocalVariableElementList_BehaviorDescriptor {
   public SJavaAction_BehaviorDescriptor() {

@@ -1,59 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debugInfo>
-  <unitInfo fileName="FindUsagesDescriptor.java" startLine="9" startPosition="0" endLine="18" endPosition="0" unitName="jetbrains.mps.core.structure.findUsages.FindUsagesDescriptor" />
-  <root nodeId="5130788244153403834" modelId="r:ba11a22c-8766-40f4-811f-3748286e3c92(jetbrains.mps.core.structure.findUsages)">
-    <nodeInfo nodeId="5130788244153403834" fileName="ConceptInheritors_Finder.java" startLine="16" startPosition="63" endLine="17" endPosition="115" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="LOG" />
-    <nodeInfo nodeId="5130788244153403834" fileName="ConceptInheritors_Finder.java" startLine="22" startPosition="34" endLine="23" endPosition="24" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="5130788244153403834" fileName="ConceptInheritors_Finder.java" startLine="26" startPosition="38" endLine="27" endPosition="30" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="5130788244153403834" fileName="ConceptInheritors_Finder.java" startLine="30" startPosition="30" endLine="31" endPosition="69" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="5130788244153403834" fileName="ConceptInheritors_Finder.java" startLine="34" startPosition="98" endLine="35" endPosition="39" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="5130788244153403941" fileName="ConceptInheritors_Finder.java" startLine="37" startPosition="172" endLine="38" endPosition="37" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="5130788244153403948" fileName="ConceptInheritors_Finder.java" startLine="39" startPosition="244" endLine="40" endPosition="111" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="5130788244153404046" fileName="ConceptInheritors_Finder.java" startLine="41" startPosition="252" endLine="42" endPosition="146" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1227530893131" fileName="ConceptInheritors_Finder.java" startLine="44" startPosition="40" endLine="45" endPosition="70" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1227531284031" fileName="ConceptInheritors_Finder.java" startLine="46" startPosition="192" endLine="47" endPosition="64" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="5130788244153403834" fileName="ConceptInheritors_Finder.java" startLine="51" startPosition="15" endLine="52" endPosition="21" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="5130788244153403834" fileName="ConceptInheritors_Finder.java" startLine="18" startPosition="0" endLine="20" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="ConceptInheritors_Finder#()V" />
-    <nodeInfo nodeId="1227531237144" fileName="ConceptInheritors_Finder.java" startLine="45" startPosition="70" endLine="48" endPosition="11" conceptFqName="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
-    <nodeInfo nodeId="5130788244153403834" fileName="ConceptInheritors_Finder.java" startLine="21" startPosition="0" endLine="25" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getDescription#()Ljava/lang/String;" />
-    <nodeInfo nodeId="5130788244153403834" fileName="ConceptInheritors_Finder.java" startLine="25" startPosition="0" endLine="29" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getLongDescription#()Ljava/lang/String;" />
-    <nodeInfo nodeId="5130788244153403834" fileName="ConceptInheritors_Finder.java" startLine="29" startPosition="0" endLine="33" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getConcept#()Ljava/lang/String;" />
-    <nodeInfo nodeId="1227530893129" fileName="ConceptInheritors_Finder.java" startLine="38" startPosition="37" endLine="43" endPosition="9" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="5130788244153404012" fileName="ConceptInheritors_Finder.java" startLine="43" startPosition="9" endLine="49" endPosition="9" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="1227530893124" fileName="ConceptInheritors_Finder.java" startLine="36" startPosition="9" endLine="50" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
-    <nodeInfo nodeId="5130788244153403834" fileName="ConceptInheritors_Finder.java" startLine="35" startPosition="39" endLine="53" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.TryStatement" />
-    <nodeInfo nodeId="5130788244153403834" fileName="ConceptInheritors_Finder.java" startLine="33" startPosition="0" endLine="55" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="doFind#(Ljetbrains/mps/smodel/SNode;Ljetbrains/mps/smodel/IScope;Ljava/util/List;Ljetbrains/mps/progress/ProgressMonitor;)V" />
-    <scopeInfo nodeId="5130788244153403834" fileName="ConceptInheritors_Finder.java" startLine="19" startPosition="37" endLine="19" endPosition="37" />
-    <scopeInfo nodeId="5130788244153403834" fileName="ConceptInheritors_Finder.java" startLine="22" startPosition="34" endLine="23" endPosition="24" />
-    <scopeInfo nodeId="5130788244153403834" fileName="ConceptInheritors_Finder.java" startLine="26" startPosition="38" endLine="27" endPosition="30" />
-    <scopeInfo nodeId="5130788244153403834" fileName="ConceptInheritors_Finder.java" startLine="30" startPosition="30" endLine="31" endPosition="69" />
-    <scopeInfo nodeId="1227530893130" fileName="ConceptInheritors_Finder.java" startLine="39" startPosition="244" endLine="40" endPosition="111" />
-    <scopeInfo nodeId="5130788244153403977" fileName="ConceptInheritors_Finder.java" startLine="41" startPosition="252" endLine="42" endPosition="146" />
-    <scopeInfo nodeId="1227531237147" fileName="ConceptInheritors_Finder.java" startLine="46" startPosition="192" endLine="47" endPosition="64" />
-    <scopeInfo nodeId="5130788244153403834" fileName="ConceptInheritors_Finder.java" startLine="51" startPosition="15" endLine="52" endPosition="21" />
-    <scopeInfo nodeId="5130788244153403834" fileName="ConceptInheritors_Finder.java" startLine="18" startPosition="0" endLine="20" endPosition="3" />
-    <scopeInfo nodeId="1227531237144" fileName="ConceptInheritors_Finder.java" startLine="45" startPosition="70" endLine="48" endPosition="11">
-      <varInfo nodeId="1227531237144" varName="concept" />
+  <unitInfo fileName="FindUsagesDescriptor.java" startLine="8" startPosition="0" endLine="17" endPosition="0" unitName="jetbrains.mps.core.structure.findUsages.FindUsagesDescriptor" />
+  <root nodeRef="r:ba11a22c-8766-40f4-811f-3748286e3c92(jetbrains.mps.core.structure.findUsages)/5130788244153403834">
+    <nodeInfo nodeId="5130788244153403834" fileName="ConceptInheritors_Finder.java" startLine="18" startPosition="0" endLine="19" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="LOG" />
+    <nodeInfo nodeId="5130788244153403834" fileName="ConceptInheritors_Finder.java" startLine="24" startPosition="34" endLine="25" endPosition="24" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="5130788244153403834" fileName="ConceptInheritors_Finder.java" startLine="29" startPosition="38" endLine="30" endPosition="30" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="5130788244153403834" fileName="ConceptInheritors_Finder.java" startLine="34" startPosition="30" endLine="35" endPosition="69" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="5130788244153403834" fileName="ConceptInheritors_Finder.java" startLine="39" startPosition="103" endLine="40" endPosition="39" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="5130788244153403941" fileName="ConceptInheritors_Finder.java" startLine="42" startPosition="172" endLine="43" endPosition="37" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="5130788244153403948" fileName="ConceptInheritors_Finder.java" startLine="44" startPosition="244" endLine="45" endPosition="111" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="5130788244153404046" fileName="ConceptInheritors_Finder.java" startLine="46" startPosition="252" endLine="47" endPosition="146" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1227530893131" fileName="ConceptInheritors_Finder.java" startLine="49" startPosition="40" endLine="50" endPosition="70" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1227531284031" fileName="ConceptInheritors_Finder.java" startLine="51" startPosition="192" endLine="52" endPosition="64" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="5130788244153403834" fileName="ConceptInheritors_Finder.java" startLine="56" startPosition="15" endLine="57" endPosition="21" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="5130788244153403834" fileName="ConceptInheritors_Finder.java" startLine="20" startPosition="0" endLine="22" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="ConceptInheritors_Finder#()V" />
+    <nodeInfo nodeId="1227531237144" fileName="ConceptInheritors_Finder.java" startLine="50" startPosition="70" endLine="53" endPosition="11" conceptFqName="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+    <nodeInfo nodeId="5130788244153403834" fileName="ConceptInheritors_Finder.java" startLine="23" startPosition="0" endLine="27" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getDescription#()Ljava/lang/String;" />
+    <nodeInfo nodeId="5130788244153403834" fileName="ConceptInheritors_Finder.java" startLine="28" startPosition="0" endLine="32" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getLongDescription#()Ljava/lang/String;" />
+    <nodeInfo nodeId="5130788244153403834" fileName="ConceptInheritors_Finder.java" startLine="33" startPosition="0" endLine="37" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getConcept#()Ljava/lang/String;" />
+    <nodeInfo nodeId="1227530893129" fileName="ConceptInheritors_Finder.java" startLine="43" startPosition="37" endLine="48" endPosition="9" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="5130788244153404012" fileName="ConceptInheritors_Finder.java" startLine="48" startPosition="9" endLine="54" endPosition="9" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="1227530893124" fileName="ConceptInheritors_Finder.java" startLine="41" startPosition="9" endLine="55" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+    <nodeInfo nodeId="5130788244153403834" fileName="ConceptInheritors_Finder.java" startLine="40" startPosition="39" endLine="58" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.TryStatement" />
+    <nodeInfo nodeId="5130788244153403834" fileName="ConceptInheritors_Finder.java" startLine="38" startPosition="0" endLine="60" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="doFind#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/module/SearchScope;Ljava/util/List;Lorg/jetbrains/mps/openapi/util/ProgressMonitor;)V" />
+    <scopeInfo nodeId="5130788244153403834" fileName="ConceptInheritors_Finder.java" startLine="20" startPosition="37" endLine="20" endPosition="37" />
+    <scopeInfo nodeId="5130788244153403834" fileName="ConceptInheritors_Finder.java" startLine="24" startPosition="34" endLine="25" endPosition="24" />
+    <scopeInfo nodeId="5130788244153403834" fileName="ConceptInheritors_Finder.java" startLine="29" startPosition="38" endLine="30" endPosition="30" />
+    <scopeInfo nodeId="5130788244153403834" fileName="ConceptInheritors_Finder.java" startLine="34" startPosition="30" endLine="35" endPosition="69" />
+    <scopeInfo nodeId="1227530893130" fileName="ConceptInheritors_Finder.java" startLine="44" startPosition="244" endLine="45" endPosition="111" />
+    <scopeInfo nodeId="5130788244153403977" fileName="ConceptInheritors_Finder.java" startLine="46" startPosition="252" endLine="47" endPosition="146" />
+    <scopeInfo nodeId="1227531237147" fileName="ConceptInheritors_Finder.java" startLine="51" startPosition="192" endLine="52" endPosition="64" />
+    <scopeInfo nodeId="5130788244153403834" fileName="ConceptInheritors_Finder.java" startLine="56" startPosition="15" endLine="57" endPosition="21" />
+    <scopeInfo nodeId="5130788244153403834" fileName="ConceptInheritors_Finder.java" startLine="20" startPosition="0" endLine="22" endPosition="0" />
+    <scopeInfo nodeId="1227531237144" fileName="ConceptInheritors_Finder.java" startLine="50" startPosition="70" endLine="53" endPosition="11">
+      <varInfo nodeId="1227531237145" varName="concept" />
     </scopeInfo>
-    <scopeInfo nodeId="5130788244153403834" fileName="ConceptInheritors_Finder.java" startLine="21" startPosition="0" endLine="25" endPosition="0" />
-    <scopeInfo nodeId="5130788244153403834" fileName="ConceptInheritors_Finder.java" startLine="25" startPosition="0" endLine="29" endPosition="0" />
-    <scopeInfo nodeId="5130788244153403834" fileName="ConceptInheritors_Finder.java" startLine="29" startPosition="0" endLine="33" endPosition="0" />
-    <scopeInfo nodeId="5130788244153404013" fileName="ConceptInheritors_Finder.java" startLine="44" startPosition="40" endLine="48" endPosition="11" />
-    <scopeInfo nodeId="1227530893128" fileName="ConceptInheritors_Finder.java" startLine="37" startPosition="172" endLine="49" endPosition="9">
+    <scopeInfo nodeId="5130788244153403834" fileName="ConceptInheritors_Finder.java" startLine="23" startPosition="0" endLine="27" endPosition="0" />
+    <scopeInfo nodeId="5130788244153403834" fileName="ConceptInheritors_Finder.java" startLine="28" startPosition="0" endLine="32" endPosition="0" />
+    <scopeInfo nodeId="5130788244153403834" fileName="ConceptInheritors_Finder.java" startLine="33" startPosition="0" endLine="37" endPosition="0" />
+    <scopeInfo nodeId="5130788244153404013" fileName="ConceptInheritors_Finder.java" startLine="49" startPosition="40" endLine="53" endPosition="11" />
+    <scopeInfo nodeId="1227530893128" fileName="ConceptInheritors_Finder.java" startLine="42" startPosition="172" endLine="54" endPosition="9">
       <varInfo nodeId="5130788244153403942" varName="directInheritor" />
     </scopeInfo>
-    <scopeInfo nodeId="1227530893124" fileName="ConceptInheritors_Finder.java" startLine="36" startPosition="9" endLine="50" endPosition="7">
-      <varInfo nodeId="1227530893124" varName="nodeUsage" />
+    <scopeInfo nodeId="1227530893124" fileName="ConceptInheritors_Finder.java" startLine="41" startPosition="9" endLine="55" endPosition="7">
+      <varInfo nodeId="1227530893125" varName="nodeUsage" />
     </scopeInfo>
-    <scopeInfo nodeId="5130788244153403836" fileName="ConceptInheritors_Finder.java" startLine="36" startPosition="9" endLine="50" endPosition="7" />
-    <scopeInfo nodeId="5130788244153403834" fileName="ConceptInheritors_Finder.java" startLine="34" startPosition="98" endLine="53" endPosition="5" />
-    <scopeInfo nodeId="5130788244153403834" fileName="ConceptInheritors_Finder.java" startLine="33" startPosition="0" endLine="55" endPosition="0">
+    <scopeInfo nodeId="5130788244153403836" fileName="ConceptInheritors_Finder.java" startLine="41" startPosition="9" endLine="55" endPosition="7" />
+    <scopeInfo nodeId="5130788244153403834" fileName="ConceptInheritors_Finder.java" startLine="39" startPosition="103" endLine="58" endPosition="5" />
+    <scopeInfo nodeId="5130788244153403834" fileName="ConceptInheritors_Finder.java" startLine="38" startPosition="0" endLine="60" endPosition="0">
       <varInfo nodeId="5130788244153403834" varName="_results" />
       <varInfo nodeId="5130788244153403834" varName="monitor" />
       <varInfo nodeId="5130788244153403834" varName="node" />
       <varInfo nodeId="5130788244153403834" varName="scope" />
     </scopeInfo>
-    <unitInfo nodeId="5130788244153403834" fileName="ConceptInheritors_Finder.java" startLine="16" startPosition="0" endLine="56" endPosition="0" unitName="jetbrains.mps.core.structure.findUsages.ConceptInheritors_Finder" />
+    <unitInfo nodeId="5130788244153403834" fileName="ConceptInheritors_Finder.java" startLine="17" startPosition="0" endLine="61" endPosition="0" unitName="jetbrains.mps.core.structure.findUsages.ConceptInheritors_Finder" />
   </root>
 </debugInfo>
 

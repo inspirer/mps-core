@@ -4,31 +4,31 @@ package jetbrains.mps.core.smodel.structure;
 
 import jetbrains.mps.smodel.runtime.ConceptDescriptor;
 import java.util.Arrays;
-import jetbrains.mps.smodel.runtime.impl.CompiledConceptDescriptor;
+import jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder;
 import jetbrains.mps.smodel.runtime.interpreted.StructureAspectInterpreted;
 
 public class StructureAspectDescriptor implements jetbrains.mps.smodel.runtime.StructureAspectDescriptor {
-  private static String[] stringSwitchCases_1htk8d_a0a0a = new String[]{"jetbrains.mps.core.smodel.structure.MqlLinkSelector", "jetbrains.mps.core.smodel.structure.MqlModelQuery", "jetbrains.mps.core.smodel.structure.MqlNodeType", "jetbrains.mps.core.smodel.structure.MqlPropertySelector", "jetbrains.mps.core.smodel.structure.SConceptQuery", "jetbrains.mps.core.smodel.structure.SConceptQueryCall"};
-
   public StructureAspectDescriptor() {
   }
 
   public ConceptDescriptor getDescriptor(String conceptFqName) {
-    switch (Arrays.binarySearch(stringSwitchCases_1htk8d_a0a0a, conceptFqName)) {
+    switch (Arrays.binarySearch(stringSwitchCases_1htk8d_a0a0b, conceptFqName)) {
       case 0:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.smodel.structure.MqlLinkSelector", "jetbrains.mps.core.query.structure.MqlSelector", false, new String[]{"jetbrains.mps.core.query.structure.MqlSelector"}, new String[]{}, new String[]{"link"});
+        return new ConceptDescriptorBuilder("jetbrains.mps.core.smodel.structure.MqlLinkSelector").super_("jetbrains.mps.core.query.structure.MqlSelector").parents("jetbrains.mps.core.query.structure.MqlSelector").references("link").create();
       case 1:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.smodel.structure.MqlModelQuery", "jetbrains.mps.core.query.structure.MqlQuery", false, new String[]{"jetbrains.mps.core.query.structure.MqlQuery", "jetbrains.mps.core.query.structure.MqlThisProvider"}, new String[]{}, new String[]{});
+        return new ConceptDescriptorBuilder("jetbrains.mps.core.smodel.structure.MqlModelQuery").super_("jetbrains.mps.core.query.structure.MqlQuery").parents("jetbrains.mps.core.query.structure.MqlQuery", "jetbrains.mps.core.query.structure.MqlThisProvider").children(new String[]{"contextNode"}, new boolean[]{false}).create();
       case 2:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.smodel.structure.MqlNodeType", "jetbrains.mps.core.query.structure.MqlType", false, new String[]{"jetbrains.mps.core.query.structure.MqlType"}, new String[]{}, new String[]{"concept"});
+        return new ConceptDescriptorBuilder("jetbrains.mps.core.smodel.structure.MqlNodeType").super_("jetbrains.mps.core.query.structure.MqlType").parents("jetbrains.mps.core.query.structure.MqlType").references("concept").create();
       case 3:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.smodel.structure.MqlPropertySelector", "jetbrains.mps.core.query.structure.MqlSelector", false, new String[]{"jetbrains.mps.core.query.structure.MqlSelector"}, new String[]{}, new String[]{"property"});
+        return new ConceptDescriptorBuilder("jetbrains.mps.core.smodel.structure.MqlPropertySelector").super_("jetbrains.mps.core.query.structure.MqlSelector").parents("jetbrains.mps.core.query.structure.MqlSelector").references("property").create();
       case 4:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.smodel.structure.SConceptQuery", "jetbrains.mps.core.structure.structure.SConceptMember", false, new String[]{"jetbrains.mps.core.structure.structure.SConceptMember", "jetbrains.mps.lang.core.structure.INamedConcept", "jetbrains.mps.lang.core.structure.IResolveInfo", "jetbrains.mps.core.query.structure.MqlParametersContainer", "jetbrains.mps.core.query.structure.MqlThisProvider", "jetbrains.mps.lang.core.structure.ScopeProvider"}, new String[]{"isAbstract", "isFinal", "isOverride"}, new String[]{});
+        return new ConceptDescriptorBuilder("jetbrains.mps.core.smodel.structure.SConceptQuery").super_("jetbrains.mps.core.structure.structure.SConceptMember").parents("jetbrains.mps.core.structure.structure.SConceptMember", "jetbrains.mps.lang.core.structure.INamedConcept", "jetbrains.mps.lang.core.structure.IResolveInfo", "jetbrains.mps.core.query.structure.MqlParametersContainer", "jetbrains.mps.core.query.structure.MqlThisProvider", "jetbrains.mps.lang.core.structure.ScopeProvider").properties("isAbstract", "isFinal", "isOverride").children(new String[]{"type", "body"}, new boolean[]{false, false}).alias("query", "").create();
       case 5:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.smodel.structure.SConceptQueryCall", "jetbrains.mps.core.query.structure.MqlSelector", false, new String[]{"jetbrains.mps.core.query.structure.MqlSelector"}, new String[]{}, new String[]{"query"});
+        return new ConceptDescriptorBuilder("jetbrains.mps.core.smodel.structure.SConceptQueryCall").super_("jetbrains.mps.core.query.structure.MqlSelector").parents("jetbrains.mps.core.query.structure.MqlSelector").references("query").children(new String[]{"arguments"}, new boolean[]{true}).alias("", "concept query call").create();
       default:
         return StructureAspectInterpreted.getInstance().getDescriptor(conceptFqName);
     }
   }
+
+  private static String[] stringSwitchCases_1htk8d_a0a0b = new String[]{"jetbrains.mps.core.smodel.structure.MqlLinkSelector", "jetbrains.mps.core.smodel.structure.MqlModelQuery", "jetbrains.mps.core.smodel.structure.MqlNodeType", "jetbrains.mps.core.smodel.structure.MqlPropertySelector", "jetbrains.mps.core.smodel.structure.SConceptQuery", "jetbrains.mps.core.smodel.structure.SConceptQueryCall"};
 }

@@ -4,14 +4,13 @@ package jetbrains.mps.core.structure.pluginSolution.plugin;
 
 import jetbrains.mps.workbench.action.BaseAction;
 import javax.swing.Icon;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 import com.intellij.openapi.actionSystem.AnActionEvent;
 import java.util.Map;
-import jetbrains.mps.project.IModule;
+import org.jetbrains.mps.openapi.module.SModule;
 import jetbrains.mps.internal.collections.runtime.MapSequence;
 import jetbrains.mps.smodel.Language;
 import org.jetbrains.annotations.NotNull;
+import org.apache.log4j.Priority;
 import com.intellij.openapi.actionSystem.PlatformDataKeys;
 import jetbrains.mps.ide.actions.MPSCommonDataKeys;
 import jetbrains.mps.ide.messages.MessagesViewTool;
@@ -21,21 +20,20 @@ import jetbrains.mps.messages.IMessage;
 import jetbrains.mps.messages.Message;
 import jetbrains.mps.messages.MessageKind;
 import jetbrains.mps.smodel.MPSModuleRepository;
-import jetbrains.mps.smodel.SModelFqName;
-import jetbrains.mps.smodel.SModelDescriptor;
+import org.jetbrains.mps.openapi.model.SModel;
 import jetbrains.mps.smodel.SModelRepository;
-import jetbrains.mps.smodel.SModel;
-import jetbrains.mps.smodel.SNode;
+import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.smodel.DefaultSModelDescriptor;
 import jetbrains.mps.core.util.merge.MergeSession;
 import jetbrains.mps.internal.collections.runtime.Sequence;
-import jetbrains.mps.project.SModelRoot;
+import jetbrains.mps.persistence.DefaultModelRoot;
+import org.jetbrains.mps.openapi.persistence.ModelRoot;
 import jetbrains.mps.internal.collections.runtime.IWhereFilter;
-import jetbrains.mps.smodel.persistence.DefaultModelRootManager;
+import org.apache.log4j.Logger;
+import org.apache.log4j.LogManager;
 
 public class MigrateStructure_Action extends BaseAction {
   private static final Icon ICON = null;
-  protected static Log log = LogFactory.getLog(MigrateStructure_Action.class);
 
   public MigrateStructure_Action() {
     super("Migrate structure", "", ICON);
@@ -49,7 +47,7 @@ public class MigrateStructure_Action extends BaseAction {
   }
 
   public boolean isApplicable(AnActionEvent event, final Map<String, Object> _params) {
-    return ((IModule) MapSequence.fromMap(_params).get("module")) instanceof Language;
+    return ((SModule) MapSequence.fromMap(_params).get("module")) instanceof Language;
   }
 
   public void doUpdate(@NotNull AnActionEvent event, final Map<String, Object> _params) {
@@ -59,8 +57,8 @@ public class MigrateStructure_Action extends BaseAction {
         this.setEnabledState(event.getPresentation(), enabled);
       }
     } catch (Throwable t) {
-      if (log.isErrorEnabled()) {
-        log.error("User's action doUpdate method failed. Action:" + "MigrateStructure", t);
+      if (LOG.isEnabledFor(Priority.ERROR)) {
+        LOG.error("User's action doUpdate method failed. Action:" + "MigrateStructure", t);
       }
       this.disable(event.getPresentation());
     }
@@ -82,8 +80,8 @@ public class MigrateStructure_Action extends BaseAction {
     try {
       final MessagesViewTool tool = ((Project) MapSequence.fromMap(_params).get("project")).getComponent(MessagesViewTool.class);
       if (tool == null) {
-        if (log.isErrorEnabled()) {
-          log.error("cannot get message view tool");
+        if (LOG.isEnabledFor(Priority.ERROR)) {
+          LOG.error("cannot get message view tool");
         }
       }
       IMessageHandler mh = new IMessageHandler() {
@@ -95,13 +93,13 @@ public class MigrateStructure_Action extends BaseAction {
           tool.clear("Migrate structure");
         }
       };
-      Language language = (Language) ((IModule) MapSequence.fromMap(_params).get("module"));
+      Language language = (Language) ((SModule) MapSequence.fromMap(_params).get("module"));
       mh.handle(new Message(MessageKind.INFORMATION, "converting " + language.getModuleFqName()));
 
       Language newStructureLanguage = (Language) MPSModuleRepository.getInstance().getModuleByFqName("jetbrains.mps.core.structure");
       language.addUsedLanguage(newStructureLanguage.getModuleReference());
-      SModelFqName newModelName = SModelFqName.fromString(language.getModuleFqName() + ".core");
-      SModelDescriptor desc = SModelRepository.getInstance().getModelDescriptor(newModelName);
+      String newModelName = language.getModuleName() + ".core";
+      SModel desc = SModelRepository.getInstance().getModelDescriptor(newModelName);
       SModel newStructure;
       SNode converted = new LanguageConverter(language, mh).convert();
       if (desc instanceof DefaultSModelDescriptor) {
@@ -110,19 +108,25 @@ public class MigrateStructure_Action extends BaseAction {
         session.restoreRefs();
         session.apply();
       } else {
-        SModelRoot root = Sequence.fromIterable(((Iterable<SModelRoot>) language.getSModelRoots())).where(new IWhereFilter<SModelRoot>() {
-          public boolean accept(SModelRoot it) {
-            return it.getManager() instanceof DefaultModelRootManager;
+        DefaultModelRoot root = (DefaultModelRoot) Sequence.fromIterable(((Iterable<ModelRoot>) language.getModelRoots())).where(new IWhereFilter<ModelRoot>() {
+          public boolean accept(ModelRoot it) {
+            return it instanceof DefaultModelRoot;
           }
         }).first();
-        newStructure = language.createModel(newModelName, root, null).getSModel();
-        newStructure.addLanguage(newStructureLanguage.getModuleReference());
-        newStructure.addRoot(converted);
+        newStructure = root.createModel(newModelName);
+        if (newStructure == null) {
+          mh.handle(new Message(MessageKind.INFORMATION, "cannot create model `" + newModelName + "': ()"));
+          return;
+        }
+        ((jetbrains.mps.smodel.SModel) newStructure).addLanguage(newStructureLanguage.getModuleReference());
+        newStructure.addRootNode(converted);
       }
     } catch (Throwable t) {
-      if (log.isErrorEnabled()) {
-        log.error("User's action execute method failed. Action:" + "MigrateStructure", t);
+      if (LOG.isEnabledFor(Priority.ERROR)) {
+        LOG.error("User's action execute method failed. Action:" + "MigrateStructure", t);
       }
     }
   }
+
+  protected static Logger LOG = LogManager.getLogger(MigrateStructure_Action.class);
 }

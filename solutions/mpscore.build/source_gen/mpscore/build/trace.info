@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debugInfo>
-  <root nodeId="6515501733571340831" modelId="r:3855c010-0732-44c0-ae39-f8859709137d(mpscore.build)">
-    <unitInfo nodeId="6515501733571340831" fileName="mpscore.xml" startLine="1" startPosition="0" endLine="1180" endPosition="10" unitName="mpscore.build.mpscore" />
+  <root nodeRef="r:3855c010-0732-44c0-ae39-f8859709137d(mpscore.build)/6515501733571340831">
+    <unitInfo nodeId="6515501733571340831" fileName="mpscore.xml" startLine="1" startPosition="0" endLine="1323" endPosition="10" unitName="mpscore.build.mpscore" />
   </root>
 </debugInfo>
 

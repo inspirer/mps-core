@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <solution name="jetbrains.mps.core.workflow.pluginSolution" uuid="f627a4ae-01bc-4498-8eef-9b82982471c2" pluginKind="PLUGIN_OTHER" compileInMPS="true">
   <models>
-    <modelRoot path="${solution_descriptor}/models" />
+    <modelRoot contentPath="${module}" type="default">
+      <sourceRoot location="models" />
+    </modelRoot>
   </models>
   <sourcePath />
   <dependencies>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
     <dependency reexport="false">6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)</dependency>
+    <dependency reexport="false">498d89d2-c2e9-11e2-ad49-6cf049e62fe5(MPS.IDEA)</dependency>
     <dependency reexport="false">742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)</dependency>
     <dependency reexport="false">c898d4a2-ef8e-481f-aff5-15e46db05e03(jetbrains.mps.core.query)</dependency>
     <dependency reexport="false">78c70cc5-3e2a-478b-9524-f2d47690ac85(jetbrains.mps.core.workflow)</dependency>

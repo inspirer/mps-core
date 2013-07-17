@@ -29,13 +29,15 @@
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="jetbrains.mps.core.notation.behavior.SNotationPart_BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.IDontSubstituteByDefault_BehaviorDescriptor" />
+    <classNode extendsClassName="java.lang.Cloneable" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="jetbrains.mps.core.notation.behavior.SNotationCall_Behavior" file="SNotationCall_Behavior.java">
+    <classNode dependClassName="java.lang.Boolean" />
     <classNode dependClassName="java.lang.Iterable" />
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="jetbrains.mps.core.notation.behavior.SNotationContextProvider_Behavior" />
-    <classNode dependClassName="jetbrains.mps.core.notation.behavior.SNotationContext_Behavior" />
     <classNode dependClassName="jetbrains.mps.core.notation.util.NotationContext" />
     <classNode dependClassName="jetbrains.mps.core.structure.util.ConceptUtil" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ISelector" />
@@ -46,19 +48,22 @@
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
     <classNode dependClassName="jetbrains.mps.scope.Scope" />
-    <classNode dependClassName="jetbrains.mps.smodel.SNode" />
+    <classNode dependClassName="jetbrains.mps.smodel.behaviour.BehaviorReflection" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
   </dependency>
   <dependency className="jetbrains.mps.core.notation.behavior.SNotationCall_BehaviorDescriptor" file="SNotationCall_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="jetbrains.mps.core.notation.behavior.SNotationCorePart_BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.IDontSubstituteByDefault_BehaviorDescriptor" />
+    <classNode extendsClassName="java.lang.Cloneable" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="jetbrains.mps.core.notation.behavior.SNotationConceptContext_Behavior" file="SNotationConceptContext_Behavior.java">
+    <classNode dependClassName="java.lang.Boolean" />
     <classNode dependClassName="java.lang.Iterable" />
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="jetbrains.mps.core.notation.util.NotationContext" />
-    <classNode dependClassName="jetbrains.mps.core.structure.behavior.SAbstractConcept_Behavior" />
     <classNode dependClassName="jetbrains.mps.core.structure.util.ConceptUtil" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ISelector" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.IWhereFilter" />
@@ -68,7 +73,8 @@
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
     <classNode dependClassName="jetbrains.mps.scope.Scope" />
-    <classNode dependClassName="jetbrains.mps.smodel.SNode" />
+    <classNode dependClassName="jetbrains.mps.smodel.behaviour.BehaviorReflection" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
   </dependency>
   <dependency className="jetbrains.mps.core.notation.behavior.SNotationConceptContext_BehaviorDescriptor" file="SNotationConceptContext_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Override" />
@@ -76,35 +82,35 @@
     <classNode dependClassName="jetbrains.mps.core.notation.behavior.SNotationConceptContext_Behavior" />
     <classNode dependClassName="jetbrains.mps.core.notation.behavior.SNotationContext_BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.core.notation.util.NotationContext" />
-    <classNode dependClassName="jetbrains.mps.smodel.SNode" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="jetbrains.mps.core.notation.behavior.SNotationContextProvider_Behavior" file="SNotationContextProvider_Behavior.java">
     <classNode dependClassName="java.lang.Class" />
+    <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="jetbrains.mps.core.notation.util.NotationContext" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
-    <classNode dependClassName="jetbrains.mps.smodel.SNode" />
     <classNode dependClassName="jetbrains.mps.smodel.behaviour.BehaviorManager" />
-    <classNode dependClassName="jetbrains.mps.smodel.language.ConceptRegistry" />
-    <classNode dependClassName="jetbrains.mps.smodel.runtime.BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.smodel.behaviour.BehaviorReflection" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
   </dependency>
   <dependency className="jetbrains.mps.core.notation.behavior.SNotationContextProvider_BehaviorDescriptor" file="SNotationContextProvider_BehaviorDescriptor.java">
     <classNode dependClassName="jetbrains.mps.core.notation.util.NotationContext" />
-    <classNode dependClassName="jetbrains.mps.smodel.SNode" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
   </dependency>
   <dependency className="jetbrains.mps.core.notation.behavior.SNotationContext_Behavior" file="SNotationContext_Behavior.java">
     <classNode dependClassName="java.lang.Boolean" />
     <classNode dependClassName="java.lang.Class" />
+    <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="jetbrains.mps.core.notation.util.NotationContext" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
-    <classNode dependClassName="jetbrains.mps.smodel.SNode" />
     <classNode dependClassName="jetbrains.mps.smodel.behaviour.BehaviorManager" />
-    <classNode dependClassName="jetbrains.mps.smodel.language.ConceptRegistry" />
-    <classNode dependClassName="jetbrains.mps.smodel.runtime.BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.smodel.behaviour.BehaviorReflection" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
   </dependency>
   <dependency className="jetbrains.mps.core.notation.behavior.SNotationContext_BehaviorDescriptor" file="SNotationContext_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Override" />
@@ -112,7 +118,7 @@
     <classNode dependClassName="jetbrains.mps.core.notation.behavior.SNotationContext_Behavior" />
     <classNode dependClassName="jetbrains.mps.core.notation.util.NotationContext" />
     <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
-    <classNode dependClassName="jetbrains.mps.smodel.SNode" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="jetbrains.mps.core.notation.behavior.SNotationCorePart_BehaviorDescriptor" file="SNotationCorePart_BehaviorDescriptor.java">
@@ -130,10 +136,11 @@
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="jetbrains.mps.core.notation.behavior.SNotationMapping_Behavior" file="SNotationMapping_Behavior.java">
-    <classNode dependClassName="jetbrains.mps.core.notation.behavior.SStructureEntityRef_Behavior" />
+    <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="jetbrains.mps.core.notation.util.NotationContext" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
-    <classNode dependClassName="jetbrains.mps.smodel.SNode" />
+    <classNode dependClassName="jetbrains.mps.smodel.behaviour.BehaviorReflection" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
   </dependency>
   <dependency className="jetbrains.mps.core.notation.behavior.SNotationMapping_BehaviorDescriptor" file="SNotationMapping_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Override" />
@@ -142,19 +149,20 @@
     <classNode dependClassName="jetbrains.mps.core.notation.behavior.SNotationPartWithStyle_BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.core.notation.behavior.SNotationPart_BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.core.notation.util.NotationContext" />
-    <classNode dependClassName="jetbrains.mps.smodel.SNode" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.IDontSubstituteByDefault_BehaviorDescriptor" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="java.lang.Cloneable" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="jetbrains.mps.core.notation.behavior.SNotationNewLine_Behavior" file="SNotationNewLine_Behavior.java">
-    <classNode dependClassName="jetbrains.mps.smodel.SNode" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
   </dependency>
   <dependency className="jetbrains.mps.core.notation.behavior.SNotationNewLine_BehaviorDescriptor" file="SNotationNewLine_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="jetbrains.mps.core.notation.behavior.SNotationNewLine_Behavior" />
     <classNode dependClassName="jetbrains.mps.core.notation.behavior.SNotationPart_BehaviorDescriptor" />
-    <classNode dependClassName="jetbrains.mps.smodel.SNode" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="jetbrains.mps.core.notation.behavior.SNotationNospace_BehaviorDescriptor" file="SNotationNospace_BehaviorDescriptor.java">
@@ -168,7 +176,7 @@
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.IWhereFilter" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
-    <classNode dependClassName="jetbrains.mps.smodel.SNode" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
   </dependency>
   <dependency className="jetbrains.mps.core.notation.behavior.SNotationParentheses_BehaviorDescriptor" file="SNotationParentheses_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Override" />
@@ -180,14 +188,15 @@
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="jetbrains.mps.core.notation.behavior.SNotationPartList_Behavior" file="SNotationPartList_Behavior.java">
-    <classNode dependClassName="jetbrains.mps.core.notation.behavior.SNotationContextProvider_Behavior" />
-    <classNode dependClassName="jetbrains.mps.core.notation.behavior.SNotationPart_Behavior" />
+    <classNode dependClassName="java.lang.Boolean" />
+    <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="jetbrains.mps.core.notation.util.NotationContext" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.IWhereFilter" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
-    <classNode dependClassName="jetbrains.mps.smodel.SNode" />
+    <classNode dependClassName="jetbrains.mps.smodel.behaviour.BehaviorReflection" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
   </dependency>
   <dependency className="jetbrains.mps.core.notation.behavior.SNotationPartList_BehaviorDescriptor" file="SNotationPartList_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Override" />
@@ -196,7 +205,7 @@
     <classNode dependClassName="jetbrains.mps.core.notation.behavior.SNotationPartList_Behavior" />
     <classNode dependClassName="jetbrains.mps.core.notation.util.NotationContext" />
     <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
-    <classNode dependClassName="jetbrains.mps.smodel.SNode" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="java.lang.Cloneable" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
@@ -204,16 +213,15 @@
   <dependency className="jetbrains.mps.core.notation.behavior.SNotationPart_Behavior" file="SNotationPart_Behavior.java">
     <classNode dependClassName="java.lang.Boolean" />
     <classNode dependClassName="java.lang.Class" />
+    <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="jetbrains.mps.core.notation.behavior.SNotationContextProvider_Behavior" />
     <classNode dependClassName="jetbrains.mps.core.notation.behavior.SNotationPartList_Behavior" />
     <classNode dependClassName="jetbrains.mps.core.notation.util.NotationContext" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
-    <classNode dependClassName="jetbrains.mps.smodel.SNode" />
     <classNode dependClassName="jetbrains.mps.smodel.behaviour.BehaviorManager" />
-    <classNode dependClassName="jetbrains.mps.smodel.language.ConceptRegistry" />
-    <classNode dependClassName="jetbrains.mps.smodel.runtime.BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.smodel.behaviour.BehaviorReflection" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
   </dependency>
   <dependency className="jetbrains.mps.core.notation.behavior.SNotationPart_BehaviorDescriptor" file="SNotationPart_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Override" />
@@ -222,16 +230,17 @@
     <classNode dependClassName="jetbrains.mps.core.notation.behavior.SNotationPart_Behavior" />
     <classNode dependClassName="jetbrains.mps.core.notation.util.NotationContext" />
     <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
-    <classNode dependClassName="jetbrains.mps.smodel.SNode" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="java.lang.Cloneable" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="jetbrains.mps.core.notation.behavior.SNotationPartsContainer_BehaviorDescriptor" file="SNotationPartsContainer_BehaviorDescriptor.java" />
   <dependency className="jetbrains.mps.core.notation.behavior.SNotationQuantifier_Behavior" file="SNotationQuantifier_Behavior.java">
-    <classNode dependClassName="jetbrains.mps.core.notation.behavior.SNotationContextProvider_Behavior" />
+    <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="jetbrains.mps.core.notation.util.NotationContext" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
-    <classNode dependClassName="jetbrains.mps.smodel.SNode" />
+    <classNode dependClassName="jetbrains.mps.smodel.behaviour.BehaviorReflection" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
   </dependency>
   <dependency className="jetbrains.mps.core.notation.behavior.SNotationQuantifier_BehaviorDescriptor" file="SNotationQuantifier_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Override" />
@@ -240,7 +249,8 @@
     <classNode dependClassName="jetbrains.mps.core.notation.behavior.SNotationPartWithStyle_BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.core.notation.behavior.SNotationQuantifier_Behavior" />
     <classNode dependClassName="jetbrains.mps.core.notation.util.NotationContext" />
-    <classNode dependClassName="jetbrains.mps.smodel.SNode" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.IDontSubstituteByDefault_BehaviorDescriptor" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="java.lang.Cloneable" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
@@ -266,6 +276,8 @@
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="jetbrains.mps.core.notation.behavior.SNotationPart_BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.IDontSubstituteByDefault_BehaviorDescriptor" />
+    <classNode extendsClassName="java.lang.Cloneable" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="jetbrains.mps.core.notation.behavior.SNotationTab_BehaviorDescriptor" file="SNotationTab_BehaviorDescriptor.java">
@@ -278,13 +290,17 @@
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="jetbrains.mps.core.notation.behavior.SNotationPart_BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.IDontSubstituteByDefault_BehaviorDescriptor" />
+    <classNode extendsClassName="java.lang.Cloneable" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="jetbrains.mps.core.notation.behavior.SNotation_Behavior" file="SNotation_Behavior.java">
-    <classNode dependClassName="jetbrains.mps.core.notation.behavior.SNotationContext_Behavior" />
+    <classNode dependClassName="java.lang.Class" />
+    <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="jetbrains.mps.core.notation.util.NotationContext" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
-    <classNode dependClassName="jetbrains.mps.smodel.SNode" />
+    <classNode dependClassName="jetbrains.mps.smodel.behaviour.BehaviorReflection" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
   </dependency>
   <dependency className="jetbrains.mps.core.notation.behavior.SNotation_BehaviorDescriptor" file="SNotation_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Override" />
@@ -294,20 +310,20 @@
     <classNode dependClassName="jetbrains.mps.core.notation.behavior.SNotation_Behavior" />
     <classNode dependClassName="jetbrains.mps.core.notation.util.NotationContext" />
     <classNode dependClassName="jetbrains.mps.core.structure.behavior.SStructurePart_BehaviorDescriptor" />
-    <classNode dependClassName="jetbrains.mps.smodel.SNode" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="java.lang.Cloneable" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="jetbrains.mps.core.notation.behavior.SStructureEntityRef_Behavior" file="SStructureEntityRef_Behavior.java">
     <classNode dependClassName="java.lang.Class" />
+    <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="jetbrains.mps.core.notation.util.NotationContext" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
-    <classNode dependClassName="jetbrains.mps.smodel.SNode" />
     <classNode dependClassName="jetbrains.mps.smodel.behaviour.BehaviorManager" />
-    <classNode dependClassName="jetbrains.mps.smodel.language.ConceptRegistry" />
-    <classNode dependClassName="jetbrains.mps.smodel.runtime.BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.smodel.behaviour.BehaviorReflection" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
   </dependency>
   <dependency className="jetbrains.mps.core.notation.behavior.SStructureEntityRef_BehaviorDescriptor" file="SStructureEntityRef_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Override" />
@@ -315,14 +331,14 @@
     <classNode dependClassName="jetbrains.mps.core.notation.behavior.SStructureEntityRef_Behavior" />
     <classNode dependClassName="jetbrains.mps.core.notation.util.NotationContext" />
     <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
-    <classNode dependClassName="jetbrains.mps.smodel.SNode" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="jetbrains.mps.core.notation.behavior.SStructureLinkRef_Behavior" file="SStructureLinkRef_Behavior.java">
     <classNode dependClassName="jetbrains.mps.core.notation.util.NotationContext" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
-    <classNode dependClassName="jetbrains.mps.smodel.SNode" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
   </dependency>
   <dependency className="jetbrains.mps.core.notation.behavior.SStructureLinkRef_BehaviorDescriptor" file="SStructureLinkRef_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Override" />
@@ -330,13 +346,13 @@
     <classNode dependClassName="jetbrains.mps.core.notation.behavior.SStructureEntityRef_BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.core.notation.behavior.SStructureLinkRef_Behavior" />
     <classNode dependClassName="jetbrains.mps.core.notation.util.NotationContext" />
-    <classNode dependClassName="jetbrains.mps.smodel.SNode" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="jetbrains.mps.core.notation.behavior.SStructurePropertyRef_Behavior" file="SStructurePropertyRef_Behavior.java">
     <classNode dependClassName="jetbrains.mps.core.notation.util.NotationContext" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
-    <classNode dependClassName="jetbrains.mps.smodel.SNode" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
   </dependency>
   <dependency className="jetbrains.mps.core.notation.behavior.SStructurePropertyRef_BehaviorDescriptor" file="SStructurePropertyRef_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Override" />
@@ -344,7 +360,7 @@
     <classNode dependClassName="jetbrains.mps.core.notation.behavior.SStructureEntityRef_BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.core.notation.behavior.SStructurePropertyRef_Behavior" />
     <classNode dependClassName="jetbrains.mps.core.notation.util.NotationContext" />
-    <classNode dependClassName="jetbrains.mps.smodel.SNode" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
 </dependenciesRoot>

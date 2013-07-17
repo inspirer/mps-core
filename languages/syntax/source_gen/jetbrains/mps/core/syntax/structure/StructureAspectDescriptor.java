@@ -4,55 +4,55 @@ package jetbrains.mps.core.syntax.structure;
 
 import jetbrains.mps.smodel.runtime.ConceptDescriptor;
 import java.util.Arrays;
-import jetbrains.mps.smodel.runtime.impl.CompiledConceptDescriptor;
+import jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder;
 import jetbrains.mps.smodel.runtime.interpreted.StructureAspectInterpreted;
 
 public class StructureAspectDescriptor implements jetbrains.mps.smodel.runtime.StructureAspectDescriptor {
-  private static String[] stringSwitchCases_1htk8d_a0a0a = new String[]{"jetbrains.mps.core.syntax.structure.SAction", "jetbrains.mps.core.syntax.structure.SGrammarPart", "jetbrains.mps.core.syntax.structure.SInputRef", "jetbrains.mps.core.syntax.structure.SLexem", "jetbrains.mps.core.syntax.structure.SLexerPart", "jetbrains.mps.core.syntax.structure.SLineComment", "jetbrains.mps.core.syntax.structure.SNamedPattern", "jetbrains.mps.core.syntax.structure.SNonTerm", "jetbrains.mps.core.syntax.structure.SPrio", "jetbrains.mps.core.syntax.structure.SReference", "jetbrains.mps.core.syntax.structure.SRegex", "jetbrains.mps.core.syntax.structure.SRule", "jetbrains.mps.core.syntax.structure.SRulePart", "jetbrains.mps.core.syntax.structure.SSource", "jetbrains.mps.core.syntax.structure.SSymbol", "jetbrains.mps.core.syntax.structure.SSymbolRef", "jetbrains.mps.core.syntax.structure.STargetLanguage", "jetbrains.mps.core.syntax.structure.SType"};
-
   public StructureAspectDescriptor() {
   }
 
   public ConceptDescriptor getDescriptor(String conceptFqName) {
-    switch (Arrays.binarySearch(stringSwitchCases_1htk8d_a0a0a, conceptFqName)) {
+    switch (Arrays.binarySearch(stringSwitchCases_1htk8d_a0a0b, conceptFqName)) {
       case 0:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.syntax.structure.SAction", "jetbrains.mps.lang.core.structure.BaseConcept", false, new String[]{"jetbrains.mps.core.syntax.structure.SRulePart", "jetbrains.mps.lang.core.structure.BaseConcept"}, new String[]{}, new String[]{});
+        return new ConceptDescriptorBuilder("jetbrains.mps.core.syntax.structure.SAction").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.core.syntax.structure.SRulePart", "jetbrains.mps.lang.core.structure.BaseConcept").abstract_().create();
       case 1:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.syntax.structure.SGrammarPart", "jetbrains.mps.lang.core.structure.BaseConcept", false, new String[]{"jetbrains.mps.lang.core.structure.BaseConcept"}, new String[]{}, new String[]{});
+        return new ConceptDescriptorBuilder("jetbrains.mps.core.syntax.structure.SGrammarPart").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept").alias("<empty>", "").create();
       case 2:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.syntax.structure.SInputRef", "jetbrains.mps.lang.core.structure.BaseConcept", false, new String[]{"jetbrains.mps.lang.core.structure.BaseConcept"}, new String[]{"noEoi"}, new String[]{"symbol"});
+        return new ConceptDescriptorBuilder("jetbrains.mps.core.syntax.structure.SInputRef").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept").properties("noEoi").references("symbol").create();
       case 3:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.syntax.structure.SLexem", "jetbrains.mps.core.syntax.structure.SLexerPart", false, new String[]{"jetbrains.mps.core.syntax.structure.SLexerPart"}, new String[]{}, new String[]{});
+        return new ConceptDescriptorBuilder("jetbrains.mps.core.syntax.structure.SLexem").super_("jetbrains.mps.core.syntax.structure.SLexerPart").parents("jetbrains.mps.core.syntax.structure.SLexerPart", "jetbrains.mps.lang.core.structure.IDontSubstituteByDefault").children(new String[]{"sym", "regexp", "action"}, new boolean[]{false, false, false}).create();
       case 4:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.syntax.structure.SLexerPart", "jetbrains.mps.lang.core.structure.BaseConcept", false, new String[]{"jetbrains.mps.lang.core.structure.BaseConcept"}, new String[]{}, new String[]{});
+        return new ConceptDescriptorBuilder("jetbrains.mps.core.syntax.structure.SLexerPart").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept").alias("<empty>", "").create();
       case 5:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.syntax.structure.SLineComment", "jetbrains.mps.core.syntax.structure.SLexerPart", false, new String[]{"jetbrains.mps.core.syntax.structure.SLexerPart"}, new String[]{"content"}, new String[]{});
+        return new ConceptDescriptorBuilder("jetbrains.mps.core.syntax.structure.SLineComment").super_("jetbrains.mps.core.syntax.structure.SLexerPart").parents("jetbrains.mps.core.syntax.structure.SLexerPart").properties("content").alias("#", "").create();
       case 6:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.syntax.structure.SNamedPattern", "jetbrains.mps.core.syntax.structure.SLexerPart", false, new String[]{"jetbrains.mps.core.syntax.structure.SLexerPart", "jetbrains.mps.lang.core.structure.INamedConcept"}, new String[]{}, new String[]{});
+        return new ConceptDescriptorBuilder("jetbrains.mps.core.syntax.structure.SNamedPattern").super_("jetbrains.mps.core.syntax.structure.SLexerPart").parents("jetbrains.mps.core.syntax.structure.SLexerPart", "jetbrains.mps.lang.core.structure.INamedConcept", "jetbrains.mps.lang.core.structure.IDontSubstituteByDefault").children(new String[]{"regex"}, new boolean[]{false}).create();
       case 7:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.syntax.structure.SNonTerm", "jetbrains.mps.core.syntax.structure.SGrammarPart", false, new String[]{"jetbrains.mps.core.syntax.structure.SGrammarPart"}, new String[]{}, new String[]{});
+        return new ConceptDescriptorBuilder("jetbrains.mps.core.syntax.structure.SNonTerm").super_("jetbrains.mps.core.syntax.structure.SGrammarPart").parents("jetbrains.mps.core.syntax.structure.SGrammarPart", "jetbrains.mps.lang.core.structure.IDontSubstituteByDefault").children(new String[]{"sym", "rules"}, new boolean[]{false, true}).alias("non-term", "").create();
       case 8:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.syntax.structure.SPrio", "jetbrains.mps.core.syntax.structure.SGrammarPart", false, new String[]{"jetbrains.mps.core.syntax.structure.SGrammarPart"}, new String[]{"kind"}, new String[]{});
+        return new ConceptDescriptorBuilder("jetbrains.mps.core.syntax.structure.SPrio").super_("jetbrains.mps.core.syntax.structure.SGrammarPart").parents("jetbrains.mps.core.syntax.structure.SGrammarPart").properties("kind").children(new String[]{"references"}, new boolean[]{true}).alias("%prio", "").create();
       case 9:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.syntax.structure.SReference", "jetbrains.mps.lang.core.structure.BaseConcept", false, new String[]{"jetbrains.mps.lang.core.structure.BaseConcept"}, new String[]{}, new String[]{"symbol"});
+        return new ConceptDescriptorBuilder("jetbrains.mps.core.syntax.structure.SReference").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept").references("symbol").create();
       case 10:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.syntax.structure.SRegex", "jetbrains.mps.lang.core.structure.BaseConcept", false, new String[]{"jetbrains.mps.lang.core.structure.BaseConcept"}, new String[]{"regexp"}, new String[]{});
+        return new ConceptDescriptorBuilder("jetbrains.mps.core.syntax.structure.SRegex").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept").properties("regexp").alias("/regexp/", "").create();
       case 11:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.syntax.structure.SRule", "jetbrains.mps.lang.core.structure.BaseConcept", false, new String[]{"jetbrains.mps.lang.core.structure.BaseConcept"}, new String[]{}, new String[]{});
+        return new ConceptDescriptorBuilder("jetbrains.mps.core.syntax.structure.SRule").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept").children(new String[]{"parts"}, new boolean[]{true}).create();
       case 12:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.syntax.structure.SRulePart", null, true, new String[]{}, new String[]{}, new String[]{});
+        return new ConceptDescriptorBuilder("jetbrains.mps.core.syntax.structure.SRulePart").interface_().create();
       case 13:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.syntax.structure.SSource", "jetbrains.mps.lang.core.structure.BaseConcept", false, new String[]{"jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept"}, new String[]{}, new String[]{});
+        return new ConceptDescriptorBuilder("jetbrains.mps.core.syntax.structure.SSource").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept").children(new String[]{"input", "lexerParts", "grammarParts", "targetLanguage"}, new boolean[]{true, true, true, false}).alias("Grammar", "").create();
       case 14:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.syntax.structure.SSymbol", "jetbrains.mps.lang.core.structure.BaseConcept", false, new String[]{"jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept"}, new String[]{}, new String[]{});
+        return new ConceptDescriptorBuilder("jetbrains.mps.core.syntax.structure.SSymbol").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept").children(new String[]{"type"}, new boolean[]{false}).create();
       case 15:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.syntax.structure.SSymbolRef", "jetbrains.mps.lang.core.structure.BaseConcept", false, new String[]{"jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.core.syntax.structure.SRulePart"}, new String[]{"refalias", "isOptional"}, new String[]{"ref"});
+        return new ConceptDescriptorBuilder("jetbrains.mps.core.syntax.structure.SSymbolRef").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.core.syntax.structure.SRulePart", "jetbrains.mps.lang.core.structure.IDontSubstituteByDefault").properties("refalias", "isOptional").references("ref").create();
       case 16:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.syntax.structure.STargetLanguage", "jetbrains.mps.lang.core.structure.BaseConcept", false, new String[]{"jetbrains.mps.lang.core.structure.BaseConcept"}, new String[]{}, new String[]{});
+        return new ConceptDescriptorBuilder("jetbrains.mps.core.syntax.structure.STargetLanguage").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept").abstract_().create();
       case 17:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.syntax.structure.SType", "jetbrains.mps.lang.core.structure.BaseConcept", false, new String[]{"jetbrains.mps.lang.core.structure.BaseConcept"}, new String[]{}, new String[]{});
+        return new ConceptDescriptorBuilder("jetbrains.mps.core.syntax.structure.SType").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept").abstract_().create();
       default:
         return StructureAspectInterpreted.getInstance().getDescriptor(conceptFqName);
     }
   }
+
+  private static String[] stringSwitchCases_1htk8d_a0a0b = new String[]{"jetbrains.mps.core.syntax.structure.SAction", "jetbrains.mps.core.syntax.structure.SGrammarPart", "jetbrains.mps.core.syntax.structure.SInputRef", "jetbrains.mps.core.syntax.structure.SLexem", "jetbrains.mps.core.syntax.structure.SLexerPart", "jetbrains.mps.core.syntax.structure.SLineComment", "jetbrains.mps.core.syntax.structure.SNamedPattern", "jetbrains.mps.core.syntax.structure.SNonTerm", "jetbrains.mps.core.syntax.structure.SPrio", "jetbrains.mps.core.syntax.structure.SReference", "jetbrains.mps.core.syntax.structure.SRegex", "jetbrains.mps.core.syntax.structure.SRule", "jetbrains.mps.core.syntax.structure.SRulePart", "jetbrains.mps.core.syntax.structure.SSource", "jetbrains.mps.core.syntax.structure.SSymbol", "jetbrains.mps.core.syntax.structure.SSymbolRef", "jetbrains.mps.core.syntax.structure.STargetLanguage", "jetbrains.mps.core.syntax.structure.SType"};
 }

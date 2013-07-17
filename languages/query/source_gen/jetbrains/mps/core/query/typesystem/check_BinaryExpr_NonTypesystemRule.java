@@ -4,11 +4,10 @@ package jetbrains.mps.core.query.typesystem;
 
 import jetbrains.mps.lang.typesystem.runtime.AbstractNonTypesystemRule_Runtime;
 import jetbrains.mps.lang.typesystem.runtime.NonTypesystemRule_Runtime;
-import jetbrains.mps.smodel.SNode;
+import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.typesystem.inference.TypeCheckingContext;
 import jetbrains.mps.lang.typesystem.runtime.IsApplicableStatus;
-import jetbrains.mps.core.query.behavior.MqlExpression_Behavior;
-import jetbrains.mps.core.query.behavior.MqlBinaryExpr_Behavior;
+import jetbrains.mps.smodel.behaviour.BehaviorReflection;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.errors.messageTargets.MessageTarget;
 import jetbrains.mps.errors.messageTargets.NodeMessageTarget;
@@ -20,11 +19,11 @@ public class check_BinaryExpr_NonTypesystemRule extends AbstractNonTypesystemRul
   }
 
   public void applyRule(final SNode mqlBinaryExpr, final TypeCheckingContext typeCheckingContext, IsApplicableStatus status) {
-    int priority = MqlExpression_Behavior.call_getPriority_7352592509980890960(mqlBinaryExpr);
-    int assoc = MqlBinaryExpr_Behavior.call_getAssociativity_5322644393894740267(mqlBinaryExpr);
+    int priority = BehaviorReflection.invokeVirtual(Integer.TYPE, mqlBinaryExpr, "virtual_getPriority_7352592509980890960", new Object[]{});
+    int assoc = BehaviorReflection.invokeVirtual(Integer.TYPE, mqlBinaryExpr, "virtual_getAssociativity_5322644393894740267", new Object[]{});
 
     if ((SLinkOperations.getTarget(mqlBinaryExpr, "left", true) != null)) {
-      int leftPrio = MqlExpression_Behavior.call_getPriority_7352592509980890960(SLinkOperations.getTarget(mqlBinaryExpr, "left", true));
+      int leftPrio = BehaviorReflection.invokeVirtual(Integer.TYPE, SLinkOperations.getTarget(mqlBinaryExpr, "left", true), "virtual_getPriority_7352592509980890960", new Object[]{});
       if (leftPrio == priority && assoc != -1 || leftPrio >= 0 && leftPrio > priority) {
         {
           MessageTarget errorTarget = new NodeMessageTarget();
@@ -33,7 +32,7 @@ public class check_BinaryExpr_NonTypesystemRule extends AbstractNonTypesystemRul
       }
     }
     if ((SLinkOperations.getTarget(mqlBinaryExpr, "right", true) != null)) {
-      int rightPrio = MqlExpression_Behavior.call_getPriority_7352592509980890960(SLinkOperations.getTarget(mqlBinaryExpr, "right", true));
+      int rightPrio = BehaviorReflection.invokeVirtual(Integer.TYPE, SLinkOperations.getTarget(mqlBinaryExpr, "right", true), "virtual_getPriority_7352592509980890960", new Object[]{});
       if (rightPrio == priority && assoc != 1 || rightPrio >= 0 && rightPrio > priority) {
         {
           MessageTarget errorTarget = new NodeMessageTarget();
@@ -49,7 +48,7 @@ public class check_BinaryExpr_NonTypesystemRule extends AbstractNonTypesystemRul
 
   public IsApplicableStatus isApplicableAndPattern(SNode argument) {
     {
-      boolean b = SModelUtil_new.isAssignableConcept(argument.getConceptFqName(), this.getApplicableConceptFQName());
+      boolean b = SModelUtil_new.isAssignableConcept(argument.getConcept().getQualifiedName(), this.getApplicableConceptFQName());
       return new IsApplicableStatus(b, null);
     }
   }

@@ -4,49 +4,49 @@ package jetbrains.mps.core.template.structure;
 
 import jetbrains.mps.smodel.runtime.ConceptDescriptor;
 import java.util.Arrays;
-import jetbrains.mps.smodel.runtime.impl.CompiledConceptDescriptor;
+import jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder;
 import jetbrains.mps.smodel.runtime.interpreted.StructureAspectInterpreted;
 
 public class StructureAspectDescriptor implements jetbrains.mps.smodel.runtime.StructureAspectDescriptor {
-  private static String[] stringSwitchCases_1htk8d_a0a0a = new String[]{"jetbrains.mps.core.template.structure.MtlBuilder", "jetbrains.mps.core.template.structure.MtlEntity", "jetbrains.mps.core.template.structure.MtlForeachMacro", "jetbrains.mps.core.template.structure.MtlForeachVar", "jetbrains.mps.core.template.structure.MtlIfMacro", "jetbrains.mps.core.template.structure.MtlLabelNodeMacro", "jetbrains.mps.core.template.structure.MtlLibrary", "jetbrains.mps.core.template.structure.MtlNewNodeType", "jetbrains.mps.core.template.structure.MtlNodeMacro", "jetbrains.mps.core.template.structure.MtlNodeQueryMacro", "jetbrains.mps.core.template.structure.MtlPropertyMacro", "jetbrains.mps.core.template.structure.MtlQuery", "jetbrains.mps.core.template.structure.MtlReferenceMacro", "jetbrains.mps.core.template.structure.MtlTemplate", "jetbrains.mps.core.template.structure.MtlTemplateRoot"};
-
   public StructureAspectDescriptor() {
   }
 
   public ConceptDescriptor getDescriptor(String conceptFqName) {
-    switch (Arrays.binarySearch(stringSwitchCases_1htk8d_a0a0a, conceptFqName)) {
+    switch (Arrays.binarySearch(stringSwitchCases_1htk8d_a0a0b, conceptFqName)) {
       case 0:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.template.structure.MtlBuilder", "jetbrains.mps.lang.core.structure.BaseConcept", false, new String[]{"jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.core.template.structure.MtlEntity", "jetbrains.mps.lang.core.structure.ScopeProvider"}, new String[]{}, new String[]{});
+        return new ConceptDescriptorBuilder("jetbrains.mps.core.template.structure.MtlBuilder").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.core.template.structure.MtlEntity", "jetbrains.mps.lang.core.structure.ScopeProvider").children(new String[]{"contextNode", "body"}, new boolean[]{false, false}).alias("builder", "").create();
       case 1:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.template.structure.MtlEntity", null, true, new String[]{"jetbrains.mps.lang.core.structure.INamedConcept", "jetbrains.mps.core.query.structure.MqlParametersContainer"}, new String[]{}, new String[]{});
+        return new ConceptDescriptorBuilder("jetbrains.mps.core.template.structure.MtlEntity").interface_().parents("jetbrains.mps.lang.core.structure.INamedConcept", "jetbrains.mps.core.query.structure.MqlParametersContainer").create();
       case 2:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.template.structure.MtlForeachMacro", "jetbrains.mps.core.template.structure.MtlNodeMacro", false, new String[]{"jetbrains.mps.core.template.structure.MtlNodeMacro", "jetbrains.mps.lang.core.structure.ScopeProvider", "jetbrains.mps.core.query.structure.MqlVariableContainer"}, new String[]{"multiline"}, new String[]{});
+        return new ConceptDescriptorBuilder("jetbrains.mps.core.template.structure.MtlForeachMacro").super_("jetbrains.mps.core.template.structure.MtlNodeMacro").parents("jetbrains.mps.core.template.structure.MtlNodeMacro", "jetbrains.mps.lang.core.structure.ScopeProvider", "jetbrains.mps.core.query.structure.MqlVariableContainer").properties("multiline").children(new String[]{"var", "collection"}, new boolean[]{false, false}).alias("foreach", "").create();
       case 3:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.template.structure.MtlForeachVar", "jetbrains.mps.lang.core.structure.BaseConcept", false, new String[]{"jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept"}, new String[]{}, new String[]{});
+        return new ConceptDescriptorBuilder("jetbrains.mps.core.template.structure.MtlForeachVar").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept").create();
       case 4:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.template.structure.MtlIfMacro", "jetbrains.mps.core.template.structure.MtlNodeMacro", false, new String[]{"jetbrains.mps.core.template.structure.MtlNodeMacro"}, new String[]{"multiline"}, new String[]{});
+        return new ConceptDescriptorBuilder("jetbrains.mps.core.template.structure.MtlIfMacro").super_("jetbrains.mps.core.template.structure.MtlNodeMacro").parents("jetbrains.mps.core.template.structure.MtlNodeMacro").properties("multiline").children(new String[]{"condition"}, new boolean[]{false}).alias("if", "").create();
       case 5:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.template.structure.MtlLabelNodeMacro", "jetbrains.mps.lang.core.structure.NodeAttribute", false, new String[]{"jetbrains.mps.lang.core.structure.NodeAttribute", "jetbrains.mps.core.query.structure.MqlVariableContainer"}, new String[]{}, new String[]{});
+        return new ConceptDescriptorBuilder("jetbrains.mps.core.template.structure.MtlLabelNodeMacro").super_("jetbrains.mps.lang.core.structure.NodeAttribute").parents("jetbrains.mps.lang.core.structure.NodeAttribute", "jetbrains.mps.core.query.structure.MqlVariableContainer", "jetbrains.mps.lang.core.structure.IDontSubstituteByDefault").children(new String[]{"var"}, new boolean[]{false}).create();
       case 6:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.template.structure.MtlLibrary", "jetbrains.mps.lang.core.structure.BaseConcept", false, new String[]{"jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept", "jetbrains.mps.lang.core.structure.ScopeProvider"}, new String[]{}, new String[]{});
+        return new ConceptDescriptorBuilder("jetbrains.mps.core.template.structure.MtlLibrary").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept", "jetbrains.mps.lang.core.structure.ScopeProvider").children(new String[]{"entities"}, new boolean[]{true}).alias("Templates library", "").create();
       case 7:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.template.structure.MtlNewNodeType", "jetbrains.mps.core.query.structure.MqlType", false, new String[]{"jetbrains.mps.core.query.structure.MqlType"}, new String[]{}, new String[]{"concept"});
+        return new ConceptDescriptorBuilder("jetbrains.mps.core.template.structure.MtlNewNodeType").super_("jetbrains.mps.core.query.structure.MqlType").parents("jetbrains.mps.core.query.structure.MqlType").references("concept").create();
       case 8:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.template.structure.MtlNodeMacro", "jetbrains.mps.lang.core.structure.NodeAttribute", false, new String[]{"jetbrains.mps.lang.core.structure.NodeAttribute"}, new String[]{}, new String[]{});
+        return new ConceptDescriptorBuilder("jetbrains.mps.core.template.structure.MtlNodeMacro").super_("jetbrains.mps.lang.core.structure.NodeAttribute").parents("jetbrains.mps.lang.core.structure.NodeAttribute", "jetbrains.mps.lang.core.structure.IDontSubstituteByDefault").abstract_().create();
       case 9:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.template.structure.MtlNodeQueryMacro", "jetbrains.mps.core.template.structure.MtlNodeMacro", false, new String[]{"jetbrains.mps.core.template.structure.MtlNodeMacro"}, new String[]{}, new String[]{});
+        return new ConceptDescriptorBuilder("jetbrains.mps.core.template.structure.MtlNodeQueryMacro").super_("jetbrains.mps.core.template.structure.MtlNodeMacro").parents("jetbrains.mps.core.template.structure.MtlNodeMacro").children(new String[]{"nodeQuery"}, new boolean[]{false}).alias("expr", "").create();
       case 10:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.template.structure.MtlPropertyMacro", "jetbrains.mps.lang.core.structure.PropertyAttribute", false, new String[]{"jetbrains.mps.lang.core.structure.PropertyAttribute"}, new String[]{}, new String[]{});
+        return new ConceptDescriptorBuilder("jetbrains.mps.core.template.structure.MtlPropertyMacro").super_("jetbrains.mps.lang.core.structure.PropertyAttribute").parents("jetbrains.mps.lang.core.structure.PropertyAttribute", "jetbrains.mps.lang.core.structure.IDontSubstituteByDefault").children(new String[]{"query"}, new boolean[]{false}).create();
       case 11:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.template.structure.MtlQuery", "jetbrains.mps.core.smodel.structure.MqlModelQuery", false, new String[]{"jetbrains.mps.core.smodel.structure.MqlModelQuery", "jetbrains.mps.core.template.structure.MtlEntity"}, new String[]{}, new String[]{});
+        return new ConceptDescriptorBuilder("jetbrains.mps.core.template.structure.MtlQuery").super_("jetbrains.mps.core.smodel.structure.MqlModelQuery").parents("jetbrains.mps.core.smodel.structure.MqlModelQuery", "jetbrains.mps.core.template.structure.MtlEntity").alias("query", "").create();
       case 12:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.template.structure.MtlReferenceMacro", "jetbrains.mps.lang.core.structure.LinkAttribute", false, new String[]{"jetbrains.mps.lang.core.structure.LinkAttribute"}, new String[]{}, new String[]{});
+        return new ConceptDescriptorBuilder("jetbrains.mps.core.template.structure.MtlReferenceMacro").super_("jetbrains.mps.lang.core.structure.LinkAttribute").parents("jetbrains.mps.lang.core.structure.LinkAttribute", "jetbrains.mps.lang.core.structure.IDontSubstituteByDefault").children(new String[]{"query"}, new boolean[]{false}).create();
       case 13:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.template.structure.MtlTemplate", "jetbrains.mps.lang.core.structure.BaseConcept", false, new String[]{"jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.core.template.structure.MtlEntity", "jetbrains.mps.lang.core.structure.ScopeProvider"}, new String[]{}, new String[]{});
+        return new ConceptDescriptorBuilder("jetbrains.mps.core.template.structure.MtlTemplate").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.core.template.structure.MtlEntity", "jetbrains.mps.lang.core.structure.ScopeProvider").children(new String[]{"contextNode", "vars", "template"}, new boolean[]{false, true, false}).alias("template", "").create();
       case 14:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.template.structure.MtlTemplateRoot", "jetbrains.mps.lang.core.structure.NodeAttribute", false, new String[]{"jetbrains.mps.lang.core.structure.NodeAttribute"}, new String[]{}, new String[]{});
+        return new ConceptDescriptorBuilder("jetbrains.mps.core.template.structure.MtlTemplateRoot").super_("jetbrains.mps.lang.core.structure.NodeAttribute").parents("jetbrains.mps.lang.core.structure.NodeAttribute").create();
       default:
         return StructureAspectInterpreted.getInstance().getDescriptor(conceptFqName);
     }
   }
+
+  private static String[] stringSwitchCases_1htk8d_a0a0b = new String[]{"jetbrains.mps.core.template.structure.MtlBuilder", "jetbrains.mps.core.template.structure.MtlEntity", "jetbrains.mps.core.template.structure.MtlForeachMacro", "jetbrains.mps.core.template.structure.MtlForeachVar", "jetbrains.mps.core.template.structure.MtlIfMacro", "jetbrains.mps.core.template.structure.MtlLabelNodeMacro", "jetbrains.mps.core.template.structure.MtlLibrary", "jetbrains.mps.core.template.structure.MtlNewNodeType", "jetbrains.mps.core.template.structure.MtlNodeMacro", "jetbrains.mps.core.template.structure.MtlNodeQueryMacro", "jetbrains.mps.core.template.structure.MtlPropertyMacro", "jetbrains.mps.core.template.structure.MtlQuery", "jetbrains.mps.core.template.structure.MtlReferenceMacro", "jetbrains.mps.core.template.structure.MtlTemplate", "jetbrains.mps.core.template.structure.MtlTemplateRoot"};
 }

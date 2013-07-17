@@ -4,7 +4,7 @@ package jetbrains.mps.core.notation.behavior;
 
 import jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor;
 import jetbrains.mps.core.notation.util.NotationContext;
-import jetbrains.mps.smodel.SNode;
+import org.jetbrains.mps.openapi.model.SNode;
 
 public abstract class SStructureEntityRef_BehaviorDescriptor extends BaseConcept_BehaviorDescriptor {
   public SStructureEntityRef_BehaviorDescriptor() {

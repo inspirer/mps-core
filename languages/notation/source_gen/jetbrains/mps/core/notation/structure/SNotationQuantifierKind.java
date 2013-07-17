@@ -12,22 +12,12 @@ public enum SNotationQuantifierKind {
   nonempty_list("+", "nonempty-list");
 
   private String myName;
-  private String myValue;
-
-  SNotationQuantifierKind(String name, String value) {
-    this.myName = name;
-    this.myValue = value;
-  }
 
   public String getName() {
     return this.myName;
   }
 
   public String getValueAsString() {
-    return this.myValue;
-  }
-
-  public String getValue() {
     return this.myValue;
   }
 
@@ -57,5 +47,16 @@ public enum SNotationQuantifierKind {
       return SNotationQuantifierKind.nonempty_list;
     }
     return SNotationQuantifierKind.getDefault();
+  }
+
+  private String myValue;
+
+  SNotationQuantifierKind(String name, String value) {
+    this.myName = name;
+    this.myValue = value;
+  }
+
+  public String getValue() {
+    return this.myValue;
   }
 }

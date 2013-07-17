@@ -4,12 +4,11 @@ package jetbrains.mps.core.smodel.pluginSolution.plugin;
 
 import jetbrains.mps.workbench.action.BaseAction;
 import javax.swing.Icon;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 import com.intellij.openapi.actionSystem.AnActionEvent;
 import java.util.Map;
 import org.jetbrains.annotations.NotNull;
-import jetbrains.mps.smodel.SNode;
+import org.apache.log4j.Priority;
+import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.ide.actions.MPSCommonDataKeys;
 import jetbrains.mps.internal.collections.runtime.MapSequence;
 import com.intellij.openapi.actionSystem.PlatformDataKeys;
@@ -17,10 +16,11 @@ import jetbrains.mps.core.smodel.util.ConceptQueryUtil;
 import jetbrains.mps.openapi.navigation.NavigationSupport;
 import jetbrains.mps.smodel.IOperationContext;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import org.apache.log4j.Logger;
+import org.apache.log4j.LogManager;
 
 public class GoToOverridenQuery_Action extends BaseAction {
   private static final Icon ICON = null;
-  protected static Log log = LogFactory.getLog(GoToOverridenQuery_Action.class);
 
   public GoToOverridenQuery_Action() {
     super("Go to Overriden Query", "", ICON);
@@ -44,8 +44,8 @@ public class GoToOverridenQuery_Action extends BaseAction {
         this.setEnabledState(event.getPresentation(), enabled);
       }
     } catch (Throwable t) {
-      if (log.isErrorEnabled()) {
-        log.error("User's action doUpdate method failed. Action:" + "GoToOverridenQuery", t);
+      if (LOG.isEnabledFor(Priority.ERROR)) {
+        LOG.error("User's action doUpdate method failed. Action:" + "GoToOverridenQuery", t);
       }
       this.disable(event.getPresentation());
     }
@@ -88,8 +88,8 @@ public class GoToOverridenQuery_Action extends BaseAction {
 
       NavigationSupport.getInstance().openNode(((IOperationContext) MapSequence.fromMap(_params).get("operationContext")), overriddenQuery, true, true);
     } catch (Throwable t) {
-      if (log.isErrorEnabled()) {
-        log.error("User's action execute method failed. Action:" + "GoToOverridenQuery", t);
+      if (LOG.isEnabledFor(Priority.ERROR)) {
+        LOG.error("User's action execute method failed. Action:" + "GoToOverridenQuery", t);
       }
     }
   }
@@ -97,4 +97,6 @@ public class GoToOverridenQuery_Action extends BaseAction {
   /*package*/ SNode getConceptQuery(final Map<String, Object> _params) {
     return SNodeOperations.getAncestor(((SNode) MapSequence.fromMap(_params).get("selectedNode")), "jetbrains.mps.core.smodel.structure.SConceptQuery", true, false);
   }
+
+  protected static Logger LOG = LogManager.getLogger(GoToOverridenQuery_Action.class);
 }

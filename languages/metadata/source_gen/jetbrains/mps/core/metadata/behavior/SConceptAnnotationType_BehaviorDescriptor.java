@@ -6,7 +6,7 @@ import jetbrains.mps.core.structure.behavior.SStructureElement_BehaviorDescripto
 import jetbrains.mps.lang.core.behavior.INamedConcept_BehaviorDescriptor;
 import jetbrains.mps.lang.core.behavior.ScopeProvider_BehaviorDescriptor;
 import jetbrains.mps.scope.Scope;
-import jetbrains.mps.smodel.SNode;
+import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.core.behavior.ScopeProvider_Behavior;
 
 public class SConceptAnnotationType_BehaviorDescriptor extends SStructureElement_BehaviorDescriptor implements INamedConcept_BehaviorDescriptor, ScopeProvider_BehaviorDescriptor {

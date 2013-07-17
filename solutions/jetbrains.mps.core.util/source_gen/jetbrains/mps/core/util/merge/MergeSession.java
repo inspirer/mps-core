@@ -4,60 +4,62 @@ package jetbrains.mps.core.util.merge;
 
 import jetbrains.mps.messages.IMessageHandler;
 import java.util.Map;
-import jetbrains.mps.smodel.SNode;
-import jetbrains.mps.smodel.DefaultSModelDescriptor;
-import jetbrains.mps.smodel.SModel;
+import org.jetbrains.mps.openapi.model.SNode;
+import org.jetbrains.mps.openapi.model.EditableSModel;
+import org.jetbrains.mps.openapi.model.SModel;
 import jetbrains.mps.internal.collections.runtime.MapSequence;
 import java.util.HashMap;
+import jetbrains.mps.extapi.model.SModelBase;
 import jetbrains.mps.messages.Message;
 import jetbrains.mps.messages.MessageKind;
+import jetbrains.mps.smodel.SModelStereotype;
 import jetbrains.mps.internal.collections.runtime.Sequence;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
 import jetbrains.mps.internal.collections.runtime.IVisitor;
 import jetbrains.mps.internal.collections.runtime.IMapping;
-import jetbrains.mps.smodel.SReference;
+import org.jetbrains.mps.openapi.model.SReference;
+import jetbrains.mps.util.SNodeOperations;
+import org.jetbrains.mps.openapi.model.SNodeAccessUtil;
 import jetbrains.mps.smodel.ModelAccess;
-import jetbrains.mps.smodel.loading.ModelLoadingState;
+import jetbrains.mps.extapi.model.EditableSModelBase;
 import java.util.List;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.internal.collections.runtime.backports.LinkedList;
 import java.util.ArrayList;
 import java.util.Collections;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 
 public class MergeSession {
   private IMessageHandler messageHandler;
   private Map<SNode, SNode> mapping;
   private Map<SNode, SNode> reverseMapping;
-  private Map<DefaultSModelDescriptor, SModel> newContent;
+  private Map<EditableSModel, SModel> newContent;
 
   public MergeSession(IMessageHandler messageHandler) {
     this.messageHandler = messageHandler;
     this.mapping = MapSequence.fromMap(new HashMap<SNode, SNode>());
     this.reverseMapping = MapSequence.fromMap(new HashMap<SNode, SNode>());
-    this.newContent = MapSequence.fromMap(new HashMap<DefaultSModelDescriptor, SModel>());
+    this.newContent = MapSequence.fromMap(new HashMap<EditableSModel, SModel>());
   }
 
   public boolean isMapped(SNode node) {
     return MapSequence.fromMap(mapping).containsKey(node);
   }
 
-  public void replace(DefaultSModelDescriptor descriptor, Iterable<SNode> roots) {
-    SModel existing = descriptor.getSModel();
+  public void replace(EditableSModel model, Iterable<SNode> roots) {
+    jetbrains.mps.smodel.SModel existing = ((SModelBase) model).getSModelInternal();
     if (existing == null) {
-      messageHandler.handle(new Message(MessageKind.ERROR, "no " + descriptor.getSModelReference().getLongName() + " model"));
+      messageHandler.handle(new Message(MessageKind.ERROR, "no " + SModelStereotype.withoutStereotype(model.getModelName()) + " model"));
       return;
     }
 
-    final SModel newmodel = new SModel(descriptor.getSModelReference());
-    newmodel.getSModelHeader().updateDefaults(descriptor.getSModelHeader());
-    Sequence.fromIterable(mergeLists(SModelOperations.getRoots(existing, null), roots, newmodel)).visitAll(new IVisitor<SNode>() {
+    final jetbrains.mps.smodel.SModel newmodel = existing.createEmptyCopy();
+    existing.copyPropertiesTo(newmodel.getModelDescriptor());
+    Sequence.fromIterable(mergeLists((Iterable<SNode>) model.getRootNodes(), roots, newmodel.getModelDescriptor())).visitAll(new IVisitor<SNode>() {
       public void visit(SNode it) {
-        newmodel.addRoot(it);
+        newmodel.addRootNode(it);
       }
     });
-    MapSequence.fromMap(newContent).put(descriptor, newmodel);
+    MapSequence.fromMap(newContent).put(model, newmodel.getModelDescriptor());
   }
 
   public void restoreRefs() {
@@ -65,16 +67,16 @@ public class MergeSession {
       SNode input = m.key();
       SNode output = m.value();
 
-      for (SReference ref : input.getReferencesIterable()) {
-        SNode targetNode = ref.getTargetNodeSilently();
+      for (SReference ref : SNodeOperations.getReferences(input)) {
+        SNode targetNode = SNodeOperations.getTargetNodeSilently(ref);
         if (targetNode == null) {
-          messageHandler.handle(new Message(MessageKind.ERROR, "broken reference `" + ref.getRole() + "' in " + input.getDebugText()));
+          messageHandler.handle(new Message(MessageKind.ERROR, "broken reference `" + ref.getRole() + "' in " + SNodeOperations.getDebugText(input)));
           continue;
         }
         if (MapSequence.fromMap(mapping).containsKey(targetNode)) {
-          output.setReferent(ref.getRole(), MapSequence.fromMap(mapping).get(targetNode));
+          SNodeAccessUtil.setReferenceTarget(output, ref.getRole(), MapSequence.fromMap(mapping).get(targetNode));
         } else {
-          output.setReferent(ref.getRole(), targetNode);
+          SNodeAccessUtil.setReferenceTarget(output, ref.getRole(), targetNode);
         }
       }
     }
@@ -86,11 +88,11 @@ public class MergeSession {
   public void apply() {
     ModelAccess.assertLegalWrite();
 
-    for (IMapping<DefaultSModelDescriptor, SModel> entry : MapSequence.fromMap(newContent)) {
-      final DefaultSModelDescriptor descriptor = entry.key();
-      messageHandler.handle(new Message(MessageKind.INFORMATION, "replacing " + descriptor.getLongName()));
-      descriptor.updateDiskTimestamp();
-      descriptor.replaceModel(entry.value(), ModelLoadingState.FULLY_LOADED);
+    for (IMapping<EditableSModel, SModel> entry : MapSequence.fromMap(newContent)) {
+      final EditableSModel descriptor = entry.key();
+      messageHandler.handle(new Message(MessageKind.INFORMATION, "replacing " + descriptor.getModelName()));
+      descriptor.updateTimestamp();
+      ((EditableSModelBase) descriptor).replace(((SModelBase) entry.value()).getSModelInternal());
       descriptor.setChanged(true);
       ModelAccess.instance().runWriteInEDT(new Runnable() {
         public void run() {
@@ -129,19 +131,19 @@ public class MergeSession {
     if (node == null) {
       return null;
     }
-    SNode result = new SNode(newmodel, node.getConceptFqName(), false);
+    SNode result = new jetbrains.mps.smodel.SNode(node.getConcept().getQualifiedName());
     MapSequence.fromMap(mapping).put(node, result);
     MapSequence.fromMap(reverseMapping).put(result, node);
-    result.putProperties(node);
-    result.putUserObjects(node);
+    ((jetbrains.mps.smodel.SNode) result).putProperties((jetbrains.mps.smodel.SNode) node);
+    ((jetbrains.mps.smodel.SNode) result).putUserObjects((jetbrains.mps.smodel.SNode) node);
     if (existing != null) {
-      result.setId(existing.getSNodeId());
+      ((jetbrains.mps.smodel.SNode) result).setId(existing.getNodeId());
     }
     for (SNode child : mergeLists((existing == null ?
       Sequence.fromIterable(Collections.<SNode>emptyList()) :
-      existing.getChildren(true)
-    ), node.getChildren(true), newmodel)) {
-      String role = MapSequence.fromMap(reverseMapping).get(child).getRole_();
+      SNodeOperations.getChildren(existing, true)
+    ), SNodeOperations.getChildren(node, true), newmodel)) {
+      String role = MapSequence.fromMap(reverseMapping).get(child).getRoleInParent();
       assert role != null;
       result.addChild(role, child);
     }
@@ -149,13 +151,13 @@ public class MergeSession {
   }
 
   protected String getSignature(SNode node) {
-    String signature = ((SNodeOperations.getParent(node) == null) ?
+    String signature = ((jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations.getParent(node) == null) ?
       "{root}" :
-      SNodeOperations.getContainingLinkRole(node)
+      jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations.getContainingLinkRole(node)
     );
     assert signature != null;
-    if (SNodeOperations.isInstanceOf(node, "jetbrains.mps.lang.core.structure.INamedConcept")) {
-      signature = "#" + SPropertyOperations.getString(SNodeOperations.cast(node, "jetbrains.mps.lang.core.structure.INamedConcept"), "name");
+    if (jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations.isInstanceOf(node, "jetbrains.mps.lang.core.structure.INamedConcept")) {
+      signature = "#" + SPropertyOperations.getString(jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations.cast(node, "jetbrains.mps.lang.core.structure.INamedConcept"), "name");
     }
     return signature;
   }

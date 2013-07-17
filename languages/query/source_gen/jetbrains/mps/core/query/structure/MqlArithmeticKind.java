@@ -14,12 +14,6 @@ public enum MqlArithmeticKind {
   REM("%", 5);
 
   private String myName;
-  private int myValue;
-
-  MqlArithmeticKind(String name, int value) {
-    this.myName = name;
-    this.myValue = value;
-  }
 
   public String getName() {
     return this.myName;
@@ -27,10 +21,6 @@ public enum MqlArithmeticKind {
 
   public String getValueAsString() {
     return "" + this.myValue;
-  }
-
-  public int getValue() {
-    return this.myValue;
   }
 
   public static List<MqlArithmeticKind> getConstants() {
@@ -67,5 +57,16 @@ public enum MqlArithmeticKind {
       return MqlArithmeticKind.REM;
     }
     return MqlArithmeticKind.getDefault();
+  }
+
+  private int myValue;
+
+  MqlArithmeticKind(String name, int value) {
+    this.myName = name;
+    this.myValue = value;
+  }
+
+  public int getValue() {
+    return this.myValue;
   }
 }

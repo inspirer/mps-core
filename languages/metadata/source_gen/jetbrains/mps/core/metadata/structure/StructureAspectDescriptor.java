@@ -4,39 +4,39 @@ package jetbrains.mps.core.metadata.structure;
 
 import jetbrains.mps.smodel.runtime.ConceptDescriptor;
 import java.util.Arrays;
-import jetbrains.mps.smodel.runtime.impl.CompiledConceptDescriptor;
+import jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder;
 import jetbrains.mps.smodel.runtime.interpreted.StructureAspectInterpreted;
 
 public class StructureAspectDescriptor implements jetbrains.mps.smodel.runtime.StructureAspectDescriptor {
-  private static String[] stringSwitchCases_1htk8d_a0a0a = new String[]{"jetbrains.mps.core.metadata.structure.SConceptAnnotationArgument", "jetbrains.mps.core.metadata.structure.SConceptAnnotationChildLink", "jetbrains.mps.core.metadata.structure.SConceptAnnotationInstance", "jetbrains.mps.core.metadata.structure.SConceptAnnotationMember", "jetbrains.mps.core.metadata.structure.SConceptAnnotationMemberComment", "jetbrains.mps.core.metadata.structure.SConceptAnnotationMemberEmptyLine", "jetbrains.mps.core.metadata.structure.SConceptAnnotationNodeRef", "jetbrains.mps.core.metadata.structure.SConceptAnnotationProperty", "jetbrains.mps.core.metadata.structure.SConceptAnnotationType", "jetbrains.mps.core.metadata.structure.SMetadataNodeRefExpression"};
-
   public StructureAspectDescriptor() {
   }
 
   public ConceptDescriptor getDescriptor(String conceptFqName) {
-    switch (Arrays.binarySearch(stringSwitchCases_1htk8d_a0a0a, conceptFqName)) {
+    switch (Arrays.binarySearch(stringSwitchCases_1htk8d_a0a0b, conceptFqName)) {
       case 0:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.metadata.structure.SConceptAnnotationArgument", "jetbrains.mps.lang.core.structure.BaseConcept", false, new String[]{"jetbrains.mps.lang.core.structure.BaseConcept"}, new String[]{"name"}, new String[]{});
+        return new ConceptDescriptorBuilder("jetbrains.mps.core.metadata.structure.SConceptAnnotationArgument").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept").properties("name").children(new String[]{"value"}, new boolean[]{false}).create();
       case 1:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.metadata.structure.SConceptAnnotationChildLink", "jetbrains.mps.core.metadata.structure.SConceptAnnotationMember", false, new String[]{"jetbrains.mps.core.metadata.structure.SConceptAnnotationMember", "jetbrains.mps.lang.core.structure.INamedConcept", "jetbrains.mps.core.structure.structure.SCardinalityContainer"}, new String[]{}, new String[]{"type"});
+        return new ConceptDescriptorBuilder("jetbrains.mps.core.metadata.structure.SConceptAnnotationChildLink").super_("jetbrains.mps.core.metadata.structure.SConceptAnnotationMember").parents("jetbrains.mps.core.metadata.structure.SConceptAnnotationMember", "jetbrains.mps.lang.core.structure.INamedConcept", "jetbrains.mps.core.structure.structure.SCardinalityContainer").references("type").children(new String[]{"cardinality"}, new boolean[]{false}).create();
       case 2:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.metadata.structure.SConceptAnnotationInstance", "jetbrains.mps.core.structure.structure.SConceptAnnotation", false, new String[]{"jetbrains.mps.core.structure.structure.SConceptAnnotation"}, new String[]{}, new String[]{"type"});
+        return new ConceptDescriptorBuilder("jetbrains.mps.core.metadata.structure.SConceptAnnotationInstance").super_("jetbrains.mps.core.structure.structure.SConceptAnnotation").parents("jetbrains.mps.core.structure.structure.SConceptAnnotation").references("type").children(new String[]{"arguments"}, new boolean[]{true}).alias("@<{type}>", "").create();
       case 3:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.metadata.structure.SConceptAnnotationMember", "jetbrains.mps.lang.core.structure.BaseConcept", false, new String[]{"jetbrains.mps.lang.core.structure.BaseConcept"}, new String[]{}, new String[]{});
+        return new ConceptDescriptorBuilder("jetbrains.mps.core.metadata.structure.SConceptAnnotationMember").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept").abstract_().create();
       case 4:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.metadata.structure.SConceptAnnotationMemberComment", "jetbrains.mps.core.metadata.structure.SConceptAnnotationMember", false, new String[]{"jetbrains.mps.core.metadata.structure.SConceptAnnotationMember"}, new String[]{"comment"}, new String[]{});
+        return new ConceptDescriptorBuilder("jetbrains.mps.core.metadata.structure.SConceptAnnotationMemberComment").super_("jetbrains.mps.core.metadata.structure.SConceptAnnotationMember").parents("jetbrains.mps.core.metadata.structure.SConceptAnnotationMember").properties("comment").final_().alias("#", "").create();
       case 5:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.metadata.structure.SConceptAnnotationMemberEmptyLine", "jetbrains.mps.core.metadata.structure.SConceptAnnotationMember", false, new String[]{"jetbrains.mps.core.metadata.structure.SConceptAnnotationMember"}, new String[]{}, new String[]{});
+        return new ConceptDescriptorBuilder("jetbrains.mps.core.metadata.structure.SConceptAnnotationMemberEmptyLine").super_("jetbrains.mps.core.metadata.structure.SConceptAnnotationMember").parents("jetbrains.mps.core.metadata.structure.SConceptAnnotationMember").final_().alias("<empty>", "").create();
       case 6:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.metadata.structure.SConceptAnnotationNodeRef", "jetbrains.mps.core.metadata.structure.SConceptAnnotationMember", false, new String[]{"jetbrains.mps.core.metadata.structure.SConceptAnnotationMember", "jetbrains.mps.lang.core.structure.INamedConcept"}, new String[]{}, new String[]{"target"});
+        return new ConceptDescriptorBuilder("jetbrains.mps.core.metadata.structure.SConceptAnnotationNodeRef").super_("jetbrains.mps.core.metadata.structure.SConceptAnnotationMember").parents("jetbrains.mps.core.metadata.structure.SConceptAnnotationMember", "jetbrains.mps.lang.core.structure.INamedConcept").references("target").children(new String[]{"cardinality"}, new boolean[]{false}).final_().alias("ref", "node reference").create();
       case 7:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.metadata.structure.SConceptAnnotationProperty", "jetbrains.mps.core.metadata.structure.SConceptAnnotationMember", false, new String[]{"jetbrains.mps.core.metadata.structure.SConceptAnnotationMember", "jetbrains.mps.lang.core.structure.INamedConcept"}, new String[]{}, new String[]{});
+        return new ConceptDescriptorBuilder("jetbrains.mps.core.metadata.structure.SConceptAnnotationProperty").super_("jetbrains.mps.core.metadata.structure.SConceptAnnotationMember").parents("jetbrains.mps.core.metadata.structure.SConceptAnnotationMember", "jetbrains.mps.lang.core.structure.INamedConcept", "jetbrains.mps.lang.core.structure.IDontSubstituteByDefault").children(new String[]{"type", "defaultValue"}, new boolean[]{false, false}).final_().create();
       case 8:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.metadata.structure.SConceptAnnotationType", "jetbrains.mps.core.structure.structure.SStructureElement", false, new String[]{"jetbrains.mps.core.structure.structure.SStructureElement", "jetbrains.mps.lang.core.structure.INamedConcept", "jetbrains.mps.lang.core.structure.ScopeProvider"}, new String[]{}, new String[]{});
+        return new ConceptDescriptorBuilder("jetbrains.mps.core.metadata.structure.SConceptAnnotationType").super_("jetbrains.mps.core.structure.structure.SStructureElement").parents("jetbrains.mps.core.structure.structure.SStructureElement", "jetbrains.mps.lang.core.structure.INamedConcept", "jetbrains.mps.lang.core.structure.ScopeProvider").children(new String[]{"members"}, new boolean[]{true}).alias("concept annotation", "").create();
       case 9:
-        return new CompiledConceptDescriptor("jetbrains.mps.core.metadata.structure.SMetadataNodeRefExpression", "jetbrains.mps.core.query.structure.MqlExpression", false, new String[]{"jetbrains.mps.core.query.structure.MqlExpression"}, new String[]{}, new String[]{"target"});
+        return new ConceptDescriptorBuilder("jetbrains.mps.core.metadata.structure.SMetadataNodeRefExpression").super_("jetbrains.mps.core.query.structure.MqlExpression").parents("jetbrains.mps.core.query.structure.MqlExpression").references("target").create();
       default:
         return StructureAspectInterpreted.getInstance().getDescriptor(conceptFqName);
     }
   }
+
+  private static String[] stringSwitchCases_1htk8d_a0a0b = new String[]{"jetbrains.mps.core.metadata.structure.SConceptAnnotationArgument", "jetbrains.mps.core.metadata.structure.SConceptAnnotationChildLink", "jetbrains.mps.core.metadata.structure.SConceptAnnotationInstance", "jetbrains.mps.core.metadata.structure.SConceptAnnotationMember", "jetbrains.mps.core.metadata.structure.SConceptAnnotationMemberComment", "jetbrains.mps.core.metadata.structure.SConceptAnnotationMemberEmptyLine", "jetbrains.mps.core.metadata.structure.SConceptAnnotationNodeRef", "jetbrains.mps.core.metadata.structure.SConceptAnnotationProperty", "jetbrains.mps.core.metadata.structure.SConceptAnnotationType", "jetbrains.mps.core.metadata.structure.SMetadataNodeRefExpression"};
 }

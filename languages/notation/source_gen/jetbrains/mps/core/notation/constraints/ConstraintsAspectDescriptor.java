@@ -7,13 +7,11 @@ import java.util.Arrays;
 import jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor;
 
 public class ConstraintsAspectDescriptor implements jetbrains.mps.smodel.runtime.ConstraintsAspectDescriptor {
-  private static String[] stringSwitchCases_2qnle6_a0a0a = new String[]{"jetbrains.mps.core.notation.structure.SNotationMapping", "jetbrains.mps.core.notation.structure.SNotationPart", "jetbrains.mps.core.notation.structure.SNotationQuantifier", "jetbrains.mps.core.notation.structure.SNotationUnorderedGroup", "jetbrains.mps.core.notation.structure.SStructureEntityRef", "jetbrains.mps.core.notation.structure.SStructureLinkRef", "jetbrains.mps.core.notation.structure.SStructurePropertyRef"};
-
   public ConstraintsAspectDescriptor() {
   }
 
   public ConstraintsDescriptor getDescriptor(String fqName) {
-    switch (Arrays.binarySearch(stringSwitchCases_2qnle6_a0a0a, fqName)) {
+    switch (Arrays.binarySearch(stringSwitchCases_2qnle6_a0a0b, fqName)) {
       case 0:
         return new SNotationMapping_Constraints();
       case 2:
@@ -33,4 +31,6 @@ public class ConstraintsAspectDescriptor implements jetbrains.mps.smodel.runtime
         return new BaseConstraintsDescriptor(fqName);
     }
   }
+
+  private static String[] stringSwitchCases_2qnle6_a0a0b = new String[]{"jetbrains.mps.core.notation.structure.SNotationMapping", "jetbrains.mps.core.notation.structure.SNotationPart", "jetbrains.mps.core.notation.structure.SNotationQuantifier", "jetbrains.mps.core.notation.structure.SNotationUnorderedGroup", "jetbrains.mps.core.notation.structure.SStructureEntityRef", "jetbrains.mps.core.notation.structure.SStructureLinkRef", "jetbrains.mps.core.notation.structure.SStructurePropertyRef"};
 }

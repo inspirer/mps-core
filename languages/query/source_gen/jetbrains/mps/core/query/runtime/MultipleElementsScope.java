@@ -4,7 +4,7 @@ package jetbrains.mps.core.query.runtime;
 
 import jetbrains.mps.scope.Scope;
 import java.util.List;
-import jetbrains.mps.smodel.SNode;
+import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
 import org.jetbrains.annotations.Nullable;
 import java.util.ArrayList;
