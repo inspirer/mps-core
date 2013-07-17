@@ -107,6 +107,7 @@ public class MigrateStructure_Action extends BaseAction {
         session.replace((DefaultSModelDescriptor) desc, Sequence.<SNode>singleton(converted));
         session.restoreRefs();
         session.apply();
+        mh.handle(new Message(MessageKind.INFORMATION, "merged"));
       } else {
         DefaultModelRoot root = (DefaultModelRoot) Sequence.fromIterable(((Iterable<ModelRoot>) language.getModelRoots())).where(new IWhereFilter<ModelRoot>() {
           public boolean accept(ModelRoot it) {
@@ -120,6 +121,7 @@ public class MigrateStructure_Action extends BaseAction {
         }
         ((jetbrains.mps.smodel.SModel) newStructure).addLanguage(newStructureLanguage.getModuleReference());
         newStructure.addRootNode(converted);
+        mh.handle(new Message(MessageKind.INFORMATION, "new model created"));
       }
     } catch (Throwable t) {
       if (LOG.isEnabledFor(Priority.ERROR)) {

@@ -325,9 +325,7 @@
           <property name="flag" nameId="tpc2.1186414551515" value="true" />
         </node>
         <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.BackgroundColorStyleClassItem" typeId="tpc2.1186404574412" id="212212067812151456" nodeInfo="nn">
-          <node role="query" roleId="tpc2.1186403803051" type="tpc2.RGBColor" typeId="tpc2.1225456267680" id="212212067812151457" nodeInfo="ng">
-            <property name="value" nameId="tpc2.1225456424731" value="eaeaea" />
-          </node>
+          <property name="color" nameId="tpc2.1186403713874" value="lightGray" />
         </node>
         <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Vertical" typeId="tpc2.1106270571710" id="212212067812147831" nodeInfo="nn" />
         <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Alternation" typeId="tpc2.1088612959204" id="3373821274546483517" nodeInfo="ng">

@@ -18,9 +18,9 @@ import jetbrains.mps.messages.Message;
 import jetbrains.mps.messages.MessageKind;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.util.NameUtil;
-import jetbrains.mps.smodel.SModel;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.core.structure.util.ConceptUtil;
+import org.jetbrains.mps.openapi.model.SModel;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
 import org.apache.log4j.Priority;
@@ -85,7 +85,7 @@ public class LanguageConverter {
       return mapped;
     }
 
-    if (((SModel) SNodeOperations.getModel(target)).getModelDescriptor().getModule() == language) {
+    if (SNodeOperations.getModel(target).getModule() == language) {
       error("broken local reference: " + target.getPresentation());
       return null;
     }
@@ -120,7 +120,7 @@ public class LanguageConverter {
     return null;
   }
 
-  private SNode convertStructure(org.jetbrains.mps.openapi.model.SModel structureModel) {
+  private SNode convertStructure(SModel structureModel) {
     SNode container = _quotation_createNode_hm9xms_a0a0j(SPropertyOperations.getString(SModelOperations.getModuleStub(structureModel), "name"));
 
     List<SNode> structureElements = ListSequence.fromList(new ArrayList());
@@ -300,7 +300,7 @@ public class LanguageConverter {
   }
 
   public SNode convertEnumerationDataType(final SNode typeDeclaration) {
-    final SNode result = _quotation_createNode_hm9xms_a0a0p();
+    final SNode result = createSEnumerationDataType_hm9xms_a0a0p();
     later(new _FunctionTypes._void_P0_E0() {
       public void invoke() {
         SLinkOperations.setTarget(result, "enum", SNodeOperations.as(resolve(SConceptOperations.findConceptDeclaration("jetbrains.mps.core.structure.structure.SEnumeration"), typeDeclaration), "jetbrains.mps.core.structure.structure.SEnumeration"), false);
@@ -468,11 +468,10 @@ public class LanguageConverter {
     return quotedNode_1;
   }
 
-  private static SNode _quotation_createNode_hm9xms_a0a0p() {
+  private static SNode createSEnumerationDataType_hm9xms_a0a0p() {
     PersistenceFacade facade = PersistenceFacade.getInstance();
-    SNode quotedNode_1 = null;
-    quotedNode_1 = SModelUtil_new.instantiateConceptDeclaration("jetbrains.mps.core.structure.structure.SEnumerationDataType", null, null, GlobalScope.getInstance(), false);
-    return quotedNode_1;
+    SNode n1 = SModelUtil_new.instantiateConceptDeclaration("jetbrains.mps.core.structure.structure.SEnumerationDataType", null, GlobalScope.getInstance(), false);
+    return n1;
   }
 
   private static SNode _quotation_createNode_hm9xms_a1a61() {
