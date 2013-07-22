@@ -16,6 +16,7 @@
       <modulePath path="$PROJECT_DIR$/languages/template/template.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/workflow/solutions/pluginSolution/pluginSolution.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/workflow/workflow.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/core.stubs/jetbrains.mps.core.stubs.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/jetbrains.mps.core.util/util.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/mpscore.build/mpscore.build.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/mpscore.sandbox/mpscore.sandbox.msd" folder="" />

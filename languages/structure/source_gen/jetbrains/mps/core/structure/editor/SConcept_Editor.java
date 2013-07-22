@@ -226,7 +226,7 @@ public class SConcept_Editor extends DefaultNodeEditor {
   private EditorCell createRefCell_yrkjzv_h0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new RefCellCellProvider(node, editorContext);
     provider.setRole("extends");
-    provider.setNoTargetText("BaseConcept");
+    provider.setNoTargetText("<default>");
     EditorCell editorCell;
     provider.setAuxiliaryCellProvider(new SConcept_Editor._Inline_yrkjzv_a7a());
     editorCell = provider.createEditorCell(editorContext);

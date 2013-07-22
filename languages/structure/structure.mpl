@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="jetbrains.mps.core.structure" uuid="1372eb94-b402-4b9f-bb3f-44315b20f92d" doNotGenerateAdapters="true">
+<language namespace="jetbrains.mps.core.structure" uuid="1372eb94-b402-4b9f-bb3f-44315b20f92d">
   <models>
-    <modelRoot path="${language_descriptor}/languageModels" />
-    <modelRoot path="${language_descriptor}/util" />
+    <modelRoot contentPath="${module}" type="default">
+      <sourceRoot location="languageModels" />
+      <sourceRoot location="util" />
+    </modelRoot>
   </models>
   <accessoryModels />
   <generators />

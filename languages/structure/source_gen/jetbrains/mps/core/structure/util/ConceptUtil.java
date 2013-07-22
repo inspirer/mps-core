@@ -16,10 +16,9 @@ import java.util.HashSet;
 import jetbrains.mps.util.NameUtil;
 import org.jetbrains.mps.openapi.model.SModel;
 import jetbrains.mps.smodel.SModelRepository;
-import jetbrains.mps.smodel.SModelFqName;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
-import jetbrains.mps.internal.collections.runtime.ITranslator2;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import jetbrains.mps.internal.collections.runtime.ITranslator2;
 
 public class ConceptUtil {
   public ConceptUtil() {
@@ -87,11 +86,30 @@ public class ConceptUtil {
     if (qualifiedName == null) {
       return null;
     }
-    String language = NameUtil.namespaceFromConceptFQName(qualifiedName);
+    final String language = NameUtil.namespaceFromConceptFQName(qualifiedName);
     final String name = NameUtil.shortNameFromLongName(qualifiedName);
-    SModel mdesc = SModelRepository.getInstance().getModelDescriptor(SModelFqName.fromString(language + ".core"));
+    SModel mdesc = SModelRepository.getInstance().getModelDescriptor(language + ".core");
     if (mdesc == null) {
-      return null;
+      // for packaged language, try stubs 
+      mdesc = SModelRepository.getInstance().getModelDescriptor("jetbrains.mps.core.stubs");
+      if (mdesc == null) {
+        return null;
+      }
+
+      SNode root = ListSequence.fromList(SModelOperations.getRoots(((SModel) mdesc), "jetbrains.mps.core.structure.structure.SStructureContainer")).findFirst(new IWhereFilter<SNode>() {
+        public boolean accept(SNode it) {
+          return eq_ensxth_a0a0a0a0a0a4a4a3(SPropertyOperations.getString(it, "name"), language);
+        }
+      });
+      if ((root == null)) {
+        return null;
+      }
+
+      return SNodeOperations.as(ListSequence.fromList(SLinkOperations.getTargets(root, "structure", true)).where(new IWhereFilter<SNode>() {
+        public boolean accept(SNode it) {
+          return SNodeOperations.isInstanceOf(it, "jetbrains.mps.core.structure.structure.SAbstractConcept") && SPropertyOperations.getString(SNodeOperations.cast(it, "jetbrains.mps.core.structure.structure.SAbstractConcept"), "name").equals(name);
+        }
+      }).first(), "jetbrains.mps.core.structure.structure.SAbstractConcept");
     }
     SModel sModel = mdesc;
     return SNodeOperations.as(ListSequence.fromList(SModelOperations.getRoots(sModel, "jetbrains.mps.core.structure.structure.SStructureContainer")).translate(new ITranslator2<SNode, SNode>() {
@@ -109,11 +127,30 @@ public class ConceptUtil {
     if (qualifiedName == null) {
       return null;
     }
-    String language = NameUtil.namespaceFromConceptFQName(qualifiedName);
+    final String language = NameUtil.namespaceFromConceptFQName(qualifiedName);
     final String name = NameUtil.shortNameFromLongName(qualifiedName);
-    SModel mdesc = SModelRepository.getInstance().getModelDescriptor(SModelFqName.fromString(language + ".core"));
+    SModel mdesc = SModelRepository.getInstance().getModelDescriptor(language + ".core");
     if (mdesc == null) {
-      return null;
+      // for packaged language, try stubs 
+      mdesc = SModelRepository.getInstance().getModelDescriptor("jetbrains.mps.core.stubs");
+      if (mdesc == null) {
+        return null;
+      }
+
+      SNode root = ListSequence.fromList(SModelOperations.getRoots(((SModel) mdesc), "jetbrains.mps.core.structure.structure.SStructureContainer")).findFirst(new IWhereFilter<SNode>() {
+        public boolean accept(SNode it) {
+          return eq_ensxth_a0a0a0a0a0a4a4a4(SPropertyOperations.getString(it, "name"), language);
+        }
+      });
+      if ((root == null)) {
+        return null;
+      }
+
+      return SNodeOperations.as(ListSequence.fromList(SLinkOperations.getTargets(root, "structure", true)).where(new IWhereFilter<SNode>() {
+        public boolean accept(SNode it) {
+          return SNodeOperations.isInstanceOf(it, "jetbrains.mps.core.structure.structure.SEnumeration") && SPropertyOperations.getString(SNodeOperations.cast(it, "jetbrains.mps.core.structure.structure.SEnumeration"), "name").equals(name);
+        }
+      }).first(), "jetbrains.mps.core.structure.structure.SEnumeration");
     }
     SModel sModel = mdesc;
     return SNodeOperations.as(ListSequence.fromList(SModelOperations.getRoots(sModel, "jetbrains.mps.core.structure.structure.SStructureContainer")).translate(new ITranslator2<SNode, SNode>() {
@@ -125,5 +162,19 @@ public class ConceptUtil {
         return SNodeOperations.isInstanceOf(it, "jetbrains.mps.core.structure.structure.SEnumeration") && SPropertyOperations.getString(SNodeOperations.cast(it, "jetbrains.mps.core.structure.structure.SEnumeration"), "name").equals(name);
       }
     }).first(), "jetbrains.mps.core.structure.structure.SEnumeration");
+  }
+
+  private static boolean eq_ensxth_a0a0a0a0a0a4a4a3(Object a, Object b) {
+    return (a != null ?
+      a.equals(b) :
+      a == b
+    );
+  }
+
+  private static boolean eq_ensxth_a0a0a0a0a0a4a4a4(Object a, Object b) {
+    return (a != null ?
+      a.equals(b) :
+      a == b
+    );
   }
 }

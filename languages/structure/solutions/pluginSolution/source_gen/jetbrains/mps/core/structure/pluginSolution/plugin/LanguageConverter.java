@@ -27,7 +27,6 @@ import org.apache.log4j.Priority;
 import jetbrains.mps.smodel.behaviour.BehaviorReflection;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.internal.collections.runtime.Sequence;
-import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import jetbrains.mps.lang.structure.behavior.EnumerationMemberDeclaration_Behavior;
 import jetbrains.mps.baseLanguage.closures.runtime.Wrappers;
 import jetbrains.mps.internal.collections.runtime.ISelector;
@@ -38,6 +37,7 @@ import org.jetbrains.mps.openapi.persistence.PersistenceFacade;
 import jetbrains.mps.smodel.SModelUtil_new;
 import jetbrains.mps.project.GlobalScope;
 import org.jetbrains.mps.openapi.model.SNodeAccessUtil;
+import jetbrains.mps.smodel.SReference;
 import jetbrains.mps.lang.typesystem.runtime.HUtil;
 
 public class LanguageConverter {
@@ -147,16 +147,8 @@ public class LanguageConverter {
     final SNode result = SConceptOperations.createNewNode("jetbrains.mps.core.structure.structure.SConcept", null);
     MapSequence.fromMap(map).put(concept, result);
     updateAbstractConceptDeclarationFields(concept, result);
-    SPropertyOperations.set(result, "isAbstract", "" + (ListSequence.fromList(SLinkOperations.getTargets(concept, "conceptProperty", true)).any(new IWhereFilter<SNode>() {
-      public boolean accept(SNode it) {
-        return isConceptProperty(it, "jetbrains.mps.lang.core.structure.BaseConcept", "abstract");
-      }
-    })));
-    SPropertyOperations.set(result, "isFinal", "" + (ListSequence.fromList(SLinkOperations.getTargets(concept, "conceptProperty", true)).any(new IWhereFilter<SNode>() {
-      public boolean accept(SNode it) {
-        return isConceptProperty(it, "jetbrains.mps.lang.core.structure.BaseConcept", "final");
-      }
-    })));
+    SPropertyOperations.set(result, "isAbstract", "" + (SPropertyOperations.getBoolean(concept, "abstract")));
+    SPropertyOperations.set(result, "isFinal", "" + (SPropertyOperations.getBoolean(concept, "final")));
     SPropertyOperations.set(result, "canBeRoot", "" + (SPropertyOperations.getBoolean(concept, "rootable")));
     for (final SNode implementedConcepts : SLinkOperations.getTargets(concept, "implements", true)) {
       final SNode ref = SConceptOperations.createNewNode("jetbrains.mps.core.structure.structure.SInterfaceReference", null);
@@ -173,6 +165,12 @@ public class LanguageConverter {
           SLinkOperations.setTarget(result, "extends", SNodeOperations.as(resolve(SConceptOperations.findConceptDeclaration("jetbrains.mps.core.structure.structure.SConcept"), SLinkOperations.getTarget(concept, "extends", false)), "jetbrains.mps.core.structure.structure.SConcept"), false);
         }
       });
+    }
+    if (isNotEmpty_hm9xms_a0i0k(SPropertyOperations.getString(concept, "conceptAlias"))) {
+      ListSequence.fromList(SLinkOperations.getTargets(result, "annotations", true)).addElement(_quotation_createNode_hm9xms_a0a0a8a01(SPropertyOperations.getString(concept, "conceptAlias")));
+    }
+    if (isNotEmpty_hm9xms_a0j0k(SPropertyOperations.getString(concept, "conceptShortDescription"))) {
+      ListSequence.fromList(SLinkOperations.getTargets(result, "annotations", true)).addElement(_quotation_createNode_hm9xms_a0a0a9a01(SPropertyOperations.getString(concept, "conceptShortDescription")));
     }
     return result;
   }
@@ -252,50 +250,6 @@ public class LanguageConverter {
       ListSequence.fromList(SNodeOperations.getChildren(destination, SLinkOperations.findLinkDeclaration("jetbrains.mps.core.structure.structure.SAbstractConcept", "members"))).addElement(SConceptOperations.createNewNode("jetbrains.mps.core.structure.structure.SConceptMemberEmptyLine", null));
     }
 
-    // concept property (abstract, final, etc) 
-    Iterable<SNode> conceptProperties = ListSequence.fromList(SLinkOperations.getTargets(source, "conceptProperty", true)).select(new ISelector<SNode, SNode>() {
-      public SNode select(SNode it) {
-        return convertConceptProperty(it);
-      }
-    });
-    if (Sequence.fromIterable(conceptProperties).isNotEmpty()) {
-      ListSequence.fromList(SNodeOperations.getChildren(destination, SLinkOperations.findLinkDeclaration("jetbrains.mps.core.structure.structure.SAbstractConcept", "members"))).addElement(_quotation_createNode_hm9xms_a0a0a41a41());
-      ListSequence.fromList(SNodeOperations.getChildren(destination, SLinkOperations.findLinkDeclaration("jetbrains.mps.core.structure.structure.SAbstractConcept", "members"))).addSequence(Sequence.fromIterable(conceptProperties));
-      ListSequence.fromList(SNodeOperations.getChildren(destination, SLinkOperations.findLinkDeclaration("jetbrains.mps.core.structure.structure.SAbstractConcept", "members"))).addElement(SConceptOperations.createNewNode("jetbrains.mps.core.structure.structure.SConceptMemberEmptyLine", null));
-    }
-
-    // concept link 
-    Iterable<SNode> conceptLinks = ListSequence.fromList(SLinkOperations.getTargets(source, "conceptLink", true)).select(new ISelector<SNode, SNode>() {
-      public SNode select(SNode it) {
-        return convertConceptLink(it);
-      }
-    });
-    if (Sequence.fromIterable(conceptLinks).isNotEmpty()) {
-      ListSequence.fromList(SNodeOperations.getChildren(destination, SLinkOperations.findLinkDeclaration("jetbrains.mps.core.structure.structure.SAbstractConcept", "members"))).addElement(_quotation_createNode_hm9xms_a0a0a81a41());
-      ListSequence.fromList(SNodeOperations.getChildren(destination, SLinkOperations.findLinkDeclaration("jetbrains.mps.core.structure.structure.SAbstractConcept", "members"))).addSequence(Sequence.fromIterable(conceptLinks));
-      ListSequence.fromList(SNodeOperations.getChildren(destination, SLinkOperations.findLinkDeclaration("jetbrains.mps.core.structure.structure.SAbstractConcept", "members"))).addElement(SConceptOperations.createNewNode("jetbrains.mps.core.structure.structure.SConceptMemberEmptyLine", null));
-    }
-
-    // concept property and link declaration 
-    Iterable<SNode> conceptPropertyAndLinkDeclarations = ListSequence.fromList(SLinkOperations.getTargets(source, "conceptPropertyDeclaration", true)).select(new ISelector<SNode, SNode>() {
-      public SNode select(SNode it) {
-        return SNodeOperations.cast(it, "jetbrains.mps.lang.core.structure.INamedConcept");
-      }
-    }).concat(ListSequence.fromList(SLinkOperations.getTargets(source, "conceptLinkDeclaration", true)).select(new ISelector<SNode, SNode>() {
-      public SNode select(SNode it) {
-        return SNodeOperations.cast(it, "jetbrains.mps.lang.core.structure.INamedConcept");
-      }
-    })).select(new ISelector<SNode, SNode>() {
-      public SNode select(SNode it) {
-        return _quotation_createNode_hm9xms_a0a0a0a12a41(SPropertyOperations.getString(it, "name"));
-      }
-    });
-    if (Sequence.fromIterable(conceptPropertyAndLinkDeclarations).isNotEmpty()) {
-      ListSequence.fromList(SNodeOperations.getChildren(destination, SLinkOperations.findLinkDeclaration("jetbrains.mps.core.structure.structure.SAbstractConcept", "members"))).addElement(_quotation_createNode_hm9xms_a0a0a22a41());
-      ListSequence.fromList(SNodeOperations.getChildren(destination, SLinkOperations.findLinkDeclaration("jetbrains.mps.core.structure.structure.SAbstractConcept", "members"))).addSequence(Sequence.fromIterable(conceptPropertyAndLinkDeclarations));
-      ListSequence.fromList(SNodeOperations.getChildren(destination, SLinkOperations.findLinkDeclaration("jetbrains.mps.core.structure.structure.SAbstractConcept", "members"))).addElement(SConceptOperations.createNewNode("jetbrains.mps.core.structure.structure.SConceptMemberEmptyLine", null));
-    }
-
     removeLastChild(destination);
   }
 
@@ -343,42 +297,6 @@ public class LanguageConverter {
     return result;
   }
 
-  public SNode convertConceptLink(SNode conceptLink) {
-    if (SNodeOperations.isInstanceOf(conceptLink, "jetbrains.mps.lang.structure.structure.AggregationConceptLink")) {
-      SNode child = SNodeOperations.cast(conceptLink, "jetbrains.mps.lang.structure.structure.AggregationConceptLink");
-      return _quotation_createNode_hm9xms_a1a0a02("s_" + SPropertyOperations.getString(SLinkOperations.getTarget(child, "conceptLinkDeclaration", false), "name"));
-    }
-    if (SNodeOperations.isInstanceOf(conceptLink, "jetbrains.mps.lang.structure.structure.ReferenceConceptLink")) {
-      SNode ref = SNodeOperations.cast(conceptLink, "jetbrains.mps.lang.structure.structure.ReferenceConceptLink");
-      return _quotation_createNode_hm9xms_a1a1a02("s_" + SPropertyOperations.getString(SLinkOperations.getTarget(ref, "conceptLinkDeclaration", false), "name"));
-    }
-    return null;
-  }
-
-  public SNode convertConceptProperty(SNode conceptProperty) {
-    String name = SPropertyOperations.getString(SLinkOperations.getTarget(conceptProperty, "conceptPropertyDeclaration", false), "name");
-    if (SNodeOperations.isInstanceOf(conceptProperty, "jetbrains.mps.lang.structure.structure.BooleanConceptProperty")) {
-      return _quotation_createNode_hm9xms_a0a1a12("s_" + name);
-    }
-    if (SNodeOperations.isInstanceOf(conceptProperty, "jetbrains.mps.lang.structure.structure.IntegerConceptProperty")) {
-      int value = SPropertyOperations.getInteger(((SNode) conceptProperty), "value");
-      return _quotation_createNode_hm9xms_a1a2a12("" + value, "s_" + name);
-    }
-    if (SNodeOperations.isInstanceOf(conceptProperty, "jetbrains.mps.lang.structure.structure.StringConceptProperty")) {
-      String value = SPropertyOperations.getString(((SNode) conceptProperty), "value");
-      return _quotation_createNode_hm9xms_a1a3a12(value, "s_" + name);
-    }
-    return null;
-  }
-
-  public static boolean isConceptProperty(SNode cp, String conceptFqName, String name) {
-    SNode decl = SLinkOperations.getTarget(cp, "conceptPropertyDeclaration", false);
-    if (decl == null) {
-      return false;
-    }
-    return eq_hm9xms_a0a0c0w(SPropertyOperations.getString(decl, "name"), name) && SNodeOperations.isInstanceOf(SNodeOperations.getParent(decl), "jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration") && eq_hm9xms_a0a2a22(BehaviorReflection.invokeVirtual(String.class, SNodeOperations.cast(SNodeOperations.getParent(decl), "jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration"), "virtual_getFqName_1213877404258", new Object[]{}), conceptFqName);
-  }
-
   public static Iterable<SNode> join(Iterable<SNode> source, SNode separator) {
     if (Sequence.fromIterable(source).isEmpty()) {
       return ListSequence.fromList(new ArrayList<SNode>());
@@ -413,6 +331,38 @@ public class LanguageConverter {
     return quotedNode_2;
   }
 
+  private static SNode _quotation_createNode_hm9xms_a0a0a8a01(Object parameter_1) {
+    PersistenceFacade facade = PersistenceFacade.getInstance();
+    SNode quotedNode_2 = null;
+    SNode quotedNode_3 = null;
+    SNode quotedNode_4 = null;
+    quotedNode_2 = SModelUtil_new.instantiateConceptDeclaration("jetbrains.mps.core.metadata.structure.SConceptAnnotationInstance", null, null, GlobalScope.getInstance(), false);
+    quotedNode_2.setReference("type", SReference.create("type", quotedNode_2, facade.createModelReference("r:7828b85a-5771-4321-a557-44fc5258c152(jetbrains.mps.core.stubs)"), facade.createNodeId("2024350793557759556")));
+    quotedNode_3 = SModelUtil_new.instantiateConceptDeclaration("jetbrains.mps.core.metadata.structure.SConceptAnnotationArgument", null, null, GlobalScope.getInstance(), false);
+    SNodeAccessUtil.setProperty(quotedNode_3, "name", "text");
+    quotedNode_4 = SModelUtil_new.instantiateConceptDeclaration("jetbrains.mps.core.query.structure.MqlStringLiteral", null, null, GlobalScope.getInstance(), false);
+    SNodeAccessUtil.setProperty(quotedNode_4, "value", (String) parameter_1);
+    quotedNode_3.addChild("value", quotedNode_4);
+    quotedNode_2.addChild("arguments", quotedNode_3);
+    return quotedNode_2;
+  }
+
+  private static SNode _quotation_createNode_hm9xms_a0a0a9a01(Object parameter_1) {
+    PersistenceFacade facade = PersistenceFacade.getInstance();
+    SNode quotedNode_2 = null;
+    SNode quotedNode_3 = null;
+    SNode quotedNode_4 = null;
+    quotedNode_2 = SModelUtil_new.instantiateConceptDeclaration("jetbrains.mps.core.metadata.structure.SConceptAnnotationInstance", null, null, GlobalScope.getInstance(), false);
+    quotedNode_2.setReference("type", SReference.create("type", quotedNode_2, facade.createModelReference("r:7828b85a-5771-4321-a557-44fc5258c152(jetbrains.mps.core.stubs)"), facade.createNodeId("2024350793557759920")));
+    quotedNode_3 = SModelUtil_new.instantiateConceptDeclaration("jetbrains.mps.core.metadata.structure.SConceptAnnotationArgument", null, null, GlobalScope.getInstance(), false);
+    SNodeAccessUtil.setProperty(quotedNode_3, "name", "text");
+    quotedNode_4 = SModelUtil_new.instantiateConceptDeclaration("jetbrains.mps.core.query.structure.MqlStringLiteral", null, null, GlobalScope.getInstance(), false);
+    SNodeAccessUtil.setProperty(quotedNode_4, "value", (String) parameter_1);
+    quotedNode_3.addChild("value", quotedNode_4);
+    quotedNode_2.addChild("arguments", quotedNode_3);
+    return quotedNode_2;
+  }
+
   private static SNode _quotation_createNode_hm9xms_a0a0m(Object parameter_1) {
     PersistenceFacade facade = PersistenceFacade.getInstance();
     SNode quotedNode_2 = null;
@@ -427,45 +377,6 @@ public class LanguageConverter {
     quotedNode_2 = SModelUtil_new.instantiateConceptDeclaration("jetbrains.mps.core.structure.structure.SEnumerationMember", null, null, GlobalScope.getInstance(), false);
     SNodeAccessUtil.setProperty(quotedNode_2, "name", (String) parameter_1);
     return quotedNode_2;
-  }
-
-  private static SNode _quotation_createNode_hm9xms_a0a0a41a41() {
-    PersistenceFacade facade = PersistenceFacade.getInstance();
-    SNode quotedNode_1 = null;
-    quotedNode_1 = SModelUtil_new.instantiateConceptDeclaration("jetbrains.mps.core.structure.structure.SConceptMemberComment", null, null, GlobalScope.getInstance(), false);
-    SNodeAccessUtil.setProperty(quotedNode_1, "comment", "concept properties");
-    return quotedNode_1;
-  }
-
-  private static SNode _quotation_createNode_hm9xms_a0a0a81a41() {
-    PersistenceFacade facade = PersistenceFacade.getInstance();
-    SNode quotedNode_1 = null;
-    quotedNode_1 = SModelUtil_new.instantiateConceptDeclaration("jetbrains.mps.core.structure.structure.SConceptMemberComment", null, null, GlobalScope.getInstance(), false);
-    SNodeAccessUtil.setProperty(quotedNode_1, "comment", "concept links");
-    return quotedNode_1;
-  }
-
-  private static SNode _quotation_createNode_hm9xms_a0a0a0a12a41(Object parameter_1) {
-    PersistenceFacade facade = PersistenceFacade.getInstance();
-    SNode quotedNode_2 = null;
-    SNode quotedNode_3 = null;
-    SNode quotedNode_4 = null;
-    quotedNode_2 = SModelUtil_new.instantiateConceptDeclaration("jetbrains.mps.core.smodel.structure.SConceptQuery", null, null, GlobalScope.getInstance(), false);
-    SNodeAccessUtil.setProperty(quotedNode_2, "name", (String) parameter_1);
-    quotedNode_3 = SModelUtil_new.instantiateConceptDeclaration("jetbrains.mps.core.query.structure.MqlStringLiteral", null, null, GlobalScope.getInstance(), false);
-    SNodeAccessUtil.setProperty(quotedNode_3, "value", "not implemented");
-    quotedNode_2.addChild("body", quotedNode_3);
-    quotedNode_4 = SModelUtil_new.instantiateConceptDeclaration("jetbrains.mps.core.query.structure.MqlStringType", null, null, GlobalScope.getInstance(), false);
-    quotedNode_2.addChild("type", quotedNode_4);
-    return quotedNode_2;
-  }
-
-  private static SNode _quotation_createNode_hm9xms_a0a0a22a41() {
-    PersistenceFacade facade = PersistenceFacade.getInstance();
-    SNode quotedNode_1 = null;
-    quotedNode_1 = SModelUtil_new.instantiateConceptDeclaration("jetbrains.mps.core.structure.structure.SConceptMemberComment", null, null, GlobalScope.getInstance(), false);
-    SNodeAccessUtil.setProperty(quotedNode_1, "comment", "concept properties and links declarations");
-    return quotedNode_1;
   }
 
   private static SNode createSEnumerationDataType_hm9xms_a0a0p() {
@@ -518,92 +429,11 @@ public class LanguageConverter {
     return quotedNode_3;
   }
 
-  private static SNode _quotation_createNode_hm9xms_a1a0a02(Object parameter_1) {
-    PersistenceFacade facade = PersistenceFacade.getInstance();
-    SNode quotedNode_2 = null;
-    SNode quotedNode_3 = null;
-    SNode quotedNode_4 = null;
-    quotedNode_2 = SModelUtil_new.instantiateConceptDeclaration("jetbrains.mps.core.smodel.structure.SConceptQuery", null, null, GlobalScope.getInstance(), false);
-    SNodeAccessUtil.setProperty(quotedNode_2, "name", (String) parameter_1);
-    quotedNode_3 = SModelUtil_new.instantiateConceptDeclaration("jetbrains.mps.core.query.structure.MqlStringLiteral", null, null, GlobalScope.getInstance(), false);
-    SNodeAccessUtil.setProperty(quotedNode_3, "value", "todo, need quotation to query lang");
-    quotedNode_2.addChild("body", quotedNode_3);
-    quotedNode_4 = SModelUtil_new.instantiateConceptDeclaration("jetbrains.mps.core.query.structure.MqlStringType", null, null, GlobalScope.getInstance(), false);
-    quotedNode_2.addChild("type", quotedNode_4);
-    return quotedNode_2;
+  public static boolean isNotEmpty_hm9xms_a0i0k(String str) {
+    return str != null && str.length() > 0;
   }
 
-  private static SNode _quotation_createNode_hm9xms_a1a1a02(Object parameter_1) {
-    PersistenceFacade facade = PersistenceFacade.getInstance();
-    SNode quotedNode_2 = null;
-    SNode quotedNode_3 = null;
-    SNode quotedNode_4 = null;
-    quotedNode_2 = SModelUtil_new.instantiateConceptDeclaration("jetbrains.mps.core.smodel.structure.SConceptQuery", null, null, GlobalScope.getInstance(), false);
-    SNodeAccessUtil.setProperty(quotedNode_2, "name", (String) parameter_1);
-    quotedNode_3 = SModelUtil_new.instantiateConceptDeclaration("jetbrains.mps.core.query.structure.MqlStringLiteral", null, null, GlobalScope.getInstance(), false);
-    SNodeAccessUtil.setProperty(quotedNode_3, "value", "todo, need quotation to query lang");
-    quotedNode_2.addChild("body", quotedNode_3);
-    quotedNode_4 = SModelUtil_new.instantiateConceptDeclaration("jetbrains.mps.core.query.structure.MqlStringType", null, null, GlobalScope.getInstance(), false);
-    quotedNode_2.addChild("type", quotedNode_4);
-    return quotedNode_2;
-  }
-
-  private static SNode _quotation_createNode_hm9xms_a0a1a12(Object parameter_1) {
-    PersistenceFacade facade = PersistenceFacade.getInstance();
-    SNode quotedNode_2 = null;
-    SNode quotedNode_3 = null;
-    SNode quotedNode_4 = null;
-    quotedNode_2 = SModelUtil_new.instantiateConceptDeclaration("jetbrains.mps.core.smodel.structure.SConceptQuery", null, null, GlobalScope.getInstance(), false);
-    SNodeAccessUtil.setProperty(quotedNode_2, "name", (String) parameter_1);
-    quotedNode_3 = SModelUtil_new.instantiateConceptDeclaration("jetbrains.mps.core.query.structure.MqlBoolLiteral", null, null, GlobalScope.getInstance(), false);
-    SNodeAccessUtil.setProperty(quotedNode_3, "value", "true");
-    quotedNode_2.addChild("body", quotedNode_3);
-    quotedNode_4 = SModelUtil_new.instantiateConceptDeclaration("jetbrains.mps.core.query.structure.MqlBoolType", null, null, GlobalScope.getInstance(), false);
-    quotedNode_2.addChild("type", quotedNode_4);
-    return quotedNode_2;
-  }
-
-  private static SNode _quotation_createNode_hm9xms_a1a2a12(Object parameter_1, Object parameter_2) {
-    PersistenceFacade facade = PersistenceFacade.getInstance();
-    SNode quotedNode_3 = null;
-    SNode quotedNode_4 = null;
-    SNode quotedNode_5 = null;
-    quotedNode_3 = SModelUtil_new.instantiateConceptDeclaration("jetbrains.mps.core.smodel.structure.SConceptQuery", null, null, GlobalScope.getInstance(), false);
-    SNodeAccessUtil.setProperty(quotedNode_3, "name", (String) parameter_2);
-    quotedNode_4 = SModelUtil_new.instantiateConceptDeclaration("jetbrains.mps.core.query.structure.MqlIntLiteral", null, null, GlobalScope.getInstance(), false);
-    SNodeAccessUtil.setProperty(quotedNode_4, "value", (String) parameter_1);
-    quotedNode_3.addChild("body", quotedNode_4);
-    quotedNode_5 = SModelUtil_new.instantiateConceptDeclaration("jetbrains.mps.core.query.structure.MqlIntType", null, null, GlobalScope.getInstance(), false);
-    quotedNode_3.addChild("type", quotedNode_5);
-    return quotedNode_3;
-  }
-
-  private static SNode _quotation_createNode_hm9xms_a1a3a12(Object parameter_1, Object parameter_2) {
-    PersistenceFacade facade = PersistenceFacade.getInstance();
-    SNode quotedNode_3 = null;
-    SNode quotedNode_4 = null;
-    SNode quotedNode_5 = null;
-    quotedNode_3 = SModelUtil_new.instantiateConceptDeclaration("jetbrains.mps.core.smodel.structure.SConceptQuery", null, null, GlobalScope.getInstance(), false);
-    SNodeAccessUtil.setProperty(quotedNode_3, "name", (String) parameter_2);
-    quotedNode_4 = SModelUtil_new.instantiateConceptDeclaration("jetbrains.mps.core.query.structure.MqlStringLiteral", null, null, GlobalScope.getInstance(), false);
-    SNodeAccessUtil.setProperty(quotedNode_4, "value", (String) parameter_1);
-    quotedNode_3.addChild("body", quotedNode_4);
-    quotedNode_5 = SModelUtil_new.instantiateConceptDeclaration("jetbrains.mps.core.query.structure.MqlStringType", null, null, GlobalScope.getInstance(), false);
-    quotedNode_3.addChild("type", quotedNode_5);
-    return quotedNode_3;
-  }
-
-  private static boolean eq_hm9xms_a0a0c0w(Object a, Object b) {
-    return (a != null ?
-      a.equals(b) :
-      a == b
-    );
-  }
-
-  private static boolean eq_hm9xms_a0a2a22(Object a, Object b) {
-    return (a != null ?
-      a.equals(b) :
-      a == b
-    );
+  public static boolean isNotEmpty_hm9xms_a0j0k(String str) {
+    return str != null && str.length() > 0;
   }
 }

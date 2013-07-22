@@ -19,16 +19,20 @@ import jetbrains.mps.messages.IMessageHandler;
 import jetbrains.mps.messages.IMessage;
 import jetbrains.mps.messages.Message;
 import jetbrains.mps.messages.MessageKind;
-import jetbrains.mps.smodel.MPSModuleRepository;
+import org.jetbrains.mps.openapi.model.SNode;
 import org.jetbrains.mps.openapi.model.SModel;
 import jetbrains.mps.smodel.SModelRepository;
-import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.smodel.DefaultSModelDescriptor;
+import jetbrains.mps.internal.collections.runtime.ListSequence;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
+import jetbrains.mps.internal.collections.runtime.IWhereFilter;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import jetbrains.mps.smodel.MPSModuleRepository;
+import org.jetbrains.mps.openapi.persistence.PersistenceFacade;
 import jetbrains.mps.core.util.merge.MergeSession;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.persistence.DefaultModelRoot;
 import org.jetbrains.mps.openapi.persistence.ModelRoot;
-import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import org.apache.log4j.Logger;
 import org.apache.log4j.LogManager;
 
@@ -93,35 +97,60 @@ public class MigrateStructure_Action extends BaseAction {
           tool.clear("Migrate structure");
         }
       };
-      Language language = (Language) ((SModule) MapSequence.fromMap(_params).get("module"));
+      final Language language = (Language) ((SModule) MapSequence.fromMap(_params).get("module"));
       mh.handle(new Message(MessageKind.INFORMATION, "converting " + language.getModuleFqName()));
-
-      Language newStructureLanguage = (Language) MPSModuleRepository.getInstance().getModuleByFqName("jetbrains.mps.core.structure");
-      language.addUsedLanguage(newStructureLanguage.getModuleReference());
-      String newModelName = language.getModuleName() + ".core";
-      SModel desc = SModelRepository.getInstance().getModelDescriptor(newModelName);
-      SModel newStructure;
       SNode converted = new LanguageConverter(language, mh).convert();
-      if (desc instanceof DefaultSModelDescriptor) {
-        MergeSession session = new MergeSession(mh);
-        session.replace((DefaultSModelDescriptor) desc, Sequence.<SNode>singleton(converted));
-        session.restoreRefs();
-        session.apply();
-        mh.handle(new Message(MessageKind.INFORMATION, "merged"));
-      } else {
-        DefaultModelRoot root = (DefaultModelRoot) Sequence.fromIterable(((Iterable<ModelRoot>) language.getModelRoots())).where(new IWhereFilter<ModelRoot>() {
-          public boolean accept(ModelRoot it) {
-            return it instanceof DefaultModelRoot;
-          }
-        }).first();
-        newStructure = root.createModel(newModelName);
-        if (newStructure == null) {
-          mh.handle(new Message(MessageKind.INFORMATION, "cannot create model `" + newModelName + "': ()"));
+
+      SModel desc;
+      if (language.isPackaged()) {
+        desc = SModelRepository.getInstance().getModelDescriptor("jetbrains.mps.core.stubs");
+        if (!(desc instanceof DefaultSModelDescriptor)) {
+          mh.handle(new Message(MessageKind.ERROR, "cannot find jetbrains.mps.core.stubs"));
           return;
         }
-        ((jetbrains.mps.smodel.SModel) newStructure).addLanguage(newStructureLanguage.getModuleReference());
-        newStructure.addRootNode(converted);
-        mh.handle(new Message(MessageKind.INFORMATION, "new model created"));
+
+        SNode existingRoot = ListSequence.fromList(SModelOperations.getRoots(((SModel) desc), "jetbrains.mps.core.structure.structure.SStructureContainer")).findFirst(new IWhereFilter<SNode>() {
+          public boolean accept(SNode it) {
+            return eq_5hzyna_a0a0a0a0a0a3a8a0a6(SPropertyOperations.getString(it, "name"), language.getModuleName());
+          }
+        });
+
+        if (existingRoot == null) {
+          desc.addRootNode(converted);
+        } else {
+          mh.handle(new Message(MessageKind.INFORMATION, "merging is not supported yet!"));
+        }
+
+      } else {
+        Language newStructureLanguage = (Language) MPSModuleRepository.getInstance().getModuleByFqName("jetbrains.mps.core.structure");
+        language.addUsedLanguage(newStructureLanguage.getModuleReference());
+        language.addDependency(PersistenceFacade.getInstance().createModuleReference("c79685c0-f0f5-44ce-8c36-9ec48f392de5(jetbrains.mps.core.stubs)"), true);
+
+        String newModelName = language.getModuleName() + ".core";
+        desc = SModelRepository.getInstance().getModelDescriptor(newModelName);
+
+        SModel newStructure;
+        if (desc instanceof DefaultSModelDescriptor) {
+          MergeSession session = new MergeSession(mh);
+          session.replace((DefaultSModelDescriptor) desc, Sequence.<SNode>singleton(converted));
+          session.restoreRefs();
+          session.apply();
+          mh.handle(new Message(MessageKind.INFORMATION, "merged"));
+        } else {
+          DefaultModelRoot root = (DefaultModelRoot) Sequence.fromIterable(((Iterable<ModelRoot>) language.getModelRoots())).where(new IWhereFilter<ModelRoot>() {
+            public boolean accept(ModelRoot it) {
+              return it instanceof DefaultModelRoot;
+            }
+          }).first();
+          newStructure = root.createModel(newModelName);
+          if (newStructure == null) {
+            mh.handle(new Message(MessageKind.INFORMATION, "cannot create model `" + newModelName + "': ()"));
+            return;
+          }
+          ((jetbrains.mps.smodel.SModel) newStructure).addLanguage(newStructureLanguage.getModuleReference());
+          newStructure.addRootNode(converted);
+          mh.handle(new Message(MessageKind.INFORMATION, "new model created"));
+        }
       }
     } catch (Throwable t) {
       if (LOG.isEnabledFor(Priority.ERROR)) {
@@ -131,4 +160,11 @@ public class MigrateStructure_Action extends BaseAction {
   }
 
   protected static Logger LOG = LogManager.getLogger(MigrateStructure_Action.class);
+
+  private static boolean eq_5hzyna_a0a0a0a0a0a3a8a0a6(Object a, Object b) {
+    return (a != null ?
+      a.equals(b) :
+      a == b
+    );
+  }
 }

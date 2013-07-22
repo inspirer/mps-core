@@ -10,7 +10,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.util.NameUtil;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.smodel.SModel;
 import jetbrains.mps.smodel.behaviour.BehaviorReflection;
 import jetbrains.mps.smodel.behaviour.BehaviorManager;
 
@@ -38,7 +37,10 @@ public class SAbstractConcept_Behavior {
   }
 
   public static String call_getQualifiedName_7891765471710491510(SNode thisNode) {
-    String language = ((SModel) SNodeOperations.getModel(thisNode)).getModelDescriptor().getModule().getModuleName();
+    String language = thisNode.getModel().getModule().getModuleName();
+    if (eq_kbeznz_a0b0d(language, "jetbrains.mps.core.stubs")) {
+      language = SPropertyOperations.getString(SNodeOperations.cast(SNodeOperations.getContainingRoot(thisNode), "jetbrains.mps.core.structure.structure.SStructureContainer"), "name");
+    }
     return language + ".structure." + SPropertyOperations.getString(thisNode, "name");
   }
 
@@ -50,5 +52,12 @@ public class SAbstractConcept_Behavior {
   @Deprecated
   public static boolean callSuper_isSubConceptOf_5938997310819191538(SNode thisNode, String callerConceptFqName, SNode concept) {
     return BehaviorManager.getInstance().invokeSuper(Boolean.TYPE, SNodeOperations.cast(thisNode, "jetbrains.mps.core.structure.structure.SAbstractConcept"), callerConceptFqName, "virtual_isSubConceptOf_5938997310819191538", new Class[]{SNode.class, SNode.class}, new Object[]{concept});
+  }
+
+  private static boolean eq_kbeznz_a0b0d(Object a, Object b) {
+    return (a != null ?
+      a.equals(b) :
+      a == b
+    );
   }
 }

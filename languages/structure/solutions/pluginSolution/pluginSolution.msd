@@ -11,8 +11,10 @@
     <dependency reexport="false">498d89d2-c2e9-11e2-ad49-6cf049e62fe5(MPS.IDEA)</dependency>
     <dependency reexport="false">742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)</dependency>
     <dependency reexport="false">86441d7a-e194-42da-81a5-2161ec62a379(MPS.Workbench)</dependency>
+    <dependency reexport="false">96edcf67-fb92-4a65-a193-b125e8994c8e(jetbrains.mps.core.metadata)</dependency>
     <dependency reexport="false">41a590b4-0cca-40d1-9a11-d9ef253734cc(jetbrains.mps.core.smodel)</dependency>
     <dependency reexport="false">1372eb94-b402-4b9f-bb3f-44315b20f92d(jetbrains.mps.core.structure)</dependency>
+    <dependency reexport="false">c79685c0-f0f5-44ce-8c36-9ec48f392de5(jetbrains.mps.core.stubs)</dependency>
     <dependency reexport="false">5e77ce2d-7832-4b1c-b2c5-4660988d074a(jetbrains.mps.core.util)</dependency>
     <dependency reexport="false">cac2fef0-41a6-4fcd-923f-f893d536b2ab(jetbrains.mps.ide.mpsdevkit)</dependency>
     <dependency reexport="false">ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</dependency>
