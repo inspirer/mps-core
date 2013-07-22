@@ -77,7 +77,7 @@
     </node>
   </root>
   <root type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="3647933405694790197" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="notation" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="core" />
     <link role="concept" roleId="1i04.1225194240799" targetNodeId="74m3.3647933405694717717" resolveInfo="SNotationParentheses" />
     <node role="constructor" roleId="1i04.1225194240801" type="1i04.ConceptConstructorDeclaration" typeId="1i04.1225194413805" id="3647933405694790198" nodeInfo="nn">
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="3647933405694790199" nodeInfo="sn" />
@@ -241,7 +241,7 @@
     </node>
   </root>
   <root type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="3647933405694801756" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="notation" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="view" />
     <link role="concept" roleId="1i04.1225194240799" targetNodeId="74m3.3647933405694717730" resolveInfo="SNotationNewLine" />
     <node role="constructor" roleId="1i04.1225194240801" type="1i04.ConceptConstructorDeclaration" typeId="1i04.1225194413805" id="3647933405694801757" nodeInfo="nn">
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="3647933405694801758" nodeInfo="sn" />
@@ -263,7 +263,7 @@
     </node>
   </root>
   <root type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="8379004527113948631" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="notation" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="core" />
     <link role="concept" roleId="1i04.1225194240799" targetNodeId="74m3.3129031437528339296" resolveInfo="SNotationQuantifier" />
     <node role="constructor" roleId="1i04.1225194240801" type="1i04.ConceptConstructorDeclaration" typeId="1i04.1225194413805" id="8379004527113948632" nodeInfo="nn">
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="8379004527113948633" nodeInfo="sn" />

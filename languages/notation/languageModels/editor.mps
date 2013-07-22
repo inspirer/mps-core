@@ -106,7 +106,7 @@
     </node>
   </root>
   <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="3647933405694713884" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="notation" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="core" />
     <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="74m3.3647933405694713882" resolveInfo="SNotationLabel" />
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="3647933405694713886" nodeInfo="nn">
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="3647933405694713891" nodeInfo="nn">
@@ -139,7 +139,7 @@
     </node>
   </root>
   <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="3647933405694717719" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="notation" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="core" />
     <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="74m3.3647933405694717717" resolveInfo="SNotationParentheses" />
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="3647933405694717721" nodeInfo="nn">
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Alternation" typeId="tpc2.1088612959204" id="7465902928068761024" nodeInfo="ng">
@@ -291,7 +291,7 @@
     </node>
   </root>
   <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="3647933405694717731" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="notation" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="view" />
     <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="74m3.3647933405694717730" resolveInfo="SNotationNewLine" />
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="7465902928068863971" nodeInfo="nn">
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Alternation" typeId="tpc2.1088612959204" id="7465902928068863974" nodeInfo="ng">
@@ -474,7 +474,7 @@
     </node>
   </root>
   <root type="tpc2.CellActionMapDeclaration" typeId="tpc2.1139535219966" id="3129031437528338437" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="notation" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="core" />
     <property name="name" nameId="tpck.1169194664001" value="SNotationMapping_deleteName" />
     <link role="applicableConcept" roleId="tpc2.1139535219968" targetNodeId="74m3.3129031437528132565" resolveInfo="SNotationMapping" />
     <node role="item" roleId="tpc2.1139535219969" type="tpc2.CellActionMapItem" typeId="tpc2.1139535280617" id="3129031437528338438" nodeInfo="ng">
@@ -522,7 +522,7 @@
     </node>
   </root>
   <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="3129031437528339298" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="notation" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="core" />
     <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="74m3.3129031437528339296" resolveInfo="SNotationQuantifier" />
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="3129031437528339302" nodeInfo="nn">
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="3129031437528339303" nodeInfo="nn" />
@@ -598,7 +598,7 @@
     </node>
   </root>
   <root type="tpc2.CellActionMapDeclaration" typeId="tpc2.1139535219966" id="3129031437528354508" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="notation" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="core" />
     <property name="name" nameId="tpck.1169194664001" value="SNotationQuantifier_delete" />
     <link role="applicableConcept" roleId="tpc2.1139535219968" targetNodeId="74m3.3129031437528339296" resolveInfo="SNotationQuantifier" />
     <node role="item" roleId="tpc2.1139535219969" type="tpc2.CellActionMapItem" typeId="tpc2.1139535280617" id="3129031437528354509" nodeInfo="ng">
@@ -623,7 +623,7 @@
     </node>
   </root>
   <root type="tpc2.CellActionMapDeclaration" typeId="tpc2.1139535219966" id="5362811550739230113" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="notation" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="core" />
     <property name="name" nameId="tpck.1169194664001" value="SNotationParentheses_delete" />
     <link role="applicableConcept" roleId="tpc2.1139535219968" targetNodeId="74m3.3647933405694717717" resolveInfo="SNotationParentheses" />
     <node role="item" roleId="tpc2.1139535219969" type="tpc2.CellActionMapItem" typeId="tpc2.1139535280617" id="5362811550739230114" nodeInfo="ng">
@@ -887,7 +887,7 @@
     </node>
   </root>
   <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="8379004527113710096" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="parts" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="view" />
     <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="74m3.8379004527113710095" resolveInfo="SNotationNospace" />
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="8379004527113710098" nodeInfo="nn">
       <property name="text" nameId="tpc2.1073389577007" value="nospace" />
@@ -896,51 +896,6 @@
       </node>
       <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.ForegroundColorStyleClassItem" typeId="tpc2.1186404549998" id="8379004527113710609" nodeInfo="nn">
         <property name="color" nameId="tpc2.1186403713874" value="gray" />
-      </node>
-    </node>
-  </root>
-  <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="8379004527113948354" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="notation" />
-    <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="74m3.8379004527113948349" resolveInfo="SNotationStyle" />
-    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="8379004527113948356" nodeInfo="nn">
-      <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="8379004527113948357" nodeInfo="nn" />
-      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="8379004527113948390" nodeInfo="nn">
-        <property name="text" nameId="tpc2.1073389577007" value="{" />
-        <link role="styleClass" roleId="tpc2.1186406756722" targetNodeId="9vn5.5073985075243144250" resolveInfo="punctuation" />
-        <link role="actionMap" roleId="tpc2.1139959269582" targetNodeId="8379004527113948407" resolveInfo="SNotationStyle_delete" />
-      </node>
-      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNodeList" typeId="tpc2.1073390211982" id="2711998566964106156" nodeInfo="ng">
-        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="74m3.2711998566964106154" />
-        <node role="cellLayout" roleId="tpc2.1140524464360" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="2711998566964106157" nodeInfo="nn" />
-        <node role="emptyCellModel" roleId="tpc2.1140524464359" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="2711998566964106158" nodeInfo="nn">
-          <property name="text" nameId="tpc2.1073389577007" value="" />
-          <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.EditableStyleClassItem" typeId="tpc2.1186414860679" id="2711998566964106159" nodeInfo="nn">
-            <property name="flag" nameId="tpc2.1186414551515" value="true" />
-          </node>
-        </node>
-      </node>
-      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="8379004527113948393" nodeInfo="nn">
-        <property name="text" nameId="tpc2.1073389577007" value="}" />
-        <link role="styleClass" roleId="tpc2.1186406756722" targetNodeId="9vn5.5073985075243144250" resolveInfo="punctuation" />
-        <link role="actionMap" roleId="tpc2.1139959269582" targetNodeId="8379004527113948407" resolveInfo="SNotationStyle_delete" />
-      </node>
-    </node>
-  </root>
-  <root type="tpc2.CellActionMapDeclaration" typeId="tpc2.1139535219966" id="8379004527113948407" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="notation" />
-    <property name="name" nameId="tpck.1169194664001" value="SNotationStyle_delete" />
-    <link role="applicableConcept" roleId="tpc2.1139535219968" targetNodeId="74m3.8379004527113948349" resolveInfo="SNotationStyle" />
-    <node role="item" roleId="tpc2.1139535219969" type="tpc2.CellActionMapItem" typeId="tpc2.1139535280617" id="8379004527113948408" nodeInfo="ng">
-      <property name="actionId" nameId="tpc2.1139535298778" value="delete_action_id" />
-      <node role="executeFunction" roleId="tpc2.1139535280620" type="tpc2.CellActionMap_ExecuteFunction" typeId="tpc2.1139535439104" id="8379004527113948409" nodeInfo="nn">
-        <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="8379004527113948410" nodeInfo="sn">
-          <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="8379004527113948411" nodeInfo="nn">
-            <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8379004527113948412" nodeInfo="nn">
-              <node role="operand" roleId="tpee.1197027771414" type="tpc2.CellActionMap_FunctionParm_selectedNode" typeId="tpc2.1402906326895675325" id="8379004527113948413" nodeInfo="nn" />
-              <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_DeleteOperation" typeId="tp25.1140133623887" id="2711998566964082581" nodeInfo="nn" />
-            </node>
-          </node>
-        </node>
       </node>
     </node>
   </root>
@@ -1124,7 +1079,7 @@
     </node>
   </root>
   <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="2711998566964162681" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="notation" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="view" />
     <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="74m3.2711998566964162679" resolveInfo="SNotationTab" />
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="2711998566964162683" nodeInfo="nn">
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Alternation" typeId="tpc2.1088612959204" id="2711998566964162700" nodeInfo="ng">
@@ -1374,7 +1329,7 @@
     </node>
   </root>
   <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="7524455788176520991" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="notation" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="core" />
     <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="74m3.7524455788176520989" resolveInfo="SNotationUnorderedGroup" />
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="6373561361597735123" nodeInfo="nn">
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="6373561361597735124" nodeInfo="nn" />
@@ -1399,7 +1354,7 @@
     </node>
   </root>
   <root type="tpc2.CellActionMapDeclaration" typeId="tpc2.1139535219966" id="6373561361597720565" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="notation" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="core" />
     <property name="name" nameId="tpck.1169194664001" value="unorderedGroup_deleteElement" />
     <link role="applicableConcept" roleId="tpc2.1139535219968" targetNodeId="74m3.3647933405694693953" resolveInfo="SNotationPart" />
     <node role="item" roleId="tpc2.1139535219969" type="tpc2.CellActionMapItem" typeId="tpc2.1139535280617" id="6373561361597720566" nodeInfo="ng">
@@ -1786,6 +1741,19 @@
         </node>
       </node>
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="8632884680339275923" nodeInfo="nn" />
+    </node>
+  </root>
+  <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="4988228171406889908" nodeInfo="ng">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="predicates" />
+    <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="74m3.4988228171406861415" resolveInfo="SNotationPredicate" />
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="4988228171407385085" nodeInfo="nn">
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="4988228171407385092" nodeInfo="nn">
+        <property name="text" nameId="tpc2.1073389577007" value="[" />
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="4988228171407385098" nodeInfo="nn">
+        <property name="text" nameId="tpc2.1073389577007" value="]" />
+      </node>
+      <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="4988228171407385088" nodeInfo="nn" />
     </node>
   </root>
 </model>

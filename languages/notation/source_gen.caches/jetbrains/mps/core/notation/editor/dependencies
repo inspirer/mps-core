@@ -17,11 +17,11 @@
     <classNode dependClassName="jetbrains.mps.core.notation.editor.SNotationPartListBody" />
     <classNode dependClassName="jetbrains.mps.core.notation.editor.SNotationPartList_Editor" />
     <classNode dependClassName="jetbrains.mps.core.notation.editor.SNotationPart_Editor" />
+    <classNode dependClassName="jetbrains.mps.core.notation.editor.SNotationPredicate_Editor" />
     <classNode dependClassName="jetbrains.mps.core.notation.editor.SNotationQuantifier_Editor" />
     <classNode dependClassName="jetbrains.mps.core.notation.editor.SNotationStyleIndent_Editor" />
     <classNode dependClassName="jetbrains.mps.core.notation.editor.SNotationStylePart_Editor" />
     <classNode dependClassName="jetbrains.mps.core.notation.editor.SNotationStyleSeparator_Editor" />
-    <classNode dependClassName="jetbrains.mps.core.notation.editor.SNotationStyle_Editor" />
     <classNode dependClassName="jetbrains.mps.core.notation.editor.SNotationTab_Editor" />
     <classNode dependClassName="jetbrains.mps.core.notation.editor.SNotationUnorderedGroup_Editor" />
     <classNode dependClassName="jetbrains.mps.core.notation.editor.SNotation_Editor" />
@@ -286,6 +286,14 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
   </dependency>
+  <dependency className="jetbrains.mps.core.notation.editor.SNotationPredicate_Editor" file="SNotationPredicate_Editor.java">
+    <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Collection" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Constant" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
+  </dependency>
   <dependency className="jetbrains.mps.core.notation.editor.SNotationQuantifier_Editor" file="SNotationQuantifier_Editor.java">
     <classNode dependClassName="java.lang.Class" />
     <classNode dependClassName="java.lang.String" />
@@ -360,36 +368,6 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.lang.editor.cellProviders.RefNodeListHandler" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
-  </dependency>
-  <dependency className="jetbrains.mps.core.notation.editor.SNotationStyle_Editor" file="SNotationStyle_Editor.java">
-    <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="jetbrains.mps.core.notation.editor.SNotationStyle_delete" />
-    <classNode dependClassName="jetbrains.mps.core.structure.editor.default_StyleSheet" />
-    <classNode dependClassName="jetbrains.mps.editor.runtime.style.StyleAttributes" />
-    <classNode dependClassName="jetbrains.mps.editor.runtime.style.StyleImpl" />
-    <classNode dependClassName="jetbrains.mps.nodeEditor.cellActions.CellAction_DeleteNode" />
-    <classNode dependClassName="jetbrains.mps.nodeEditor.cellLayout.CellLayout_Indent" />
-    <classNode dependClassName="jetbrains.mps.nodeEditor.cellMenu.DefaultChildSubstituteInfo" />
-    <classNode dependClassName="jetbrains.mps.nodeEditor.cellMenu.DefaultReferenceSubstituteInfo" />
-    <classNode dependClassName="jetbrains.mps.nodeEditor.cellProviders.AbstractCellListHandler" />
-    <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Collection" />
-    <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Constant" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.CellActionType" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.style.Style" />
-    <classNode dependClassName="jetbrains.mps.smodel.action.NodeFactoryManager" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
-    <classNode extendsClassName="jetbrains.mps.lang.editor.cellProviders.RefNodeListHandler" />
-    <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
-  </dependency>
-  <dependency className="jetbrains.mps.core.notation.editor.SNotationStyle_delete" file="SNotationStyle_delete.java">
-    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.CellActionType" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
-    <classNode extendsClassName="jetbrains.mps.editor.runtime.cells.AbstractCellAction" />
   </dependency>
   <dependency className="jetbrains.mps.core.notation.editor.SNotationTab_Editor" file="SNotationTab_Editor.java">
     <classNode dependClassName="jetbrains.mps.core.notation.behavior.SNotationPart_Behavior" />

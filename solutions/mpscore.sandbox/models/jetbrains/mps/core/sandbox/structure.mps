@@ -745,13 +745,6 @@
                   </node>
                 </node>
               </node>
-              <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationStyle" typeId="74m3.8379004527113948349" id="4014530048382224489" nodeInfo="ng">
-                <node role="styles" roleId="74m3.2711998566964106154" type="74m3.SNotationStyleSeparator" typeId="74m3.2711998566964173136" id="4014530048382224490" nodeInfo="ng">
-                  <node role="separator" roleId="74m3.2711998566964173137" type="74m3.SNotationLabel" typeId="74m3.3647933405694713882" id="4014530048382224492" nodeInfo="ng">
-                    <property name="text" nameId="74m3.3647933405694713883" value="," />
-                  </node>
-                </node>
-              </node>
             </node>
           </node>
         </node>
@@ -781,9 +774,6 @@
               <property name="text" nameId="74m3.3647933405694713883" value="}" />
             </node>
           </node>
-        </node>
-        <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationStyle" typeId="74m3.8379004527113948349" id="4014530048382224528" nodeInfo="ng">
-          <node role="styles" roleId="74m3.2711998566964106154" type="74m3.SNotationStyleIndent" typeId="74m3.2711998566964106145" id="4014530048382224529" nodeInfo="ng" />
         </node>
         <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationParentheses" typeId="74m3.3647933405694717717" id="4014530048382224560" nodeInfo="ng">
           <node role="alternatives" roleId="74m3.3647933405694717738" type="74m3.SNotationPartList" typeId="74m3.3647933405694717735" id="4014530048382224561" nodeInfo="ng">

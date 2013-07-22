@@ -377,35 +377,6 @@ public class QueriesGenerated {
     return container != null;
   }
 
-  public static List<SubstituteAction> sideTransform_ActionsFactory_SNotationPart_8379004527113948452(final IOperationContext operationContext, final SideTransformActionsBuilderContext _context) {
-    List<SubstituteAction> result = ListSequence.fromList(new ArrayList<SubstituteAction>());
-    ListSequence.fromList(result).addElement(new AbstractSideTransformHintSubstituteAction(SConceptOperations.findConceptDeclaration("jetbrains.mps.core.notation.structure.SNotationQuantifier"), _context.getSourceNode()) {
-      public SNode doSubstitute(@Nullable final EditorContext editorContext, String pattern) {
-        SNode container = SNotationActionUtil.getTargetForNewStyle(_context.getSourceNode());
-        SNode q = SNodeFactoryOperations.createNewNode(_context.getModel(), "jetbrains.mps.core.notation.structure.SNotationStyle", null);
-        return SNodeOperations.insertNextSiblingChild(container, q);
-      }
-
-      public String getMatchingText(String pattern) {
-        return "{";
-      }
-
-      public String getVisibleMatchingText(String pattern) {
-        return getMatchingText(pattern);
-      }
-
-      public String getDescriptionText(String pattern) {
-        return "style";
-      }
-    });
-    return result;
-  }
-
-  public static boolean sideTransformHintSubstituteActionsBuilder_Precondition_SNotationPart_8379004527113948453(final IOperationContext operationContext, final SideTransformPreconditionContext _context) {
-    SNode container = SNotationActionUtil.getTargetForNewStyle(_context.getSourceNode());
-    return container != null && !(LinkDeclaration_Behavior.call_isSingular_1213877254557(SNodeOperations.getContainingLinkDeclaration(container))) && !(SNodeOperations.isInstanceOf(SNodeOperations.getNextSibling(container), "jetbrains.mps.core.notation.structure.SNotationStyle"));
-  }
-
   public static List<SubstituteAction> sideTransform_ActionsFactory_SNotationMapping_3129031437528328600(final IOperationContext operationContext, final SideTransformActionsBuilderContext _context) {
     List<SubstituteAction> result = ListSequence.fromList(new ArrayList<SubstituteAction>());
     ListSequence.fromList(result).addElement(new AbstractSideTransformHintSubstituteAction(SConceptOperations.findConceptDeclaration("jetbrains.mps.lang.core.structure.BaseConcept"), _context.getSourceNode()) {

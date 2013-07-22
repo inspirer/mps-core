@@ -6,7 +6,7 @@ import jetbrains.mps.lang.core.behavior.IDontSubstituteByDefault_BehaviorDescrip
 import jetbrains.mps.core.notation.util.NotationContext;
 import org.jetbrains.mps.openapi.model.SNode;
 
-public class SNotationQuantifier_BehaviorDescriptor extends SNotationCorePart_BehaviorDescriptor implements SNotationPartWithStyle_BehaviorDescriptor, IDontSubstituteByDefault_BehaviorDescriptor {
+public class SNotationQuantifier_BehaviorDescriptor extends SNotationCorePart_BehaviorDescriptor implements IDontSubstituteByDefault_BehaviorDescriptor {
   public SNotationQuantifier_BehaviorDescriptor() {
   }
 

@@ -33,16 +33,6 @@ public class SNotationActionUtil {
     return part;
   }
 
-  public static SNode getTargetForNewStyle(SNode node) {
-    if (!(SNodeOperations.isInstanceOf(node, "jetbrains.mps.core.notation.structure.SNotationPartWithStyle"))) {
-      return null;
-    }
-    if (SNodeOperations.isInstanceOf(SNodeOperations.getParent(node), "jetbrains.mps.core.notation.structure.SNotationMapping") && "presentation".equals(SNodeOperations.getContainingLinkRole(node))) {
-      node = SNodeOperations.cast(SNodeOperations.getParent(node), "jetbrains.mps.core.notation.structure.SNotationPart");
-    }
-    return node;
-  }
-
   public static SNode getTargetForNewUnorderedGroup(SNode node) {
     while ((node != null) && (SNodeOperations.isInstanceOf(SNodeOperations.getParent(node), "jetbrains.mps.core.notation.structure.SNotationCorePart") || SNodeOperations.isInstanceOf(SNodeOperations.getParent(node), "jetbrains.mps.core.notation.structure.SNotationMapping"))) {
       node = SNodeOperations.cast(SNodeOperations.getParent(node), "jetbrains.mps.core.notation.structure.SNotationPart");

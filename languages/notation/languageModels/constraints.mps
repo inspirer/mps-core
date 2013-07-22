@@ -80,7 +80,7 @@
     </node>
   </root>
   <root type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="3129031437528339306" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="notation" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="core" />
     <link role="concept" roleId="tp1t.1213093996982" targetNodeId="74m3.3129031437528339296" resolveInfo="SNotationQuantifier" />
     <node role="canBeParent" roleId="tp1t.1213106478122" type="tp1t.ConstraintFunction_CanBeAParent" typeId="tp1t.1203001093456" id="7805033636902222102" nodeInfo="nn">
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="7805033636902222103" nodeInfo="sn">
@@ -338,7 +338,7 @@
     <link role="concept" roleId="tp1t.1213093996982" targetNodeId="74m3.3647933405694693953" resolveInfo="SNotationPart" />
   </root>
   <root type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="7524455788176639027" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="notation" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="core" />
     <link role="concept" roleId="tp1t.1213093996982" targetNodeId="74m3.7524455788176520989" resolveInfo="SNotationUnorderedGroup" />
     <node role="canBeChild" roleId="tp1t.1213106463729" type="tp1t.ConstraintFunction_CanBeAChild" typeId="tp1t.1202989531578" id="7524455788176639028" nodeInfo="nn">
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="7524455788176639029" nodeInfo="sn">

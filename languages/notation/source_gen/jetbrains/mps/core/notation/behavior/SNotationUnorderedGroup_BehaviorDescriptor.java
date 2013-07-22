@@ -4,7 +4,7 @@ package jetbrains.mps.core.notation.behavior;
 
 import jetbrains.mps.lang.core.behavior.IDontSubstituteByDefault_BehaviorDescriptor;
 
-public class SNotationUnorderedGroup_BehaviorDescriptor extends SNotationPart_BehaviorDescriptor implements IDontSubstituteByDefault_BehaviorDescriptor {
+public class SNotationUnorderedGroup_BehaviorDescriptor extends SNotationCorePart_BehaviorDescriptor implements IDontSubstituteByDefault_BehaviorDescriptor {
   public SNotationUnorderedGroup_BehaviorDescriptor() {
   }
 
