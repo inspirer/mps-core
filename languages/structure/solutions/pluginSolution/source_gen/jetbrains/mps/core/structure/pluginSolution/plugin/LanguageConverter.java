@@ -23,13 +23,13 @@ import jetbrains.mps.core.structure.util.ConceptUtil;
 import org.jetbrains.mps.openapi.model.SModel;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
+import jetbrains.mps.internal.collections.runtime.ISelector;
 import org.apache.log4j.Priority;
 import jetbrains.mps.smodel.behaviour.BehaviorReflection;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.lang.structure.behavior.EnumerationMemberDeclaration_Behavior;
 import jetbrains.mps.baseLanguage.closures.runtime.Wrappers;
-import jetbrains.mps.internal.collections.runtime.ISelector;
 import jetbrains.mps.lang.structure.behavior.PrimitiveDataTypeDeclaration_Behavior;
 import org.apache.log4j.Logger;
 import org.apache.log4j.LogManager;
@@ -124,7 +124,14 @@ public class LanguageConverter {
     SNode container = _quotation_createNode_hm9xms_a0a0j(SPropertyOperations.getString(SModelOperations.getModuleStub(structureModel), "name"));
 
     List<SNode> structureElements = ListSequence.fromList(new ArrayList());
-    for (SNode root : SModelOperations.getRoots(structureModel, null)) {
+    for (SNode root : ListSequence.fromList(SModelOperations.getRoots(structureModel, null)).sort(new ISelector<SNode, String>() {
+      public String select(SNode it) {
+        return (SNodeOperations.isInstanceOf(it, "jetbrains.mps.lang.core.structure.INamedConcept") ?
+          SPropertyOperations.getString(SNodeOperations.cast(it, "jetbrains.mps.lang.core.structure.INamedConcept"), "name") :
+          SPropertyOperations.getString(SNodeOperations.getConceptDeclaration(it), "name")
+        );
+      }
+    }, true)) {
       if (SNodeOperations.isInstanceOf(root, "jetbrains.mps.lang.structure.structure.ConceptDeclaration")) {
         ListSequence.fromList(structureElements).addElement(convertConcreteConcept((SNode) root));
       } else if (SNodeOperations.isInstanceOf(root, "jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration")) {
