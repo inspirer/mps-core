@@ -1829,91 +1829,95 @@
     <unitInfo nodeId="7891765471710058199" fileName="SConceptAnnotationArgument_Editor.java" startLine="33" startPosition="0" endLine="143" endPosition="0" unitName="jetbrains.mps.core.metadata.editor.SConceptAnnotationArgument_Editor" />
   </root>
   <root nodeRef="r:c088bf64-a023-4925-86df-f731efee39c0(jetbrains.mps.core.metadata.editor)/7891765471710461225">
-    <nodeInfo nodeId="7891765471710461225" fileName="SMetadataNodeRefExpression_Editor.java" startLine="19" startPosition="79" endLine="20" endPosition="63" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="7891765471710461225" fileName="SMetadataNodeRefExpression_Editor.java" startLine="23" startPosition="89" endLine="24" endPosition="96" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="7891765471710461225" fileName="SMetadataNodeRefExpression_Editor.java" startLine="24" startPosition="96" endLine="25" endPosition="48" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="7891765471710461225" fileName="SMetadataNodeRefExpression_Editor.java" startLine="25" startPosition="48" endLine="26" endPosition="28" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="7891765471710461225" fileName="SMetadataNodeRefExpression_Editor.java" startLine="26" startPosition="28" endLine="27" endPosition="80" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
-    <nodeInfo nodeId="7891765471710461225" fileName="SMetadataNodeRefExpression_Editor.java" startLine="26" startPosition="28" endLine="27" endPosition="80" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="7891765471710461225" fileName="SMetadataNodeRefExpression_Editor.java" startLine="27" startPosition="80" endLine="28" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="7891765471710461225" fileName="SMetadataNodeRefExpression_Editor.java" startLine="31" startPosition="87" endLine="32" endPosition="81" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="7891765471710461225" fileName="SMetadataNodeRefExpression_Editor.java" startLine="32" startPosition="81" endLine="33" endPosition="31" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="7891765471710461225" fileName="SMetadataNodeRefExpression_Editor.java" startLine="33" startPosition="31" endLine="34" endPosition="44" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="7891765471710461225" fileName="SMetadataNodeRefExpression_Editor.java" startLine="34" startPosition="44" endLine="35" endPosition="26" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="7891765471710461225" fileName="SMetadataNodeRefExpression_Editor.java" startLine="35" startPosition="26" endLine="36" endPosition="98" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="7891765471710461225" fileName="SMetadataNodeRefExpression_Editor.java" startLine="36" startPosition="98" endLine="37" endPosition="58" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="7891765471710461225" fileName="SMetadataNodeRefExpression_Editor.java" startLine="37" startPosition="58" endLine="38" endPosition="73" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="7891765471710461225" fileName="SMetadataNodeRefExpression_Editor.java" startLine="38" startPosition="73" endLine="39" endPosition="57" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="7891765471710461225" fileName="SMetadataNodeRefExpression_Editor.java" startLine="39" startPosition="57" endLine="40" endPosition="59" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="7891765471710461225" fileName="SMetadataNodeRefExpression_Editor.java" startLine="41" startPosition="35" endLine="42" endPosition="72" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="7891765471710461225" fileName="SMetadataNodeRefExpression_Editor.java" startLine="42" startPosition="72" endLine="43" endPosition="78" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="7891765471710461225" fileName="SMetadataNodeRefExpression_Editor.java" startLine="43" startPosition="78" endLine="44" endPosition="105" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="7891765471710461225" fileName="SMetadataNodeRefExpression_Editor.java" startLine="45" startPosition="10" endLine="46" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="7891765471710466897" fileName="SMetadataNodeRefExpression_Editor.java" startLine="50" startPosition="33" endLine="51" endPosition="14" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
-    <nodeInfo nodeId="7891765471710466897" fileName="SMetadataNodeRefExpression_Editor.java" startLine="54" startPosition="69" endLine="55" endPosition="67" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="7891765471710466897" fileName="SMetadataNodeRefExpression_Editor.java" startLine="58" startPosition="81" endLine="59" endPosition="79" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="7891765471710466899" fileName="SMetadataNodeRefExpression_Editor.java" startLine="62" startPosition="105" endLine="63" endPosition="123" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="7891765471710466899" fileName="SMetadataNodeRefExpression_Editor.java" startLine="63" startPosition="123" endLine="64" endPosition="64" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="7891765471710466899" fileName="SMetadataNodeRefExpression_Editor.java" startLine="65" startPosition="41" endLine="66" endPosition="42" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="7891765471710466899" fileName="SMetadataNodeRefExpression_Editor.java" startLine="66" startPosition="42" endLine="67" endPosition="37" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="7891765471710466899" fileName="SMetadataNodeRefExpression_Editor.java" startLine="68" startPosition="7" endLine="69" endPosition="24" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="7891765471710461225" fileName="SMetadataNodeRefExpression_Editor.java" startLine="19" startPosition="0" endLine="22" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-    <nodeInfo nodeId="7891765471710466897" fileName="SMetadataNodeRefExpression_Editor.java" startLine="50" startPosition="0" endLine="53" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="_Inline_uf6n9u_a0a#()V" />
-    <nodeInfo nodeId="7891765471710466897" fileName="SMetadataNodeRefExpression_Editor.java" startLine="54" startPosition="0" endLine="57" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-    <nodeInfo nodeId="7891765471710466897" fileName="SMetadataNodeRefExpression_Editor.java" startLine="58" startPosition="0" endLine="61" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-    <nodeInfo nodeId="7891765471710466899" fileName="SMetadataNodeRefExpression_Editor.java" startLine="64" startPosition="64" endLine="68" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="7891765471710461225" fileName="SMetadataNodeRefExpression_Editor.java" startLine="40" startPosition="59" endLine="46" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="7891765471710461225" fileName="SMetadataNodeRefExpression_Editor.java" startLine="23" startPosition="0" endLine="30" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createCollection_uf6n9u_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-    <nodeInfo nodeId="7891765471710466899" fileName="SMetadataNodeRefExpression_Editor.java" startLine="62" startPosition="0" endLine="71" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createReferencePresentation_uf6n9u_a0a0#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-    <nodeInfo nodeId="7891765471710461225" fileName="SMetadataNodeRefExpression_Editor.java" startLine="31" startPosition="0" endLine="48" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createRefCell_uf6n9u_a0#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-    <scopeInfo nodeId="7891765471710461225" fileName="SMetadataNodeRefExpression_Editor.java" startLine="19" startPosition="79" endLine="20" endPosition="63" />
-    <scopeInfo nodeId="7891765471710461225" fileName="SMetadataNodeRefExpression_Editor.java" startLine="26" startPosition="28" endLine="27" endPosition="80" />
-    <scopeInfo nodeId="7891765471710466897" fileName="SMetadataNodeRefExpression_Editor.java" startLine="50" startPosition="33" endLine="51" endPosition="14" />
-    <scopeInfo nodeId="7891765471710466897" fileName="SMetadataNodeRefExpression_Editor.java" startLine="54" startPosition="69" endLine="55" endPosition="67" />
-    <scopeInfo nodeId="7891765471710466897" fileName="SMetadataNodeRefExpression_Editor.java" startLine="58" startPosition="81" endLine="59" endPosition="79" />
-    <scopeInfo nodeId="7891765471710466899" fileName="SMetadataNodeRefExpression_Editor.java" startLine="65" startPosition="41" endLine="67" endPosition="37" />
-    <scopeInfo nodeId="7891765471710461225" fileName="SMetadataNodeRefExpression_Editor.java" startLine="19" startPosition="0" endLine="22" endPosition="0">
+    <nodeInfo nodeId="7891765471710461225" fileName="SMetadataNodeRefExpression_Editor.java" startLine="22" startPosition="79" endLine="23" endPosition="63" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="7891765471710461225" fileName="SMetadataNodeRefExpression_Editor.java" startLine="26" startPosition="89" endLine="27" endPosition="96" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="7891765471710461225" fileName="SMetadataNodeRefExpression_Editor.java" startLine="27" startPosition="96" endLine="28" endPosition="48" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7891765471710461225" fileName="SMetadataNodeRefExpression_Editor.java" startLine="28" startPosition="48" endLine="29" endPosition="28" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7891765471710461225" fileName="SMetadataNodeRefExpression_Editor.java" startLine="29" startPosition="28" endLine="30" endPosition="80" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="7891765471710461225" fileName="SMetadataNodeRefExpression_Editor.java" startLine="29" startPosition="28" endLine="30" endPosition="80" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7891765471710461225" fileName="SMetadataNodeRefExpression_Editor.java" startLine="30" startPosition="80" endLine="31" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="7891765471710461225" fileName="SMetadataNodeRefExpression_Editor.java" startLine="34" startPosition="87" endLine="35" endPosition="81" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="7891765471710461225" fileName="SMetadataNodeRefExpression_Editor.java" startLine="35" startPosition="81" endLine="36" endPosition="31" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7891765471710461225" fileName="SMetadataNodeRefExpression_Editor.java" startLine="36" startPosition="31" endLine="37" endPosition="44" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7891765471710461225" fileName="SMetadataNodeRefExpression_Editor.java" startLine="37" startPosition="44" endLine="38" endPosition="26" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="7891765471710461225" fileName="SMetadataNodeRefExpression_Editor.java" startLine="38" startPosition="26" endLine="39" endPosition="98" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7891765471710461225" fileName="SMetadataNodeRefExpression_Editor.java" startLine="39" startPosition="98" endLine="40" endPosition="58" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7891765471710461225" fileName="SMetadataNodeRefExpression_Editor.java" startLine="40" startPosition="58" endLine="41" endPosition="73" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7891765471710461225" fileName="SMetadataNodeRefExpression_Editor.java" startLine="41" startPosition="73" endLine="42" endPosition="57" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="7891765471710461225" fileName="SMetadataNodeRefExpression_Editor.java" startLine="42" startPosition="57" endLine="43" endPosition="59" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="7891765471710461225" fileName="SMetadataNodeRefExpression_Editor.java" startLine="44" startPosition="35" endLine="45" endPosition="72" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="7891765471710461225" fileName="SMetadataNodeRefExpression_Editor.java" startLine="45" startPosition="72" endLine="46" endPosition="78" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="7891765471710461225" fileName="SMetadataNodeRefExpression_Editor.java" startLine="46" startPosition="78" endLine="47" endPosition="105" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="7891765471710461225" fileName="SMetadataNodeRefExpression_Editor.java" startLine="48" startPosition="10" endLine="49" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="7891765471710466897" fileName="SMetadataNodeRefExpression_Editor.java" startLine="53" startPosition="33" endLine="54" endPosition="14" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+    <nodeInfo nodeId="7891765471710466897" fileName="SMetadataNodeRefExpression_Editor.java" startLine="57" startPosition="69" endLine="58" endPosition="67" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="7891765471710466897" fileName="SMetadataNodeRefExpression_Editor.java" startLine="61" startPosition="81" endLine="62" endPosition="79" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="7891765471710466897" fileName="SMetadataNodeRefExpression_Editor.java" startLine="65" startPosition="105" endLine="66" endPosition="123" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="7891765471710466897" fileName="SMetadataNodeRefExpression_Editor.java" startLine="66" startPosition="123" endLine="67" endPosition="64" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7891765471710466897" fileName="SMetadataNodeRefExpression_Editor.java" startLine="68" startPosition="41" endLine="69" endPosition="42" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7891765471710466897" fileName="SMetadataNodeRefExpression_Editor.java" startLine="69" startPosition="42" endLine="70" endPosition="37" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7891765471710466897" fileName="SMetadataNodeRefExpression_Editor.java" startLine="71" startPosition="7" endLine="72" endPosition="36" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="7891765471710466897" fileName="SMetadataNodeRefExpression_Editor.java" startLine="72" startPosition="36" endLine="73" endPosition="54" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7891765471710466897" fileName="SMetadataNodeRefExpression_Editor.java" startLine="73" startPosition="54" endLine="74" endPosition="42" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7891765471710466897" fileName="SMetadataNodeRefExpression_Editor.java" startLine="74" startPosition="42" endLine="75" endPosition="24" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="7891765471710461225" fileName="SMetadataNodeRefExpression_Editor.java" startLine="22" startPosition="0" endLine="25" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+    <nodeInfo nodeId="7891765471710466897" fileName="SMetadataNodeRefExpression_Editor.java" startLine="53" startPosition="0" endLine="56" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="_Inline_uf6n9u_a0a#()V" />
+    <nodeInfo nodeId="7891765471710466897" fileName="SMetadataNodeRefExpression_Editor.java" startLine="57" startPosition="0" endLine="60" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+    <nodeInfo nodeId="7891765471710466897" fileName="SMetadataNodeRefExpression_Editor.java" startLine="61" startPosition="0" endLine="64" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+    <nodeInfo nodeId="7891765471710466897" fileName="SMetadataNodeRefExpression_Editor.java" startLine="67" startPosition="64" endLine="71" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="7891765471710461225" fileName="SMetadataNodeRefExpression_Editor.java" startLine="43" startPosition="59" endLine="49" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="7891765471710461225" fileName="SMetadataNodeRefExpression_Editor.java" startLine="26" startPosition="0" endLine="33" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createCollection_uf6n9u_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+    <nodeInfo nodeId="7891765471710466897" fileName="SMetadataNodeRefExpression_Editor.java" startLine="65" startPosition="0" endLine="77" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createReferencePresentation_uf6n9u_a0a0#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+    <nodeInfo nodeId="7891765471710461225" fileName="SMetadataNodeRefExpression_Editor.java" startLine="34" startPosition="0" endLine="51" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createRefCell_uf6n9u_a0#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+    <scopeInfo nodeId="7891765471710461225" fileName="SMetadataNodeRefExpression_Editor.java" startLine="22" startPosition="79" endLine="23" endPosition="63" />
+    <scopeInfo nodeId="7891765471710461225" fileName="SMetadataNodeRefExpression_Editor.java" startLine="29" startPosition="28" endLine="30" endPosition="80" />
+    <scopeInfo nodeId="7891765471710466897" fileName="SMetadataNodeRefExpression_Editor.java" startLine="53" startPosition="33" endLine="54" endPosition="14" />
+    <scopeInfo nodeId="7891765471710466897" fileName="SMetadataNodeRefExpression_Editor.java" startLine="57" startPosition="69" endLine="58" endPosition="67" />
+    <scopeInfo nodeId="7891765471710466897" fileName="SMetadataNodeRefExpression_Editor.java" startLine="61" startPosition="81" endLine="62" endPosition="79" />
+    <scopeInfo nodeId="7891765471710466897" fileName="SMetadataNodeRefExpression_Editor.java" startLine="68" startPosition="41" endLine="70" endPosition="37" />
+    <scopeInfo nodeId="7891765471710461225" fileName="SMetadataNodeRefExpression_Editor.java" startLine="22" startPosition="0" endLine="25" endPosition="0">
       <varInfo nodeId="7891765471710461225" varName="editorContext" />
       <varInfo nodeId="7891765471710461225" varName="node" />
     </scopeInfo>
-    <scopeInfo nodeId="7891765471710461225" fileName="SMetadataNodeRefExpression_Editor.java" startLine="41" startPosition="35" endLine="44" endPosition="105">
+    <scopeInfo nodeId="7891765471710461225" fileName="SMetadataNodeRefExpression_Editor.java" startLine="44" startPosition="35" endLine="47" endPosition="105">
       <varInfo nodeId="7891765471710461225" varName="manager" />
       <varInfo nodeId="7891765471710461225" varName="opContext" />
     </scopeInfo>
-    <scopeInfo nodeId="7891765471710466897" fileName="SMetadataNodeRefExpression_Editor.java" startLine="50" startPosition="0" endLine="53" endPosition="0" />
-    <scopeInfo nodeId="7891765471710466897" fileName="SMetadataNodeRefExpression_Editor.java" startLine="54" startPosition="0" endLine="57" endPosition="0">
+    <scopeInfo nodeId="7891765471710466897" fileName="SMetadataNodeRefExpression_Editor.java" startLine="53" startPosition="0" endLine="56" endPosition="0" />
+    <scopeInfo nodeId="7891765471710466897" fileName="SMetadataNodeRefExpression_Editor.java" startLine="57" startPosition="0" endLine="60" endPosition="0">
       <varInfo nodeId="7891765471710466897" varName="editorContext" />
     </scopeInfo>
-    <scopeInfo nodeId="7891765471710466897" fileName="SMetadataNodeRefExpression_Editor.java" startLine="58" startPosition="0" endLine="61" endPosition="0">
+    <scopeInfo nodeId="7891765471710466897" fileName="SMetadataNodeRefExpression_Editor.java" startLine="61" startPosition="0" endLine="64" endPosition="0">
       <varInfo nodeId="7891765471710466897" varName="editorContext" />
       <varInfo nodeId="7891765471710466897" varName="node" />
     </scopeInfo>
-    <scopeInfo nodeId="7891765471710461225" fileName="SMetadataNodeRefExpression_Editor.java" startLine="23" startPosition="89" endLine="28" endPosition="22">
+    <scopeInfo nodeId="7891765471710461225" fileName="SMetadataNodeRefExpression_Editor.java" startLine="26" startPosition="89" endLine="31" endPosition="22">
       <varInfo nodeId="7891765471710461225" varName="editorCell" />
     </scopeInfo>
-    <scopeInfo nodeId="7891765471710461225" fileName="SMetadataNodeRefExpression_Editor.java" startLine="23" startPosition="0" endLine="30" endPosition="0">
+    <scopeInfo nodeId="7891765471710461225" fileName="SMetadataNodeRefExpression_Editor.java" startLine="26" startPosition="0" endLine="33" endPosition="0">
       <varInfo nodeId="7891765471710461225" varName="editorContext" />
       <varInfo nodeId="7891765471710461225" varName="node" />
     </scopeInfo>
-    <scopeInfo nodeId="7891765471710466899" fileName="SMetadataNodeRefExpression_Editor.java" startLine="62" startPosition="105" endLine="69" endPosition="24">
-      <varInfo nodeId="7891765471710466899" varName="editorCell" />
+    <scopeInfo nodeId="7891765471710466897" fileName="SMetadataNodeRefExpression_Editor.java" startLine="65" startPosition="105" endLine="75" endPosition="24">
+      <varInfo nodeId="7891765471710466897" varName="editorCell" />
+      <varInfo nodeId="7891765471710466897" varName="style" />
     </scopeInfo>
-    <scopeInfo nodeId="7891765471710466899" fileName="SMetadataNodeRefExpression_Editor.java" startLine="62" startPosition="0" endLine="71" endPosition="0">
-      <varInfo nodeId="7891765471710466899" varName="editorContext" />
-      <varInfo nodeId="7891765471710466899" varName="node" />
+    <scopeInfo nodeId="7891765471710466897" fileName="SMetadataNodeRefExpression_Editor.java" startLine="65" startPosition="0" endLine="77" endPosition="0">
+      <varInfo nodeId="7891765471710466897" varName="editorContext" />
+      <varInfo nodeId="7891765471710466897" varName="node" />
     </scopeInfo>
-    <scopeInfo nodeId="7891765471710461225" fileName="SMetadataNodeRefExpression_Editor.java" startLine="31" startPosition="87" endLine="46" endPosition="22">
+    <scopeInfo nodeId="7891765471710461225" fileName="SMetadataNodeRefExpression_Editor.java" startLine="34" startPosition="87" endLine="49" endPosition="22">
       <varInfo nodeId="7891765471710461225" varName="attributeConcept" />
       <varInfo nodeId="7891765471710461225" varName="attributeKind" />
       <varInfo nodeId="7891765471710461225" varName="editorCell" />
       <varInfo nodeId="7891765471710461225" varName="provider" />
     </scopeInfo>
-    <scopeInfo nodeId="7891765471710461225" fileName="SMetadataNodeRefExpression_Editor.java" startLine="31" startPosition="0" endLine="48" endPosition="0">
+    <scopeInfo nodeId="7891765471710461225" fileName="SMetadataNodeRefExpression_Editor.java" startLine="34" startPosition="0" endLine="51" endPosition="0">
       <varInfo nodeId="7891765471710461225" varName="editorContext" />
       <varInfo nodeId="7891765471710461225" varName="node" />
     </scopeInfo>
-    <unitInfo nodeId="7891765471710466897" fileName="SMetadataNodeRefExpression_Editor.java" startLine="49" startPosition="0" endLine="72" endPosition="0" unitName="jetbrains.mps.core.metadata.editor.SMetadataNodeRefExpression_Editor$_Inline_uf6n9u_a0a" />
-    <unitInfo nodeId="7891765471710461225" fileName="SMetadataNodeRefExpression_Editor.java" startLine="18" startPosition="0" endLine="73" endPosition="0" unitName="jetbrains.mps.core.metadata.editor.SMetadataNodeRefExpression_Editor" />
+    <unitInfo nodeId="7891765471710466897" fileName="SMetadataNodeRefExpression_Editor.java" startLine="52" startPosition="0" endLine="78" endPosition="0" unitName="jetbrains.mps.core.metadata.editor.SMetadataNodeRefExpression_Editor$_Inline_uf6n9u_a0a" />
+    <unitInfo nodeId="7891765471710461225" fileName="SMetadataNodeRefExpression_Editor.java" startLine="21" startPosition="0" endLine="79" endPosition="0" unitName="jetbrains.mps.core.metadata.editor.SMetadataNodeRefExpression_Editor" />
   </root>
 </debugInfo>
 
