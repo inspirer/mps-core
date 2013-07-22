@@ -141,8 +141,8 @@ public class MergeSession {
     }
     for (SNode child : mergeLists((existing == null ?
       Sequence.fromIterable(Collections.<SNode>emptyList()) :
-      SNodeOperations.getChildren(existing, true)
-    ), SNodeOperations.getChildren(node, true), newmodel)) {
+      jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations.getChildren(existing)
+    ), jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations.getChildren(node), newmodel)) {
       String role = MapSequence.fromMap(reverseMapping).get(child).getRoleInParent();
       assert role != null;
       result.addChild(role, child);

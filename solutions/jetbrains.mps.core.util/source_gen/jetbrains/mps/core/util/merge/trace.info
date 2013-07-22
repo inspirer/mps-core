@@ -52,7 +52,7 @@
     <nodeInfo nodeId="660431788367047906" fileName="MergeSession.java" startLine="136" startPosition="58" endLine="137" endPosition="91" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
     <nodeInfo nodeId="660431788367047911" fileName="MergeSession.java" startLine="137" startPosition="91" endLine="138" endPosition="92" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
     <nodeInfo nodeId="660431788367115237" fileName="MergeSession.java" startLine="139" startPosition="27" endLine="140" endPosition="72" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="660431788367047924" fileName="MergeSession.java" startLine="145" startPosition="60" endLine="146" endPosition="85" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="660431788367047924" fileName="MergeSession.java" startLine="145" startPosition="104" endLine="146" endPosition="85" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
     <nodeInfo nodeId="660431788367047930" fileName="MergeSession.java" startLine="146" startPosition="85" endLine="147" endPosition="26" conceptFqName="jetbrains.mps.baseLanguage.structure.AssertStatement" />
     <nodeInfo nodeId="660431788367047934" fileName="MergeSession.java" startLine="147" startPosition="26" endLine="148" endPosition="35" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
     <nodeInfo nodeId="660431788367048467" fileName="MergeSession.java" startLine="149" startPosition="5" endLine="150" endPosition="18" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
@@ -107,7 +107,7 @@
       <varInfo nodeId="660431788367115155" varName="it" />
     </scopeInfo>
     <scopeInfo nodeId="6239144935628349900" fileName="MergeSession.java" startLine="98" startPosition="0" endLine="101" endPosition="0" />
-    <scopeInfo nodeId="660431788367047923" fileName="MergeSession.java" startLine="145" startPosition="60" endLine="148" endPosition="35">
+    <scopeInfo nodeId="660431788367047923" fileName="MergeSession.java" startLine="145" startPosition="104" endLine="148" endPosition="35">
       <varInfo nodeId="660431788367047925" varName="role" />
     </scopeInfo>
     <scopeInfo nodeId="8776389519611334205" fileName="MergeSession.java" startLine="37" startPosition="55" endLine="41" endPosition="81" />
