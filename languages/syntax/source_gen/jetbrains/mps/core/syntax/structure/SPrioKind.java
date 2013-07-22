@@ -7,9 +7,9 @@ import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.internal.collections.runtime.backports.LinkedList;
 
 public enum SPrioKind {
-  LEFT("left", 1),
-  RIGHT("right", 2),
-  NONASSOC("nonassoc", 3);
+  LEFT("LEFT", "LEFT"),
+  RIGHT("RIGHT", "RIGHT"),
+  NONASSOC("NONASSOC", "NONASSOC");
 
   private String myName;
 
@@ -18,7 +18,7 @@ public enum SPrioKind {
   }
 
   public String getValueAsString() {
-    return "" + this.myValue;
+    return this.myValue;
   }
 
   public static List<SPrioKind> getConstants() {
@@ -49,14 +49,14 @@ public enum SPrioKind {
     return SPrioKind.getDefault();
   }
 
-  private int myValue;
+  private String myValue;
 
-  SPrioKind(String name, int value) {
+  SPrioKind(String name, String value) {
     this.myName = name;
     this.myValue = value;
   }
 
-  public int getValue() {
+  public String getValue() {
     return this.myValue;
   }
 }
