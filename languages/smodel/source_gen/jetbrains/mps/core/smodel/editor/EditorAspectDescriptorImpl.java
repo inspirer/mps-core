@@ -15,19 +15,23 @@ public class EditorAspectDescriptorImpl implements EditorAspectDescriptor {
   public Collection<ConceptEditor> getEditors(ConceptDescriptor descriptor) {
     switch (Arrays.binarySearch(stringSwitchCases_xbvbvu_a0a0a, descriptor.getConceptFqName())) {
       case 0:
-        return Collections.<ConceptEditor>singletonList(new MqlConceptType_Editor());
+        return Collections.<ConceptEditor>singletonList(new IsInstanceOf_Editor());
       case 1:
-        return Collections.<ConceptEditor>singletonList(new MqlLinkSelector_Editor());
+        return Collections.<ConceptEditor>singletonList(new MqlConceptType_Editor());
       case 2:
-        return Collections.<ConceptEditor>singletonList(new MqlModelQuery_Editor());
+        return Collections.<ConceptEditor>singletonList(new MqlLinkSelector_Editor());
       case 3:
-        return Collections.<ConceptEditor>singletonList(new MqlNodeType_Editor());
+        return Collections.<ConceptEditor>singletonList(new MqlModelQuery_Editor());
       case 4:
-        return Collections.<ConceptEditor>singletonList(new MqlPropertySelector_Editor());
+        return Collections.<ConceptEditor>singletonList(new MqlNodeType_Editor());
       case 5:
-        return Collections.<ConceptEditor>singletonList(new SConceptQuery_Editor());
+        return Collections.<ConceptEditor>singletonList(new MqlPropertySelector_Editor());
       case 6:
+        return Collections.<ConceptEditor>singletonList(new SConceptQuery_Editor());
+      case 7:
         return Collections.<ConceptEditor>singletonList(new SConceptQueryCall_Editor());
+      case 8:
+        return Collections.<ConceptEditor>singletonList(new SNodeCast_Editor());
       default:
     }
     return Collections.emptyList();
@@ -44,5 +48,5 @@ public class EditorAspectDescriptorImpl implements EditorAspectDescriptor {
   }
 
 
-  private static String[] stringSwitchCases_xbvbvu_a0a0a = new String[]{"jetbrains.mps.core.smodel.structure.MqlConceptType", "jetbrains.mps.core.smodel.structure.MqlLinkSelector", "jetbrains.mps.core.smodel.structure.MqlModelQuery", "jetbrains.mps.core.smodel.structure.MqlNodeType", "jetbrains.mps.core.smodel.structure.MqlPropertySelector", "jetbrains.mps.core.smodel.structure.SConceptQuery", "jetbrains.mps.core.smodel.structure.SConceptQueryCall"};
+  private static String[] stringSwitchCases_xbvbvu_a0a0a = new String[]{"jetbrains.mps.core.smodel.structure.IsInstanceOf", "jetbrains.mps.core.smodel.structure.MqlConceptType", "jetbrains.mps.core.smodel.structure.MqlLinkSelector", "jetbrains.mps.core.smodel.structure.MqlModelQuery", "jetbrains.mps.core.smodel.structure.MqlNodeType", "jetbrains.mps.core.smodel.structure.MqlPropertySelector", "jetbrains.mps.core.smodel.structure.SConceptQuery", "jetbrains.mps.core.smodel.structure.SConceptQueryCall", "jetbrains.mps.core.smodel.structure.SNodeCast"};
 }

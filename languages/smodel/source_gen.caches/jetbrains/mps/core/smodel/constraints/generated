@@ -19,7 +19,7 @@
   <dep model="r:aaa4533e-6546-408d-8a98-5c8eb0452d91(jetbrains.mps.core.smodel.util)" hash="b7jwhxwg13ab37ohcrsd2k36vf5x9z6" />
   <dep model="r:c11a239c-3061-4b62-b5dd-6749678497d7(jetbrains.mps.core.structure.structure)" hash="5ivfl5chbw3lqbbem3jtd8ocli4gt4p" />
   <dep model="r:c3548bac-30eb-4a2a-937c-0111d5697309(jetbrains.mps.lang.smodel.generator.smodelAdapter)" />
-  <dep model="r:e3b9700d-5825-4641-895a-925f28591c5b(jetbrains.mps.core.smodel.structure)" hash="-brwgrj6mlahnl1n5xpyxgnwf26h3c9g" />
+  <dep model="r:e3b9700d-5825-4641-895a-925f28591c5b(jetbrains.mps.core.smodel.structure)" hash="-6tra7pjduoe78qts420ukt6c8vm8ovg" />
   <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" />
   <dep model="r:f9198ffd-e084-425c-aa82-f2db8289f5eb(jetbrains.mps.core.query.structure)" hash="-2wl4idcyvfy3s2t0wg4b5dd5apd516j" />
   <dep model="r:fc76aa36-3cff-41c7-b94b-eee0e8341932(jetbrains.mps.internal.collections.runtime)" />
