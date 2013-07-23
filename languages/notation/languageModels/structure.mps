@@ -283,5 +283,84 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="view" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="3647933405694693953" resolveInfo="SNotationPart" />
   </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2038289530662929468" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="styles" />
+    <property name="name" nameId="tpck.1169194664001" value="SNotationStylesImport" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="import styles from" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="ydsw.3592778465723943672" resolveInfo="SStructurePart" />
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="2038289530662977665" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <property name="role" nameId="tpce.1071599776563" value="source" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="ydsw.6195190339581766868" resolveInfo="SStructureContainer" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3712611346756435517" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="styles" />
+    <property name="name" nameId="tpck.1169194664001" value="SNotationStyle" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="style" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="ydsw.3592778465723943672" resolveInfo="SStructurePart" />
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="3712611346756438263" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="selector" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1..n" />
+      <property name="unordered" nameId="tpce.2395585628928459314" value="true" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="3712611346756438202" resolveInfo="SNotationStyleSelector" />
+    </node>
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="3712611346756438920" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="content" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..n" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="2711998566964106140" resolveInfo="SNotationStylePart" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3712611346756438202" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="styles.selector" />
+    <property name="name" nameId="tpck.1169194664001" value="SNotationStyleSelector" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="3712611346756438336" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="notationSelector" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="3712611346756438400" resolveInfo="SNotationSelector" />
+    </node>
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="3712611346756438527" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="termSelector" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="3712611346756438594" resolveInfo="SNotationTermSelector" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3712611346756438400" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="styles.selector" />
+    <property name="name" nameId="tpck.1169194664001" value="SNotationSelector" />
+    <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3712611346756438594" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="styles.selector" />
+    <property name="name" nameId="tpck.1169194664001" value="SNotationTermSelector" />
+    <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
+    <property name="final" nameId="tpce.4628067390765956807" value="false" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3712611346757647019" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="styles.selector" />
+    <property name="name" nameId="tpck.1169194664001" value="SAllNotationsSelector" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="*" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="3712611346756438400" resolveInfo="SNotationSelector" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3712611346757945294" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="styles.selector" />
+    <property name="name" nameId="tpck.1169194664001" value="SAllTermsSelector" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="*" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="3712611346756438594" resolveInfo="SNotationTermSelector" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3712611346758623575" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="styles" />
+    <property name="name" nameId="tpck.1169194664001" value="SNotationStyleEmptyLine" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="&lt;empty&gt;" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="2711998566964106140" resolveInfo="SNotationStylePart" />
+  </root>
 </model>
 

@@ -12,46 +12,58 @@ public class BehaviorAspectDescriptor implements jetbrains.mps.smodel.runtime.Be
 
   public BehaviorDescriptor getDescriptor(String fqName) {
     switch (Arrays.binarySearch(stringSwitchCases_846f5o_a0a0b, fqName)) {
-      case 0:
-        return new SNotation_BehaviorDescriptor();
-      case 4:
-        return new SNotationLabel_BehaviorDescriptor();
-      case 8:
-        return new SNotationParentheses_BehaviorDescriptor();
-      case 6:
-        return new SNotationNewLine_BehaviorDescriptor();
-      case 9:
-        return new SNotationPartList_BehaviorDescriptor();
-      case 5:
-        return new SNotationMapping_BehaviorDescriptor();
-      case 11:
-        return new SNotationQuantifier_BehaviorDescriptor();
-      case 16:
-        return new SStructureLinkRef_BehaviorDescriptor();
-      case 17:
-        return new SStructurePropertyRef_BehaviorDescriptor();
-      case 7:
-        return new SNotationNospace_BehaviorDescriptor();
-      case 12:
-        return new SNotationStyleIndent_BehaviorDescriptor();
       case 2:
-        return new SNotationCall_BehaviorDescriptor();
-      case 14:
-        return new SNotationTab_BehaviorDescriptor();
-      case 13:
-        return new SNotationStyleSeparator_BehaviorDescriptor();
-      case 1:
-        return new SNotationBreak_BehaviorDescriptor();
-      case 15:
-        return new SNotationUnorderedGroup_BehaviorDescriptor();
-      case 3:
-        return new SNotationConceptContext_BehaviorDescriptor();
+        return new SNotation_BehaviorDescriptor();
+      case 6:
+        return new SNotationLabel_BehaviorDescriptor();
       case 10:
+        return new SNotationParentheses_BehaviorDescriptor();
+      case 8:
+        return new SNotationNewLine_BehaviorDescriptor();
+      case 11:
+        return new SNotationPartList_BehaviorDescriptor();
+      case 7:
+        return new SNotationMapping_BehaviorDescriptor();
+      case 13:
+        return new SNotationQuantifier_BehaviorDescriptor();
+      case 22:
+        return new SStructureLinkRef_BehaviorDescriptor();
+      case 23:
+        return new SStructurePropertyRef_BehaviorDescriptor();
+      case 9:
+        return new SNotationNospace_BehaviorDescriptor();
+      case 16:
+        return new SNotationStyleIndent_BehaviorDescriptor();
+      case 4:
+        return new SNotationCall_BehaviorDescriptor();
+      case 20:
+        return new SNotationTab_BehaviorDescriptor();
+      case 18:
+        return new SNotationStyleSeparator_BehaviorDescriptor();
+      case 3:
+        return new SNotationBreak_BehaviorDescriptor();
+      case 21:
+        return new SNotationUnorderedGroup_BehaviorDescriptor();
+      case 5:
+        return new SNotationConceptContext_BehaviorDescriptor();
+      case 12:
         return new SNotationPredicate_BehaviorDescriptor();
+      case 19:
+        return new SNotationStylesImport_BehaviorDescriptor();
+      case 14:
+        return new SNotationStyle_BehaviorDescriptor();
+      case 17:
+        return new SNotationStyleSelector_BehaviorDescriptor();
+      case 0:
+        return new SAllNotationsSelector_BehaviorDescriptor();
+      case 1:
+        return new SAllTermsSelector_BehaviorDescriptor();
+      case 15:
+        return new SNotationStyleEmptyLine_BehaviorDescriptor();
       default:
         return BehaviorAspectInterpreted.getInstance().getDescriptor(fqName);
     }
   }
 
-  private static String[] stringSwitchCases_846f5o_a0a0b = new String[]{"jetbrains.mps.core.notation.structure.SNotation", "jetbrains.mps.core.notation.structure.SNotationBreak", "jetbrains.mps.core.notation.structure.SNotationCall", "jetbrains.mps.core.notation.structure.SNotationConceptContext", "jetbrains.mps.core.notation.structure.SNotationLabel", "jetbrains.mps.core.notation.structure.SNotationMapping", "jetbrains.mps.core.notation.structure.SNotationNewLine", "jetbrains.mps.core.notation.structure.SNotationNospace", "jetbrains.mps.core.notation.structure.SNotationParentheses", "jetbrains.mps.core.notation.structure.SNotationPartList", "jetbrains.mps.core.notation.structure.SNotationPredicate", "jetbrains.mps.core.notation.structure.SNotationQuantifier", "jetbrains.mps.core.notation.structure.SNotationStyleIndent", "jetbrains.mps.core.notation.structure.SNotationStyleSeparator", "jetbrains.mps.core.notation.structure.SNotationTab", "jetbrains.mps.core.notation.structure.SNotationUnorderedGroup", "jetbrains.mps.core.notation.structure.SStructureLinkRef", "jetbrains.mps.core.notation.structure.SStructurePropertyRef"};
+  private static String[] stringSwitchCases_846f5o_a0a0b = new String[]{"jetbrains.mps.core.notation.structure.SAllNotationsSelector", "jetbrains.mps.core.notation.structure.SAllTermsSelector", "jetbrains.mps.core.notation.structure.SNotation", "jetbrains.mps.core.notation.structure.SNotationBreak", "jetbrains.mps.core.notation.structure.SNotationCall", "jetbrains.mps.core.notation.structure.SNotationConceptContext", "jetbrains.mps.core.notation.structure.SNotationLabel", "jetbrains.mps.core.notation.structure.SNotationMapping", "jetbrains.mps.core.notation.structure.SNotationNewLine", "jetbrains.mps.core.notation.structure.SNotationNospace", "jetbrains.mps.core.notation.structure.SNotationParentheses", "jetbrains.mps.core.notation.structure.SNotationPartList", "jetbrains.mps.core.notation.structure.SNotationPredicate", "jetbrains.mps.core.notation.structure.SNotationQuantifier", "jetbrains.mps.core.notation.structure.SNotationStyle", "jetbrains.mps.core.notation.structure.SNotationStyleEmptyLine", "jetbrains.mps.core.notation.structure.SNotationStyleIndent", "jetbrains.mps.core.notation.structure.SNotationStyleSelector", "jetbrains.mps.core.notation.structure.SNotationStyleSeparator", "jetbrains.mps.core.notation.structure.SNotationStylesImport", "jetbrains.mps.core.notation.structure.SNotationTab", "jetbrains.mps.core.notation.structure.SNotationUnorderedGroup", "jetbrains.mps.core.notation.structure.SStructureLinkRef", "jetbrains.mps.core.notation.structure.SStructurePropertyRef"};
 }
