@@ -13,7 +13,8 @@ import jetbrains.mps.lang.structure.editor.structure_StyleSheet;
 import jetbrains.mps.nodeEditor.cellProviders.AbstractCellListHandler;
 import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Indent;
 import jetbrains.mps.lang.editor.cellProviders.RefNodeListHandler;
-import jetbrains.mps.smodel.action.NodeFactoryManager;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.openapi.editor.cells.CellActionType;
 import jetbrains.mps.nodeEditor.cellActions.CellAction_DeleteNode;
 import jetbrains.mps.lang.editor.cellProviders.RefNodeListHandlerElementKeyMap;
@@ -21,7 +22,9 @@ import jetbrains.mps.nodeEditor.cellMenu.DefaultReferenceSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.DefaultChildSubstituteInfo;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 import jetbrains.mps.editor.runtime.style.StyleAttributes;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
+import jetbrains.mps.smodel.IScope;
+import jetbrains.mps.internal.collections.runtime.ListSequence;
+import jetbrains.mps.core.structure.editor.default_StyleSheet;
 
 public class SNotationStyle_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
@@ -34,7 +37,7 @@ public class SNotationStyle_Editor extends DefaultNodeEditor {
     editorCell.setBig(true);
     editorCell.addEditorCell(this.createComponent_10lhbs_a0(editorContext, node));
     editorCell.addEditorCell(this.createRefNodeList_10lhbs_b0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_10lhbs_c0(editorContext, node));
+    editorCell.addEditorCell(this.createAlternation_10lhbs_c0(editorContext, node));
     editorCell.addEditorCell(this.createRefNodeList_10lhbs_d0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_10lhbs_e0(editorContext, node));
     return editorCell;
@@ -63,7 +66,13 @@ public class SNotationStyle_Editor extends DefaultNodeEditor {
 
     public SNode createNodeToInsert(EditorContext editorContext) {
       SNode listOwner = super.getOwner();
-      return NodeFactoryManager.createNode(listOwner, editorContext, super.getElementRole());
+      return this.nodeFactory(listOwner, editorContext);
+    }
+
+    public SNode nodeFactory(SNode node, EditorContext editorContext) {
+      SNode result = SConceptOperations.createNewNode("jetbrains.mps.core.notation.structure.SNotationStyleSelector", null);
+      SLinkOperations.setTarget(result, "notationSelector", SConceptOperations.createNewNode("jetbrains.mps.core.notation.structure.SNotationSelector", null), true);
+      return result;
     }
 
     public EditorCell createNodeCell(EditorContext editorContext, SNode elementNode) {
@@ -104,11 +113,39 @@ public class SNotationStyle_Editor extends DefaultNodeEditor {
     }
   }
 
-  private EditorCell createConstant_10lhbs_c0(EditorContext editorContext, SNode node) {
+  private EditorCell createAlternation_10lhbs_c0(EditorContext editorContext, SNode node) {
+    boolean alternationCondition = true;
+    alternationCondition = SNotationStyle_Editor.renderingCondition_10lhbs_a2a(node, editorContext, editorContext.getOperationContext().getScope());
+    EditorCell editorCell = null;
+    if (alternationCondition) {
+      editorCell = this.createConstant_10lhbs_a2a(editorContext, node);
+    } else {
+      editorCell = this.createConstant_10lhbs_a2a_0(editorContext, node);
+    }
+    return editorCell;
+  }
+
+  private static boolean renderingCondition_10lhbs_a2a(SNode node, EditorContext editorContext, IScope scope) {
+    return ListSequence.fromList(SLinkOperations.getTargets(node, "content", true)).isNotEmpty();
+  }
+
+  private EditorCell createConstant_10lhbs_a2a(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "{");
-    editorCell.setCellId("Constant_10lhbs_c0");
+    editorCell.setCellId("Constant_10lhbs_a2a");
     Style style = new StyleImpl();
+    default_StyleSheet.applyPunctuation(style, editorCell);
     style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, true);
+    editorCell.getStyle().putAll(style);
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+
+  private EditorCell createConstant_10lhbs_a2a_0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "{");
+    editorCell.setCellId("Constant_10lhbs_a2a_0");
+    Style style = new StyleImpl();
+    default_StyleSheet.applyPunctuation(style, editorCell);
+    style.set(StyleAttributes.PUNCTUATION_RIGHT, true);
     editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;
@@ -119,8 +156,10 @@ public class SNotationStyle_Editor extends DefaultNodeEditor {
     EditorCell_Collection editorCell = handler.createCells(editorContext, new CellLayout_Indent(), false);
     editorCell.setCellId("refNodeList_content");
     Style style = new StyleImpl();
+    default_StyleSheet.applyPunctuation(style, editorCell);
     style.set(StyleAttributes.INDENT_LAYOUT_INDENT, true);
     style.set(StyleAttributes.INDENT_LAYOUT_CHILDREN_NEWLINE, true);
+    style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, true);
     editorCell.getStyle().putAll(style);
     editorCell.setRole(handler.getElementRole());
     return editorCell;
@@ -148,9 +187,13 @@ public class SNotationStyle_Editor extends DefaultNodeEditor {
 
     public EditorCell createEmptyCell(EditorContext editorContext) {
       EditorCell emptyCell = null;
-      emptyCell = super.createEmptyCell(editorContext);
+      emptyCell = this.createEmptyCell_internal(editorContext, this.getOwner());
       this.installElementCellActions(super.getOwner(), null, emptyCell, editorContext);
       return emptyCell;
+    }
+
+    public EditorCell createEmptyCell_internal(EditorContext editorContext, SNode node) {
+      return this.createConstant_10lhbs_a3a(editorContext, node);
     }
 
     public void installElementCellActions(SNode listOwner, SNode elementNode, EditorCell elementCell, EditorContext editorContext) {
@@ -164,14 +207,21 @@ public class SNotationStyle_Editor extends DefaultNodeEditor {
         }
       }
     }
+
+    private EditorCell createConstant_10lhbs_a3a(EditorContext editorContext, SNode node) {
+      EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "");
+      editorCell.setCellId("Constant_10lhbs_a3a");
+      Style style = new StyleImpl();
+      style.set(StyleAttributes.EDITABLE, true);
+      editorCell.getStyle().putAll(style);
+      editorCell.setDefaultText("");
+      return editorCell;
+    }
   }
 
   private EditorCell createConstant_10lhbs_e0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "}");
     editorCell.setCellId("Constant_10lhbs_e0");
-    Style style = new StyleImpl();
-    style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, true);
-    editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;
   }
