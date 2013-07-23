@@ -11,6 +11,7 @@
   <import index="tpd4" modelUID="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" version="3" implicit="yes" />
   <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" implicit="yes" />
   <import index="auau" modelUID="r:d0c0949b-affc-47c9-a29d-6ab6789bf502(jetbrains.mps.core.notation.behavior)" version="-1" implicit="yes" />
+  <import index="ydsw" modelUID="r:c11a239c-3061-4b62-b5dd-6749678497d7(jetbrains.mps.core.structure.structure)" version="-1" implicit="yes" />
   <root type="tpd4.NonTypesystemRule" typeId="tpd4.1195214364922" id="6373561361597667771" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="check_SNotationUnorderedGroup" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="core" />
@@ -109,6 +110,76 @@
     <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="5566195403253968517" nodeInfo="ig">
       <property name="name" nameId="tpck.1169194664001" value="call" />
       <link role="concept" roleId="tpd4.1174642800329" targetNodeId="74m3.2711998566964153005" resolveInfo="SNotationCall" />
+    </node>
+  </root>
+  <root type="tpd4.NonTypesystemRule" typeId="tpd4.1195214364922" id="3712611346767566273" nodeInfo="ng">
+    <property name="name" nameId="tpck.1169194664001" value="check_SNotationStylesImport" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="styles" />
+    <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="3712611346767566274" nodeInfo="sn">
+      <node role="statement" roleId="tpee.1068581517665" type="tp2q.ForEachStatement" typeId="tp2q.1153943597977" id="3712611346767587366" nodeInfo="nn">
+        <node role="variable" roleId="tp2q.1153944400369" type="tp2q.ForEachVariable" typeId="tp2q.1153944193378" id="3712611346767587368" nodeInfo="nr">
+          <property name="name" nameId="tpck.1169194664001" value="node" />
+        </node>
+        <node role="inputSequence" roleId="tp2q.1153944424730" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3712611346767599011" nodeInfo="nn">
+          <node role="operand" roleId="tpee.1197027771414" type="tp25.SNodeTypeCastExpression" typeId="tp25.1140137987495" id="3712611346767598124" nodeInfo="nn">
+            <property name="asCast" nameId="tp25.1238684351431" value="true" />
+            <link role="concept" roleId="tp25.1140138128738" targetNodeId="ydsw.6195190339581766868" resolveInfo="SStructureContainer" />
+            <node role="leftExpression" roleId="tp25.1140138123956" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3712611346767587938" nodeInfo="nn">
+              <node role="operand" roleId="tpee.1197027771414" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="3712611346767587438" nodeInfo="nn">
+                <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="3712611346767566276" resolveInfo="styleImport" />
+              </node>
+              <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_GetParentOperation" typeId="tp25.1139613262185" id="3712611346767594313" nodeInfo="nn" />
+            </node>
+          </node>
+          <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkListAccess" typeId="tp25.1138056282393" id="3712611346767607294" nodeInfo="nn">
+            <link role="link" roleId="tp25.1138056546658" targetNodeId="ydsw.6195190339581766884" />
+          </node>
+        </node>
+        <node role="body" roleId="tpee.1154032183016" type="tpee.StatementList" typeId="tpee.1068580123136" id="3712611346767587372" nodeInfo="sn">
+          <node role="statement" roleId="tpee.1068581517665" type="tpee.IfStatement" typeId="tpee.1068580123159" id="3712611346767640854" nodeInfo="nn">
+            <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="3712611346767640857" nodeInfo="sn">
+              <node role="statement" roleId="tpee.1068581517665" type="tpee.BreakStatement" typeId="tpee.1081855346303" id="3712611346767644177" nodeInfo="nn" />
+            </node>
+            <node role="condition" roleId="tpee.1068580123160" type="tpee.EqualsExpression" typeId="tpee.1068580123152" id="3712611346767643600" nodeInfo="nn">
+              <node role="rightExpression" roleId="tpee.1081773367579" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="3712611346767643627" nodeInfo="nn">
+                <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="3712611346767566276" resolveInfo="styleImport" />
+              </node>
+              <node role="leftExpression" roleId="tpee.1081773367580" type="tp2q.ForEachVariableReference" typeId="tp2q.1153944233411" id="3712611346767641312" nodeInfo="nn">
+                <link role="variable" roleId="tp2q.1153944258490" targetNodeId="3712611346767587368" resolveInfo="node" />
+              </node>
+            </node>
+          </node>
+          <node role="statement" roleId="tpee.1068581517665" type="tpee.IfStatement" typeId="tpee.1068580123159" id="3712611346767644801" nodeInfo="nn">
+            <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="3712611346767644804" nodeInfo="sn">
+              <node role="statement" roleId="tpee.1068581517665" type="tpd4.WarningStatement" typeId="tpd4.1207055528241" id="3712611346767657648" nodeInfo="nn">
+                <node role="warningText" roleId="tpd4.1207055552304" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3712611346767657684" nodeInfo="nn">
+                  <property name="value" nameId="tpee.1070475926801" value="Style imports should be before all other statements" />
+                </node>
+                <node role="nodeToReport" roleId="tpd4.1227096802790" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="3712611346767659223" nodeInfo="nn">
+                  <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="3712611346767566276" resolveInfo="styleImport" />
+                </node>
+              </node>
+              <node role="statement" roleId="tpee.1068581517665" type="tpee.BreakStatement" typeId="tpee.1081855346303" id="3712611346767659358" nodeInfo="nn" />
+            </node>
+            <node role="condition" roleId="tpee.1068580123160" type="tpee.NotExpression" typeId="tpee.1081516740877" id="3712611346767656857" nodeInfo="nn">
+              <node role="expression" roleId="tpee.1081516765348" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3712611346767656859" nodeInfo="nn">
+                <node role="operand" roleId="tpee.1197027771414" type="tp2q.ForEachVariableReference" typeId="tp2q.1153944233411" id="3712611346767656860" nodeInfo="nn">
+                  <link role="variable" roleId="tp2q.1153944258490" targetNodeId="3712611346767587368" resolveInfo="node" />
+                </node>
+                <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_IsInstanceOfOperation" typeId="tp25.1139621453865" id="3712611346767656861" nodeInfo="nn">
+                  <node role="conceptArgument" roleId="tp25.1177027386292" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="3712611346767656862" nodeInfo="nn">
+                    <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="74m3.2038289530662929468" resolveInfo="SNotationStylesImport" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="3712611346767566276" nodeInfo="ig">
+      <property name="name" nameId="tpck.1169194664001" value="styleImport" />
+      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="74m3.2038289530662929468" resolveInfo="SNotationStylesImport" />
     </node>
   </root>
 </model>

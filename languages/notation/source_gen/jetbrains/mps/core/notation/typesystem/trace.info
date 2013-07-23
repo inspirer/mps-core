@@ -1,7 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debugInfo>
-  <unitInfo fileName="TypesystemDescriptor.java" startLine="8" startPosition="0" endLine="20" endPosition="0" unitName="jetbrains.mps.core.notation.typesystem.TypesystemDescriptor" />
+  <unitInfo fileName="TypesystemDescriptor.java" startLine="8" startPosition="0" endLine="24" endPosition="0" unitName="jetbrains.mps.core.notation.typesystem.TypesystemDescriptor" />
   <root nodeRef="r:a890372e-633e-4844-8377-f7d3b4a35a63(jetbrains.mps.core.notation.typesystem)/2711998566964092837" />
+  <root nodeRef="r:a890372e-633e-4844-8377-f7d3b4a35a63(jetbrains.mps.core.notation.typesystem)/3712611346767566273">
+    <nodeInfo nodeId="3712611346767644177" fileName="check_SNotationStylesImport_NonTypesystemRule.java" startLine="24" startPosition="32" endLine="25" endPosition="14" conceptFqName="jetbrains.mps.baseLanguage.structure.BreakStatement" />
+    <nodeInfo nodeId="3712611346767657648" fileName="check_SNotationStylesImport_NonTypesystemRule.java" startLine="28" startPosition="9" endLine="29" endPosition="62" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="3712611346767657648" fileName="check_SNotationStylesImport_NonTypesystemRule.java" startLine="29" startPosition="62" endLine="30" endPosition="274" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="3712611346767659358" fileName="check_SNotationStylesImport_NonTypesystemRule.java" startLine="31" startPosition="9" endLine="32" endPosition="14" conceptFqName="jetbrains.mps.baseLanguage.structure.BreakStatement" />
+    <nodeInfo nodeId="3712611346767566273" fileName="check_SNotationStylesImport_NonTypesystemRule.java" startLine="37" startPosition="46" endLine="38" endPosition="73" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="3712611346767566273" fileName="check_SNotationStylesImport_NonTypesystemRule.java" startLine="42" startPosition="5" endLine="43" endPosition="130" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="3712611346767566273" fileName="check_SNotationStylesImport_NonTypesystemRule.java" startLine="43" startPosition="130" endLine="44" endPosition="45" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="3712611346767566273" fileName="check_SNotationStylesImport_NonTypesystemRule.java" startLine="48" startPosition="30" endLine="49" endPosition="17" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="3712611346767566273" fileName="check_SNotationStylesImport_NonTypesystemRule.java" startLine="19" startPosition="0" endLine="21" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="check_SNotationStylesImport_NonTypesystemRule#()V" />
+    <nodeInfo nodeId="3712611346767640854" fileName="check_SNotationStylesImport_NonTypesystemRule.java" startLine="23" startPosition="215" endLine="26" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="3712611346767566273" fileName="check_SNotationStylesImport_NonTypesystemRule.java" startLine="37" startPosition="0" endLine="40" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getApplicableConceptFQName#()Ljava/lang/String;" />
+    <nodeInfo nodeId="3712611346767566273" fileName="check_SNotationStylesImport_NonTypesystemRule.java" startLine="48" startPosition="0" endLine="51" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="overrides#()Z" />
+    <nodeInfo nodeId="3712611346767657648" fileName="check_SNotationStylesImport_NonTypesystemRule.java" startLine="27" startPosition="113" endLine="31" endPosition="9" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="3712611346767566273" fileName="check_SNotationStylesImport_NonTypesystemRule.java" startLine="41" startPosition="68" endLine="45" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="3712611346767566273" fileName="check_SNotationStylesImport_NonTypesystemRule.java" startLine="41" startPosition="0" endLine="47" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+    <nodeInfo nodeId="3712611346767644801" fileName="check_SNotationStylesImport_NonTypesystemRule.java" startLine="26" startPosition="7" endLine="33" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="3712611346767587366" fileName="check_SNotationStylesImport_NonTypesystemRule.java" startLine="22" startPosition="124" endLine="34" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+    <nodeInfo nodeId="3712611346767566273" fileName="check_SNotationStylesImport_NonTypesystemRule.java" startLine="22" startPosition="0" endLine="36" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+    <scopeInfo nodeId="3712611346767566273" fileName="check_SNotationStylesImport_NonTypesystemRule.java" startLine="19" startPosition="58" endLine="19" endPosition="58" />
+    <scopeInfo nodeId="3712611346767640857" fileName="check_SNotationStylesImport_NonTypesystemRule.java" startLine="24" startPosition="32" endLine="25" endPosition="14" />
+    <scopeInfo nodeId="3712611346767566273" fileName="check_SNotationStylesImport_NonTypesystemRule.java" startLine="37" startPosition="46" endLine="38" endPosition="73" />
+    <scopeInfo nodeId="3712611346767566273" fileName="check_SNotationStylesImport_NonTypesystemRule.java" startLine="48" startPosition="30" endLine="49" endPosition="17" />
+    <scopeInfo nodeId="3712611346767566273" fileName="check_SNotationStylesImport_NonTypesystemRule.java" startLine="19" startPosition="0" endLine="21" endPosition="0" />
+    <scopeInfo nodeId="3712611346767657648" fileName="check_SNotationStylesImport_NonTypesystemRule.java" startLine="28" startPosition="9" endLine="30" endPosition="274">
+      <varInfo nodeId="3712611346767657648" varName="_reporter_2309309498" />
+      <varInfo nodeId="3712611346767657648" varName="errorTarget" />
+    </scopeInfo>
+    <scopeInfo nodeId="3712611346767566273" fileName="check_SNotationStylesImport_NonTypesystemRule.java" startLine="42" startPosition="5" endLine="44" endPosition="45">
+      <varInfo nodeId="3712611346767566273" varName="b" />
+    </scopeInfo>
+    <scopeInfo nodeId="3712611346767566273" fileName="check_SNotationStylesImport_NonTypesystemRule.java" startLine="37" startPosition="0" endLine="40" endPosition="0" />
+    <scopeInfo nodeId="3712611346767566273" fileName="check_SNotationStylesImport_NonTypesystemRule.java" startLine="48" startPosition="0" endLine="51" endPosition="0" />
+    <scopeInfo nodeId="3712611346767566273" fileName="check_SNotationStylesImport_NonTypesystemRule.java" startLine="41" startPosition="68" endLine="45" endPosition="5" />
+    <scopeInfo nodeId="3712611346767644804" fileName="check_SNotationStylesImport_NonTypesystemRule.java" startLine="27" startPosition="113" endLine="32" endPosition="14" />
+    <scopeInfo nodeId="3712611346767566273" fileName="check_SNotationStylesImport_NonTypesystemRule.java" startLine="41" startPosition="0" endLine="47" endPosition="0">
+      <varInfo nodeId="3712611346767566273" varName="argument" />
+    </scopeInfo>
+    <scopeInfo nodeId="3712611346767587372" fileName="check_SNotationStylesImport_NonTypesystemRule.java" startLine="23" startPosition="215" endLine="33" endPosition="7" />
+    <scopeInfo nodeId="3712611346767566274" fileName="check_SNotationStylesImport_NonTypesystemRule.java" startLine="22" startPosition="124" endLine="34" endPosition="5" />
+    <scopeInfo nodeId="3712611346767587366" fileName="check_SNotationStylesImport_NonTypesystemRule.java" startLine="22" startPosition="124" endLine="34" endPosition="5">
+      <varInfo nodeId="3712611346767587368" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="3712611346767566273" fileName="check_SNotationStylesImport_NonTypesystemRule.java" startLine="22" startPosition="0" endLine="36" endPosition="0">
+      <varInfo nodeId="3712611346767566273" varName="status" />
+      <varInfo nodeId="3712611346767566273" varName="styleImport" />
+      <varInfo nodeId="3712611346767566273" varName="typeCheckingContext" />
+    </scopeInfo>
+    <unitInfo nodeId="3712611346767566273" fileName="check_SNotationStylesImport_NonTypesystemRule.java" startLine="18" startPosition="0" endLine="52" endPosition="0" unitName="jetbrains.mps.core.notation.typesystem.check_SNotationStylesImport_NonTypesystemRule" />
+  </root>
   <root nodeRef="r:a890372e-633e-4844-8377-f7d3b4a35a63(jetbrains.mps.core.notation.typesystem)/5566195403253968515">
     <nodeInfo nodeId="5566195403253968573" fileName="check_SNotationCall_NonTypesystemRule.java" startLine="22" startPosition="7" endLine="23" endPosition="60" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
     <nodeInfo nodeId="5566195403253968573" fileName="check_SNotationCall_NonTypesystemRule.java" startLine="23" startPosition="60" endLine="24" endPosition="267" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
