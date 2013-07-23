@@ -3,11 +3,14 @@
   <persistence version="8" />
   <language namespace="41a590b4-0cca-40d1-9a11-d9ef253734cc(jetbrains.mps.core.smodel)" />
   <language namespace="1372eb94-b402-4b9f-bb3f-44315b20f92d(jetbrains.mps.core.structure)" />
+  <language namespace="c898d4a2-ef8e-481f-aff5-15e46db05e03(jetbrains.mps.core.query)" />
+  <language namespace="96edcf67-fb92-4a65-a193-b125e8994c8e(jetbrains.mps.core.metadata)" />
   <import index="tql1" modelUID="r:7828b85a-5771-4321-a557-44fc5258c152(jetbrains.mps.core.stubs)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="ydsw" modelUID="r:c11a239c-3061-4b62-b5dd-6749678497d7(jetbrains.mps.core.structure.structure)" version="-1" implicit="yes" />
   <import index="76x" modelUID="r:6c2a75d9-9b75-42bc-9094-a61409f20018(jetbrains.mps.core.metadata.structure)" version="-1" implicit="yes" />
   <import index="bwy9" modelUID="r:f9198ffd-e084-425c-aa82-f2db8289f5eb(jetbrains.mps.core.query.structure)" version="0" implicit="yes" />
+  <import index="xsnc" modelUID="r:e3b9700d-5825-4641-895a-925f28591c5b(jetbrains.mps.core.smodel.structure)" version="0" implicit="yes" />
   <root type="ydsw.SStructureContainer" typeId="ydsw.6195190339581766868" id="2024350793560675963" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="jetbrains.mps.core.syntax" />
     <node role="structure" roleId="ydsw.6195190339581766884" type="ydsw.SConcept" typeId="ydsw.6195190339581766741" id="2024350793560676030" nodeInfo="ng">
@@ -15,6 +18,13 @@
       <property name="isAbstract" nameId="ydsw.6195190339581766762" value="true" />
       <property name="isFinal" nameId="ydsw.6195190339581766763" value="false" />
       <property name="canBeRoot" nameId="ydsw.2310679965751763149" value="false" />
+      <node role="members" roleId="ydsw.6195190339581766761" type="xsnc.SConceptQuery" typeId="xsnc.5270931306887544473" id="4690043208397694794" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="isSingleLine" />
+        <node role="type" roleId="xsnc.4366849661834287896" type="bwy9.MqlBoolType" typeId="bwy9.6762883159245048072" id="4690043208397694800" nodeInfo="ng" />
+        <node role="body" roleId="xsnc.6762883159245048634" type="bwy9.MqlBoolLiteral" typeId="bwy9.6762883159245048056" id="4690043208397694807" nodeInfo="ng">
+          <property name="value" nameId="bwy9.6762883159245048057" value="false" />
+        </node>
+      </node>
       <node role="implements" roleId="ydsw.6195190339581766790" type="ydsw.SInterfaceReference" typeId="ydsw.6195190339581766766" id="2024350793560676031" nodeInfo="ng">
         <link role="target" roleId="ydsw.6195190339581766767" targetNodeId="2024350793560676033" resolveInfo="SRulePart" />
       </node>
@@ -394,6 +404,23 @@
       <property name="isAbstract" nameId="ydsw.6195190339581766762" value="true" />
       <property name="isFinal" nameId="ydsw.6195190339581766763" value="false" />
       <property name="canBeRoot" nameId="ydsw.2310679965751763149" value="false" />
+      <node role="members" roleId="ydsw.6195190339581766761" type="ydsw.SConceptMemberComment" typeId="ydsw.7581772527307844363" id="3406253184141749688" nodeInfo="ng">
+        <property name="comment" nameId="ydsw.7581772527307844364" value="virtual" />
+      </node>
+      <node role="members" roleId="ydsw.6195190339581766761" type="xsnc.SConceptQuery" typeId="xsnc.5270931306887544473" id="3406253184141014598" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="getActionConcept" />
+        <node role="body" roleId="xsnc.6762883159245048634" type="bwy9.MqlNullLiteral" typeId="bwy9.6762883159245048062" id="3406253184141748773" nodeInfo="ng" />
+        <node role="type" roleId="xsnc.4366849661834287896" type="xsnc.MqlConceptType" typeId="xsnc.4690043208397697375" id="3406253184142892693" nodeInfo="ng">
+          <link role="concept" roleId="xsnc.4690043208397898335" targetNodeId="2024350793560676030" resolveInfo="SAction" />
+        </node>
+      </node>
+      <node role="members" roleId="ydsw.6195190339581766761" type="xsnc.SConceptQuery" typeId="xsnc.5270931306887544473" id="3406253184141749726" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="getTypeConcept" />
+        <node role="body" roleId="xsnc.6762883159245048634" type="bwy9.MqlNullLiteral" typeId="bwy9.6762883159245048062" id="3406253184141749819" nodeInfo="ng" />
+        <node role="type" roleId="xsnc.4366849661834287896" type="xsnc.MqlConceptType" typeId="xsnc.4690043208397697375" id="3406253184142892723" nodeInfo="ng">
+          <link role="concept" roleId="xsnc.4690043208397898335" targetNodeId="2024350793560676035" resolveInfo="SType" />
+        </node>
+      </node>
     </node>
     <node role="structure" roleId="ydsw.6195190339581766884" type="ydsw.SStructureEmptyLine" typeId="ydsw.6195190339581962051" id="2024350793560676079" nodeInfo="ng" />
     <node role="structure" roleId="ydsw.6195190339581766884" type="ydsw.SConcept" typeId="ydsw.6195190339581766741" id="2024350793560676035" nodeInfo="ng">
