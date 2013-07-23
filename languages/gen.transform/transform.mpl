@@ -19,6 +19,7 @@
         <dependency reexport="false">41a590b4-0cca-40d1-9a11-d9ef253734cc(jetbrains.mps.core.smodel)</dependency>
         <dependency reexport="false">c79685c0-f0f5-44ce-8c36-9ec48f392de5(jetbrains.mps.core.stubs)</dependency>
         <dependency reexport="false">2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)</dependency>
+        <dependency reexport="false">af65afd8-f0dd-4942-87d9-63a55f2a9db1(jetbrains.mps.lang.behavior)</dependency>
         <dependency reexport="false">7866978e-a0f0-4cc7-81bc-4d213d9375e1(jetbrains.mps.lang.smodel)</dependency>
       </dependencies>
       <usedLanguages>
