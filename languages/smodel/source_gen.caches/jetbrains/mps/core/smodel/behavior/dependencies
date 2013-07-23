@@ -3,6 +3,7 @@
   <dependency className="jetbrains.mps.core.smodel.behavior.BehaviorAspectDescriptor" file="BehaviorAspectDescriptor.java">
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.Arrays" />
+    <classNode dependClassName="jetbrains.mps.core.smodel.behavior.MqlConceptType_BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.core.smodel.behavior.MqlLinkSelector_BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.core.smodel.behavior.MqlModelQuery_BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.core.smodel.behavior.MqlNodeType_BehaviorDescriptor" />
@@ -12,6 +13,20 @@
     <classNode dependClassName="jetbrains.mps.smodel.runtime.BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.interpreted.BehaviorAspectInterpreted" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.BehaviorAspectDescriptor" />
+  </dependency>
+  <dependency className="jetbrains.mps.core.smodel.behavior.MqlConceptType_Behavior" file="MqlConceptType_Behavior.java">
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+  </dependency>
+  <dependency className="jetbrains.mps.core.smodel.behavior.MqlConceptType_BehaviorDescriptor" file="MqlConceptType_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.core.query.behavior.MqlType_BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.core.smodel.behavior.MqlConceptType_Behavior" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="jetbrains.mps.core.smodel.behavior.MqlLinkSelector_Behavior" file="MqlLinkSelector_Behavior.java">
     <classNode dependClassName="java.lang.Object" />
