@@ -188,6 +188,112 @@
     <unitInfo nodeId="7349647468656132508" fileName="MigrateStructure_Action.java" startLine="91" startPosition="31" endLine="99" endPosition="7" unitName="jetbrains.mps.core.structure.pluginSolution.plugin.MigrateStructure_Action$1" />
     <unitInfo nodeId="1014779104259186304" fileName="MigrateStructure_Action.java" startLine="39" startPosition="0" endLine="171" endPosition="0" unitName="jetbrains.mps.core.structure.pluginSolution.plugin.MigrateStructure_Action" />
   </root>
+  <root nodeRef="r:1cb7d6b1-62c1-477b-836e-0624c3f533ee(jetbrains.mps.core.structure.pluginSolution.plugin)/2349655948102776234">
+    <nodeInfo nodeId="2349655948102787680" fileName="MessagesViewProcessingStatus.java" startLine="12" startPosition="0" endLine="13" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="tool" />
+    <nodeInfo nodeId="2349655948102788737" fileName="MessagesViewProcessingStatus.java" startLine="15" startPosition="62" endLine="16" endPosition="24" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+    <nodeInfo nodeId="2349655948102788748" fileName="MessagesViewProcessingStatus.java" startLine="16" startPosition="24" endLine="17" endPosition="21" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2349655948102955073" fileName="MessagesViewProcessingStatus.java" startLine="17" startPosition="21" endLine="18" endPosition="34" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2349655948102794842" fileName="MessagesViewProcessingStatus.java" startLine="23" startPosition="48" endLine="24" endPosition="70" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2349655948103053723" fileName="MessagesViewProcessingStatus.java" startLine="29" startPosition="59" endLine="30" endPosition="56" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="2349655948103056601" fileName="MessagesViewProcessingStatus.java" startLine="30" startPosition="56" endLine="31" endPosition="30" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2349655948103030108" fileName="MessagesViewProcessingStatus.java" startLine="31" startPosition="30" endLine="32" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2349655948103006329" fileName="MessagesViewProcessingStatus.java" startLine="38" startPosition="84" endLine="39" endPosition="37" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2349655948103014217" fileName="MessagesViewProcessingStatus.java" startLine="41" startPosition="45" endLine="42" endPosition="33" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2349655948103021454" fileName="MessagesViewProcessingStatus.java" startLine="43" startPosition="5" endLine="44" endPosition="29" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2349655948102781863" fileName="MessagesViewProcessingStatus.java" startLine="23" startPosition="0" endLine="26" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="handle#(ILjava/lang/String;)V" />
+    <nodeInfo nodeId="2349655948103003056" fileName="MessagesViewProcessingStatus.java" startLine="37" startPosition="54" endLine="40" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="2349655948103009523" fileName="MessagesViewProcessingStatus.java" startLine="40" startPosition="5" endLine="43" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="2349655948102788731" fileName="MessagesViewProcessingStatus.java" startLine="15" startPosition="0" endLine="20" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="MessagesViewProcessingStatus#(Ljetbrains/mps/ide/messages/MessagesViewTool;)V" />
+    <nodeInfo nodeId="2349655948102781872" fileName="MessagesViewProcessingStatus.java" startLine="29" startPosition="0" endLine="34" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="report#(Ljava/lang/String;Ljava/lang/Throwable;)V" />
+    <nodeInfo nodeId="2349655948103000359" fileName="MessagesViewProcessingStatus.java" startLine="37" startPosition="0" endLine="46" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="toMessageKind#(I)Ljetbrains/mps/messages/MessageKind;" />
+    <scopeInfo nodeId="2349655948102781871" fileName="MessagesViewProcessingStatus.java" startLine="23" startPosition="48" endLine="24" endPosition="70" />
+    <scopeInfo nodeId="2349655948103003057" fileName="MessagesViewProcessingStatus.java" startLine="38" startPosition="84" endLine="39" endPosition="37" />
+    <scopeInfo nodeId="2349655948103009526" fileName="MessagesViewProcessingStatus.java" startLine="41" startPosition="45" endLine="42" endPosition="33" />
+    <scopeInfo nodeId="2349655948102788735" fileName="MessagesViewProcessingStatus.java" startLine="15" startPosition="62" endLine="18" endPosition="34" />
+    <scopeInfo nodeId="2349655948102781863" fileName="MessagesViewProcessingStatus.java" startLine="23" startPosition="0" endLine="26" endPosition="0">
+      <varInfo nodeId="2349655948102781867" varName="kind" />
+      <varInfo nodeId="2349655948102781869" varName="message" />
+    </scopeInfo>
+    <scopeInfo nodeId="2349655948102781882" fileName="MessagesViewProcessingStatus.java" startLine="29" startPosition="59" endLine="32" endPosition="16">
+      <varInfo nodeId="2349655948103053724" varName="m" />
+    </scopeInfo>
+    <scopeInfo nodeId="2349655948102788731" fileName="MessagesViewProcessingStatus.java" startLine="15" startPosition="0" endLine="20" endPosition="0">
+      <varInfo nodeId="2349655948102788747" varName="tool" />
+    </scopeInfo>
+    <scopeInfo nodeId="2349655948102781872" fileName="MessagesViewProcessingStatus.java" startLine="29" startPosition="0" endLine="34" endPosition="0">
+      <varInfo nodeId="2349655948102781876" varName="message" />
+      <varInfo nodeId="2349655948102781878" varName="throwable" />
+    </scopeInfo>
+    <scopeInfo nodeId="2349655948102998427" fileName="MessagesViewProcessingStatus.java" startLine="37" startPosition="54" endLine="44" endPosition="29" />
+    <scopeInfo nodeId="2349655948103000359" fileName="MessagesViewProcessingStatus.java" startLine="37" startPosition="0" endLine="46" endPosition="0">
+      <varInfo nodeId="2349655948103002337" varName="kind" />
+    </scopeInfo>
+    <unitInfo nodeId="2349655948102776234" fileName="MessagesViewProcessingStatus.java" startLine="11" startPosition="0" endLine="47" endPosition="0" unitName="jetbrains.mps.core.structure.pluginSolution.plugin.MessagesViewProcessingStatus" />
+  </root>
+  <root nodeRef="r:1cb7d6b1-62c1-477b-836e-0624c3f533ee(jetbrains.mps.core.structure.pluginSolution.plugin)/2349655948104531149">
+    <nodeInfo nodeId="2349655948104533871" fileName="GrammarMerger.java" startLine="20" startPosition="0" endLine="21" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="target" />
+    <nodeInfo nodeId="2349655948104534229" fileName="GrammarMerger.java" startLine="21" startPosition="0" endLine="22" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="grammar" />
+    <nodeInfo nodeId="2349655948104534686" fileName="GrammarMerger.java" startLine="22" startPosition="0" endLine="23" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="ast" />
+    <nodeInfo nodeId="2349655948104533875" fileName="GrammarMerger.java" startLine="25" startPosition="69" endLine="26" endPosition="25" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2349655948104534233" fileName="GrammarMerger.java" startLine="26" startPosition="25" endLine="27" endPosition="27" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2349655948104534690" fileName="GrammarMerger.java" startLine="27" startPosition="27" endLine="28" endPosition="19" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2349655948104650794" fileName="GrammarMerger.java" startLine="35" startPosition="68" endLine="36" endPosition="153" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2349655948104792258" fileName="GrammarMerger.java" startLine="43" startPosition="57" endLine="44" endPosition="107" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2349655948104802898" fileName="GrammarMerger.java" startLine="47" startPosition="79" endLine="48" endPosition="63" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="2349655948104802898" fileName="GrammarMerger.java" startLine="48" startPosition="63" endLine="49" endPosition="30" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="2349655948104802898" fileName="GrammarMerger.java" startLine="49" startPosition="30" endLine="50" endPosition="30" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="2349655948104802898" fileName="GrammarMerger.java" startLine="50" startPosition="30" endLine="51" endPosition="30" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="2349655948104802898" fileName="GrammarMerger.java" startLine="51" startPosition="30" endLine="52" endPosition="172" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2349655948104802898" fileName="GrammarMerger.java" startLine="52" startPosition="172" endLine="53" endPosition="59" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2349655948104802898" fileName="GrammarMerger.java" startLine="53" startPosition="59" endLine="54" endPosition="172" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2349655948104802898" fileName="GrammarMerger.java" startLine="54" startPosition="172" endLine="55" endPosition="53" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2349655948104802898" fileName="GrammarMerger.java" startLine="55" startPosition="53" endLine="56" endPosition="170" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2349655948104802898" fileName="GrammarMerger.java" startLine="56" startPosition="170" endLine="57" endPosition="76" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2349655948104802898" fileName="GrammarMerger.java" startLine="57" startPosition="76" endLine="58" endPosition="53" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2349655948104802898" fileName="GrammarMerger.java" startLine="58" startPosition="53" endLine="59" endPosition="24" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2349655948104802898" fileName="GrammarMerger.java" startLine="53" startPosition="59" endLine="55" endPosition="53" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="2349655948104802898" fileName="GrammarMerger.java" startLine="53" startPosition="59" endLine="55" endPosition="53" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="2349655948104610920" fileName="GrammarMerger.java" startLine="34" startPosition="51" endLine="37" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="2349655948104640000" fileName="GrammarMerger.java" startLine="43" startPosition="0" endLine="46" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="convertInterface#(Lorg/textmapper/lapg/api/ast/AstClass;)Ljava/lang/Iterable;" />
+    <nodeInfo nodeId="2349655948104802898" fileName="GrammarMerger.java" startLine="55" startPosition="53" endLine="58" endPosition="53" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="2349655948104802898" fileName="GrammarMerger.java" startLine="55" startPosition="53" endLine="58" endPosition="53" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="2349655948104532962" fileName="GrammarMerger.java" startLine="25" startPosition="0" endLine="30" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="GrammarMerger#(Lorg/textmapper/lapg/api/ast/AstModel;Lorg/textmapper/lapg/api/Grammar;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+    <nodeInfo nodeId="2349655948104600858" fileName="GrammarMerger.java" startLine="33" startPosition="23" endLine="38" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+    <nodeInfo nodeId="2349655948104544119" fileName="GrammarMerger.java" startLine="33" startPosition="0" endLine="40" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="apply#()V" />
+    <nodeInfo nodeId="2349655948104802898" fileName="GrammarMerger.java" startLine="51" startPosition="30" endLine="58" endPosition="53" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="2349655948104802898" fileName="GrammarMerger.java" startLine="51" startPosition="30" endLine="58" endPosition="53" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="2349655948104802898" fileName="GrammarMerger.java" startLine="47" startPosition="0" endLine="61" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="_quotation_createNode_kvqths_a0a0j#(Ljava/lang/Object;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+    <scopeInfo nodeId="2349655948104610921" fileName="GrammarMerger.java" startLine="35" startPosition="68" endLine="36" endPosition="153" />
+    <scopeInfo nodeId="2349655948104640003" fileName="GrammarMerger.java" startLine="43" startPosition="57" endLine="44" endPosition="107" />
+    <scopeInfo nodeId="2349655948104802898" fileName="GrammarMerger.java" startLine="53" startPosition="59" endLine="55" endPosition="53" />
+    <scopeInfo nodeId="2349655948104532966" fileName="GrammarMerger.java" startLine="25" startPosition="69" endLine="28" endPosition="19" />
+    <scopeInfo nodeId="2349655948104600861" fileName="GrammarMerger.java" startLine="34" startPosition="51" endLine="37" endPosition="7" />
+    <scopeInfo nodeId="2349655948104640000" fileName="GrammarMerger.java" startLine="43" startPosition="0" endLine="46" endPosition="0">
+      <varInfo nodeId="2349655948104649411" varName="cl" />
+    </scopeInfo>
+    <scopeInfo nodeId="2349655948104802898" fileName="GrammarMerger.java" startLine="55" startPosition="53" endLine="58" endPosition="53" />
+    <scopeInfo nodeId="2349655948104532962" fileName="GrammarMerger.java" startLine="25" startPosition="0" endLine="30" endPosition="0">
+      <varInfo nodeId="2349655948104533169" varName="ast" />
+      <varInfo nodeId="2349655948104533179" varName="grammar" />
+      <varInfo nodeId="2349655948104533635" varName="target" />
+    </scopeInfo>
+    <scopeInfo nodeId="2349655948104544122" fileName="GrammarMerger.java" startLine="33" startPosition="23" endLine="38" endPosition="5" />
+    <scopeInfo nodeId="2349655948104600858" fileName="GrammarMerger.java" startLine="33" startPosition="23" endLine="38" endPosition="5">
+      <varInfo nodeId="2349655948104600864" varName="cl" />
+    </scopeInfo>
+    <scopeInfo nodeId="2349655948104544119" fileName="GrammarMerger.java" startLine="33" startPosition="0" endLine="40" endPosition="0" />
+    <scopeInfo nodeId="2349655948104802898" fileName="GrammarMerger.java" startLine="51" startPosition="30" endLine="58" endPosition="53" />
+    <scopeInfo nodeId="2349655948104802898" fileName="GrammarMerger.java" startLine="47" startPosition="79" endLine="59" endPosition="24">
+      <varInfo nodeId="2349655948104802898" varName="facade" />
+      <varInfo nodeId="2349655948104802898" varName="quotedNode_2" />
+      <varInfo nodeId="2349655948104802898" varName="quotedNode_3" />
+      <varInfo nodeId="2349655948104802898" varName="quotedNode_4" />
+    </scopeInfo>
+    <scopeInfo nodeId="2349655948104802898" fileName="GrammarMerger.java" startLine="47" startPosition="0" endLine="61" endPosition="0">
+      <varInfo nodeId="2349655948104802898" varName="parameter_1" />
+    </scopeInfo>
+    <unitInfo nodeId="2349655948104531149" fileName="GrammarMerger.java" startLine="18" startPosition="0" endLine="62" endPosition="0" unitName="jetbrains.mps.core.structure.pluginSolution.plugin.GrammarMerger" />
+  </root>
   <root nodeRef="r:1cb7d6b1-62c1-477b-836e-0624c3f533ee(jetbrains.mps.core.structure.pluginSolution.plugin)/2354898832652190754">
     <nodeInfo nodeId="2354898832652190754" fileName="PluginSolution_ApplicationPlugin.java" startLine="11" startPosition="0" endLine="12" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="myId" />
     <nodeInfo nodeId="2354898832652190754" fileName="PluginSolution_ApplicationPlugin.java" startLine="16" startPosition="27" endLine="17" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
@@ -214,87 +320,163 @@
     <unitInfo nodeId="2354898832652190754" fileName="PluginSolution_ApplicationPlugin.java" startLine="10" startPosition="0" endLine="34" endPosition="0" unitName="jetbrains.mps.core.structure.pluginSolution.plugin.PluginSolution_ApplicationPlugin" />
   </root>
   <root nodeRef="r:1cb7d6b1-62c1-477b-836e-0624c3f533ee(jetbrains.mps.core.structure.pluginSolution.plugin)/6227765453359422499">
-    <nodeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="20" startPosition="0" endLine="21" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="ICON" />
-    <nodeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="22" startPosition="33" endLine="23" endPosition="49" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
-    <nodeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="23" startPosition="49" endLine="24" endPosition="35" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="24" startPosition="35" endLine="25" endPosition="40" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="29" startPosition="32" endLine="30" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="34" startPosition="9" endLine="35" endPosition="43" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
-    <nodeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="34" startPosition="9" endLine="35" endPosition="43" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="37" startPosition="45" endLine="38" endPosition="88" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="39" startPosition="7" endLine="40" endPosition="44" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="45" startPosition="53" endLine="46" endPosition="19" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="48" startPosition="5" endLine="49" endPosition="57" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="51" startPosition="114" endLine="52" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="54" startPosition="7" endLine="55" endPosition="57" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="56" startPosition="5" endLine="57" endPosition="100" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
-    <nodeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="56" startPosition="5" endLine="57" endPosition="100" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="57" startPosition="100" endLine="58" endPosition="92" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
-    <nodeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="57" startPosition="100" endLine="58" endPosition="92" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="58" startPosition="92" endLine="59" endPosition="89" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
-    <nodeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="58" startPosition="92" endLine="59" endPosition="89" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="59" startPosition="89" endLine="60" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="66" startPosition="45" endLine="67" endPosition="87" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="72" startPosition="0" endLine="73" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="LOG" />
-    <nodeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="36" startPosition="27" endLine="39" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
-    <nodeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="36" startPosition="27" endLine="39" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="44" startPosition="95" endLine="47" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="50" startPosition="25" endLine="53" endPosition="9" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="65" startPosition="27" endLine="68" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
-    <nodeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="65" startPosition="27" endLine="68" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="28" startPosition="0" endLine="32" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="isDumbAware#()Z" />
-    <nodeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="22" startPosition="0" endLine="27" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="ImportGrammar_Action#()V" />
-    <nodeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="49" startPosition="57" endLine="54" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="63" startPosition="96" endLine="69" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.TryCatchStatement" />
-    <nodeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="33" startPosition="89" endLine="41" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.TryCatchStatement" />
-    <nodeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="63" startPosition="0" endLine="71" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="doExecute#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)V" />
-    <nodeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="47" startPosition="5" endLine="56" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
-    <nodeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="47" startPosition="5" endLine="56" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
-    <nodeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="33" startPosition="0" endLine="43" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="doUpdate#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)V" />
-    <nodeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="44" startPosition="0" endLine="62" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="collectActionData#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)Z" />
-    <scopeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="64" startPosition="9" endLine="64" endPosition="9" />
-    <scopeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="29" startPosition="32" endLine="30" endPosition="16" />
-    <scopeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="34" startPosition="9" endLine="35" endPosition="43" />
-    <scopeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="37" startPosition="45" endLine="38" endPosition="88" />
-    <scopeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="45" startPosition="53" endLine="46" endPosition="19" />
-    <scopeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="51" startPosition="114" endLine="52" endPosition="22" />
-    <scopeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="56" startPosition="5" endLine="57" endPosition="100" />
-    <scopeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="57" startPosition="100" endLine="58" endPosition="92" />
-    <scopeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="58" startPosition="92" endLine="59" endPosition="89" />
-    <scopeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="66" startPosition="45" endLine="67" endPosition="87" />
-    <scopeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="22" startPosition="33" endLine="25" endPosition="40" />
-    <scopeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="36" startPosition="27" endLine="39" endPosition="7" />
-    <scopeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="50" startPosition="25" endLine="53" endPosition="9" />
-    <scopeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="65" startPosition="0" endLine="68" endPosition="7">
+    <nodeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="41" startPosition="0" endLine="42" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="ICON" />
+    <nodeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="43" startPosition="33" endLine="44" endPosition="49" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+    <nodeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="44" startPosition="49" endLine="45" endPosition="35" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="45" startPosition="35" endLine="46" endPosition="40" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="50" startPosition="32" endLine="51" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="55" startPosition="9" endLine="56" endPosition="43" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="55" startPosition="9" endLine="56" endPosition="43" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="58" startPosition="45" endLine="59" endPosition="88" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="60" startPosition="7" endLine="61" endPosition="44" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="66" startPosition="53" endLine="67" endPosition="19" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="69" startPosition="5" endLine="70" endPosition="57" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="72" startPosition="114" endLine="73" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="75" startPosition="7" endLine="76" endPosition="58" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="78" startPosition="64" endLine="79" endPosition="19" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="80" startPosition="5" endLine="81" endPosition="100" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="80" startPosition="5" endLine="81" endPosition="100" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="81" startPosition="100" endLine="82" endPosition="92" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="81" startPosition="100" endLine="82" endPosition="92" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="82" startPosition="92" endLine="83" endPosition="93" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="82" startPosition="92" endLine="83" endPosition="93" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="83" startPosition="93" endLine="84" endPosition="94" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="85" startPosition="62" endLine="86" endPosition="19" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="87" startPosition="5" endLine="88" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2349655948103398453" fileName="ImportGrammar_Action.java" startLine="92" startPosition="9" endLine="93" endPosition="90" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="2349655948102710116" fileName="ImportGrammar_Action.java" startLine="93" startPosition="90" endLine="94" endPosition="127" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="2349655948102715051" fileName="ImportGrammar_Action.java" startLine="95" startPosition="25" endLine="96" endPosition="15" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2349655948102726277" fileName="ImportGrammar_Action.java" startLine="97" startPosition="7" endLine="98" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="2349655948102727226" fileName="ImportGrammar_Action.java" startLine="98" startPosition="0" endLine="99" endPosition="133" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="2349655948102807900" fileName="ImportGrammar_Action.java" startLine="100" startPosition="25" endLine="101" endPosition="91" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="2349655948102878738" fileName="ImportGrammar_Action.java" startLine="101" startPosition="91" endLine="102" endPosition="86" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2349655948103763338" fileName="ImportGrammar_Action.java" startLine="102" startPosition="86" endLine="103" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="2349655948103790024" fileName="ImportGrammar_Action.java" startLine="103" startPosition="0" endLine="104" endPosition="75" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="2349655948103905710" fileName="ImportGrammar_Action.java" startLine="104" startPosition="75" endLine="105" endPosition="71" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="2349655948103792342" fileName="ImportGrammar_Action.java" startLine="108" startPosition="17" endLine="109" endPosition="72" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2349655948103914076" fileName="ImportGrammar_Action.java" startLine="109" startPosition="72" endLine="110" endPosition="42" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2349655948103769012" fileName="ImportGrammar_Action.java" startLine="111" startPosition="38" endLine="112" endPosition="88" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2349655948104324635" fileName="ImportGrammar_Action.java" startLine="116" startPosition="59" endLine="117" endPosition="17" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2349655948103531272" fileName="ImportGrammar_Action.java" startLine="118" startPosition="9" endLine="119" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="2349655948103535681" fileName="ImportGrammar_Action.java" startLine="119" startPosition="0" endLine="120" endPosition="84" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="2349655948103549661" fileName="ImportGrammar_Action.java" startLine="120" startPosition="84" endLine="121" endPosition="164" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="2349655948103608229" fileName="ImportGrammar_Action.java" startLine="121" startPosition="164" endLine="122" endPosition="76" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="2349655948103622578" fileName="ImportGrammar_Action.java" startLine="122" startPosition="76" endLine="123" endPosition="114" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="2349655948104003334" fileName="ImportGrammar_Action.java" startLine="124" startPosition="41" endLine="125" endPosition="17" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2349655948104008077" fileName="ImportGrammar_Action.java" startLine="126" startPosition="9" endLine="127" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="2349655948104079110" fileName="ImportGrammar_Action.java" startLine="127" startPosition="0" endLine="128" endPosition="66" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2349655948104028745" fileName="ImportGrammar_Action.java" startLine="128" startPosition="66" endLine="129" endPosition="74" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="2349655948104065075" fileName="ImportGrammar_Action.java" startLine="129" startPosition="74" endLine="130" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="2349655948104133682" fileName="ImportGrammar_Action.java" startLine="130" startPosition="0" endLine="131" endPosition="70" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2349655948104127699" fileName="ImportGrammar_Action.java" startLine="131" startPosition="70" endLine="132" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="2349655948104559342" fileName="ImportGrammar_Action.java" startLine="132" startPosition="0" endLine="133" endPosition="135" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="2349655948104578007" fileName="ImportGrammar_Action.java" startLine="135" startPosition="29" endLine="136" endPosition="27" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2349655948102726657" fileName="ImportGrammar_Action.java" startLine="139" startPosition="7" endLine="140" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="142" startPosition="45" endLine="143" endPosition="87" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="148" startPosition="0" endLine="149" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="LOG" />
+    <nodeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="57" startPosition="27" endLine="60" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="57" startPosition="27" endLine="60" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="65" startPosition="95" endLine="68" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="71" startPosition="25" endLine="74" endPosition="9" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="77" startPosition="5" endLine="80" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="84" startPosition="94" endLine="87" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="2349655948102712275" fileName="ImportGrammar_Action.java" startLine="94" startPosition="127" endLine="97" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="2349655948104310592" fileName="ImportGrammar_Action.java" startLine="115" startPosition="11" endLine="118" endPosition="9" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="2349655948103986234" fileName="ImportGrammar_Action.java" startLine="123" startPosition="114" endLine="126" endPosition="9" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="2349655948104525616" fileName="ImportGrammar_Action.java" startLine="135" startPosition="0" endLine="138" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="run#()V" />
+    <nodeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="141" startPosition="27" endLine="144" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="141" startPosition="27" endLine="144" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="49" startPosition="0" endLine="53" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="isDumbAware#()Z" />
+    <nodeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="83" startPosition="93" endLine="87" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="43" startPosition="0" endLine="48" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="ImportGrammar_Action#()V" />
+    <nodeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="70" startPosition="57" endLine="75" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="2349655948104482817" fileName="ImportGrammar_Action.java" startLine="133" startPosition="135" endLine="138" endPosition="11" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2349655948103766260" fileName="ImportGrammar_Action.java" startLine="107" startPosition="29" endLine="113" endPosition="13" conceptFqName="jetbrains.mps.baseLanguage.structure.TryCatchStatement" />
+    <nodeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="54" startPosition="89" endLine="62" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.TryCatchStatement" />
+    <nodeInfo nodeId="2349655948103867495" fileName="ImportGrammar_Action.java" startLine="107" startPosition="0" endLine="115" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="run#()V" />
+    <nodeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="68" startPosition="5" endLine="77" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="54" startPosition="0" endLine="64" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="doUpdate#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)V" />
+    <nodeInfo nodeId="2349655948103842743" fileName="ImportGrammar_Action.java" startLine="105" startPosition="71" endLine="115" endPosition="11" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="68" startPosition="5" endLine="80" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="65" startPosition="0" endLine="90" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="collectActionData#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)Z" />
+    <nodeInfo nodeId="7349647468656132500" fileName="ImportGrammar_Action.java" startLine="99" startPosition="133" endLine="139" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="91" startPosition="96" endLine="145" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.TryCatchStatement" />
+    <nodeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="91" startPosition="0" endLine="147" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="doExecute#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)V" />
+    <scopeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="50" startPosition="32" endLine="51" endPosition="16" />
+    <scopeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="55" startPosition="9" endLine="56" endPosition="43" />
+    <scopeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="58" startPosition="45" endLine="59" endPosition="88" />
+    <scopeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="66" startPosition="53" endLine="67" endPosition="19" />
+    <scopeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="72" startPosition="114" endLine="73" endPosition="22" />
+    <scopeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="78" startPosition="64" endLine="79" endPosition="19" />
+    <scopeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="80" startPosition="5" endLine="81" endPosition="100" />
+    <scopeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="81" startPosition="100" endLine="82" endPosition="92" />
+    <scopeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="82" startPosition="92" endLine="83" endPosition="93" />
+    <scopeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="85" startPosition="62" endLine="86" endPosition="19" />
+    <scopeInfo nodeId="2349655948102712278" fileName="ImportGrammar_Action.java" startLine="95" startPosition="25" endLine="96" endPosition="15" />
+    <scopeInfo nodeId="2349655948103766263" fileName="ImportGrammar_Action.java" startLine="111" startPosition="0" endLine="112" endPosition="88">
+      <varInfo nodeId="2349655948103766265" varName="ex" />
+    </scopeInfo>
+    <scopeInfo nodeId="2349655948103766269" fileName="ImportGrammar_Action.java" startLine="111" startPosition="38" endLine="112" endPosition="88" />
+    <scopeInfo nodeId="2349655948104310595" fileName="ImportGrammar_Action.java" startLine="116" startPosition="59" endLine="117" endPosition="17" />
+    <scopeInfo nodeId="2349655948103986237" fileName="ImportGrammar_Action.java" startLine="124" startPosition="41" endLine="125" endPosition="17" />
+    <scopeInfo nodeId="2349655948104525617" fileName="ImportGrammar_Action.java" startLine="135" startPosition="29" endLine="136" endPosition="27" />
+    <scopeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="142" startPosition="45" endLine="143" endPosition="87" />
+    <scopeInfo nodeId="2349655948103766262" fileName="ImportGrammar_Action.java" startLine="108" startPosition="17" endLine="110" endPosition="42" />
+    <scopeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="43" startPosition="33" endLine="46" endPosition="40" />
+    <scopeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="57" startPosition="27" endLine="60" endPosition="7" />
+    <scopeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="71" startPosition="25" endLine="74" endPosition="9" />
+    <scopeInfo nodeId="2349655948104525616" fileName="ImportGrammar_Action.java" startLine="135" startPosition="0" endLine="138" endPosition="0" />
+    <scopeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="141" startPosition="0" endLine="144" endPosition="7">
       <varInfo nodeId="6227765453359422499" varName="t" />
     </scopeInfo>
-    <scopeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="65" startPosition="27" endLine="68" endPosition="7" />
-    <scopeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="28" startPosition="0" endLine="32" endPosition="0" />
-    <scopeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="36" startPosition="0" endLine="40" endPosition="44">
+    <scopeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="141" startPosition="27" endLine="144" endPosition="7" />
+    <scopeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="49" startPosition="0" endLine="53" endPosition="0" />
+    <scopeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="57" startPosition="0" endLine="61" endPosition="44">
       <varInfo nodeId="6227765453359422499" varName="t" />
     </scopeInfo>
-    <scopeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="36" startPosition="27" endLine="40" endPosition="44" />
-    <scopeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="22" startPosition="0" endLine="27" endPosition="0" />
-    <scopeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="63" startPosition="96" endLine="69" endPosition="5" />
-    <scopeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="48" startPosition="5" endLine="55" endPosition="57">
+    <scopeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="57" startPosition="27" endLine="61" endPosition="44" />
+    <scopeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="83" startPosition="93" endLine="87" endPosition="5" />
+    <scopeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="43" startPosition="0" endLine="48" endPosition="0" />
+    <scopeInfo nodeId="2349655948103867496" fileName="ImportGrammar_Action.java" startLine="107" startPosition="29" endLine="113" endPosition="13" />
+    <scopeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="69" startPosition="5" endLine="76" endPosition="58">
       <varInfo nodeId="6227765453359422499" varName="node" />
     </scopeInfo>
-    <scopeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="33" startPosition="89" endLine="41" endPosition="5" />
-    <scopeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="63" startPosition="0" endLine="71" endPosition="0">
+    <scopeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="54" startPosition="89" endLine="62" endPosition="5" />
+    <scopeInfo nodeId="2349655948103867495" fileName="ImportGrammar_Action.java" startLine="107" startPosition="0" endLine="115" endPosition="0" />
+    <scopeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="54" startPosition="0" endLine="64" endPosition="0">
       <varInfo nodeId="6227765453359422499" varName="_params" />
       <varInfo nodeId="6227765453359422499" varName="event" />
     </scopeInfo>
-    <scopeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="47" startPosition="5" endLine="56" endPosition="5" />
-    <scopeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="33" startPosition="0" endLine="43" endPosition="0">
+    <scopeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="68" startPosition="5" endLine="80" endPosition="5" />
+    <scopeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="65" startPosition="95" endLine="88" endPosition="16" />
+    <scopeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="65" startPosition="0" endLine="90" endPosition="0">
       <varInfo nodeId="6227765453359422499" varName="_params" />
       <varInfo nodeId="6227765453359422499" varName="event" />
     </scopeInfo>
-    <scopeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="44" startPosition="95" endLine="60" endPosition="16" />
-    <scopeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="44" startPosition="0" endLine="62" endPosition="0">
+    <scopeInfo nodeId="7349647468656132501" fileName="ImportGrammar_Action.java" startLine="100" startPosition="25" endLine="138" endPosition="11">
+      <varInfo nodeId="2349655948103790025" varName="contents" />
+      <varInfo nodeId="2349655948104559343" varName="merger" />
+      <varInfo nodeId="2349655948104028746" varName="model" />
+      <varInfo nodeId="2349655948103905711" varName="name" />
+      <varInfo nodeId="2349655948103549662" varName="resources" />
+      <varInfo nodeId="2349655948103622579" varName="s" />
+      <varInfo nodeId="2349655948102807901" varName="status" />
+      <varInfo nodeId="2349655948103535682" varName="templatesStatus" />
+      <varInfo nodeId="2349655948103608230" varName="types" />
+    </scopeInfo>
+    <scopeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="92" startPosition="9" endLine="140" endPosition="0">
+      <varInfo nodeId="2349655948103398454" varName="desc" />
+      <varInfo nodeId="2349655948102710117" varName="file" />
+      <varInfo nodeId="2349655948102727227" varName="tool" />
+    </scopeInfo>
+    <scopeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="91" startPosition="96" endLine="145" endPosition="5" />
+    <scopeInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="91" startPosition="0" endLine="147" endPosition="0">
       <varInfo nodeId="6227765453359422499" varName="_params" />
       <varInfo nodeId="6227765453359422499" varName="event" />
     </scopeInfo>
-    <unitInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="19" startPosition="0" endLine="74" endPosition="0" unitName="jetbrains.mps.core.structure.pluginSolution.plugin.ImportGrammar_Action" />
+    <unitInfo nodeId="2349655948104525616" fileName="ImportGrammar_Action.java" startLine="134" startPosition="124" endLine="138" endPosition="9" unitName="jetbrains.mps.core.structure.pluginSolution.plugin.ImportGrammar_Action$2" />
+    <unitInfo nodeId="2349655948103867495" fileName="ImportGrammar_Action.java" startLine="106" startPosition="62" endLine="115" endPosition="9" unitName="jetbrains.mps.core.structure.pluginSolution.plugin.ImportGrammar_Action$1" />
+    <unitInfo nodeId="6227765453359422499" fileName="ImportGrammar_Action.java" startLine="40" startPosition="0" endLine="150" endPosition="0" unitName="jetbrains.mps.core.structure.pluginSolution.plugin.ImportGrammar_Action" />
   </root>
   <root nodeRef="r:1cb7d6b1-62c1-477b-836e-0624c3f533ee(jetbrains.mps.core.structure.pluginSolution.plugin)/6227765453359664048">
     <nodeInfo nodeId="6227765453359664048" fileName="ImportGrammarGroup_ActionGroup.java" startLine="10" startPosition="0" endLine="11" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="LOG" />

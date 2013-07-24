@@ -13,6 +13,27 @@ import jetbrains.mps.ide.actions.MPSCommonDataKeys;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.internal.collections.runtime.MapSequence;
 import com.intellij.openapi.actionSystem.PlatformDataKeys;
+import com.intellij.openapi.fileChooser.FileTypeDescriptor;
+import com.intellij.openapi.vfs.VirtualFile;
+import com.intellij.openapi.fileChooser.FileChooser;
+import com.intellij.openapi.project.Project;
+import jetbrains.mps.ide.messages.MessagesViewTool;
+import org.textmapper.lapg.api.ProcessingStatus;
+import jetbrains.mps.baseLanguage.closures.runtime.Wrappers;
+import com.intellij.openapi.application.ApplicationManager;
+import com.intellij.openapi.vfs.VfsUtilCore;
+import java.io.IOException;
+import org.textmapper.tool.gen.TemplatesStatusAdapter;
+import org.textmapper.templates.storage.ResourceRegistry;
+import org.textmapper.templates.storage.ClassResourceLoader;
+import org.textmapper.tool.gen.TMGenerator;
+import org.textmapper.templates.types.TypesRegistry;
+import org.textmapper.tool.compiler.TMGrammar;
+import org.textmapper.tool.gen.SyntaxUtil;
+import org.textmapper.tool.parser.TMTree;
+import org.textmapper.lapg.api.ast.AstModel;
+import org.textmapper.tool.compiler.TMMapper;
+import jetbrains.mps.project.MPSProject;
 import org.apache.log4j.Logger;
 import org.apache.log4j.LogManager;
 
@@ -52,16 +73,71 @@ public class ImportGrammar_Action extends BaseAction {
           node = null;
         }
       }
-      MapSequence.fromMap(_params).put("workflow", node);
+      MapSequence.fromMap(_params).put("container", node);
+    }
+    if (MapSequence.fromMap(_params).get("container") == null) {
+      return false;
     }
     MapSequence.fromMap(_params).put("context", event.getData(MPSCommonDataKeys.OPERATION_CONTEXT));
     MapSequence.fromMap(_params).put("langModule", event.getData(MPSCommonDataKeys.MODULE));
-    MapSequence.fromMap(_params).put("project", event.getData(PlatformDataKeys.PROJECT));
+    MapSequence.fromMap(_params).put("ideaProject", event.getData(PlatformDataKeys.PROJECT));
+    MapSequence.fromMap(_params).put("project", event.getData(MPSCommonDataKeys.MPS_PROJECT));
+    if (MapSequence.fromMap(_params).get("project") == null) {
+      return false;
+    }
     return true;
   }
 
   public void doExecute(@NotNull final AnActionEvent event, final Map<String, Object> _params) {
     try {
+      FileTypeDescriptor desc = new FileTypeDescriptor("Select Textmapper Grammar", "tm");
+      final VirtualFile file = FileChooser.chooseFile(desc, ((Project) MapSequence.fromMap(_params).get("ideaProject")), null);
+      if (file == null) {
+        return;
+      }
+
+      final MessagesViewTool tool = ((Project) MapSequence.fromMap(_params).get("ideaProject")).getComponent(MessagesViewTool.class);
+      if (tool != null) {
+        final MessagesViewProcessingStatus status = new MessagesViewProcessingStatus(tool);
+        status.handle(ProcessingStatus.KIND_INFO, "importing from " + file.getName());
+
+        final Wrappers._T<char[]> contents = new Wrappers._T<char[]>(null);
+        final Wrappers._T<String> name = new Wrappers._T<String>(null);
+        ApplicationManager.getApplication().runReadAction(new Runnable() {
+          public void run() {
+            try {
+              contents.value = VfsUtilCore.loadText(file).toCharArray();
+              name.value = file.getName();
+            } catch (IOException ex) {
+              status.handle(ProcessingStatus.KIND_ERROR, "exception: " + ex.toString());
+            }
+          }
+        });
+        if (contents.value == null || name.value == null) {
+          return;
+        }
+
+        TemplatesStatusAdapter templatesStatus = new TemplatesStatusAdapter(status);
+        ResourceRegistry resources = new ResourceRegistry(new ClassResourceLoader(TMGenerator.class.getClassLoader(), "org/textmapper/tool/gen/templates", "utf8"));
+        TypesRegistry types = new TypesRegistry(resources, templatesStatus);
+        TMGrammar s = SyntaxUtil.parseSyntax(new TMTree.TextSource(name.value, contents.value, 1), status, types);
+        if (s == null || s.hasErrors()) {
+          return;
+        }
+
+        status.handle(ProcessingStatus.KIND_INFO, "deriving AST");
+        AstModel model = new TMMapper(s.getGrammar(), status).deriveAST();
+
+        status.handle(ProcessingStatus.KIND_INFO, "saving into root");
+
+        final GrammarMerger merger = new GrammarMerger(model, s.getGrammar(), ((SNode) MapSequence.fromMap(_params).get("container")));
+        ((MPSProject) MapSequence.fromMap(_params).get("project")).getRepository().getModelAccess().executeCommandInEDT(new Runnable() {
+          public void run() {
+            merger.apply();
+          }
+        });
+      }
+
     } catch (Throwable t) {
       if (LOG.isEnabledFor(Priority.ERROR)) {
         LOG.error("User's action execute method failed. Action:" + "ImportGrammar", t);
