@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debugInfo>
-  <unitInfo fileName="StructureAspectDescriptor.java" startLine="10" startPosition="0" endLine="95" endPosition="0" unitName="jetbrains.mps.core.notation.structure.StructureAspectDescriptor" />
+  <unitInfo fileName="StructureAspectDescriptor.java" startLine="10" startPosition="0" endLine="99" endPosition="0" unitName="jetbrains.mps.core.notation.structure.StructureAspectDescriptor" />
   <root nodeRef="r:73e15084-90ca-4883-8020-50a625923cba(jetbrains.mps.core.notation.structure)/3129031437528339312">
     <nodeInfo nodeId="3129031437528339312" fileName="SNotationQuantifierKind.java" startLine="14" startPosition="0" endLine="15" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="myName" />
     <nodeInfo nodeId="3129031437528339312" fileName="SNotationQuantifierKind.java" startLine="16" startPosition="27" endLine="17" endPosition="23" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />

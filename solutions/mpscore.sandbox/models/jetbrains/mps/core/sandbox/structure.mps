@@ -271,10 +271,33 @@
   </root>
   <root type="ydsw.SStructureContainer" typeId="ydsw.6195190339581766868" id="5362811550739085625" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="classifiers" />
+    <node role="structure" roleId="ydsw.6195190339581766884" type="74m3.SNotationStylesImport" typeId="74m3.2038289530662929468" id="2038289530663788144" nodeInfo="ng">
+      <link role="source" roleId="74m3.2038289530662977665" targetNodeId="6195190339581846123" resolveInfo="other" />
+    </node>
+    <node role="structure" roleId="ydsw.6195190339581766884" type="74m3.SNotationStyle" typeId="74m3.3712611346756435517" id="3712611346767543341" nodeInfo="ng">
+      <node role="selector" roleId="74m3.3712611346756438263" type="74m3.SNotationStyleSelector" typeId="74m3.3712611346756438202" id="3712611346767543343" nodeInfo="ngu">
+        <node role="notationSelector" roleId="74m3.3712611346756438336" type="74m3.SConceptNotationSelector" typeId="74m3.2976314093278863731" id="2976314093280735263" nodeInfo="ng">
+          <link role="concept" roleId="74m3.2976314093278921869" targetNodeId="5362811550739085618" resolveInfo="Classifier" />
+        </node>
+        <node role="termSelector" roleId="74m3.3712611346756438527" type="74m3.SAllTermsSelector" typeId="74m3.3712611346757945294" id="3712611346767545031" nodeInfo="ng" />
+      </node>
+      <node role="selector" roleId="74m3.3712611346756438263" type="74m3.SNotationStyleSelector" typeId="74m3.3712611346756438202" id="2976314093281352668" nodeInfo="ngu">
+        <node role="termSelector" roleId="74m3.3712611346756438527" type="74m3.SNotationTermTextSelector" typeId="74m3.2976314093283555795" id="2976314093284120634" nodeInfo="ng">
+          <property name="text" nameId="74m3.2976314093283556355" value="public" />
+        </node>
+        <node role="termSelector" roleId="74m3.3712611346756438527" type="74m3.SNotationTermClassSelector" typeId="74m3.2976314093284130174" id="2976314093284698842" nodeInfo="ng">
+          <property name="className" nameId="74m3.2976314093284130739" value="class" />
+        </node>
+        <node role="notationSelector" roleId="74m3.3712611346756438336" type="74m3.SConcreteNotationSelector" typeId="74m3.2976314093281623406" id="2976314093282496741" nodeInfo="ng">
+          <link role="notation" roleId="74m3.2976314093281623556" targetNodeId="8632884680339330910" />
+        </node>
+      </node>
+    </node>
+    <node role="structure" roleId="ydsw.6195190339581766884" type="ydsw.SStructureEmptyLine" typeId="ydsw.6195190339581962051" id="3712611346755808206" nodeInfo="ng" />
     <node role="structure" roleId="ydsw.6195190339581766884" type="ydsw.SInterfaceConcept" typeId="ydsw.6195190339581766740" id="5566195403253926242" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="IMemberBase" />
     </node>
-    <node role="structure" roleId="ydsw.6195190339581766884" type="ydsw.SStructureEmptyLine" typeId="ydsw.6195190339581962051" id="5566195403253926241" nodeInfo="ng" />
+    <node role="structure" roleId="ydsw.6195190339581766884" type="ydsw.SStructureEmptyLine" typeId="ydsw.6195190339581962051" id="3712611346763417086" nodeInfo="ng" />
     <node role="structure" roleId="ydsw.6195190339581766884" type="ydsw.SInterfaceConcept" typeId="ydsw.6195190339581766740" id="5362811550739085635" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="IMember" />
       <node role="members" roleId="ydsw.6195190339581766761" type="ydsw.SProperty" typeId="ydsw.6195190339581766742" id="8632884680339446042" nodeInfo="ng">
