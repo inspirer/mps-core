@@ -12,29 +12,33 @@ public class ConstraintsAspectDescriptor implements jetbrains.mps.smodel.runtime
 
   public ConstraintsDescriptor getDescriptor(String fqName) {
     switch (Arrays.binarySearch(stringSwitchCases_2qnle6_a0a0b, fqName)) {
-      case 1:
-        return new SNotationMapping_Constraints();
       case 3:
-        return new SNotationQuantifier_Constraints();
-      case 7:
-        return new SStructureLinkRef_Constraints();
-      case 8:
-        return new SStructurePropertyRef_Constraints();
-      case 6:
-        return new SStructureEntityRef_Constraints();
-      case 2:
-        return new SNotationPart_Constraints();
+        return new SNotationMapping_Constraints();
       case 5:
-        return new SNotationUnorderedGroup_Constraints();
+        return new SNotationQuantifier_Constraints();
+      case 9:
+        return new SStructureLinkRef_Constraints();
+      case 10:
+        return new SStructurePropertyRef_Constraints();
+      case 8:
+        return new SStructureEntityRef_Constraints();
       case 4:
+        return new SNotationPart_Constraints();
+      case 7:
+        return new SNotationUnorderedGroup_Constraints();
+      case 6:
         return new SNotationStylesImport_Constraints();
-      case 0:
+      case 2:
         return new SNotationContext_Constraints();
+      case 0:
+        return new SConceptNotationSelector_Constraints();
+      case 1:
+        return new SConcreteNotationSelector_Constraints();
       default:
         // todo: illegal in some cases? 
         return new BaseConstraintsDescriptor(fqName);
     }
   }
 
-  private static String[] stringSwitchCases_2qnle6_a0a0b = new String[]{"jetbrains.mps.core.notation.structure.SNotationContext", "jetbrains.mps.core.notation.structure.SNotationMapping", "jetbrains.mps.core.notation.structure.SNotationPart", "jetbrains.mps.core.notation.structure.SNotationQuantifier", "jetbrains.mps.core.notation.structure.SNotationStylesImport", "jetbrains.mps.core.notation.structure.SNotationUnorderedGroup", "jetbrains.mps.core.notation.structure.SStructureEntityRef", "jetbrains.mps.core.notation.structure.SStructureLinkRef", "jetbrains.mps.core.notation.structure.SStructurePropertyRef"};
+  private static String[] stringSwitchCases_2qnle6_a0a0b = new String[]{"jetbrains.mps.core.notation.structure.SConceptNotationSelector", "jetbrains.mps.core.notation.structure.SConcreteNotationSelector", "jetbrains.mps.core.notation.structure.SNotationContext", "jetbrains.mps.core.notation.structure.SNotationMapping", "jetbrains.mps.core.notation.structure.SNotationPart", "jetbrains.mps.core.notation.structure.SNotationQuantifier", "jetbrains.mps.core.notation.structure.SNotationStylesImport", "jetbrains.mps.core.notation.structure.SNotationUnorderedGroup", "jetbrains.mps.core.notation.structure.SStructureEntityRef", "jetbrains.mps.core.notation.structure.SStructureLinkRef", "jetbrains.mps.core.notation.structure.SStructurePropertyRef"};
 }

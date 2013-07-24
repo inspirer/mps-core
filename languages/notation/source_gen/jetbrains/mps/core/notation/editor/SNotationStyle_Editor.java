@@ -72,6 +72,7 @@ public class SNotationStyle_Editor extends DefaultNodeEditor {
     public SNode nodeFactory(SNode node, EditorContext editorContext) {
       SNode result = SConceptOperations.createNewNode("jetbrains.mps.core.notation.structure.SNotationStyleSelector", null);
       SLinkOperations.setTarget(result, "notationSelector", SConceptOperations.createNewNode("jetbrains.mps.core.notation.structure.SNotationSelector", null), true);
+      SLinkOperations.setTarget(result, "termSelector", SConceptOperations.createNewNode("jetbrains.mps.core.notation.structure.SNotationTermSelector", null), true);
       return result;
     }
 

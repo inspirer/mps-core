@@ -16,7 +16,7 @@
   <dep model="r:229ce18d-2bb0-4d5b-a7cd-cec65841e459(jetbrains.mps.lang.behavior.generator.template.main@generator)" />
   <dep model="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
   <dep model="r:46939f5e-82e9-4b3e-aa07-c280fcacc97f(jetbrains.mps.core.structure.behavior)" hash="-666vc0afmcsofvra4iytwl3kh3pdwrv" />
-  <dep model="r:73e15084-90ca-4883-8020-50a625923cba(jetbrains.mps.core.notation.structure)" hash="-9wy21yqnebiusw4xvgnb8kixeonticd" />
+  <dep model="r:73e15084-90ca-4883-8020-50a625923cba(jetbrains.mps.core.notation.structure)" hash="1eer7q09vvi8n0axc4lzujp40edsh2c" />
   <dep model="r:8d6e1e48-a7af-4d8c-8a82-030ab7508b8d(jetbrains.mps.core.structure.util)" hash="4pdmg4i5ejxsapx98vy1alyh2d3jsqz" />
   <dep model="r:c11a239c-3061-4b62-b5dd-6749678497d7(jetbrains.mps.core.structure.structure)" hash="5ivfl5chbw3lqbbem3jtd8ocli4gt4p" />
   <dep model="r:c3548bac-30eb-4a2a-937c-0111d5697309(jetbrains.mps.lang.smodel.generator.smodelAdapter)" />
@@ -50,6 +50,8 @@
     <file name="BehaviorAspectDescriptor.java" />
     <file name="SAllNotationsSelector_BehaviorDescriptor.java" />
     <file name="SAllTermsSelector_BehaviorDescriptor.java" />
+    <file name="SConceptNotationSelector_BehaviorDescriptor.java" />
+    <file name="SConcreteNotationSelector_BehaviorDescriptor.java" />
     <file name="SNotationBreak_BehaviorDescriptor.java" />
     <file name="SNotationCall_BehaviorDescriptor.java" />
     <file name="SNotationConceptContext_BehaviorDescriptor.java" />

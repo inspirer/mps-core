@@ -362,5 +362,27 @@
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="&lt;empty&gt;" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="2711998566964106140" resolveInfo="SNotationStylePart" />
   </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2976314093278863731" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="styles.selector" />
+    <property name="name" nameId="tpck.1169194664001" value="SConceptNotationSelector" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="3712611346756438400" resolveInfo="SNotationSelector" />
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="2976314093278921869" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
+      <property name="role" nameId="tpce.1071599776563" value="concept" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="ydsw.6195190339581756310" resolveInfo="SAbstractConcept" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2976314093281623406" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="styles.selector" />
+    <property name="name" nameId="tpck.1169194664001" value="SConcreteNotationSelector" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="3712611346756438400" resolveInfo="SNotationSelector" />
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="2976314093281623556" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
+      <property name="role" nameId="tpce.1071599776563" value="notation" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="6195190339582080388" resolveInfo="SNotation" />
+    </node>
+  </root>
 </model>
 
