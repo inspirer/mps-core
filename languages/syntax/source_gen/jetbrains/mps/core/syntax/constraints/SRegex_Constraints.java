@@ -9,9 +9,9 @@ import java.util.HashMap;
 import jetbrains.mps.smodel.runtime.base.BasePropertyConstraintsDescriptor;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.smodel.IScope;
-import org.textway.lapg.lex.RegexMatcher;
+import org.textmapper.lapg.regex.RegexFacade;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import org.textway.lapg.lex.RegexpParseException;
+import org.textmapper.lapg.api.regex.RegexParseException;
 
 public class SRegex_Constraints extends BaseConstraintsDescriptor {
   public SRegex_Constraints() {
@@ -31,9 +31,9 @@ public class SRegex_Constraints extends BaseConstraintsDescriptor {
       public boolean validateValue(SNode node, String propertyValue, IScope scope) {
         String propertyName = "regexp";
         try {
-          RegexMatcher.parse("input", (SPropertyOperations.getString(propertyValue)));
+          RegexFacade.parse("input", (SPropertyOperations.getString(propertyValue)));
           return true;
-        } catch (RegexpParseException ex) {
+        } catch (RegexParseException ex) {
           return false;
         }
       }

@@ -5,12 +5,12 @@
       <sourceRoot location="languageModels" />
       <sourceRoot location="util" />
     </modelRoot>
-    <modelRoot path="${module}/libs/lapg-1.3.10.jar" type="java_classes" />
+    <modelRoot path="${module}/libs/textmapper-0.9.2.jar" type="java_classes" />
   </models>
   <accessoryModels />
   <generators />
   <stubModelEntries>
-    <stubModelEntry path="${module}/libs/lapg-1.3.10.jar" />
+    <stubModelEntry path="${module}/libs/textmapper-0.9.2.jar" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>

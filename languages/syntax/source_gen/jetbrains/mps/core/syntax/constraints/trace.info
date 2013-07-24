@@ -83,9 +83,9 @@
     <nodeInfo nodeId="5073985075243251709" fileName="SRegex_Constraints.java" startLine="22" startPosition="82" endLine="23" endPosition="74" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
     <nodeInfo nodeId="5073985075243251709" fileName="SRegex_Constraints.java" startLine="26" startPosition="40" endLine="27" endPosition="20" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="5073985075243251709" fileName="SRegex_Constraints.java" startLine="31" startPosition="84" endLine="32" endPosition="39" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="5073985075243252483" fileName="SRegex_Constraints.java" startLine="33" startPosition="13" endLine="34" endPosition="86" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="5073985075243253627" fileName="SRegex_Constraints.java" startLine="34" startPosition="86" endLine="35" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="5073985075243253623" fileName="SRegex_Constraints.java" startLine="36" startPosition="43" endLine="37" endPosition="23" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="5073985075243252483" fileName="SRegex_Constraints.java" startLine="33" startPosition="13" endLine="34" endPosition="85" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="5073985075243253627" fileName="SRegex_Constraints.java" startLine="34" startPosition="85" endLine="35" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="5073985075243253623" fileName="SRegex_Constraints.java" startLine="36" startPosition="42" endLine="37" endPosition="23" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="5073985075243251709" fileName="SRegex_Constraints.java" startLine="40" startPosition="7" endLine="41" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="5073985075243251709" fileName="SRegex_Constraints.java" startLine="17" startPosition="0" endLine="20" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="SRegex_Constraints#()V" />
     <nodeInfo nodeId="5073985075243251709" fileName="SRegex_Constraints.java" startLine="25" startPosition="0" endLine="29" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="hasOwnValidator#()Z" />
@@ -99,7 +99,7 @@
     <scopeInfo nodeId="5073985075243253618" fileName="SRegex_Constraints.java" startLine="36" startPosition="0" endLine="37" endPosition="23">
       <varInfo nodeId="5073985075243253619" varName="ex" />
     </scopeInfo>
-    <scopeInfo nodeId="5073985075243253621" fileName="SRegex_Constraints.java" startLine="36" startPosition="43" endLine="37" endPosition="23" />
+    <scopeInfo nodeId="5073985075243253621" fileName="SRegex_Constraints.java" startLine="36" startPosition="42" endLine="37" endPosition="23" />
     <scopeInfo nodeId="5073985075243253616" fileName="SRegex_Constraints.java" startLine="33" startPosition="13" endLine="35" endPosition="22" />
     <scopeInfo nodeId="5073985075243251709" fileName="SRegex_Constraints.java" startLine="17" startPosition="0" endLine="20" endPosition="0" />
     <scopeInfo nodeId="5073985075243251709" fileName="SRegex_Constraints.java" startLine="25" startPosition="0" endLine="29" endPosition="0" />

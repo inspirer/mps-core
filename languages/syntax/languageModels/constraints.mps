@@ -5,7 +5,8 @@
   <language namespace="daafa647-f1f7-4b0b-b096-69cd7c8408c0(jetbrains.mps.baseLanguage.regexp)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   <import index="q5nm" modelUID="r:230b4cda-f32b-40d2-b83d-99b1e4b9eb9b(jetbrains.mps.core.syntax.structure)" version="-1" />
-  <import index="h1sq" modelUID="f:java_stub#92bc763c-568d-4252-b8a3-a157f8320a67#org.textway.lapg.lex(jetbrains.mps.core.syntax/org.textway.lapg.lex@java_stub)" version="-1" />
+  <import index="jc68" modelUID="f:java_stub#92bc763c-568d-4252-b8a3-a157f8320a67#org.textmapper.lapg.api.regex(jetbrains.mps.core.syntax/org.textmapper.lapg.api.regex@java_stub)" version="-1" />
+  <import index="nxys" modelUID="f:java_stub#92bc763c-568d-4252-b8a3-a157f8320a67#org.textmapper.lapg.regex(jetbrains.mps.core.syntax/org.textmapper.lapg.regex@java_stub)" version="-1" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="3" implicit="yes" />
   <import index="tp1t" modelUID="r:00000000-0000-4000-0000-011c8959030d(jetbrains.mps.lang.constraints.structure)" version="8" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
@@ -23,13 +24,13 @@
           <node role="statement" roleId="tpee.1068581517665" type="tpee.TryCatchStatement" typeId="tpee.1164879751025" id="5073985075243253615" nodeInfo="nn">
             <node role="body" roleId="tpee.1164879758292" type="tpee.StatementList" typeId="tpee.1068580123136" id="5073985075243253616" nodeInfo="sn">
               <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="5073985075243252483" nodeInfo="nn">
-                <node role="expression" roleId="tpee.1068580123156" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="5073985075243253511" nodeInfo="nn">
-                  <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="h1sq.~RegexMatcher%dparse(java%dlang%dString,java%dlang%dString)%corg%dtextway%dlapg%dregex%dRegexPart" resolveInfo="parse" />
-                  <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="h1sq.~RegexMatcher" resolveInfo="RegexMatcher" />
-                  <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5073985075243253512" nodeInfo="nn">
+                <node role="expression" roleId="tpee.1068580123156" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="6227765453360580784" nodeInfo="nn">
+                  <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="nxys.~RegexFacade%dparse(java%dlang%dString,java%dlang%dString)%corg%dtextmapper%dlapg%dapi%dregex%dRegexPart" resolveInfo="parse" />
+                  <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="nxys.~RegexFacade" resolveInfo="RegexFacade" />
+                  <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6227765453360580785" nodeInfo="nn">
                     <property name="value" nameId="tpee.1070475926801" value="input" />
                   </node>
-                  <node role="actualArgument" roleId="tpee.1068499141038" type="tp1t.ConstraintsFunctionParameter_propertyValue" typeId="tp1t.1153138554286" id="5073985075243253514" nodeInfo="nn" />
+                  <node role="actualArgument" roleId="tpee.1068499141038" type="tp1t.ConstraintsFunctionParameter_propertyValue" typeId="tp1t.1153138554286" id="6227765453360580786" nodeInfo="nn" />
                 </node>
               </node>
               <node role="statement" roleId="tpee.1068581517665" type="tpee.ReturnStatement" typeId="tpee.1068581242878" id="5073985075243253627" nodeInfo="nn">
@@ -41,8 +42,8 @@
             <node role="catchClause" roleId="tpee.1164903496223" type="tpee.CatchClause" typeId="tpee.1164903280175" id="5073985075243253618" nodeInfo="nn">
               <node role="throwable" roleId="tpee.1164903359217" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="5073985075243253619" nodeInfo="nr">
                 <property name="name" nameId="tpck.1169194664001" value="ex" />
-                <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="5073985075243253622" nodeInfo="in">
-                  <link role="classifier" roleId="tpee.1107535924139" targetNodeId="h1sq.~RegexpParseException" resolveInfo="RegexpParseException" />
+                <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="6227765453360583617" nodeInfo="in">
+                  <link role="classifier" roleId="tpee.1107535924139" targetNodeId="jc68.~RegexParseException" resolveInfo="RegexParseException" />
                 </node>
               </node>
               <node role="catchBody" roleId="tpee.1164903359218" type="tpee.StatementList" typeId="tpee.1068580123136" id="5073985075243253621" nodeInfo="sn">

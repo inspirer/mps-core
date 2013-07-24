@@ -4,6 +4,7 @@ package jetbrains.mps.core.structure.pluginSolution.plugin;
 
 import jetbrains.mps.plugins.applicationplugins.BaseApplicationPlugin;
 import com.intellij.openapi.extensions.PluginId;
+import jetbrains.mps.ide.actions.NodeActions_ActionGroup;
 import jetbrains.mps.ide.actions.CommonModuleActions_ActionGroup;
 
 public class PluginSolution_ApplicationPlugin extends BaseApplicationPlugin {
@@ -18,12 +19,15 @@ public class PluginSolution_ApplicationPlugin extends BaseApplicationPlugin {
 
   public void createGroups() {
     // actions w/o parameters 
+    addAction(new ImportGrammar_Action());
     addAction(new MigrateStructure_Action());
     // groups 
+    addGroup(new ImportGrammarGroup_ActionGroup());
     addGroup(new MigrateStructureGroup_ActionGroup());
   }
 
   public void adjustRegularGroups() {
+    insertGroupIntoAnother(ImportGrammarGroup_ActionGroup.ID, NodeActions_ActionGroup.ID, NodeActions_ActionGroup.LABEL_ID_refactoring);
     insertGroupIntoAnother(MigrateStructureGroup_ActionGroup.ID, CommonModuleActions_ActionGroup.ID, CommonModuleActions_ActionGroup.LABEL_ID_refactoring);
   }
 }

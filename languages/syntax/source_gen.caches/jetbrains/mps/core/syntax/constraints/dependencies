@@ -28,8 +28,8 @@
     <classNode dependClassName="jetbrains.mps.smodel.runtime.PropertyConstraintsDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.base.BasePropertyConstraintsDescriptor" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
-    <classNode dependClassName="org.textway.lapg.lex.RegexMatcher" />
-    <classNode dependClassName="org.textway.lapg.lex.RegexpParseException" />
+    <classNode dependClassName="org.textmapper.lapg.api.regex.RegexParseException" />
+    <classNode dependClassName="org.textmapper.lapg.regex.RegexFacade" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor" />
   </dependency>
   <dependency className="jetbrains.mps.core.syntax.constraints.SSymbolRef_Constraints" file="SSymbolRef_Constraints.java">
