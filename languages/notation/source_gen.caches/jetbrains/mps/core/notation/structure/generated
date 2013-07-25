@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="-d3j4hthzb5yeodk1wq645imeqa85yn8">
+<dependencies version="2" modelHash="5e6mx85wy3x0nmdd4s5pcfxc7ak1dob">
   <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
   <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
   <dep model="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.smodel.runtime.impl(MPS.Core/jetbrains.mps.smodel.runtime.impl@java_stub)" />
@@ -10,11 +10,12 @@
   <dep model="r:c11a239c-3061-4b62-b5dd-6749678497d7(jetbrains.mps.core.structure.structure)" hash="5ivfl5chbw3lqbbem3jtd8ocli4gt4p" />
   <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" />
   <dep model="r:fc76aa36-3cff-41c7-b94b-eee0e8341932(jetbrains.mps.internal.collections.runtime)" />
-  <common hash="-fsszprxp7s8ndi92gbgxzzlyxkjadi">
+  <common hash="446e5hqmfs6y52aqur9jzjb3sq4pypm">
     <dep root="146911029171891500" />
     <dep root="1598455488532300530" />
     <dep root="1598455488534059943" />
     <dep root="1598455488534060463" />
+    <dep root="2038289530662929468" />
     <dep root="2711998566964106140" />
     <dep root="2711998566964106145" />
     <dep root="2711998566964153005" />
@@ -72,13 +73,13 @@
   <source id="3647933405694713882" name="SNotationLabel" hash="-7p17oq4cs80jcxogibudxc9uyzz4fzy">
     <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
   </source>
-  <source id="3647933405694717717" name="SNotationParentheses" hash="8ue0dvoxiizr41a19b0jril2xgtoz58">
+  <source id="3647933405694717717" name="SNotationParentheses" hash="-2filr2hq7i6ew2o4qwywxtxscc00xhp">
     <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
   </source>
   <source id="3647933405694717730" name="SNotationNewLine" hash="95zc2pxscj2f1hhxu5ns1zdfmbhrq33">
     <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
   </source>
-  <source id="3647933405694717735" name="SNotationPartList" hash="62522d96oacse76vm1wh3zqbou8b4vl">
+  <source id="3647933405694717735" name="SNotationPartList" hash="d71pbc99mj4hlv59hin39yyx410qis6">
     <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
   </source>
   <source id="3647933405694717737" name="SNotationPartsContainer" hash="-a7e4ozx629cbfq4j9eotuduic69rtyt">
@@ -146,7 +147,7 @@
   <source id="8632884680339357866" name="SNotationContextProvider" hash="-efokp6xn7xzer34nqn9dfp185dqcyph">
     <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
   </source>
-  <source id="4988228171406861415" name="SNotationPredicate" hash="-6xekclkgf3q74elqro96mi7mj99nzxe">
+  <source id="4988228171406861415" name="SNotationPredicate" hash="-c1lzsdrf4fdcdn1yspiya9rfw5tsdgm">
     <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
   </source>
   <source id="4988228171406909312" name="SNotationViewPart" hash="-c1nigo9mmn9y8jtk054acubvla3irnx">
@@ -188,6 +189,17 @@
   <source id="2976314093284130174" name="SNotationTermClassSelector" hash="5auyyfkabkcovnpnt1e6t7iemtvfgzp">
     <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
   </source>
+  <source id="1598455488534060463" name="SNotationStyleContentKind" hash="-37rma0ux16khxfqp8seyi3ndw76pumf">
+    <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
+    <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
+    <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902e8(jetbrains.mps.lang.generator.structure)" />
+    <dep model="r:fc76aa36-3cff-41c7-b94b-eee0e8341932(jetbrains.mps.internal.collections.runtime)" />
+    <file name="SNotationStyleContentKind.java" />
+    <file name="SNotationStyleContentKind_PropertySupport.java" />
+  </source>
   <source id="2976314093287931165" name="SNotationStyleColor" hash="-3fzgax3o8owbe9r29wifntjatefyqx9">
     <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
   </source>
@@ -215,17 +227,6 @@
   </source>
   <source id="1598455488534059943" name="SNotationStyleContent" hash="p0jwwuvk5ez35npweugydilv6jrg0w">
     <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
-  </source>
-  <source id="1598455488534060463" name="SNotationStyleContentKind" hash="-37rma0ux16khxfqp8seyi3ndw76pumf">
-    <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
-    <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
-    <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
-    <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
-    <dep model="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
-    <dep model="r:00000000-0000-4000-0000-011c895902e8(jetbrains.mps.lang.generator.structure)" />
-    <dep model="r:fc76aa36-3cff-41c7-b94b-eee0e8341932(jetbrains.mps.internal.collections.runtime)" />
-    <file name="SNotationStyleContentKind.java" />
-    <file name="SNotationStyleContentKind_PropertySupport.java" />
   </source>
 </dependencies>
 

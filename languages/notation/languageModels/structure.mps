@@ -7,6 +7,7 @@
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpce" modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" implicit="yes" />
   <import index="ydsw" modelUID="r:c11a239c-3061-4b62-b5dd-6749678497d7(jetbrains.mps.core.structure.structure)" version="-1" implicit="yes" />
+  <import index="bwy9" modelUID="r:f9198ffd-e084-425c-aa82-f2db8289f5eb(jetbrains.mps.core.query.structure)" version="0" implicit="yes" />
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6195190339582080388" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="SNotation" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="notation" />
@@ -48,6 +49,11 @@
     <property name="name" nameId="tpck.1169194664001" value="SNotationParentheses" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="(" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="7448018642144527578" resolveInfo="SNotationCorePart" />
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="8294198181866375827" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="separator" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="3647933405694717735" resolveInfo="SNotationPartList" />
+    </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3647933405694717739" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3647933405694717737" resolveInfo="SNotationPartsContainer" />
     </node>
@@ -67,6 +73,11 @@
       <property name="role" nameId="tpce.1071599776563" value="parts" />
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..n" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="3647933405694693953" resolveInfo="SNotationPart" />
+    </node>
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="8294198181866508992" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="predicate" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="4988228171406861415" resolveInfo="SNotationPredicate" />
     </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="8632884680339357893" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="8632884680339357866" resolveInfo="SNotationContextProvider" />
@@ -264,6 +275,12 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="predicates" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="[]" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="8294198181866517851" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="expr" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="bwy9.6762883159245048012" resolveInfo="MqlExpression" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4988228171406909312" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="SNotationViewPart" />
@@ -390,6 +407,24 @@
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983041843" resolveInfo="string" />
     </node>
   </root>
+  <root type="tpce.EnumerationDataTypeDeclaration" typeId="tpce.1082978164219" id="1598455488534060463" nodeInfo="ng">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="styles.part" />
+    <property name="name" nameId="tpck.1169194664001" value="SNotationStyleContentKind" />
+    <property name="hasNoDefaultMember" nameId="tpce.1212080844762" value="true" />
+    <link role="memberDataType" roleId="tpce.1083171729157" targetNodeId="tpck.1082983041843" resolveInfo="string" />
+    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="1598455488534060464" nodeInfo="ig">
+      <property name="internalValue" nameId="tpce.1083923523171" value="contentBefore" />
+      <property name="externalValue" nameId="tpce.1083923523172" value="content-before" />
+    </node>
+    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="1598455488534060995" nodeInfo="ig">
+      <property name="internalValue" nameId="tpce.1083923523171" value="contentAfter" />
+      <property name="externalValue" nameId="tpce.1083923523172" value="content-after" />
+    </node>
+    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="1598455488534069391" nodeInfo="ig">
+      <property name="internalValue" nameId="tpce.1083923523171" value="separator" />
+      <property name="externalValue" nameId="tpce.1083923523172" value="separator" />
+    </node>
+  </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2976314093287931165" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="styles.part" />
     <property name="name" nameId="tpck.1169194664001" value="SNotationStyleColor" />
@@ -513,24 +548,6 @@
     </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="1598455488534074986" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.1835621062190663819" resolveInfo="IDontSubstituteByDefault" />
-    </node>
-  </root>
-  <root type="tpce.EnumerationDataTypeDeclaration" typeId="tpce.1082978164219" id="1598455488534060463" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="styles.part" />
-    <property name="name" nameId="tpck.1169194664001" value="SNotationStyleContentKind" />
-    <property name="hasNoDefaultMember" nameId="tpce.1212080844762" value="true" />
-    <link role="memberDataType" roleId="tpce.1083171729157" targetNodeId="tpck.1082983041843" resolveInfo="string" />
-    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="1598455488534060464" nodeInfo="ig">
-      <property name="internalValue" nameId="tpce.1083923523171" value="contentBefore" />
-      <property name="externalValue" nameId="tpce.1083923523172" value="content-before" />
-    </node>
-    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="1598455488534060995" nodeInfo="ig">
-      <property name="internalValue" nameId="tpce.1083923523171" value="contentAfter" />
-      <property name="externalValue" nameId="tpce.1083923523172" value="content-after" />
-    </node>
-    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="1598455488534069391" nodeInfo="ig">
-      <property name="internalValue" nameId="tpce.1083923523171" value="separator" />
-      <property name="externalValue" nameId="tpce.1083923523172" value="separator" />
     </node>
   </root>
 </model>
