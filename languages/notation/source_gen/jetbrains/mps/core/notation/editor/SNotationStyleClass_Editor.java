@@ -10,51 +10,47 @@ import jetbrains.mps.nodeEditor.cells.EditorCell_Collection;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 import jetbrains.mps.openapi.editor.style.Style;
 import jetbrains.mps.editor.runtime.style.StyleImpl;
-import jetbrains.mps.core.structure.editor.default_StyleSheet;
 import jetbrains.mps.editor.runtime.style.StyleAttributes;
 import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
 import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
+import jetbrains.mps.core.structure.editor.default_StyleSheet;
 import jetbrains.mps.smodel.IOperationContext;
 import jetbrains.mps.nodeEditor.EditorManager;
 
-public class SNotationLabel_Editor extends DefaultNodeEditor {
+public class SNotationStyleClass_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return this.createCollection_lj1m7a_a(editorContext, node);
+    return this.createCollection_2wouyw_a(editorContext, node);
   }
 
-  private EditorCell createCollection_lj1m7a_a(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_2wouyw_a(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
-    editorCell.setCellId("Collection_lj1m7a_a");
+    editorCell.setCellId("Collection_2wouyw_a");
     editorCell.setBig(true);
-    editorCell.addEditorCell(this.createConstant_lj1m7a_a0(editorContext, node));
-    editorCell.addEditorCell(this.createProperty_lj1m7a_b0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_lj1m7a_c0(editorContext, node));
-    editorCell.addEditorCell(this.createComponent_lj1m7a_d0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_2wouyw_a0(editorContext, node));
+    editorCell.addEditorCell(this.createProperty_2wouyw_b0(editorContext, node));
     return editorCell;
   }
 
-  private EditorCell createConstant_lj1m7a_a0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "\"");
-    editorCell.setCellId("Constant_lj1m7a_a0");
+  private EditorCell createConstant_2wouyw_a0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "#");
+    editorCell.setCellId("Constant_2wouyw_a0");
     Style style = new StyleImpl();
-    default_StyleSheet.applyString(style, editorCell);
+    style.set(StyleAttributes.PUNCTUATION_LEFT, true);
     style.set(StyleAttributes.PUNCTUATION_RIGHT, true);
     editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;
   }
 
-  private EditorCell createProperty_lj1m7a_b0(EditorContext editorContext, SNode node) {
+  private EditorCell createProperty_2wouyw_b0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
-    provider.setRole("text");
-    provider.setNoTargetText("");
-    provider.setAllowsEmptyTarget(true);
+    provider.setRole("class");
+    provider.setNoTargetText("<no class>");
     EditorCell editorCell;
     editorCell = provider.createEditorCell(editorContext);
-    editorCell.setCellId("property_text");
+    editorCell.setCellId("property_class");
     Style style = new StyleImpl();
     default_StyleSheet.applyString(style, editorCell);
-    style.set(StyleAttributes.INDENT_LAYOUT_NO_WRAP, true);
     editorCell.getStyle().putAll(style);
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
@@ -64,23 +60,6 @@ public class SNotationLabel_Editor extends DefaultNodeEditor {
       EditorManager manager = EditorManager.getInstanceFromContext(opContext);
       return manager.createRoleAttributeCell(editorContext, attributeConcept, attributeKind, editorCell);
     } else
-    return editorCell;
-  }
-
-  private EditorCell createConstant_lj1m7a_c0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "\"");
-    editorCell.setCellId("Constant_lj1m7a_c0");
-    Style style = new StyleImpl();
-    default_StyleSheet.applyString(style, editorCell);
-    style.set(StyleAttributes.PUNCTUATION_LEFT, true);
-    style.set(StyleAttributes.INDENT_LAYOUT_NO_WRAP, true);
-    editorCell.getStyle().putAll(style);
-    editorCell.setDefaultText("");
-    return editorCell;
-  }
-
-  private EditorCell createComponent_lj1m7a_d0(EditorContext editorContext, SNode node) {
-    EditorCell editorCell = editorContext.getCellFactory().createEditorComponentCell(node, "jetbrains.mps.core.notation.editor.SNotationStyleClasses");
     return editorCell;
   }
 }
