@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debugInfo>
-  <unitInfo fileName="ConstraintsAspectDescriptor.java" startLine="9" startPosition="0" endLine="43" endPosition="0" unitName="jetbrains.mps.core.query.constraints.ConstraintsAspectDescriptor" />
+  <unitInfo fileName="ConstraintsAspectDescriptor.java" startLine="9" startPosition="0" endLine="45" endPosition="0" unitName="jetbrains.mps.core.query.constraints.ConstraintsAspectDescriptor" />
   <root nodeRef="r:d2131fa8-9bff-49c9-a7e2-6972f9544c0a(jetbrains.mps.core.query.constraints)/1992172484410364111">
     <nodeInfo nodeId="1992172484410364111" fileName="MqlParameterReference_Constraints.java" startLine="23" startPosition="46" endLine="24" endPosition="70" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
     <nodeInfo nodeId="1992172484410364111" fileName="MqlParameterReference_Constraints.java" startLine="28" startPosition="83" endLine="29" endPosition="75" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
@@ -259,6 +259,47 @@
       <varInfo nodeId="4562783364484537788" varName="parentNode" />
     </scopeInfo>
     <unitInfo nodeId="4562783364484537788" fileName="MqlStringProperty_Constraints.java" startLine="15" startPosition="0" endLine="42" endPosition="0" unitName="jetbrains.mps.core.query.constraints.MqlStringProperty_Constraints" />
+  </root>
+  <root nodeRef="r:d2131fa8-9bff-49c9-a7e2-6972f9544c0a(jetbrains.mps.core.query.constraints)/4562783364485754278">
+    <nodeInfo nodeId="4562783364485754278" fileName="MqlLet_Constraints.java" startLine="14" startPosition="31" endLine="15" endPosition="55" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+    <nodeInfo nodeId="4562783364485754278" fileName="MqlLet_Constraints.java" startLine="19" startPosition="43" endLine="20" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="4562783364485754278" fileName="MqlLet_Constraints.java" startLine="24" startPosition="200" endLine="25" endPosition="96" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="4562783364485754278" fileName="MqlLet_Constraints.java" startLine="25" startPosition="96" endLine="26" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="4562783364485754278" fileName="MqlLet_Constraints.java" startLine="27" startPosition="51" endLine="28" endPosition="67" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="4562783364485754278" fileName="MqlLet_Constraints.java" startLine="29" startPosition="5" endLine="30" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="4562783364485754278" fileName="MqlLet_Constraints.java" startLine="30" startPosition="0" endLine="31" endPosition="18" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="4562783364526997823" fileName="MqlLet_Constraints.java" startLine="34" startPosition="148" endLine="35" endPosition="203" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="4562783364485754278" fileName="MqlLet_Constraints.java" startLine="38" startPosition="0" endLine="39" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="canBeChildBreakingPoint" />
+    <nodeInfo nodeId="4562783364485754278" fileName="MqlLet_Constraints.java" startLine="14" startPosition="0" endLine="17" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="MqlLet_Constraints#()V" />
+    <nodeInfo nodeId="4562783364485754278" fileName="MqlLet_Constraints.java" startLine="26" startPosition="0" endLine="29" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="4562783364485754278" fileName="MqlLet_Constraints.java" startLine="34" startPosition="0" endLine="37" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="static_canBeAChild#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/smodel/IOperationContext;)Z" />
+    <nodeInfo nodeId="4562783364485754278" fileName="MqlLet_Constraints.java" startLine="18" startPosition="0" endLine="22" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="hasOwnCanBeChildMethod#()Z" />
+    <nodeInfo nodeId="4562783364485754278" fileName="MqlLet_Constraints.java" startLine="23" startPosition="0" endLine="33" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="canBeChild#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Z" />
+    <scopeInfo nodeId="4562783364485754278" fileName="MqlLet_Constraints.java" startLine="14" startPosition="31" endLine="15" endPosition="55" />
+    <scopeInfo nodeId="4562783364485754278" fileName="MqlLet_Constraints.java" startLine="19" startPosition="43" endLine="20" endPosition="16" />
+    <scopeInfo nodeId="4562783364485754278" fileName="MqlLet_Constraints.java" startLine="27" startPosition="51" endLine="28" endPosition="67" />
+    <scopeInfo nodeId="4562783364526997019" fileName="MqlLet_Constraints.java" startLine="34" startPosition="148" endLine="35" endPosition="203" />
+    <scopeInfo nodeId="4562783364485754278" fileName="MqlLet_Constraints.java" startLine="14" startPosition="0" endLine="17" endPosition="0" />
+    <scopeInfo nodeId="4562783364485754278" fileName="MqlLet_Constraints.java" startLine="34" startPosition="0" endLine="37" endPosition="0">
+      <varInfo nodeId="4562783364485754278" varName="childConcept" />
+      <varInfo nodeId="4562783364485754278" varName="link" />
+      <varInfo nodeId="4562783364485754278" varName="node" />
+      <varInfo nodeId="4562783364485754278" varName="operationContext" />
+      <varInfo nodeId="4562783364485754278" varName="parentNode" />
+    </scopeInfo>
+    <scopeInfo nodeId="4562783364485754278" fileName="MqlLet_Constraints.java" startLine="18" startPosition="0" endLine="22" endPosition="0" />
+    <scopeInfo nodeId="4562783364485754278" fileName="MqlLet_Constraints.java" startLine="24" startPosition="200" endLine="31" endPosition="18">
+      <varInfo nodeId="4562783364485754278" varName="result" />
+    </scopeInfo>
+    <scopeInfo nodeId="4562783364485754278" fileName="MqlLet_Constraints.java" startLine="23" startPosition="0" endLine="33" endPosition="0">
+      <varInfo nodeId="4562783364485754278" varName="checkingNodeContext" />
+      <varInfo nodeId="4562783364485754278" varName="childConcept" />
+      <varInfo nodeId="4562783364485754278" varName="link" />
+      <varInfo nodeId="4562783364485754278" varName="node" />
+      <varInfo nodeId="4562783364485754278" varName="operationContext" />
+      <varInfo nodeId="4562783364485754278" varName="parentNode" />
+    </scopeInfo>
+    <unitInfo nodeId="4562783364485754278" fileName="MqlLet_Constraints.java" startLine="13" startPosition="0" endLine="40" endPosition="0" unitName="jetbrains.mps.core.query.constraints.MqlLet_Constraints" />
   </root>
   <root nodeRef="r:d2131fa8-9bff-49c9-a7e2-6972f9544c0a(jetbrains.mps.core.query.constraints)/5280308256730768488">
     <nodeInfo nodeId="5280308256730768488" fileName="MqlCollectionSelectorVarRef_Constraints.java" startLine="25" startPosition="52" endLine="26" endPosition="76" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
