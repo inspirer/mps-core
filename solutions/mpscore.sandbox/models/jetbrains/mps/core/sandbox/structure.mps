@@ -276,7 +276,7 @@
     </node>
     <node role="structure" roleId="ydsw.6195190339581766884" type="74m3.SNotationStyle" typeId="74m3.3712611346756435517" id="3712611346767543341" nodeInfo="ng">
       <node role="content" roleId="74m3.3712611346756438920" type="74m3.SNotationStyleColor" typeId="74m3.2976314093287931165" id="1598455488533927889" nodeInfo="ng">
-        <property name="kind" nameId="74m3.2976314093287932377" value="background-color" />
+        <property name="kind" nameId="74m3.2976314093287932377" value="backgroundColor" />
       </node>
       <node role="selector" roleId="74m3.3712611346756438263" type="74m3.SNotationStyleSelector" typeId="74m3.3712611346756438202" id="3712611346767543343" nodeInfo="ngu">
         <node role="notationSelector" roleId="74m3.3712611346756438336" type="74m3.SConceptNotationSelector" typeId="74m3.2976314093278863731" id="2976314093280735263" nodeInfo="ng">
