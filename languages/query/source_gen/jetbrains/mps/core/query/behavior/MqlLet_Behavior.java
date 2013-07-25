@@ -16,6 +16,8 @@ import jetbrains.mps.internal.collections.runtime.ISelector;
 import jetbrains.mps.core.query.runtime.MultipleElementsScope;
 import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import jetbrains.mps.scope.CompositeScope;
+import jetbrains.mps.lang.scopes.runtime.ScopeUtils;
 
 public class MqlLet_Behavior {
   public static void init(SNode thisNode) {
@@ -36,7 +38,7 @@ public class MqlLet_Behavior {
 
     // MultElemScope uses nlist 
     List<SNode> vars = new ArrayList<SNode>();
-    if (SNodeOperations.getContainingLinkRole(child).equals("expression")) {
+    if ("expression".equals(SNodeOperations.getContainingLinkRole(child))) {
       // we're from expression, all bindings are seen 
       ListSequence.fromList(vars).addSequence(ListSequence.fromList(SLinkOperations.getTargets(thisNode, "bindings", true)).where(new IWhereFilter<SNode>() {
         public boolean accept(SNode it) {
@@ -59,10 +61,11 @@ public class MqlLet_Behavior {
       }
     }
 
-    return new MultipleElementsScope(vars, new _FunctionTypes._return_P1_E0<String, SNode>() {
+    Scope ourScope = new MultipleElementsScope(vars, new _FunctionTypes._return_P1_E0<String, SNode>() {
       public String invoke(SNode n) {
         return SPropertyOperations.getString(SNodeOperations.cast(n, "jetbrains.mps.core.query.structure.MqlVariable"), "name");
       }
     });
+    return new CompositeScope(ourScope, ScopeUtils.lazyParentScope(thisNode, kind));
   }
 }
