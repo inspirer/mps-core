@@ -53,30 +53,32 @@ public class EditorAspectDescriptorImpl implements EditorAspectDescriptor {
       case 18:
         return Collections.<ConceptEditor>singletonList(new SNotationStyle_Editor());
       case 19:
-        return Collections.<ConceptEditor>singletonList(new SNotationStyleEmptyLine_Editor());
+        return Collections.<ConceptEditor>singletonList(new SNotationStyleColor_Editor());
       case 20:
-        return Collections.<ConceptEditor>singletonList(new SNotationStyleIndent_Editor());
+        return Collections.<ConceptEditor>singletonList(new SNotationStyleEmptyLine_Editor());
       case 21:
-        return Collections.<ConceptEditor>singletonList(new SNotationStylePart_Editor());
+        return Collections.<ConceptEditor>singletonList(new SNotationStyleIndent_Editor());
       case 22:
-        return Collections.<ConceptEditor>singletonList(new SNotationStyleSelector_Editor());
+        return Collections.<ConceptEditor>singletonList(new SNotationStylePart_Editor());
       case 23:
-        return Collections.<ConceptEditor>singletonList(new SNotationStyleSeparator_Editor());
+        return Collections.<ConceptEditor>singletonList(new SNotationStyleSelector_Editor());
       case 24:
-        return Collections.<ConceptEditor>singletonList(new SNotationStylesImport_Editor());
+        return Collections.<ConceptEditor>singletonList(new SNotationStyleSeparator_Editor());
       case 25:
-        return Collections.<ConceptEditor>singletonList(new SNotationTab_Editor());
+        return Collections.<ConceptEditor>singletonList(new SNotationStylesImport_Editor());
       case 26:
-        return Collections.<ConceptEditor>singletonList(new SNotationTermClassSelector_Editor());
+        return Collections.<ConceptEditor>singletonList(new SNotationTab_Editor());
       case 27:
-        return Collections.<ConceptEditor>singletonList(new SNotationTermTextSelector_Editor());
+        return Collections.<ConceptEditor>singletonList(new SNotationTermClassSelector_Editor());
       case 28:
-        return Collections.<ConceptEditor>singletonList(new SNotationUnorderedGroup_Editor());
+        return Collections.<ConceptEditor>singletonList(new SNotationTermTextSelector_Editor());
       case 29:
-        return Collections.<ConceptEditor>singletonList(new SStructureEntityRef_Editor());
+        return Collections.<ConceptEditor>singletonList(new SNotationUnorderedGroup_Editor());
       case 30:
-        return Collections.<ConceptEditor>singletonList(new SStructureLinkRef_Editor());
+        return Collections.<ConceptEditor>singletonList(new SStructureEntityRef_Editor());
       case 31:
+        return Collections.<ConceptEditor>singletonList(new SStructureLinkRef_Editor());
+      case 32:
         return Collections.<ConceptEditor>singletonList(new SStructurePropertyRef_Editor());
       default:
     }
@@ -102,6 +104,6 @@ public class EditorAspectDescriptorImpl implements EditorAspectDescriptor {
   }
 
 
-  private static String[] stringSwitchCases_xbvbvu_a0a0a = new String[]{"jetbrains.mps.core.notation.structure.SAllNotationsSelector", "jetbrains.mps.core.notation.structure.SAllTermsSelector", "jetbrains.mps.core.notation.structure.SConceptNotationSelector", "jetbrains.mps.core.notation.structure.SConcreteNotationSelector", "jetbrains.mps.core.notation.structure.SNotation", "jetbrains.mps.core.notation.structure.SNotationBreak", "jetbrains.mps.core.notation.structure.SNotationCall", "jetbrains.mps.core.notation.structure.SNotationConceptContext", "jetbrains.mps.core.notation.structure.SNotationContext", "jetbrains.mps.core.notation.structure.SNotationLabel", "jetbrains.mps.core.notation.structure.SNotationMapping", "jetbrains.mps.core.notation.structure.SNotationNewLine", "jetbrains.mps.core.notation.structure.SNotationNospace", "jetbrains.mps.core.notation.structure.SNotationParentheses", "jetbrains.mps.core.notation.structure.SNotationPart", "jetbrains.mps.core.notation.structure.SNotationPartList", "jetbrains.mps.core.notation.structure.SNotationPredicate", "jetbrains.mps.core.notation.structure.SNotationQuantifier", "jetbrains.mps.core.notation.structure.SNotationStyle", "jetbrains.mps.core.notation.structure.SNotationStyleEmptyLine", "jetbrains.mps.core.notation.structure.SNotationStyleIndent", "jetbrains.mps.core.notation.structure.SNotationStylePart", "jetbrains.mps.core.notation.structure.SNotationStyleSelector", "jetbrains.mps.core.notation.structure.SNotationStyleSeparator", "jetbrains.mps.core.notation.structure.SNotationStylesImport", "jetbrains.mps.core.notation.structure.SNotationTab", "jetbrains.mps.core.notation.structure.SNotationTermClassSelector", "jetbrains.mps.core.notation.structure.SNotationTermTextSelector", "jetbrains.mps.core.notation.structure.SNotationUnorderedGroup", "jetbrains.mps.core.notation.structure.SStructureEntityRef", "jetbrains.mps.core.notation.structure.SStructureLinkRef", "jetbrains.mps.core.notation.structure.SStructurePropertyRef"};
+  private static String[] stringSwitchCases_xbvbvu_a0a0a = new String[]{"jetbrains.mps.core.notation.structure.SAllNotationsSelector", "jetbrains.mps.core.notation.structure.SAllTermsSelector", "jetbrains.mps.core.notation.structure.SConceptNotationSelector", "jetbrains.mps.core.notation.structure.SConcreteNotationSelector", "jetbrains.mps.core.notation.structure.SNotation", "jetbrains.mps.core.notation.structure.SNotationBreak", "jetbrains.mps.core.notation.structure.SNotationCall", "jetbrains.mps.core.notation.structure.SNotationConceptContext", "jetbrains.mps.core.notation.structure.SNotationContext", "jetbrains.mps.core.notation.structure.SNotationLabel", "jetbrains.mps.core.notation.structure.SNotationMapping", "jetbrains.mps.core.notation.structure.SNotationNewLine", "jetbrains.mps.core.notation.structure.SNotationNospace", "jetbrains.mps.core.notation.structure.SNotationParentheses", "jetbrains.mps.core.notation.structure.SNotationPart", "jetbrains.mps.core.notation.structure.SNotationPartList", "jetbrains.mps.core.notation.structure.SNotationPredicate", "jetbrains.mps.core.notation.structure.SNotationQuantifier", "jetbrains.mps.core.notation.structure.SNotationStyle", "jetbrains.mps.core.notation.structure.SNotationStyleColor", "jetbrains.mps.core.notation.structure.SNotationStyleEmptyLine", "jetbrains.mps.core.notation.structure.SNotationStyleIndent", "jetbrains.mps.core.notation.structure.SNotationStylePart", "jetbrains.mps.core.notation.structure.SNotationStyleSelector", "jetbrains.mps.core.notation.structure.SNotationStyleSeparator", "jetbrains.mps.core.notation.structure.SNotationStylesImport", "jetbrains.mps.core.notation.structure.SNotationTab", "jetbrains.mps.core.notation.structure.SNotationTermClassSelector", "jetbrains.mps.core.notation.structure.SNotationTermTextSelector", "jetbrains.mps.core.notation.structure.SNotationUnorderedGroup", "jetbrains.mps.core.notation.structure.SStructureEntityRef", "jetbrains.mps.core.notation.structure.SStructureLinkRef", "jetbrains.mps.core.notation.structure.SStructurePropertyRef"};
   private static String[] stringSwitchCases_xbvbvu_a0a0b = new String[]{"jetbrains.mps.core.notation.structure.SNotationPartList"};
 }

@@ -1,6 +1,282 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debugInfo>
-  <unitInfo fileName="StructureAspectDescriptor.java" startLine="10" startPosition="0" endLine="99" endPosition="0" unitName="jetbrains.mps.core.notation.structure.StructureAspectDescriptor" />
+  <unitInfo fileName="StructureAspectDescriptor.java" startLine="10" startPosition="0" endLine="101" endPosition="0" unitName="jetbrains.mps.core.notation.structure.StructureAspectDescriptor" />
+  <root nodeRef="r:73e15084-90ca-4883-8020-50a625923cba(jetbrains.mps.core.notation.structure)/1598455488532300530">
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="29" startPosition="0" endLine="30" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="myName" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="31" startPosition="27" endLine="32" endPosition="23" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="35" startPosition="36" endLine="36" endPosition="24" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="39" startPosition="59" endLine="40" endPosition="100" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="40" startPosition="100" endLine="41" endPosition="70" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="41" startPosition="70" endLine="42" endPosition="69" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="42" startPosition="69" endLine="43" endPosition="70" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="43" startPosition="70" endLine="44" endPosition="72" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="44" startPosition="72" endLine="45" endPosition="72" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="45" startPosition="72" endLine="46" endPosition="71" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="46" startPosition="71" endLine="47" endPosition="75" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="47" startPosition="75" endLine="48" endPosition="73" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="48" startPosition="73" endLine="49" endPosition="77" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="49" startPosition="77" endLine="50" endPosition="70" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="50" startPosition="70" endLine="51" endPosition="70" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="51" startPosition="70" endLine="52" endPosition="75" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="52" startPosition="75" endLine="53" endPosition="74" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="53" startPosition="74" endLine="54" endPosition="70" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="54" startPosition="70" endLine="55" endPosition="75" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="55" startPosition="75" endLine="56" endPosition="74" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="56" startPosition="74" endLine="57" endPosition="71" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="57" startPosition="71" endLine="58" endPosition="71" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="58" startPosition="71" endLine="59" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="62" startPosition="51" endLine="63" endPosition="37" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="67" startPosition="24" endLine="68" endPosition="47" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="70" startPosition="69" endLine="71" endPosition="39" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="73" startPosition="68" endLine="74" endPosition="38" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="76" startPosition="69" endLine="77" endPosition="39" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="79" startPosition="71" endLine="80" endPosition="41" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="82" startPosition="71" endLine="83" endPosition="41" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="85" startPosition="70" endLine="86" endPosition="40" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="88" startPosition="74" endLine="89" endPosition="44" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="91" startPosition="72" endLine="92" endPosition="42" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="94" startPosition="76" endLine="95" endPosition="46" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="97" startPosition="69" endLine="98" endPosition="39" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="100" startPosition="69" endLine="101" endPosition="39" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="103" startPosition="74" endLine="104" endPosition="44" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="106" startPosition="73" endLine="107" endPosition="43" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="109" startPosition="69" endLine="110" endPosition="39" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="112" startPosition="74" endLine="113" endPosition="44" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="115" startPosition="73" endLine="116" endPosition="43" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="118" startPosition="70" endLine="119" endPosition="40" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="121" startPosition="70" endLine="122" endPosition="40" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="123" startPosition="5" endLine="124" endPosition="45" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="127" startPosition="0" endLine="128" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="myValue" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="129" startPosition="51" endLine="130" endPosition="23" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="130" startPosition="23" endLine="131" endPosition="25" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="134" startPosition="28" endLine="135" endPosition="24" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="31" startPosition="0" endLine="34" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getName#()Ljava/lang/String;" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="35" startPosition="0" endLine="38" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getValueAsString#()Ljava/lang/String;" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="62" startPosition="0" endLine="65" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="getDefault#()Ljetbrains/mps/core/notation/structure/SNotationStyleColors;" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="66" startPosition="63" endLine="69" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="69" startPosition="5" endLine="72" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="72" startPosition="5" endLine="75" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="75" startPosition="5" endLine="78" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="78" startPosition="5" endLine="81" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="81" startPosition="5" endLine="84" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="84" startPosition="5" endLine="87" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="87" startPosition="5" endLine="90" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="90" startPosition="5" endLine="93" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="93" startPosition="5" endLine="96" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="96" startPosition="5" endLine="99" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="99" startPosition="5" endLine="102" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="102" startPosition="5" endLine="105" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="105" startPosition="5" endLine="108" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="108" startPosition="5" endLine="111" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="111" startPosition="5" endLine="114" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="114" startPosition="5" endLine="117" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="117" startPosition="5" endLine="120" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="120" startPosition="5" endLine="123" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="134" startPosition="0" endLine="137" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getValue#()Ljava/lang/String;" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="129" startPosition="0" endLine="133" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="SNotationStyleColors#(Ljava/lang/String;Ljava/lang/String;)V" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="39" startPosition="0" endLine="61" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="getConstants#()Ljava/util/List;" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="66" startPosition="0" endLine="126" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="parseValue#(Ljava/lang/String;)Ljetbrains/mps/core/notation/structure/SNotationStyleColors;" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors_PropertySupport.java" startLine="11" startPosition="24" endLine="12" endPosition="18" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors_PropertySupport.java" startLine="13" startPosition="5" endLine="14" endPosition="117" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors_PropertySupport.java" startLine="15" startPosition="33" endLine="16" endPosition="55" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors_PropertySupport.java" startLine="17" startPosition="45" endLine="18" endPosition="20" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors_PropertySupport.java" startLine="20" startPosition="5" endLine="21" endPosition="17" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors_PropertySupport.java" startLine="25" startPosition="24" endLine="26" endPosition="18" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors_PropertySupport.java" startLine="27" startPosition="5" endLine="28" endPosition="117" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors_PropertySupport.java" startLine="29" startPosition="33" endLine="30" endPosition="55" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors_PropertySupport.java" startLine="31" startPosition="45" endLine="32" endPosition="43" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors_PropertySupport.java" startLine="34" startPosition="5" endLine="35" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors_PropertySupport.java" startLine="38" startPosition="49" endLine="39" endPosition="75" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors_PropertySupport.java" startLine="40" startPosition="27" endLine="41" endPosition="32" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors_PropertySupport.java" startLine="42" startPosition="5" endLine="43" endPosition="14" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors_PropertySupport.java" startLine="10" startPosition="44" endLine="13" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors_PropertySupport.java" startLine="16" startPosition="55" endLine="19" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors_PropertySupport.java" startLine="24" startPosition="47" endLine="27" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors_PropertySupport.java" startLine="30" startPosition="55" endLine="33" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors_PropertySupport.java" startLine="39" startPosition="75" endLine="42" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors_PropertySupport.java" startLine="14" startPosition="117" endLine="20" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.WhileStatement" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors_PropertySupport.java" startLine="28" startPosition="117" endLine="34" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.WhileStatement" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors_PropertySupport.java" startLine="38" startPosition="0" endLine="45" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="fromInternalValue#(Ljava/lang/String;)Ljava/lang/String;" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors_PropertySupport.java" startLine="10" startPosition="0" endLine="23" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="canSetValue#(Ljava/lang/String;)Z" />
+    <nodeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors_PropertySupport.java" startLine="24" startPosition="0" endLine="37" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="toInternalValue#(Ljava/lang/String;)Ljava/lang/String;" />
+    <scopeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="31" startPosition="27" endLine="32" endPosition="23" />
+    <scopeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="35" startPosition="36" endLine="36" endPosition="24" />
+    <scopeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="62" startPosition="51" endLine="63" endPosition="37" />
+    <scopeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="67" startPosition="24" endLine="68" endPosition="47" />
+    <scopeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="70" startPosition="69" endLine="71" endPosition="39" />
+    <scopeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="73" startPosition="68" endLine="74" endPosition="38" />
+    <scopeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="76" startPosition="69" endLine="77" endPosition="39" />
+    <scopeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="79" startPosition="71" endLine="80" endPosition="41" />
+    <scopeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="82" startPosition="71" endLine="83" endPosition="41" />
+    <scopeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="85" startPosition="70" endLine="86" endPosition="40" />
+    <scopeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="88" startPosition="74" endLine="89" endPosition="44" />
+    <scopeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="91" startPosition="72" endLine="92" endPosition="42" />
+    <scopeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="94" startPosition="76" endLine="95" endPosition="46" />
+    <scopeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="97" startPosition="69" endLine="98" endPosition="39" />
+    <scopeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="100" startPosition="69" endLine="101" endPosition="39" />
+    <scopeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="103" startPosition="74" endLine="104" endPosition="44" />
+    <scopeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="106" startPosition="73" endLine="107" endPosition="43" />
+    <scopeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="109" startPosition="69" endLine="110" endPosition="39" />
+    <scopeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="112" startPosition="74" endLine="113" endPosition="44" />
+    <scopeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="115" startPosition="73" endLine="116" endPosition="43" />
+    <scopeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="118" startPosition="70" endLine="119" endPosition="40" />
+    <scopeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="121" startPosition="70" endLine="122" endPosition="40" />
+    <scopeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="134" startPosition="28" endLine="135" endPosition="24" />
+    <scopeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="129" startPosition="51" endLine="131" endPosition="25" />
+    <scopeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="31" startPosition="0" endLine="34" endPosition="0" />
+    <scopeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="35" startPosition="0" endLine="38" endPosition="0" />
+    <scopeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="62" startPosition="0" endLine="65" endPosition="0" />
+    <scopeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="134" startPosition="0" endLine="137" endPosition="0" />
+    <scopeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="129" startPosition="0" endLine="133" endPosition="0">
+      <varInfo nodeId="1598455488532300530" varName="name" />
+      <varInfo nodeId="1598455488532300530" varName="value" />
+    </scopeInfo>
+    <scopeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="39" startPosition="59" endLine="59" endPosition="16">
+      <varInfo nodeId="1598455488532300530" varName="list" />
+    </scopeInfo>
+    <scopeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="39" startPosition="0" endLine="61" endPosition="0" />
+    <scopeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="66" startPosition="63" endLine="124" endPosition="45" />
+    <scopeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="66" startPosition="0" endLine="126" endPosition="0">
+      <varInfo nodeId="1598455488532300530" varName="value" />
+    </scopeInfo>
+    <scopeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors_PropertySupport.java" startLine="11" startPosition="24" endLine="12" endPosition="18" />
+    <scopeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors_PropertySupport.java" startLine="17" startPosition="45" endLine="18" endPosition="20" />
+    <scopeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors_PropertySupport.java" startLine="25" startPosition="24" endLine="26" endPosition="18" />
+    <scopeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors_PropertySupport.java" startLine="31" startPosition="45" endLine="32" endPosition="43" />
+    <scopeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors_PropertySupport.java" startLine="40" startPosition="27" endLine="41" endPosition="32" />
+    <scopeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors_PropertySupport.java" startLine="15" startPosition="33" endLine="19" endPosition="7">
+      <varInfo nodeId="1598455488532300530" varName="constant" />
+    </scopeInfo>
+    <scopeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors_PropertySupport.java" startLine="29" startPosition="33" endLine="33" endPosition="7">
+      <varInfo nodeId="1598455488532300530" varName="constant" />
+    </scopeInfo>
+    <scopeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors_PropertySupport.java" startLine="38" startPosition="49" endLine="43" endPosition="14">
+      <varInfo nodeId="1598455488532300530" varName="constant" />
+    </scopeInfo>
+    <scopeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors_PropertySupport.java" startLine="38" startPosition="0" endLine="45" endPosition="0">
+      <varInfo nodeId="1598455488532300530" varName="value" />
+    </scopeInfo>
+    <scopeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors_PropertySupport.java" startLine="10" startPosition="44" endLine="21" endPosition="17">
+      <varInfo nodeId="1598455488532300530" varName="constants" />
+    </scopeInfo>
+    <scopeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors_PropertySupport.java" startLine="24" startPosition="47" endLine="35" endPosition="16">
+      <varInfo nodeId="1598455488532300530" varName="constants" />
+    </scopeInfo>
+    <scopeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors_PropertySupport.java" startLine="10" startPosition="0" endLine="23" endPosition="0">
+      <varInfo nodeId="1598455488532300530" varName="value" />
+    </scopeInfo>
+    <scopeInfo nodeId="1598455488532300530" fileName="SNotationStyleColors_PropertySupport.java" startLine="24" startPosition="0" endLine="37" endPosition="0">
+      <varInfo nodeId="1598455488532300530" varName="value" />
+    </scopeInfo>
+    <unitInfo nodeId="1598455488532300530" fileName="SNotationStyleColors.java" startLine="9" startPosition="0" endLine="138" endPosition="0" unitName="jetbrains.mps.core.notation.structure.SNotationStyleColors" />
+    <unitInfo nodeId="1598455488532300530" fileName="SNotationStyleColors_PropertySupport.java" startLine="9" startPosition="0" endLine="46" endPosition="0" unitName="jetbrains.mps.core.notation.structure.SNotationStyleColors_PropertySupport" />
+  </root>
+  <root nodeRef="r:73e15084-90ca-4883-8020-50a625923cba(jetbrains.mps.core.notation.structure)/2976314093287932047">
+    <nodeInfo nodeId="2976314093287932047" fileName="SNotationStyleColorKinds.java" startLine="13" startPosition="0" endLine="14" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="myName" />
+    <nodeInfo nodeId="2976314093287932047" fileName="SNotationStyleColorKinds.java" startLine="15" startPosition="27" endLine="16" endPosition="23" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2976314093287932047" fileName="SNotationStyleColorKinds.java" startLine="19" startPosition="36" endLine="20" endPosition="24" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2976314093287932047" fileName="SNotationStyleColorKinds.java" startLine="23" startPosition="63" endLine="24" endPosition="108" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="2976314093287932047" fileName="SNotationStyleColorKinds.java" startLine="24" startPosition="108" endLine="25" endPosition="75" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2976314093287932047" fileName="SNotationStyleColorKinds.java" startLine="25" startPosition="75" endLine="26" endPosition="86" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2976314093287932047" fileName="SNotationStyleColorKinds.java" startLine="26" startPosition="86" endLine="27" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2976314093287932047" fileName="SNotationStyleColorKinds.java" startLine="30" startPosition="55" endLine="31" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2976314093287932047" fileName="SNotationStyleColorKinds.java" startLine="35" startPosition="24" endLine="36" endPosition="51" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2976314093287932047" fileName="SNotationStyleColorKinds.java" startLine="38" startPosition="74" endLine="39" endPosition="44" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2976314093287932047" fileName="SNotationStyleColorKinds.java" startLine="41" startPosition="85" endLine="42" endPosition="55" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2976314093287932047" fileName="SNotationStyleColorKinds.java" startLine="43" startPosition="5" endLine="44" endPosition="49" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2976314093287932047" fileName="SNotationStyleColorKinds.java" startLine="47" startPosition="0" endLine="48" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="myValue" />
+    <nodeInfo nodeId="2976314093287932047" fileName="SNotationStyleColorKinds.java" startLine="49" startPosition="55" endLine="50" endPosition="23" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2976314093287932047" fileName="SNotationStyleColorKinds.java" startLine="50" startPosition="23" endLine="51" endPosition="25" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2976314093287932047" fileName="SNotationStyleColorKinds.java" startLine="54" startPosition="28" endLine="55" endPosition="24" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2976314093287932047" fileName="SNotationStyleColorKinds.java" startLine="15" startPosition="0" endLine="18" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getName#()Ljava/lang/String;" />
+    <nodeInfo nodeId="2976314093287932047" fileName="SNotationStyleColorKinds.java" startLine="19" startPosition="0" endLine="22" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getValueAsString#()Ljava/lang/String;" />
+    <nodeInfo nodeId="2976314093287932047" fileName="SNotationStyleColorKinds.java" startLine="30" startPosition="0" endLine="33" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="getDefault#()Ljetbrains/mps/core/notation/structure/SNotationStyleColorKinds;" />
+    <nodeInfo nodeId="2976314093287932047" fileName="SNotationStyleColorKinds.java" startLine="34" startPosition="67" endLine="37" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="2976314093287932047" fileName="SNotationStyleColorKinds.java" startLine="37" startPosition="5" endLine="40" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="2976314093287932047" fileName="SNotationStyleColorKinds.java" startLine="40" startPosition="5" endLine="43" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="2976314093287932047" fileName="SNotationStyleColorKinds.java" startLine="54" startPosition="0" endLine="57" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getValue#()Ljava/lang/String;" />
+    <nodeInfo nodeId="2976314093287932047" fileName="SNotationStyleColorKinds.java" startLine="49" startPosition="0" endLine="53" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="SNotationStyleColorKinds#(Ljava/lang/String;Ljava/lang/String;)V" />
+    <nodeInfo nodeId="2976314093287932047" fileName="SNotationStyleColorKinds.java" startLine="23" startPosition="0" endLine="29" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="getConstants#()Ljava/util/List;" />
+    <nodeInfo nodeId="2976314093287932047" fileName="SNotationStyleColorKinds.java" startLine="34" startPosition="0" endLine="46" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="parseValue#(Ljava/lang/String;)Ljetbrains/mps/core/notation/structure/SNotationStyleColorKinds;" />
+    <nodeInfo nodeId="2976314093287932047" fileName="SNotationStyleColorKinds_PropertySupport.java" startLine="11" startPosition="24" endLine="12" endPosition="18" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2976314093287932047" fileName="SNotationStyleColorKinds_PropertySupport.java" startLine="13" startPosition="5" endLine="14" endPosition="125" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="2976314093287932047" fileName="SNotationStyleColorKinds_PropertySupport.java" startLine="15" startPosition="33" endLine="16" endPosition="59" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="2976314093287932047" fileName="SNotationStyleColorKinds_PropertySupport.java" startLine="17" startPosition="45" endLine="18" endPosition="20" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2976314093287932047" fileName="SNotationStyleColorKinds_PropertySupport.java" startLine="20" startPosition="5" endLine="21" endPosition="17" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2976314093287932047" fileName="SNotationStyleColorKinds_PropertySupport.java" startLine="25" startPosition="24" endLine="26" endPosition="18" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2976314093287932047" fileName="SNotationStyleColorKinds_PropertySupport.java" startLine="27" startPosition="5" endLine="28" endPosition="125" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="2976314093287932047" fileName="SNotationStyleColorKinds_PropertySupport.java" startLine="29" startPosition="33" endLine="30" endPosition="59" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="2976314093287932047" fileName="SNotationStyleColorKinds_PropertySupport.java" startLine="31" startPosition="45" endLine="32" endPosition="43" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2976314093287932047" fileName="SNotationStyleColorKinds_PropertySupport.java" startLine="34" startPosition="5" endLine="35" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2976314093287932047" fileName="SNotationStyleColorKinds_PropertySupport.java" startLine="38" startPosition="49" endLine="39" endPosition="83" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="2976314093287932047" fileName="SNotationStyleColorKinds_PropertySupport.java" startLine="40" startPosition="27" endLine="41" endPosition="32" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2976314093287932047" fileName="SNotationStyleColorKinds_PropertySupport.java" startLine="42" startPosition="5" endLine="43" endPosition="14" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2976314093287932047" fileName="SNotationStyleColorKinds_PropertySupport.java" startLine="10" startPosition="44" endLine="13" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="2976314093287932047" fileName="SNotationStyleColorKinds_PropertySupport.java" startLine="16" startPosition="59" endLine="19" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="2976314093287932047" fileName="SNotationStyleColorKinds_PropertySupport.java" startLine="24" startPosition="47" endLine="27" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="2976314093287932047" fileName="SNotationStyleColorKinds_PropertySupport.java" startLine="30" startPosition="59" endLine="33" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="2976314093287932047" fileName="SNotationStyleColorKinds_PropertySupport.java" startLine="39" startPosition="83" endLine="42" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="2976314093287932047" fileName="SNotationStyleColorKinds_PropertySupport.java" startLine="14" startPosition="125" endLine="20" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.WhileStatement" />
+    <nodeInfo nodeId="2976314093287932047" fileName="SNotationStyleColorKinds_PropertySupport.java" startLine="28" startPosition="125" endLine="34" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.WhileStatement" />
+    <nodeInfo nodeId="2976314093287932047" fileName="SNotationStyleColorKinds_PropertySupport.java" startLine="38" startPosition="0" endLine="45" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="fromInternalValue#(Ljava/lang/String;)Ljava/lang/String;" />
+    <nodeInfo nodeId="2976314093287932047" fileName="SNotationStyleColorKinds_PropertySupport.java" startLine="10" startPosition="0" endLine="23" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="canSetValue#(Ljava/lang/String;)Z" />
+    <nodeInfo nodeId="2976314093287932047" fileName="SNotationStyleColorKinds_PropertySupport.java" startLine="24" startPosition="0" endLine="37" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="toInternalValue#(Ljava/lang/String;)Ljava/lang/String;" />
+    <scopeInfo nodeId="2976314093287932047" fileName="SNotationStyleColorKinds.java" startLine="15" startPosition="27" endLine="16" endPosition="23" />
+    <scopeInfo nodeId="2976314093287932047" fileName="SNotationStyleColorKinds.java" startLine="19" startPosition="36" endLine="20" endPosition="24" />
+    <scopeInfo nodeId="2976314093287932047" fileName="SNotationStyleColorKinds.java" startLine="30" startPosition="55" endLine="31" endPosition="16" />
+    <scopeInfo nodeId="2976314093287932047" fileName="SNotationStyleColorKinds.java" startLine="35" startPosition="24" endLine="36" endPosition="51" />
+    <scopeInfo nodeId="2976314093287932047" fileName="SNotationStyleColorKinds.java" startLine="38" startPosition="74" endLine="39" endPosition="44" />
+    <scopeInfo nodeId="2976314093287932047" fileName="SNotationStyleColorKinds.java" startLine="41" startPosition="85" endLine="42" endPosition="55" />
+    <scopeInfo nodeId="2976314093287932047" fileName="SNotationStyleColorKinds.java" startLine="54" startPosition="28" endLine="55" endPosition="24" />
+    <scopeInfo nodeId="2976314093287932047" fileName="SNotationStyleColorKinds.java" startLine="49" startPosition="55" endLine="51" endPosition="25" />
+    <scopeInfo nodeId="2976314093287932047" fileName="SNotationStyleColorKinds.java" startLine="15" startPosition="0" endLine="18" endPosition="0" />
+    <scopeInfo nodeId="2976314093287932047" fileName="SNotationStyleColorKinds.java" startLine="19" startPosition="0" endLine="22" endPosition="0" />
+    <scopeInfo nodeId="2976314093287932047" fileName="SNotationStyleColorKinds.java" startLine="30" startPosition="0" endLine="33" endPosition="0" />
+    <scopeInfo nodeId="2976314093287932047" fileName="SNotationStyleColorKinds.java" startLine="54" startPosition="0" endLine="57" endPosition="0" />
+    <scopeInfo nodeId="2976314093287932047" fileName="SNotationStyleColorKinds.java" startLine="23" startPosition="63" endLine="27" endPosition="16">
+      <varInfo nodeId="2976314093287932047" varName="list" />
+    </scopeInfo>
+    <scopeInfo nodeId="2976314093287932047" fileName="SNotationStyleColorKinds.java" startLine="49" startPosition="0" endLine="53" endPosition="0">
+      <varInfo nodeId="2976314093287932047" varName="name" />
+      <varInfo nodeId="2976314093287932047" varName="value" />
+    </scopeInfo>
+    <scopeInfo nodeId="2976314093287932047" fileName="SNotationStyleColorKinds.java" startLine="23" startPosition="0" endLine="29" endPosition="0" />
+    <scopeInfo nodeId="2976314093287932047" fileName="SNotationStyleColorKinds.java" startLine="34" startPosition="67" endLine="44" endPosition="49" />
+    <scopeInfo nodeId="2976314093287932047" fileName="SNotationStyleColorKinds.java" startLine="34" startPosition="0" endLine="46" endPosition="0">
+      <varInfo nodeId="2976314093287932047" varName="value" />
+    </scopeInfo>
+    <scopeInfo nodeId="2976314093287932047" fileName="SNotationStyleColorKinds_PropertySupport.java" startLine="11" startPosition="24" endLine="12" endPosition="18" />
+    <scopeInfo nodeId="2976314093287932047" fileName="SNotationStyleColorKinds_PropertySupport.java" startLine="17" startPosition="45" endLine="18" endPosition="20" />
+    <scopeInfo nodeId="2976314093287932047" fileName="SNotationStyleColorKinds_PropertySupport.java" startLine="25" startPosition="24" endLine="26" endPosition="18" />
+    <scopeInfo nodeId="2976314093287932047" fileName="SNotationStyleColorKinds_PropertySupport.java" startLine="31" startPosition="45" endLine="32" endPosition="43" />
+    <scopeInfo nodeId="2976314093287932047" fileName="SNotationStyleColorKinds_PropertySupport.java" startLine="40" startPosition="27" endLine="41" endPosition="32" />
+    <scopeInfo nodeId="2976314093287932047" fileName="SNotationStyleColorKinds_PropertySupport.java" startLine="15" startPosition="33" endLine="19" endPosition="7">
+      <varInfo nodeId="2976314093287932047" varName="constant" />
+    </scopeInfo>
+    <scopeInfo nodeId="2976314093287932047" fileName="SNotationStyleColorKinds_PropertySupport.java" startLine="29" startPosition="33" endLine="33" endPosition="7">
+      <varInfo nodeId="2976314093287932047" varName="constant" />
+    </scopeInfo>
+    <scopeInfo nodeId="2976314093287932047" fileName="SNotationStyleColorKinds_PropertySupport.java" startLine="38" startPosition="49" endLine="43" endPosition="14">
+      <varInfo nodeId="2976314093287932047" varName="constant" />
+    </scopeInfo>
+    <scopeInfo nodeId="2976314093287932047" fileName="SNotationStyleColorKinds_PropertySupport.java" startLine="38" startPosition="0" endLine="45" endPosition="0">
+      <varInfo nodeId="2976314093287932047" varName="value" />
+    </scopeInfo>
+    <scopeInfo nodeId="2976314093287932047" fileName="SNotationStyleColorKinds_PropertySupport.java" startLine="10" startPosition="44" endLine="21" endPosition="17">
+      <varInfo nodeId="2976314093287932047" varName="constants" />
+    </scopeInfo>
+    <scopeInfo nodeId="2976314093287932047" fileName="SNotationStyleColorKinds_PropertySupport.java" startLine="24" startPosition="47" endLine="35" endPosition="16">
+      <varInfo nodeId="2976314093287932047" varName="constants" />
+    </scopeInfo>
+    <scopeInfo nodeId="2976314093287932047" fileName="SNotationStyleColorKinds_PropertySupport.java" startLine="10" startPosition="0" endLine="23" endPosition="0">
+      <varInfo nodeId="2976314093287932047" varName="value" />
+    </scopeInfo>
+    <scopeInfo nodeId="2976314093287932047" fileName="SNotationStyleColorKinds_PropertySupport.java" startLine="24" startPosition="0" endLine="37" endPosition="0">
+      <varInfo nodeId="2976314093287932047" varName="value" />
+    </scopeInfo>
+    <unitInfo nodeId="2976314093287932047" fileName="SNotationStyleColorKinds.java" startLine="9" startPosition="0" endLine="58" endPosition="0" unitName="jetbrains.mps.core.notation.structure.SNotationStyleColorKinds" />
+    <unitInfo nodeId="2976314093287932047" fileName="SNotationStyleColorKinds_PropertySupport.java" startLine="9" startPosition="0" endLine="46" endPosition="0" unitName="jetbrains.mps.core.notation.structure.SNotationStyleColorKinds_PropertySupport" />
+  </root>
   <root nodeRef="r:73e15084-90ca-4883-8020-50a625923cba(jetbrains.mps.core.notation.structure)/3129031437528339312">
     <nodeInfo nodeId="3129031437528339312" fileName="SNotationQuantifierKind.java" startLine="14" startPosition="0" endLine="15" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="myName" />
     <nodeInfo nodeId="3129031437528339312" fileName="SNotationQuantifierKind.java" startLine="16" startPosition="27" endLine="17" endPosition="23" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />

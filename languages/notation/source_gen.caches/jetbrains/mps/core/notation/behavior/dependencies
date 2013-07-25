@@ -18,6 +18,7 @@
     <classNode dependClassName="jetbrains.mps.core.notation.behavior.SNotationPartList_BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.core.notation.behavior.SNotationPredicate_BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.core.notation.behavior.SNotationQuantifier_BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.core.notation.behavior.SNotationStyleColor_BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.core.notation.behavior.SNotationStyleEmptyLine_BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.core.notation.behavior.SNotationStyleIndent_BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.core.notation.behavior.SNotationStyleSelector_BehaviorDescriptor" />
@@ -293,6 +294,14 @@
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="jetbrains.mps.core.notation.behavior.SNotationStyleColor_BehaviorDescriptor" file="SNotationStyleColor_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.core.notation.behavior.SNotationStylePart_BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.IDontSubstituteByDefault_BehaviorDescriptor" />
+    <classNode extendsClassName="java.lang.Cloneable" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="jetbrains.mps.core.notation.behavior.SNotationStyleEmptyLine_BehaviorDescriptor" file="SNotationStyleEmptyLine_BehaviorDescriptor.java">

@@ -35,11 +35,15 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.baseLanguage.tuples.runtime.MultiTuple;
 import jetbrains.mps.smodel.action.DefaultChildNodeSubstituteAction;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SEnumOperations;
 import jetbrains.mps.smodel.action.SideTransformActionsBuilderContext;
 import jetbrains.mps.smodel.action.AbstractSideTransformHintSubstituteAction;
 import jetbrains.mps.smodel.action.SideTransformPreconditionContext;
 import jetbrains.mps.smodel.action.NodeSubstituteActionWrapper;
 import jetbrains.mps.lang.structure.behavior.LinkDeclaration_Behavior;
+import org.jetbrains.mps.openapi.persistence.PersistenceFacade;
+import jetbrains.mps.smodel.SModelUtil_new;
+import jetbrains.mps.project.GlobalScope;
 
 public class QueriesGenerated {
   public static void nodeFactory_NodeSetup_SNotationParentheses_5362811550739117351(final IOperationContext operationContext, final NodeSetupContext _context) {
@@ -144,6 +148,31 @@ public class QueriesGenerated {
 
               public String getVisibleMatchingText(String pattern) {
                 return getMatchingText(pattern);
+              }
+            });
+          }
+        }
+      }
+    }
+    return result;
+  }
+
+  public static List<SubstituteAction> nodeSubstituteActionsBuilder_ActionsFactory_SNotationStyleEmptyLine_1598455488533657594(final IOperationContext operationContext, final NodeSubstituteActionsFactoryContext _context) {
+    List<SubstituteAction> result = ListSequence.fromList(new ArrayList<SubstituteAction>());
+    {
+      SNode outputConcept = SConceptOperations.findConceptDeclaration("jetbrains.mps.core.notation.structure.SNotationStyleColor");
+      SNode childConcept = (SNode) _context.getChildConcept();
+      if (SConceptOperations.isSuperConceptOf(childConcept, NameUtil.nodeFQName(outputConcept))) {
+        Iterable<SNode> queryResult = new Computable<Iterable<SNode>>() {
+          public Iterable<SNode> compute() {
+            return SEnumOperations.getEnumMembers(SEnumOperations.getEnum("r:73e15084-90ca-4883-8020-50a625923cba(jetbrains.mps.core.notation.structure)", "SNotationStyleColorKinds"));
+          }
+        }.compute();
+        if (queryResult != null) {
+          for (final SNode item : queryResult) {
+            ListSequence.fromList(result).addElement(new DefaultChildNodeSubstituteAction(outputConcept, item, _context.getParentNode(), _context.getCurrentTargetNode(), _context.getChildSetter(), operationContext.getScope()) {
+              public SNode createChildNode(Object parameterObject, SModel model, String pattern) {
+                return createSNotationStyleColor_7nofaf_a0a0a0a(SEnumOperations.getEnumMemberValue((item)));
               }
             });
           }
@@ -449,5 +478,12 @@ public class QueriesGenerated {
       }
     }.compute(), _context.getSide(), _context.getTransformationTag(), operationContext)));
     return result;
+  }
+
+  private static SNode createSNotationStyleColor_7nofaf_a0a0a0a(Object p0) {
+    PersistenceFacade facade = PersistenceFacade.getInstance();
+    SNode n1 = SModelUtil_new.instantiateConceptDeclaration("jetbrains.mps.core.notation.structure.SNotationStyleColor", null, GlobalScope.getInstance(), false);
+    n1.setProperty("kind", (String) p0);
+    return n1;
   }
 }

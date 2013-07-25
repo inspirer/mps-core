@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debugInfo>
-  <unitInfo fileName="BehaviorAspectDescriptor.java" startLine="9" startPosition="0" endLine="78" endPosition="0" unitName="jetbrains.mps.core.notation.behavior.BehaviorAspectDescriptor" />
+  <unitInfo fileName="BehaviorAspectDescriptor.java" startLine="9" startPosition="0" endLine="80" endPosition="0" unitName="jetbrains.mps.core.notation.behavior.BehaviorAspectDescriptor" />
   <unitInfo fileName="SAllNotationsSelector_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="jetbrains.mps.core.notation.behavior.SAllNotationsSelector_BehaviorDescriptor" />
   <unitInfo fileName="SAllTermsSelector_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="jetbrains.mps.core.notation.behavior.SAllTermsSelector_BehaviorDescriptor" />
   <unitInfo fileName="SConceptNotationSelector_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="jetbrains.mps.core.notation.behavior.SConceptNotationSelector_BehaviorDescriptor" />
@@ -23,6 +23,7 @@
   <unitInfo fileName="SNotationPredicate_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="jetbrains.mps.core.notation.behavior.SNotationPredicate_BehaviorDescriptor" />
   <unitInfo fileName="SNotationQuantifier_BehaviorDescriptor.java" startLine="9" startPosition="0" endLine="22" endPosition="0" unitName="jetbrains.mps.core.notation.behavior.SNotationQuantifier_BehaviorDescriptor" />
   <unitInfo fileName="SNotationSelector_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="jetbrains.mps.core.notation.behavior.SNotationSelector_BehaviorDescriptor" />
+  <unitInfo fileName="SNotationStyleColor_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="jetbrains.mps.core.notation.behavior.SNotationStyleColor_BehaviorDescriptor" />
   <unitInfo fileName="SNotationStyleEmptyLine_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="jetbrains.mps.core.notation.behavior.SNotationStyleEmptyLine_BehaviorDescriptor" />
   <unitInfo fileName="SNotationStyleIndent_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="jetbrains.mps.core.notation.behavior.SNotationStyleIndent_BehaviorDescriptor" />
   <unitInfo fileName="SNotationStylePart_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="jetbrains.mps.core.notation.behavior.SNotationStylePart_BehaviorDescriptor" />
