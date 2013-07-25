@@ -8,7 +8,7 @@ import jetbrains.mps.internal.collections.runtime.backports.LinkedList;
 
 public enum SNotationStyleColorKinds {
   color("color", "color"),
-  background_color("background-color", "background-color");
+  background_color("background-color", "backgroundColor");
 
   private String myName;
 

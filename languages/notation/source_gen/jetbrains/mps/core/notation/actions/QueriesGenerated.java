@@ -157,7 +157,7 @@ public class QueriesGenerated {
     return result;
   }
 
-  public static List<SubstituteAction> nodeSubstituteActionsBuilder_ActionsFactory_SNotationStyleEmptyLine_1598455488533657594(final IOperationContext operationContext, final NodeSubstituteActionsFactoryContext _context) {
+  public static List<SubstituteAction> nodeSubstituteActionsBuilder_ActionsFactory_SNotationStyleEmptyLine_1598455488534082202(final IOperationContext operationContext, final NodeSubstituteActionsFactoryContext _context) {
     List<SubstituteAction> result = ListSequence.fromList(new ArrayList<SubstituteAction>());
     {
       SNode outputConcept = SConceptOperations.findConceptDeclaration("jetbrains.mps.core.notation.structure.SNotationStyleColor");
@@ -172,7 +172,32 @@ public class QueriesGenerated {
           for (final SNode item : queryResult) {
             ListSequence.fromList(result).addElement(new DefaultChildNodeSubstituteAction(outputConcept, item, _context.getParentNode(), _context.getCurrentTargetNode(), _context.getChildSetter(), operationContext.getScope()) {
               public SNode createChildNode(Object parameterObject, SModel model, String pattern) {
-                return createSNotationStyleColor_7nofaf_a0a0a0a(SEnumOperations.getEnumMemberValue((item)));
+                return createSNotationStyleColor_r28yhp_a0a0a0a(SEnumOperations.getEnumMemberValue((item)));
+              }
+            });
+          }
+        }
+      }
+    }
+    return result;
+  }
+
+  public static List<SubstituteAction> nodeSubstituteActionsBuilder_ActionsFactory_SNotationStyleEmptyLine_1598455488533657594(final IOperationContext operationContext, final NodeSubstituteActionsFactoryContext _context) {
+    List<SubstituteAction> result = ListSequence.fromList(new ArrayList<SubstituteAction>());
+    {
+      SNode outputConcept = SConceptOperations.findConceptDeclaration("jetbrains.mps.core.notation.structure.SNotationStyleContent");
+      SNode childConcept = (SNode) _context.getChildConcept();
+      if (SConceptOperations.isSuperConceptOf(childConcept, NameUtil.nodeFQName(outputConcept))) {
+        Iterable<SNode> queryResult = new Computable<Iterable<SNode>>() {
+          public Iterable<SNode> compute() {
+            return SEnumOperations.getEnumMembers(SEnumOperations.getEnum("r:73e15084-90ca-4883-8020-50a625923cba(jetbrains.mps.core.notation.structure)", "SNotationStyleContentKind"));
+          }
+        }.compute();
+        if (queryResult != null) {
+          for (final SNode item : queryResult) {
+            ListSequence.fromList(result).addElement(new DefaultChildNodeSubstituteAction(outputConcept, item, _context.getParentNode(), _context.getCurrentTargetNode(), _context.getChildSetter(), operationContext.getScope()) {
+              public SNode createChildNode(Object parameterObject, SModel model, String pattern) {
+                return createSNotationStyleContent_r28yhp_a0a0a0b(SEnumOperations.getEnumMemberValue((item)));
               }
             });
           }
@@ -480,10 +505,21 @@ public class QueriesGenerated {
     return result;
   }
 
-  private static SNode createSNotationStyleColor_7nofaf_a0a0a0a(Object p0) {
+  private static SNode createSNotationStyleColor_r28yhp_a0a0a0a(Object p0) {
     PersistenceFacade facade = PersistenceFacade.getInstance();
     SNode n1 = SModelUtil_new.instantiateConceptDeclaration("jetbrains.mps.core.notation.structure.SNotationStyleColor", null, GlobalScope.getInstance(), false);
     n1.setProperty("kind", (String) p0);
+    return n1;
+  }
+
+  private static SNode createSNotationStyleContent_r28yhp_a0a0a0b(Object p0) {
+    PersistenceFacade facade = PersistenceFacade.getInstance();
+    SNode n1 = SModelUtil_new.instantiateConceptDeclaration("jetbrains.mps.core.notation.structure.SNotationStyleContent", null, GlobalScope.getInstance(), false);
+    {
+      n1.setProperty("kind", (String) p0);
+      SNode n2 = SModelUtil_new.instantiateConceptDeclaration("jetbrains.mps.core.notation.structure.SNotationPart", null, GlobalScope.getInstance(), false);
+      n1.addChild("content", n2);
+    }
     return n1;
   }
 }

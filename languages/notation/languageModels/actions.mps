@@ -1886,20 +1886,61 @@
   </root>
   <root type="tpdg.NodeSubstituteActions" typeId="tpdg.1112056943463" id="1598455488533657593" nodeInfo="ng">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="styles" />
-    <property name="name" nameId="tpck.1169194664001" value="SNotationStyleColorSubstitutions" />
+    <property name="name" nameId="tpck.1169194664001" value="SNotationStyleSubstitutions" />
+    <node role="actionsBuilder" roleId="tpdg.1112058057696" type="tpdg.NodeSubstituteActionsBuilder" typeId="tpdg.1112058030570" id="1598455488534082202" nodeInfo="ng">
+      <property name="description" nameId="tpdg.1158952412335" value="create SNotationStyleColor" />
+      <link role="applicableConcept" roleId="tpdg.1112058088712" targetNodeId="74m3.3712611346758623575" resolveInfo="SNotationStyleEmptyLine" />
+      <node role="part" roleId="tpdg.1177324142645" type="tpdg.AddMenuPart" typeId="tpdg.1177323996388" id="1598455488534082203" nodeInfo="ng">
+        <link role="concept" roleId="tpdg.1177333551023" targetNodeId="74m3.2976314093287931165" resolveInfo="SNotationStyleColor" />
+        <node role="part" roleId="tpdg.1177333559040" type="tpdg.ParameterizedSubstituteMenuPart" typeId="tpdg.1177337641126" id="1598455488534082204" nodeInfo="ng">
+          <node role="type" roleId="tpdg.1177337679534" type="tp25.SEnumMemberType" typeId="tp25.1240170042401" id="1598455488534082205" nodeInfo="in">
+            <link role="enum" roleId="tp25.1240170836027" targetNodeId="74m3.2976314093287932047" resolveInfo="SNotationStyleColorKinds" />
+          </node>
+          <node role="query" roleId="tpdg.1177338017561" type="tpdg.QueryFunction_ParameterizedSubstitute_Query" typeId="tpdg.1177337890340" id="1598455488534082206" nodeInfo="nn">
+            <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="1598455488534082207" nodeInfo="sn">
+              <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="1598455488534082208" nodeInfo="nn">
+                <node role="expression" roleId="tpee.1068580123156" type="tp25.SEnumOperationInvocation" typeId="tp25.1240930118027" id="1598455488534082209" nodeInfo="nn">
+                  <link role="enumDeclaration" roleId="tp25.1240930118028" targetNodeId="74m3.2976314093287932047" resolveInfo="SNotationStyleColorKinds" />
+                  <node role="operation" roleId="tp25.1240930317927" type="tp25.SEnum_MembersOperation" typeId="tp25.1240930444980" id="1598455488534082210" nodeInfo="ng" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node role="handler" roleId="tpdg.1177339421668" type="tpdg.QueryFunction_ParameterizedSubstitute_Handler" typeId="tpdg.1177339225103" id="1598455488534082211" nodeInfo="nn">
+            <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="1598455488534082212" nodeInfo="sn">
+              <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="1598455488534082213" nodeInfo="nn">
+                <node role="expression" roleId="tpee.1068580123156" type="tp3r.NodeBuilder" typeId="tp3r.5455284157993863837" id="1598455488534082214" nodeInfo="nn">
+                  <node role="quotedNode" roleId="tp3r.5455284157993863838" type="tp3r.NodeBuilderNode" typeId="tp3r.5455284157993863840" id="1598455488534082215" nodeInfo="nn">
+                    <link role="concept" roleId="tp3r.5455284157993910961" targetNodeId="74m3.2976314093287931165" resolveInfo="SNotationStyleColor" />
+                    <node role="values" roleId="tp3r.5455284157993911099" type="tp3r.NodeBuilderInitProperty" typeId="tp3r.5455284157993911077" id="1598455488534082216" nodeInfo="ng">
+                      <link role="property" roleId="tp3r.5455284157993911078" targetNodeId="74m3.2976314093287932377" resolveInfo="kind" />
+                      <node role="expression" roleId="tp3r.5455284157993911094" type="tpee.DotExpression" typeId="tpee.1197027756228" id="1598455488534082217" nodeInfo="nn">
+                        <node role="operand" roleId="tpee.1197027771414" type="tpdg.ConceptFunctionParameter_parameterObject" typeId="tpdg.1177337833147" id="1598455488534082218" nodeInfo="nn" />
+                        <node role="operation" roleId="tpee.1197027833540" type="tp25.EnumMember_ValueOperation" typeId="tp25.1240171359678" id="1598455488534082219" nodeInfo="nn" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node role="actionsBuilder" roleId="tpdg.1112058057696" type="tpdg.NodeSubstituteActionsBuilder" typeId="tpdg.1112058030570" id="1598455488533657594" nodeInfo="ng">
+      <property name="description" nameId="tpdg.1158952412335" value="create SNotationStyleContent" />
       <link role="applicableConcept" roleId="tpdg.1112058088712" targetNodeId="74m3.3712611346758623575" resolveInfo="SNotationStyleEmptyLine" />
       <node role="part" roleId="tpdg.1177324142645" type="tpdg.AddMenuPart" typeId="tpdg.1177323996388" id="1598455488533661337" nodeInfo="ng">
-        <link role="concept" roleId="tpdg.1177333551023" targetNodeId="74m3.2976314093287931165" resolveInfo="SNotationStyleColor" />
+        <link role="concept" roleId="tpdg.1177333551023" targetNodeId="74m3.1598455488534059943" resolveInfo="SNotationStyleContent" />
         <node role="part" roleId="tpdg.1177333559040" type="tpdg.ParameterizedSubstituteMenuPart" typeId="tpdg.1177337641126" id="1598455488533666259" nodeInfo="ng">
           <node role="type" roleId="tpdg.1177337679534" type="tp25.SEnumMemberType" typeId="tp25.1240170042401" id="1598455488533669238" nodeInfo="in">
-            <link role="enum" roleId="tp25.1240170836027" targetNodeId="74m3.2976314093287932047" resolveInfo="SNotationStyleColorKinds" />
+            <link role="enum" roleId="tp25.1240170836027" targetNodeId="74m3.1598455488534060463" resolveInfo="SNotationStyleContentKind" />
           </node>
           <node role="query" roleId="tpdg.1177338017561" type="tpdg.QueryFunction_ParameterizedSubstitute_Query" typeId="tpdg.1177337890340" id="1598455488533666261" nodeInfo="nn">
             <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="1598455488533666262" nodeInfo="sn">
               <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="1598455488533676794" nodeInfo="nn">
                 <node role="expression" roleId="tpee.1068580123156" type="tp25.SEnumOperationInvocation" typeId="tp25.1240930118027" id="1598455488533676792" nodeInfo="nn">
-                  <link role="enumDeclaration" roleId="tp25.1240930118028" targetNodeId="74m3.2976314093287932047" resolveInfo="SNotationStyleColorKinds" />
+                  <link role="enumDeclaration" roleId="tp25.1240930118028" targetNodeId="74m3.1598455488534060463" resolveInfo="SNotationStyleContentKind" />
                   <node role="operation" roleId="tp25.1240930317927" type="tp25.SEnum_MembersOperation" typeId="tp25.1240930444980" id="1598455488533679165" nodeInfo="ng" />
                 </node>
               </node>
@@ -1910,12 +1951,18 @@
               <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="1598455488533684061" nodeInfo="nn">
                 <node role="expression" roleId="tpee.1068580123156" type="tp3r.NodeBuilder" typeId="tp3r.5455284157993863837" id="1598455488533684059" nodeInfo="nn">
                   <node role="quotedNode" roleId="tp3r.5455284157993863838" type="tp3r.NodeBuilderNode" typeId="tp3r.5455284157993863840" id="1598455488533685569" nodeInfo="nn">
-                    <link role="concept" roleId="tp3r.5455284157993910961" targetNodeId="74m3.2976314093287931165" resolveInfo="SNotationStyleColor" />
+                    <link role="concept" roleId="tp3r.5455284157993910961" targetNodeId="74m3.1598455488534059943" resolveInfo="SNotationStyleContent" />
                     <node role="values" roleId="tp3r.5455284157993911099" type="tp3r.NodeBuilderInitProperty" typeId="tp3r.5455284157993911077" id="1598455488533688436" nodeInfo="ng">
-                      <link role="property" roleId="tp3r.5455284157993911078" targetNodeId="74m3.2976314093287932377" resolveInfo="kind" />
+                      <link role="property" roleId="tp3r.5455284157993911078" targetNodeId="74m3.1598455488534069027" resolveInfo="kind" />
                       <node role="expression" roleId="tp3r.5455284157993911094" type="tpee.DotExpression" typeId="tpee.1197027756228" id="1598455488533701940" nodeInfo="nn">
                         <node role="operand" roleId="tpee.1197027771414" type="tpdg.ConceptFunctionParameter_parameterObject" typeId="tpdg.1177337833147" id="1598455488533696015" nodeInfo="nn" />
                         <node role="operation" roleId="tpee.1197027833540" type="tp25.EnumMember_ValueOperation" typeId="tp25.1240171359678" id="1598455488533710930" nodeInfo="nn" />
+                      </node>
+                    </node>
+                    <node role="values" roleId="tp3r.5455284157993911099" type="tp3r.NodeBuilderInitLink" typeId="tp3r.5455284157994012186" id="1598455488534118641" nodeInfo="ng">
+                      <link role="link" roleId="tp3r.5455284157994012188" targetNodeId="74m3.1598455488534069139" />
+                      <node role="expression" roleId="tp3r.5455284157993911094" type="tp3r.NodeBuilderNode" typeId="tp3r.5455284157993863840" id="1598455488534120999" nodeInfo="nn">
+                        <link role="concept" roleId="tp3r.5455284157993910961" targetNodeId="74m3.3647933405694693953" resolveInfo="SNotationPart" />
                       </node>
                     </node>
                   </node>

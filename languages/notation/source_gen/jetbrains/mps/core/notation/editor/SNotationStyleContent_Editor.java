@@ -7,10 +7,13 @@ import jetbrains.mps.openapi.editor.cells.EditorCell;
 import jetbrains.mps.openapi.editor.EditorContext;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Collection;
-import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
+import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
+import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
 import jetbrains.mps.openapi.editor.style.Style;
 import jetbrains.mps.editor.runtime.style.StyleImpl;
 import jetbrains.mps.core.structure.editor.default_StyleSheet;
+import jetbrains.mps.smodel.IOperationContext;
+import jetbrains.mps.nodeEditor.EditorManager;
 import jetbrains.mps.nodeEditor.cellProviders.AbstractCellListHandler;
 import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Indent;
 import jetbrains.mps.lang.editor.cellProviders.RefNodeListHandler;
@@ -20,40 +23,51 @@ import jetbrains.mps.nodeEditor.cellActions.CellAction_DeleteNode;
 import jetbrains.mps.nodeEditor.cellMenu.DefaultReferenceSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.DefaultChildSubstituteInfo;
 
-public class SNotationStyleSeparator_Editor extends DefaultNodeEditor {
+public class SNotationStyleContent_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return this.createCollection_3lm8ch_a(editorContext, node);
+    return this.createCollection_kk7x9z_a(editorContext, node);
   }
 
-  private EditorCell createCollection_3lm8ch_a(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_kk7x9z_a(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
-    editorCell.setCellId("Collection_3lm8ch_a");
+    editorCell.setCellId("Collection_kk7x9z_a");
     editorCell.setBig(true);
-    editorCell.addEditorCell(this.createConstant_3lm8ch_a0(editorContext, node));
-    editorCell.addEditorCell(this.createRefNodeList_3lm8ch_b0(editorContext, node));
+    editorCell.addEditorCell(this.createProperty_kk7x9z_a0(editorContext, node));
+    editorCell.addEditorCell(this.createRefNodeList_kk7x9z_b0(editorContext, node));
     return editorCell;
   }
 
-  private EditorCell createConstant_3lm8ch_a0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "separator");
-    editorCell.setCellId("Constant_3lm8ch_a0");
+  private EditorCell createProperty_kk7x9z_a0(EditorContext editorContext, SNode node) {
+    CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
+    provider.setRole("kind");
+    provider.setNoTargetText("<no kind>");
+    EditorCell editorCell;
+    editorCell = provider.createEditorCell(editorContext);
+    editorCell.setCellId("property_kind");
     Style style = new StyleImpl();
     default_StyleSheet.applyKeyword(style, editorCell);
     editorCell.getStyle().putAll(style);
-    editorCell.setDefaultText("");
+    editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
+    SNode attributeConcept = provider.getRoleAttribute();
+    Class attributeKind = provider.getRoleAttributeClass();
+    if (attributeConcept != null) {
+      IOperationContext opContext = editorContext.getOperationContext();
+      EditorManager manager = EditorManager.getInstanceFromContext(opContext);
+      return manager.createRoleAttributeCell(editorContext, attributeConcept, attributeKind, editorCell);
+    } else
     return editorCell;
   }
 
-  private EditorCell createRefNodeList_3lm8ch_b0(EditorContext editorContext, SNode node) {
-    AbstractCellListHandler handler = new SNotationStyleSeparator_Editor.separatorListHandler_3lm8ch_b0(node, "separator", editorContext);
+  private EditorCell createRefNodeList_kk7x9z_b0(EditorContext editorContext, SNode node) {
+    AbstractCellListHandler handler = new SNotationStyleContent_Editor.contentListHandler_kk7x9z_b0(node, "content", editorContext);
     EditorCell_Collection editorCell = handler.createCells(editorContext, new CellLayout_Indent(), false);
-    editorCell.setCellId("refNodeList_separator");
+    editorCell.setCellId("refNodeList_content");
     editorCell.setRole(handler.getElementRole());
     return editorCell;
   }
 
-  private static class separatorListHandler_3lm8ch_b0 extends RefNodeListHandler {
-    public separatorListHandler_3lm8ch_b0(SNode ownerNode, String childRole, EditorContext context) {
+  private static class contentListHandler_kk7x9z_b0 extends RefNodeListHandler {
+    public contentListHandler_kk7x9z_b0(SNode ownerNode, String childRole, EditorContext context) {
       super(ownerNode, childRole, context, false);
     }
 

@@ -1129,21 +1129,6 @@
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="2711998566964162685" nodeInfo="nn" />
     </node>
   </root>
-  <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="2711998566964173138" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="styles" />
-    <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="74m3.2711998566964173136" resolveInfo="SNotationStyleSeparator" />
-    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="2711998566964173141" nodeInfo="nn">
-      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="2711998566964183316" nodeInfo="nn">
-        <property name="text" nameId="tpc2.1073389577007" value="separator" />
-        <link role="styleClass" roleId="tpc2.1186406756722" targetNodeId="9vn5.5073985075243002241" resolveInfo="keyword" />
-      </node>
-      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNodeList" typeId="tpc2.1073390211982" id="2711998566964173144" nodeInfo="ng">
-        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="74m3.2711998566964173137" />
-        <node role="cellLayout" roleId="tpc2.1140524464360" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="2711998566964173145" nodeInfo="nn" />
-      </node>
-      <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="2711998566964173143" nodeInfo="nn" />
-    </node>
-  </root>
   <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="7465902928068846325" nodeInfo="ng">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="parts" />
     <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="74m3.7465902928068846323" resolveInfo="SNotationBreak" />
@@ -2058,6 +2043,21 @@
         <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="74m3.2976314093287946117" resolveInfo="color" />
       </node>
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="1598455488532546863" nodeInfo="nn" />
+    </node>
+  </root>
+  <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="1598455488534070495" nodeInfo="ng">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="styles.part" />
+    <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="74m3.1598455488534059943" resolveInfo="SNotationStyleContent" />
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="1598455488534073230" nodeInfo="nn">
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="1598455488534073240" nodeInfo="ng">
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="74m3.1598455488534069027" resolveInfo="kind" />
+        <link role="styleClass" roleId="tpc2.1186406756722" targetNodeId="9vn5.5073985075243002241" resolveInfo="keyword" />
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNodeList" typeId="tpc2.1073390211982" id="1598455488534073232" nodeInfo="ng">
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="74m3.1598455488534069139" />
+        <node role="cellLayout" roleId="tpc2.1140524464360" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="1598455488534073233" nodeInfo="nn" />
+      </node>
+      <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="1598455488534073234" nodeInfo="nn" />
     </node>
   </root>
 </model>

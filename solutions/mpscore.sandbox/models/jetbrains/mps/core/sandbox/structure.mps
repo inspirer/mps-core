@@ -295,6 +295,19 @@
           <link role="notation" roleId="74m3.2976314093281623556" targetNodeId="8632884680339330910" />
         </node>
       </node>
+      <node role="content" roleId="74m3.3712611346756438920" type="74m3.SNotationStyleContent" typeId="74m3.1598455488534059943" id="1598455488534561402" nodeInfo="ng">
+        <property name="kind" nameId="74m3.1598455488534069027" value="contentAfter" />
+        <node role="content" roleId="74m3.1598455488534069139" type="74m3.SNotationLabel" typeId="74m3.3647933405694713882" id="1598455488534561415" nodeInfo="ng">
+          <property name="text" nameId="74m3.3647933405694713883" value=" " />
+        </node>
+        <node role="content" roleId="74m3.1598455488534069139" type="74m3.SNotationNewLine" typeId="74m3.3647933405694717730" id="1598455488534911436" nodeInfo="ng" />
+      </node>
+      <node role="content" roleId="74m3.3712611346756438920" type="74m3.SNotationStyleContent" typeId="74m3.1598455488534059943" id="1598455488534911477" nodeInfo="ng">
+        <property name="kind" nameId="74m3.1598455488534069027" value="separator" />
+        <node role="content" roleId="74m3.1598455488534069139" type="74m3.SNotationLabel" typeId="74m3.3647933405694713882" id="1598455488534911485" nodeInfo="ng">
+          <property name="text" nameId="74m3.3647933405694713883" value=" " />
+        </node>
+      </node>
     </node>
     <node role="structure" roleId="ydsw.6195190339581766884" type="ydsw.SStructureEmptyLine" typeId="ydsw.6195190339581962051" id="3712611346755808206" nodeInfo="ng" />
     <node role="structure" roleId="ydsw.6195190339581766884" type="ydsw.SInterfaceConcept" typeId="ydsw.6195190339581766740" id="5566195403253926242" nodeInfo="ng">

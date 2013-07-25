@@ -13,16 +13,16 @@ public enum SNotationStyleColors {
   orange("orange", "orange"),
   yellow("yellow", "yellow"),
   green("green", "green"),
-  darkGreen("darkGreen", "darkGreen"),
+  dark_green("dark-green", "darkGreen"),
   magenta("magenta", "magenta"),
-  darkMagenta("darkMagenta", "darkMagenta"),
+  dark_magenta("dark-magenta", "darkMagenta"),
   cyan("cyan", "cyan"),
   blue("blue", "blue"),
-  lightBlue("lightBlue", "lightBlue"),
-  darkBlue("darkBlue", "darkBlue"),
+  light_blue("light-blue", "lightBlue"),
+  dark_blue("dark-blue", "darkBlue"),
   gray("gray", "gray"),
-  lightGray("lightGray", "lightGray"),
-  darkGray("darkGray", "darkGray"),
+  light_gray("light-gray", "lightGray"),
+  dark_gray("dark-gray", "darkGray"),
   white("white", "white"),
   black("black", "black");
 
@@ -44,16 +44,16 @@ public enum SNotationStyleColors {
     ListSequence.fromList(list).addElement(SNotationStyleColors.orange);
     ListSequence.fromList(list).addElement(SNotationStyleColors.yellow);
     ListSequence.fromList(list).addElement(SNotationStyleColors.green);
-    ListSequence.fromList(list).addElement(SNotationStyleColors.darkGreen);
+    ListSequence.fromList(list).addElement(SNotationStyleColors.dark_green);
     ListSequence.fromList(list).addElement(SNotationStyleColors.magenta);
-    ListSequence.fromList(list).addElement(SNotationStyleColors.darkMagenta);
+    ListSequence.fromList(list).addElement(SNotationStyleColors.dark_magenta);
     ListSequence.fromList(list).addElement(SNotationStyleColors.cyan);
     ListSequence.fromList(list).addElement(SNotationStyleColors.blue);
-    ListSequence.fromList(list).addElement(SNotationStyleColors.lightBlue);
-    ListSequence.fromList(list).addElement(SNotationStyleColors.darkBlue);
+    ListSequence.fromList(list).addElement(SNotationStyleColors.light_blue);
+    ListSequence.fromList(list).addElement(SNotationStyleColors.dark_blue);
     ListSequence.fromList(list).addElement(SNotationStyleColors.gray);
-    ListSequence.fromList(list).addElement(SNotationStyleColors.lightGray);
-    ListSequence.fromList(list).addElement(SNotationStyleColors.darkGray);
+    ListSequence.fromList(list).addElement(SNotationStyleColors.light_gray);
+    ListSequence.fromList(list).addElement(SNotationStyleColors.dark_gray);
     ListSequence.fromList(list).addElement(SNotationStyleColors.white);
     ListSequence.fromList(list).addElement(SNotationStyleColors.black);
     return list;
@@ -85,14 +85,14 @@ public enum SNotationStyleColors {
     if (value.equals(SNotationStyleColors.green.getValueAsString())) {
       return SNotationStyleColors.green;
     }
-    if (value.equals(SNotationStyleColors.darkGreen.getValueAsString())) {
-      return SNotationStyleColors.darkGreen;
+    if (value.equals(SNotationStyleColors.dark_green.getValueAsString())) {
+      return SNotationStyleColors.dark_green;
     }
     if (value.equals(SNotationStyleColors.magenta.getValueAsString())) {
       return SNotationStyleColors.magenta;
     }
-    if (value.equals(SNotationStyleColors.darkMagenta.getValueAsString())) {
-      return SNotationStyleColors.darkMagenta;
+    if (value.equals(SNotationStyleColors.dark_magenta.getValueAsString())) {
+      return SNotationStyleColors.dark_magenta;
     }
     if (value.equals(SNotationStyleColors.cyan.getValueAsString())) {
       return SNotationStyleColors.cyan;
@@ -100,20 +100,20 @@ public enum SNotationStyleColors {
     if (value.equals(SNotationStyleColors.blue.getValueAsString())) {
       return SNotationStyleColors.blue;
     }
-    if (value.equals(SNotationStyleColors.lightBlue.getValueAsString())) {
-      return SNotationStyleColors.lightBlue;
+    if (value.equals(SNotationStyleColors.light_blue.getValueAsString())) {
+      return SNotationStyleColors.light_blue;
     }
-    if (value.equals(SNotationStyleColors.darkBlue.getValueAsString())) {
-      return SNotationStyleColors.darkBlue;
+    if (value.equals(SNotationStyleColors.dark_blue.getValueAsString())) {
+      return SNotationStyleColors.dark_blue;
     }
     if (value.equals(SNotationStyleColors.gray.getValueAsString())) {
       return SNotationStyleColors.gray;
     }
-    if (value.equals(SNotationStyleColors.lightGray.getValueAsString())) {
-      return SNotationStyleColors.lightGray;
+    if (value.equals(SNotationStyleColors.light_gray.getValueAsString())) {
+      return SNotationStyleColors.light_gray;
     }
-    if (value.equals(SNotationStyleColors.darkGray.getValueAsString())) {
-      return SNotationStyleColors.darkGray;
+    if (value.equals(SNotationStyleColors.dark_gray.getValueAsString())) {
+      return SNotationStyleColors.dark_gray;
     }
     if (value.equals(SNotationStyleColors.white.getValueAsString())) {
       return SNotationStyleColors.white;
