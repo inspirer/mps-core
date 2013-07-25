@@ -7,15 +7,15 @@ import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.smodel.behaviour.BehaviorReflection;
 import jetbrains.mps.scope.Scope;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import java.util.List;
 import java.util.ArrayList;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import jetbrains.mps.internal.collections.runtime.ISelector;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.core.query.runtime.MultipleElementsScope;
 import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 
 public class MqlLet_Behavior {
   public static void init(SNode thisNode) {
@@ -30,24 +30,39 @@ public class MqlLet_Behavior {
   }
 
   public static Scope virtual_getScope_3734116213129936182(SNode thisNode, SNode kind, SNode child) {
-    // workaround for bad signature of MultElemScope that uses nlist 
-    List<SNode> vars = new ArrayList<SNode>();
-    ListSequence.fromList(vars).addSequence(ListSequence.fromList(SLinkOperations.getTargets(thisNode, "bindings", true)).where(new IWhereFilter<SNode>() {
-      public boolean accept(SNode it) {
-        return (SLinkOperations.getTarget(it, "var", true) != null);
-      }
-    }).select(new ISelector<SNode, SNode>() {
-      public SNode select(SNode it) {
-        return SLinkOperations.getTarget(it, "var", true);
-      }
-    }));
-    if (kind == SConceptOperations.findConceptDeclaration("jetbrains.mps.core.query.structure.MqlVariable")) {
-      return new MultipleElementsScope(vars, new _FunctionTypes._return_P1_E0<String, SNode>() {
-        public String invoke(SNode n) {
-          return SPropertyOperations.getString(SNodeOperations.cast(n, "jetbrains.mps.core.query.structure.MqlVariable"), "name");
-        }
-      });
+    if (kind != SConceptOperations.findConceptDeclaration("jetbrains.mps.core.query.structure.MqlVariable")) {
+      return null;
     }
-    return null;
+
+    // MultElemScope uses nlist 
+    List<SNode> vars = new ArrayList<SNode>();
+    if (SNodeOperations.getContainingLinkRole(child).equals("expression")) {
+      // we're from expression, all bindings are seen 
+      ListSequence.fromList(vars).addSequence(ListSequence.fromList(SLinkOperations.getTargets(thisNode, "bindings", true)).where(new IWhereFilter<SNode>() {
+        public boolean accept(SNode it) {
+          return (SLinkOperations.getTarget(it, "var", true) != null);
+        }
+      }).select(new ISelector<SNode, SNode>() {
+        public SNode select(SNode it) {
+          return SLinkOperations.getTarget(it, "var", true);
+        }
+      }));
+    } else {
+      // we're from one of the bindings, giving only those which are before this one 
+      // Q: including this one? it's more safe not to include, but for closures it could be convenient 
+      SNode stop = child;
+      for (SNode b : ListSequence.fromList(SLinkOperations.getTargets(thisNode, "bindings", true))) {
+        if (b == stop) {
+          break;
+        }
+        ListSequence.fromList(vars).addElement(SLinkOperations.getTarget(b, "var", true));
+      }
+    }
+
+    return new MultipleElementsScope(vars, new _FunctionTypes._return_P1_E0<String, SNode>() {
+      public String invoke(SNode n) {
+        return SPropertyOperations.getString(SNodeOperations.cast(n, "jetbrains.mps.core.query.structure.MqlVariable"), "name");
+      }
+    });
   }
 }
