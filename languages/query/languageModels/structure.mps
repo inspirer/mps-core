@@ -686,5 +686,99 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="expr" />
     <property name="name" nameId="tpck.1169194664001" value="MqlThisProvider" />
   </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5343139407557941525" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="string" />
+    <property name="name" nameId="tpck.1169194664001" value="MqlStringSelector" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="6762883159245048087" resolveInfo="MqlSelector" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="4562783364483477041" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.1835621062190663819" resolveInfo="IDontSubstituteByDefault" />
+    </node>
+  </root>
+  <root type="tpce.EnumerationDataTypeDeclaration" typeId="tpce.1082978164219" id="5343139407557942918" nodeInfo="ng">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="string" />
+    <property name="name" nameId="tpck.1169194664001" value="MqlStringSelectorKind" />
+    <link role="memberDataType" roleId="tpce.1083171729157" targetNodeId="tpck.1082983657062" resolveInfo="integer" />
+    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="5343139407557942919" nodeInfo="ig">
+      <property name="internalValue" nameId="tpce.1083923523171" value="1" />
+      <property name="externalValue" nameId="tpce.1083923523172" value="concat" />
+    </node>
+    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="5343139407557944602" nodeInfo="ig">
+      <property name="externalValue" nameId="tpce.1083923523172" value="startsWith" />
+    </node>
+    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="5343139407557944606" nodeInfo="ig">
+      <property name="externalValue" nameId="tpce.1083923523172" value="endsWith" />
+    </node>
+    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="5343139407557944920" nodeInfo="ig">
+      <property name="externalValue" nameId="tpce.1083923523172" value="indexOf" />
+    </node>
+    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="5343139407557944927" nodeInfo="ig">
+      <property name="externalValue" nameId="tpce.1083923523172" value="lastIndexOf" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5343139407557943861" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="string" />
+    <property name="name" nameId="tpck.1169194664001" value="MqlStringProperty" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="6762883159245048087" resolveInfo="MqlSelector" />
+    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="5343139407558023295" nodeInfo="ig">
+      <property name="name" nameId="tpck.1169194664001" value="kind" />
+      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="5343139407557944004" resolveInfo="MqlStringPropertyKind" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="4562783364483477043" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.1835621062190663819" resolveInfo="IDontSubstituteByDefault" />
+    </node>
+  </root>
+  <root type="tpce.EnumerationDataTypeDeclaration" typeId="tpce.1082978164219" id="5343139407557944004" nodeInfo="ng">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="string" />
+    <property name="name" nameId="tpck.1169194664001" value="MqlStringPropertyKind" />
+    <link role="memberDataType" roleId="tpce.1083171729157" targetNodeId="tpck.1082983657062" resolveInfo="integer" />
+    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="5343139407557944005" nodeInfo="ig">
+      <property name="internalValue" nameId="tpce.1083923523171" value="1" />
+      <property name="externalValue" nameId="tpce.1083923523172" value="length" />
+    </node>
+    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="5343139407557944006" nodeInfo="ig">
+      <property name="internalValue" nameId="tpce.1083923523171" value="2" />
+      <property name="externalValue" nameId="tpce.1083923523172" value="isEmpty" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5343139407557982960" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="string" />
+    <property name="name" nameId="tpck.1169194664001" value="MqlStringIndexOp" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="6762883159245048087" resolveInfo="MqlSelector" />
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="5343139407557982961" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="substring" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="6762883159245048012" resolveInfo="MqlExpression" />
+    </node>
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="5343139407557982963" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="index" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="6762883159245048012" resolveInfo="MqlExpression" />
+    </node>
+    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="5343139407557982977" nodeInfo="ig">
+      <property name="name" nameId="tpck.1169194664001" value="kind" />
+      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="5343139407557982970" resolveInfo="MqlStringIndexOpKind" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5343139407558897401" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.1835621062190663819" resolveInfo="IDontSubstituteByDefault" />
+    </node>
+  </root>
+  <root type="tpce.EnumerationDataTypeDeclaration" typeId="tpce.1082978164219" id="5343139407557982970" nodeInfo="ng">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="string" />
+    <property name="name" nameId="tpck.1169194664001" value="MqlStringIndexOpKind" />
+    <property name="memberIdentifierPolicy" nameId="tpce.1197591154882" value="custom" />
+    <property name="hasNoDefaultMember" nameId="tpce.1212080844762" value="true" />
+    <link role="memberDataType" roleId="tpce.1083171729157" targetNodeId="tpck.1082983657062" resolveInfo="integer" />
+    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="5343139407557982971" nodeInfo="ig">
+      <property name="externalValue" nameId="tpce.1083923523172" value="indexOf" />
+      <property name="internalValue" nameId="tpce.1083923523171" value="1" />
+      <property name="javaIdentifier" nameId="tpce.1192116978809" value="INDEXOF" />
+    </node>
+    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="5343139407557982972" nodeInfo="ig">
+      <property name="externalValue" nameId="tpce.1083923523172" value="lastIndexOf" />
+      <property name="internalValue" nameId="tpce.1083923523171" value="2" />
+      <property name="javaIdentifier" nameId="tpce.1192116978809" value="LAST_INDEXOF" />
+    </node>
+  </root>
 </model>
 
