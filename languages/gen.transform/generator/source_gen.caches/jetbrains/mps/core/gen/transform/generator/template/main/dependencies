@@ -4,7 +4,9 @@
     <classNode dependClassName="java.lang.Class" />
     <classNode dependClassName="java.lang.Iterable" />
     <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="jetbrains.mps.core.gen.transform.generator.main.util.MqlTypeUtil" />
     <classNode dependClassName="jetbrains.mps.core.gen.transform.generator.main.util.ResolveUtil" />
+    <classNode dependClassName="jetbrains.mps.core.query.behavior.MqlVariable_Behavior" />
     <classNode dependClassName="jetbrains.mps.core.structure.behavior.SCardinality_Behavior" />
     <classNode dependClassName="jetbrains.mps.generator.template.BaseMappingRuleContext" />
     <classNode dependClassName="jetbrains.mps.generator.template.IfMacroContext" />
