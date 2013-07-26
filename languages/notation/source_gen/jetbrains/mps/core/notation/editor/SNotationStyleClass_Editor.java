@@ -52,6 +52,7 @@ public class SNotationStyleClass_Editor extends DefaultNodeEditor {
     Style style = new StyleImpl();
     default_StyleSheet.applyString(style, editorCell);
     editorCell.getStyle().putAll(style);
+    SNotationStyleClass_delete.setCellActions(editorCell, node, editorContext);
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
     Class attributeKind = provider.getRoleAttributeClass();

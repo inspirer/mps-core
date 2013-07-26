@@ -740,12 +740,6 @@
         </node>
         <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationLabel" typeId="74m3.3647933405694713882" id="4014530048382224468" nodeInfo="ng">
           <property name="text" nameId="74m3.3647933405694713883" value="class" />
-          <node role="styleClass" roleId="74m3.1598455488542436217" type="74m3.SNotationStyleClass" typeId="74m3.1598455488542437023" id="1598455488543046396" nodeInfo="ng">
-            <property name="class" nameId="74m3.1598455488542437246" value="classifier" />
-          </node>
-          <node role="styleClass" roleId="74m3.1598455488542436217" type="74m3.SNotationStyleClass" typeId="74m3.1598455488542437023" id="1598455488543051530" nodeInfo="ng">
-            <property name="class" nameId="74m3.1598455488542437246" value="java" />
-          </node>
         </node>
         <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationMapping" typeId="74m3.3129031437528132565" id="5566195403254081356" nodeInfo="ng">
           <node role="entityRef" roleId="74m3.7805033636902348041" type="74m3.SStructurePropertyRef" typeId="74m3.146911029171891500" id="5566195403254081357" nodeInfo="ng">
