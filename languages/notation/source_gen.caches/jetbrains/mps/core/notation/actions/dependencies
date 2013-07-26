@@ -11,6 +11,7 @@
     <classNode dependClassName="jetbrains.mps.baseLanguage.tuples.runtime.MultiTuple" />
     <classNode dependClassName="jetbrains.mps.baseLanguage.tuples.runtime.Tuples" />
     <classNode dependClassName="jetbrains.mps.core.notation.actions.SNotationActionUtil" />
+    <classNode dependClassName="jetbrains.mps.core.notation.behavior.SNotationParentheses_Behavior" />
     <classNode dependClassName="jetbrains.mps.core.notation.constraints.ContextUtil" />
     <classNode dependClassName="jetbrains.mps.core.notation.util.NotationContext" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ISelector" />

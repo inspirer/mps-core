@@ -6,6 +6,7 @@
     <classNode dependClassName="jetbrains.mps.core.query.constraints.MqlAssignment_Constraints" />
     <classNode dependClassName="jetbrains.mps.core.query.constraints.MqlCollectionSelectorVarRef_Constraints" />
     <classNode dependClassName="jetbrains.mps.core.query.constraints.MqlCollectionSelectorVar_Constraints" />
+    <classNode dependClassName="jetbrains.mps.core.query.constraints.MqlLet_Constraints" />
     <classNode dependClassName="jetbrains.mps.core.query.constraints.MqlNoContextQueryCall_Constraints" />
     <classNode dependClassName="jetbrains.mps.core.query.constraints.MqlParameterReference_Constraints" />
     <classNode dependClassName="jetbrains.mps.core.query.constraints.MqlParameter_Constraints" />
@@ -53,6 +54,16 @@
     <classNode dependClassName="jetbrains.mps.smodel.IScope" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.PropertyConstraintsDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.base.BasePropertyConstraintsDescriptor" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor" />
+  </dependency>
+  <dependency className="jetbrains.mps.core.query.constraints.MqlLet_Constraints" file="MqlLet_Constraints.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
+    <classNode dependClassName="jetbrains.mps.smodel.SNodePointer" />
+    <classNode dependClassName="jetbrains.mps.smodel.runtime.CheckingNodeContext" />
+    <classNode dependClassName="org.jetbrains.annotations.Nullable" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor" />
   </dependency>

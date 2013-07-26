@@ -50,7 +50,7 @@ public class SNotationPartListBody implements ConceptEditorComponent {
   }
 
   private static boolean renderingCondition_2lgk78_a0(SNode node, EditorContext editorContext, IScope scope) {
-    return (int) ListSequence.fromList(SLinkOperations.getTargets(node, "parts", true)).count() == 0 && SNodeOperations.isInstanceOf(SNodeOperations.getParent(node), "jetbrains.mps.core.notation.structure.SNotationParentheses") && (int) ListSequence.fromList(SLinkOperations.getTargets(SNodeOperations.cast(SNodeOperations.getParent(node), "jetbrains.mps.core.notation.structure.SNotationParentheses"), "alternatives", true)).count() == 1;
+    return (int) ListSequence.fromList(SLinkOperations.getTargets(node, "parts", true)).count() == 0 && SNodeOperations.isInstanceOf(SNodeOperations.getParent(node), "jetbrains.mps.core.notation.structure.SNotationParentheses") && (int) ListSequence.fromList(SLinkOperations.getTargets(SNodeOperations.cast(SNodeOperations.getParent(node), "jetbrains.mps.core.notation.structure.SNotationParentheses"), "alternatives", true)).count() == 1 && ListSequence.fromList(SLinkOperations.getTargets(SNodeOperations.cast(SNodeOperations.getParent(node), "jetbrains.mps.core.notation.structure.SNotationParentheses"), "alternatives", true)).first() == node;
   }
 
   private EditorCell createRefNodeList_2lgk78_a0(EditorContext editorContext, SNode node) {

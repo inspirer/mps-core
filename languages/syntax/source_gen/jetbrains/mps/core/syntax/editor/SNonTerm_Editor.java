@@ -16,7 +16,7 @@ import jetbrains.mps.smodel.IOperationContext;
 import jetbrains.mps.nodeEditor.EditorManager;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 import jetbrains.mps.smodel.IScope;
-import jetbrains.mps.core.syntax.behavior.SNonTerm_Behavior;
+import jetbrains.mps.smodel.behaviour.BehaviorReflection;
 import jetbrains.mps.nodeEditor.cellProviders.AbstractCellListHandler;
 import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Indent;
 import jetbrains.mps.lang.editor.cellProviders.RefNodeListHandler;
@@ -92,7 +92,7 @@ public class SNonTerm_Editor extends DefaultNodeEditor {
   }
 
   private static boolean renderingCondition_9v4a5v_a2a(SNode node, EditorContext editorContext, IScope scope) {
-    return SNonTerm_Behavior.call_isMultiline_1030525575875839456(node);
+    return BehaviorReflection.invokeVirtual(Boolean.TYPE, node, "virtual_isMultiline_1030525575875839456", new Object[]{});
   }
 
   private EditorCell createCollection_9v4a5v_a2a(EditorContext editorContext, SNode node) {

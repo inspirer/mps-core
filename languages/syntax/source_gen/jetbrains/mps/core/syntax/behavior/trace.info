@@ -8,7 +8,7 @@
   <unitInfo fileName="SLexerPart_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="jetbrains.mps.core.syntax.behavior.SLexerPart_BehaviorDescriptor" />
   <unitInfo fileName="SLineComment_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="jetbrains.mps.core.syntax.behavior.SLineComment_BehaviorDescriptor" />
   <unitInfo fileName="SNamedPattern_BehaviorDescriptor.java" startLine="10" startPosition="0" endLine="23" endPosition="0" unitName="jetbrains.mps.core.syntax.behavior.SNamedPattern_BehaviorDescriptor" />
-  <unitInfo fileName="SNonTerm_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="jetbrains.mps.core.syntax.behavior.SNonTerm_BehaviorDescriptor" />
+  <unitInfo fileName="SNonTerm_BehaviorDescriptor.java" startLine="8" startPosition="0" endLine="25" endPosition="0" unitName="jetbrains.mps.core.syntax.behavior.SNonTerm_BehaviorDescriptor" />
   <unitInfo fileName="SPrio_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="jetbrains.mps.core.syntax.behavior.SPrio_BehaviorDescriptor" />
   <unitInfo fileName="SReference_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="jetbrains.mps.core.syntax.behavior.SReference_BehaviorDescriptor" />
   <unitInfo fileName="SRegex_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="jetbrains.mps.core.syntax.behavior.SRegex_BehaviorDescriptor" />
@@ -20,38 +20,64 @@
   <unitInfo fileName="STargetLanguage_BehaviorDescriptor.java" startLine="8" startPosition="0" endLine="25" endPosition="0" unitName="jetbrains.mps.core.syntax.behavior.STargetLanguage_BehaviorDescriptor" />
   <unitInfo fileName="SType_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="jetbrains.mps.core.syntax.behavior.SType_BehaviorDescriptor" />
   <root nodeRef="r:634291dd-a0fe-4158-8c6d-71668d515dab(jetbrains.mps.core.syntax.behavior)/1030525575875839453">
-    <nodeInfo nodeId="1030525575875859932" fileName="SNonTerm_Behavior.java" startLine="16" startPosition="78" endLine="17" endPosition="164" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="1030525575875844588" fileName="SNonTerm_Behavior.java" startLine="22" startPosition="50" endLine="23" endPosition="61" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="1030525575875865471" fileName="SNonTerm_Behavior.java" startLine="26" startPosition="39" endLine="27" endPosition="269" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="1030525575875839453" fileName="SNonTerm_Behavior.java" startLine="13" startPosition="0" endLine="15" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-    <nodeInfo nodeId="1030525575875839453" fileName="SNonTerm_Behavior.java" startLine="16" startPosition="0" endLine="19" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="call_isMultiline_1030525575875839456#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
-    <nodeInfo nodeId="1030525575875844588" fileName="SNonTerm_Behavior.java" startLine="22" startPosition="0" endLine="25" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="translate#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/Iterable;" />
-    <nodeInfo nodeId="1030525575875865469" fileName="SNonTerm_Behavior.java" startLine="26" startPosition="0" endLine="29" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
-    <nodeInfo nodeId="8776389519611332675" fileName="SNonTerm_Behavior.java" startLine="20" startPosition="79" endLine="29" endPosition="20" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="1030525575875839453" fileName="SNonTerm_Behavior.java" startLine="20" startPosition="0" endLine="31" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="call_isList_1030525575875844509#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
-    <scopeInfo nodeId="1030525575875839455" fileName="SNonTerm_Behavior.java" startLine="13" startPosition="43" endLine="13" endPosition="43" />
-    <scopeInfo nodeId="1030525575875839459" fileName="SNonTerm_Behavior.java" startLine="16" startPosition="78" endLine="17" endPosition="164" />
-    <scopeInfo nodeId="1030525575875844588" fileName="SNonTerm_Behavior.java" startLine="22" startPosition="50" endLine="23" endPosition="61" />
-    <scopeInfo nodeId="1030525575875865470" fileName="SNonTerm_Behavior.java" startLine="26" startPosition="39" endLine="27" endPosition="269" />
-    <scopeInfo nodeId="1030525575875839453" fileName="SNonTerm_Behavior.java" startLine="13" startPosition="0" endLine="15" endPosition="0">
+    <nodeInfo nodeId="1030525575875859932" fileName="SNonTerm_Behavior.java" startLine="18" startPosition="81" endLine="19" endPosition="215" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="5166780373695978513" fileName="SNonTerm_Behavior.java" startLine="24" startPosition="50" endLine="25" endPosition="61" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1030525575875865471" fileName="SNonTerm_Behavior.java" startLine="28" startPosition="39" endLine="29" endPosition="269" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1030525575875839453" fileName="SNonTerm_Behavior.java" startLine="35" startPosition="78" endLine="36" endPosition="127" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1030525575875839453" fileName="SNonTerm_Behavior.java" startLine="40" startPosition="73" endLine="41" endPosition="122" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1030525575875839453" fileName="SNonTerm_Behavior.java" startLine="45" startPosition="111" endLine="46" endPosition="253" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1030525575875839453" fileName="SNonTerm_Behavior.java" startLine="50" startPosition="106" endLine="51" endPosition="248" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1030525575875839453" fileName="SNonTerm_Behavior.java" startLine="15" startPosition="0" endLine="17" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+    <nodeInfo nodeId="1030525575875839453" fileName="SNonTerm_Behavior.java" startLine="18" startPosition="0" endLine="21" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="virtual_isMultiline_1030525575875839456#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+    <nodeInfo nodeId="5166780373695978511" fileName="SNonTerm_Behavior.java" startLine="24" startPosition="0" endLine="27" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="translate#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/Iterable;" />
+    <nodeInfo nodeId="1030525575875865469" fileName="SNonTerm_Behavior.java" startLine="28" startPosition="0" endLine="31" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+    <nodeInfo nodeId="1030525575875839453" fileName="SNonTerm_Behavior.java" startLine="34" startPosition="0" endLine="38" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="call_isMultiline_1030525575875839456#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+    <nodeInfo nodeId="1030525575875839453" fileName="SNonTerm_Behavior.java" startLine="39" startPosition="0" endLine="43" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="call_isList_1030525575875844509#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+    <nodeInfo nodeId="1030525575875839453" fileName="SNonTerm_Behavior.java" startLine="44" startPosition="0" endLine="48" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="callSuper_isMultiline_1030525575875839456#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)Z" />
+    <nodeInfo nodeId="1030525575875839453" fileName="SNonTerm_Behavior.java" startLine="49" startPosition="0" endLine="53" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="callSuper_isList_1030525575875844509#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)Z" />
+    <nodeInfo nodeId="8776389519611332675" fileName="SNonTerm_Behavior.java" startLine="22" startPosition="82" endLine="31" endPosition="20" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1030525575875839453" fileName="SNonTerm_Behavior.java" startLine="22" startPosition="0" endLine="33" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="virtual_isList_1030525575875844509#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+    <scopeInfo nodeId="1030525575875839455" fileName="SNonTerm_Behavior.java" startLine="15" startPosition="43" endLine="15" endPosition="43" />
+    <scopeInfo nodeId="1030525575875839459" fileName="SNonTerm_Behavior.java" startLine="18" startPosition="81" endLine="19" endPosition="215" />
+    <scopeInfo nodeId="5166780373695978512" fileName="SNonTerm_Behavior.java" startLine="24" startPosition="50" endLine="25" endPosition="61" />
+    <scopeInfo nodeId="1030525575875865470" fileName="SNonTerm_Behavior.java" startLine="28" startPosition="39" endLine="29" endPosition="269" />
+    <scopeInfo nodeId="1030525575875839453" fileName="SNonTerm_Behavior.java" startLine="35" startPosition="78" endLine="36" endPosition="127" />
+    <scopeInfo nodeId="1030525575875839453" fileName="SNonTerm_Behavior.java" startLine="40" startPosition="73" endLine="41" endPosition="122" />
+    <scopeInfo nodeId="1030525575875839453" fileName="SNonTerm_Behavior.java" startLine="45" startPosition="111" endLine="46" endPosition="253" />
+    <scopeInfo nodeId="1030525575875839453" fileName="SNonTerm_Behavior.java" startLine="50" startPosition="106" endLine="51" endPosition="248" />
+    <scopeInfo nodeId="1030525575875839453" fileName="SNonTerm_Behavior.java" startLine="15" startPosition="0" endLine="17" endPosition="0">
       <varInfo nodeId="1030525575875839453" varName="thisNode" />
     </scopeInfo>
-    <scopeInfo nodeId="1030525575875839453" fileName="SNonTerm_Behavior.java" startLine="16" startPosition="0" endLine="19" endPosition="0">
+    <scopeInfo nodeId="1030525575875839453" fileName="SNonTerm_Behavior.java" startLine="18" startPosition="0" endLine="21" endPosition="0">
       <varInfo nodeId="1030525575875839453" varName="thisNode" />
     </scopeInfo>
-    <scopeInfo nodeId="1030525575875844588" fileName="SNonTerm_Behavior.java" startLine="22" startPosition="0" endLine="25" endPosition="0">
-      <varInfo nodeId="1030525575875844588" varName="it" />
+    <scopeInfo nodeId="5166780373695978511" fileName="SNonTerm_Behavior.java" startLine="24" startPosition="0" endLine="27" endPosition="0">
+      <varInfo nodeId="5166780373695978511" varName="it" />
     </scopeInfo>
-    <scopeInfo nodeId="1030525575875865469" fileName="SNonTerm_Behavior.java" startLine="26" startPosition="0" endLine="29" endPosition="0">
+    <scopeInfo nodeId="1030525575875865469" fileName="SNonTerm_Behavior.java" startLine="28" startPosition="0" endLine="31" endPosition="0">
       <varInfo nodeId="1030525575875865469" varName="it" />
     </scopeInfo>
-    <scopeInfo nodeId="1030525575875844512" fileName="SNonTerm_Behavior.java" startLine="20" startPosition="79" endLine="29" endPosition="20" />
-    <scopeInfo nodeId="1030525575875839453" fileName="SNonTerm_Behavior.java" startLine="20" startPosition="0" endLine="31" endPosition="0">
+    <scopeInfo nodeId="1030525575875839453" fileName="SNonTerm_Behavior.java" startLine="34" startPosition="0" endLine="38" endPosition="0">
       <varInfo nodeId="1030525575875839453" varName="thisNode" />
     </scopeInfo>
-    <unitInfo nodeId="1030525575875844588" fileName="SNonTerm_Behavior.java" startLine="21" startPosition="203" endLine="25" endPosition="5" unitName="jetbrains.mps.core.syntax.behavior.SNonTerm_Behavior$1" />
-    <unitInfo nodeId="1030525575875865469" fileName="SNonTerm_Behavior.java" startLine="25" startPosition="17" endLine="29" endPosition="5" unitName="jetbrains.mps.core.syntax.behavior.SNonTerm_Behavior$2" />
-    <unitInfo nodeId="1030525575875839453" fileName="SNonTerm_Behavior.java" startLine="12" startPosition="0" endLine="32" endPosition="0" unitName="jetbrains.mps.core.syntax.behavior.SNonTerm_Behavior" />
+    <scopeInfo nodeId="1030525575875839453" fileName="SNonTerm_Behavior.java" startLine="39" startPosition="0" endLine="43" endPosition="0">
+      <varInfo nodeId="1030525575875839453" varName="thisNode" />
+    </scopeInfo>
+    <scopeInfo nodeId="1030525575875839453" fileName="SNonTerm_Behavior.java" startLine="44" startPosition="0" endLine="48" endPosition="0">
+      <varInfo nodeId="1030525575875839453" varName="callerConceptFqName" />
+      <varInfo nodeId="1030525575875839453" varName="thisNode" />
+    </scopeInfo>
+    <scopeInfo nodeId="1030525575875839453" fileName="SNonTerm_Behavior.java" startLine="49" startPosition="0" endLine="53" endPosition="0">
+      <varInfo nodeId="1030525575875839453" varName="callerConceptFqName" />
+      <varInfo nodeId="1030525575875839453" varName="thisNode" />
+    </scopeInfo>
+    <scopeInfo nodeId="1030525575875844512" fileName="SNonTerm_Behavior.java" startLine="22" startPosition="82" endLine="31" endPosition="20" />
+    <scopeInfo nodeId="1030525575875839453" fileName="SNonTerm_Behavior.java" startLine="22" startPosition="0" endLine="33" endPosition="0">
+      <varInfo nodeId="1030525575875839453" varName="thisNode" />
+    </scopeInfo>
+    <unitInfo nodeId="5166780373695978511" fileName="SNonTerm_Behavior.java" startLine="23" startPosition="203" endLine="27" endPosition="5" unitName="jetbrains.mps.core.syntax.behavior.SNonTerm_Behavior$1" />
+    <unitInfo nodeId="1030525575875865469" fileName="SNonTerm_Behavior.java" startLine="27" startPosition="17" endLine="31" endPosition="5" unitName="jetbrains.mps.core.syntax.behavior.SNonTerm_Behavior$2" />
+    <unitInfo nodeId="1030525575875839453" fileName="SNonTerm_Behavior.java" startLine="14" startPosition="0" endLine="54" endPosition="0" unitName="jetbrains.mps.core.syntax.behavior.SNonTerm_Behavior" />
   </root>
   <root nodeRef="r:634291dd-a0fe-4158-8c6d-71668d515dab(jetbrains.mps.core.syntax.behavior)/4242261035235367592">
     <nodeInfo nodeId="4242261035235367599" fileName="STargetLanguage_Behavior.java" startLine="14" startPosition="84" endLine="15" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />

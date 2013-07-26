@@ -49,46 +49,48 @@ public class EditorAspectDescriptorImpl implements EditorAspectDescriptor {
       case 16:
         return Collections.<ConceptEditor>singletonList(new MqlIntType_Editor());
       case 17:
-        return Collections.<ConceptEditor>singletonList(new MqlListLiteral_Editor());
+        return Collections.<ConceptEditor>singletonList(new MqlLet_Editor());
       case 18:
-        return Collections.<ConceptEditor>singletonList(new MqlListType_Editor());
+        return Collections.<ConceptEditor>singletonList(new MqlListLiteral_Editor());
       case 19:
-        return Collections.<ConceptEditor>singletonList(new MqlNoContextQueryCall_Editor());
+        return Collections.<ConceptEditor>singletonList(new MqlListType_Editor());
       case 20:
-        return Collections.<ConceptEditor>singletonList(new MqlNullLiteral_Editor());
+        return Collections.<ConceptEditor>singletonList(new MqlNoContextQueryCall_Editor());
       case 21:
-        return Collections.<ConceptEditor>singletonList(new MqlNullType_Editor());
+        return Collections.<ConceptEditor>singletonList(new MqlNullLiteral_Editor());
       case 22:
-        return Collections.<ConceptEditor>singletonList(new MqlPackage_Editor());
+        return Collections.<ConceptEditor>singletonList(new MqlNullType_Editor());
       case 23:
-        return Collections.<ConceptEditor>singletonList(new MqlParameter_Editor());
+        return Collections.<ConceptEditor>singletonList(new MqlPackage_Editor());
       case 24:
-        return Collections.<ConceptEditor>singletonList(new MqlParameterReference_Editor());
+        return Collections.<ConceptEditor>singletonList(new MqlParameter_Editor());
       case 25:
-        return Collections.<ConceptEditor>singletonList(new MqlParentheses_Editor());
+        return Collections.<ConceptEditor>singletonList(new MqlParameterReference_Editor());
       case 26:
-        return Collections.<ConceptEditor>singletonList(new MqlQuery_Editor());
+        return Collections.<ConceptEditor>singletonList(new MqlParentheses_Editor());
       case 27:
-        return Collections.<ConceptEditor>singletonList(new MqlSelector_Editor());
+        return Collections.<ConceptEditor>singletonList(new MqlQuery_Editor());
       case 28:
-        return Collections.<ConceptEditor>singletonList(new MqlStringIndexOp_Editor());
+        return Collections.<ConceptEditor>singletonList(new MqlSelector_Editor());
       case 29:
-        return Collections.<ConceptEditor>singletonList(new MqlStringLiteral_Editor());
+        return Collections.<ConceptEditor>singletonList(new MqlStringIndexOp_Editor());
       case 30:
-        return Collections.<ConceptEditor>singletonList(new MqlStringProperty_Editor());
+        return Collections.<ConceptEditor>singletonList(new MqlStringLiteral_Editor());
       case 31:
-        return Collections.<ConceptEditor>singletonList(new MqlStringType_Editor());
+        return Collections.<ConceptEditor>singletonList(new MqlStringProperty_Editor());
       case 32:
-        return Collections.<ConceptEditor>singletonList(new MqlThis_Editor());
+        return Collections.<ConceptEditor>singletonList(new MqlStringType_Editor());
       case 33:
-        return Collections.<ConceptEditor>singletonList(new MqlTriplex_Editor());
+        return Collections.<ConceptEditor>singletonList(new MqlThis_Editor());
       case 34:
-        return Collections.<ConceptEditor>singletonList(new MqlType_Editor());
+        return Collections.<ConceptEditor>singletonList(new MqlTriplex_Editor());
       case 35:
-        return Collections.<ConceptEditor>singletonList(new MqlUnary_Editor());
+        return Collections.<ConceptEditor>singletonList(new MqlType_Editor());
       case 36:
-        return Collections.<ConceptEditor>singletonList(new MqlVariable_Editor());
+        return Collections.<ConceptEditor>singletonList(new MqlUnary_Editor());
       case 37:
+        return Collections.<ConceptEditor>singletonList(new MqlVariable_Editor());
+      case 38:
         return Collections.<ConceptEditor>singletonList(new MqlVariableReference_Editor());
       default:
     }
@@ -106,5 +108,5 @@ public class EditorAspectDescriptorImpl implements EditorAspectDescriptor {
   }
 
 
-  private static String[] stringSwitchCases_xbvbvu_a0a0a = new String[]{"jetbrains.mps.core.query.structure.MqlArithmetic", "jetbrains.mps.core.query.structure.MqlAssignment", "jetbrains.mps.core.query.structure.MqlBoolLiteral", "jetbrains.mps.core.query.structure.MqlBoolType", "jetbrains.mps.core.query.structure.MqlClosure", "jetbrains.mps.core.query.structure.MqlCollectionProperty", "jetbrains.mps.core.query.structure.MqlCollectionSelector", "jetbrains.mps.core.query.structure.MqlCollectionSelectorVar", "jetbrains.mps.core.query.structure.MqlCollectionSelectorVarRef", "jetbrains.mps.core.query.structure.MqlComma", "jetbrains.mps.core.query.structure.MqlCondition", "jetbrains.mps.core.query.structure.MqlDotExpression", "jetbrains.mps.core.query.structure.MqlExpression", "jetbrains.mps.core.query.structure.MqlFunctionType", "jetbrains.mps.core.query.structure.MqlImport", "jetbrains.mps.core.query.structure.MqlIntLiteral", "jetbrains.mps.core.query.structure.MqlIntType", "jetbrains.mps.core.query.structure.MqlListLiteral", "jetbrains.mps.core.query.structure.MqlListType", "jetbrains.mps.core.query.structure.MqlNoContextQueryCall", "jetbrains.mps.core.query.structure.MqlNullLiteral", "jetbrains.mps.core.query.structure.MqlNullType", "jetbrains.mps.core.query.structure.MqlPackage", "jetbrains.mps.core.query.structure.MqlParameter", "jetbrains.mps.core.query.structure.MqlParameterReference", "jetbrains.mps.core.query.structure.MqlParentheses", "jetbrains.mps.core.query.structure.MqlQuery", "jetbrains.mps.core.query.structure.MqlSelector", "jetbrains.mps.core.query.structure.MqlStringIndexOp", "jetbrains.mps.core.query.structure.MqlStringLiteral", "jetbrains.mps.core.query.structure.MqlStringProperty", "jetbrains.mps.core.query.structure.MqlStringType", "jetbrains.mps.core.query.structure.MqlThis", "jetbrains.mps.core.query.structure.MqlTriplex", "jetbrains.mps.core.query.structure.MqlType", "jetbrains.mps.core.query.structure.MqlUnary", "jetbrains.mps.core.query.structure.MqlVariable", "jetbrains.mps.core.query.structure.MqlVariableReference"};
+  private static String[] stringSwitchCases_xbvbvu_a0a0a = new String[]{"jetbrains.mps.core.query.structure.MqlArithmetic", "jetbrains.mps.core.query.structure.MqlAssignment", "jetbrains.mps.core.query.structure.MqlBoolLiteral", "jetbrains.mps.core.query.structure.MqlBoolType", "jetbrains.mps.core.query.structure.MqlClosure", "jetbrains.mps.core.query.structure.MqlCollectionProperty", "jetbrains.mps.core.query.structure.MqlCollectionSelector", "jetbrains.mps.core.query.structure.MqlCollectionSelectorVar", "jetbrains.mps.core.query.structure.MqlCollectionSelectorVarRef", "jetbrains.mps.core.query.structure.MqlComma", "jetbrains.mps.core.query.structure.MqlCondition", "jetbrains.mps.core.query.structure.MqlDotExpression", "jetbrains.mps.core.query.structure.MqlExpression", "jetbrains.mps.core.query.structure.MqlFunctionType", "jetbrains.mps.core.query.structure.MqlImport", "jetbrains.mps.core.query.structure.MqlIntLiteral", "jetbrains.mps.core.query.structure.MqlIntType", "jetbrains.mps.core.query.structure.MqlLet", "jetbrains.mps.core.query.structure.MqlListLiteral", "jetbrains.mps.core.query.structure.MqlListType", "jetbrains.mps.core.query.structure.MqlNoContextQueryCall", "jetbrains.mps.core.query.structure.MqlNullLiteral", "jetbrains.mps.core.query.structure.MqlNullType", "jetbrains.mps.core.query.structure.MqlPackage", "jetbrains.mps.core.query.structure.MqlParameter", "jetbrains.mps.core.query.structure.MqlParameterReference", "jetbrains.mps.core.query.structure.MqlParentheses", "jetbrains.mps.core.query.structure.MqlQuery", "jetbrains.mps.core.query.structure.MqlSelector", "jetbrains.mps.core.query.structure.MqlStringIndexOp", "jetbrains.mps.core.query.structure.MqlStringLiteral", "jetbrains.mps.core.query.structure.MqlStringProperty", "jetbrains.mps.core.query.structure.MqlStringType", "jetbrains.mps.core.query.structure.MqlThis", "jetbrains.mps.core.query.structure.MqlTriplex", "jetbrains.mps.core.query.structure.MqlType", "jetbrains.mps.core.query.structure.MqlUnary", "jetbrains.mps.core.query.structure.MqlVariable", "jetbrains.mps.core.query.structure.MqlVariableReference"};
 }

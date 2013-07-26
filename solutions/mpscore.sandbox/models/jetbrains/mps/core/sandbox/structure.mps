@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:832e0baa-411d-4487-afdf-7fc210c943c1(jetbrains.mps.core.sandbox.structure)" doNotGenerate="true">
+<model modelUID="r:832e0baa-411d-4487-afdf-7fc210c943c1(jetbrains.mps.core.sandbox.structure)">
   <persistence version="8" />
   <language namespace="1372eb94-b402-4b9f-bb3f-44315b20f92d(jetbrains.mps.core.structure)" />
   <language namespace="0bd2c9fd-3917-42dd-b383-70263eb772dd(jetbrains.mps.core.notation)" />
@@ -708,7 +708,21 @@
       <node role="context" roleId="74m3.8632884680339275914" type="74m3.SNotationConceptContext" typeId="74m3.8632884680339275915" id="5566195403254076779" nodeInfo="ng">
         <link role="element" roleId="74m3.8632884680339275916" targetNodeId="5362811550739085618" resolveInfo="Classifier" />
       </node>
-      <node role="alternatives" roleId="74m3.3647933405694717738" type="74m3.SNotationPartList" typeId="74m3.3647933405694717735" id="5566195403254076778" nodeInfo="ng" />
+      <node role="alternatives" roleId="74m3.3647933405694717738" type="74m3.SNotationPartList" typeId="74m3.3647933405694717735" id="5566195403254076778" nodeInfo="ng">
+        <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationMapping" typeId="74m3.3129031437528132565" id="8294198181868780546" nodeInfo="ng">
+          <node role="entityRef" roleId="74m3.7805033636902348041" type="74m3.SStructurePropertyRef" typeId="74m3.146911029171891500" id="8294198181868780552" nodeInfo="ng">
+            <link role="property" roleId="74m3.146911029171891501" targetNodeId="5362811550739085630" resolveInfo="name" />
+          </node>
+          <node role="presentation" roleId="74m3.3129031437528291180" type="74m3.SNotationLabel" typeId="74m3.3647933405694713882" id="8294198181868780537" nodeInfo="ng">
+            <property name="text" nameId="74m3.3647933405694713883" value="aaa" />
+          </node>
+        </node>
+        <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationMapping" typeId="74m3.3129031437528132565" id="8294198181868780571" nodeInfo="ng">
+          <node role="entityRef" roleId="74m3.7805033636902348041" type="74m3.SStructureLinkRef" typeId="74m3.7805033636902348042" id="8294198181868780586" nodeInfo="ng">
+            <link role="link" roleId="74m3.3129031437528291155" targetNodeId="5362811550739085710" resolveInfo="implements" />
+          </node>
+        </node>
+      </node>
     </node>
     <node role="structure" roleId="ydsw.6195190339581766884" type="ydsw.SStructureEmptyLine" typeId="ydsw.6195190339581962051" id="5566195403254076775" nodeInfo="ng" />
     <node role="structure" roleId="ydsw.6195190339581766884" type="74m3.SNotation" typeId="74m3.6195190339582080388" id="4014530048382224444" nodeInfo="ng">
@@ -823,7 +837,7 @@
         <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationParentheses" typeId="74m3.3647933405694717717" id="4014530048382224560" nodeInfo="ng">
           <node role="alternatives" roleId="74m3.3647933405694717738" type="74m3.SNotationPartList" typeId="74m3.3647933405694717735" id="4014530048382224561" nodeInfo="ng">
             <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationLabel" typeId="74m3.3647933405694713882" id="4014530048382224562" nodeInfo="ng">
-              <property name="text" nameId="74m3.3647933405694713883" value="asdda" />
+              <property name="text" nameId="74m3.3647933405694713883" value="]" />
             </node>
             <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationNewLine" typeId="74m3.3647933405694717730" id="4014530048382224563" nodeInfo="ng" />
             <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationBreak" typeId="74m3.7465902928068846323" id="4014530048382266770" nodeInfo="ng" />
@@ -832,6 +846,7 @@
               <property name="text" nameId="74m3.3647933405694713883" value="kdjfjks" />
             </node>
           </node>
+          <node role="alternatives" roleId="74m3.3647933405694717738" type="74m3.SNotationPartList" typeId="74m3.3647933405694717735" id="8294198181867849531" nodeInfo="ng" />
         </node>
         <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationQuantifier" typeId="74m3.3129031437528339296" id="1100078689433194980" nodeInfo="ng">
           <property name="kind" nameId="74m3.3129031437528339316" value="list" />
@@ -860,6 +875,7 @@
     <node role="structure" roleId="ydsw.6195190339581766884" type="ydsw.SStructureEmptyLine" typeId="ydsw.6195190339581962051" id="3467610137587316412" nodeInfo="ng" />
     <node role="structure" roleId="ydsw.6195190339581766884" type="74m3.SNotation" typeId="74m3.6195190339582080388" id="5566195403254077600" nodeInfo="ng">
       <node role="context" roleId="74m3.8632884680339275914" type="74m3.SNotationConceptContext" typeId="74m3.8632884680339275915" id="5566195403254077603" nodeInfo="ng">
+        <property name="id" nameId="74m3.8632884680339275917" value="aaa" />
         <link role="element" roleId="74m3.8632884680339275916" targetNodeId="5362811550739085702" resolveInfo="InterfaceClassifier" />
       </node>
       <node role="alternatives" roleId="74m3.3647933405694717738" type="74m3.SNotationPartList" typeId="74m3.3647933405694717735" id="5566195403254077602" nodeInfo="ng">
@@ -874,6 +890,30 @@
         <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationMapping" typeId="74m3.3129031437528132565" id="5566195403254078532" nodeInfo="ng">
           <node role="entityRef" roleId="74m3.7805033636902348041" type="74m3.SStructurePropertyRef" typeId="74m3.146911029171891500" id="5566195403254078534" nodeInfo="ng">
             <link role="property" roleId="74m3.146911029171891501" targetNodeId="5566195403254077592" resolveInfo="qqq" />
+          </node>
+        </node>
+        <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationQuantifier" typeId="74m3.3129031437528339296" id="8294198181870692185" nodeInfo="ng">
+          <property name="kind" nameId="74m3.3129031437528339316" value="nonempty-list" />
+          <node role="inner" roleId="74m3.8379004527113948353" type="74m3.SNotationParentheses" typeId="74m3.3647933405694717717" id="8294198181867234073" nodeInfo="ng">
+            <node role="alternatives" roleId="74m3.3647933405694717738" type="74m3.SNotationPartList" typeId="74m3.3647933405694717735" id="8294198181870692212" nodeInfo="ng">
+              <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationLabel" typeId="74m3.3647933405694713882" id="8294198181870692218" nodeInfo="ng">
+                <property name="text" nameId="74m3.3647933405694713883" value="aaa" />
+              </node>
+            </node>
+            <node role="alternatives" roleId="74m3.3647933405694717738" type="74m3.SNotationPartList" typeId="74m3.3647933405694717735" id="8294198181867234074" nodeInfo="ng">
+              <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationNewLine" typeId="74m3.3647933405694717730" id="8294198181867234433" nodeInfo="ng" />
+              <node role="predicate" roleId="74m3.8294198181866508992" type="74m3.SNotationPredicate" typeId="74m3.4988228171406861415" id="8294198181867824670" nodeInfo="ng">
+                <node role="expr" roleId="74m3.8294198181866517851" type="bwy9.MqlBoolLiteral" typeId="bwy9.6762883159245048056" id="8294198181867824684" nodeInfo="ng">
+                  <property name="value" nameId="bwy9.6762883159245048057" value="true" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationQuantifier" typeId="74m3.3129031437528339296" id="8294198181871155908" nodeInfo="ng">
+          <property name="kind" nameId="74m3.3129031437528339316" value="nonempty-list" />
+          <node role="inner" roleId="74m3.8379004527113948353" type="74m3.SNotationParentheses" typeId="74m3.3647933405694717717" id="8294198181870692236" nodeInfo="ng">
+            <node role="alternatives" roleId="74m3.3647933405694717738" type="74m3.SNotationPartList" typeId="74m3.3647933405694717735" id="8294198181870692237" nodeInfo="ng" />
           </node>
         </node>
       </node>

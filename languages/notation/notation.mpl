@@ -26,6 +26,7 @@
   </usedDevKits>
   <extendedLanguages>
     <extendedLanguage>1372eb94-b402-4b9f-bb3f-44315b20f92d(jetbrains.mps.core.structure)</extendedLanguage>
+    <extendedLanguage>c898d4a2-ef8e-481f-aff5-15e46db05e03(jetbrains.mps.core.query)</extendedLanguage>
   </extendedLanguages>
 </language>
 
