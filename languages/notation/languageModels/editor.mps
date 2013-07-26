@@ -1018,7 +1018,7 @@
     </node>
   </root>
   <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="2711998566964106147" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="styles" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="styles.part" />
     <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="74m3.2711998566964106145" resolveInfo="SNotationStyleIndent" />
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="2711998566964106150" nodeInfo="nn">
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="2711998566964106151" nodeInfo="nn" />
@@ -2094,7 +2094,7 @@
     </node>
   </root>
   <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="3712611346758624575" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="styles" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="styles.part" />
     <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="74m3.3712611346758623575" resolveInfo="SNotationStyleEmptyLine" />
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="7581772527307844360" nodeInfo="nn">
       <property name="text" nameId="tpc2.1073389577007" value="" />
