@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debugInfo>
-  <unitInfo fileName="BehaviorAspectDescriptor.java" startLine="9" startPosition="0" endLine="86" endPosition="0" unitName="jetbrains.mps.core.notation.behavior.BehaviorAspectDescriptor" />
+  <unitInfo fileName="BehaviorAspectDescriptor.java" startLine="9" startPosition="0" endLine="92" endPosition="0" unitName="jetbrains.mps.core.notation.behavior.BehaviorAspectDescriptor" />
   <unitInfo fileName="SAllNotationsSelector_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="jetbrains.mps.core.notation.behavior.SAllNotationsSelector_BehaviorDescriptor" />
   <unitInfo fileName="SAllTermsSelector_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="jetbrains.mps.core.notation.behavior.SAllTermsSelector_BehaviorDescriptor" />
   <unitInfo fileName="SConceptNotationSelector_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="jetbrains.mps.core.notation.behavior.SConceptNotationSelector_BehaviorDescriptor" />
@@ -44,6 +44,10 @@
   <unitInfo fileName="SStructureEntityRef_BehaviorDescriptor.java" startLine="9" startPosition="0" endLine="22" endPosition="0" unitName="jetbrains.mps.core.notation.behavior.SStructureEntityRef_BehaviorDescriptor" />
   <unitInfo fileName="SStructureLinkRef_BehaviorDescriptor.java" startLine="8" startPosition="0" endLine="21" endPosition="0" unitName="jetbrains.mps.core.notation.behavior.SStructureLinkRef_BehaviorDescriptor" />
   <unitInfo fileName="SStructurePropertyRef_BehaviorDescriptor.java" startLine="8" startPosition="0" endLine="21" endPosition="0" unitName="jetbrains.mps.core.notation.behavior.SStructurePropertyRef_BehaviorDescriptor" />
+  <unitInfo fileName="STokenConceptType_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="jetbrains.mps.core.notation.behavior.STokenConceptType_BehaviorDescriptor" />
+  <unitInfo fileName="STokenDataType_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="jetbrains.mps.core.notation.behavior.STokenDataType_BehaviorDescriptor" />
+  <unitInfo fileName="STokenType_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="jetbrains.mps.core.notation.behavior.STokenType_BehaviorDescriptor" />
+  <unitInfo fileName="SToken_BehaviorDescriptor.java" startLine="10" startPosition="0" endLine="23" endPosition="0" unitName="jetbrains.mps.core.notation.behavior.SToken_BehaviorDescriptor" />
   <root nodeRef="r:d0c0949b-affc-47c9-a29d-6ab6789bf502(jetbrains.mps.core.notation.behavior)/2456221013110600925">
     <nodeInfo nodeId="2456221013110602442" fileName="SNotationEnumContext_Behavior.java" startLine="13" startPosition="85" endLine="14" endPosition="65" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="2456221013110602616" fileName="SNotationEnumContext_Behavior.java" startLine="17" startPosition="107" endLine="18" endPosition="113" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />

@@ -695,7 +695,17 @@
       <property name="name" nameId="tpck.1169194664001" value="AbstractClassifier" />
       <node role="members" roleId="ydsw.6195190339581766761" type="ydsw.SConceptMemberEmptyLine" typeId="ydsw.7581772527307844356" id="8632884680339330917" nodeInfo="ng" />
     </node>
-    <node role="structure" roleId="ydsw.6195190339581766884" type="ydsw.SStructureEmptyLine" typeId="ydsw.6195190339581962051" id="8527797492907237991" nodeInfo="ng" />
+    <node role="structure" roleId="ydsw.6195190339581766884" type="ydsw.SStructureEmptyLine" typeId="ydsw.6195190339581962051" id="38802263486945016" nodeInfo="ng" />
+    <node role="structure" roleId="ydsw.6195190339581766884" type="74m3.SToken" typeId="74m3.38802263486150944" id="38802263487530328" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="ID" />
+      <property name="regex" nameId="74m3.38802263486153763" value="[a-zA-Z_][a-zA-Z0-9_]*" />
+      <node role="type" roleId="74m3.38802263486267797" type="74m3.STokenDataType" typeId="74m3.38802263486202666" id="38802263487808471" nodeInfo="ng">
+        <node role="dataType" roleId="74m3.38802263486202790" type="ydsw.SPrimitiveDataType" typeId="ydsw.7581772527307667404" id="38802263487808470" nodeInfo="ng">
+          <property name="kind" nameId="ydsw.7581772527307667409" value="string" />
+        </node>
+      </node>
+    </node>
+    <node role="structure" roleId="ydsw.6195190339581766884" type="ydsw.SStructureEmptyLine" typeId="ydsw.6195190339581962051" id="38802263487385658" nodeInfo="ng" />
     <node role="structure" roleId="ydsw.6195190339581766884" type="74m3.SNotation" typeId="74m3.6195190339582080388" id="2456221013111513123" nodeInfo="ng">
       <node role="context" roleId="74m3.8632884680339275914" type="74m3.SNotationEnumContext" typeId="74m3.2456221013110546895" id="2456221013111513661" nodeInfo="ng">
         <link role="element" roleId="74m3.2456221013110580916" targetNodeId="7805033636902120273" resolveInfo="Visibility" />

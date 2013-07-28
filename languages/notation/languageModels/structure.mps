@@ -587,5 +587,52 @@
       <link role="target" roleId="tpce.1071599976176" targetNodeId="ydsw.7581772527307852674" resolveInfo="SEnumerationMember" />
     </node>
   </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="38802263486150944" nodeInfo="ig">
+    <property name="name" nameId="tpck.1169194664001" value="SToken" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="tokens" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="token" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="ydsw.3592778465723943672" resolveInfo="SStructurePart" />
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="38802263486267797" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="type" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="38802263486153886" resolveInfo="STokenType" />
+    </node>
+    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="38802263486153763" nodeInfo="ig">
+      <property name="name" nameId="tpck.1169194664001" value="regex" />
+      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983041843" resolveInfo="string" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="38802263486266629" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.1169194658468" resolveInfo="INamedConcept" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="38802263486153886" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="tokens" />
+    <property name="name" nameId="tpck.1169194664001" value="STokenType" />
+    <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="38802263486202666" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="tokens" />
+    <property name="name" nameId="tpck.1169194664001" value="STokenDataType" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="38802263486153886" resolveInfo="STokenType" />
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="38802263486202790" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="dataType" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="ydsw.7581772527307627607" resolveInfo="SDataType" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="38802263486228084" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="tokens" />
+    <property name="name" nameId="tpck.1169194664001" value="STokenConceptType" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="38802263486153886" resolveInfo="STokenType" />
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="38802263486228085" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
+      <property name="role" nameId="tpce.1071599776563" value="concept" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="ydsw.6195190339581756310" resolveInfo="SAbstractConcept" />
+    </node>
+  </root>
 </model>
 

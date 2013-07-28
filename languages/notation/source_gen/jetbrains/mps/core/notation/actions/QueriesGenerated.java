@@ -208,6 +208,40 @@ public class QueriesGenerated {
     return result;
   }
 
+  public static List<SubstituteAction> nodeSubstituteActionsBuilder_ActionsFactory_STokenDataType_38802263487386348(final IOperationContext operationContext, final NodeSubstituteActionsFactoryContext _context) {
+    List<SubstituteAction> result = ListSequence.fromList(new ArrayList<SubstituteAction>());
+    {
+      SNode outputConcept = SConceptOperations.findConceptDeclaration("jetbrains.mps.core.notation.structure.STokenDataType");
+      SNode childConcept = (SNode) _context.getChildConcept();
+      if (SConceptOperations.isSuperConceptOf(childConcept, NameUtil.nodeFQName(outputConcept))) {
+        SNode wrappedConcept = SConceptOperations.findConceptDeclaration("jetbrains.mps.core.structure.structure.SDataType");
+        IChildNodeSetter setter = new AbstractChildNodeSetter() {
+          private SNode wrapNode(SNode nodeToWrap, SModel model, @Nullable EditorContext editorContext) {
+            SNode dt = SConceptOperations.createNewNode("jetbrains.mps.core.notation.structure.STokenDataType", null);
+            SLinkOperations.setTarget(dt, "dataType", nodeToWrap, true);
+            return dt;
+          }
+
+          public boolean returnSmallPart(SNode nodeToWrap) {
+            return false;
+          }
+
+          @Override
+          public SNode doExecute(SNode pn, SNode oc, SNode nc, IScope sc, @Nullable EditorContext editorContext) {
+            SNode wrappedNode = wrapNode(nc, nc.getModel(), editorContext);
+            _context.getChildSetter().execute(_context.getParentNode(), _context.getCurrentTargetNode(), wrappedNode, operationContext.getScope(), editorContext);
+            return (returnSmallPart(nc) ?
+              nc :
+              wrappedNode
+            );
+          }
+        };
+        ListSequence.fromList(result).addSequence(ListSequence.fromList(ModelActions.createChildNodeSubstituteActions(_context.getParentNode(), _context.getCurrentTargetNode(), wrappedConcept, setter, operationContext)));
+      }
+    }
+    return result;
+  }
+
   public static List<SubstituteAction> sideTransform_ActionsFactory_SNotationContext_3647933405694680656(final IOperationContext operationContext, final SideTransformActionsBuilderContext _context) {
     List<SubstituteAction> result = ListSequence.fromList(new ArrayList<SubstituteAction>());
     ListSequence.fromList(result).addElement(new AbstractSideTransformHintSubstituteAction(SConceptOperations.findConceptDeclaration("jetbrains.mps.core.notation.structure.SNotationContext"), _context.getSourceNode()) {
