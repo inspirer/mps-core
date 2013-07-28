@@ -10,7 +10,7 @@ import jetbrains.mps.openapi.editor.EditorContext;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Collection;
 import jetbrains.mps.nodeEditor.cellProviders.AbstractCellListHandler;
-import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Horizontal;
+import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Indent;
 import jetbrains.mps.openapi.editor.style.Style;
 import jetbrains.mps.editor.runtime.style.StyleImpl;
 import jetbrains.mps.editor.runtime.style.StyleAttributes;
@@ -20,9 +20,6 @@ import jetbrains.mps.openapi.editor.cells.CellActionType;
 import jetbrains.mps.nodeEditor.cellActions.CellAction_DeleteNode;
 import jetbrains.mps.nodeEditor.cellMenu.DefaultReferenceSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.DefaultChildSubstituteInfo;
-import jetbrains.mps.smodel.IScope;
-import jetbrains.mps.internal.collections.runtime.ListSequence;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 
 public class SNotationStyleClasses implements ConceptEditorComponent {
   public Collection<String> getContextHints() {
@@ -36,15 +33,13 @@ public class SNotationStyleClasses implements ConceptEditorComponent {
   private EditorCell createCollection_hu0sdh_a(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
     editorCell.setCellId("Collection_hu0sdh_a");
-    if (renderingCondition_hu0sdh_a0a(node, editorContext, editorContext.getOperationContext().getScope())) {
-      editorCell.addEditorCell(this.createRefNodeList_hu0sdh_a0(editorContext, node));
-    }
+    editorCell.addEditorCell(this.createRefNodeList_hu0sdh_a0(editorContext, node));
     return editorCell;
   }
 
   private EditorCell createRefNodeList_hu0sdh_a0(EditorContext editorContext, SNode node) {
     AbstractCellListHandler handler = new SNotationStyleClasses.styleClassListHandler_hu0sdh_a0(node, "styleClass", editorContext);
-    EditorCell_Collection editorCell = handler.createCells(editorContext, new CellLayout_Horizontal(), false);
+    EditorCell_Collection editorCell = handler.createCells(editorContext, new CellLayout_Indent(), false);
     editorCell.setCellId("refNodeList_styleClass");
     Style style = new StyleImpl();
     style.set(StyleAttributes.PUNCTUATION_LEFT, true);
@@ -87,9 +82,5 @@ public class SNotationStyleClasses implements ConceptEditorComponent {
         }
       }
     }
-  }
-
-  private static boolean renderingCondition_hu0sdh_a0a(SNode node, EditorContext editorContext, IScope scope) {
-    return ListSequence.fromList(SLinkOperations.getTargets(node, "styleClass", true)).isNotEmpty();
   }
 }

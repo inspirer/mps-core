@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debugInfo>
-  <unitInfo fileName="ConstraintsAspectDescriptor.java" startLine="9" startPosition="0" endLine="45" endPosition="0" unitName="jetbrains.mps.core.notation.constraints.ConstraintsAspectDescriptor" />
+  <unitInfo fileName="ConstraintsAspectDescriptor.java" startLine="9" startPosition="0" endLine="47" endPosition="0" unitName="jetbrains.mps.core.notation.constraints.ConstraintsAspectDescriptor" />
   <root nodeRef="r:f55d268e-47a6-49d8-8d89-2139ce9c0cd2(jetbrains.mps.core.notation.constraints)/146911029171891504">
     <nodeInfo nodeId="146911029171891504" fileName="SStructurePropertyRef_Constraints.java" startLine="25" startPosition="46" endLine="26" endPosition="73" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
     <nodeInfo nodeId="146911029171891504" fileName="SStructurePropertyRef_Constraints.java" startLine="30" startPosition="83" endLine="31" endPosition="75" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
@@ -52,6 +52,51 @@
     <scopeInfo nodeId="146911029171900695" fileName="SStructureEntityRef_Constraints.java" startLine="8" startPosition="44" endLine="9" endPosition="71" />
     <scopeInfo nodeId="146911029171900695" fileName="SStructureEntityRef_Constraints.java" startLine="8" startPosition="0" endLine="11" endPosition="0" />
     <unitInfo nodeId="146911029171900695" fileName="SStructureEntityRef_Constraints.java" startLine="7" startPosition="0" endLine="12" endPosition="0" unitName="jetbrains.mps.core.notation.constraints.SStructureEntityRef_Constraints" />
+  </root>
+  <root nodeRef="r:f55d268e-47a6-49d8-8d89-2139ce9c0cd2(jetbrains.mps.core.notation.constraints)/2456221013111790177">
+    <nodeInfo nodeId="2456221013111790177" fileName="SEnumLiteralEntityRef_Constraints.java" startLine="25" startPosition="46" endLine="26" endPosition="73" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+    <nodeInfo nodeId="2456221013111790177" fileName="SEnumLiteralEntityRef_Constraints.java" startLine="30" startPosition="83" endLine="31" endPosition="75" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="2456221013111790177" fileName="SEnumLiteralEntityRef_Constraints.java" startLine="34" startPosition="44" endLine="35" endPosition="20" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2456221013111790177" fileName="SEnumLiteralEntityRef_Constraints.java" startLine="43" startPosition="63" endLine="44" endPosition="58" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2456221013111790704" fileName="SEnumLiteralEntityRef_Constraints.java" startLine="49" startPosition="13" endLine="50" endPosition="117" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="2456221013111790712" fileName="SEnumLiteralEntityRef_Constraints.java" startLine="51" startPosition="169" endLine="52" endPosition="329" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2456221013111790736" fileName="SEnumLiteralEntityRef_Constraints.java" startLine="53" startPosition="15" endLine="54" endPosition="38" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2456221013111790177" fileName="SEnumLiteralEntityRef_Constraints.java" startLine="59" startPosition="7" endLine="60" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2456221013111790177" fileName="SEnumLiteralEntityRef_Constraints.java" startLine="63" startPosition="0" endLine="64" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="breakingNode_63dsnq_a0a0a0a0a1a0b0a1a1" />
+    <nodeInfo nodeId="2456221013111790177" fileName="SEnumLiteralEntityRef_Constraints.java" startLine="25" startPosition="0" endLine="28" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="SEnumLiteralEntityRef_Constraints#()V" />
+    <nodeInfo nodeId="2456221013111790710" fileName="SEnumLiteralEntityRef_Constraints.java" startLine="50" startPosition="117" endLine="53" endPosition="15" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="2456221013111790177" fileName="SEnumLiteralEntityRef_Constraints.java" startLine="33" startPosition="0" endLine="37" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="hasOwnScopeProvider#()Z" />
+    <nodeInfo nodeId="2456221013111790177" fileName="SEnumLiteralEntityRef_Constraints.java" startLine="42" startPosition="0" endLine="46" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
+    <nodeInfo nodeId="2456221013111790177" fileName="SEnumLiteralEntityRef_Constraints.java" startLine="48" startPosition="122" endLine="55" endPosition="13" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="2456221013111790177" fileName="SEnumLiteralEntityRef_Constraints.java" startLine="47" startPosition="0" endLine="57" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createScope#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljetbrains/mps/scope/Scope;" />
+    <nodeInfo nodeId="2456221013111790177" fileName="SEnumLiteralEntityRef_Constraints.java" startLine="40" startPosition="56" endLine="57" endPosition="10" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2456221013111790177" fileName="SEnumLiteralEntityRef_Constraints.java" startLine="38" startPosition="0" endLine="59" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+    <nodeInfo nodeId="2456221013111790177" fileName="SEnumLiteralEntityRef_Constraints.java" startLine="31" startPosition="75" endLine="59" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2456221013111790177" fileName="SEnumLiteralEntityRef_Constraints.java" startLine="29" startPosition="0" endLine="62" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getNotDefaultReferences#()Ljava/util/Map;" />
+    <scopeInfo nodeId="2456221013111790177" fileName="SEnumLiteralEntityRef_Constraints.java" startLine="25" startPosition="46" endLine="26" endPosition="73" />
+    <scopeInfo nodeId="2456221013111790177" fileName="SEnumLiteralEntityRef_Constraints.java" startLine="34" startPosition="44" endLine="35" endPosition="20" />
+    <scopeInfo nodeId="2456221013111790177" fileName="SEnumLiteralEntityRef_Constraints.java" startLine="43" startPosition="63" endLine="44" endPosition="58" />
+    <scopeInfo nodeId="2456221013111790711" fileName="SEnumLiteralEntityRef_Constraints.java" startLine="51" startPosition="169" endLine="52" endPosition="329" />
+    <scopeInfo nodeId="2456221013111790177" fileName="SEnumLiteralEntityRef_Constraints.java" startLine="25" startPosition="0" endLine="28" endPosition="0" />
+    <scopeInfo nodeId="2456221013111790177" fileName="SEnumLiteralEntityRef_Constraints.java" startLine="33" startPosition="0" endLine="37" endPosition="0" />
+    <scopeInfo nodeId="2456221013111790177" fileName="SEnumLiteralEntityRef_Constraints.java" startLine="42" startPosition="0" endLine="46" endPosition="0" />
+    <scopeInfo nodeId="2456221013111790703" fileName="SEnumLiteralEntityRef_Constraints.java" startLine="49" startPosition="13" endLine="54" endPosition="38">
+      <varInfo nodeId="2456221013111790705" varName="context" />
+    </scopeInfo>
+    <scopeInfo nodeId="2456221013111790177" fileName="SEnumLiteralEntityRef_Constraints.java" startLine="48" startPosition="122" endLine="55" endPosition="13" />
+    <scopeInfo nodeId="2456221013111790177" fileName="SEnumLiteralEntityRef_Constraints.java" startLine="47" startPosition="0" endLine="57" endPosition="0">
+      <varInfo nodeId="2456221013111790177" varName="_context" />
+      <varInfo nodeId="2456221013111790177" varName="operationContext" />
+    </scopeInfo>
+    <scopeInfo nodeId="2456221013111790177" fileName="SEnumLiteralEntityRef_Constraints.java" startLine="40" startPosition="56" endLine="57" endPosition="10" />
+    <scopeInfo nodeId="2456221013111790177" fileName="SEnumLiteralEntityRef_Constraints.java" startLine="38" startPosition="0" endLine="59" endPosition="0" />
+    <scopeInfo nodeId="2456221013111790177" fileName="SEnumLiteralEntityRef_Constraints.java" startLine="30" startPosition="83" endLine="60" endPosition="22">
+      <varInfo nodeId="2456221013111790177" varName="references" />
+    </scopeInfo>
+    <scopeInfo nodeId="2456221013111790177" fileName="SEnumLiteralEntityRef_Constraints.java" startLine="29" startPosition="0" endLine="62" endPosition="0" />
+    <unitInfo nodeId="2456221013111790177" fileName="SEnumLiteralEntityRef_Constraints.java" startLine="41" startPosition="19" endLine="57" endPosition="9" unitName="jetbrains.mps.core.notation.constraints.SEnumLiteralEntityRef_Constraints$2" />
+    <unitInfo nodeId="2456221013111790177" fileName="SEnumLiteralEntityRef_Constraints.java" startLine="32" startPosition="31" endLine="59" endPosition="5" unitName="jetbrains.mps.core.notation.constraints.SEnumLiteralEntityRef_Constraints$1" />
+    <unitInfo nodeId="2456221013111790177" fileName="SEnumLiteralEntityRef_Constraints.java" startLine="24" startPosition="0" endLine="65" endPosition="0" unitName="jetbrains.mps.core.notation.constraints.SEnumLiteralEntityRef_Constraints" />
   </root>
   <root nodeRef="r:f55d268e-47a6-49d8-8d89-2139ce9c0cd2(jetbrains.mps.core.notation.constraints)/2976314093279819550">
     <nodeInfo nodeId="2976314093279819550" fileName="SConceptNotationSelector_Constraints.java" startLine="29" startPosition="49" endLine="30" endPosition="76" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />

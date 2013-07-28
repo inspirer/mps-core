@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debugInfo>
-  <unitInfo fileName="BehaviorAspectDescriptor.java" startLine="9" startPosition="0" endLine="82" endPosition="0" unitName="jetbrains.mps.core.notation.behavior.BehaviorAspectDescriptor" />
+  <unitInfo fileName="BehaviorAspectDescriptor.java" startLine="9" startPosition="0" endLine="86" endPosition="0" unitName="jetbrains.mps.core.notation.behavior.BehaviorAspectDescriptor" />
   <unitInfo fileName="SAllNotationsSelector_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="jetbrains.mps.core.notation.behavior.SAllNotationsSelector_BehaviorDescriptor" />
   <unitInfo fileName="SAllTermsSelector_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="jetbrains.mps.core.notation.behavior.SAllTermsSelector_BehaviorDescriptor" />
   <unitInfo fileName="SConceptNotationSelector_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="jetbrains.mps.core.notation.behavior.SConceptNotationSelector_BehaviorDescriptor" />
   <unitInfo fileName="SConcreteNotationSelector_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="jetbrains.mps.core.notation.behavior.SConcreteNotationSelector_BehaviorDescriptor" />
+  <unitInfo fileName="SEnumLiteralEntityRef_BehaviorDescriptor.java" startLine="8" startPosition="0" endLine="21" endPosition="0" unitName="jetbrains.mps.core.notation.behavior.SEnumLiteralEntityRef_BehaviorDescriptor" />
   <unitInfo fileName="SNotationBreak_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="jetbrains.mps.core.notation.behavior.SNotationBreak_BehaviorDescriptor" />
   <unitInfo fileName="SNotationCall_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="jetbrains.mps.core.notation.behavior.SNotationCall_BehaviorDescriptor" />
   <unitInfo fileName="SNotationConceptContext_BehaviorDescriptor.java" startLine="8" startPosition="0" endLine="25" endPosition="0" unitName="jetbrains.mps.core.notation.behavior.SNotationConceptContext_BehaviorDescriptor" />
   <unitInfo fileName="SNotationContextProvider_BehaviorDescriptor.java" startLine="8" startPosition="0" endLine="11" endPosition="0" unitName="jetbrains.mps.core.notation.behavior.SNotationContextProvider_BehaviorDescriptor" />
   <unitInfo fileName="SNotationContext_BehaviorDescriptor.java" startLine="9" startPosition="0" endLine="26" endPosition="0" unitName="jetbrains.mps.core.notation.behavior.SNotationContext_BehaviorDescriptor" />
   <unitInfo fileName="SNotationCorePart_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="jetbrains.mps.core.notation.behavior.SNotationCorePart_BehaviorDescriptor" />
+  <unitInfo fileName="SNotationEnumContext_BehaviorDescriptor.java" startLine="8" startPosition="0" endLine="25" endPosition="0" unitName="jetbrains.mps.core.notation.behavior.SNotationEnumContext_BehaviorDescriptor" />
   <unitInfo fileName="SNotationLabel_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="jetbrains.mps.core.notation.behavior.SNotationLabel_BehaviorDescriptor" />
   <unitInfo fileName="SNotationMapping_BehaviorDescriptor.java" startLine="9" startPosition="0" endLine="22" endPosition="0" unitName="jetbrains.mps.core.notation.behavior.SNotationMapping_BehaviorDescriptor" />
   <unitInfo fileName="SNotationNewLine_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="20" endPosition="0" unitName="jetbrains.mps.core.notation.behavior.SNotationNewLine_BehaviorDescriptor" />
@@ -42,6 +44,41 @@
   <unitInfo fileName="SStructureEntityRef_BehaviorDescriptor.java" startLine="9" startPosition="0" endLine="22" endPosition="0" unitName="jetbrains.mps.core.notation.behavior.SStructureEntityRef_BehaviorDescriptor" />
   <unitInfo fileName="SStructureLinkRef_BehaviorDescriptor.java" startLine="8" startPosition="0" endLine="21" endPosition="0" unitName="jetbrains.mps.core.notation.behavior.SStructureLinkRef_BehaviorDescriptor" />
   <unitInfo fileName="SStructurePropertyRef_BehaviorDescriptor.java" startLine="8" startPosition="0" endLine="21" endPosition="0" unitName="jetbrains.mps.core.notation.behavior.SStructurePropertyRef_BehaviorDescriptor" />
+  <root nodeRef="r:d0c0949b-affc-47c9-a29d-6ab6789bf502(jetbrains.mps.core.notation.behavior)/2456221013110600925">
+    <nodeInfo nodeId="2456221013110602442" fileName="SNotationEnumContext_Behavior.java" startLine="13" startPosition="85" endLine="14" endPosition="65" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2456221013110602616" fileName="SNotationEnumContext_Behavior.java" startLine="17" startPosition="107" endLine="18" endPosition="113" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2456221013110600925" fileName="SNotationEnumContext_Behavior.java" startLine="10" startPosition="0" endLine="12" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+    <nodeInfo nodeId="2456221013110600925" fileName="SNotationEnumContext_Behavior.java" startLine="13" startPosition="0" endLine="16" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="virtual_getContextElement_8632884680339331864#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+    <nodeInfo nodeId="2456221013110600925" fileName="SNotationEnumContext_Behavior.java" startLine="17" startPosition="0" endLine="20" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="virtual_isApplicable_5566195403253848024#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/core/notation/util/NotationContext;)Z" />
+    <scopeInfo nodeId="2456221013110601078" fileName="SNotationEnumContext_Behavior.java" startLine="10" startPosition="43" endLine="10" endPosition="43" />
+    <scopeInfo nodeId="2456221013110602441" fileName="SNotationEnumContext_Behavior.java" startLine="13" startPosition="85" endLine="14" endPosition="65" />
+    <scopeInfo nodeId="2456221013110602615" fileName="SNotationEnumContext_Behavior.java" startLine="17" startPosition="107" endLine="18" endPosition="113" />
+    <scopeInfo nodeId="2456221013110600925" fileName="SNotationEnumContext_Behavior.java" startLine="10" startPosition="0" endLine="12" endPosition="0">
+      <varInfo nodeId="2456221013110600925" varName="thisNode" />
+    </scopeInfo>
+    <scopeInfo nodeId="2456221013110600925" fileName="SNotationEnumContext_Behavior.java" startLine="13" startPosition="0" endLine="16" endPosition="0">
+      <varInfo nodeId="2456221013110600925" varName="thisNode" />
+    </scopeInfo>
+    <scopeInfo nodeId="2456221013110600925" fileName="SNotationEnumContext_Behavior.java" startLine="17" startPosition="0" endLine="20" endPosition="0">
+      <varInfo nodeId="2456221013110602638" varName="context" />
+      <varInfo nodeId="2456221013110600925" varName="thisNode" />
+    </scopeInfo>
+    <unitInfo nodeId="2456221013110600925" fileName="SNotationEnumContext_Behavior.java" startLine="9" startPosition="0" endLine="21" endPosition="0" unitName="jetbrains.mps.core.notation.behavior.SNotationEnumContext_Behavior" />
+  </root>
+  <root nodeRef="r:d0c0949b-affc-47c9-a29d-6ab6789bf502(jetbrains.mps.core.notation.behavior)/2456221013111833077">
+    <nodeInfo nodeId="2456221013111833607" fileName="SEnumLiteralEntityRef_Behavior.java" startLine="13" startPosition="88" endLine="14" endPosition="96" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2456221013111833077" fileName="SEnumLiteralEntityRef_Behavior.java" startLine="10" startPosition="0" endLine="12" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+    <nodeInfo nodeId="2456221013111833077" fileName="SEnumLiteralEntityRef_Behavior.java" startLine="13" startPosition="0" endLine="16" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="virtual_getContext_8632884680339377253#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/core/notation/util/NotationContext;" />
+    <scopeInfo nodeId="2456221013111833079" fileName="SEnumLiteralEntityRef_Behavior.java" startLine="10" startPosition="43" endLine="10" endPosition="43" />
+    <scopeInfo nodeId="2456221013111833091" fileName="SEnumLiteralEntityRef_Behavior.java" startLine="13" startPosition="88" endLine="14" endPosition="96" />
+    <scopeInfo nodeId="2456221013111833077" fileName="SEnumLiteralEntityRef_Behavior.java" startLine="10" startPosition="0" endLine="12" endPosition="0">
+      <varInfo nodeId="2456221013111833077" varName="thisNode" />
+    </scopeInfo>
+    <scopeInfo nodeId="2456221013111833077" fileName="SEnumLiteralEntityRef_Behavior.java" startLine="13" startPosition="0" endLine="16" endPosition="0">
+      <varInfo nodeId="2456221013111833077" varName="thisNode" />
+    </scopeInfo>
+    <unitInfo nodeId="2456221013111833077" fileName="SEnumLiteralEntityRef_Behavior.java" startLine="9" startPosition="0" endLine="17" endPosition="0" unitName="jetbrains.mps.core.notation.behavior.SEnumLiteralEntityRef_Behavior" />
+  </root>
   <root nodeRef="r:d0c0949b-affc-47c9-a29d-6ab6789bf502(jetbrains.mps.core.notation.behavior)/3647933405694790188">
     <nodeInfo nodeId="8632884680339357619" fileName="SNotation_Behavior.java" startLine="15" startPosition="73" endLine="16" endPosition="239" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="8632884680339357703" fileName="SNotation_Behavior.java" startLine="17" startPosition="5" endLine="18" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />

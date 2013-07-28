@@ -23,10 +23,10 @@
   <import index="tp2c" modelUID="r:00000000-0000-4000-0000-011c89590338(jetbrains.mps.baseLanguage.closures.structure)" version="3" implicit="yes" />
   <import index="tp3r" modelUID="r:00000000-0000-4000-0000-011c8959034b(jetbrains.mps.lang.quotation.structure)" version="0" implicit="yes" />
   <root type="tpdg.SideTransformHintSubstituteActions" typeId="tpdg.1138079416598" id="3647933405694680655" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="for_SNotationConceptContext" />
+    <property name="name" nameId="tpck.1169194664001" value="for_SNotationContext" />
     <node role="actionsBuilder" roleId="tpdg.1138079416599" type="tpdg.SideTransformHintSubstituteActionsBuilder" typeId="tpdg.1138079221458" id="3647933405694680656" nodeInfo="ng">
       <property name="transformTag" nameId="tpdg.1140829165817" value="ext_1_RTransform" />
-      <link role="applicableConcept" roleId="tpdg.1138079221462" targetNodeId="74m3.8632884680339275915" resolveInfo="SNotationConceptContext" />
+      <link role="applicableConcept" roleId="tpdg.1138079221462" targetNodeId="74m3.8632884680339275908" resolveInfo="SNotationContext" />
       <node role="precondition" roleId="tpdg.1154622757656" type="tpdg.SideTransformHintSubstitutePreconditionFunction" typeId="tpdg.1154622616118" id="3647933405694680657" nodeInfo="nn">
         <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="3647933405694680658" nodeInfo="sn">
           <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="3647933405694680659" nodeInfo="nn">
@@ -43,7 +43,7 @@
         </node>
       </node>
       <node role="part" roleId="tpdg.1177442283389" type="tpdg.AddMenuPart" typeId="tpdg.1177323996388" id="3647933405694680738" nodeInfo="ng">
-        <link role="concept" roleId="tpdg.1177333551023" targetNodeId="74m3.6195190339582080388" resolveInfo="SNotation" />
+        <link role="concept" roleId="tpdg.1177333551023" targetNodeId="74m3.8632884680339275908" resolveInfo="SNotationContext" />
         <node role="part" roleId="tpdg.1177333559040" type="tpdg.SimpleSideTransformMenuPart" typeId="tpdg.1177498013932" id="3647933405694680739" nodeInfo="ng">
           <node role="handler" roleId="tpdg.1177498207384" type="tpdg.QueryFunction_SideTransform_Handler" typeId="tpdg.1177498227294" id="3647933405694680740" nodeInfo="nn">
             <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="3647933405694680741" nodeInfo="sn">

@@ -46,7 +46,7 @@ public class StructureAspectDescriptor implements jetbrains.mps.smodel.runtime.S
       case 15:
         return new ConceptDescriptorBuilder("jetbrains.mps.core.structure.structure.SDataType").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept").abstract_().create();
       case 16:
-        return new ConceptDescriptorBuilder("jetbrains.mps.core.structure.structure.SEnumeration").super_("jetbrains.mps.core.structure.structure.SStructureElement").parents("jetbrains.mps.core.structure.structure.SStructureElement", "jetbrains.mps.lang.core.structure.INamedConcept").references("default").children(new String[]{"members"}, new boolean[]{true}).final_().alias("enum", "").create();
+        return new ConceptDescriptorBuilder("jetbrains.mps.core.structure.structure.SEnumeration").super_("jetbrains.mps.core.structure.structure.SStructureElement").parents("jetbrains.mps.core.structure.structure.SStructureElement", "jetbrains.mps.lang.core.structure.INamedConcept", "jetbrains.mps.lang.core.structure.ScopeProvider").references("default").children(new String[]{"members"}, new boolean[]{true}).final_().alias("enum", "").create();
       case 17:
         return new ConceptDescriptorBuilder("jetbrains.mps.core.structure.structure.SEnumerationDataType").super_("jetbrains.mps.core.structure.structure.SDataType").parents("jetbrains.mps.core.structure.structure.SDataType").references("enum").final_().create();
       case 18:

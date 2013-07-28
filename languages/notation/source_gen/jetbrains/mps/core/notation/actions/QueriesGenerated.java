@@ -208,9 +208,9 @@ public class QueriesGenerated {
     return result;
   }
 
-  public static List<SubstituteAction> sideTransform_ActionsFactory_SNotationConceptContext_3647933405694680656(final IOperationContext operationContext, final SideTransformActionsBuilderContext _context) {
+  public static List<SubstituteAction> sideTransform_ActionsFactory_SNotationContext_3647933405694680656(final IOperationContext operationContext, final SideTransformActionsBuilderContext _context) {
     List<SubstituteAction> result = ListSequence.fromList(new ArrayList<SubstituteAction>());
-    ListSequence.fromList(result).addElement(new AbstractSideTransformHintSubstituteAction(SConceptOperations.findConceptDeclaration("jetbrains.mps.core.notation.structure.SNotation"), _context.getSourceNode()) {
+    ListSequence.fromList(result).addElement(new AbstractSideTransformHintSubstituteAction(SConceptOperations.findConceptDeclaration("jetbrains.mps.core.notation.structure.SNotationContext"), _context.getSourceNode()) {
       public SNode doSubstitute(@Nullable final EditorContext editorContext, String pattern) {
         SPropertyOperations.set(_context.getSourceNode(), "id", "");
         return _context.getSourceNode();
@@ -227,7 +227,7 @@ public class QueriesGenerated {
     return result;
   }
 
-  public static boolean sideTransformHintSubstituteActionsBuilder_Precondition_SNotationConceptContext_3647933405694680657(final IOperationContext operationContext, final SideTransformPreconditionContext _context) {
+  public static boolean sideTransformHintSubstituteActionsBuilder_Precondition_SNotationContext_3647933405694680657(final IOperationContext operationContext, final SideTransformPreconditionContext _context) {
     return SPropertyOperations.getString(_context.getSourceNode(), "id") == null;
   }
 

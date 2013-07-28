@@ -19,7 +19,7 @@
   <unitInfo fileName="SDataType_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="jetbrains.mps.core.structure.behavior.SDataType_BehaviorDescriptor" />
   <unitInfo fileName="SEnumerationDataType_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="jetbrains.mps.core.structure.behavior.SEnumerationDataType_BehaviorDescriptor" />
   <unitInfo fileName="SEnumerationMember_BehaviorDescriptor.java" startLine="10" startPosition="0" endLine="23" endPosition="0" unitName="jetbrains.mps.core.structure.behavior.SEnumerationMember_BehaviorDescriptor" />
-  <unitInfo fileName="SEnumeration_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="jetbrains.mps.core.structure.behavior.SEnumeration_BehaviorDescriptor" />
+  <unitInfo fileName="SEnumeration_BehaviorDescriptor.java" startLine="11" startPosition="0" endLine="28" endPosition="0" unitName="jetbrains.mps.core.structure.behavior.SEnumeration_BehaviorDescriptor" />
   <unitInfo fileName="SInterfaceConcept_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="20" endPosition="0" unitName="jetbrains.mps.core.structure.behavior.SInterfaceConcept_BehaviorDescriptor" />
   <unitInfo fileName="SInterfaceReference_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="jetbrains.mps.core.structure.behavior.SInterfaceReference_BehaviorDescriptor" />
   <unitInfo fileName="SPrimitiveDataType_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="jetbrains.mps.core.structure.behavior.SPrimitiveDataType_BehaviorDescriptor" />
@@ -79,31 +79,42 @@
     <unitInfo nodeId="2223786200032678195" fileName="SConstraints_Behavior.java" startLine="11" startPosition="0" endLine="23" endPosition="0" unitName="jetbrains.mps.core.structure.behavior.SConstraints_Behavior" />
   </root>
   <root nodeRef="r:46939f5e-82e9-4b3e-aa07-c280fcacc97f(jetbrains.mps.core.structure.behavior)/2541782749654946765">
-    <nodeInfo nodeId="2541782749654946772" fileName="SEnumeration_Behavior.java" startLine="13" startPosition="82" endLine="14" endPosition="70" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="3242429954795884886" fileName="SEnumeration_Behavior.java" startLine="15" startPosition="64" endLine="16" endPosition="184" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="2541782749654946785" fileName="SEnumeration_Behavior.java" startLine="17" startPosition="5" endLine="18" endPosition="86" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="2541782749654946765" fileName="SEnumeration_Behavior.java" startLine="10" startPosition="0" endLine="12" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-    <nodeInfo nodeId="3242429954795884884" fileName="SEnumeration_Behavior.java" startLine="14" startPosition="70" endLine="17" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="3242429954795884895" fileName="SEnumeration_Behavior.java" startLine="21" startPosition="62" endLine="25" endPosition="6" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="3242429954795884895" fileName="SEnumeration_Behavior.java" startLine="21" startPosition="0" endLine="27" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="eq_sppiy6_a0b0b#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
-    <nodeInfo nodeId="2541782749654946765" fileName="SEnumeration_Behavior.java" startLine="13" startPosition="0" endLine="20" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="call_getQualifiedName_2541782749654946768#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-    <scopeInfo nodeId="2541782749654946767" fileName="SEnumeration_Behavior.java" startLine="10" startPosition="43" endLine="10" endPosition="43" />
-    <scopeInfo nodeId="3242429954795884885" fileName="SEnumeration_Behavior.java" startLine="15" startPosition="64" endLine="16" endPosition="184" />
-    <scopeInfo nodeId="2541782749654946765" fileName="SEnumeration_Behavior.java" startLine="10" startPosition="0" endLine="12" endPosition="0">
+    <nodeInfo nodeId="2456221013111818703" fileName="SEnumeration_Behavior.java" startLine="18" startPosition="111" endLine="19" endPosition="159" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2456221013111806600" fileName="SEnumeration_Behavior.java" startLine="20" startPosition="5" endLine="21" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2541782749654946772" fileName="SEnumeration_Behavior.java" startLine="24" startPosition="82" endLine="25" endPosition="70" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="3242429954795884886" fileName="SEnumeration_Behavior.java" startLine="26" startPosition="64" endLine="27" endPosition="184" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2541782749654946785" fileName="SEnumeration_Behavior.java" startLine="28" startPosition="5" endLine="29" endPosition="86" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2541782749654946765" fileName="SEnumeration_Behavior.java" startLine="14" startPosition="0" endLine="16" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+    <nodeInfo nodeId="2456221013111806565" fileName="SEnumeration_Behavior.java" startLine="17" startPosition="101" endLine="20" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="3242429954795884884" fileName="SEnumeration_Behavior.java" startLine="25" startPosition="70" endLine="28" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="3242429954795884895" fileName="SEnumeration_Behavior.java" startLine="32" startPosition="62" endLine="36" endPosition="6" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2541782749654946765" fileName="SEnumeration_Behavior.java" startLine="17" startPosition="0" endLine="23" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="virtual_getScope_3734116213129936182#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/scope/Scope;" />
+    <nodeInfo nodeId="3242429954795884895" fileName="SEnumeration_Behavior.java" startLine="32" startPosition="0" endLine="38" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="eq_sppiy6_a0b0c#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
+    <nodeInfo nodeId="2541782749654946765" fileName="SEnumeration_Behavior.java" startLine="24" startPosition="0" endLine="31" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="call_getQualifiedName_2541782749654946768#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+    <scopeInfo nodeId="2541782749654946767" fileName="SEnumeration_Behavior.java" startLine="14" startPosition="43" endLine="14" endPosition="43" />
+    <scopeInfo nodeId="2456221013111806570" fileName="SEnumeration_Behavior.java" startLine="18" startPosition="111" endLine="19" endPosition="159" />
+    <scopeInfo nodeId="3242429954795884885" fileName="SEnumeration_Behavior.java" startLine="26" startPosition="64" endLine="27" endPosition="184" />
+    <scopeInfo nodeId="2541782749654946765" fileName="SEnumeration_Behavior.java" startLine="14" startPosition="0" endLine="16" endPosition="0">
       <varInfo nodeId="2541782749654946765" varName="thisNode" />
     </scopeInfo>
-    <scopeInfo nodeId="3242429954795884895" fileName="SEnumeration_Behavior.java" startLine="21" startPosition="62" endLine="25" endPosition="6" />
-    <scopeInfo nodeId="2541782749654946771" fileName="SEnumeration_Behavior.java" startLine="13" startPosition="82" endLine="18" endPosition="86">
+    <scopeInfo nodeId="2456221013111806564" fileName="SEnumeration_Behavior.java" startLine="17" startPosition="101" endLine="21" endPosition="16" />
+    <scopeInfo nodeId="3242429954795884895" fileName="SEnumeration_Behavior.java" startLine="32" startPosition="62" endLine="36" endPosition="6" />
+    <scopeInfo nodeId="2541782749654946771" fileName="SEnumeration_Behavior.java" startLine="24" startPosition="82" endLine="29" endPosition="86">
       <varInfo nodeId="2541782749654946773" varName="language" />
     </scopeInfo>
-    <scopeInfo nodeId="3242429954795884895" fileName="SEnumeration_Behavior.java" startLine="21" startPosition="0" endLine="27" endPosition="0">
+    <scopeInfo nodeId="2541782749654946765" fileName="SEnumeration_Behavior.java" startLine="17" startPosition="0" endLine="23" endPosition="0">
+      <varInfo nodeId="2456221013111806604" varName="child" />
+      <varInfo nodeId="2456221013111806602" varName="kind" />
+      <varInfo nodeId="2541782749654946765" varName="thisNode" />
+    </scopeInfo>
+    <scopeInfo nodeId="3242429954795884895" fileName="SEnumeration_Behavior.java" startLine="32" startPosition="0" endLine="38" endPosition="0">
       <varInfo nodeId="3242429954795884895" varName="a" />
       <varInfo nodeId="3242429954795884895" varName="b" />
     </scopeInfo>
-    <scopeInfo nodeId="2541782749654946765" fileName="SEnumeration_Behavior.java" startLine="13" startPosition="0" endLine="20" endPosition="0">
+    <scopeInfo nodeId="2541782749654946765" fileName="SEnumeration_Behavior.java" startLine="24" startPosition="0" endLine="31" endPosition="0">
       <varInfo nodeId="2541782749654946765" varName="thisNode" />
     </scopeInfo>
-    <unitInfo nodeId="2541782749654946765" fileName="SEnumeration_Behavior.java" startLine="9" startPosition="0" endLine="28" endPosition="0" unitName="jetbrains.mps.core.structure.behavior.SEnumeration_Behavior" />
+    <unitInfo nodeId="2541782749654946765" fileName="SEnumeration_Behavior.java" startLine="13" startPosition="0" endLine="39" endPosition="0" unitName="jetbrains.mps.core.structure.behavior.SEnumeration_Behavior" />
   </root>
   <root nodeRef="r:46939f5e-82e9-4b3e-aa07-c280fcacc97f(jetbrains.mps.core.structure.behavior)/2848533153256469870">
     <nodeInfo nodeId="2848533153256469870" fileName="SCardinalityContainer_Behavior.java" startLine="15" startPosition="83" endLine="16" endPosition="132" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />

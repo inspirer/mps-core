@@ -7,9 +7,11 @@
     <classNode dependClassName="jetbrains.mps.core.notation.behavior.SAllTermsSelector_BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.core.notation.behavior.SConceptNotationSelector_BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.core.notation.behavior.SConcreteNotationSelector_BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.core.notation.behavior.SEnumLiteralEntityRef_BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.core.notation.behavior.SNotationBreak_BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.core.notation.behavior.SNotationCall_BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.core.notation.behavior.SNotationConceptContext_BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.core.notation.behavior.SNotationEnumContext_BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.core.notation.behavior.SNotationLabel_BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.core.notation.behavior.SNotationMapping_BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.core.notation.behavior.SNotationNewLine_BehaviorDescriptor" />
@@ -59,6 +61,20 @@
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="jetbrains.mps.core.notation.behavior.SNotationSelector_BehaviorDescriptor" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="jetbrains.mps.core.notation.behavior.SEnumLiteralEntityRef_Behavior" file="SEnumLiteralEntityRef_Behavior.java">
+    <classNode dependClassName="jetbrains.mps.core.notation.util.NotationContext" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+  </dependency>
+  <dependency className="jetbrains.mps.core.notation.behavior.SEnumLiteralEntityRef_BehaviorDescriptor" file="SEnumLiteralEntityRef_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.core.notation.behavior.SEnumLiteralEntityRef_Behavior" />
+    <classNode dependClassName="jetbrains.mps.core.notation.behavior.SStructureEntityRef_BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.core.notation.util.NotationContext" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="jetbrains.mps.core.notation.behavior.SNotationBreak_BehaviorDescriptor" file="SNotationBreak_BehaviorDescriptor.java">
@@ -161,6 +177,20 @@
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="jetbrains.mps.core.notation.behavior.SNotationPart_BehaviorDescriptor" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="jetbrains.mps.core.notation.behavior.SNotationEnumContext_Behavior" file="SNotationEnumContext_Behavior.java">
+    <classNode dependClassName="jetbrains.mps.core.notation.util.NotationContext" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+  </dependency>
+  <dependency className="jetbrains.mps.core.notation.behavior.SNotationEnumContext_BehaviorDescriptor" file="SNotationEnumContext_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.core.notation.behavior.SNotationContext_BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.core.notation.behavior.SNotationEnumContext_Behavior" />
+    <classNode dependClassName="jetbrains.mps.core.notation.util.NotationContext" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="jetbrains.mps.core.notation.behavior.SNotationLabel_BehaviorDescriptor" file="SNotationLabel_BehaviorDescriptor.java">

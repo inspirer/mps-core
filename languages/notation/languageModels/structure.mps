@@ -565,5 +565,27 @@
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983041843" resolveInfo="string" />
     </node>
   </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2456221013110546895" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="context" />
+    <property name="name" nameId="tpck.1169194664001" value="SNotationEnumContext" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="8632884680339275908" resolveInfo="SNotationContext" />
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="2456221013110580916" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <property name="role" nameId="tpce.1071599776563" value="element" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="ydsw.7581772527307617794" resolveInfo="SEnumeration" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2456221013111787398" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="mapping" />
+    <property name="name" nameId="tpck.1169194664001" value="SEnumLiteralEntityRef" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="7805033636902348039" resolveInfo="SStructureEntityRef" />
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="2456221013111788031" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
+      <property name="role" nameId="tpce.1071599776563" value="link" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="ydsw.7581772527307852674" resolveInfo="SEnumerationMember" />
+    </node>
+  </root>
 </model>
 

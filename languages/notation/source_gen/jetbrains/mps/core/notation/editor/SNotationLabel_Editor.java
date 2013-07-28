@@ -16,6 +16,9 @@ import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
 import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
 import jetbrains.mps.smodel.IOperationContext;
 import jetbrains.mps.nodeEditor.EditorManager;
+import jetbrains.mps.smodel.IScope;
+import jetbrains.mps.internal.collections.runtime.ListSequence;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 
 public class SNotationLabel_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
@@ -29,7 +32,9 @@ public class SNotationLabel_Editor extends DefaultNodeEditor {
     editorCell.addEditorCell(this.createConstant_lj1m7a_a0(editorContext, node));
     editorCell.addEditorCell(this.createProperty_lj1m7a_b0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_lj1m7a_c0(editorContext, node));
-    editorCell.addEditorCell(this.createComponent_lj1m7a_d0(editorContext, node));
+    if (renderingCondition_lj1m7a_a3a(node, editorContext, editorContext.getOperationContext().getScope())) {
+      editorCell.addEditorCell(this.createComponent_lj1m7a_d0(editorContext, node));
+    }
     return editorCell;
   }
 
@@ -82,5 +87,9 @@ public class SNotationLabel_Editor extends DefaultNodeEditor {
   private EditorCell createComponent_lj1m7a_d0(EditorContext editorContext, SNode node) {
     EditorCell editorCell = editorContext.getCellFactory().createEditorComponentCell(node, "jetbrains.mps.core.notation.editor.SNotationStyleClasses");
     return editorCell;
+  }
+
+  private static boolean renderingCondition_lj1m7a_a3a(SNode node, EditorContext editorContext, IScope scope) {
+    return ListSequence.fromList(SLinkOperations.getTargets(node, "styleClass", true)).isNotEmpty();
   }
 }

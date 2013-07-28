@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:832e0baa-411d-4487-afdf-7fc210c943c1(jetbrains.mps.core.sandbox.structure)">
+<model modelUID="r:832e0baa-411d-4487-afdf-7fc210c943c1(jetbrains.mps.core.sandbox.structure)" doNotGenerate="true">
   <persistence version="8" />
   <language namespace="1372eb94-b402-4b9f-bb3f-44315b20f92d(jetbrains.mps.core.structure)" />
   <language namespace="0bd2c9fd-3917-42dd-b383-70263eb772dd(jetbrains.mps.core.notation)" />
@@ -696,6 +696,43 @@
       <node role="members" roleId="ydsw.6195190339581766761" type="ydsw.SConceptMemberEmptyLine" typeId="ydsw.7581772527307844356" id="8632884680339330917" nodeInfo="ng" />
     </node>
     <node role="structure" roleId="ydsw.6195190339581766884" type="ydsw.SStructureEmptyLine" typeId="ydsw.6195190339581962051" id="8527797492907237991" nodeInfo="ng" />
+    <node role="structure" roleId="ydsw.6195190339581766884" type="74m3.SNotation" typeId="74m3.6195190339582080388" id="2456221013111513123" nodeInfo="ng">
+      <node role="context" roleId="74m3.8632884680339275914" type="74m3.SNotationEnumContext" typeId="74m3.2456221013110546895" id="2456221013111513661" nodeInfo="ng">
+        <link role="element" roleId="74m3.2456221013110580916" targetNodeId="7805033636902120273" resolveInfo="Visibility" />
+      </node>
+      <node role="alternatives" roleId="74m3.3647933405694717738" type="74m3.SNotationPartList" typeId="74m3.3647933405694717735" id="2456221013111513127" nodeInfo="ng">
+        <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationMapping" typeId="74m3.3129031437528132565" id="2456221013112656902" nodeInfo="ng">
+          <node role="entityRef" roleId="74m3.7805033636902348041" type="74m3.SEnumLiteralEntityRef" typeId="74m3.2456221013111787398" id="2456221013112656908" nodeInfo="ng">
+            <link role="link" roleId="74m3.2456221013111788031" targetNodeId="7805033636902120274" resolveInfo="public" />
+          </node>
+          <node role="presentation" roleId="74m3.3129031437528291180" type="74m3.SNotationLabel" typeId="74m3.3647933405694713882" id="2456221013111515413" nodeInfo="ng">
+            <property name="text" nameId="74m3.3647933405694713883" value="public" />
+          </node>
+        </node>
+      </node>
+      <node role="alternatives" roleId="74m3.3647933405694717738" type="74m3.SNotationPartList" typeId="74m3.3647933405694717735" id="2456221013111787378" nodeInfo="ng">
+        <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationMapping" typeId="74m3.3129031437528132565" id="2456221013111787392" nodeInfo="ng">
+          <node role="entityRef" roleId="74m3.7805033636902348041" type="74m3.SEnumLiteralEntityRef" typeId="74m3.2456221013111787398" id="2456221013112656900" nodeInfo="ng">
+            <link role="link" roleId="74m3.2456221013111788031" targetNodeId="7805033636902120275" resolveInfo="private" />
+          </node>
+          <node role="presentation" roleId="74m3.3129031437528291180" type="74m3.SNotationLabel" typeId="74m3.3647933405694713882" id="2456221013111787382" nodeInfo="ng">
+            <property name="text" nameId="74m3.3647933405694713883" value="private" />
+          </node>
+        </node>
+      </node>
+      <node role="alternatives" roleId="74m3.3647933405694717738" type="74m3.SNotationPartList" typeId="74m3.3647933405694717735" id="2456221013111787384" nodeInfo="ng">
+        <node role="parts" roleId="74m3.3647933405694717736" type="74m3.SNotationMapping" typeId="74m3.3129031437528132565" id="2456221013112657604" nodeInfo="ng">
+          <node role="entityRef" roleId="74m3.7805033636902348041" type="74m3.SEnumLiteralEntityRef" typeId="74m3.2456221013111787398" id="2456221013112657612" nodeInfo="ng">
+            <link role="link" roleId="74m3.2456221013111788031" targetNodeId="8379004527113872031" resolveInfo="protected" />
+          </node>
+          <node role="presentation" roleId="74m3.3129031437528291180" type="74m3.SNotationLabel" typeId="74m3.3647933405694713882" id="2456221013111787390" nodeInfo="ng">
+            <property name="text" nameId="74m3.3647933405694713883" value="protected" />
+          </node>
+        </node>
+      </node>
+      <node role="alternatives" roleId="74m3.3647933405694717738" type="74m3.SNotationPartList" typeId="74m3.3647933405694717735" id="2456221013112657622" nodeInfo="ng" />
+    </node>
+    <node role="structure" roleId="ydsw.6195190339581766884" type="ydsw.SStructureEmptyLine" typeId="ydsw.6195190339581962051" id="2456221013111512839" nodeInfo="ng" />
     <node role="structure" roleId="ydsw.6195190339581766884" type="74m3.SNotation" typeId="74m3.6195190339582080388" id="8632884680339330910" nodeInfo="ng">
       <node role="context" roleId="74m3.8632884680339275914" type="74m3.SNotationConceptContext" typeId="74m3.8632884680339275915" id="8632884680339330918" nodeInfo="ng">
         <property name="id" nameId="74m3.8632884680339275917" value="a22" />
