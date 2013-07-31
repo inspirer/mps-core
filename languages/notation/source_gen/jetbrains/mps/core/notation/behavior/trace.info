@@ -541,18 +541,30 @@
     <unitInfo nodeId="8632884680339357867" fileName="SNotationContextProvider_Behavior.java" startLine="11" startPosition="0" endLine="25" endPosition="0" unitName="jetbrains.mps.core.notation.behavior.SNotationContextProvider_Behavior" />
   </root>
   <root nodeRef="r:d0c0949b-affc-47c9-a29d-6ab6789bf502(jetbrains.mps.core.notation.behavior)/8632884680339377210">
-    <nodeInfo nodeId="8632884680339397822" fileName="SNotationMapping_Behavior.java" startLine="14" startPosition="88" endLine="15" endPosition="181" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="8632884680339377210" fileName="SNotationMapping_Behavior.java" startLine="11" startPosition="0" endLine="13" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-    <nodeInfo nodeId="8632884680339377210" fileName="SNotationMapping_Behavior.java" startLine="14" startPosition="0" endLine="17" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="virtual_getContext_8632884680339357870#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/core/notation/util/NotationContext;" />
-    <scopeInfo nodeId="8632884680339377212" fileName="SNotationMapping_Behavior.java" startLine="11" startPosition="43" endLine="11" endPosition="43" />
-    <scopeInfo nodeId="8632884680339377215" fileName="SNotationMapping_Behavior.java" startLine="14" startPosition="88" endLine="15" endPosition="181" />
-    <scopeInfo nodeId="8632884680339377210" fileName="SNotationMapping_Behavior.java" startLine="11" startPosition="0" endLine="13" endPosition="0">
+    <nodeInfo nodeId="8632884680339397822" fileName="SNotationMapping_Behavior.java" startLine="16" startPosition="88" endLine="17" endPosition="181" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2198415040518957620" fileName="SNotationMapping_Behavior.java" startLine="21" startPosition="305" endLine="22" endPosition="327" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="2198415040516531715" fileName="SNotationMapping_Behavior.java" startLine="22" startPosition="327" endLine="23" endPosition="95" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2198415040516293736" fileName="SNotationMapping_Behavior.java" startLine="24" startPosition="5" endLine="25" endPosition="17" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="8632884680339377210" fileName="SNotationMapping_Behavior.java" startLine="13" startPosition="0" endLine="15" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+    <nodeInfo nodeId="8632884680339377210" fileName="SNotationMapping_Behavior.java" startLine="16" startPosition="0" endLine="19" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="virtual_getContext_8632884680339357870#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/core/notation/util/NotationContext;" />
+    <nodeInfo nodeId="2198415040516444483" fileName="SNotationMapping_Behavior.java" startLine="20" startPosition="82" endLine="24" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="8632884680339377210" fileName="SNotationMapping_Behavior.java" startLine="20" startPosition="0" endLine="27" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="call_isValueRequired_2198415040516248706#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+    <scopeInfo nodeId="8632884680339377212" fileName="SNotationMapping_Behavior.java" startLine="13" startPosition="43" endLine="13" endPosition="43" />
+    <scopeInfo nodeId="8632884680339377215" fileName="SNotationMapping_Behavior.java" startLine="16" startPosition="88" endLine="17" endPosition="181" />
+    <scopeInfo nodeId="8632884680339377210" fileName="SNotationMapping_Behavior.java" startLine="13" startPosition="0" endLine="15" endPosition="0">
       <varInfo nodeId="8632884680339377210" varName="thisNode" />
     </scopeInfo>
-    <scopeInfo nodeId="8632884680339377210" fileName="SNotationMapping_Behavior.java" startLine="14" startPosition="0" endLine="17" endPosition="0">
+    <scopeInfo nodeId="2198415040516444486" fileName="SNotationMapping_Behavior.java" startLine="21" startPosition="305" endLine="23" endPosition="95">
+      <varInfo nodeId="2198415040518957621" varName="type" />
+    </scopeInfo>
+    <scopeInfo nodeId="8632884680339377210" fileName="SNotationMapping_Behavior.java" startLine="16" startPosition="0" endLine="19" endPosition="0">
       <varInfo nodeId="8632884680339377210" varName="thisNode" />
     </scopeInfo>
-    <unitInfo nodeId="8632884680339377210" fileName="SNotationMapping_Behavior.java" startLine="10" startPosition="0" endLine="18" endPosition="0" unitName="jetbrains.mps.core.notation.behavior.SNotationMapping_Behavior" />
+    <scopeInfo nodeId="2198415040516248860" fileName="SNotationMapping_Behavior.java" startLine="20" startPosition="82" endLine="25" endPosition="17" />
+    <scopeInfo nodeId="8632884680339377210" fileName="SNotationMapping_Behavior.java" startLine="20" startPosition="0" endLine="27" endPosition="0">
+      <varInfo nodeId="8632884680339377210" varName="thisNode" />
+    </scopeInfo>
+    <unitInfo nodeId="8632884680339377210" fileName="SNotationMapping_Behavior.java" startLine="12" startPosition="0" endLine="28" endPosition="0" unitName="jetbrains.mps.core.notation.behavior.SNotationMapping_Behavior" />
   </root>
   <root nodeRef="r:d0c0949b-affc-47c9-a29d-6ab6789bf502(jetbrains.mps.core.notation.behavior)/8632884680339377250">
     <nodeInfo nodeId="8632884680339377258" fileName="SStructureEntityRef_Behavior.java" startLine="15" startPosition="88" endLine="16" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />

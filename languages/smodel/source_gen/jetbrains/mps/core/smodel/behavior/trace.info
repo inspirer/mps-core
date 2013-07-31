@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debugInfo>
-  <unitInfo fileName="BehaviorAspectDescriptor.java" startLine="9" startPosition="0" endLine="42" endPosition="0" unitName="jetbrains.mps.core.smodel.behavior.BehaviorAspectDescriptor" />
+  <unitInfo fileName="BehaviorAspectDescriptor.java" startLine="9" startPosition="0" endLine="44" endPosition="0" unitName="jetbrains.mps.core.smodel.behavior.BehaviorAspectDescriptor" />
   <unitInfo fileName="IsInstanceOf_BehaviorDescriptor.java" startLine="8" startPosition="0" endLine="21" endPosition="0" unitName="jetbrains.mps.core.smodel.behavior.IsInstanceOf_BehaviorDescriptor" />
   <unitInfo fileName="MqlConceptType_BehaviorDescriptor.java" startLine="8" startPosition="0" endLine="29" endPosition="0" unitName="jetbrains.mps.core.smodel.behavior.MqlConceptType_BehaviorDescriptor" />
   <unitInfo fileName="MqlEnumType_BehaviorDescriptor.java" startLine="8" startPosition="0" endLine="29" endPosition="0" unitName="jetbrains.mps.core.smodel.behavior.MqlEnumType_BehaviorDescriptor" />
@@ -10,7 +10,36 @@
   <unitInfo fileName="MqlPropertySelector_BehaviorDescriptor.java" startLine="8" startPosition="0" endLine="21" endPosition="0" unitName="jetbrains.mps.core.smodel.behavior.MqlPropertySelector_BehaviorDescriptor" />
   <unitInfo fileName="SConceptQueryCall_BehaviorDescriptor.java" startLine="11" startPosition="0" endLine="28" endPosition="0" unitName="jetbrains.mps.core.smodel.behavior.SConceptQueryCall_BehaviorDescriptor" />
   <unitInfo fileName="SConceptQuery_BehaviorDescriptor.java" startLine="16" startPosition="0" endLine="45" endPosition="0" unitName="jetbrains.mps.core.smodel.behavior.SConceptQuery_BehaviorDescriptor" />
+  <unitInfo fileName="SEnumLiteralRef_BehaviorDescriptor.java" startLine="8" startPosition="0" endLine="21" endPosition="0" unitName="jetbrains.mps.core.smodel.behavior.SEnumLiteralRef_BehaviorDescriptor" />
   <unitInfo fileName="SNodeCast_BehaviorDescriptor.java" startLine="8" startPosition="0" endLine="21" endPosition="0" unitName="jetbrains.mps.core.smodel.behavior.SNodeCast_BehaviorDescriptor" />
+  <root nodeRef="r:a81664cd-f084-472d-9653-5a837022f70e(jetbrains.mps.core.smodel.behavior)/2198415040521742771">
+    <nodeInfo nodeId="2198415040521743432" fileName="SEnumLiteralRef_Behavior.java" startLine="16" startPosition="74" endLine="17" endPosition="197" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2198415040521743430" fileName="SEnumLiteralRef_Behavior.java" startLine="20" startPosition="65" endLine="21" endPosition="63" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="2198415040521743430" fileName="SEnumLiteralRef_Behavior.java" startLine="21" startPosition="63" endLine="22" endPosition="151" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="2198415040521743430" fileName="SEnumLiteralRef_Behavior.java" startLine="22" startPosition="151" endLine="23" endPosition="46" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="2198415040521743430" fileName="SEnumLiteralRef_Behavior.java" startLine="22" startPosition="151" endLine="23" endPosition="46" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2198415040521743430" fileName="SEnumLiteralRef_Behavior.java" startLine="23" startPosition="46" endLine="24" endPosition="14" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2198415040521742771" fileName="SEnumLiteralRef_Behavior.java" startLine="13" startPosition="0" endLine="15" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+    <nodeInfo nodeId="2198415040521742771" fileName="SEnumLiteralRef_Behavior.java" startLine="16" startPosition="0" endLine="19" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="virtual_getType_228266671027861783#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+    <nodeInfo nodeId="2198415040521743430" fileName="SEnumLiteralRef_Behavior.java" startLine="20" startPosition="0" endLine="26" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="createMqlEnumType_99nmlo_a0a0#(Ljava/lang/Object;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+    <scopeInfo nodeId="2198415040521742773" fileName="SEnumLiteralRef_Behavior.java" startLine="13" startPosition="43" endLine="13" endPosition="43" />
+    <scopeInfo nodeId="2198415040521743308" fileName="SEnumLiteralRef_Behavior.java" startLine="16" startPosition="74" endLine="17" endPosition="197" />
+    <scopeInfo nodeId="2198415040521743430" fileName="SEnumLiteralRef_Behavior.java" startLine="22" startPosition="151" endLine="23" endPosition="46" />
+    <scopeInfo nodeId="2198415040521742771" fileName="SEnumLiteralRef_Behavior.java" startLine="13" startPosition="0" endLine="15" endPosition="0">
+      <varInfo nodeId="2198415040521742771" varName="thisNode" />
+    </scopeInfo>
+    <scopeInfo nodeId="2198415040521742771" fileName="SEnumLiteralRef_Behavior.java" startLine="16" startPosition="0" endLine="19" endPosition="0">
+      <varInfo nodeId="2198415040521742771" varName="thisNode" />
+    </scopeInfo>
+    <scopeInfo nodeId="2198415040521743430" fileName="SEnumLiteralRef_Behavior.java" startLine="20" startPosition="65" endLine="24" endPosition="14">
+      <varInfo nodeId="2198415040521743430" varName="facade" />
+      <varInfo nodeId="2198415040521743430" varName="n1" />
+    </scopeInfo>
+    <scopeInfo nodeId="2198415040521743430" fileName="SEnumLiteralRef_Behavior.java" startLine="20" startPosition="0" endLine="26" endPosition="0">
+      <varInfo nodeId="2198415040521743430" varName="p0" />
+    </scopeInfo>
+    <unitInfo nodeId="2198415040521742771" fileName="SEnumLiteralRef_Behavior.java" startLine="12" startPosition="0" endLine="27" endPosition="0" unitName="jetbrains.mps.core.smodel.behavior.SEnumLiteralRef_Behavior" />
+  </root>
   <root nodeRef="r:a81664cd-f084-472d-9653-5a837022f70e(jetbrains.mps.core.smodel.behavior)/4125821269968947731">
     <nodeInfo nodeId="4125821269968947865" fileName="SConceptQuery_Behavior.java" startLine="24" startPosition="79" endLine="25" endPosition="122" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="5433095484313947486" fileName="SConceptQuery_Behavior.java" startLine="29" startPosition="111" endLine="30" endPosition="168" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />

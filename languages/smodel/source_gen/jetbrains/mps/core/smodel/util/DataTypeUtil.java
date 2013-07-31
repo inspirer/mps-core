@@ -5,6 +5,7 @@ package jetbrains.mps.core.smodel.util;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import org.jetbrains.mps.openapi.persistence.PersistenceFacade;
 import jetbrains.mps.smodel.SModelUtil_new;
 import jetbrains.mps.project.GlobalScope;
@@ -26,6 +27,9 @@ public class DataTypeUtil {
       } else if (SPropertyOperations.hasValue(pdt, "kind", "bool", "string")) {
         return _quotation_createNode_6qp3xf_a0a1b0b0b();
       }
+    }
+    if (SNodeOperations.isInstanceOf(dt, "jetbrains.mps.core.structure.structure.SEnumerationDataType")) {
+      return createMqlEnumType_6qp3xf_a0a2a1(SLinkOperations.getTarget(SNodeOperations.cast(dt, "jetbrains.mps.core.structure.structure.SEnumerationDataType"), "enum", false));
     }
     return null;
   }
@@ -49,5 +53,12 @@ public class DataTypeUtil {
     SNode quotedNode_1 = null;
     quotedNode_1 = SModelUtil_new.instantiateConceptDeclaration("jetbrains.mps.core.query.structure.MqlBoolType", null, null, GlobalScope.getInstance(), false);
     return quotedNode_1;
+  }
+
+  private static SNode createMqlEnumType_6qp3xf_a0a2a1(Object p0) {
+    PersistenceFacade facade = PersistenceFacade.getInstance();
+    SNode n1 = SModelUtil_new.instantiateConceptDeclaration("jetbrains.mps.core.smodel.structure.MqlEnumType", null, GlobalScope.getInstance(), false);
+    n1.setReferenceTarget("enum", (SNode) p0);
+    return n1;
   }
 }

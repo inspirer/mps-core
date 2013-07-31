@@ -54,6 +54,9 @@ public class SNotationMapping_Constraints extends BaseConstraintsDescriptor {
   }
 
   public static boolean static_canBeAParent(SNode node, SNode childNode, SNode childConcept, SNode link, final IOperationContext operationContext) {
+    if (link == SLinkOperations.findLinkDeclaration("jetbrains.mps.core.notation.structure.SNotationMapping", "value")) {
+      return SConceptOperations.isSubConceptOf(childConcept, "jetbrains.mps.core.query.structure.MqlIntLiteral") || SConceptOperations.isSubConceptOf(childConcept, "jetbrains.mps.core.query.structure.MqlBoolLiteral") || SConceptOperations.isSubConceptOf(childConcept, "jetbrains.mps.core.query.structure.MqlStringLiteral") || SConceptOperations.isSubConceptOf(childConcept, "jetbrains.mps.core.smodel.structure.SEnumLiteralRef");
+    }
     if (link == SLinkOperations.findLinkDeclaration("jetbrains.mps.core.notation.structure.SNotationMapping", "presentation") && (SConceptOperations.isSubConceptOf(childConcept, "jetbrains.mps.core.notation.structure.SNotationMapping"))) {
       return false;
     }

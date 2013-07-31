@@ -44,7 +44,7 @@ public class StructureAspectDescriptor implements jetbrains.mps.smodel.runtime.S
       case 14:
         return new ConceptDescriptorBuilder("jetbrains.mps.core.notation.structure.SNotationLabel").super_("jetbrains.mps.core.notation.structure.SNotationCorePart").parents("jetbrains.mps.core.notation.structure.SNotationCorePart").properties("text").alias("\"", "").create();
       case 15:
-        return new ConceptDescriptorBuilder("jetbrains.mps.core.notation.structure.SNotationMapping").super_("jetbrains.mps.core.notation.structure.SNotationPart").parents("jetbrains.mps.core.notation.structure.SNotationPart", "jetbrains.mps.lang.core.structure.IDontSubstituteByDefault").children(new String[]{"entityRef", "presentation"}, new boolean[]{false, false}).create();
+        return new ConceptDescriptorBuilder("jetbrains.mps.core.notation.structure.SNotationMapping").super_("jetbrains.mps.core.notation.structure.SNotationPart").parents("jetbrains.mps.core.notation.structure.SNotationPart", "jetbrains.mps.lang.core.structure.IDontSubstituteByDefault").children(new String[]{"entityRef", "presentation", "value"}, new boolean[]{false, false, false}).create();
       case 16:
         return new ConceptDescriptorBuilder("jetbrains.mps.core.notation.structure.SNotationNewLine").super_("jetbrains.mps.core.notation.structure.SNotationViewPart").parents("jetbrains.mps.core.notation.structure.SNotationViewPart").alias("\\n", "").create();
       case 17:

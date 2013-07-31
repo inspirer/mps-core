@@ -6,6 +6,8 @@ import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.notation.util.NotationContext;
 import jetbrains.mps.smodel.behaviour.BehaviorReflection;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 
 public class SNotationMapping_Behavior {
   public static void init(SNode thisNode) {
@@ -13,5 +15,13 @@ public class SNotationMapping_Behavior {
 
   public static NotationContext virtual_getContext_8632884680339357870(SNode thisNode) {
     return BehaviorReflection.invokeVirtual(NotationContext.class, SLinkOperations.getTarget(thisNode, "entityRef", true), "virtual_getContext_8632884680339377253", new Object[]{});
+  }
+
+  public static boolean call_isValueRequired_2198415040516248706(SNode thisNode) {
+    if (SNodeOperations.isInstanceOf(SLinkOperations.getTarget(thisNode, "entityRef", true), "jetbrains.mps.core.notation.structure.SStructurePropertyRef") && SNodeOperations.isInstanceOf(SLinkOperations.getTarget(thisNode, "presentation", true), "jetbrains.mps.core.notation.structure.SNotationLabel")) {
+      SNode type = SNodeOperations.as(SLinkOperations.getTarget(SLinkOperations.getTarget(SNodeOperations.cast(SLinkOperations.getTarget(thisNode, "entityRef", true), "jetbrains.mps.core.notation.structure.SStructurePropertyRef"), "property", false), "type", true), "jetbrains.mps.core.structure.structure.SPrimitiveDataType");
+      return (type == null) || !(SPropertyOperations.hasValue(type, "kind", "bool", "string"));
+    }
+    return false;
   }
 }
