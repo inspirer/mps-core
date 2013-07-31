@@ -64,7 +64,7 @@ public class StructureAspectDescriptor implements jetbrains.mps.smodel.runtime.S
       case 24:
         return new ConceptDescriptorBuilder("jetbrains.mps.core.structure.structure.SStructureComment").super_("jetbrains.mps.core.structure.structure.SStructurePart").parents("jetbrains.mps.core.structure.structure.SStructurePart").properties("comment").final_().alias("#", "").create();
       case 25:
-        return new ConceptDescriptorBuilder("jetbrains.mps.core.structure.structure.SStructureContainer").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept", "jetbrains.mps.lang.core.structure.ScopeProvider").children(new String[]{"structure"}, new boolean[]{true}).final_().alias("structure", "").create();
+        return new ConceptDescriptorBuilder("jetbrains.mps.core.structure.structure.SStructureContainer").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept", "jetbrains.mps.lang.core.structure.ScopeProvider").children(new String[]{"structure"}, new boolean[]{true}).final_().alias("language aspect", "").create();
       case 26:
         return new ConceptDescriptorBuilder("jetbrains.mps.core.structure.structure.SStructureElement").super_("jetbrains.mps.core.structure.structure.SStructurePart").parents("jetbrains.mps.core.structure.structure.SStructurePart", "jetbrains.mps.lang.core.structure.INamedConcept").abstract_().create();
       case 27:

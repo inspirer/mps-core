@@ -145,9 +145,6 @@ public class TransformCoreLanguages_Facet extends IFacet.Stub {
               } catch (ClassNotFoundException ignore) {
               }
 
-              if (tmc == null) {
-                monitor.reportFeedback(new IFeedback.ERROR(String.valueOf("no tmc")));
-              }
               final TransientModelsProvider transModels = (tmc != null ?
                 (TransientModelsProvider) tmc :
                 new TransientModelsProvider(pa.global().properties(new ITarget.Name("jetbrains.mps.lang.core.Generate.checkParameters"), Variables.class).project(), null)

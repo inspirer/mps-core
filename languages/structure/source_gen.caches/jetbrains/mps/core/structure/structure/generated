@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="-bldaeakz8r2kgz7zbyy6wvrxi09w1pu">
+<dependencies version="2" modelHash="el3dgun2f6ck59tlig06k6ac94qivy7">
   <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
   <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
   <dep model="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.smodel.runtime.impl(MPS.Core/jetbrains.mps.smodel.runtime.impl@java_stub)" />
@@ -69,7 +69,7 @@
   <source id="6195190339581766766" name="SInterfaceReference" hash="8nqu77zumjrri3cck8g8yj3w0o35ibs">
     <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
   </source>
-  <source id="6195190339581766868" name="SStructureContainer" hash="-gua3gofyty647cnq9oa1f2ugcbxsiq">
+  <source id="6195190339581766868" name="SStructureContainer" hash="c0rp48si7qst9wd29t3dibnxto1om4s">
     <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
   </source>
   <source id="6195190339581766870" name="SStructureElement" hash="-eqxbod4dsmb9e336hvaa0tii6dtxhq0">
