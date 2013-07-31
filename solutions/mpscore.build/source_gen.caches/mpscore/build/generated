@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="-10dy27vbct4tmkzma9ppjfgxc5vh3s6">
+<dependencies version="2" modelHash="-bbyaqxji3p3dfe61cfvns2fjkdx2afg">
   <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
   <dep model="r:00000000-0000-4000-0000-011c895902e8(jetbrains.mps.lang.generator.structure)" />
   <dep model="r:0353b795-df17-4050-9687-ee47eeb7094f(jetbrains.mps.build.mps.structure)" />
@@ -10,7 +10,7 @@
   <dep model="r:ed179f4d-7cf2-479d-8348-50c1fc63b96a(jetbrains.mps.build.workflow.structure)" />
   <dep model="r:fdebfc98-bbd7-4c50-8a8d-eda16da9406e(jetbrains.mps.build.generator.template.main@generator)" />
   <common hash="dymsdazkuqonv74ezboczppqjgvzl3h" />
-  <source id="6515501733571340831" name="mpscore" hash="-af7v6552dhit6wfp08y70fvjxf5w9d4">
+  <source id="6515501733571340831" name="mpscore" hash="-5uc7wxiq9249cq9c8ce7c3cfaacoh1k">
     <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <dep model="r:00000000-0000-4000-0000-011c895902e8(jetbrains.mps.lang.generator.structure)" />
     <dep model="r:0353b795-df17-4050-9687-ee47eeb7094f(jetbrains.mps.build.mps.structure)" />

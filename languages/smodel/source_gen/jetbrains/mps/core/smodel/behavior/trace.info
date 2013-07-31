@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debugInfo>
-  <unitInfo fileName="BehaviorAspectDescriptor.java" startLine="9" startPosition="0" endLine="40" endPosition="0" unitName="jetbrains.mps.core.smodel.behavior.BehaviorAspectDescriptor" />
+  <unitInfo fileName="BehaviorAspectDescriptor.java" startLine="9" startPosition="0" endLine="42" endPosition="0" unitName="jetbrains.mps.core.smodel.behavior.BehaviorAspectDescriptor" />
   <unitInfo fileName="IsInstanceOf_BehaviorDescriptor.java" startLine="8" startPosition="0" endLine="21" endPosition="0" unitName="jetbrains.mps.core.smodel.behavior.IsInstanceOf_BehaviorDescriptor" />
   <unitInfo fileName="MqlConceptType_BehaviorDescriptor.java" startLine="8" startPosition="0" endLine="29" endPosition="0" unitName="jetbrains.mps.core.smodel.behavior.MqlConceptType_BehaviorDescriptor" />
+  <unitInfo fileName="MqlEnumType_BehaviorDescriptor.java" startLine="8" startPosition="0" endLine="29" endPosition="0" unitName="jetbrains.mps.core.smodel.behavior.MqlEnumType_BehaviorDescriptor" />
   <unitInfo fileName="MqlLinkSelector_BehaviorDescriptor.java" startLine="8" startPosition="0" endLine="21" endPosition="0" unitName="jetbrains.mps.core.smodel.behavior.MqlLinkSelector_BehaviorDescriptor" />
   <unitInfo fileName="MqlModelQuery_BehaviorDescriptor.java" startLine="9" startPosition="0" endLine="22" endPosition="0" unitName="jetbrains.mps.core.smodel.behavior.MqlModelQuery_BehaviorDescriptor" />
   <unitInfo fileName="MqlNodeType_BehaviorDescriptor.java" startLine="8" startPosition="0" endLine="29" endPosition="0" unitName="jetbrains.mps.core.smodel.behavior.MqlNodeType_BehaviorDescriptor" />
@@ -327,6 +328,39 @@
       <varInfo nodeId="535637396506608315" varName="thisNode" />
     </scopeInfo>
     <unitInfo nodeId="535637396506608315" fileName="SConceptQueryCall_Behavior.java" startLine="10" startPosition="0" endLine="23" endPosition="0" unitName="jetbrains.mps.core.smodel.behavior.SConceptQueryCall_Behavior" />
+  </root>
+  <root nodeRef="r:a81664cd-f084-472d-9653-5a837022f70e(jetbrains.mps.core.smodel.behavior)/8024238796508617857">
+    <nodeInfo nodeId="8024238796508618420" fileName="MqlEnumType_Behavior.java" startLine="15" startPosition="96" endLine="16" endPosition="141" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="8024238796508618427" fileName="MqlEnumType_Behavior.java" startLine="16" startPosition="141" endLine="17" endPosition="74" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="8024238796508618438" fileName="MqlEnumType_Behavior.java" startLine="18" startPosition="5" endLine="19" endPosition="17" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="8024238796508618446" fileName="MqlEnumType_Behavior.java" startLine="22" startPosition="80" endLine="23" endPosition="117" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="8024238796508618452" fileName="MqlEnumType_Behavior.java" startLine="26" startPosition="75" endLine="27" endPosition="101" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="8024238796508617857" fileName="MqlEnumType_Behavior.java" startLine="11" startPosition="0" endLine="13" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+    <nodeInfo nodeId="8024238796508617857" fileName="MqlEnumType_Behavior.java" startLine="22" startPosition="0" endLine="25" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="virtual_getSignature_270269450479785729#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+    <nodeInfo nodeId="8024238796508617857" fileName="MqlEnumType_Behavior.java" startLine="26" startPosition="0" endLine="29" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="virtual_getText_270269450479797040#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+    <nodeInfo nodeId="8024238796508618418" fileName="MqlEnumType_Behavior.java" startLine="14" startPosition="93" endLine="18" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="8024238796508617857" fileName="MqlEnumType_Behavior.java" startLine="14" startPosition="0" endLine="21" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="virtual_isSubtypeOf_2852142168179579064#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+    <scopeInfo nodeId="8024238796508617859" fileName="MqlEnumType_Behavior.java" startLine="11" startPosition="43" endLine="11" endPosition="43" />
+    <scopeInfo nodeId="8024238796508618445" fileName="MqlEnumType_Behavior.java" startLine="22" startPosition="80" endLine="23" endPosition="117" />
+    <scopeInfo nodeId="8024238796508618451" fileName="MqlEnumType_Behavior.java" startLine="26" startPosition="75" endLine="27" endPosition="101" />
+    <scopeInfo nodeId="8024238796508617857" fileName="MqlEnumType_Behavior.java" startLine="11" startPosition="0" endLine="13" endPosition="0">
+      <varInfo nodeId="8024238796508617857" varName="thisNode" />
+    </scopeInfo>
+    <scopeInfo nodeId="8024238796508618419" fileName="MqlEnumType_Behavior.java" startLine="15" startPosition="96" endLine="17" endPosition="74">
+      <varInfo nodeId="8024238796508618421" varName="target" />
+    </scopeInfo>
+    <scopeInfo nodeId="8024238796508617857" fileName="MqlEnumType_Behavior.java" startLine="22" startPosition="0" endLine="25" endPosition="0">
+      <varInfo nodeId="8024238796508617857" varName="thisNode" />
+    </scopeInfo>
+    <scopeInfo nodeId="8024238796508617857" fileName="MqlEnumType_Behavior.java" startLine="26" startPosition="0" endLine="29" endPosition="0">
+      <varInfo nodeId="8024238796508617857" varName="thisNode" />
+    </scopeInfo>
+    <scopeInfo nodeId="8024238796508618417" fileName="MqlEnumType_Behavior.java" startLine="14" startPosition="93" endLine="19" endPosition="17" />
+    <scopeInfo nodeId="8024238796508617857" fileName="MqlEnumType_Behavior.java" startLine="14" startPosition="0" endLine="21" endPosition="0">
+      <varInfo nodeId="8024238796508617857" varName="thisNode" />
+      <varInfo nodeId="8024238796508618440" varName="type" />
+    </scopeInfo>
+    <unitInfo nodeId="8024238796508617857" fileName="MqlEnumType_Behavior.java" startLine="10" startPosition="0" endLine="30" endPosition="0" unitName="jetbrains.mps.core.smodel.behavior.MqlEnumType_Behavior" />
   </root>
 </debugInfo>
 

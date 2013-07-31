@@ -23,7 +23,7 @@
   <unitInfo fileName="SNotationPartWithStyle_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="8" endPosition="0" unitName="jetbrains.mps.core.notation.behavior.SNotationPartWithStyle_BehaviorDescriptor" />
   <unitInfo fileName="SNotationPart_BehaviorDescriptor.java" startLine="9" startPosition="0" endLine="30" endPosition="0" unitName="jetbrains.mps.core.notation.behavior.SNotationPart_BehaviorDescriptor" />
   <unitInfo fileName="SNotationPartsContainer_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="8" endPosition="0" unitName="jetbrains.mps.core.notation.behavior.SNotationPartsContainer_BehaviorDescriptor" />
-  <unitInfo fileName="SNotationPredicate_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="jetbrains.mps.core.notation.behavior.SNotationPredicate_BehaviorDescriptor" />
+  <unitInfo fileName="SNotationPredicate_BehaviorDescriptor.java" startLine="9" startPosition="0" endLine="22" endPosition="0" unitName="jetbrains.mps.core.notation.behavior.SNotationPredicate_BehaviorDescriptor" />
   <unitInfo fileName="SNotationQuantifier_BehaviorDescriptor.java" startLine="9" startPosition="0" endLine="22" endPosition="0" unitName="jetbrains.mps.core.notation.behavior.SNotationQuantifier_BehaviorDescriptor" />
   <unitInfo fileName="SNotationSelector_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="jetbrains.mps.core.notation.behavior.SNotationSelector_BehaviorDescriptor" />
   <unitInfo fileName="SNotationStyleClass_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="jetbrains.mps.core.notation.behavior.SNotationStyleClass_BehaviorDescriptor" />
@@ -334,6 +334,26 @@
     <unitInfo nodeId="7465902928068892719" fileName="SNotationPartList_Behavior.java" startLine="18" startPosition="94" endLine="22" endPosition="5" unitName="jetbrains.mps.core.notation.behavior.SNotationPartList_Behavior$1" />
     <unitInfo nodeId="7465902928068862417" fileName="SNotationPartList_Behavior.java" startLine="22" startPosition="93" endLine="26" endPosition="5" unitName="jetbrains.mps.core.notation.behavior.SNotationPartList_Behavior$2" />
     <unitInfo nodeId="7465902928068862401" fileName="SNotationPartList_Behavior.java" startLine="13" startPosition="0" endLine="36" endPosition="0" unitName="jetbrains.mps.core.notation.behavior.SNotationPartList_Behavior" />
+  </root>
+  <root nodeRef="r:d0c0949b-affc-47c9-a29d-6ab6789bf502(jetbrains.mps.core.notation.behavior)/8024238796508442950">
+    <nodeInfo nodeId="8024238796508528916" fileName="SNotationPredicate_Behavior.java" startLine="15" startPosition="142" endLine="16" endPosition="271" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="8024238796508688609" fileName="SNotationPredicate_Behavior.java" startLine="16" startPosition="271" endLine="17" endPosition="31" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="8024238796508684482" fileName="SNotationPredicate_Behavior.java" startLine="18" startPosition="5" endLine="19" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="8024238796508442950" fileName="SNotationPredicate_Behavior.java" startLine="11" startPosition="0" endLine="13" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+    <nodeInfo nodeId="8024238796508505435" fileName="SNotationPredicate_Behavior.java" startLine="14" startPosition="79" endLine="18" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="8024238796508442950" fileName="SNotationPredicate_Behavior.java" startLine="14" startPosition="0" endLine="21" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="virtual_getThisType_4125821269968916020#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+    <scopeInfo nodeId="8024238796508443254" fileName="SNotationPredicate_Behavior.java" startLine="11" startPosition="43" endLine="11" endPosition="43" />
+    <scopeInfo nodeId="8024238796508442950" fileName="SNotationPredicate_Behavior.java" startLine="11" startPosition="0" endLine="13" endPosition="0">
+      <varInfo nodeId="8024238796508442950" varName="thisNode" />
+    </scopeInfo>
+    <scopeInfo nodeId="8024238796508505436" fileName="SNotationPredicate_Behavior.java" startLine="15" startPosition="142" endLine="17" endPosition="31">
+      <varInfo nodeId="8024238796508528917" varName="context" />
+    </scopeInfo>
+    <scopeInfo nodeId="8024238796508444908" fileName="SNotationPredicate_Behavior.java" startLine="14" startPosition="79" endLine="19" endPosition="16" />
+    <scopeInfo nodeId="8024238796508442950" fileName="SNotationPredicate_Behavior.java" startLine="14" startPosition="0" endLine="21" endPosition="0">
+      <varInfo nodeId="8024238796508442950" varName="thisNode" />
+    </scopeInfo>
+    <unitInfo nodeId="8024238796508442950" fileName="SNotationPredicate_Behavior.java" startLine="10" startPosition="0" endLine="22" endPosition="0" unitName="jetbrains.mps.core.notation.behavior.SNotationPredicate_Behavior" />
   </root>
   <root nodeRef="r:d0c0949b-affc-47c9-a29d-6ab6789bf502(jetbrains.mps.core.notation.behavior)/8379004527113948631">
     <nodeInfo nodeId="8632884680339392008" fileName="SNotationQuantifier_Behavior.java" startLine="14" startPosition="88" endLine="15" endPosition="211" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />

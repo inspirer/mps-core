@@ -60,7 +60,7 @@ public class StructureAspectDescriptor implements jetbrains.mps.smodel.runtime.S
       case 22:
         return new ConceptDescriptorBuilder("jetbrains.mps.core.notation.structure.SNotationPartsContainer").interface_().children(new String[]{"alternatives"}, new boolean[]{true}).create();
       case 23:
-        return new ConceptDescriptorBuilder("jetbrains.mps.core.notation.structure.SNotationPredicate").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept").children(new String[]{"expr"}, new boolean[]{false}).alias("[]", "").create();
+        return new ConceptDescriptorBuilder("jetbrains.mps.core.notation.structure.SNotationPredicate").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.core.query.structure.MqlThisProvider").children(new String[]{"expr"}, new boolean[]{false}).alias("[]", "").create();
       case 24:
         return new ConceptDescriptorBuilder("jetbrains.mps.core.notation.structure.SNotationQuantifier").super_("jetbrains.mps.core.notation.structure.SNotationCorePart").parents("jetbrains.mps.core.notation.structure.SNotationCorePart", "jetbrains.mps.lang.core.structure.IDontSubstituteByDefault").properties("kind").children(new String[]{"inner"}, new boolean[]{false}).create();
       case 25:

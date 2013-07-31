@@ -287,6 +287,9 @@
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="bwy9.6762883159245048012" resolveInfo="MqlExpression" />
     </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="8024238796508441699" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="bwy9.4125821269968916016" resolveInfo="MqlThisProvider" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4988228171406909312" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="SNotationViewPart" />

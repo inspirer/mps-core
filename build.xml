@@ -749,7 +749,6 @@
       <library file="${artifacts.mps}/lib/mps-workbench.jar" />
       <library file="${artifacts.mps}/plugins/mps-devkit/lib/devkit.jar" />
       <chunk>
-        <module file="${basedir}/languages/notation/notation.mpl" />
         <module file="${basedir}/languages/query/query.mpl" />
         <module file="${basedir}/languages/structure/structure.mpl" />
         <module file="${basedir}/languages/workflow/workflow.mpl" />
@@ -757,6 +756,7 @@
       </chunk>
       <chunk>
         <module file="${basedir}/languages/gen.transform/transform.mpl" />
+        <module file="${basedir}/languages/notation/notation.mpl" />
         <module file="${basedir}/languages/smodel/smodel.mpl" />
         <module file="${basedir}/languages/smodel/solutions/pluginSolution/pluginSolution.msd" />
         <module file="${basedir}/languages/template/template.mpl" />
@@ -893,7 +893,7 @@
     </javac>
   </target>
   
-  <target name="java.compile.jetbrains.mps.core.notation" depends="java.compile.jetbrains.mps.core.query, java.compile.jetbrains.mps.core.structure, fetchDependencies">
+  <target name="java.compile.jetbrains.mps.core.notation" depends="java.compile.jetbrains.mps.core.query, java.compile.jetbrains.mps.core.smodel, java.compile.jetbrains.mps.core.structure, fetchDependencies">
     <mkdir dir="${build.tmp}/java/out/jetbrains.mps.core.notation" />
     <javac destdir="${build.tmp}/java/out/jetbrains.mps.core.notation" fork="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
@@ -911,6 +911,7 @@
         <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
         <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
         <pathelement path="${build.tmp}/java/out/jetbrains.mps.core.query" />
+        <pathelement path="${build.tmp}/java/out/jetbrains.mps.core.smodel" />
         <pathelement path="${build.tmp}/java/out/jetbrains.mps.core.structure" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset file="${artifacts.mps}/lib/log4j.jar" />
@@ -1406,12 +1407,12 @@
   </target>
   
   <target name="cleanSources">
-    <delete dir="${basedir}/languages/notation/source_gen" />
     <delete dir="${basedir}/languages/query/source_gen" />
     <delete dir="${basedir}/languages/structure/source_gen" />
     <delete dir="${basedir}/languages/workflow/source_gen" />
     <delete dir="${basedir}/languages/workflow/solutions/pluginSolution/source_gen" />
     <delete dir="${basedir}/languages/gen.transform/source_gen" />
+    <delete dir="${basedir}/languages/notation/source_gen" />
     <delete dir="${basedir}/languages/smodel/source_gen" />
     <delete dir="${basedir}/languages/smodel/solutions/pluginSolution/source_gen" />
     <delete dir="${basedir}/languages/template/source_gen" />
