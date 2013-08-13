@@ -12,21 +12,25 @@ public class ConstraintsAspectDescriptor implements jetbrains.mps.smodel.runtime
 
   public ConstraintsDescriptor getDescriptor(String fqName) {
     switch (Arrays.binarySearch(stringSwitchCases_2qnle6_a0a0b, fqName)) {
-      case 0:
-        return new MqlLinkSelector_Constraints();
       case 1:
-        return new MqlPropertySelector_Constraints();
-      case 3:
-        return new SConceptQueryCall_Constraints();
+        return new MqlLinkSelector_Constraints();
       case 2:
-        return new SConceptQuery_Constraints();
+        return new MqlPropertySelector_Constraints();
       case 4:
+        return new SConceptQueryCall_Constraints();
+      case 3:
+        return new SConceptQuery_Constraints();
+      case 5:
         return new SEnumLiteralRef_Constraints();
+      case 6:
+        return new SNodeCast_Constraints();
+      case 0:
+        return new IsInstanceOf_Constraints();
       default:
         // todo: illegal in some cases? 
         return new BaseConstraintsDescriptor(fqName);
     }
   }
 
-  private static String[] stringSwitchCases_2qnle6_a0a0b = new String[]{"jetbrains.mps.core.smodel.structure.MqlLinkSelector", "jetbrains.mps.core.smodel.structure.MqlPropertySelector", "jetbrains.mps.core.smodel.structure.SConceptQuery", "jetbrains.mps.core.smodel.structure.SConceptQueryCall", "jetbrains.mps.core.smodel.structure.SEnumLiteralRef"};
+  private static String[] stringSwitchCases_2qnle6_a0a0b = new String[]{"jetbrains.mps.core.smodel.structure.IsInstanceOf", "jetbrains.mps.core.smodel.structure.MqlLinkSelector", "jetbrains.mps.core.smodel.structure.MqlPropertySelector", "jetbrains.mps.core.smodel.structure.SConceptQuery", "jetbrains.mps.core.smodel.structure.SConceptQueryCall", "jetbrains.mps.core.smodel.structure.SEnumLiteralRef", "jetbrains.mps.core.smodel.structure.SNodeCast"};
 }

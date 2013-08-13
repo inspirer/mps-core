@@ -14,7 +14,7 @@ public class StructureAspectDescriptor implements jetbrains.mps.smodel.runtime.S
   public ConceptDescriptor getDescriptor(String conceptFqName) {
     switch (Arrays.binarySearch(stringSwitchCases_1htk8d_a0a0b, conceptFqName)) {
       case 0:
-        return new ConceptDescriptorBuilder("jetbrains.mps.core.smodel.structure.IsInstanceOf").super_("jetbrains.mps.core.query.structure.MqlSelector").parents("jetbrains.mps.core.query.structure.MqlSelector").references("concept").alias("isInstanceOf", "").create();
+        return new ConceptDescriptorBuilder("jetbrains.mps.core.smodel.structure.IsInstanceOf").super_("jetbrains.mps.core.query.structure.MqlSelector").parents("jetbrains.mps.core.query.structure.MqlSelector").references("concept").alias("is", "").create();
       case 1:
         return new ConceptDescriptorBuilder("jetbrains.mps.core.smodel.structure.MqlConceptType").super_("jetbrains.mps.core.query.structure.MqlType").parents("jetbrains.mps.core.query.structure.MqlType").references("concept").alias("concept< >", "").create();
       case 2:
@@ -34,7 +34,7 @@ public class StructureAspectDescriptor implements jetbrains.mps.smodel.runtime.S
       case 9:
         return new ConceptDescriptorBuilder("jetbrains.mps.core.smodel.structure.SEnumLiteralRef").super_("jetbrains.mps.core.query.structure.MqlExpression").parents("jetbrains.mps.core.query.structure.MqlExpression").references("target").create();
       case 10:
-        return new ConceptDescriptorBuilder("jetbrains.mps.core.smodel.structure.SNodeCast").super_("jetbrains.mps.core.query.structure.MqlExpression").parents("jetbrains.mps.core.query.structure.MqlExpression").references("concept").children(new String[]{"expression"}, new boolean[]{false}).alias(":", "").create();
+        return new ConceptDescriptorBuilder("jetbrains.mps.core.smodel.structure.SNodeCast").super_("jetbrains.mps.core.query.structure.MqlSelector").parents("jetbrains.mps.core.query.structure.MqlSelector").references("concept").alias("as", "").create();
       default:
         return StructureAspectInterpreted.getInstance().getDescriptor(conceptFqName);
     }

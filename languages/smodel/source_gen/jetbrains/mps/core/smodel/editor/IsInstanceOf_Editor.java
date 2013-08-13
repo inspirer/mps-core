@@ -36,20 +36,20 @@ public class IsInstanceOf_Editor extends DefaultNodeEditor {
   }
 
   private EditorCell createConstant_h4ciqj_a0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "isInstanceOf");
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "is");
     editorCell.setCellId("Constant_h4ciqj_a0");
     editorCell.setDefaultText("");
     return editorCell;
   }
 
   private EditorCell createConstant_h4ciqj_b0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "<");
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "(");
     editorCell.setCellId("Constant_h4ciqj_b0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.FONT_STYLE, MPSFonts.PLAIN);
     style.set(StyleAttributes.PUNCTUATION_LEFT, true);
     style.set(StyleAttributes.PUNCTUATION_RIGHT, true);
-    style.set(StyleAttributes.MATCHING_LABEL, "angle");
+    style.set(StyleAttributes.MATCHING_LABEL, "paren");
     editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;
@@ -111,12 +111,12 @@ public class IsInstanceOf_Editor extends DefaultNodeEditor {
   }
 
   private EditorCell createConstant_h4ciqj_d0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ">");
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ")");
     editorCell.setCellId("Constant_h4ciqj_d0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.FONT_STYLE, MPSFonts.PLAIN);
     style.set(StyleAttributes.PUNCTUATION_LEFT, true);
-    style.set(StyleAttributes.MATCHING_LABEL, "angle");
+    style.set(StyleAttributes.MATCHING_LABEL, "paren");
     editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;

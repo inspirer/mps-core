@@ -24,6 +24,7 @@ import jetbrains.mps.internal.collections.runtime.ISelector;
 import jetbrains.mps.core.smodel.behavior.SConceptQuery_Behavior;
 import jetbrains.mps.core.structure.behavior.SConceptMember_Behavior;
 import jetbrains.mps.smodel.action.NodeSubstitutePreconditionContext;
+import jetbrains.mps.smodel.action.ChildSubstituteActionsHelper;
 import jetbrains.mps.smodel.action.SideTransformActionsBuilderContext;
 import jetbrains.mps.smodel.action.AbstractSideTransformHintSubstituteAction;
 import org.jetbrains.annotations.Nullable;
@@ -81,6 +82,26 @@ public class QueriesGenerated {
   public static boolean nodeSubstituteActionsBuilder_Precondition_SConceptQuery_270269450479753753(final IOperationContext operationContext, final NodeSubstitutePreconditionContext _context) {
     SNode concept = SNodeOperations.as(_context.getParentNode(), "jetbrains.mps.core.structure.structure.SAbstractConcept");
     return concept != null;
+  }
+
+  public static List<SubstituteAction> nodeSubstituteActionsBuilder_ActionsFactory_IsInstanceOf_7737135436000191535(final IOperationContext operationContext, final NodeSubstituteActionsFactoryContext _context) {
+    List<SubstituteAction> result = ListSequence.fromList(new ArrayList<SubstituteAction>());
+    {
+      Iterable<SNode> queryResult = new Computable<Iterable<SNode>>() {
+        public Iterable<SNode> compute() {
+          List<SNode> result = ListSequence.fromList(new ArrayList<SNode>(2));
+          ListSequence.fromList(result).addElement(SConceptOperations.findConceptDeclaration("jetbrains.mps.core.smodel.structure.IsInstanceOf"));
+          ListSequence.fromList(result).addElement(SConceptOperations.findConceptDeclaration("jetbrains.mps.core.smodel.structure.SNodeCast"));
+          return result;
+        }
+      }.compute();
+      if (queryResult != null) {
+        for (SNode item : queryResult) {
+          ListSequence.fromList(result).addSequence(ListSequence.fromList(ChildSubstituteActionsHelper.createDefaultSubstituteActions(item, _context.getParentNode(), _context.getCurrentTargetNode(), _context.getChildSetter(), operationContext)));
+        }
+      }
+    }
+    return result;
   }
 
   public static List<SubstituteAction> sideTransform_ActionsFactory_SConceptQuery_4366849661834324058(final IOperationContext operationContext, final SideTransformActionsBuilderContext _context) {

@@ -317,17 +317,17 @@
     <unitInfo nodeId="5343139407539384145" fileName="IsInstanceOf_Behavior.java" startLine="10" startPosition="0" endLine="24" endPosition="0" unitName="jetbrains.mps.core.smodel.behavior.IsInstanceOf_Behavior" />
   </root>
   <root nodeRef="r:a81664cd-f084-472d-9653-5a837022f70e(jetbrains.mps.core.smodel.behavior)/5343139407540223539">
-    <nodeInfo nodeId="5343139407540223720" fileName="SNodeCast_Behavior.java" startLine="13" startPosition="74" endLine="14" endPosition="111" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="5343139407540231672" fileName="SNodeCast_Behavior.java" startLine="14" startPosition="111" endLine="15" endPosition="113" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="5343139407540255837" fileName="SNodeCast_Behavior.java" startLine="15" startPosition="113" endLine="16" endPosition="20" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="7737135435999989298" fileName="SNodeCast_Behavior.java" startLine="13" startPosition="74" endLine="14" endPosition="111" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="7737135435999989304" fileName="SNodeCast_Behavior.java" startLine="14" startPosition="111" endLine="15" endPosition="113" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7737135435999989312" fileName="SNodeCast_Behavior.java" startLine="15" startPosition="113" endLine="16" endPosition="20" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="5343139407540223539" fileName="SNodeCast_Behavior.java" startLine="10" startPosition="0" endLine="12" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-    <nodeInfo nodeId="5343139407540223539" fileName="SNodeCast_Behavior.java" startLine="13" startPosition="0" endLine="18" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="virtual_getType_228266671027861783#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+    <nodeInfo nodeId="5343139407540223539" fileName="SNodeCast_Behavior.java" startLine="13" startPosition="0" endLine="18" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="virtual_getType_228266671027867010#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
     <scopeInfo nodeId="5343139407540223541" fileName="SNodeCast_Behavior.java" startLine="10" startPosition="43" endLine="10" endPosition="43" />
     <scopeInfo nodeId="5343139407540223539" fileName="SNodeCast_Behavior.java" startLine="10" startPosition="0" endLine="12" endPosition="0">
       <varInfo nodeId="5343139407540223539" varName="thisNode" />
     </scopeInfo>
-    <scopeInfo nodeId="5343139407540223599" fileName="SNodeCast_Behavior.java" startLine="13" startPosition="74" endLine="16" endPosition="20">
-      <varInfo nodeId="5343139407540223723" varName="nodeType" />
+    <scopeInfo nodeId="7737135435999988366" fileName="SNodeCast_Behavior.java" startLine="13" startPosition="74" endLine="16" endPosition="20">
+      <varInfo nodeId="7737135435999989299" varName="nodeType" />
     </scopeInfo>
     <scopeInfo nodeId="5343139407540223539" fileName="SNodeCast_Behavior.java" startLine="13" startPosition="0" endLine="18" endPosition="0">
       <varInfo nodeId="5343139407540223539" varName="thisNode" />

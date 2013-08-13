@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="-9snxmk8gmfviue3ls3d0ln67zrwxivr">
+<dependencies version="2" modelHash="1v7zngrw0adod8tsiwiak5xac7erl8f">
   <dep model="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.smodel.runtime.impl(MPS.Core/jetbrains.mps.smodel.runtime.impl@java_stub)" />
   <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
   <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
@@ -51,10 +51,10 @@
   <source id="4690043208397697375" name="MqlConceptType" hash="-4bbq27b6w1bhvmm9z20v19y1hf0owwf">
     <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
   </source>
-  <source id="5343139407539241386" name="IsInstanceOf" hash="apiskoa2ahy56t5fw1txs2wavzv8zhw">
+  <source id="5343139407539241386" name="IsInstanceOf" hash="-dlpy7paobhvngivn1h68adxa2hyp00e">
     <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
   </source>
-  <source id="5343139407540209770" name="SNodeCast" hash="-atifv3loi4xeygmlufwdzj5jdrpftdk">
+  <source id="5343139407540209770" name="SNodeCast" hash="-4s1vlr0axrbphpia72ed4ucji3kx7na">
     <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
   </source>
   <source id="8024238796508611960" name="MqlEnumType" hash="c4cu6clal9b6a2e7c37029pt50s2lue">
