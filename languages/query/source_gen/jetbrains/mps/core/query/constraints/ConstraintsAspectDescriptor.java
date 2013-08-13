@@ -26,7 +26,7 @@ public class ConstraintsAspectDescriptor implements jetbrains.mps.smodel.runtime
         return new MqlCollectionSelectorVar_Constraints();
       case 4:
         return new MqlNoContextQueryCall_Constraints();
-      case 10:
+      case 11:
         return new MqlVariable_Constraints();
       case 8:
         return new MqlStringIndexOp_Constraints();
@@ -34,11 +34,13 @@ public class ConstraintsAspectDescriptor implements jetbrains.mps.smodel.runtime
         return new MqlStringProperty_Constraints();
       case 3:
         return new MqlLet_Constraints();
+      case 10:
+        return new MqlSubstring_Constraints();
       default:
         // todo: illegal in some cases? 
         return new BaseConstraintsDescriptor(fqName);
     }
   }
 
-  private static String[] stringSwitchCases_2qnle6_a0a0b = new String[]{"jetbrains.mps.core.query.structure.MqlAssignment", "jetbrains.mps.core.query.structure.MqlCollectionSelectorVar", "jetbrains.mps.core.query.structure.MqlCollectionSelectorVarRef", "jetbrains.mps.core.query.structure.MqlLet", "jetbrains.mps.core.query.structure.MqlNoContextQueryCall", "jetbrains.mps.core.query.structure.MqlParameter", "jetbrains.mps.core.query.structure.MqlParameterReference", "jetbrains.mps.core.query.structure.MqlQuery", "jetbrains.mps.core.query.structure.MqlStringIndexOp", "jetbrains.mps.core.query.structure.MqlStringProperty", "jetbrains.mps.core.query.structure.MqlVariable"};
+  private static String[] stringSwitchCases_2qnle6_a0a0b = new String[]{"jetbrains.mps.core.query.structure.MqlAssignment", "jetbrains.mps.core.query.structure.MqlCollectionSelectorVar", "jetbrains.mps.core.query.structure.MqlCollectionSelectorVarRef", "jetbrains.mps.core.query.structure.MqlLet", "jetbrains.mps.core.query.structure.MqlNoContextQueryCall", "jetbrains.mps.core.query.structure.MqlParameter", "jetbrains.mps.core.query.structure.MqlParameterReference", "jetbrains.mps.core.query.structure.MqlQuery", "jetbrains.mps.core.query.structure.MqlStringIndexOp", "jetbrains.mps.core.query.structure.MqlStringProperty", "jetbrains.mps.core.query.structure.MqlSubstring", "jetbrains.mps.core.query.structure.MqlVariable"};
 }

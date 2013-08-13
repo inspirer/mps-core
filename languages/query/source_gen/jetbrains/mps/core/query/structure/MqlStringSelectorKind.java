@@ -8,10 +8,8 @@ import jetbrains.mps.internal.collections.runtime.backports.LinkedList;
 
 public enum MqlStringSelectorKind {
   concat("concat", 1),
-  startsWith("startsWith", 0),
-  endsWith("endsWith", 0),
-  indexOf("indexOf", 0),
-  lastIndexOf("lastIndexOf", 0);
+  startsWith("startsWith", 2),
+  endsWith("endsWith", 3);
 
   private String myName;
 
@@ -28,8 +26,6 @@ public enum MqlStringSelectorKind {
     ListSequence.fromList(list).addElement(MqlStringSelectorKind.concat);
     ListSequence.fromList(list).addElement(MqlStringSelectorKind.startsWith);
     ListSequence.fromList(list).addElement(MqlStringSelectorKind.endsWith);
-    ListSequence.fromList(list).addElement(MqlStringSelectorKind.indexOf);
-    ListSequence.fromList(list).addElement(MqlStringSelectorKind.lastIndexOf);
     return list;
   }
 
@@ -49,12 +45,6 @@ public enum MqlStringSelectorKind {
     }
     if (value.equals(MqlStringSelectorKind.endsWith.getValueAsString())) {
       return MqlStringSelectorKind.endsWith;
-    }
-    if (value.equals(MqlStringSelectorKind.indexOf.getValueAsString())) {
-      return MqlStringSelectorKind.indexOf;
-    }
-    if (value.equals(MqlStringSelectorKind.lastIndexOf.getValueAsString())) {
-      return MqlStringSelectorKind.lastIndexOf;
     }
     return MqlStringSelectorKind.getDefault();
   }

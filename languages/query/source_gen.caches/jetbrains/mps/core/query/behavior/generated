@@ -25,7 +25,7 @@
   <dep model="r:c3548bac-30eb-4a2a-937c-0111d5697309(jetbrains.mps.lang.smodel.generator.smodelAdapter)" />
   <dep model="r:d1558b8f-fc9e-4ca7-bb90-70ac789f336e(jetbrains.mps.baseLanguage.collections.generator.baseLanguage.template.post@generator)" />
   <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" />
-  <dep model="r:f9198ffd-e084-425c-aa82-f2db8289f5eb(jetbrains.mps.core.query.structure)" hash="-1llt09bxxqyucc9odv8w0kbhrzepvdf" />
+  <dep model="r:f9198ffd-e084-425c-aa82-f2db8289f5eb(jetbrains.mps.core.query.structure)" hash="b02xv0ddvvx5owbx3sjn3ev8nvrlrg7" />
   <dep model="r:fc76aa36-3cff-41c7-b94b-eee0e8341932(jetbrains.mps.internal.collections.runtime)" />
   <common hash="-2qfw3aicropndylkplyqx8crf2dyjau" dependsOnNodes="true">
     <dep root="2059702675525965903" />
@@ -115,6 +115,7 @@
     <file name="MqlStringProperty_BehaviorDescriptor.java" />
     <file name="MqlStringSelector_BehaviorDescriptor.java" />
     <file name="MqlStringType_BehaviorDescriptor.java" />
+    <file name="MqlSubstring_BehaviorDescriptor.java" />
     <file name="MqlThisProvider_BehaviorDescriptor.java" />
     <file name="MqlThis_BehaviorDescriptor.java" />
     <file name="MqlTriplex_BehaviorDescriptor.java" />

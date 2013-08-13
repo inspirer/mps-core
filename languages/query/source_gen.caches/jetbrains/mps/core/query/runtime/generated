@@ -11,7 +11,7 @@
   <dep model="r:2eb00686-cf12-445a-b169-a375a4c25909(jetbrains.mps.core.query.behavior)" hash="-5288zciw8w345hk3s194pcdru9fllzo" />
   <dep model="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
   <dep model="r:61e3d524-8c49-4491-b5e3-f6d6e9364527(jetbrains.mps.util)" />
-  <dep model="r:f9198ffd-e084-425c-aa82-f2db8289f5eb(jetbrains.mps.core.query.structure)" hash="-1llt09bxxqyucc9odv8w0kbhrzepvdf" />
+  <dep model="r:f9198ffd-e084-425c-aa82-f2db8289f5eb(jetbrains.mps.core.query.structure)" hash="b02xv0ddvvx5owbx3sjn3ev8nvrlrg7" />
   <dep model="r:fc76aa36-3cff-41c7-b94b-eee0e8341932(jetbrains.mps.internal.collections.runtime)" />
   <common hash="-56fjeznmgnh2hs7vkp9pkbym2purkgj" />
   <source id="6762883159245086419" name="EvaluationContext" hash="-42gprrlm023brlmdfm64nvy5u4vetyo">

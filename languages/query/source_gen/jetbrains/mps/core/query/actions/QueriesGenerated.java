@@ -452,6 +452,40 @@ public class QueriesGenerated {
         }
       }
     }
+    {
+      SNode outputConcept = SConceptOperations.findConceptDeclaration("jetbrains.mps.core.query.structure.MqlSubstring");
+      SNode childConcept = (SNode) _context.getChildConcept();
+      if (SConceptOperations.isSuperConceptOf(childConcept, NameUtil.nodeFQName(outputConcept))) {
+        Iterable<SNode> queryResult = new Computable<Iterable<SNode>>() {
+          public Iterable<SNode> compute() {
+            return SEnumOperations.getEnumMembers(SEnumOperations.getEnum("r:f9198ffd-e084-425c-aa82-f2db8289f5eb(jetbrains.mps.core.query.structure)", "MqlSubstringKind"));
+          }
+        }.compute();
+        if (queryResult != null) {
+          for (final SNode item : queryResult) {
+            ListSequence.fromList(result).addElement(new DefaultChildNodeSubstituteAction(outputConcept, item, _context.getParentNode(), _context.getCurrentTargetNode(), _context.getChildSetter(), operationContext.getScope()) {
+              public SNode createChildNode(Object parameterObject, SModel model, String pattern) {
+                SNode nn = SNodeFactoryOperations.createNewNode(model, "jetbrains.mps.core.query.structure.MqlSubstring", null);
+                SPropertyOperations.set(nn, "kind", "" + (SEnumOperations.getEnumMemberValue((item))));
+                return nn;
+              }
+
+              public String getMatchingText(String pattern) {
+                return SPropertyOperations.getString(ListSequence.fromList(SLinkOperations.getTargets(SNodeOperations.getNode("r:f9198ffd-e084-425c-aa82-f2db8289f5eb(jetbrains.mps.core.query.structure)", "2666204899678455912"), "member", true)).findFirst(new IWhereFilter<SNode>() {
+                  public boolean accept(SNode it) {
+                    return SPropertyOperations.getString(it, "internalValue").equals(SEnumOperations.getEnumMemberValue((item)));
+                  }
+                }), "externalValue");
+              }
+
+              public String getVisibleMatchingText(String pattern) {
+                return getMatchingText(pattern);
+              }
+            });
+          }
+        }
+      }
+    }
     return result;
   }
 

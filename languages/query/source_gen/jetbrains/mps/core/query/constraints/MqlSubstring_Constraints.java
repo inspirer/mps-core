@@ -7,14 +7,20 @@ import org.jetbrains.annotations.Nullable;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.smodel.IOperationContext;
 import jetbrains.mps.smodel.runtime.CheckingNodeContext;
+import java.util.Map;
+import jetbrains.mps.smodel.runtime.PropertyConstraintsDescriptor;
+import java.util.HashMap;
+import jetbrains.mps.smodel.runtime.base.BasePropertyConstraintsDescriptor;
+import jetbrains.mps.smodel.IScope;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.smodel.behaviour.BehaviorReflection;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.smodel.SNodePointer;
 
-public class MqlStringIndexOp_Constraints extends BaseConstraintsDescriptor {
-  public MqlStringIndexOp_Constraints() {
-    super("jetbrains.mps.core.query.structure.MqlStringIndexOp");
+public class MqlSubstring_Constraints extends BaseConstraintsDescriptor {
+  public MqlSubstring_Constraints() {
+    super("jetbrains.mps.core.query.structure.MqlSubstring");
   }
 
   @Override
@@ -33,9 +39,31 @@ public class MqlStringIndexOp_Constraints extends BaseConstraintsDescriptor {
     return result;
   }
 
+  @Override
+  protected Map<String, PropertyConstraintsDescriptor> getNotDefaultProperties() {
+    Map<String, PropertyConstraintsDescriptor> properties = new HashMap();
+    properties.put("kind", new BasePropertyConstraintsDescriptor("kind", this) {
+      @Override
+      public boolean hasOwnSetter() {
+        return true;
+      }
+
+      @Override
+      public void setValue(SNode node, String propertyValue, IScope scope) {
+        String propertyName = "kind";
+        // FIXME: hardcoded 1, I coudn't get enum member comparison to work, generator seems to be broken 
+        if ((SPropertyOperations.getInteger(propertyValue)) == 1) {
+          SLinkOperations.setTarget(node, "endIndex", null, true);
+        }
+        SPropertyOperations.set(node, "kind", "" + ((SPropertyOperations.getInteger(propertyValue))));
+      }
+    });
+    return properties;
+  }
+
   public static boolean static_canBeAChild(SNode node, SNode parentNode, SNode link, SNode childConcept, final IOperationContext operationContext) {
     return SNodeOperations.isInstanceOf(parentNode, "jetbrains.mps.core.query.structure.MqlDotExpression") && SNodeOperations.isInstanceOf(BehaviorReflection.invokeVirtual((Class<SNode>) ((Class) Object.class), SLinkOperations.getTarget(SNodeOperations.cast(parentNode, "jetbrains.mps.core.query.structure.MqlDotExpression"), "left", true), "virtual_getType_228266671027861783", new Object[]{}), "jetbrains.mps.core.query.structure.MqlStringType");
   }
 
-  private static SNodePointer canBeChildBreakingPoint = new SNodePointer("r:d2131fa8-9bff-49c9-a7e2-6972f9544c0a(jetbrains.mps.core.query.constraints)", "4562783364484464225");
+  private static SNodePointer canBeChildBreakingPoint = new SNodePointer("r:d2131fa8-9bff-49c9-a7e2-6972f9544c0a(jetbrains.mps.core.query.constraints)", "2666204899680063307");
 }
