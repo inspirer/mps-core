@@ -12,55 +12,55 @@ public class BehaviorAspectDescriptor implements jetbrains.mps.smodel.runtime.Be
 
   public BehaviorDescriptor getDescriptor(String fqName) {
     switch (Arrays.binarySearch(stringSwitchCases_846f5o_a0a0b, fqName)) {
-      case 26:
+      case 28:
         return new MqlQuery_BehaviorDescriptor();
-      case 9:
-        return new MqlComma_BehaviorDescriptor();
       case 10:
+        return new MqlComma_BehaviorDescriptor();
+      case 11:
         return new MqlCondition_BehaviorDescriptor();
-      case 25:
+      case 27:
         return new MqlParentheses_BehaviorDescriptor();
-      case 35:
+      case 37:
         return new MqlUnary_BehaviorDescriptor();
       case 0:
         return new MqlArithmetic_BehaviorDescriptor();
-      case 14:
+      case 15:
         return new MqlIntLiteral_BehaviorDescriptor();
-      case 28:
+      case 30:
         return new MqlStringLiteral_BehaviorDescriptor();
       case 2:
         return new MqlBoolLiteral_BehaviorDescriptor();
-      case 34:
+      case 36:
         return new MqlTriplex_BehaviorDescriptor();
-      case 20:
+      case 21:
         return new MqlNullLiteral_BehaviorDescriptor();
-      case 33:
+      case 35:
         return new MqlThis_BehaviorDescriptor();
-      case 18:
+      case 19:
         return new MqlListType_BehaviorDescriptor();
-      case 15:
+      case 16:
         return new MqlIntType_BehaviorDescriptor();
-      case 31:
+      case 33:
         return new MqlStringType_BehaviorDescriptor();
       case 3:
         return new MqlBoolType_BehaviorDescriptor();
-      case 12:
+      case 13:
         return new MqlFunctionType_BehaviorDescriptor();
-      case 21:
-        return new MqlNullType_BehaviorDescriptor();
-      case 11:
-        return new MqlDotExpression_BehaviorDescriptor();
       case 22:
-        return new MqlPackage_BehaviorDescriptor();
-      case 23:
-        return new MqlParameter_BehaviorDescriptor();
+        return new MqlNullType_BehaviorDescriptor();
+      case 12:
+        return new MqlDotExpression_BehaviorDescriptor();
       case 24:
+        return new MqlPackage_BehaviorDescriptor();
+      case 25:
+        return new MqlParameter_BehaviorDescriptor();
+      case 26:
         return new MqlParameterReference_BehaviorDescriptor();
       case 4:
         return new MqlClosure_BehaviorDescriptor();
       case 1:
         return new MqlAssignment_BehaviorDescriptor();
-      case 19:
+      case 20:
         return new MqlNoContextQueryCall_BehaviorDescriptor();
       case 6:
         return new MqlCollectionSelector_BehaviorDescriptor();
@@ -70,28 +70,32 @@ public class BehaviorAspectDescriptor implements jetbrains.mps.smodel.runtime.Be
         return new MqlCollectionSelectorVar_BehaviorDescriptor();
       case 8:
         return new MqlCollectionSelectorVarRef_BehaviorDescriptor();
-      case 17:
+      case 18:
         return new MqlListLiteral_BehaviorDescriptor();
-      case 36:
+      case 38:
         return new MqlVariable_BehaviorDescriptor();
-      case 37:
+      case 39:
         return new MqlVariableReference_BehaviorDescriptor();
-      case 13:
+      case 14:
         return new MqlImport_BehaviorDescriptor();
-      case 30:
-        return new MqlStringSelector_BehaviorDescriptor();
-      case 29:
-        return new MqlStringProperty_BehaviorDescriptor();
-      case 27:
-        return new MqlStringIndexOp_BehaviorDescriptor();
-      case 16:
-        return new MqlLet_BehaviorDescriptor();
       case 32:
+        return new MqlStringSelector_BehaviorDescriptor();
+      case 31:
+        return new MqlStringProperty_BehaviorDescriptor();
+      case 29:
+        return new MqlStringIndexOp_BehaviorDescriptor();
+      case 17:
+        return new MqlLet_BehaviorDescriptor();
+      case 34:
         return new MqlSubstring_BehaviorDescriptor();
+      case 23:
+        return new MqlOrderedSetType_BehaviorDescriptor();
+      case 9:
+        return new MqlCollectionType_BehaviorDescriptor();
       default:
         return BehaviorAspectInterpreted.getInstance().getDescriptor(fqName);
     }
   }
 
-  private static String[] stringSwitchCases_846f5o_a0a0b = new String[]{"jetbrains.mps.core.query.structure.MqlArithmetic", "jetbrains.mps.core.query.structure.MqlAssignment", "jetbrains.mps.core.query.structure.MqlBoolLiteral", "jetbrains.mps.core.query.structure.MqlBoolType", "jetbrains.mps.core.query.structure.MqlClosure", "jetbrains.mps.core.query.structure.MqlCollectionProperty", "jetbrains.mps.core.query.structure.MqlCollectionSelector", "jetbrains.mps.core.query.structure.MqlCollectionSelectorVar", "jetbrains.mps.core.query.structure.MqlCollectionSelectorVarRef", "jetbrains.mps.core.query.structure.MqlComma", "jetbrains.mps.core.query.structure.MqlCondition", "jetbrains.mps.core.query.structure.MqlDotExpression", "jetbrains.mps.core.query.structure.MqlFunctionType", "jetbrains.mps.core.query.structure.MqlImport", "jetbrains.mps.core.query.structure.MqlIntLiteral", "jetbrains.mps.core.query.structure.MqlIntType", "jetbrains.mps.core.query.structure.MqlLet", "jetbrains.mps.core.query.structure.MqlListLiteral", "jetbrains.mps.core.query.structure.MqlListType", "jetbrains.mps.core.query.structure.MqlNoContextQueryCall", "jetbrains.mps.core.query.structure.MqlNullLiteral", "jetbrains.mps.core.query.structure.MqlNullType", "jetbrains.mps.core.query.structure.MqlPackage", "jetbrains.mps.core.query.structure.MqlParameter", "jetbrains.mps.core.query.structure.MqlParameterReference", "jetbrains.mps.core.query.structure.MqlParentheses", "jetbrains.mps.core.query.structure.MqlQuery", "jetbrains.mps.core.query.structure.MqlStringIndexOp", "jetbrains.mps.core.query.structure.MqlStringLiteral", "jetbrains.mps.core.query.structure.MqlStringProperty", "jetbrains.mps.core.query.structure.MqlStringSelector", "jetbrains.mps.core.query.structure.MqlStringType", "jetbrains.mps.core.query.structure.MqlSubstring", "jetbrains.mps.core.query.structure.MqlThis", "jetbrains.mps.core.query.structure.MqlTriplex", "jetbrains.mps.core.query.structure.MqlUnary", "jetbrains.mps.core.query.structure.MqlVariable", "jetbrains.mps.core.query.structure.MqlVariableReference"};
+  private static String[] stringSwitchCases_846f5o_a0a0b = new String[]{"jetbrains.mps.core.query.structure.MqlArithmetic", "jetbrains.mps.core.query.structure.MqlAssignment", "jetbrains.mps.core.query.structure.MqlBoolLiteral", "jetbrains.mps.core.query.structure.MqlBoolType", "jetbrains.mps.core.query.structure.MqlClosure", "jetbrains.mps.core.query.structure.MqlCollectionProperty", "jetbrains.mps.core.query.structure.MqlCollectionSelector", "jetbrains.mps.core.query.structure.MqlCollectionSelectorVar", "jetbrains.mps.core.query.structure.MqlCollectionSelectorVarRef", "jetbrains.mps.core.query.structure.MqlCollectionType", "jetbrains.mps.core.query.structure.MqlComma", "jetbrains.mps.core.query.structure.MqlCondition", "jetbrains.mps.core.query.structure.MqlDotExpression", "jetbrains.mps.core.query.structure.MqlFunctionType", "jetbrains.mps.core.query.structure.MqlImport", "jetbrains.mps.core.query.structure.MqlIntLiteral", "jetbrains.mps.core.query.structure.MqlIntType", "jetbrains.mps.core.query.structure.MqlLet", "jetbrains.mps.core.query.structure.MqlListLiteral", "jetbrains.mps.core.query.structure.MqlListType", "jetbrains.mps.core.query.structure.MqlNoContextQueryCall", "jetbrains.mps.core.query.structure.MqlNullLiteral", "jetbrains.mps.core.query.structure.MqlNullType", "jetbrains.mps.core.query.structure.MqlOrderedSetType", "jetbrains.mps.core.query.structure.MqlPackage", "jetbrains.mps.core.query.structure.MqlParameter", "jetbrains.mps.core.query.structure.MqlParameterReference", "jetbrains.mps.core.query.structure.MqlParentheses", "jetbrains.mps.core.query.structure.MqlQuery", "jetbrains.mps.core.query.structure.MqlStringIndexOp", "jetbrains.mps.core.query.structure.MqlStringLiteral", "jetbrains.mps.core.query.structure.MqlStringProperty", "jetbrains.mps.core.query.structure.MqlStringSelector", "jetbrains.mps.core.query.structure.MqlStringType", "jetbrains.mps.core.query.structure.MqlSubstring", "jetbrains.mps.core.query.structure.MqlThis", "jetbrains.mps.core.query.structure.MqlTriplex", "jetbrains.mps.core.query.structure.MqlUnary", "jetbrains.mps.core.query.structure.MqlVariable", "jetbrains.mps.core.query.structure.MqlVariableReference"};
 }

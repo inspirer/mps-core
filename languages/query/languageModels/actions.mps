@@ -4266,5 +4266,17 @@
       </node>
     </node>
   </root>
+  <root type="tpdg.NodeSubstituteActions" typeId="tpdg.1112056943463" id="9087630951855194382" nodeInfo="ng">
+    <property name="name" nameId="tpck.1169194664001" value="collectionType" />
+    <node role="actionsBuilder" roleId="tpdg.1112058057696" type="tpdg.NodeSubstituteActionsBuilder" typeId="tpdg.1112058030570" id="9087630951855197731" nodeInfo="ng">
+      <link role="applicableConcept" roleId="tpdg.1112058088712" targetNodeId="bwy9.9087630951853312410" resolveInfo="MqlCollectionType" />
+      <node role="part" roleId="tpdg.1177324142645" type="tpdg.ConceptSubstitutePart" typeId="tpdg.1180134965967" id="9087630951855197742" nodeInfo="ng">
+        <link role="concept" roleId="tpdg.1180135092669" targetNodeId="bwy9.9087630951853302698" resolveInfo="MqlOrderedSetType" />
+      </node>
+      <node role="part" roleId="tpdg.1177324142645" type="tpdg.ConceptSubstitutePart" typeId="tpdg.1180134965967" id="9087630951855197733" nodeInfo="ng">
+        <link role="concept" roleId="tpdg.1180135092669" targetNodeId="bwy9.6762883159245048068" resolveInfo="MqlListType" />
+      </node>
+    </node>
+  </root>
 </model>
 

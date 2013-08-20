@@ -4,7 +4,7 @@ package jetbrains.mps.core.query.behavior;
 
 import org.jetbrains.mps.openapi.model.SNode;
 
-public class MqlListType_BehaviorDescriptor extends MqlType_BehaviorDescriptor {
+public class MqlListType_BehaviorDescriptor extends MqlCollectionType_BehaviorDescriptor {
   public MqlListType_BehaviorDescriptor() {
   }
 
