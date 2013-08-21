@@ -382,7 +382,7 @@
     <nodeInfo nodeId="5280308256730756718" fileName="QueriesGenerated.java" startLine="358" startPosition="137" endLine="359" endPosition="103" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
     <nodeInfo nodeId="5280308256730756716" fileName="QueriesGenerated.java" startLine="359" startPosition="103" endLine="360" endPosition="26" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="5280308256730756685" fileName="QueriesGenerated.java" startLine="365" startPosition="51" endLine="366" endPosition="129" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="5280308256730753261" fileName="QueriesGenerated.java" startLine="382" startPosition="191" endLine="383" endPosition="474" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="5280308256730753261" fileName="QueriesGenerated.java" startLine="382" startPosition="191" endLine="383" endPosition="480" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="5280308256730689828" fileName="QueriesGenerated.java" startLine="331" startPosition="0" endLine="334" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
     <nodeInfo nodeId="5280308256730756683" fileName="QueriesGenerated.java" startLine="365" startPosition="0" endLine="368" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
     <nodeInfo nodeId="5280308256730689787" fileName="QueriesGenerated.java" startLine="382" startPosition="0" endLine="385" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="nodeSubstituteActionsBuilder_Precondition_MqlSelector_5280308256730689787#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/action/NodeSubstitutePreconditionContext;)Z" />
@@ -390,7 +390,7 @@
     <nodeInfo nodeId="5280308256730756676" fileName="QueriesGenerated.java" startLine="363" startPosition="61" endLine="368" endPosition="37" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <scopeInfo nodeId="5280308256730689829" fileName="QueriesGenerated.java" startLine="331" startPosition="51" endLine="332" endPosition="129" />
     <scopeInfo nodeId="5280308256730756684" fileName="QueriesGenerated.java" startLine="365" startPosition="51" endLine="366" endPosition="129" />
-    <scopeInfo nodeId="5280308256730689788" fileName="QueriesGenerated.java" startLine="382" startPosition="191" endLine="383" endPosition="474" />
+    <scopeInfo nodeId="5280308256730689788" fileName="QueriesGenerated.java" startLine="382" startPosition="191" endLine="383" endPosition="480" />
     <scopeInfo nodeId="5280308256730689828" fileName="QueriesGenerated.java" startLine="331" startPosition="0" endLine="334" endPosition="0">
       <varInfo nodeId="5280308256730689828" varName="it" />
     </scopeInfo>

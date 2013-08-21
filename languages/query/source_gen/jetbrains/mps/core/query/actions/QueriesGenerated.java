@@ -380,7 +380,7 @@ public class QueriesGenerated {
   }
 
   public static boolean nodeSubstituteActionsBuilder_Precondition_MqlSelector_5280308256730689787(final IOperationContext operationContext, final NodeSubstitutePreconditionContext _context) {
-    return SNodeOperations.isInstanceOf(_context.getParentNode(), "jetbrains.mps.core.query.structure.MqlDotExpression") && SNodeOperations.isInstanceOf(BehaviorReflection.invokeVirtual((Class<SNode>) ((Class) Object.class), SLinkOperations.getTarget(SNodeOperations.cast(_context.getParentNode(), "jetbrains.mps.core.query.structure.MqlDotExpression"), "left", true), "virtual_getType_228266671027861783", new Object[]{}), "jetbrains.mps.core.query.structure.MqlListType");
+    return SNodeOperations.isInstanceOf(_context.getParentNode(), "jetbrains.mps.core.query.structure.MqlDotExpression") && SNodeOperations.isInstanceOf(BehaviorReflection.invokeVirtual((Class<SNode>) ((Class) Object.class), SLinkOperations.getTarget(SNodeOperations.cast(_context.getParentNode(), "jetbrains.mps.core.query.structure.MqlDotExpression"), "left", true), "virtual_getType_228266671027861783", new Object[]{}), "jetbrains.mps.core.query.structure.MqlCollectionType");
   }
 
   public static List<SubstituteAction> nodeSubstituteActionsBuilder_ActionsFactory_MqlSelector_5343139407560197073(final IOperationContext operationContext, final NodeSubstituteActionsFactoryContext _context) {
