@@ -20,10 +20,6 @@ public class PrecedenceUtil {
         // we do not go through expressions like parentheses or calls 
         break;
       }
-      if (SNodeOperations.isInstanceOf(parentNode, "jetbrains.mps.core.query.structure.MqlTriplex") && SNodeOperations.isInstanceOf(result, "jetbrains.mps.core.query.structure.MqlComma")) {
-        // comma in triplex is ok, need to parenthesise 
-        break;
-      }
       if (SNodeOperations.isInstanceOf(parentNode, "jetbrains.mps.core.query.structure.MqlBinaryExpr") && SNodeOperations.getContainingLinkDeclaration(targetNode) == SLinkOperations.findLinkDeclaration("jetbrains.mps.core.query.structure.MqlBinaryExpr", "right")) {
         // if parent expression is BinaryOperation having higher priority and target is rhigh child of it 
         // then we should rather transform current target and add additional parenthesis around resulting expression 
@@ -40,10 +36,6 @@ public class PrecedenceUtil {
     for (SNode parentNode = SNodeOperations.getParent(targetNode); parentNode != null && SNodeOperations.isInstanceOf(parentNode, "jetbrains.mps.core.query.structure.MqlExpression") && BehaviorReflection.invokeVirtual(Integer.TYPE, SNodeOperations.cast(parentNode, "jetbrains.mps.core.query.structure.MqlExpression"), "virtual_getPriority_7352592509980890960", new Object[]{}) < prio; parentNode = SNodeOperations.getParent(targetNode)) {
       if (BehaviorReflection.invokeVirtual(Integer.TYPE, SNodeOperations.cast(parentNode, "jetbrains.mps.core.query.structure.MqlExpression"), "virtual_getPriority_7352592509980890960", new Object[]{}) == -1) {
         // we do not go through expressions like parentheses or calls 
-        break;
-      }
-      if (SNodeOperations.isInstanceOf(parentNode, "jetbrains.mps.core.query.structure.MqlTriplex") && SNodeOperations.isInstanceOf(result, "jetbrains.mps.core.query.structure.MqlComma")) {
-        // comma in triplex is ok, need to parenthesise 
         break;
       }
       if (SNodeOperations.isInstanceOf(parentNode, "jetbrains.mps.core.query.structure.MqlBinaryExpr") && SNodeOperations.getContainingLinkDeclaration(targetNode) == SLinkOperations.findLinkDeclaration("jetbrains.mps.core.query.structure.MqlBinaryExpr", "left")) {

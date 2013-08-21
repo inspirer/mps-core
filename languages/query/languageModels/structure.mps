@@ -29,17 +29,6 @@
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="1992172484410508056" resolveInfo="MqlParametersContainer" />
     </node>
   </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6762883159245048011" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="MqlComma" />
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="6762883159245048014" resolveInfo="MqlBinaryExpr" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="261388556849187321" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.3734116213129792499" resolveInfo="ScopeProvider" />
-    </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="8328395416353556584" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.1835621062190663819" resolveInfo="IDontSubstituteByDefault" />
-    </node>
-  </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6762883159245048012" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="MqlExpression" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="expr" />
