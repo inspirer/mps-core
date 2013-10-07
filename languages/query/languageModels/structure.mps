@@ -864,5 +864,73 @@
     <property name="name" nameId="tpck.1169194664001" value="MqlCollectionSortSelector" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="6762883159245048087" resolveInfo="MqlSelector" />
   </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5272233748012075785" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="collections" />
+    <property name="name" nameId="tpck.1169194664001" value="MqlCollectionOneArgOp" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="6762883159245048087" resolveInfo="MqlSelector" />
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="5272233748012107003" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <property name="role" nameId="tpce.1071599776563" value="argument" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="6762883159245048012" resolveInfo="MqlExpression" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5272233748012107007" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="collections" />
+    <property name="name" nameId="tpck.1169194664001" value="MqlCollectionConcatOp" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="5272233748012075785" resolveInfo="MqlCollectionOneArgOp" />
+    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="5272233748012144105" nodeInfo="ig">
+      <property name="name" nameId="tpck.1169194664001" value="kind" />
+      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="5272233748012107008" resolveInfo="MqlCollectionConcatOpKind" />
+    </node>
+  </root>
+  <root type="tpce.EnumerationDataTypeDeclaration" typeId="tpce.1082978164219" id="5272233748012107008" nodeInfo="ng">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="collections" />
+    <property name="name" nameId="tpck.1169194664001" value="MqlCollectionConcatOpKind" />
+    <property name="hasNoDefaultMember" nameId="tpce.1212080844762" value="true" />
+    <property name="memberIdentifierPolicy" nameId="tpce.1197591154882" value="custom" />
+    <link role="memberDataType" roleId="tpce.1083171729157" targetNodeId="tpck.1082983657062" resolveInfo="integer" />
+    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="5272233748012107009" nodeInfo="ig">
+      <property name="javaIdentifier" nameId="tpce.1192116978809" value="CONCAT" />
+      <property name="internalValue" nameId="tpce.1083923523171" value="1" />
+      <property name="externalValue" nameId="tpce.1083923523172" value="concat" />
+    </node>
+    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="5272233748012107010" nodeInfo="ig">
+      <property name="javaIdentifier" nameId="tpce.1192116978809" value="UNION" />
+      <property name="internalValue" nameId="tpce.1083923523171" value="2" />
+      <property name="externalValue" nameId="tpce.1083923523172" value="union" />
+    </node>
+    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="5272233748012107017" nodeInfo="ig">
+      <property name="javaIdentifier" nameId="tpce.1192116978809" value="INTERSECTION" />
+      <property name="internalValue" nameId="tpce.1083923523171" value="3" />
+      <property name="externalValue" nameId="tpce.1083923523172" value="intersection" />
+    </node>
+    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="5272233748012107384" nodeInfo="ig">
+      <property name="javaIdentifier" nameId="tpce.1192116978809" value="DIFFERENCE" />
+      <property name="internalValue" nameId="tpce.1083923523171" value="4" />
+      <property name="externalValue" nameId="tpce.1083923523172" value="difference" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5272233748012107397" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="collections" />
+    <property name="name" nameId="tpck.1169194664001" value="MqlCollectionElementOp" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="5272233748012075785" resolveInfo="MqlCollectionOneArgOp" />
+    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="5272233748012144113" nodeInfo="ig">
+      <property name="name" nameId="tpck.1169194664001" value="kind" />
+      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="5272233748012107398" resolveInfo="MqlCollectionElementOpKind" />
+    </node>
+  </root>
+  <root type="tpce.EnumerationDataTypeDeclaration" typeId="tpce.1082978164219" id="5272233748012107398" nodeInfo="ng">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="collections" />
+    <property name="name" nameId="tpck.1169194664001" value="MqlCollectionElementOpKind" />
+    <property name="hasNoDefaultMember" nameId="tpce.1212080844762" value="true" />
+    <property name="memberIdentifierPolicy" nameId="tpce.1197591154882" value="custom" />
+    <link role="memberDataType" roleId="tpce.1083171729157" targetNodeId="tpck.1082983657062" resolveInfo="integer" />
+    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="5272233748012107400" nodeInfo="ig">
+      <property name="javaIdentifier" nameId="tpce.1192116978809" value="WITH" />
+      <property name="internalValue" nameId="tpce.1083923523171" value="1" />
+      <property name="externalValue" nameId="tpce.1083923523172" value="with" />
+    </node>
+  </root>
 </model>
 

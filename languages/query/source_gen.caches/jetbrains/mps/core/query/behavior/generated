@@ -25,7 +25,7 @@
   <dep model="r:c3548bac-30eb-4a2a-937c-0111d5697309(jetbrains.mps.lang.smodel.generator.smodelAdapter)" />
   <dep model="r:d1558b8f-fc9e-4ca7-bb90-70ac789f336e(jetbrains.mps.baseLanguage.collections.generator.baseLanguage.template.post@generator)" />
   <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" />
-  <dep model="r:f9198ffd-e084-425c-aa82-f2db8289f5eb(jetbrains.mps.core.query.structure)" hash="-547zvw5t23mp270isp38k0udr1gvi2i" />
+  <dep model="r:f9198ffd-e084-425c-aa82-f2db8289f5eb(jetbrains.mps.core.query.structure)" hash="44t1fp9dk1m88ic0csc8q86cgx6rgh9" />
   <dep model="r:fc76aa36-3cff-41c7-b94b-eee0e8341932(jetbrains.mps.internal.collections.runtime)" />
   <common hash="-2qfw3aicropndylkplyqx8crf2dyjau" dependsOnNodes="true">
     <dep root="2059702675525965903" />
@@ -87,6 +87,9 @@
     <file name="MqlBoolLiteral_BehaviorDescriptor.java" />
     <file name="MqlBoolType_BehaviorDescriptor.java" />
     <file name="MqlClosure_BehaviorDescriptor.java" />
+    <file name="MqlCollectionConcatOp_BehaviorDescriptor.java" />
+    <file name="MqlCollectionElementOp_BehaviorDescriptor.java" />
+    <file name="MqlCollectionOneArgOp_BehaviorDescriptor.java" />
     <file name="MqlCollectionProperty_BehaviorDescriptor.java" />
     <file name="MqlCollectionSelectorVarRef_BehaviorDescriptor.java" />
     <file name="MqlCollectionSelectorVar_BehaviorDescriptor.java" />
