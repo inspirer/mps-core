@@ -201,7 +201,7 @@
     <nodeInfo nodeId="5280308256730662789" fileName="check_CollectionSelector_NonTypesystemRule.java" startLine="18" startPosition="0" endLine="20" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="check_CollectionSelector_NonTypesystemRule#()V" />
     <nodeInfo nodeId="5280308256730662789" fileName="check_CollectionSelector_NonTypesystemRule.java" startLine="31" startPosition="0" endLine="34" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getApplicableConceptFQName#()Ljava/lang/String;" />
     <nodeInfo nodeId="5280308256730662789" fileName="check_CollectionSelector_NonTypesystemRule.java" startLine="42" startPosition="0" endLine="45" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="overrides#()Z" />
-    <nodeInfo nodeId="5280308256730689738" fileName="check_CollectionSelector_NonTypesystemRule.java" startLine="23" startPosition="98" endLine="27" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="5280308256730689738" fileName="check_CollectionSelector_NonTypesystemRule.java" startLine="23" startPosition="104" endLine="27" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
     <nodeInfo nodeId="5280308256730662789" fileName="check_CollectionSelector_NonTypesystemRule.java" startLine="35" startPosition="68" endLine="39" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
     <nodeInfo nodeId="5280308256730689721" fileName="check_CollectionSelector_NonTypesystemRule.java" startLine="22" startPosition="89" endLine="28" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
     <nodeInfo nodeId="5280308256730662789" fileName="check_CollectionSelector_NonTypesystemRule.java" startLine="35" startPosition="0" endLine="41" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
@@ -219,7 +219,7 @@
     </scopeInfo>
     <scopeInfo nodeId="5280308256730662789" fileName="check_CollectionSelector_NonTypesystemRule.java" startLine="31" startPosition="0" endLine="34" endPosition="0" />
     <scopeInfo nodeId="5280308256730662789" fileName="check_CollectionSelector_NonTypesystemRule.java" startLine="42" startPosition="0" endLine="45" endPosition="0" />
-    <scopeInfo nodeId="5280308256730689722" fileName="check_CollectionSelector_NonTypesystemRule.java" startLine="23" startPosition="98" endLine="27" endPosition="7" />
+    <scopeInfo nodeId="5280308256730689722" fileName="check_CollectionSelector_NonTypesystemRule.java" startLine="23" startPosition="104" endLine="27" endPosition="7" />
     <scopeInfo nodeId="5280308256730662789" fileName="check_CollectionSelector_NonTypesystemRule.java" startLine="35" startPosition="68" endLine="39" endPosition="5" />
     <scopeInfo nodeId="5280308256730662789" fileName="check_CollectionSelector_NonTypesystemRule.java" startLine="35" startPosition="0" endLine="41" endPosition="0">
       <varInfo nodeId="5280308256730662789" varName="argument" />

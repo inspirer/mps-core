@@ -12,6 +12,7 @@
     <classNode dependClassName="jetbrains.mps.core.query.behavior.MqlCollectionSelectorVarRef_BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.core.query.behavior.MqlCollectionSelectorVar_BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.core.query.behavior.MqlCollectionSelector_BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.core.query.behavior.MqlCollectionSortSelector_BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.core.query.behavior.MqlCollectionType_BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.core.query.behavior.MqlCondition_BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.core.query.behavior.MqlDotExpression_BehaviorDescriptor" />
@@ -290,6 +291,12 @@
     <classNode dependClassName="jetbrains.mps.lang.core.behavior.IDontSubstituteByDefault_BehaviorDescriptor" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="java.lang.Cloneable" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="jetbrains.mps.core.query.behavior.MqlCollectionSortSelector_BehaviorDescriptor" file="MqlCollectionSortSelector_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.core.query.behavior.MqlSelector_BehaviorDescriptor" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="jetbrains.mps.core.query.behavior.MqlCollectionType_BehaviorDescriptor" file="MqlCollectionType_BehaviorDescriptor.java">

@@ -13,7 +13,7 @@ public enum MqlCollectionSelectorKind {
   SELECT("select", 4),
   FORALL("forAll", 5),
   EXISTS("exists", 6),
-  SORT("sort", 7),
+  SORTBY("sortBy", 7),
   GROUPBY("groupBy", 8);
 
   private String myName;
@@ -34,7 +34,7 @@ public enum MqlCollectionSelectorKind {
     ListSequence.fromList(list).addElement(MqlCollectionSelectorKind.SELECT);
     ListSequence.fromList(list).addElement(MqlCollectionSelectorKind.FORALL);
     ListSequence.fromList(list).addElement(MqlCollectionSelectorKind.EXISTS);
-    ListSequence.fromList(list).addElement(MqlCollectionSelectorKind.SORT);
+    ListSequence.fromList(list).addElement(MqlCollectionSelectorKind.SORTBY);
     ListSequence.fromList(list).addElement(MqlCollectionSelectorKind.GROUPBY);
     return list;
   }
@@ -65,8 +65,8 @@ public enum MqlCollectionSelectorKind {
     if (value.equals(MqlCollectionSelectorKind.EXISTS.getValueAsString())) {
       return MqlCollectionSelectorKind.EXISTS;
     }
-    if (value.equals(MqlCollectionSelectorKind.SORT.getValueAsString())) {
-      return MqlCollectionSelectorKind.SORT;
+    if (value.equals(MqlCollectionSelectorKind.SORTBY.getValueAsString())) {
+      return MqlCollectionSelectorKind.SORTBY;
     }
     if (value.equals(MqlCollectionSelectorKind.GROUPBY.getValueAsString())) {
       return MqlCollectionSelectorKind.GROUPBY;

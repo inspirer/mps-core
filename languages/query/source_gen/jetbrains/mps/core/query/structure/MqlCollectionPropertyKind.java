@@ -11,7 +11,9 @@ public enum MqlCollectionPropertyKind {
   FIRST("first", 2),
   LAST("last", 3),
   IS_EMPTY("isEmpty", 4),
-  IS_NOT_EMPTY("isNotEmpty", 5);
+  IS_NOT_EMPTY("isNotEmpty", 5),
+  SORT("sort", 6),
+  REVERSE("reverse", 7);
 
   private String myName;
 
@@ -30,6 +32,8 @@ public enum MqlCollectionPropertyKind {
     ListSequence.fromList(list).addElement(MqlCollectionPropertyKind.LAST);
     ListSequence.fromList(list).addElement(MqlCollectionPropertyKind.IS_EMPTY);
     ListSequence.fromList(list).addElement(MqlCollectionPropertyKind.IS_NOT_EMPTY);
+    ListSequence.fromList(list).addElement(MqlCollectionPropertyKind.SORT);
+    ListSequence.fromList(list).addElement(MqlCollectionPropertyKind.REVERSE);
     return list;
   }
 
@@ -55,6 +59,12 @@ public enum MqlCollectionPropertyKind {
     }
     if (value.equals(MqlCollectionPropertyKind.IS_NOT_EMPTY.getValueAsString())) {
       return MqlCollectionPropertyKind.IS_NOT_EMPTY;
+    }
+    if (value.equals(MqlCollectionPropertyKind.SORT.getValueAsString())) {
+      return MqlCollectionPropertyKind.SORT;
+    }
+    if (value.equals(MqlCollectionPropertyKind.REVERSE.getValueAsString())) {
+      return MqlCollectionPropertyKind.REVERSE;
     }
     return MqlCollectionPropertyKind.getDefault();
   }

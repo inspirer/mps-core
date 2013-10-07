@@ -13,8 +13,8 @@ public class MqlCollectionSelectorVar_Behavior {
   public static SNode call_getType_5280308256730662805(SNode thisNode) {
     if (SNodeOperations.isInstanceOf(SNodeOperations.getParent(thisNode), "jetbrains.mps.core.query.structure.MqlCollectionSelector")) {
       SNode containerType = MqlSelector_Behavior.call_getContainerType_228266671027861723(SNodeOperations.cast(SNodeOperations.getParent(thisNode), "jetbrains.mps.core.query.structure.MqlCollectionSelector"));
-      if (SNodeOperations.isInstanceOf(containerType, "jetbrains.mps.core.query.structure.MqlListType")) {
-        return SLinkOperations.getTarget(SNodeOperations.cast(containerType, "jetbrains.mps.core.query.structure.MqlListType"), "inner", true);
+      if (SNodeOperations.isInstanceOf(containerType, "jetbrains.mps.core.query.structure.MqlCollectionType")) {
+        return SLinkOperations.getTarget(SNodeOperations.cast(containerType, "jetbrains.mps.core.query.structure.MqlCollectionType"), "inner", true);
       }
     }
     return null;

@@ -33,7 +33,7 @@ public class MqlCollectionType_Editor extends DefaultNodeEditor {
   }
 
   private EditorCell createComponent_53oyt2_a0(EditorContext editorContext, SNode node) {
-    EditorCell editorCell = editorContext.getCellFactory().createEditorComponentCell(node, "jetbrains.mps.lang.core.editor.AliasEditorComponent");
+    EditorCell editorCell = editorContext.getCellFactory().createEditorComponentCell(node, "jetbrains.mps.lang.core.editor.alias");
     return editorCell;
   }
 

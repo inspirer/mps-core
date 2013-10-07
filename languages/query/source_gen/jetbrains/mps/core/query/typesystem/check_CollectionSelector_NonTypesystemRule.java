@@ -20,7 +20,7 @@ public class check_CollectionSelector_NonTypesystemRule extends AbstractNonTypes
 
   public void applyRule(final SNode selector, final TypeCheckingContext typeCheckingContext, IsApplicableStatus status) {
     SNode left = MqlSelector_Behavior.call_getContainerType_228266671027861723(selector);
-    if (!(SNodeOperations.isInstanceOf(left, "jetbrains.mps.core.query.structure.MqlListType"))) {
+    if (!(SNodeOperations.isInstanceOf(left, "jetbrains.mps.core.query.structure.MqlCollectionType"))) {
       {
         MessageTarget errorTarget = new NodeMessageTarget();
         IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(MqlSelector_Behavior.call_getContainer_5280308256730689747(selector), "should be collection", "r:efe0605f-fbe2-49dd-8c71-c87a67c06b2c(jetbrains.mps.core.query.typesystem)", "5280308256730689738", null, errorTarget);

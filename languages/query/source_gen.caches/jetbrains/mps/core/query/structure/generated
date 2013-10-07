@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="-4s6jo8b591s83eapc2398qhti3en4ah">
+<dependencies version="2" modelHash="-547zvw5t23mp270isp38k0udr1gvi2i">
   <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
   <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
   <dep model="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.smodel.runtime.impl(MPS.Core/jetbrains.mps.smodel.runtime.impl@java_stub)" />
@@ -63,6 +63,7 @@
     <dep root="6762883159245048635" />
     <dep root="6762883159245086407" />
     <dep root="6762883159245086414" />
+    <dep root="7499632464782057224" />
     <dep root="7862448911997365751" />
     <dep root="9087630951853302698" />
     <dep root="9087630951853312410" />
@@ -75,21 +76,11 @@
     <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" />
     <file name="StructureAspectDescriptor.java" />
   </common>
-  <source id="6762883159245048009" name="MqlQuery" hash="-dqod0hmidiruc0tzej9xjnm620vlgb4">
-    <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
-  </source>
-  <source id="6762883159245048012" name="MqlExpression" hash="-52phh664z0zl5oak3f97x1etvb7sod3">
-    <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
-  </source>
-  <source id="6762883159245048013" name="MqlCondition" hash="-963ml0gtsp29acwe998wrh4qp4ro9s9">
-    <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
-  </source>
-  <source id="6762883159245048014" name="MqlBinaryExpr" hash="-ardaanc1y2m9q7u0kpmlobdyi587vn3">
-    <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
-  </source>
-  <source id="6762883159245048022" name="MqlParentheses" hash="-77kt92ip1g6snumx7ko5ehtlbscenkm">
-    <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
-  </source>
+  <source id="6762883159245048009" name="MqlQuery" hash="-dqod0hmidiruc0tzej9xjnm620vlgb4" />
+  <source id="6762883159245048012" name="MqlExpression" hash="-52phh664z0zl5oak3f97x1etvb7sod3" />
+  <source id="6762883159245048013" name="MqlCondition" hash="-963ml0gtsp29acwe998wrh4qp4ro9s9" />
+  <source id="6762883159245048014" name="MqlBinaryExpr" hash="-ardaanc1y2m9q7u0kpmlobdyi587vn3" />
+  <source id="6762883159245048022" name="MqlParentheses" hash="-77kt92ip1g6snumx7ko5ehtlbscenkm" />
   <source id="6762883159245048026" name="MqlConditionKind" hash="835m8l24q4a35g3k4hm2znuh9ya0w6z">
     <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
     <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
@@ -101,9 +92,7 @@
     <file name="MqlConditionKind.java" />
     <file name="MqlConditionKind_PropertySupport.java" />
   </source>
-  <source id="6762883159245048034" name="MqlUnary" hash="-2e7zmva255uwv3j6slf9579a4hmdxju">
-    <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
-  </source>
+  <source id="6762883159245048034" name="MqlUnary" hash="-2e7zmva255uwv3j6slf9579a4hmdxju" />
   <source id="6762883159245048035" name="MqlUnaryKind" hash="c3zjqy3u9fq6g4qra5sddgzjt174d3e">
     <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
     <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
@@ -115,9 +104,7 @@
     <file name="MqlUnaryKind.java" />
     <file name="MqlUnaryKind_PropertySupport.java" />
   </source>
-  <source id="6762883159245048040" name="MqlArithmetic" hash="-5z5qfc8ldpfhadbzvm0sluvh62r9jey">
-    <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
-  </source>
+  <source id="6762883159245048040" name="MqlArithmetic" hash="-5z5qfc8ldpfhadbzvm0sluvh62r9jey" />
   <source id="6762883159245048041" name="MqlArithmeticKind" hash="-e2wzb8kyxwnnd6sqh39ssxr4c51u270">
     <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
     <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
@@ -129,76 +116,30 @@
     <file name="MqlArithmeticKind.java" />
     <file name="MqlArithmeticKind_PropertySupport.java" />
   </source>
-  <source id="6762883159245048051" name="MqlType" hash="967ccmf7hrqpbb15hh51rhkzcwtwvq5">
-    <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
-  </source>
-  <source id="6762883159245048052" name="MqlIntLiteral" hash="dgl5d6zqwpciqdayyphrx2cgbu67u6s">
-    <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
-  </source>
-  <source id="6762883159245048054" name="MqlStringLiteral" hash="cs35tw7t4ix3pghbhfpd7590bpczdrd">
-    <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
-  </source>
-  <source id="6762883159245048056" name="MqlBoolLiteral" hash="68ea6fl1qn4ucs9mx5gjm28d5jtd4vk">
-    <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
-  </source>
-  <source id="6762883159245048058" name="MqlTriplex" hash="bxe3hlutds4m2y1zlc8f6rf2a5qesu7">
-    <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
-  </source>
-  <source id="6762883159245048062" name="MqlNullLiteral" hash="-1q2gq0vp7jw2g4qoqwanjmldjof62t">
-    <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
-  </source>
-  <source id="6762883159245048067" name="MqlThis" hash="djmp0vuw83m5t4ne9hr0lqajfgduc8">
-    <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
-  </source>
-  <source id="6762883159245048068" name="MqlListType" hash="-5d3znl6kgm8sxe35lr3l4x4nrci0x31">
-    <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
-  </source>
-  <source id="6762883159245048069" name="MqlIntType" hash="-2lydwaax9ncpkqqw6kow0j428qcesdc">
-    <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
-  </source>
-  <source id="6762883159245048070" name="MqlStringType" hash="3gd55gxnkkwhjmgola8vthalbunwao2">
-    <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
-  </source>
-  <source id="6762883159245048072" name="MqlBoolType" hash="a1wdmzfalw50twzvr5kjb85w4e6vluh">
-    <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
-  </source>
-  <source id="6762883159245048080" name="MqlFunctionType" hash="-8qcrjgzx1ewtvo6cei3nmpqwddm65sb">
-    <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
-  </source>
-  <source id="6762883159245048082" name="MqlNullType" hash="-d6zxdmjwgy9wb5g5phnrl7xgsp7lrzv">
-    <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
-  </source>
-  <source id="6762883159245048085" name="MqlDotExpression" hash="bu2sxqr2dbpk4lm0xr6e2sia4o4htd9">
-    <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
-  </source>
-  <source id="6762883159245048087" name="MqlSelector" hash="-3ygvcydx01vrljo8rzvg2y5pvrpruy9">
-    <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
-  </source>
-  <source id="6762883159245048630" name="MqlPackage" hash="-67xnlv49me9yut5l3vfot4nyw9al04h">
-    <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
-  </source>
-  <source id="6762883159245048635" name="MqlParameter" hash="-a29svtjur2xoqp6ups3rpw0zdfbtfqr">
-    <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
-  </source>
-  <source id="6762883159245086407" name="MqlParameterReference" hash="e7k2qpxk25ahll1dh961op8ar4sqwlh">
-    <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
-  </source>
-  <source id="6762883159245086414" name="MqlClosure" hash="-5im752slyasr8b5rryio21664mklljj">
-    <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
-  </source>
-  <source id="5322644393894740272" name="MqlAssignment" hash="-6yxsgk868opttuui327sl6fphiq47c4">
-    <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
-  </source>
-  <source id="2059702675525965924" name="MqlNoContextQueryCall" hash="-6my0jhynsdp30wp4rp5dha4q3x7t1r9">
-    <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
-  </source>
-  <source id="1992172484410508056" name="MqlParametersContainer" hash="-2jlkgxjrhhqjovkcntfa5n8p1l8uhs8">
-    <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
-  </source>
-  <source id="5280308256730467462" name="MqlCollectionSelector" hash="4dut8pi4t3tycl73nr5efkxzysgggh7">
-    <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
-  </source>
-  <source id="5280308256730467483" name="MqlCollectionSelectorKind" hash="28q4aq0z6yhovle1xj1ufrdt88arzi3">
+  <source id="6762883159245048051" name="MqlType" hash="967ccmf7hrqpbb15hh51rhkzcwtwvq5" />
+  <source id="6762883159245048052" name="MqlIntLiteral" hash="dgl5d6zqwpciqdayyphrx2cgbu67u6s" />
+  <source id="6762883159245048054" name="MqlStringLiteral" hash="cs35tw7t4ix3pghbhfpd7590bpczdrd" />
+  <source id="6762883159245048056" name="MqlBoolLiteral" hash="68ea6fl1qn4ucs9mx5gjm28d5jtd4vk" />
+  <source id="6762883159245048058" name="MqlTriplex" hash="bxe3hlutds4m2y1zlc8f6rf2a5qesu7" />
+  <source id="6762883159245048062" name="MqlNullLiteral" hash="-1q2gq0vp7jw2g4qoqwanjmldjof62t" />
+  <source id="6762883159245048067" name="MqlThis" hash="djmp0vuw83m5t4ne9hr0lqajfgduc8" />
+  <source id="6762883159245048068" name="MqlListType" hash="-5d3znl6kgm8sxe35lr3l4x4nrci0x31" />
+  <source id="6762883159245048069" name="MqlIntType" hash="-2lydwaax9ncpkqqw6kow0j428qcesdc" />
+  <source id="6762883159245048070" name="MqlStringType" hash="3gd55gxnkkwhjmgola8vthalbunwao2" />
+  <source id="6762883159245048072" name="MqlBoolType" hash="a1wdmzfalw50twzvr5kjb85w4e6vluh" />
+  <source id="6762883159245048080" name="MqlFunctionType" hash="-8qcrjgzx1ewtvo6cei3nmpqwddm65sb" />
+  <source id="6762883159245048082" name="MqlNullType" hash="-d6zxdmjwgy9wb5g5phnrl7xgsp7lrzv" />
+  <source id="6762883159245048085" name="MqlDotExpression" hash="bu2sxqr2dbpk4lm0xr6e2sia4o4htd9" />
+  <source id="6762883159245048087" name="MqlSelector" hash="-3ygvcydx01vrljo8rzvg2y5pvrpruy9" />
+  <source id="6762883159245048630" name="MqlPackage" hash="-67xnlv49me9yut5l3vfot4nyw9al04h" />
+  <source id="6762883159245048635" name="MqlParameter" hash="-a29svtjur2xoqp6ups3rpw0zdfbtfqr" />
+  <source id="6762883159245086407" name="MqlParameterReference" hash="e7k2qpxk25ahll1dh961op8ar4sqwlh" />
+  <source id="6762883159245086414" name="MqlClosure" hash="-5im752slyasr8b5rryio21664mklljj" />
+  <source id="5322644393894740272" name="MqlAssignment" hash="-6yxsgk868opttuui327sl6fphiq47c4" />
+  <source id="2059702675525965924" name="MqlNoContextQueryCall" hash="-6my0jhynsdp30wp4rp5dha4q3x7t1r9" />
+  <source id="1992172484410508056" name="MqlParametersContainer" hash="-2jlkgxjrhhqjovkcntfa5n8p1l8uhs8" />
+  <source id="5280308256730467462" name="MqlCollectionSelector" hash="4dut8pi4t3tycl73nr5efkxzysgggh7" />
+  <source id="5280308256730467483" name="MqlCollectionSelectorKind" hash="-92eg26l1mak5fvzhv5svr2rxmlvjgns">
     <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
     <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
     <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
@@ -209,10 +150,8 @@
     <file name="MqlCollectionSelectorKind.java" />
     <file name="MqlCollectionSelectorKind_PropertySupport.java" />
   </source>
-  <source id="5280308256730478252" name="MqlCollectionProperty" hash="5shb9wh43m88a4a98deposvk5sfq5sv">
-    <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
-  </source>
-  <source id="5280308256730609807" name="MqlCollectionPropertyKind" hash="-9hvkfpbzzxpb67djm1ni0s3xk74q380">
+  <source id="5280308256730478252" name="MqlCollectionProperty" hash="5shb9wh43m88a4a98deposvk5sfq5sv" />
+  <source id="5280308256730609807" name="MqlCollectionPropertyKind" hash="-eq7e7i6v46qf2i0hxiaxisdw6efbrk0">
     <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
     <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
     <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
@@ -223,36 +162,16 @@
     <file name="MqlCollectionPropertyKind.java" />
     <file name="MqlCollectionPropertyKind_PropertySupport.java" />
   </source>
-  <source id="5280308256730662793" name="MqlCollectionSelectorVar" hash="-cl24mkhl2tpetiig03l8wuh396k4w22">
-    <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
-  </source>
-  <source id="5280308256730768480" name="MqlCollectionSelectorVarRef" hash="8ge4wtu4gld8lodonmfobo06q2v4eo6">
-    <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
-  </source>
-  <source id="7862448911997365751" name="MqlListLiteral" hash="-36uv9163zierokmkbakgfibmtetw95l">
-    <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
-  </source>
-  <source id="3435983127247044629" name="MqlVariable" hash="43knj4w8ytmj1vv0nuerqzpz7v7tj60">
-    <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
-  </source>
-  <source id="3435983127247055506" name="MqlVariableReference" hash="9gzowh4uz5bttxgtk88xupp5jq61sgf">
-    <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
-  </source>
-  <source id="3435983127247055565" name="MqlVariableContainer" hash="-equwcpmyii94p4hd4xhubiiock2l1q3">
-    <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
-  </source>
-  <source id="5109194352282839186" name="MqlImport" hash="-99ld7vb0o60rs6az6vonyspno134fjk">
-    <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
-  </source>
-  <source id="5109194352282839187" name="MqlScopeExporter" hash="cukxfkvumvbvhecm4aslllzo39kjei6">
-    <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
-  </source>
-  <source id="4125821269968916016" name="MqlThisProvider" hash="dr5n3y4kouz15t2tms4vukhwf1v2xt2">
-    <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
-  </source>
-  <source id="5343139407557941525" name="MqlStringSelector" hash="9cwfval5dz3f6bnyew7airq6hfnr0gf">
-    <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
-  </source>
+  <source id="5280308256730662793" name="MqlCollectionSelectorVar" hash="-cl24mkhl2tpetiig03l8wuh396k4w22" />
+  <source id="5280308256730768480" name="MqlCollectionSelectorVarRef" hash="8ge4wtu4gld8lodonmfobo06q2v4eo6" />
+  <source id="7862448911997365751" name="MqlListLiteral" hash="-36uv9163zierokmkbakgfibmtetw95l" />
+  <source id="3435983127247044629" name="MqlVariable" hash="43knj4w8ytmj1vv0nuerqzpz7v7tj60" />
+  <source id="3435983127247055506" name="MqlVariableReference" hash="9gzowh4uz5bttxgtk88xupp5jq61sgf" />
+  <source id="3435983127247055565" name="MqlVariableContainer" hash="-equwcpmyii94p4hd4xhubiiock2l1q3" />
+  <source id="5109194352282839186" name="MqlImport" hash="-99ld7vb0o60rs6az6vonyspno134fjk" />
+  <source id="5109194352282839187" name="MqlScopeExporter" hash="cukxfkvumvbvhecm4aslllzo39kjei6" />
+  <source id="4125821269968916016" name="MqlThisProvider" hash="dr5n3y4kouz15t2tms4vukhwf1v2xt2" />
+  <source id="5343139407557941525" name="MqlStringSelector" hash="9cwfval5dz3f6bnyew7airq6hfnr0gf" />
   <source id="5343139407557942918" name="MqlStringSelectorKind" hash="-a491dgzclm30qt2ue49u6zov20x7s7d">
     <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
     <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
@@ -264,9 +183,7 @@
     <file name="MqlStringSelectorKind.java" />
     <file name="MqlStringSelectorKind_PropertySupport.java" />
   </source>
-  <source id="5343139407557943861" name="MqlStringProperty" hash="-5tespmukgak6fte0k1rhqfs83srknga">
-    <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
-  </source>
+  <source id="5343139407557943861" name="MqlStringProperty" hash="-5tespmukgak6fte0k1rhqfs83srknga" />
   <source id="5343139407557944004" name="MqlStringPropertyKind" hash="-64jlsflamv3dst5oyw4re0axcz0ta5v">
     <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
     <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
@@ -278,9 +195,7 @@
     <file name="MqlStringPropertyKind.java" />
     <file name="MqlStringPropertyKind_PropertySupport.java" />
   </source>
-  <source id="5343139407557982960" name="MqlStringIndexOp" hash="7okza21dgafreib5khqnrpuzx9c2uuq">
-    <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
-  </source>
+  <source id="5343139407557982960" name="MqlStringIndexOp" hash="7okza21dgafreib5khqnrpuzx9c2uuq" />
   <source id="5343139407557982970" name="MqlStringIndexOpKind" hash="-9vblkuq6hrmbh6758g0nv7wn6xaf4fd">
     <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
     <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
@@ -292,12 +207,8 @@
     <file name="MqlStringIndexOpKind.java" />
     <file name="MqlStringIndexOpKind_PropertySupport.java" />
   </source>
-  <source id="4562783364485753560" name="MqlLet" hash="3h5f416m4m1ro165d0iakfjgrszwiz0">
-    <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
-  </source>
-  <source id="2666204899678418775" name="MqlSubstring" hash="5dodawm844bsiv1rxp6danpn6fa3ldw">
-    <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
-  </source>
+  <source id="4562783364485753560" name="MqlLet" hash="3h5f416m4m1ro165d0iakfjgrszwiz0" />
+  <source id="2666204899678418775" name="MqlSubstring" hash="5dodawm844bsiv1rxp6danpn6fa3ldw" />
   <source id="2666204899678455912" name="MqlSubstringKind" hash="46arcppsrsg3p269yw3c8r61hyq9ddh">
     <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
     <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
@@ -309,14 +220,9 @@
     <file name="MqlSubstringKind.java" />
     <file name="MqlSubstringKind_PropertySupport.java" />
   </source>
-  <source id="9087630951853302698" name="MqlOrderedSetType" hash="-ltlt5tpryaptszcs04bn4nbh1o293a">
-    <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
-  </source>
-  <source id="9087630951853312410" name="MqlCollectionType" hash="1qg0xc4wetogn025gll00hfqm4bsf8c">
-    <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
-  </source>
-  <source id="9087630951855888448" name="MqlSetLiteral" hash="4tebgl81ml8p8b4gio0fx9hqk1pw6dl">
-    <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
-  </source>
+  <source id="9087630951853302698" name="MqlOrderedSetType" hash="-ltlt5tpryaptszcs04bn4nbh1o293a" />
+  <source id="9087630951853312410" name="MqlCollectionType" hash="1qg0xc4wetogn025gll00hfqm4bsf8c" />
+  <source id="9087630951855888448" name="MqlSetLiteral" hash="4tebgl81ml8p8b4gio0fx9hqk1pw6dl" />
+  <source id="7499632464782057224" name="MqlCollectionSortSelector" hash="-96z0amwq3nv44lx60v82gua6g8xqx3d" />
 </dependencies>
 

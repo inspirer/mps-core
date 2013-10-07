@@ -539,9 +539,9 @@
       <property name="externalValue" nameId="tpce.1083923523172" value="exists" />
     </node>
     <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="5280308256730478250" nodeInfo="ig">
-      <property name="javaIdentifier" nameId="tpce.1192116978809" value="SORT" />
+      <property name="javaIdentifier" nameId="tpce.1192116978809" value="SORTBY" />
       <property name="internalValue" nameId="tpce.1083923523171" value="7" />
-      <property name="externalValue" nameId="tpce.1083923523172" value="sort" />
+      <property name="externalValue" nameId="tpce.1083923523172" value="sortBy" />
     </node>
     <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="5280308256730478251" nodeInfo="ig">
       <property name="javaIdentifier" nameId="tpce.1192116978809" value="GROUPBY" />
@@ -591,6 +591,16 @@
       <property name="javaIdentifier" nameId="tpce.1192116978809" value="IS_NOT_EMPTY" />
       <property name="internalValue" nameId="tpce.1083923523171" value="5" />
       <property name="externalValue" nameId="tpce.1083923523172" value="isNotEmpty" />
+    </node>
+    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="7136877027346913534" nodeInfo="ig">
+      <property name="javaIdentifier" nameId="tpce.1192116978809" value="SORT" />
+      <property name="externalValue" nameId="tpce.1083923523172" value="sort" />
+      <property name="internalValue" nameId="tpce.1083923523171" value="6" />
+    </node>
+    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="7136877027346913541" nodeInfo="ig">
+      <property name="javaIdentifier" nameId="tpce.1192116978809" value="REVERSE" />
+      <property name="externalValue" nameId="tpce.1083923523172" value="reverse" />
+      <property name="internalValue" nameId="tpce.1083923523171" value="7" />
     </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5280308256730662793" nodeInfo="ig">
@@ -848,6 +858,11 @@
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..n" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="6762883159245048012" resolveInfo="MqlExpression" />
     </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7499632464782057224" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="collections" />
+    <property name="name" nameId="tpck.1169194664001" value="MqlCollectionSortSelector" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="6762883159245048087" resolveInfo="MqlSelector" />
   </root>
 </model>
 

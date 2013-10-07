@@ -22,16 +22,20 @@ public class MqlCollectionProperty_Behavior {
   }
 
   public static SNode virtual_getType_228266671027867010(SNode thisNode) {
+
+    SNode ct = MqlSelector_Behavior.call_getContainerType_228266671027861723(thisNode);
     if (SPropertyOperations.hasValue(thisNode, "kind", "2", null) || SPropertyOperations.hasValue(thisNode, "kind", "3", null)) {
-      SNode ct = MqlSelector_Behavior.call_getContainerType_228266671027861723(thisNode);
-      if (SNodeOperations.isInstanceOf(ct, "jetbrains.mps.core.query.structure.MqlListType")) {
+      if (SNodeOperations.isInstanceOf(ct, "jetbrains.mps.core.query.structure.MqlCollectionType")) {
         return SLinkOperations.getTarget(SNodeOperations.cast(ct, "jetbrains.mps.core.query.structure.MqlListType"), "inner", true);
       }
     } else if (SPropertyOperations.hasValue(thisNode, "kind", "1", null)) {
-      return createMqlIntType_tz2cyz_a0a0a0a();
+      return createMqlIntType_tz2cyz_a0a0c0a();
     } else if (SPropertyOperations.hasValue(thisNode, "kind", "4", null) || SPropertyOperations.hasValue(thisNode, "kind", "5", null)) {
-      return createMqlBoolType_tz2cyz_a0a1a0a();
+      return createMqlBoolType_tz2cyz_a0a1c0a();
+    } else if (SPropertyOperations.hasValue(thisNode, "kind", "6", null) || SPropertyOperations.hasValue(thisNode, "kind", "7", null)) {
+      return SNodeOperations.copyNode(ct);
     }
+
     return null;
   }
 
@@ -87,13 +91,13 @@ public class MqlCollectionProperty_Behavior {
     throw new EvaluationException("object is not a collection `" + env.getRuntime().objectDebugText(object) + "'", thisNode, context);
   }
 
-  private static SNode createMqlIntType_tz2cyz_a0a0a0a() {
+  private static SNode createMqlIntType_tz2cyz_a0a0c0a() {
     PersistenceFacade facade = PersistenceFacade.getInstance();
     SNode n1 = SModelUtil_new.instantiateConceptDeclaration("jetbrains.mps.core.query.structure.MqlIntType", null, GlobalScope.getInstance(), false);
     return n1;
   }
 
-  private static SNode createMqlBoolType_tz2cyz_a0a1a0a() {
+  private static SNode createMqlBoolType_tz2cyz_a0a1c0a() {
     PersistenceFacade facade = PersistenceFacade.getInstance();
     SNode n1 = SModelUtil_new.instantiateConceptDeclaration("jetbrains.mps.core.query.structure.MqlBoolType", null, GlobalScope.getInstance(), false);
     return n1;

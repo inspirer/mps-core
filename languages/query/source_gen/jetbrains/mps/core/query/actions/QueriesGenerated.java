@@ -34,6 +34,7 @@ import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import jetbrains.mps.smodel.action.ChildSubstituteActionsHelper;
 import jetbrains.mps.smodel.action.SideTransformActionsBuilderContext;
 import jetbrains.mps.smodel.action.AbstractSideTransformHintSubstituteAction;
+import jetbrains.mps.smodel.constraints.ModelConstraints;
 import jetbrains.mps.smodel.action.SideTransformPreconditionContext;
 import java.util.regex.Pattern;
 
@@ -524,6 +525,14 @@ public class QueriesGenerated {
       public String getDescriptionText(String pattern) {
         return "triplex operator";
       }
+
+      @Override
+      protected boolean isEnabled() {
+        SNode sourceNode = getSourceNode();
+        SNode parent = SNodeOperations.getParent(sourceNode);
+        SNode containingLink = SNodeOperations.getContainingLinkDeclaration(sourceNode);
+        return parent == null || containingLink == null || (ModelConstraints.canBeParent(parent, SConceptOperations.findConceptDeclaration("jetbrains.mps.core.query.structure.MqlTriplex"), containingLink, null, null) && ModelConstraints.canBeAncestor(parent, null, SConceptOperations.findConceptDeclaration("jetbrains.mps.core.query.structure.MqlTriplex"), null));
+      }
     });
     return result;
   }
@@ -548,6 +557,14 @@ public class QueriesGenerated {
 
       public String getDescriptionText(String pattern) {
         return "dot expression";
+      }
+
+      @Override
+      protected boolean isEnabled() {
+        SNode sourceNode = getSourceNode();
+        SNode parent = SNodeOperations.getParent(sourceNode);
+        SNode containingLink = SNodeOperations.getContainingLinkDeclaration(sourceNode);
+        return parent == null || containingLink == null || (ModelConstraints.canBeParent(parent, SConceptOperations.findConceptDeclaration("jetbrains.mps.core.query.structure.MqlDotExpression"), containingLink, null, null) && ModelConstraints.canBeAncestor(parent, null, SConceptOperations.findConceptDeclaration("jetbrains.mps.core.query.structure.MqlDotExpression"), null));
       }
     });
     return result;
@@ -602,6 +619,14 @@ public class QueriesGenerated {
             public String getDescriptionText(String pattern) {
               return SEnumOperations.getEnumMemberName((item)).toLowerCase() + " operator";
             }
+
+            @Override
+            protected boolean isEnabled() {
+              SNode sourceNode = getSourceNode();
+              SNode parent = SNodeOperations.getParent(sourceNode);
+              SNode containingLink = SNodeOperations.getContainingLinkDeclaration(sourceNode);
+              return parent == null || containingLink == null || (ModelConstraints.canBeParent(parent, SConceptOperations.findConceptDeclaration("jetbrains.mps.core.query.structure.MqlArithmetic"), containingLink, null, null) && ModelConstraints.canBeAncestor(parent, null, SConceptOperations.findConceptDeclaration("jetbrains.mps.core.query.structure.MqlArithmetic"), null));
+            }
           });
         }
       }
@@ -642,6 +667,14 @@ public class QueriesGenerated {
                   return SPropertyOperations.getString(it, "internalValue").equals(SEnumOperations.getEnumMemberValue((item)));
                 }
               }), "externalValue") + " operator";
+            }
+
+            @Override
+            protected boolean isEnabled() {
+              SNode sourceNode = getSourceNode();
+              SNode parent = SNodeOperations.getParent(sourceNode);
+              SNode containingLink = SNodeOperations.getContainingLinkDeclaration(sourceNode);
+              return parent == null || containingLink == null || (ModelConstraints.canBeParent(parent, SConceptOperations.findConceptDeclaration("jetbrains.mps.core.query.structure.MqlCondition"), containingLink, null, null) && ModelConstraints.canBeAncestor(parent, null, SConceptOperations.findConceptDeclaration("jetbrains.mps.core.query.structure.MqlCondition"), null));
             }
           });
         }
@@ -685,6 +718,14 @@ public class QueriesGenerated {
             public String getDescriptionText(String pattern) {
               return SEnumOperations.getEnumMemberName((item)).toLowerCase() + " operator";
             }
+
+            @Override
+            protected boolean isEnabled() {
+              SNode sourceNode = getSourceNode();
+              SNode parent = SNodeOperations.getParent(sourceNode);
+              SNode containingLink = SNodeOperations.getContainingLinkDeclaration(sourceNode);
+              return parent == null || containingLink == null || (ModelConstraints.canBeParent(parent, SConceptOperations.findConceptDeclaration("jetbrains.mps.core.query.structure.MqlArithmetic"), containingLink, null, null) && ModelConstraints.canBeAncestor(parent, null, SConceptOperations.findConceptDeclaration("jetbrains.mps.core.query.structure.MqlArithmetic"), null));
+            }
           });
         }
       }
@@ -726,6 +767,14 @@ public class QueriesGenerated {
                 }
               }), "externalValue") + " operator";
             }
+
+            @Override
+            protected boolean isEnabled() {
+              SNode sourceNode = getSourceNode();
+              SNode parent = SNodeOperations.getParent(sourceNode);
+              SNode containingLink = SNodeOperations.getContainingLinkDeclaration(sourceNode);
+              return parent == null || containingLink == null || (ModelConstraints.canBeParent(parent, SConceptOperations.findConceptDeclaration("jetbrains.mps.core.query.structure.MqlCondition"), containingLink, null, null) && ModelConstraints.canBeAncestor(parent, null, SConceptOperations.findConceptDeclaration("jetbrains.mps.core.query.structure.MqlCondition"), null));
+            }
           });
         }
       }
@@ -755,6 +804,14 @@ public class QueriesGenerated {
 
       public String getDescriptionText(String pattern) {
         return "unary minus";
+      }
+
+      @Override
+      protected boolean isEnabled() {
+        SNode sourceNode = getSourceNode();
+        SNode parent = SNodeOperations.getParent(sourceNode);
+        SNode containingLink = SNodeOperations.getContainingLinkDeclaration(sourceNode);
+        return parent == null || containingLink == null || (ModelConstraints.canBeParent(parent, SConceptOperations.findConceptDeclaration("jetbrains.mps.core.query.structure.MqlUnary"), containingLink, null, null) && ModelConstraints.canBeAncestor(parent, null, SConceptOperations.findConceptDeclaration("jetbrains.mps.core.query.structure.MqlUnary"), null));
       }
     });
     return result;
