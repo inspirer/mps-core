@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="44t1fp9dk1m88ic0csc8q86cgx6rgh9">
+<dependencies version="2" modelHash="9sed04nxh54oa4clgf0p35wf7y4gq2w">
   <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
   <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
   <dep model="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.smodel.runtime.impl(MPS.Core/jetbrains.mps.smodel.runtime.impl@java_stub)" />
@@ -26,6 +26,7 @@
     <dep root="5272233748012107008" />
     <dep root="5272233748012107397" />
     <dep root="5272233748012107398" />
+    <dep root="5272233748014110160" />
     <dep root="5280308256730467462" />
     <dep root="5280308256730467483" />
     <dep root="5280308256730478252" />
@@ -143,7 +144,7 @@
   <source id="5322644393894740272" name="MqlAssignment" hash="-6yxsgk868opttuui327sl6fphiq47c4" />
   <source id="2059702675525965924" name="MqlNoContextQueryCall" hash="-6my0jhynsdp30wp4rp5dha4q3x7t1r9" />
   <source id="1992172484410508056" name="MqlParametersContainer" hash="-2jlkgxjrhhqjovkcntfa5n8p1l8uhs8" />
-  <source id="5280308256730467462" name="MqlCollectionSelector" hash="4dut8pi4t3tycl73nr5efkxzysgggh7" />
+  <source id="5280308256730467462" name="MqlCollectionSelector" hash="80l2cdvepu67e7eporjle8xgaico1ac" />
   <source id="5280308256730467483" name="MqlCollectionSelectorKind" hash="-92eg26l1mak5fvzhv5svr2rxmlvjgns">
     <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
     <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
@@ -155,7 +156,7 @@
     <file name="MqlCollectionSelectorKind.java" />
     <file name="MqlCollectionSelectorKind_PropertySupport.java" />
   </source>
-  <source id="5280308256730478252" name="MqlCollectionProperty" hash="5shb9wh43m88a4a98deposvk5sfq5sv" />
+  <source id="5280308256730478252" name="MqlCollectionProperty" hash="-24i2mrvng4mrojqyx3hex8g19q6ar8d" />
   <source id="5280308256730609807" name="MqlCollectionPropertyKind" hash="-eq7e7i6v46qf2i0hxiaxisdw6efbrk0">
     <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
     <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
@@ -229,7 +230,7 @@
   <source id="9087630951853312410" name="MqlCollectionType" hash="1qg0xc4wetogn025gll00hfqm4bsf8c" />
   <source id="9087630951855888448" name="MqlSetLiteral" hash="4tebgl81ml8p8b4gio0fx9hqk1pw6dl" />
   <source id="7499632464782057224" name="MqlCollectionSortSelector" hash="-96z0amwq3nv44lx60v82gua6g8xqx3d" />
-  <source id="5272233748012075785" name="MqlCollectionOneArgOp" hash="-9743ism0uns3ferz1fx0f90xr8duqyv" />
+  <source id="5272233748012075785" name="MqlCollectionOneArgOp" hash="-7kv15dqkdblhir5k1a2wk13i3vaz7qq" />
   <source id="5272233748012107007" name="MqlCollectionConcatOp" hash="cduiyqra36yhogmpeidbv6waiy6qy71" />
   <source id="5272233748012107008" name="MqlCollectionConcatOpKind" hash="-6hatd6lblhmoatusfcziorkvbrtvs6c">
     <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
@@ -243,7 +244,7 @@
     <file name="MqlCollectionConcatOpKind_PropertySupport.java" />
   </source>
   <source id="5272233748012107397" name="MqlCollectionElementOp" hash="-2olqax0uepglna5xxpanwnfv8e9zwsd" />
-  <source id="5272233748012107398" name="MqlCollectionElementOpKind" hash="-cwxi2drnqmn6sd004wn9w28m0tjfppi">
+  <source id="5272233748012107398" name="MqlCollectionElementOpKind" hash="7kilhc53vh1txkc1pf7xudr662na8od">
     <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
     <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
     <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
@@ -254,5 +255,6 @@
     <file name="MqlCollectionElementOpKind.java" />
     <file name="MqlCollectionElementOpKind_PropertySupport.java" />
   </source>
+  <source id="5272233748014110160" name="MqlCollectionOp" hash="3dmlb2j3iobsn4tap4x4ofiwsprnhoh" />
 </dependencies>
 

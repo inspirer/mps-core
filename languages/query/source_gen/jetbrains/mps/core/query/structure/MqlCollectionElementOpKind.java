@@ -7,7 +7,9 @@ import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.internal.collections.runtime.backports.LinkedList;
 
 public enum MqlCollectionElementOpKind {
-  WITH("with", 1);
+  CONTAINS("contains", 1),
+  WITH("with", 2),
+  WITHOUT("without", 3);
 
   private String myName;
 
@@ -21,7 +23,9 @@ public enum MqlCollectionElementOpKind {
 
   public static List<MqlCollectionElementOpKind> getConstants() {
     List<MqlCollectionElementOpKind> list = ListSequence.fromList(new LinkedList<MqlCollectionElementOpKind>());
+    ListSequence.fromList(list).addElement(MqlCollectionElementOpKind.CONTAINS);
     ListSequence.fromList(list).addElement(MqlCollectionElementOpKind.WITH);
+    ListSequence.fromList(list).addElement(MqlCollectionElementOpKind.WITHOUT);
     return list;
   }
 
@@ -33,8 +37,14 @@ public enum MqlCollectionElementOpKind {
     if (value == null) {
       return MqlCollectionElementOpKind.getDefault();
     }
+    if (value.equals(MqlCollectionElementOpKind.CONTAINS.getValueAsString())) {
+      return MqlCollectionElementOpKind.CONTAINS;
+    }
     if (value.equals(MqlCollectionElementOpKind.WITH.getValueAsString())) {
       return MqlCollectionElementOpKind.WITH;
+    }
+    if (value.equals(MqlCollectionElementOpKind.WITHOUT.getValueAsString())) {
+      return MqlCollectionElementOpKind.WITHOUT;
     }
     return MqlCollectionElementOpKind.getDefault();
   }

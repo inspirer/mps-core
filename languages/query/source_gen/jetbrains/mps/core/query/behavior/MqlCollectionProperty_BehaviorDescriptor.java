@@ -7,7 +7,7 @@ import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.query.runtime.EvaluationEnvironment;
 import jetbrains.mps.core.query.runtime.EvaluationContext;
 
-public class MqlCollectionProperty_BehaviorDescriptor extends MqlSelector_BehaviorDescriptor implements IDontSubstituteByDefault_BehaviorDescriptor {
+public class MqlCollectionProperty_BehaviorDescriptor extends MqlCollectionOp_BehaviorDescriptor implements IDontSubstituteByDefault_BehaviorDescriptor {
   public MqlCollectionProperty_BehaviorDescriptor() {
   }
 

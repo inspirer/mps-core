@@ -7,9 +7,10 @@
   <unitInfo fileName="MqlBoolLiteral_BehaviorDescriptor.java" startLine="10" startPosition="0" endLine="27" endPosition="0" unitName="jetbrains.mps.core.query.behavior.MqlBoolLiteral_BehaviorDescriptor" />
   <unitInfo fileName="MqlBoolType_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="24" endPosition="0" unitName="jetbrains.mps.core.query.behavior.MqlBoolType_BehaviorDescriptor" />
   <unitInfo fileName="MqlClosure_BehaviorDescriptor.java" startLine="10" startPosition="0" endLine="31" endPosition="0" unitName="jetbrains.mps.core.query.behavior.MqlClosure_BehaviorDescriptor" />
-  <unitInfo fileName="MqlCollectionConcatOp_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="jetbrains.mps.core.query.behavior.MqlCollectionConcatOp_BehaviorDescriptor" />
-  <unitInfo fileName="MqlCollectionElementOp_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="jetbrains.mps.core.query.behavior.MqlCollectionElementOp_BehaviorDescriptor" />
-  <unitInfo fileName="MqlCollectionOneArgOp_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="jetbrains.mps.core.query.behavior.MqlCollectionOneArgOp_BehaviorDescriptor" />
+  <unitInfo fileName="MqlCollectionConcatOp_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="20" endPosition="0" unitName="jetbrains.mps.core.query.behavior.MqlCollectionConcatOp_BehaviorDescriptor" />
+  <unitInfo fileName="MqlCollectionElementOp_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="20" endPosition="0" unitName="jetbrains.mps.core.query.behavior.MqlCollectionElementOp_BehaviorDescriptor" />
+  <unitInfo fileName="MqlCollectionOneArgOp_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="jetbrains.mps.core.query.behavior.MqlCollectionOneArgOp_BehaviorDescriptor" />
+  <unitInfo fileName="MqlCollectionOp_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="jetbrains.mps.core.query.behavior.MqlCollectionOp_BehaviorDescriptor" />
   <unitInfo fileName="MqlCollectionProperty_BehaviorDescriptor.java" startLine="10" startPosition="0" endLine="27" endPosition="0" unitName="jetbrains.mps.core.query.behavior.MqlCollectionProperty_BehaviorDescriptor" />
   <unitInfo fileName="MqlCollectionSelectorVarRef_BehaviorDescriptor.java" startLine="9" startPosition="0" endLine="26" endPosition="0" unitName="jetbrains.mps.core.query.behavior.MqlCollectionSelectorVarRef_BehaviorDescriptor" />
   <unitInfo fileName="MqlCollectionSelectorVar_BehaviorDescriptor.java" startLine="10" startPosition="0" endLine="23" endPosition="0" unitName="jetbrains.mps.core.query.behavior.MqlCollectionSelectorVar_BehaviorDescriptor" />
@@ -1201,6 +1202,52 @@
       <varInfo nodeId="5109194352282839218" varName="thisNode" />
     </scopeInfo>
     <unitInfo nodeId="5109194352282839218" fileName="MqlImport_Behavior.java" startLine="10" startPosition="0" endLine="18" endPosition="0" unitName="jetbrains.mps.core.query.behavior.MqlImport_Behavior" />
+  </root>
+  <root nodeRef="r:2eb00686-cf12-445a-b169-a375a4c25909(jetbrains.mps.core.query.behavior)/5272233748015399777">
+    <nodeInfo nodeId="5272233748015452525" fileName="MqlCollectionConcatOp_Behavior.java" startLine="11" startPosition="74" endLine="12" endPosition="59" conceptFqName="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+    <nodeInfo nodeId="5272233748015452479" fileName="MqlCollectionConcatOp_Behavior.java" startLine="12" startPosition="59" endLine="13" endPosition="83" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="5272233748015399777" fileName="MqlCollectionConcatOp_Behavior.java" startLine="8" startPosition="0" endLine="10" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+    <nodeInfo nodeId="5272233748015399777" fileName="MqlCollectionConcatOp_Behavior.java" startLine="11" startPosition="0" endLine="15" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="virtual_getType_228266671027867010#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+    <scopeInfo nodeId="5272233748015399779" fileName="MqlCollectionConcatOp_Behavior.java" startLine="8" startPosition="43" endLine="8" endPosition="43" />
+    <scopeInfo nodeId="5272233748015399777" fileName="MqlCollectionConcatOp_Behavior.java" startLine="8" startPosition="0" endLine="10" endPosition="0">
+      <varInfo nodeId="5272233748015399777" varName="thisNode" />
+    </scopeInfo>
+    <scopeInfo nodeId="5272233748015402976" fileName="MqlCollectionConcatOp_Behavior.java" startLine="11" startPosition="74" endLine="13" endPosition="83" />
+    <scopeInfo nodeId="5272233748015399777" fileName="MqlCollectionConcatOp_Behavior.java" startLine="11" startPosition="0" endLine="15" endPosition="0">
+      <varInfo nodeId="5272233748015399777" varName="thisNode" />
+    </scopeInfo>
+    <unitInfo nodeId="5272233748015399777" fileName="MqlCollectionConcatOp_Behavior.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="jetbrains.mps.core.query.behavior.MqlCollectionConcatOp_Behavior" />
+  </root>
+  <root nodeRef="r:2eb00686-cf12-445a-b169-a375a4c25909(jetbrains.mps.core.query.behavior)/5272233748015453885">
+    <nodeInfo nodeId="5272233748015474165" fileName="MqlCollectionElementOp_Behavior.java" startLine="26" startPosition="150" endLine="26" endPosition="150" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="5272233748015473966" fileName="MqlCollectionElementOp_Behavior.java" startLine="16" startPosition="68" endLine="17" endPosition="47" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="5272233748015475319" fileName="MqlCollectionElementOp_Behavior.java" startLine="18" startPosition="12" endLine="19" endPosition="41" conceptFqName="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+    <nodeInfo nodeId="5272233748015474697" fileName="MqlCollectionElementOp_Behavior.java" startLine="19" startPosition="41" endLine="20" endPosition="85" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="5272233748015474165" fileName="MqlCollectionElementOp_Behavior.java" startLine="24" startPosition="58" endLine="25" endPosition="63" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="5272233748015474165" fileName="MqlCollectionElementOp_Behavior.java" startLine="25" startPosition="63" endLine="26" endPosition="150" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="5272233748015474165" fileName="MqlCollectionElementOp_Behavior.java" startLine="26" startPosition="150" endLine="27" endPosition="14" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="5272233748015453885" fileName="MqlCollectionElementOp_Behavior.java" startLine="12" startPosition="0" endLine="14" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+    <nodeInfo nodeId="5272233748015474515" fileName="MqlCollectionElementOp_Behavior.java" startLine="18" startPosition="10" endLine="21" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="5272233748015474165" fileName="MqlCollectionElementOp_Behavior.java" startLine="24" startPosition="0" endLine="29" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="createMqlBoolType_1m38n1_a0a0a0#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+    <nodeInfo nodeId="5272233748015454058" fileName="MqlCollectionElementOp_Behavior.java" startLine="15" startPosition="74" endLine="21" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="5272233748015453885" fileName="MqlCollectionElementOp_Behavior.java" startLine="15" startPosition="0" endLine="23" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="virtual_getType_228266671027867010#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+    <scopeInfo nodeId="5272233748015453887" fileName="MqlCollectionElementOp_Behavior.java" startLine="12" startPosition="43" endLine="12" endPosition="43" />
+    <scopeInfo nodeId="5272233748015474165" fileName="MqlCollectionElementOp_Behavior.java" startLine="26" startPosition="150" endLine="26" endPosition="150" />
+    <scopeInfo nodeId="5272233748015454059" fileName="MqlCollectionElementOp_Behavior.java" startLine="16" startPosition="68" endLine="17" endPosition="47" />
+    <scopeInfo nodeId="5272233748015453885" fileName="MqlCollectionElementOp_Behavior.java" startLine="12" startPosition="0" endLine="14" endPosition="0">
+      <varInfo nodeId="5272233748015453885" varName="thisNode" />
+    </scopeInfo>
+    <scopeInfo nodeId="5272233748015474516" fileName="MqlCollectionElementOp_Behavior.java" startLine="18" startPosition="12" endLine="20" endPosition="85" />
+    <scopeInfo nodeId="5272233748015474165" fileName="MqlCollectionElementOp_Behavior.java" startLine="24" startPosition="58" endLine="27" endPosition="14">
+      <varInfo nodeId="5272233748015474165" varName="facade" />
+      <varInfo nodeId="5272233748015474165" varName="n1" />
+    </scopeInfo>
+    <scopeInfo nodeId="5272233748015474165" fileName="MqlCollectionElementOp_Behavior.java" startLine="24" startPosition="0" endLine="29" endPosition="0" />
+    <scopeInfo nodeId="5272233748015453894" fileName="MqlCollectionElementOp_Behavior.java" startLine="15" startPosition="74" endLine="21" endPosition="5" />
+    <scopeInfo nodeId="5272233748015453885" fileName="MqlCollectionElementOp_Behavior.java" startLine="15" startPosition="0" endLine="23" endPosition="0">
+      <varInfo nodeId="5272233748015453885" varName="thisNode" />
+    </scopeInfo>
+    <unitInfo nodeId="5272233748015453885" fileName="MqlCollectionElementOp_Behavior.java" startLine="11" startPosition="0" endLine="30" endPosition="0" unitName="jetbrains.mps.core.query.behavior.MqlCollectionElementOp_Behavior" />
   </root>
   <root nodeRef="r:2eb00686-cf12-445a-b169-a375a4c25909(jetbrains.mps.core.query.behavior)/5280308256730478257">
     <nodeInfo nodeId="4363371899537664332" fileName="MqlCollectionSelector_Behavior.java" startLine="182" startPosition="150" endLine="182" endPosition="150" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />

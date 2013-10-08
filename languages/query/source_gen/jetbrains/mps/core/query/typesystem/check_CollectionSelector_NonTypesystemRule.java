@@ -18,18 +18,18 @@ public class check_CollectionSelector_NonTypesystemRule extends AbstractNonTypes
   public check_CollectionSelector_NonTypesystemRule() {
   }
 
-  public void applyRule(final SNode selector, final TypeCheckingContext typeCheckingContext, IsApplicableStatus status) {
-    SNode left = MqlSelector_Behavior.call_getContainerType_228266671027861723(selector);
+  public void applyRule(final SNode mqlCollectionOp, final TypeCheckingContext typeCheckingContext, IsApplicableStatus status) {
+    SNode left = MqlSelector_Behavior.call_getContainerType_228266671027861723(mqlCollectionOp);
     if (!(SNodeOperations.isInstanceOf(left, "jetbrains.mps.core.query.structure.MqlCollectionType"))) {
       {
         MessageTarget errorTarget = new NodeMessageTarget();
-        IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(MqlSelector_Behavior.call_getContainer_5280308256730689747(selector), "should be collection", "r:efe0605f-fbe2-49dd-8c71-c87a67c06b2c(jetbrains.mps.core.query.typesystem)", "5280308256730689738", null, errorTarget);
+        IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(MqlSelector_Behavior.call_getContainer_5280308256730689747(mqlCollectionOp), "should be collection", "r:efe0605f-fbe2-49dd-8c71-c87a67c06b2c(jetbrains.mps.core.query.typesystem)", "5280308256730689738", null, errorTarget);
       }
     }
   }
 
   public String getApplicableConceptFQName() {
-    return "jetbrains.mps.core.query.structure.MqlCollectionSelector";
+    return "jetbrains.mps.core.query.structure.MqlCollectionOp";
   }
 
   public IsApplicableStatus isApplicableAndPattern(SNode argument) {
